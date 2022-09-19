@@ -24,14 +24,14 @@ The following plugins are maintained in this repository:
 | Goodreads Sync | UI | [README](goodreads_sync/README.md) | Integrate your library with your [Goodreads][goodreads-url] account
 | Import List | UI | [README](import_list/README.md) | Importing lists of books from various sources
 | Manage Series | UI | [README](manage_series/README.md) | Adds a GUI for drag/drop reordering book series
-| Modify ePub | UI | [README](modify_epub/README.md) | Automate modicfications to your ePub without conversions
+| Modify ePub | UI | [README](modify_epub/README.md) | Automate modifications to your ePub without conversions
 | Open With | UI | [README](open_with/README.md) | Launch external applications for your books or covers
 | Quality Check | UI | [README](quality_check/README.md) | Dozens of available tests for your book metadata quality
 | Quick Preferences | UI | [README](quick_preferences/README.md) | Quickly switch calibre settings via keyboard/menu
-| Ratings | UI | [README](ratings/README.md) | Download precision reviews/counts from Amazon/Goodreads
+| Ratings | UI | [README](ratings/README.md) | Download reviews/counts from Amazon & Goodreads
 | Reading List | UI | [README](reading_list/README.md) | Maintain lists of books that can sync to your devices
 | Resize Cover | UI | [README](resize_cover/README.md) | Resize cover images for books to configurable sizes
-| Search the Internet | UI | [README](search_the_internet/README.md) | Quickly web search predefined or custom websites for a book
+| Search the Internet | UI | [README](search_the_internet/README.md) | Quickly search predefined or custom websites for a book
 | User Category | UI | [README](user_category/README.md) | Add or remove authors/series/tags/publishers to user categories
 | View Manager | UI | [README](view_manager/README.md) | Define your own easily switchable column views
 | Walk Search History | UI | [README](walk_search_history/README.md) | Menu and keyboard shortcuts to move through search history

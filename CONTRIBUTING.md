@@ -12,7 +12,7 @@ Please reference the [README.md][readme-uri] for the file layout of this reposit
 ## Commit Checklist
 
 Before you commit to GitHub and publish your plugin zip to MobileRead, make sure you:
-- Update the version number in `__init__.py`
+- Update the version number in `__init__.py` (see below for numbering strategy).
 - Update the `CHANGELOG.md`
 - Comment out/remove any extra debug logging or temporary writing files to disk
 - If you changed translatable text, run: `generate-pot.cmd`
@@ -28,8 +28,22 @@ If this is an official release on the MobileRead plugin thread, then:
     - List the version and changes made.
 
 ---
+## Plugin Version Numbering Guidelines
 
-## Version Compatibility of PyQt
+While there are no strict rules on which parts of the version number for a plugin to "bump" the following may prove a useful guide. The only thing that must happen is that the overall number increments with each new plugin release in order for the calibre Plugin Updater to show this for users to install.
+> ``<Major>.<Minor>.<Build>`` e.g. 1.4.2
+- **Major** is very rarely incremented, as it is reserved for massive plugin changes.
+- **Minor** is the most common to increment, representing a new release to the community.
+- **Build** will also be frequently changed, to represent an iteration within the release.
+
+### Example:
+- A current plugin release starts at ``v1.0.0``
+- A new feature is added or significant change is made so we bump the Minor, releasing as ``v1.1.0``
+- Feedback to a test version or bug fixes means a bump to the Build, releasing as ``v1.1.1``
+- Later another new feature/change is made, releasing as ``v1.2.0`` and so on.
+
+---
+## PyQt / Python Compatibility
 
 In setting up this repo I have decided to:
 - **Drop PyQt4 support** 
@@ -50,9 +64,7 @@ except ImportError:
     from PyQt5.Qt import xxx
 ```
 
-There is no guarantee these plugins will actuaaly work on every one of those older calibre versions. It is also unrealistic to even attempt to test any of them. If we have users reporting such an issue then the simplest option may be to force them to upgrade to a supportable calibre version and we bump up the min version for the plugin if it is resolved.
-
-See the [README](tools/README.md) in the `tools` folder for further details on PyQt compatibility tips and issues.
+Some basic testing has been done against the minimum versions for all these plugins to confirm the plugin loads. It is possible there are other more subtle issues that come out. Worst case we will just move a plugin forward to require a later minimum version if the backwards support is too hard.
 
 ---
 
