@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Yuri Chornoivan <yurchor@ukr.net>, 2022
+# Андрій М. <dexteritymaster@gmail.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 15:57+0100\n"
+"PO-Revision-Date: 2022-09-11 10:14+0000\n"
+"Last-Translator: Андрій М. <dexteritymaster@gmail.com>, 2022\n"
+"Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:592
+msgid "Keyboard shortcuts"
+msgstr "Клавіатурні гарячі клавіші"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Перезавантажити Calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Налаштування:"
+
+#: ..\common\common_dialogs.py:160 config.py:699
+msgid "Clear"
+msgstr "Очистити"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Очистити всі налаштування для цього плагіну"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Будь-які налаштування в інших бібліотеках, або збережені в файлі JSON в "
+"папці ваший плагінів не будуть змінені."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Після цього ви повинні перезавантажити Calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Будь-ласка перезавантажте Calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте очистити ваші налаштування в цій бібліотцеці для "
+"даного плагіну?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Всі налаштування для цього плагіну в цій бібліотеці були очищені."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Невизначено"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:32
+msgid "Quick Preferences"
+msgstr "Швидке налаштовування"
+
+#: action.py:37
+msgid "Ignore duplicate incoming formats"
+msgstr "Ігнорувати дублікати вхідних форматів"
+
+#: action.py:38
+msgid "Overwrite existing duplicate formats"
+msgstr "Перезаписати наявні дублікати форматів"
+
+#: action.py:39
+msgid "Create new record for each duplicate format"
+msgstr "Створити запис для кожного дубліката формату"
+
+#: action.py:93 config.py:580
+msgid "Swap author names"
+msgstr "Переставити місцями частини імен авторів"
+
+#: action.py:97
+msgid "Read metadata from file contents"
+msgstr "Читати метадані з даних файла"
+
+#: action.py:101
+msgid "Automerge added books if exist"
+msgstr "Автоматично об'єднати додані книги, якщо вони вже є"
+
+#: action.py:105
+msgid "Automerge type"
+msgstr "Автоматично об'єднувати типи"
+
+#: action.py:117
+msgid "Preferences"
+msgstr "Налаштування"
+
+#: action.py:119
+msgid "&Customize plugin"
+msgstr "&Налаштувати додаток"
+
+#: action.py:153
+msgid "Cannot switch regular expression"
+msgstr "Не вдалося перемкнути формальний вираз"
+
+#: action.py:154
+msgid "No regular expression specified in this menu item."
+msgstr "У цьому пункті меню не визначено жодного формального виразу"
+
+#: action.py:163
+msgid "Cannot change enabled metadata sources"
+msgstr "Не вдалося змінити увімкнені джерела метаданих"
+
+#: action.py:164
+msgid "List of metadata sources is empty"
+msgstr "Список джерел метаданих є порожнім"
+
+#: config.py:140
+msgid "Regex File Pattern"
+msgstr "Взірець файла формальних виразів"
+
+#: config.py:140
+msgid "Swap Names"
+msgstr "Поміняти місцями частини імені"
+
+#: config.py:140 config.py:300
+msgid "Menu Title"
+msgstr "Загаоловок меню"
+
+#: config.py:213 config.py:377
+msgid "Are you sure you want to delete this menu item?"
+msgstr "Ви хочете вилучити цей пункт меню?"
+
+#: config.py:215 config.py:379
+msgid "Are you sure you want to delete the selected menu items?"
+msgstr "Ви справді хочете вилучити позначені пункти меню?"
+
+#: config.py:216 config.py:380 config.py:642 config.py:650
+msgid "Are you sure?"
+msgstr "Ви певні?"
+
+#: config.py:300
+msgid "Enabled Sources"
+msgstr "Увімкнені джерела"
+
+#: config.py:455
+msgid "Configure the file pattern menu items to display:"
+msgstr "Налаштуйте пункти меню взірців файлів для показу:"
+
+#: config.py:476 config.py:533
+msgid "Move row up"
+msgstr "Пересунути рядок вище"
+
+#: config.py:483 config.py:540
+msgid "Add menu item row"
+msgstr "Додати рядок пункту меню"
+
+#: config.py:490 config.py:547
+msgid "Delete menu item row"
+msgstr "Вилучити рядок пункту меню"
+
+#: config.py:497 config.py:554
+msgid "Reset to defaults"
+msgstr "Скинути до типових"
+
+#: config.py:504 config.py:561
+msgid "Move row down"
+msgstr "Пересунути рядок нижче"
+
+#: config.py:516
+msgid "Configure the Enabled metadata sources menu items to display"
+msgstr "Налаштуйте пункти меню увімкнених джерел метаданих для показу"
+
+#: config.py:575
+msgid "Include in menu:"
+msgstr "Включити до меню:"
+
+#: config.py:581
+msgid "Read metadata from file"
+msgstr "Прочитати метадані з файла"
+
+#: config.py:582
+msgid "Automerge added books"
+msgstr "Автоматично об'єднувати додані книги"
+
+#: config.py:593
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
+
+#: config.py:643
+msgid ""
+"Are you sure you want to reset to the plugin default menu?<br>Any "
+"modifications to file pattern menu items will be discarded."
+msgstr ""
+"Ви справді хочете відновити типове меню додатків?<br>Усі зміни до пунктів "
+"меню взірців файлів буде відкинуто."
+
+#: config.py:651
+msgid ""
+"Are you sure you want to reset to the plugin default menu?<br>Any "
+"modifications to metadata source menu items will be discarded."
+msgstr ""
+"Ви справді хочете відновити типове меню додатків?<br>Усі зміни до пунктів "
+"меню джерел метаданих буде відкинуто."
+
+#: config.py:679
+msgid "Metadata Source Plugins"
+msgstr "Додатки джерел метаданих"
+
+#: config.py:683
+msgid "Select the Metadata sources to be enabled"
+msgstr "Виберіть джерела метаданих, які буде увімкнено"
+
+#: config.py:696
+msgid "Get Current"
+msgstr "Отримати поточні"
+
+#: config.py:697
+msgid "Get the currently enabled Metadata sources"
+msgstr "Отримати дані поточних увімкнених джерел метаданих"
+
+#: config.py:700
+msgid "Clear all selected sources"
+msgstr "Вилучити усі вибрані джерела"
+
+#: config.py:757
+msgid "Source"
+msgstr "Джерело"

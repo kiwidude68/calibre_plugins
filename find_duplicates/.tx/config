@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[o:calibre:p:calibre-plugins:r:find-duplicates]
+file_filter  = translations/<lang>.po
+source_lang  = EN
+type         = PO
+minimum_perc = 75
+

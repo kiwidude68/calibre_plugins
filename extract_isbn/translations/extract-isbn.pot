@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:19+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ..\common\common_dialogs.py:84 config.py:91
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr ""
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr ""
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr ""
+
+#: ..\common\common_dialogs.py:189
+msgid "Are you sure you want to change your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid "Any settings in other libraries or stored in a JSON file in your calibre plugins folder will not be touched."
+msgstr ""
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr ""
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr ""
+
+#: ..\common\common_dialogs.py:209
+msgid "Are you sure you want to clear your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr ""
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid "Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:28
+msgid "Extract ISBN from the selected book format"
+msgstr ""
+
+#: action.py:28 action.py:74
+msgid "Extract ISBN"
+msgstr ""
+
+#: action.py:43
+msgid "No rows selected"
+msgstr ""
+
+#: action.py:44
+msgid "You must select one or more books to perform this action."
+msgstr ""
+
+#: action.py:78
+msgid "Extracting ISBN for {0} books"
+msgstr ""
+
+#: action.py:91
+msgid "Failed to extract isbns"
+msgstr ""
+
+#: action.py:94
+msgid "ISBN extract completed"
+msgstr ""
+
+#: action.py:99
+msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
+msgstr ""
+
+#: action.py:100
+msgid "Proceed with updating your library?"
+msgstr ""
+
+#: action.py:106
+msgid "Could not find an ISBN for {0} book(s) and {1} book(s) matched their existing value."
+msgstr ""
+
+#: action.py:109
+msgid "Could not find an ISBN for {0} book(s)."
+msgstr ""
+
+#: action.py:111
+msgid "Found {0} book(s) where ISBN matched the existing value."
+msgstr ""
+
+#: action.py:113
+msgid "Click \"Show details\" to see which books."
+msgstr ""
+
+#: action.py:116
+msgid "Scan failed"
+msgstr ""
+
+#: action.py:116 action.py:123
+msgid "Scan log"
+msgstr ""
+
+#: action.py:123
+msgid "Scan complete"
+msgstr ""
+
+#: action.py:145
+msgid "Some books changed"
+msgstr ""
+
+#: action.py:146
+msgid "The metadata for some books in your library has changed since you started the download. If you proceed, some of those changes may be overwritten. Click \"Show details\" to see the list of changed books. Do you want to proceed?"
+msgstr ""
+
+#: action.py:157 jobs.py:226
+msgid "Unknown"
+msgstr ""
+
+#: config.py:32
+msgid "Do not change my search"
+msgstr ""
+
+#: config.py:33
+msgid "Show the books that have new or updated ISBNs"
+msgstr ""
+
+#: config.py:58
+msgid "When the scan completes:"
+msgstr ""
+
+#: config.py:63
+msgid "Valid prefixes for ISBN-13 (comma separated):"
+msgstr ""
+
+#: config.py:68
+msgid "Selected books before running as a background job:"
+msgstr ""
+
+#: config.py:69
+msgid ""
+"Running as a background job is slower but is the only way to avoid\n"
+msgstr ""
+
+#: config.py:70
+msgid "memory leaks and will keep the UI more responsive."
+msgstr ""
+
+#: config.py:79
+msgid "Batch size running as a background job:"
+msgstr ""
+
+#: config.py:80
+msgid ""
+"Books will be broken into batches to ensure that if you run\n"
+"extract for a large group you can cancel/close calibre without\n"
+"losing all of your results as you can cancel the pending groups."
+msgstr ""
+
+#: config.py:92
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+
+#: dialogs.py:25
+msgid "Queueing books for extracting ISBN"
+msgstr ""
+
+#: dialogs.py:53
+msgid "Queueing"
+msgstr ""
+
+#: dialogs.py:73
+msgid "Extract ISBN failed"
+msgstr ""
+
+#: dialogs.py:74
+msgid "Scan aborted as no books with formats found."
+msgstr ""
+
+#: jobs.py:41
+msgid "Extract ISBN for %d books"
+msgstr ""
+
+#: jobs.py:44
+msgid "Extract ISBN started"
+msgstr ""
+
+#: jobs.py:96
+msgid "Scanned %d of %d"
+msgstr ""
+
+#: jobs.py:113
+msgid "No formats"
+msgstr ""
+
+#: jobs.py:115
+msgid "ISBN not found"
+msgstr ""
+
+#: jobs.py:121
+msgid "Same ISBN"
+msgstr ""
+
+#: jobs.py:127
+msgid "Extracted"
+msgstr ""
+

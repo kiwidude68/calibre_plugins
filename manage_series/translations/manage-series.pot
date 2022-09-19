@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:02+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ..\common\common_dialogs.py:84 config.py:33
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr ""
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr ""
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr ""
+
+#: ..\common\common_dialogs.py:189
+msgid "Are you sure you want to change your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid "Any settings in other libraries or stored in a JSON file in your calibre plugins folder will not be touched."
+msgstr ""
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr ""
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr ""
+
+#: ..\common\common_dialogs.py:209
+msgid "Are you sure you want to clear your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr ""
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid "Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:31
+msgid "Manage Series"
+msgstr ""
+
+#: action.py:51
+msgid "Cannot manage series"
+msgstr ""
+
+#: action.py:52
+msgid "No books selected"
+msgstr ""
+
+#: config.py:34
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+
+#: dialogs.py:56 dialogs.py:59
+msgid "Lock Series Index"
+msgstr ""
+
+#: dialogs.py:63
+msgid "Series index for book:"
+msgstr ""
+
+#: dialogs.py:78
+msgid "&Assign this index value to all remaining books"
+msgstr ""
+
+#: dialogs.py:100
+msgid "You have conflicting or out of sequence series indexes"
+msgstr ""
+
+#: dialogs.py:103
+msgid "Empty book added to series"
+msgstr ""
+
+#: dialogs.py:106
+msgid "The book data has been changed"
+msgstr ""
+
+#: dialogs.py:109
+msgid "The series data is unchanged"
+msgstr ""
+
+#: dialogs.py:132
+msgid "Value assigned by user"
+msgstr ""
+
+#: dialogs.py:178
+msgid "Lock old series index"
+msgstr ""
+
+#: dialogs.py:182
+msgid "Lock series index"
+msgstr ""
+
+#: dialogs.py:186 dialogs.py:437
+msgid "Unlock series index"
+msgstr ""
+
+#: dialogs.py:190
+msgid "Unlock all series index"
+msgstr ""
+
+#: dialogs.py:197
+msgid "Add empty books"
+msgstr ""
+
+#: dialogs.py:204
+msgid "Original Series Index"
+msgstr ""
+
+#: dialogs.py:204
+msgid "Original Series Name"
+msgstr ""
+
+#: dialogs.py:204 dialogs.py:225
+msgid "PubDate"
+msgstr ""
+
+#: dialogs.py:205
+msgid "Sort by"
+msgstr ""
+
+#: dialogs.py:225
+msgid "Author(s)"
+msgstr ""
+
+#: dialogs.py:225
+msgid "New Series"
+msgstr ""
+
+#: dialogs.py:225
+msgid "Series"
+msgstr ""
+
+#: dialogs.py:225
+msgid "Title"
+msgstr ""
+
+#: dialogs.py:325
+msgid "Old"
+msgstr ""
+
+#: dialogs.py:328
+msgid "New"
+msgstr ""
+
+#: dialogs.py:369
+msgid "Create or Modify Series"
+msgstr ""
+
+#: dialogs.py:376
+msgid "Series &Column:"
+msgstr ""
+
+#: dialogs.py:384
+msgid "Series &Name:"
+msgstr ""
+
+#: dialogs.py:397
+msgid "&Start At:"
+msgstr ""
+
+#: dialogs.py:418
+msgid "Move book up in series (Alt+Up)"
+msgstr ""
+
+#: dialogs.py:420
+msgid "Alt+Up"
+msgstr ""
+
+#: dialogs.py:424
+msgid "Move book down in series (Alt+Down)"
+msgstr ""
+
+#: dialogs.py:426
+msgid "Alt+Down"
+msgstr ""
+
+#: dialogs.py:432
+msgid "Lock to index value"
+msgstr ""
+
+#: dialogs.py:444
+msgid "Add empty book to the series list"
+msgstr ""
+
+#: dialogs.py:446
+msgid "Ctrl+Shift+E"
+msgstr ""
+
+#: dialogs.py:450
+msgid "Remove book from the series list"
+msgstr ""
+
+#: dialogs.py:457
+msgid "Move series index to left of decimal point (Alt+Left)"
+msgstr ""
+
+#: dialogs.py:459
+msgid "Alt+Left"
+msgstr ""
+
+#: dialogs.py:463
+msgid "Move series index to right of decimal point (Alt+Right)"
+msgstr ""
+
+#: dialogs.py:465
+msgid "Alt+Right"
+msgstr ""
+
+#: dialogs.py:474
+msgid "&Restore Original Series"
+msgstr ""
+
+#: dialogs.py:630
+msgid "Unknown"
+msgstr ""
+
+#: dialogs.py:655
+msgid "Are you sure?"
+msgstr ""
+
+#: dialogs.py:656
+msgid "Remove the selected book(s) from the series list?"
+msgstr ""
+

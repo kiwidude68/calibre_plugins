@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Pk11 <epicpkmn11@outlook.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 15:50+0100\n"
+"PO-Revision-Date: 2022-09-13 17:16+0000\n"
+"Last-Translator: Pk11 <epicpkmn11@outlook.com>, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/calibre/teams/19337/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:86
+msgid "Keyboard shortcuts"
+msgstr "キーボードショートカット"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "今すぐcalibreを再起動します"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "クリア"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "プラグインの全ての設定をクリアします"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "他のライブラリにどれかまたはcalibreプラグインのフォルダにJSONファイルに保存された設定は変更されていません。"
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "あとでcalibreを再起動が必要です。"
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "今すぐcalibreを再起動してください。"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "このライブラリにのこのプラグインの設定をクリアしてもよろしいですか？"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "このライブラリにこのプラグインの全ての設定はクリアされました。"
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "未定義"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:35
+msgid "User category"
+msgstr "ユーザーカテゴリ"
+
+#: action.py:42
+msgid "authors"
+msgstr "著者"
+
+#: action.py:42
+msgid "series"
+msgstr "シリーズ"
+
+#: action.py:43
+msgid "publishers"
+msgstr "出版社"
+
+#: action.py:43
+msgid "tags"
+msgstr "タグ"
+
+#: action.py:96
+msgid "Add selected"
+msgstr "選択を追加"
+
+#: action.py:109
+msgid "Move selected"
+msgstr "選択を移動"
+
+#: action.py:122
+msgid "Remove selected"
+msgstr "選択を削除"
+
+#: action.py:130
+msgid "Show in tag browser"
+msgstr "タグブラウザーに表示します"
+
+#: action.py:133
+msgid "Manage user categories"
+msgstr "ユーザーカテゴリを管理します"
+
+#: action.py:136
+msgid "&Customize plugin"
+msgstr "プラグインをカスタマイズ (&C)"
+
+#: action.py:156
+msgid "View user category"
+msgstr "ユーザーカテゴリを表示します"
+
+#: action.py:159
+msgid "Manage user category"
+msgstr "ユーザーカテゴリを管理します"
+
+#: action.py:164
+msgid "Add %s to user category: %s"
+msgstr "次のユーザーカテゴリに%sを追加します：%s"
+
+#: action.py:166
+msgid "Move %s to user category: %s"
+msgstr "次のユーザーカテゴリに%sを移動します：%s"
+
+#: action.py:168
+msgid "Remove %s from user category: %s"
+msgstr "次のユーザーカテゴリから%sを削除します：%s"
+
+#: action.py:270 action.py:278
+msgid "Cannot modify user category"
+msgstr "ユーザーカテゴリを変更できません"
+
+#: action.py:271
+msgid "No new values in books selected"
+msgstr "選択された本に新たな値はありません"
+
+#: action.py:279
+msgid "Selected user category not found. Please restart Calibre."
+msgstr "選択されたユーザーカテゴリが見つかりません。calibreを再起動してください。"
+
+#: action.py:338
+msgid "Cannot view user category"
+msgstr "ユーザーカテゴリを表示できません"
+
+#: action.py:339
+msgid "User category not found"
+msgstr "ユーザーカテゴリが見つかりません"
+
+#: config.py:45
+msgid "Add to user category"
+msgstr "ユーザーカテゴリに追加します"
+
+#: config.py:46
+msgid "Move to user category"
+msgstr "ユーザーカテゴリに移動します"
+
+#: config.py:47
+msgid "Remove from user category"
+msgstr "ユーザーカテゴリから削除します"
+
+#: config.py:50
+msgid "Authors"
+msgstr "著者"
+
+#: config.py:51
+msgid "Series"
+msgstr "シリーズ"
+
+#: config.py:52
+msgid "Publishers"
+msgstr "出版社"
+
+#: config.py:53
+msgid "Tags"
+msgstr "タグ"
+
+#: config.py:63
+msgid "Menu actions to display:"
+msgstr "表示されるメニュー項目："
+
+#: config.py:74
+msgid "Book metadata types to add/remove:"
+msgstr "追加・削除される本メタデータのタイプ："
+
+#: config.py:87
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "このプラグインに関連付けていますキーボードショートカットを編集します。"

@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Julien G. <julien.gong@gmail.com>, 2022
+# Fan Xu <xlivevil@aliyun.com>, 2022
+# 高垚鑫, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:05+0100\n"
+"PO-Revision-Date: 2022-09-07 15:49+0000\n"
+"Last-Translator: 高垚鑫, 2022\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/calibre/teams/19337/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "键盘快捷键"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "现在重启 calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "清除"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "清除此插件的所有设置"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "其他库中的任何设置或存储在calibre plugins文件夹中的JSON文件中的任何设置都不会被触动。"
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "您需要稍后重启 calibre"
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "现在请重启 calibre"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "是否确实要清除此插件库中的设置？"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "此插件库中的所有设置都已清除。"
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "未定义的"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: config.py:149
+msgid "Goodreads Genre"
+msgstr "Goodreads 类别"
+
+#: config.py:149
+msgid "Maps to Calibre Tag"
+msgstr "映像至本地标签"
+
+#: config.py:218
+msgid "Goodreads genre to calibre tag mappings"
+msgstr "Goodreads类别转换本地标签"
+
+#: config.py:231
+msgid "Add genre mapping"
+msgstr "添加类别映像"
+
+#: config.py:238
+msgid "Delete genre mapping"
+msgstr "删除类别映像"
+
+#: config.py:245
+msgid "Rename Goodreads genre"
+msgstr "重命名Goodreads类别"
+
+#: config.py:252
+msgid "Reset to plugin default mappings"
+msgstr "重置为默认映像"
+
+#: config.py:258
+msgid "Other options"
+msgstr "其他选项"
+
+#: config.py:263
+msgid "Scan multiple editions for title/author searches (slower)"
+msgstr "搜索书名/作者时扫描多个版本（更慢）"
+
+#: config.py:264
+msgid ""
+"When checked will perform an additional search to scan the top ranked\n"
+"Goodreads editions (if available) to exclude audiobook editions.\n"
+"When unchecked you will get a faster search but the edition is indeterminate."
+msgstr ""
+"若选中，将针对排名靠前的Goodreads版本（若有）进行额外的搜索以排除有声书版本。\n"
+"若未选中，搜索速度会更快但版本信息将不完整。"
+
+#: config.py:270
+msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
+msgstr "获取所有贡献者名单（例如：绘图者，丛书编辑等）"
+
+#: config.py:271
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"若选中，将下载全部作者信息。\n"
+"\n"
+"若未选中（默认），仅下载主要作者（或作者们）信息。"
+
+#: config.py:276
+msgid "Get ASIN for kindle editions"
+msgstr "获取Kindle版本的ASIN字段"
+
+#: config.py:277
+msgid ""
+"When this option is checked, in cases where Goodreads has an ASIN listed\n"
+"instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
+"already have the specific Goodreads identifier of a Kindle editon."
+msgstr ""
+"若选中，当Goodreads存在ASIN字段而不是ISBN字段时获取到ASIN字段。\n"
+"如果Goodreads已有Kindle版本的标记，此选项将会很有帮助。"
+
+#: config.py:283
+msgid "Use first published date"
+msgstr "使用首次出版时间"
+
+#: config.py:284
+msgid ""
+"If checked, the first published date for this book is used rather than\n"
+"that of the actual book edition."
+msgstr "若选中，将采用本书的首次出版时间而非新版本的实际出版时间。"
+
+#: config.py:302 config.py:333
+msgid "Add new mapping"
+msgstr "添加新的映像关系"
+
+#: config.py:303 config.py:334
+msgid "Enter a Goodreads genre name to create a mapping for:"
+msgstr "输入一个Goodreads类别名称以创建映像关系："
+
+#: config.py:314
+msgid "Add Failed"
+msgstr "添加失败"
+
+#: config.py:314 config.py:346
+msgid "A genre with the same name already exists"
+msgstr "同名的类别名称已存在"
+
+#: config.py:322 config.py:353
+msgid "Are you sure?"
+msgstr "你确认吗？"
+
+#: config.py:323
+msgid "Are you sure you want to delete the selected genre mappings?"
+msgstr "你确认要删除选中的类别映像关系吗？"
+
+#: config.py:346
+msgid "Rename Failed"
+msgstr "重命名失败"
+
+#: config.py:354
+msgid "Are you sure you want to reset to the plugin default genre mappings?"
+msgstr "你确认要将映像关系重置为默认值吗？"

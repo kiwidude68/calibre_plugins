@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Marek Mazurowski <marek.mazurowski@gmail.com>, 2022
+# Marcin Kozioł <koziol.martin@gmail.com>, 2022
+# Ola Kleniewska <anyzeklove@gmail.com>, 2022
+# Piotr Strębski <strebski@gmail.com>, 2022
+# Adam Humienny <adam.humienny@gmail.com>, 2022
+# Grant Drake, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:05+0100\n"
+"PO-Revision-Date: 2022-09-07 15:49+0000\n"
+"Last-Translator: Grant Drake, 2022\n"
+"Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "Skróty klawiszowe"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Uruchom calibre ponownie."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Wyczyść wszystkie ustawienia dla tej wtyczki"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Żadne ustawienia w innych bibliotekach lub przechowywane w pliku JSON w "
+"folderze wtyczek Calibre nie zostaną zmienione."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Musisz potem ponownie uruchomić calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Proszę ponownie uruchom calibre teraz."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Czy jesteś pewny, że chcesz wyczyścić wszystkie ustawienia w tej bibliotece "
+"dla tej wtyczki?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Ustawienia zostały usunięte"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Wszystkie ustawienia dla tej wtyczki w tej bibliotece zostały wyczyszczone."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Nieokreślony"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr "Wymagane ponowne uruchomienie"
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
+"uruchomić Calibre!"
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: config.py:149
+msgid "Goodreads Genre"
+msgstr ""
+
+#: config.py:149
+msgid "Maps to Calibre Tag"
+msgstr ""
+
+#: config.py:218
+msgid "Goodreads genre to calibre tag mappings"
+msgstr "Mapowanie tagów z Goodreads na tagi z Calibre"
+
+#: config.py:231
+msgid "Add genre mapping"
+msgstr "Dodaj mapowanie gatunków"
+
+#: config.py:238
+msgid "Delete genre mapping"
+msgstr "Usuń mapowanie gatunków"
+
+#: config.py:245
+msgid "Rename Goodreads genre"
+msgstr "Zmień nazwę gatunku Goodreads"
+
+#: config.py:252
+msgid "Reset to plugin default mappings"
+msgstr "Przywróć domyślne mapowania wtyczki"
+
+#: config.py:258
+msgid "Other options"
+msgstr "Pozostałe opcje"
+
+#: config.py:263
+msgid "Scan multiple editions for title/author searches (slower)"
+msgstr "Skanowanie wielu wydań w celu wyszukania tytułu/autora (wolniej)"
+
+#: config.py:264
+msgid ""
+"When checked will perform an additional search to scan the top ranked\n"
+"Goodreads editions (if available) to exclude audiobook editions.\n"
+"When unchecked you will get a faster search but the edition is indeterminate."
+msgstr ""
+"Zaznaczenie tej opcji spowoduje dodatkowe przeszukiwanie najwyższych \n"
+"pozycji w rankingu Goodreads (jeśli są dostępne), aby wykluczyć wydania audiobooków.\n"
+"Po odznaczeniu otrzymasz szybsze wyszukiwanie, ale edycja jest nieokreślona."
+
+#: config.py:270
+msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
+msgstr "Pobierz wszystkich autorów (np. ilustratorów, redaktorów serii itp.)"
+
+#: config.py:271
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"Gdy opcja jest zaznaczona, pobierani są wszyscy autorzy.\n"
+"\n"
+"Gdy opcja jest odznaczona (domyślnie) zwracany jest tylko główny autor (autorzy)."
+
+#: config.py:276
+msgid "Get ASIN for kindle editions"
+msgstr "Pobierz ASIN dla wydań na kindle"
+
+#: config.py:277
+msgid ""
+"When this option is checked, in cases where Goodreads has an ASIN listed\n"
+"instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
+"already have the specific Goodreads identifier of a Kindle editon."
+msgstr ""
+"Gdy ta opcja jest zaznaczona,  w sytuacji gdy na Goodreads widnieje ASIN \n"
+"zamiast ISBN, ASIN jest pobierany. Jest to przydatne dla książek, \n"
+"które mają już specyficzny identyfikator Goodreads dla edycji na Kindle."
+
+#: config.py:283
+msgid "Use first published date"
+msgstr "Użyj daty pierwszej publikacji"
+
+#: config.py:284
+msgid ""
+"If checked, the first published date for this book is used rather than\n"
+"that of the actual book edition."
+msgstr ""
+"Jeśli zaznaczone, używana jest data pierwszej publikacji tej książki \n"
+"zamiast daty aktualnego wydania książki."
+
+#: config.py:302 config.py:333
+msgid "Add new mapping"
+msgstr "Dodaj nowe mapowanie"
+
+#: config.py:303 config.py:334
+msgid "Enter a Goodreads genre name to create a mapping for:"
+msgstr "Wpisz nazwę gatunku Goodreads, dla którego chcesz utworzyć mapowanie:"
+
+#: config.py:314
+msgid "Add Failed"
+msgstr "Dodanie nie powiodło się"
+
+#: config.py:314 config.py:346
+msgid "A genre with the same name already exists"
+msgstr "Gatunek o tej samej nazwie już istnieje"
+
+#: config.py:322 config.py:353
+msgid "Are you sure?"
+msgstr "Jesteś pewien?"
+
+#: config.py:323
+msgid "Are you sure you want to delete the selected genre mappings?"
+msgstr "Czy na pewno chcesz usunąć wybrane mapowania gatunków?"
+
+#: config.py:346
+msgid "Rename Failed"
+msgstr "Zmiana nazwy nie powiodła się"
+
+#: config.py:354
+msgid "Are you sure you want to reset to the plugin default genre mappings?"
+msgstr "Czy na pewno chcesz zresetować do domyślnych mapowań gatunków?"

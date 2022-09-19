@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Jellby <jellby@yahoo.com>, 2022
+# Darío Hereñú, 2022
+# Grant Drake, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 15:48+0100\n"
+"PO-Revision-Date: 2022-09-19 14:48+0000\n"
+"Last-Translator: Grant Drake, 2022\n"
+"Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:90
+msgid "Keyboard shortcuts"
+msgstr "Atajos de teclado"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reiniciar Calibre ahora"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Preferencias para: "
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Limpiar"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Borrar todas las configuraciones para este plugin"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
+"este complemento?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
+" en su carpeta de complementos de calibre no se modificará."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Debe reiniciar calibre después."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Ajustes cambiados"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Se ha cambiado la configuración de este complemento en esta biblioteca."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Reinicie calibre ahora."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
+"este complemento?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Configuraciones eliminadas"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Se han borrado todas las configuraciones para este complemento en esta "
+"biblioteca."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Copiar al portapapeles"
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Indefinido"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr "Reinicio requerido"
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"No se encontró la imagen del título. ¡Debe reiniciar Calibre antes de usar "
+"este complemento!"
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:35
+msgid "Get the rating and counts from Amazon/Goodreads.com"
+msgstr "Obtenga la calificación y los recuentos de Amazon/Goodreads.com"
+
+#: action.py:35
+msgid "Ratings"
+msgstr "Calificaciones"
+
+#: action.py:67
+msgid "&Get all ratings"
+msgstr "&Obtener todas las calificaciones"
+
+#: action.py:68
+msgid "Download ratings for all configured sources"
+msgstr "Descargar clasificaciones para todas las fuentes configuradas"
+
+#: action.py:72
+msgid "&Get Amazon ratings"
+msgstr "&Obtener calificaciones de Amazon"
+
+#: action.py:73
+msgid "Download ratings for Amazon only"
+msgstr "Descargar calificaciones solo para Amazon"
+
+#: action.py:76
+msgid "&Get Goodreads ratings"
+msgstr "&Obtener calificaciones de Goodreads"
+
+#: action.py:77
+msgid "Download ratings for Goodreads only"
+msgstr "Descargar clasificaciones solo para Goodreads"
+
+#: action.py:81
+msgid "&Customize plugin"
+msgstr "&Personalizar el complemento"
+
+#: action.py:103
+msgid "Configure plugin"
+msgstr "Configurar complemento"
+
+#: action.py:104
+msgid ""
+"You must specify a custom column first. Do you want to configure this now?"
+msgstr ""
+"Primero debe especificar una columna personalizada. ¿Quieres configurar esto"
+" ahora?"
+
+#: action.py:128
+msgid "Failed to download ratings"
+msgstr "Error al descargar calificaciones"
+
+#: action.py:131
+msgid "Download ratings completed"
+msgstr "Descarga de calificaciones completadas"
+
+#: action.py:136
+msgid "Downloaded ratings for <b>%d book(s)</b>."
+msgstr "Calificaciones descargadas para <b>%d libro(s)</b>."
+
+#: action.py:137
+msgid "Proceed with updating your library?"
+msgstr "¿Quieres continuar con la actualización de tu biblioteca?"
+
+#: action.py:143
+msgid "Could not find ratings for %d book(s)."
+msgstr "No se pudieron encontrar calificaciones para %d libro(s)."
+
+#: action.py:146
+msgid "Download ratings failed"
+msgstr "No se han podido descargar las calificaciones"
+
+#: action.py:151
+msgid "Download log"
+msgstr "Descargar registro"
+
+#: action.py:151
+msgid "Download ratings complete"
+msgstr "Descargar calificaciones completas"
+
+#: action.py:184
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: config.py:66
+msgid "Amazon Rating:"
+msgstr "Valoración de Amazon:"
+
+#: config.py:72
+msgid "Amazon Rating Count:"
+msgstr "Recuento de calificaciones de Amazon:"
+
+#: config.py:78
+msgid "Goodreads Rating:"
+msgstr "Clasificación de Goodreads:"
+
+#: config.py:84
+msgid "Goodreads Rating Count:"
+msgstr "Recuento de calificaciones de Goodreads:"
+
+#: config.py:91
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Modificar los atajos de teclado asociados con este complemento"
+
+#: config.py:95
+msgid "&View library preferences"
+msgstr "&Ver preferencias de biblioteca.."
+
+#: config.py:96
+msgid "View data stored in the library database for this plugin"
+msgstr ""
+"Ver datos almacenados en la base de datos de la biblioteca para este "
+"complemento"
+
+#: jobs.py:24
+msgid "Download ratings for %d books"
+msgstr "Descargar calificaciones para %d libros"
+
+#: jobs.py:27
+msgid "Download Ratings started"
+msgstr "Descarga de Calificaciones iniciadas"
+
+#: jobs.py:67
+msgid "Aborting"
+msgstr "Abortando"
+
+#: jobs.py:76
+msgid "No Amazon or Goodreads id for this book"
+msgstr "No hay ID de Amazon o Goodreads para este libro"
+
+#: jobs.py:120
+msgid "No rating found for book"
+msgstr "No se ha encontrado ninguna calificación para el libro."
+
+#: jobs.py:123
+msgid "Exception occurred"
+msgstr "Ocurrió una excepción"
+
+#: jobs.py:126
+msgid "Processed %d of %d"
+msgstr "Procesando %d de %d"

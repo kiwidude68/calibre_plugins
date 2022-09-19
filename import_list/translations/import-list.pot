@@ -1,0 +1,1160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:02+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ..\common\common_dialogs.py:84 config.py:975
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr ""
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr ""
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr ""
+
+#: ..\common\common_dialogs.py:189
+msgid "Are you sure you want to change your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid "Any settings in other libraries or stored in a JSON file in your calibre plugins folder will not be touched."
+msgstr ""
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr ""
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr ""
+
+#: ..\common\common_dialogs.py:209
+msgid "Are you sure you want to clear your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr ""
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid "Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:30
+msgid "Import List"
+msgstr ""
+
+#: action.py:30
+msgid "Import a list from the clipboard, CSV File or web page"
+msgstr ""
+
+#: cmdline.py:129
+msgid "Choose library location to compare against"
+msgstr ""
+
+#: cmdline.py:133
+msgid "No existing library found"
+msgstr ""
+
+#: cmdline.py:134
+msgid "There is no existing calibre library at {0}"
+msgstr ""
+
+#: cmdline.py:149
+msgid "Choose database"
+msgstr ""
+
+#: cmdline.py:150
+msgid "Calibre db"
+msgstr ""
+
+#: cmdline.py:154
+msgid "Not a valid database file"
+msgstr ""
+
+#: cmdline.py:155
+msgid "File ({}) is not a valid database file"
+msgstr ""
+
+#: cmdline.py:204
+msgid "Choose Library"
+msgstr ""
+
+#: cmdline.py:208
+msgid "Choose library"
+msgstr ""
+
+#: cmdline.py:211
+msgid "Options"
+msgstr ""
+
+#: cmdline.py:218
+msgid "Override Database Path"
+msgstr ""
+
+#: cmdline.py:221
+msgid "Allows you to specify the full path to metadata.db. Using this variable you can have metadata.db be in a location other than the library folder."
+msgstr ""
+
+#: cmdline.py:225
+msgid "Choose database path"
+msgstr ""
+
+#: cmdline.py:230
+msgid "Re-initialize db every nth book (Experimental):"
+msgstr ""
+
+#: cmdline.py:232
+msgid "Prevent gradual speed deterioration when importing large number of books"
+msgstr ""
+
+#: cmdline.py:260
+msgid "Error"
+msgstr ""
+
+#: cmdline.py:260
+msgid "You must choose a library"
+msgstr ""
+
+#: config.py:976
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+
+#: config.py:980
+msgid "Reset &confirmation dialogs"
+msgstr ""
+
+#: config.py:981
+msgid "Reset all show me again dialogs for the Import list plugin"
+msgstr ""
+
+#: config.py:985
+msgid "&View library preferences"
+msgstr ""
+
+#: config.py:986
+msgid "View data stored in the library database for this plugin"
+msgstr ""
+
+#: config.py:995
+msgid "Done"
+msgstr ""
+
+#: config.py:996
+msgid "Confirmation dialogs have all been reset"
+msgstr ""
+
+#: encodings.py:98
+msgid "Add or Remove"
+msgstr ""
+
+#: encodings.py:99
+msgid "detect encoding"
+msgstr ""
+
+#: encodings.py:236
+msgid "Description"
+msgstr ""
+
+#: encodings.py:236
+msgid "Encoding"
+msgstr ""
+
+#: encodings.py:241
+msgid "Choose Encodings"
+msgstr ""
+
+#: encodings.py:245
+msgid "Available Encodings:"
+msgstr ""
+
+#: encodings.py:249
+msgid "Chosen Encodings:"
+msgstr ""
+
+#: encodings.py:261
+msgid "Add the selected encoding"
+msgstr ""
+
+#: encodings.py:264
+msgid "Remove the selected encoding"
+msgstr ""
+
+#: encodings.py:282
+msgid "Move the selected item up"
+msgstr ""
+
+#: encodings.py:286
+msgid "Move the selected item down"
+msgstr ""
+
+#: encodings.py:290
+msgid "Reset to defaults"
+msgstr ""
+
+#: encodings.py:356
+msgid "No encodings selected"
+msgstr ""
+
+#: encodings.py:356 page_resolve.py:128 tab_common.py:360
+msgid "You must select one or more fields first."
+msgstr ""
+
+#: models.py:101
+msgid "A matching book was found in your calibre library"
+msgstr ""
+
+#: models.py:103
+msgid ""
+"Multiple matches found for this title/author.\n"
+"Resolve this by selecting your match below."
+msgstr ""
+
+#: models.py:106
+msgid ""
+"No matching book found in your library.\n"
+"Add an empty book or search for a match below."
+msgstr ""
+
+#: models.py:109
+msgid "An empty book will be added if you save this list"
+msgstr ""
+
+#: models.py:111
+msgid "This book was added to your list manually"
+msgstr ""
+
+#: models.py:147 page_resolve.py:615
+msgid "Unknown"
+msgstr ""
+
+#: page_import.py:101
+msgid "Show only rows with errors"
+msgstr ""
+
+#: page_import.py:103
+msgid "<p style=\"font-style:italic;margin-left:30px;\">(errors highlighted in <span style=\"color:red;\">red</span>)</p>"
+msgstr ""
+
+#: page_import.py:127
+msgid ""
+"Some cells contain data that does not match calibre datatypes.\n"
+"\t\tErrors are detailed below:\n"
+msgstr ""
+
+#: page_import.py:135
+msgid ""
+"\n"
+"Title field is mandatory. The following rows contain empty titles:\n"
+"{}\n"
+msgstr ""
+
+#: page_import.py:142
+msgid ""
+"\n"
+"Column \"{colname}\" must contain only data of type \"{datatype}\".\n"
+"\t\tThe following rows have invalid type for column {colname}:\n"
+msgstr ""
+
+#: page_import.py:147
+msgid "Validation errors details"
+msgstr ""
+
+#: page_import.py:197
+msgid "Title field is mandatory and cannot be empty"
+msgstr ""
+
+#: page_import.py:208
+msgid "Data must be of type: {}"
+msgstr ""
+
+#: page_import.py:310
+msgid "Step 1: Configure a list source"
+msgstr ""
+
+#: page_import.py:324
+msgid "User Settings"
+msgstr ""
+
+#: page_import.py:325
+msgid "Predefined"
+msgstr ""
+
+#: page_import.py:326
+msgid "Clipboard"
+msgstr ""
+
+#: page_import.py:327
+msgid "CSV File"
+msgstr ""
+
+#: page_import.py:328
+msgid "Web Page"
+msgstr ""
+
+#: page_import.py:375 page_resolve.py:420
+msgid "&Remove book"
+msgstr ""
+
+#: page_import.py:376
+msgid "Remove selected books from the list"
+msgstr ""
+
+#: page_import.py:380
+msgid "&Export to csv"
+msgstr ""
+
+#: page_import.py:381
+msgid "Export selected books to csv file"
+msgstr ""
+
+#: page_import.py:393 page_resolve.py:574
+msgid "Are you sure you want to remove the selected books from the list?"
+msgstr ""
+
+#: page_import.py:413
+msgid "Choose file for exported csv"
+msgstr ""
+
+#: page_persist.py:80
+msgid "Current step progress:"
+msgstr ""
+
+#: page_persist.py:86
+msgid "Step"
+msgstr ""
+
+#: page_persist.py:101
+msgid "Importing"
+msgstr ""
+
+#: page_persist.py:111
+msgid "Aborting"
+msgstr ""
+
+#: page_persist.py:171
+msgid "Step 3: Save your imported list / configuration"
+msgstr ""
+
+#: page_persist.py:175
+msgid "Reading List plugin:"
+msgstr ""
+
+#: page_persist.py:180
+msgid "If you have the <a href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Reading list</a> plugin installed, you can store the imported books into a list for use by that plugin."
+msgstr ""
+
+#: page_persist.py:184
+msgid "&Do not use the Reading List plugin"
+msgstr ""
+
+#: page_persist.py:186
+msgid "Create a &new list:"
+msgstr ""
+
+#: page_persist.py:188
+msgid "&Update an existing list:"
+msgstr ""
+
+#: page_persist.py:190
+msgid "&Clear list first replacing with the imported books"
+msgstr ""
+
+#: page_persist.py:210
+msgid "Save configuration:"
+msgstr ""
+
+#: page_persist.py:215
+msgid "You can choose to store the current import settings, if you intend to import from this source again in future."
+msgstr ""
+
+#: page_persist.py:217
+msgid "&Do not save the current settings"
+msgstr ""
+
+#: page_persist.py:219
+msgid "&Save settings as:"
+msgstr ""
+
+#: page_persist.py:380
+msgid "Custom Column Missing"
+msgstr ""
+
+#: page_persist.py:381
+msgid "You are importing to a custom column '%s' which does not exist in this library.<p>"
+msgstr ""
+
+#: page_persist.py:382
+msgid "This column will be ignored. Either add a matching custom column or edit your import statement."
+msgstr ""
+
+#: page_persist.py:389
+msgid "ImportList plugin: no metadata found for column:"
+msgstr ""
+
+#: page_persist.py:448
+msgid "Adding books (%(idx)d of %(count)d): %(title)s"
+msgstr ""
+
+#: page_persist.py:460
+msgid "Updating books (%(idx)d of %(count)d): %(title)s"
+msgstr ""
+
+#: page_persist.py:482
+msgid "You have not specified a reading list name"
+msgstr ""
+
+#: page_persist.py:482 page_persist.py:488
+msgid "Invalid List Name"
+msgstr ""
+
+#: page_persist.py:488
+msgid "Another list exists with this name"
+msgstr ""
+
+#: page_persist.py:502
+msgid "Invalid Setting Name"
+msgstr ""
+
+#: page_persist.py:502
+msgid "You have not specified a setting name"
+msgstr ""
+
+#: page_persist.py:545
+msgid "Failed"
+msgstr ""
+
+#: page_resolve.py:56
+msgid "Update metadata fields"
+msgstr ""
+
+#: page_resolve.py:70
+msgid "Select all"
+msgstr ""
+
+#: page_resolve.py:72
+msgid "Clear all"
+msgstr ""
+
+#: page_resolve.py:128 tab_common.py:360
+msgid "No fields selected"
+msgstr ""
+
+#: page_resolve.py:202
+msgid "Step 2: Match list of books against your library"
+msgstr ""
+
+#: page_resolve.py:216
+msgid "Show All"
+msgstr ""
+
+#: page_resolve.py:218
+msgid "Matched"
+msgstr ""
+
+#: page_resolve.py:219
+msgid "Unmatched"
+msgstr ""
+
+#: page_resolve.py:229
+msgid "Filter by match algorithm"
+msgstr ""
+
+#: page_resolve.py:238
+msgid "Books in list:"
+msgstr ""
+
+#: page_resolve.py:240 page_resolve.py:1032 page_resolve.py:1036
+msgid "Matches in library:"
+msgstr ""
+
+#: page_resolve.py:258
+msgid "Clear the match associated with the selected books in the list"
+msgstr ""
+
+#: page_resolve.py:262
+msgid "Remove the selected books from the list"
+msgstr ""
+
+#: page_resolve.py:266
+msgid "Create an empty book for the selected books in the list"
+msgstr ""
+
+#: page_resolve.py:270
+msgid "Update metadata for the selected books in the list"
+msgstr ""
+
+#: page_resolve.py:274
+msgid "Revert metadata for the selected books back to existing values"
+msgstr ""
+
+#: page_resolve.py:283
+msgid "Possible matches for selected book:"
+msgstr ""
+
+#: page_resolve.py:291
+msgid "Search:"
+msgstr ""
+
+#: page_resolve.py:293
+msgid "&Go!"
+msgstr ""
+
+#: page_resolve.py:313
+msgid "Select this book as the match for this list title"
+msgstr ""
+
+#: page_resolve.py:317
+msgid "Append this book as a new item on the list"
+msgstr ""
+
+#: page_resolve.py:417
+msgid "&Clear match"
+msgstr ""
+
+#: page_resolve.py:425
+msgid "Match &empty book"
+msgstr ""
+
+#: page_resolve.py:428
+msgid "&Update metadata"
+msgstr ""
+
+#: page_resolve.py:431
+msgid "&Revert metadata"
+msgstr ""
+
+#: page_resolve.py:434
+msgid "S&wap Author Names"
+msgstr ""
+
+#: page_resolve.py:435
+msgid "Swap selected author names between FN LN and LN,FN"
+msgstr ""
+
+#: page_resolve.py:439
+msgid "&Search for title/author"
+msgstr ""
+
+#: page_resolve.py:440
+msgid "&Search your library using a simplified title/author of this book"
+msgstr ""
+
+#: page_resolve.py:442
+msgid "Search for &title"
+msgstr ""
+
+#: page_resolve.py:443
+msgid "&Search your library using a simplified title of this book"
+msgstr ""
+
+#: page_resolve.py:445
+msgid "Search for &author"
+msgstr ""
+
+#: page_resolve.py:446
+msgid "&Search your library using a simplified author of this book"
+msgstr ""
+
+#: page_resolve.py:466
+msgid "&Select Book"
+msgstr ""
+
+#: page_resolve.py:471
+msgid "&Append to list"
+msgstr ""
+
+#: page_resolve.py:562
+msgid "*** No Match ***"
+msgstr ""
+
+#: page_resolve.py:726
+msgid "Are you sure you want to add the selected book to the list?"
+msgstr ""
+
+#: page_resolve.py:757
+msgid "No Match"
+msgstr ""
+
+#: page_resolve.py:841
+msgid "*** Multiple Matches ***"
+msgstr ""
+
+#: page_resolve.py:866
+msgid "Multiple Matches"
+msgstr ""
+
+#: page_resolve.py:925
+msgid "Displaying all similar matches for this book"
+msgstr ""
+
+#: page_resolve.py:943
+msgid "Search for a book in your library"
+msgstr ""
+
+#: page_resolve.py:1034
+msgid "Matches in library:(1 match)"
+msgstr ""
+
+#: tab_clipboard.py:50
+msgid "&Paste your book list here:"
+msgstr ""
+
+#: tab_clipboard.py:56
+msgid "&Paste"
+msgstr ""
+
+#: tab_clipboard.py:57
+msgid "Replace all text above with the contents of your clipboard"
+msgstr ""
+
+#: tab_clipboard.py:68
+msgid "Conversion expression:"
+msgstr ""
+
+#: tab_clipboard.py:73
+msgid "Set a <a href=\"http://manual.calibre-ebook.com/regexp.html\">regular expression</a> to use for titles and other metadata. The group names you can use include"
+msgstr ""
+
+#: tab_clipboard.py:87
+msgid "Choose a predefined named pattern"
+msgstr ""
+
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:301
+msgid "&Clear"
+msgstr ""
+
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:302
+msgid "Clear all settings back to the defaults on this tab"
+msgstr ""
+
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:304
+msgid "&Fields"
+msgstr ""
+
+#: tab_clipboard.py:100
+msgid "Add expression for field to import"
+msgstr ""
+
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:307
+msgid "Reverse order"
+msgstr ""
+
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:308
+msgid "Display the books in the opposite order to the source"
+msgstr ""
+
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:309
+msgid "&Preview"
+msgstr ""
+
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:310
+msgid "Preview the results in the books grid"
+msgstr ""
+
+#: tab_clipboard.py:173
+msgid ""
+"Failed to parse page:\n"
+msgstr ""
+
+#: tab_clipboard.py:174
+msgid "Invalid regular expression"
+msgstr ""
+
+#: tab_common.py:140
+msgid "Title"
+msgstr ""
+
+#: tab_common.py:141
+msgid "Authors"
+msgstr ""
+
+#: tab_common.py:142
+msgid "Series"
+msgstr ""
+
+#: tab_common.py:143
+msgid "Series Index"
+msgstr ""
+
+#: tab_common.py:144
+msgid "Published"
+msgstr ""
+
+#: tab_common.py:145
+msgid "Publisher"
+msgstr ""
+
+#: tab_common.py:146
+msgid "Rating"
+msgstr ""
+
+#: tab_common.py:147
+msgid "Tags"
+msgstr ""
+
+#: tab_common.py:148
+msgid "Comments"
+msgstr ""
+
+#: tab_common.py:149
+msgid "Languages"
+msgstr ""
+
+#: tab_common.py:317
+msgid "Select field(s) to add:"
+msgstr ""
+
+#: tab_common.py:369
+msgid "Select fields to import:"
+msgstr ""
+
+#: tab_common.py:436
+msgid "&Match Method:"
+msgstr ""
+
+#: tab_common.py:439
+msgid "&Title/Author"
+msgstr ""
+
+#: tab_common.py:443
+msgid "&Identifier:"
+msgstr ""
+
+#: tab_csv.py:102
+msgid "&Import from file:"
+msgstr ""
+
+#: tab_csv.py:114
+msgid "Choose the file to import"
+msgstr ""
+
+#: tab_csv.py:121
+msgid "&Contents:"
+msgstr ""
+
+#: tab_csv.py:126 tab_webpage.py:202
+msgid "&Encoding:"
+msgstr ""
+
+#: tab_csv.py:142
+msgid "&Delimiter:"
+msgstr ""
+
+#: tab_csv.py:146
+msgid "&Tab"
+msgstr ""
+
+#: tab_csv.py:147
+msgid "&Other:"
+msgstr ""
+
+#: tab_csv.py:156
+msgid "Processing:"
+msgstr ""
+
+#: tab_csv.py:160
+msgid "S&kip first row"
+msgstr ""
+
+#: tab_csv.py:161
+msgid "Select this option to ignore the first row of column headings"
+msgstr ""
+
+#: tab_csv.py:162
+msgid "&Unquote"
+msgstr ""
+
+#: tab_csv.py:163
+msgid "Remove any quotes around columns of data"
+msgstr ""
+
+#: tab_csv.py:165
+msgid "Tidy"
+msgstr ""
+
+#: tab_csv.py:166
+msgid ""
+"Clean title and authors before importing. This is intended for web imports but is optional for csv\n"
+"It includes removing leading and trailing periods and commas, removing some special characters\n"
+"and removing numbers indicating a position at the begining of the string."
+msgstr ""
+
+#: tab_csv.py:184
+msgid " &Columns To Import: "
+msgstr ""
+
+#: tab_csv.py:210 tab_webpage.py:305
+msgid "Select field(s) to import"
+msgstr ""
+
+#: tab_csv.py:213
+msgid "&From headers"
+msgstr ""
+
+#: tab_csv.py:214
+msgid "Guess field(s) from csv headers"
+msgstr ""
+
+#: tab_csv.py:318
+msgid "Select a CSV file to import"
+msgstr ""
+
+#: tab_csv.py:318
+msgid "import CSV file dialog"
+msgstr ""
+
+#: tab_csv.py:344
+msgid "File not specified"
+msgstr ""
+
+#: tab_csv.py:344
+msgid "You have not specified a path to a CSV file"
+msgstr ""
+
+#: tab_csv.py:349
+msgid "File not found"
+msgstr ""
+
+#: tab_csv.py:349
+msgid "No file found at this location"
+msgstr ""
+
+#: tab_csv.py:366
+msgid "Invalid options"
+msgstr ""
+
+#: tab_csv.py:366
+msgid "You have not specified a delimiter"
+msgstr ""
+
+#: tab_settings.py:47
+msgid "Browser"
+msgstr ""
+
+#: tab_settings.py:48
+msgid "View related website page in your web browser"
+msgstr ""
+
+#: tab_settings.py:50
+msgid "Edit"
+msgstr ""
+
+#: tab_settings.py:51
+msgid "Edit this saved setting"
+msgstr ""
+
+#: tab_settings.py:105
+msgid "Delete"
+msgstr ""
+
+#: tab_settings.py:107
+msgid "Rename"
+msgstr ""
+
+#: tab_settings.py:109
+msgid "Export"
+msgstr ""
+
+#: tab_settings.py:111
+msgid "Import."
+msgstr ""
+
+#: tab_settings.py:126
+msgid "Are you sure you want to remove the setting \"%s\"?"
+msgstr ""
+
+#: tab_settings.py:127
+msgid "import_list_delete_setting"
+msgstr ""
+
+#: tab_settings.py:140 tab_settings.py:141
+msgid "New setting name:"
+msgstr ""
+
+#: tab_settings.py:148
+msgid "Setting exists"
+msgstr ""
+
+#: tab_settings.py:149
+msgid "A saved setting already exists with this name."
+msgstr ""
+
+#: tab_settings.py:168
+msgid "Import Failed"
+msgstr ""
+
+#: tab_settings.py:169
+msgid "This is not a valid Import List export archive"
+msgstr ""
+
+#: tab_settings.py:176
+msgid "Import setting"
+msgstr ""
+
+#: tab_settings.py:217
+msgid "Export completed"
+msgstr ""
+
+#: tab_settings.py:218
+msgid "Cover setting exported to"
+msgstr ""
+
+#: tab_settings.py:226
+msgid "Enter a unique name for this saved setting:"
+msgstr ""
+
+#: tab_settings.py:235
+msgid "Cannot add"
+msgstr ""
+
+#: tab_settings.py:236
+msgid "The name you specified is not unique"
+msgstr ""
+
+#: tab_settings.py:242
+msgid "Select setting file(s) to import"
+msgstr ""
+
+#: tab_settings.py:249
+msgid "Save setting as"
+msgstr ""
+
+#: tab_settings.py:334
+msgid "View as List"
+msgstr ""
+
+#: tab_settings.py:336
+msgid "View by Category"
+msgstr ""
+
+#: tab_webpage.py:75
+msgid "Strip matching text"
+msgstr ""
+
+#: tab_webpage.py:76
+msgid "Include matching text"
+msgstr ""
+
+#: tab_webpage.py:91
+msgid "Choose a predefined pattern"
+msgstr ""
+
+#: tab_webpage.py:96
+msgid "Clear the regular expression"
+msgstr ""
+
+#: tab_webpage.py:176
+msgid "&Download from url:"
+msgstr ""
+
+#: tab_webpage.py:189
+msgid "Paste a URL from your clipboard"
+msgstr ""
+
+#: tab_webpage.py:194
+msgid "Open this url in your web browser"
+msgstr ""
+
+#: tab_webpage.py:201
+msgid "&Source html:"
+msgstr ""
+
+#: tab_webpage.py:203
+msgid "Specify the web page encoding if not utf-8"
+msgstr ""
+
+#: tab_webpage.py:206
+msgid "Load javascript"
+msgstr ""
+
+#: tab_webpage.py:207
+msgid "Enable this option if the web page renders its content using javascript"
+msgstr ""
+
+#: tab_webpage.py:208
+msgid "&Delay:"
+msgstr ""
+
+#: tab_webpage.py:209
+msgid "Additional delay in seconds to wait for web page javascript to execute"
+msgstr ""
+
+#: tab_webpage.py:228
+msgid "Find:"
+msgstr ""
+
+#: tab_webpage.py:233
+msgid "&Text:"
+msgstr ""
+
+#: tab_webpage.py:234
+msgid ""
+"Search for text to help locate the region of interest such as\n"
+"a book name when designing your xpath expressions"
+msgstr ""
+
+#: tab_webpage.py:237
+msgid "Search for specific text"
+msgstr ""
+
+#: tab_webpage.py:239
+msgid "&Find"
+msgstr ""
+
+#: tab_webpage.py:252
+msgid "XPath:"
+msgstr ""
+
+#: tab_webpage.py:257
+msgid "Specify XPath expressions to identify the parent rows and title / authors within each row in the source html."
+msgstr ""
+
+#: tab_webpage.py:281
+msgid "0 occurrences"
+msgstr ""
+
+#: tab_webpage.py:282
+msgid "Number of matches using Test"
+msgstr ""
+
+#: tab_webpage.py:284
+msgid "Previous test result"
+msgstr ""
+
+#: tab_webpage.py:289
+msgid "Next test result"
+msgstr ""
+
+#: tab_webpage.py:353
+msgid "No matches"
+msgstr ""
+
+#: tab_webpage.py:353
+msgid "No matches for:"
+msgstr ""
+
+#: tab_webpage.py:405
+msgid "Identify the parent node in the html source that contains a single book"
+msgstr ""
+
+#: tab_webpage.py:448
+msgid "Strip: %s"
+msgstr ""
+
+#: tab_webpage.py:450
+msgid "Include: %s"
+msgstr ""
+
+#: tab_webpage.py:453
+msgid "No expression"
+msgstr ""
+
+#: tab_webpage.py:569 tab_webpage.py:570
+msgid "Failed to download page"
+msgstr ""
+
+#: tab_webpage.py:613
+msgid "You must specify an xpath"
+msgstr ""
+
+#: tab_webpage.py:613 tab_webpage.py:620
+msgid "Test failed"
+msgstr ""
+
+#: tab_webpage.py:620
+msgid "No html source available to match against"
+msgstr ""
+
+#: tab_webpage.py:636 tab_webpage.py:782 tab_webpage.py:784 tab_webpage.py:786
+#: tab_webpage.py:788
+msgid "Invalid xpath"
+msgstr ""
+
+#: tab_webpage.py:637
+msgid "Your xpath expression is invalid"
+msgstr ""
+
+#: tab_webpage.py:645
+msgid "occurrences"
+msgstr ""
+
+#: tab_webpage.py:782
+msgid "You have not specified any xpath expressions"
+msgstr ""
+
+#: tab_webpage.py:784
+msgid "You have not specified a title xpath expression"
+msgstr ""
+
+#: tab_webpage.py:786
+msgid "You must add a series_index xpath field if using series"
+msgstr ""
+
+#: tab_webpage.py:788
+msgid "You must add a series xpath field if using series index"
+msgstr ""
+
+#: tab_webpage.py:911 tab_webpage.py:912
+msgid "Failed to process page"
+msgstr ""
+
+#: wizards.py:42
+msgid "Import Book List"
+msgstr ""
+
+#: wizards.py:48
+msgid "&Options"
+msgstr ""
+

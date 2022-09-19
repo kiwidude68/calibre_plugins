@@ -1,0 +1,1180 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Modify ePub Plugin Help</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Wingdings;
+    panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+    {font-family:Tahoma;
+    panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+    {font-family:Calibri;
+    panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+    {font-family:Cambria;
+    panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:10.0pt;
+    margin-left:0cm;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:Calibri;}
+h1
+    {margin-top:12.0pt;
+    margin-right:0cm;
+    margin-bottom:12.0pt;
+    margin-left:0cm;
+    line-height:115%;
+    page-break-after:avoid;
+    font-size:14.0pt;
+    font-family:Cambria;
+    color:#365F91;}
+h2
+    {margin-top:18.0pt;
+    margin-right:0cm;
+    margin-bottom:6.0pt;
+    margin-left:0cm;
+    line-height:115%;
+    page-break-after:avoid;
+    font-size:13.0pt;
+    font-family:Cambria;
+    color:#4F81BD;}
+h3
+    {margin-top:12.0pt;
+    margin-right:0cm;
+    margin-bottom:3.0pt;
+    margin-left:0cm;
+    line-height:115%;
+    page-break-after:avoid;
+    font-size:13.0pt;
+    font-family:Cambria;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+    {margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:10.0pt;
+    margin-left:0cm;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:Calibri;}
+a:link, span.MsoHyperlink
+    {color:blue;
+    text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+    {color:purple;
+    text-decoration:underline;}
+tt
+    {font-family:"Courier New";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    font-size:8.0pt;
+    font-family:Tahoma;}
+span.CharChar2
+    {font-family:Cambria;
+    color:#4F81BD;
+    font-weight:bold;}
+span.CharChar3
+    {font-family:Cambria;
+    color:#365F91;
+    font-weight:bold;}
+span.CharChar1
+    {font-family:Cambria;
+    font-weight:bold;}
+span.CharChar
+    {font-family:Tahoma;}
+@page Section1
+    {size:595.3pt 841.9pt;
+    margin:72.0pt 99.25pt 72.0pt 35.35pt;}
+div.Section1
+    {page:Section1;}
+ /* List Definitions */
+ ol
+    {margin-bottom:0cm;}
+ul
+    {margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-GB" link="blue" vlink=purple">
+
+<div class="Section1">
+
+<h1 align="center" style='text-align:center'>Modify ePub Plugin Help</h1>
+
+<h2>Introduction</h2>
+
+<p class="MsoNormal">The primary purpose of this plugin is to allow you to make
+repetitive cleanup or modifications to your ePub files to improve their
+appearance, file size or specification quality without the need to perform a calibre
+ePub-&gt;ePub conversion.</p>
+
+<p class="MsoNormal">Performing a calibre conversion will force changes to your
+file that you have no control over, some of which are undesirable. For instance
+the CSS file is completely rewritten, margins are changed, files are split
+based on images being detected, etc. Often there may be no visible harm,
+however in other cases it can and does cause issues.</p>
+
+<p class="MsoNormal">This plugin can be seen as a companion to the Quality
+Check plugin which provides a number of menu options for detecting ePubs
+showing symptoms of issues which this plugin can resolve for you.</p>
+
+<h2>Known Artifacts Modifications</h2>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%"
+ style='width:99.16%;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Option</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>What it does</b></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>How to detect</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove iTunes files</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>When viewing an ePub via iTunes, it will insert a playlist file
+  inside the ePub and sometimes an artwork file for displaying the cover in
+  iTunes. These files can be considered ï¿½cruftï¿½, particularly if you do not
+  intend to use iTunes to view your ePubs in future.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove iTunes plist
+  and artwork files from within the ePub.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality
+</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check iTunes files</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove calibre bookmark files</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>When viewing ePub files in calibre, it will insert a bookmarks file
+  similar to iTunes above storing your last reading position and any bookmarks
+  added. You can disable this feature of the viewer in the viewer preferences.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove calibre
+  bookmark txt files from within the ePub.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check calibre bookmark files</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove OS artifacts</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>When extracting the contents of an ePub to your hard-drive and then
+  rezipping, there can be additional files created by your operating system
+  inserted that are not related to the ePub. For instance on windows systems an
+  images folder may have a Thumbs.db file generated for the preview view of
+  images in that folder. On MACOSX it may add .DS_Store files.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove OS files from
+  within the ePub.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check OS artifacts</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove unused images</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Looks for orphaned jpg, png and gif files that are not referred to
+  from the HTML content pages and can be removed from the ePub. This can happen
+  if for instance in Sigil you delete a page without removing the associated
+  image(s). <b>WARNING:</b> This does <i>not</i> inspect CSS files.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove unused image
+  files from within the ePub to reduce space required.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check unused image files</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Unpretty</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>De-indents HTML code and makes sure paragraphs/headers have their own lines.</p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Strip spans</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Removes empty formatting elements (ie. &lt;i/&gt; or &lt;b&gt;&lt;/b&gt;) and SPAN elements that have no attributes.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>This also converts empty container elements into self-closing elements (ie. &lt;br&gt;&lt;/br&gt; becomes &lt;br/&gt;).</p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Strip Kobo DRM remnants</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Removes elements related to Kobo's DRM.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>This also removes the kobo.js and rights.xml files from the book, any references to them, and the Kobo CSS definition in the documents.</p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<h2>Manifest (.opf File) Modifications</h2>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%"
+ style='width:99.16%;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="19%" valign="top" style='width:19.68%;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Option</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>What it does</b></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>How to detect</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.68%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove missing file entries from manifest</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>If the ePub has been manually tweaked, it is possible that someone
+  deleted a file from the directory but did not remove the entry from the .opf
+  manifest xml file. Most tools will ignore missing files when viewing or
+  editing that ePub, however it cannot be guaranteed that is always the case.
+  It could also be from a typing error if the manifest was manually edited or
+  the file renamed afterwards.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to cleanup the manifest
+  by removing references to any missing files.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check manifest files missing</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.68%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Add unmanifested files to manifest</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>The ePub may contain files that are not listed in the .opf manifest.
+  These could be from incorrect matching names in the manifest, from orphaned
+  files that should be deleted, or from third party tools that leave ï¿½cruftï¿½
+  inside the ePub file. Note that iTunes files, calibre bookmarks and OS
+  artifacts are explicitly ignored by this check.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to add all files not
+  currently listed in the manifest into it.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check unmanifested files</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.68%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove unmanifested files from ePub</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>See above for the causes. </p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to delete all of the
+  orphaned files in the ePub that are not listed in the manifest file.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check unmanifested files</p>
+  </td>
+ </tr>
+</table>
+
+<h2>Adobe Modifications</h2>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%"
+ style='width:99.16%;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Option</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>What it does</b></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>How to detect</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove margins from Adobe .xpgt files</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>ePubs that have been created using Adobe tools will contain a .xpgt
+  file that enforces margins. These are in conflict with the traditional css
+  styles and can cause wasted space when viewing on devices. Recent versions of
+  calibre when converting will zero any margins in such a file.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to zero the margins in
+  the .xpgt file without needing to perform a conversion.</span></p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>This option is redundant and ignored if you
+  tick ï¿½Remove .xpgt files and links.ï¿½</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check Adobe .xpgt margins</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove Adobe .xpgt files and links</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>As a more extreme version of the remove margins option above, users
+  may choose to obliterate the xpgt file completely along with any links to it
+  from the xhtml files.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove Adobe margins
+  and all associated xpgt cruft without needing to perform a conversion.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check Adobe inline .xpgt links</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove Adobe resource DRM meta tags</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Books that have had DRM protection removed will still contain an
+  Adobe &lt;meta&gt; tag with a urn identifier in the xhtml files. <br>
+  <span style='color:#1F497D'>Use this option to remove Adobe DRM cruft.</span></p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>Important: Using this can <b>break</b>
+  obfuscated fonts in the book.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check Adobe DRM meta tag</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove page maps</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Adobe has defined a proprietary extension to the ePub standard which
+  identifies where pages break in the print version of a book. <br>
+  <span style='color:#1F497D'>Use this option to remove this file and, for
+  Google Play books, the related anchors in the HTML code.</span><br>
+  (This does not affect pagelists found in NCX files, which <b>are</b> part of
+  the ePub standard.)</p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove only Google Play page maps</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>The Google Play bookstore adds an Adobe page map file which does not
+  correspond to any print version of the book.<br>
+  <span style='color:#1F497D'>Use this option to remove <b>only</b> Google Play
+  page map files, as opposed to those from other sources.</span></p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>This option is redundant if you tick ï¿½Remove
+  page maps.ï¿½</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'></p>
+  </td>
+ </tr>
+</table>
+
+<h2>TOC Modifications</h2>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%"
+ style='width:99.16%;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="19%" valign="top" style='width:19.68%;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Option</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>What it does</b></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>How to detect</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.68%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Flatten TOC hierarchy in NCX file</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Some devices do not work well with hierarchical TOC (table of
+  contents) navPoint entries in the ncx file. This option will flatten such
+  entries to all be at the same top level.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to make a flat TOC to
+  work better with some devices.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check TOC hierarchical</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.68%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove broken TOC entries in NCX file</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>An NCX file containing broken links from missing html pages will
+  cause errors when viewed. Broken links are most frequently caused by calibre
+  conversions (orphaned cover page links) or manual editing via Tweak
+  ePub/Sigil and not editing the NCX.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to ensure your TOC does
+  not contain any entries which will cause errors due to missing content.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check TOC with broken links</p>
+  </td>
+ </tr>
+</table>
+
+<h2>Metadata Jacket Modifications</h2>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%"
+ style='width:99.16%;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Option</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>What it does</b></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>How to detect</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove all metadata jackets</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Remove any calibre generated jackets listing book metadata such as
+  title, authors, comments and rating. Jackets removed are both those from the
+  latest versions of calibre, and those ï¿½legacyï¿½ jackets generated using
+  versions of calibre prior to 0.6.50. The ï¿½newerï¿½ jackets are able to be
+  identified by a metadata tag in the xhtml. </p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option if you do not want
+  jackets in your books.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check having any jacket</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove legacy metadata jackets</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Removes calibre generated jackets that were created using versions of
+  calibre prior to 0.6.50. These jackets cause a problem when the file is
+  reconverted, as the calibre code does not detect them and will duplicate and
+  potentially split them. </p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option if you do not want the
+  legacy jackets, or intend to reconvert in future and wish to avoid issues. </span></p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>This option is redundant and ignored if you
+  tick ï¿½Remove all metadata jacketsï¿½</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check having legacy jacket</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Add/replace metadata jacket</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Createsï¿½a metadata jacket page in the ePub if it does not exist, or
+  replaces any existing one if it is found. </p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option if you want to add a
+  metadata jacket without performing a conversion.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Jacket at the end of the book</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>If a jacket is added/replaced, it is placed at the end of the book
+  instead of the beginning.</p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<h2>HTML &amp; Style Modifications</h2>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%"
+ style='width:99.16%;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Option</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>What it does</b></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>How to detect</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Encode HTML in UTF-8</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Some ePubs have an invalid encoding in their HTML pages, which means
+  they render incorrectly in readers like the calibre ebook viewer, Sigil or a
+  web browser. Most often this is seen as characters like <span
+  style='font-size:10.0pt;color:black'>ï¿½ </span>appearing instead of quotes
+  etc. These will however render correctly in ADE. Rather than doing an
+  ePub-&gt;ePub conversion, we can instead strip the invalid &lt;meta&gt; tag
+  from the html pages and insert an xml declaration indicating utf-8 instead
+  which most often will be sufficient to resolve the issue.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to fix invalid encoding
+  declarations on html pages that do not render correctly.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Visually in Sigil or calibre ebook viewer</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove embedded fonts</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Some ePubs carry embedded fonts as .ttf or .otf files, to ensure that
+  their content is rendered with a font representing all the characters they
+  contain. Some devices may not support embedded fonts, and these do
+  significantly increase the ePub size so some users prefer to remove them.
+  This also removes any @font-face declarations from css or html files.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove embedded font
+  files.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check embedded fonts</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Modify @page and body margin styles</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>An ePub that has not been converted by yourself in calibre may have body
+  or @page styles with margins set to values that differ from your desired
+  defaults. You can set your calibre conversion defaults using Preferences
+  -&gt; Conversion -&gt; Common Options -&gt; Page Setup. If you set negative
+  values then this option will remove the margin attributes from the ePub , and
+  if a CSS file is now empty then it will be removed from the ePub completely.
+  Otherwise it will write whatever default value you have specified into a new
+  @page style in each CSS file. Note it does not currently support changing
+  named body styles.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove @page and body
+  margin values and if your calibre defaults are non-negative then rewrite into
+  an @page style.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check CSS book margins and Check inline @page margins</p>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Append extra CSS</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Use this option to append any css style information from:</p>
+ <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>"Preferences->Common Options->Look & Feel->Extra CSS" to each .css file in the ePub.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to append extra CSS styles to your ePub
+  without a conversion.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Smarten punctuation</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Processes any html files in the ePub to ensure quotes and apostrophes
+  are converted to smart quotes. In addition, double hyphens (--) are converted
+  to an emdash (ï¿½).</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to prettify your ePub
+  without a conversion.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check smarten punctuation</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove inline javascript and files</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Looks for any .js files forming part of the ePub and and inline
+  &lt;script type=ï¿½text/javascriptï¿½&gt; blocks. Javascript is usually a
+  leftover from an original conversion from html and is unnecessary in an ePub.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove javascript
+  cruft from your ePubs.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check javascript &lt;script&gt;</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<h2>Cover Modifications</h2>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%"
+ style='width:99.16%;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Option</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>What it does</b></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>How to detect</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove broken image pages</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Looks for html pages that contain nothing but a &lt;img&gt; or
+  &lt;image&gt; tag that links to a non-existent image file. If that html page
+  body contains no other text content, then the html page will be completely
+  removed from the epub.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove orphaned cover
+  pages that result from some calibre epub conversions due to the way it replaces
+  some cover pages.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check broken image linksï¿½ will find a superset of all broken image
+  links. View the log for details.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove existing cover</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Examines the ePub to see if it has an existing cover identified by
+  guide and/or meta entries in the opf manifest. If such a cover can be found,
+  the relevant entries that indicate it is a cover page are removed, along with
+  the cover page itself if it has no other images/text on it.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove cover pages
+  from an epub if you do not want them such as either to reduce size or if
+  removing calibre generated default covers.</span></p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:red'>This option is redundant and ignored if you
+  tick ï¿½Insert or replace cover.ï¿½</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Insert or replace cover</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Performs the same steps as ï¿½Remove existing coverï¿½ above to identify
+  and remove any existing cover. A new cover page will be generated using your
+  default ePub output options and inserted as the first page in your ePub using
+  the image associated with that book in your library. This option is far more
+  reliable than using ï¿½Update metadataï¿½ option below to replace your covers, as
+  it handles far more scenarios of identifying an existing cover.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to insert a new cover
+  (replacing the existing one if detectable) to your ePub without requiring a
+  conversion.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<h2>Metadata Modifications</h2>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="99%"
+ style='width:99.16%;margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Option</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>What it does</b></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b>How to detect</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Update metadata</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Updates the ePub metadata in the manifest (such as title,
+  description, authors etc). In some limited circumstances it will also update
+  the cover as well, however you should instead also check the ï¿½Insert or
+  replace coverï¿½ option for a more reliable cover replacement option.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to update the
+  title/author/description internal metadata for your ePub to get it ï¿½up to
+  dateï¿½ for use in the calibre ebook viewer.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="19%" valign="top" style='width:19.7%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><i>Remove non dc: metadata elements</i></b></p>
+  </td>
+  <td width="59%" valign="top" style='width:59.14%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Applications like calibre and Sigil will insert metadata elements of
+  their own in the manifest opf file that have no relevance to the ePub and are
+  either informational or only for use by that tool. The ï¿½Update metadataï¿½
+  option above will insert such elements. These elements do no harm, but if you
+  are publishing your ePub via other websites, you may want such evidence of
+  editing removed first.</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='color:#1F497D'>Use this option to remove any elements
+  from the manifest xml that start with the dc: namespace for a clean ePub.</span></p>
+  </td>
+  <td width="21%" valign="top" style='width:21.16%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Quality Check:</p>
+  <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>Check non dc: metadata</p>
+  </td>
+ </tr>
+</table>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<h2>Further Help</h2>
+
+<p class="MsoNormal">For any problems, issues or obtaining the latest version of
+this plugin, please refer to the MobileRead forums for calibre plugins.</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

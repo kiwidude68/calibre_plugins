@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Cm Fy, 2022
+# Thiago Oliveira <thiago.eec@gmail.com>, 2022
+# Weigler Godoy, 2022
+# Paulo_Neto <layoutbr@lexxa.com.br>, 2022
+# Wagner Marques <wagnermarques00@hotmail.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 15:50+0100\n"
+"PO-Revision-Date: 2022-09-13 17:16+0000\n"
+"Last-Translator: Wagner Marques <wagnermarques00@hotmail.com>, 2022\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/calibre/teams/19337/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:86
+msgid "Keyboard shortcuts"
+msgstr "Atalhos do teclado"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reinicie o calibre agora"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Limpar"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Limpar todas as configurações para este plugin"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Qualquer configuração em outras bibliotecas ou armazenadas em um arquivo "
+"JSON na pasta dos seus plugins do calibre não serão tocadas."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Você precisa reiniciar o calibre depois disso."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Reinicie o calibre agora."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Você tem certeza que deseja limpar as configurações em sua biblioteca para "
+"este plugin?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Todas as configurações deste plugin nesta biblioteca foram limpas."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Não definido"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:35
+msgid "User category"
+msgstr "Categoria de Usuário"
+
+#: action.py:42
+msgid "authors"
+msgstr "autores"
+
+#: action.py:42
+msgid "series"
+msgstr "séries"
+
+#: action.py:43
+msgid "publishers"
+msgstr "editoras"
+
+#: action.py:43
+msgid "tags"
+msgstr "tags"
+
+#: action.py:96
+msgid "Add selected"
+msgstr "Adicionar selecionado"
+
+#: action.py:109
+msgid "Move selected"
+msgstr "Mover selecionado"
+
+#: action.py:122
+msgid "Remove selected"
+msgstr "Remover selecionado"
+
+#: action.py:130
+msgid "Show in tag browser"
+msgstr "Mostrar no navegador"
+
+#: action.py:133
+msgid "Manage user categories"
+msgstr "Gerenciar categorias de usuário"
+
+#: action.py:136
+msgid "&Customize plugin"
+msgstr "Customizar plugin"
+
+#: action.py:156
+msgid "View user category"
+msgstr "Ver categorias de usuários"
+
+#: action.py:159
+msgid "Manage user category"
+msgstr "Gerenciar categorias de usuários"
+
+#: action.py:164
+msgid "Add %s to user category: %s"
+msgstr "Adicionar %s a uma categoria de usuário: %s"
+
+#: action.py:166
+msgid "Move %s to user category: %s"
+msgstr "Mover %s para uma categoria de usuário: %s"
+
+#: action.py:168
+msgid "Remove %s from user category: %s"
+msgstr "Remover %s de uma categoria de usuário: %s"
+
+#: action.py:270 action.py:278
+msgid "Cannot modify user category"
+msgstr "Impossível modificar a categoria de usuário"
+
+#: action.py:271
+msgid "No new values in books selected"
+msgstr "Nenhuma informação nova nos livros selecionados"
+
+#: action.py:279
+msgid "Selected user category not found. Please restart Calibre."
+msgstr ""
+"Categoria de usuário selecionada não encontrada. Por favor, reinicie o "
+"Calibre."
+
+#: action.py:338
+msgid "Cannot view user category"
+msgstr "Impossível ver a categoria de usuário"
+
+#: action.py:339
+msgid "User category not found"
+msgstr "Categoria de usuário não encontrada"
+
+#: config.py:45
+msgid "Add to user category"
+msgstr "Adicionar a uma categoria de usuário"
+
+#: config.py:46
+msgid "Move to user category"
+msgstr "Mover para uma categoria de usuário"
+
+#: config.py:47
+msgid "Remove from user category"
+msgstr "Remover de uma categoria de usuário"
+
+#: config.py:50
+msgid "Authors"
+msgstr "Autores"
+
+#: config.py:51
+msgid "Series"
+msgstr "Série"
+
+#: config.py:52
+msgid "Publishers"
+msgstr "Editoras"
+
+#: config.py:53
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: config.py:63
+msgid "Menu actions to display:"
+msgstr "Ações de menu para exibir:"
+
+#: config.py:74
+msgid "Book metadata types to add/remove:"
+msgstr "Tipos de metadata de livros para adicionar/remover:"
+
+#: config.py:87
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Editar atalhos de teclado associados a este plugin"

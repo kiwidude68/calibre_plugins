@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Pk11 <epicpkmn11@outlook.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-08 20:50+0100\n"
+"PO-Revision-Date: 2022-09-08 19:50+0000\n"
+"Last-Translator: Pk11 <epicpkmn11@outlook.com>, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/calibre/teams/19337/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: config.py:52
+msgid "Maximum title/author search matches to evaluate (1 = fastest):"
+msgstr "タイトル・著者の検索を実行しますの最大数（1 = 高速）："
+
+#: config.py:53
+msgid ""
+"Increasing this value will consider more editions but also increase search times.\n"
+"\n"
+"This will increase the potential likelihood of getting a larger cover image\n"
+"but does not guarantee it."
+msgstr ""
+"これを上げると、もっとエディションを確認するが検索時間を上げられる。\n"
+"\n"
+"より大きな表紙画像が得られる可能性を上げるが、保証するものではありません。"
+
+#: config.py:65
+msgid "Get all contributing authors (e.g. editors, illustrators etc)"
+msgstr "全ての貢献する著者を取得します（例：エディター、イラストレーターなど）"
+
+#: config.py:66
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"これをチェックすると、全ての著者が取得されます。\n"
+"\n"
+"チェック解除する(デフォルト)と、主な著者のみが取得されます。"

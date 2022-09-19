@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Jellby <jellby@yahoo.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:29+0100\n"
+"PO-Revision-Date: 2022-09-08 19:50+0000\n"
+"Last-Translator: Jellby <jellby@yahoo.com>, 2022\n"
+"Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: config.py:48
+msgid "Maximum title/author search matches to evaluate (1 = fastest):"
+msgstr ""
+"Máximo número de coincidencias de búsqueda de título o autor para evaluar (1"
+" = más rápido):"
+
+#: config.py:49
+msgid ""
+"Increasing this value will consider more editions but also increase search times.\n"
+"\n"
+"This will increase the potential likelihood of getting a larger cover image\n"
+"but does not guarantee it."
+msgstr ""
+"Si se aumenta este valor se considerarán más ediciones pero también aumentarán los tiempos de búsqueda.\n"
+"\n"
+"Esto incrementará potencialmente la probabilidad de obtener una imagen de portada más grande.\n"
+"pero no lo garantiza."
+
+#: config.py:61
+msgid "Get all contributing authors (e.g. editors, illustrators etc)"
+msgstr ""
+"Obtener todos los autores contribuyentes (por ejemplo, editores, "
+"ilustradores, etc.)"
+
+#: config.py:62
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"Cuando se marca esta opción, se recuperan todos los autores.\n"
+"\n"
+"Cuando no está marcada (predeterminado), sólo se devuelven los autores principales."

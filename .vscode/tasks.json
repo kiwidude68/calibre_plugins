@@ -1,0 +1,855 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Baen -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\baen\\.build"
+            },
+        },
+        {
+            "label": "Baen -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\baen\\.build"
+            },
+        },
+        {
+            "label": "Barnes Noble -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\barnes_noble\\.build"
+            },
+        },
+        {
+            "label": "Barnes Noble -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\barnes_noble\\.build"
+            },
+        },
+        {
+            "label": "Barnes Noble -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\barnes_noble\\.build"
+            },
+        },
+        {
+            "label": "Barnes Noble -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\barnes_noble\\.build"
+            },
+        },
+        {
+            "label": "Clipboard Search -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\clipboard_search\\.build"
+            },
+        },
+        {
+            "label": "Clipboard Search -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\clipboard_search\\.build"
+            },
+        },
+        {
+            "label": "Clipboard Search -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\clipboard_search\\.build"
+            },
+        },
+        {
+            "label": "Clipboard Search -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\clipboard_search\\.build"
+            },
+        },
+        {
+            "label": "Count Pages -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\count_pages\\.build"
+            },
+        },
+        {
+            "label": "Count Pages -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\count_pages\\.build"
+            },
+        },
+        {
+            "label": "Count Pages -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\count_pages\\.build"
+            },
+        },
+        {
+            "label": "Count Pages -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\count_pages\\.build"
+            },
+        },
+        {
+            "label": "Cover Url -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\cover_url\\.build"
+            },
+        },
+        {
+            "label": "Cover Url -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\cover_url\\.build"
+            },
+        },
+        {
+            "label": "Cover Url -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\cover_url\\.build"
+            },
+        },
+        {
+            "label": "Cover Url -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\cover_url\\.build"
+            },
+        },
+        {
+            "label": "Extract ISBN -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\extract_isbn\\.build"
+            },
+        },
+        {
+            "label": "Extract ISBN -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\extract_isbn\\.build"
+            },
+        },
+        {
+            "label": "Extract ISBN -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\extract_isbn\\.build"
+            },
+        },
+        {
+            "label": "Extract ISBN -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\extract_isbn\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction Adults -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction Adults -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction Adults -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction Adults -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
+            },
+        },
+        {
+            "label": "Favourites Menu -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\favourites_menu\\.build"
+            },
+        },
+        {
+            "label": "Favourites Menu -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\favourites_menu\\.build"
+            },
+        },
+        {
+            "label": "Favourites Menu -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\favourites_menu\\.build"
+            },
+        },
+        {
+            "label": "Favourites Menu -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\favourites_menu\\.build"
+            },
+        },
+        {
+            "label": "FictionDb -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fictiondb\\.build"
+            },
+        },
+        {
+            "label": "FictionDb -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fictiondb\\.build"
+            },
+        },
+        {
+            "label": "FictionDb -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fictiondb\\.build"
+            },
+        },
+        {
+            "label": "FictionDb -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fictiondb\\.build"
+            },
+        },
+        {
+            "label": "Find Duplicates -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\find_duplicates\\.build"
+            },
+        },
+        {
+            "label": "Find Duplicates -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\find_duplicates\\.build"
+            },
+        },
+        {
+            "label": "Find Duplicates -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\find_duplicates\\.build"
+            },
+        },
+        {
+            "label": "Find Duplicates -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\find_duplicates\\.build"
+            },
+        },
+        {
+            "label": "Generate Cover -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\generate_cover\\.build"
+            },
+        },
+        {
+            "label": "Generate Cover -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\generate_cover\\.build"
+            },
+        },
+        {
+            "label": "Generate Cover -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\generate_cover\\.build"
+            },
+        },
+        {
+            "label": "Generate Cover -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\generate_cover\\.build"
+            },
+        },
+        {
+            "label": "Goodreads -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads\\.build"
+            },
+        },
+        {
+            "label": "Goodreads -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads\\.build"
+            },
+        },
+        {
+            "label": "Goodreads -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads\\.build"
+            },
+        },
+        {
+            "label": "Goodreads -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads\\.build"
+            },
+        },
+        {
+            "label": "Goodreads Sync -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
+            },
+        },
+        {
+            "label": "Goodreads Sync -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
+            },
+        },
+        {
+            "label": "Goodreads Sync -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
+            },
+        },
+        {
+            "label": "Goodreads Sync -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
+            },
+        },
+        {
+            "label": "Import List -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\import_list\\.build"
+            },
+        },
+        {
+            "label": "Import List -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\import_list\\.build"
+            },
+        },
+        {
+            "label": "Import List -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\import_list\\.build"
+            },
+        },
+        {
+            "label": "Import List -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\import_list\\.build"
+            },
+        },
+        {
+            "label": "Manage Series -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\manage_series\\.build"
+            },
+        },
+        {
+            "label": "Manage Series -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\manage_series\\.build"
+            },
+        },
+        {
+            "label": "Manage Series -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\manage_series\\.build"
+            },
+        },
+        {
+            "label": "Manage Series -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\manage_series\\.build"
+            },
+        },
+        {
+            "label": "Modify ePub -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\modify_epub\\.build"
+            },
+        },
+        {
+            "label": "Modify ePub -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\modify_epub\\.build"
+            },
+        },
+        {
+            "label": "Modify ePub -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\modify_epub\\.build"
+            },
+        },
+        {
+            "label": "Modify ePub -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\modify_epub\\.build"
+            },
+        },
+        {
+            "label": "Open With -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\open_with\\.build"
+            },
+        },
+        {
+            "label": "Open With -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\open_with\\.build"
+            },
+        },
+        {
+            "label": "Open With -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\open_with\\.build"
+            },
+        },
+        {
+            "label": "Open With -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\open_with\\.build"
+            },
+        },
+        {
+            "label": "Quality Check -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quality_check\\.build"
+            },
+        },
+        {
+            "label": "Quality Check -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quality_check\\.build"
+            },
+        },
+        {
+            "label": "Quality Check -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quality_check\\.build"
+            },
+        },
+        {
+            "label": "Quality Check -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quality_check\\.build"
+            },
+        },
+        {
+            "label": "Quick Preferences -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quick_preferences\\.build"
+            },
+        },
+        {
+            "label": "Quick Preferences -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quick_preferences\\.build"
+            },
+        },
+        {
+            "label": "Quick Preferences -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quick_preferences\\.build"
+            },
+        },
+        {
+            "label": "Quick Preferences -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quick_preferences\\.build"
+            },
+        },
+        {
+            "label": "Ratings -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\ratings\\.build"
+            },
+        },
+        {
+            "label": "Ratings -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\ratings\\.build"
+            },
+        },
+        {
+            "label": "Ratings -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\ratings\\.build"
+            },
+        },
+        {
+            "label": "Ratings -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\ratings\\.build"
+            },
+        },
+        {
+            "label": "Reading List -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\reading_list\\.build"
+            },
+        },
+        {
+            "label": "Reading List -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\reading_list\\.build"
+            },
+        },
+        {
+            "label": "Reading List -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\reading_list\\.build"
+            },
+        },
+        {
+            "label": "Reading List -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\reading_list\\.build"
+            },
+        },
+       {
+            "label": "Resize Cover -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\resize_cover\\.build"
+            },
+        },
+        {
+            "label": "Resize Cover -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\resize_cover\\.build"
+            },
+        },
+        {
+            "label": "Resize Cover -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\resize_cover\\.build"
+            },
+        },
+        {
+            "label": "Resize Cover -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\resize_cover\\.build"
+            },
+        },
+        {
+            "label": "Search the Internet -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\search_the_internet\\.build"
+            },
+        },
+        {
+            "label": "Search the Internet -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\search_the_internet\\.build"
+            },
+        },
+        {
+            "label": "Search the Internet -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\search_the_internet\\.build"
+            },
+        },
+        {
+            "label": "Search the Internet -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\search_the_internet\\.build"
+            },
+        },
+        {
+            "label": "User Category -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\user_category\\.build"
+            },
+        },
+        {
+            "label": "User Category -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\user_category\\.build"
+            },
+        },
+        {
+            "label": "User Category -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\user_category\\.build"
+            },
+        },
+        {
+            "label": "User Category -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\user_category\\.build"
+            },
+        },
+        {
+            "label": "View Manager -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\view_manager\\.build"
+            },
+        },
+        {
+            "label": "View Manager -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\view_manager\\.build"
+            },
+        },
+        {
+            "label": "View Manager -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\view_manager\\.build"
+            },
+        },
+        {
+            "label": "View Manager -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\view_manager\\.build"
+            },
+        },
+        {
+            "label": "Walk Search History -> Build",
+            "type": "shell",
+            "command": ".\\build.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\walk_search_history\\.build"
+            },
+        },
+        {
+            "label": "Walk Search History -> Debug",
+            "type": "shell",
+            "command": ".\\debug.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\walk_search_history\\.build"
+            },
+        },
+        {
+            "label": "Walk Search History -> Generate .pot",
+            "type": "shell",
+            "command": ".\\generate-pot.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\walk_search_history\\.build"
+            },
+        },
+        {
+            "label": "Walk Search History -> Transifex Pull",
+            "type": "shell",
+            "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\walk_search_history\\.build"
+            },
+        },
+    ]
+}

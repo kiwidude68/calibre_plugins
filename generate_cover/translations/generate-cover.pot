@@ -1,0 +1,769 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ..\common\common_dialogs.py:84 config.py:327
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr ""
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr ""
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr ""
+
+#: ..\common\common_dialogs.py:189
+msgid "Are you sure you want to change your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid "Any settings in other libraries or stored in a JSON file in your calibre plugins folder will not be touched."
+msgstr ""
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr ""
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr ""
+
+#: ..\common\common_dialogs.py:209
+msgid "Are you sure you want to clear your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr ""
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid "Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:29
+msgid "Generate Cover"
+msgstr ""
+
+#: action.py:29
+msgid "Generate a customised cover"
+msgstr ""
+
+#: action.py:59
+msgid "Cannot generate covers"
+msgstr ""
+
+#: action.py:60
+msgid "No books selected"
+msgstr ""
+
+#: action.py:82
+msgid "Corrupted setting: \"%s\" has incorrect internal name of: \"%s\")"
+msgstr ""
+
+#: action.py:86
+msgid "Corrupted Configuration File"
+msgstr ""
+
+#: action.py:87
+msgid "<p>Your configuration file was corrupted (see Details).</p>)<p>Please report your exact recent actions which led to this on the MobileRead forum thread for this plugin so it can be fixed.</p><p>The configuration has been fixed automatically.</p>"
+msgstr ""
+
+#: action.py:133 action.py:143
+msgid "Cannot generate cover"
+msgstr ""
+
+#: action.py:134
+msgid "Missing metadata passed for book to generate cover"
+msgstr ""
+
+#: action.py:144
+msgid "No cover settings exist named: \"%s\""
+msgstr ""
+
+#: config.py:313
+msgid "After generating cover:"
+msgstr ""
+
+#: config.py:322
+msgid "Update column:"
+msgstr ""
+
+#: config.py:323
+msgid "Update value:"
+msgstr ""
+
+#: config.py:328
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+
+#: config.py:332
+msgid "View library preferences"
+msgstr ""
+
+#: config.py:333
+msgid "View data stored in the library database for this plugin"
+msgstr ""
+
+#: dialogs.py:64
+msgid "Cancel"
+msgstr ""
+
+#: dialogs.py:65
+msgid "Generating %d covers"
+msgstr ""
+
+#: dialogs.py:95
+msgid "Generating: "
+msgstr ""
+
+#: dialogs.py:124
+msgid "Unsaved Changes"
+msgstr ""
+
+#: dialogs.py:128
+msgid "You have unsaved changes to the <b>%s</b> setting.<br>"
+msgstr ""
+
+#: dialogs.py:129
+msgid "What do you want to do?"
+msgstr ""
+
+#: dialogs.py:132
+msgid "Discard Changes"
+msgstr ""
+
+#: dialogs.py:133
+msgid "Revert unsaved changes and generate cover using the original<br/>setting values (not as shown)"
+msgstr ""
+
+#: dialogs.py:138
+msgid "Don't Save Yet"
+msgstr ""
+
+#: dialogs.py:139
+msgid "Generate cover using these settings.<br/>You can revert or save the changes when you next enter dialog."
+msgstr ""
+
+#: dialogs.py:142
+msgid "Save Changes"
+msgstr ""
+
+#: dialogs.py:143
+msgid "Generate cover using these settings and save for future usage"
+msgstr ""
+
+#: dialogs.py:427 dialogs.py:505
+msgid "Saved Settings:"
+msgstr ""
+
+#: dialogs.py:437
+msgid "Autosave settings"
+msgstr ""
+
+#: dialogs.py:438
+msgid ""
+"Do not prompt to save changes to a setting. Always save when\n"
+"switching to another setting, clicking OK or using Import/Export."
+msgstr ""
+
+#: dialogs.py:445
+msgid "Add setting"
+msgstr ""
+
+#: dialogs.py:450
+msgid "Rename setting"
+msgstr ""
+
+#: dialogs.py:456 dialogs.py:644
+msgid "Import setting"
+msgstr ""
+
+#: dialogs.py:461
+msgid "Export setting"
+msgstr ""
+
+#: dialogs.py:467
+msgid "Delete setting from this list"
+msgstr ""
+
+#: dialogs.py:475
+msgid "Select Image:"
+msgstr ""
+
+#: dialogs.py:486
+msgid "Add image to this list"
+msgstr ""
+
+#: dialogs.py:491
+msgid "Rename image"
+msgstr ""
+
+#: dialogs.py:496
+msgid "Remove image from this list"
+msgstr ""
+
+#: dialogs.py:507
+msgid "Saved Settings: (*unsaved changes)"
+msgstr ""
+
+#: dialogs.py:538
+msgid "Add new setting"
+msgstr ""
+
+#: dialogs.py:561
+msgid "Cannot add"
+msgstr ""
+
+#: dialogs.py:562
+msgid "The name you specified is not unique"
+msgstr ""
+
+#: dialogs.py:571 dialogs.py:815
+msgid "Cannot remove"
+msgstr ""
+
+#: dialogs.py:572
+msgid "You cannot remove the default setting"
+msgstr ""
+
+#: dialogs.py:573 dialogs.py:818 dialogs.py:1465 dialogs.py:1484
+msgid "Are you sure?"
+msgstr ""
+
+#: dialogs.py:574
+msgid "Are you sure you want to remove the '%s' setting?"
+msgstr ""
+
+#: dialogs.py:587 dialogs.py:765 dialogs.py:791
+msgid "Cannot rename"
+msgstr ""
+
+#: dialogs.py:588
+msgid "You cannot rename the default setting"
+msgstr ""
+
+#: dialogs.py:589 dialogs.py:590
+msgid "New setting name:"
+msgstr ""
+
+#: dialogs.py:598
+msgid "Setting exists"
+msgstr ""
+
+#: dialogs.py:599
+msgid "A saved setting already exists with this name."
+msgstr ""
+
+#: dialogs.py:624
+msgid "Import Failed"
+msgstr ""
+
+#: dialogs.py:625
+msgid "This is not a valid Generate Cover export archive"
+msgstr ""
+
+#: dialogs.py:663
+msgid "Cannot import"
+msgstr ""
+
+#: dialogs.py:664 dialogs.py:857
+msgid "Failed to copy image"
+msgstr ""
+
+#: dialogs.py:723
+msgid "Export completed"
+msgstr ""
+
+#: dialogs.py:724
+msgid "Cover setting exported to<br>%s"
+msgstr ""
+
+#: dialogs.py:732
+msgid "Select setting file(s) to import"
+msgstr ""
+
+#: dialogs.py:733 dialogs.py:739
+msgid "GC Files"
+msgstr ""
+
+#: dialogs.py:739
+msgid "Save setting as"
+msgstr ""
+
+#: dialogs.py:766
+msgid "You cannot rename this image"
+msgstr ""
+
+#: dialogs.py:768 dialogs.py:769
+msgid "New image name:"
+msgstr ""
+
+#: dialogs.py:786
+msgid "File exists"
+msgstr ""
+
+#: dialogs.py:787
+msgid "An image already exists with this name."
+msgstr ""
+
+#: dialogs.py:792
+msgid "Failed to rename image"
+msgstr ""
+
+#: dialogs.py:801
+msgid "Add cover images"
+msgstr ""
+
+#: dialogs.py:816
+msgid "You cannot remove this image"
+msgstr ""
+
+#: dialogs.py:819
+msgid "Are you sure you want to delete the image: %s"
+msgstr ""
+
+#: dialogs.py:830 dialogs.py:888
+msgid "Cannot write"
+msgstr ""
+
+#: dialogs.py:831
+msgid "You do not have permission to delete the file"
+msgstr ""
+
+#: dialogs.py:844
+msgid "Cannot read"
+msgstr ""
+
+#: dialogs.py:845
+msgid "You do not have permission to read the file."
+msgstr ""
+
+#: dialogs.py:856
+msgid "Cannot copy"
+msgstr ""
+
+#: dialogs.py:870
+msgid "Overwrite existing"
+msgstr ""
+
+#: dialogs.py:871
+msgid "An image file already exists with this name. Do you want to overwrite it?"
+msgstr ""
+
+#: dialogs.py:874
+msgid "Enter image name"
+msgstr ""
+
+#: dialogs.py:875
+msgid "Enter a unique name for this image:"
+msgstr ""
+
+#: dialogs.py:889
+msgid "You do not have permission to overwrite the file"
+msgstr ""
+
+#: dialogs.py:925
+msgid "Title"
+msgstr ""
+
+#: dialogs.py:926
+msgid "Author"
+msgstr ""
+
+#: dialogs.py:927
+msgid "Series"
+msgstr ""
+
+#: dialogs.py:928
+msgid "Custom"
+msgstr ""
+
+#: dialogs.py:931
+msgid "Background"
+msgstr ""
+
+#: dialogs.py:932
+msgid "Border"
+msgstr ""
+
+#: dialogs.py:933
+msgid "Fill"
+msgstr ""
+
+#: dialogs.py:934
+msgid "Stroke"
+msgstr ""
+
+#: dialogs.py:947
+msgid "Fonts:"
+msgstr ""
+
+#: dialogs.py:956
+msgid ""
+"Select a font and specify a size in pixels.\n"
+"If font set to 'Default', uses the tweak value from\n"
+"'generate_cover_title_font' if present."
+msgstr ""
+
+#: dialogs.py:974
+msgid "Use the same font family for all text"
+msgstr ""
+
+#: dialogs.py:975
+msgid "When checked, the same font family is used for all text content on the cover"
+msgstr ""
+
+#: dialogs.py:982
+msgid "Auto-reduce font size to fit on one line"
+msgstr ""
+
+#: dialogs.py:983
+msgid ""
+"When checked, the font size will be used as a maximum size.\n"
+"A reduced size will be used where needed to fit text on one line."
+msgstr ""
+
+#: dialogs.py:989
+msgid "Colors:"
+msgstr ""
+
+#: dialogs.py:1005
+msgid "Reset %s color"
+msgstr ""
+
+#: dialogs.py:1010
+msgid "Select a %s color"
+msgstr ""
+
+#: dialogs.py:1018
+msgid "Apply"
+msgstr ""
+
+#: dialogs.py:1019
+msgid "When checked, stroke color is drawn around text"
+msgstr ""
+
+#: dialogs.py:1031
+msgid "Left aligned"
+msgstr ""
+
+#: dialogs.py:1033
+msgid "Centered"
+msgstr ""
+
+#: dialogs.py:1035
+msgid "Right aligned"
+msgstr ""
+
+#: dialogs.py:1106
+msgid "Size:"
+msgstr ""
+
+#: dialogs.py:1110
+msgid "Cover width:"
+msgstr ""
+
+#: dialogs.py:1111
+msgid "The width in pixels of the output .jpg file"
+msgstr ""
+
+#: dialogs.py:1117
+msgid "Cover height:"
+msgstr ""
+
+#: dialogs.py:1118
+msgid "The height in pixels of the output .jpg file"
+msgstr ""
+
+#: dialogs.py:1124
+msgid "Stretch image to use as cover background"
+msgstr ""
+
+#: dialogs.py:1125
+msgid ""
+"Check this to overlay text on the image background.\n"
+"Uncheck this to place text around the image."
+msgstr ""
+
+#: dialogs.py:1129
+msgid "Resize cover dimensions to match background image"
+msgstr ""
+
+#: dialogs.py:1130
+msgid ""
+"Check this to automatically resize the cover based on\n"
+"the dimensions of the currently chosen background image"
+msgstr ""
+
+#: dialogs.py:1134
+msgid "Resize image to scale up if smaller than available area"
+msgstr ""
+
+#: dialogs.py:1135
+msgid ""
+"Check this to automatically resize the cover image to fit the\n"
+"the maximum area available if it is too small"
+msgstr ""
+
+#: dialogs.py:1141
+msgid "Margins:"
+msgstr ""
+
+#: dialogs.py:1146
+msgid "Top margin:"
+msgstr ""
+
+#: dialogs.py:1147
+msgid ""
+"The margin in pixels from the top of the cover\n"
+"to the first content"
+msgstr ""
+
+#: dialogs.py:1155
+msgid "Bottom margin:"
+msgstr ""
+
+#: dialogs.py:1156
+msgid ""
+"The margin in pixels from the bottom of the cover\n"
+"to the last content"
+msgstr ""
+
+#: dialogs.py:1164
+msgid "Left margin:"
+msgstr ""
+
+#: dialogs.py:1165
+msgid ""
+"The minimum margin in pixels from the left of the cover\n"
+"to the text content"
+msgstr ""
+
+#: dialogs.py:1173
+msgid "Right margin:"
+msgstr ""
+
+#: dialogs.py:1174
+msgid ""
+"The minimum margin in pixels from the right of the cover\n"
+"to the text content"
+msgstr ""
+
+#: dialogs.py:1182
+msgid "Text padding:"
+msgstr ""
+
+#: dialogs.py:1183
+msgid "The spacing in pixels between successive lines of text"
+msgstr ""
+
+#: dialogs.py:1190
+msgid "Image padding:"
+msgstr ""
+
+#: dialogs.py:1191
+msgid ""
+"The spacing in pixels between the image and text\n"
+"placed above and below it"
+msgstr ""
+
+#: dialogs.py:1201
+msgid "Border Widths:"
+msgstr ""
+
+#: dialogs.py:1205
+msgid "Cover border:"
+msgstr ""
+
+#: dialogs.py:1206
+msgid ""
+"The width in pixels of a border around the edge\n"
+"of the cover. Specify 0 for no border"
+msgstr ""
+
+#: dialogs.py:1213
+msgid "Image border:"
+msgstr ""
+
+#: dialogs.py:1214
+msgid ""
+"The width in pixels of a border around the edge\n"
+"of the image. Specify 0 for no border"
+msgstr ""
+
+#: dialogs.py:1253
+msgid "Field Order:"
+msgstr ""
+
+#: dialogs.py:1254
+msgid ""
+"Alter the order of items on the cover and\n"
+"whether they are displayed using the checkbox"
+msgstr ""
+
+#: dialogs.py:1268
+msgid "Move field up"
+msgstr ""
+
+#: dialogs.py:1275
+msgid "Move field down"
+msgstr ""
+
+#: dialogs.py:1281
+msgid "Custom Text:"
+msgstr ""
+
+#: dialogs.py:1290
+msgid "Other Options:"
+msgstr ""
+
+#: dialogs.py:1294
+msgid "Swap author LN,FN to FN LN"
+msgstr ""
+
+#: dialogs.py:1295
+msgid ""
+"Use this option if your authors are stored as LN, FN\n"
+"but you prefer to see FN LN on the book cover"
+msgstr ""
+
+#: dialogs.py:1299
+msgid "Series text:"
+msgstr ""
+
+#: dialogs.py:1300
+msgid ""
+"Change the way series information is displayed.\n"
+"Useful for non-English languages!"
+msgstr ""
+
+#: dialogs.py:1308
+msgid "Metadata: (*not saved)"
+msgstr ""
+
+#: dialogs.py:1309
+msgid ""
+"Optionally override the text in these fields for this book.\n"
+"These are not saved as part of the settings profile.\n"
+"This functionality is disabled if multiple books are selected."
+msgstr ""
+
+#: dialogs.py:1315
+msgid "Title:"
+msgstr ""
+
+#: dialogs.py:1318
+msgid "Author:"
+msgstr ""
+
+#: dialogs.py:1321
+msgid "Series:"
+msgstr ""
+
+#: dialogs.py:1350
+msgid "Cover Options"
+msgstr ""
+
+#: dialogs.py:1353
+msgid "Generate Custom Cover"
+msgstr ""
+
+#: dialogs.py:1374
+msgid "Settings"
+msgstr ""
+
+#: dialogs.py:1375
+msgid "Fonts"
+msgstr ""
+
+#: dialogs.py:1376
+msgid "Dimensions"
+msgstr ""
+
+#: dialogs.py:1377
+msgid "Contents"
+msgstr ""
+
+#: dialogs.py:1387
+msgid " Revert "
+msgstr ""
+
+#: dialogs.py:1388
+msgid "Revert to your previous saved setting values"
+msgstr ""
+
+#: dialogs.py:1390
+msgid " Save "
+msgstr ""
+
+#: dialogs.py:1391
+msgid "Overwrite your current saved setting"
+msgstr ""
+
+#: dialogs.py:1393
+msgid " Customize... "
+msgstr ""
+
+#: dialogs.py:1394
+msgid "Set general options for this plugin"
+msgstr ""
+
+#: dialogs.py:1466
+msgid "Revert to your previously saved values for '%s'?"
+msgstr ""
+
+#: dialogs.py:1485
+msgid "Overwrite the '%s' setting with the current values?"
+msgstr ""
+

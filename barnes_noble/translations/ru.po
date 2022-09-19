@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Caarmi, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-08 20:50+0100\n"
+"PO-Revision-Date: 2022-09-08 19:50+0000\n"
+"Last-Translator: Caarmi, 2022\n"
+"Language-Team: Russian (https://www.transifex.com/calibre/teams/19337/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: config.py:52
+msgid "Maximum title/author search matches to evaluate (1 = fastest):"
+msgstr "Макс. число совпадений по названию/автору (1 = быстрее всего):"
+
+#: config.py:53
+msgid ""
+"Increasing this value will consider more editions but also increase search times.\n"
+"\n"
+"This will increase the potential likelihood of getting a larger cover image\n"
+"but does not guarantee it."
+msgstr ""
+"Увеличение данного значения рассмотрит больше изданий, но увеличит\n"
+"время поиска.\n"
+"\n"
+"Это увеличит шансы найти обложку большего размера, но не гарантирует \n"
+"этого."
+
+#: config.py:65
+msgid "Get all contributing authors (e.g. editors, illustrators etc)"
+msgstr "Загружать всех соавторов (редакторов, иллюстраторов и т.д.)"
+
+#: config.py:66
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"Если отмечено, то загружать всех соавторов.\n"
+"\n"
+"Если снято (по умолчанию), то загружать только основных авторов."

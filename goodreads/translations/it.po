@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Maurizio Malagoli <malagoli.maurizio@gmail.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-07 21:44+0100\n"
+"PO-Revision-Date: 2022-09-07 15:49+0000\n"
+"Last-Translator: Maurizio Malagoli <malagoli.maurizio@gmail.com>, 2022\n"
+"Language-Team: Italian (https://www.transifex.com/calibre/teams/19337/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: it\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: config.py:161
+msgid "Goodreads Genre"
+msgstr "Genere Goodreads"
+
+#: config.py:161
+msgid "Maps to Calibre Tag"
+msgstr "Mappa i tag Calibre"
+
+#: config.py:230
+msgid "Goodreads genre to calibre tag mappings"
+msgstr "Mappatura dei generi Goodreads con i tag Calibre"
+
+#: config.py:243
+msgid "Add genre mapping"
+msgstr "Aggiungi mappatura genere"
+
+#: config.py:250
+msgid "Delete genre mapping"
+msgstr "Elimina la mappatura del genere"
+
+#: config.py:257
+msgid "Rename Goodreads genre"
+msgstr "Rinomina genere Goodreads"
+
+#: config.py:264
+msgid "Reset to plugin default mappings"
+msgstr "Ritorna alle impostazioni di mappatura di default"
+
+#: config.py:270
+msgid "Other options"
+msgstr "Altre opzioni"
+
+#: config.py:275
+msgid "Scan multiple editions for title/author searches (slower)"
+msgstr "Scansiona più edizioni per cercare titolo/autore (più lento)"
+
+#: config.py:276
+msgid ""
+"When checked will perform an additional search to scan the top ranked\n"
+"Goodreads editions (if available) to exclude audiobook editions.\n"
+"When unchecked you will get a faster search but the edition is indeterminate."
+msgstr ""
+"Quando selezionato eseguirà una ricerca aggiuntiva per scansionare i primi classificati\n"
+"Edizioni Goodreads (se disponibili) per escludere le edizioni di audiolibri.\n"
+"Se deselezionato, otterrai una ricerca più veloce ma l'edizione è indeterminata."
+
+#: config.py:282
+msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
+msgstr ""
+"Ottieni tutti gli autori che contribuiscono (ad es. illustratori, editori di"
+" serie, ecc.)"
+
+#: config.py:283
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"Quando questa opzione è selezionata, vengono recuperati tutti gli autori.\n"
+"\n"
+"Se deselezionata (impostazione predefinita) vengono restituiti solo gli autori principali."
+
+#: config.py:288
+msgid "Get ASIN for kindle editions"
+msgstr "Ottieni ASIN per le edizioni Kindle"
+
+#: config.py:289
+msgid ""
+"When this option is checked, in cases where Goodreads has an ASIN listed\n"
+"instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
+"already have the specific Goodreads identifier of a Kindle editon."
+msgstr ""
+"Quando questa opzione è selezionata, nei casi in cui Goodreads ha un ASIN elencato\n"
+"invece di un ISBN, viene recuperato l'ASIN. Questo è utile per i libri che\n"
+"hanno già l'identificatore Goodreads specifico di un'edizione Kindle."
+
+#: config.py:295
+msgid "Use first published date"
+msgstr "Usa la prima data di pubblicazione"
+
+#: config.py:296
+msgid ""
+"If checked, the first published date for this book is used rather than\n"
+"that of the actual book edition."
+msgstr ""
+"Se selezionata, viene utilizzata la prima data di pubblicazione per questo libro\n"
+"anziché quella dell'edizione attuale del libro."
+
+#: config.py:314 config.py:345
+msgid "Add new mapping"
+msgstr "Aggiungi nuova mappatura"
+
+#: config.py:315 config.py:346
+msgid "Enter a Goodreads genre name to create a mapping for:"
+msgstr "Inserisci un nome del genere Goodreads per creare una mappatura per:"
+
+#: config.py:326
+msgid "Add Failed"
+msgstr "Aggiunta fallita"
+
+#: config.py:326 config.py:358
+msgid "A genre with the same name already exists"
+msgstr "Esiste già un genere con lo stesso nome"
+
+#: config.py:334 config.py:365
+msgid "Are you sure?"
+msgstr "Sei sicuro/a?"
+
+#: config.py:335
+msgid "Are you sure you want to delete the selected genre mappings?"
+msgstr "Sei sicuro di voler eliminare le mappature di genere selezionate?"
+
+#: config.py:358
+msgid "Rename Failed"
+msgstr "Rinomina non riuscito"
+
+#: config.py:366
+msgid "Are you sure you want to reset to the plugin default genre mappings?"
+msgstr ""
+"Sei sicuro di voler ripristinare le mappature dei generi predefinite del "
+"plug-in?"

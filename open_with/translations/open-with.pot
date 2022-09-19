@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 15:59+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ..\common\common_dialogs.py:84 config.py:687
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr ""
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr ""
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr ""
+
+#: ..\common\common_dialogs.py:189
+msgid "Are you sure you want to change your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid "Any settings in other libraries or stored in a JSON file in your calibre plugins folder will not be touched."
+msgstr ""
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr ""
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr ""
+
+#: ..\common\common_dialogs.py:209
+msgid "Are you sure you want to clear your settings in this library for this plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr ""
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid "Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:32
+msgid "Open With"
+msgstr ""
+
+#: action.py:82
+msgid "&Customize plugin"
+msgstr ""
+
+#: action.py:156
+msgid "No book selected"
+msgstr ""
+
+#: action.py:156 action.py:163 action.py:182 action.py:188
+msgid "Cannot open with"
+msgstr ""
+
+#: action.py:163
+msgid "Book has no cover."
+msgstr ""
+
+#: action.py:171
+msgid "Open With template error"
+msgstr ""
+
+#: action.py:183
+msgid "No %s format available. First convert the book to %s."
+msgstr ""
+
+#: action.py:189
+msgid "Path not specified for this format in your configuration."
+msgstr ""
+
+#: config.py:200
+msgid "Format"
+msgstr ""
+
+#: config.py:200
+msgid "Image"
+msgstr ""
+
+#: config.py:200
+msgid "Submenu"
+msgstr ""
+
+#: config.py:200
+msgid "Title"
+msgstr ""
+
+#: config.py:201
+msgid "Application Path"
+msgstr ""
+
+#: config.py:201
+msgid "Args"
+msgstr ""
+
+#: config.py:289 config.py:294
+msgid "Select the application to execute for this format"
+msgstr ""
+
+#: config.py:349
+msgid "Edit Path"
+msgstr ""
+
+#: config.py:350
+msgid "Choose a new path for this application:"
+msgstr ""
+
+#: config.py:396
+msgid "Are you sure you want to delete this menu item?"
+msgstr ""
+
+#: config.py:398
+msgid "Are you sure you want to delete the selected %d menu items?"
+msgstr ""
+
+#: config.py:399 config.py:582 config.py:755 config.py:764
+msgid "Are you sure?"
+msgstr ""
+
+#: config.py:507
+msgid "Add New Image"
+msgstr ""
+
+#: config.py:510
+msgid "&Select image source"
+msgstr ""
+
+#: config.py:513
+msgid "From &web domain favicon"
+msgstr ""
+
+#: config.py:520
+msgid "From .png &file"
+msgstr ""
+
+#: config.py:533
+msgid "&Save as filename:"
+msgstr ""
+
+#: config.py:557
+msgid "Select a .png file for the menu icon"
+msgstr ""
+
+#: config.py:563
+msgid "Cannot select image"
+msgstr ""
+
+#: config.py:564 config.py:602
+msgid "Source image must be a .png file."
+msgstr ""
+
+#: config.py:572 config.py:576 config.py:590 config.py:598 config.py:601
+#: config.py:604
+msgid "Cannot import image"
+msgstr ""
+
+#: config.py:573
+msgid "You must specify a filename to save as."
+msgstr ""
+
+#: config.py:577
+msgid "The save as filename should consist of a filename only."
+msgstr ""
+
+#: config.py:583
+msgid "An image with this name already exists - overwrite it?"
+msgstr ""
+
+#: config.py:591
+msgid "You must specify a web domain url"
+msgstr ""
+
+#: config.py:599
+msgid "You must specify a source file."
+msgstr ""
+
+#: config.py:605
+msgid "Source image does not exist!"
+msgstr ""
+
+#: config.py:625
+msgid "&Select and configure the menu items to display:"
+msgstr ""
+
+#: config.py:647
+msgid "Move row up"
+msgstr ""
+
+#: config.py:654
+msgid "Add menu item row"
+msgstr ""
+
+#: config.py:661
+msgid "Delete menu item row"
+msgstr ""
+
+#: config.py:668
+msgid "Reset to defaults"
+msgstr ""
+
+#: config.py:675
+msgid "Move row down"
+msgstr ""
+
+#: config.py:688
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+
+#: config.py:729
+msgid "&Edit Path"
+msgstr ""
+
+#: config.py:735
+msgid "&Add image"
+msgstr ""
+
+#: config.py:738
+msgid "&Open images folder"
+msgstr ""
+
+#: config.py:744
+msgid "&Import"
+msgstr ""
+
+#: config.py:747
+msgid "&Export"
+msgstr ""
+
+#: config.py:756
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr ""
+
+#: config.py:757
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr ""
+
+#: config.py:765
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr ""
+
+#: config.py:782
+msgid "Import Failed"
+msgstr ""
+
+#: config.py:783
+msgid "This is not a valid OWIP export archive"
+msgstr ""
+
+#: config.py:795
+msgid "%d menu items added"
+msgstr ""
+
+#: config.py:795
+msgid "Import completed"
+msgstr ""
+
+#: config.py:805
+msgid "Cannot export"
+msgstr ""
+
+#: config.py:806
+msgid "No menu items selected to export."
+msgstr ""
+
+#: config.py:834
+msgid "%d menu items exported to<br>%s"
+msgstr ""
+
+#: config.py:834
+msgid "Export completed"
+msgstr ""
+
+#: config.py:841
+msgid "Select a menu file archive to import"
+msgstr ""
+
+#: config.py:849
+msgid "Save archive as"
+msgstr ""
+

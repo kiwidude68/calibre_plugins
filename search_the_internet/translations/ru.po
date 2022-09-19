@@ -1,0 +1,378 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Caarmi, 2022
+# Виктор, 2022
+# ashed <craysy@gmail.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 15:50+0100\n"
+"PO-Revision-Date: 2022-09-13 19:01+0000\n"
+"Last-Translator: ashed <craysy@gmail.com>, 2022\n"
+"Language-Team: Russian (https://www.transifex.com/calibre/teams/19337/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:890
+msgid "Keyboard shortcuts"
+msgstr "Сочетания клавиш..."
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Перезагрузите calibre сейчас"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Предпочтения для:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Очистить"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Очистить все настройки для плагина"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Любые настройки в других библиотеках или сохраненные в файле JSON в папке "
+"плагинов calibre не будут затронуты."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Вы должны перезагрузить calibre впоследствии."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Пожалуйста, перезагрузите calibre сейчас."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "Вы действительно хотите очистить настройки плагина в библиотеке?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Все настройки для этого плагина в этой библиотеке были очищены."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Не определено"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:46
+msgid "Search Internet"
+msgstr ""
+
+#: action.py:92 config.py:539 config.py:923
+msgid "Open Group"
+msgstr ""
+
+#: action.py:94
+msgid "&Customize plugin"
+msgstr "&Настроить плагин"
+
+#: action.py:141
+msgid "Cannot open link"
+msgstr "Не могу открыть ссылку"
+
+#: action.py:142
+msgid "This menu item has not been configured with a url."
+msgstr "Этот пункт меню не был настроен с URL-адресом."
+
+#: action.py:174 action.py:186
+msgid "Invalid URL"
+msgstr "Неверный URL"
+
+#: action.py:175
+msgid ""
+"You cannot use POST for this url as you have not specified any arguments "
+"after a ?"
+msgstr ""
+"Вы не можете использовать POST для этого URL-адреса, так как вы не указали "
+"никаких аргументов после ?"
+
+#: action.py:187
+msgid "You cannot use POST for this url as it does not have name=value for "
+msgstr ""
+"Вы не можете использовать POST для этого URL-адреса, так как он не имеет имя"
+" = значение для"
+
+#: config.py:284
+msgid "Select test data"
+msgstr "Выберите тестовые данные"
+
+#: config.py:293
+msgid "&Select test book:"
+msgstr "&Выберите тестовую книгу:"
+
+#: config.py:306
+msgid "Title:"
+msgstr " Название:"
+
+#: config.py:308
+msgid "Author:"
+msgstr "Автор:"
+
+#: config.py:310
+msgid "Publisher:"
+msgstr "Издатель:"
+
+#: config.py:354 config.py:497
+msgid "Add New Image"
+msgstr "Добавить изображение"
+
+#: config.py:357
+msgid "&Select image source"
+msgstr "&Выберите источник изображения"
+
+#: config.py:360
+msgid "From &web domain favicon"
+msgstr "Из &значка сайта (favicon)"
+
+#: config.py:367
+msgid "From .png &file"
+msgstr "Из &файла .png"
+
+#: config.py:380
+msgid "&Save as filename:"
+msgstr "&Сохранить под именем:"
+
+#: config.py:404
+msgid "Select a .png file for the menu icon"
+msgstr "Выберите файл .png для значка в меню"
+
+#: config.py:410
+msgid "Cannot select image"
+msgstr "Не удалось выбрать изображение"
+
+#: config.py:411 config.py:449
+msgid "Source image must be a .png file."
+msgstr "Изображение должно быть в формате PNG"
+
+#: config.py:419 config.py:423 config.py:437 config.py:445 config.py:448
+#: config.py:451
+msgid "Cannot import image"
+msgstr "Не удалось импортировать изображение"
+
+#: config.py:420
+msgid "You must specify a filename to save as."
+msgstr "Нужно указать имя сохраняемого изображения."
+
+#: config.py:424
+msgid "The save as filename should consist of a filename only."
+msgstr "Нужно указать только имя файла."
+
+#: config.py:429 config.py:710 config.py:984 config.py:993
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+#: config.py:430
+msgid "An image with this name already exists - overwrite it?"
+msgstr "Изображение с таким названием уже существует — перезаписать его?"
+
+#: config.py:438
+msgid "You must specify a web domain url"
+msgstr "Нужно указать адрес домена"
+
+#: config.py:446
+msgid "You must specify a source file."
+msgstr "Нужно указать исходный файл."
+
+#: config.py:452
+msgid "Source image does not exist!"
+msgstr "Исходное изображение не существует!"
+
+#: config.py:539
+msgid "Submenu"
+msgstr "Подменю"
+
+#: config.py:539
+msgid "Title"
+msgstr "Название"
+
+#: config.py:540
+msgid "Encoding"
+msgstr "Кодировка"
+
+#: config.py:540
+msgid "Image"
+msgstr "Значок"
+
+#: config.py:540
+msgid "Method"
+msgstr "Метод"
+
+#: config.py:540
+msgid "Url"
+msgstr "Адрес"
+
+#: config.py:707
+msgid "<p>Are you sure you want to delete this menu item?"
+msgstr "<p>Вы действительно хотите удалить этот элемент меню?"
+
+#: config.py:709
+msgid "<p>Are you sure you want to delete the selected {0} menu items?"
+msgstr "<p>Вы действительно хотите удалить выделенные элементы меню ({0})?"
+
+#: config.py:828
+msgid "Select and configure the menu items to display:"
+msgstr "Выбор и настройка видимых элементов меню:"
+
+#: config.py:850
+msgid "Move row up"
+msgstr "Переместить вверх"
+
+#: config.py:857
+msgid "Add menu item row"
+msgstr "Добавить элемент меню"
+
+#: config.py:864
+msgid "Delete menu item row"
+msgstr "Удалить элемент меню"
+
+#: config.py:871
+msgid "Reset to defaults"
+msgstr "Сброс"
+
+#: config.py:878
+msgid "Move row down"
+msgstr "Переместить вниз"
+
+#: config.py:891
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Редактирование сочетаний клавиш, связанных с этим плагином"
+
+#: config.py:947
+msgid "Add image"
+msgstr "Добавить изображение"
+
+#: config.py:950
+msgid "Open images folder"
+msgstr "Открыть папку с изображениями"
+
+#: config.py:956
+msgid "Move active to top"
+msgstr ""
+
+#: config.py:962
+msgid "Test url"
+msgstr "Проверить адрес"
+
+#: config.py:963
+msgid "Ctrl+T"
+msgstr "Ctrl+T"
+
+#: config.py:966
+msgid "Test url using"
+msgstr "Проверить адрес с помощью"
+
+#: config.py:967
+msgid "Ctrl+Shift+T"
+msgstr "Ctrl+Shift+T"
+
+#: config.py:973
+msgid "Import"
+msgstr "Импорт"
+
+#: config.py:976
+msgid "Export"
+msgstr "Экспорт"
+
+#: config.py:985
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr ""
+
+#: config.py:986
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr ""
+
+#: config.py:994
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr ""
+
+#: config.py:1013
+msgid "Cannot test"
+msgstr ""
+
+#: config.py:1014
+msgid "You must select a menu item with a url to test it."
+msgstr ""
+
+#: config.py:1036
+msgid "Import Failed"
+msgstr "Импорт не удался"
+
+#: config.py:1037
+msgid "This is not a valid STIP export archive"
+msgstr ""
+
+#: config.py:1049
+msgid "Import completed"
+msgstr "Импорт завершен"
+
+#: config.py:1049
+msgid "{0} menu items added"
+msgstr "Добавлено элементов меню: {0}"
+
+#: config.py:1059
+msgid "Cannot export"
+msgstr "Экспорт не удался"
+
+#: config.py:1060
+msgid "No menu items selected to export."
+msgstr "Не отмечены элементы для экспорта"
+
+#: config.py:1088
+msgid "Export completed"
+msgstr "Экспорт завершен"
+
+#: config.py:1097
+msgid "Select a menu file archive to import"
+msgstr "Выберите импортируемый файл архива"

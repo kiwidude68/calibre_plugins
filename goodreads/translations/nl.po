@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# peter <luc@ditbenik.be>, 2022
+# Mario Moens <marimo.it4u@gmail.com>, 2022
+# W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:05+0100\n"
+"PO-Revision-Date: 2022-09-07 15:49+0000\n"
+"Last-Translator: W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2022\n"
+"Language-Team: Dutch (https://www.transifex.com/calibre/teams/19337/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "Sneltoetsen"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Calibre nu herstarten"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr ""
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Wis"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Wis alle instellingen van deze plugin"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Instellingen in andere bibliotheken of opgeslagen in een JSON-bestand in uw "
+"Calibre plugins-folder worden niet aangeroerd."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "U dient calibre achteraf te herstarten."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Herstart calibre nu alstublieft."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Bent u zeker dat u uw instellingen in deze bibliotheek voor deze "
+"invoegtoepassing/plugin wilt wissen?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alle instellingen voor de plugin in deze bibliotheek zijn gewist."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Niet gedefinieerd"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: config.py:149
+msgid "Goodreads Genre"
+msgstr "Goodreads Genre"
+
+#: config.py:149
+msgid "Maps to Calibre Tag"
+msgstr "Verwijst naar calibre tag"
+
+#: config.py:218
+msgid "Goodreads genre to calibre tag mappings"
+msgstr "Verwijzingen van Goodreads genre naar calibre tag"
+
+#: config.py:231
+msgid "Add genre mapping"
+msgstr "Genre verwijzing toevoegen"
+
+#: config.py:238
+msgid "Delete genre mapping"
+msgstr "Genre verwijzing verwijderen"
+
+#: config.py:245
+msgid "Rename Goodreads genre"
+msgstr "Goodreads genre hernoemen"
+
+#: config.py:252
+msgid "Reset to plugin default mappings"
+msgstr "Herstellen naar standaard plug-in verwijzingen"
+
+#: config.py:258
+msgid "Other options"
+msgstr "Andere opties"
+
+#: config.py:263
+msgid "Scan multiple editions for title/author searches (slower)"
+msgstr "Scan meerdere edities voor titel/auteur opzoekingen (trager)"
+
+#: config.py:264
+msgid ""
+"When checked will perform an additional search to scan the top ranked\n"
+"Goodreads editions (if available) to exclude audiobook editions.\n"
+"When unchecked you will get a faster search but the edition is indeterminate."
+msgstr ""
+"Indien aangevinkt, voert een bijkomende opzoeking uit in top geplaatste\n"
+"Goodreads edities (indien beschikbaar) om audioboeken uit te sluiten.\n"
+"Niet aanvinken geeft een sneller resultaat met een onbepaalde editie."
+
+#: config.py:270
+msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
+msgstr ""
+"Haal alle bijdragende auteurs op (bv. illustrators, seriebewerkers, enz.)"
+
+#: config.py:271
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"Als deze optie is aangevinkt worden alle auteurs opgehaald.\n"
+"\n"
+"Niet aanvinken (standaard) geeft enkel de hoofdauteur(s)."
+
+#: config.py:276
+msgid "Get ASIN for kindle editions"
+msgstr "Haal ASIN op voor Kindle uitgaves."
+
+#: config.py:277
+msgid ""
+"When this option is checked, in cases where Goodreads has an ASIN listed\n"
+"instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
+"already have the specific Goodreads identifier of a Kindle editon."
+msgstr ""
+"Als deze optie is aangevinkt, in gevallen waar Goodreads een ASIN opgeeft ipv\n"
+"van een ISBN, wordt de ASIN opgehaald. Dit is nuttig voor boeken die al\n"
+"het specifieke Goodreads ID hebben van een Kindle editie."
+
+#: config.py:283
+msgid "Use first published date"
+msgstr "Gebruik datum van eerste publicatie"
+
+#: config.py:284
+msgid ""
+"If checked, the first published date for this book is used rather than\n"
+"that of the actual book edition."
+msgstr ""
+"Indien aangevinkt wordt eerder de datum van eerste publicatie van dit\n"
+"boek gebruikt dan die van de eigenlijke uitgave."
+
+#: config.py:302 config.py:333
+msgid "Add new mapping"
+msgstr "Nieuwe verwijzing toevoegen"
+
+#: config.py:303 config.py:334
+msgid "Enter a Goodreads genre name to create a mapping for:"
+msgstr "Voer een Goodreads genre naam in om een verwijzing te creëren voor:"
+
+#: config.py:314
+msgid "Add Failed"
+msgstr "Toevoegen Mislukt"
+
+#: config.py:314 config.py:346
+msgid "A genre with the same name already exists"
+msgstr "Er bestaat al een genre met deze naam"
+
+#: config.py:322 config.py:353
+msgid "Are you sure?"
+msgstr "Bent u zeker?"
+
+#: config.py:323
+msgid "Are you sure you want to delete the selected genre mappings?"
+msgstr ""
+"Bent u zeker dat u de geselecteerde genre verwijzingen wilt verwijderen?"
+
+#: config.py:346
+msgid "Rename Failed"
+msgstr "Hernoemen mislukt"
+
+#: config.py:354
+msgid "Are you sure you want to reset to the plugin default genre mappings?"
+msgstr ""
+"Bent u zeker dat u plug-in's standaard genre verwijzingen wilt terug zetten?"

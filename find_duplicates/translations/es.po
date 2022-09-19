@@ -1,0 +1,1640 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Jellby <jellby@yahoo.com>, 2022
+# Adolfo Jayme-Barrientos, 2022
+# Darío Hereñú, 2022
+# Grant Drake, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:13+0100\n"
+"PO-Revision-Date: 2022-09-19 15:11+0000\n"
+"Last-Translator: Grant Drake, 2022\n"
+"Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:222
+msgid "Keyboard shortcuts"
+msgstr "Atajos de teclado"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reiniciar Calibre ahora"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Preferencias para: "
+
+#: ..\common\common_dialogs.py:160 advanced\gui\rules_widget.py:373
+#: advanced\gui\sort.py:234
+msgid "Clear"
+msgstr "Limpiar"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Borrar todas las configuraciones para este complemento"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
+"este complemento?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
+" en su carpeta de complementos de calibre no se modificará."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Debe reiniciar calibre después."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Cambiar Configuraciones"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Se ha cambiado la configuración de este complemento en esta biblioteca."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Reinicie calibre ahora."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
+"este complemento?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Configuraciones eliminadas"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Se han borrado todas las configuraciones para este complemento en esta "
+"biblioteca."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Copiar al portapapeles"
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Indefinido"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr "Reinicio requerido"
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Imagen de título no encontrada: ¡debe reiniciar Calibre antes de usar este "
+"complemento!"
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:47 dialogs.py:162 dialogs.py:1032 duplicates.py:178
+msgid "Find Duplicates"
+msgstr "Find Duplicates"
+
+#: action.py:95 action.py:149
+msgid "&Find book duplicates"
+msgstr "&Buscar duplicados de libros "
+
+#: action.py:97 action.py:153 advanced\gui\dialogs.py:220
+msgid "Find library duplicates"
+msgstr "Buscar duplicados de biblioteca "
+
+#: action.py:98
+msgid "Find books that are duplicated in another library compared to this one"
+msgstr ""
+"Encuentra libros que están duplicados en otra biblioteca en comparación con "
+"esta"
+
+#: action.py:101
+msgid "Find metadata &variations"
+msgstr "Buscar metadatos &variaciones "
+
+#: action.py:102
+msgid ""
+"Find & rename variations in author, publisher, series or tags names that may"
+" indicate duplicates"
+msgstr ""
+"Busque &cambie el nombre de variaciones en los nombres de autor, editor, "
+"serie o etiquetas que pueden indicar duplicados"
+
+#: action.py:105
+msgid "&Next result"
+msgstr "&Siguiente resultado"
+
+#: action.py:106
+msgid "Display the next duplicate result group"
+msgstr "Mostrar el siguiente grupo de resultados duplicados"
+
+#: action.py:108
+msgid "&Previous result"
+msgstr "&Resultado anterior"
+
+#: action.py:109
+msgid "Display the previous duplicate result group"
+msgstr "Mostrar el grupo de resultados duplicados anterior"
+
+#: action.py:112
+msgid "&Mark current group as exempt"
+msgstr "&Marcar grupo actual como exento"
+
+#: action.py:113
+msgid ""
+"Mark the current group as not duplicates and exempt from future "
+"consideration"
+msgstr ""
+"Marque el grupo actual como no duplicado y exento de consideración futura"
+
+#: action.py:116
+msgid "Mark &all groups as exempt"
+msgstr "Marcar &todos los grupos como exentos"
+
+#: action.py:117
+msgid ""
+"Mark all remaining duplicate groups as exempt from future consideration"
+msgstr ""
+"Marque todos los grupos duplicados restantes como exentos de consideración "
+"futura"
+
+#: action.py:121
+msgid "&Show all book duplicate exemptions"
+msgstr "&Mostrar todas las exenciones duplicadas de libros"
+
+#: action.py:122
+msgid "Show all books that have book duplicate exemption pairings"
+msgstr ""
+"Mostrar todos los libros que tienen emparejamientos de exenciones duplicadas"
+
+#: action.py:125
+msgid "&Show all author duplicate exemptions"
+msgstr "&Mostrar todas las exenciones duplicadas de autor"
+
+#: action.py:126
+msgid "Show all books that have author duplicate exemption pairings"
+msgstr ""
+"Mostrar todos los libros que tienen emparejamientos de exención duplicados "
+"de autor"
+
+#: action.py:129
+msgid "&Manage exemptions for this book"
+msgstr "&Administrar exenciones para este libro"
+
+#: action.py:130
+msgid "Show duplicate exemptions for this book to enable removal"
+msgstr ""
+"Mostrar exenciones duplicadas para este libro para permitir la eliminación"
+
+#: action.py:133
+msgid "&Remove selected exemptions"
+msgstr "&Eliminar exenciones seleccionadas"
+
+#: action.py:134
+msgid "Remove any duplicate book/author exemptions for the selected books"
+msgstr ""
+"Eliminar cualquier libro duplicado/exenciones de autor para los libros "
+"seleccionados"
+
+#: action.py:138
+msgid "&Clear duplicate results"
+msgstr "&Borrar resultados duplicados"
+
+#: action.py:139
+msgid "Exit duplicate search mode"
+msgstr "Salga del modo de búsqueda duplicada"
+
+#: action.py:143
+msgid "&Export duplicate groups"
+msgstr "&Exportar grupos duplicados"
+
+#: action.py:144
+msgid "Export duplicates groups to a json file"
+msgstr "Exportar grupos duplicados a un archivo json"
+
+#: action.py:150
+msgid "Search for book duplicate with more advanced options"
+msgstr "Busque libros duplicados con opciones más avanzadas"
+
+#: action.py:154
+msgid "Search for library duplicate with more advanced options"
+msgstr "Busque duplicados de la biblioteca con opciones más avanzadas"
+
+#: action.py:157
+msgid "Find Metadata &Variations"
+msgstr "Buscar metadatos &Variaciones "
+
+#: action.py:158
+msgid "Search metadata variations with more advanced options"
+msgstr "Busque variaciones de metadatos con opciones más avanzadas"
+
+#: action.py:162
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: action.py:163
+msgid "Show help on how to use the advanced mode"
+msgstr "Mostrar ayuda sobre cómo utilizar el modo avanzado"
+
+#: action.py:166
+msgid "Advanced Mode"
+msgstr "Modo avanzado"
+
+#: action.py:167
+msgid "Search for duplicates using advanced options"
+msgstr "Busque duplicados usando opciones avanzadas"
+
+#: action.py:170
+msgid "&Customize plugin"
+msgstr "&Personalizar plugin"
+
+#: action.py:274
+msgid ""
+"This action will ensure that each of the {0} in the group are exempt from "
+"appearing together again in future."
+msgstr ""
+"Esta acción asegurará que cada uno de los {0} en el grupo estén exentos de "
+"volver a aparecer juntos en el futuro."
+
+#: action.py:277 action.py:330
+msgid "Are you <b>sure</b> you want to proceed?"
+msgstr "¿Está <b>seguro</b> de que desea continuar?"
+
+#: action.py:285
+msgid "No duplicates in group"
+msgstr "No hay duplicados en el grupo"
+
+#: action.py:286
+msgid "There are no duplicates remaining in this group."
+msgstr "No quedan duplicados en este grupo."
+
+#: action.py:297 action.py:302
+msgid "Cannot manage exemptions"
+msgstr "No se pueden gestionar las exenciones"
+
+#: action.py:298
+msgid "No book selected"
+msgstr "Ningún libro seleccionado"
+
+#: action.py:303
+msgid "This book has no duplicate exemptions"
+msgstr "Este libro no tiene exenciones duplicadas"
+
+#: action.py:324
+msgid "Invalid selection"
+msgstr "Selección invalida"
+
+#: action.py:325
+msgid "You must select at least one book."
+msgstr "Debes seleccionar al menos un libro."
+
+#: action.py:326
+msgid ""
+"This action will remove any duplicate exemptions for your selection. This "
+"will allow them to potentially appear as duplicates together in a future "
+"duplicate search."
+msgstr ""
+"Esta acción eliminará cualquier exención duplicada para su selección. Esto "
+"les permitirá aparecer potencialmente como duplicados juntos en una futura "
+"búsqueda duplicada."
+
+#: action.py:422 advanced\gui\save_restore.py:144
+#: advanced\gui\save_restore.py:174
+msgid "Choose file"
+msgstr "Elija el archivo"
+
+#: action.py:423
+msgid "Saved duplicates"
+msgstr "Duplicados guardados"
+
+#: action.py:449 advanced\gui\save_restore.py:169
+msgid "Export completed"
+msgstr "Exportación completada"
+
+#: action.py:450 advanced\gui\save_restore.py:170
+msgid "Exported to: {}"
+msgstr "Exportado a: {}"
+
+#: advanced\__init__.py:101
+msgid "Advanced algorithm"
+msgstr "Algoritmo avanzado"
+
+#: advanced\__init__.py:287 duplicates.py:831
+msgid ""
+"Results of {0} comparison:\n"
+"    Source library: {1}\n"
+"    Target library: {2}\n"
+"\n"
+"{3}"
+msgstr ""
+"Resultados de la comparación {0}:\n"
+"     Biblioteca de origen: {1}\n"
+"     Biblioteca de destino: {2}\n"
+"\n"
+"{3}"
+
+#: advanced\__init__.py:308 duplicates.py:883
+msgid "Click 'Show details' to see the results."
+msgstr "Haga clic en 'Mostrar detalles' para ver los resultados."
+
+#: advanced\__init__.py:318 duplicates.py:893 duplicates.py:1005
+msgid "Analysing duplicates in target database"
+msgstr "Analizando duplicados en la base de datos de destino"
+
+#: advanced\__init__.py:325 duplicates.py:896 duplicates.py:1013
+msgid "Analysing duplicates in current database"
+msgstr "Analizando duplicados en la base de datos actual "
+
+#: advanced\__init__.py:353 duplicates.py:1037
+msgid ""
+"Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
+"the library at: {2}"
+msgstr ""
+"Se encontraron <b>{0} libros</b> con posibles duplicados usando <b>{1}</b> "
+"en la biblioteca en: {2}"
+
+#: advanced\gui\__init__.py:27 advanced\gui\models.py:38
+msgid "Settings"
+msgstr "Configuraciones"
+
+#: advanced\gui\dialogs.py:70 dialogs.py:1163
+msgid "Choose library location to compare against"
+msgstr "Elija la ubicación de la biblioteca para comparar"
+
+#: advanced\gui\dialogs.py:76 advanced\gui\dialogs.py:349 dialogs.py:1218
+msgid "Same as current"
+msgstr "Igual que el actual"
+
+#: advanced\gui\dialogs.py:77 advanced\gui\dialogs.py:350 dialogs.py:1219
+msgid "The location {0} contains the current calibre library"
+msgstr "La ubicación {0} contiene la biblioteca de Calibre actual"
+
+#: advanced\gui\dialogs.py:79 advanced\gui\dialogs.py:352 dialogs.py:1221
+msgid "No existing library found"
+msgstr "No se encontró una biblioteca existente"
+
+#: advanced\gui\dialogs.py:80 advanced\gui\dialogs.py:353 dialogs.py:1222
+msgid "There is no existing calibre library at {0}"
+msgstr "No hay una biblioteca de Calibre existente en {0}"
+
+#: advanced\gui\dialogs.py:119
+msgid "Find book duplicates"
+msgstr "Encuentra libros duplicados"
+
+#: advanced\gui\dialogs.py:123 dialogs.py:165
+msgid "Duplicate Search Options"
+msgstr "Opciones de búsqueda duplicadas"
+
+#: advanced\gui\dialogs.py:137
+msgid "Result Options:"
+msgstr ""
+
+#: advanced\gui\dialogs.py:141 dialogs.py:240
+msgid "Show all groups at once with highlighting"
+msgstr "Mostrar todos los grupos a la vez con resaltado"
+
+#: advanced\gui\dialogs.py:142 dialogs.py:241
+msgid "Show one group at a time"
+msgstr "Mostrar un grupo a la vez"
+
+#: advanced\gui\dialogs.py:146 dialogs.py:249
+msgid "Sort groups by number of duplicates"
+msgstr "Ordenar grupos por número de duplicados"
+
+#: advanced\gui\dialogs.py:147 dialogs.py:250
+msgid ""
+"When unchecked, will sort by an approximation of the title\n"
+"or by author if title is being ignored"
+msgstr ""
+"Cuando no está marcado, se ordenará por una aproximación del título\n"
+"o por autor si se ignora el título"
+
+#: advanced\gui\dialogs.py:193 advanced\gui\dialogs.py:337
+msgid "Match rule(s) has empty values"
+msgstr "Las reglas de coincidencia tienen valores vacíos"
+
+#: advanced\gui\dialogs.py:194 advanced\gui\dialogs.py:338
+msgid ""
+"Match rule(s) missing field or algorithm. To proceed, complete the missing "
+"data, or delete the match rule(s)."
+msgstr ""
+"Coincidir con la regla(s) campo o algoritmo faltantes. Para continuar, "
+"complete los datos que faltan o elimine la(s) regla(s) de coincidencia."
+
+#: advanced\gui\dialogs.py:224 dialogs.py:1035
+msgid "Cross Library Search Options"
+msgstr "Opciones de búsqueda de bibliotecas cruzadas"
+
+#: advanced\gui\dialogs.py:228 dialogs.py:1039
+msgid "Compare With Library:"
+msgstr "Comparar con la biblioteca:"
+
+#: advanced\gui\dialogs.py:345 dialogs.py:1214
+msgid "No library specified"
+msgstr "Ninguna biblioteca especificada"
+
+#: advanced\gui\dialogs.py:346 dialogs.py:1215
+msgid "You must specify a library path"
+msgstr "Debe especificar una ruta de biblioteca"
+
+#: advanced\gui\dialogs.py:385
+msgid "Find metadata variations"
+msgstr "Encuentra variaciones de metadatos"
+
+#: advanced\gui\dialogs.py:389 dialogs.py:626
+msgid "Find Metadata Variations"
+msgstr "Buscar variaciones de Metadatos"
+
+#: advanced\gui\dialogs.py:402 dialogs.py:668
+msgid "Search"
+msgstr "Buscar"
+
+#: advanced\gui\dialogs.py:404 dialogs.py:670
+msgid "Search for results"
+msgstr "Buscar resultados"
+
+#: advanced\gui\dialogs.py:413 dialogs.py:681
+msgid "Search results:"
+msgstr "Resultados de la búsqueda:"
+
+#: advanced\gui\dialogs.py:419
+msgid "Items:"
+msgstr "Items:"
+
+#: advanced\gui\dialogs.py:420 dialogs.py:688 dialogs.py:879
+msgid "Variations:"
+msgstr "Variaciones:"
+
+#: advanced\gui\dialogs.py:434 dialogs.py:702
+msgid "&Show matching books"
+msgstr "Mo&strar libros coincidentes"
+
+#: advanced\gui\dialogs.py:435 dialogs.py:703
+msgid "As a group is selected, show the search results in the library view"
+msgstr ""
+"A medida que se selecciona un grupo, muestre los resultados de búsqueda en "
+"la vista de biblioteca"
+
+#: advanced\gui\dialogs.py:438 dialogs.py:706
+msgid "Rename to:"
+msgstr "Renombrar a:"
+
+#: advanced\gui\dialogs.py:455 dialogs.py:723
+msgid "&Rename"
+msgstr "&Renombrar"
+
+#: advanced\gui\dialogs.py:456 dialogs.py:724
+msgid "Rename all of the selected items to this name"
+msgstr "Cambie el nombre de todos los elementos seleccionados a este nombre"
+
+#: advanced\gui\dialogs.py:459 dialogs.py:727
+msgid "&Ignore"
+msgstr "&Ignorar"
+
+#: advanced\gui\dialogs.py:460 dialogs.py:728
+msgid "Ignore all selected items from consideration at this time"
+msgstr ""
+"Ignorar todos los elementos seleccionados de consideración en este momento"
+
+#: advanced\gui\dialogs.py:508 dialogs.py:763
+msgid "No matches"
+msgstr "No hay coincidencias"
+
+#: advanced\gui\dialogs.py:508 dialogs.py:763
+msgid "You have no variations of {0} using this criteria"
+msgstr "No tiene variaciones de {0} usando este criterio"
+
+#: advanced\gui\models.py:38
+msgid "Comment"
+msgstr "Comentario"
+
+#: advanced\gui\models.py:38
+msgid "Errors"
+msgstr ""
+
+#: advanced\gui\models.py:74
+msgid "Validation Error. Double click for details"
+msgstr ""
+
+#: advanced\gui\models.py:197
+msgid "Algorithm ({}) is not currently available"
+msgstr ""
+
+#: advanced\gui\models.py:201
+msgid "Algorithm unavailable"
+msgstr ""
+
+#: advanced\gui\rules_widget.py:52
+msgid "Add algorithms"
+msgstr ""
+
+#: advanced\gui\rules_widget.py:59
+msgid "Algorithms"
+msgstr ""
+
+#: advanced\gui\rules_widget.py:82
+msgid "Move row up"
+msgstr "Mover fila hacia arriba"
+
+#: advanced\gui\rules_widget.py:89
+msgid "Add row"
+msgstr ""
+
+#: advanced\gui\rules_widget.py:96
+msgid "Duplicate algorithm"
+msgstr ""
+
+#: advanced\gui\rules_widget.py:103
+msgid "Delete row"
+msgstr ""
+
+#: advanced\gui\rules_widget.py:110
+msgid "Move row down"
+msgstr "Mover fila hacia abajo"
+
+#: advanced\gui\rules_widget.py:149
+msgid "No algorithms selected"
+msgstr "No se seleccionaron algoritmos"
+
+#: advanced\gui\rules_widget.py:150
+msgid "You must select at least one algorithm."
+msgstr "Debe seleccionar al menos un algoritmo."
+
+#: advanced\gui\rules_widget.py:155
+msgid "Invalid algorithms"
+msgstr ""
+
+#: advanced\gui\rules_widget.py:155
+msgid ""
+"Some algorithms are not valid. Double click on error cell for more details."
+msgstr ""
+
+#: advanced\gui\rules_widget.py:197 advanced\gui\sort.py:114
+msgid "Remove"
+msgstr "Remover"
+
+#: advanced\gui\rules_widget.py:202 advanced\gui\sort.py:142
+msgid "Column:"
+msgstr "Columna:"
+
+#: advanced\gui\rules_widget.py:212
+msgid "Algorithms:"
+msgstr "Algoritmos:"
+
+#: advanced\gui\rules_widget.py:216 advanced\gui\rules_widget.py:284
+msgid "0 Algorithms Chosen"
+msgstr "0 Algoritmos elegidos"
+
+#: advanced\gui\rules_widget.py:219
+msgid "Add or remove algorithms"
+msgstr "Agregar o quitar algoritmos"
+
+#: advanced\gui\rules_widget.py:227
+msgid "Match any of the items"
+msgstr "Coincidir con cualquiera de los elementos"
+
+#: advanced\gui\rules_widget.py:228
+msgid ""
+"For fields with multiple items, match with books that any one of the items in this field.\n"
+"if unchecked, books match only when they match on all the items in the field."
+msgstr ""
+"Para campos con varios elementos, haga coincidir los libros con cualquiera de los elementos de este campo.\n"
+"si no está marcada, los libros solo coinciden cuando coinciden en todos los elementos del campo."
+
+#: advanced\gui\rules_widget.py:232
+msgid "contains names"
+msgstr "contiene nombres"
+
+#: advanced\gui\rules_widget.py:233
+msgid "Check if composite column contains names"
+msgstr "Compruebe si la columna compuesta contiene nombres"
+
+#: advanced\gui\rules_widget.py:265
+msgid "Cannot delete rule"
+msgstr "No se puede eliminar la regla"
+
+#: advanced\gui\rules_widget.py:266
+msgid "You must have at least one matching rule to proceed"
+msgstr "Debe tener al menos una regla coincidente para continuar"
+
+#: advanced\gui\rules_widget.py:288
+msgid "{} + {} others"
+msgstr "{} + {} otras"
+
+#: advanced\gui\rules_widget.py:374
+msgid "Clear all match rules"
+msgstr "Borrar todas las reglas"
+
+#: advanced\gui\rules_widget.py:382
+msgid "Duplicates sort"
+msgstr "Orden de duplicados"
+
+#: advanced\gui\rules_widget.py:384
+msgid "Configure sort filters for books inside duplicate groups"
+msgstr ""
+"Configurar filtros de clasificación para libros dentro de grupos duplicados"
+
+#: advanced\gui\rules_widget.py:389
+msgid "Add Match Rules"
+msgstr "Agregar reglas"
+
+#: advanced\gui\rules_widget.py:390
+msgid ""
+"Add a rule containing a field and one or more match algorithm/template(s)."
+msgstr ""
+"Agregue una regla que contenga un campo y uno o más algoritmos / plantillas "
+"de coincidencia."
+
+#: advanced\gui\rules_widget.py:436
+msgid "Incomplete Match Rule"
+msgstr "Regla de coincidencia incompleta"
+
+#: advanced\gui\rules_widget.py:437
+msgid ""
+"You must complete the previous match rule(s) before adding any new rules."
+msgstr ""
+"Debe completar las reglas de coincidencia anteriores antes de agregar reglas"
+" nuevas."
+
+#: advanced\gui\rules_widget.py:475
+msgid ""
+"Saved setting contains more than one match rule. Metadata variations can "
+"only have one match rule"
+msgstr ""
+"La configuración guardada contiene más de una regla de coincidencia. Las "
+"variaciones de metadatos solo pueden tener una regla de coincidencia"
+
+#: advanced\gui\rules_widget.py:512 advanced\gui\sort.py:369
+msgid "Error in sort filter No. {}: {}"
+msgstr "Error en el filtro de clasificación Nº {}: {}"
+
+#: advanced\gui\rules_widget.py:521
+msgid "Restore Error"
+msgstr "Restaurar error"
+
+#: advanced\gui\rules_widget.py:522
+msgid "Encountered errors while restoring settings"
+msgstr "Errores encontrados al restaurar la configuración"
+
+#: advanced\gui\save_restore.py:50 advanced\gui\save_restore.py:255
+msgid "Manage saved settings"
+msgstr "Administrar configuraciones guardadas"
+
+#: advanced\gui\save_restore.py:67
+msgid "Delete"
+msgstr "Eliminar"
+
+#: advanced\gui\save_restore.py:69
+msgid "Rename"
+msgstr "Renombrar"
+
+#: advanced\gui\save_restore.py:71
+msgid "Export"
+msgstr "Exportar"
+
+#: advanced\gui\save_restore.py:73
+msgid "Import"
+msgstr "Importar"
+
+#: advanced\gui\save_restore.py:110
+msgid "<p>Are you sure you want to delete the {} selected setting(s)?</p>"
+msgstr ""
+
+#: advanced\gui\save_restore.py:123 advanced\gui\save_restore.py:124
+msgid "New name:"
+msgstr "Nuevo nombre:"
+
+#: advanced\gui\save_restore.py:131
+msgid "Saved settings exists"
+msgstr "Existe una configuración guardada"
+
+#: advanced\gui\save_restore.py:132
+msgid "Saved settings exists with this name."
+msgstr "La configuración guardada existe con este nombre."
+
+#: advanced\gui\save_restore.py:145 advanced\gui\save_restore.py:175
+msgid "Saved settings"
+msgstr "Configuraciones guardadas"
+
+#: advanced\gui\save_restore.py:196
+msgid "Import error"
+msgstr "Error de Importación"
+
+#: advanced\gui\save_restore.py:197
+msgid "This is not a valid settings file"
+msgstr "Este no es un archivo de configuración válido"
+
+#: advanced\gui\save_restore.py:211
+msgid "The following settings already exit:"
+msgstr "Los siguientes ajustes ya salen:"
+
+#: advanced\gui\save_restore.py:214
+msgid "Overwrite settings?"
+msgstr ""
+
+#: advanced\gui\save_restore.py:215
+msgid ""
+"{} of the imported settings already exists. Do you want to overwrite them?"
+msgstr ""
+
+#: advanced\gui\save_restore.py:230
+msgid "Save/Restore settings"
+msgstr "Guardar/restaurar configuración"
+
+#: advanced\gui\save_restore.py:248
+msgid "Restore"
+msgstr "Restaurar"
+
+#: advanced\gui\save_restore.py:249
+msgid "Restore saved settings"
+msgstr "Restaurar la configuración guardada"
+
+#: advanced\gui\save_restore.py:251
+msgid "Save"
+msgstr "Guardar"
+
+#: advanced\gui\save_restore.py:252
+msgid "Save current settings"
+msgstr "Guardar la configuración actual"
+
+#: advanced\gui\save_restore.py:254
+msgid "Manage"
+msgstr "Gestionar"
+
+#: advanced\gui\save_restore.py:266
+msgid "Add to exisiting"
+msgstr ""
+
+#: advanced\gui\save_restore.py:294
+msgid "Name error"
+msgstr "Error de nombre"
+
+#: advanced\gui\save_restore.py:295
+msgid "No settings with the name \"{}\" found"
+msgstr "No se encontró ninguna configuración con el nombre \"{}\""
+
+#: advanced\gui\save_restore.py:308
+msgid "Save settings"
+msgstr "Guardar ajustes"
+
+#: advanced\gui\save_restore.py:312
+msgid ""
+"There is already a saved setting with the name <b>\"{}\"</b>. Are you sure "
+"you want to replace it?"
+msgstr ""
+"Ya existe una configuración guardada con el nombre <b>\"{}\"</b>. ¿Está "
+"seguro de que desea reemplazarlo?"
+
+#: advanced\gui\save_restore.py:322
+msgid "Enter a name:"
+msgstr "Ingrese un nombre:"
+
+#: advanced\gui\save_restore.py:323
+msgid "Enter a unique name:"
+msgstr "Ingrese un nombre único:"
+
+#: advanced\gui\save_restore.py:338
+msgid "Cannot add"
+msgstr "No se puede agregar"
+
+#: advanced\gui\save_restore.py:339
+msgid "The name you specified is not unique"
+msgstr "El nombre que especificó no es único"
+
+#: advanced\gui\sort.py:124
+msgid "Template:"
+msgstr "Plantilla:"
+
+#: advanced\gui\sort.py:125
+msgid "Edit/View Template"
+msgstr "Editar / Ver plantilla"
+
+#: advanced\gui\sort.py:129
+msgid "Text"
+msgstr "Texto"
+
+#: advanced\gui\sort.py:132
+msgid "Number"
+msgstr "Número"
+
+#: advanced\gui\sort.py:135
+msgid "Date"
+msgstr "Fecha"
+
+#: advanced\gui\sort.py:152
+msgid "Sort direction"
+msgstr "Ordenar dirección"
+
+#: advanced\gui\sort.py:156
+msgid "Ascending"
+msgstr "Ascendente"
+
+#: advanced\gui\sort.py:159
+msgid "Descending"
+msgstr "Descendiendo"
+
+#: advanced\gui\sort.py:235
+msgid "Clear all filters"
+msgstr "Borrar todos los filtros"
+
+#: advanced\gui\sort.py:240
+msgid "Add Template"
+msgstr "Agregar plantilla"
+
+#: advanced\gui\sort.py:241
+msgid "Add a template whose result is used as a sort filter"
+msgstr ""
+"Agregar una plantilla cuyo resultado se utiliza como filtro de clasificación"
+
+#: advanced\gui\sort.py:246
+msgid "Add Sort Filter"
+msgstr "Agregar filtro de clasificación"
+
+#: advanced\gui\sort.py:247
+msgid "Add a column to sort by"
+msgstr "Agregar una columna para ordenar"
+
+#: advanced\gui\sort.py:304
+msgid "Incomplete Sort Filter"
+msgstr "Filtro de clasificación incompleto"
+
+#: advanced\gui\sort.py:305
+msgid "You must complete the previous sort filter(s) to proceed."
+msgstr "Debe completar filtros(s) de clasificación anteriores para continuar."
+
+#: advanced\gui\sort.py:342
+msgid "Sort duplicate groups"
+msgstr "Ordenar grupos duplicados"
+
+#: advanced\gui\sort.py:380
+msgid "Sort filter(s) error(s)"
+msgstr ""
+
+#: advanced\gui\sort.py:391
+msgid "Sort filters not complete"
+msgstr "Ordenar filtros incompletos"
+
+#: advanced\gui\sort.py:392
+msgid "You must complete sort filters"
+msgstr "Debes completar filtros de clasificación"
+
+#: advanced\gui\views.py:119
+msgid "Are you sure you want to delete this action?"
+msgstr "¿Está seguro de que desea eliminar esta acción?"
+
+#: advanced\gui\views.py:121
+msgid "Are you sure you want to delete the selected %d actions?"
+msgstr ""
+
+#: advanced\gui\views.py:122
+msgid "Are you sure?"
+msgstr "Estas seguro?"
+
+#: advanced\gui\views.py:175
+msgid "Hide column %s"
+msgstr ""
+
+#: advanced\gui\views.py:184
+msgid "Show column"
+msgstr ""
+
+#: advanced\gui\views.py:204
+msgid "Cannot hide all columns"
+msgstr ""
+
+#: advanced\gui\views.py:204
+msgid "You must not hide all columns"
+msgstr ""
+
+#: advanced\gui\views.py:337
+msgid "No Algorithm Selected"
+msgstr ""
+
+#: advanced\gui\views.py:338
+msgid "You must choose an algorithm first"
+msgstr ""
+
+#: advanced\gui\views.py:376
+msgid "Errors details"
+msgstr ""
+
+#: advanced\match_rules.py:194
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: advanced\match_rules.py:273
+msgid "Errors for match:"
+msgstr "Errores de coincidencia:"
+
+#: advanced\match_rules.py:276
+msgid "Errors for match rule no. {}:"
+msgstr "Errores para la regla de coincidencia N°. {}:"
+
+#: advanced\match_rules.py:279
+msgid "Column \"{}\" cannot be added to match rule"
+msgstr "No se puede agregar la columna \"{}\" para que coincida con la regla"
+
+#: advanced\match_rules.py:282
+msgid "The following functions are missing and cannot be restored:{}{}"
+msgstr "Faltan las siguientes funciones y no se pueden restaurar:{}{}"
+
+#: advanced\match_rules.py:285
+msgid "Encountered errors while running the following functions:{}{}"
+msgstr "Errores encontrados al ejecutar las siguientes funciones:{}{}"
+
+#: advanced\match_rules.py:288
+msgid "Encountered errors while running the following templates:{}{}"
+msgstr "Se encontraron errores al ejecutar las siguientes plantillas:{}{}"
+
+#: advanced\match_rules.py:297
+msgid "Validation Error"
+msgstr ""
+
+#: advanced\matching.py:91
+msgid "Error when trying to run algorithm: {}"
+msgstr ""
+
+#: advanced\matching.py:91
+msgid "Match Error"
+msgstr ""
+
+#: advanced\matching.py:111
+msgid "Write you algorithm using calibre's template language"
+msgstr ""
+
+#: advanced\matching.py:149
+msgid "Template Match"
+msgstr ""
+
+#: advanced\matching.py:151
+msgid "Custom algorithms using calibre template language."
+msgstr ""
+
+#: advanced\matching.py:199
+msgid "Empty template"
+msgstr ""
+
+#: advanced\matching.py:199
+msgid "You must have a template for this algorithm"
+msgstr ""
+
+#: advanced\matching.py:214
+msgid "Identical Match"
+msgstr ""
+
+#: advanced\matching.py:215
+msgid "Case insensitive exact match"
+msgstr "Coincidencia exacta que no distingue entre mayúsculas y minúsculas"
+
+#: advanced\matching.py:251
+msgid "Similar Match"
+msgstr ""
+
+#: advanced\matching.py:252
+msgid "Removal of common punctuation and prefixes"
+msgstr "Eliminación de prefijos y puntuación comunes"
+
+#: advanced\matching.py:318
+msgid "Soundex length"
+msgstr "Longitud de Fonética"
+
+#: advanced\matching.py:345
+msgid "Soundex Match"
+msgstr ""
+
+#: advanced\matching.py:346
+msgid "Phonetic representation of names"
+msgstr "Representación fonética de nombres"
+
+#: advanced\matching.py:422
+msgid "Fuzzy Match"
+msgstr ""
+
+#: advanced\matching.py:423
+msgid ""
+"Remove all punctuation, subtitles and any words after 'and', 'or' or 'aka'"
+msgstr ""
+"Elimina toda la puntuación, los subtítulos y cualquier palabra después de "
+"\"y\", \"o\" o \"alias\""
+
+#: advanced\templates.py:29
+msgid "Author"
+msgstr "Autor"
+
+#: advanced\templates.py:29
+msgid "Title"
+msgstr "Título"
+
+#: advanced\templates.py:30
+msgid "Author Sort"
+msgstr ""
+
+#: advanced\templates.py:34
+msgid "Tag 1"
+msgstr ""
+
+#: advanced\templates.py:34
+msgid "Tag 2"
+msgstr ""
+
+#: advanced\templates.py:81 advanced\templates.py:85 advanced\templates.py:93
+#: advanced\templates.py:97 advanced\templates.py:112
+msgid "Template Error"
+msgstr "Error de plantilla"
+
+#: advanced\templates.py:82
+msgid ""
+"Templates must be either enclosed within curly brackets, or starts with: "
+"\"program:\""
+msgstr ""
+"Las plantillas deben estar encerradas entre corchetes o comenzar con: "
+"\"program:\""
+
+#: advanced\templates.py:94
+msgid ""
+"Running the template returned an error:\n"
+"{}"
+msgstr ""
+"La ejecución de la plantilla arrojó un error:\n"
+"{}"
+
+#: advanced\templates.py:108
+msgid "Target Library Template Error"
+msgstr "Error de plantilla de biblioteca de destino"
+
+#: advanced\templates.py:109
+msgid ""
+"Running the template in target library returned an error:\n"
+"{}"
+msgstr ""
+"Ejecutar la plantilla en la biblioteca de destino arrojó un error:\n"
+"{}"
+
+#: advanced\templates.py:121
+msgid "Enter a template to test using data from the selected book"
+msgstr "Ingrese una plantilla para probar usando datos del libro seleccionado"
+
+#: advanced\templates.py:145
+msgid "Add template"
+msgstr "Agregar plantilla"
+
+#: advanced\templates.py:149
+msgid "Edit Template"
+msgstr "Editar plantilla"
+
+#: book_algorithms.py:53
+msgid "Analysing {0} books for duplicates"
+msgstr "Analizando {0} libros para duplicados "
+
+#: book_algorithms.py:421
+msgid "matching '{0}' identifier"
+msgstr "identificador '{0}' coincidente"
+
+#: book_algorithms.py:424
+msgid "binary compare"
+msgstr "comparación binaria"
+
+#: book_algorithms.py:429
+msgid "ignore title, {0} author"
+msgstr "ignora el título, {0} autor"
+
+#: book_algorithms.py:433
+msgid "{0} title, {1} author"
+msgstr "{0} título, {1} autor"
+
+#: config.py:224
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Edite los atajos de teclado asociados con este complemento"
+
+#: config.py:228
+msgid "Reset &confirmation dialogs"
+msgstr ""
+
+#: config.py:229
+msgid "Reset all show me again dialogs for the Find Duplicates plugin"
+msgstr ""
+"Restablecer todos los cuadros de diálogo mostrarme nuevamente para el "
+"complemento Find Duplicated"
+
+#: config.py:233
+msgid "&View library preferences"
+msgstr "&Ver preferencias de biblioteca.."
+
+#: config.py:234
+msgid "View data stored in the library database for this plugin"
+msgstr ""
+"Ver datos almacenados en la base de datos de la biblioteca para este "
+"complemento"
+
+#: config.py:250
+msgid "Done"
+msgstr "Hecho"
+
+#: config.py:251
+msgid "Confirmation dialogs have all been reset"
+msgstr "Los cuadros de diálogo de confirmación se han restablecido"
+
+#: dialogs.py:51
+msgid ""
+"<b>Book duplicate search</b><br/>- Find groups of books which have an "
+"identical identifier such as an ISBN, amazon id, goodreads, uri etc.<br/>- "
+"Marking a group as exempt will prevent those specific books from appearing "
+"together in future duplicate book searches."
+msgstr ""
+"<b>Búsqueda de libros duplicados</b><br/>-Encuentra grupos de libros que "
+"tienen un identificador idéntico como ISBN, ID de Amazon, Goodreads, uri, "
+"etc.<br/>- Marcar un grupo como exento evitará libros específicos de "
+"aparecer juntos en futuras búsquedas de libros duplicados."
+
+#: dialogs.py:57
+msgid ""
+"<b>Book duplicate search</b><br/>- Find groups of books which have a book "
+"format that is binary identical.<br/>- Compares the actual file size of "
+"every book format in your library, computing an SHA hash to compare contents"
+" where sizes match.<br/>- Books found using this search are guaranteed to be"
+" duplicates.<br/>- Marking a group as exempt will prevent those specific "
+"books from appearing together in future duplicate book searches."
+msgstr ""
+"<b>Búsqueda de libros duplicados</b><br/>- Encuentra grupos de libros que "
+"tienen un formato de libro que es binario idéntico.<br/>- Compara el tamaño "
+"real de archivo de cada formato de libro en tu biblioteca, calculando un SHA"
+" hash para comparar contenidos donde los tamaños coinciden.<br/>- Los libros"
+" encontrados con esta búsqueda se garantiza que son duplicados.<br/>- Marcar"
+" un grupo como exento evitará que esos libros específicos aparezcan juntos "
+"en futuras búsquedas de libros duplicados."
+
+#: dialogs.py:66
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with an "
+"<b>identical title</b> and {0}<br/>- Titles must match exactly excluding "
+"case.<br/>- Marking a group as exempt will prevent those specific books from"
+" appearing together in future duplicate book searches."
+msgstr ""
+"<b>Búsqueda duplicada de título</b><br/>- Encuentra grupos de libros con un "
+"<b>título idéntico </b> y {0}<br/>- Los títulos deben coincidir exactamente "
+"con las mayúsculas y minúsculas.<br/>- Marcar un grupo como exento evitará "
+"que esos libros específicos aparezcan juntos en futuras búsquedas de libros "
+"duplicados."
+
+#: dialogs.py:71
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>similar "
+"title</b> and {0}<br/>- Similar title matches apply removal of common "
+"punctuation and prefixes and applies the same title matching logic as "
+"Automerge.<br/>- Marking a group as exempt will prevent those specific books"
+" from appearing together in future duplicate book searches."
+msgstr ""
+"<b>Búsqueda duplicada de título</b><br/>- Encuentra grupos de libros con un "
+"<b>título similar</b> y {0}<br/>- Las coincidencias de título similares "
+"aplican la eliminación de signos de puntuación y prefijos comunes y aplica "
+"la misma lógica de coincidencia de títulos que fusión automática.<br/>- "
+"Marcar un grupo como exento evitará que esos libros específicos aparezcan "
+"juntos en futuras búsquedas de libros duplicados."
+
+#: dialogs.py:77
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>soundex "
+"title</b> and {0}<br/>- Soundex title matches are based on the same removal "
+"of punctuation and common prefixes as a similar title search.<br/>- Marking "
+"a group as exempt will prevent those specific books from appearing together "
+"in future duplicate book searches."
+msgstr ""
+"<b>Búsqueda duplicada de título</b><br/>- Encuentra grupos de libros con un "
+"<b>título por fonética</b> y {0}<br/>- Las coincidencias de título por "
+"fonética se basan en la misma eliminación de puntuación y prefijos comunes "
+"como una búsqueda de título similar.<br/>- Marcar un grupo como exento "
+"evitará que esos libros específicos aparezcan juntos en futuras búsquedas de"
+" libros duplicados."
+
+#: dialogs.py:83
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>fuzzy "
+"title</b> and {0}<br/>- Fuzzy title matches remove all punctuation, "
+"subtitles and any words after 'and', 'or' or 'aka' in the title.<br/>- "
+"Marking a group as exempt will prevent those specific books from appearing "
+"together in future duplicate book searches."
+msgstr ""
+"<b>Búsqueda duplicada de título</b><br/>- Encuentra grupos de libros con un "
+"<b>título confuso</b> y {0}<br/>- Las coincidencias de título difuso "
+"eliminan todos los signos de puntuación, subtítulos y cualquier palabra "
+"después de 'y', 'o' o 'alias' en el título.<br/>- Marcar un grupo como "
+"exento evitará que esos libros específicos aparezcan juntos en futuras "
+"búsquedas de libros duplicados."
+
+#: dialogs.py:89
+msgid ""
+"<b>Author duplicate search</b><br/>- Find groups of books <b>ignoring "
+"title</b> with {0}<br/>- Ignore title searches are best to find variations "
+"of author names regardless of the books you have for each.<br/>- Marking a "
+"group as exempt will prevent any books by those authors from appearing "
+"together in future duplicate author searches."
+msgstr ""
+"<b>Búsqueda duplicada de autor</b><br/>- Encuentra grupos de libros "
+"<b>ignorando el título</b> con {0}<br/>- Ignorar las búsquedas de títulos "
+"son las mejores para encontrar variaciones de nombres de autores "
+"independientemente de los libros que tiene para cada uno.<br/>- Marcar un "
+"grupo como exento evitará que los libros de esos autores aparezcan juntos en"
+" futuras búsquedas de autores duplicados."
+
+#: dialogs.py:98
+msgid ""
+"an <b>identical author</b>.<br/>- Authors must match exactly excluding case."
+msgstr ""
+"un <b>autor idéntico</b>.<br/>- Los autores deben coincidir exactamente "
+"excluyendo mayúsculas y minúsculas."
+
+#: dialogs.py:100
+msgid ""
+"a <b>similar author</b>.<br/>- Similar authors differ only in punctuation or"
+" order of their names."
+msgstr ""
+"un <b>autor similar</b>.<br/>- Los autores similares difieren solo en "
+"puntuación u orden de sus nombres."
+
+#: dialogs.py:103
+msgid ""
+"a <b>soundex author</b>.<br/>- Soundex author matches start with the same "
+"removal of punctuation and ordering as a similar author search."
+msgstr ""
+"un <b>autor por fonética</b>.<br/>- Las coincidencias de autor por fonética "
+"comienzan con la misma eliminación de puntuación y orden que una búsqueda de"
+" autor similar."
+
+#: dialogs.py:106
+msgid ""
+"a <b>fuzzy match author</b>.<br/>- Fuzzy author matches compare using their "
+"surnames and only the first initial."
+msgstr ""
+"un <b>autor de coincidencia confusa </b>.<br/>- Las coincidencias de autor "
+"difuso se comparan usando sus apellidos y solo la primera inicial."
+
+#: dialogs.py:109
+msgid "<b>ignoring the author</b>."
+msgstr "<b>ignorando al autor</b>."
+
+#: dialogs.py:169
+msgid "Duplicate Search Type"
+msgstr "Tipo de búsqueda duplicada"
+
+#: dialogs.py:175 dialogs.py:1059
+msgid "Binary Compare"
+msgstr "Comparación binaria"
+
+#: dialogs.py:175 dialogs.py:1059
+msgid "Identifier"
+msgstr "Identificador"
+
+#: dialogs.py:175 dialogs.py:1059
+msgid "Title/Author"
+msgstr "Título/Autor"
+
+#: dialogs.py:190
+msgid "Title Matching"
+msgstr "Coincidencia de títulos"
+
+#: dialogs.py:202 dialogs.py:223 dialogs.py:663 dialogs.py:1086
+#: dialogs.py:1107
+msgid "Length:"
+msgstr "Longitud:"
+
+#: dialogs.py:203 dialogs.py:664 dialogs.py:1087
+msgid ""
+"The shorter the soundex length, the greater likelihood of false positives.\n"
+"Large soundex values reduce your chances of matches"
+msgstr ""
+"Cuanto más corta es la longitud de la fonética, mayor es la probabilidad de falsos positivos.\n"
+"Los valores de fonética grandes reducen sus posibilidades de coincidencias"
+
+#: dialogs.py:211
+msgid "Author Matching"
+msgstr "Coincidencia de Autores"
+
+#: dialogs.py:236
+msgid "Result Options"
+msgstr "Opciones de resultados"
+
+#: dialogs.py:244
+msgid "Highlight authors in the tag browser for ignore title searches"
+msgstr ""
+"Resalte los autores en el navegador de etiquetas para ignorar las búsquedas "
+"de títulos"
+
+#: dialogs.py:245
+msgid ""
+"When checked, will ensure that the authors for the current group\n"
+"are shown in the tag browser and highlighted if multiple groups shown.\n"
+"Only applies for author duplicate searches."
+msgstr ""
+"Cuando se marca, se asegurará de que los autores del grupo actual\n"
+"se muestran en el navegador de etiquetas y se resaltan si se muestran varios grupos.\n"
+"Solo aplica para búsquedas duplicadas de autor."
+
+#: dialogs.py:253 dialogs.py:1124
+msgid "Include languages metadata when comparing titles"
+msgstr "Incluir metadatos de idiomas al comparar títulos"
+
+#: dialogs.py:254 dialogs.py:1125
+msgid ""
+"When checked, books with identical titles but different\n"
+"languages metadata field values will not show as duplicates"
+msgstr ""
+"Cuando está marcado, libros con títulos idénticos pero diferentes\n"
+"los valores de los campos de metadatos de idiomas no se mostrarán como duplicados"
+
+#: dialogs.py:257
+msgid "When doing a Binary Compare, automatically remove duplicate formats"
+msgstr ""
+"Al hacer una comparación binaria, elimine automáticamente los formatos "
+"duplicados"
+
+#: dialogs.py:259
+msgid ""
+"When checked and the Binary duplicate search is run, if duplicate formats are found\n"
+"then all except one are deleted. The format on the oldest book record will be kept.\n"
+"This is a convenience function for where you have multiple formats associated with\n"
+"each book and hence it is not readily obvious which of these is the duplicate.\n"
+"Note that the book records themselves are not deleted, and will still appear in the\n"
+"results for merging even if they now have no formats."
+msgstr ""
+"Cuando se marca y se ejecuta la búsqueda de duplicados binarios, si se encuentran formatos duplicados\n"
+"entonces se eliminan todos menos uno. Se mantendrá el formato en el registro de libro más antiguo.\n"
+"Esta es una función conveniente para donde tiene múltiples formatos asociados con\n"
+"cada libro y, por lo tanto, no es obvio cuál de estos es el duplicado.\n"
+"Tenga en cuenta que los registros del libro en sí no se eliminan y seguirán apareciendo en el\n"
+"resultados para la fusión, incluso si ahora no tienen formatos."
+
+#: dialogs.py:482
+msgid "Manage Duplicate Exemptions"
+msgstr "Administrar exenciones duplicadas"
+
+#: dialogs.py:485
+msgid "Manage Exemptions"
+msgstr "Administrar Exenciones"
+
+#: dialogs.py:491
+msgid ""
+"The first book below will never appear as a duplicate with the following "
+"books.<br/>To allow future duplicate consideration, tick the remove checkbox"
+" and click ok."
+msgstr ""
+"El primer libro a continuación nunca aparecerá como un duplicado con los "
+"siguientes libros.<br/>Para permitir la consideración de duplicados futuros,"
+" marque la casilla de verificación Eliminar y haga clic en Aceptar."
+
+#: dialogs.py:506
+msgid ""
+"The authors below will never appear as a duplicate with the following "
+"authors.<br/>To allow future duplicate consideration, tick the remove "
+"checkbox and click ok."
+msgstr ""
+"Los autores a continuación nunca aparecerán como duplicados con los "
+"siguientes autores.<br/>Para permitir la consideración de duplicados "
+"futuros, marque la casilla de verificación Eliminar y haga clic en Aceptar."
+
+#: dialogs.py:622
+msgid "Find Duplicates Plugin"
+msgstr "Find Duplicates Plugin"
+
+#: dialogs.py:630
+msgid "Choose metadata column:"
+msgstr "Elegir columna de metadatos:"
+
+#: dialogs.py:634
+msgid "Authors"
+msgstr "Autores"
+
+#: dialogs.py:637
+msgid "Series"
+msgstr "Serie"
+
+#: dialogs.py:640
+msgid "Publisher"
+msgstr "Editor"
+
+#: dialogs.py:643
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: dialogs.py:652
+msgid "Choose similarity level:"
+msgstr "Elija el nivel de similitud:"
+
+#: dialogs.py:656
+msgid "Similar"
+msgstr "Similar"
+
+#: dialogs.py:659
+msgid "Soundex"
+msgstr "Fonética"
+
+#: dialogs.py:661
+msgid "Fuzzy"
+msgstr "Confuso"
+
+#: dialogs.py:687
+msgid "Authors:"
+msgstr "Autores:"
+
+#: dialogs.py:821
+msgid "Use this variation name"
+msgstr "Use este nombre de variación"
+
+#: dialogs.py:883
+msgid "Variations of: {0}"
+msgstr "Variaciones de: {0}"
+
+#: dialogs.py:909
+msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
+msgstr ""
+"¿Está seguro de que desea cambiar el nombre de los {0} elementos "
+"seleccionados a \"{1}\"?"
+
+#: dialogs.py:992
+msgid ""
+"<b>Book duplicate search</b><br/>- Report books in this library which have "
+"an identical identifier for books in the target library.<br/>"
+msgstr ""
+"<b>Búsqueda de libros duplicados</b><br/>- Informe libros en esta biblioteca"
+" que tengan un identificador idéntico para libros en la biblioteca de "
+"destino.<br/>"
+
+#: dialogs.py:996
+msgid ""
+"<b>Book duplicate search</b><br/>- Report books in this library which are "
+"binary identical to books in your target library.<br/>- Compares the actual "
+"file size of every book format in your libraries, computing an SHA hash to "
+"compare contents where sizes match.<br/>- Books found using this search are "
+"guaranteed to be duplicates."
+msgstr ""
+"<b>Búsqueda de libros duplicados</b><br/>- Informe libros en esta biblioteca"
+" que sean binarios idénticos a los libros en su biblioteca de destino.<br/>-"
+" Compara el tamaño real de archivo de cada formato de libro en sus "
+"bibliotecas, computación un hash SHA para comparar contenidos donde los "
+"tamaños coinciden.<br/>- Los libros encontrados con esta búsqueda se "
+"garantiza que son duplicados."
+
+#: dialogs.py:1003
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with an <b>identical title</b> and {0}<br/>- Titles "
+"must match exactly excluding case."
+msgstr ""
+"<b>Búsqueda duplicada de título</b><br/>- Informe libros en esta biblioteca "
+"en comparación con su biblioteca de destino con un <b>título idéntico</b> y "
+"{0}<br/>- Los títulos deben coincidir exactamente caso."
+
+#: dialogs.py:1006
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>similar title</b> and {0}<br/>- Similar title"
+" matches apply removal of common punctuation and prefixes and applies the "
+"same title matching logic as Automerge."
+msgstr ""
+"<b> Búsqueda duplicada de título</b><br/>- Informe libros en esta biblioteca"
+" en comparación con su biblioteca de destino con un <b>título similar</b> y "
+"{0}<br/>- Las coincidencias de título similares aplican eliminación de "
+"puntuación y prefijos comunes y aplica la misma lógica de coincidencia de "
+"títulos que fusión automática."
+
+#: dialogs.py:1010
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>soundex title</b> and {0}br/>- Soundex title "
+"matches are based on the same removal of punctuation and common prefixes as "
+"a similar title search."
+msgstr ""
+"<b>Búsqueda duplicada de título</b><br/>- Informe libros en esta biblioteca "
+"en comparación con su biblioteca de destino con un <b>título por "
+"fonética</b> y {0} <br />- Las coincidencias de título por fonética se basan"
+" en la misma eliminación de puntuación y prefijos comunes que una búsqueda "
+"de título similar."
+
+#: dialogs.py:1014
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>fuzzy title</b> and {0}<br/>- Fuzzy title "
+"matches remove all punctuation, subtitles and any words after 'and', 'or' or"
+" 'aka' in the title."
+msgstr ""
+"<b> Búsqueda duplicada de título</b><br/>- Informe libros en esta biblioteca"
+" en comparación con su biblioteca de destino con un <b>título confuso</b> y "
+"{0}<br/>- Las coincidencias de título difuso eliminan todo puntuación, "
+"subtítulos y cualquier palabra después de 'y', 'o' o 'alias' en el título."
+
+#: dialogs.py:1018
+msgid ""
+"<b>Author duplicate search</b><br/>- Report books in this library compared "
+"to your target library <b>ignoring title</b> with {0}<br/>- Ignore title "
+"searches are best to find variations of author names regardless of the books"
+" you have for each."
+msgstr ""
+"<b>Búsqueda duplicada de autor</b><br/>- Informe libros en esta biblioteca "
+"en comparación con su biblioteca de destino <b>ignorando el título</b> con "
+"{0}<br/>- Ignorar las búsquedas de títulos es mejor encontrar variaciones de"
+" los nombres de los autores independientemente de los libros que tenga para "
+"cada uno."
+
+#: dialogs.py:1043
+msgid "Library:"
+msgstr "Biblioteca:"
+
+#: dialogs.py:1053
+msgid "Duplicate Search Type:"
+msgstr "Tipo de búsqueda duplicada:"
+
+#: dialogs.py:1074
+msgid "Title Matching:"
+msgstr "Coincidencia de Títulos:"
+
+#: dialogs.py:1095
+msgid "Author Matching:"
+msgstr "Coincidencia de Autores:"
+
+#: dialogs.py:1120
+msgid "Compare Options:"
+msgstr "Comparar opciones:"
+
+#: dialogs.py:1243
+msgid "Save log"
+msgstr "Guardar registro"
+
+#: dialogs.py:1250
+msgid "Save Find Duplicates log"
+msgstr "Guardar Buscar registro de duplicados"
+
+#: dialogs.py:1251
+msgid "Duplicates log file"
+msgstr "Archivo de registro duplicado"
+
+#: duplicates.py:169
+msgid "No duplicate groups were found when searching with: <b>{0}</b>"
+msgstr "No se encontraron grupos duplicados al buscar con: <b>{0}</b>"
+
+#: duplicates.py:171 duplicates.py:284 duplicates.py:317 duplicates.py:324
+msgid "No duplicates"
+msgstr "Sin duplicados"
+
+#: duplicates.py:173 duplicates.py:180 duplicates.py:286
+msgid "Show this information again"
+msgstr "Mostrar esta información nuevamente"
+
+#: duplicates.py:176
+msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
+msgstr "Se encontraron {0} grupos duplicados al buscar con: <b> {1}</b>"
+
+#: duplicates.py:283 duplicates.py:325
+msgid "No more duplicate groups exist from your search."
+msgstr "No existen más grupos duplicados de su búsqueda."
+
+#: duplicates.py:318
+msgid ""
+"The current duplicate group no longer exists. You cannot perform this "
+"action."
+msgstr ""
+"El grupo duplicado actual ya no existe. No puedes realizar esta acción."
+
+#: duplicates.py:676
+msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
+msgstr "Mostrando #{0} de {0} grupos duplicados restantes para {0}"
+
+#: duplicates.py:912
+msgid ""
+"Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
+"the library at: {2}"
+msgstr ""
+"Se encontraron <b>{0} autores</b> con posibles duplicados usando <b>{1}</b> "
+"en la biblioteca en: {2}"
+
+#: duplicates.py:1001
+msgid ""
+"Found <b>{0} books</b> with binary duplicates against the library at: {1}"
+msgstr ""
+"Se encontraron <b>{0} libros</b> con duplicados binarios contra la "
+"biblioteca en: {1}"

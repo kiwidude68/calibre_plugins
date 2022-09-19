@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# misibacsi, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-07 21:44+0100\n"
+"PO-Revision-Date: 2022-09-07 15:49+0000\n"
+"Last-Translator: misibacsi, 2022\n"
+"Language-Team: Hungarian (https://www.transifex.com/calibre/teams/19337/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config.py:161
+msgid "Goodreads Genre"
+msgstr "Goodreads műfaj"
+
+#: config.py:161
+msgid "Maps to Calibre Tag"
+msgstr "Hozzárendelés Calibre címkéhez"
+
+#: config.py:230
+msgid "Goodreads genre to calibre tag mappings"
+msgstr "Goodreads műfaji és Calibre címke megfeleltetések"
+
+#: config.py:243
+msgid "Add genre mapping"
+msgstr "Műfaji hozzárendelés hozzáadása"
+
+#: config.py:250
+msgid "Delete genre mapping"
+msgstr "Műfaji hozzárendelés törlése"
+
+#: config.py:257
+msgid "Rename Goodreads genre"
+msgstr "Goodreads műfaj átnevezése"
+
+#: config.py:264
+msgid "Reset to plugin default mappings"
+msgstr "Plugin alapértelmezett hozzárendelések visszaállítása"
+
+#: config.py:270
+msgid "Other options"
+msgstr "Egyéb opciók"
+
+#: config.py:275
+msgid "Scan multiple editions for title/author searches (slower)"
+msgstr "Több kiadás beolvasása cím/szerző kereséshez (lassabb)"
+
+#: config.py:276
+msgid ""
+"When checked will perform an additional search to scan the top ranked\n"
+"Goodreads editions (if available) to exclude audiobook editions.\n"
+"When unchecked you will get a faster search but the edition is indeterminate."
+msgstr ""
+"Ha be van jelölve, akkor további keresést végez a legjobb helyezést elért\n"
+"Goodreads kiadásokon (ha rendelkezésre állnak), kizárva a hangoskönyv-kiadásokat.\n"
+"Ha nincs bejelölve, gyorsabb keresést kap, de a kiadás nem meghatározható."
+
+#: config.py:282
+msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
+msgstr ""
+"Szerezd meg az összes közreműködő szerzőt (pl. illusztrátorok, "
+"sorozatszerkesztők stb.)"
+
+#: config.py:283
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"Ha ez az opció be van jelölve, akkor az összes szerzőt lekérdezi a rendszer.\n"
+"\n"
+"Ha nincs bejelölve (alapértelmezett), csak az elsődleges szerzők nevei jelennek meg."
+
+#: config.py:288
+msgid "Get ASIN for kindle editions"
+msgstr "Szerezd meg az ASIN-t a kindle kiadásokhoz"
+
+#: config.py:289
+msgid ""
+"When this option is checked, in cases where Goodreads has an ASIN listed\n"
+"instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
+"already have the specific Goodreads identifier of a Kindle editon."
+msgstr ""
+"Ha ez az opció be van jelölve, akkor azokban az esetekben, amikor a Goodreads\n"
+"listáján szerepel egy ASIN az ISBN helyett, az ASIN-t keresi le. Ez olyan könyvek\n"
+"esetében hasznos, amelyek már rendelkeznek a Kindle kiadás speciális Goodreads azonosítójával."
+
+#: config.py:295
+msgid "Use first published date"
+msgstr "Használja az első publikációs dátumot"
+
+#: config.py:296
+msgid ""
+"If checked, the first published date for this book is used rather than\n"
+"that of the actual book edition."
+msgstr ""
+"Ha be van jelölve, akkor a könyv első megjelenési dátuma lesz használva, \n"
+"nem pedig a könyv aktuális kiadásának dátuma."
+
+#: config.py:314 config.py:345
+msgid "Add new mapping"
+msgstr "Új hozzárendelés hozzáadása"
+
+#: config.py:315 config.py:346
+msgid "Enter a Goodreads genre name to create a mapping for:"
+msgstr ""
+"Adjon meg egy Goodreads műfajnevet, amelyhez leképezést szeretne létrehozni:"
+
+#: config.py:326
+msgid "Add Failed"
+msgstr "Sikertelen hozzáadás"
+
+#: config.py:326 config.py:358
+msgid "A genre with the same name already exists"
+msgstr "Már létezik azonos nevű műfaj"
+
+#: config.py:334 config.py:365
+msgid "Are you sure?"
+msgstr "Biztos?"
+
+#: config.py:335
+msgid "Are you sure you want to delete the selected genre mappings?"
+msgstr ""
+"Biztos, hogy törölni szeretné a kiválasztott műfaji hozzárendeléseket?"
+
+#: config.py:358
+msgid "Rename Failed"
+msgstr "Az átnevezés sikertelen"
+
+#: config.py:366
+msgid "Are you sure you want to reset to the plugin default genre mappings?"
+msgstr ""
+"Biztos, hogy vissza akarja állítani a plugin alapértelmezett műfaji "
+"hozzárendeléseit?"

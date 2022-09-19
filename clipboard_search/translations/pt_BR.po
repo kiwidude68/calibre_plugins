@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Wagner Marques <wagnermarques00@hotmail.com>, 2022
+# Paulo_Neto <layoutbr@lexxa.com.br>, 2022
+# Cm Fy, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-09 18:59+0100\n"
+"PO-Revision-Date: 2022-09-09 18:02+0000\n"
+"Last-Translator: Cm Fy, 2022\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/calibre/teams/19337/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: action.py:37
+msgid "Clipboard Search"
+msgstr ""
+
+#: action.py:60 config.py:55
+msgid "Text search"
+msgstr ""
+
+#: action.py:62 config.py:56
+msgid "Exact text search"
+msgstr ""
+
+#: action.py:65
+msgid "&Customize plugin"
+msgstr "Customizar plugin"
+
+#: config.py:50
+msgid "Default action for toolbar button click"
+msgstr "Ação padrão para o clique na barra de ferramentas"
+
+#: config.py:65 config.py:80
+msgid "Keyboard shortcuts"
+msgstr "Atalhos do teclado"
+
+#: config.py:66
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Editar atalhos de teclado associados com este plugin"

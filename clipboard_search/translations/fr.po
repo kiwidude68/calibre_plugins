@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Nicolas F. <fernetn@gmail.com>, 2022
+# Walter Paterno <walter.paterno@gmail.com>, 2022
+# Ptit Prince <leporello1791@gmail.com>, 2022
+# Grant Drake, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 16:28+0100\n"
+"PO-Revision-Date: 2022-09-09 18:02+0000\n"
+"Last-Translator: Grant Drake, 2022\n"
+"Language-Team: French (https://www.transifex.com/calibre/teams/19337/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:61
+msgid "Keyboard shortcuts"
+msgstr "Raccourcis clavier"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Redémarrer Calibre maintenant"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Préférences pour:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Effacer"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Effacer tous les paramètres de cette extension"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Tous les paramètres dans d'autres librairies ou stockés dans un fichier JSON"
+" dans votre répertoire d'extensions calibre ne seront pas modifiés."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Vous devez redémarrer calibre ensuite."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Paramètres modifiés"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Merci de redémarrer calibre maintenant."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Êtes-vous sûr de vouloir réinitialiser vos paramètres dans cette "
+"bibliothèque pour cette extension ?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Paramètres supprimés"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Tous les paramètres pour cette extension dans cette librairie ont été "
+"réinitialisés."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Non-définie"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr "Redémarrage nécessaire"
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"L'image d'icone n'a pas était trouvée - vous devez redémarrer Calibre avant "
+"d'utiliser ce plugin !"
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:33
+msgid "Clipboard Search"
+msgstr "Recherche dans le presse-papiers"
+
+#: action.py:59 config.py:51
+msgid "Text search"
+msgstr "Recherche de texte"
+
+#: action.py:61 config.py:52
+msgid "Exact text search"
+msgstr "Recherche de texte exacte"
+
+#: action.py:64
+msgid "&Customize plugin"
+msgstr "&Personnaliser le plug-in"
+
+#: config.py:46
+msgid "Default action for toolbar button click"
+msgstr "Action par défaut pour le clic sur le bouton de la barre d'outils"
+
+#: config.py:62
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Editer les raccourcis clavier associés avec cette extension"

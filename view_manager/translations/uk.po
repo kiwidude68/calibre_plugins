@@ -1,0 +1,319 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Yuri Chornoivan <yurchor@ukr.net>, 2022
+# Андрій М. <dexteritymaster@gmail.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-09-19 15:46+0100\n"
+"PO-Revision-Date: 2022-09-13 12:25+0000\n"
+"Last-Translator: Андрій М. <dexteritymaster@gmail.com>, 2022\n"
+"Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:565
+msgid "Keyboard shortcuts"
+msgstr "Клавіатурні гарячі клавіші"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Перезавантажити Calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Налаштування:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Очистити"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Очистити всі налаштування для цього плагіну"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Будь-які налаштування в інших бібліотеках, або збережені в файлі JSON в "
+"папці ваший плагінів не будуть змінені."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Після цього ви повинні перезавантажити Calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr ""
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Будь-ласка перезавантажте Calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте очистити ваші налаштування в цій бібліотцеці для "
+"даного плагіну?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr ""
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Всі налаштування для цього плагіну в цій бібліотеці були очищені."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ..\common\common_widgets.py:94
+msgid "Undefined"
+msgstr "Невизначено"
+
+#: ..\common\common_widgets.py:149
+msgid "Restart required"
+msgstr ""
+
+#: ..\common\common_widgets.py:150
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+
+#: ..\common\common_widgets.py:193
+msgid "Create new column"
+msgstr ""
+
+#: action.py:38
+msgid "View Manager"
+msgstr "Керування переглядом"
+
+#: action.py:87
+msgid "&Save View Columns"
+msgstr "&Зберегти стовпчики перегляду"
+
+#: action.py:89
+msgid "&Save View Sort"
+msgstr "&Зберегти упорядкування перегляду"
+
+#: action.py:92
+msgid "Re-Apply Current View"
+msgstr "Повторно застосувати поточний вигляд"
+
+#: action.py:99
+msgid "&Create new View"
+msgstr "С&творити вигляд"
+
+#: action.py:102
+msgid "Previous View"
+msgstr "Попередній вигляд"
+
+#: action.py:104
+msgid "Next View"
+msgstr "Наступний вигляд"
+
+#: action.py:108
+msgid "&Customize plugin"
+msgstr "&Налаштувати додаток"
+
+#: action.py:156
+msgid "Add new view"
+msgstr "Додати новий вигляд"
+
+#: action.py:157
+msgid "Enter a unique display name for this view:"
+msgstr "Введіть унікальну показану назву для цього вигляду"
+
+#: action.py:165 config.py:686 config.py:734
+msgid "A view with the same name already exists"
+msgstr "Вигляд із такою назвою вже існує"
+
+#: action.py:165 config.py:686 config.py:734
+msgid "Add Failed"
+msgstr "Не вдалося додати"
+
+#: config.py:289
+msgid "Sort ascending"
+msgstr "Упорядкувати за зростанням"
+
+#: config.py:293
+msgid "Sort descending"
+msgstr "Упорядкувати за спаданням"
+
+#: config.py:389
+msgid "Select view to customize:"
+msgstr "Виберіть вигляд для налаштовування:"
+
+#: config.py:395
+msgid "Add view"
+msgstr "Додати вигляд"
+
+#: config.py:400
+msgid "Delete view"
+msgstr "Вилучити вигляд"
+
+#: config.py:405 config.py:721
+msgid "Rename view"
+msgstr "Перейменувати вигляд"
+
+#: config.py:411
+msgid "Column Options"
+msgstr "Параметри стовпчиків"
+
+#: config.py:420
+msgid "Columns in Default (Left) pane"
+msgstr "Стовпчики на типовій (лівій) панелі"
+
+#: config.py:422
+msgid "Columns in view"
+msgstr "Стовпчики у вигляді"
+
+#: config.py:426 config.py:440
+msgid "Move column up"
+msgstr "Пересунути стовпчик вище"
+
+#: config.py:429 config.py:443
+msgid "Move column down"
+msgstr "Пересунути стовпчик нижче"
+
+#: config.py:436
+msgid "Columns in Split (Right) Pane"
+msgstr "Стовпчики на розділеній (правій) панелі"
+
+#: config.py:437
+msgid ""
+"Split Book List will only be shown if this is checked. This will be checked "
+"if you save a Split View."
+msgstr ""
+"Розділений список книг буде показано, лише якщо позначено цей пункт. Його "
+"буде позначено, якщо ви збережете розділений перегляд."
+
+#: config.py:460
+msgid "Sort order"
+msgstr "Упорядкування"
+
+#: config.py:463
+msgid "Move sort column up"
+msgstr "Пересунути стовпчик упорядкування вище"
+
+#: config.py:466
+msgid "Move sort down"
+msgstr "Пересунути упорядкування нижче"
+
+#: config.py:495
+msgid "Search and Virtual Library Options"
+msgstr "Параметри пошуку і віртуальних бібліотек"
+
+#: config.py:503
+msgid "Apply saved search"
+msgstr "Застосувати збережений пошук"
+
+#: config.py:504
+msgid "Apply the selected saved search when the View is activated."
+msgstr "Застосувати позначений збережений пошук після активації вигляду."
+
+#: config.py:512
+msgid "Switch to Virtual library"
+msgstr "Перемкнутися до віртуальної бібліотеки"
+
+#: config.py:513
+msgid "Switch to the selected Virtual library when the View is activated."
+msgstr "Перемкнутися до віртуальної бібліотеки після активації вигляду."
+
+#: config.py:515
+msgid "Virtual library to switch to."
+msgstr "Віртуальна бібліотека, до якої слід перемкнутися."
+
+#: config.py:520
+msgid "Apply VL additional search restriction"
+msgstr "Застосувати додаткові обмеження пошуку ВБ"
+
+#: config.py:521
+msgid ""
+"Apply the selected saved search as a Virtual library additional restriction "
+"when the View is activated."
+msgstr ""
+"Застосувати позначений збережений пошук як додаткове обмеження віртуальної "
+"бібліотеки після активації вигляду."
+
+#: config.py:522
+msgid "Clear VL restriction search"
+msgstr "Зняти обмеження пошуком ВБ"
+
+#: config.py:523
+msgid "Saved search to apply as VL additional search restriction."
+msgstr ""
+"Збережений пошук, який слід застосувати як додаткове обмеження пошуком ВБ."
+
+#: config.py:537
+msgid "General Options"
+msgstr "Загальні параметри"
+
+#: config.py:542
+msgid "Jump to the top when applying this View"
+msgstr "Переходити до початку при застосуванні цього вигляду"
+
+#: config.py:546
+msgid "When restarting Calibre or switching to this library"
+msgstr "При перезапуску Calibre або перемикання на цю бібліотеку"
+
+#: config.py:547
+msgid "Automatically apply view:"
+msgstr "Автоматично застосовувати вигляд:"
+
+#: config.py:553
+msgid ""
+"Enabling this option may override any startup search restriction or title "
+"sort set in Preferences -> Behaviour/Tweaks."
+msgstr ""
+"Позначення цього пункту може перевизначити будь-яке початкове обмеження "
+"пошуку або упорядкування заголовків, яке визначено на сторінці «Налаштування"
+" -> Поведінка/Коригування»."
+
+#: config.py:566
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
+
+#: config.py:568
+msgid "&View library preferences"
+msgstr ""
+
+#: config.py:569
+msgid "View data stored in the library database for this plugin"
+msgstr "Переглянути дані, збережені у базі даних бібліотеки для цього додатка"
+
+#: config.py:722
+msgid "Enter a new display name for this view:"
+msgstr "Вкажіть нову показану назву для цього вигляду:"
+
+#: config.py:753
+msgid "Are you sure?"
+msgstr "Ви певні?"
+
+#: config.py:754
+msgid "Do you want to delete the view named"
+msgstr "Хочете вилучити вигляд із назвою"
