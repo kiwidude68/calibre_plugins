@@ -8,16 +8,17 @@ __copyright__ = '2022, Grant Drake based on code from JimmXinu'
 Creates an uncompressed zip file for the plugin.
 Plugin zips are uncompressed so to not negatively impact calibre load times.
 
+1. Derive the plugin zip filename by reading __init__.py in plugin folder
+2. Also derive the version (for printing)
+
 All subfolders of the plugin folder will be included, unless prefixed with '.'
 i.e. .build and .tx will not be included in the zip.
 
-Command line usage (from plugin subfolder):
-    python ..\common\build.py <plugin zip name>
-e.g. 
-    python ..\common\build.py "My Plugin.zip"
+Command line usage (working directory expected to be the <plugin> subfolder):
+    python ..\common\build.py
 '''
 
-import os, zipfile, sys
+import os, zipfile, re
 from glob import glob
 
 def addFolderToZip(myZipFile,folder,exclude=[]):
@@ -82,17 +83,39 @@ def getPluginSubfolders():
                 folders.append(subfolder)
     return folders
 
+def readPluginName():
+    initFile = os.path.join(os.getcwd(), '__init__.py')
+    if not os.path.exists(initFile):
+        print('ERROR: No __init__.py file found for this plugin')
+        raise FileNotFoundError(initFile)
+    
+    zipFileName = None
+    with open(initFile, 'r') as file:
+        content = file.read()
+        nameMatches = re.findall("\s+name\s*=\s*\'([^\']*)\'", content)
+        if nameMatches: 
+            zipFileName = nameMatches[0]+'.zip'
+        else:
+            raise NameError('Could not find plugin name in __init__.py')
+        versionMatches = re.findall("\s+version\s*=\s*\(([^\)]*)\)", content)
+        if versionMatches: 
+            version = versionMatches[0].replace(',','.').replace(' ','')
+
+    print('Plugin v%s will be zipped to: \'%s\''%(version, zipFileName))
+    return zipFileName
+
 if __name__=="__main__":
     
-    filename=sys.argv[1]
+    zipFileName = readPluginName()
 
-    files=getPluginSubfolders()
-    
-    exclude=['*.pyc','*~','*.xcf','build.py','*.po','*.pot']
+    adjustCommonImports()
+
+    files = getPluginSubfolders()
+    exclude = ['*.pyc','*~','*.xcf','build.py','*.po','*.pot']
     files.extend(glob('*.py'))
     files.extend(glob('*.md'))
     files.extend(glob('*.html'))
     files.extend(glob('*.cmd'))
     files.extend(glob('plugin-import-name-*.txt'))
-    adjustCommonImports()
-    createZipFile(filename, "w", files, exclude=exclude)
+
+    createZipFile(zipFileName, "w", files, exclude=exclude)
