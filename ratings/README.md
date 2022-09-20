@@ -26,9 +26,9 @@ This limitation can be worked around by writing a UI plugin such as this, storin
 | Option  | Description |
 | --------| ----------- |
 | Amazon Rating | Choose from dropdown list your calibre column to store the Amazon rating in.
-| Amazon Rating Count | Choose from dropdown list your calibre column to store the Amazon rating in.
+| Amazon Rating Count | Choose from dropdown list your calibre column to store the Amazon rating count in.
 | Goodreads Rating | Choose from dropdown list your calibre column to store the Goodreads rating in.
-| Goodreads Rating Count | Choose from dropdown list your calibre column to store the Goodreads rating in.
+| Goodreads Rating Count | Choose from dropdown list your calibre column to store the Goodreads rating count in.
 
 ## Development / Contributions
 
