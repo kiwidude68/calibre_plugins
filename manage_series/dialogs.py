@@ -36,7 +36,7 @@ from calibre.utils.config import tweaks
 from calibre.utils.date import qt_to_dt
 from calibre.utils.icu import sort_key
 
-from calibre_plugins.manage_series.common_compatibility import qSizePolicy_Minimum, qSizePolicy_Expanding
+from calibre_plugins.manage_series.common_compatibility import qSizePolicy_Minimum, qSizePolicy_Expanding, qtDropActionCopyAction
 from calibre_plugins.manage_series.common_icons import get_icon
 from calibre_plugins.manage_series.common_dialogs import SizePersistedDialog
 from calibre_plugins.manage_series.common_widgets import (ReadOnlyTableWidgetItem, ImageTitleLayout,
@@ -114,9 +114,7 @@ class AuthorsTableWidgetItem(ReadOnlyTableWidgetItem):
     def __init__(self, authors):
         text = ' & '.join(authors)
         ReadOnlyTableWidgetItem.__init__(self, text)
-        #self.foreground().setColor(Qt.darkGray)
         self.setForeground(Qt.darkGray)
-
 
 
 class SeriesTableWidgetItem(ReadOnlyTableWidgetItem):
@@ -314,7 +312,7 @@ class SeriesTableWidget(QTableWidget):
             self.parent().books.insert(dest_row - 1, book)
             dest_row = dest_row - 1
 
-        event.setDropAction(Qt.CopyAction)
+        event.setDropAction(qtDropActionCopyAction)
         # Determine the new row selection
         self.selectRow(drop_row)
         self.parent().renumber_series()

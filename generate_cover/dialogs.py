@@ -43,7 +43,7 @@ from calibre.utils.config import JSONConfig
 from calibre.utils.zipfile import ZipFile
 
 import calibre_plugins.generate_cover.config as cfg
-from calibre_plugins.generate_cover.common_compatibility import qSizePolicy_Expanding, qSizePolicy_Minimum
+from calibre_plugins.generate_cover.common_compatibility import qSizePolicy_Expanding, qSizePolicy_Minimum, qtDropActionCopyAction
 from calibre_plugins.generate_cover.common_icons import get_icon
 from calibre_plugins.generate_cover.common_dialogs import SizePersistedDialog
 from calibre_plugins.generate_cover.common_widgets import ReadOnlyLineEdit, ImageTitleLayout
@@ -294,7 +294,7 @@ class PickImageListWidget(QListWidget):
             event.acceptProposedAction()
 
     def dropEvent(self, event):
-        event.setDropAction(Qt.CopyAction)
+        event.setDropAction(qtDropActionCopyAction)
         md = event.mimeData()
         files, _y = dnd_get_files(md, IMAGE_EXTENSIONS)
         if files is not None:

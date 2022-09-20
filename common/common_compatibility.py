@@ -8,9 +8,9 @@ __copyright__ = '2022, Grant Drake'
 
 # Maintain backwards compatibility with older versions of Qt and calibre.
 try:
-    from qt.core import QSizePolicy, QTextEdit
+    from qt.core import QSizePolicy, QTextEdit, Qt
 except ImportError:                        
-    from PyQt5.Qt import QSizePolicy, QTextEdit
+    from PyQt5.Qt import QSizePolicy, QTextEdit, Qt
 
 try:
     qSizePolicy_Minimum = QSizePolicy.Policy.Minimum
@@ -29,3 +29,10 @@ try:
     qTextEdit_NoWrap = QTextEdit.LineWrapMode.NoWrap
 except:
     qTextEdit_NoWrap = QTextEdit.NoWrap
+
+try:
+    qtDropActionCopyAction = Qt.DropAction.CopyAction
+    qtDropActionMoveAction = Qt.DropAction.MoveAction
+except:
+    qtDropActionCopyAction = Qt.CopyAction
+    qtDropActionMoveAction = Qt.MoveAction

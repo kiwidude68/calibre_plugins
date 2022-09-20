@@ -35,7 +35,7 @@ from calibre.gui2.library.delegates import RatingDelegate, TextDelegate
 from calibre.utils.date import qt_to_dt, UNDEFINED_DATE
 
 import calibre_plugins.goodreads_sync.config as cfg
-from calibre_plugins.goodreads_sync.common_compatibility import qSizePolicy_Minimum
+from calibre_plugins.goodreads_sync.common_compatibility import qSizePolicy_Minimum, qtDropActionCopyAction, qtDropActionMoveAction
 from calibre_plugins.goodreads_sync.common_icons import get_icon, get_pixmap
 from calibre_plugins.goodreads_sync.common_dialogs import SizePersistedDialog
 from calibre_plugins.goodreads_sync.common_widgets import (DateDelegate, DateTableWidgetItem,

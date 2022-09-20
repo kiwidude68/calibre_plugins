@@ -19,7 +19,7 @@ from calibre.gui2.dnd import dnd_get_files
 from calibre.utils.formatter import EvalFormatter
 
 from calibre_plugins.import_list.algorithms import get_title_tokens
-from calibre_plugins.import_list.common_compatibility import qTextEdit_NoWrap
+from calibre_plugins.import_list.common_compatibility import qTextEdit_NoWrap, qtDropActionCopyAction, qtDropActionMoveAction
 from calibre_plugins.import_list.common_dialogs import SizePersistedDialog
 from calibre_plugins.import_list.page_common import AUTHOR_SEPARATOR
 
@@ -228,8 +228,8 @@ class DragDropLineEdit(QLineEdit):
         event.acceptProposedAction()
 
     def dragEnterEvent(self, event):
-        if int(event.possibleActions() & Qt.CopyAction) + \
-           int(event.possibleActions() & Qt.MoveAction) == 0:
+        if int(event.possibleActions() & qtDropActionCopyAction) + \
+           int(event.possibleActions() & qtDropActionMoveAction) == 0:
             return
         data = self._get_data_from_event(event)
         if data:
@@ -237,7 +237,7 @@ class DragDropLineEdit(QLineEdit):
 
     def dropEvent(self, event):
         data = self._get_data_from_event(event)
-        event.setDropAction(Qt.CopyAction)
+        event.setDropAction(qtDropActionCopyAction)
         self.setText(data[0])
 
     def _get_data_from_event(self, event):
