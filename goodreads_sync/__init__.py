@@ -17,7 +17,7 @@ class ActionGoodreadsSync(InterfaceActionBase):
     calibre utilities to run without needing to load the GUI libraries.
     '''
     name                    = 'Goodreads Sync'
-    description             = _('Sync from Calibre with the shelves of your GoodReads.com account')
+    description             = 'Sync from Calibre with the shelves of your GoodReads.com account'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
     version                 = (1, 16, 0)

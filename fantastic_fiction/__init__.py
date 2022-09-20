@@ -61,7 +61,7 @@ json = {
 class FantasticFiction(Source):
 
     name = 'Fantastic Fiction'
-    description = _('Downloads metadata and covers from FantasticFiction.com')
+    description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
     version = (1, 6, 0)
     minimum_calibre_version = (2, 85, 1)

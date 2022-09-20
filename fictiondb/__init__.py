@@ -24,7 +24,7 @@ from calibre.utils.cleantext import clean_ascii_chars
 class FictionDB(Source):
 
     name                    = 'FictionDB'
-    description             = _('Downloads metadata and covers from fictiondb.com')
+    description             = 'Downloads metadata and covers from fictiondb.com'
     author                  = 'Grant Drake'
     version                 = (1, 3, 0)
     minimum_calibre_version = (2, 85, 1)
