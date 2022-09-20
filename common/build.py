@@ -19,10 +19,8 @@ e.g.
 
 import os, zipfile, sys
 from glob import glob
-from six import text_type as unicode
 
 def addFolderToZip(myZipFile,folder,exclude=[]):
-    folder = unicode(folder) #convert path to ascii for ZipFile Method
     excludelist=[]
     for ex in exclude:
         excludelist.extend(glob(folder+"/"+ex))
@@ -42,7 +40,6 @@ def createZipFile(filename,mode,files,exclude=[]):
     for file in files:
         if file in excludelist:
             continue
-        file = unicode(file) #convert path to ascii for ZipFile Method
         if os.path.isfile(file):
             (filepath, filename) = os.path.split(file)
             myZipFile.write(file, filename)
