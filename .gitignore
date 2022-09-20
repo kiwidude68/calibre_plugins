@@ -120,3 +120,8 @@ dmypy.json
 
 # Zip files from built plugins
 *.zip
+
+# All common files accidentally left behind in plugin folders from debugging
+common_*.py
+# Except those in our common folder where they should be.
+!common/common_*.py
