@@ -10,11 +10,11 @@ The following plugins are maintained in this repository:
 
 | Plugin Name | Plugin Type | Details | Summary |
 | ----------- | ----------- | ------ | ------- |
-| Baen | Metadata | [README](baen/README.md]) | Download metadata from [baen.com][baen-url]
-| Clipboard Search | UI | [README](clipboard_search/README.md]) | Quickly search with clipboard contents
-| Count Pages | UI | [README](count_pages/README.md]) | Estimate or download page counts
+| Baen | Metadata | [README](baen/README.md) | Download metadata from [baen.com][baen-url]
+| Clipboard Search | UI | [README](clipboard_search/README.md) | Quickly search with clipboard contents
+| Count Pages | UI | [README](count_pages/README.md) | Estimate or download page counts
 | Cover Url | UI | [README](cover_url/README.md) | Scrape cover URL from Goodreads to a custom column
-| Extract ISBN | UI | [README](extract_isbn/README.md]) | Scan book contents to try to extract an ISBN
+| Extract ISBN | UI | [README](extract_isbn/README.md) | Scan book contents to try to extract an ISBN
 | Fantastic Fiction | Metadata | [README](fantastic_fiction/README.md) | Download metadata from [fantasticfiction.com][fantastic-fiction-url]
 | Fantastic Fiction Adults | Metadata | [README](fantastic_fiction_adults/README.md) | Download metadata from [ffadultsonly.com][fantastic-fiction-adults-url]
 | FictionDb | Metadata | [README](goodreads/README.md) | Download metadata from [fictiondb.com][fictiondb-url]
