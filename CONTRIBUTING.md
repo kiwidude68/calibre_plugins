@@ -70,6 +70,8 @@ Some basic testing has been done against the minimum versions for all these plug
 
 ## Getting Started (Windows)
 
+> Currently I have no Linux environment to create the appropriate setup instructions for. Also the batch files mentioned are obviously only for Windows too. If someone wants to contribute the necessary shell script equivalents into the .build folder and instructions then great - otherwise stick to Windows...
+
 Some of the plugin maintainers may not be quite so familiar with working with Git or GitHub. Note that there are many ways you can approach this. Here are a few suggestions for those of you working on Windows:
 
 - Install the Git tools, the obvious choice being [Git for Windows](https://gitforwindows.org/)
@@ -78,10 +80,6 @@ Some of the plugin maintainers may not be quite so familiar with working with Gi
 - Alternatively just clone this repo to a folder on your machine.
 - If you are a point-and-click in Windows Explorer sort of person then I recommend [TortoiseGit](https://tortoisegit.org/).
 - Ensure you have Python installed, I use version 3.10
-
-## Getting Started (Linux)
-
-Currently I have no Linux environment to create the appropriate setup instructions for. Also the batch files mentioned are obviously only for Windows too. If someone wants to contribute the necessary shell script equivalents into the .build folder and instructions then great - otherwise stick to Windows...
 
 ### Plugin Batch Files
 
@@ -162,13 +160,13 @@ SET CALIBRE_OVERRIDE_LANG=pl
 ```
 
 Testing tips from JimmXinu:
-- In FFF I added a fake zz.po (https://github.com/JimmXinu/FanFicFare/tree/main/calibre-plugin/translations) language, and used a perl script to just append zz to every translatable string.  Then when you run with CALIBRE_OVERRIDE_LANG=zz you can use that to see whether you got them all working or not.
-- If you are old school and use %s replacements in translated strings, watch for those when translations come in. I've seen some hard to find problems with translated strings had too few or too many %d or %s in them.
+- In FFF I added a fake `zz.po` (https://github.com/JimmXinu/FanFicFare/tree/main/calibre-plugin/translations) language, and used a perl script to just append zz to every translatable string.  Then when you run with `CALIBRE_OVERRIDE_LANG=zz` you can use that to see whether you got them all working or not.
+- If you are old school and use `%s` replacements in translated strings, watch for those when translations come in. I've seen some hard to find problems with translated strings had too few or too many `%d` or `%s` in them.
 
 ### Translation Tips
 
 - The Transifex configuration is stored in the `.tx\config` file for each plugin
-- Be aware that Transifex may change {{config}} file syntax with newer CLI versions. I know v1.3.0 works currently with this repo.
+- Be aware that Transifex may change `config` file syntax with newer CLI versions. I know v1.3.0 works currently with this repo.
 - If you add translatable text for the first time to an existing .py file (or new file) you must modify `generate-pot.cmd` to include that filename in the list of files it scans.
 - Setting these plugins up in Transifex for the first time required me to be an administrator. You would need to contact Kovid Goyal as the calibre organisation owner for any new plugins for similar rights.
 
@@ -189,7 +187,7 @@ Originally these plugins were developed using the Eclipse IDE. However nowadays 
 If however you are wanting to attach a debugger to a running calibre process for full stepping through code etc that is not what VS Code does. Your debugging is going to be limited to `print()` and `log` statements. If you think you need more interactive debugging then this thread may offer some tips:
 [A free Calibre Windows development environment using Visual Studio](https://www.mobileread.com/forums/showthread.php?t=251201)
 
-### Navigating calibre in VS Code
+### Navigating calibre code from VS Code
 
 Entirely optional but you might find it useful to have the calibre source code easily accessible in addition to this plugins repo. Particularly when you need to understand the calibre API or look to see how it should be used.
 
@@ -230,7 +228,7 @@ You can of course do both of the above or mixing and matching - for instance the
 
 ### Virtual Environments
 
-The above approach will allow resolving calibre imports but not third party libraries such as PyQt5 or lxml. If you want intellisense for those, then you need a few more steps to create a virtual Python environment in VS Code.
+The above approach will allow resolving calibre imports but not third party libraries such as PyQt5, six or lxml. If you want intellisense for those, then you need a few more steps to create a virtual Python environment in VS Code.
 
 1. From the powershell prompt in VS Code with the workspace loaded, run:
 ```
@@ -240,6 +238,7 @@ py -3 -m venv .venv
 2. Now you can try to install third party packages you see a plugin requires, e.g.
 ```
 python -m pip install PyQt5
+python -m pip install six
 python -m pip install lxml
 ...
 ```
