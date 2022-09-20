@@ -17,7 +17,7 @@ except NameError:
 from calibre.gui2.metadata.config import ConfigWidget as DefaultConfigWidget
 from calibre.utils.config import JSONConfig
 
-from calibre_plugins.fantastic_fiction.common_utils import KeyValueComboBox
+from calibre_plugins.fantastic_fiction_adults.common_widgets import KeyValueComboBox
 
 STORE_NAME = 'Options'
 KEY_GENRE_ACTION = 'genreAction'

@@ -12,12 +12,10 @@ try:
     qWizard_NoDefaultButton = QWizard.WizardOption.NoDefaultButton
     qWizard_HaveHelpButton = QWizard.WizardOption.HaveHelpButton
     qWizard_HelpButtonOnRight = QWizard.WizardOption.HelpButtonOnRight
-    qWizard_HelpButton = QWizard.WizardOption.HelpButton
 except:
     qWizard_NoDefaultButton = QWizard.NoDefaultButton
     qWizard_HaveHelpButton = QWizard.HaveHelpButton
     qWizard_HelpButtonOnRight = QWizard.HelpButtonOnRight
-    qWizard_HelpButton = QWizard.HelpButton
 
 from calibre.gui2 import gprefs
 
@@ -45,7 +43,7 @@ class ImportListWizard(QWizard):
         self.setOption(qWizard_NoDefaultButton, True)
         self.setOption(qWizard_HaveHelpButton, True)
         self.setOption(qWizard_HelpButtonOnRight, False)
-        self.setButtonText(qWizard_HelpButton, _('&Options')+'...')
+        self.setButtonText(QWizard.HelpButton, _('&Options')+'...')
         self.helpRequested.connect(self._show_options)
 
         self.is_closed = False

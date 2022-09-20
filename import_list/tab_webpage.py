@@ -26,6 +26,15 @@ except ImportError:
                         QTextCursor, QBrush, QUrl, QDialogButtonBox,
                         QRadioButton, QScrollArea, QComboBox)
 
+try:
+    qTextCursor_KeepAnchor = QTextCursor.MoveMode.KeepAnchor
+    qTextCursor_MoveAnchor = QTextCursor.MoveMode.MoveAnchor
+    qTextCursor_Right = QTextCursor.MoveOperation.Right
+except:
+    qTextCursor_KeepAnchor = QTextCursor.KeepAnchor
+    qTextCursor_MoveAnchor = QTextCursor.MoveAnchor
+    qTextCursor_Right = QTextCursor.Right
+
 from calibre import browser, random_user_agent, prints
 from calibre.ebooks.metadata import fmt_sidx
 from calibre.ebooks.BeautifulSoup import BeautifulSoup
@@ -34,8 +43,7 @@ from calibre.utils.cleantext import clean_ascii_chars
 from calibre.utils.ipc.simple_worker import fork_job, WorkerError
 
 import calibre_plugins.import_list.config as cfg
-from calibre_plugins.import_list.common_compatibility import (qTextCursor_KeepAnchor, qTextCursor_MoveAnchor, 
-                                    qTextCursor_Right, qSizePolicy_Preferred, qSizePolicy_Expanding)
+from calibre_plugins.import_list.common_compatibility import qSizePolicy_Preferred, qSizePolicy_Expanding
 from calibre_plugins.import_list.common_icons import get_icon
 from calibre_plugins.import_list.common_dialogs import SizePersistedDialog
 from calibre_plugins.import_list.page_common import AUTHOR_SEPARATOR, TAGS_SEPARATOR

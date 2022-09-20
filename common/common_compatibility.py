@@ -8,9 +8,9 @@ __copyright__ = '2022, Grant Drake'
 
 # Maintain backwards compatibility with older versions of Qt and calibre.
 try:
-    from qt.core import QSizePolicy, QTextCursor, QTextEdit
+    from qt.core import QSizePolicy, QTextEdit
 except ImportError:                        
-    from PyQt5.Qt import QSizePolicy, QTextCursor, QTextEdit
+    from PyQt5.Qt import QSizePolicy, QTextEdit
 
 try:
     qSizePolicy_Minimum = QSizePolicy.Policy.Minimum
@@ -24,24 +24,6 @@ except:
     qSizePolicy_Expanding = QSizePolicy.Expanding
     qSizePolicy_Preferred = QSizePolicy.Preferred
     qSizePolicy_Ignored = QSizePolicy.Ignored
-
-try:
-    qTextCursor_KeepAnchor = QTextCursor.MoveOperation.KeepAnchor
-    qTextCursor_MoveAnchor = QTextCursor.MoveOperation.MoveAnchor
-    qTextCursor_Right = QTextCursor.MoveOperation.Right
-except:
-    qTextCursor_KeepAnchor = QTextCursor.KeepAnchor
-    qTextCursor_MoveAnchor = QTextCursor.MoveAnchor
-    qTextCursor_Right = QTextCursor.Right
-
-try:
-    qTextCursor_KeepAnchor = QTextCursor.MoveOperation.KeepAnchor
-    qTextCursor_MoveAnchor = QTextCursor.MoveOperation.MoveAnchor
-    qTextCursor_Right = QTextCursor.MoveOperation.Right
-except:
-    qTextCursor_KeepAnchor = QTextCursor.KeepAnchor
-    qTextCursor_MoveAnchor = QTextCursor.MoveAnchor
-    qTextCursor_Right = QTextCursor.Right
 
 try:
     qTextEdit_NoWrap = QTextEdit.LineWrapMode.NoWrap
