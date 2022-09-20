@@ -1038,7 +1038,7 @@ class PickGoodreadsBookTableWidget(QTableWidget):
         if not self.selectionModel().hasSelection():
             return
         row = self.selectionModel().selectedRows()[0]
-        row = unicode(self.item(row.row(), 0).data(Qt.UserRole))
+        row = int(self.item(row.row(), 0).data(Qt.UserRole))
         if row >= 0:
             return self.goodreads_search_books[row]
 
