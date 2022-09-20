@@ -1,16 +1,34 @@
-@set PLUGIN_ZIP=Goodreads.zip
+@echo off
+set PLUGIN_ZIP=Goodreads.zip
 
-@pushd
-@cd ..\translations
-@set PYTHONIOENCODING=UTF-8
-@for %%f in (*.po) do (
-    "C:\Program Files\Calibre2\calibre-debug.exe" -c "from calibre.translations.msgfmt import main; main()" %%~nf
+cd ..\translations
+set PYTHONIOENCODING=UTF-8
+for %%f in (*.po) do (
+    echo Compiling translation for: %%~nf
+    if defined CALIBRE_DIRECTORY (
+        "%CALIBRE_DIRECTORY%\calibre-debug.exe" -c "from calibre.translations.msgfmt import main; main()" %%~nf
+    ) else (
+        calibre-debug.exe -c "from calibre.translations.msgfmt import main; main()" %%~nf
+    )
 )
-@cd ..
+cd ..
 
-@xcopy ..\common\common_*.py . /Y > nul
+echo Copying common files for zip
+xcopy ..\common\common_*.py . /Y > nul
+
+echo Building plugin zip: %PLUGIN_ZIP%
 python ..\common\build.py "%PLUGIN_ZIP%"
-@del common_*.py
+if %ERRORLEVEL% NEQ 0 GOTO ExitPoint:
 
-calibre-customize -a "%PLUGIN_ZIP%"
-@popd
+echo Deleting common files after zip
+del common_*.py
+
+echo Installing plugin
+if defined CALIBRE_DIRECTORY (
+    "%CALIBRE_DIRECTORY%\calibre-customize" -a "%PLUGIN_ZIP%"
+) else (
+    calibre-customize -a "%PLUGIN_ZIP%"
+)
+
+:ExitPoint
+cd .build

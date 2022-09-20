@@ -68,7 +68,7 @@ Some basic testing has been done against the minimum versions for all these plug
 
 ---
 
-## Getting Started
+## Getting Started (Windows)
 
 Some of the plugin maintainers may not be quite so familiar with working with Git or GitHub. Note that there are many ways you can approach this. Here are a few suggestions for those of you working on Windows:
 
@@ -77,6 +77,11 @@ Some of the plugin maintainers may not be quite so familiar with working with Gi
 - VS Code can [integrate directly with GitHub](https://code.visualstudio.com/docs/editor/github)
 - Alternatively just clone this repo to a folder on your machine.
 - If you are a point-and-click in Windows Explorer sort of person then I recommend [TortoiseGit](https://tortoisegit.org/).
+- Ensure you have Python installed, I use version 3.10
+
+## Getting Started (Linux)
+
+Currently I have no Linux environment to create the appropriate setup instructions for. Also the batch files mentioned are obviously only for Windows too. If someone wants to contribute the necessary shell script equivalents into the .build folder and instructions then great - otherwise stick to Windows...
 
 ### Plugin Batch Files
 
@@ -92,6 +97,17 @@ Each plugin folder contains the following batch files in a ``.build`` subfolder 
 Mostly you will be using `debug.cmd`. This allows you to see any errors when calibre attempts to load the plugin zip (e.g. in the VS Code console window), and then interactively test the plugin. Close calibre manually when you are finished testing.
 
 All these batch files can be run from within VS Code using tasks - see below.
+
+### Environment Variables
+
+- The calibre environment variables are documented [here](https://manual.calibre-ebook.com/customize.html)
+- The following are useful to know/in addition:
+
+| Environment Variable | Purpose |
+| -------------------- | ------- |
+| ``CALIBRE_CONFIG_DIRECTORY`` | If using calibre portable, set this to the location of the `Calibre Settings` subfolder.<br>Otherwise calibre-customize in ``build.cmd`` will insert into your main calibre. |
+| ``CALIBRE_DIRECTORY`` | Custom variable I added support for, used by ``build.cmd``<br>Set to folder location of your ``calibre-debug.exe``.<br>Only necessary if calibre is not in your path. |
+| ``PYGETTEXT_FOLDER`` | Custom variable I added support for, used by ``generate-pot.cmd``<br>Set to folder location of your Python pygettext.py file<br>Default location assumed to be ``C:\Python310\Tools\i18n``<br>Could be useful if you have a different version of Python or install location.
 
 ### Submitting Changes
 
@@ -169,8 +185,6 @@ Testing tips from JimmXinu:
 ## Working with Visual Studio Code
 
 Originally these plugins were developed using the Eclipse IDE. However nowadays I much prefer using VS Code, so instructions here will be focused around using that. You can use any text editor you like to modify these plugins - it really doesn't matter and depends on how much intellisense support you are after and what you feel most productive with. If you did use something else though please make sure that any local workspace files that editor creates are excluded in the `.gitignore` to keep the noise away from others.
-
-Setting up Python itself is not covered here, that is a straightforward and well documented elsewhere.
 
 If however you are wanting to attach a debugger to a running calibre process for full stepping through code etc that is not what VS Code does. Your debugging is going to be limited to `print()` and `log` statements. If you think you need more interactive debugging then this thread may offer some tips:
 [A free Calibre Windows development environment using Visual Studio](https://www.mobileread.com/forums/showthread.php?t=251201)

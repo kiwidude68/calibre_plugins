@@ -1,6 +1,15 @@
-@pushd
-@cd ..
-python C:\Python310\Tools\i18n\pygettext.py -d find-duplicates -p translations^
+@echo off
+cd ..
+
+set PYGETTEXT=C:\Python310\Tools\i18n\pygettext.py
+if defined PYGETTEXT_FOLDER (
+    set PYGETTEXT=%PYGETTEXT_FOLDER%\pygettext.py
+)
+
+echo Regenerating translations .pot file
+python %PYGETTEXT% -d find-duplicates -p translations^
  action.py config.py book_algorithms.py dialogs.py ..\common\common_*.py^
  duplicates.py advanced\*.py advanced\gui\*.py
-@popd
+
+set PYGETTEXT=
+cd .build

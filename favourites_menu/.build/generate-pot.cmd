@@ -1,5 +1,14 @@
-@pushd
-@cd ..
-python C:\Python310\Tools\i18n\pygettext.py -d favourites-menu -p translations^
+@echo off
+cd ..
+
+set PYGETTEXT=C:\Python310\Tools\i18n\pygettext.py
+if defined PYGETTEXT_FOLDER (
+    set PYGETTEXT=%PYGETTEXT_FOLDER%\pygettext.py
+)
+
+echo Regenerating translations .pot file
+python %PYGETTEXT% -d favourites-menu -p translations^
  action.py config.py ..\common\common_*.py
-@popd
+
+set PYGETTEXT=
+cd .build
