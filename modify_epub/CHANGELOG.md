@@ -59,7 +59,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.3.12] - 2014-10-02
 ### Changed
-- Enhancement to "stripkobo", "stripspans", and "unpretty" options: All three now remove &lt;/br&gt; and &lt;/hr&gt; tags and always make BR and HR self-closing elements. (This fixes invalid &lt;br&gt; and &lt;hr&gt; markup, if such is present.)
+- Enhancement to "stripkobo", "stripspans", and "unpretty" options: All three now remove `</br>` and `</hr>` tags and always make BR and HR self-closing elements. (This fixes invalid `</br>` and `</hr>` markup, if such is present.)
 - Moved "stripkobo", "stripspans", and "unpretty" into the "Known artifacts" category to balance the dialog box better.
 - Added some code to dialogs.py to make the dialog box scrollable on smaller screens.
 - Help file filled in how one can detect the need to smarten punctuation (was previously blank.)
@@ -70,9 +70,9 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ## [1.3.11] - 2014-08-13
 ### Added
 - Add an "unpretty" option to de-indent and otherwise reformat HTML elements in markup. This should have no effect on the rendered content; it only cleans the source code up a bit.
-- Add a "stripspans" option to allow removal of attributeless &lt;span&gt; elements from markup, as well as normalizing empty &lt;x&gt;&lt;/x&gt; elements to the &lt;x/&gt; form.
+- Add a "stripspans" option to allow removal of attributeless `<span>` elements from markup, as well as normalizing empty `<x></x>` elements to the `<x/>` form.
 - Add a "stripkobo" option to allow removal of the Kobo-specific code from kepub books, transforming them into standard EPUB books. This does NOT remove Kobo's DRM.
-- Note: Both of the above will also completely remove A, B, I, U, BIG, SMALL, EM, SPAN, and STRONG elements from the markup when those elements have neither attributes nor content.
+- Note: Both of the above will also completely remove `<a>`, `<b>`, `<i>`, `<u>`, `<big>`, `<small>`, `<em>`, `<span>`, and `<strong>` elements from the markup when those elements have neither attributes nor content.
 ### Fixed
 - "Remove Adobe resource DRM meta tags" option to remove leading spaces and/or newlines, so these meta tags are completely removed instead of leaving blank lines.
 
@@ -144,9 +144,9 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Rename "Rewrite CSS margins" to "Modify @page and body style margins"
 ### Fixed
 - Fix "Rewrite CSS margins" bug where if default margins are set to zero and an epub has margins specified it would error
-- Fix "Rewrite CSS margins" bug where if default margins are set to zero it should not add an empty @page directive
+- Fix "Rewrite CSS margins" bug where if default margins are set to zero it should not add an empty `@page` directive
 - "Remove unused images" not detecting svg images in an svg section containing sibling tags
-- "Remove Adobe xpgt links" so that it includes removal of links using the @import format.
+- "Remove Adobe xpgt links" so that it includes removal of links using the `@import` format.
 
 ## [1.2.7] - 2012-06-29
 ### Changed
@@ -206,13 +206,13 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.1.5] - 2012-05-09
 ### Changed
-- When performing any Modify action, update the last_modified column in calibre for the book.
+- When performing any Modify action, update the `last_modified` column in calibre for the book.
 ### Fixed
 - Remove xpgt files and links to remove the xpgt file from the manifest
 
 ## [1.1.4] - 2012-05-07
 ### Changed
-- When using the Remove xpgt files and links option, remove trailing whitespace after the removed &lt;link&gt;
+- When using the Remove xpgt files and links option, remove trailing whitespace after the removed `<link>`
 ### Fixed
 - When no epubs are modified, ensure the log detail is available to review
 - Remove unused images to check encrypted and unencrypted names, skip DRM ebooks
@@ -232,11 +232,11 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ## [1.1.0] - 2012-05-05
 ### Added
 - Add a "Remove Adobe .xpgt files and links" option for complete clean xpgt file removal
-- Add a "Remove Adobe resource DRM meta tags" option for stripping DRM &lt;meta&gt; resource identifiers from xhtml content.
+- Add a "Remove Adobe resource DRM meta tags" option for stripping DRM `<meta>` resource identifiers from xhtml content.
 - Add a "Remove unused image files" option to remove orphaned images not referenced from the html content to save space.
 - Add a "Flatten TOC hierarchy in NCX file" option to move all the navPoints to a single level if they are nested.
 ### Changed
-- Extend "Remove embedded fonts" to also remove @font-face declarations from the CSS and html files
+- Extend "Remove embedded fonts" to also remove `@font-face` declarations from the CSS and html files
 - Move the "Remove margins from Adobe .xpgt files" into a new Adobe section on the UI
 
 ## [1.0.2] - 2012-02-12
@@ -245,18 +245,18 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.0.1] - 2011-11-23
 ### Changed
-- When updating metadata, ensure that if calibre has no tags any dc:subject elements are removed
+- When updating metadata, ensure that if calibre has no tags any `dc:subject` elements are removed
 - Improve the logging output when removing non dc: metadata elements
 
 ## [1.0.0] - 2011-10-22
 ### Changed
-- Preparation for deprecation for db.format_abspath() function in future Calibre for network backends
+- Preparation for deprecation for `db.format_abspath()` function in future Calibre for network backends
 - Merge in remaining CSS/margin changes from Idolse for initial release
 - Support keyboard shortcut for opening dialog
 
 ## [0.3.5] - 2011-06-26
 ### Fixed
-- Issue with css margin rewriting that used property names using '_' instead of '-'
+- Issue with css margin rewriting that used property names using `'_'` instead of `'-'`
 
 ## [0.3.4] - 2011-06-21
 ### Changed
@@ -285,7 +285,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Add an option to remove OS artifacts of .DS_Store and thumbs.db files
 ### Changed
 - Treat iTunesArtwork the same as iTunes plist files
-- When adding items to manifest, if a .htm* file check for xmlns indicating mimetype of xhtml+xml
+- When adding items to manifest, if a `.htm*` file check for xmlns indicating mimetype of `xhtml+xml`
 ### Fixed
 - Ensure that any xml elements inserted in the manifest are "tailed" correctly for indenting
 
@@ -296,7 +296,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ## [0.2.0] - 2011-05-30
 ### Added
 - Add option to remove iTunesArtwork files
-- Add option to remove non dc: metadata elements
+- Add option to remove non `dc:` metadata elements
 - Add option to add/update calibre jackets
 ### Changed
 - Rename Select none to Clear all on dialog

@@ -79,13 +79,13 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Add a "Check authors non ascii" option to Check ePub Metadata menu to find authors with accents/diatrics in their names
 - Add a "Check authors initials" option to Check ePub Metadata menu to find authors with initials that do not match your preferred style.
 - Add to plugin configuration screen an author initials dropdown for configuring preferred author initials format
-- Add a "Check smarten punctuation" option to Check ePub Style menu to search for ePubs with " or ' in body
+- Add a "Check smarten punctuation" option to Check ePub Style menu to search for ePubs with `"` or `'` in body
 - Add a "Show all occurrences" option to "Search ePub" as a slower running alternative to just displaying the first match
 - Add a "Plain text content" option to "Search ePub" to search html body content for sentences without any tags
 ### Changed
 - Now requires calibre 0.8.59
 - In the log for "Search ePub" display the preceding and following 25 characters around the match in the log
-- Change the log viewer to a custom implementation that preserves formatting rather than calibre's &lt;pre&gt; approach.
+- Change the log viewer to a custom implementation that preserves formatting rather than calibre's `<pre>` approach.
 - Change to use a new calibre API function for "Check & fix file size" rather than direct database manipulation
 ### Fixed
 - For "Search ePub" to not allow user to search if they have no scope checkboxes set
@@ -186,9 +186,9 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Split the Check ePub submenu into two submenus for ease of usage and future expansion
 - Add a "Check unused image files" option to the Check ePub Structure menu, to find books with jpeg/png image files that are not referenced and can be removed to save space
 - Add a "Check TOC hierarchical" option to the Check ePub Structure menu, to find books with hierarchical TOC that need flattening for certain devices
-- Add a "Check Adobe DRM meta tag" option to the Check ePub Structure menu, to find books with html files that contain Adobe &lt;meta /&gt; DRM identifiers
-- Add a "Check Adobe inline .xpgt links" option to the Check ePub Style menu, to find books with html files that &lt;link /&gt; to a .xpgt file
-- Add a "Check @font-face" option to the Check ePub Style menu, to find books with CSS or html files that contain @font-face declarations
+- Add a "Check Adobe DRM meta tag" option to the Check ePub Structure menu, to find books with html files that contain Adobe `<meta />` DRM identifiers
+- Add a "Check Adobe inline .xpgt links" option to the Check ePub Style menu, to find books with html files that `<link />` to a .xpgt file
+- Add a "Check @font-face" option to the Check ePub Style menu, to find books with CSS or html files that contain `@font-face` declarations
 - Add more information into the Help file for newcomers explaining some of the options.
 ### Fixed
 - Protect against a blank author field caused by a bug in the Manage Authors dialog in calibre
@@ -232,8 +232,8 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.6.3] - 2011-10-22
 ### Added
-- Add ePub checks for various types of body/@page margins (Idolse)
-- Add ePub check for having &lt;address&gt; smart-tags within their content
+- Add ePub checks for various types of `body` and `@page` margins (Idolse)
+- Add ePub check for having `<address>` smart-tags within their content
 ### Fixed
 - For the Series gap check, fix the handling of duplicates
 
@@ -255,7 +255,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.5.7] - 2011-06-12
 ### Added
-- Add ePub check for css missing "text-align: justify"
+- Add ePub check for css missing `text-align: justify`
 ### Changed
 - Change the ePub zero margin check to only look at manifested APNX files
 ### Fixed

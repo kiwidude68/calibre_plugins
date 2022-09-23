@@ -80,7 +80,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Strip leading "The" from title for ISBN based lookups
 - If title/authors returned by FF for ISBN lookup results in no matches, retry with calibre title/authors
 - When checking book returned from search is correct, compare with FF isbn and calibre title/authors before rejecting
-- Support change to FF website to surround ISBN with &lt;strong&gt; tags
+- Support change to FF website to surround ISBN with `<strong>` tags
 ### Fixed
 - Ensure UTF-8 decoding of search results in case of rare issues
 - For rare "url malformed" error when written by multiple authors but only one on FantasticFiction

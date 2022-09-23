@@ -68,7 +68,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.3.2] - 2011-05-17
 ### Changed
-- Strip the &lt;style&gt; tag contents to ensure panose-1 numbers are not picked up as false positives
+- Strip the `<style>` tag contents to ensure panose-1 numbers are not picked up as false positives
 
 ## [1.3.1] - 2011-05-06
 ### Changed
