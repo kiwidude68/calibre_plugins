@@ -1,5 +1,4 @@
-## Release History
+# Change Log
 
-**Version 1.0.0** - XX Sep 2022
-- New: All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins
-- Initial release of plugin
+## [1.0.0] - 2022-09-XX
+_All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_

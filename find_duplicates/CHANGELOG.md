@@ -1,168 +1,224 @@
-## Release History
+# Change Log
 
-**Version 1.10.0** - XX Sep 2022
-- New: All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins
-- Update: Add calibre 2.x backwards compatibility
-- Update: Refactoring of common code
+## [1.10.0] - 2022-09-XX
+_All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+### Changed
+- Add calibre 2.x backwards compatibility
+- Refactoring of common code
 
-**Version 1.9.7** - 9 August 2022 - by capink
-- Update: update to calibre6 icon fetching. Code from @JimmXinu.
+## [1.9.7] - 2022-08-09
+### Changed
+- Update to calibre6 icon fetching. (@capink,@JimmXinu)
 
-**Version 1.9.6** - 16 July 2022 - by capink
-- Update: Advanced mode add data dict to algorithms.
-- Fix: PyQt6 migration bug.
+## [1.9.6] - 2022-07-16
+### Changed
+- Advanced mode add data dict to algorithms. (@capink)
+### Fixed
+- PyQt6 migration bug.
 
-**Version 1.9.5** - 27 April 2022 - by capink
-- Fix: Advanced mode minor bug.
+## [1.9.5] - 2022-04-27
+### Fixed
+- Advanced mode minor bug. (@capink)
 
-**Version 1.9.4** - 10 February 2022 - by capink
-- Fix: PyQt6 migration bug.
+## [1.9.4] - 2022-02-10
+### Fixed
+- PyQt6 migration bug. (@capink)
 
-**Version 1.9.3** - 9 February 2022 - by capink
-- Fix: PyQt6 migration bug.
-- Fix: Bug in rules widget dialog.
+## [1.9.3] - 2022-02-09
+### Fixed
+- PyQt6 migration bug. (@capink)
+- Bug in rules widget dialog.
 
-**Version 1.9.2** - 13 January 2022 - by capink
-- Fix: PyQt6 migration bug.
+## [1.9.2] - 2022-01-13
+### Fixed
+- PyQt6 migration bug. (@capink)
 
-**Version 1.9.1** - 7 January 2022 - by capink
-- Fix: Bug with a QButtonGroup signal(s).
+## [1.9.1] - 2022-01-07
+### Fixed
+- Bug with a QButtonGroup signal(s). (@capink)
 
-**Version 1.9.0** - 6 January 2022 - by capink
-- Update: Changes for the upcoming PyQt6.
+## [1.9.0] - 2022-01-06
+### Changed
+- Changes for the upcoming PyQt6. (@capink)
 
-**Version 1.8.10** - 8 September 2021 - by capink
-- Fix: Advanced Mode: Metadata Variations: Regression with custom columns variations.
+## [1.8.10] - 2021-09-08
+### Fixed
+- Advanced Mode: Metadata Variations: Regression with custom columns variations. (@capink)
 
-**Version 1.8.9** - 12 July 2021 - by capink
-- Fix: Advanced Mode: Bug with algorithms names not translated as in old versions.
+## [1.8.9] - 2021-07-12
+### Fixed
+- Advanced Mode: Bug with algorithms names not translated as in old versions. (@capink)
 
-**Version 1.8.8** - 28 June 2021 - by capink
-- Update: Advanced Mode: Add formats to list of fields.
-- Fix: Advanced Mode: Bug when searching for duplicate using fields with multiple values that are empty.
+## [1.8.8] - 2021-06-28
+### Changed
+- Advanced Mode: Add formats to list of fields. (@capink)
+### Fixed
+- Advanced Mode: Bug when searching for duplicate using fields with multiple values that are empty.
 
-**Version 1.8.7** - 15 June 2021 - by capink
-- Update: Restore the whole sort order instead of just one column (bound by maximum_resort_levels tweak).
-- Update: Advanced mode: misc improvements.
-- Update: Schema version bumped to 1.7
+## [1.8.7] - 2021-06-15
+### Changed
+- Restore the whole sort order instead of just one column (bound by maximum_resort_levels tweak). (@capink)
+- Advanced mode: misc improvements.
+- Schema version bumped to 1.7
 
-**Version 1.8.6** - 15 March 2021 - by capink
-- Update: Advanced Mode: Add the ability to add custom algorithms through action chains module editor.
-- Fix: Advanced Mode: Bug when adding custom algorithms that has no facotry.
+## [1.8.6] - 2021-03-15
+### Changed
+- Advanced Mode: Add the ability to add custom algorithms through action chains module editor. (@capink)
+### Fixed
+- Advanced Mode: Bug when adding custom algorithms that has no factory.
 
-**Version 1.8.5** - 12 February 2021 - by capink
-- Fix: bug when exporting duplicates to json file in Windows.
-- Fix: bug with calibre 2.x failing to import missing class. https://www.mobileread.com/forums/showpost.php?p=4090981&postcount=820
+## [1.8.5] - 2021-02-12
+### Fixed
+- Bug when exporting duplicates to json file in Windows. (@capink)
+- Bug with calibre 2.x failing to import missing class. https://www.mobileread.com/forums/showpost.php?p=4090981&postcount=820
 
-**Version 1.8.4** - 7 January 2021 - by capink
-- Fix: update the plugin to use calibre.library.db for target database instead of the deprecated LibraryDatabase2. Also update to - use db.new_api.get_proxy_metadata to improve performance when using templates in advanced mode.
+## [1.8.4] - 2021-01-07
+### Changed
+- Use calibre.library.db for target database instead of the deprecated LibraryDatabase2. (@capink)
+- Use db.new_api.get_proxy_metadata to improve performance when using templates in advanced mode.
 
-**Version 1.8.3** - 21 October 2020 - by capink
-- Update: When changing libraries in library compare, restore the last used match rules from previous library if possible (all columns in match rules present in the newly selected library).
-- Fix: Remove invalid locations from saved location list in library compare dialog before restoring.
+## [1.8.3] - 2020-10-21
+### Changed
+- When changing libraries in library compare, restore the last used match rules from previous library if possible (all columns in match rules present in the newly selected library). (@capink)
+### Fixed
+- Remove invalid locations from saved location list in library compare dialog before restoring.
 
-**Version 1.8.2** - 17 October 2020 - by capink
-- Update: Restore last used match rules (and sort filters).
-- Fix: Allow dialog size to be reduced.
+## [1.8.2] - 2020-10-17
+### Changed
+- Restore last used match rules (and sort filters). (@capink)
+### Fixed
+- Allow dialog size to be reduced.
 
-**Version 1.8.1** - 15 October 2020 - by capink
-- Fix: Minor fixes.
+## [1.8.1] - 2020-10-15
+### Fixed
+- Minor fixes. (@capink)
 
-**Version 1.8.0** - 11 October 2020 - by capink
-- Update: Add advanced mode. It allows the user to match books without restrictions on the type nor the number of columns used. It also allows for user defined algorithms by using templates. It comes with a sort dialog allowing you to sort books based on columns and templates. To complement the sort feature, it adds extra marks to first and last books in each duplicate group: "first_duplicate", "last_duplicate".
-- Update: Mark records with deleted formats in binary search as "deleted_binary_duplicate"
-- Update: Option to export duplicate groups to json file. For advanced mode, the sorting of books is retained in the json file.
-- Update: Update Spanish translation. Thanks to @dunhill.
-- Update: Code refactoring.
-- Update: Calibre minimum version bumped to 2.0.0
-- Update: Schema version bumped to 1.6
-- Fix: Mark exemptions only when showing them and remove the marks afterwards.
-- Fix: Restore state if the user exits calibre with the duplicates restriction still on. Thanks to @chaley
-- Fix: Remember last sort in library view and revert back to it.
+## [1.8.0] - 2020-10-11
+### Changed
+- Add advanced mode. It allows the user to match books without restrictions on the type nor the number of columns used. It also allows for user defined algorithms by using templates. It comes with a sort dialog allowing you to sort books based on columns and templates. To complement the sort feature, it adds extra marks to first and last books in each duplicate group: "first_duplicate", "last_duplicate". (@capink)
+- Mark records with deleted formats in binary search as "deleted_binary_duplicate"
+- Option to export duplicate groups to json file. For advanced mode, the sorting of books is retained in the json file.
+- Update Spanish translation. Thanks to @dunhill.
+- Code refactoring.
+- Calibre minimum version bumped to 2.0.0
+- Schema version bumped to 1.6
+### Fixed
+- Mark exemptions only when showing them and remove the marks afterwards.
+- Restore state if the user exits calibre with the duplicates restriction still on. Thanks to @chaley
+- Remember last sort in library view and revert back to it.
 
-**Version 1.7.2** - 25 June 2020 - by davidfor
-- Fix: A couple of errors with translations.
+## [1.7.2] - 2020-06-25
+### Fixed
+- A couple of errors with translations. (@davidfor)
 
-**Version 1.7.0** - 21 June 2020 - by davidfor
-- New: Make translatable.
-- New: Add Spanish translation. Thanks to @dunhill.
-- Update: Use delete key to remove entry from library list in cross library search options.
-- Update: Changes for Python 3 support in calibre.
+## [1.7.0] - 2020-06-21
+### Added
+- Make translatable. (@davidfor)
+- Add Spanish translation. (@dunhill)
+### Changed
+- Use delete key to remove entry from library list in cross library search options.
+- Changes for Python 3 support in calibre.
 
-**Version 1.6.3** - 12 Jun 2017
-- Fix: Compatibility with Calibre 2.99b11+
+## [1.6.3] - 2017-06-12
+### Fixed
+- Compatibility with Calibre 2.99b11+
 
-**Version 1.6.1** - 03 Jan 2013
-- Fix: For when comparing library duplicates to ensure saved searches are not corrupted.
+## [1.6.1] - 2013-01-03
+### Fixed
+- For when comparing library duplicates to ensure saved searches are not corrupted.
 
-**Version 1.6.0** - 29 Oct 2012
-- New: Add a context menu to the metadata variations list to allow choosing the selected name on the right side.
-- Update: Change "ISBN Compare" to "Identifier" with a dropdown allowing comparison of any identifier field.
+## [1.6.0] - 2012-10-29
+### Added
+- Add a context menu to the metadata variations list to allow choosing the selected name on the right side.
+### Changed
+- Change "ISBN Compare" to "Identifier" with a dropdown allowing comparison of any identifier field.
 
-**Version 1.5.3** - 14 Aug 2012
-- Update: When using "Find library duplicates" display all duplicate matches for the current library as marked:duplicate (except for author duplicates)
+## [1.5.3] - 2012-08-14
+### Changed
+- When using "Find library duplicates" display all duplicate matches for the current library as marked:duplicate (except for author duplicates)
 
-**Version 1.5.2** - 21 Jul 2012
-- Update: When using "Find library duplicates" clear the current search in order to compare the entire restricted library
-- Update: When using "Find metadata variations" and showing books, fire the search again to ensure results reflect the search
+## [1.5.2] - 2012-07-21
+### Changed
+- When using "Find library duplicates" clear the current search in order to compare the entire restricted library
+- When using "Find metadata variations" and showing books, fire the search again to ensure results reflect the search
 
-**Version 1.5.1** - 21 Jul 2012
-- New: Add a "Save log" button for the "Find library duplicates" result screen.
+## [1.5.1] - 2012-07-21
+### Added
+- Add a "Save log" button for the "Find library duplicates" result screen.
 
-**Version 1.5.0** - 20 Jul 2012
-- New: Add a "Find library duplicates" option for cross-library duplicate comparisons into a log report
-- Update: If currently running a duplicate book search and execute a metadata variation search, clear search first
+## [1.5.0] - 2012-07-20
+### Added
+- Add a "Find library duplicates" option for cross-library duplicate comparisons into a log report
+### Changed
+- If currently running a duplicate book search and execute a metadata variation search, clear search first
 
-**Version 1.4.0** - 17 Jul 2012
-- New: Add a Find metadata variations option to search for author, series, publisher and tag variations, and allow renaming them from the dialog.
-- Update: Now requires calibre 0.8.59
-- Fix: Fuzzy author comparisons which will no longer compute a reverse hash to reduce the false positives it generated
+## [1.4.0] - 2012-07-17
+### Added
+- Add a Find metadata variations option to search for author, series, publisher and tag variations, and allow renaming them from the dialog.
+### Changed
+- Now requires calibre 0.8.59
+### Fixed
+- Fuzzy author comparisons which will no longer compute a reverse hash to reduce the false positives it generated
 
-**Version 1.3.0** - 22 Jun 2012
-- New: Add a support option to the configuration dialog allowing viewing the plugin data stored in the database
-- New: Add an option to allow automatic removal of binary duplicates (does not delete books records, only the newest copies of that format).
-- Update: Now requires calibre 0.8.57
-- Update: Store configuration in the calibre database rather than a json file, to allow reuse from different computers (not simultaneously!)
+## [1.3.0] - 2012-06-22
+### Added
+- Add a support option to the configuration dialog allowing viewing the plugin data stored in the database
+- Add an option to allow automatic removal of binary duplicates (does not delete books records, only the newest copies of that format).
+### Changed
+- Now requires calibre 0.8.57
+- Store configuration in the calibre database rather than a json file, to allow reuse from different computers (not simultaneously!)
 
-**Version 1.2.3** - 02 Dec 2011
-- Update: Make the languages comparison optional (default false) via a checkbox on the Find Duplicates dialog
+## [1.2.3] - 2011-12-02
+### Changed
+- Make the languages comparison optional (default false) via a checkbox on the Find Duplicates dialog
 
-**Version 1.2.2** - 25 Nov 2011
-- Update: Take the languages field into account when doing title based duplicate comparisons
+## [1.2.2] - 2011-11-25
+### Changed
+- Take the languages field into account when doing title based duplicate comparisons
 
-**Version 1.2.1** - 12 Nov 2011
-- Update: When selecting ISBN or Binary compare, hide the Title/Author groupbox options
-- Update: Some cosmetic additions to the text for ISBN/Binary options
+## [1.2.1] - 2011-11-12
+### Changed
+- When selecting ISBN or Binary compare, hide the Title/Author groupbox options
+- Some cosmetic additions to the text for ISBN/Binary options
 
-**Version 1.2.0** - 11 Sep 2011
-- Update: Remove customisation of shortcuts on tab, to use Calibre's centrally managed shortcuts instead.
-- Fix: For when switching to an ignore title search where author search was previously set to ignore.
+## [1.2.0] - 2011-09-11
+### Changed
+- Remove customisation of shortcuts on tab, to use Calibre's centrally managed shortcuts instead.
+### Fixed
+- For when switching to an ignore title search where author search was previously set to ignore.
 
-**Version 1.1.4** - 04 Jul 2011
-- Fix: Stuff broken by Calibre 0.8.8 in the tag view
-- Fix: For removing an author exemption
+## [1.1.4] - 2011-07-04
+### Fixed
+- Stuff broken by Calibre 0.8.8 in the tag view
+- For removing an author exemption
 
-**Version 1.1.3** - 03 Jul 2011
-- Update: Preparation for deprecation of db.format_abspath() for networked backend
+## [1.1.3] - 2011-07-03
+### Changed
+- Preparation for deprecation of db.format_abspath() for networked backend
 
-**Version 1.1.2** - 03 Jul 2011
-- Fix: Issue with Calibre 0.8.8 tag browser search_restriction refactoring
+## [1.1.2] - 2011-07-03
+### Fixed
+- Issue with Calibre 0.8.8 tag browser search_restriction refactoring
 
-**Version 1.1.1** - 12 Jun 2011
-- Update: Add van to list of ignored author words
-- Fix: Error dialog not referenced correctly
+## [1.1.1] - 2011-06-12
+### Changed
+- Add van to list of ignored author words
+### Fixed
+- Error dialog not referenced correctly
 
-**Version 1.1** - 3 May 2011
-- New: Add support for binary comparison searches to find book formats with exactly the same content
-- New: Disable the Ignore title, identical author combination as will not a valid one (never duplicates)
-- New: Allow the remove, mark current and mark all group exemption dialogs able to be hidden from showing again.
-- New: Allow various count of result and no result information dialogs able to be hidden from showing again.
-- New: Allow user to reset confirmation dialogs related to find duplicates from the configuration dialog
-- Update: Include swapping author name order in all but identical author checks. So A B / B A or A,B / B,A will match.
-- Update: Compare multiple authors for most author algorithms to increase duplicate coverage.
-- Update: No longer calculate exemption preview detailed messages for the confirmation dialog for performance
-- Update: Replace how exemptions are stored in the config file to make more scalable
-- Update: Change Manage exemptions dialog to have tab for each author with exemptions and show section only if have exemptions
+## [1.1.0] - 2011-05-03
+### Added
+- Add support for binary comparison searches to find book formats with exactly the same content
+- Disable the Ignore title, identical author combination as will not a valid one (never duplicates)
+- Allow the remove, mark current and mark all group exemption dialogs able to be hidden from showing again.
+- Allow various count of result and no result information dialogs able to be hidden from showing again.
+- Allow user to reset confirmation dialogs related to find duplicates from the configuration dialog
+### Changed
+- Include swapping author name order in all but identical author checks. So A B / B A or A,B / B,A will match.
+- Compare multiple authors for most author algorithms to increase duplicate coverage.
+- No longer calculate exemption preview detailed messages for the confirmation dialog for performance
+- Replace how exemptions are stored in the config file to make more scalable
+- Change Manage exemptions dialog to have tab for each author with exemptions and show section only if have exemptions
 
-**Version 1.0** - 26 Apr 2011
-- Initial release of Find Duplicates plugin
+## [1.0.0] - 2011-04-26
+_Initial release of Find Duplicates plugin_

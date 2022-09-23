@@ -1,83 +1,109 @@
-## Release History
+# Change Log
 
-**Version 1.10.0** - XX Sep 2022
-- New: All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins
-- New: Add full translation support
-- New: Translations for Spanish, Russian, Ukranian
-- Update: Drop PyQt4 support, require calibre 2.x or later.
-- Update: Refactoring of common code
-- Update: Any custom website menu images must now be in /resources/images/Search The Internet/
+## [1.10.0] - 2022-09-XX
+_All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+### Added
+- Add full translation support
+- Translations for Spanish, Russian, Ukranian
+### Changed
+- Drop PyQt4 support, require calibre 2.x or later.
+- Refactoring of common code
+- Any custom website menu images must now be in /resources/images/Search The Internet/
 
-**Version 1.9.0** - 14 Jul 2022 - made by Terisa de morgan
-- Update: Changes for QT6 support in calibre
+## [1.9.0] - 2022-07-14
+### Changed
+- Changes for QT6 support in calibre (@Terisa de morgan)
  
-**Version 1.8.1** - 26 Dec 2020 - made by davidfor
-- Fix: Python 3 string related error when building post request.
+## [1.8.1] - 2020-12-26
+### Fixed
+- Python 3 string related error when building post request. (@davidfor)
  
-**Version 1.8.0** - 02 Sep 2020 - made by davidfor
-- New: Enable translations.
-- Update: Use different formatter so templates can be used. This was specifically to allow use of identifiers.
-- Update: Changes for Python 3 support in calibre.
+## [1.8.0] - 2020-09-02
+### Added
+- Enable translations. (@davidfor)
+### Changed
+- Use different formatter so templates can be used. This was specifically to allow use of identifiers.
+- Changes for Python 3 support in calibre.
  
-**Version 1.7.6** - 09 Mar 2016
-- Fix: Missing ) in help formula
+## [1.7.6] - 2016-03-09
+### Fixed
+- Missing ) in help formula
  
-**Version 1.7.2** - 11 Jul 2014
-- Update: QT5 support work
+## [1.7.2] - 2014=07-11
+### Changed
+- QT5 support work
 
-**Version 1.7.1** - 24 Sep 2011
-- Update: When doing HTTP POST queries (like Fiction DB) do not encode the passed query values, just escape them instead.
+## [1.7.1] - 2011-09-24
+### Changed
+- When doing HTTP POST queries (like Fiction DB) do not encode the passed query values, just escape them instead.
 
-**Version 1.7.0** - 11 Sep 2011
-- Update: Switch the formatter used for resolving foreign names as the "new" SafeFormat is broken for this plugin's purposes.
-- Update: Support the centralised keyboard shortcut management in Calibre
+## [1.7.0] - 2011-09-11
+### Changed
+- Switch the formatter used for resolving foreign names as the "new" SafeFormat is broken for this plugin's purposes.
+- Support the centralised keyboard shortcut management in Calibre
 
-**Version 1.6.6** - 10 Aug 2011
-- Update: Change the location of SafeFormat class which was removed from Calibre for release 0.8.14
+## [1.6.6] - 2011-08-10
+### Changed
+- Change the location of SafeFormat class which was removed from Calibre for release 0.8.14
 
-**Version 1.6.5** - 08 May 2011
-- Update: Change webbrowser launching to use Calibre's wrapper for the default browser for better Linux support
+## [1.6.5] - 2011-05-08
+### Changed
+- Change webbrowser launching to use Calibre's wrapper for the default browser for better Linux support
 
-**Version 1.6.4** - 09 Apr 2011
-- New: Support skinning of icons by putting them in a plugin name subfolder of local resources/images
+## [1.6.4] - 2011-04-09
+### Added
+- Support skinning of icons by putting them in a plugin name subfolder of local resources/images
 
-**Version 1.6.3** - 05 Apr 2011
-- Fix: Ensure non-valid characters are removed when encoding
+## [1.6.3] - 2011-04-05
+### Fixed
+- Ensure non-valid characters are removed when encoding
 
-**Version 1.6.2** - 04 Apr 2011
-- Update: Correct version number to reflect 1.6.1
+## [1.6.2] - 2011-04-04
+### Changed
+- Correct version number to reflect 1.6.1
 
-**Version 1.6.1** - 04 Apr 2011
-- Fix: Open group menu having incorrect icon_name argument
+## [1.6.1] - 2011-04-04
+### Fixed
+- Open group menu having incorrect icon_name argument
 
-**Version 1.6** - 03 Apr 2011
-- Update: Rewritten for new plugin infrastructure in Calibre 0.7.53
+## [1.6.0] - 2011-04-03
+### Changed
+- Rewritten for new plugin infrastructure in Calibre 0.7.53
 
-**Version 1.5.1** - 28 Jan 2011
-- Update: Display clickable button on HTTP POST page if javascript disabled
-- Fix: Swapping rows after addition of GET/POST column
+## [1.5.1] - 2011-01-28
+### Changed
+- Display clickable button on HTTP POST page if javascript disabled
+### Fixed
+- Swapping rows after addition of GET/POST column
 
-**Version 1.5** - 28 Jan 2011
-- New: Support HTTP POST websites like FictFact
-- Update: Use the Calibre template processor to support other metadata fields
-- Update: Archive import export use standard zip extension for ease of uploading to forums
-- Fix: Ensure config window is parented to prevent multiple Calibre windows in taskbar
+## [1.5.0] - 2011-01-28
+### Added
+- Support HTTP POST websites like FictFact
+- Use the Calibre template processor to support other metadata fields
+- Archive import export use standard zip extension for ease of uploading to forums
+### Fixed
+- Ensure config window is parented to prevent multiple Calibre windows in taskbar
 
-**Version 1.4** - 24 Jan 2011
-- New: Add a configuration dialog to replace tweaks file
-- New: Build in library of websites for users to choose from
-- Update: Split into separate code files with proxy architecture
-- Update: Make menus dynamically recreated without restarts
-- Update: Ensure author always passed in FN LN format
+## [1.4.0] - 2011-01-24
+### Added
+- Add a configuration dialog to replace tweaks file
+- Build in library of websites for users to choose from
+### Changed
+- Split into separate code files with proxy architecture
+- Make menus dynamically recreated without restarts
+- Ensure author always passed in FN LN format
 
-**Version 1.3** - 31 Dec 2010
-- New: Support Calibre 0.7.34 feature of plugin images retained within the zip file
+## [1.3.0] - 2010-12-31
+### Added
+- Support Calibre 0.7.34 feature of plugin images retained within the zip file
 
-**Version 1.2** - 31 Dec 2010
-- New: Support for encoding for passing foreign language names to Amazon etc
+## [1.2.0] - 2010-12-31
+### Added
+- Support for encoding for passing foreign language names to Amazon etc
 
-**Version 1.1** - 04 Dec 2010
-- New: Support for multiple row selections to launching multiple searches
+## [1.1.0] - 2010-12-04
+### Added
+- Support for multiple row selections to launching multiple searches
 
-**Version 1.0** - 28 Nov 2010
-- Initial release of Search The Internet plugin
+## [1.0.0] - 2010-11-28
+_Initial release of Search The Internet plugin_

@@ -254,3 +254,16 @@ Documentation: [Integrate with External Tools via Tasks](https://code.visualstud
 
 [readme-uri]: README.md
 [contribute-url]: https://github.com/kiwidude68/calibre_plugins
+
+## Changelogs
+
+Originally my plugins had a simple changelog.txt, which was copy/pasted into the relevant forum thread. Many years later all the cool kids are using markdown files. There are even guidelines out there for how you should format your CHANGELOG.md files which can then be supported by build automation tools such as: [anton-yurchenko/git-release](https://github.com/anton-yurchenko/git-release).
+
+Initially I stumbled across [Keep a Changelog](https://keepachangelog.com/) and then ended up using 
+
+[![Common Changelog][common-changelog-image]][common-changelog-url]
+
+[common-changelog-image]: https://common-changelog.org/badge.svg
+[common-changelog-url]: https://common-changelog.org
+
+
