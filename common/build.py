@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
 
 __license__   = 'GPL v3'
 __copyright__ = '2022, Grant Drake based on code from JimmXinu'
@@ -13,9 +12,6 @@ Plugin zips are uncompressed so to not negatively impact calibre load times.
 
 All subfolders of the plugin folder will be included, unless prefixed with '.'
 i.e. .build and .tx will not be included in the zip.
-
-Command line usage (working directory expected to be the <plugin> subfolder):
-    python ..\common\build.py
 '''
 
 import os, zipfile, re
@@ -101,7 +97,7 @@ def readPluginName():
         if versionMatches: 
             version = versionMatches[0].replace(',','.').replace(' ','')
 
-    print('Plugin v%s will be zipped to: \'%s\''%(version, zipFileName))
+    print('Plugin v{} will be zipped to: \'{}\''.format(version, zipFileName))
     return zipFileName
 
 if __name__=="__main__":

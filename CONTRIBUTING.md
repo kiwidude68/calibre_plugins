@@ -13,26 +13,27 @@ Please reference the [README.md][readme-uri] for the file layout of this reposit
 
 Before you commit to GitHub and publish your plugin zip to MobileRead, make sure you:
 - Update the version number in `__init__.py` (see below for numbering strategy).
-- Update the `CHANGELOG.md`
-- Comment out/remove any extra debug logging or temporary writing files to disk
+- Update the `CHANGELOG.md` keeping the same conventions (important for release automation below).
+- Comment out/remove any extra debug logging or temporary writing files to disk.
 - If you changed translatable text, run: `generate-pot.cmd`
 - If you have a Transifex account, download latest translations with: `transifex-pull.cmd`
 - Run `build.cmd` one last time to make sure every change is included in the zip file!
 
-If this is an official release on the MobileRead plugin thread, then:
-- Edit the first post in the forum thread:
+If you are an official maintainer of the plugins (GitHub collaboration rights):
+- Run `release.cmd` to create a tag/release and attaches the zip file to it with release notes from `CHANGELOG.md`.
+- Edit the first post in the MobileRead forum thread:
     - Upload the zip attachment, replacing the previous (zip name should be identical)
-    - Update the `[SPOILER]` containing the change history
     - If necessary amend/update the list of features or screenshots.
 - Create a new post in the thread to alert forum users:
-    - List the version and changes made.
+    - List the version.
+    - Include link to the `CHANGELOG.md` at the GitHub URL to avoid repeating release notes.
 
 ---
 ## Plugin Version Numbering Guidelines
 
-While there are no strict rules on which parts of the version number for a plugin to "bump" the following may prove a useful guide. The only thing that must happen is that the overall number increments with each new plugin release in order for the calibre Plugin Updater to show this for users to install.
+Generally I try to keep the [semantic version](https://semver.org/) standard.
 > `<Major>.<Minor>.<Build>` e.g. 1.4.2
-- **Major** is very rarely incremented, as it is reserved for massive plugin changes.
+- **Major** is very rarely incremented, as it is reserved for massive breaking changes.
 - **Minor** is the most common to increment, representing a new release to the community.
 - **Build** will also be frequently changed, to represent an iteration within the release.
 
@@ -91,6 +92,7 @@ Each plugin folder contains the following batch files in a `.build` subfolder to
 | `debug.cmd` | Same as `build.cmd` with the addition of launching calibre in debug mode. Also useful for testing translations.
 | `generate-pot.cmd` | Generate the latest `.pot` file for translators to work with. See the Plugin Translations section below.
 | `transifex-pull.cmd` | Download the latest available translations for this plugin from Transifex.
+| `release.cmd` | Create an official release on GitHub for this plugin, uploading the zip file.
 
 Mostly you will be using `debug.cmd`. This allows you to see any errors when calibre attempts to load the plugin zip (e.g. in the VS Code console window), and then interactively test the plugin. Close calibre manually when you are finished testing.
 
@@ -106,6 +108,18 @@ All these batch files can be run from within VS Code using tasks - see below.
 | `CALIBRE_CONFIG_DIRECTORY` | If using calibre portable, set this to the location of the `Calibre Settings` subfolder.<br>Otherwise calibre-customize in `build.cmd` will insert into your main calibre. |
 | `CALIBRE_DIRECTORY` | Custom variable I added support for, used by `build.cmd`<br>Set to folder location of your `calibre-debug.exe`.<br>Only necessary if calibre is not in your path. |
 | `PYGETTEXT_FOLDER` | Custom variable I added support for, used by `generate-pot.cmd`<br>Set to folder location of your Python pygettext.py file<br>Default location assumed to be `C:\Python310\Tools\i18n`<br>Could be useful if you have a different version of Python or install location.
+| `CALIBRE_GITHUB_TOKEN` | Custom variable I added support for, used by `release.cmd`<br>Authorised releasers will set it to their API token key.
+
+### Changelogs
+
+Originally my plugins had a simple changelog.txt, which was copy/pasted into the relevant forum thread. Many years later all the cool kids are using markdown files. There are even guidelines out there for how you should format your CHANGELOG.md files which can then be supported by build automation tools such as: [anton-yurchenko/git-release](https://github.com/anton-yurchenko/git-release).
+
+Initially I stumbled across [Keep a Changelog](https://keepachangelog.com/) and then ended up following this approach: 
+
+[![Common Changelog][common-changelog-image]][common-changelog-url]
+
+[common-changelog-image]: https://common-changelog.org/badge.svg
+[common-changelog-url]: https://common-changelog.org
 
 ### Submitting Changes
 
@@ -119,6 +133,33 @@ The zip files for these plugins are published via the [MobileRead calibre plugin
 - The official plugin zip that all users can download via calibre itself is attached to the first post in each plugins thread.
 - Only the plugin thread owner or a MobileRead admin can modify that post.
 - Plugin authors or contributors may choose to submit other versions (betas etc.) within the thread. 
+
+### GitHub Release Automation
+
+A few notes regarding this automation added via the `release.cmd` and `common/release.py` scripts...
+- The goal is to be able to have an archive of plugin zips available for people trawling for previous versions of a plugin.
+- GitHub Release pages will meet that need. 
+- The Releases page includes a search capability which is useful given the range of plugin releases in the same repo.
+- We cannot use a simple "vA.B.C" tag, instead it must be prefixed with the plugin name e.g. "extract_isbn-v1.2.3"
+- Using the GitHub API to automate creating of the release and uploading of the zip file from your machine
+    - https://docs.github.com/en/rest/releases/releases#create-a-release
+    - https://docs.github.com/en/rest/releases/assets#upload-a-release-asset
+- Everything is auto-generated
+    - It reads the plugin name and version from `__init__.py`
+    - The release description which is extracted from the `CHANGELOG.md` for the section matching this version.
+    - So please keep `CHANGELOG.md` updated confirming to the required standards, more info below!
+- Requires a GitHub API key to be able to upload (and an authorised collaborator for this repo!)
+    - https://github.com/settings/profile
+    - **Developer settings -> Personal Access tokens -> Generate New Token**
+    - Type a description in the Note field e.g. 'Github API'
+    - Set an expiration - I selected `No expiration`
+    - Define a scope - I just ticked the top level `repos` checkbox
+    - Click **Generate token**
+    - Copy to clipboard and store somewhere safe (e.g. Notepad)
+    - On your local machine, create an environment variable `CALIBRE_GITHUB_TOKEN` and assign the token value.
+- The `release.py` script will intentionally fail if you try to create a release with the same version as exists.
+    - Most often this will fail because you forgot to bump the version number of the plugin.
+    - If it was an intentional re-release of the same version you can delete the Release on GitHub and run `release.cmd` again.
 
 ---
 ## Plugin Translations
@@ -253,16 +294,3 @@ Documentation: [Integrate with External Tools via Tasks](https://code.visualstud
 
 [readme-uri]: README.md
 [contribute-url]: https://github.com/kiwidude68/calibre_plugins
-
-## Changelogs
-
-Originally my plugins had a simple changelog.txt, which was copy/pasted into the relevant forum thread. Many years later all the cool kids are using markdown files. There are even guidelines out there for how you should format your CHANGELOG.md files which can then be supported by build automation tools such as: [anton-yurchenko/git-release](https://github.com/anton-yurchenko/git-release).
-
-Initially I stumbled across [Keep a Changelog](https://keepachangelog.com/) and then ended up using 
-
-[![Common Changelog][common-changelog-image]][common-changelog-url]
-
-[common-changelog-image]: https://common-changelog.org/badge.svg
-[common-changelog-url]: https://common-changelog.org
-
-
