@@ -8,7 +8,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
     - See `README.md` for details of how to do this.
 - Added Russian translations (@Caarmi)
 ### Changed
-**Breaking:** Drop PyQt4 support, require calibre 2.x or later.
+- **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 
 ## [1.6.2] - 2022-09-08

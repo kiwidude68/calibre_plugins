@@ -6,7 +6,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Add translation support.
 - Store preferences in database instead of json
 ### Changed
-**Breaking:** Drop PyQt4 support, require calibre 2.x or later.
+- **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 
 ## [1.1.8] - 2016-03-28

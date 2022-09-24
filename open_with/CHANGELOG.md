@@ -5,7 +5,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Added
 - Add translation support.
 ### Changed
-**Breaking:** Drop PyQt4 support, require calibre 2.x or later.
+- **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 - Any custom website menu images must now be in `/resources/images/Open With/`
 

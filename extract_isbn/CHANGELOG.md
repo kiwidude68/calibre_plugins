@@ -3,7 +3,7 @@
 ## [1.6.0] - 2022-09-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Changed
-**Breaking:** Drop PyQt4 support, require calibre 2.x or later.
+- **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 
 ## [1.5.2] - 2022-09-05

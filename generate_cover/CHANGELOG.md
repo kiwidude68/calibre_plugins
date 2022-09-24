@@ -4,7 +4,7 @@
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Changed
 - Move user images from `/resources/images/generate_cover` to `/plugins/generate_cover` to prevent loss if user has not yet migrated to Calibre 6.
-**Breaking:** Drop PyQt4 support.
+- **Breaking:** Drop PyQt4 support.
 - Refactoring of common code
 
 ## [2.2.0] - 2022-08-02
