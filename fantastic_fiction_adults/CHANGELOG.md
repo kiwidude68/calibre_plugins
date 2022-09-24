@@ -1,10 +1,10 @@
-# Change Log
+# Fantastic Fiction Adults Change Log
 
 ## [1.3.0] - 2022-09-XX
 ### Added
 - All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins
 ### Changed
-- Drop PyQt4 support, require calibre 2.85.1 or later.
+**Breaking:** Drop PyQt4 support, require calibre 2.85.1 or later.
 - Refactoring of common code
 
 ## [1.2.0] - 2020-09-19

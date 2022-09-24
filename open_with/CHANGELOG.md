@@ -1,11 +1,11 @@
-# Change Log
+# Open With Change Log
 
 ## [1.8.0] - 2022-09-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add translation support.
 ### Changed
-- Drop PyQt4 support, require calibre 2.x or later.
+**Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 - Any custom website menu images must now be in `/resources/images/Open With/`
 

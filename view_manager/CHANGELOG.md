@@ -1,4 +1,4 @@
-# Change Log
+# View Manager Change Log
 
 ## [1.10.0] - 2022-09-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
