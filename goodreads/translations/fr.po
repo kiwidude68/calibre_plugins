@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:05+0100\n"
+"POT-Creation-Date: 2022-09-24 15:08+0100\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
 "Last-Translator: lentrad <lentrad@gmail.com>, 2022\n"
 "Language-Team: French (https://www.transifex.com/calibre/teams/19337/fr/)\n"
@@ -117,44 +117,44 @@ msgstr ""
 msgid "Create new column"
 msgstr "Créer une nouvelle colonne"
 
-#: config.py:149
+#: config.py:153
 msgid "Goodreads Genre"
 msgstr "Genre Goodread"
 
-#: config.py:149
+#: config.py:153
 msgid "Maps to Calibre Tag"
 msgstr "Cartes vers l'étiquette de calibre"
 
-#: config.py:218
+#: config.py:222
 msgid "Goodreads genre to calibre tag mappings"
 msgstr "Goodreads mappages de balises de genre à calibre"
 
-#: config.py:231
+#: config.py:235
 msgid "Add genre mapping"
 msgstr "Ajouter un mappage de genre"
 
-#: config.py:238
+#: config.py:242
 msgid "Delete genre mapping"
 msgstr "Supprimer le mappage de genre"
 
-#: config.py:245
+#: config.py:249
 msgid "Rename Goodreads genre"
 msgstr "Renommer le genre Goodreads"
 
-#: config.py:252
+#: config.py:256
 msgid "Reset to plugin default mappings"
 msgstr "Réinitialiser les mappages par défaut du plugin"
 
-#: config.py:258
+#: config.py:262
 msgid "Other options"
 msgstr "Autres options"
 
-#: config.py:263
+#: config.py:267
 msgid "Scan multiple editions for title/author searches (slower)"
 msgstr ""
 "Numériser plusieurs éditions pour les recherches de titre/auteur (plus lent)"
 
-#: config.py:264
+#: config.py:268
 msgid ""
 "When checked will perform an additional search to scan the top ranked\n"
 "Goodreads editions (if available) to exclude audiobook editions.\n"
@@ -164,13 +164,13 @@ msgstr ""
 "Éditions Goodreads (si disponibles) pour exclure les éditions de livres audio.\n"
 "Lorsqu'elle est décochée, vous obtiendrez une recherche plus rapide, mais l'édition est indéterminée."
 
-#: config.py:270
+#: config.py:274
 msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
 msgstr ""
 "Obtenez tous les auteurs contributeurs (par exemple, illustrateurs, éditeurs"
 " de séries, etc.)"
 
-#: config.py:271
+#: config.py:275
 msgid ""
 "When this option is checked, all authors are retrieved.\n"
 "\n"
@@ -180,11 +180,11 @@ msgstr ""
 "\n"
 "Lorsqu'elle n'est pas cochée (par défaut), seuls les auteurs principaux sont renvoyés."
 
-#: config.py:276
+#: config.py:280
 msgid "Get ASIN for kindle editions"
 msgstr "Obtenez un ASIN pour les éditions Kindle"
 
-#: config.py:277
+#: config.py:281
 msgid ""
 "When this option is checked, in cases where Goodreads has an ASIN listed\n"
 "instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
@@ -194,11 +194,11 @@ msgstr ""
 "au lieu d'un ISBN, l'ASIN est récupéré. Ceci est utile pour les livres qui\n"
 "possèdent déjà l'identifiant Goodreads spécifique d'une édition Kindle."
 
-#: config.py:283
+#: config.py:287
 msgid "Use first published date"
 msgstr "Utiliser la date de première publication"
 
-#: config.py:284
+#: config.py:288
 msgid ""
 "If checked, the first published date for this book is used rather than\n"
 "that of the actual book edition."
@@ -206,35 +206,55 @@ msgstr ""
 "Si cette case est cochée, la première date de publication de ce livre est utilisée plutôt que\n"
 "celle de l'édition réelle du livre."
 
-#: config.py:302 config.py:333
+#: config.py:293
+msgid "Get precise rating into 'grrating' identifier"
+msgstr ""
+
+#: config.py:294
+msgid ""
+"If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+
+#: config.py:299
+msgid "Get #votes for rating into 'grvotes' identifier"
+msgstr ""
+
+#: config.py:300
+msgid ""
+"If checked, pulls number of votes producing this rating into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+
+#: config.py:320 config.py:351
 msgid "Add new mapping"
 msgstr "Ajout nouvelle correspondance"
 
-#: config.py:303 config.py:334
+#: config.py:321 config.py:352
 msgid "Enter a Goodreads genre name to create a mapping for:"
 msgstr "Entrez un nom de genre Goodreads pour créer un mappage pour:"
 
-#: config.py:314
+#: config.py:332
 msgid "Add Failed"
 msgstr "Échec de l'ajout"
 
-#: config.py:314 config.py:346
+#: config.py:332 config.py:364
 msgid "A genre with the same name already exists"
 msgstr "Un genre de nême nom existe déjà."
 
-#: config.py:322 config.py:353
+#: config.py:340 config.py:371
 msgid "Are you sure?"
 msgstr "Êtes-vous sûrs ?"
 
-#: config.py:323
+#: config.py:341
 msgid "Are you sure you want to delete the selected genre mappings?"
 msgstr "Voulez-vous vraiment supprimer les mappages de genre sélectionnés ?"
 
-#: config.py:346
+#: config.py:364
 msgid "Rename Failed"
 msgstr "Échec Renommage"
 
-#: config.py:354
+#: config.py:372
 msgid "Are you sure you want to reset to the plugin default genre mappings?"
 msgstr ""
 "Voulez-vous vraiment réinitialiser les mappages de genre par défaut du plug-"

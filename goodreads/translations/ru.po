@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:05+0100\n"
+"POT-Creation-Date: 2022-09-24 15:08+0100\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
 "Last-Translator: ashed <craysy@gmail.com>, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/calibre/teams/19337/ru/)\n"
@@ -108,43 +108,43 @@ msgstr ""
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
-#: config.py:149
+#: config.py:153
 msgid "Goodreads Genre"
 msgstr "Жанр Goodreads"
 
-#: config.py:149
+#: config.py:153
 msgid "Maps to Calibre Tag"
 msgstr "Соответствует тегу calibre"
 
-#: config.py:218
+#: config.py:222
 msgid "Goodreads genre to calibre tag mappings"
 msgstr "Соответствие жанров Goodreads тегам calibre"
 
-#: config.py:231
+#: config.py:235
 msgid "Add genre mapping"
 msgstr "Добавить соответствие жанра"
 
-#: config.py:238
+#: config.py:242
 msgid "Delete genre mapping"
 msgstr "Удалить соответствие жанра"
 
-#: config.py:245
+#: config.py:249
 msgid "Rename Goodreads genre"
 msgstr "Переименовать жанр Goodreads"
 
-#: config.py:252
+#: config.py:256
 msgid "Reset to plugin default mappings"
 msgstr "Сброс к соответствиям по умолчанию"
 
-#: config.py:258
+#: config.py:262
 msgid "Other options"
 msgstr "Прочие параметры"
 
-#: config.py:263
+#: config.py:267
 msgid "Scan multiple editions for title/author searches (slower)"
 msgstr "Искать несколько изданий по названию автору (медленней)"
 
-#: config.py:264
+#: config.py:268
 msgid ""
 "When checked will perform an additional search to scan the top ranked\n"
 "Goodreads editions (if available) to exclude audiobook editions.\n"
@@ -156,11 +156,11 @@ msgstr ""
 "В противном случае поиск будет быстрее, но найденное издание \n"
 "будет произвольным."
 
-#: config.py:270
+#: config.py:274
 msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
 msgstr "Загружать всех соавторов (иллюстраторов, редакторов и т.д.)"
 
-#: config.py:271
+#: config.py:275
 msgid ""
 "When this option is checked, all authors are retrieved.\n"
 "\n"
@@ -170,11 +170,11 @@ msgstr ""
 "\n"
 "Если снято (по умолчанию), то загружать только основных авторов."
 
-#: config.py:276
+#: config.py:280
 msgid "Get ASIN for kindle editions"
 msgstr "Загружать ASIN для изданий kindle"
 
-#: config.py:277
+#: config.py:281
 msgid ""
 "When this option is checked, in cases where Goodreads has an ASIN listed\n"
 "instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
@@ -184,11 +184,11 @@ msgstr ""
 "Полезно для книг, у которых уже есть идентификатор Goodreads \n"
 "для издания Kindle."
 
-#: config.py:283
+#: config.py:287
 msgid "Use first published date"
 msgstr "Использовать дату первой публикации"
 
-#: config.py:284
+#: config.py:288
 msgid ""
 "If checked, the first published date for this book is used rather than\n"
 "that of the actual book edition."
@@ -196,35 +196,55 @@ msgstr ""
 "Использовать дату первой публикации вместо даты \n"
 "конкретного издания."
 
-#: config.py:302 config.py:333
+#: config.py:293
+msgid "Get precise rating into 'grrating' identifier"
+msgstr ""
+
+#: config.py:294
+msgid ""
+"If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+
+#: config.py:299
+msgid "Get #votes for rating into 'grvotes' identifier"
+msgstr ""
+
+#: config.py:300
+msgid ""
+"If checked, pulls number of votes producing this rating into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+
+#: config.py:320 config.py:351
 msgid "Add new mapping"
 msgstr "Добавить соответствие"
 
-#: config.py:303 config.py:334
+#: config.py:321 config.py:352
 msgid "Enter a Goodreads genre name to create a mapping for:"
 msgstr "Введите сопоставляемый жанр Goodreads:"
 
-#: config.py:314
+#: config.py:332
 msgid "Add Failed"
 msgstr "Добавление не удалось"
 
-#: config.py:314 config.py:346
+#: config.py:332 config.py:364
 msgid "A genre with the same name already exists"
 msgstr "Такой жанр уже существует"
 
-#: config.py:322 config.py:353
+#: config.py:340 config.py:371
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: config.py:323
+#: config.py:341
 msgid "Are you sure you want to delete the selected genre mappings?"
 msgstr "Вы действительно хотите удалить выделенные соответствия?"
 
-#: config.py:346
+#: config.py:364
 msgid "Rename Failed"
 msgstr "Переименование не удалось"
 
-#: config.py:354
+#: config.py:372
 msgid "Are you sure you want to reset to the plugin default genre mappings?"
 msgstr ""
 "Вы действительно хотите сбросить соответствия к значениям по умолчанию?"

@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:05+0100\n"
+"POT-Creation-Date: 2022-09-24 15:08+0100\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
@@ -32,7 +32,7 @@ msgstr "Reiniciar Calibre ahora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para: "
+msgstr "Preferencias para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
@@ -47,16 +47,16 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer cambiar la configuración en esta biblioteca para este"
+" complemento?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
-" en su carpeta de complementos de calibre no se modificará."
+"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
+"la carpeta de complementos de calibre no se modificarán."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -69,7 +69,7 @@ msgstr "Configuración modificada"
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
 msgstr ""
-"Se ha cambiado la configuración de este complemento en esta biblioteca."
+"Se ha modificado la configuración de este complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -80,8 +80,8 @@ msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer borrar la configuración en esta biblioteca para este "
+"complemento?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -109,51 +109,51 @@ msgstr "Reinicio requerido"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título - debe reiniciar Calibre antes de usar "
+"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
 #: ..\common\common_widgets.py:193
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
-#: config.py:149
+#: config.py:153
 msgid "Goodreads Genre"
 msgstr "Género de Goodreads"
 
-#: config.py:149
+#: config.py:153
 msgid "Maps to Calibre Tag"
 msgstr "Se corresponde con la etiqueta de calibre"
 
-#: config.py:218
+#: config.py:222
 msgid "Goodreads genre to calibre tag mappings"
 msgstr "Correspondencias entre géneros de Goodreads y etiquetas de calibre"
 
-#: config.py:231
+#: config.py:235
 msgid "Add genre mapping"
 msgstr "Añadir correspondencia de género"
 
-#: config.py:238
+#: config.py:242
 msgid "Delete genre mapping"
 msgstr "Eliminar correspondencia de género"
 
-#: config.py:245
+#: config.py:249
 msgid "Rename Goodreads genre"
 msgstr "Cambiar el nombre del género de Goodreads"
 
-#: config.py:252
+#: config.py:256
 msgid "Reset to plugin default mappings"
 msgstr "Restablecer las correspondencias predeterminadas del complemento"
 
-#: config.py:258
+#: config.py:262
 msgid "Other options"
 msgstr "Otras opciones"
 
-#: config.py:263
+#: config.py:267
 msgid "Scan multiple editions for title/author searches (slower)"
 msgstr ""
 "Buscar varias ediciones para las búsquedas de título o autor (más lento)"
 
-#: config.py:264
+#: config.py:268
 msgid ""
 "When checked will perform an additional search to scan the top ranked\n"
 "Goodreads editions (if available) to exclude audiobook editions.\n"
@@ -164,13 +164,13 @@ msgstr ""
 "audiolibro. Cuando no esté marcada las búsquedas serán más rápidas, pero la edición es\n"
 "indeterminada."
 
-#: config.py:270
+#: config.py:274
 msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
 msgstr ""
 "Obtener todos los autores contribuyentes (por ejemplo, ilustradores, "
 "editores de serie, etc.)"
 
-#: config.py:271
+#: config.py:275
 msgid ""
 "When this option is checked, all authors are retrieved.\n"
 "\n"
@@ -180,11 +180,11 @@ msgstr ""
 "\n"
 "Cuando no está marcada (predeterminado), sólo se devuelven los autores principales."
 
-#: config.py:276
+#: config.py:280
 msgid "Get ASIN for kindle editions"
 msgstr "Obtener ASIN para ediciones Kindle"
 
-#: config.py:277
+#: config.py:281
 msgid ""
 "When this option is checked, in cases where Goodreads has an ASIN listed\n"
 "instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
@@ -194,11 +194,11 @@ msgstr ""
 "lugar de un ISBN, se recupera el ASIN. Esto es útil para libros que ya tienen el\n"
 "identificador específico de Goodreads de una edición de Kindle."
 
-#: config.py:283
+#: config.py:287
 msgid "Use first published date"
 msgstr "Usar la fecha de primera publicación"
 
-#: config.py:284
+#: config.py:288
 msgid ""
 "If checked, the first published date for this book is used rather than\n"
 "that of the actual book edition."
@@ -206,39 +206,66 @@ msgstr ""
 "Si está marcada, se usa la fecha de primera publicación de este libro en lugar de\n"
 "la de la edición real del libro."
 
-#: config.py:302 config.py:333
+#: config.py:293
+msgid "Get precise rating into 'grrating' identifier"
+msgstr "Obtener la calificación precisa en el identificador «grrating»"
+
+#: config.py:294
+msgid ""
+"If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+"Si se activa, se guardará la calificación más precisa (por ejemplo 3.78) en "
+"un identificador que puede mostrarse como columna personalizada."
+
+#: config.py:299
+msgid "Get #votes for rating into 'grvotes' identifier"
+msgstr ""
+"Obtener el número de votos para la calificación en el identificador "
+"«grvotes»"
+
+#: config.py:300
+msgid ""
+"If checked, pulls number of votes producing this rating into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+"Si se activa, se guardará el número de votos que dan lugar a esta "
+"calificación en un identificador que puede mostrarse como columna "
+"personalizada."
+
+#: config.py:320 config.py:351
 msgid "Add new mapping"
 msgstr "Añadir una nueva correspondencia"
 
-#: config.py:303 config.py:334
+#: config.py:321 config.py:352
 msgid "Enter a Goodreads genre name to create a mapping for:"
 msgstr ""
 "Introduzca un nombre de género de Goodreads para el que crear una "
 "correspondencia:"
 
-#: config.py:314
+#: config.py:332
 msgid "Add Failed"
 msgstr "Fallo al añadir"
 
-#: config.py:314 config.py:346
+#: config.py:332 config.py:364
 msgid "A genre with the same name already exists"
 msgstr "Ya existe un género con el mismo nombre"
 
-#: config.py:322 config.py:353
+#: config.py:340 config.py:371
 msgid "Are you sure?"
 msgstr "¿Está seguro?"
 
-#: config.py:323
+#: config.py:341
 msgid "Are you sure you want to delete the selected genre mappings?"
 msgstr ""
 "¿Está seguro de querer eliminar las correspondencias de género "
 "seleccionadas?"
 
-#: config.py:346
+#: config.py:364
 msgid "Rename Failed"
 msgstr "Fallo al cambiar el nombre"
 
-#: config.py:354
+#: config.py:372
 msgid "Are you sure you want to reset to the plugin default genre mappings?"
 msgstr ""
 "¿Está seguro de querer restablecer las correspondencias de género "
