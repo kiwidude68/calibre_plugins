@@ -107,7 +107,7 @@ All these batch files can be run from within VS Code using tasks - see below.
 | -------------------- | ------- |
 | `CALIBRE_CONFIG_DIRECTORY` | If using calibre portable, set this to the location of the `Calibre Settings` subfolder.<br>Otherwise calibre-customize in `build.cmd` will insert into your main calibre. |
 | `CALIBRE_DIRECTORY` | Custom variable I added support for, used by `build.cmd`<br>Set to folder location of your `calibre-debug.exe`.<br>Only necessary if calibre is not in your path. |
-| `PYGETTEXT_FOLDER` | Custom variable I added support for, used by `generate-pot.cmd`<br>Set to folder location of your Python pygettext.py file<br>Default location assumed to be `C:\Python310\Tools\i18n`<br>Could be useful if you have a different version of Python or install location.
+| `PYGETTEXT_DIRECTORY` | Custom variable I added support for, used by `generate-pot.cmd`<br>Set to folder location of your Python pygettext.py file<br>Default location assumed to be `C:\Python310\Tools\i18n`<br>Could be useful if you have a different version of Python or install location.
 | `CALIBRE_GITHUB_TOKEN` | Custom variable I added support for, used by `release.cmd`<br>Authorised releasers will set it to their API token key.
 
 ### Changelogs
