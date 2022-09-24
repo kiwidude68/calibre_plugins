@@ -1,9 +1,12 @@
 # Change Log
 
-## [1.7.0] - 2022-09-XX
+## [1.7.0] - 2022-09-24
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
-- Malay, Russian translations (@abuyop, @Caarmi)
+- Added configuration option to download precise goodreads rating and review vote count into two identifiers `grrating` and `grvotes`
+    - The new identifiers can be bound to custom columns in calibre see `README.md` for details of how.
+    - Thanks to Melih for the suggestion!
+- Added Russian translations (@Caarmi)
 ### Changed
 - Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code

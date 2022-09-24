@@ -35,6 +35,7 @@ class Goodreads(Source):
 
     capabilities = frozenset(['identify', 'cover'])
     touched_fields = frozenset(['title', 'authors', 'identifier:goodreads',
+        'identifier:grrating', 'identifier:grvotes',
         'identifier:isbn', 'rating', 'comments', 'publisher', 'pubdate',
         'tags', 'series', 'languages'])
     has_html_comments = True

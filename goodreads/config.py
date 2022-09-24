@@ -37,6 +37,8 @@ STORE_NAME = 'Options'
 KEY_GET_ALL_AUTHORS = 'getAllAuthors'
 KEY_GET_EDITIONS = 'getEditions'
 KEY_GET_ASIN = 'getAsin'
+KEY_GET_RATING = 'getRating'
+KEY_GET_VOTES = 'getVotes'
 KEY_FIRST_PUBLISHED = 'firstPublished'
 KEY_GENRE_MAPPINGS = 'genreMappings'
 
@@ -104,6 +106,8 @@ DEFAULT_STORE_VALUES = {
     KEY_GET_EDITIONS: False,
     KEY_GET_ALL_AUTHORS: False,
     KEY_GET_ASIN: False,
+    KEY_GET_RATING: False,
+    KEY_GET_VOTES: False,
     KEY_FIRST_PUBLISHED: True,
     KEY_GENRE_MAPPINGS: copy.deepcopy(DEFAULT_GENRE_MAPPINGS)
 }
@@ -264,27 +268,39 @@ class ConfigWidget(DefaultConfigWidget):
         self.get_editions_checkbox.setToolTip(_('When checked will perform an additional search to scan the top ranked\n'
                                               'Goodreads editions (if available) to exclude audiobook editions.\n'
                                               'When unchecked you will get a faster search but the edition is indeterminate.'))
-        self.get_editions_checkbox.setChecked(c[KEY_GET_EDITIONS])
+        self.get_editions_checkbox.setChecked(c.get(KEY_GET_EDITIONS, DEFAULT_STORE_VALUES[KEY_GET_EDITIONS]))
         other_group_box_layout.addWidget(self.get_editions_checkbox)
 
         self.all_authors_checkbox = QCheckBox(_('Get all contributing authors (e.g. illustrators, series editors etc)'), self)
         self.all_authors_checkbox.setToolTip(_('When this option is checked, all authors are retrieved.\n\n'
                                               'When unchecked (default) only the primary author(s) are returned.'))
-        self.all_authors_checkbox.setChecked(c[KEY_GET_ALL_AUTHORS])
+        self.all_authors_checkbox.setChecked(c.get(KEY_GET_ALL_AUTHORS, DEFAULT_STORE_VALUES[KEY_GET_ALL_AUTHORS]))
         other_group_box_layout.addWidget(self.all_authors_checkbox)
 
         self.get_asin_checkbox = QCheckBox(_('Get ASIN for kindle editions'), self)
         self.get_asin_checkbox.setToolTip(_('When this option is checked, in cases where Goodreads has an ASIN listed\n'
                                           'instead of an ISBN, the ASIN is retrieved. This is useful for books that\n'
                                           'already have the specific Goodreads identifier of a Kindle editon.'))
-        self.get_asin_checkbox.setChecked(c[KEY_GET_ASIN])
+        self.get_asin_checkbox.setChecked(c.get(KEY_GET_ASIN, DEFAULT_STORE_VALUES[KEY_GET_ASIN]))
         other_group_box_layout.addWidget(self.get_asin_checkbox)
         
         self.first_published_checkbox = QCheckBox(_('Use first published date'), self)
         self.first_published_checkbox.setToolTip(_('If checked, the first published date for this book is used rather than\n'
                                                   'that of the actual book edition.'))
-        self.first_published_checkbox.setChecked(c[KEY_FIRST_PUBLISHED])
+        self.first_published_checkbox.setChecked(c.get(KEY_FIRST_PUBLISHED, DEFAULT_STORE_VALUES[KEY_FIRST_PUBLISHED]))
         other_group_box_layout.addWidget(self.first_published_checkbox)
+        
+        self.get_rating_checkbox = QCheckBox(_("Get precise rating into 'grrating' identifier"), self)
+        self.get_rating_checkbox.setToolTip(_('If checked, pulls precise rating (e.g. 3.78) into an identifier\n'
+                                                  'you can display as a custom column.'))
+        self.get_rating_checkbox.setChecked(c.get(KEY_GET_RATING, DEFAULT_STORE_VALUES[KEY_GET_RATING]))
+        other_group_box_layout.addWidget(self.get_rating_checkbox)
+        
+        self.get_votes_checkbox = QCheckBox(_("Get #votes for rating into 'grvotes' identifier"), self)
+        self.get_votes_checkbox.setToolTip(_('If checked, pulls number of votes producing this rating into an identifier\n'
+                                                  'you can display as a custom column.'))
+        self.get_votes_checkbox.setChecked(c.get(KEY_GET_VOTES, DEFAULT_STORE_VALUES[KEY_GET_VOTES]))
+        other_group_box_layout.addWidget(self.get_votes_checkbox)
 
         self.edit_table.populate_table(c[KEY_GENRE_MAPPINGS])
 
@@ -295,6 +311,8 @@ class ConfigWidget(DefaultConfigWidget):
         new_prefs[KEY_GET_ALL_AUTHORS] = self.all_authors_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GET_ASIN] = self.get_asin_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_FIRST_PUBLISHED] = self.first_published_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_RATING] = self.get_rating_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_VOTES] = self.get_votes_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GENRE_MAPPINGS] = self.edit_table.get_data()
         plugin_prefs[STORE_NAME] = new_prefs
 

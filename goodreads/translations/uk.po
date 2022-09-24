@@ -3,15 +3,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Yuri Chornoivan <yurchor@ukr.net>, 2022
 # Андрій М. <dexteritymaster@gmail.com>, 2022
+# Yuri Chornoivan <yurchor@ukr.net>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-19 16:05+0100\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
-"Last-Translator: Андрій М. <dexteritymaster@gmail.com>, 2022\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,6 +45,8 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
+"Ви впевнені, що бажаєте змінити ваші налаштування у цій бібліотеці для цього"
+" додатка?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -60,11 +62,11 @@ msgstr "Після цього ви повинні перезавантажити
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Параметри змінено"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "Параметри для цього додатка у цій бібліотеці було змінено."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -80,7 +82,7 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "Параметри вилучено"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
@@ -88,7 +90,7 @@ msgstr "Всі налаштування для цього плагіну в ці
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Копіювати до буфера обміну"
 
 #: ..\common\common_widgets.py:94
 msgid "Undefined"
@@ -96,16 +98,18 @@ msgstr "Невизначено"
 
 #: ..\common\common_widgets.py:149
 msgid "Restart required"
-msgstr ""
+msgstr "Потрібен перезапуск"
 
 #: ..\common\common_widgets.py:150
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
+"Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
+" користуватися цим додатком!"
 
 #: ..\common\common_widgets.py:193
 msgid "Create new column"
-msgstr ""
+msgstr "Створити стовпчик"
 
 #: config.py:149
 msgid "Goodreads Genre"

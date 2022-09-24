@@ -245,6 +245,20 @@ class Worker(Thread): # Get details
                 mi.rating = self.parse_rating(work_json)
             else:
                 mi.rating = self.parse_rating_legacy(root)
+            get_rating = cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_GET_RATING, False)
+            if get_rating:
+                mi.set_identifier('grrating', str(mi.rating))
+        except:
+            self.log.exception('Error parsing ratings for url: %r'%self.url)
+
+        try:
+            get_votes = cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_GET_VOTES, False)
+            if get_votes:
+                if work_json:
+                    votes = self.parse_rating_count(work_json)
+                else:
+                    votes = self.parse_rating_count_legacy(root)
+                mi.set_identifier('grvotes', str(votes))
         except:
             self.log.exception('Error parsing ratings for url: %r'%self.url)
 
@@ -476,13 +490,32 @@ class Worker(Thread): # Get details
                 #self.log.info("parse_rating_legacy: have rating node - rating_node[0].text=", rating_node[0].text)
                 rating_text = rating_node[0].text
                 rating_value = float(rating_text)
-                self.log.info("parse_rating_legacy: rating_value=", rating_value)
+                self.log.info("parse_rating_legacy: ", rating_value)
                 return rating_value
             except:
                 self.log.info("parse_rating_legacy: Exception getting rating")
                 import traceback
                 traceback.print_stack()
                 return None
+
+    def parse_rating_count(self, work_json):
+        if "stats" not in work_json:
+            return None
+        stats_json = work_json["stats"]        
+        if "ratingsCount" not in stats_json:
+            return None
+        rating_count = int(stats_json["ratingsCount"])
+        self.log.info("parse_rating_count: ", rating_count)
+        return rating_count
+
+    def parse_rating_count_legacy(self, root):
+        rating_node = root.xpath('//meta[@itemprop="ratingCount"]')
+        if rating_node:
+            rating_text = tostring(rating_node[0], method='text', encoding='unicode').strip()
+            rating_text = re.sub('[^0-9]', '', rating_text)
+            rating_count = int(rating_text)
+            self.log.info("parse_rating_count_legacy: ", rating_count)
+            return rating_count
 
     def parse_comments(self, book_json):
         if "description" not in book_json:

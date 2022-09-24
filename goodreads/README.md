@@ -26,7 +26,47 @@ This plugin allows Calibre to read book information from [goodreads.com](https:/
 | Scan multiple editions for title/author searches | By default the first match from the Goodreads search is used.<br>Historically this edition was often an audiobook which may not contain ideal metadata.<br>Enabling this option will ensure audiobook editions are skipped, but will take longer to retrieve. |
 | Get all contributing authors | Some books will have many authors listed.<br>Default behavior (unchecked) is to get only the authors who have a profile on Goodreads. |
 | Get ASIN for kindle editions | If checked, will try to read the mobi-asin (Amazon) identifier in the returned metadata.<br>This is in addition to the goodreads identifier. |
-| Use first published date. | Books will usually have multiple dates - when first published and specific edition.<br>When checked (default) will return the first published date ignoring edition date.
+| Use first published date | Books will usually have multiple dates - when first published and specific edition.<br>When checked (default) will return the first published date ignoring edition date.
+| Get rating count into grrating identifier | Optionally create a `grrating` identifier containing a more precise rating.<br>e.g. `grrating:3.78` which can be bound to a custom column.<br>By default this feature is unchecked.
+| Get # votes into grvotes identifier | Optionally create a `grvotes` identifier containing rating votes.<br>e.g. `grvotes:12345` which can be bound to a custom column.<br>By default this feature is unchecked.
+
+
+## Displaying Goodreads Rating / #Votes in Custom Columns
+
+By default calibre rounds up a rating to display it as a number of stars. However some users want something more detailed - there can be a perceived difference between 3.6 and 4.4, but calibre will display both as 4 stars. 
+
+Similarly calibre also has no default column for the # votes that make up the weighting for that rating. An average rating based on many thousands of votes could be considered more balanced than one that has only a few hundred.
+
+You can download the rating count/votes into the identifiers for a book using the metadata configuration options above for the Goodreads plugin. The following instructions will allow you to then display these as calibre columns in your library.
+
+### Adding a Goodreads Rating column
+
+- **Preferences -> Interface -> Add your own columns**
+- Click on `+` button then set at least the following
+
+| Field | Value | Comments |
+| ----- | ----- | -------- |
+| Lookup name: | grrating | Suggested value only, you can customise
+| Column heading: | GR | Suggested value only, you can customise
+| Column type: | `Column built from other columns` | Mandatory
+| Template: | `{identifiers:select(grrating)}` | Mandatory
+| Sort/search column by | `Number` | Mandatory
+
+### Adding a Goodreads Votes column
+
+- **Preferences -> Interface -> Add your own columns**
+- Click on `+` button then set at least the following:
+
+| Field | Value | Comments |
+| ----- | ----- | -------- |
+| Lookup name: | grvotes | Suggested value only, you can customise
+| Column heading: | GR # | Suggested value only, you can customise
+| Column type: | `Column built from other columns` | Mandatory
+| Template: | `{identifiers:select(grvotes)}` | Mandatory
+| Sort/search column by | `Number` | Mandatory
+
+After adding your column(s), click Apply and restart calibre.
+
 
 ## Development / Contributions
 
