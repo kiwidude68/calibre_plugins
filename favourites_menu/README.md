@@ -37,7 +37,7 @@ No - wait for it - if you download the Favourites Menu plugin in the next 3.2 se
 
 But wait, that’s not all! If you click twice on the download button, we’ll give you not one, but two copies of the plugin. That’s two copies of the Favourites Menu plugin for no extra cost. Wow!
 
-Our operators are standing by to take your call… ``1-800-555-KIWIDUDE``
+Our operators are standing by to take your call… `1-800-555-KIWIDUDE`
 
 ## Main Features
 

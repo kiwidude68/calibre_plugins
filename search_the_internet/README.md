@@ -30,12 +30,12 @@ I mainly use this plugin to look for better quality metadata than that available
 | --------| ----------- |
 | Active | Items ticked in this first column will appear in your menu.<br>A small selection are ticked by default. |
 | Menu Text | The name to appear in the menu.<br>Leave this blank if you want a separator row.<br>You must have a value in this column before you can edit the later columns.<br>Erasing the value in this column will clear the other columns. |
-| Submenu | An optional sub-menu name to display this menu item within.<br>If you have many menu items you may find it more manageable to group them within sub-menus.<br>So for instance typing ``Amazon`` into this column for all the Amazon rows in the grid will ensure they<br>are displayed within an “Amazon” sub-menu when the “Search the Internet” menu is expanded. |
+| Submenu | An optional sub-menu name to display this menu item within.<br>If you have many menu items you may find it more manageable to group them within sub-menus.<br>So for instance typing `Amazon` into this column for all the Amazon rows in the grid will ensure they<br>are displayed within an “Amazon” sub-menu when the “Search the Internet” menu is expanded. |
 | Open Group | Allows you to open multiple website links from a single click.<br>Tick this checkbox for each row in the menu that you would like to include in this special group.<br>If one or more menu items have this ticked then a special “Open Group” menu item will appear.<br>If no active menu items have this option ticked, the “Open Group” option does not appear. |
 | Image | The filename of an image icon to display next to your menu item.<br>Leave blank for no image.<br>Images for the supplied menu items are included in the plugin zip file.<br>To add your own image files, choose the **Add New Image...** menu item within the combobox. |
 | URL | Items ticked in this first column will appear in your menu.<br>A small selection are ticked by default. |
-| Encoding | The encoding to use when translating title and author names for passing to the website.<br>Of particular importance to users with foreign language titled books.<br>The default of ``utf-8`` should be sufficient for most websites. |
-| Method | Whether to use HTTP ``GET`` (default) or ``POST`` to submit the search.<br>Any website that you can query by pasting the search url into the browser will use ``GET``.<br>Some websites require data must be submitted from a hidden form via ``POST``.<br>Specify your name/value pairs in your url exactly the same as you would for a querystring. |
+| Encoding | The encoding to use when translating title and author names for passing to the website.<br>Of particular importance to users with foreign language titled books.<br>The default of `utf-8` should be sufficient for most websites. |
+| Method | Whether to use HTTP `GET` (default) or `POST` to submit the search.<br>Any website that you can query by pasting the search url into the browser will use `GET`.<br>Some websites require data must be submitted from a hidden form via `POST`.<br>Specify your name/value pairs in your url exactly the same as you would for a querystring. |
 
 The buttons available perform the following functions:
 
@@ -79,31 +79,31 @@ The easiest way is to expand the **Image** column dropdown on the configuration 
 - **From web domain favicon** - Use this option to download the image file that you see in your browser location bar/bookmarks when you navigate to the website. It uses a google service http://www.google.com/s2/favicons?domain=xxx which returns the image as a png file for you to save. You just need to type the top level domain name such as www.google.com or www.amazon.com along with the name to save it as.
 - **From .png file** - Allows you to copy a .png file from your local drives to the correct Calibre location for you.
 
-Alternatively if you want to place them manually these should be placed in a ``\resources\images`` folder within the Calibre configuration folder as described in the Calibre help. You can find this directory by using:
+Alternatively if you want to place them manually these should be placed in a `\resources\images` folder within the Calibre configuration folder as described in the Calibre help. You can find this directory by using:
 
 > **Preferences -> Miscellaneous -> Open calibre configuration directory**
 
 You can also use the **Open images folder** context menu option available in the menu items grid on the configuration dialog for this plugin.
 
-It is quite probable as a first time user you do not already have the required resource subfolder. If that is the case create the ``\resources\images`` subdirectories yourself.
+It is quite probable as a first time user you do not already have the required resource subfolder. If that is the case create the `\resources\images` subdirectories yourself.
 
 ## Using a Different Web Browser
 
 The behaviour of this plugin is to display web pages using the system configured default web browser, opening each page in a new tab.
 
-If you wish to use a different web browser than your system default, then you can do this by modifying the environment variables for while Calibre is running (such as using a batch file to launch Calibre). The help file for ``webbrowser.py`` states the following:
+If you wish to use a different web browser than your system default, then you can do this by modifying the environment variables for while Calibre is running (such as using a batch file to launch Calibre). The help file for `webbrowser.py` states the following:
 
-> “If the environment variable ``BROWSER`` exists, it is interpreted to override the platform default list of browsers, as a os.pathsep-separated list of browsers to try in order. When the value of a list part contains the string ``%s``, then it is interpreted as a literal browser command line to be used with the argument URL substituted for ``%s``; if the part does not contain ``%s``, it is simply interpreted as the name of the browser to launch.”
+> “If the environment variable `BROWSER` exists, it is interpreted to override the platform default list of browsers, as a os.pathsep-separated list of browsers to try in order. When the value of a list part contains the string `%s`, then it is interpreted as a literal browser command line to be used with the argument URL substituted for `%s`; if the part does not contain `%s`, it is simply interpreted as the name of the browser to launch.”
 
 ## Backing Up Your Settings
 
-Menu items are persisted into a ``Search The Internet.json`` file located within the calibre configuration directory for plugins (see above). So if you backup your Calibre configuration directory these settings will be included. Along with all your other Calibre preferences.
+Menu items are persisted into a `Search The Internet.json` file located within the calibre configuration directory for plugins (see above). So if you backup your Calibre configuration directory these settings will be included. Along with all your other Calibre preferences.
 
 You may also chose to use the **Export...** right click feature to save your settings in a .zip file that can be re-imported at any time.
 
 ## Known Issues
 
-- Calibre decides on startup whether to scan the ``resources\images`` folder for custom images only if that folder exists at that time. The very first time you add a custom image using this plugin it will create this directory for you if it does not exist. However in that one scenario you will need to restart Calibre before any custom images you add will be displayed within Calibre. If the directory already exists when Calibre starts, then any new images you add will be displayed immediately. This limitation is by design for performance reasons.
+- Calibre decides on startup whether to scan the `resources\images` folder for custom images only if that folder exists at that time. The very first time you add a custom image using this plugin it will create this directory for you if it does not exist. However in that one scenario you will need to restart Calibre before any custom images you add will be displayed within Calibre. If the directory already exists when Calibre starts, then any new images you add will be displayed immediately. This limitation is by design for performance reasons.
 - Retrieving the favicon for a website using Google’s service (as done underneath the covers by this plugin) will lose any transparency for the image. If the icon is a 16x16 coloured square this is unimportant, however icons that are “shaped” with a transparent background will instead have a white background. If this is important to you either edit the downloaded .png manually to erase the background or download it by looking at the web page source code.
 
 ## Development / Contributions

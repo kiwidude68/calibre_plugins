@@ -40,7 +40,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.5.5] - 2021-05-15
 ### Changed
-- Webpage Tab: download more than one page per inserting a {first_page-last_page} in the url in place of the page number. e.g. ``https://www.goodreads.com/list/show/1.Best_Books_Ever?page={1-3}`` (@capink)
+- Webpage Tab: download more than one page per inserting a {first_page-last_page} in the url in place of the page number. e.g. `https://www.goodreads.com/list/show/1.Best_Books_Ever?page={1-3}` (@capink)
 ### Fixed
 - The uuid identifier matching only works if book has other identifier type(s).
 - For int fields, accept numbers with zero fractional part e.g. 1.00

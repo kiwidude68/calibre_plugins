@@ -31,16 +31,16 @@ If this is an official release on the MobileRead plugin thread, then:
 ## Plugin Version Numbering Guidelines
 
 While there are no strict rules on which parts of the version number for a plugin to "bump" the following may prove a useful guide. The only thing that must happen is that the overall number increments with each new plugin release in order for the calibre Plugin Updater to show this for users to install.
-> ``<Major>.<Minor>.<Build>`` e.g. 1.4.2
+> `<Major>.<Minor>.<Build>` e.g. 1.4.2
 - **Major** is very rarely incremented, as it is reserved for massive plugin changes.
 - **Minor** is the most common to increment, representing a new release to the community.
 - **Build** will also be frequently changed, to represent an iteration within the release.
 
 ### Example:
-- A current plugin release starts at ``v1.0.0``
-- A new feature is added or significant change is made so we bump the Minor, releasing as ``v1.1.0``
-- Feedback to a test version or bug fixes means a bump to the Build, releasing as ``v1.1.1``
-- Later another new feature/change is made, releasing as ``v1.2.0`` and so on.
+- A current plugin release starts at `v1.0.0`
+- A new feature is added or significant change is made so we bump the Minor, releasing as `v1.1.0`
+- Feedback to a test version or bug fixes means a bump to the Build, releasing as `v1.1.1`
+- Later another new feature/change is made, releasing as `v1.2.0` and so on.
 
 ---
 ## PyQt / Python Compatibility
@@ -83,7 +83,7 @@ Some of the plugin maintainers may not be quite so familiar with working with Gi
 
 ### Plugin Batch Files
 
-Each plugin folder contains the following batch files in a ``.build`` subfolder to make development less painful. The batch files should be run from within that folder.
+Each plugin folder contains the following batch files in a `.build` subfolder to make development less painful. The batch files should be run from within that folder.
 
 | Batch file | Purpose |
 | ---------- | ------- |
@@ -103,9 +103,9 @@ All these batch files can be run from within VS Code using tasks - see below.
 
 | Environment Variable | Purpose |
 | -------------------- | ------- |
-| ``CALIBRE_CONFIG_DIRECTORY`` | If using calibre portable, set this to the location of the `Calibre Settings` subfolder.<br>Otherwise calibre-customize in ``build.cmd`` will insert into your main calibre. |
-| ``CALIBRE_DIRECTORY`` | Custom variable I added support for, used by ``build.cmd``<br>Set to folder location of your ``calibre-debug.exe``.<br>Only necessary if calibre is not in your path. |
-| ``PYGETTEXT_FOLDER`` | Custom variable I added support for, used by ``generate-pot.cmd``<br>Set to folder location of your Python pygettext.py file<br>Default location assumed to be ``C:\Python310\Tools\i18n``<br>Could be useful if you have a different version of Python or install location.
+| `CALIBRE_CONFIG_DIRECTORY` | If using calibre portable, set this to the location of the `Calibre Settings` subfolder.<br>Otherwise calibre-customize in `build.cmd` will insert into your main calibre. |
+| `CALIBRE_DIRECTORY` | Custom variable I added support for, used by `build.cmd`<br>Set to folder location of your `calibre-debug.exe`.<br>Only necessary if calibre is not in your path. |
+| `PYGETTEXT_FOLDER` | Custom variable I added support for, used by `generate-pot.cmd`<br>Set to folder location of your Python pygettext.py file<br>Default location assumed to be `C:\Python310\Tools\i18n`<br>Could be useful if you have a different version of Python or install location.
 
 ### Submitting Changes
 
@@ -178,7 +178,6 @@ Testing tips from JimmXinu:
 - [Transifex CLI docs](https://developers.transifex.com/docs/cli)
 - [Transifex GitHub monitoring docs](https://docs.transifex.com/projects/updating-content)
 
-
 ---
 ## Working with Visual Studio Code
 
@@ -246,7 +245,7 @@ For more information, see: [Getting Started with Python in VS Code](https://code
 
 ### Running .cmd files as VS Code Tasks
 
-For those of you who are not command line warriors, the repository includes a ``.vscode/tasks.json`` file for use by the VS Code IDE to run any of the plugin batch files in an easy fashion.
+For those of you who are not command line warriors, the repository includes a `.vscode/tasks.json` file for use by the VS Code IDE to run any of the plugin batch files in an easy fashion.
 
 The keyboard shortcut default is **Alt + Shift + F10** to bring up the list to choose from, then hit Enter.
 

@@ -58,7 +58,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.7.0] - 2017-01-22
 ### Added
-- Add callback for other plugins calling the count pages. See method call_plugin_callback in ``common_utils.py``. (@davidfor)
+- Add callback for other plugins calling the count pages. See method call_plugin_callback in `common_utils.py`. (@davidfor)
 - Add option to choose between ICU word count and the old one. The default is ICU word count.
 - Add language awareness for ICU word count. Uses the language in the book, otherwise defaults to English 
 - Added German version of Flesch Reading Ease.
