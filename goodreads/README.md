@@ -11,9 +11,10 @@ This plugin allows Calibre to read book information from [goodreads.com](https:/
 
 ## Main Features
 
-- Can retrieve goodreads id, title, author, series, isbn, comments, rating, publisher, publication date, tags, language and covers
+- Can retrieve goodreads id, title, author, series, isbn, comments, rating, publisher, publication date, tags, language and covers.
+- Option to retrieve the precise rating and # votes into identifiers than can be bound to custom columns.
 - Option to customise the Goodreads genre -> Calibre tag mappings. A default set of the most popular genre tag mappings is included as a starting point.
-- Option to additionally search multiple editions of a book for the best set of metadata excluding audio editions (plugin will run slightly slower with this enabled, disabled by default)
+- Option to additionally search multiple editions of a book for the best set of metadata excluding audio editions (plugin will run slightly slower with this enabled, disabled by default).
 - Option to retrieve all contributors to a book as an author. By default this is turned off, however Goodreads is able to provide illustrators, editors etc should you want these retrieved.
 - By retrieving the Goodreads id this plugin offers improved integration with the **Goodreads Sync** plugin. This works both ways - once you have linked to a specific Goodreads edition then retrieving metadata will obtain it for only that edition.
 - The goodreads id will also be displayed in the book details panel to be clicked on and taken directly to the website for that book.
