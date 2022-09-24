@@ -20,6 +20,14 @@
             },
         },
         {
+            "label": "Baen -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\baen\\.build"
+            },
+        },
+        {
             "label": "Barnes Noble -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -47,6 +55,14 @@
             "label": "Barnes Noble -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\barnes_noble\\.build"
+            },
+        },
+        {
+            "label": "Barnes Noble -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\barnes_noble\\.build"
             },
@@ -84,6 +100,14 @@
             },
         },
         {
+            "label": "Clipboard Search -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\clipboard_search\\.build"
+            },
+        },
+        {
             "label": "Count Pages -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -111,6 +135,14 @@
             "label": "Count Pages -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\count_pages\\.build"
+            },
+        },
+        {
+            "label": "Count Pages -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\count_pages\\.build"
             },
@@ -148,6 +180,14 @@
             },
         },
         {
+            "label": "Cover Url -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\cover_url\\.build"
+            },
+        },
+        {
             "label": "Extract ISBN -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -175,6 +215,14 @@
             "label": "Extract ISBN -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\extract_isbn\\.build"
+            },
+        },
+        {
+            "label": "Extract ISBN -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\extract_isbn\\.build"
             },
@@ -212,6 +260,14 @@
             },
         },
         {
+            "label": "Fantastic Fiction -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
+            },
+        },
+        {
             "label": "Fantastic Fiction Adults -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -239,6 +295,14 @@
             "label": "Fantastic Fiction Adults -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
+            },
+        },
+        {
+            "label": "Fantastic Fiction Adults -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
             },
@@ -276,6 +340,14 @@
             },
         },
         {
+            "label": "Favourites Menu -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\favourites_menu\\.build"
+            },
+        },
+        {
             "label": "FictionDb -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -303,6 +375,14 @@
             "label": "FictionDb -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\fictiondb\\.build"
+            },
+        },
+        {
+            "label": "FictionDb -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fictiondb\\.build"
             },
@@ -340,6 +420,14 @@
             },
         },
         {
+            "label": "Find Duplicates -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\find_duplicates\\.build"
+            },
+        },
+        {
             "label": "Generate Cover -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -367,6 +455,14 @@
             "label": "Generate Cover -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\generate_cover\\.build"
+            },
+        },
+        {
+            "label": "Generate Cover -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\generate_cover\\.build"
             },
@@ -404,6 +500,14 @@
             },
         },
         {
+            "label": "Goodreads -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads\\.build"
+            },
+        },
+        {
             "label": "Goodreads Sync -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -431,6 +535,14 @@
             "label": "Goodreads Sync -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
+            },
+        },
+        {
+            "label": "Goodreads Sync -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
             },
@@ -468,6 +580,14 @@
             },
         },
         {
+            "label": "Import List -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\import_list\\.build"
+            },
+        },
+        {
             "label": "Manage Series -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -495,6 +615,14 @@
             "label": "Manage Series -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\manage_series\\.build"
+            },
+        },
+        {
+            "label": "Manage Series -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\manage_series\\.build"
             },
@@ -532,6 +660,14 @@
             },
         },
         {
+            "label": "Modify ePub -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\modify_epub\\.build"
+            },
+        },
+        {
             "label": "Open With -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -559,6 +695,14 @@
             "label": "Open With -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\open_with\\.build"
+            },
+        },
+        {
+            "label": "Open With -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\open_with\\.build"
             },
@@ -596,6 +740,14 @@
             },
         },
         {
+            "label": "Quality Check -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quality_check\\.build"
+            },
+        },
+        {
             "label": "Quick Preferences -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -623,6 +775,14 @@
             "label": "Quick Preferences -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\quick_preferences\\.build"
+            },
+        },
+        {
+            "label": "Quick Preferences -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quick_preferences\\.build"
             },
@@ -660,6 +820,14 @@
             },
         },
         {
+            "label": "Ratings -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\ratings\\.build"
+            },
+        },
+        {
             "label": "Reading List -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -687,6 +855,14 @@
             "label": "Reading List -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\reading_list\\.build"
+            },
+        },
+        {
+            "label": "Reading List -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\reading_list\\.build"
             },
@@ -724,6 +900,14 @@
             },
         },
         {
+            "label": "Resize Cover -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\resize_cover\\.build"
+            },
+        },
+        {
             "label": "Search the Internet -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -751,6 +935,14 @@
             "label": "Search the Internet -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\search_the_internet\\.build"
+            },
+        },
+        {
+            "label": "Search the Internet -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\search_the_internet\\.build"
             },
@@ -788,6 +980,14 @@
             },
         },
         {
+            "label": "User Category -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\user_category\\.build"
+            },
+        },
+        {
             "label": "View Manager -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -820,6 +1020,14 @@
             },
         },
         {
+            "label": "View Manager -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\view_manager\\.build"
+            },
+        },
+        {
             "label": "Walk Search History -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
@@ -847,6 +1055,14 @@
             "label": "Walk Search History -> Transifex Pull",
             "type": "shell",
             "command": ".\\transifex-pull.cmd",
+            "options": {
+                "cwd": "${workspaceFolder}\\walk_search_history\\.build"
+            },
+        },
+        {
+            "label": "Walk Search History -> Release",
+            "type": "shell",
+            "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\walk_search_history\\.build"
             },
