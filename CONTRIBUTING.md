@@ -48,7 +48,7 @@ Generally I try to keep the [semantic version](https://semver.org/) standard.
 
 In setting up this repo I have decided to:
 - **Drop PyQt4 support** 
-    - All these plugins now require a minimum of at least **calibre v2.0** (from 2014)
+    - All these plugins now require a minimum of at least **calibre v2.0** (released in 2014)
     - Supporting PyQt4 involves too many edge cases and changes to Qt API syntax.
     - Users with 8+ year old calibre versions are a small % of the userbase!
 - **Keep all PyQt5+ support**
@@ -112,22 +112,23 @@ All these batch files can be run from within VS Code using tasks - see below.
 
 ### Changelogs
 
-Originally my plugins had a simple changelog.txt, which was copy/pasted into the relevant forum thread. Many years later all the cool kids are using markdown files. There are even guidelines out there for how you should format your CHANGELOG.md files which can then be supported by build automation tools such as: [anton-yurchenko/git-release](https://github.com/anton-yurchenko/git-release).
+Originally my plugins had a simple `changelog.txt`, which was copy/pasted into the relevant forum thread. Many years later all the cool kids are using [markdown language](https://www.markdownguide.org/cheat-sheet/). 
 
-Initially I stumbled across [Keep a Changelog](https://keepachangelog.com/) and then ended up following this approach: 
+There are guidelines out there for how you should format your CHANGELOG.md files which can then be supported by build automation tools. Initially I stumbled across [Keep a Changelog](https://keepachangelog.com/) and then ended up following the [Common Changelog][common-changelog-url] approach.
 
 [![Common Changelog][common-changelog-image]][common-changelog-url]
 
 [common-changelog-image]: https://common-changelog.org/badge.svg
 [common-changelog-url]: https://common-changelog.org
 
+Please conform to the guidelines above - if you just copy/paste what you already see in the files it should be self-explanatory.
+
 ### Submitting Changes
 
-The management of this repo will be kept as simple as possible:
-- There will be just one branch (main).
-- No pull requests/reviews workflow.
+The management of this repo will be kept simple where possible:
+- There will be just one branch `main`.
 - Trusted contributors will be able to commit changes for official releases.
-- Casual maintainers can choose to submit patch files or zips to the official maintainers with their changes.
+- Casual maintainers can choose to fork the repo, clone and generate patch files or provide zips to the official maintainers with their changes.
 
 The zip files for these plugins are published via the [MobileRead calibre plugin forum](https://www.mobileread.com/forums/forumdisplay.php?f=237) threads.
 - The official plugin zip that all users can download via calibre itself is attached to the first post in each plugins thread.
@@ -140,14 +141,14 @@ A few notes regarding this automation added via the `release.cmd` and `common/re
 - The goal is to be able to have an archive of plugin zips available for people trawling for previous versions of a plugin.
 - GitHub Release pages will meet that need. 
 - The Releases page includes a search capability which is useful given the range of plugin releases in the same repo.
-- We cannot use a simple "vA.B.C" tag, instead it must be prefixed with the plugin name e.g. "extract_isbn-v1.2.3"
+- We cannot use a simple `vA.B.C` tag, instead it must be prefixed with the plugin name e.g. `extract_isbn-v1.2.3`
 - Using the GitHub API to automate creating of the release and uploading of the zip file from your machine
     - https://docs.github.com/en/rest/releases/releases#create-a-release
     - https://docs.github.com/en/rest/releases/assets#upload-a-release-asset
 - Everything is auto-generated
     - It reads the plugin name and version from `__init__.py`
     - The release description which is extracted from the `CHANGELOG.md` for the section matching this version.
-    - So please keep `CHANGELOG.md` updated confirming to the required standards, more info below!
+    - So please keep `CHANGELOG.md` updated confirming to the required standards above.
 - Requires a GitHub API key to be able to upload (and an authorised collaborator for this repo!)
     - https://github.com/settings/profile
     - **Developer settings -> Personal Access tokens -> Generate New Token**
