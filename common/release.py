@@ -124,9 +124,9 @@ def createGitHubRelease(apiToken, pluginName, tagName, changeBody):
     except error.HTTPError as e:
         raise RuntimeError('Failed to create release due to:',e)
 
-def uploadZipToRelease(apiToken, uploadUrl, zipFile):
-    assetName = parse.quote_plus(os.path.basename(zipFile))
-    endpoint = uploadUrl.replace('{?name,label}','?name={}&label={}'.format(assetName, assetName))
+def uploadZipToRelease(apiToken, uploadUrl, zipFile, tagName):
+    downloadZipName = tagName+'.zip'
+    endpoint = uploadUrl.replace('{?name,label}','?name={}&label={}'.format(downloadZipName, downloadZipName))
     with open(zipFile, 'rb') as file:
         content = file.read()
 
@@ -159,5 +159,5 @@ if __name__=="__main__":
     changeBody = readChangeLogForVersion(version)
 
     (htmlUrl, uploadUrl) = createGitHubRelease(apiToken, pluginName, tagName, changeBody)
-    uploadZipToRelease(apiToken, uploadUrl, zipFile)
+    uploadZipToRelease(apiToken, uploadUrl, zipFile, tagName)
     print('Github release completed: {}'.format(htmlUrl))
