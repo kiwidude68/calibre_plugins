@@ -40,6 +40,8 @@ except NameError:
 template_formatter = EvalFormatter()
 template_formatter = SafeFormat()
 
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Search-The-Internet'
+
 class SearchTheInternetAction(InterfaceAction):
 
     name = 'Search The Internet'
@@ -262,22 +264,7 @@ class SearchTheInternetAction(InterfaceAction):
         return self.convert_to_search_text(fn_ln_author, encoding, method)
 
     def show_help(self):
-        # Extract on demand the help file resource
-        def get_help_file_resource():
-            # We will write the help file out every time, in case the user upgrades the plugin zip
-            # and there is a later help file contained within it.
-            HELP_FILE = 'Search The Internet Help.html'
-            file_path = os.path.join(config_dir, 'plugins', HELP_FILE)
-            # In version 1.5 I have renamed the help file, so delete the old one if it exists
-            legacy_file_path = os.path.join(config_dir, 'plugins', 'search_the_internet_help.html')
-            if os.path.exists(legacy_file_path) and os.access(legacy_file_path, os.W_OK):
-                os.remove(legacy_file_path)
-            file_data = self.load_resources(HELP_FILE)[HELP_FILE]
-            with open(file_path,'wb') as f:
-                f.write(file_data)
-            return file_path
-        url = 'file:///' + get_help_file_resource()
-        open_url(QUrl(url))
+        open_url(QUrl(HELP_URL))
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)
