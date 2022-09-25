@@ -388,7 +388,7 @@ class OtherTab(QWidget):
 
         self.check_all_checkbox = QCheckBox(_('Try to download page count from each source'), self)
         self.check_all_checkbox.setToolTip(_('If this option is checked, each download source is\n'
-                                             'tried until until a page count is successfully\n'
+                                             'tried until a page count is successfully\n'
                                              'fetched.\n'))
         self.check_all_checkbox.setChecked(check_all_sources)
         download_group_box_layout.addWidget(self.check_all_checkbox, 4, 0, 1, 1)
