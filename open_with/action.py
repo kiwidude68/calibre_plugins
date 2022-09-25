@@ -26,6 +26,8 @@ from calibre_plugins.open_with.common_icons import set_plugin_icon_resources, ge
 from calibre_plugins.open_with.common_menus import (unregister_menu_actions, create_menu_action_unique,
                                                     create_menu_item)
 
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Open-With'
+
 class OpenWithAction(InterfaceAction):
 
     name = 'Open With'
@@ -261,22 +263,7 @@ class OpenWithAction(InterfaceAction):
             CreateProcess(None, cmd_line, None, None, False, DETACHED_PROCESS, None, None, si)
 
     def show_help(self):
-        # Extract on demand the help file resource
-        def get_help_file_resource():
-            # We will write the help file out every time, in case the user upgrades the plugin zip
-            # and there is a later help file contained within it.
-            HELP_FILE = 'Open With Help.html'
-            file_path = os.path.join(config_dir, 'plugins', HELP_FILE)
-            # In version 1.3.1 I have renamed the help file, so delete the old one if it exists
-            legacy_file_path = os.path.join(config_dir, 'plugins', 'open_with_help.html')
-            if os.path.exists(legacy_file_path) and os.access(legacy_file_path, os.W_OK):
-                os.remove(legacy_file_path)
-            file_data = self.load_resources(HELP_FILE)[HELP_FILE]
-            with open(file_path,'wb') as f:
-                f.write(file_data)
-            return file_path
-        url = 'file:///' + get_help_file_resource()
-        open_url(QUrl(url))
+        open_url(QUrl(HELP_URL))
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)

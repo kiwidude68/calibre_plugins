@@ -8,6 +8,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 - Any custom website menu images must now be in `/resources/images/Open With/`
+- Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Open-With)
 
 ## [1.7.2] - 2022-08-09
 ### Changed
