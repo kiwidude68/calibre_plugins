@@ -21,7 +21,7 @@ except NameError:
 
 import calibre_plugins.quality_check.config as cfg
 from calibre_plugins.quality_check.common_icons import set_plugin_icon_resources, get_icon
-from calibre_plugins.quick_preferences.common_menus import unregister_menu_actions, create_menu_action_unique
+from calibre_plugins.quality_check.common_menus import unregister_menu_actions, create_menu_action_unique
 from calibre_plugins.quality_check.check_covers import CoverCheck
 from calibre_plugins.quality_check.check_epub import EpubCheck
 from calibre_plugins.quality_check.check_fix import FixCheck

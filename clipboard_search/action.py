@@ -15,8 +15,8 @@ from functools import partial
 from calibre.gui2.actions import InterfaceAction
 
 import calibre_plugins.clipboard_search.config as cfg
-from calibre_plugins.quick_preferences.common_icons import set_plugin_icon_resources, get_icon
-from calibre_plugins.quick_preferences.common_menus import unregister_menu_actions, create_menu_action_unique
+from calibre_plugins.clipboard_search.common_icons import set_plugin_icon_resources, get_icon
+from calibre_plugins.clipboard_search.common_menus import unregister_menu_actions, create_menu_action_unique
 
 # Pull in translation files for _() strings
 try:
