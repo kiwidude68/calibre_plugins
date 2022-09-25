@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:27+0100\n"
+"POT-Creation-Date: 2022-09-25 10:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -243,7 +243,7 @@ msgstr ""
 #: config.py:390
 msgid ""
 "If this option is checked, each download source is\n"
-"tried until until a page count is successfully\n"
+"tried until a page count is successfully\n"
 "fetched.\n"
 msgstr ""
 
