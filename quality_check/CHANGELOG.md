@@ -5,6 +5,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Changed
 - **Breaking:** Drop PyQt4 support.
 - Refactoring of common code
+- Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Quality-Check)
 
 ## [1.12.0] - 2022-01-19
 ### Changed

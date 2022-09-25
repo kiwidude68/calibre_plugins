@@ -31,6 +31,7 @@ from calibre_plugins.quality_check.check_mobi import MobiCheck
 from calibre_plugins.quality_check.dialogs import ExcludeAddDialog, ExcludeViewDialog
 
 DEFAULT_ICON = 'images/quality_check.png'
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Quality-Check'
 
 class QualityCheckAction(InterfaceAction):
 
@@ -234,15 +235,4 @@ class QualityCheckAction(InterfaceAction):
         self.interface_action_base_plugin.do_user_config(self.gui)
 
     def show_help(self):
-        # Extract on demand the help file resource
-        def get_help_file_resource():
-            # We will write the help file out every time, in case the user upgrades the plugin zip
-            # and there is a later help file contained within it.
-            HELP_FILE = 'Quality Check Help.html'
-            file_path = os.path.join(config_dir, 'plugins', HELP_FILE)
-            file_data = self.load_resources(HELP_FILE)[HELP_FILE]
-            with open(file_path,'wb') as f:
-                f.write(file_data)
-            return file_path
-        url = 'file:///' + get_help_file_resource()
-        open_url(QUrl(url))
+        open_url(QUrl(HELP_URL))
