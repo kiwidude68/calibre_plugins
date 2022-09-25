@@ -5,6 +5,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.85.1 or later.
 - Refactoring of common code
+- Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Modify-ePub)
 
 ## [1.7.3] - 2022-04-25
 ### Fixed
