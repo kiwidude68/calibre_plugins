@@ -100,7 +100,7 @@ class GoodreadsSyncAction(InterfaceAction):
             if c.get(cfg.KEY_DISPLAY_REMOVE, True):
                 self.create_action_with_users_sub_menu(m, _('Remove from shelf')+'...', 'remove', 'images/remove_from_shelf.png')
             if c.get(cfg.KEY_DISPLAY_UPDATE_PROGRESS, True):
-                self.create_action_with_users_sub_menu(m, _('Update reading progress'), 'progress', 'images/remove_from_shelf.png')
+                self.create_action_with_users_sub_menu(m, _('Update reading progress')+'...', 'progress', 'images/remove_from_shelf.png')
             if c.get(cfg.KEY_DISPLAY_SYNC, True):
                 m.addSeparator()
                 self.create_action_with_users_sub_menu(m, _('Sync from shelf')+'...', 'sync', 'images/sync_from_shelf.png')
@@ -366,13 +366,9 @@ class GoodreadsSyncAction(InterfaceAction):
         updated_ids = [book['calibre_id'] for book in calibre_books if book['updated']]
         debug_print("_update_goodreads_ids - Have list of updated book ids - number=%s" % len(updated_ids))
         if len(updated_ids) > 0:
-            debug_print("_update_goodreads_ids - Calling: self.gui.library_view.model().refresh_ids(updated_ids)")
             self.gui.library_view.model().refresh_ids(updated_ids)
-            debug_print("_update_goodreads_ids - Calling: self.gui.library_view.currentIndex()")
             current = self.gui.library_view.currentIndex()
-            debug_print("_update_goodreads_ids - Calling: self.gui.library_view.model().current_changed(current, previous)")
             self.gui.library_view.model().current_changed(current, previous)
-            debug_print("_update_goodreads_ids - Calling: self.gui.tags_view.recount()")
             self.gui.tags_view.recount()
         debug_print("_update_goodreads_ids - Finished")
 

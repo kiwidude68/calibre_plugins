@@ -574,15 +574,11 @@ class UpdateReadingProgressTableWidget(QTableWidget):
         self.search_for_goodreads_books.emit(rows, calibre_books_to_search)
 
     def show_columns(self, is_rating_visible, is_dateread_visible, is_reviewtext_visible):
-        debug_print("UpdateReadingProgressTableWidget::show_columns - ", is_rating_visible, is_dateread_visible, is_reviewtext_visible)
         if self.rating_column:
-            debug_print("UpdateReadingProgressTableWidget::show_columns - rating_column", is_rating_visible)
             self.setColumnHidden(6, not is_rating_visible)
         if self.date_read_column:
-            debug_print("UpdateReadingProgressTableWidget::show_columns - date_read_column", is_dateread_visible)
             self.setColumnHidden(7, not is_dateread_visible)
         if self.review_text_column:
-            debug_print("UpdateReadingProgressTableWidget::show_columns - review_text_column", is_reviewtext_visible)
             self.setColumnHidden(8, not is_reviewtext_visible)
 
 
@@ -657,11 +653,11 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         check_box_layout = QHBoxLayout()
         layout.addLayout(check_box_layout)
         self.put_reading_on_currently_reading_shelf = QCheckBox(_('Put books on currently-reading shelf'))
-        self.put_reading_on_currently_reading_shelf.setToolTip(_("If the reading progress is being updated, but the books is not finished, put the books onto the 'currently-reading' shelf."))
+        self.put_reading_on_currently_reading_shelf.setToolTip(_("If the reading progress is being updated, but the books are not finished, put the books onto the 'currently-reading' shelf."))
         check_box_layout.addWidget(self.put_reading_on_currently_reading_shelf)
         self.put_reading_on_currently_reading_shelf.setChecked(other_prefs.get('put_reading_on_currently_reading_shelf',True))
 
-        self.put_finished_on_read_shelf = QCheckBox(_('Put Finished books on read shelf'))
+        self.put_finished_on_read_shelf = QCheckBox(_('Put finished books on read shelf'))
         self.put_finished_on_read_shelf.setToolTip(_("If the reading progress is 100%, put the books onto the 'read' shelf."))
         check_box_layout.addWidget(self.put_finished_on_read_shelf)
         self.put_finished_on_read_shelf.setChecked(other_prefs.get('put_finished_on_read_shelf',True))
@@ -770,7 +766,8 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
                 goodreads_id = calibre_book['goodreads_id']
                 progress = int(calibre_book['calibre_reading_progress']) if calibre_book['calibre_reading_progress'] else None
                 progress = progress if progress >=0 else None
-                review_text = calibre_book['status_comment_text'] if len(calibre_book['status_comment_text']) > 0 else None 
+                review_text = None
+                calibre_book['status_comment_text'] if len(calibre_book.get('status_comment_text','')) > 0 else None 
                 self.grhttp.update_status(client, goodreads_id, progress, self.progress_is_percent, review_text)
                 if (upload_progress and progress):
                     debug_print("UpdateReadingProgressDialog::action_button_clicked - valid action")

@@ -115,15 +115,13 @@ class DateDelegate(QStyledItemDelegate):
 class DateTableWidgetItem(QTableWidgetItem):
 
     def __init__(self, date_read, is_read_only=False, default_to_today=False, fmt=None):
-        if (date_read == UNDEFINED_DATE) and default_to_today:
+        if (date_read is None or date_read == UNDEFINED_DATE) and default_to_today:
             date_read = now()
+        dt = UNDEFINED_QDATETIME if date_read is None else format_date(date_read, fmt)
+        QTableWidgetItem.__init__(self, '')
+        self.setData(Qt.DisplayRole, dt)
         if is_read_only:
-            QTableWidgetItem.__init__(self, format_date(date_read, fmt))
             self.setFlags(Qt.ItemIsSelectable|Qt.ItemIsEnabled)
-        else:
-            QTableWidgetItem.__init__(self, '')
-            dt = UNDEFINED_QDATETIME if date_read is None else QDateTime(date_read)
-            self.setData(Qt.DisplayRole, dt)
 
 
 class ImageTitleLayout(QHBoxLayout):

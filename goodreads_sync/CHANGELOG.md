@@ -6,6 +6,8 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 - Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Goodreads-Sync)
+### Fixed
+- Various bugs related to the "Update reading progress" feature.
 
 ## [1.15.6] - 2022-08-15
 ### Fixed
@@ -13,7 +15,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.15.5] - 2022-08-11
 ### Fixed
-- Calibre v6/Qt6 - Drag-and-drop to "Link Goodreads" and "Switchdialog.
+- Calibre v6/Qt6 - Drag-and-drop to "Link Goodreads" and "Switch" dialog.
 - Calibre v6/Qt6 - Fix selection issues as Qt6 allows deleselecting all entries in the lists.
 
 ## [1.15.4] - 2022-07-13
@@ -33,7 +35,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.15.0] - 2020-12-26
 ### Added
-- Added the option "Put books on currently-reading shelf" to the "Update Reading Progress".  (@davidfor)
+- Added the option "Put books on currently-reading shelf" to the "Update reading progress" dialog.  (@davidfor)
 ### Fixed
 - Progress bar when syncing shelves and updating the library should have been "Books". 
 - Errors handling books when updating calibre after a "Sync from shelf". This gave terrible performance and some books would not have been updated correctly. 
