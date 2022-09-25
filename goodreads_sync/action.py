@@ -49,6 +49,8 @@ PLUGIN_ICONS = ['images/goodreads_sync.png',        'images/refresh.png',
                 'images/review_add.png',            'images/review_sync.png'
                 ]
 
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Goodreads-Sync'
+
 class GoodreadsSyncAction(InterfaceAction):
 
     name = 'Goodreads Sync'
@@ -866,22 +868,7 @@ class GoodreadsSyncAction(InterfaceAction):
         return calibre_tags
 
     def show_help(self):
-        # Extract on demand the help file resource
-        def get_help_file_resource():
-            # We will write the help file out every time, in case the user upgrades the plugin zip
-            # and there is a later help file contained within it.
-            HELP_FILE = 'Goodreads Sync Help.html'
-            file_path = os.path.join(config_dir, 'plugins', HELP_FILE)
-            # In version 1.1 I have renamed the help file, so delete the old one if it exists
-            legacy_file_path = os.path.join(config_dir, 'plugins', 'goodreads_sync_help.html')
-            if os.path.exists(legacy_file_path) and os.access(legacy_file_path, os.W_OK):
-                os.remove(legacy_file_path)
-            file_data = self.load_resources(HELP_FILE)[HELP_FILE]
-            with open(file_path, 'wb') as f:
-                f.write(file_data)
-            return file_path
-        url = 'file:///' + get_help_file_resource()
-        open_url(QUrl(url))
+        open_url(QUrl(HELP_URL))
 
     def _get_tag_mappings(self, user_config):
         tag_mappings = {}
