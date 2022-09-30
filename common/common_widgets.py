@@ -70,22 +70,18 @@ class CheckableTableWidgetItem(QTableWidgetItem):
             return self.checkState() == Qt.Checked
 
 
-class DateDelegate(QStyledItemDelegate):
+from calibre.gui2.library.delegates import DateDelegate as _DateDelegate
+class DateDelegate(_DateDelegate):
     '''
     Delegate for dates. Because this delegate stores the
     format as an instance variable, a new instance must be created for each
     column. This differs from all the other delegates.
     '''
     def __init__(self, parent, fmt='dd MMM yyyy', default_to_today=True):
-        QStyledItemDelegate.__init__(self, parent)
+        super(DateDelegate, self).__init__(parent)
         self.format = fmt
         self.default_to_today = default_to_today
-
-    def displayText(self, val, locale):
-        d = val
-        if d <= UNDEFINED_QDATETIME:
-            return ''
-        return format_date(qt_to_dt(d, as_utc=False), self.format)
+        print('DateDelegate fmt:',fmt)
 
     def createEditor(self, parent, option, index):
         qde = QStyledItemDelegate.createEditor(self, parent, option, index)
@@ -97,6 +93,7 @@ class DateDelegate(QStyledItemDelegate):
 
     def setEditorData(self, editor, index):
         val = index.model().data(index, Qt.DisplayRole)
+        print('setEditorData val:',val)
         if val is None or val == UNDEFINED_QDATETIME:
             if self.default_to_today:
                 val = self.default_date
@@ -106,6 +103,7 @@ class DateDelegate(QStyledItemDelegate):
 
     def setModelData(self, editor, model, index):
         val = editor.dateTime()
+        print('setModelData: ',val)
         if val <= UNDEFINED_QDATETIME:
             model.setData(index, UNDEFINED_QDATETIME, Qt.EditRole)
         else:
@@ -115,13 +113,16 @@ class DateDelegate(QStyledItemDelegate):
 class DateTableWidgetItem(QTableWidgetItem):
 
     def __init__(self, date_read, is_read_only=False, default_to_today=False, fmt=None):
+        print('DateTableWidgetItem: date_read',date_read)
         if (date_read is None or date_read == UNDEFINED_DATE) and default_to_today:
             date_read = now()
-        dt = UNDEFINED_QDATETIME if date_read is None else format_date(date_read, fmt)
-        QTableWidgetItem.__init__(self, '')
-        self.setData(Qt.DisplayRole, dt)
         if is_read_only:
+            super(DateTableWidgetItem, self).__init__(format_date(date_read, fmt))
             self.setFlags(Qt.ItemIsSelectable|Qt.ItemIsEnabled)
+            self.setData(Qt.DisplayRole, QDateTime(date_read))
+        else:
+            super(DateTableWidgetItem, self).__init__('')
+            self.setData(Qt.DisplayRole, QDateTime(date_read))
 
 
 class ImageTitleLayout(QHBoxLayout):

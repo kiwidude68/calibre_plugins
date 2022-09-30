@@ -170,6 +170,7 @@ class SeriesTableWidget(QTableWidget):
         self.fmt = tweaks['gui_pubdate_display_format']
         if self.fmt is None:
             self.fmt = 'MMM yyyy'
+        self.pin_view = None
 
     def create_context_menu(self):
         self.setContextMenuPolicy(Qt.ActionsContextMenu)

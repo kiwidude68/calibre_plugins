@@ -192,7 +192,7 @@ class SwitchEditionTableWidget(QTableWidget):
 
     def selected_goodreads_book(self):
         row = self.selectionModel().selectedRows()[0]
-        return self.goodreads_edition_books[unicode(self.item(row.row(), 0).data(Qt.UserRole))]
+        return self.goodreads_edition_books[self.item(row.row(), 0).data(Qt.UserRole)]
 
     def view_book_on_goodreads(self):
         url = '%s/book/show/%s' % (cfg.URL, self.selected_goodreads_book()['goodreads_id'])
@@ -520,20 +520,20 @@ class UpdateReadingProgressTableWidget(QTableWidget):
         if self.isColumnHidden(4) and self.isColumnHidden(5):
             return
         for row in range(self.rowCount()):
-            calibre_id = unicode(self.item(row, 1).data(Qt.UserRole))
+            calibre_id = self.item(row, 1).data(Qt.UserRole)
             for calibre_book in calibre_books:
                 if calibre_book['calibre_id'] == calibre_id:
-                    calibre_book['calibre_reading_progress'] = unicode(self.item(row, 4).data(Qt.DisplayRole))
-                    calibre_book['status_comment_text'] = unicode(unicode((self.item(row, 5).data(Qt.DisplayRole))))
+                    calibre_book['calibre_reading_progress'] = self.item(row, 4).data(Qt.DisplayRole)
+                    calibre_book['status_comment_text'] = self.item(row, 5).data(Qt.DisplayRole)
                     if not self.isColumnHidden(6):
-                        calibre_book['calibre_rating'] = unicode(self.item(row, 6).data(Qt.DisplayRole))
+                        calibre_book['calibre_rating'] = self.item(row, 6).data(Qt.DisplayRole)
                     if not self.isColumnHidden(7):
-                        qtdate = unicode(self.item(row, 7).data(Qt.DisplayRole))
+                        qtdate = self.item(row, 7).data(Qt.DisplayRole)
                         debug_print("update_books - qtdate='%s'" % qtdate)
                         if not qtdate == '':
                             calibre_book['calibre_date_read'] = qt_to_dt(qtdate, as_utc=False)
                     if not self.isColumnHidden(8):
-                        calibre_book['calibre_review_text'] = unicode(unicode((self.item(row, 8).data(Qt.DisplayRole))))
+                        calibre_book['calibre_review_text'] = self.item(row, 8).data(Qt.DisplayRole)
                     break
 
     def item_selection_changed(self):
@@ -544,7 +544,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
             selection_is_not_valid = False
         else:
             for row in self.selectionModel().selectedRows():
-                calibre_book_id = unicode(self.item(row.row(), 2).data(Qt.UserRole))
+                calibre_book_id = self.item(row.row(), 2).data(Qt.UserRole)
                 calibre_book = self.calibre_books[calibre_book_id]
                 if calibre_book['status'] == ActionStatus.VALID:
                     selection_is_not_valid = False
@@ -556,7 +556,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
 
     def view_book_on_goodreads_click(self):
         for row in self.selectionModel().selectedRows():
-            calibre_book_id = unicode(self.item(row.row(), 2).data(Qt.UserRole))
+            calibre_book_id = self.item(row.row(), 2).data(Qt.UserRole)
             calibre_book = self.calibre_books[calibre_book_id]
             self.view_book.emit(calibre_book['goodreads_id'])
 
@@ -564,7 +564,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
         rows = []
         calibre_books_to_search = []
         for row in self.selectionModel().selectedRows():
-            calibre_book_id = unicode(self.item(row.row(), 2).data(Qt.UserRole))
+            calibre_book_id = self.item(row.row(), 2).data(Qt.UserRole)
             calibre_book = self.calibre_books[calibre_book_id]
             if calibre_book['status'] != ActionStatus.VALID:
                 rows.append(row.row())
@@ -1035,7 +1035,7 @@ class PickGoodreadsBookTableWidget(QTableWidget):
         if not self.selectionModel().hasSelection():
             return
         row = self.selectionModel().selectedRows()[0]
-        row = int(self.item(row.row(), 0).data(Qt.UserRole))
+        row = self.item(row.row(), 0).data(Qt.UserRole)
         if row >= 0:
             return self.goodreads_search_books[row]
 
@@ -1260,7 +1260,7 @@ class PickCalibreBookTableWidget(QTableWidget):
         selected_books = []
         for row in self.selectionModel().selectedRows():
             row = self.selectionModel().selectedRows()[0]
-            book_id = unicode(self.item(row.row(), 0).data(Qt.UserRole))
+            book_id = self.item(row.row(), 0).data(Qt.UserRole)
             selected_books.append(self.calibre_books[book_id])
         return selected_books
 
@@ -1443,7 +1443,7 @@ class DoAddRemoveTableWidget(QTableWidget):
         self.setHorizontalHeaderLabels(self.header_labels)
         self.verticalHeader().setDefaultSectionSize(24)
 
-        # We need to resort the supplied data using the status attribute in the dictionary
+        # We need to re-sort the supplied data using the status attribute in the dictionary
         self.calibre_books = sorted(calibre_books, key=lambda k: k['status'])
         for row, book in enumerate(self.calibre_books):
             self.populate_table_row(row, book)
@@ -1489,16 +1489,17 @@ class DoAddRemoveTableWidget(QTableWidget):
         if self.isColumnHidden(4) and self.isColumnHidden(5):
             return
         for row in range(self.rowCount()):
-            calibre_id = unicode(self.item(row, 1).data(Qt.UserRole))
+            calibre_id = self.item(row, 1).data(Qt.UserRole)
             for calibre_book in calibre_books:
                 if calibre_book['calibre_id'] == calibre_id:
                     if not self.isColumnHidden(4):
-                        calibre_book['calibre_rating'] = unicode(self.item(row, 4).data(Qt.DisplayRole))
+                        calibre_book['calibre_rating'] = self.item(row, 4).data(Qt.DisplayRole)
                     if not self.isColumnHidden(5):
-                        qtdate = unicode(self.item(row, 5).data(Qt.DisplayRole))
+                        qtdate = self.item(row, 5).data(Qt.DisplayRole)
+                        debug_print("update_books - qtdate='%s'" % qtdate)
                         calibre_book['calibre_date_read'] = qt_to_dt(qtdate, as_utc=False)
                     if not self.isColumnHidden(6):
-                        calibre_book['calibre_review_text'] = unicode((self.item(row, 6).data(Qt.DisplayRole)))
+                        calibre_book['calibre_review_text'] = unicode(self.item(row, 6).data(Qt.DisplayRole))
                     break
 
     def show_columns(self, is_rating_visible, is_dateread_visible, is_reviewtext_visible):
@@ -1517,7 +1518,7 @@ class DoAddRemoveTableWidget(QTableWidget):
             selection_is_not_valid = False
         else:
             for row in self.selectionModel().selectedRows():
-                calibre_book_id = unicode(self.item(row.row(), 2).data(Qt.UserRole))
+                calibre_book_id = self.item(row.row(), 2).data(Qt.UserRole)
                 calibre_book = self.calibre_books[calibre_book_id]
                 if calibre_book['status'] == ActionStatus.VALID:
                     selection_is_not_valid = False
@@ -1536,7 +1537,7 @@ class DoAddRemoveTableWidget(QTableWidget):
         rows = []
         calibre_books_to_search = []
         for row in self.selectionModel().selectedRows():
-            calibre_book_id = unicode(self.item(row.row(), 2).data(Qt.UserRole))
+            calibre_book_id = self.item(row.row(), 2).data(Qt.UserRole)
             calibre_book = self.calibre_books[calibre_book_id]
             if calibre_book['status'] != ActionStatus.VALID:
                 rows.append(row.row())
@@ -1992,8 +1993,8 @@ class DoShelfSyncTableWidget(QTableWidget):
 
     def find_and_populate_table_row(self, book_index, book_to_update):
         for row in range(self.rowCount()):
-            if book_index == unicode(self.item(row, 1).data(Qt.UserRole)):
-                self.populate_table_row(row, book_to_update, book_index=unicode(self.item(row, 1).data(Qt.UserRole)))
+            if book_index == self.item(row, 1).data(Qt.UserRole):
+                self.populate_table_row(row, book_to_update, book_index=self.item(row, 1).data(Qt.UserRole))
                 break
 
     def item_selection_changed(self):
@@ -2007,7 +2008,7 @@ class DoShelfSyncTableWidget(QTableWidget):
             add_empty_is_valid = False
         else:
             for row in self.selectionModel().selectedRows():
-                book = self.goodreads_books[unicode(self.item(row.row(), 1).data(Qt.UserRole))]
+                book = self.goodreads_books[self.item(row.row(), 1).data(Qt.UserRole)]
                 if book['status'] == ActionStatus.WARNING:
                     add_empty_is_valid = False
                 if book['status'] == ActionStatus.VALID:
@@ -2022,16 +2023,16 @@ class DoShelfSyncTableWidget(QTableWidget):
 
     def view_book_on_goodreads_click(self):
         for row in self.selectionModel().selectedRows():
-            book = self.goodreads_books[unicode(self.item(row.row(), 1).data(Qt.UserRole))]
+            book = self.goodreads_books[self.item(row.row(), 1).data(Qt.UserRole)]
             self.view_book.emit(book['goodreads_id'])
 
     def get_selected_books(self, status=[]):
         rows = []
         books = []
         for row in self.selectionModel().selectedRows():
-            book = self.goodreads_books[unicode(self.item(row.row(), 1).data(Qt.UserRole))]
+            book = self.goodreads_books[self.item(row.row(), 1).data(Qt.UserRole)]
             if book['status'] in status:
-                rows.append(unicode(self.item(row.row(), 1).data(Qt.UserRole)))
+                rows.append(self.item(row.row(), 1).data(Qt.UserRole))
                 books.append(book)
         return (rows, books)
 
