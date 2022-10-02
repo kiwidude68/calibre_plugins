@@ -21,11 +21,11 @@ When the search is complete the results of each group are presented to you to na
 - If the group contains non duplicates, you can mark the group as exempt to prevent those books or authors from appearing together in future searches.
 - Skip the group for now and just move to the next one, either deferring your decision or to mark all remaining groups as exemptions when finished.
 
-New to version 1.4 is a "Find metadata variations" menu which allows you to find variations of author, publisher, series and tag names and rename directly on this dialog. Again a number of different matching algorithms are available for use.
+The "Find metadata variations" menu which allows you to find variations of author, publisher, series and tag names and rename directly on this dialog. Again a number of different matching algorithms are available for use.
 
-Version 1.5 has added the ability to perform duplicate comparisons across multiple libraries. So for instance if you have a "working" library and a "main" library, you can search for duplicates between those libraries with the same range of algorithms and produce a report for later resolution.
+You also have the ability to perform duplicate comparisons across multiple libraries. So for instance if you have a "working" library and a "main" library, you can search for duplicates between those libraries with the same range of algorithms and produce a report for later resolution.
 
-Version 1.8 adds a new advanced mode which offers more flexibility and options, you can read more on that [here][advanced-url]. 
+Version 1.8 added a new advanced mode which offers more flexibility and options, you can read more on that [here][advanced-url]. Note this feature requires calibre 5.10.0 or later, otherwise it will not appear in your plugin menu.
 
 ## Main Features
 

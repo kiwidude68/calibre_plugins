@@ -104,7 +104,7 @@ Please see the README.md and CONTRIBUTING.md at the above site for more informat
 [license-image]: https://img.shields.io/badge/License-GPL-yellow.svg
 [license-url]: ../LICENSE.md
 
-[calibre-image]: https://img.shields.io/badge/calibre-2.0.0-green
+[calibre-image]: https://img.shields.io/badge/calibre-3.41.0-green
 [calibre-url]: https://www.calibre-ebook.com/
 
 [status-image]: https://img.shields.io/badge/Status-Stable-green

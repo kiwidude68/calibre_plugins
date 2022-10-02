@@ -4,7 +4,7 @@
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add translation support.
-- Add backwards compatiblity to min calibre 2.0
+- Add backwards compatiblity to min calibre 3.41.0
 ### Changed
 - Refactoring of common code
 ### Fixed

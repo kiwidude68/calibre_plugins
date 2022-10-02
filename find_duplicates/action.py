@@ -21,6 +21,7 @@ from calibre.debug import iswindows
 from calibre.gui2 import info_dialog, error_dialog, open_url, choose_save_file
 from calibre.gui2.actions import InterfaceAction
 from calibre.gui2.dialogs.confirm_delete import confirm
+from calibre.constants import numeric_version as calibre_version
 
 from calibre_plugins.find_duplicates.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.find_duplicates.common_menus import unregister_menu_actions, create_menu_action_unique
@@ -144,29 +145,33 @@ class FindDuplicatesAction(InterfaceAction):
                                 tooltip=_('Export duplicates groups to a json file'),
                                 triggered=self.export_duplicates)
         m.addSeparator()
-        am = QMenu()
-        self.advanced_book_action = create_menu_action_unique(self, am,
-                                _('&Find book duplicates')+'...', image=PLUGIN_ICONS[0],
-                                tooltip=_('Search for book duplicate with more advanced options'),
-                                triggered=self.advanced_find_book_duplicates)
-        self.advanced_library_action = create_menu_action_unique(self, am,
-                                _('Find library duplicates')+'...', image='library.png',
-                                tooltip=_('Search for library duplicate with more advanced options'),
-                                triggered=self.advanced_find_library_duplicates)
-        self.advanced_metadata_action = create_menu_action_unique(self, am,
-                                _('Find Metadata &Variations')+'...', image='user_profile.png',
-                                tooltip=_('Search metadata variations with more advanced options'),
-                                triggered=self.advanced_find_metadata_variations)
-        am.addSeparator()
 
-        self.advanced_help_action = create_menu_action_unique(self, am, _('&Help'), image='help.png',
-                                  tooltip=_('Show help on how to use the advanced mode'), triggered=self.show_help)
+        if calibre_version >= (5,10,0):
+            # Advanced mode needs 5.10.0 for some changes added to the template dialog
+            am = QMenu()
+            self.advanced_book_action = create_menu_action_unique(self, am,
+                                    _('&Find book duplicates')+'...', image=PLUGIN_ICONS[0],
+                                    tooltip=_('Search for book duplicate with more advanced options'),
+                                    triggered=self.advanced_find_book_duplicates)
+            self.advanced_library_action = create_menu_action_unique(self, am,
+                                    _('Find library duplicates')+'...', image='library.png',
+                                    tooltip=_('Search for library duplicate with more advanced options'),
+                                    triggered=self.advanced_find_library_duplicates)
+            self.advanced_metadata_action = create_menu_action_unique(self, am,
+                                    _('Find Metadata &Variations')+'...', image='user_profile.png',
+                                    tooltip=_('Search metadata variations with more advanced options'),
+                                    triggered=self.advanced_find_metadata_variations)
+            am.addSeparator()
 
-        self.advanced_action = create_menu_action_unique(self, m,
-                                _('Advanced Mode'),
-                                tooltip=_('Search for duplicates using advanced options'))
-        self.advanced_action.setMenu(am)
-        m.addSeparator()
+            self.advanced_help_action = create_menu_action_unique(self, am, _('&Help'), image='help.png',
+                                    tooltip=_('Show help on how to use the advanced mode'), triggered=self.show_help)
+
+            self.advanced_action = create_menu_action_unique(self, m,
+                                    _('Advanced Mode'),
+                                    tooltip=_('Search for duplicates using advanced options'))
+            self.advanced_action.setMenu(am)
+            m.addSeparator()
+
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
         self.gui.keyboard.finalize()
