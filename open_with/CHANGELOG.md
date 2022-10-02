@@ -1,6 +1,6 @@
 # Open With Change Log
 
-## [1.8.0] - 2022-09-XX
+## [1.8.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add translation support.
@@ -9,6 +9,8 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Refactoring of common code
 - Any custom website menu images must now be in `/resources/images/Open With/`
 - Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Open-With)
+### Fixed
+- Deleting menu rows could have wrong selected items. (@capink)
 
 ## [1.7.2] - 2022-08-09
 ### Changed

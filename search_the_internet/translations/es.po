@@ -265,13 +265,13 @@ msgid "Url"
 msgstr "URL"
 
 #: config.py:707
-msgid "<p>Are you sure you want to delete this menu item?"
-msgstr "<p>¿Está seguro de querer eliminar este elemento del menú?"
+msgid "Are you sure you want to delete this menu item?"
+msgstr "¿Está seguro de querer eliminar este elemento del menú?"
 
 #: config.py:709
-msgid "<p>Are you sure you want to delete the selected {0} menu items?"
+msgid "Are you sure you want to delete the selected {0} menu items?"
 msgstr ""
-"<p>¿Está seguro de querer eliminar los {0} elementos de menú seleccionados?"
+"¿Está seguro de querer eliminar los {0} elementos de menú seleccionados?"
 
 #: config.py:828
 msgid "Select and configure the menu items to display:"

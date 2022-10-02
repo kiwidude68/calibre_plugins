@@ -1,6 +1,6 @@
 # Goodreads Sync Change Log
 
-## [1.16.0] - 2022-09-XX
+## [1.16.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
@@ -8,6 +8,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Goodreads-Sync)
 ### Fixed
 - Various bugs related to the "Update reading progress" feature.
+- Deleting menu rows could have wrong selected items. (@capink)
 
 ## [1.15.6] - 2022-08-15
 ### Fixed

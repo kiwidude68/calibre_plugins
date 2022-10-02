@@ -12,12 +12,12 @@ try:
     from qt.core import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableView,
                       QGroupBox, QGridLayout, QCheckBox, QTableWidget, QDialogButtonBox, QAbstractTableModel,
                       QTableWidgetItem, QIcon, QAbstractItemView, Qt, QPushButton, QStyledItemDelegate,
-                      QToolButton, QSpacerItem)
+                      QToolButton, QSpacerItem, QModelIndex)
 except ImportError:
     from PyQt5.Qt import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableView,
                       QGroupBox, QGridLayout, QCheckBox, QTableWidget, QDialogButtonBox, QAbstractTableModel,
                       QTableWidgetItem, QIcon, QAbstractItemView, Qt, QPushButton, QStyledItemDelegate,
-                      QToolButton, QSpacerItem)
+                      QToolButton, QSpacerItem, QModelIndex)
 
 from calibre.devices.usbms.driver import debug_print
 from calibre.gui2 import question_dialog
@@ -207,20 +207,23 @@ class PatternTableWidget(QTableWidget):
 
     def delete_rows(self):
         self.setFocus()
-        rows = self.selectionModel().selectedRows()
-        if len(rows) == 0:
+        selrows = self.selectionModel().selectedRows()
+        selrows = sorted(selrows, key=lambda x: x.row())
+        if len(selrows) == 0:
             return
         message = _('Are you sure you want to delete this menu item?')
-        if len(rows) > 1:
-            message = _('Are you sure you want to delete the selected menu items?')
+        if len(selrows) > 1:
+            message = _('Are you sure you want to delete the selected {0} menu items?').format(len(selrows))
         if not question_dialog(self, _('Are you sure?'), '<p>'+message, show_copy_button=False):
             return
-        first_sel_row = self.currentRow()
-        for selrow in reversed(rows):
-            self.removeRow(selrow.row())
-        if first_sel_row < self.rowCount():
+        first_sel_row = selrows[0].row()
+        for selrow in reversed(selrows):
+            self.model().removeRow(selrow.row())
+        if first_sel_row < self.model().rowCount(QModelIndex()):
+            self.setCurrentIndex(self.model().index(first_sel_row, 0))
             self.select_and_scroll_to_row(first_sel_row)
-        elif self.rowCount() > 0:
+        elif self.model().rowCount(QModelIndex()) > 0:
+            self.setCurrentIndex(self.model().index(first_sel_row - 1, 0))
             self.select_and_scroll_to_row(first_sel_row - 1)
 
     def move_rows_up(self):
@@ -371,20 +374,23 @@ class MetadataSourcesTableWidget(QTableWidget):
 
     def delete_rows(self):
         self.setFocus()
-        rows = self.selectionModel().selectedRows()
-        if len(rows) == 0:
+        selrows = self.selectionModel().selectedRows()
+        selrows = sorted(selrows, key=lambda x: x.row())
+        if len(selrows) == 0:
             return
         message = _('Are you sure you want to delete this menu item?')
-        if len(rows) > 1:
-            message = _('Are you sure you want to delete the selected menu items?')
+        if len(selrows) > 1:
+            message = _('Are you sure you want to delete the selected {0} menu items?').format(len(selrows))
         if not question_dialog(self, _('Are you sure?'), '<p>'+message, show_copy_button=False):
             return
-        first_sel_row = self.currentRow()
-        for selrow in reversed(rows):
-            self.removeRow(selrow.row())
-        if first_sel_row < self.rowCount():
+        first_sel_row = selrows[0].row()
+        for selrow in reversed(selrows):
+            self.model().removeRow(selrow.row())
+        if first_sel_row < self.model().rowCount(QModelIndex()):
+            self.setCurrentIndex(self.model().index(first_sel_row, 0))
             self.select_and_scroll_to_row(first_sel_row)
-        elif self.rowCount() > 0:
+        elif self.model().rowCount(QModelIndex()) > 0:
+            self.setCurrentIndex(self.model().index(first_sel_row - 1, 0))
             self.select_and_scroll_to_row(first_sel_row - 1)
 
     def move_rows_up(self):

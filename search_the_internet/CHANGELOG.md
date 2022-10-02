@@ -1,6 +1,6 @@
 # Search The Internet Change Log
 
-## [1.10.0] - 2022-09-XX
+## [1.10.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add full translation support
@@ -10,6 +10,8 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Refactoring of common code
 - Any custom website menu images must now be in /resources/images/Search The Internet/
 - Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Search-The-Internet)
+### Fixed
+- Deleting menu rows could have wrong selected items. (@capink)
 
 ## [1.9.0] - 2022-07-14
 ### Changed

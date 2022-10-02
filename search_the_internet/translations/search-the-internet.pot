@@ -233,11 +233,11 @@ msgid "Url"
 msgstr ""
 
 #: config.py:707
-msgid "<p>Are you sure you want to delete this menu item?"
+msgid "Are you sure you want to delete this menu item?"
 msgstr ""
 
 #: config.py:709
-msgid "<p>Are you sure you want to delete the selected {0} menu items?"
+msgid "Are you sure you want to delete the selected {0} menu items?"
 msgstr ""
 
 #: config.py:828

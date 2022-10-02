@@ -1,10 +1,12 @@
 # Resize Cover Change Log
 
-## [1.2.0] - 2022-09-XX
+## [1.2.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
+### Fixed
+- Deleting menu rows could have wrong selected items. (@capink)
 
 ## [1.1.1] - 2022-07-11
 ### Changed

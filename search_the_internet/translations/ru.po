@@ -254,12 +254,12 @@ msgid "Url"
 msgstr "Адрес"
 
 #: config.py:707
-msgid "<p>Are you sure you want to delete this menu item?"
-msgstr "<p>Вы действительно хотите удалить этот элемент меню?"
+msgid "Are you sure you want to delete this menu item?"
+msgstr "Вы действительно хотите удалить этот элемент меню?"
 
 #: config.py:709
-msgid "<p>Are you sure you want to delete the selected {0} menu items?"
-msgstr "<p>Вы действительно хотите удалить выделенные элементы меню ({0})?"
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "Вы действительно хотите удалить выделенные элементы меню ({0})?"
 
 #: config.py:828
 msgid "Select and configure the menu items to display:"
