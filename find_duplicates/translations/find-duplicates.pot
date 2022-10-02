@@ -895,7 +895,7 @@ msgid "Match Error"
 msgstr ""
 
 #: advanced\matching.py:111
-msgid "Write you algorithm using calibre's template language"
+msgid "Write your algorithm using calibre's template language"
 msgstr ""
 
 #: advanced\matching.py:149
