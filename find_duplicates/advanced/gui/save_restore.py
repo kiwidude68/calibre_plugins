@@ -263,7 +263,7 @@ class SaveRestoreGroup(QGroupBox):
         if opt_append:            
             self.restore_button.setPopupMode(QToolButton.MenuButtonPopup)
             rm = QMenu()
-            rm.addAction(_('Add to exisiting'), partial(self._restore_settings, True))
+            rm.addAction(_('Add to existing'), partial(self._restore_settings, True))
             self.restore_button.setMenu(rm)
 
         h_layout.addWidget(self.save_button)

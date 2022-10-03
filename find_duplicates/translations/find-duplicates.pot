@@ -703,7 +703,7 @@ msgid "Manage"
 msgstr ""
 
 #: advanced\gui\save_restore.py:266
-msgid "Add to exisiting"
+msgid "Add to existing"
 msgstr ""
 
 #: advanced\gui\save_restore.py:294
