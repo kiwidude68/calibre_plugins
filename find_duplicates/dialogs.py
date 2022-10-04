@@ -1008,7 +1008,7 @@ LIBRARY_TITLE_DESCS = OrderedDict([
                              '- Similar title matches apply removal of common punctuation and '
                              'prefixes and applies the same title matching logic as Automerge.')),
                ('soundex',  _('<b>Title duplicate search</b><br/>'
-                             '- Report books in this library compared to your target library with a <b>soundex title</b> and {0}br/>'
+                             '- Report books in this library compared to your target library with a <b>soundex title</b> and {0}<br/>'
                              '- Soundex title matches are based on the same removal of punctuation '
                              'and common prefixes as a similar title search.')),
                ('fuzzy',    _('<b>Title duplicate search</b><br/>'

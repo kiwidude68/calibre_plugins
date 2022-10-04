@@ -1526,7 +1526,7 @@ msgstr ""
 #: dialogs.py:1010
 msgid ""
 "<b>Title duplicate search</b><br/>- Report books in this library compared to"
-" your target library with a <b>soundex title</b> and {0}br/>- Soundex title "
+" your target library with a <b>soundex title</b> and {0}<br/>- Soundex title "
 "matches are based on the same removal of punctuation and common prefixes as "
 "a similar title search."
 msgstr ""
