@@ -337,7 +337,7 @@ class ListComboBox(QComboBox):
     def populate_combo(self, lists, selected_text=None):
         self.blockSignals(True)
         self.clear()
-        for list_name in sorted(lists.keys):
+        for list_name in sorted(lists.keys()):
             self.addItem(list_name)
         self.blockSignals(False)
         self.select_view(selected_text)
