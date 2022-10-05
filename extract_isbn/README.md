@@ -25,7 +25,9 @@ This plugin can be used to try to find the ISBN for a book using the text within
 | --------| ----------- |
 | When scan completes | **Do not change my search** - Default behavior of keeping calibre view unchanged.<br>**Show the books that have new or updated ISBNs** - Apply a search to show books this plugin changed. |
 | Selected books before background job | Running as a background job keeps your UI more responsive.<br>By default if one book is selected, plugin runs immediately.<br>More than one book selected queues up as a calibre job instead.
-| Batch size running as backkground job | When running in background, how many books to put in each job batch.|
+| Batch size running as background job | When running in background, how many books to put in each job batch. |
+| Display failure dialog | If ISBN is identical or not found, a dialog informs you of that result.<br>Uncheck this option to have any such failures happen silently.
+| Prompt to apply ISBN changes | A prompt will appear before making changes to your library.<br>Uncheck this option to have all changes made silently.<br>There is a small risk of data loss if you make other changes to that book at the exact same time.
 
 ## Development / Contributions
 

@@ -9,9 +9,9 @@ from collections import OrderedDict
 from six import text_type as unicode
 
 try:
-    from qt.core import QWidget, QGridLayout, QLabel, QLineEdit, QPushButton, QSpinBox
+    from qt.core import QWidget, QGridLayout, QLabel, QLineEdit, QPushButton, QSpinBox, QCheckBox
 except ImportError:
-    from PyQt5.Qt import QWidget, QGridLayout, QLabel, QLineEdit, QPushButton, QSpinBox
+    from PyQt5.Qt import QWidget, QGridLayout, QLabel, QLineEdit, QPushButton, QSpinBox, QCheckBox
 
 from calibre.utils.config import JSONConfig
 
@@ -28,6 +28,8 @@ KEY_VALID_ISBN13_PREFIX = 'validISBN13Prefix'
 KEY_POST_TASK = 'postTask'
 KEY_WORKER_THRESHOLD = 'workerThreshold'
 KEY_BATCH_SIZE = 'batchSize'
+KEY_DISPLAY_FAILURES = 'displayFailures'
+KEY_ASK_FOR_CONFIRMATION = 'askForConfirmation'
 
 SHOW_TASKS = OrderedDict([('none', _('Do not change my search')),
                         ('updated', _('Show the books that have new or updated ISBNs'))])
@@ -36,7 +38,9 @@ DEFAULT_STORE_VALUES = {
     KEY_POST_TASK: 'none',
     KEY_VALID_ISBN13_PREFIX: ['977', '978', '979'],
     KEY_WORKER_THRESHOLD: 1,
-    KEY_BATCH_SIZE: 100
+    KEY_BATCH_SIZE: 100,
+    KEY_DISPLAY_FAILURES: True,
+    KEY_ASK_FOR_CONFIRMATION: True
 }
 
 # This is where all preferences for this plugin will be stored
@@ -88,10 +92,27 @@ class ConfigWidget(QWidget):
         self.batch_spin.setProperty('value', batch_size)
         layout.addWidget(self.batch_spin, 5, 1, 1, 1)
 
+        display_failures = c.get(KEY_DISPLAY_FAILURES, DEFAULT_STORE_VALUES[KEY_DISPLAY_FAILURES])
+        self.display_failures_checkbox = QCheckBox(_('Display failure dialog if ISBN not found or identical'), self)
+        self.display_failures_checkbox.setToolTip(_('Uncheck this option if you want do not want to be prompted\n'
+                                                        'about no ISBN being found in the book or it is the same as\n'
+                                                        'your current value.'))
+        self.display_failures_checkbox.setChecked(display_failures)
+        layout.addWidget(self.display_failures_checkbox, 6, 0, 1, 2)
+
+        ask_for_confirmation = c.get(KEY_ASK_FOR_CONFIRMATION, DEFAULT_STORE_VALUES[KEY_ASK_FOR_CONFIRMATION])
+        self.ask_for_confirmation_checkbox = QCheckBox(_('Prompt to apply ISBN changes'), self)
+        self.ask_for_confirmation_checkbox.setToolTip(_('Uncheck this option if you want changes applied without\n'
+                                                        'a confirmation dialog. There is a small risk with this\n'
+                                                        'option unchecked that if you are making other changes to\n'
+                                                        'this book record at the same time they will be lost.'))
+        self.ask_for_confirmation_checkbox.setChecked(ask_for_confirmation)
+        layout.addWidget(self.ask_for_confirmation_checkbox,7, 0, 1, 2)
+
         keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
-        layout.addWidget(keyboard_shortcuts_button, 6, 0, 1, 2)
+        layout.addWidget(keyboard_shortcuts_button, 8, 0, 1, 2)
 
     def save_settings(self):
         new_prefs = {}
@@ -100,6 +121,8 @@ class ConfigWidget(QWidget):
         new_prefs[KEY_VALID_ISBN13_PREFIX] = prefixes.split(',')
         new_prefs[KEY_WORKER_THRESHOLD] = int(unicode(self.threshold_spin.value()))
         new_prefs[KEY_BATCH_SIZE] = int(unicode(self.batch_spin.value()))
+        new_prefs[KEY_DISPLAY_FAILURES] = self.display_failures_checkbox.isChecked()
+        new_prefs[KEY_ASK_FOR_CONFIRMATION] = self.ask_for_confirmation_checkbox.isChecked()
 
         plugin_prefs[STORE_NAME] = new_prefs
 

@@ -113,15 +113,21 @@ class ExtractISBNAction(InterfaceAction):
             msg += _('Click "Show details" to see which books.')
 
         if update_count == 0:
-            p = ErrorNotification(job.html_details, _('Scan log'), _('Scan failed'), msg,
-                    det_msg=det_msg, show_copy_button=True, parent=self.gui)
-            p.show()
+            if cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_DISPLAY_FAILURES, 
+                                                    cfg.DEFAULT_STORE_VALUES[cfg.KEY_DISPLAY_FAILURES]):       
+                p = ErrorNotification(job.html_details, _('Scan log'), _('Scan failed'), msg,
+                        det_msg=det_msg, show_copy_button=True, parent=self.gui)
+                p.show()
         else:
             payload = (extracted_ids, same_isbn_ids, failed_ids)
-            self.gui.proceed_question(self._check_proceed_with_extracted_isbns,
-                    payload, job.html_details,
-                    _('Scan log'), _('Scan complete'), msg,
-                    det_msg=det_msg, show_copy_button=show_copy_button)
+            if cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_ASK_FOR_CONFIRMATION, 
+                                                    cfg.DEFAULT_STORE_VALUES[cfg.KEY_ASK_FOR_CONFIRMATION]):
+                self.gui.proceed_question(self._check_proceed_with_extracted_isbns,
+                        payload, job.html_details,
+                        _('Scan log'), _('Scan complete'), msg,
+                        det_msg=det_msg, show_copy_button=show_copy_button)
+            else:
+                self._check_proceed_with_extracted_isbns(payload)
 
     def _check_proceed_with_extracted_isbns(self, payload):
         extracted_ids, _same_isbn_ids, _failed_ids = payload
@@ -139,16 +145,18 @@ class ExtractISBNAction(InterfaceAction):
                 modified.add(title)
 
         if modified:
-            from calibre.utils.icu import lower
+            if cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_ASK_FOR_CONFIRMATION, 
+                                                    cfg.DEFAULT_STORE_VALUES[cfg.KEY_ASK_FOR_CONFIRMATION]):
+                from calibre.utils.icu import lower
 
-            modified = sorted(modified, key=lower)
-            if not question_dialog(self.gui, _('Some books changed'), '<p>'+
-                    _('The metadata for some books in your library has'
-                        ' changed since you started the download. If you'
-                        ' proceed, some of those changes may be overwritten. '
-                        'Click "Show details" to see the list of changed books. '
-                        'Do you want to proceed?'), det_msg='\n'.join(modified)):
-                return
+                modified = sorted(modified, key=lower)
+                if not question_dialog(self.gui, _('Some books changed'), '<p>'+
+                        _('The metadata for some books in your library has'
+                            ' changed since you started the download. If you'
+                            ' proceed, some of those changes may be overwritten. '
+                            'Click "Show details" to see the list of changed books. '
+                            'Do you want to proceed?'), det_msg='\n'.join(modified)):
+                    return
         # At this point we want to re-use code in edit_metadata to go ahead and
         # apply the changes. So we will replace the Metadata objects with some
         # empty ones with only the isbn field set so only that field gets updated
