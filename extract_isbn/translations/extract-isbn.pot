@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:19+0100\n"
+"POT-Creation-Date: 2022-10-05 11:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:91
+#: ..\common\common_dialogs.py:84 config.py:112
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:90
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:192
 msgid "Create new column"
 msgstr ""
 
@@ -143,71 +143,94 @@ msgstr ""
 msgid "Click \"Show details\" to see which books."
 msgstr ""
 
-#: action.py:116
+#: action.py:118
 msgid "Scan failed"
 msgstr ""
 
-#: action.py:116 action.py:123
+#: action.py:118 action.py:127
 msgid "Scan log"
 msgstr ""
 
-#: action.py:123
+#: action.py:127
 msgid "Scan complete"
 msgstr ""
 
-#: action.py:145
+#: action.py:153
 msgid "Some books changed"
 msgstr ""
 
-#: action.py:146
+#: action.py:154
 msgid "The metadata for some books in your library has changed since you started the download. If you proceed, some of those changes may be overwritten. Click \"Show details\" to see the list of changed books. Do you want to proceed?"
 msgstr ""
 
-#: action.py:157 jobs.py:226
+#: action.py:165 jobs.py:226
 msgid "Unknown"
 msgstr ""
 
-#: config.py:32
+#: config.py:34
 msgid "Do not change my search"
 msgstr ""
 
-#: config.py:33
+#: config.py:35
 msgid "Show the books that have new or updated ISBNs"
 msgstr ""
 
-#: config.py:58
+#: config.py:62
 msgid "When the scan completes:"
 msgstr ""
 
-#: config.py:63
+#: config.py:67
 msgid "Valid prefixes for ISBN-13 (comma separated):"
 msgstr ""
 
-#: config.py:68
+#: config.py:72
 msgid "Selected books before running as a background job:"
 msgstr ""
 
-#: config.py:69
+#: config.py:73
 msgid ""
 "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
 
-#: config.py:70
+#: config.py:74
 msgid "memory leaks and will keep the UI more responsive."
 msgstr ""
 
-#: config.py:79
+#: config.py:83
 msgid "Batch size running as a background job:"
 msgstr ""
 
-#: config.py:80
+#: config.py:84
 msgid ""
 "Books will be broken into batches to ensure that if you run\n"
 "extract for a large group you can cancel/close calibre without\n"
 "losing all of your results as you can cancel the pending groups."
 msgstr ""
 
-#: config.py:92
+#: config.py:96
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr ""
+
+#: config.py:97
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr ""
+
+#: config.py:104
+msgid "Prompt to apply ISBN changes"
+msgstr ""
+
+#: config.py:105
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+
+#: config.py:113
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
