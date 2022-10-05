@@ -25,6 +25,12 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+def authors_to_string(authors):
+    if authors is not None:
+        return ' & '.join([a.replace('&', '&&') for a in authors if a])
+    else:
+        return ''
+
 class QueueProgressDialog(QProgressDialog):
 
     def __init__(self, gui, book_ids, tdir, statistics_cols_map,
@@ -50,7 +56,6 @@ class QueueProgressDialog(QProgressDialog):
         if self.use_preferred_output:
             self.input_order.append(prefs['output_format'])
         self.input_order += [f.lower() for f in prefs['input_format_order']]
-        print('QueueProgressDialog - self.input_order=', self.input_order)
 
         self.page_col_label = self.word_col_label = None
         self.labels_map = dict((col_name, db.field_metadata.key_to_label(col_name))
@@ -60,14 +65,21 @@ class QueueProgressDialog(QProgressDialog):
         QTimer.singleShot(100, self.do_book)
         self.exec_()
 
+    def _getTitleAuthor(self, book_id):
+        title = self.db.title(book_id, index_is_id=True)
+        authors = self.db.authors(book_id, index_is_id=True)
+        if authors:
+            authors = [x.replace('|', ',') for x in authors.split(',')]
+            title += ' - ' + authors_to_string(authors)
+        return title
+
     def do_book(self):
         book_id = self.book_ids[self.i]
         self.i += 1
 
         try:
-            title = self.db.title(book_id, index_is_id=True)
             done = False
-
+            title_author = self._getTitleAuthor(book_id)
             book_formats = get_available_formats_for_book(self.db, book_id)
             statistics_to_run = []
             for statistic, col_name in self.statistics_cols_map.items():
@@ -117,7 +129,7 @@ class QueueProgressDialog(QProgressDialog):
                         done = True
                     elif len(statistics_to_run) == 1:
                         # Since not counting anything else, we have all we need at this point to continue
-                        self.books_to_scan.append((book_id, title, None,
+                        self.books_to_scan.append((book_id, title_author, None,
                                                    download_sources, statistics_to_run))
                         done = True
 
@@ -129,16 +141,16 @@ class QueueProgressDialog(QProgressDialog):
                     if bf != 'epub' and cfg.STATISTIC_PAGE_COUNT in statistics_to_run and self.pages_algorithm == 2:
                         continue
                     if self.db.has_format(book_id, bf, index_is_id=True):
-                        self.setLabelText(_('Queueing ')+title)
+                        self.setLabelText(_('Queueing ')+title_author)
                         try:
                             # Copy the book to the temp directory, using book id as filename
                             dest_file = os.path.join(self.tdir, '%d.%s'%(book_id, bf.lower()))
                             with open(dest_file, 'w+b') as f:
                                 self.db.copy_format_to(book_id, bf, f, index_is_id=True)
-                            self.books_to_scan.append((book_id, title, dest_file,
+                            self.books_to_scan.append((book_id, title_author, dest_file,
                                                        download_sources, statistics_to_run))
                             found_format = True
-                            print("For book '%s', using format %s" % (title, bf))
+                            print("For book '%s', using format %s" % (title_author, bf))
                         except:
                             traceback.print_exc()
                             self.bad[book_id] = traceback.format_exc()
@@ -166,14 +178,14 @@ class QueueProgressDialog(QProgressDialog):
         for book_id, warning in self.warnings:
             if book_id not in distinct_problem_ids:
                 distinct_problem_ids[book_id] = True
-            title = self.db.title(book_id, True)
-            res.append('%s (%s)'%(title, warning))
+            title_author = self._getTitleAuthor(book_id)
+            res.append('%s (%s)'%(title_author, warning))
         if len(self.bad):
             for book_id, error in self.bad.items():
                 if book_id not in distinct_problem_ids:
                     distinct_problem_ids[book_id] = True
-                title = self.db.title(book_id, True)
-                res.append('%s (%s)'%(title, error))
+                title_author = self._getTitleAuthor(book_id)
+                res.append('%s (%s)'%(title_author, error))
         msg = msg + '\n'.join(res)
         if len(res) > 0:
             summary_msg = _('Could not analyse some statistics in %d of %d books, for reasons shown in details below.')

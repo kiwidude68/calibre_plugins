@@ -2,9 +2,12 @@
 
 ## [1.12.0] - 2022-09-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+### Added
+- Support for .webp page counts in CBR/CBZ
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code.
+- Include author(s) with the title in the logging output to make it easier to identify which book that related to.
 
 ## [1.11.2] - 2022-08-02
 ### Fixed

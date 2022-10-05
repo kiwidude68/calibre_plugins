@@ -7,23 +7,23 @@
 
 ## Overview
 
-This plugin will determine a number of pages and/or words in a book and store the result in custom column(s). In addition to just general library browsing usage, Kindle users can generate APNX files using the value from a pages custom column (requires Calibre 0.8.40). So when you send an ebook to your Kindle device from calibre, you will have page numbering available similar to that when loading Amazon books which offer this feature.
+This plugin will determine a number of pages and/or words in a book and store the result in custom column(s). In addition to just general library browsing usage, Kindle users can generate APNX files using the value from a pages custom column. So when you send an ebook to your Kindle device from calibre, you will have page numbering available similar to that when loading Amazon books which offer this feature.
 
 You have two overriding methods of determining page count with this plugin.
 
-The first approach is estimation based on the book content, provided you have an ePub format or a format that is convertible to ePub. The format used if your book has multiple is chosen based on your Preferred Input Format order, that you set in Preferences -> Behavior.
+The first approach is estimation based on the book content. It requires you either have an `epub` format or a format that is convertible to `epub`. For comics (`cbr` or `cbz`) it will count the images inside. The format used if your book has multiple is chosen based on your Preferred Input Format order, that you set in Preferences -> Behavior.
 
 Note that if you use this option it can be an approximation only of a paperback edition due to differences in fonts, images, layouts etc. By default it uses an "accurate" algorithm similar to that created by user_none for generating APNX files for Kindle users. Alternatively in the configuration you can choose to use the page count used by the calibre e-book viewer, or you can use the Aobe algorithm used by their ADE software and some devices like a Nook. However if the format being counted is a PDF, then as of v1.4.2 there is now a special optimisation to read the actual page count rather than estimating it using any of the above algorithms.
 
-The second page count option (added in v1.3) is to download the page count from a web page on the Goodreads.com website for your specific linked edition. This can be used for a book with any formats (or even none). How is a goodreads identifier linked? Either by using the [Goodreads metadata download](https://www.mobileread.com/forums/showthread.php?t=130638) plugin, the [Goodreads Sync](https://www.mobileread.com/forums/showthread.php?t=123281) plugin, or by manually typing a goodreads:xxx id into your identifiers field for the edition of interest. If the edition you have linked to has no page count, you can switch editions using a feature added to the Goodreads Sync plugin.
+The second page count option is to download the page count from a web page on the Goodreads.com website for your specific linked edition. This can be used for a book with any formats (or even none). How is a goodreads identifier linked? Either by using the [Goodreads metadata download](https://www.mobileread.com/forums/showthread.php?t=130638) plugin, the [Goodreads Sync](https://www.mobileread.com/forums/showthread.php?t=123281) plugin, or by manually typing a `goodreads:xxx` id into your identifiers field for the edition of interest. If the edition you have linked to has no page count, you can switch editions using a feature added to the Goodreads Sync plugin.
 
-Word count is optionally calculated independently of page count. As this is unavailable on a website, it is subject to the same limitations as estimating page count above, in that you must have either an ePub or a format convertible to ePub available for it to work.
+Word count is optionally calculated independently of page count. As this is unavailable on a website, it is subject to the same limitations as estimating page count above, in that you must have either an `epub` or a format convertible to `epub` available for it to work.
 
-Finally in v1.6 a variety of readability statistics have been added which you can optionally calculate such as [Flesch-Kincaid](http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_test) and [Gunning Fog](http://en.wikipedia.org/wiki/Gunning_fog_index) index.
+You can optionally calculate a variety of readability statistics such as [Flesch-Kincaid](http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_test) and [Gunning Fog](http://en.wikipedia.org/wiki/Gunning_fog_index) index.
 
 ## Main Features
 
-- Estimate a page count of books to a custom column (except for PDF, which is read directly from the info) using one of four algorithms.
+- Estimate a page count of books to a custom column (except for `PDF`, which is read directly from the info) using one of four algorithms.
 - Alternatively download a page count from the Goodreads.com website into a custom column
 - Compute a word count to a custom column
 - Compute readability statistics for Flesch Reading level, Flesch-Kincaid Grade level and Gunning Fog index into custom column(s)

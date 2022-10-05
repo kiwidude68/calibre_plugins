@@ -274,7 +274,7 @@ def _extract_body_text(data):
 #    CBR/CBZ Page Count Functions
 # ---------------------------------------------------------
 
-COMIC_PAGE_EXTENSIONS = ['.jpeg', '.jpg', '.gif', '.png']
+COMIC_PAGE_EXTENSIONS = ['.jpeg', '.jpg', '.gif', '.png', '.webp']
 
 def get_cbr_page_count(book_path):
     from calibre.utils.unrar import names
