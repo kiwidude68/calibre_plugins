@@ -92,7 +92,7 @@ def readPluginName():
         if nameMatches: 
             zipFileName = nameMatches[0]+'.zip'
         else:
-            raise NameError('Could not find plugin name in __init__.py')
+            raise RuntimeError('Could not find plugin name in __init__.py')
         versionMatches = re.findall("\s+version\s*=\s*\(([^\)]*)\)", content)
         if versionMatches: 
             version = versionMatches[0].replace(',','.').replace(' ','')

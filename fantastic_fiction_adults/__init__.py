@@ -35,7 +35,7 @@ from calibre.utils.localization import get_udc
 var country = 'GB';var stamp = '20120605082304_10949358814fcdfa28efa8c4.98902069_fa846c05a9d23c2392ce89e5da01d97b';
 '''
 
-# Then we fire a query for our search. FF does all sorts of fancy diatrics substitutions, I'm not bothering!
+# Then we fire a query for our search. FF does all sorts of fancy diacritics substitutions, I'm not bothering!
 # http://www.ffadultsonly.com/db-search/v4/books/?q={search}&start=0&size=10&rank=-visits_us&return-fields=booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo&stamp={STAMP FROM ABOVE}
 #
 #    rank = '-visits_us';

@@ -68,7 +68,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Added
 - In the config screen put a separate option groupbox in for the author initials setting
 - Add a "Reformat author initials" option to the "Fix" menu to reformat initials to your preference for authors on the selected books
-- Add a "Rename author to ascii" option to the "Fix" menu to rename author names to remove diatrics and accents
+- Add a "Rename author to ascii" option to the "Fix" menu to rename author names to remove diacritics and accents
 - For "Check author initials" support more permutations of special cases to include trailing period - i.e. Jr. as well as Jr
 ### Changed
 - Tidy up the help file for some redundant/missing/renamed menu items
@@ -77,7 +77,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ## [1.9.2] - 2012-07-06
 ### Added
 - Add a "Check authors non alphabetic" option to Check ePub Metadata menu to find authors with invalid separators or other cruft
-- Add a "Check authors non ascii" option to Check ePub Metadata menu to find authors with accents/diatrics in their names
+- Add a "Check authors non ascii" option to Check ePub Metadata menu to find authors with accents/diacritics in their names
 - Add a "Check authors initials" option to Check ePub Metadata menu to find authors with initials that do not match your preferred style.
 - Add to plugin configuration screen an author initials dropdown for configuring preferred author initials format
 - Add a "Check smarten punctuation" option to Check ePub Style menu to search for ePubs with `"` or `'` in body

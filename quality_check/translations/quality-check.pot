@@ -1474,7 +1474,7 @@ msgid "Check authors non ascii"
 msgstr ""
 
 #: config.py:130
-msgid "Find authors with non-ascii names (e.g. with diatrics)"
+msgid "Find authors with non-ascii names (e.g. with diacritics)"
 msgstr ""
 
 #: config.py:131
@@ -1620,7 +1620,7 @@ msgid "Reformat author initials"
 msgstr ""
 
 #: config.py:154
-msgid "For the selected book(s) rename the title to remove any accents and diatrics characters"
+msgid "For the selected book(s) rename the title to remove any accents and diacritics characters"
 msgstr ""
 
 #: config.py:154

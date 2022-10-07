@@ -69,7 +69,7 @@ You may have noticed when editing individual books in the Edit Metadata screen t
 - Find books with no commas in the author (useful if your author is LN, FN)
 - Find books with authors that are all upper or all lower case
 - Find books with authors that contain non-alphabetic characters like incorrect separators or cruft
-- Find books with authors that contain non-ascii characters of accents/diatrics
+- Find books with authors that contain non-ascii characters of accents/diacritics
 - Find books with authors that have initials in a different punctuation to your preference
 - Find books with titles that have possible series info like hyphens/numerics
 - Find books with titles that do not appear to be a valid title case
