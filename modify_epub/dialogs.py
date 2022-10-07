@@ -276,7 +276,7 @@ class AddBooksProgressDialog(QProgressDialog):
     def __init__(self, gui, modified_epubs, tdir):
         self.total_count = len(modified_epubs)
         QProgressDialog.__init__(self, _('Working')+'...', _('Cancel'), 0, self.total_count, gui)
-        self.setWindowTitle(_('Adding %d modified ePubs')+'...' % self.total_count)
+        self.setWindowTitle(_('Adding %d modified ePubs')% self.total_count +'...' )
         self.setMinimumWidth(500)
         self.modified_epubs, self.tdir = modified_epubs, tdir
         self.book_ids = list(modified_epubs.keys())
