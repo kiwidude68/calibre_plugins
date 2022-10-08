@@ -72,7 +72,7 @@ class ConfigWidget(DefaultConfigWidget):
         reduce_headings = c.get(KEY_REDUCE_HEADINGS, False)
         self.headings_checkbox.setChecked(reduce_headings)
         
-        self.oldest_edition_checkbox = QCheckBox(_('Use publishing date from oldest edition'), self)
+        self.oldest_edition_checkbox = QCheckBox(_('Use published date from oldest edition'), self)
         self.oldest_edition_checkbox.setToolTip(_('The year the book was first published is shown with the title. '
                                                   'The editions include the publishing month. '
                                                   'Select this option if you want to use the oldest edition from the year of publishing.'))

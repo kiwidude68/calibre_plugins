@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:16+0100\n"
+"POT-Creation-Date: 2022-10-08 15:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:90
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:192
 msgid "Create new column"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgid ""
 msgstr ""
 
 #: config.py:75
-msgid "Use publishing date from oldest edition"
+msgid "Use published date from oldest edition"
 msgstr ""
 
 #: config.py:76

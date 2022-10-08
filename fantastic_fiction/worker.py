@@ -56,7 +56,7 @@ class Worker(Thread): # Get details
             return
 
         raw = raw.decode('utf-8', errors='replace')
-        #open('E:\\t3.html', 'wb').write(raw)
+        #open('D:\\ff.html', 'wb').write(raw)
 
         if '<title>404 - ' in raw:
             self.log.error('URL malformed: %r'%self.url)
@@ -154,7 +154,6 @@ class Worker(Thread): # Get details
             self.log('parse_series - have title - text="%s"' % title[0].text.strip())
             series_match = re.search('\((.*), book ([\.\d+]+)\)', title[0].text.strip())
             if series_match:
-                self.log('parse_series - have series_match')
                 series_name = series_match.groups(0)[0]
                 series_index = series_match.groups(0)[1]
                 try:
@@ -165,7 +164,6 @@ class Worker(Thread): # Get details
         return (None, None)
 
     def parse_authors(self, root):
-        #[contains(@href,"/p/")]
         author_nodes = root.xpath('//span[@itemprop="author"]/span/a')
         if author_nodes:
             authors = [author_node.text for author_node in author_nodes]
@@ -197,27 +195,21 @@ class Worker(Thread): # Get details
         if oldest_edition:
             edition_nodes = root.xpath('//div[@class="ff"]/div[@class="sectionhead"]')
             edition_nodes = root.xpath('//div[@class="ff"]/div[@class="e"]/preceding-sibling::div[@class="sectionhead"]')
-            self.log('parse_published_date - edition_nodes: "%s" ' % (edition_nodes))
-            self.log('parse_published_date - len(edition_nodes): "%s" ' % (len(edition_nodes)))
             oldest_edition_date = datetime.datetime(pub_date.year + 1, 1, 1, tzinfo=utc_tz)
-            self.log('parse_published_date - oldest_edition_date: "%s" ' % (oldest_edition_date))
             have_edition_with_month = False
             if len(edition_nodes) > 0:
-                self.log('parse_published_date - tostring(edition_nodes[0]): "%s" ' % (tostring(edition_nodes[0])))
                 for edition_node in edition_nodes:
-                    self.log('parse_published_date - tostring(edition_node): "%s" ' % (tostring(edition_node)))
                     edition_date = edition_node.text.split(":")[0].strip()
-                    self.log('parse_published_date - text edition_date: "%s" ' % (edition_date))
                     if len(edition_date.split()) > 1:
                         have_edition_with_month = True
                         edition_date = datetime.datetime.strptime(edition_date, '%B %Y').replace(tzinfo=utc_tz)
                         if edition_date < oldest_edition_date:
                             oldest_edition_date = edition_date
-                    self.log('parse_published_date - edition_date: "%s" ' % (edition_date))
-                    self.log('parse_published_date - oldest_edition_date: "%s" ' % (oldest_edition_date))
+                    #self.log.info('parse_published_date - edition_date: "%s" ' % (edition_date))
+                    #self.log.info('parse_published_date - oldest_edition_date: "%s" ' % (oldest_edition_date))
 
             pub_date = oldest_edition_date if have_edition_with_month else pub_date
-        self.log('parse_published_date - final pub_date: "%s" ' % (pub_date))
+        #self.log.info('parse_published_date - final pub_date: "%s" ' % (pub_date))
         return pub_date
 
     def parse_comments_and_tags(self, root):
@@ -225,31 +217,22 @@ class Worker(Thread): # Get details
         comments = None
         tags = None
         if description_node:
-            self.log.info("parse_comments_and_tags - have description node.")
             # Remove the Preview link
             for preview in description_node[0].xpath("//span[@id=\'preview\']"):
-                self.log.info("parse_comments_and_tags - removing preview.")
                 preview.getparent().remove(preview)
             # Remove the Google link
             for external_link in description_node[0].xpath("a[@target=\'_blank\']"):
-                self.log.info("parse_comments_and_tags - removing external link.")
                 external_link.getparent().remove(external_link)
 
             comments = tostring(description_node[0], method='html', encoding='unicode')
-            self.log.info("parse_comments_and_tags - comments=%s" % comments)
             find_text = 'Genre: <a href'
             genre_index = comments.find(find_text)
-            self.log.info("parse_comments_and_tags - genre_index=%d" % genre_index)
             if genre_index > -1:
                 genre_action = cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GENRE_ACTION]
                 # Strip the genre out of the comments
                 genre_links = comments[genre_index:-6]
-                self.log.info("parse_comments_and_tags - genre_links='%s'" % genre_links)
                 tags = re.findall(r'<a href="[^"]+">([^<]+)</a>', genre_links)
-                self.log.info("parse_comments_and_tags - up to genre='%s'" % comments[:genre_index])
-#                 if comments[genre_index-8:genre_index] == '<br><br>':
                 if (re.search(r'<br>\s*$', comments[:genre_index])):
-                    self.log.info("parse_comments_and_tags - br before genre")
                     if genre_action == 'KEEP':
                         comments = comments[:genre_index + len('Genre: ')] + ' ,'.join(tags)
                     else:
@@ -257,10 +240,7 @@ class Worker(Thread): # Get details
                         comments = comments[:genre_index].strip()
                         while comments.endswith('<br>'):
                             comments = comments[:-len('<br>')].strip()
-                        self.log.info("parse_comments_and_tags - after removing genre='%s'" % comments)
                     comments += '</div>'
-                else:
-                    self.log.info("parse_comments_and_tags - no br before genre")
                 # We found a genre - what to do about it?
                 if genre_action != 'TAGS':
                     # Get the genre values as a list for tags
@@ -271,7 +251,6 @@ class Worker(Thread): # Get details
             replace_headers = cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_REDUCE_HEADINGS, False)
             if replace_headers:
                 comments = self.replace_header_tags(comments)
-            self.log.info("parse_comments_and_tags - comments=%s, tags=%s" % (comments,tags))
         return comments, tags
     
     def replace_header_tags(self, comments):
@@ -288,13 +267,10 @@ class Worker(Thread): # Get details
         isbn = None
         publisher = None
         edition_nodes = root.xpath('//div[@class="ff"]/div[@class="e"]/div/text()')
-#         self.log.info("parse_isbn_and_publisher - edition_nodes=%s" % len(edition_nodes))
         RE_ISBN = re.compile(u'([0-9\-])+', re.UNICODE)
         for i, edition_text in enumerate(edition_nodes):
-#             self.log.info("parse_isbn_and_publisher - edition_text=%s" % edition_text)
             if edition_text[:5] == 'ISBN:':
                 isbn_text = edition_text[6:]
-#                 self.log.info("parse_isbn_and_publisher - isbn_text=%s" % isbn_text)
                 isbn_match = re.search(RE_ISBN, isbn_text)
                 if isbn_match:
                     isbn = isbn_match.group()
@@ -305,19 +281,15 @@ class Worker(Thread): # Get details
 
     def parse_cover(self, root):
         cover_node = root.xpath('//div[@class="ff"]/div/img[@class="bookimage"]')
-#         self.log.info("parse_cover - cover_node=%s" % cover_node)
         if cover_node:
-#             self.log.info("parse_cover - cover_node=%s" % tostring(cover_node[0]))
             image_url = ''
             image_name = ''
             for country in ["CA", "GB", "US"]:
                 attr_name = "data-" + country.lower()
                 image_name = cover_node[0].xpath('@' + attr_name)
-#                 self.log.info("parse_cover - attr_name=%s, image_name=%s" % (attr_name,image_name))
                 if image_name:
                     break
             if image_name:
                 image_url = 'https://images-eu.ssl-images-amazon.com/images/I/' + image_name[0]
-#             self.log.info("parse_cover - image_url=%s" % (image_url,))
             return image_url
 

@@ -5,19 +5,13 @@
 [![calibre Version][calibre-image]][calibre-url]
 [![Status][status-image]][status-image] 
 
-## Overview
+## Introduction
 
-This plugin offers yet another download source for book metadata from one of the most consistent sources of book information and covers around by retrieving from [www.fantasticfiction.co.uk](http://www.fantasticfiction.co.uk/).
+This plugin offers another download source for book metadata from one of the most consistent sources of book information and covers around of [fantasticfiction.com](https://www.fantasticfiction.com/).
 
-As with my [Goodreads](https://www.mobileread.com/forums/showthread.php?t=130638) and [Barnes & Noble](https://www.mobileread.com/forums/showthread.php?t=132508) plugins it is designed to either supplement or replace the metadata plugins that come with Calibre. Unlike the Goodreads plugin you cannot get any get any tags (genres) or ratings for a book.
+Fantastic Fiction has very good book descriptions, excellent series information, consistently sized covers and is extremely fast to retrieve from.
 
-However Fantastic Fiction has very consistently sized covers, excellent series information and is extremely fast to retrieve from.
-
-## Main Features
-
-- Can retrieve title, author, series, isbn, comments, publisher, publication date and covers
-- Also retrieves a Fantastic Fiction id, which can be used to directly jump to the page for a specific book from the book details pane (like Goodreads/ISBN etc).
-- Optionally assign the Genre value Fantastic Fiction has for some books to your Tags column
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Fantastic-Fiction)
 
 ## Development / Contributions
 
