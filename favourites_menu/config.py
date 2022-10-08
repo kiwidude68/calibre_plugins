@@ -11,23 +11,26 @@ try:
     from qt.core import (QWidget, QHBoxLayout, QMenu, QTreeWidget, Qt, QIcon,
                         QTreeWidgetItem, QListWidget, QListWidgetItem, QSize,
                         QToolButton, QVBoxLayout, QAbstractItemView,
-                        QPainter, QRect, QPixmap, QBrush)
+                        QPainter, QRect, QPixmap, QBrush, QPushButton, QUrl)
 except ImportError:                        
     from PyQt5.Qt import (QWidget, QHBoxLayout, QMenu, QTreeWidget, Qt, QIcon,
                         QTreeWidgetItem, QListWidget, QListWidgetItem, QSize,
                         QToolButton, QVBoxLayout, QAbstractItemView,
-                        QPainter, QRect, QPixmap, QBrush)
+                        QPainter, QRect, QPixmap, QBrush, QPushButton, QUrl)
 
 try:
     load_translations()
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+from calibre.gui2 import open_url
 from calibre.utils.config import JSONConfig
 from calibre_plugins.favourites_menu.common_icons import get_icon
 
 # This is where all preferences for this plugin will be stored
 plugin_prefs = JSONConfig('plugins/Favourites Menu')
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Favourites-Menu'
 
 ICON_SIZE = 32
 
@@ -155,20 +158,23 @@ class ConfigWidget(QWidget):
         self._update_button_states()
 
     def _initialise_layout(self):
-        layout = QHBoxLayout(self)
+        layout = QVBoxLayout(self)
         self.setLayout(layout)
+
+        main_layout = QHBoxLayout()
+        layout.addLayout(main_layout)
 
         self.tv = QTreeWidget(self.gui)
         self.tv.setIconSize(QSize(ICON_SIZE, ICON_SIZE))
         self.tv.header().hide()
-        layout.addWidget(self.tv, 1)
+        main_layout.addWidget(self.tv, 1)
 
         self.items_list = FavMenusListWidget(self.gui)
         self.items_list.setIconSize(QSize(ICON_SIZE, ICON_SIZE))
-        layout.addWidget(self.items_list, 1)
+        main_layout.addWidget(self.items_list, 1)
 
         button_layout = QVBoxLayout()
-        layout.addLayout(button_layout)
+        main_layout.addLayout(button_layout)
 
         self.up_btn = QToolButton(self.gui)
         self.up_btn.setIcon(get_icon('arrow-up.png'))
@@ -199,6 +205,14 @@ class ConfigWidget(QWidget):
         button_layout.addWidget(self.remove_btn)
         button_layout.addStretch(1)
         button_layout.addWidget(self.down_btn)
+
+        button_layout = QHBoxLayout()
+        help_button = QPushButton(' '+_('Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(self.show_help)
+        button_layout.addWidget(help_button)
+        button_layout.addStretch(1)
+        layout.addLayout(button_layout)
 
     def _move_item_up(self):
         idx = self.items_list.currentRow()
@@ -434,4 +448,7 @@ class ConfigWidget(QWidget):
 
     def save_settings(self):
         plugin_prefs[STORE_MENUS] = self.items_list.get_fav_menus()
+
+    def show_help(self):
+        open_url(QUrl(HELP_URL))
 

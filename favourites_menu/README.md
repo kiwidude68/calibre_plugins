@@ -7,49 +7,11 @@
 
 ## Overview
 
-Are you…
+This plugin allows you to build a customizable toolbar menu containing shortcuts to your other plugins or calibre features.
 
-- Running out of screen space on your toolbar from adding plugins?
-- Always forgetting where that xyz calibre feature is located?
-- Tired of navigating deep into some menu hierarchy?
-- Wanting a menu that you can control what order things appear on, and what they are called?
-- Looking to change your life?
+The primary use case it to prevent filling your main toolbar with too many buttons for those other features, while still making them easily accessible with a single click.
 
-Now with with the patent pending all-singing and dancing **Favourites Menu** plugin you can build your own menu on a button! Wow!
-
-Here are some testimonials from our ~~actors~~ customers:
-
-> *“Every time I want the eject option for my Kindle from calibre, I can never click on that silly side arrow, it is just too darn small. Especially after a few drinks - not that I ever do of course. But thanks to kiwidude I can now have it right there on the big ol’ Favourites button just a little clickey clickey away. Cheers!”*
-
-> *”Well I have just about every plugin kiwidude has written. Keep them right here next to my jar of toenail clippings since 1974. But as much as I love them all, I just can’t see them on my 3.5” screen. Now I have just one button to put all of them on – I call it calibre on a button. Thanks dude!”*
-
-> *”I switch libraries – a lot. But every time I open the Library menu they are in a different order. My brain just couldn’t cope, it made me want to cry. But now thanks to Favourites Menu I can have just the libraries I use the most always in the same place. So that’s less time searching, and more time spent keeping my kids out of jail. Thanks kiwidude!”*
-
-> *”I add books using an option from the dropdown on the toolbar button. But last time I dropped it down I sprained my neck reading the description, it was so damn long on screen. I had to take a month off work, the company closed, we lost the house and my wife left me. Thanks to the Favourites Menu plugin though I can have my own ‘Add books’ menu option so it won’t happen again. You’ve literally saved my life!”*
-
-So just how much would you expect to pay have your own Favourites Menu button?
-
-~~$99.99?~~
-
-~~$49.99?~~
-
-No - wait for it - if you download the Favourites Menu plugin in the next 3.2 seconds, it is absolutely free. That’s right - free! Wow!
-
-But wait, that’s not all! If you click twice on the download button, we’ll give you not one, but two copies of the plugin. That’s two copies of the Favourites Menu plugin for no extra cost. Wow!
-
-Our operators are standing by to take your call… `1-800-555-KIWIDUDE`
-
-## Main Features
-
-- Create a customisable menu button with your favourite menu options
-- You can add specific menu actions, submenus or entire plugins to your own menu.
-- Add, remove, reorder and rename the menus with separators
-- Where appropriate menu items are disabled if they are not relevant to the current context - e.g. device not plugged in.
-
-## Notes for other plugin developers
-
-- As of v1.0.3 Favourites Menu will support a plugin with its menus being rebuilt every time it is displayed (such as to enable/disable items based on the current state of calibre). The pattern for this is that your InterfaceAction class should have a .menu property representing the QMenu, and you will ordinarily have code hooked to the aboutToShow signal. When the Favourites Menu plugin is asked to dropdown will iterate through all of the child plugins it is being asked to display items for and (once per plugin) emit the iaction.menu.aboutToShow signal for any plugins that have such a .menu property.
-- If your plugin changes the name of a child item dynamically this can cause a problem for the Favourites Menu plugin (as it uses the text name displayed by a plugin as part of the "key" identifying a menu item). For instance the Reading List plugin includes a count of the items in a child list for some of its actions. To ensure such menu items can be supported by the Reading List plugin, you should simply assign a constant identifying name for the menu item to a .favourites_menu_unique_name property on your qaction at the time you create it. The Favourites Menu plugin will look for such a property being present and use that in preference to the current text name if it is present.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Favourites-Menu)
 
 ## Development / Contributions
 

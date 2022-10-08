@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:15+0100\n"
+"POT-Creation-Date: 2022-10-08 19:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -99,27 +99,31 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: config.py:58
+#: config.py:61
 msgid "Separator"
 msgstr ""
 
-#: config.py:175
+#: config.py:181
 msgid "Move the selected menu item up"
 msgstr ""
 
-#: config.py:179
+#: config.py:185
 msgid "Move the selected menu item down"
 msgstr ""
 
-#: config.py:183
+#: config.py:189
 msgid "Remove the selected item from the menu"
 msgstr ""
 
-#: config.py:187
+#: config.py:193
 msgid "Add a separator to the menu following the selected item"
 msgstr ""
 
-#: config.py:191
+#: config.py:197
 msgid "Rename the menu item for when it appears on your Favourites menu"
+msgstr ""
+
+#: config.py:210
+msgid "Help"
 msgstr ""
 
