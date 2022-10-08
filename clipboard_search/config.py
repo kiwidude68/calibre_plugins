@@ -5,10 +5,10 @@ __copyright__ = '2011, Grant Drake'
 
 # Maintain backwards compatibility with older versions of Qt and calibre.
 try:
-    from qt.core import (QWidget, QVBoxLayout, QPushButton,
+    from qt.core import (QWidget, QVBoxLayout, QPushButton, QUrl,
                         QGroupBox, QRadioButton, QHBoxLayout)
 except ImportError:
-    from PyQt5.Qt import (QWidget, QVBoxLayout, QPushButton,
+    from PyQt5.Qt import (QWidget, QVBoxLayout, QPushButton, QUrl,
                         QGroupBox, QRadioButton, QHBoxLayout)
 
 # Pull in translation files for _() strings
@@ -17,8 +17,11 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+from calibre.gui2 import open_url
 from calibre.utils.config import JSONConfig
 from calibre_plugins.clipboard_search.common_dialogs import KeyboardConfigDialog
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Clipboard-Search'
 
 STORE_NAME = 'Shortcuts'
 KEY_TEXT_SEARCH = 'textSearch'
@@ -58,10 +61,16 @@ class ConfigWidget(QWidget):
         group_box_default_layout.addWidget(self._text_radio)
         group_box_default_layout.addWidget(self._exact_radio)
 
-        keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
+        button_layout = QHBoxLayout()
+        keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
-        layout.addWidget(keyboard_shortcuts_button)
+        button_layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(_('Help'), self)
+        help_button.clicked.connect(self.show_help)
+        button_layout.addWidget(help_button)
+        layout.addLayout(button_layout)
 
     def save_settings(self):
         new_prefs = {}
@@ -76,3 +85,6 @@ class ConfigWidget(QWidget):
         d = KeyboardConfigDialog(self.plugin_action.gui, self.plugin_action.action_spec[0])
         if d.exec_() == d.Accepted:
             self.plugin_action.gui.keyboard.finalize()
+
+    def show_help(self):
+        open_url(QUrl(HELP_URL))

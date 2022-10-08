@@ -7,17 +7,15 @@
 
 ## Overview
 
-This plugin offers several shortcuts to execute a Calibre search using whatever text is on the clipboard (Windows shortcut keys shown).
+This plugin offers several shortcuts to execute a Calibre search using whatever text is on the clipboard (Windows shortcut keys shown below).
 
-I mostly use it when browsing the web and spot an author or title that I want to see if I already have in Calibre. Copy the web text to the clipboard, switch focus to Calibre then hit Ctrl+S (or it's alternative).
+I mostly use it when browsing the web and spot an author or title that I want to see if I already have in Calibre. Copy the web text to the clipboard, switch focus to Calibre then hit `Ctrl+S`.
 
-It can also be handy when resolving duplicates within Calibre as you can select the title of the book and do Ctrl+C, Ctrl+S to execute a search on it (the Calibre built-in "Similar search" option does not include titles as an option). Likewise it can also offer a fast way to help find authors that differ in minor ways such as spaces between initials, names reversed etc.
+It can also be handy when resolving duplicates within Calibre as you can select the title of the book and do `Ctrl+C`, `Ctrl+S` to execute a search on it (the Calibre built-in "Similar search" option does not include titles as an option). Likewise it can also offer a fast way to help find authors that differ in minor ways such as spaces between initials, names reversed etc.
 
-## Main Features
+> The **Calibre Search** web browser extensions for Chrome and Firefox based browsers I developed has since superceded my personal usage. For more information, see the [Calibre Search FAQ](https://github.com/kiwidude68/calibre-search-app/wiki/Calibre-Search-FAQ). 
 
-- Ctrl+S - Execute a text search (no quotes around clipboard text)
-- Ctrl+Shift+S - Execute an exact text search (adds "" around clipboard text)
-- Customizable keyboard shortcuts and toolbar button default action
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Clipboard-Search)
 
 ## Development / Contributions
 
