@@ -19,6 +19,7 @@ except NameError:
 
 from calibre.gui2 import open_url
 from calibre.utils.config import JSONConfig
+from calibre_plugins.clipboard_search.common_icons import get_icon
 from calibre_plugins.clipboard_search.common_dialogs import KeyboardConfigDialog
 
 HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Clipboard-Search'
@@ -67,7 +68,8 @@ class ConfigWidget(QWidget):
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
         button_layout.addWidget(keyboard_shortcuts_button)
 
-        help_button = QPushButton(_('Help'), self)
+        help_button = QPushButton(' '+_('Help'), self)
+        help_button.setIcon(get_icon('help.png'))
         help_button.clicked.connect(self.show_help)
         button_layout.addWidget(help_button)
         layout.addLayout(button_layout)
