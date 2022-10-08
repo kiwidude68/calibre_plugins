@@ -21,22 +21,19 @@ from calibre.debug import iswindows
 from calibre.gui2 import info_dialog, error_dialog, open_url, choose_save_file
 from calibre.gui2.actions import InterfaceAction
 from calibre.gui2.dialogs.confirm_delete import confirm
-from calibre.constants import numeric_version as calibre_version
 
 from calibre_plugins.find_duplicates.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.find_duplicates.common_menus import unregister_menu_actions, create_menu_action_unique
 from calibre_plugins.find_duplicates.dialogs import (FindBookDuplicatesDialog, FindVariationsDialog,
                                 FindLibraryDuplicatesDialog, ManageExemptionsDialog)
 from calibre_plugins.find_duplicates.duplicates import DuplicateFinder, CrossLibraryDuplicateFinder
-from calibre_plugins.find_duplicates.advanced.matching import get_all_algorithms, MetadataMatch
-from calibre_plugins.find_duplicates.advanced.gui.dialogs import AdvancedBookDuplicatesDialog, AdvancedLibraryDuplicatesDialog, AdvancedVariationsDialog
-from calibre_plugins.find_duplicates.advanced import AdvancedDuplicateFinder as DuplicateFinder #will overwrite DuplicateFinder from previous import, this does not affect the other parts of the plugin, as this is a subclass that and define some extra things for the advanced mode.
-from calibre_plugins.find_duplicates.advanced import AdvancedCrossLibraryDuplicateFinder
 
 try:
     load_translations()
 except NameError:
     pass
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Find-Duplicates'
 
 PLUGIN_ICONS = ['images/find_duplicates.png',
                 'images/next_result.png', 'images/previous_result.png']
@@ -64,9 +61,6 @@ class FindDuplicatesAction(InterfaceAction):
         self.qaction.triggered.connect(self.toolbar_button_clicked)
         self.menu.aboutToShow.connect(self.about_to_show_menu)
 
-    def update_algorithms(self):
-        self.algorithms, self.builtin_algorithms, self.user_algorithms = get_all_algorithms(self.gui, self.user_algorithm_classes)
-
     def initialization_complete(self):
         # Delay instantiating our finder as we require access to the library view
         self.duplicate_finder = DuplicateFinder(self.gui)
@@ -75,13 +69,11 @@ class FindDuplicatesAction(InterfaceAction):
         self.gui.search_restriction.currentIndexChanged.connect(self.user_has_changed_restriction)
         self.api_version = 1.0
         self.user_algorithm_classes = {}
-        self.update_algorithms()
 
     def library_changed(self, db):
         # We need to reset our duplicate finder after switching libraries
         self.duplicate_finder = DuplicateFinder(self.gui)
         self.update_actions_enabled()
-        self.update_algorithms()
 
     def shutting_down(self):
         if self.duplicate_finder.is_showing_duplicate_exemptions() or self.duplicate_finder.has_results():
@@ -146,34 +138,10 @@ class FindDuplicatesAction(InterfaceAction):
                                 triggered=self.export_duplicates)
         m.addSeparator()
 
-        if calibre_version >= (5,10,0):
-            # Advanced mode needs 5.10.0 for some changes added to the template dialog
-            am = QMenu()
-            self.advanced_book_action = create_menu_action_unique(self, am,
-                                    _('&Find book duplicates')+'...', image=PLUGIN_ICONS[0],
-                                    tooltip=_('Search for book duplicate with more advanced options'),
-                                    triggered=self.advanced_find_book_duplicates)
-            self.advanced_library_action = create_menu_action_unique(self, am,
-                                    _('Find library duplicates')+'...', image='library.png',
-                                    tooltip=_('Search for library duplicate with more advanced options'),
-                                    triggered=self.advanced_find_library_duplicates)
-            self.advanced_metadata_action = create_menu_action_unique(self, am,
-                                    _('Find Metadata &Variations')+'...', image='user_profile.png',
-                                    tooltip=_('Search metadata variations with more advanced options'),
-                                    triggered=self.advanced_find_metadata_variations)
-            am.addSeparator()
-
-            self.advanced_help_action = create_menu_action_unique(self, am, _('&Help'), image='help.png',
-                                    tooltip=_('Show help on how to use the advanced mode'), triggered=self.show_help)
-
-            self.advanced_action = create_menu_action_unique(self, m,
-                                    _('Advanced Mode'),
-                                    tooltip=_('Search for duplicates using advanced options'))
-            self.advanced_action.setMenu(am)
-            m.addSeparator()
-
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=self.show_help)
         self.gui.keyboard.finalize()
 
     def about_to_show_menu(self):
@@ -355,69 +323,7 @@ class FindDuplicatesAction(InterfaceAction):
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)
-
-    # Update: add advanced mode {
-    def advanced_find_book_duplicates(self):
-        d = AdvancedBookDuplicatesDialog(self)
-        if d.exec_() == d.Accepted:
-            QApplication.setOverrideCursor(Qt.WaitCursor)
-            try:
-                self.duplicate_finder.run_book_duplicates_check_advanced(
-                    d.match_rules,
-                    d.sort_groups_by_title,
-                    d.show_all_duplicates_mode,
-                    d.sort_filters)
-            finally:
-                QApplication.restoreOverrideCursor()
-            self.update_actions_enabled()
-
-    def advanced_find_library_duplicates(self):
-        if self.clear_duplicate_mode_action.isEnabled():
-            self.clear_duplicate_results()
-        else:
-            self.gui.search.clear()
-        d = AdvancedLibraryDuplicatesDialog(self)
-        if d.exec_() == d.Accepted:
-            QApplication.setOverrideCursor(Qt.WaitCursor)
-            try:
-                finder = AdvancedCrossLibraryDuplicateFinder(self.gui)
-                finder.run_library_duplicates_check(
-                    d.library_path,
-                    d.match_rules
-                )
-            finally:
-                QApplication.restoreOverrideCursor()
-
-    def advanced_find_metadata_variations(self):
-        if self.clear_duplicate_mode_action.isEnabled():
-            self.clear_duplicate_results()
-        ids = self.gui.library_view.get_selected_ids()
-        query = self.gui.search.text()
-        d = AdvancedVariationsDialog(self)
-        d.exec_()
-        if d.is_changed():
-            # Signal the library view and tags panel to refresh.
-            QApplication.setOverrideCursor(Qt.WaitCursor)
-            try:
-                self.gui.library_view.model().refresh()
-            finally:
-                QApplication.restoreOverrideCursor()
-        # If the user is displaying books simultaneously from the dialog then we do
-        # not want to change the search in case they intentionally cancelled to make
-        # some changes to those visible rows
-        if not d.is_showing_books():
-            self.gui.search.set_search_string(query)
-            self.gui.library_view.select_rows(ids)
-        self.gui.tags_view.recount()
-        if d.is_showing_books():
-            self.gui.search.do_search()
-
-    def show_help(self):
-        url = 'https://www.mobileread.com/forums/showpost.php?p=4021095&postcount=738'
-        open_url(QUrl(url))
-    #}
     
-    # Update: export duplicates {
     def export_duplicates(self):
         '''
         export all duplicate books to a json file.
@@ -454,15 +360,6 @@ class FindDuplicatesAction(InterfaceAction):
         info_dialog(self.gui, _('Export completed'),
                     _('Exported to: {}').format(json_path),
                     show=True, show_copy_button=False)
-    #}
 
-    def on_action_chains_modules_update(self, user_modules):
-        self.user_algorithm_classes = {}
-        for cls in user_modules.get_classes(class_filters=[MetadataMatch]):
-            name = cls.name
-            # must define a name attribute, must be set and not clash with builtin names
-            # which can be imported into the module manager by custom actions
-            if name in ['', MetadataMatch.name]:
-                continue
-            self.user_algorithm_classes[name] = cls
-        self.update_algorithms()
+    def show_help(self):
+        open_url(QUrl(HELP_URL))

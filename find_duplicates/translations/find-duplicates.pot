@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:13+0100\n"
+"POT-Creation-Date: 2022-10-08 20:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,7 @@ msgstr ""
 msgid "Preferences for:"
 msgstr ""
 
-#: ..\common\common_dialogs.py:160 advanced\gui\rules_widget.py:373
-#: advanced\gui\sort.py:234
+#: ..\common\common_dialogs.py:160
 msgid "Clear"
 msgstr ""
 
@@ -76,935 +75,188 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
-#: action.py:47 dialogs.py:162 dialogs.py:1032 duplicates.py:178
+#: action.py:45 dialogs.py:162 dialogs.py:1032 duplicates.py:178
 msgid "Find Duplicates"
 msgstr ""
 
-#: action.py:95 action.py:149
+#: action.py:88
 msgid "&Find book duplicates"
 msgstr ""
 
-#: action.py:97 action.py:153 advanced\gui\dialogs.py:220
+#: action.py:90
 msgid "Find library duplicates"
 msgstr ""
 
-#: action.py:98
+#: action.py:91
 msgid "Find books that are duplicated in another library compared to this one"
 msgstr ""
 
-#: action.py:101
+#: action.py:94
 msgid "Find metadata &variations"
 msgstr ""
 
-#: action.py:102
+#: action.py:95
 msgid "Find & rename variations in author, publisher, series or tags names that may indicate duplicates"
 msgstr ""
 
-#: action.py:105
+#: action.py:98
 msgid "&Next result"
 msgstr ""
 
-#: action.py:106
+#: action.py:99
 msgid "Display the next duplicate result group"
 msgstr ""
 
-#: action.py:108
+#: action.py:101
 msgid "&Previous result"
 msgstr ""
 
-#: action.py:109
+#: action.py:102
 msgid "Display the previous duplicate result group"
 msgstr ""
 
-#: action.py:112
+#: action.py:105
 msgid "&Mark current group as exempt"
 msgstr ""
 
-#: action.py:113
+#: action.py:106
 msgid "Mark the current group as not duplicates and exempt from future consideration"
 msgstr ""
 
-#: action.py:116
+#: action.py:109
 msgid "Mark &all groups as exempt"
 msgstr ""
 
-#: action.py:117
+#: action.py:110
 msgid "Mark all remaining duplicate groups as exempt from future consideration"
 msgstr ""
 
-#: action.py:121
+#: action.py:114
 msgid "&Show all book duplicate exemptions"
 msgstr ""
 
-#: action.py:122
+#: action.py:115
 msgid "Show all books that have book duplicate exemption pairings"
 msgstr ""
 
-#: action.py:125
+#: action.py:118
 msgid "&Show all author duplicate exemptions"
 msgstr ""
 
-#: action.py:126
+#: action.py:119
 msgid "Show all books that have author duplicate exemption pairings"
 msgstr ""
 
-#: action.py:129
+#: action.py:122
 msgid "&Manage exemptions for this book"
 msgstr ""
 
-#: action.py:130
+#: action.py:123
 msgid "Show duplicate exemptions for this book to enable removal"
 msgstr ""
 
-#: action.py:133
+#: action.py:126
 msgid "&Remove selected exemptions"
 msgstr ""
 
-#: action.py:134
+#: action.py:127
 msgid "Remove any duplicate book/author exemptions for the selected books"
 msgstr ""
 
-#: action.py:138
+#: action.py:131
 msgid "&Clear duplicate results"
 msgstr ""
 
-#: action.py:139
+#: action.py:132
 msgid "Exit duplicate search mode"
 msgstr ""
 
-#: action.py:143
+#: action.py:136
 msgid "&Export duplicate groups"
 msgstr ""
 
-#: action.py:144
+#: action.py:137
 msgid "Export duplicates groups to a json file"
 msgstr ""
 
-#: action.py:150
-msgid "Search for book duplicate with more advanced options"
-msgstr ""
-
-#: action.py:154
-msgid "Search for library duplicate with more advanced options"
-msgstr ""
-
-#: action.py:157
-msgid "Find Metadata &Variations"
-msgstr ""
-
-#: action.py:158
-msgid "Search metadata variations with more advanced options"
-msgstr ""
-
-#: action.py:162
-msgid "&Help"
-msgstr ""
-
-#: action.py:163
-msgid "Show help on how to use the advanced mode"
-msgstr ""
-
-#: action.py:166
-msgid "Advanced Mode"
-msgstr ""
-
-#: action.py:167
-msgid "Search for duplicates using advanced options"
-msgstr ""
-
-#: action.py:170
+#: action.py:141
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:274
+#: action.py:143
+msgid "&Help"
+msgstr ""
+
+#: action.py:247
 msgid "This action will ensure that each of the {0} in the group are exempt from appearing together again in future."
 msgstr ""
 
-#: action.py:277 action.py:330
+#: action.py:250 action.py:303
 msgid "Are you <b>sure</b> you want to proceed?"
 msgstr ""
 
-#: action.py:285
+#: action.py:258
 msgid "No duplicates in group"
 msgstr ""
 
-#: action.py:286
+#: action.py:259
 msgid "There are no duplicates remaining in this group."
 msgstr ""
 
-#: action.py:297 action.py:302
+#: action.py:270 action.py:275
 msgid "Cannot manage exemptions"
 msgstr ""
 
-#: action.py:298
+#: action.py:271
 msgid "No book selected"
 msgstr ""
 
-#: action.py:303
+#: action.py:276
 msgid "This book has no duplicate exemptions"
 msgstr ""
 
-#: action.py:324
+#: action.py:297
 msgid "Invalid selection"
 msgstr ""
 
-#: action.py:325
+#: action.py:298
 msgid "You must select at least one book."
 msgstr ""
 
-#: action.py:326
+#: action.py:299
 msgid "This action will remove any duplicate exemptions for your selection. This will allow them to potentially appear as duplicates together in a future duplicate search."
 msgstr ""
 
-#: action.py:422 advanced\gui\save_restore.py:144
-#: advanced\gui\save_restore.py:174
+#: action.py:333
 msgid "Choose file"
 msgstr ""
 
-#: action.py:423
+#: action.py:334
 msgid "Saved duplicates"
 msgstr ""
 
-#: action.py:449 advanced\gui\save_restore.py:169
+#: action.py:360
 msgid "Export completed"
 msgstr ""
 
-#: action.py:450 advanced\gui\save_restore.py:170
+#: action.py:361
 msgid "Exported to: {}"
-msgstr ""
-
-#: advanced\__init__.py:101
-msgid "Advanced algorithm"
-msgstr ""
-
-#: advanced\__init__.py:287 duplicates.py:831
-msgid ""
-"Results of {0} comparison:\n"
-"    Source library: {1}\n"
-"    Target library: {2}\n"
-"\n"
-"{3}"
-msgstr ""
-
-#: advanced\__init__.py:308 duplicates.py:883
-msgid "Click 'Show details' to see the results."
-msgstr ""
-
-#: advanced\__init__.py:318 duplicates.py:893 duplicates.py:1005
-msgid "Analysing duplicates in target database"
-msgstr ""
-
-#: advanced\__init__.py:325 duplicates.py:896 duplicates.py:1013
-msgid "Analysing duplicates in current database"
-msgstr ""
-
-#: advanced\__init__.py:353 duplicates.py:1037
-msgid "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against the library at: {2}"
-msgstr ""
-
-#: advanced\gui\__init__.py:27 advanced\gui\models.py:38
-msgid "Settings"
-msgstr ""
-
-#: advanced\gui\dialogs.py:70 dialogs.py:1163
-msgid "Choose library location to compare against"
-msgstr ""
-
-#: advanced\gui\dialogs.py:76 advanced\gui\dialogs.py:349 dialogs.py:1218
-msgid "Same as current"
-msgstr ""
-
-#: advanced\gui\dialogs.py:77 advanced\gui\dialogs.py:350 dialogs.py:1219
-msgid "The location {0} contains the current calibre library"
-msgstr ""
-
-#: advanced\gui\dialogs.py:79 advanced\gui\dialogs.py:352 dialogs.py:1221
-msgid "No existing library found"
-msgstr ""
-
-#: advanced\gui\dialogs.py:80 advanced\gui\dialogs.py:353 dialogs.py:1222
-msgid "There is no existing calibre library at {0}"
-msgstr ""
-
-#: advanced\gui\dialogs.py:119
-msgid "Find book duplicates"
-msgstr ""
-
-#: advanced\gui\dialogs.py:123 dialogs.py:165
-msgid "Duplicate Search Options"
-msgstr ""
-
-#: advanced\gui\dialogs.py:137
-msgid "Result Options:"
-msgstr ""
-
-#: advanced\gui\dialogs.py:141 dialogs.py:240
-msgid "Show all groups at once with highlighting"
-msgstr ""
-
-#: advanced\gui\dialogs.py:142 dialogs.py:241
-msgid "Show one group at a time"
-msgstr ""
-
-#: advanced\gui\dialogs.py:146 dialogs.py:249
-msgid "Sort groups by number of duplicates"
-msgstr ""
-
-#: advanced\gui\dialogs.py:147 dialogs.py:250
-msgid ""
-"When unchecked, will sort by an approximation of the title\n"
-"or by author if title is being ignored"
-msgstr ""
-
-#: advanced\gui\dialogs.py:193 advanced\gui\dialogs.py:337
-msgid "Match rule(s) has empty values"
-msgstr ""
-
-#: advanced\gui\dialogs.py:194 advanced\gui\dialogs.py:338
-msgid "Match rule(s) missing field or algorithm. To proceed, complete the missing data, or delete the match rule(s)."
-msgstr ""
-
-#: advanced\gui\dialogs.py:224 dialogs.py:1035
-msgid "Cross Library Search Options"
-msgstr ""
-
-#: advanced\gui\dialogs.py:228 dialogs.py:1039
-msgid "Compare With Library:"
-msgstr ""
-
-#: advanced\gui\dialogs.py:345 dialogs.py:1214
-msgid "No library specified"
-msgstr ""
-
-#: advanced\gui\dialogs.py:346 dialogs.py:1215
-msgid "You must specify a library path"
-msgstr ""
-
-#: advanced\gui\dialogs.py:385
-msgid "Find metadata variations"
-msgstr ""
-
-#: advanced\gui\dialogs.py:389 dialogs.py:626
-msgid "Find Metadata Variations"
-msgstr ""
-
-#: advanced\gui\dialogs.py:402 dialogs.py:668
-msgid "Search"
-msgstr ""
-
-#: advanced\gui\dialogs.py:404 dialogs.py:670
-msgid "Search for results"
-msgstr ""
-
-#: advanced\gui\dialogs.py:413 dialogs.py:681
-msgid "Search results:"
-msgstr ""
-
-#: advanced\gui\dialogs.py:419
-msgid "Items:"
-msgstr ""
-
-#: advanced\gui\dialogs.py:420 dialogs.py:688 dialogs.py:879
-msgid "Variations:"
-msgstr ""
-
-#: advanced\gui\dialogs.py:434 dialogs.py:702
-msgid "&Show matching books"
-msgstr ""
-
-#: advanced\gui\dialogs.py:435 dialogs.py:703
-msgid "As a group is selected, show the search results in the library view"
-msgstr ""
-
-#: advanced\gui\dialogs.py:438 dialogs.py:706
-msgid "Rename to:"
-msgstr ""
-
-#: advanced\gui\dialogs.py:455 dialogs.py:723
-msgid "&Rename"
-msgstr ""
-
-#: advanced\gui\dialogs.py:456 dialogs.py:724
-msgid "Rename all of the selected items to this name"
-msgstr ""
-
-#: advanced\gui\dialogs.py:459 dialogs.py:727
-msgid "&Ignore"
-msgstr ""
-
-#: advanced\gui\dialogs.py:460 dialogs.py:728
-msgid "Ignore all selected items from consideration at this time"
-msgstr ""
-
-#: advanced\gui\dialogs.py:508 dialogs.py:763
-msgid "No matches"
-msgstr ""
-
-#: advanced\gui\dialogs.py:508 dialogs.py:763
-msgid "You have no variations of {0} using this criteria"
-msgstr ""
-
-#: advanced\gui\models.py:38
-msgid "Comment"
-msgstr ""
-
-#: advanced\gui\models.py:38
-msgid "Errors"
-msgstr ""
-
-#: advanced\gui\models.py:74
-msgid "Validation Error. Double click for details"
-msgstr ""
-
-#: advanced\gui\models.py:197
-msgid "Algorithm ({}) is not currently available"
-msgstr ""
-
-#: advanced\gui\models.py:201
-msgid "Algorithm unavailable"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:52
-msgid "Add algorithms"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:59
-msgid "Algorithms"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:82
-msgid "Move row up"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:89
-msgid "Add row"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:96
-msgid "Duplicate algorithm"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:103
-msgid "Delete row"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:110
-msgid "Move row down"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:149
-msgid "No algorithms selected"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:150
-msgid "You must select at least one algorithm."
-msgstr ""
-
-#: advanced\gui\rules_widget.py:155
-msgid "Invalid algorithms"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:155
-msgid "Some algorithms are not valid. Double click on error cell for more details."
-msgstr ""
-
-#: advanced\gui\rules_widget.py:197 advanced\gui\sort.py:114
-msgid "Remove"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:202 advanced\gui\sort.py:142
-msgid "Column:"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:212
-msgid "Algorithms:"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:216 advanced\gui\rules_widget.py:284
-msgid "0 Algorithms Chosen"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:219
-msgid "Add or remove algorithms"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:227
-msgid "Match any of the items"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:228
-msgid ""
-"For fields with multiple items, match with books that any one of the items in this field.\n"
-"if unchecked, books match only when they match on all the items in the field."
-msgstr ""
-
-#: advanced\gui\rules_widget.py:232
-msgid "contains names"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:233
-msgid "Check if composite column contains names"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:265
-msgid "Cannot delete rule"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:266
-msgid "You must have at least one matching rule to proceed"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:288
-msgid "{} + {} others"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:374
-msgid "Clear all match rules"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:382
-msgid "Duplicates sort"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:384
-msgid "Configure sort filters for books inside duplicate groups"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:389
-msgid "Add Match Rules"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:390
-msgid "Add a rule containing a field and one or more match algorithm/template(s)."
-msgstr ""
-
-#: advanced\gui\rules_widget.py:436
-msgid "Incomplete Match Rule"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:437
-msgid "You must complete the previous match rule(s) before adding any new rules."
-msgstr ""
-
-#: advanced\gui\rules_widget.py:475
-msgid "Saved setting contains more than one match rule. Metadata variations can only have one match rule"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:512 advanced\gui\sort.py:369
-msgid "Error in sort filter No. {}: {}"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:521
-msgid "Restore Error"
-msgstr ""
-
-#: advanced\gui\rules_widget.py:522
-msgid "Encountered errors while restoring settings"
-msgstr ""
-
-#: advanced\gui\save_restore.py:50 advanced\gui\save_restore.py:255
-msgid "Manage saved settings"
-msgstr ""
-
-#: advanced\gui\save_restore.py:67
-msgid "Delete"
-msgstr ""
-
-#: advanced\gui\save_restore.py:69
-msgid "Rename"
-msgstr ""
-
-#: advanced\gui\save_restore.py:71
-msgid "Export"
-msgstr ""
-
-#: advanced\gui\save_restore.py:73
-msgid "Import"
-msgstr ""
-
-#: advanced\gui\save_restore.py:110
-msgid "<p>Are you sure you want to delete the {} selected setting(s)?</p>"
-msgstr ""
-
-#: advanced\gui\save_restore.py:123 advanced\gui\save_restore.py:124
-msgid "New name:"
-msgstr ""
-
-#: advanced\gui\save_restore.py:131
-msgid "Saved settings exists"
-msgstr ""
-
-#: advanced\gui\save_restore.py:132
-msgid "Saved settings exists with this name."
-msgstr ""
-
-#: advanced\gui\save_restore.py:145 advanced\gui\save_restore.py:175
-msgid "Saved settings"
-msgstr ""
-
-#: advanced\gui\save_restore.py:196
-msgid "Import error"
-msgstr ""
-
-#: advanced\gui\save_restore.py:197
-msgid "This is not a valid settings file"
-msgstr ""
-
-#: advanced\gui\save_restore.py:211
-msgid "The following settings already exit:"
-msgstr ""
-
-#: advanced\gui\save_restore.py:214
-msgid "Overwrite settings?"
-msgstr ""
-
-#: advanced\gui\save_restore.py:215
-msgid "{} of the imported settings already exists. Do you want to overwrite them?"
-msgstr ""
-
-#: advanced\gui\save_restore.py:230
-msgid "Save/Restore settings"
-msgstr ""
-
-#: advanced\gui\save_restore.py:248
-msgid "Restore"
-msgstr ""
-
-#: advanced\gui\save_restore.py:249
-msgid "Restore saved settings"
-msgstr ""
-
-#: advanced\gui\save_restore.py:251
-msgid "Save"
-msgstr ""
-
-#: advanced\gui\save_restore.py:252
-msgid "Save current settings"
-msgstr ""
-
-#: advanced\gui\save_restore.py:254
-msgid "Manage"
-msgstr ""
-
-#: advanced\gui\save_restore.py:266
-msgid "Add to existing"
-msgstr ""
-
-#: advanced\gui\save_restore.py:294
-msgid "Name error"
-msgstr ""
-
-#: advanced\gui\save_restore.py:295
-msgid "No settings with the name \"{}\" found"
-msgstr ""
-
-#: advanced\gui\save_restore.py:308
-msgid "Save settings"
-msgstr ""
-
-#: advanced\gui\save_restore.py:312
-msgid "There is already a saved setting with the name <b>\"{}\"</b>. Are you sure you want to replace it?"
-msgstr ""
-
-#: advanced\gui\save_restore.py:322
-msgid "Enter a name:"
-msgstr ""
-
-#: advanced\gui\save_restore.py:323
-msgid "Enter a unique name:"
-msgstr ""
-
-#: advanced\gui\save_restore.py:338
-msgid "Cannot add"
-msgstr ""
-
-#: advanced\gui\save_restore.py:339
-msgid "The name you specified is not unique"
-msgstr ""
-
-#: advanced\gui\sort.py:124
-msgid "Template:"
-msgstr ""
-
-#: advanced\gui\sort.py:125
-msgid "Edit/View Template"
-msgstr ""
-
-#: advanced\gui\sort.py:129
-msgid "Text"
-msgstr ""
-
-#: advanced\gui\sort.py:132
-msgid "Number"
-msgstr ""
-
-#: advanced\gui\sort.py:135
-msgid "Date"
-msgstr ""
-
-#: advanced\gui\sort.py:152
-msgid "Sort direction"
-msgstr ""
-
-#: advanced\gui\sort.py:156
-msgid "Ascending"
-msgstr ""
-
-#: advanced\gui\sort.py:159
-msgid "Descending"
-msgstr ""
-
-#: advanced\gui\sort.py:235
-msgid "Clear all filters"
-msgstr ""
-
-#: advanced\gui\sort.py:240
-msgid "Add Template"
-msgstr ""
-
-#: advanced\gui\sort.py:241
-msgid "Add a template whose result is used as a sort filter"
-msgstr ""
-
-#: advanced\gui\sort.py:246
-msgid "Add Sort Filter"
-msgstr ""
-
-#: advanced\gui\sort.py:247
-msgid "Add a column to sort by"
-msgstr ""
-
-#: advanced\gui\sort.py:304
-msgid "Incomplete Sort Filter"
-msgstr ""
-
-#: advanced\gui\sort.py:305
-msgid "You must complete the previous sort filter(s) to proceed."
-msgstr ""
-
-#: advanced\gui\sort.py:342
-msgid "Sort duplicate groups"
-msgstr ""
-
-#: advanced\gui\sort.py:380
-msgid "Sort filter(s) error(s)"
-msgstr ""
-
-#: advanced\gui\sort.py:391
-msgid "Sort filters not complete"
-msgstr ""
-
-#: advanced\gui\sort.py:392
-msgid "You must complete sort filters"
-msgstr ""
-
-#: advanced\gui\views.py:119
-msgid "Are you sure you want to delete this action?"
-msgstr ""
-
-#: advanced\gui\views.py:121
-msgid "Are you sure you want to delete the selected %d actions?"
-msgstr ""
-
-#: advanced\gui\views.py:122
-msgid "Are you sure?"
-msgstr ""
-
-#: advanced\gui\views.py:175
-msgid "Hide column %s"
-msgstr ""
-
-#: advanced\gui\views.py:184
-msgid "Show column"
-msgstr ""
-
-#: advanced\gui\views.py:204
-msgid "Cannot hide all columns"
-msgstr ""
-
-#: advanced\gui\views.py:204
-msgid "You must not hide all columns"
-msgstr ""
-
-#: advanced\gui\views.py:337
-msgid "No Algorithm Selected"
-msgstr ""
-
-#: advanced\gui\views.py:338
-msgid "You must choose an algorithm first"
-msgstr ""
-
-#: advanced\gui\views.py:376
-msgid "Errors details"
-msgstr ""
-
-#: advanced\match_rules.py:194
-msgid "Unknown"
-msgstr ""
-
-#: advanced\match_rules.py:273
-msgid "Errors for match:"
-msgstr ""
-
-#: advanced\match_rules.py:276
-msgid "Errors for match rule no. {}:"
-msgstr ""
-
-#: advanced\match_rules.py:279
-msgid "Column \"{}\" cannot be added to match rule"
-msgstr ""
-
-#: advanced\match_rules.py:282
-msgid "The following functions are missing and cannot be restored:{}{}"
-msgstr ""
-
-#: advanced\match_rules.py:285
-msgid "Encountered errors while running the following functions:{}{}"
-msgstr ""
-
-#: advanced\match_rules.py:288
-msgid "Encountered errors while running the following templates:{}{}"
-msgstr ""
-
-#: advanced\match_rules.py:297
-msgid "Validation Error"
-msgstr ""
-
-#: advanced\matching.py:91
-msgid "Error when trying to run algorithm: {}"
-msgstr ""
-
-#: advanced\matching.py:91
-msgid "Match Error"
-msgstr ""
-
-#: advanced\matching.py:111
-msgid "Write your algorithm using calibre's template language"
-msgstr ""
-
-#: advanced\matching.py:149
-msgid "Template Match"
-msgstr ""
-
-#: advanced\matching.py:151
-msgid "Custom algorithms using calibre template language."
-msgstr ""
-
-#: advanced\matching.py:199
-msgid "Empty template"
-msgstr ""
-
-#: advanced\matching.py:199
-msgid "You must have a template for this algorithm"
-msgstr ""
-
-#: advanced\matching.py:214
-msgid "Identical Match"
-msgstr ""
-
-#: advanced\matching.py:215
-msgid "Case insensitive exact match"
-msgstr ""
-
-#: advanced\matching.py:251
-msgid "Similar Match"
-msgstr ""
-
-#: advanced\matching.py:252
-msgid "Removal of common punctuation and prefixes"
-msgstr ""
-
-#: advanced\matching.py:318
-msgid "Soundex length"
-msgstr ""
-
-#: advanced\matching.py:345
-msgid "Soundex Match"
-msgstr ""
-
-#: advanced\matching.py:346
-msgid "Phonetic representation of names"
-msgstr ""
-
-#: advanced\matching.py:422
-msgid "Fuzzy Match"
-msgstr ""
-
-#: advanced\matching.py:423
-msgid "Remove all punctuation, subtitles and any words after 'and', 'or' or 'aka'"
-msgstr ""
-
-#: advanced\templates.py:29
-msgid "Author"
-msgstr ""
-
-#: advanced\templates.py:29
-msgid "Title"
-msgstr ""
-
-#: advanced\templates.py:30
-msgid "Author Sort"
-msgstr ""
-
-#: advanced\templates.py:34
-msgid "Tag 1"
-msgstr ""
-
-#: advanced\templates.py:34
-msgid "Tag 2"
-msgstr ""
-
-#: advanced\templates.py:81 advanced\templates.py:85 advanced\templates.py:93
-#: advanced\templates.py:97 advanced\templates.py:112
-msgid "Template Error"
-msgstr ""
-
-#: advanced\templates.py:82
-msgid "Templates must be either enclosed within curly brackets, or starts with: \"program:\""
-msgstr ""
-
-#: advanced\templates.py:94
-msgid ""
-"Running the template returned an error:\n"
-"{}"
-msgstr ""
-
-#: advanced\templates.py:108
-msgid "Target Library Template Error"
-msgstr ""
-
-#: advanced\templates.py:109
-msgid ""
-"Running the template in target library returned an error:\n"
-"{}"
-msgstr ""
-
-#: advanced\templates.py:121
-msgid "Enter a template to test using data from the selected book"
-msgstr ""
-
-#: advanced\templates.py:145
-msgid "Add template"
-msgstr ""
-
-#: advanced\templates.py:149
-msgid "Edit Template"
 msgstr ""
 
 #: book_algorithms.py:53
@@ -1103,6 +355,10 @@ msgstr ""
 msgid "<b>ignoring the author</b>."
 msgstr ""
 
+#: dialogs.py:165
+msgid "Duplicate Search Options"
+msgstr ""
+
 #: dialogs.py:169
 msgid "Duplicate Search Type"
 msgstr ""
@@ -1142,6 +398,14 @@ msgstr ""
 msgid "Result Options"
 msgstr ""
 
+#: dialogs.py:240
+msgid "Show all groups at once with highlighting"
+msgstr ""
+
+#: dialogs.py:241
+msgid "Show one group at a time"
+msgstr ""
+
 #: dialogs.py:244
 msgid "Highlight authors in the tag browser for ignore title searches"
 msgstr ""
@@ -1151,6 +415,16 @@ msgid ""
 "When checked, will ensure that the authors for the current group\n"
 "are shown in the tag browser and highlighted if multiple groups shown.\n"
 "Only applies for author duplicate searches."
+msgstr ""
+
+#: dialogs.py:249
+msgid "Sort groups by number of duplicates"
+msgstr ""
+
+#: dialogs.py:250
+msgid ""
+"When unchecked, will sort by an approximation of the title\n"
+"or by author if title is being ignored"
 msgstr ""
 
 #: dialogs.py:253 dialogs.py:1124
@@ -1197,6 +471,10 @@ msgstr ""
 msgid "Find Duplicates Plugin"
 msgstr ""
 
+#: dialogs.py:626
+msgid "Find Metadata Variations"
+msgstr ""
+
 #: dialogs.py:630
 msgid "Choose metadata column:"
 msgstr ""
@@ -1233,8 +511,60 @@ msgstr ""
 msgid "Fuzzy"
 msgstr ""
 
+#: dialogs.py:668
+msgid "Search"
+msgstr ""
+
+#: dialogs.py:670
+msgid "Search for results"
+msgstr ""
+
+#: dialogs.py:681
+msgid "Search results:"
+msgstr ""
+
 #: dialogs.py:687
 msgid "Authors:"
+msgstr ""
+
+#: dialogs.py:688 dialogs.py:879
+msgid "Variations:"
+msgstr ""
+
+#: dialogs.py:702
+msgid "&Show matching books"
+msgstr ""
+
+#: dialogs.py:703
+msgid "As a group is selected, show the search results in the library view"
+msgstr ""
+
+#: dialogs.py:706
+msgid "Rename to:"
+msgstr ""
+
+#: dialogs.py:723
+msgid "&Rename"
+msgstr ""
+
+#: dialogs.py:724
+msgid "Rename all of the selected items to this name"
+msgstr ""
+
+#: dialogs.py:727
+msgid "&Ignore"
+msgstr ""
+
+#: dialogs.py:728
+msgid "Ignore all selected items from consideration at this time"
+msgstr ""
+
+#: dialogs.py:763
+msgid "No matches"
+msgstr ""
+
+#: dialogs.py:763
+msgid "You have no variations of {0} using this criteria"
 msgstr ""
 
 #: dialogs.py:821
@@ -1277,6 +607,14 @@ msgstr ""
 msgid "<b>Author duplicate search</b><br/>- Report books in this library compared to your target library <b>ignoring title</b> with {0}<br/>- Ignore title searches are best to find variations of author names regardless of the books you have for each."
 msgstr ""
 
+#: dialogs.py:1035
+msgid "Cross Library Search Options"
+msgstr ""
+
+#: dialogs.py:1039
+msgid "Compare With Library:"
+msgstr ""
+
 #: dialogs.py:1043
 msgid "Library:"
 msgstr ""
@@ -1295,6 +633,34 @@ msgstr ""
 
 #: dialogs.py:1120
 msgid "Compare Options:"
+msgstr ""
+
+#: dialogs.py:1163
+msgid "Choose library location to compare against"
+msgstr ""
+
+#: dialogs.py:1214
+msgid "No library specified"
+msgstr ""
+
+#: dialogs.py:1215
+msgid "You must specify a library path"
+msgstr ""
+
+#: dialogs.py:1218
+msgid "Same as current"
+msgstr ""
+
+#: dialogs.py:1219
+msgid "The location {0} contains the current calibre library"
+msgstr ""
+
+#: dialogs.py:1221
+msgid "No existing library found"
+msgstr ""
+
+#: dialogs.py:1222
+msgid "There is no existing calibre library at {0}"
 msgstr ""
 
 #: dialogs.py:1243
@@ -1337,11 +703,36 @@ msgstr ""
 msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
 msgstr ""
 
+#: duplicates.py:831
+msgid ""
+"Results of {0} comparison:\n"
+"    Source library: {1}\n"
+"    Target library: {2}\n"
+"\n"
+"{3}"
+msgstr ""
+
+#: duplicates.py:883
+msgid "Click 'Show details' to see the results."
+msgstr ""
+
+#: duplicates.py:893 duplicates.py:1005
+msgid "Analysing duplicates in target database"
+msgstr ""
+
+#: duplicates.py:896 duplicates.py:1013
+msgid "Analysing duplicates in current database"
+msgstr ""
+
 #: duplicates.py:912
 msgid "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against the library at: {2}"
 msgstr ""
 
 #: duplicates.py:1001
 msgid "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
+msgstr ""
+
+#: duplicates.py:1037
+msgid "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against the library at: {2}"
 msgstr ""
 

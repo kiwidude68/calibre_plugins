@@ -1,10 +1,13 @@
 # Find Duplicates Change Log
 
-## [1.10.0] - 2022-09-XX
+## [1.10.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+### Added
+- Added help menu item.
 ### Changed
-- Add calibre 2.x backwards compatibility
-- Refactoring of common code
+- Add calibre 2.x backwards compatibility.
+- Refactoring of common code.
+- Removed all Advanced mode features.
 
 ## [1.9.7] - 2022-08-09
 ### Changed
