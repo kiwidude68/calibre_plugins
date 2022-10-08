@@ -125,10 +125,13 @@ class FantasticFiction(Source):
             rank = 'visits_de';
         return rank
 
-    def create_title_author_query(self, log, country, title=None, authors=None):
+    def create_title_query(self, log, country, title=None):
+        # Originally this function queries for both title and authors, however the FF website
+        # search only support searching one or the other. So we choose title, and then in
+        # the JSON results will find the result that matches our author.
         q = ''
         rank = self.get_rank(country)
-        if title or authors:
+        if title:
             # Fantastic Fiction doesn't cope very well with non ascii names so convert
             tokens = []
             if title:
@@ -141,11 +144,6 @@ class FantasticFiction(Source):
                 title_tokens = list(self.get_title_tokens(title,
                                     strip_joiners=False, strip_subtitle=True))
                 tokens += title_tokens
-            if authors:
-                authors = [get_udc().decode(a) for a in authors]
-                author_tokens = self.get_author_tokens(authors,
-                        only_first_author=True)
-                tokens += author_tokens
             '''
                 GRANT: 13 Nov 2021 - Apostrophes cause a problem for FF queries - need to strip them
                 out which get_title_tokens and get_author_tokens does not do, otherwise they get 
@@ -164,8 +162,6 @@ class FantasticFiction(Source):
                 'sort': "%s desc" % rank,
                 'return': 'booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo,db,imageloc',
             })
-#         return FantasticFiction.BASE_URL + "/dbs/books2?q.parser=structured&q=(and db:'FF' '%s')&start=0&size=20&sort=%s desc&return=booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo,db,imageloc" \
-#             % (q, rank)
         return FantasticFiction.BASE_URL + "/dbs/books2?" + querystring
 
     def identify(self, log, result_queue, abort, title=None, authors=None,
@@ -175,68 +171,47 @@ class FantasticFiction(Source):
         match is found with identifiers.
         '''
         matches = []
+        br = self.browser
 
         # If we have a Fantastic Fiction id then we do not need to fire a "search"
         # at fantasticfiction.co.uk. Instead we will go straight to the URL for that book.
         ff_id = identifiers.get(self.ID_NAME, None)
-        br = self.browser
         if ff_id:
             matches.append('%s/%s.htm' % (FantasticFiction.BASE_URL, ff_id))
         else:
-            orig_title = title
-            orig_authors = authors
-
-            has_retried = False
             country = self.get_country(log)
-            query = self.create_title_author_query(log, country, title=title, authors=authors)
-            while True:
-                if query is None:
-                    log.error('Insufficient metadata to construct query')
-                    return
-                try:
-                    log.info('Querying: %s' % query)
-                    raw = br.open_novisit(query, timeout=timeout).read()
-                    log.info('JSON Result: %s' % raw)
-                    # open('E:\\json.html', 'wb').write(raw)
-                except Exception as e:
-                    err = 'Failed to make identify query'
-                    log.exception(err)
-                    return as_unicode(e)
+            query = self.create_title_query(log, country, title=title)
+            if query is None:
+                log.error('Insufficient metadata to construct query')
+                return
+            try:
+                log.info('Querying: %s' % query)
+                raw = br.open_novisit(query, timeout=timeout).read()
+                log.info('JSON Result: %s' % raw)
+                # open('E:\\json.html', 'wb').write(raw)
+            except Exception as e:
+                err = 'Failed to make identify query'
+                log.exception(err)
+                return as_unicode(e)
 
-                # Our response contains a json dictionary 
-                json_result = json.loads(raw)
-                if json_result['hits']['found'] > 0:
-                    max_ids_to_search = 4
-                    count = 0
-                    for hit in json_result['hits']['hit']:
-                        data = hit['fields']
-                        # Now grab the match from the search result, provided the
-                        # title and authors appear to be for the same book
-                        self._parse_book_script_detail(log, title, authors, orig_title, orig_authors,
-                                                       data, matches, timeout)
-                        if matches:
-                            break
-                        count += 1
-                        if count >= max_ids_to_search:
-                            break
-
-                if not matches:
-                    log.error('No matches found')
-                    if has_retried:
-                        log('has_retried={0}.'.format(has_retried))
-                        return
-                    # We will only retry if query will be different
-                    new_query = self.create_title_author_query(log, country, title=orig_title)  # s, authors=orig_authors)
-                    if new_query == query:
-                        log('Not change to query, not trying again.')
-                        return
-                    log('Retrying query with original title/authors')
-                    query = new_query
-                    title = orig_title
-                    authors = orig_authors
-                    has_retried = True
-                else:
-                    break
+            # Our response contains a json dictionary 
+            json_result = json.loads(raw)
+            if json_result['hits']['found'] > 0:
+                max_ids_to_search = 4
+                count = 0
+                for hit in json_result['hits']['hit']:
+                    data = hit['fields']
+                    # Now grab the match from the search result, provided the
+                    # title and authors appear to be for the same book
+                    self._parse_book_script_detail(log, title, authors, data, matches)
+                    if matches:
+                        break
+                    count += 1
+                    if count >= max_ids_to_search:
+                        break
+            if not matches:
+                log.error('No matches found')
+                return
 
         if abort.is_set():
             return
@@ -267,8 +242,7 @@ class FantasticFiction(Source):
 
         return None
 
-    def _parse_book_script_detail(self, log, query_title, query_authors,
-                                  orig_title, orig_authors, data_map, matches, timeout):
+    def _parse_book_script_detail(self, log, query_title, query_authors, data_map, matches):
         title_tokens = list(self.get_title_tokens(query_title))
         author_tokens = list(self.get_author_tokens(query_authors))
 
@@ -302,16 +276,8 @@ class FantasticFiction(Source):
         if not correct_book and alt_title:
             correct_book = ismatch(alt_title, authors)
         if not correct_book:
-            # In case we did an ISBN based lookup that gave dodgy title/authors,
-            # try again with the original title/authors
-            title_tokens = list(self.get_title_tokens(orig_title))
-            author_tokens = list(self.get_author_tokens(orig_authors))
-            correct_book = ismatch(title, authors)
-            if not correct_book and alt_title:
-                correct_book = ismatch(alt_title, authors)
-            if not correct_book:
-                log.error('Rejecting as not close enough match: %s %s' % (title, authors))
-                return
+            log.error('Rejecting as not close enough match: %s %s' % (title, authors))
+            return
 
         # Get the detailed url to query next
         pfn = data_map['pfn']

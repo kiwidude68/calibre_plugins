@@ -1,10 +1,11 @@
 # Fantastic Fiction Change Log
 
-## [1.6.0] - 2022-09-XX
+## [1.6.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.85.1 or later.
 - Refactoring of common code
+- Removed searching for title + author which always fails, much faster!
 
 ## [1.5.1] - 2022-01-XX
 ### Changed

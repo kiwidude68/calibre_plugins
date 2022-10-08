@@ -1,6 +1,6 @@
 # Ratings Change Log
 
-## [1.2.0] - 2022-09-XX
+## [1.2.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add translation support.
@@ -49,7 +49,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Changed
 - Work with change to calibre for errors when parsing Amazon pages
 
-## [1.1] - 2011-11-06
+## [1.1.0] - 2011-11-06
 ### Changed
 - Change Amazon ratings regex pattern
 - Upgrade to Calibre keyboard shortcuts
@@ -57,5 +57,5 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Style looked up for rating from Amazon which varies based on webserver hit
 - null error if try to get ratings for goodreads without Amazon
 
-## [1.0] - 2011-05-27
+## [1.0.0] - 2011-05-27
 _Initial release of Ratings plugin_

@@ -142,27 +142,9 @@ class FantasticFictionAdults(Source):
         return url
 
     def get_country(self, log, timeout=30):
-        query = 'https://clu.ffadultsonly.com/clu-js'
-        # Pattern used to get values from javascript text like "var foo='My value';"
-        VALUE_PATTERN = re.compile(r'[^\']*\'(.*)\'')
+        # Just return the default - previous website logic no longer works.
         country = 'GB'
         return country
-
-        # Country specific stuff is now done differently. Can't see how.
-        try:
-            log.info('Querying Country preference: %s'%query)
-            raw = self.browser.open_novisit(query, timeout=timeout).read()
-            raw = raw.decode('utf-8', 'replace')
-            #open('c:\\ti.html', 'wb').write(raw)
-            lines = raw.split(';')
-            country_match = VALUE_PATTERN.search(lines[0])
-            if country_match:
-                country = country_match.groups(0)[0]
-            return country
-        except Exception:
-            err = 'Failed to query country: %r'%query
-            log.exception(err)
-            return country
 
     def get_rank(self, country):
         rank = 'visits_us';
@@ -178,10 +160,10 @@ class FantasticFictionAdults(Source):
             rank = 'visits_de';
         return rank
 
-    def create_title_author_query(self, log, country, title=None, authors=None, bq='FFAO'):
+    def create_title_query(self, log, country, title=None, bq='FFAO'):
         q = ''
         rank = self.get_rank(country)
-        if title or authors:
+        if title:
             # Fantastic Fiction doesn't cope very well with non ascii names so convert
             tokens = []
             if title:
@@ -194,56 +176,19 @@ class FantasticFictionAdults(Source):
                 title_tokens = list(self.get_title_tokens(title,
                                     strip_joiners=False, strip_subtitle=True))
                 tokens += title_tokens
-            if authors:
-                authors = [get_udc().decode(a) for a in authors]
-                author_tokens = self.get_author_tokens(authors,
-                        only_first_author=True)
-                tokens += author_tokens
             tokens = [quote(t.encode('utf-8') if isinstance(t, unicode) else t) for t in tokens]
             q = ' '.join(tokens)
         if not q:
             return None
-#         return self.BASE_URL + "/dbs/books?bq='%s'&%s&start=0&size=20&rank=%s&return-fields=booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo,db,imageloc" \
-#             % (bq, q, rank)
         querystring = urlencode({
                 'q.parser': 'structured',
-                'q': "(and db:'AO' '%s')" % (q,),
+                'q': "(and db:'FF' '%s')" % (q,),
                 'size': 20,
                 'start': 0,
                 'sort': "%s desc" % rank,
                 'return': 'booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo,db,imageloc',
             })
-#         return FantasticFiction.BASE_URL + "/dbs/books?bq='FF'&%s&start=0&size=20&rank=%s&return-fields=booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo,db,imageloc" \
-#         return FantasticFiction.BASE_URL + "/dbs/books2?q.parser=structured&q=(and db:'FF' '%s')&start=0&size=20&sort=%s desc&return=booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo,db,imageloc" \
-#             % (q, rank)
         return self.BASE_URL + "/dbs/books2?" + querystring
-
-    def query_via_isbn_for_title_author(self, log, isbn, timeout=30):
-        query = FantasticFictionAdults.BASE_URL + '/edition/?isbn=%s'%isbn
-        try:
-            log.info('Querying ISBN: %s'%query)
-            raw = self.browser.open_novisit(query, timeout=timeout).read()
-            raw = raw.decode('utf-8', 'replace')
-            #open('E:\\ti.html', 'wb').write(raw)
-            title = None
-            authors = []
-            title_match = FantasticFictionAdults.TITLE_PATTERN.search(raw)
-            author_match = FantasticFictionAdults.AUTHOR_PATTERN.search(raw)
-            if title_match and author_match:
-                authors = [unquote(author_match.groups(0)[0])]
-                title = unquote(title_match.groups(0)[0])
-                if '(' in title:
-                    # Title has other crap in it like publisher and series
-                    title = title.split('(')[0].strip()
-                # Any titles with a colon in them we will strip the colon from
-                # so that subsequent words are not ignored.
-                # e.g. Doom: Hell On Earth
-                title = title.replace(':',' ')
-            return None, title, authors
-        except Exception as e:
-            err = 'Failed to make ISBN query: %r'%query
-            log.exception(err)
-            return as_unicode(e), None, None
 
     def identify(self, log, result_queue, abort, title=None, authors=None,
             identifiers={}, timeout=30):
@@ -252,70 +197,46 @@ class FantasticFictionAdults(Source):
         match is found with identifiers.
         '''
         matches = []
+        br = self.browser
 
         # If we have a Fantastic Fiction id then we do not need to fire a "search"
         # at ffadultsonly.com. Instead we will go straight to the URL for that book.
         ff_id = identifiers.get(self.ID_NAME, None)
-        br = self.browser
         if ff_id:
             matches.append('%s/%s.htm'%(FantasticFictionAdults.BASE_URL, ff_id))
         else:
-            isbn = identifiers.get('isbn', None)
-            orig_title = title
-            orig_authors = authors
-            if isbn and False: # Latest API doesn't seem to support search by ISBN     
-                error, isbn_title, isbn_authors = self.query_via_isbn_for_title_author(log, isbn, timeout=30)
-                if error and (not title and authors):
-                    # We tried with ISBN but cannot fall back to doing a title/author search
-                    return error
-                # Use the title/author from the ISBN for next phase of search
-                # However if that fails (since FF can return some strange titles
-                # at this point) then we will retry with the orig title/authors
-                if isbn_title and isbn_authors:
-                    title = isbn_title
-                    authors = isbn_authors
-
             country = self.get_country(log)
             # Neeed to check two different databases and then with both sets of titles and authors.
-            ff_dbs = ['AO'] #['FFA', 'FFAO', 'AO']
-            title_authors = [(title, authors), (orig_title, orig_authors)]
-            for (dbs, title_author) in ((x,y) for x in ff_dbs for y in title_authors):
-#                 log.error('dbs=', dbs)
-#                 log.error('title_author=', title_author)
-                query = self.create_title_author_query(log, country, title=title_author[0], authors=title_author[1], bq=dbs)
-                if query is None:
-                    log.error('Insufficient metadata to construct query')
-                    return
-                try:
-                    log.info('Querying: %s'%query)
-                    raw = br.open_novisit(query, timeout=timeout).read()
-                    #open('C:\\json.html', 'wb').write(raw)
-                except Exception as e:
-                    err = 'Failed to make identify query'
-                    log.exception(err)
-                    return as_unicode(e)
+            query = self.create_title_query(log, country, title)
+            if query is None:
+                log.error('Insufficient metadata to construct query')
+                return
+            try:
+                log.info('Querying: %s'%query)
+                raw = br.open_novisit(query, timeout=timeout).read()
+                #open('C:\\json.html', 'wb').write(raw)
+            except Exception as e:
+                err = 'Failed to make identify query'
+                log.exception(err)
+                return as_unicode(e)
 
-                # Our response contains a json dictionary 
-                json_result = json.loads(raw)
+            # Our response contains a json dictionary 
+            json_result = json.loads(raw)
 #                 log.error('json_result=', json_result)
-                if json_result['hits']['found'] > 0:
-                    log.error('have hits')
-                    max_ids_to_search = 33
-                    count = 0
-                    for hit in json_result['hits']['hit']:
-                        data = hit['fields']
-#                         log.error('fields=', data)
-                        # Now grab the match from the search result, provided the
-                        # title and authors appear to be for the same book
-                        self._parse_book_script_detail(log, title, authors, orig_title, orig_authors,
-                                                       data, matches, timeout)
-                        if matches:
-                            log.error('have matches')
-                            break
-                        count += 1
-                        if count>= max_ids_to_search:
-                            break
+            if json_result['hits']['found'] > 0:
+                log.error('have hits')
+                max_ids_to_search = 33
+                count = 0
+                for hit in json_result['hits']['hit']:
+                    data = hit['fields']
+                    # Now grab the match from the search result, provided the
+                    # title and authors appear to be for the same book
+                    self._parse_book_script_detail(log, title, authors, data, matches)
                     if matches:
+                        log.error('have matches')
+                        break
+                    count += 1
+                    if count>= max_ids_to_search:
                         break
 
         if abort.is_set():
@@ -347,8 +268,7 @@ class FantasticFictionAdults(Source):
 
         return None
 
-    def _parse_book_script_detail(self, log, query_title, query_authors,
-                                  orig_title, orig_authors, data_map, matches, timeout):
+    def _parse_book_script_detail(self, log, query_title, query_authors, data_map, matches):
         title_tokens = list(self.get_title_tokens(query_title))
         author_tokens = list(self.get_author_tokens(query_authors))
 
@@ -382,16 +302,8 @@ class FantasticFictionAdults(Source):
         if not correct_book and alt_title:
             correct_book = ismatch(alt_title, authors)
         if not correct_book:
-            # In case we did an ISBN based lookup that gave dodgy title/authors,
-            # try again with the original title/authors
-            title_tokens = list(self.get_title_tokens(orig_title))
-            author_tokens = list(self.get_author_tokens(orig_authors))
-            correct_book = ismatch(title, authors)
-            if not correct_book and alt_title:
-                correct_book = ismatch(alt_title, authors)
-            if not correct_book:
-                log.error('Rejecting as not close enough match: %s %s'%(title, authors))
-                return
+            log.error('Rejecting as not close enough match: %s %s'%(title, authors))
+            return
 
         # Get the detailed url to query next
         pfn = data_map['pfn']
