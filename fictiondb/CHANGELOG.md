@@ -1,6 +1,6 @@
 # FictionDB Change Log
 
-## [1.3.0] - 2022-09-XX
+## [1.3.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.85.1 or later.

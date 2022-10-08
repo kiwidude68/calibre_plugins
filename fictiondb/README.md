@@ -13,6 +13,8 @@ This website can have good descriptions for books and often excellent potential 
 
 Note also that while the website supports multiple types of series (not only an author series but also multi-author and publisher series), this plugin will only retrieve for author series, and only if an order has been defined. This is due to the limitations of the calibre series column. 
 
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/FictionDB)
+
 ## Main Features
 
 - Can retrieve title, author, comments, series, publisher, publication date, rating, tags and (small!) cover
