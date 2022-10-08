@@ -7,14 +7,11 @@
 
 ## Overview
 
-This plugin is is for the adult content website [www.ffadultsonly.com](https://www.ffadultsonly.com) that was split off from [www.fantasticfiction.co.uk](https://www.fantasticfiction.co.uk).
+This plugin is is for the adult books content website [ffadultsonly.com](https://www.ffadultsonly.com) that was split off from [fantasticfiction.com](https://www.fantasticfiction.com).
 
-Functionality wise it is almost identical to my Fantastic Fiction metadata plugin found on this thread. The only differences are that the ffadultsonly.com website does not support a publication date or genre.
+Functionality wise it is almost identical to my Fantastic Fiction metadata plugin. The only differences are that the ffadultsonly.com website does not support a publication date or genre.
 
-## Main Features
-
-- Can retrieve title, author, series, isbn, comments, publisher and covers
-- Also retrieves a Fantastic Fiction Adults id, which can be used to directly jump to the page for a specific book from the book details pane (like Goodreads/ISBN etc).
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Fantastic-Fiction-Adults)
 
 ## Development / Contributions
 
