@@ -9,25 +9,7 @@
 
 This plugin can be used to try to find the ISBN for a book using the text within a book format. It is intended as an alternative to various script based solutions to this problem posted in [this thread](https://www.mobileread.com/forums/showthread.php?t=50691). 
 
-## Main Features
-
-- Scans all formats for the selected book(s) in preferred input format order until an ISBN-13 or ISBN-10 is found
-- Runs as a background job in Calibre, prompting you to update when the scanning is completed.
-- Scans only the book content, excluding HTML tag markup.
-- For PDF formats, scans only the first 10 pages, then if ISBN not found, the last 5 pages in reverse order.
-- For other formats, scans files at the front, then a number of end files in reverse order before the remainder of the book.
-- Restricts valid ISBN-13s to those that start with 977, 978 or 979. You can add additional prefixes in the configuration if required.
-- Optionally perform a search when completed showing you only the books updated (default is off). Some users may use this to then perform a metadata download.
-
-## Configuration Options
-
-| Option  | Description |
-| --------| ----------- |
-| When scan completes | **Do not change my search** - Default behavior of keeping calibre view unchanged.<br>**Show the books that have new or updated ISBNs** - Apply a search to show books this plugin changed. |
-| Selected books before background job | Running as a background job keeps your UI more responsive.<br>By default if one book is selected, plugin runs immediately.<br>More than one book selected queues up as a calibre job instead.
-| Batch size running as background job | When running in background, how many books to put in each job batch. |
-| Display failure dialog | If ISBN is identical or not found, a dialog informs you of that result.<br>Uncheck this option to have any such failures happen silently.
-| Prompt to apply ISBN changes | A prompt will appear before making changes to your library.<br>Uncheck this option to have all changes made silently.<br>There is a small risk of data loss if you make other changes to that book at the exact same time.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Extract-ISBN)
 
 ## Development / Contributions
 

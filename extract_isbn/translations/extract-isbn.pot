@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-05 11:45+0100\n"
+"POT-Creation-Date: 2022-10-08 18:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:112
+#: ..\common\common_dialogs.py:84 config.py:119
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,7 +75,7 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:90
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
@@ -87,7 +87,7 @@ msgstr ""
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:192
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -167,62 +167,62 @@ msgstr ""
 msgid "Unknown"
 msgstr ""
 
-#: config.py:34
+#: config.py:40
 msgid "Do not change my search"
 msgstr ""
 
-#: config.py:35
+#: config.py:41
 msgid "Show the books that have new or updated ISBNs"
 msgstr ""
 
-#: config.py:62
+#: config.py:68
 msgid "When the scan completes:"
 msgstr ""
 
-#: config.py:67
+#: config.py:73
 msgid "Valid prefixes for ISBN-13 (comma separated):"
 msgstr ""
 
-#: config.py:72
+#: config.py:78
 msgid "Selected books before running as a background job:"
 msgstr ""
 
-#: config.py:73
+#: config.py:79
 msgid ""
 "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
 
-#: config.py:74
+#: config.py:80
 msgid "memory leaks and will keep the UI more responsive."
 msgstr ""
 
-#: config.py:83
+#: config.py:89
 msgid "Batch size running as a background job:"
 msgstr ""
 
-#: config.py:84
+#: config.py:90
 msgid ""
 "Books will be broken into batches to ensure that if you run\n"
 "extract for a large group you can cancel/close calibre without\n"
 "losing all of your results as you can cancel the pending groups."
 msgstr ""
 
-#: config.py:96
+#: config.py:102
 msgid "Display failure dialog if ISBN not found or identical"
 msgstr ""
 
-#: config.py:97
+#: config.py:103
 msgid ""
 "Uncheck this option if you want do not want to be prompted\n"
 "about no ISBN being found in the book or it is the same as\n"
 "your current value."
 msgstr ""
 
-#: config.py:104
+#: config.py:110
 msgid "Prompt to apply ISBN changes"
 msgstr ""
 
-#: config.py:105
+#: config.py:111
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -230,8 +230,12 @@ msgid ""
 "this book record at the same time they will be lost."
 msgstr ""
 
-#: config.py:113
+#: config.py:120
 msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+
+#: config.py:124
+msgid "Help"
 msgstr ""
 
 #: dialogs.py:25

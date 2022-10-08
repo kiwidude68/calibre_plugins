@@ -5,6 +5,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Added
 - Configuration option to turn off the dialog prompt when no ISBN found or ISBN is same as existing.
 - Configuration option to turn off the dialog prompt with extract results to apply changes silently.
+- Help button to configuration dialog
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code

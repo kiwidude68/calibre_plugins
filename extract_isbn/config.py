@@ -9,12 +9,16 @@ from collections import OrderedDict
 from six import text_type as unicode
 
 try:
-    from qt.core import QWidget, QGridLayout, QLabel, QLineEdit, QPushButton, QSpinBox, QCheckBox
+    from qt.core import (QWidget, QGridLayout, QLabel, QLineEdit, QPushButton, QSpinBox, 
+                         QCheckBox, QHBoxLayout, QUrl)
 except ImportError:
-    from PyQt5.Qt import QWidget, QGridLayout, QLabel, QLineEdit, QPushButton, QSpinBox, QCheckBox
+    from PyQt5.Qt import (QWidget, QGridLayout, QLabel, QLineEdit, QPushButton, QSpinBox, 
+                         QCheckBox, QHBoxLayout, QUrl)
 
+from calibre.gui2 import open_url
 from calibre.utils.config import JSONConfig
 
+from calibre_plugins.extract_isbn.common_icons import get_icon
 from calibre_plugins.extract_isbn.common_dialogs import KeyboardConfigDialog
 from calibre_plugins.extract_isbn.common_widgets import KeyValueComboBox
 
@@ -22,6 +26,8 @@ try:
     load_translations()
 except NameError:
     pass # load_translations() added in calibre 1.9
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Extract-ISBN'
 
 STORE_NAME = 'Options'
 KEY_VALID_ISBN13_PREFIX = 'validISBN13Prefix'
@@ -109,10 +115,17 @@ class ConfigWidget(QWidget):
         self.ask_for_confirmation_checkbox.setChecked(ask_for_confirmation)
         layout.addWidget(self.ask_for_confirmation_checkbox,7, 0, 1, 2)
 
-        keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
+        button_layout = QHBoxLayout()
+        keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
-        layout.addWidget(keyboard_shortcuts_button, 8, 0, 1, 2)
+        button_layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(' '+_('Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(self.show_help)
+        button_layout.addWidget(help_button)
+        layout.addLayout(button_layout, 8, 0, 1, 2)
 
     def save_settings(self):
         new_prefs = {}
@@ -130,3 +143,6 @@ class ConfigWidget(QWidget):
         d = KeyboardConfigDialog(self.plugin_action.gui, self.plugin_action.action_spec[0])
         if d.exec_() == d.Accepted:
             self.plugin_action.gui.keyboard.finalize()
+
+    def show_help(self):
+        open_url(QUrl(HELP_URL))
