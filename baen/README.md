@@ -7,14 +7,11 @@
 
 ## Overview
 
-This plugin is for scraping book metadata from [www.baen.com](https://www.baen.com). This is a direct replacement for the Webscription plugin which is now deprecated and should be uninstalled.
+This plugin is for scraping book metadata from [baen.com](https://www.baen.com). This is a direct replacement for the Webscription plugin which is now deprecated and should be uninstalled.
 
-Books that you previously linked with the "Webscription:" identifier will continue to work with this plugin, however any new metadata downloads will use a "Baen:" identifier instead.
+Books that you previously linked with the `Webscription:` identifier will continue to work with this plugin, however any new metadata downloads will use a `Baen:` identifier instead.
 
-## Main Features
-
-- Can retrieve title, author, comments, publisher, publication date, rating and covers
-- Also retrieves a Baen id, which can be used to directly jump to the page for a specific book from the book details pane.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Baen)
 
 ## Development / Contributions
 
