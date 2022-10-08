@@ -31,6 +31,7 @@ from common_icons import get_pixmap
 # ImageTitleLayout
 # ReadOnlyTableWidgetItem
 # ReadOnlyTextIconWidgetItem
+# ReadOnlyCheckableTableWidgetItem
 # TextIconWidgetItem
 #
 # CustomColumnComboBox
@@ -47,17 +48,20 @@ class CheckableTableWidgetItem(QTableWidgetItem):
     For use in a table cell, displays a checkbox that can potentially be tristate
     '''
     def __init__(self, checked=False, is_tristate=False):
-        QTableWidgetItem.__init__(self, '')
-        self.setFlags(Qt.ItemFlag.ItemIsSelectable | Qt.ItemFlag.ItemIsUserCheckable | Qt.ItemFlag.ItemIsEnabled )
+        super(CheckableTableWidgetItem, self).__init__('')
+        try:
+            self.setFlags(Qt.ItemFlag.ItemIsSelectable | Qt.ItemFlag.ItemIsUserCheckable | Qt.ItemFlag.ItemIsEnabled )
+        except:
+            self.setFlags(Qt.ItemFlags(Qt.ItemIsSelectable | Qt.ItemIsUserCheckable | Qt.ItemIsEnabled ))
         if is_tristate:
             self.setFlags(self.flags() | Qt.ItemFlag.ItemIsUserTristate)
         if checked:
             self.setCheckState(Qt.Checked)
         else:
             if is_tristate and checked is None:
-                self.setCheckState(Qt.CheckState.PartiallyChecked)
+                self.setCheckState(Qt.PartiallyChecked)
             else:
-                self.setCheckState(Qt.CheckState.Unchecked)
+                self.setCheckState(Qt.Unchecked)
 
     def get_boolean_value(self):
         '''
@@ -81,7 +85,6 @@ class DateDelegate(_DateDelegate):
         super(DateDelegate, self).__init__(parent)
         self.format = fmt
         self.default_to_today = default_to_today
-        print('DateDelegate fmt:',fmt)
 
     def createEditor(self, parent, option, index):
         qde = QStyledItemDelegate.createEditor(self, parent, option, index)
@@ -93,7 +96,6 @@ class DateDelegate(_DateDelegate):
 
     def setEditorData(self, editor, index):
         val = index.model().data(index, Qt.DisplayRole)
-        print('setEditorData val:',val)
         if val is None or val == UNDEFINED_QDATETIME:
             if self.default_to_today:
                 val = self.default_date
@@ -103,7 +105,6 @@ class DateDelegate(_DateDelegate):
 
     def setModelData(self, editor, model, index):
         val = editor.dateTime()
-        print('setModelData: ',val)
         if val <= UNDEFINED_QDATETIME:
             model.setData(index, UNDEFINED_QDATETIME, Qt.EditRole)
         else:
@@ -113,7 +114,6 @@ class DateDelegate(_DateDelegate):
 class DateTableWidgetItem(QTableWidgetItem):
 
     def __init__(self, date_read, is_read_only=False, default_to_today=False, fmt=None):
-        print('DateTableWidgetItem: date_read',date_read)
         if (date_read is None or date_read == UNDEFINED_DATE) and default_to_today:
             date_read = now()
         if is_read_only:
@@ -130,7 +130,7 @@ class ImageTitleLayout(QHBoxLayout):
     A reusable layout widget displaying an image followed by a title
     '''
     def __init__(self, parent, icon_name, title):
-        QHBoxLayout.__init__(self)
+        super(ImageTitleLayout, self).__init__()
         self.title_image_label = QLabel(parent)
         self.update_title_icon(icon_name)
         self.addWidget(self.title_image_label)
@@ -160,7 +160,7 @@ class ReadOnlyTableWidgetItem(QTableWidgetItem):
     def __init__(self, text):
         if text is None:
             text = ''
-        QTableWidgetItem.__init__(self, text)
+        super(ReadOnlyTableWidgetItem, self).__init__(text)
         self.setFlags(Qt.ItemIsSelectable|Qt.ItemIsEnabled)
 
 
@@ -169,9 +169,39 @@ class ReadOnlyTextIconWidgetItem(ReadOnlyTableWidgetItem):
     For use in a table cell, displays an icon the user cannot select or modify.
     '''
     def __init__(self, text, icon):
-        ReadOnlyTableWidgetItem.__init__(self, text)
+        super(ReadOnlyTextIconWidgetItem, self).__init__(text)
         if icon:
             self.setIcon(icon)
+
+class ReadOnlyCheckableTableWidgetItem(ReadOnlyTableWidgetItem):
+    '''
+    For use in a table cell, displays a checkbox next to some text the user cannot select or modify.
+    '''
+    def __init__(self, text, checked=False, is_tristate=False):
+        super(ReadOnlyCheckableTableWidgetItem, self).__init__(text)
+        try: # For Qt Backwards compatibility.
+            self.setFlags(Qt.ItemFlag.ItemIsSelectable | Qt.ItemFlag.ItemIsUserCheckable | Qt.ItemFlag.ItemIsEnabled )
+        except:
+            self.setFlags(Qt.ItemFlags(Qt.ItemIsSelectable | Qt.ItemIsUserCheckable | Qt.ItemIsEnabled ))
+        if is_tristate:
+            self.setFlags(self.flags() | Qt.ItemIsTristate)
+        if checked:
+            self.setCheckState(Qt.Checked)
+        else:
+            if is_tristate and checked is None:
+                self.setCheckState(Qt.PartiallyChecked)
+            else:
+                self.setCheckState(Qt.Unchecked)
+
+    def get_boolean_value(self):
+        '''
+        Return a boolean value indicating whether checkbox is checked
+        If this is a tristate checkbox, a partially checked value is returned as None
+        '''
+        if self.checkState() == Qt.PartiallyChecked:
+            return None
+        else:
+            return self.checkState() == Qt.Checked
 
 
 class TextIconWidgetItem(QTableWidgetItem):
@@ -179,7 +209,7 @@ class TextIconWidgetItem(QTableWidgetItem):
     For use in a table cell, displays text with an icon next to it.
     '''
     def __init__(self, text, icon):
-        QTableWidgetItem.__init__(self, text)
+        super(TextIconWidgetItem, self).__init__(text)
         self.setIcon(icon)
 
 

@@ -24,12 +24,14 @@ from calibre.utils.config import JSONConfig
 from calibre_plugins.count_pages.common_icons import get_icon
 from calibre_plugins.count_pages.common_dialogs import KeyboardConfigDialog, PrefsViewerDialog
 from calibre_plugins.count_pages.common_widgets import (CustomColumnComboBox, KeyValueComboBox,
-                                     ReadOnlyTextIconWidgetItem, CheckableTableWidgetItem)
+                                     ReadOnlyTextIconWidgetItem, ReadOnlyCheckableTableWidgetItem, CheckableTableWidgetItem)
 
 try:
     load_translations()
 except NameError:
     pass # load_translations() added in calibre 1.9
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Count-Pages'
 
 PREFS_NAMESPACE = 'CountPagesPlugin'
 PREFS_KEY_SETTINGS = 'settings'
@@ -69,7 +71,6 @@ PAGE_DOWNLOADS = {
                   'lubimyczytac.pl':
                     {
                      'URL': 'https://lubimyczytac.pl/ksiazka/%s/ksiazka',
-#                     'pages_xpath': '//section[@class="container book"]//span/@data-reading-time',
                      'pages_xpath': '//span[contains(@class, "book-pages")]/text()[contains(.,"str")]',
                      'name': 'lubimyczytac.pl',
                      'id': 'lubimyczytac',
@@ -90,7 +91,6 @@ PAGE_DOWNLOADS = {
                     {
                      'URL': 'https://www.databazeknih.cz/books/book-detail-more-info-ajax.php?bid=%s',
                      'identifier_regex': '.*-(.*?)$',   # Only want the number at the end of the identifier
-#                      'pages_xpath': '//td[@itemprop="numberOfPages"]/text()',
                      'pages_xpath': '//td[@itemprop="numberOfPages"]/text()',
                      'name': 'DatabazeKnih.cz',
                      'id': 'databazeknih',
@@ -190,16 +190,13 @@ def migrate_library_config_if_required(db, library_config):
     # Any migration code in future will exist in here.
     if schema_version < 1.61:
         if 'customColumn' in library_config:
-            print('Migrating Count Pages plugin custom column for pages to new schema')
             library_config[KEY_PAGES_CUSTOM_COLUMN] = library_config['customColumn']
             del library_config['customColumn']
         store_prefs = plugin_prefs[STORE_NAME]
         if KEY_PAGES_ALGORITHM not in library_config:
-            print('Migrating Count Pages plugin algorithm for pages to new schema')
             library_config[KEY_PAGES_ALGORITHM] = store_prefs.get('algorithm', 0)
             # Unfortunately cannot delete since user may have other libraries
         if 'algorithmWords' in store_prefs:
-            print('Deleting Count Pages plugin word algorithm')
             del store_prefs['algorithmWords']
             plugin_prefs[STORE_NAME] = store_prefs        
 
@@ -207,7 +204,6 @@ def migrate_library_config_if_required(db, library_config):
 
 
 def get_library_config(db):
-    print("get_library_config - start")
     library_id = db.library_id
     library_config = None
     # Check whether this is a configuration needing to be migrated from json into database
@@ -449,14 +445,21 @@ class OtherTab(QWidget):
         self.ask_for_confirmation_checkbox.setChecked(ask_for_confirmation)
         other_group_box_layout.addWidget(self.ask_for_confirmation_checkbox, 4, 0, 1, 3)
 
-        keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
+        button_layout = QHBoxLayout()
+        keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.parent_dialog.edit_shortcuts)
-        view_prefs_button = QPushButton(_('&View library preferences')+'...', self)
+        view_prefs_button = QPushButton(' '+_('&Library preferences')+'... ', self)
         view_prefs_button.setToolTip(_('View data stored in the library database for this plugin'))
         view_prefs_button.clicked.connect(self.parent_dialog.view_prefs)
-        layout.addWidget(keyboard_shortcuts_button)
-        layout.addWidget(view_prefs_button)
+        button_layout.addWidget(keyboard_shortcuts_button)
+        button_layout.addWidget(view_prefs_button)
+
+        help_button = QPushButton(' '+_('Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(self.show_help)
+        button_layout.addWidget(help_button)
+        layout.addLayout(button_layout)
 
     def reset_dialogs(self):
         for key in dynamic.keys():
@@ -482,13 +485,11 @@ class OtherTab(QWidget):
         selrows.sort()
         for selrow in selrows:
             self.download_sources_table.swap_row_widgets(selrow - 1, selrow + 1)
-#             self.books[selrow-1], self.books[selrow] = self.books[selrow], self.books[selrow-1]
 
         scroll_to_row = first_sel_row - 1
         if scroll_to_row > 0:
             scroll_to_row = scroll_to_row - 1
         self.download_sources_table.scrollToItem(self.download_sources_table.item(scroll_to_row, 0))
-#         self.renumber_series()
 
     def move_rows_down(self):
         self.download_sources_table.setFocus()
@@ -511,10 +512,12 @@ class OtherTab(QWidget):
         if scroll_to_row < self.download_sources_table.rowCount() - 1:
             scroll_to_row = scroll_to_row + 1
         self.download_sources_table.scrollToItem(self.download_sources_table.item(scroll_to_row, 0))
-#         self.renumber_series()
 
     def get_source_list(self):
         return self.download_sources_table.get_source_list()
+
+    def show_help(self):
+        open_url(QUrl(HELP_URL))
 
 
 class DownloadSourcesTableWidget(QTableWidget):
@@ -551,7 +554,7 @@ class DownloadSourcesTableWidget(QTableWidget):
     def populate_table_row(self, row, source_id, source_definition, active, on_menu):
         name_widget = ReadOnlyTextIconWidgetItem(source_definition['name'], get_icon(source_definition['icon']))
         name_widget.setData(Qt.UserRole, source_id)
-        source_id_widget = CheckableTableWidgetItem(source_definition['id'], checked=active)
+        source_id_widget = ReadOnlyCheckableTableWidgetItem(source_definition['id'], checked=active)
         
         self.setItem(row, 0, name_widget)
         self.setItem(row, 1, source_id_widget)
@@ -697,6 +700,7 @@ class StatisticsTab(QWidget):
         readability_layout.addWidget(gunning_fog_column_label, 3, 0, 1, 1)
         readability_layout.addWidget(self.gunning_fog_column_combo, 3, 1, 1, 2)
         
+        layout.addStretch(1)
         self._page_algorithm_changed()
 
     def _page_algorithm_changed(self):
