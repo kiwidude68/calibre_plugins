@@ -29,11 +29,11 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.0.3] - 2012-11-05
 ### Changed
-- Ensure submenus for plugins can have their states updated by emitting the aboutToShow signal for every plugin that has an associated .menu set for it
+- Ensure submenus for plugins can have their states updated by emitting the aboutToShow signal for every plugin that has an associated `.menu` set for it
 
 ## [1.0.2] - 2012-07-30
 ### Changed
-- Support dynamically named menu names if they have a .favourites_menu_unique_name attribute
+- Support dynamically named menu names if they have a `.favourites_menu_unique_name` property.
 
 ## [1.0.1] - 2012-06-30
 ### Changed
