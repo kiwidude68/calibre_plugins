@@ -17,13 +17,13 @@ try:
                         QLineEdit, QTableWidget, QTableWidgetItem, QFileDialog,
                         QAbstractItemView, QRadioButton, QAction, QIcon, QToolButton,
                         QDialog, QDialogButtonBox, QGridLayout, QGroupBox,
-                        QInputDialog, QSpacerItem, QModelIndex)
+                        QInputDialog, QSpacerItem, QModelIndex, QUrl)
 except ImportError:
     from PyQt5.Qt import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
                         QLineEdit, QTableWidget, QTableWidgetItem, QFileDialog,
                         QAbstractItemView, QRadioButton, QAction, QIcon, QToolButton,
                         QDialog, QDialogButtonBox, QGridLayout, QGroupBox,
-                        QInputDialog, QSpacerItem, QModelIndex)
+                        QInputDialog, QSpacerItem, QModelIndex, QUrl)
 
 try:
     load_translations()
@@ -32,7 +32,7 @@ except NameError:
 
 from calibre.constants import iswindows, isosx
 from calibre.gui2 import (choose_files, choose_osx_app, error_dialog, FileDialog, info_dialog,
-                          open_local_file, question_dialog)
+                          open_local_file, question_dialog, open_url)
 from calibre.gui2.actions import menu_action_unique_name
 from calibre.utils.config import config_dir, JSONConfig
 from calibre.utils.zipfile import ZipFile
@@ -42,6 +42,8 @@ from calibre_plugins.open_with.common_icons import get_icon
 from calibre_plugins.open_with.common_dialogs import KeyboardConfigDialog
 from calibre_plugins.open_with.common_widgets import NoWheelComboBox, CheckableTableWidgetItem, TextIconWidgetItem
 
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Open-With'
 
 PLUGIN_ICONS = ['open_with.png', 'image_add.png', 'import.png', 'export.png']
 
@@ -102,6 +104,9 @@ plugin_prefs = JSONConfig('plugins/Open With')
 
 # Set defaults
 plugin_prefs.defaults[STORE_MENUS_NAME] = DEFAULT_STORE_VALUES
+
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 def get_default_menu_set():
     if iswindows:
@@ -627,12 +632,6 @@ class ConfigWidget(QWidget):
         layout.addLayout(heading_layout)
         heading_label = QLabel(_('&Select and configure the menu items to display:'), self)
         heading_layout.addWidget(heading_label)
-        # Add hyperlink to a help file at the right. We will replace the correct name when it is clicked.
-        help_label = QLabel('<a href="http://www.foo.com/">Help</a>', self)
-        help_label.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.LinksAccessibleByKeyboard)
-        help_label.setAlignment(Qt.AlignRight)
-        help_label.linkActivated.connect(self.help_link_activated)
-        heading_layout.addWidget(help_label)
 
         # Add a horizontal layout containing the table and the buttons next to it
         table_layout = QHBoxLayout()
@@ -691,6 +690,12 @@ class ConfigWidget(QWidget):
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
         keyboard_layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        keyboard_layout.addWidget(help_button)
+
         keyboard_layout.insertStretch(-1)
 
         # Define a context menu for the table widget

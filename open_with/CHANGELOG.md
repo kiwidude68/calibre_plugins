@@ -4,11 +4,13 @@
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add translation support.
+- Add Help button to menu.
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 - Any custom website menu images must now be in `/resources/images/Open With/`
 - Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Open-With)
+- Moved help to button in configuration dialog.
 ### Fixed
 - Deleting menu rows could have wrong selected items. (@capink)
 

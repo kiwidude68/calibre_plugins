@@ -7,9 +7,9 @@ from functools import partial
 import os, subprocess
 
 try:
-    from qt.core import QMenu, QToolButton, QUrl
+    from qt.core import QMenu, QToolButton
 except ImportError:
-    from PyQt5.Qt import QMenu, QToolButton, QUrl
+    from PyQt5.Qt import QMenu, QToolButton
 
 try:
     load_translations()
@@ -17,16 +17,13 @@ except NameError:
     pass # load_translations() added in calibre 1.9
 
 from calibre.constants import iswindows, isosx, DEBUG
-from calibre.gui2 import open_url, error_dialog
+from calibre.gui2 import error_dialog
 from calibre.gui2.actions import InterfaceAction
-from calibre.utils.config import config_dir
 
 import calibre_plugins.open_with.config as cfg
 from calibre_plugins.open_with.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.open_with.common_menus import (unregister_menu_actions, create_menu_action_unique,
                                                     create_menu_item)
-
-HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Open-With'
 
 class OpenWithAction(InterfaceAction):
 
@@ -83,6 +80,8 @@ class OpenWithAction(InterfaceAction):
         m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=cfg.show_help)
         self.gui.keyboard.finalize()
 
     def create_menu_item_ex(self, m, sub_menus, menu_text, sub_menu_text, book_format,
@@ -261,9 +260,6 @@ class OpenWithAction(InterfaceAction):
             if DEBUG:
                 print('cmd_line: ', cmd_line)
             CreateProcess(None, cmd_line, None, None, False, DETACHED_PROCESS, None, None, si)
-
-    def show_help(self):
-        open_url(QUrl(HELP_URL))
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)

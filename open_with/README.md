@@ -11,26 +11,7 @@ This plugin allows you to launch external applications for editing your books in
 
 Common uses are to allow editing a specific format of a book in an external editor (such as to edit an EPUB in Sigil), or to edit the cover of a book in an external graphics program to crop/resize it.
 
-## Main Features
-
-- Launch external applications for a particular format or cover of the selected book.
-- Easy to use configuration dialog accessed via right-click context menu or Preferences->Plugins
-- A number of predefined default applications (per platform) for you to choose from, plus the ability to edit/add your own.
-- Menu is fully customisable to change ordering, add submenus, keyboard shortcuts, images and command line arguments.
-- Import and export capability for backup or sharing with other users.
-- Help file web page available from the configuration dialog.
-
-## Configuration Options
-
-| Column  | Description |
-| --------| ----------- |
-| Active | Whether this menu item should be included in the menu.
-| Title | Display name for this menu item.
-| Submenu | Optionally specify a submenu name to put this item within.
-| Format | Book format (or Cover) to associate this menu item with for right-clicks.
-| Image | Custom image for this menu item.<br>You can add your own images.
-| Application Path | Full path to where the executable is located to open this item with.
-| Args | Optional additional arguments to pass on the command line to this executable.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Open-With)
 
 ## Development / Contributions
 
