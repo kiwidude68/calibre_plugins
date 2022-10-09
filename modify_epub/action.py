@@ -14,7 +14,7 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
-from calibre.gui2 import error_dialog, open_url
+from calibre.gui2 import error_dialog
 from calibre.gui2.actions import InterfaceAction
 from calibre.ptempfile import PersistentTemporaryDirectory, remove_dir
 
@@ -23,7 +23,6 @@ from calibre_plugins.modify_epub import ActionModifyEpub
 from calibre_plugins.modify_epub.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.modify_epub.dialogs import (ModifyEpubDialog, QueueProgressDialog,
                                                  AddBooksProgressDialog)
-from calibre.utils.config import config_dir
 
 PLUGIN_ICONS = ['images/modify_epub.png']
 
@@ -128,7 +127,3 @@ class ModifyEpubAction(InterfaceAction):
         _modified_epubs_map, tdir = payload
         # All failed so cleanup our temp directory
         remove_dir(tdir)
-
-    def show_help(self):
-        open_url(QUrl(HELP_URL))
-

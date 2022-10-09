@@ -15,48 +15,7 @@ Instead this plugin allows a user specific subset of changes to be performed in 
 
 Users may also find it useful to install the [Quality Check](https://www.mobileread.com/forums/showthread.php?t=125428) plugin, which offers the ability to identify ePubs in your library which qualify for many of the modifications this plugin can make.
 
-Refer to the Help file accessed from the plugin dialog for full details on each of the modification options and when you might use them.
-
-## Main Features
-
-- Remove iTunes artifact files
-- Remove Calibre bookmark files
-- Remove OS artifact files such as Thumbs.db
-- Remove unused image files
-- Remove missing file entries from the .opf manifest
-- Add unmanifested files to manifest
-- Remove unmanifested files from ePub
-- Remove non dc: metadata from manifest
-- Flatten TOC hierarchy in NCX file
-- Remove broken link TOC entries in NCX file
-- Remove margins from Adobe .xpgt files
-- Remove Adobe .xpgt files and links
-- Remove Adobe resource DRM meta tags
-- Remove all metadata jackets
-- Remove legacy metadata jackets
-- Add/replace metadata jacket
-- Encode HTML in UTF-8 to fix invalid HTML encodings.
-- Remove embedded fonts
-- Modify @page and body margin styles
-- Append extra CSS to each .css file
-- Smarten punctuation
-- Remove inline javascript and .js files
-- Remove html pages containing nothing but broken image links
-- Completely remove an existing cover
-- Insert a new cover or replace an existing one using your desired proportions/svg choice from Preferences->Output - Options->EPUB
-- Update metadata
-- Save and restore your preferred settings with a single click
-- Remove Adobe pagemaps
-- Move metadata jackets to end of book
-- Remove excess whitespace and useless markup from HTML
-- Remove Kobo-specific artifacts from KEPUBs
-- Optional script to run from command line
-
-## Configuration Options
-
-| Column  | Description |
-| --------| ----------- |
-| Prompt to save epubs | Uncheck this option to have changes applied without a confirmation prompt.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Modify-ePub)
 
 ## Development / Contributions
 

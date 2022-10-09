@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:01+0100\n"
+"POT-Creation-Date: 2022-10-09 20:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84
+#: ..\common\common_dialogs.py:84 config.py:63
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,80 +75,88 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
-#: action.py:34
+#: action.py:35
 msgid "Modify the contents of an ePub without a conversion"
 msgstr ""
 
-#: action.py:34 dialogs.py:100
+#: action.py:35 dialogs.py:100
 msgid "Modify ePub"
 msgstr ""
 
-#: action.py:46 action.py:57
+#: action.py:47 action.py:58
 msgid "Cannot modify ePub"
 msgstr ""
 
-#: action.py:47
+#: action.py:48
 msgid "You must select one or more books to perform this action."
 msgstr ""
 
-#: action.py:58
+#: action.py:59
 msgid "No ePub available. First convert the book to ePub."
 msgstr ""
 
-#: action.py:87
+#: action.py:88
 msgid "Failed to modify ePubs"
 msgstr ""
 
-#: action.py:90
+#: action.py:91
 msgid "Modify ePub completed"
 msgstr ""
 
-#: action.py:94
+#: action.py:95
 msgid "No ePub files were updated. If this isn't what you expected then press the Show details button to check for errors in the log."
 msgstr ""
 
-#: action.py:96
+#: action.py:97
 msgid "Modify ePub changed no files"
 msgstr ""
 
-#: action.py:104
+#: action.py:105
 msgid "Modify ePub modified <b>%d ePub files(s)</b> into a temporary location. Proceed with replacing the versions in your library?"
 msgstr ""
 
-#: action.py:109
+#: action.py:110
 msgid "Modify ePub complete"
 msgstr ""
 
-#: action.py:109
+#: action.py:110
 msgid "Modify log"
 msgstr ""
 
-#: config.py:45
+#: config.py:52
 msgid "Other options:"
 msgstr ""
 
-#: config.py:50
+#: config.py:57
 msgid "Prompt to save epubs"
 msgstr ""
 
-#: config.py:51
+#: config.py:58
 msgid "Uncheck this option if you want changes applied without a confirmation dialog."
+msgstr ""
+
+#: config.py:64
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+
+#: config.py:68
+msgid "&Help"
 msgstr ""
 
 #: dialogs.py:36
@@ -504,47 +512,47 @@ msgstr ""
 msgid "Restore your settings set when the Save button was last clicked"
 msgstr ""
 
-#: dialogs.py:182
+#: dialogs.py:179
 msgid "No options selected"
 msgstr ""
 
-#: dialogs.py:183
+#: dialogs.py:180
 msgid "You must select at least one option to continue"
 msgstr ""
 
-#: dialogs.py:209 dialogs.py:278
+#: dialogs.py:206 dialogs.py:275
 msgid "Cancel"
 msgstr ""
 
-#: dialogs.py:209 dialogs.py:278
+#: dialogs.py:206 dialogs.py:275
 msgid "Working"
 msgstr ""
 
-#: dialogs.py:210
+#: dialogs.py:207
 msgid "Queueing books for modifying ePubs"
 msgstr ""
 
-#: dialogs.py:226
+#: dialogs.py:223
 msgid "Queueing"
 msgstr ""
 
-#: dialogs.py:258
+#: dialogs.py:255
 msgid "Could not modify ePub for some books"
 msgstr ""
 
-#: dialogs.py:259
+#: dialogs.py:256
 msgid "Could not modify %d of %d books, because no ePub source format was found."
 msgstr ""
 
-#: dialogs.py:279
+#: dialogs.py:276
 msgid "Adding %d modified ePubs"
 msgstr ""
 
-#: dialogs.py:300
+#: dialogs.py:297
 msgid "Adding"
 msgstr ""
 
-#: dialogs.py:315
+#: dialogs.py:312
 msgid "ePub files updated"
 msgstr ""
 

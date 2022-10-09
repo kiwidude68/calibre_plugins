@@ -104,10 +104,10 @@ class ModifyEpubDialog(SizePersistedDialog):
         layout.addLayout(title_layout)
 
         # Add hyperlink to a help file at the right. We will replace the correct name when it is clicked.
-        help_label = QLabel('<a href="http://www.foo.com/">Help</a>', self)
+        help_label = QLabel('<a href="' + cfg.HELP_URL + '">Help</a>', self)
         help_label.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.LinksAccessibleByKeyboard)
         help_label.setAlignment(Qt.AlignRight)
-        help_label.linkActivated.connect(self._help_link_activated)
+        help_label.linkActivated.connect(cfg.show_help)
         title_layout.addWidget(help_label)
 
         # Make dialog scrollable for smaller screens
@@ -152,9 +152,6 @@ class ModifyEpubDialog(SizePersistedDialog):
 
         # Cause our dialog size to be restored from prefs or created on first usage
         self.resize_dialog()
-
-    def _help_link_activated(self, url):
-        self.plugin_action.show_help()
 
     def _add_groupbox(self, row, col, title, option_info, options):
         groupbox = QGroupBox(title)
