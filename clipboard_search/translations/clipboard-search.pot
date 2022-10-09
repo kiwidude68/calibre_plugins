@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 18:16+0100\n"
+"POT-Creation-Date: 2022-10-09 11:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:66
+#: ..\common\common_dialogs.py:84 config.py:69
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:92
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:147
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:221
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -95,11 +95,11 @@ msgstr ""
 msgid "Clipboard Search"
 msgstr ""
 
-#: action.py:59 config.py:55
+#: action.py:59 config.py:58
 msgid "Text search"
 msgstr ""
 
-#: action.py:61 config.py:56
+#: action.py:61 config.py:59
 msgid "Exact text search"
 msgstr ""
 
@@ -107,15 +107,15 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: config.py:50
+#: action.py:66 config.py:74
+msgid "&Help"
+msgstr ""
+
+#: config.py:53
 msgid "Default action for toolbar button click"
 msgstr ""
 
-#: config.py:67
+#: config.py:70
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr ""
-
-#: config.py:71
-msgid "Help"
 msgstr ""
 

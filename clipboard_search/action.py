@@ -63,6 +63,8 @@ class ClipboardSearchAction(InterfaceAction):
         m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=cfg.show_help)
         self.gui.keyboard.finalize()
         # Set the desired default action for the toolbar button when clicked on
         self.default_search_is_exact = c[cfg.KEY_DEFAULT_SEARCH] == cfg.KEY_EXACT_SEARCH

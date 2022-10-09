@@ -5,7 +5,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Added
 - Add translation support.
 - Transalations for Catalan, German, Spanish, Estonian, French, Italian, Japanese, Norwegian, Netherlands, Polish, Portuguese, Romanian, Russian, Swedish, Turkish, Ukranian - thanks to everyone!!!
-- Add a Help button to the configuration dialog.
+- Add a Help button to the menu and configuration dialog.
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code.
