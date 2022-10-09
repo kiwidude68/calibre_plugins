@@ -3,7 +3,7 @@
 ## [1.3.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
-- Add a Help button to the configuration dialog.
+- Add a Help button to the menu and configuration dialog.
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code

@@ -154,6 +154,8 @@ class FavouritesMenuAction(InterfaceAction):
         m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin') + '...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=cfg.show_help)
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)

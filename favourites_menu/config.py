@@ -55,6 +55,9 @@ def get_safe_title(action):
         text = unicode(action.text())
     return text.replace('&&', '—').replace('&', '').replace('—', '&')
 
+def show_help():
+    open_url(QUrl(HELP_URL))
+
 
 class FavMenusListWidget(QListWidget):
 
@@ -207,9 +210,9 @@ class ConfigWidget(QWidget):
         button_layout.addWidget(self.down_btn)
 
         button_layout = QHBoxLayout()
-        help_button = QPushButton(' '+_('Help'), self)
+        help_button = QPushButton(' '+_('&Help'), self)
         help_button.setIcon(get_icon('help.png'))
-        help_button.clicked.connect(self.show_help)
+        help_button.clicked.connect(show_help)
         button_layout.addWidget(help_button)
         button_layout.addStretch(1)
         layout.addLayout(button_layout)
@@ -448,7 +451,4 @@ class ConfigWidget(QWidget):
 
     def save_settings(self):
         plugin_prefs[STORE_MENUS] = self.items_list.get_fav_menus()
-
-    def show_help(self):
-        open_url(QUrl(HELP_URL))
 

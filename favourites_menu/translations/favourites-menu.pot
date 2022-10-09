@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 19:58+0100\n"
+"POT-Creation-Date: 2022-10-09 11:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,31 +99,31 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: config.py:61
+#: action.py:157 config.py:213
+msgid "&Help"
+msgstr ""
+
+#: config.py:64
 msgid "Separator"
 msgstr ""
 
-#: config.py:181
+#: config.py:184
 msgid "Move the selected menu item up"
 msgstr ""
 
-#: config.py:185
+#: config.py:188
 msgid "Move the selected menu item down"
 msgstr ""
 
-#: config.py:189
+#: config.py:192
 msgid "Remove the selected item from the menu"
 msgstr ""
 
-#: config.py:193
+#: config.py:196
 msgid "Add a separator to the menu following the selected item"
 msgstr ""
 
-#: config.py:197
+#: config.py:200
 msgid "Rename the menu item for when it appears on your Favourites menu"
-msgstr ""
-
-#: config.py:210
-msgid "Help"
 msgstr ""
 
