@@ -13,7 +13,6 @@ I have also taken the opportunity to split the functions into individual files f
 | common_dialogs.py | Common dialogs, that persist their position |
 | common_icons.py | The `get_icon()` function with all its complexity nowadays |
 | common_menus.py | Helper functions for building menus for `action.py` |
-| common_utils.py | Helper functions for debugging output |
 | common_widgets.py | Additional Qt based controls for use in dialogs or grid tables |
 
 One negative to splitting these functions was that any interdependencies between them require some `build.py` trickery to insert the correct plugin namespace which is only known at the time the specific plugin is built into a zip. 

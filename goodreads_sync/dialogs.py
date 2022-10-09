@@ -33,6 +33,7 @@ from calibre.ebooks.metadata import MetaInformation
 from calibre.gui2 import error_dialog, question_dialog, gprefs, open_url
 from calibre.gui2.library.delegates import RatingDelegate, TextDelegate
 from calibre.utils.date import qt_to_dt, UNDEFINED_DATE
+from calibre.devices.usbms.driver import debug_print
 
 import calibre_plugins.goodreads_sync.config as cfg
 from calibre_plugins.goodreads_sync.common_compatibility import qSizePolicy_Minimum, qtDropActionCopyAction, qtDropActionMoveAction
@@ -40,7 +41,6 @@ from calibre_plugins.goodreads_sync.common_icons import get_icon, get_pixmap
 from calibre_plugins.goodreads_sync.common_dialogs import SizePersistedDialog
 from calibre_plugins.goodreads_sync.common_widgets import (DateDelegate, DateTableWidgetItem,
                             ImageTitleLayout, ReadOnlyTableWidgetItem, ReadOnlyLineEdit)
-from calibre_plugins.goodreads_sync.common_utils import debug_print
 from calibre_plugins.goodreads_sync.core import update_calibre_isbn_if_required, get_searchable_author, CalibreDbHelper
 
 try:
@@ -410,7 +410,6 @@ class ChooseShelvesToSyncDialog(SizePersistedDialog):
             if shelf['name'] in self.selected_shelf_names:
                 self.selected_shelves.append(shelf)
         
-#         self.plugin_action.progressbar_show(len(self.selected_shelves)*10)
         self.plugin_action.progressbar_show(1)
         self.goodreads_shelf_books = self.grhttp.get_goodreads_books_on_shelves(self.user_name, self.selected_shelves)
         self.plugin_action.progressbar_hide()
@@ -503,7 +502,6 @@ class UpdateReadingProgressTableWidget(QTableWidget):
         self.setItem(row, 4, NumericTableWidgetItem(progress, is_read_only=False))
         self.setItem(row, 5, QTableWidgetItem(''))
         if progress >= 100:
-            debug_print("populate_table_row: calibre_book['calibre_rating']=", calibre_book['calibre_rating'])
             self.setItem(row, 6, RatingTableWidgetItem(calibre_book['calibre_rating'], is_read_only=False))
             self.setItem(row, 7, DateTableWidgetItem(calibre_book['calibre_date_read'],
                                                      is_read_only=False, default_to_today=True))
@@ -740,7 +738,6 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         self.summary_table.show_columns(self.is_rating_visible, self.is_dateread_visible, self.is_review_text_visible)
         
     def action_button_clicked(self):
-        debug_print("UpdateReadingProgressDialog::action_button_clicked - start")
         self.save_preferences()
         self.action_button.setEnabled(False)
 
@@ -749,9 +746,7 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
 
         client = self.grhttp.create_oauth_client(self.user_name)
         upload_progress = self.action == 'progress' and len(self.reading_progress_column) > 0
-        debug_print("action_button_clicked - self.rating_column=", self.rating_column)
         upload_rating = self.is_rating_visible and len(self.rating_column) > 0
-        debug_print("action_button_clicked - upload_rating=", upload_rating)
         upload_date_read = self.is_dateread_visible and len(self.date_read_column) > 0
         upload_review_text = self.is_review_text_visible and len(self.review_text_column) > 0
         added_books = []
@@ -759,10 +754,8 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         self.plugin_action.progressbar_show(len(self.calibre_books))
         # Add/remove each linked book to the selected shelf
         for calibre_book in self.calibre_books:
-            debug_print("UpdateReadingProgressDialog::action_button_clicked - calibre_book=", calibre_book)
             self.plugin_action.progressbar_increment()
             if calibre_book['status'] == ActionStatus.VALID:
-                debug_print("UpdateReadingProgressDialog::action_button_clicked - valid action")
                 goodreads_id = calibre_book['goodreads_id']
                 progress = int(calibre_book['calibre_reading_progress']) if calibre_book['calibre_reading_progress'] else None
                 progress = progress if progress >=0 else None
@@ -770,30 +763,24 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
                 calibre_book['status_comment_text'] if len(calibre_book.get('status_comment_text','')) > 0 else None 
                 self.grhttp.update_status(client, goodreads_id, progress, self.progress_is_percent, review_text)
                 if (upload_progress and progress):
-                    debug_print("UpdateReadingProgressDialog::action_button_clicked - valid action")
                     calibre_book['goodreads_reading_progress'] = progress
                     added_books.append(calibre_book)
 
                     if self.put_reading_on_currently_reading_shelf_checked and progress < 100:
-                        debug_print("UpdateReadingProgressDialog::action_button_clicked - putting book on 'currently-reading' shelf")
                         review_id = self.grhttp.add_remove_book_to_shelf(client, "currently-reading", goodreads_id, 'add')
 
                     if self.put_finished_on_read_shelf_checked and progress >= 100:
-                        debug_print("UpdateReadingProgressDialog::action_button_clicked - putting book on 'read' shelf")
                         review_id = self.grhttp.add_remove_book_to_shelf(client, self.read_shelf_name, goodreads_id, 'add')
                         # If adding books and rating/date read columns update the Goodreads review
                         if review_id:
                             if review_id and (upload_rating or upload_date_read or upload_review_text):
-                                debug_print("UpdateReadingProgressDialog::action_button_clicked - updating review")
                                 rating = None
                                 date_read = None
                                 review_text = None
                                 if upload_rating:
                                     rating = int(calibre_book['calibre_rating']) / 2
-                                    debug_print("action_button_clicked - rating=", rating)
                                     if rating:
                                         calibre_book['goodreads_rating'] = rating
-                                        debug_print("action_button_clicked - calibre_book['goodreads_rating']=", calibre_book['goodreads_rating'])
                                 if upload_date_read:
                                     date_read = calibre_book['calibre_date_read']
                                     if date_read:
@@ -822,7 +809,6 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
                         add_actions.append(upload_review_text_action)
                     add_actions.extend(self.shelves_map[self.read_shelf_name].get(cfg.KEY_ADD_ACTIONS,[]))
             if len(add_actions) > 0:
-                debug_print("action_button_clicked - add_actions=", add_actions)
                 self.plugin_action.progressbar_label(_("Updating books in calibre..."))
                 CalibreDbHelper().apply_actions_to_calibre(self.gui, added_books, add_actions)
 
@@ -1849,7 +1835,6 @@ class DoAddRemoveDialog(SizePersistedDialog):
 
     def handle_search_for_goodreads_books(self, rows, calibre_books):
         for index, row in enumerate(rows):
-            debug_print("handle_search_for_goodreads_books")
             calibre_book = calibre_books[index]
             title = calibre_book['calibre_title']
             author = calibre_book['calibre_author']
@@ -2084,7 +2069,7 @@ class DoShelfSyncDialog(SizePersistedDialog):
         layout.addWidget(self.splitter)
         splitter_top = QWidget(self)
         self.splitter.addWidget(splitter_top)
-        top_layout = QVBoxLayout(self)
+        top_layout = QVBoxLayout()
         splitter_top.setLayout(top_layout)
 
         if len(self.shelf_names) == 1:
@@ -2108,17 +2093,14 @@ class DoShelfSyncDialog(SizePersistedDialog):
         self.summary_table.add_empty_books.connect(self.handle_add_empty_books)
         self.summary_table.book_selection_changed.connect(self.handle_book_selection_changed)
         top_layout.addWidget(self.summary_table)
-        # layout.setStretchFactor(self.summary_table, 10)
 
         splitter_bottom = QWidget(self)
         self.splitter.addWidget(splitter_bottom)
         actions_layout = QGridLayout()
-        # layout.addLayout(actions_layout, 1)
         splitter_bottom.setLayout(actions_layout)
 
         self.description = QTextEdit(self)
         self.description.setReadOnly(True)
-        # self.description.setMaximumHeight(40)
         actions_layout.addWidget(QLabel(_('The following actions will be performed for books that are synced:'), self), 0, 0)
         actions_layout.addWidget(self.description, 1, 0, 4, 1)
         actions_layout.setRowStretch(4, 2)
@@ -2296,7 +2278,6 @@ class DoShelfSyncDialog(SizePersistedDialog):
         toggled_ids = []
         for index, row in enumerate(rows):
             goodreads_book = goodreads_books[index]
-#             debug_print("handle_add_empty_books: index=%s, row=%, goodreads_book=%s" % (index, row, goodreads_book))
             if goodreads_book['status'] == ActionStatus.ADD_EMPTY:
                 goodreads_book['calibre_id'] = ''
                 goodreads_book['calibre_isbn'] = ''
@@ -2412,7 +2393,7 @@ class DoShelfSyncDialog(SizePersistedDialog):
         self.summary_table.find_and_populate_table_row(row, goodreads_book)
         # We also need to check whether we now have a duplicate link situation
         # where another Goodreads book is also linked to this Goodreads id.
-#         for other_book in self.goodreads_books:
+        # for other_book in self.goodreads_books:
         for index, other_book in enumerate(self.goodreads_books):
             if other_book['goodreads_id'] == goodreads_book['goodreads_id']:
                 # Don't compare with ourselves

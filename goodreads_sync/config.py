@@ -29,14 +29,16 @@ from calibre.gui2 import error_dialog, question_dialog, info_dialog, open_url
 from calibre.gui2.complete2 import EditWithComplete
 from calibre.utils.config import JSONConfig
 from calibre.utils.icu import sort_key
+from calibre.devices.usbms.driver import debug_print
 
 from calibre_plugins.goodreads_sync.common_compatibility import qSizePolicy_Expanding, qSizePolicy_Minimum
-from calibre_plugins.goodreads_sync.common_utils import debug_print
 from calibre_plugins.goodreads_sync.common_icons import get_icon
 from calibre_plugins.goodreads_sync.common_dialogs import SizePersistedDialog, KeyboardConfigDialog
 from calibre_plugins.goodreads_sync.common_widgets import (NoWheelComboBox, ReadOnlyTextIconWidgetItem,
                                                     CheckableTableWidgetItem, ReadOnlyTableWidgetItem,
                                                     ImageTitleLayout, CustomColumnComboBox)
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Goodreads-Sync'
 
 SUPPORTS_CREATE_CUSTOM_COLUMN = False
 try:
@@ -236,6 +238,9 @@ def migrate_config_if_required():
         goodreads_settings[KEY_REVIEW_TEXT_COLUMN] = ''
         plugin_prefs[STORE_PLUGIN] = goodreads_settings
 
+def show_help():
+    open_url(QUrl(HELP_URL))
+   
 
 class UserComboBox(QComboBox):
 
@@ -913,12 +918,6 @@ class ConfigWidget(QWidget):
         self._auth_button.clicked.connect(self.authorize_plugin)
         user_layout.addWidget(self._auth_button)
         user_layout.addStretch()
-        # Add hyperlink to a help file at the right. We will replace the correct name when it is clicked.
-        help_label = QLabel('<a href="http://www.foo.com/">' + _("Help") + '</a>', self)
-        help_label.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.LinksAccessibleByKeyboard)
-        help_label.setAlignment(Qt.AlignRight)
-        help_label.linkActivated.connect(self.help_link_activated)
-        user_layout.addWidget(help_label)
 
         user_group_box = QGroupBox(_('User Shelves:'), self)
         layout.addWidget(user_group_box, 2)
@@ -1034,10 +1033,15 @@ class ConfigWidget(QWidget):
 
         keyboard_layout = QHBoxLayout()
         layout.addLayout(keyboard_layout)
-        keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
+        keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
         keyboard_layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(' '+_('Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        keyboard_layout.addWidget(help_button)
         keyboard_layout.addStretch()
 
         # Force the possible tags values to be set based on the initial tag column setting
@@ -1087,7 +1091,6 @@ class ConfigWidget(QWidget):
 
     def get_long_text_custom_columns(self):
         column_types = ['text', 'comments']
-        debug_print("get_long_text_custom_columns")
         return self.get_custom_columns(column_types)
 
     def get_date_custom_columns(self):
@@ -1105,9 +1108,6 @@ class ConfigWidget(QWidget):
             if typ in column_types:
                 available_columns[key] = column
         return available_columns
-
-    def help_link_activated(self, url):
-        self.plugin_action.show_help()
 
     def persist_user_config(self):
         if not self.user_name:
@@ -1139,7 +1139,6 @@ class ConfigWidget(QWidget):
 
     def tag_column_combo_changed(self):
         selected_column = self._tag_column_combo.get_selected_column()
-        debug_print("tag_column_combo_changed - selected_column=", selected_column)
         values = []
         if selected_column == 'tags':
             values = self.all_tags

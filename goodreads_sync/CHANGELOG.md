@@ -6,6 +6,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 - Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Goodreads-Sync)
+- Replace Help link on configuration dialog with a button.
 ### Fixed
 - Various bugs related to the "Update reading progress" feature.
 - Deleting menu rows could have wrong selected items. (@capink)

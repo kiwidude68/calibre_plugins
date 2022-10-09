@@ -18,55 +18,7 @@ In some cases this is information that you also want to keep track of within Cal
 - Multiple actions can be applied. e.g. in the example above you might also populate a 'Read Date' custom column and remove a 'To Read' tag from the book in Calibre.
 - Using your own genre shelves in Goodreads like science-fiction, romance etc to map to Calibre tags or a custom genre column of your choice.
 
-## Main Features
-
-- Add or remove books to one or more Goodreads shelves from a selection within Calibre
-- Syncing the contents from one or more Goodreads shelves into Calibre, performing customisable actions for each shelf
-- Configure actions to be performed for when adding books to a shelf or syncing from Goodreads, such as updating tags, custom columns.
-- You can also synchronise your rating, date read and or review text custom column with your Goodreads review.
-- Ability to download tags for your books based on the shelves they are on. You can customise which Calibre tags if any each shelf name will map to and use a custom genre column instead of tags if desired.
-- Ability to upload to shelves for your books based on the tags they have been given. Applies the to the same Calibre column and shelf mappings as for the download tags feature above.
-- Link your Calibre books to a Goodreads equivalent giving you right-click access to reviews or other information for that book
-- Ability to switch editions for a linked Goodreads book
-- Ability to create Empty Books in Calibre for books you sync from a Goodreads shelf
-- Optionally update the ISBN in Calibre to match the edition on your Goodreads shelf
-- Supports multiple Goodreads user accounts if required for users sharing a single operating system account
-- Help file web page available from the configuration dialog or plugin menu
-
-
-## Configuration Options
-
-| Option  | Description |
-| --------| ----------- |
-| Goodreads user | Choose from dropdown if you have multiple Goodreads accounts/users of calibre to switch between.
-| Authorize Plugin | For setting up, authorize this plugin to communicate with your Goodreads account.
-| Refresh Shelves | If you have add/removed shelves on the goodreads website, click this button to refresh.
-| Add Shelf | Allows you to create a new shelf in your Goodreads account
-| Edit 'Shelf Add' Actions | Configure optional actions to apply when a book is added to your shelf.
-| Edit 'Sync' Actions | Configure optional actions to apply when a shelf is synced to your library.
-
-## Other Configuration Options
-
-| Option  | Description |
-| --------| ----------- |
-| When linking to Goodreads | **Never modify the calibre ISBN**<br>**Replace calibre ISBN only if none present**<br>**Always overwrite calibre ISBN value**
-| Display 'Add to shelf' | For reducing plugin submenus
-| Display 'Remove from shelf' | For reducing plugin submenus
-| Display 'Update reading progress' | For reducing plugin submenus
-| Display 'Sync from shelf' | For reducing plugin submenus
-| Display 'View shelf' | For reducing plugin submenus
-| Reading progress is % read | If checked, the progress column is a % read. If unchecked it is a page number.
-| Empty books author as LN, FN | If adding empty calibre books from dialogs in this plugin, use this author format.
-
-## Synchronisable Custom Columns
-
-| Column  | Description |
-| --------| ----------- |
-| Tags | Choose the calibre column to contain tags metadata
-| Rating | Choose the calibre column to contain goodreads rating metadata
-| Date read | Choose the calibre column to contain last date read metadata
-| Review text | Choose the calibre column to contain review text metadata
-| Reading progress | Choose the calibre column to contain % read or last page read
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Goodreads-Sync)
 
 ## Development / Contributions
 

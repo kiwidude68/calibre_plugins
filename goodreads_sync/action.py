@@ -6,22 +6,19 @@ __copyright__ = '2011, Grant Drake'
 import os
 from functools import partial
 try:
-    from qt.core import QMenu, QToolButton, QUrl
+    from qt.core import QMenu, QToolButton
 except ImportError:
-    from PyQt5.Qt import QMenu, QToolButton, QUrl
+    from PyQt5.Qt import QMenu, QToolButton
 
 try:
     load_translations()
 except NameError:
     pass # load_translations() added in calibre 1.9
 
-from calibre.gui2 import error_dialog, question_dialog, open_url
+from calibre.gui2 import error_dialog, question_dialog
 from calibre.gui2.actions import InterfaceAction
-from calibre.utils.config import config_dir
-from calibre.constants import numeric_version as calibre_version
 
 import calibre_plugins.goodreads_sync.config as cfg
-from calibre_plugins.goodreads_sync.common_utils import debug_print
 from calibre_plugins.goodreads_sync.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.goodreads_sync.common_menus import unregister_menu_actions, create_menu_action_unique
 from calibre_plugins.goodreads_sync.common_dialogs import ProgressBarDialog
@@ -48,8 +45,6 @@ PLUGIN_ICONS = ['images/goodreads_sync.png',        'images/refresh.png',
                 'images/rating_dateread_add.png',   'images/rating_dateread_sync.png',
                 'images/review_add.png',            'images/review_sync.png'
                 ]
-
-HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Goodreads-Sync'
 
 class GoodreadsSyncAction(InterfaceAction):
 
@@ -134,7 +129,7 @@ class GoodreadsSyncAction(InterfaceAction):
         create_menu_action_unique(self, m, _('&Customize plugin') + '...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
         create_menu_action_unique(self, m, _('&Help'), 'help.png',
-                                  shortcut=False, triggered=self.show_help)
+                                  shortcut=False, triggered=cfg.show_help)
 
         self.gui.keyboard.finalize()
 
@@ -303,7 +298,6 @@ class GoodreadsSyncAction(InterfaceAction):
 
     def sync_shelves(self, user_name):
         # Build a list of shelves that are valid to sync from
-        debug_print("sync_shelves - start")
         self.progressbar(_("Syncing books from shelves"), show=False)
         shelves = self._get_shelves_valid_for_sync(user_name)
         if len(shelves) == 0:
@@ -314,7 +308,6 @@ class GoodreadsSyncAction(InterfaceAction):
         choose_dialog.exec_()
         if choose_dialog.result() != choose_dialog.Accepted:
             return
-        debug_print("sync_shelves - returned from ChooseShelvesToSyncDialog")
 
         if choose_dialog.goodreads_shelf_books is None:
             return error_dialog(self.gui, _('Unable to Sync'),
@@ -323,15 +316,12 @@ class GoodreadsSyncAction(InterfaceAction):
         previous = self.gui.library_view.currentIndex()
         # Ensure our Goodreads id mapping caches are reset
         self.id_caches.invalidate_caches()
-        debug_print("sync_shelves - About to open DoShelfSyncDialog")
         # Display the books indicating which are linked allowing user to apply/cancel
         d = DoShelfSyncDialog(self.gui, self, self.grhttp, user_name, choose_dialog.selected_shelves,
                               choose_dialog.goodreads_shelf_books, self.calibre_searcher)
         d.exec_()
-        debug_print("sync_shelves - returned from DoShelfSyncDialog")
         if d.result() == d.Accepted:
             msg = _('Synchronised {0} books from shelf').format(d.valid_count)
-            debug_print("sync_shelves - About to _update_goodreads_ids")
             self.progressbar(_("Syncing books from shelves"), show=False)
             self.progressbar_label(_("Updating books"))
             self.progressbar_format(_("Book: %v"))
@@ -339,8 +329,6 @@ class GoodreadsSyncAction(InterfaceAction):
             # When finally exiting, update the Goodreads Id and ISBN where any were changed
             self._update_calibre_database_ids_after_sync(d.goodreads_books)
 
-#             self._update_goodreads_ids(d.goodreads_books, msg, previous)
-            debug_print("sync_shelves - finished _update_goodreads_ids")
             num_added_books = d.num_added_books
             if num_added_books > 0:
                 self.gui.library_view.model().books_added(num_added_books)
@@ -359,15 +347,12 @@ class GoodreadsSyncAction(InterfaceAction):
         self._update_calibre_database_ids_for_selection(calibre_books)
 
         self.gui.status_bar.showMessage(msg)
-        debug_print("_update_goodreads_ids - status message: %s" % msg)
         updated_ids = [book['calibre_id'] for book in calibre_books if book['updated']]
-        debug_print("_update_goodreads_ids - Have list of updated book ids - number=%s" % len(updated_ids))
         if len(updated_ids) > 0:
             self.gui.library_view.model().refresh_ids(updated_ids)
             current = self.gui.library_view.currentIndex()
             self.gui.library_view.model().current_changed(current, previous)
             self.gui.tags_view.recount()
-        debug_print("_update_goodreads_ids - Finished")
 
 
     def _get_shelves_valid_for_sync(self, user_name):
@@ -736,7 +721,6 @@ class GoodreadsSyncAction(InterfaceAction):
             book = self.grhttp.get_review_book(user_name, goodreads_id)
             if not book:
                 continue
-            debug_print("download_tags: ", book)
             orig_calibre_tags = self._get_calibre_tags_for_book(db, calibre_id, tag_column, tag_column_label, is_multiple)
             # For a custom column we will always overwrite with fresh values
             # For the tags column we will always append
@@ -838,9 +822,6 @@ class GoodreadsSyncAction(InterfaceAction):
                 calibre_tags = set([t.strip() for t in tags.split(',')])
         return calibre_tags
 
-    def show_help(self):
-        open_url(QUrl(HELP_URL))
-
     def _get_tag_mappings(self, user_config):
         tag_mappings = {}
         for shelf in user_config[cfg.KEY_SHELVES]:
@@ -850,7 +831,6 @@ class GoodreadsSyncAction(InterfaceAction):
         return tag_mappings
 
     def show_configuration(self):
-        debug_print("GoodReads Sync::show_configuration - before do_user_config")
         restart_message=_("Calibre must be restarted before the plugin can be configured.")
         # Check if a restart is needed. If the restart is needed, but the user does not
         # trigger it, the result is true and we do not do the configuration.
@@ -858,7 +838,6 @@ class GoodreadsSyncAction(InterfaceAction):
             return
 
         self.interface_action_base_plugin.do_user_config(self.gui)
-        debug_print("GoodReads Sync::show_configuration - after do_user_config")
         restart_message= _("New custom colums have been created."
                             "\nYou will need to restart calibre for this change to be applied."
                         )
@@ -871,10 +850,8 @@ class GoodreadsSyncAction(InterfaceAction):
             from calibre.gui2 import show_restart_warning
             do_restart = show_restart_warning(restart_message)
             if do_restart:
-                debug_print("GoodReads Sync::check_if_restart_needed - restarting calibre...")
                 self.gui.quit(restart=True)
             else:
-                debug_print("GoodReads Sync::check_if_restart_needed - calibre needs to be restarted, do not open configuration")
                 return True
         return False
 

@@ -33,11 +33,11 @@ from calibre.utils.cleantext import clean_ascii_chars
 from calibre.utils.date import parse_date, now, UNDEFINED_DATE
 from calibre import get_parsed_proxy
 from calibre import browser
+from calibre.devices.usbms.driver import debug_print
 
 import calibre_plugins.goodreads_sync.oauth2 as oauth
 import calibre_plugins.goodreads_sync.httplib2 as httplib2
 import calibre_plugins.goodreads_sync.config as cfg
-from calibre_plugins.goodreads_sync.common_utils import debug_print
 
 def get_searchable_author(authors):
     # Take the authors displayed and convert it into a search string we can
@@ -89,7 +89,6 @@ class HttpHelper(object):
         self._browser = None
         
         proxy = get_parsed_proxy()
-        debug_print('HttpHelper::__init__: proxy=%s' % proxy)
         if proxy:
             proxy_type = httplib2.socks.PROXY_TYPE_HTTP_NO_TUNNEL
 
@@ -612,21 +611,14 @@ class HttpHelper(object):
         # This function attempts to convert a myriad of Goodreads title
         # combinations to strip out the series information as it is not
         # available separately in the API
-#         debug_print("_convert_goodreads_title_with_series  1 - text=%s" % text)
         if text.find('(') == -1:
             return (text, '')
         text_split = text.rpartition('(')
-#         debug_print("_convert_goodreads_title_with_series  2 - text_split=", text_split)
         title = text_split[0]
         series_info = text_split[2]
-#         debug_print("_convert_goodreads_title_with_series  3 - series_info=", series_info)
         series_info = series_info.rpartition(')')
-#         debug_print("_convert_goodreads_title_with_series  4 - series_info=", series_info)
         series_info = series_info[0]
-#         debug_print("_convert_goodreads_title_with_series  5 - series_info=", series_info)
-#         debug_print("_convert_goodreads_title_with_series  6 - series_info=", series_info)
         hash_pos = series_info.find('#')
-#         debug_print("_convert_goodreads_title_with_series  7 - hash_pos=", hash_pos)
         if hash_pos <= 0:
             # Cannot find the series # in expression or at start like (#1-7)
             # so consider whole thing just as title
@@ -634,13 +626,10 @@ class HttpHelper(object):
             series_info = ''
         else:
             # Check to make sure we have got all of the series information
-#             series_info = series_info[:len(series_info)-1] #Strip off trailing ')'
-#             debug_print("_convert_goodreads_title_with_series  8 - series_info=", series_info)
             while series_info.count(')') != series_info.count('('):
                 title_split = title.rpartition('(')
                 title = title_split[0].strip()
                 series_info = title_split[2] + '(' + series_info
-#             debug_print("_convert_goodreads_title_with_series  9 - series_info=", series_info)
         if series_info:
             series_partition = series_info.rpartition('#')
             series_name = series_partition[0].strip().replace(',', '')

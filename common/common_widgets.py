@@ -21,7 +21,7 @@ except NameError:
     pass # load_translations() added in calibre 1.9
 
 from calibre.gui2 import error_dialog, UNDEFINED_QDATETIME
-from calibre.utils.date import now, format_date, qt_to_dt, UNDEFINED_DATE
+from calibre.utils.date import now, format_date, UNDEFINED_DATE
 
 from common_icons import get_pixmap
 
@@ -114,7 +114,7 @@ class DateDelegate(_DateDelegate):
 class DateTableWidgetItem(QTableWidgetItem):
 
     def __init__(self, date_read, is_read_only=False, default_to_today=False, fmt=None):
-        if (date_read is None or date_read == UNDEFINED_DATE) and default_to_today:
+        if date_read is None or date_read == UNDEFINED_DATE and default_to_today:
             date_read = now()
         if is_read_only:
             super(DateTableWidgetItem, self).__init__(format_date(date_read, fmt))
