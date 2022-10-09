@@ -14,17 +14,21 @@ from six import text_type as unicode
 
 try:
     from qt.core import (QWidget, QVBoxLayout, QPushButton, QGridLayout,
-                        QLabel, QLineEdit, QGroupBox)
+                        QLabel, QLineEdit, QGroupBox, QUrl)
 except ImportError:
     from PyQt5.Qt import (QWidget, QVBoxLayout, QPushButton, QGridLayout,
-                        QLabel, QLineEdit, QGroupBox)
+                        QLabel, QLineEdit, QGroupBox, QUrl)
 
 from calibre import prints
 from calibre.constants import DEBUG
+from calibre.gui2 import open_url
 from calibre.utils.config import JSONConfig, config_dir
 
+from calibre_plugins.generate_cover.common_icons import get_icon
 from calibre_plugins.generate_cover.common_dialogs import KeyboardConfigDialog, PrefsViewerDialog
 from calibre_plugins.generate_cover.common_widgets import CustomColumnComboBox
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Generate-Cover'
 
 STORE_SCHEMA_VERSION = 'SchemaVersion'
 DEFAULT_SCHEMA_VERSION = 2.21
@@ -111,6 +115,9 @@ plugin_prefs.defaults[STORE_OTHER_OPTIONS] = copy.deepcopy(DEFAULT_OTHER_OPTIONS
 
 def get_images_dir():
     return os.path.join(config_dir, 'plugins/Generate Cover')
+
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 
 def migrate_image_file_path(path):
@@ -333,6 +340,11 @@ class ConfigWidget(QWidget):
         view_prefs_button.setToolTip(_('View data stored in the library database for this plugin'))
         view_prefs_button.clicked.connect(self._view_prefs)
         layout.addWidget(view_prefs_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        layout.addWidget(help_button)
 
     def _get_custom_columns(self, column_types):
         custom_columns = self.plugin_action.gui.library_view.model().custom_columns

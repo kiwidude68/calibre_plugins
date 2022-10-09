@@ -11,24 +11,8 @@ Users will often have books in their collection for which there is no official c
 
 This plugin offers an enhanced alternative that allows you to select from your own choice of cover images and a wide range of layout/appearance options.
 
-## Main Features
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Generate-Cover)
 
-- Add/remove your own images to a list to choose from when you generate
-- Option to use the existing book cover as an embedded image
-- Control which metadata to display and where it is located on the cover
-- Option to swap author name for users who store it in Calibre as LN, FN
-- Fine tune many aspects of cover appearance such as fonts, borders, colors and margins
-- Save your customised settings under a name to quickly recall multiple different appearances
-- Export your settings for sharing and import settings from other users
-- Option to use an image as a background rather than a content item
-- Option to add custom text to a cover, using [Calibre's template language](http://manual.calibre-ebook.com/template_lang.html) to place your choice of additional data on the cover
-- Option to auto-size text to fit on a single line for long text
-
-## Configuration Options
-
-| Option  |Description |
-| ------| ----------- |
-| Scan multiple editions for title/author searches | By default the first match from the Goodreads search is used.<br>Historically this edition was often an audiobook which may not contain ideal metadata.<br>Enabling this option will ensure audiobook editions are skipped, but will take longer to retrieve. |
 
 ## Development / Contributions
 

@@ -2,6 +2,8 @@
 
 ## [2.3.0] - 2022-09-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+### Added
+- Add a Help button to the configuration dialog.
 ### Changed
 - Move user images from `/resources/images/generate_cover` to `/plugins/generate_cover` to prevent loss if user has not yet migrated to Calibre 6.
 - **Breaking:** Drop PyQt4 support.
@@ -29,7 +31,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [2.0.0] - 2020-11-07
 ### Changed
-- Remove draw_old.py, not needed in Cal v2+
+- Remove `draw_old.py`, not needed in Cal v2+
 - French translation (@un-pogaz)
 - Spanish translation (@dunhill)
 ### Fixed
@@ -37,7 +39,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.5.25] - 2020-06-12
 ### Changed
-- Custom text setText() instead of setHtml()
+- Custom text `setText()` instead of `setHtml()`
 
 ## [1.5.24] - 2020-05-21
 ### Changed
@@ -127,8 +129,8 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ## [1.5.3] - 2012-05-31
 ### Changed
 - Ensure paths to images used by this plugin are stored as relative paths for portability
-- Change the calibre library image to appear as {Default Image} in the images list
-- Reorder the images list so {Default Image} and {Current Cover} appear at the top
+- Change the calibre library image to appear as `{Default Image}` in the images list
+- Reorder the images list so `{Default Image}` and `{Current Cover}` appear at the top
 - Allow renaming images changing only their casing
 
 ## [1.5.2] - 2012-05-20
@@ -164,7 +166,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.3.8] - 2011-07-03
 ### Changed
-- Replace the deprecated composite_formatter with SafeFormat()
+- Replace the deprecated `composite_formatter` with `SafeFormat()`
 
 ## [1.3.7] - 2011-06-04
 ### Changed

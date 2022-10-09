@@ -1393,6 +1393,9 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.options_button = button_box.addButton(_(' Customize... '), QDialogButtonBox.ResetRole)
         self.options_button.setToolTip(_('Set general options for this plugin'))
         self.options_button.clicked.connect(self.show_configuration)
+        self.help_button = button_box.addButton(' '+_('&Help'), QDialogButtonBox.ResetRole)
+        self.help_button.setIcon(get_icon('help.png'))
+        self.help_button.clicked.connect(cfg.show_help)
         layout.addWidget(button_box)
 
         self.saved_settings_tab.populate_image_files_list()

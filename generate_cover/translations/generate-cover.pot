@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:08+0100\n"
+"POT-Creation-Date: 2022-10-09 12:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:327
+#: ..\common\common_dialogs.py:84 config.py:334
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -131,28 +131,32 @@ msgstr ""
 msgid "No cover settings exist named: \"%s\""
 msgstr ""
 
-#: config.py:313
+#: config.py:320
 msgid "After generating cover:"
 msgstr ""
 
-#: config.py:322
+#: config.py:329
 msgid "Update column:"
 msgstr ""
 
-#: config.py:323
+#: config.py:330
 msgid "Update value:"
 msgstr ""
 
-#: config.py:328
+#: config.py:335
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:332
+#: config.py:339
 msgid "View library preferences"
 msgstr ""
 
-#: config.py:333
+#: config.py:340
 msgid "View data stored in the library database for this plugin"
+msgstr ""
+
+#: config.py:344 dialogs.py:1396
+msgid "&Help"
 msgstr ""
 
 #: dialogs.py:64
@@ -277,7 +281,7 @@ msgstr ""
 msgid "You cannot remove the default setting"
 msgstr ""
 
-#: dialogs.py:573 dialogs.py:818 dialogs.py:1465 dialogs.py:1484
+#: dialogs.py:573 dialogs.py:818 dialogs.py:1468 dialogs.py:1487
 msgid "Are you sure?"
 msgstr ""
 
@@ -759,11 +763,11 @@ msgstr ""
 msgid "Set general options for this plugin"
 msgstr ""
 
-#: dialogs.py:1466
+#: dialogs.py:1469
 msgid "Revert to your previously saved values for '%s'?"
 msgstr ""
 
-#: dialogs.py:1485
+#: dialogs.py:1488
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr ""
 
