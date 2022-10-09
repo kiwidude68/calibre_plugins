@@ -15,14 +15,15 @@ except NameError:
     pass # load_translations() added in calibre 1.9
 
 try:
-    from qt.core import (QWidget, QVBoxLayout, QLabel,
+    from qt.core import (QWidget, QVBoxLayout, QLabel, QUrl,
                           QGroupBox, QGridLayout, QListWidget, QListWidgetItem,
                           QAbstractItemView, Qt, QPushButton, QSpinBox)
 except:
-    from PyQt5.Qt import (QWidget, QVBoxLayout, QLabel,
+    from PyQt5.Qt import (QWidget, QVBoxLayout, QLabel, QUrl,
                           QGroupBox, QGridLayout, QListWidget, QListWidgetItem,
                           QAbstractItemView, Qt, QPushButton, QSpinBox)
 
+from calibre.gui2 import open_url
 from calibre.gui2.actions import menu_action_unique_name
 from calibre.gui2.complete2 import EditWithComplete
 from calibre.utils.config import JSONConfig
@@ -30,6 +31,8 @@ from calibre.utils.config import JSONConfig
 from calibre_plugins.quality_check.common_icons import get_icon
 from calibre_plugins.quality_check.common_dialogs import KeyboardConfigDialog, PrefsViewerDialog
 from calibre_plugins.quality_check.common_widgets import KeyValueComboBox
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Quality-Check'
 
 KEY_SCHEMA_VERSION = STORE_SCHEMA_VERSION = 'SchemaVersion'
 DEFAULT_SCHEMA_VERSION = 1.9
@@ -228,6 +231,9 @@ def set_excluded_books(db, menu_key, book_ids):
     exclusions_map[menu_key] = book_ids
     set_library_config(db, library_config)
 
+def show_help():
+    open_url(QUrl(HELP_URL))
+
 
 class VisibleMenuListWidget(QListWidget):
     def __init__(self, parent=None):
@@ -272,7 +278,7 @@ class ConfigWidget(QWidget):
         self.setLayout(layout)
 
         c = plugin_prefs[STORE_OPTIONS]
-        tags_groupbox = QGroupBox(_('Check excess tags Options'))
+        tags_groupbox = QGroupBox(_('Check excess tags options'))
         layout.addWidget(tags_groupbox)
         tags_layout = QGridLayout()
         tags_groupbox.setLayout(tags_layout)
@@ -296,7 +302,7 @@ class ConfigWidget(QWidget):
         tags_layout.addWidget(self.exclude_tags, 1, 1, 1, 2)
         tags_layout.setColumnStretch(2, 1)
 
-        other_groupbox = QGroupBox(_('Other Options'))
+        other_groupbox = QGroupBox(_('Other options'))
         layout.addWidget(other_groupbox)
         other_layout = QGridLayout()
         other_groupbox.setLayout(other_layout)
@@ -310,7 +316,7 @@ class ConfigWidget(QWidget):
         other_layout.addWidget(self.initials_combo, 0, 1, 1, 1)
         other_layout.setColumnStretch(2, 1)
 
-        menus_groupbox = QGroupBox(_('Visible Menus'))
+        menus_groupbox = QGroupBox(_('Visible menus'))
         layout.addWidget(menus_groupbox)
         menus_layout = QVBoxLayout()
         menus_groupbox.setLayout(menus_layout)
@@ -327,6 +333,11 @@ class ConfigWidget(QWidget):
         view_prefs_button.setToolTip(_('View data stored in the library database for this plugin'))
         view_prefs_button.clicked.connect(self.view_prefs)
         layout.addWidget(view_prefs_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        layout.addWidget(help_button)
 
     def save_settings(self):
         new_prefs = {}

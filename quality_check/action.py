@@ -6,13 +6,12 @@ __copyright__ = '2011, Grant Drake'
 import os
 from functools import partial
 try:
-    from qt.core import QMenu, QToolButton, QUrl
+    from qt.core import QMenu, QToolButton
 except:
-    from PyQt5.Qt import QMenu, QToolButton, QUrl
+    from PyQt5.Qt import QMenu, QToolButton
 
-from calibre.gui2 import open_url, error_dialog
+from calibre.gui2 import error_dialog
 from calibre.gui2.actions import InterfaceAction
-from calibre.utils.config import config_dir
 
 try:
     load_translations()
@@ -31,7 +30,6 @@ from calibre_plugins.quality_check.check_mobi import MobiCheck
 from calibre_plugins.quality_check.dialogs import ExcludeAddDialog, ExcludeViewDialog
 
 DEFAULT_ICON = 'images/quality_check.png'
-HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Quality-Check'
 
 class QualityCheckAction(InterfaceAction):
 
@@ -156,7 +154,7 @@ class QualityCheckAction(InterfaceAction):
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
         create_menu_action_unique(self, m, _('&Help'), 'help.png',
-                                  shortcut=False, triggered=self.show_help)
+                                  shortcut=False, triggered=cfg.show_help)
         self.gui.keyboard.finalize()
 
     def perform_check(self, menu_key, menu_cat):
@@ -233,6 +231,3 @@ class QualityCheckAction(InterfaceAction):
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)
-
-    def show_help(self):
-        open_url(QUrl(HELP_URL))

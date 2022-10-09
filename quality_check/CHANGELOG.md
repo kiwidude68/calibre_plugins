@@ -1,7 +1,9 @@
 # Quality Check Change Log
 
-## [1.13.0] - 2022-09-XX
+## [1.13.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+### Added
+- Added Help button to configuration dialog.
 ### Changed
 - **Breaking:** Drop PyQt4 support.
 - Refactoring of common code
