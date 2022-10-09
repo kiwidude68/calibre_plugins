@@ -36,6 +36,7 @@ from calibre.utils.config import tweaks
 from calibre.utils.date import qt_to_dt
 from calibre.utils.icu import sort_key
 
+import calibre_plugins.manage_series.config as cfg
 from calibre_plugins.manage_series.common_compatibility import qSizePolicy_Minimum, qSizePolicy_Expanding, qtDropActionCopyAction
 from calibre_plugins.manage_series.common_icons import get_icon
 from calibre_plugins.manage_series.common_dialogs import SizePersistedDialog
@@ -472,6 +473,9 @@ class SeriesDialog(SizePersistedDialog):
         layout.addWidget(button_box)
         keep_button = button_box.addButton(' '+_('&Restore Original Series')+' ', QDialogButtonBox.ResetRole)
         keep_button.clicked.connect(self.restore_original_series)
+        help_button = button_box.addButton(' '+_('&Help')+' ', QDialogButtonBox.ResetRole)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(cfg.show_help)
 
     def series_column_changed(self):
         series_column = self.series_column_combo.selected_value()

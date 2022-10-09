@@ -941,7 +941,7 @@ class ConfigWidget(QWidget):
         view_prefs_button.clicked.connect(self._view_prefs)
         layout.addWidget(view_prefs_button)
 
-        help_button = QPushButton(' '+_('Help'), self)
+        help_button = QPushButton(' '+_('&Help'), self)
         help_button.setIcon(get_icon('help.png'))
         help_button.clicked.connect(show_help)
         layout.addWidget(help_button)

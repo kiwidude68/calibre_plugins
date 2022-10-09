@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:02+0100\n"
+"POT-Creation-Date: 2022-10-09 20:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:975
+#: ..\common\common_dialogs.py:84 config.py:929
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -167,31 +167,35 @@ msgstr ""
 msgid "You must choose a library"
 msgstr ""
 
-#: config.py:976
+#: config.py:930
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:980
+#: config.py:934
 msgid "Reset &confirmation dialogs"
 msgstr ""
 
-#: config.py:981
+#: config.py:935
 msgid "Reset all show me again dialogs for the Import list plugin"
 msgstr ""
 
-#: config.py:985
+#: config.py:939
 msgid "&View library preferences"
 msgstr ""
 
-#: config.py:986
+#: config.py:940
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
-#: config.py:995
+#: config.py:944
+msgid "&Help"
+msgstr ""
+
+#: config.py:954
 msgid "Done"
 msgstr ""
 
-#: config.py:996
+#: config.py:955
 msgid "Confirmation dialogs have all been reset"
 msgstr ""
 
@@ -671,15 +675,15 @@ msgstr ""
 msgid "Choose a predefined named pattern"
 msgstr ""
 
-#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:301
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:304
 msgid "&Clear"
 msgstr ""
 
-#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:302
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:305
 msgid "Clear all settings back to the defaults on this tab"
 msgstr ""
 
-#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:304
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:307
 msgid "&Fields"
 msgstr ""
 
@@ -687,19 +691,19 @@ msgstr ""
 msgid "Add expression for field to import"
 msgstr ""
 
-#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:307
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:310
 msgid "Reverse order"
 msgstr ""
 
-#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:308
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:311
 msgid "Display the books in the opposite order to the source"
 msgstr ""
 
-#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:309
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:312
 msgid "&Preview"
 msgstr ""
 
-#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:310
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:313
 msgid "Preview the results in the books grid"
 msgstr ""
 
@@ -784,7 +788,7 @@ msgstr ""
 msgid "&Contents:"
 msgstr ""
 
-#: tab_csv.py:126 tab_webpage.py:202
+#: tab_csv.py:126 tab_webpage.py:210
 msgid "&Encoding:"
 msgstr ""
 
@@ -835,7 +839,7 @@ msgstr ""
 msgid " &Columns To Import: "
 msgstr ""
 
-#: tab_csv.py:210 tab_webpage.py:305
+#: tab_csv.py:210 tab_webpage.py:308
 msgid "Select field(s) to import"
 msgstr ""
 
@@ -979,182 +983,182 @@ msgstr ""
 msgid "View by Category"
 msgstr ""
 
-#: tab_webpage.py:75
+#: tab_webpage.py:83
 msgid "Strip matching text"
 msgstr ""
 
-#: tab_webpage.py:76
+#: tab_webpage.py:84
 msgid "Include matching text"
 msgstr ""
 
-#: tab_webpage.py:91
+#: tab_webpage.py:99
 msgid "Choose a predefined pattern"
 msgstr ""
 
-#: tab_webpage.py:96
+#: tab_webpage.py:104
 msgid "Clear the regular expression"
 msgstr ""
 
-#: tab_webpage.py:176
+#: tab_webpage.py:184
 msgid "&Download from url:"
 msgstr ""
 
-#: tab_webpage.py:189
+#: tab_webpage.py:197
 msgid "Paste a URL from your clipboard"
 msgstr ""
 
-#: tab_webpage.py:194
+#: tab_webpage.py:202
 msgid "Open this url in your web browser"
 msgstr ""
 
-#: tab_webpage.py:201
+#: tab_webpage.py:209
 msgid "&Source html:"
 msgstr ""
 
-#: tab_webpage.py:203
+#: tab_webpage.py:211
 msgid "Specify the web page encoding if not utf-8"
 msgstr ""
 
-#: tab_webpage.py:206
+#: tab_webpage.py:214
 msgid "Load javascript"
 msgstr ""
 
-#: tab_webpage.py:207
+#: tab_webpage.py:215
 msgid "Enable this option if the web page renders its content using javascript"
 msgstr ""
 
-#: tab_webpage.py:208
+#: tab_webpage.py:216
 msgid "&Delay:"
 msgstr ""
 
-#: tab_webpage.py:209
+#: tab_webpage.py:217
 msgid "Additional delay in seconds to wait for web page javascript to execute"
 msgstr ""
 
-#: tab_webpage.py:228
+#: tab_webpage.py:236
 msgid "Find:"
 msgstr ""
 
-#: tab_webpage.py:233
+#: tab_webpage.py:241
 msgid "&Text:"
 msgstr ""
 
-#: tab_webpage.py:234
+#: tab_webpage.py:242
 msgid ""
 "Search for text to help locate the region of interest such as\n"
 "a book name when designing your xpath expressions"
 msgstr ""
 
-#: tab_webpage.py:237
+#: tab_webpage.py:245
 msgid "Search for specific text"
 msgstr ""
 
-#: tab_webpage.py:239
+#: tab_webpage.py:247
 msgid "&Find"
 msgstr ""
 
-#: tab_webpage.py:252
+#: tab_webpage.py:258
 msgid "XPath:"
 msgstr ""
 
-#: tab_webpage.py:257
+#: tab_webpage.py:263
 msgid "Specify XPath expressions to identify the parent rows and title / authors within each row in the source html."
 msgstr ""
 
-#: tab_webpage.py:281
+#: tab_webpage.py:284
 msgid "0 occurrences"
 msgstr ""
 
-#: tab_webpage.py:282
+#: tab_webpage.py:285
 msgid "Number of matches using Test"
 msgstr ""
 
-#: tab_webpage.py:284
+#: tab_webpage.py:287
 msgid "Previous test result"
 msgstr ""
 
-#: tab_webpage.py:289
+#: tab_webpage.py:292
 msgid "Next test result"
 msgstr ""
 
-#: tab_webpage.py:353
+#: tab_webpage.py:356
 msgid "No matches"
 msgstr ""
 
-#: tab_webpage.py:353
+#: tab_webpage.py:356
 msgid "No matches for:"
 msgstr ""
 
-#: tab_webpage.py:405
+#: tab_webpage.py:408
 msgid "Identify the parent node in the html source that contains a single book"
 msgstr ""
 
-#: tab_webpage.py:448
+#: tab_webpage.py:451
 msgid "Strip: %s"
 msgstr ""
 
-#: tab_webpage.py:450
+#: tab_webpage.py:453
 msgid "Include: %s"
 msgstr ""
 
-#: tab_webpage.py:453
+#: tab_webpage.py:456
 msgid "No expression"
 msgstr ""
 
-#: tab_webpage.py:569 tab_webpage.py:570
+#: tab_webpage.py:572 tab_webpage.py:573
 msgid "Failed to download page"
 msgstr ""
 
-#: tab_webpage.py:613
+#: tab_webpage.py:616
 msgid "You must specify an xpath"
 msgstr ""
 
-#: tab_webpage.py:613 tab_webpage.py:620
+#: tab_webpage.py:616 tab_webpage.py:623
 msgid "Test failed"
 msgstr ""
 
-#: tab_webpage.py:620
+#: tab_webpage.py:623
 msgid "No html source available to match against"
 msgstr ""
 
-#: tab_webpage.py:636 tab_webpage.py:782 tab_webpage.py:784 tab_webpage.py:786
-#: tab_webpage.py:788
+#: tab_webpage.py:639 tab_webpage.py:785 tab_webpage.py:787 tab_webpage.py:789
+#: tab_webpage.py:791
 msgid "Invalid xpath"
 msgstr ""
 
-#: tab_webpage.py:637
+#: tab_webpage.py:640
 msgid "Your xpath expression is invalid"
 msgstr ""
 
-#: tab_webpage.py:645
+#: tab_webpage.py:648
 msgid "occurrences"
 msgstr ""
 
-#: tab_webpage.py:782
+#: tab_webpage.py:785
 msgid "You have not specified any xpath expressions"
 msgstr ""
 
-#: tab_webpage.py:784
+#: tab_webpage.py:787
 msgid "You have not specified a title xpath expression"
 msgstr ""
 
-#: tab_webpage.py:786
+#: tab_webpage.py:789
 msgid "You must add a series_index xpath field if using series"
 msgstr ""
 
-#: tab_webpage.py:788
+#: tab_webpage.py:791
 msgid "You must add a series xpath field if using series index"
 msgstr ""
 
-#: tab_webpage.py:911 tab_webpage.py:912
+#: tab_webpage.py:914 tab_webpage.py:915
 msgid "Failed to process page"
 msgstr ""
 
-#: wizards.py:42
+#: wizards.py:44
 msgid "Import Book List"
 msgstr ""
 
-#: wizards.py:48
+#: wizards.py:51
 msgid "&Options"
 msgstr ""
 

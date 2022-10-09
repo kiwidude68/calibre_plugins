@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:02+0100\n"
+"POT-Creation-Date: 2022-10-09 20:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:33
+#: ..\common\common_dialogs.py:84 config.py:42
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -103,39 +103,43 @@ msgstr ""
 msgid "No books selected"
 msgstr ""
 
-#: config.py:34
+#: config.py:43
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: dialogs.py:56 dialogs.py:59
+#: config.py:47 dialogs.py:476
+msgid "&Help"
+msgstr ""
+
+#: dialogs.py:57 dialogs.py:60
 msgid "Lock Series Index"
 msgstr ""
 
-#: dialogs.py:63
+#: dialogs.py:64
 msgid "Series index for book:"
 msgstr ""
 
-#: dialogs.py:78
+#: dialogs.py:79
 msgid "&Assign this index value to all remaining books"
 msgstr ""
 
-#: dialogs.py:100
+#: dialogs.py:101
 msgid "You have conflicting or out of sequence series indexes"
 msgstr ""
 
-#: dialogs.py:103
+#: dialogs.py:104
 msgid "Empty book added to series"
 msgstr ""
 
-#: dialogs.py:106
+#: dialogs.py:107
 msgid "The book data has been changed"
 msgstr ""
 
-#: dialogs.py:109
+#: dialogs.py:110
 msgid "The series data is unchanged"
 msgstr ""
 
-#: dialogs.py:132
+#: dialogs.py:131
 msgid "Value assigned by user"
 msgstr ""
 
@@ -267,15 +271,15 @@ msgstr ""
 msgid "&Restore Original Series"
 msgstr ""
 
-#: dialogs.py:630
+#: dialogs.py:633
 msgid "Unknown"
 msgstr ""
 
-#: dialogs.py:655
+#: dialogs.py:658
 msgid "Are you sure?"
 msgstr ""
 
-#: dialogs.py:656
+#: dialogs.py:659
 msgid "Remove the selected book(s) from the series list?"
 msgstr ""
 

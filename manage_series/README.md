@@ -13,32 +13,7 @@ It is intended as a convenience alternative to the editing the series column in 
 
 You may also find it more convenient than the careful mouse selection ordering required by the bulk metadata edit dialog (which also does not allow for .1 type series values).
 
-## Main Features
-
-- Supports both the built-in Calibre series column and optional custom series columns.
-- Use Alt+Up/Down arrow keys or drag/drop to move books up/down the list.
-- Use Alt+Left/Right to change the indent level to number books at .1 or .01, such as when you have related short stories.
-- Lock series indexes when renumbering to intentionally allow for gaps with missing books.
-- Remove books from the list if they are not to be considered part of the series renumbering.
-- Option to add empty books to fill in your series gaps.
-- Ability to edit the titles and publication dates.
-- Right-click options to sort by original series index, series names or by publication date.
-- Right-click options to perform Search the Internet type browser launching to likely useful series information websites, such as FantasticFiction, Goodreads, Google and Wikipedia.
-
-
-## Dialog Options
-
-| Option  | Description |
-| --------| ----------- |
-| Series Column | Choose which series column to set with this dialog, includes custom columns.
-| Series Name | The name of the series to apply to this column.
-| Start At | Series index renumbering to start from this value.
-| Move book up/down | Shortcut keys Alt+Left or Alt+Right to move books up/down one position.
-| Lock to index value | Lock series index for this book to a specified value.
-| Unlock series index | Unlock the series index for this book.
-| Add empty book | Add an empty book to the list as a placeholder.
-| Remove book | Remove book from the dialog so as to not have series changed.
-| Move decimal left/right | Adjust the decimal position of index e.g. 2 -> 2.1 -> 2.01
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Manage-Series)
 
 ## Development / Contributions
 
