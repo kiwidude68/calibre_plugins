@@ -1,5 +1,9 @@
 # Goodreads Change Log
 
+## [1.7.1] - 2022-10-09
+### Changed
+- Added support for legacy hierarchical tags in new goodreads page (@NeyNey)
+
 ## [1.7.0] - 2022-09-24
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

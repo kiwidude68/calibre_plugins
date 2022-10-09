@@ -727,12 +727,22 @@ class Worker(Thread): # Get details
         calibre_tag_lookup = cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GENRE_MAPPINGS]
         calibre_tag_map = dict((k.lower(),v) for (k,v) in calibre_tag_lookup.items())
         tags_to_add = list()
+        # self.log.info("Tags found in gd:", genre_tags)
         for genre_tag in genre_tags:
+            # flatten tag (sometimes tags aren't flat, beats me why, guess goodreads still wip) 
+            # tag should be flattened if it contains ' > '
+            if ' > ' in genre_tag:
+                # self.log.info("Tag before flattening:", genre_tag)
+                # last element is the tag visible on gd page
+                genre_tag = genre_tag.split(' > ').pop()
+                # self.log.info("Tag after flattening:", genre_tag)
             tags = calibre_tag_map.get(genre_tag.lower(), None)
             if tags:
                 for tag in tags:
                     if tag not in tags_to_add:
                         tags_to_add.append(tag)
+        
+        # self.log.info("Tags added:", tags_to_add)
         return list(tags_to_add)
 
     def _convert_date_text(self, date_text):
