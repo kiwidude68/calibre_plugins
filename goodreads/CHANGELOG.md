@@ -1,9 +1,15 @@
 # Goodreads Change Log
 
+## [1.7.1] - 2022-10-09
+### Added
+- Added an option to ignore all genre -> tag mappings, to get all genres from Goodreads. Increase your `Max number of tags to download` setting if you use this option because you may miss tags otherwise.
+### Changed
+- No longer support hierarchical genres (as not in new website design). So a book with genres of `Fantasy` and `Fantasy > Urban Fantasy` will get returned with `Fantasy` and `Urban Fantasy` genres instead on old web pages. The new web page design will also return the same. Users should review their genre mappings in the configuration dialog and replace any `X > Y` hierarchical mappings with one for just `Y` instead.
+
 ## [1.7.0] - 2022-09-24
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
-- Added configuration option to download precise goodreads rating and review vote count into two identifiers `grrating` and `grvotes`
+- Added configuration option to download precise Goodreads rating and review vote count into two identifiers `grrating` and `grvotes`
     - The new identifiers can be bound to custom columns in calibre.
     - See `README.md` for details of how to do this.
 - Added Russian translations (@Caarmi)

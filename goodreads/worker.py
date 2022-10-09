@@ -701,6 +701,7 @@ class Worker(Thread): # Get details
                 genre_name = book_genre_json["genre"]["name"]
                 genre_tags.append(genre_name)
         calibre_tags = self._convert_genres_to_calibre_tags(genre_tags)
+        self.log.info("parse_tags: %s"%','.join(calibre_tags))
         if len(calibre_tags) > 0:
             return calibre_tags
 
@@ -708,21 +709,28 @@ class Worker(Thread): # Get details
         # Goodreads does not have "tags", but it does have Genres (wrapper around popular shelves)
         # We will use those as tags (with a bit of massaging)
         genres_node = root.xpath('//div[@class="stacked"]/div/div/div[contains(@class, "bigBoxContent")]/div/div[@class="left"]')
-        #self.log.info("Parsing tags")
         if genres_node:
-            #self.log.info("Found genres_node")
             genre_tags = list()
             for genre_node in genres_node:
                 sub_genre_nodes = genre_node.xpath('a')
                 genre_tags_list = [sgn.text.strip() for sgn in sub_genre_nodes]
                 #self.log.info("Found genres_tags list:", genre_tags_list)
                 if genre_tags_list:
-                    genre_tags.append(' > '.join(genre_tags_list))
+                    # As of 1.7.1 we will only get the last genre and pass this through, because
+                    # the new website design in 2022 does not have hierachical genres.
+                    # Old website would have e.g. Fantasy, Fantasy -> Urban Fantasy, ...
+                    # New website just has: Fantasy, Urban Fantasy, ...
+                    genre_tags.append(genre_tags_list[-1])
             calibre_tags = self._convert_genres_to_calibre_tags(genre_tags)
+            self.log.info("parse_tags_legacy: ",','.join(calibre_tags))
             if len(calibre_tags) > 0:
                 return calibre_tags
 
     def _convert_genres_to_calibre_tags(self, genre_tags):
+        map_genres = cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_MAP_GENRES, cfg.DEFAULT_STORE_VALUES[cfg.KEY_MAP_GENRES])
+        if not map_genres:
+            # User has disabled Goodreads tag filtering/mapping - all genres become tags
+            return genre_tags
         # for each tag, add if we have a dictionary lookup
         calibre_tag_lookup = cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GENRE_MAPPINGS]
         calibre_tag_map = dict((k.lower(),v) for (k,v) in calibre_tag_lookup.items())

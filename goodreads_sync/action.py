@@ -356,10 +356,7 @@ class GoodreadsSyncAction(InterfaceAction):
 
     def _update_goodreads_ids(self, calibre_books, msg, previous):
         # When finally exiting, update the Goodreads Id and ISBN where any were changed
-        debug_print("_update_goodreads_ids - Start")
-        debug_print("_update_goodreads_ids - Calling: _update_calibre_database_ids_for_selection for %s books" % len(calibre_books))
         self._update_calibre_database_ids_for_selection(calibre_books)
-#         self._update_calibre_database_ids_after_sync(calibre_books)
 
         self.gui.status_bar.showMessage(msg)
         debug_print("_update_goodreads_ids - status message: %s" % msg)
@@ -524,12 +521,10 @@ class GoodreadsSyncAction(InterfaceAction):
 
     def _update_calibre_database_ids_for_selection(self, calibre_books):
         # Our collection of books are a selection in calibre
-        debug_print("_update_calibre_database_ids_for_selection - Start")
         db = self.gui.library_view.model().db
-        gr_cache = self.id_caches.goodreads_to_calibre_ids()
-        cb_cache = self.id_caches.calibre_to_goodreads_ids()
+        _gr_cache = self.id_caches.goodreads_to_calibre_ids()
+        _cb_cache = self.id_caches.calibre_to_goodreads_ids()
         for book in calibre_books:
-            debug_print("_update_calibre_database_ids_for_selection - Processing book id: %s" % book['calibre_id'])
             self.progressbar_label("Updating book %s" % book['calibre_id'])
             self.progressbar_increment()
             book['updated'] = False
@@ -538,10 +533,6 @@ class GoodreadsSyncAction(InterfaceAction):
             orig_goodreads_id = book.get('orig_goodreads_id', None)
             isbn = book['calibre_isbn']
             orig_isbn = book['orig_calibre_isbn']
-            debug_print("_update_calibre_database_ids_for_selection - goodreads_id: %s" % goodreads_id)
-            debug_print("_update_calibre_database_ids_for_selection - orig_goodreads_id: %s" % orig_goodreads_id)
-            debug_print("_update_calibre_database_ids_for_selection - isbn: %s" % isbn)
-            debug_print("_update_calibre_database_ids_for_selection - orig_isbn: %s" % orig_isbn)
             if isbn and isbn != orig_isbn:
                 db.set_isbn(calibre_id, isbn, notify=False, commit=False)
                 book['updated'] = True
@@ -549,23 +540,7 @@ class GoodreadsSyncAction(InterfaceAction):
                 continue
             db.set_identifier(calibre_id, 'goodreads', goodreads_id, notify=False, commit=False)
             book['updated'] = True
-            continue
-            # We need to maintain our in-memory cache of mapped ids.
-            cb_cache[calibre_id] = goodreads_id
-            calibre_ids_mapped = gr_cache.get(goodreads_id, [])
-            calibre_ids_mapped.append(calibre_id)
-            gr_cache[goodreads_id] = calibre_ids_mapped
-            if orig_goodreads_id:
-                # Book was mapped to a different id previously. Remove old mapping if exists
-                orig_calibre_ids_mapped = gr_cache.get(orig_goodreads_id, [])
-                if calibre_id in orig_calibre_ids_mapped:
-                    orig_calibre_ids_mapped.remove(calibre_id)
-                    if len(orig_calibre_ids_mapped) == 0:
-                        del gr_cache[orig_goodreads_id]
-                    else:
-                        gr_cache[orig_goodreads_id] = orig_calibre_ids_mapped
         db.commit()
-        debug_print("_update_calibre_database_ids_for_selection - Finish")
 
     def _is_valid_selection(self):
         rows = self.gui.library_view.selectionModel().selectedRows()

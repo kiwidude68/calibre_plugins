@@ -41,6 +41,7 @@ KEY_GET_RATING = 'getRating'
 KEY_GET_VOTES = 'getVotes'
 KEY_FIRST_PUBLISHED = 'firstPublished'
 KEY_GENRE_MAPPINGS = 'genreMappings'
+KEY_MAP_GENRES = 'mapGenres'
 
 DEFAULT_GENRE_MAPPINGS = {
                 'Anthologies': ['Anthologies'],
@@ -72,7 +73,7 @@ DEFAULT_GENRE_MAPPINGS = {
                 'Humor': ['Humour'],
                 'Health': ['Health'],
                 'Inspirational': ['Inspirational'],
-                'Sequential Art > Manga': ['Manga'],
+                'Manga': ['Manga'],
                 'Modern': ['Modern'],
                 'Music': ['Music'],
                 'Mystery': ['Mystery'],
@@ -94,11 +95,10 @@ DEFAULT_GENRE_MAPPINGS = {
                 'Suspense': ['Suspense'],
                 'Thriller': ['Thriller'],
                 'Travel': ['Travel'],
-                'Paranormal > Vampires': ['Vampires'],
+                'Vampires': ['Vampires'],
                 'War': ['War'],
                 'Western': ['Western'],
-                'Language > Writing': ['Writing'],
-                'Writing > Essays': ['Writing'],
+                'Writing': ['Writing'],
                 'Young Adult': ['Young Adult'],
                 }
 
@@ -109,6 +109,7 @@ DEFAULT_STORE_VALUES = {
     KEY_GET_RATING: False,
     KEY_GET_VOTES: False,
     KEY_FIRST_PUBLISHED: True,
+    KEY_MAP_GENRES: True,
     KEY_GENRE_MAPPINGS: copy.deepcopy(DEFAULT_GENRE_MAPPINGS)
 }
 
@@ -224,6 +225,12 @@ class ConfigWidget(DefaultConfigWidget):
         genre_group_box_layout = QVBoxLayout()
         genre_group_box.setLayout(genre_group_box_layout)
 
+        self.map_genres_checkbox = QCheckBox(_('Filter and map genres to calibre tags'), self)
+        self.map_genres_checkbox.setToolTip(_('When checked, only specific calibre tags will be used as per below.\n'
+                                              'When unchecked, all Goodreads genres will be added as tags.'))
+        self.map_genres_checkbox.setChecked(c.get(KEY_MAP_GENRES, DEFAULT_STORE_VALUES[KEY_MAP_GENRES]))
+        genre_group_box_layout.addWidget(self.map_genres_checkbox)
+
         tags_layout = QHBoxLayout()
         genre_group_box_layout.addLayout(tags_layout)
 
@@ -313,6 +320,7 @@ class ConfigWidget(DefaultConfigWidget):
         new_prefs[KEY_FIRST_PUBLISHED] = self.first_published_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GET_RATING] = self.get_rating_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GET_VOTES] = self.get_votes_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_MAP_GENRES] = self.map_genres_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GENRE_MAPPINGS] = self.edit_table.get_data()
         plugin_prefs[STORE_NAME] = new_prefs
 
