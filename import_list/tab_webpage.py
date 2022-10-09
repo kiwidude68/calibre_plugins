@@ -250,12 +250,10 @@ class ImportWebPageTab(QWidget):
         fgbl.addWidget(self.find_ledit, 1)
         fgbl.addWidget(self.find_button)
 
-        # update: add match by identifier {
         self.mgb = MatchGroupBox(self)
         self.match_layout = QVBoxLayout()
         self.match_layout.addWidget(self.mgb)
         l.addLayout(self.match_layout, 5, 0, 1, 2)
-        #}
 
         gb = QGroupBox(' '+_('XPath:')+' ', self)
         gb.setStyleSheet('QGroupBox { font-weight: bold; }')
@@ -263,16 +261,14 @@ class ImportWebPageTab(QWidget):
         gbl = QVBoxLayout()
         gb.setLayout(gbl)
         xpath_lbl = QLabel(_('Specify XPath expressions to identify the parent '
-                           'rows and title / authors within each row in the source html.')+'<br/>', self)
+                           'rows and title / authors within each row in the source html.'), self)
         xpath_lbl.setWordWrap(True)
         xpath_lbl.linkActivated.connect(self.parent_page.open_external_link)
         gbl.addWidget(xpath_lbl)
 
         self.xpath_layout = QGridLayout()
         gbl.addLayout(self.xpath_layout)
-        self.xpath_layout.setColumnStretch(1, 1)
 
-        # Update: add scrollbar {
         scroll = QScrollArea()
         scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
@@ -280,8 +276,7 @@ class ImportWebPageTab(QWidget):
         scroll.setSizePolicy(qSizePolicy_Expanding, qSizePolicy_Preferred)
         scroll.setWidget(gb)
         l.addWidget(scroll, 6, 0, 1, 2)
-        l.setRowStretch(6, 3)
-        #}
+        l.setRowStretch(6, 1)
         # Controls will be added dynamically when grid is populated
 
         xpbl = QHBoxLayout()

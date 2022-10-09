@@ -19,7 +19,6 @@ except ImportError:
                       QTableWidgetItem, QIcon, QAbstractItemView, Qt, QPushButton, QStyledItemDelegate,
                       QToolButton, QSpacerItem, QModelIndex)
 
-from calibre.devices.usbms.driver import debug_print
 from calibre.gui2 import question_dialog
 from calibre.gui2.actions import menu_action_unique_name
 from calibre.utils.config import JSONConfig
@@ -335,7 +334,6 @@ class MetadataSourcesTableWidget(QTableWidget):
             data = self.convert_row_to_data(row)
             if len(data[KEY_TITLE]) > 0:
                 data_items.append(data)
-        debug_print("MetadataSourcesTableWidget::get_data - data_items:", data_items)
         return data_items
 
     def get_selected_data(self):
@@ -714,7 +712,6 @@ class MetadataSourcesDialog(SizePersistedDialog):
 
     def get_selected_sources(self):
         enable_sources = self.sources_model.selected_sources()
-        debug_print("get_selected_sources - enable_sources: '%s'" % enable_sources)
         return enable_sources
 
     def _ok_clicked(self):
@@ -742,12 +739,9 @@ class SourcesModel(QAbstractTableModel):  # {{{
     def initialize(self):
         self.beginResetModel()
         self.plugins = [[plugin.name, not is_disabled(plugin), plugin.description] for plugin in list(all_metadata_plugins())]
-        debug_print("initialize - plugins:", self.plugins)
         if len(self._enabled_sources) > 0:
-            debug_print("initialize - _enabled_sources:", self.enabled_sources)
             for plugin in self.plugins:
                 plugin[1] = plugin[0] in self.enabled_sources 
-        debug_print("initialize - plugins:", self.plugins)
         self.plugins.sort()
         self.endResetModel()
 
@@ -803,12 +797,10 @@ class SourcesModel(QAbstractTableModel):  # {{{
         return Qt.ItemIsEditable | ans
 
     def selected_sources(self):
-        debug_print("selected_sources: plugins=", self.plugins)
         selected_sources = [plugin[0] for plugin in self.plugins if plugin[1]]
         return selected_sources
 
     def deselect_all(self):
-        debug_print("SourcesModel:deselect_all")
         for plugin in self.plugins:
             plugin[1] = False
         self.enabled_sources = ['']
@@ -834,14 +826,10 @@ class MetadataSourcesTemplateDelegate(QStyledItemDelegate):  # {{{
 
     def createEditor(self, parent, option, index):
         m = index.model()
-        debug_print("createEditor - m.data(index): '%s'" % m.data(index))
-        debug_print("createEditor - data to edit: '%s'" % m.data(index).strip().split(','))
-        debug_print("createEditor - data to edit: '%s'" % [unicode(source.strip()) for source in m.data(index).strip().split(',')])
         enabled_sources = m.data(index).strip()
         enabled_sources = [unicode(source.strip()) for source in enabled_sources.split(',')] if len(enabled_sources) > 0 else []
         editor = MetadataSourcesDialog(parent, enabled_sources=enabled_sources)
         d = editor.exec_()
         if d:
-            debug_print("createEditor - selected sources:", editor.get_selected_sources())
             m.setData(index, (", ".join(editor.get_selected_sources())), Qt.EditRole)
         return None

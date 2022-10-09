@@ -10,12 +10,16 @@ except ImportError:
 
 try:
     qWizard_NoDefaultButton = QWizard.WizardOption.NoDefaultButton
+    qWizard_HelpButton = QWizard.WizardButton.HelpButton
     qWizard_HaveHelpButton = QWizard.WizardOption.HaveHelpButton
     qWizard_HelpButtonOnRight = QWizard.WizardOption.HelpButtonOnRight
+    qWizard_Style = QWizard.WizardStyle.ModernStyle
 except:
     qWizard_NoDefaultButton = QWizard.NoDefaultButton
+    qWizard_HelpButton = QWizard.HelpButton
     qWizard_HaveHelpButton = QWizard.HaveHelpButton
     qWizard_HelpButtonOnRight = QWizard.HelpButtonOnRight
+    qWizard_Style = QWizard.ModernStyle
 
 from calibre.gui2 import gprefs
 
@@ -39,11 +43,12 @@ class ImportListWizard(QWizard):
         self.setModal(is_modal)
         self.setWindowTitle(_('Import Book List'))
         self.setWindowIcon(get_icon('images/import_list.png'))
-        self.setMinimumSize(600, 0)
+        self.setWizardStyle(qWizard_Style)
+        self.setMinimumSize(600, 600)
         self.setOption(qWizard_NoDefaultButton, True)
         self.setOption(qWizard_HaveHelpButton, True)
         self.setOption(qWizard_HelpButtonOnRight, False)
-        self.setButtonText(QWizard.HelpButton, _('&Options')+'...')
+        self.setButtonText(qWizard_HelpButton, _('&Options')+'...')
         self.helpRequested.connect(self._show_options)
 
         self.is_closed = False

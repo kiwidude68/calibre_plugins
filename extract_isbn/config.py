@@ -55,6 +55,9 @@ plugin_prefs = JSONConfig('plugins/Extract ISBN')
 # Set defaults
 plugin_prefs.defaults[STORE_NAME] = DEFAULT_STORE_VALUES
 
+def show_help():
+    open_url(QUrl(HELP_URL))
+
 class ConfigWidget(QWidget):
 
     def __init__(self, plugin_action):
@@ -123,7 +126,7 @@ class ConfigWidget(QWidget):
 
         help_button = QPushButton(' '+_('Help'), self)
         help_button.setIcon(get_icon('help.png'))
-        help_button.clicked.connect(self.show_help)
+        help_button.clicked.connect(show_help)
         button_layout.addWidget(help_button)
         layout.addLayout(button_layout, 8, 0, 1, 2)
 
@@ -143,6 +146,3 @@ class ConfigWidget(QWidget):
         d = KeyboardConfigDialog(self.plugin_action.gui, self.plugin_action.action_spec[0])
         if d.exec_() == d.Accepted:
             self.plugin_action.gui.keyboard.finalize()
-
-    def show_help(self):
-        open_url(QUrl(HELP_URL))

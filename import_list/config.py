@@ -6,19 +6,22 @@ __copyright__ = '2011, Grant Drake'
 import copy
 
 try:
-    from qt.core import (QWidget, QVBoxLayout, QPushButton)
+    from qt.core import (QWidget, QVBoxLayout, QPushButton, QUrl)
 except ImportError:
-    from PyQt5.Qt import (QWidget, QVBoxLayout, QPushButton)
+    from PyQt5.Qt import (QWidget, QVBoxLayout, QPushButton, QUrl)
 
-from calibre.gui2 import dynamic, info_dialog
+from calibre.gui2 import dynamic, info_dialog, open_url
 from calibre.constants import numeric_version as calibre_version
 
+from calibre_plugins.import_list.common_icons import get_icon
 from calibre_plugins.import_list.common_dialogs import KeyboardConfigDialog, PrefsViewerDialog
 
 try:
     load_translations()
 except NameError:
     pass
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Import-List'
 
 KEY_SCHEMA_VERSION = 'schemaVersion'
 # Modified: add identifier by match: pump DEFAULT_SCHEMA_VERSION to accomodate new option {
@@ -88,18 +91,13 @@ KEY_CSV_FILE = 'file'
 KEY_CSV_DELIMITER = 'delimiter'
 KEY_CSV_SKIP_FIRST = 'skipFirst'
 KEY_CSV_UNQUOTE = 'unquote'
-# Update: option to disable tidying fields for csv {
 KEY_CSV_TIDY = 'tidy'
-# }
 KEY_CSV_REVERSE_LIST = 'reverseList'
 KEY_CSV_DATA = 'columnData'
 KEY_CSV_FIELD = 'field'
 KEY_CSV_FIELD_INDEX = 'index'
-
-# Update: add encodings support {
 KEY_CSV_ENCODING = 'encoding'
 KEY_CSV_COMBO_ENCODINGS = 'comboEncodings'
-#}
 
 KEY_IMPORT_TYPE_WEB = 'web'
 KEY_WEB_URL = 'url'
@@ -122,9 +120,7 @@ DEFAULT_DELAY = 3
 DEFAULT_CLIPBOARD_SETTING_VALUES = {
                         KEY_CLIPBOARD_REGEX: '',
                         KEY_CLIPBOARD_TEXT: '',
-                        # Update: add match by identifier {
                         KEY_MATCH_SETTINGS: {'match_method': 'title/author'},
-                        #}
                         KEY_CLIPBOARD_REVERSE_LIST: False
                       }
 
@@ -133,17 +129,11 @@ DEFAULT_CSV_SETTING_VALUES = {
                         KEY_CSV_DELIMITER: ',',
                         KEY_CSV_SKIP_FIRST: True,
                         KEY_CSV_UNQUOTE: True,
-                        # Update: option to disable tidying fields for csv {
                         KEY_CSV_TIDY: True,
-                        # }
                         KEY_CSV_REVERSE_LIST: False,
-                        # Update: add match by identifier {
                         KEY_MATCH_SETTINGS: {'match_method': 'title/author'},
-                        #}
-                        # Update: add encodings support {
                         KEY_CSV_ENCODING: 'utf-8',
                         KEY_CSV_COMBO_ENCODINGS: ['utf-8','utf-16','iso-8859-1'],
-                        #}
                         KEY_CSV_DATA: [
                              { KEY_CSV_FIELD: 'title',   KEY_CSV_FIELD_INDEX: 1 },
                              { KEY_CSV_FIELD: 'authors', KEY_CSV_FIELD_INDEX: 2 } ]
@@ -151,9 +141,7 @@ DEFAULT_CSV_SETTING_VALUES = {
 
 DEFAULT_WEB_SETTING_VALUES = {
                         KEY_WEB_URL: '',
-                        # Update: add match by identifier {
                         KEY_MATCH_SETTINGS: {'match_method': 'title/author'},
-                        #}
                         KEY_WEB_XPATH_DATA: [
                              { KEY_WEB_FIELD: 'rows',    KEY_WEB_XPATH: '' },
                              { KEY_WEB_FIELD: 'title',   KEY_WEB_XPATH: '', KEY_WEB_REGEX_IS_STRIP: True, KEY_WEB_REGEX: '' },
@@ -714,43 +702,6 @@ PREDEFINED_WEB_SETTINGS_TEMPLATE = {
             KEY_WEB_CONFIG_NAME: 'Goodreads Shelf'
         },
 
-   'NPR Top 100 Beach Novels 2009': {
-            KEY_WEB_CATEGORIES: [CAT_GENRE_SCIENCE_FICTION, CAT_GENRE_FICTION],
-            KEY_WEB_URL: 'http://www.npr.org/templates/story/story.php?storyId=106983620',
-            KEY_WEB_XPATH_DATA: [
-                { KEY_WEB_FIELD: 'rows',    KEY_WEB_XPATH: '//div[@id="storytext"]/p/em' },
-                { KEY_WEB_FIELD: 'title',   KEY_WEB_XPATH: 'text()',                    KEY_WEB_REGEX_IS_STRIP: True, KEY_WEB_REGEX: 'series|\[.*\]' },
-                { KEY_WEB_FIELD: 'authors', KEY_WEB_XPATH: 'following-sibling::text()', KEY_WEB_REGEX_IS_STRIP: True, KEY_WEB_REGEX: '' } ],
-            KEY_WEB_REVERSE_LIST: False,
-            KEY_WEB_JAVASCRIPT: False,
-            KEY_WEB_ENCODING: 'utf-8',
-            KEY_MATCH_SETTINGS: {'match_method': 'title/author'}
-        },
-   'NPR Top 100 Killer Thrillers 2010': {
-            KEY_WEB_CATEGORIES: [CAT_GENRE_SCIENCE_FICTION, CAT_GENRE_CRIME],
-            KEY_WEB_URL: 'http://www.npr.org/2011/06/13/128718927/audience-picks-top-100-killer-thrillers',
-            KEY_WEB_XPATH_DATA: [
-                { KEY_WEB_FIELD: 'rows',    KEY_WEB_XPATH: '//div[@id="storytext"]/ul/li' },
-                { KEY_WEB_FIELD: 'title',   KEY_WEB_XPATH: 'em/text()',                           KEY_WEB_REGEX_IS_STRIP: True, KEY_WEB_REGEX: '' },
-                { KEY_WEB_FIELD: 'authors', KEY_WEB_XPATH: '(text()[normalize-space()])[last()]', KEY_WEB_REGEX_IS_STRIP: True, KEY_WEB_REGEX: '' } ],
-            KEY_WEB_REVERSE_LIST: False,
-            KEY_WEB_JAVASCRIPT: False,
-            KEY_WEB_ENCODING: 'utf-8',
-            KEY_MATCH_SETTINGS: {'match_method': 'title/author'}
-        },
-   'NPR Top 100 Science-Fiction-Fantasy 2011': {
-            KEY_WEB_CATEGORIES: [CAT_GENRE_SCIENCE_FICTION, CAT_GENRE_FANTASY],
-            KEY_WEB_URL: 'http://www.npr.org/2011/08/11/139085843/your-picks-top-100-science-fiction-fantasy-books',
-            KEY_WEB_XPATH_DATA: [
-                { KEY_WEB_FIELD: 'rows',    KEY_WEB_XPATH: '//div[@class="bucket listitem booklistitem"]/div[@class="bucketblock"]' },
-                { KEY_WEB_FIELD: 'title',   KEY_WEB_XPATH: 'h3/a/text()',                             KEY_WEB_REGEX_IS_STRIP: True, KEY_WEB_REGEX: '' },
-                { KEY_WEB_FIELD: 'authors', KEY_WEB_XPATH: 'div[@class="bookMeta"]/p/a/span/text()',  KEY_WEB_REGEX_IS_STRIP: True, KEY_WEB_REGEX: '' } ],
-            KEY_WEB_REVERSE_LIST: False,
-            KEY_WEB_JAVASCRIPT: False,
-            KEY_WEB_ENCODING: 'utf-8',
-            KEY_MATCH_SETTINGS: {'match_method': 'title/author'}
-        },
-
    'NY Times Bestsellers: Fiction eBooks': {
             KEY_WEB_CATEGORIES: [CAT_BESTSELLERS, CAT_GENRE_FICTION],
             KEY_WEB_URL: 'http://www.nytimes.com/best-sellers-books/e-book-fiction/list.html',
@@ -957,6 +908,9 @@ def get_setting_names(db):
     lists = library_config[KEY_SAVED_SETTINGS]
     return sorted(list(lists.keys()))
 
+def show_help():
+    open_url(QUrl(HELP_URL))
+
 
 class ConfigWidget(QWidget):
 
@@ -986,6 +940,11 @@ class ConfigWidget(QWidget):
         view_prefs_button.setToolTip(_('View data stored in the library database for this plugin'))
         view_prefs_button.clicked.connect(self._view_prefs)
         layout.addWidget(view_prefs_button)
+
+        help_button = QPushButton(' '+_('Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        layout.addWidget(help_button)
 
     def _reset_dialogs(self):
         for key in dynamic.keys():

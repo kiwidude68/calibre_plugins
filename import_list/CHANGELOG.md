@@ -1,12 +1,14 @@
 # Import List Change Log
 
-## [1.9.0] - 2022-09-XX
+## [1.9.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add translation support.
 - Add backwards compatiblity to min calibre 3.41.0
+- Add Help button to configuration dialog
 ### Changed
 - Refactoring of common code
+- Changed wizard style of appearance, tweaked layouts.
 ### Fixed
 - Predefined Amazon lists were not working
 
@@ -77,7 +79,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Highlighting and moving between matches in webpage tab not working with python3. (@capink)
 - Disable automatic preview when a new file is selected, to allow users to select proper field mappings first.
 - Stop the tag view from updating while the progress bar is on.
-- Move previous and next buttons in the web tab out of the scrollarea to make them visibile again.
+- Move previous and next buttons in the web tab out of the scrollarea to make them visible again.
 
 ## [1.4.9] - 2020-07-15
 ### Changed
@@ -102,7 +104,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Support for different encodings in csv tab. (@capink)
 - Changes to make the plugin translatable.
 - Option to automatically map fields in csv tabs by reading header names if present.
-- Add match by indentifier to web tab.
+- Add match by identifier to web tab.
 - Add a scrollbar to controls in web tab.
 - Refactoring the code for match by identifier into one class in tab_common.py.
 
