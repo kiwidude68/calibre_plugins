@@ -47,40 +47,11 @@ KEY_AUTO_DELETE_BINARY_DUPS = 'autoDeleteBinaryDups'
 
 KEY_SHOW_VARIATION_BOOKS = 'showVariationBooks'
 
-# Update: Advancde mode {
-KEY_ADVANCED_MODE = 'advancedMode'
-KEY_BOOK_DUPLICATES = 'bookDuplicates'
-KEY_LIBRARY_DUPLICATES = 'libraryDuplicates'
-KEY_METADATA_VARIATIONS = 'metadataVariations'
-KEY_LIBRARIES_LOC_LIST = 'librariesList'
-KEY_LAST_SETTINGS = 'lastSettings'
-KEY_SAVED_SETTINGS = 'savedSettings'
-KEY_RESTORE_LAST_SETTINGS = 'restoreLastSettings'
-KEY_ALGORITHMS_TABLE_STATE = 'findDuplicatesAlgorithmsTableState'
-ADVANCED_MODE_DEFAULTS = {
-    KEY_BOOK_DUPLICATES: {
-        KEY_SHOW_ALL_GROUPS: True,
-        KEY_SORT_GROUPS_TITLE: False,
-        KEY_LAST_SETTINGS: {}
-    },
-    KEY_LIBRARY_DUPLICATES: {
-        KEY_LIBRARIES_LOC_LIST: [],
-        KEY_LAST_SETTINGS: {}
-    },
-    KEY_METADATA_VARIATIONS: {
-        KEY_SHOW_VARIATION_BOOKS: False,
-        KEY_LAST_SETTINGS: {}
-    },
-    KEY_SAVED_SETTINGS: {}
-}
-# }
-
 DEFAULT_LIBRARIES_VALUES = {}
 DEFAULT_LIBRARY_VALUES = {
                             KEY_LAST_LIBRARY_COMPARE: '',
                             KEY_BOOK_EXEMPTIONS: [],
                             KEY_AUTHOR_EXEMPTIONS: [],
-                            KEY_ADVANCED_MODE: ADVANCED_MODE_DEFAULTS,
                             KEY_SCHEMA_VERSION: DEFAULT_SCHEMA_VERSION
                          }
 
@@ -97,21 +68,6 @@ def migrate_library_config_if_required(db, library_config):
 
     # Any migration code in future will exist in here.
     #if schema_version < 1.x:
-
-    if schema_version < 1.7:
-
-        match_rules = get_all_match_rules(library_config)
-
-        for match_rules in match_rules: 
-            for match_rule in match_rules:
-                algos = match_rule['algos']
-                for algo in algos:
-                    name = algo['name']
-                    if name.startswith('TEMPLATE:'):
-                        new_name = 'Template Match'
-                        settings = {'template': name.lstrip('TEMPLATE:').strip()}
-                        algo['name'] = new_name
-                        algo['settings'] = settings
 
     set_library_config(db, library_config)
 
@@ -136,7 +92,6 @@ def get_library_config(db):
     if not library_config:
         library_config = db.prefs.get_namespaced(PREFS_NAMESPACE, PREFS_KEY_SETTINGS,
                                                  copy.deepcopy(DEFAULT_LIBRARY_VALUES))
-    get_missing_values_from_defaults(DEFAULT_LIBRARY_VALUES, library_config)
     migrate_library_config_if_required(db, library_config)
     return library_config
 
@@ -173,43 +128,6 @@ def set_exemption_list(db, config_key, exemptions_list):
     library_config = get_library_config(db)
     library_config[config_key] = exemptions_list
     set_library_config(db, library_config)
-
-
-def get_all_entries(library_config):
-    return [
-            library_config[KEY_ADVANCED_MODE][KEY_BOOK_DUPLICATES][KEY_LAST_SETTINGS],
-            library_config[KEY_ADVANCED_MODE][KEY_LIBRARY_DUPLICATES][KEY_LAST_SETTINGS],
-            library_config[KEY_ADVANCED_MODE][KEY_METADATA_VARIATIONS][KEY_LAST_SETTINGS]
-        ] + list(library_config[KEY_ADVANCED_MODE][KEY_SAVED_SETTINGS].values())
-
-def get_all_match_rules(library_config):
-    
-    collected_settings = get_all_entries(library_config)
-
-    return [ x.get('match_rules', []) for x in collected_settings if x.get('match_rules') ]
-
-def migrate_imported_settings_from_old_schema(imported_settings):
-    '''
-    Migrate imported settings from old saved settings schema
-    to be in line with library_config so that migrate_advanced_settings_if_necessary
-    would work for it in the same way
-    '''
-    try:
-        del imported_settings['findDuplicatesSavedSettingsSchema']
-    except:
-        pass
-    return {KEY_ADVANCED_MODE: imported_settings}
-
-def get_missing_values_from_defaults(default_settings, settings):
-    '''add keys present in default_settings and absent in setting'''
-    for k, default_value in default_settings.items():
-        try:
-            setting_value = settings[k]
-            if isinstance(default_value, dict):
-                get_missing_values_from_defaults(default_value, setting_value)
-        except KeyError:
-            settings[k] = copy.deepcopy(default_value)
-
 
 class ConfigWidget(QWidget):
 

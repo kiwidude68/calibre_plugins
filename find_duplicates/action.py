@@ -67,8 +67,6 @@ class FindDuplicatesAction(InterfaceAction):
         self.update_actions_enabled()
         self.gui.search.cleared.connect(self.user_has_cleared_search) 
         self.gui.search_restriction.currentIndexChanged.connect(self.user_has_changed_restriction)
-        self.api_version = 1.0
-        self.user_algorithm_classes = {}
 
     def library_changed(self, db):
         # We need to reset our duplicate finder after switching libraries
