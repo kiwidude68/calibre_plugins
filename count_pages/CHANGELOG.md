@@ -4,7 +4,7 @@
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Support for .webp page counts in CBR/CBZ.
-- Add a Help button to the options dialog in the Other tab.
+- Add a Help button to the menu and configuration dialog in the Other tab.
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code.

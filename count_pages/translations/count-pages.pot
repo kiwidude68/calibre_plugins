@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 18:19+0100\n"
+"POT-Creation-Date: 2022-10-09 11:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:449
+#: ..\common\common_dialogs.py:84 config.py:452
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -113,59 +113,63 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:134 action.py:193
+#: action.py:101 config.py:461
+msgid "&Help"
+msgstr ""
+
+#: action.py:136 action.py:195
 msgid "Configure plugin"
 msgstr ""
 
-#: action.py:135 action.py:194
+#: action.py:137 action.py:196
 msgid "You must specify custom column(s) first. Do you want to configure this now?"
 msgstr ""
 
-#: action.py:239
+#: action.py:241
 msgid "Count Page/Word Statistics"
 msgstr ""
 
-#: action.py:248
+#: action.py:250
 msgid "Counting statistics in %d books"
 msgstr ""
 
-#: action.py:255
+#: action.py:257
 msgid "Failed to count statistics"
 msgstr ""
 
-#: action.py:256
+#: action.py:258
 msgid "Counting statistics completed"
 msgstr ""
 
-#: action.py:261
+#: action.py:263
 msgid "Failed to generate any statistics. <b>View Log</b> for details"
 msgstr ""
 
-#: action.py:262
+#: action.py:264
 msgid "Count Pages failed"
 msgstr ""
 
-#: action.py:262 action.py:275
+#: action.py:264 action.py:277
 msgid "Count log"
 msgstr ""
 
-#: action.py:271
+#: action.py:273
 msgid "<p>Count Pages plugin found <b>%d statistics(s)</b>. "
 msgstr ""
 
-#: action.py:272
+#: action.py:274
 msgid "Proceed with updating columns in your library?"
 msgstr ""
 
-#: action.py:275
+#: action.py:277
 msgid "Count complete"
 msgstr ""
 
-#: action.py:287
+#: action.py:289
 msgid "Updating statistics"
 msgstr ""
 
-#: action.py:290 action.py:302
+#: action.py:292 action.py:304
 msgid "Updating"
 msgstr ""
 
@@ -197,73 +201,73 @@ msgstr ""
 msgid " - all sources"
 msgstr ""
 
-#: config.py:260
+#: config.py:263
 msgid "Statistics"
 msgstr ""
 
-#: config.py:261
+#: config.py:264
 msgid "Other"
 msgstr ""
 
-#: config.py:349
+#: config.py:352
 msgid "Download options:"
 msgstr ""
 
-#: config.py:364
+#: config.py:367
 msgid "Move source up (Alt+Up)"
 msgstr ""
 
-#: config.py:366
+#: config.py:369
 msgid "Alt+Up"
 msgstr ""
 
-#: config.py:370
+#: config.py:373
 msgid "Move source down (Alt+Down)"
 msgstr ""
 
-#: config.py:372
+#: config.py:375
 msgid "Alt+Down"
 msgstr ""
 
-#: config.py:376
+#: config.py:379
 msgid "Show download from all sources menu item"
 msgstr ""
 
-#: config.py:378
+#: config.py:381
 msgid ""
 "Show a menu item to attempt to download the page\n"
 "count from all active sources. Only sources for which\n"
 "the book has an id will be tried.\n"
 msgstr ""
 
-#: config.py:385
+#: config.py:388
 msgid "Try to download page count from each source"
 msgstr ""
 
-#: config.py:386
+#: config.py:389
 msgid ""
 "If this option is checked, each download source is\n"
 "tried until a page count is successfully\n"
 "fetched.\n"
 msgstr ""
 
-#: config.py:394
+#: config.py:397
 msgid "Other options:"
 msgstr ""
 
-#: config.py:400
+#: config.py:403
 msgid "&Button default:"
 msgstr ""
 
-#: config.py:401
+#: config.py:404
 msgid "If plugin is placed as a toolbar button, choose a default action when clicked on"
 msgstr ""
 
-#: config.py:412
+#: config.py:415
 msgid "Always overwrite an existing word/page count"
 msgstr ""
 
-#: config.py:413
+#: config.py:416
 msgid ""
 "Uncheck this option if you have manually populated values in\n"
 "either of your page/word custom columns, and never want the\n"
@@ -273,11 +277,11 @@ msgid ""
 "into a column and just want the zero/blank column populated."
 msgstr ""
 
-#: config.py:422
+#: config.py:425
 msgid "Update the statistics even if they have not changed"
 msgstr ""
 
-#: config.py:423
+#: config.py:426
 msgid ""
 "Check this option if you want the statistics to be updated in\n"
 "the books metadata even if they have not changed. Using this\n"
@@ -285,11 +289,11 @@ msgid ""
 "even when the statistics have not changed."
 msgstr ""
 
-#: config.py:430
+#: config.py:433
 msgid "Use Preferred Output Format if available"
 msgstr ""
 
-#: config.py:431
+#: config.py:434
 msgid ""
 "Check this option to calculate the statistics using the format selected\n"
 "as the Preferred Output Format. If this format is not found, or the\n"
@@ -299,11 +303,11 @@ msgid ""
 "Note: ePub will always be used if the ADE page count algorithm is selected."
 msgstr ""
 
-#: config.py:440
+#: config.py:443
 msgid "Prompt to save counts"
 msgstr ""
 
-#: config.py:441
+#: config.py:444
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -311,27 +315,23 @@ msgid ""
 "this book record at the same time they will be lost."
 msgstr ""
 
-#: config.py:450
+#: config.py:453
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:452
+#: config.py:455
 msgid "&Library preferences"
 msgstr ""
 
-#: config.py:453
+#: config.py:456
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
-#: config.py:458
-msgid "Help"
-msgstr ""
-
-#: config.py:469
+#: config.py:472
 msgid "Done"
 msgstr ""
 
-#: config.py:470
+#: config.py:473
 msgid "Confirmation dialogs have all been reset"
 msgstr ""
 

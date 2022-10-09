@@ -230,6 +230,9 @@ def get_library_config(db):
 def set_library_config(db, library_config):
     db.prefs.set_namespaced(PREFS_NAMESPACE, PREFS_KEY_SETTINGS, library_config)
 
+def show_help():
+    open_url(QUrl(HELP_URL))
+
 
 class AlgorithmComboBox(QComboBox):
 
@@ -455,9 +458,9 @@ class OtherTab(QWidget):
         button_layout.addWidget(keyboard_shortcuts_button)
         button_layout.addWidget(view_prefs_button)
 
-        help_button = QPushButton(' '+_('Help'), self)
+        help_button = QPushButton(' '+_('&Help'), self)
         help_button.setIcon(get_icon('help.png'))
-        help_button.clicked.connect(self.show_help)
+        help_button.clicked.connect(show_help)
         button_layout.addWidget(help_button)
         layout.addLayout(button_layout)
 
@@ -515,9 +518,6 @@ class OtherTab(QWidget):
 
     def get_source_list(self):
         return self.download_sources_table.get_source_list()
-
-    def show_help(self):
-        open_url(QUrl(HELP_URL))
 
 
 class DownloadSourcesTableWidget(QTableWidget):
