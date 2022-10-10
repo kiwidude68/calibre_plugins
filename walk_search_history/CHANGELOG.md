@@ -1,8 +1,9 @@
 # Walk Search History Change Log
 
-## [1.5.0] - 2022-09-XX
+## [1.5.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
+- Add Help to menu and configuration dialog.
 - Translations for Spanish, French, Russian, Ukranian - thanks to all!
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.

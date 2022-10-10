@@ -11,30 +11,7 @@ This plugin provides toolbar and keyboard shortcuts to moving forward and backwa
 
 The intention is to offer a similar experience to a web browser of allowing you to surf back and forth between your search results with **Alt+Left** / **Alt+Right** keys. Also very useful upon restarting Calibre to quickly restore your last search.
 
-## Main Features
-
-- Alt+Left Arrow to move back one search in your history
-- Alt+Right Arrow to move forward one search in your history
-- Search history maintained independently of that displayed in the combo dropdown
-- Optional independent search history per library (retained until calibre closed)
-- Additional history list displayed in toolbar dropdown menu
-- Ability to clear the search history
-- Shortcuts and other preferences customisable in a configuration dialog
-
-## Default Keyboard Shortcuts
-
-| Shortcut  | Description |
-| --------- | ----------- |
-| Alt+Left  | Previous search result |
-| Alt+Right | Next search result |
-
-## Configuration Options
-
-| Option  | Description |
-| --------| ----------- |
-| Default toolbar button action | If you have this plugin in your calibre main toolbar,<br>what should happen when you click on the image button.<br>**Previous search** - apply previous search<br>**Dropdown menu** - display plugin menu
-| Display last x searches | Optionally restrict how many searches to show in menu.<br>Does not impact how many are stored, which is always max 25.
-| Keep separate history per library | When switching calibre libraries share search history or not.<br>Checking this option will keep separate history.<br>Per libray history is lost when calibre is closed.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Walk-Search-History)
 
 ## Development / Contributions
 

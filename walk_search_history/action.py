@@ -108,8 +108,11 @@ class WalkSearchHistoryAction(InterfaceAction):
         m.addSeparator()
         create_menu_action_unique(self, m, _('Clear search history'),
                                   triggered=self.clear_search_history)
+        m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=cfg.show_help)
         self.gui.keyboard.finalize()
 
         # Set the desired default action for the toolbar button when clicked on

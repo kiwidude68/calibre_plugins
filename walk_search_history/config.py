@@ -6,10 +6,10 @@ __copyright__ = '2011, Grant Drake'
 # Maintain backwards compatibility with older versions of Qt and calibre.
 try:
     from qt.core import (Qt, QWidget, QVBoxLayout, QLabel, QPushButton, QCheckBox,
-                          QGroupBox, QHBoxLayout, QRadioButton, QSpinBox)
+                          QGroupBox, QHBoxLayout, QRadioButton, QSpinBox, QUrl)
 except ImportError:
     from PyQt5.Qt import (Qt, QWidget, QVBoxLayout, QLabel, QPushButton, QCheckBox,
-                          QGroupBox, QHBoxLayout, QRadioButton, QSpinBox)
+                          QGroupBox, QHBoxLayout, QRadioButton, QSpinBox, QUrl)
 
 # Pull in translation files for _() strings
 try:
@@ -17,8 +17,13 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+from calibre.gui2 import open_url
 from calibre.utils.config import JSONConfig
+
+from calibre_plugins.walk_search_history.common_icons import get_icon
 from calibre_plugins.walk_search_history.common_dialogs import KeyboardConfigDialog
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Walk-Search-History'
 
 STORE_NAME = 'Shortcuts'
 KEY_DEFAULT_ACTION = 'defaultAction'
@@ -38,6 +43,9 @@ plugin_prefs = JSONConfig('plugins/Walk Search History')
 
 # Set defaults
 plugin_prefs.defaults[STORE_NAME] = DEFAULT_STORE_VALUES
+
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 class ConfigWidget(QWidget):
 
@@ -81,6 +89,11 @@ class ConfigWidget(QWidget):
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
         layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        layout.addWidget(help_button)
 
     def save_settings(self):
         new_prefs = {}
