@@ -116,8 +116,11 @@ class QuickPreferencesAction(InterfaceAction):
         m.addSeparator()
         create_menu_action_unique(self, m, _('Preferences')+'...', 'config.png',
                                   shortcut=False, triggered=self.open_preferences_dialog)
+        m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=cfg.show_help)
         self.gui.keyboard.finalize()
 
     def about_to_show_menu(self):
