@@ -10,17 +10,18 @@ from six import text_type as unicode
 try:
     from qt.core import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableWidget,
                       QPushButton, QTableWidgetItem, QIcon, QAbstractItemView,
-                      QToolButton, QSpacerItem, QModelIndex)
+                      QToolButton, QSpacerItem, QModelIndex, QUrl)
 except ImportError:
     from PyQt5.Qt import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableWidget,
                       QPushButton, QTableWidgetItem, QIcon, QAbstractItemView,
-                      QToolButton, QSpacerItem, QModelIndex)
+                      QToolButton, QSpacerItem, QModelIndex, QUrl)
 
-from calibre.gui2 import question_dialog, info_dialog
+from calibre.gui2 import question_dialog, info_dialog, open_url
 from calibre.utils.config import JSONConfig
 
 from calibre_plugins.resize_cover.common_compatibility import qSizePolicy_Minimum, qSizePolicy_Expanding
 from calibre_plugins.resize_cover.common_dialogs import KeyboardConfigDialog
+from calibre_plugins.resize_cover.common_icons import get_icon
 from calibre_plugins.resize_cover.common_widgets import ReadOnlyTableWidgetItem, CheckableTableWidgetItem
 
 
@@ -32,6 +33,8 @@ except NameError:
 # {
 #    'sizes': [ {'width':xxx, 'height':yyy, default:true},... ]
 # }
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Resize-Cover'
 
 STORE_NAME = 'Options'
 KEY_SIZES = 'sizes'
@@ -54,6 +57,9 @@ plugin_prefs = JSONConfig('plugins/Resize Cover')
 # Set defaults
 plugin_prefs.defaults[STORE_NAME] = DEFAULT_STORE_VALUES
 
+def show_help():
+    open_url(QUrl(HELP_URL))
+
 
 class SizesTableWidget(QTableWidget):
 
@@ -67,7 +73,7 @@ class SizesTableWidget(QTableWidget):
         header_labels = [_('Width'), _('Height'), _('Default'), _('Keep aspect ratio'), _('Only shrink larger images')]
         self.setColumnCount(len(header_labels))
         self.setHorizontalHeaderLabels(header_labels)
-        self.verticalHeader().setDefaultSectionSize(24)
+        self.verticalHeader().setDefaultSectionSize(30)
         self.horizontalHeader().setStretchLastSection(True)
 
         for row, data in enumerate(data_items):
@@ -82,13 +88,8 @@ class SizesTableWidget(QTableWidget):
             self.selectRow(0)
 
     def populate_table_row(self, row, data_item):
-        width_item = QTableWidgetItem(str(data_item[KEY_WIDTH]))
-        width_item.setTextAlignment(Qt.AlignRight)
-        self.setItem(row, 0, width_item)
-
-        height_item = QTableWidgetItem(str(data_item[KEY_HEIGHT]))
-        height_item.setTextAlignment(Qt.AlignRight)
-        self.setItem(row, 1, height_item)
+        self.setItem(row, 0, QTableWidgetItem(str(data_item[KEY_WIDTH])))
+        self.setItem(row, 1, QTableWidgetItem(str(data_item[KEY_HEIGHT])))
 
         default_text = _('Default') if data_item[KEY_DEFAULT] else ''
         self.setItem(row, 2, ReadOnlyTableWidgetItem(default_text))
@@ -209,16 +210,21 @@ class ConfigWidget(QWidget):
         other_layout = QHBoxLayout()
         layout.addLayout(other_layout)
 
-        set_default_button = QPushButton(_('Set as Toolbar Button Default'), self)
+        set_default_button = QPushButton(' '+_('Set as Toolbar Button Default')+' ', self)
         set_default_button.setToolTip(_('Set this size as the default on the menu button'))
         set_default_button.clicked.connect(self._table.set_as_default)
 
         other_layout.addWidget(set_default_button)
 
-        keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
+        keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
         other_layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        other_layout.addWidget(help_button)
         other_layout.insertStretch(-1)
 
         c = plugin_prefs[STORE_NAME]

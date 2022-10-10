@@ -11,21 +11,7 @@ This plugin allows users to resize the calibre cover image displayed for books i
 
 The plugin comes predefined with a 450x680 setting, which some may find useful for changing Overdrive style 510x680 covers from a 3:4 to a more conventional 2:3 aspect ratio. However you can configure any size combinations you prefer in the plugin preferences.
 
-## Main Features
-
-- Define one or more width/height menu combinations.
-- Specify one to be your default to apply when the toolbar button is clicked.
-- Customise with optional keyboard shortcuts.
-
-## Configuration Options
-
-| Column  |Description |
-| --------| ----------- |
-| Width | Width to resize the cover to.
-| Height | Height to resize the cover to.
-| Default | If `Default` this size will apply if you click on the plugin menu button in toolbar.<br>To change which row applies, select row then **Set as Toolbar Button Default** button.
-| Keep aspect ratio |If unchecked, resize image to specific height/width dimensions.<br>If checked, resizes one dimension to match keeping original aspect proportion.
-| Only shrink larger images | If unchecked, all images get resized regardless of original size.<br>If checked, will only resize images larger than these dimensions, not scaling up smaller ones.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Resize-Cover)
 
 ## Development / Contributions
 

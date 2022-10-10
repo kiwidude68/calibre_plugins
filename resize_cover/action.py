@@ -80,6 +80,8 @@ class ResizeCoverAction(InterfaceAction):
         m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=cfg.show_help)
         self.gui.keyboard.finalize()
 
     def resize_covers_pressed(self, clicked):
