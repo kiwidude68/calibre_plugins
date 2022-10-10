@@ -9,26 +9,7 @@
 
 This plugin allows you to download the full precision rating count and number of reviewers from both Amazon and/or Goodreads. It does require you to have retrieved an amazon id and/or goodreads id for the book first, such as you may have by using the respective metadata plugins.
 
-By default a calibre metadata download will not display the precision of the downloaded rating, displaying it as 0-5 stars. In addition it is not possible with metadata plugins to return data to calibre for additional columns of interest, such as the # of people who contributed to that rating score.
-
-This limitation can be worked around by writing a UI plugin such as this, storing the data in your own custom columns you create. 
-
-## Main Features
-
-- Retrieve Amazon precise rating score and rating count into your custom columns.
-- Retrieve Goodreads precise rating score and rating count into your custom columns.
-- Optionally only retrieve Amazon or Goodreads rather than both.
-- Preferences for configured columns are on a per library basis.
-- Configurable keyboard shortcuts
-
-## Configuration Options
-
-| Option  | Description |
-| --------| ----------- |
-| Amazon Rating | Choose from dropdown list your calibre column to store the Amazon rating in.
-| Amazon Rating Count | Choose from dropdown list your calibre column to store the Amazon rating count in.
-| Goodreads Rating | Choose from dropdown list your calibre column to store the Goodreads rating in.
-| Goodreads Rating Count | Choose from dropdown list your calibre column to store the Goodreads rating count in.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Ratings)
 
 ## Development / Contributions
 

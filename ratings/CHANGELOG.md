@@ -3,10 +3,11 @@
 ## [1.2.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
+- Help button to menu and configuration dialog.
 - Add translation support.
-- Store preferences in database instead of json
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
+- Store preferences in database instead of json, so are a per library setting.
 - Refactoring of common code
 
 ## [1.1.8] - 2016-03-28

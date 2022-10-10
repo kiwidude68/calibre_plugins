@@ -5,9 +5,9 @@ __copyright__ = '2011, Grant Drake'
 
 import six, copy
 try:
-    from qt.core import QWidget, QVBoxLayout, QLabel, QPushButton, QGroupBox, QGridLayout
+    from qt.core import QWidget, QVBoxLayout, QLabel, QPushButton, QGroupBox, QGridLayout, QUrl
 except ImportError:
-    from PyQt5.Qt import QWidget, QVBoxLayout, QLabel, QPushButton, QGroupBox, QGridLayout
+    from PyQt5.Qt import QWidget, QVBoxLayout, QLabel, QPushButton, QGroupBox, QGridLayout, QUrl
 from calibre.utils.config import JSONConfig
 
 # Pull in translation files for _() strings
@@ -16,8 +16,13 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+from calibre.gui2 import open_url
+
+from calibre_plugins.ratings.common_icons import get_icon
 from calibre_plugins.ratings.common_dialogs import KeyboardConfigDialog, PrefsViewerDialog
 from calibre_plugins.ratings.common_widgets import CustomColumnComboBox
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Ratings'
 
 PREFS_NAMESPACE = 'RatingsPlugin'
 PREFS_KEY_SETTINGS = 'settings'
@@ -41,6 +46,8 @@ def get_library_config(db):
 def set_library_config(db, library_config):
     db.prefs.set_namespaced(PREFS_NAMESPACE, PREFS_KEY_SETTINGS, library_config)
 
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 class ConfigWidget(QWidget):
 
@@ -96,6 +103,11 @@ class ConfigWidget(QWidget):
         view_prefs_button.setToolTip(_('View data stored in the library database for this plugin'))
         view_prefs_button.clicked.connect(self.view_prefs)
         layout.addWidget(view_prefs_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        layout.addWidget(help_button)
 
     def save_settings(self):
         self.library[KEY_COL_ARATING] = self.arating_col_combo.get_selected_column()

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:48+0100\n"
+"POT-Creation-Date: 2022-10-10 19:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:90
+#: ..\common\common_dialogs.py:84 config.py:97
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -127,75 +127,79 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:103
+#: action.py:83 config.py:107
+msgid "&Help"
+msgstr ""
+
+#: action.py:105
 msgid "Configure plugin"
 msgstr ""
 
-#: action.py:104
+#: action.py:106
 msgid "You must specify a custom column first. Do you want to configure this now?"
 msgstr ""
 
-#: action.py:128
+#: action.py:130
 msgid "Failed to download ratings"
 msgstr ""
 
-#: action.py:131
+#: action.py:133
 msgid "Download ratings completed"
 msgstr ""
 
-#: action.py:136
+#: action.py:138
 msgid "Downloaded ratings for <b>%d book(s)</b>."
 msgstr ""
 
-#: action.py:137
+#: action.py:139
 msgid "Proceed with updating your library?"
 msgstr ""
 
-#: action.py:143
+#: action.py:145
 msgid "Could not find ratings for %d book(s)."
 msgstr ""
 
-#: action.py:146
+#: action.py:148
 msgid "Download ratings failed"
 msgstr ""
 
-#: action.py:151
+#: action.py:153
 msgid "Download log"
 msgstr ""
 
-#: action.py:151
+#: action.py:153
 msgid "Download ratings complete"
 msgstr ""
 
-#: action.py:184
+#: action.py:186
 msgid "Unknown"
 msgstr ""
 
-#: config.py:66
+#: config.py:73
 msgid "Amazon Rating:"
 msgstr ""
 
-#: config.py:72
+#: config.py:79
 msgid "Amazon Rating Count:"
 msgstr ""
 
-#: config.py:78
+#: config.py:85
 msgid "Goodreads Rating:"
 msgstr ""
 
-#: config.py:84
+#: config.py:91
 msgid "Goodreads Rating Count:"
 msgstr ""
 
-#: config.py:91
+#: config.py:98
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:95
+#: config.py:102
 msgid "&View library preferences"
 msgstr ""
 
-#: config.py:96
+#: config.py:103
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
