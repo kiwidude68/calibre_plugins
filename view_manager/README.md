@@ -9,37 +9,7 @@
 
 This plugin allows you to easily switch between different views of your library. A view can consist of a combination of columns to be displayed in a certain order, with optional additions of a specified sort order, search restriction and/or saved search to be applied when the view is selected.
 
-### Example usages:
-
-- When performing certain tasks like editing metadata you want different columns visible.
-- You have multiple book types in your library, for which you want to display different columns for when you filter by that book type.
-- You want an easy way to quickly re-apply a default multi-column sort order.
-- You want to display/sort/filter your books differently while your device is connected (such as excluding books that are wishlist items and sorting those on the device at the top).
-
-## Main Features
-
-- Create new Views and save your columns shown, column widths and column sorts on demand for the current view
-- Create as many different views as you wish
-- Views are library specific (redefine your views within each as you may have different columns)
-- Define which of your columns are visible and the display order for each view
-- Optional sort order(s) to be applied (right-click to choose ascending/descending)
-- Optional virtual library to be applied
-- Optional search restriction to be applied
-- Optional saved search to be applied
-- Optional keyboard shortcuts for quick access
-- Option to automatically apply either last selected view or a specifically named view at startup/when switching libraries
-
-## Configuration Options
-
-| Option  | Description |
-| --------| ----------- |
-| Select view to customize | Choose from the dropdown of your list of current views.<br>Additional buttons to Add, Delete or Rename a view.
-| Column Options | Tick all the columns you want to appear, up/down to change order.<br>Optionally specify columns to appear in a split right pane.<br>Optionally specify the sort order to apply with this view.
-| Apply saved search | Automatically apply the specified saved calibre search when choosing this view.
-| Switch to virtual library | Automatically switch virtual libraries when choosing this view.
-| Apply VL search restriction | In conjunction with above option, apply search restriction to virtual library.
-| Jump to top when applying | Reset the book list scrollbar position to top when apply a view.
-| Automatically apply view | When starting calibre, forcibly apply the specified view.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/View-Manager)
 
 ## Development / Contributions
 

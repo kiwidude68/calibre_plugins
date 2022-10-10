@@ -13,13 +13,13 @@ try:
                         QGroupBox, QComboBox, QGridLayout, QListWidget,
                         QListWidgetItem, QIcon, QInputDialog, Qt,
                         QAction, QCheckBox, QPushButton, QScrollArea,
-                        QAbstractItemView, QToolButton)
+                        QAbstractItemView, QToolButton, QUrl)
 except ImportError:
     from PyQt5.Qt import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,
                         QGroupBox, QComboBox, QGridLayout, QListWidget,
                         QListWidgetItem, QIcon, QInputDialog, Qt,
                         QAction, QCheckBox, QPushButton, QScrollArea,
-                        QAbstractItemView, QToolButton)
+                        QAbstractItemView, QToolButton, QUrl)
 
 # Pull in translation files for _() strings
 try:
@@ -27,12 +27,14 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
-from calibre.gui2 import error_dialog, question_dialog
+from calibre.gui2 import error_dialog, question_dialog, open_url
 from calibre.utils.config import JSONConfig
 from calibre.utils.icu import sort_key
 
 from calibre_plugins.view_manager.common_icons import get_icon
 from calibre_plugins.view_manager.common_dialogs import KeyboardConfigDialog, PrefsViewerDialog
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/View-Manager'
 
 PREFS_NAMESPACE = 'ViewManagerPlugin'
 PREFS_KEY_SETTINGS = 'settings'
@@ -126,6 +128,9 @@ def migrate_library_config_if_required(db, library_config):
     #if schema_version < 1.x:
 
     set_library_config(db, library_config)
+
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 def get_library_config(db):
     library_id = db.library_id
@@ -562,14 +567,19 @@ class ConfigWidget(QWidget):
 
         keyboard_layout = QHBoxLayout()
         layout.addLayout(keyboard_layout)
-        keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
+        keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
-        view_prefs_button = QPushButton(_('&View library preferences')+'...', self)
+        view_prefs_button = QPushButton(' '+_('&View library preferences')+'... ', self)
         view_prefs_button.setToolTip(_('View data stored in the library database for this plugin'))
         view_prefs_button.clicked.connect(self.view_prefs)
         keyboard_layout.addWidget(keyboard_shortcuts_button)
         keyboard_layout.addWidget(view_prefs_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        keyboard_layout.addWidget(help_button)
         keyboard_layout.addStretch(1)
 
         # Force an initial display of view information

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:46+0100\n"
+"POT-Creation-Date: 2022-10-10 21:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:565
+#: ..\common\common_dialogs.py:84 config.py:570
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -123,167 +123,171 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:156
+#: action.py:110 config.py:579
+msgid "&Help"
+msgstr ""
+
+#: action.py:158
 msgid "Add new view"
 msgstr ""
 
-#: action.py:157
+#: action.py:159
 msgid "Enter a unique display name for this view:"
 msgstr ""
 
-#: action.py:165 config.py:686 config.py:734
+#: action.py:167 config.py:696 config.py:744
 msgid "A view with the same name already exists"
 msgstr ""
 
-#: action.py:165 config.py:686 config.py:734
+#: action.py:167 config.py:696 config.py:744
 msgid "Add Failed"
 msgstr ""
 
-#: config.py:289
+#: config.py:294
 msgid "Sort ascending"
 msgstr ""
 
-#: config.py:293
+#: config.py:298
 msgid "Sort descending"
 msgstr ""
 
-#: config.py:389
+#: config.py:394
 msgid "Select view to customize:"
 msgstr ""
 
-#: config.py:395
+#: config.py:400
 msgid "Add view"
 msgstr ""
 
-#: config.py:400
+#: config.py:405
 msgid "Delete view"
 msgstr ""
 
-#: config.py:405 config.py:721
+#: config.py:410 config.py:731
 msgid "Rename view"
 msgstr ""
 
-#: config.py:411
+#: config.py:416
 msgid "Column Options"
 msgstr ""
 
-#: config.py:420
+#: config.py:425
 msgid "Columns in Default (Left) pane"
 msgstr ""
 
-#: config.py:422
+#: config.py:427
 msgid "Columns in view"
 msgstr ""
 
-#: config.py:426 config.py:440
+#: config.py:431 config.py:445
 msgid "Move column up"
 msgstr ""
 
-#: config.py:429 config.py:443
+#: config.py:434 config.py:448
 msgid "Move column down"
 msgstr ""
 
-#: config.py:436
+#: config.py:441
 msgid "Columns in Split (Right) Pane"
 msgstr ""
 
-#: config.py:437
+#: config.py:442
 msgid "Split Book List will only be shown if this is checked. This will be checked if you save a Split View."
 msgstr ""
 
-#: config.py:460
+#: config.py:465
 msgid "Sort order"
 msgstr ""
 
-#: config.py:463
+#: config.py:468
 msgid "Move sort column up"
 msgstr ""
 
-#: config.py:466
+#: config.py:471
 msgid "Move sort down"
 msgstr ""
 
-#: config.py:495
+#: config.py:500
 msgid "Search and Virtual Library Options"
 msgstr ""
 
-#: config.py:503
+#: config.py:508
 msgid "Apply saved search"
 msgstr ""
 
-#: config.py:504
+#: config.py:509
 msgid "Apply the selected saved search when the View is activated."
 msgstr ""
 
-#: config.py:512
+#: config.py:517
 msgid "Switch to Virtual library"
 msgstr ""
 
-#: config.py:513
+#: config.py:518
 msgid "Switch to the selected Virtual library when the View is activated."
 msgstr ""
 
-#: config.py:515
+#: config.py:520
 msgid "Virtual library to switch to."
 msgstr ""
 
-#: config.py:520
+#: config.py:525
 msgid "Apply VL additional search restriction"
 msgstr ""
 
-#: config.py:521
+#: config.py:526
 msgid "Apply the selected saved search as a Virtual library additional restriction when the View is activated."
 msgstr ""
 
-#: config.py:522
+#: config.py:527
 msgid "Clear VL restriction search"
 msgstr ""
 
-#: config.py:523
+#: config.py:528
 msgid "Saved search to apply as VL additional search restriction."
 msgstr ""
 
-#: config.py:537
+#: config.py:542
 msgid "General Options"
 msgstr ""
 
-#: config.py:542
+#: config.py:547
 msgid "Jump to the top when applying this View"
 msgstr ""
 
-#: config.py:546
+#: config.py:551
 msgid "When restarting Calibre or switching to this library"
 msgstr ""
 
-#: config.py:547
+#: config.py:552
 msgid "Automatically apply view:"
 msgstr ""
 
-#: config.py:553
+#: config.py:558
 msgid "Enabling this option may override any startup search restriction or title sort set in Preferences -> Behaviour/Tweaks."
 msgstr ""
 
-#: config.py:566
+#: config.py:571
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:568
+#: config.py:573
 msgid "&View library preferences"
 msgstr ""
 
-#: config.py:569
+#: config.py:574
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
-#: config.py:722
+#: config.py:732
 msgid "Enter a new display name for this view:"
 msgstr ""
 
-#: config.py:753
+#: config.py:763
 msgid "Are you sure?"
 msgstr ""
 
-#: config.py:754
+#: config.py:764
 msgid "Do you want to delete the view named"
 msgstr ""
 

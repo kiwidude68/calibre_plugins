@@ -107,6 +107,8 @@ class ViewManagerAction(InterfaceAction):
 
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                            triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                           triggered=cfg.show_help)
         self.gui.keyboard.finalize()
 
     def check_switch_to_last_view_for_library(self):
