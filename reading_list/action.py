@@ -342,6 +342,8 @@ class ReadingListAction(InterfaceAction):
             create_menu_action_unique(self, m, _('&Customize plugin') + '...', 'config.png',
                                       unique_name='&Customize plugin',
                                       shortcut=False, triggered=self.show_configuration)
+            create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                      unique_name='&Help', shortcut=False, triggered=cfg.show_help)
 
             self.sync_now_action.setEnabled(False)
             if self.gui.device_manager.is_device_connected:

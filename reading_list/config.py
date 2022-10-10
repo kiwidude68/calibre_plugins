@@ -13,19 +13,19 @@ import six
 from six import text_type as unicode
 
 try:
-    from qt.core import (QWidget, QVBoxLayout, QLabel, QLineEdit, Qt,
+    from qt.core import (QWidget, QVBoxLayout, QLabel, QLineEdit, Qt, QUrl,
                         QGroupBox, QComboBox, QHBoxLayout, QIcon,
                         QInputDialog, QGridLayout, QPushButton,
                         QCheckBox, QTableWidget, QAbstractItemView, QSize,
                         QScrollArea, QTabWidget, QToolButton, QSpacerItem)
 except ImportError:
-    from PyQt5.Qt import (QWidget, QVBoxLayout, QLabel, QLineEdit, Qt,
+    from PyQt5.Qt import (QWidget, QVBoxLayout, QLabel, QLineEdit, Qt, QUrl,
                         QGroupBox, QComboBox, QHBoxLayout, QIcon,
                         QInputDialog, QGridLayout, QPushButton,
                         QCheckBox, QTableWidget, QAbstractItemView, QSize,
                         QScrollArea, QTabWidget, QToolButton, QSpacerItem)
 
-from calibre.gui2 import error_dialog, dynamic, info_dialog, question_dialog
+from calibre.gui2 import error_dialog, dynamic, info_dialog, question_dialog, open_url
 from calibre.gui2.complete2 import EditWithComplete
 from calibre.gui2.dialogs.confirm_delete import confirm
 from calibre.utils.config import JSONConfig
@@ -39,6 +39,8 @@ from calibre_plugins.reading_list.common_widgets import (CheckableTableWidgetIte
 
 # Per library settings are persisted in the calibre library database.
 # Devices and other option settings are stored in the JSON file
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Reading-List'
 
 PREFS_NAMESPACE = 'ReadingListPlugin'
 
@@ -220,6 +222,9 @@ def migrate_library_config_if_required(db, library_config):
             list_info[KEY_RESTORE_SORT] = False
 
     set_library_config(db, library_config)
+
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 
 def get_library_config(db):
@@ -1165,6 +1170,11 @@ class OtherTab(QWidget):
         view_prefs_button.setToolTip(_('View data stored in the library database for this plugin'))
         view_prefs_button.clicked.connect(parent_dialog.view_prefs)
         layout.addWidget(view_prefs_button)
+
+        help_button = QPushButton(_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        layout.addWidget(help_button)
 
         self.delete_confirmation_checkbox = QCheckBox(_('Show dialog when removing books from device'), self)
         self.delete_confirmation_checkbox.setToolTip(_('If syncing your list means books are removed from your device, then\n'
