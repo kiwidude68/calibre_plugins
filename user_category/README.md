@@ -9,28 +9,7 @@
 
 This plugin offers a quick way to add/remove from the selected books to a specified "user category" via the context menu. A user category (defined using the tag browser panel on the left of the Calibre display) can contain lists of any combination of authors, tags, series or publishers. They allows you to categorize your collection at a "higher level" than per book which can sometimes be a limitation of tags/custom columns.
 
-For instance you could create a "Favourite Authors" or "Must Read" user category containing not only selected authors but also specified tags or series names etc. Calibre 0.7.43 now offers a convenient right-click in the tag browser to perform a search displaying all the matches for your user category, making them even more useful.
-
-Calibre itself has a "maintain" dialog accessible from the tag browser panel allowing you to create, rename and delete user categories, as well as add/remove items. However it can be inconvenient to use that dialog to add items with large databases, as it has no search capability. This plugin offers a more convenient right-click alternative allowing you to add/remove from the books you select in the library view. 
-
-## Main Features
-
-- Add or remove selected authors, series, publishers or tags to user categories
-- Move selected value(s) off all other user categories into a different one
-- If multiple items are selected, displays a dialog allowing you to make a sub-selection. Particularly useful when books have multiple tags and you do not want all of them added/removed.
-- Customise the dropdown menu to as minimal or fully featured as you prefer it.
-- Menus enabled/disabled to show whether the selected items are already in the specific user category.
-- Show in tag viewer feature to quickly open and select user category.
-- Maintain your user categories without tag viewer pane visible.
-- No longer requires a restart of Calibre to detect new/removed user categories in the menus.
-
-
-## Configuration Options
-
-| Option  | Description |
-| --------| ----------- |
-| Menu actions to display | Control which categories of submenus will appear in the plugin menu.
-| Book metadata types | Additional granular menu control for types of items to add/move/remove.
+For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/User-Category)
 
 ## Development / Contributions
 

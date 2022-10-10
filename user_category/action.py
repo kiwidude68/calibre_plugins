@@ -135,6 +135,8 @@ class UserCategoryAction(InterfaceAction):
         m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=cfg.show_help)
 
         # Before we finalize, make sure we delete any actions for menus that are no longer displayed
         for menu_id, unique_name in list(self.old_actions_unique_map.items()):

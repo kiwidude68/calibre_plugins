@@ -5,11 +5,13 @@ __copyright__ = '2011, Grant Drake'
 
 from collections import OrderedDict
 try:
-    from qt.core import QWidget, QVBoxLayout, QCheckBox, QGroupBox, QPushButton, QHBoxLayout
+    from qt.core import QWidget, QVBoxLayout, QCheckBox, QGroupBox, QPushButton, QHBoxLayout, QUrl
 except ImportError:
-    from PyQt5.Qt import QWidget, QVBoxLayout, QCheckBox, QGroupBox, QPushButton, QHBoxLayout
+    from PyQt5.Qt import QWidget, QVBoxLayout, QCheckBox, QGroupBox, QPushButton, QHBoxLayout, QUrl
 from calibre.utils.config import JSONConfig
+from calibre.gui2 import open_url
 
+from calibre_plugins.user_category.common_icons import get_icon
 from calibre_plugins.user_category.common_dialogs import KeyboardConfigDialog
 
 # Pull in translation files for _() strings
@@ -17,6 +19,8 @@ try:
     load_translations()
 except NameError:
     pass # load_translations() added in calibre 1.9
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/User-Category'
 
 STORE_NAME = 'UserCategories'
 MENUS_KEY = 'Menus'
@@ -39,6 +43,9 @@ plugin_prefs = JSONConfig('plugins/User Category')
 
 # Set defaults
 plugin_prefs.defaults[STORE_NAME] = DEFAULT_STORE_VALUES
+
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 class ConfigWidget(QWidget):
 
@@ -83,10 +90,15 @@ class ConfigWidget(QWidget):
 
         keyboard_layout = QHBoxLayout()
         layout.addLayout(keyboard_layout)
-        keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
+        keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
         keyboard_layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        keyboard_layout.addWidget(help_button)
         keyboard_layout.insertStretch(-1)
 
     def save_settings(self):

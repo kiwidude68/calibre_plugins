@@ -1,14 +1,15 @@
 # User Category Change Log
 
-## [1.6.0] - 2022-09-XX
+## [1.6.0] - 2022-10-XX
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
-- Add translation support
+- Add Help to menu and configuration dialog.
+- Add translation support.
 - Translations for Spanish, Japanese, Portuguese, Russian, Ukranian - thanks to all!
 ### Changed
-- Support qt.core import syntax for future Qt compatibility
+- Support qt.core import syntax for future Qt compatibility.
 - Minimum calibre version now 2.0.0
-- Refactoring of common code
+- Refactoring of common code.
 
 ## [1.5.6] - 2022-07-07
 ### Changed
