@@ -9,17 +9,17 @@ from six import text_type as unicode
 
 # Maintain backwards compatibility with older versions of Qt and calibre.
 try:
-    from qt.core import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableView,
+    from qt.core import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableView, QUrl,
                       QGroupBox, QGridLayout, QCheckBox, QTableWidget, QDialogButtonBox, QAbstractTableModel,
                       QTableWidgetItem, QIcon, QAbstractItemView, Qt, QPushButton, QStyledItemDelegate,
                       QToolButton, QSpacerItem, QModelIndex)
 except ImportError:
-    from PyQt5.Qt import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableView,
+    from PyQt5.Qt import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableView, QUrl,
                       QGroupBox, QGridLayout, QCheckBox, QTableWidget, QDialogButtonBox, QAbstractTableModel,
                       QTableWidgetItem, QIcon, QAbstractItemView, Qt, QPushButton, QStyledItemDelegate,
                       QToolButton, QSpacerItem, QModelIndex)
 
-from calibre.gui2 import question_dialog
+from calibre.gui2 import question_dialog, open_url
 from calibre.gui2.actions import menu_action_unique_name
 from calibre.utils.config import JSONConfig
 from calibre.customize.ui import all_metadata_plugins, is_disabled
@@ -35,6 +35,7 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Quick-Preferences'
 
 STORE_FILE_PATTERN_NAME = 'MenuFilePatterns'
 KEY_COL_WIDTH = 'regexColWidth'
@@ -116,6 +117,9 @@ if 'FilePatterns' in plugin_prefs:
 plugin_prefs.defaults[STORE_FILE_PATTERN_NAME] = DEFAULT_FILE_PATTERNS
 plugin_prefs.defaults[STORE_OTHER_SHORTCUTS_NAME] = DEFAULT_OTHER_SHORTCUTS
 plugin_prefs.defaults[STORE_ENABLE_SOURCES_NAME] = DEFAULT_ENABLED_SOURCES
+
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 
 class PatternTableWidget(QTableWidget):
@@ -593,10 +597,15 @@ class ConfigWidget(QWidget):
 
         keyboard_layout = QHBoxLayout()
         layout.addLayout(keyboard_layout)
-        keyboard_shortcuts_button = QPushButton(_('Keyboard shortcuts')+'...', self)
+        keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
         keyboard_layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        keyboard_layout.addWidget(help_button)
         keyboard_layout.insertStretch(-1)
 
         # Build a list of all the current names
