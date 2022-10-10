@@ -21,7 +21,7 @@ except ImportError:
 
 from calibre.gui2 import error_dialog, open_url
 from calibre.gui2.actions import InterfaceAction
-from calibre.utils.config import config_dir, tweaks
+from calibre.utils.config import tweaks
 from calibre.utils.formatter import EvalFormatter
 from calibre.ebooks.metadata.book.formatter import SafeFormat
 from calibre.devices.usbms.driver import debug_print
@@ -39,8 +39,6 @@ except NameError:
 
 template_formatter = EvalFormatter()
 template_formatter = SafeFormat()
-
-HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Search-The-Internet'
 
 class SearchTheInternetAction(InterfaceAction):
 
@@ -95,6 +93,8 @@ class SearchTheInternetAction(InterfaceAction):
                                   image_name='images/open_group.png', open_group=True)
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
+        create_menu_action_unique(self, m, _('&Help'), 'help.png',
+                                  shortcut=False, triggered=cfg.show_help)
         self.gui.keyboard.finalize()
 
     def create_menu_item_ex(self, m, sub_menus, menu_text, sub_menu_text='',
@@ -262,9 +262,6 @@ class SearchTheInternetAction(InterfaceAction):
                 parts.append(surname)
                 fn_ln_author = ' '.join(parts).strip()
         return self.convert_to_search_text(fn_ln_author, encoding, method)
-
-    def show_help(self):
-        open_url(QUrl(HELP_URL))
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)

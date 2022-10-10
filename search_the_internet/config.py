@@ -18,19 +18,19 @@ from functools import partial
 try:
     from qt.core import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
                           QIcon, QFormLayout, QAction, QFileDialog, QDialog, QTableWidget,
-                          QTableWidgetItem, QAbstractItemView, QComboBox,
+                          QTableWidgetItem, QAbstractItemView, QComboBox, QUrl,
                           QGroupBox, QGridLayout, QRadioButton, QDialogButtonBox,
                           QPushButton, QToolButton, QSpacerItem, QModelIndex)
 except:
     from PyQt5.Qt import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
                           QIcon, QFormLayout, QAction, QFileDialog, QDialog, QTableWidget,
-                          QTableWidgetItem, QAbstractItemView, QComboBox,
+                          QTableWidgetItem, QAbstractItemView, QComboBox, QUrl,
                           QGroupBox, QGridLayout, QRadioButton, QDialogButtonBox,
                           QPushButton, QToolButton, QSpacerItem, QModelIndex)
 
 from calibre.ebooks.metadata.book.base import Metadata
 from calibre.gui2 import (error_dialog, question_dialog, info_dialog, choose_files,
-                          open_local_file, FileDialog)
+                          open_local_file, FileDialog, open_url)
 from calibre.gui2.actions import menu_action_unique_name
 from calibre.utils.config import JSONConfig
 from calibre.utils.zipfile import ZipFile
@@ -45,6 +45,8 @@ try:
     load_translations()
 except NameError:
     pass # load_translations() 
+
+HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Search-The-Internet'
 
 PLUGIN_ICONS = ['internet.png', 'open_group.png',
                 'move_to_top.png', 'image_add.png',
@@ -241,6 +243,9 @@ def fix_legacy_url(url):
     # approach of xxx_spaced tokens instead uses the template processor function
     url = url.replace('_spaced}', ':re(\\+, )}')
     return url
+
+def show_help():
+    open_url(QUrl(HELP_URL))
 
 def get_menus_as_dictionary(config_menus=None):
     # Menu items wil be stored in a config dictionary in the JSON configuration file
@@ -830,12 +835,6 @@ class ConfigWidget(QWidget):
         layout.addLayout(heading_layout)
         heading_label = QLabel(_('Select and configure the menu items to display:'), self)
         heading_layout.addWidget(heading_label)
-        # Add hyperlink to a help file at the right. We will replace the correct name when it is clicked.
-        help_label = QLabel('<a href="http://www.foo.com/">Help</a>', self)
-        help_label.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.LinksAccessibleByKeyboard)
-        help_label.setAlignment(Qt.AlignRight)
-        help_label.linkActivated.connect(self.help_link_activated)
-        heading_layout.addWidget(help_label)
 
         # Add a horizontal layout containing the table and the buttons next to it
         table_layout = QHBoxLayout()
@@ -894,6 +893,11 @@ class ConfigWidget(QWidget):
         keyboard_shortcuts_button.setToolTip(_('Edit the keyboard shortcuts associated with this plugin'))
         keyboard_shortcuts_button.clicked.connect(self.edit_shortcuts)
         keyboard_layout.addWidget(keyboard_shortcuts_button)
+
+        help_button = QPushButton(' '+_('&Help'), self)
+        help_button.setIcon(get_icon('help.png'))
+        help_button.clicked.connect(show_help)
+        keyboard_layout.addWidget(help_button)
         keyboard_layout.insertStretch(-1)
 
         # Define a context menu for the table widget
@@ -979,9 +983,6 @@ class ConfigWidget(QWidget):
         act_export = QAction(get_icon('images/export.png'), _('Export')+'...', table)
         act_export.triggered.connect(self.export_menus)
         table.addAction(act_export)
-
-    def help_link_activated(self, url):
-        self.plugin_action.show_help()
 
     def reset_to_defaults(self):
         if not question_dialog(self, _('Are you sure?'), '<p>'+

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:50+0100\n"
+"POT-Creation-Date: 2022-10-10 20:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:890
+#: ..\common\common_dialogs.py:84 config.py:892
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgstr ""
 msgid "Search Internet"
 msgstr ""
 
-#: action.py:92 config.py:539 config.py:923
+#: action.py:92 config.py:544 config.py:930
 msgid "Open Group"
 msgstr ""
 
@@ -103,256 +103,260 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:141
+#: action.py:96 config.py:897
+msgid "&Help"
+msgstr ""
+
+#: action.py:143
 msgid "Cannot open link"
 msgstr ""
 
-#: action.py:142
+#: action.py:144
 msgid "This menu item has not been configured with a url."
 msgstr ""
 
-#: action.py:174 action.py:186
+#: action.py:176 action.py:188
 msgid "Invalid URL"
 msgstr ""
 
-#: action.py:175
+#: action.py:177
 msgid "You cannot use POST for this url as you have not specified any arguments after a ?"
 msgstr ""
 
-#: action.py:187
+#: action.py:189
 msgid "You cannot use POST for this url as it does not have name=value for "
 msgstr ""
 
-#: config.py:284
+#: config.py:289
 msgid "Select test data"
 msgstr ""
 
-#: config.py:293
+#: config.py:298
 msgid "&Select test book:"
 msgstr ""
 
-#: config.py:306
+#: config.py:311
 msgid "Title:"
 msgstr ""
 
-#: config.py:308
+#: config.py:313
 msgid "Author:"
 msgstr ""
 
-#: config.py:310
+#: config.py:315
 msgid "Publisher:"
 msgstr ""
 
-#: config.py:354 config.py:497
+#: config.py:359 config.py:502
 msgid "Add New Image"
 msgstr ""
 
-#: config.py:357
+#: config.py:362
 msgid "&Select image source"
 msgstr ""
 
-#: config.py:360
+#: config.py:365
 msgid "From &web domain favicon"
 msgstr ""
 
-#: config.py:367
+#: config.py:372
 msgid "From .png &file"
 msgstr ""
 
-#: config.py:380
+#: config.py:385
 msgid "&Save as filename:"
 msgstr ""
 
-#: config.py:404
+#: config.py:409
 msgid "Select a .png file for the menu icon"
 msgstr ""
 
-#: config.py:410
+#: config.py:415
 msgid "Cannot select image"
 msgstr ""
 
-#: config.py:411 config.py:449
+#: config.py:416 config.py:454
 msgid "Source image must be a .png file."
 msgstr ""
 
-#: config.py:419 config.py:423 config.py:437 config.py:445 config.py:448
-#: config.py:451
+#: config.py:424 config.py:428 config.py:442 config.py:450 config.py:453
+#: config.py:456
 msgid "Cannot import image"
 msgstr ""
 
-#: config.py:420
+#: config.py:425
 msgid "You must specify a filename to save as."
 msgstr ""
 
-#: config.py:424
+#: config.py:429
 msgid "The save as filename should consist of a filename only."
 msgstr ""
 
-#: config.py:429 config.py:710 config.py:984 config.py:993
+#: config.py:434 config.py:716 config.py:988 config.py:997
 msgid "Are you sure?"
 msgstr ""
 
-#: config.py:430
+#: config.py:435
 msgid "An image with this name already exists - overwrite it?"
 msgstr ""
 
-#: config.py:438
+#: config.py:443
 msgid "You must specify a web domain url"
 msgstr ""
 
-#: config.py:446
+#: config.py:451
 msgid "You must specify a source file."
 msgstr ""
 
-#: config.py:452
+#: config.py:457
 msgid "Source image does not exist!"
 msgstr ""
 
-#: config.py:539
+#: config.py:544
 msgid "Submenu"
 msgstr ""
 
-#: config.py:539
+#: config.py:544
 msgid "Title"
 msgstr ""
 
-#: config.py:540
+#: config.py:545
 msgid "Encoding"
 msgstr ""
 
-#: config.py:540
+#: config.py:545
 msgid "Image"
 msgstr ""
 
-#: config.py:540
+#: config.py:545
 msgid "Method"
 msgstr ""
 
-#: config.py:540
+#: config.py:545
 msgid "Url"
 msgstr ""
 
-#: config.py:707
+#: config.py:713
 msgid "Are you sure you want to delete this menu item?"
 msgstr ""
 
-#: config.py:709
+#: config.py:715
 msgid "Are you sure you want to delete the selected {0} menu items?"
 msgstr ""
 
-#: config.py:828
+#: config.py:836
 msgid "Select and configure the menu items to display:"
 msgstr ""
 
-#: config.py:850
+#: config.py:852
 msgid "Move row up"
 msgstr ""
 
-#: config.py:857
+#: config.py:859
 msgid "Add menu item row"
 msgstr ""
 
-#: config.py:864
+#: config.py:866
 msgid "Delete menu item row"
 msgstr ""
 
-#: config.py:871
+#: config.py:873
 msgid "Reset to defaults"
 msgstr ""
 
-#: config.py:878
+#: config.py:880
 msgid "Move row down"
 msgstr ""
 
-#: config.py:891
+#: config.py:893
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:947
+#: config.py:954
 msgid "Add image"
 msgstr ""
 
-#: config.py:950
+#: config.py:957
 msgid "Open images folder"
 msgstr ""
 
-#: config.py:956
+#: config.py:963
 msgid "Move active to top"
 msgstr ""
 
-#: config.py:962
+#: config.py:969
 msgid "Test url"
 msgstr ""
 
-#: config.py:963
+#: config.py:970
 msgid "Ctrl+T"
 msgstr ""
 
-#: config.py:966
+#: config.py:973
 msgid "Test url using"
 msgstr ""
 
-#: config.py:967
+#: config.py:974
 msgid "Ctrl+Shift+T"
 msgstr ""
 
-#: config.py:973
+#: config.py:980
 msgid "Import"
 msgstr ""
 
-#: config.py:976
+#: config.py:983
 msgid "Export"
 msgstr ""
 
-#: config.py:985
+#: config.py:989
 msgid "Are you sure you want to reset to the plugin default menu?"
 msgstr ""
 
-#: config.py:986
+#: config.py:990
 msgid "Any modified configuration and custom menu items will be discarded."
 msgstr ""
 
-#: config.py:994
+#: config.py:998
 msgid "Folder does not yet exist. Do you want to create it?"
 msgstr ""
 
-#: config.py:1013
+#: config.py:1017
 msgid "Cannot test"
 msgstr ""
 
-#: config.py:1014
+#: config.py:1018
 msgid "You must select a menu item with a url to test it."
 msgstr ""
 
-#: config.py:1036
+#: config.py:1040
 msgid "Import Failed"
 msgstr ""
 
-#: config.py:1037
+#: config.py:1041
 msgid "This is not a valid STIP export archive"
 msgstr ""
 
-#: config.py:1049
+#: config.py:1053
 msgid "Import completed"
 msgstr ""
 
-#: config.py:1049
+#: config.py:1053
 msgid "{0} menu items added"
 msgstr ""
 
-#: config.py:1059
+#: config.py:1063
 msgid "Cannot export"
 msgstr ""
 
-#: config.py:1060
+#: config.py:1064
 msgid "No menu items selected to export."
 msgstr ""
 
-#: config.py:1088
+#: config.py:1092
 msgid "Export completed"
 msgstr ""
 
-#: config.py:1097
+#: config.py:1101
 msgid "Select a menu file archive to import"
 msgstr ""
 
