@@ -99,7 +99,7 @@ AUTHOR_DESCS = OrderedDict([
                               '- Authors must match exactly excluding case.')),
                 ('similar',  _('a <b>similar author</b>.<br/>'
                               '- Similar authors differ only in '
-                              'punctuation or order of their names.')),
+                              'punctuation, initials or order of their names.')),
                 ('soundex',  _('a <b>soundex author</b>.<br/>'
                               '- Soundex author matches start with the same removal '
                               'of punctuation and ordering as a similar author search.')),

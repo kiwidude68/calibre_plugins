@@ -153,7 +153,7 @@ def run_variation_algorithm(match_type, item_type):
         print('  %s (%d) => {%s}'%(dm[k], cm[k], ', '.join(texts)))
 
 # For testing, run from command line with this:
-# calibre-debug -e algorithms.py
+# calibre-debug -e variation_algorithms.py
 if __name__ == '__main__':
     run_variation_algorithm('similar','author')
     #run_variation_algorithm('similar','series')

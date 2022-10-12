@@ -1,13 +1,16 @@
 # Find Duplicates Change Log
 
-## [1.10.0] - 2022-10-XX
+## [1.10.0] - 2022-10-12
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
-- Added help menu item.
+- Added Help menu item.
+- Ukranian translations (@yurchor, @dexteritymaster)
 ### Changed
+- Removed all Advanced mode features.
 - Add calibre 2.x backwards compatibility.
 - Refactoring of common code.
-- Removed all Advanced mode features.
+- Changed similar authors algorithm to ignore author initials (@TheMadGuy)
+- Changed similar authors algorithm to ensure `Last,First` matches with `Last, First` (@TheMadGuy)
 
 ## [1.9.7] - 2022-08-09
 ### Changed
