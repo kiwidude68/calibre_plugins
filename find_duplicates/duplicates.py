@@ -103,27 +103,19 @@ class DuplicateFinder(object):
         self._algorithm_text = None
         self._duplicate_search_mode = None
         self._current_group_id = None
-        # Fix: clear all marks including exemptions {
-        # self._update_marked_books()   # using this method here presists the exemptions
         self._clear_all_book_marks()
-        # }
         if clear_search:
             self.gui.search.clear()
         self._restore_previous_gui_state(reapply_restriction, restore_sort)
 
-    # Fix: clear all marks including exemptions {
     def _clear_all_book_marks(self):
         marked_ids = dict()
         self.gui.current_db.set_marked_ids(marked_ids)
-    # }
 
     def run_book_duplicates_check(self):
         '''
         Execute a duplicates search using the specified algorithm and display results
         '''
-        # update:
-        self.advanced_mode = False
-        #}
         
         if not self.is_showing_duplicate_exemptions() and not self.has_results():
             # We are in a safe state to preserve the users current restriction/highlighting
@@ -385,11 +377,9 @@ class DuplicateFinder(object):
         Display for the user all the books which have been flagged as a duplicate
         exemption - either the book exemptions or the author exemptions.
         '''
-        # Fix: persist gui state before showing exemptions {
         if not self.is_showing_duplicate_exemptions() and not self.has_results():
             # We are in a safe state to preserve the users current restriction/highlighting
             self._persist_gui_state()
-        # }
 
         # Make sure we prune any deleted books from our book exemptions map
         marked = self.BOOK_EXEMPTION_MARK
@@ -562,6 +552,8 @@ class DuplicateFinder(object):
                     else:
                         # We need to store two bits of text in the one value
                         marked_ids[book_id] = '%s,%s' % (marked_ids[book_id], self.BOOK_EXEMPTION_MARK)
+        # Assign the results to our database
+        self.gui.current_db.set_marked_ids(marked_ids)
 
     def _get_authors_for_books(self, book_ids):
         authors = set()
