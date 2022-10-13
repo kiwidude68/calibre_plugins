@@ -228,6 +228,8 @@ class ImportWebPageTab(QWidget):
         self.source_tedit = QTextEdit(self)
         if hasattr(self.source_tedit, 'setTabStopDistance'):
             self.source_tedit.setTabStopDistance(24)
+        else:
+            self.source_tedit.setTabStopWidth(24)
         self.source_tedit.textChanged.connect(self._source_text_changed)
         source_lbl.setBuddy(self.source_tedit)
         l.addWidget(self.source_tedit, 3, 0, 1, 2)
