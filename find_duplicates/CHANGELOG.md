@@ -1,5 +1,10 @@
 # Find Duplicates Change Log
 
+## [1.10.1] - 2022-10-14
+### Changed
+- Find Metadata Variations now respects any virtual library search restriction. (@cbhaley)
+- Deselecting a variation in Find Metadata Variations will remove it from displayed search results.
+
 ## [1.10.0] - 2022-10-12
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

@@ -47,19 +47,39 @@ class VariationAlgorithm(object):
             prints('Found %d duplicate groups'%(len(matches_for_item_map),))
         return data_map, count_map, matches_for_item_map
 
+    def _ids_for_field(self, db, ids_of_books, field_name):
+        # First get all the names for the desired books.
+        # Use a set to make them unique
+        unique_names = set()
+        for tup in db.all_field_for(field_name, ids_of_books).values():
+            for val in tup:
+                unique_names.add(val)
+        # Now get the ids for the names and build the pairs
+        id_field_pairs = list()
+        for name in unique_names:
+            id_field_pairs.append((db.get_item_id(field_name, name), name))
+        return id_field_pairs
+
+    def _get_field_pairs(self, field):
+        # Get the list of books in the current VL
+        ids_in_vl = self.db.data.search_getting_ids('', '', use_virtual_library=True)
+        # Get the id,val pairs for the desired field
+        field_pairs = self._ids_for_field(self.db.new_api, ids_in_vl, field)
+        return field_pairs
+
     def _get_items_to_consider(self, item_type):
         '''
         Return a map of id:text appropriate to the item being analysed
         '''
         if item_type == 'authors':
-            results = self.db.get_authors_with_ids()
+            results = self._get_field_pairs('authors')
             results = [(a[0], a[1].replace('|',',')) for a in results]
         elif item_type == 'series':
-            results = self.db.get_series_with_ids()
+            results = self._get_field_pairs('series')
         elif item_type == 'publisher':
-            results = self.db.get_publishers_with_ids()
+            results = self._get_field_pairs('publisher')
         elif item_type == 'tags':
-            results = self.db.get_tags_with_ids()
+            results = self._get_field_pairs('tags')
         else:
             raise Exception('Unknown item type:', item_type)
         return dict((x[0],x[1]) for x in results)

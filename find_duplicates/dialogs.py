@@ -609,6 +609,7 @@ class FindVariationsDialog(SizePersistedDialog):
         self.is_renamed = False
         self.combo_items = []
         self.item_type = self.item_icon = None
+        self.suppress_selection_change = False
 
         self._initialize_controls()
 
@@ -698,6 +699,7 @@ class FindVariationsDialog(SizePersistedDialog):
         self.variations_list.setIconSize(QSize(self.ICON_SIZE, self.ICON_SIZE))
         self.variations_list.setContextMenuPolicy(Qt.CustomContextMenu)
         self.variations_list.customContextMenuRequested.connect(self._on_context_menu_requested)
+        self.variations_list.itemSelectionChanged.connect(self._on_variation_list_item_changed)
 
         self.show_books_chk = QCheckBox(_('&Show matching books'), self)
         self.show_books_chk.setToolTip(_('As a group is selected, show the search results in the library view'))
@@ -793,6 +795,7 @@ class FindVariationsDialog(SizePersistedDialog):
             self.item_list.setCurrentRow(idx)
 
     def _populate_variations_list(self):
+        self.suppress_selection_change = True
         self.variations_list.clear()
         ilw = self.item_list.currentItem()
         if ilw is None:
@@ -810,6 +813,7 @@ class FindVariationsDialog(SizePersistedDialog):
         self.variations_list.selectAll()
         if self.show_books_chk.isChecked():
             self._search_in_gui()
+        self.suppress_selection_change = False
 
     def _on_context_menu_requested(self, pos):
         ilw = self.variations_list.currentItem()
@@ -832,9 +836,10 @@ class FindVariationsDialog(SizePersistedDialog):
             return
         item_id, text = self._decode_list_item(ilw)
         query = self.search_pattern % text
-        for variation_id in self.variations_map[item_id]:
+        for var_lw in self.variations_list.selectedItems():
+            variation_id, variation_text = self._decode_list_item(var_lw)
             if variation_id in self.item_map:
-                query = query + ' or ' + self.search_pattern % self.item_map[variation_id]
+                query = query + ' or ' + self.search_pattern % variation_text
         self.gui.search.set_search_string(query)
 
     def _on_show_books_checkbox_changed(self, is_checked):
@@ -886,6 +891,14 @@ class FindVariationsDialog(SizePersistedDialog):
     def _on_list_item_double_clicked(self, idx):
         if idx != None and idx.row() >= 0:
             self._rename_selected()
+
+    def _on_variation_list_item_changed(self):
+        if self.suppress_selection_change:
+            return
+        # Special feature, if user deselects variations then reduce the visible
+        # books to reflect only the actual selected items.
+        if self.show_books_chk.isChecked():
+            self._search_in_gui()
 
     def _decode_list_item(self, lw):
         item_id = int(lw.data(Qt.UserRole))

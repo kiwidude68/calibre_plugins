@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 20:48+0100\n"
+"POT-Creation-Date: 2022-10-14 19:58+0100\n"
 "PO-Revision-Date: 2022-09-19 15:11+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:222
+#: ..\common\common_dialogs.py:84 config.py:140
 msgid "Keyboard shortcuts"
 msgstr "Клавіатурні скорочення"
 
@@ -111,27 +111,27 @@ msgstr ""
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
-#: action.py:45 dialogs.py:162 dialogs.py:1032 duplicates.py:178
+#: action.py:45 dialogs.py:162 dialogs.py:1045 duplicates.py:170
 msgid "Find Duplicates"
 msgstr "Пошук дублікатів"
 
-#: action.py:88
+#: action.py:86
 msgid "&Find book duplicates"
 msgstr "З&найти дублікати книг"
 
-#: action.py:90
+#: action.py:88
 msgid "Find library duplicates"
 msgstr "Знайти дублікати у бібліотеці"
 
-#: action.py:91
+#: action.py:89
 msgid "Find books that are duplicated in another library compared to this one"
 msgstr "Знайти книги, які є дублікатами в іншій бібліотеці, порівняно із цією"
 
-#: action.py:94
+#: action.py:92
 msgid "Find metadata &variations"
 msgstr "Знайти &відмінності у метаданих"
 
-#: action.py:95
+#: action.py:93
 msgid ""
 "Find & rename variations in author, publisher, series or tags names that may"
 " indicate duplicates"
@@ -139,27 +139,27 @@ msgstr ""
 "Знайти і перейменувати варіації записів автора, видавця, циклу або назв "
 "міток, які можуть бути ознаками дублікатів"
 
-#: action.py:98
+#: action.py:96
 msgid "&Next result"
 msgstr "&Наступний результат"
 
-#: action.py:99
+#: action.py:97
 msgid "Display the next duplicate result group"
 msgstr "Показати групу наступного дубліката у результатах"
 
-#: action.py:101
+#: action.py:99
 msgid "&Previous result"
 msgstr "&Попередній результат"
 
-#: action.py:102
+#: action.py:100
 msgid "Display the previous duplicate result group"
 msgstr "Показати групу попереднього дубліката у результатах"
 
-#: action.py:105
+#: action.py:103
 msgid "&Mark current group as exempt"
 msgstr "Поз&начити поточну групу як виключення"
 
-#: action.py:106
+#: action.py:104
 msgid ""
 "Mark the current group as not duplicates and exempt from future "
 "consideration"
@@ -167,78 +167,78 @@ msgstr ""
 "Позначити поточну групу як таку, що не є дублікатом, і виключити з "
 "наступного розгляду"
 
-#: action.py:109
+#: action.py:107
 msgid "Mark &all groups as exempt"
 msgstr "Позначити &усі групи як виключення"
 
-#: action.py:110
+#: action.py:108
 msgid ""
 "Mark all remaining duplicate groups as exempt from future consideration"
 msgstr ""
 "Позначити решту груп як такі, що не є дублікатами, і виключити з наступного "
 "розгляду"
 
-#: action.py:114
+#: action.py:112
 msgid "&Show all book duplicate exemptions"
 msgstr "&Показати усі виключення з дублікатів книг"
 
-#: action.py:115
+#: action.py:113
 msgid "Show all books that have book duplicate exemption pairings"
 msgstr ""
 "Показати усі книги, для яких створено пари виключень із дублікатів книг"
 
-#: action.py:118
+#: action.py:116
 msgid "&Show all author duplicate exemptions"
 msgstr "&Показати усі виключення з дублікатів авторів"
 
-#: action.py:119
+#: action.py:117
 msgid "Show all books that have author duplicate exemption pairings"
 msgstr ""
 "Показати усі книги, для яких створено пари виключень із дублікатів авторів"
 
-#: action.py:122
+#: action.py:120
 msgid "&Manage exemptions for this book"
 msgstr "&Керувати виключеннями для цієї книги"
 
-#: action.py:123
+#: action.py:121
 msgid "Show duplicate exemptions for this book to enable removal"
 msgstr ""
 "Показати виключення з дублікатів для цієї книги, щоб увімкнути вилучення"
 
-#: action.py:126
+#: action.py:124
 msgid "&Remove selected exemptions"
 msgstr "Ви&лучити позначені виключення"
 
-#: action.py:127
+#: action.py:125
 msgid "Remove any duplicate book/author exemptions for the selected books"
 msgstr ""
 "Вилучити усі виключення з дублікатів книг або авторів для позначених книг"
 
-#: action.py:131
+#: action.py:129
 msgid "&Clear duplicate results"
 msgstr "&Очистити результати пошуку дублікатів"
 
-#: action.py:132
+#: action.py:130
 msgid "Exit duplicate search mode"
 msgstr "Вийти з режиму пошуку дублікатів"
 
-#: action.py:136
+#: action.py:134
 msgid "&Export duplicate groups"
 msgstr "&Експортувати групи дубліктатів"
 
-#: action.py:137
+#: action.py:135
 msgid "Export duplicates groups to a json file"
 msgstr "Експортувати групи дублікатів до файла json"
 
-#: action.py:141
+#: action.py:139
 msgid "&Customize plugin"
 msgstr "&Налаштувати додаток"
 
-#: action.py:143
+#: action.py:141
 msgid "&Help"
 msgstr "&Довідка"
 
-#: action.py:247
+#: action.py:245
 msgid ""
 "This action will ensure that each of the {0} in the group are exempt from "
 "appearing together again in future."
@@ -246,39 +246,39 @@ msgstr ""
 "Цей пункт дії забезпечить те, що кожен {0} у групі буде виключено з появи "
 "разом у майбутньому."
 
-#: action.py:250 action.py:303
+#: action.py:248 action.py:301
 msgid "Are you <b>sure</b> you want to proceed?"
 msgstr "Ви <b>впевнені</b>, що хочете саме цього?"
 
-#: action.py:258
+#: action.py:256
 msgid "No duplicates in group"
 msgstr "У групі немає дублікатів"
 
-#: action.py:259
+#: action.py:257
 msgid "There are no duplicates remaining in this group."
 msgstr "У цій групі не лишилося дублікатів."
 
-#: action.py:270 action.py:275
+#: action.py:268 action.py:273
 msgid "Cannot manage exemptions"
 msgstr "Неможливо керувати виключеннями"
 
-#: action.py:271
+#: action.py:269
 msgid "No book selected"
 msgstr "Не позначено жодної книги"
 
-#: action.py:276
+#: action.py:274
 msgid "This book has no duplicate exemptions"
 msgstr "У цієї книги немає виключень дублікатів"
 
-#: action.py:297
+#: action.py:295
 msgid "Invalid selection"
 msgstr "Некоректний вибір"
 
-#: action.py:298
+#: action.py:296
 msgid "You must select at least one book."
 msgstr "Вам слід вибрати принаймні одну книгу."
 
-#: action.py:299
+#: action.py:297
 msgid ""
 "This action will remove any duplicate exemptions for your selection. This "
 "will allow them to potentially appear as duplicates together in a future "
@@ -288,19 +288,19 @@ msgstr ""
 "виключення для дублікатів. Це уможливить потенційну появу дублікатів під час"
 " наступного пошуку."
 
-#: action.py:333
+#: action.py:331
 msgid "Choose file"
 msgstr "Виберіть файл"
 
-#: action.py:334
+#: action.py:332
 msgid "Saved duplicates"
 msgstr "Збережені дублікати"
 
-#: action.py:360
+#: action.py:358
 msgid "Export completed"
 msgstr "Експортування завершено"
 
-#: action.py:361
+#: action.py:359
 msgid "Exported to: {}"
 msgstr "Експортовано до {}"
 
@@ -324,34 +324,34 @@ msgstr "ігнорувати назву, {0} автор"
 msgid "{0} title, {1} author"
 msgstr "{0} назва, {1} автор"
 
-#: config.py:224
+#: config.py:142
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 "Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
 
-#: config.py:228
+#: config.py:146
 msgid "Reset &confirmation dialogs"
 msgstr "Відновити ві&кна підтвердження"
 
-#: config.py:229
+#: config.py:147
 msgid "Reset all show me again dialogs for the Find Duplicates plugin"
 msgstr ""
 "Відновити показ усіх діалогових вікон підтвердження для додатка пошуку "
 "дублікатів"
 
-#: config.py:233
+#: config.py:151
 msgid "&View library preferences"
 msgstr "П&ереглянути налаштування бібліотеки"
 
-#: config.py:234
+#: config.py:152
 msgid "View data stored in the library database for this plugin"
 msgstr "Переглянути дані, збережені у базі даних бібліотеки для цього додатка"
 
-#: config.py:250
+#: config.py:168
 msgid "Done"
 msgstr "Виконано"
 
-#: config.py:251
+#: config.py:169
 msgid "Confirmation dialogs have all been reset"
 msgstr "Показ діалогових вікон підтвердження відновлено"
 
@@ -463,11 +463,11 @@ msgstr ""
 
 #: dialogs.py:100
 msgid ""
-"a <b>similar author</b>.<br/>- Similar authors differ only in punctuation or"
-" order of their names."
+"a <b>similar author</b>.<br/>- Similar authors differ only in punctuation, "
+"initials or order of their names."
 msgstr ""
 "<b>подібний автор</b>.<br/>– Записи подібних авторів відрізняються лише "
-"пунктуацією або порядком частин їхніх імен."
+"пунктуацією, ініціалами або порядком частин їхніх імен."
 
 #: dialogs.py:103
 msgid ""
@@ -499,15 +499,15 @@ msgstr "Параметри пошуку дублікатів"
 msgid "Duplicate Search Type"
 msgstr "Тип пошуку дублікатів"
 
-#: dialogs.py:175 dialogs.py:1059
+#: dialogs.py:175 dialogs.py:1072
 msgid "Binary Compare"
 msgstr "Двійкове порівняння"
 
-#: dialogs.py:175 dialogs.py:1059
+#: dialogs.py:175 dialogs.py:1072
 msgid "Identifier"
 msgstr "Ідентифікатор"
 
-#: dialogs.py:175 dialogs.py:1059
+#: dialogs.py:175 dialogs.py:1072
 msgid "Title/Author"
 msgstr "Назва/Автор"
 
@@ -515,12 +515,12 @@ msgstr "Назва/Автор"
 msgid "Title Matching"
 msgstr "Відповідність назв"
 
-#: dialogs.py:202 dialogs.py:223 dialogs.py:663 dialogs.py:1086
-#: dialogs.py:1107
+#: dialogs.py:202 dialogs.py:223 dialogs.py:664 dialogs.py:1099
+#: dialogs.py:1120
 msgid "Length:"
 msgstr "Довжина:"
 
-#: dialogs.py:203 dialogs.py:664 dialogs.py:1087
+#: dialogs.py:203 dialogs.py:665 dialogs.py:1100
 msgid ""
 "The shorter the soundex length, the greater likelihood of false positives.\n"
 "Large soundex values reduce your chances of matches"
@@ -572,11 +572,11 @@ msgstr ""
 "Якщо не позначено, упорядкування відбуватиметься за наближеною назвою\n"
 "або за автором, якщо назву наказано ігнорувати"
 
-#: dialogs.py:253 dialogs.py:1124
+#: dialogs.py:253 dialogs.py:1137
 msgid "Include languages metadata when comparing titles"
 msgstr "Включити метадані мови при порівнянні назв"
 
-#: dialogs.py:254 dialogs.py:1125
+#: dialogs.py:254 dialogs.py:1138
 msgid ""
 "When checked, books with identical titles but different\n"
 "languages metadata field values will not show as duplicates"
@@ -632,121 +632,121 @@ msgstr ""
 "нижче авторами.<br/>Щоб уможливити подальший розгляд її як дубліката, "
 "позначте пункт вилучення і натисніть кнопку «Гаразд»."
 
-#: dialogs.py:622
+#: dialogs.py:623
 msgid "Find Duplicates Plugin"
 msgstr "Додаток пошуку дублікатів"
 
-#: dialogs.py:626
+#: dialogs.py:627
 msgid "Find Metadata Variations"
 msgstr "Знайти варіації метаданих"
 
-#: dialogs.py:630
+#: dialogs.py:631
 msgid "Choose metadata column:"
 msgstr "Виберіть стовпчик метаданих:"
 
-#: dialogs.py:634
+#: dialogs.py:635
 msgid "Authors"
 msgstr "Автори"
 
-#: dialogs.py:637
+#: dialogs.py:638
 msgid "Series"
 msgstr "Цикли"
 
-#: dialogs.py:640
+#: dialogs.py:641
 msgid "Publisher"
 msgstr "Видавець"
 
-#: dialogs.py:643
+#: dialogs.py:644
 msgid "Tags"
 msgstr "Мітки"
 
-#: dialogs.py:652
+#: dialogs.py:653
 msgid "Choose similarity level:"
 msgstr "Виберіть рівень подібності:"
 
-#: dialogs.py:656
+#: dialogs.py:657
 msgid "Similar"
 msgstr "Однакові"
 
-#: dialogs.py:659
+#: dialogs.py:660
 msgid "Soundex"
 msgstr "Soundex"
 
-#: dialogs.py:661
+#: dialogs.py:662
 msgid "Fuzzy"
 msgstr "Нечітко однакові"
 
-#: dialogs.py:668
+#: dialogs.py:669
 msgid "Search"
 msgstr "Шукати"
 
-#: dialogs.py:670
+#: dialogs.py:671
 msgid "Search for results"
 msgstr "Шукати результати"
 
-#: dialogs.py:681
+#: dialogs.py:682
 msgid "Search results:"
 msgstr "Результати пошуку:"
 
-#: dialogs.py:687
+#: dialogs.py:688
 msgid "Authors:"
 msgstr "Автори:"
 
-#: dialogs.py:688 dialogs.py:879
+#: dialogs.py:689 dialogs.py:884
 msgid "Variations:"
 msgstr "Варіанти:"
 
-#: dialogs.py:702
+#: dialogs.py:704
 msgid "&Show matching books"
 msgstr "&Показати відповідні книги"
 
-#: dialogs.py:703
+#: dialogs.py:705
 msgid "As a group is selected, show the search results in the library view"
 msgstr ""
 "Коли позначено групу, показати результати пошуку на панелі перегляду "
 "бібліотеки"
 
-#: dialogs.py:706
+#: dialogs.py:708
 msgid "Rename to:"
 msgstr "Перейменувати на:"
 
-#: dialogs.py:723
+#: dialogs.py:725
 msgid "&Rename"
 msgstr "Пере&йменувати"
 
-#: dialogs.py:724
+#: dialogs.py:726
 msgid "Rename all of the selected items to this name"
 msgstr "Перейменувати усі позначені запис з використанням цієї назви"
 
-#: dialogs.py:727
+#: dialogs.py:729
 msgid "&Ignore"
 msgstr "&Ігнорувати"
 
-#: dialogs.py:728
+#: dialogs.py:730
 msgid "Ignore all selected items from consideration at this time"
 msgstr "Ігнорувати цього разу усі позначені пункти"
 
-#: dialogs.py:763
+#: dialogs.py:765
 msgid "No matches"
 msgstr "Немає відповідників"
 
-#: dialogs.py:763
+#: dialogs.py:765
 msgid "You have no variations of {0} using this criteria"
 msgstr "У вас немає варіацій {0} з використанням цих критеріїв"
 
-#: dialogs.py:821
+#: dialogs.py:825
 msgid "Use this variation name"
 msgstr "Використати цю назву варіації"
 
-#: dialogs.py:883
+#: dialogs.py:888
 msgid "Variations of: {0}"
 msgstr "Варіація: {0}"
 
-#: dialogs.py:909
+#: dialogs.py:922
 msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
 msgstr "Ви справді бажаєте перейменувати позначені {0} пункти на «{1}»?"
 
-#: dialogs.py:992
+#: dialogs.py:1005
 msgid ""
 "<b>Book duplicate search</b><br/>- Report books in this library which have "
 "an identical identifier for books in the target library.<br/>"
@@ -754,7 +754,7 @@ msgstr ""
 "<b>Пошук дублікатів книг</b><br/>– Повідомити про книги у цій бібліотеці, "
 "які мають однаковий ідентифікатор із книгами у бібліотеці призначення.<br/>"
 
-#: dialogs.py:996
+#: dialogs.py:1009
 msgid ""
 "<b>Book duplicate search</b><br/>- Report books in this library which are "
 "binary identical to books in your target library.<br/>- Compares the actual "
@@ -769,7 +769,7 @@ msgstr ""
 "однаковими.<br/>– Книги, які буде виявлено під час цього пошуку гарантовано "
 "є дублікатами."
 
-#: dialogs.py:1003
+#: dialogs.py:1016
 msgid ""
 "<b>Title duplicate search</b><br/>- Report books in this library compared to"
 " your target library with an <b>identical title</b> and {0}<br/>- Titles "
@@ -779,7 +779,7 @@ msgstr ""
 " порівняно із бібліотекою призначення, мають <b>однакові назви</b> і "
 "{0}<br/>– Назви мають збігатися за літерами, окрім регістру літер."
 
-#: dialogs.py:1006
+#: dialogs.py:1019
 msgid ""
 "<b>Title duplicate search</b><br/>- Report books in this library compared to"
 " your target library with a <b>similar title</b> and {0}<br/>- Similar title"
@@ -792,7 +792,7 @@ msgstr ""
 "знаків пунктуації та префіксів. Буде використано ту саму логіку встановлення"
 " відповідності назв, що і в автоматичному об'єднанні."
 
-#: dialogs.py:1010
+#: dialogs.py:1023
 msgid ""
 "<b>Title duplicate search</b><br/>- Report books in this library compared to"
 " your target library with a <b>soundex title</b> and {0}<br/>- Soundex title"
@@ -805,7 +805,7 @@ msgstr ""
 "після вилучення типових знаків пунктуації та префіксів. Буде використано ту "
 "саму логіку встановлення відповідності назв, що і у пошуку однакових назв."
 
-#: dialogs.py:1014
+#: dialogs.py:1027
 msgid ""
 "<b>Title duplicate search</b><br/>- Report books in this library compared to"
 " your target library with a <b>fuzzy title</b> and {0}<br/>- Fuzzy title "
@@ -818,7 +818,7 @@ msgstr ""
 "знаків пунктуації, підзаголовків та будь-яких слів після «and», «or» чи "
 "«aka» у заголовку."
 
-#: dialogs.py:1018
+#: dialogs.py:1031
 msgid ""
 "<b>Author duplicate search</b><br/>- Report books in this library compared "
 "to your target library <b>ignoring title</b> with {0}<br/>- Ignore title "
@@ -830,106 +830,106 @@ msgstr ""
 "{0}<br/>– Пошуки із ігноруванням назв є найкращим способом знайти варіації у"
 " іменах авторів, незалежно від книг, які є у бібліотеці."
 
-#: dialogs.py:1035
+#: dialogs.py:1048
 msgid "Cross Library Search Options"
 msgstr "Параметри міжбібліотечного пошуку"
 
-#: dialogs.py:1039
+#: dialogs.py:1052
 msgid "Compare With Library:"
 msgstr "Порівняти з такою бібліотекою:"
 
-#: dialogs.py:1043
+#: dialogs.py:1056
 msgid "Library:"
 msgstr "Бібліотека:"
 
-#: dialogs.py:1053
+#: dialogs.py:1066
 msgid "Duplicate Search Type:"
 msgstr "Тип пошуку дублікатів:"
 
-#: dialogs.py:1074
+#: dialogs.py:1087
 msgid "Title Matching:"
 msgstr "Відповідність назв:"
 
-#: dialogs.py:1095
+#: dialogs.py:1108
 msgid "Author Matching:"
 msgstr "Відповідність автора:"
 
-#: dialogs.py:1120
+#: dialogs.py:1133
 msgid "Compare Options:"
 msgstr "Параметри порівняння:"
 
-#: dialogs.py:1163
+#: dialogs.py:1176
 msgid "Choose library location to compare against"
 msgstr "Виберіть місце бібліотеки для порівняння"
 
-#: dialogs.py:1214
+#: dialogs.py:1227
 msgid "No library specified"
 msgstr "Не вказано бібліотеки"
 
-#: dialogs.py:1215
+#: dialogs.py:1228
 msgid "You must specify a library path"
 msgstr "Вам слід вказати шлях до бібліотеки"
 
-#: dialogs.py:1218
+#: dialogs.py:1231
 msgid "Same as current"
 msgstr "Збігається з поточною"
 
-#: dialogs.py:1219
+#: dialogs.py:1232
 msgid "The location {0} contains the current calibre library"
 msgstr "У теці {0} міститься поточна бібліотека calibre"
 
-#: dialogs.py:1221
+#: dialogs.py:1234
 msgid "No existing library found"
 msgstr "Не знайдено наявної бібліотеки"
 
-#: dialogs.py:1222
+#: dialogs.py:1235
 msgid "There is no existing calibre library at {0}"
 msgstr "У {0} немає наявної бібліотеки calibre"
 
-#: dialogs.py:1243
+#: dialogs.py:1256
 msgid "Save log"
 msgstr "Збереження журналу"
 
-#: dialogs.py:1250
+#: dialogs.py:1263
 msgid "Save Find Duplicates log"
 msgstr "Зберегти журнал пошуку дублікатів"
 
-#: dialogs.py:1251
+#: dialogs.py:1264
 msgid "Duplicates log file"
 msgstr "Файл журналу дублікатів"
 
-#: duplicates.py:169
+#: duplicates.py:161
 msgid "No duplicate groups were found when searching with: <b>{0}</b>"
 msgstr "Не знайдено груп дублікатів при пошуку: <b>{0}</b>"
 
-#: duplicates.py:171 duplicates.py:284 duplicates.py:317 duplicates.py:324
+#: duplicates.py:163 duplicates.py:276 duplicates.py:309 duplicates.py:316
 msgid "No duplicates"
 msgstr "Немає дублікатів"
 
-#: duplicates.py:173 duplicates.py:180 duplicates.py:286
+#: duplicates.py:165 duplicates.py:172 duplicates.py:278
 msgid "Show this information again"
 msgstr "Показати ці відомості знову"
 
-#: duplicates.py:176
+#: duplicates.py:168
 msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
 msgstr "Знайдено {0} груп дублікатів при пошуку: <b>{1}</b>"
 
-#: duplicates.py:283 duplicates.py:325
+#: duplicates.py:275 duplicates.py:317
 msgid "No more duplicate groups exist from your search."
 msgstr "Для вашого пошуку немає більше груп дублікатів."
 
-#: duplicates.py:318
+#: duplicates.py:310
 msgid ""
 "The current duplicate group no longer exists. You cannot perform this "
 "action."
 msgstr ""
 "Поточної групи дублікатів більше не існує. Ви не можете виконати цю дію."
 
-#: duplicates.py:676
+#: duplicates.py:668
 msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
 msgstr "Показуємо {0} з {0} решти груп дублікатів для {0}"
 
-#: duplicates.py:831
+#: duplicates.py:823
 msgid ""
 "Results of {0} comparison:\n"
 "    Source library: {1}\n"
@@ -943,19 +943,19 @@ msgstr ""
 "\n"
 "{3}"
 
-#: duplicates.py:883
+#: duplicates.py:875
 msgid "Click 'Show details' to see the results."
 msgstr "Натисніть кнопку «Показати подробиці», щоб переглянути результати."
 
-#: duplicates.py:893 duplicates.py:1005
+#: duplicates.py:885 duplicates.py:997
 msgid "Analysing duplicates in target database"
 msgstr "Аналізуємо дублікати у базі даних призначення"
 
-#: duplicates.py:896 duplicates.py:1013
+#: duplicates.py:888 duplicates.py:1005
 msgid "Analysing duplicates in current database"
 msgstr "Аналізуємо дублікати у поточній базі даних"
 
-#: duplicates.py:912
+#: duplicates.py:904
 msgid ""
 "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
@@ -963,12 +963,12 @@ msgstr ""
 "Знайдено <b>{0} авторів із потенційними дублікатами за допомогою <b>{1}</b> "
 "щодо бібліотеки тут: {2}"
 
-#: duplicates.py:1001
+#: duplicates.py:993
 msgid ""
 "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
 msgstr "Знайдено <b>{0} книг</b> із двійковими дублікатами у бібліотеці: {1}"
 
-#: duplicates.py:1037
+#: duplicates.py:1029
 msgid ""
 "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
