@@ -21,7 +21,7 @@ import calibre_plugins.find_duplicates.config as cfg
 from calibre_plugins.find_duplicates.book_algorithms import (create_algorithm,
                     DUPLICATE_SEARCH_FOR_BOOK, DUPLICATE_SEARCH_FOR_AUTHOR)
 from calibre_plugins.find_duplicates.dialogs import SummaryMessageBox
-from calibre_plugins.find_duplicates.matching import (authors_to_list,
+from calibre_plugins.find_duplicates.matching import (authors_to_list, get_field_pairs,
                             set_title_soundex_length, set_author_soundex_length)
 
 
@@ -883,24 +883,35 @@ class CrossLibraryDuplicateFinder(object):
 
     def _do_author_only_comparison(self, algorithm):
         self.gui.status_bar.showMessage(_('Analysing duplicates in target database')+'...', 0)
-        target_candidates_map, author_bookids_map = self._analyse_target_database()
+        target_candidates_map, target_author_bookids_map = self._analyse_target_database()
         # We will just look at an author by author basis, rather than by book id
         self.gui.status_bar.showMessage(_('Analysing duplicates in current database')+'...', 0)
-        authors = self.db.get_authors_with_ids()
         duplicates_count = 0
-        for _id,author,_sort,_link in authors:
-            author = author.replace('|',',')
+        marked_ids = {}
+
+        authors = get_field_pairs(self.db, 'authors')
+        author_names = [a[1].replace('|',',') for a in authors]
+        for author in author_names:
             author_candidates_map = defaultdict(set)
             algorithm.find_author_candidate(author, author_candidates_map)
             for author_hash in author_candidates_map:
                 if author_hash in target_candidates_map:
                     self.log('Author in this library: %s'%author)
+                    # Find the books for this author
+                    search = 'authors:"={}"'.format(author)
+                    book_ids = self.db.data.search_getting_ids(search,'',use_virtual_library=True)
+                    for book_id in book_ids:
+                        marked_ids[book_id] = 'library_duplicate'
                     duplicates_count += 1
                     for dup_author in sorted(list(target_candidates_map[author_hash])):
                         self.log('   Target library author: %s'%dup_author)
-                        for book_id in author_bookids_map[dup_author]:
+                        for book_id in target_author_bookids_map[dup_author]:
                             self.log('      Has book: %s'%self._get_book_display_info(self.target_db, book_id))
                     self.log('')
+
+        if len(marked_ids) > 0:
+            self.gui.current_db.set_marked_ids(marked_ids)
+            self.gui.search.set_search_string('marked:library_duplicate')
         msg = _('Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against the library at: {2}').format(
                     duplicates_count, self.algorithm_text, self.library_path)
         return duplicates_count, msg

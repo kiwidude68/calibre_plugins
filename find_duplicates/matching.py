@@ -18,6 +18,26 @@ ignore_author_words = ['von', 'van', 'jr', 'sr', 'i', 'ii', 'iii', 'second', 'th
                        'md', 'phd']
 IGNORE_AUTHOR_WORDS_MAP = dict((k,True) for k in ignore_author_words)
 
+def ids_for_field(db, ids_of_books, field_name):
+    # First get all the names for the desired books.
+    # Use a set to make them unique
+    unique_names = set()
+    for tup in db.all_field_for(field_name, ids_of_books).values():
+        for val in tup:
+            unique_names.add(val)
+    # Now get the ids for the names and build the pairs
+    id_field_pairs = list()
+    for name in unique_names:
+        id_field_pairs.append((db.get_item_id(field_name, name), name))
+    return id_field_pairs
+
+def get_field_pairs(db, field):
+    # Get the list of books in the current VL
+    ids_in_vl = db.data.search_getting_ids('', '', use_virtual_library=True)
+    # Get the id,val pairs for the desired field
+    field_pairs = ids_for_field(db.new_api, ids_in_vl, field)
+    return field_pairs
+
 def set_soundex_lengths(title_len, author_len):
     global title_soundex_length
     title_soundex_length = title_len

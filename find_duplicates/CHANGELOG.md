@@ -1,5 +1,10 @@
 # Find Duplicates Change Log
 
+## [1.10.2] - 2022-10-15
+### Changed
+- Find Library Duplicates now displays all books in results if doing an authors only search.
+- Find Library Duplicates now respects any virtual library search restriction for authors only (already did so for the other comparison types).
+
 ## [1.10.1] - 2022-10-14
 ### Changed
 - Find Metadata Variations now respects any virtual library search restriction. (@cbhaley)
