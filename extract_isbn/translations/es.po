@@ -3,14 +3,14 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Jellby <jellby@yahoo.com>, 2022
 # Darío Hereñú, 2022
+# Jellby <jellby@yahoo.com>, 2022
 # Grant Drake, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:19+0100\n"
+"POT-Creation-Date: 2022-10-08 18:57+0100\n"
 "PO-Revision-Date: 2022-09-19 15:18+0000\n"
 "Last-Translator: Grant Drake, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:91
+#: ..\common\common_dialogs.py:84 config.py:119
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
@@ -96,24 +96,24 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar Calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Crear nueva columna"
 
 #: action.py:28
 msgid "Extract ISBN from the selected book format"
@@ -145,7 +145,7 @@ msgstr "Extracto de ISBN completado"
 
 #: action.py:99
 msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
-msgstr ""
+msgstr "Extraer ISBN encontró <b>{0} nuevo(s) ISBN</b>."
 
 #: action.py:100
 msgid "Proceed with updating your library?"
@@ -156,36 +156,38 @@ msgid ""
 "Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
 "existing value."
 msgstr ""
+"No se pudo encontrar un ISBN para {0} libro(s) y para {1} libro(s) coincide "
+"con su valor existente."
 
 #: action.py:109
 msgid "Could not find an ISBN for {0} book(s)."
-msgstr ""
+msgstr "No se pudo encontrar un ISBN para {0} libro(s)."
 
 #: action.py:111
 msgid "Found {0} book(s) where ISBN matched the existing value."
-msgstr ""
+msgstr "Se encontraron {0} libros cuyo ISBN coincide con el valor existente."
 
 #: action.py:113
 msgid "Click \"Show details\" to see which books."
 msgstr "Haga clic en \"Mostrar detalles\" para ver qué libros."
 
-#: action.py:116
+#: action.py:118
 msgid "Scan failed"
 msgstr "Escaneo fallido"
 
-#: action.py:116 action.py:123
+#: action.py:118 action.py:127
 msgid "Scan log"
 msgstr "Escanear registro"
 
-#: action.py:123
+#: action.py:127
 msgid "Scan complete"
 msgstr "Escaneo completo"
 
-#: action.py:145
+#: action.py:153
 msgid "Some books changed"
 msgstr "Algunos libros cambiaron"
 
-#: action.py:146
+#: action.py:154
 msgid ""
 "The metadata for some books in your library has changed since you started "
 "the download. If you proceed, some of those changes may be overwritten. "
@@ -197,46 +199,46 @@ msgstr ""
 "de esos cambios. Haga clic en \"Mostrar detalles\" para ver la lista de "
 "libros modificados. Quieres proceder?"
 
-#: action.py:157 jobs.py:226
+#: action.py:165 jobs.py:226
 msgid "Unknown"
 msgstr "Desconocido"
 
-#: config.py:32
+#: config.py:40
 msgid "Do not change my search"
 msgstr "No cambies mi búsqueda"
 
-#: config.py:33
+#: config.py:41
 msgid "Show the books that have new or updated ISBNs"
 msgstr "Mostrar los libros que tienen ISBN nuevos o actualizados"
 
-#: config.py:58
+#: config.py:68
 msgid "When the scan completes:"
 msgstr "Cuando se completa el escaneo:"
 
-#: config.py:63
+#: config.py:73
 msgid "Valid prefixes for ISBN-13 (comma separated):"
 msgstr "Prefijos válidos para ISBN-13 (separados por comas):"
 
-#: config.py:68
+#: config.py:78
 msgid "Selected books before running as a background job:"
 msgstr ""
 "Libros seleccionados antes de ejecutarlos como trabajo en segundo plano:"
 
-#: config.py:69
+#: config.py:79
 msgid "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
 "La ejecución como trabajo en segundo plano es más lenta, pero es la única "
 "forma de evitar\n"
 
-#: config.py:70
+#: config.py:80
 msgid "memory leaks and will keep the UI more responsive."
 msgstr "pérdidas de memoria y mantendrá la interfaz de usuario más receptiva."
 
-#: config.py:79
+#: config.py:89
 msgid "Batch size running as a background job:"
 msgstr "Tamaño de lote que se ejecuta como trabajo en segundo plano:"
 
-#: config.py:80
+#: config.py:90
 msgid ""
 "Books will be broken into batches to ensure that if you run\n"
 "extract for a large group you can cancel/close calibre without\n"
@@ -246,9 +248,42 @@ msgstr ""
 "extraer para un grupo grande puede cancelar/cerrar calibre sin\n"
 "perdiendo todos sus resultados ya que puede cancelar los grupos pendientes."
 
-#: config.py:92
+#: config.py:102
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr "Mostrar diálogo de fallo si el ISBN no se encuentra o es idéntico"
+
+#: config.py:103
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr ""
+"Desmarcar esta casilla si no se desean advertencias cuando\n"
+"no se encuentre ISBN en el libro o sea igual al valor actual."
+
+#: config.py:110
+msgid "Prompt to apply ISBN changes"
+msgstr "Confirmar para aplicar cambios de ISBN"
+
+#: config.py:111
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+"Desmarcar esta opción si quieres que los cambios se apliquen\n"
+"sin diálogo de confirmación. Con esta opción desmarcada hay\n"
+"un riesgo mínimo de que, si estás haciendo a la vez cambios\n"
+"en este registro, se puedan perder."
+
+#: config.py:120
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Edite los atajos de teclado asociados con este complemento"
+
+#: config.py:124
+msgid "Help"
+msgstr "Ayuda"
 
 #: dialogs.py:25
 msgid "Queueing books for extracting ISBN"
@@ -280,16 +315,16 @@ msgstr "Escaneado %d de %d"
 
 #: jobs.py:113
 msgid "No formats"
-msgstr ""
+msgstr "Sin formatos"
 
 #: jobs.py:115
 msgid "ISBN not found"
-msgstr ""
+msgstr "ISBN no encontrado"
 
 #: jobs.py:121
 msgid "Same ISBN"
-msgstr ""
+msgstr "El mismo ISBN"
 
 #: jobs.py:127
 msgid "Extracted"
-msgstr ""
+msgstr "Extraído"

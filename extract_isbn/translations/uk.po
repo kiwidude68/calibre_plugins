@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Андрій М. <dexteritymaster@gmail.com>, 2022
+# Yuri Chornoivan <yurchor@ukr.net>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-08 18:57+0100\n"
+"PO-Revision-Date: 2022-09-19 15:18+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
+"Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:119
+msgid "Keyboard shortcuts"
+msgstr "Клавіатурні скорочення"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Перезавантажити Calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Налаштування:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Очистити"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Очистити всі налаштування для цього плагіну"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте змінити ваші налаштування у цій бібліотеці для цього"
+" додатка?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Будь-які налаштування в інших бібліотеках, або збережені в файлі JSON в "
+"папці ваший плагінів не будуть змінені."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Після цього ви повинні перезавантажити Calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Параметри змінено"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Параметри для цього додатка у цій бібліотеці було змінено."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Будь ласка, перезавантажте Calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте очистити ваші налаштування в цій бібліотцеці для "
+"даного плагіну?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Параметри вилучено"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Всі налаштування для цього плагіну в цій бібліотеці були очищені."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Копіювати до буфера обміну"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "Невизначено"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Потрібен перезапуск"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
+" користуватися цим додатком!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "Створити стовпчик"
+
+#: action.py:28
+msgid "Extract ISBN from the selected book format"
+msgstr "Видобути ISBN з вибраного формату книги"
+
+#: action.py:28 action.py:74
+msgid "Extract ISBN"
+msgstr "Видобути ISBN"
+
+#: action.py:43
+msgid "No rows selected"
+msgstr "Не позначено жодного рядка"
+
+#: action.py:44
+msgid "You must select one or more books to perform this action."
+msgstr "Вам слід позначити одну або декілька книг для виконання цієї дії."
+
+#: action.py:78
+msgid "Extracting ISBN for {0} books"
+msgstr "Видобування ISBN для {0} книг"
+
+#: action.py:91
+msgid "Failed to extract isbns"
+msgstr "Не вдалося видобути ISBN"
+
+#: action.py:94
+msgid "ISBN extract completed"
+msgstr "Видобування ISBN завершено"
+
+#: action.py:99
+msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
+msgstr "Видобути знайдені ISBN <b>{0} нових ISBN</b>."
+
+#: action.py:100
+msgid "Proceed with updating your library?"
+msgstr "Продовжити процедуру оновлення вашої бібліотеки?"
+
+#: action.py:106
+msgid ""
+"Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
+"existing value."
+msgstr ""
+"Не вдалося знайти ISBN для {0} книг, а для {1} значення збіглося з наявним."
+
+#: action.py:109
+msgid "Could not find an ISBN for {0} book(s)."
+msgstr "Не вдалося знайти ISBN для {0} книг."
+
+#: action.py:111
+msgid "Found {0} book(s) where ISBN matched the existing value."
+msgstr "Знайдено {0} книг, для яких ISBN збігся із наявним значенням."
+
+#: action.py:113
+msgid "Click \"Show details\" to see which books."
+msgstr "Натисніть «Показати подробиці», щоб переглянути ці книги."
+
+#: action.py:118
+msgid "Scan failed"
+msgstr "Помилка пошуку"
+
+#: action.py:118 action.py:127
+msgid "Scan log"
+msgstr "Журнал пошуку"
+
+#: action.py:127
+msgid "Scan complete"
+msgstr "Пошук завершено"
+
+#: action.py:153
+msgid "Some books changed"
+msgstr "До деяких книг внесено зміни"
+
+#: action.py:154
+msgid ""
+"The metadata for some books in your library has changed since you started "
+"the download. If you proceed, some of those changes may be overwritten. "
+"Click \"Show details\" to see the list of changed books. Do you want to "
+"proceed?"
+msgstr ""
+"З моменту початку отримання даних до метаданих деяких книг у вашій "
+"бібліотеці було внесено зміни. Якщо ви продовжите обробку, деякі з цих змін "
+"може бути перезаписано. Натисніть кнопку «Переглянути подробиці», щоб "
+"переглянути список змінених книг. Хочете продовжити обробку?"
+
+#: action.py:165 jobs.py:226
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: config.py:40
+msgid "Do not change my search"
+msgstr "Не змінювати пошук"
+
+#: config.py:41
+msgid "Show the books that have new or updated ISBNs"
+msgstr "Показати книги, для яких визначено або оновлено ISBN"
+
+#: config.py:68
+msgid "When the scan completes:"
+msgstr "Коли пошук завершено:"
+
+#: config.py:73
+msgid "Valid prefixes for ISBN-13 (comma separated):"
+msgstr "Коректні префікси ISBN-13 (відокремлені комами):"
+
+#: config.py:78
+msgid "Selected books before running as a background job:"
+msgstr "Позначені книги до запуску у форматі фонового завдання:"
+
+#: config.py:79
+msgid "Running as a background job is slower but is the only way to avoid\n"
+msgstr ""
+"Робота у режимі фонового завдання є повільнішою, але це єдиний спосіб "
+"уникнути\n"
+
+#: config.py:80
+msgid "memory leaks and will keep the UI more responsive."
+msgstr "витоків пам'яті і зберегти швидкодію інтерфейсу програми."
+
+#: config.py:89
+msgid "Batch size running as a background job:"
+msgstr "Розмір пакета у режимі фонового завдання:"
+
+#: config.py:90
+msgid ""
+"Books will be broken into batches to ensure that if you run\n"
+"extract for a large group you can cancel/close calibre without\n"
+"losing all of your results as you can cancel the pending groups."
+msgstr ""
+"Книги буде поділено на пакети, щоб забезпечити збереження\n"
+"результатів при видобуванні даних з великої групи книг,\n"
+"якщо ви скасуєте завдання або завершите роботу calibre."
+
+#: config.py:102
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr ""
+"Показувати повідомлення про помилку, якщо ISBN не знайдено або виявлено "
+"тотожний"
+
+#: config.py:103
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr ""
+"Зніміть позначку з цього пункту, якщо не хочете бачити\n"
+"повідомлень про те, що у книзі не знайдено ISBN, або повідомлень,\n"
+"що значення збігається із поточним."
+
+#: config.py:110
+msgid "Prompt to apply ISBN changes"
+msgstr "Питати про застосування змін до ISBN"
+
+#: config.py:111
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+"Зніміть позначку з цього пункту, якщо ви хочете, щоб програма застосовувала "
+"зміни без вікна підтвердження. Якщо пункт не буде позначено, є незначний "
+"ризик втрати інших змін, які програма може записувати одночасно із внесенням"
+" змін до цього запису книги."
+
+#: config.py:120
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
+
+#: config.py:124
+msgid "Help"
+msgstr "Довідка"
+
+#: dialogs.py:25
+msgid "Queueing books for extracting ISBN"
+msgstr "Створення черги для видобування ISBN"
+
+#: dialogs.py:53
+msgid "Queueing"
+msgstr "Створення черги"
+
+#: dialogs.py:73
+msgid "Extract ISBN failed"
+msgstr "Не вдалося видобути ISBN"
+
+#: dialogs.py:74
+msgid "Scan aborted as no books with formats found."
+msgstr "Пошук перервано, оскільки не знайдено книг із форматами."
+
+#: jobs.py:41
+msgid "Extract ISBN for %d books"
+msgstr "Видобування ISBN для %d книг"
+
+#: jobs.py:44
+msgid "Extract ISBN started"
+msgstr "Розпочато видобування ISBN"
+
+#: jobs.py:96
+msgid "Scanned %d of %d"
+msgstr "Оброблено %d з %d"
+
+#: jobs.py:113
+msgid "No formats"
+msgstr "Немає форматів"
+
+#: jobs.py:115
+msgid "ISBN not found"
+msgstr "ISBN не знайдено"
+
+#: jobs.py:121
+msgid "Same ISBN"
+msgstr "Той самий ISBN"
+
+#: jobs.py:127
+msgid "Extracted"
+msgstr "Видобуто"

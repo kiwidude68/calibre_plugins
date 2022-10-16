@@ -4,17 +4,18 @@
 # 
 # Translators:
 # Piotr Strębski <strebski@gmail.com>, 2022
-# Grant Drake, 2022
 # Adam Humienny <adam.humienny@gmail.com>, 2022
 # Marcin Kozioł <koziol.martin@gmail.com>, 2022
 # Ola Kleniewska <anyzeklove@gmail.com>, 2022
+# The Name <moje.konto+transifex@posteo.org>, 2022
+# Grant Drake, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:19+0100\n"
+"POT-Creation-Date: 2022-10-08 18:57+0100\n"
 "PO-Revision-Date: 2022-09-19 15:18+0000\n"
-"Last-Translator: Ola Kleniewska <anyzeklove@gmail.com>, 2022\n"
+"Last-Translator: Grant Drake, 2022\n"
 "Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:91
+#: ..\common\common_dialogs.py:84 config.py:119
 msgid "Keyboard shortcuts"
 msgstr "Skróty klawiaturowe"
 
@@ -33,7 +34,7 @@ msgstr "Uruchom teraz ponownie Calibre"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr ""
+msgstr "Preferencje dla:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
@@ -48,6 +49,8 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
+"Czy na pewno chcesz zmienić swoje ustawienia w tej bibliotece dla tej "
+"wtyczki?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -63,11 +66,11 @@ msgstr "Musisz potem ponownie uruchomić calibre."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Ustawienia zostały zmienione"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "Ustawienia dla tej wtyczki w tej bibliotece zostały zmienione."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -92,26 +95,26 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopiuj do schowka"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Nieokreślony"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Wymagane jest ponowne uruchomienie"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
 "uruchomić Calibre!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Utwórz nową kolumnę"
 
 #: action.py:28
 msgid "Extract ISBN from the selected book format"
@@ -167,23 +170,23 @@ msgstr ""
 msgid "Click \"Show details\" to see which books."
 msgstr "Kliknij „Pokaż szczegóły”, aby zobaczyć, które książki."
 
-#: action.py:116
+#: action.py:118
 msgid "Scan failed"
 msgstr "Skanowanie się nie powiodło"
 
-#: action.py:116 action.py:123
+#: action.py:118 action.py:127
 msgid "Scan log"
 msgstr "Dziennik skanowania"
 
-#: action.py:123
+#: action.py:127
 msgid "Scan complete"
 msgstr "Skanowanie zakończone"
 
-#: action.py:145
+#: action.py:153
 msgid "Some books changed"
 msgstr "Niektóre książki się zmieniły"
 
-#: action.py:146
+#: action.py:154
 msgid ""
 "The metadata for some books in your library has changed since you started "
 "the download. If you proceed, some of those changes may be overwritten. "
@@ -195,46 +198,46 @@ msgstr ""
 "zastąpione. Kliknij „Pokaż szczegóły”, aby wyświetlić listę zmienionych "
 "książek. Czy chcesz kontynuować?"
 
-#: action.py:157 jobs.py:226
+#: action.py:165 jobs.py:226
 msgid "Unknown"
 msgstr "Nieznany"
 
-#: config.py:32
+#: config.py:40
 msgid "Do not change my search"
 msgstr "Nie zmieniaj mojego wyszukiwania"
 
-#: config.py:33
+#: config.py:41
 msgid "Show the books that have new or updated ISBNs"
 msgstr "Pokaż książki, które mają nowe lub zaktualizowane numery ISBN"
 
-#: config.py:58
+#: config.py:68
 msgid "When the scan completes:"
 msgstr "Po zakończeniu skanowania:"
 
-#: config.py:63
+#: config.py:73
 msgid "Valid prefixes for ISBN-13 (comma separated):"
 msgstr "Prawidłowe prefiksy dla ISBN-13 (oddzielone przecinkami):"
 
-#: config.py:68
+#: config.py:78
 msgid "Selected books before running as a background job:"
 msgstr "Wybrane książki uruchom jako zadanie w tle:"
 
-#: config.py:69
+#: config.py:79
 msgid "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
 "Praca w tle jest wolniejsza, ale jest to jedyny sposób, aby tego uniknąć\n"
 
-#: config.py:70
+#: config.py:80
 msgid "memory leaks and will keep the UI more responsive."
 msgstr ""
 "pamięć wycieka i sprawi, że interfejs użytkownika będzie bardziej "
 "responsywny."
 
-#: config.py:79
+#: config.py:89
 msgid "Batch size running as a background job:"
 msgstr "Rozmiar wsadu działa jako zadanie w tle:"
 
-#: config.py:80
+#: config.py:90
 msgid ""
 "Books will be broken into batches to ensure that if you run\n"
 "extract for a large group you can cancel/close calibre without\n"
@@ -244,9 +247,40 @@ msgstr ""
 "wypakowanie dla dużej grupy, możesz anulować/zamknąć Calibre bez utraty\n"
 "wszystkich wyników, ponieważ możesz anulować oczekujące grupy."
 
-#: config.py:92
+#: config.py:102
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr ""
+
+#: config.py:103
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr ""
+
+#: config.py:110
+msgid "Prompt to apply ISBN changes"
+msgstr ""
+
+#: config.py:111
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+"Odznacz tę opcję jeśli chcesz, aby zmiany były wprowadzane\n"
+"bez okienka z potwierdzeniem. Istnieje małe ryzyko przy opcji\n"
+"odznaczonej, że jeśli zrobisz jakieś inne zmiany w zapisie tej\n"
+"książki w tym samym czasie – mogą one zostać utracone."
+
+#: config.py:120
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Edytuj skróty klawiaturowe powiązane z tą wtyczką"
+
+#: config.py:124
+msgid "Help"
+msgstr ""
 
 #: dialogs.py:25
 msgid "Queueing books for extracting ISBN"

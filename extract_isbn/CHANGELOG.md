@@ -1,11 +1,13 @@
 # Extract ISBN Change Log
 
-## [1.6.0] - 2022-10-XX
+## [1.6.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Configuration option to turn off the dialog prompt when no ISBN found or ISBN is same as existing.
 - Configuration option to turn off the dialog prompt with extract results to apply changes silently.
 - Help button to configuration dialog
+- Russian translation (Caarmi)
+- Ukranian translation (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
