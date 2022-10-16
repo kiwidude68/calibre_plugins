@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-14 19:58+0100\n"
+"POT-Creation-Date: 2022-10-16 04:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:140
+#: ..\common\common_dialogs.py:84 config.py:141
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -91,171 +91,171 @@ msgstr ""
 msgid "Create new column"
 msgstr ""
 
-#: action.py:45 dialogs.py:162 dialogs.py:1045 duplicates.py:170
+#: action.py:45 dialogs.py:162 dialogs.py:1055 duplicates.py:171
 msgid "Find Duplicates"
 msgstr ""
 
-#: action.py:86
+#: action.py:87
 msgid "&Find book duplicates"
 msgstr ""
 
-#: action.py:88
+#: action.py:89
 msgid "Find library duplicates"
 msgstr ""
 
-#: action.py:89
+#: action.py:90
 msgid "Find books that are duplicated in another library compared to this one"
 msgstr ""
 
-#: action.py:92
+#: action.py:93
 msgid "Find metadata &variations"
 msgstr ""
 
-#: action.py:93
+#: action.py:94
 msgid "Find & rename variations in author, publisher, series or tags names that may indicate duplicates"
 msgstr ""
 
-#: action.py:96
+#: action.py:97
 msgid "&Next result"
 msgstr ""
 
-#: action.py:97
+#: action.py:98
 msgid "Display the next duplicate result group"
 msgstr ""
 
-#: action.py:99
+#: action.py:100
 msgid "&Previous result"
 msgstr ""
 
-#: action.py:100
+#: action.py:101
 msgid "Display the previous duplicate result group"
 msgstr ""
 
-#: action.py:103
+#: action.py:104
 msgid "&Mark current group as exempt"
 msgstr ""
 
-#: action.py:104
+#: action.py:105
 msgid "Mark the current group as not duplicates and exempt from future consideration"
 msgstr ""
 
-#: action.py:107
+#: action.py:108
 msgid "Mark &all groups as exempt"
 msgstr ""
 
-#: action.py:108
+#: action.py:109
 msgid "Mark all remaining duplicate groups as exempt from future consideration"
 msgstr ""
 
-#: action.py:112
+#: action.py:113
 msgid "&Show all book duplicate exemptions"
 msgstr ""
 
-#: action.py:113
+#: action.py:114
 msgid "Show all books that have book duplicate exemption pairings"
 msgstr ""
 
-#: action.py:116
+#: action.py:117
 msgid "&Show all author duplicate exemptions"
 msgstr ""
 
-#: action.py:117
+#: action.py:118
 msgid "Show all books that have author duplicate exemption pairings"
 msgstr ""
 
-#: action.py:120
+#: action.py:121
 msgid "&Manage exemptions for this book"
 msgstr ""
 
-#: action.py:121
+#: action.py:122
 msgid "Show duplicate exemptions for this book to enable removal"
 msgstr ""
 
-#: action.py:124
+#: action.py:125
 msgid "&Remove selected exemptions"
 msgstr ""
 
-#: action.py:125
+#: action.py:126
 msgid "Remove any duplicate book/author exemptions for the selected books"
 msgstr ""
 
-#: action.py:129
+#: action.py:130
 msgid "&Clear duplicate results"
 msgstr ""
 
-#: action.py:130
+#: action.py:131
 msgid "Exit duplicate search mode"
 msgstr ""
 
-#: action.py:134
+#: action.py:135
 msgid "&Export duplicate groups"
 msgstr ""
 
-#: action.py:135
+#: action.py:136
 msgid "Export duplicates groups to a json file"
 msgstr ""
 
-#: action.py:139
+#: action.py:140
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:141
+#: action.py:142
 msgid "&Help"
 msgstr ""
 
-#: action.py:245
+#: action.py:248
 msgid "This action will ensure that each of the {0} in the group are exempt from appearing together again in future."
 msgstr ""
 
-#: action.py:248 action.py:301
+#: action.py:251 action.py:304
 msgid "Are you <b>sure</b> you want to proceed?"
 msgstr ""
 
-#: action.py:256
+#: action.py:259
 msgid "No duplicates in group"
 msgstr ""
 
-#: action.py:257
+#: action.py:260
 msgid "There are no duplicates remaining in this group."
 msgstr ""
 
-#: action.py:268 action.py:273
+#: action.py:271 action.py:276
 msgid "Cannot manage exemptions"
 msgstr ""
 
-#: action.py:269
+#: action.py:272
 msgid "No book selected"
 msgstr ""
 
-#: action.py:274
+#: action.py:277
 msgid "This book has no duplicate exemptions"
 msgstr ""
 
-#: action.py:295
+#: action.py:298
 msgid "Invalid selection"
 msgstr ""
 
-#: action.py:296
+#: action.py:299
 msgid "You must select at least one book."
 msgstr ""
 
-#: action.py:297
+#: action.py:300
 msgid "This action will remove any duplicate exemptions for your selection. This will allow them to potentially appear as duplicates together in a future duplicate search."
 msgstr ""
 
-#: action.py:331
+#: action.py:335
 msgid "Choose file"
 msgstr ""
 
-#: action.py:332
+#: action.py:336
 msgid "Saved duplicates"
 msgstr ""
 
-#: action.py:358
+#: action.py:362
 msgid "Export completed"
 msgstr ""
 
-#: action.py:359
+#: action.py:363
 msgid "Exported to: {}"
 msgstr ""
 
@@ -279,31 +279,31 @@ msgstr ""
 msgid "{0} title, {1} author"
 msgstr ""
 
-#: config.py:142
+#: config.py:143
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:146
+#: config.py:147
 msgid "Reset &confirmation dialogs"
 msgstr ""
 
-#: config.py:147
+#: config.py:148
 msgid "Reset all show me again dialogs for the Find Duplicates plugin"
 msgstr ""
 
-#: config.py:151
+#: config.py:152
 msgid "&View library preferences"
 msgstr ""
 
-#: config.py:152
+#: config.py:153
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
-#: config.py:168
+#: config.py:169
 msgid "Done"
 msgstr ""
 
-#: config.py:169
+#: config.py:170
 msgid "Confirmation dialogs have all been reset"
 msgstr ""
 
@@ -363,15 +363,15 @@ msgstr ""
 msgid "Duplicate Search Type"
 msgstr ""
 
-#: dialogs.py:175 dialogs.py:1072
+#: dialogs.py:175 dialogs.py:1082
 msgid "Binary Compare"
 msgstr ""
 
-#: dialogs.py:175 dialogs.py:1072
+#: dialogs.py:175 dialogs.py:1082
 msgid "Identifier"
 msgstr ""
 
-#: dialogs.py:175 dialogs.py:1072
+#: dialogs.py:175 dialogs.py:1082
 msgid "Title/Author"
 msgstr ""
 
@@ -379,12 +379,12 @@ msgstr ""
 msgid "Title Matching"
 msgstr ""
 
-#: dialogs.py:202 dialogs.py:223 dialogs.py:664 dialogs.py:1099
-#: dialogs.py:1120
+#: dialogs.py:202 dialogs.py:223 dialogs.py:664 dialogs.py:1109
+#: dialogs.py:1130
 msgid "Length:"
 msgstr ""
 
-#: dialogs.py:203 dialogs.py:665 dialogs.py:1100
+#: dialogs.py:203 dialogs.py:665 dialogs.py:1110
 msgid ""
 "The shorter the soundex length, the greater likelihood of false positives.\n"
 "Large soundex values reduce your chances of matches"
@@ -427,11 +427,11 @@ msgid ""
 "or by author if title is being ignored"
 msgstr ""
 
-#: dialogs.py:253 dialogs.py:1137
+#: dialogs.py:253 dialogs.py:1147
 msgid "Include languages metadata when comparing titles"
 msgstr ""
 
-#: dialogs.py:254 dialogs.py:1138
+#: dialogs.py:254 dialogs.py:1148
 msgid ""
 "When checked, books with identical titles but different\n"
 "languages metadata field values will not show as duplicates"
@@ -527,7 +527,7 @@ msgstr ""
 msgid "Authors:"
 msgstr ""
 
-#: dialogs.py:689 dialogs.py:884
+#: dialogs.py:689 dialogs.py:888
 msgid "Variations:"
 msgstr ""
 
@@ -559,151 +559,159 @@ msgstr ""
 msgid "Ignore all selected items from consideration at this time"
 msgstr ""
 
-#: dialogs.py:765
+#: dialogs.py:769
 msgid "No matches"
 msgstr ""
 
-#: dialogs.py:765
+#: dialogs.py:769
 msgid "You have no variations of {0} using this criteria"
 msgstr ""
 
-#: dialogs.py:825
+#: dialogs.py:829
 msgid "Use this variation name"
 msgstr ""
 
-#: dialogs.py:888
+#: dialogs.py:892
 msgid "Variations of: {0}"
 msgstr ""
 
-#: dialogs.py:922
+#: dialogs.py:928
 msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
 msgstr ""
 
-#: dialogs.py:1005
+#: dialogs.py:1015
 msgid "<b>Book duplicate search</b><br/>- Report books in this library which have an identical identifier for books in the target library.<br/>"
 msgstr ""
 
-#: dialogs.py:1009
+#: dialogs.py:1019
 msgid "<b>Book duplicate search</b><br/>- Report books in this library which are binary identical to books in your target library.<br/>- Compares the actual file size of every book format in your libraries, computing an SHA hash to compare contents where sizes match.<br/>- Books found using this search are guaranteed to be duplicates."
 msgstr ""
 
-#: dialogs.py:1016
+#: dialogs.py:1026
 msgid "<b>Title duplicate search</b><br/>- Report books in this library compared to your target library with an <b>identical title</b> and {0}<br/>- Titles must match exactly excluding case."
 msgstr ""
 
-#: dialogs.py:1019
+#: dialogs.py:1029
 msgid "<b>Title duplicate search</b><br/>- Report books in this library compared to your target library with a <b>similar title</b> and {0}<br/>- Similar title matches apply removal of common punctuation and prefixes and applies the same title matching logic as Automerge."
 msgstr ""
 
-#: dialogs.py:1023
+#: dialogs.py:1033
 msgid "<b>Title duplicate search</b><br/>- Report books in this library compared to your target library with a <b>soundex title</b> and {0}<br/>- Soundex title matches are based on the same removal of punctuation and common prefixes as a similar title search."
 msgstr ""
 
-#: dialogs.py:1027
+#: dialogs.py:1037
 msgid "<b>Title duplicate search</b><br/>- Report books in this library compared to your target library with a <b>fuzzy title</b> and {0}<br/>- Fuzzy title matches remove all punctuation, subtitles and any words after 'and', 'or' or 'aka' in the title."
 msgstr ""
 
-#: dialogs.py:1031
+#: dialogs.py:1041
 msgid "<b>Author duplicate search</b><br/>- Report books in this library compared to your target library <b>ignoring title</b> with {0}<br/>- Ignore title searches are best to find variations of author names regardless of the books you have for each."
 msgstr ""
 
-#: dialogs.py:1048
+#: dialogs.py:1058
 msgid "Cross Library Search Options"
 msgstr ""
 
-#: dialogs.py:1052
+#: dialogs.py:1062
 msgid "Compare With Library:"
 msgstr ""
 
-#: dialogs.py:1056
+#: dialogs.py:1066
 msgid "Library:"
 msgstr ""
 
-#: dialogs.py:1066
+#: dialogs.py:1076
 msgid "Duplicate Search Type:"
 msgstr ""
 
-#: dialogs.py:1087
+#: dialogs.py:1097
 msgid "Title Matching:"
 msgstr ""
 
-#: dialogs.py:1108
+#: dialogs.py:1118
 msgid "Author Matching:"
 msgstr ""
 
-#: dialogs.py:1133
+#: dialogs.py:1143
 msgid "Compare Options:"
 msgstr ""
 
-#: dialogs.py:1176
+#: dialogs.py:1151
+msgid "Display duplicate books when search completes."
+msgstr ""
+
+#: dialogs.py:1152
+msgid "Uncheck this option if you just want the output log."
+msgstr ""
+
+#: dialogs.py:1191
 msgid "Choose library location to compare against"
 msgstr ""
 
-#: dialogs.py:1227
+#: dialogs.py:1242
 msgid "No library specified"
 msgstr ""
 
-#: dialogs.py:1228
+#: dialogs.py:1243
 msgid "You must specify a library path"
 msgstr ""
 
-#: dialogs.py:1231
+#: dialogs.py:1246
 msgid "Same as current"
 msgstr ""
 
-#: dialogs.py:1232
+#: dialogs.py:1247
 msgid "The location {0} contains the current calibre library"
 msgstr ""
 
-#: dialogs.py:1234
+#: dialogs.py:1249
 msgid "No existing library found"
 msgstr ""
 
-#: dialogs.py:1235
+#: dialogs.py:1250
 msgid "There is no existing calibre library at {0}"
 msgstr ""
 
-#: dialogs.py:1256
+#: dialogs.py:1273
 msgid "Save log"
 msgstr ""
 
-#: dialogs.py:1263
+#: dialogs.py:1280
 msgid "Save Find Duplicates log"
 msgstr ""
 
-#: dialogs.py:1264
+#: dialogs.py:1281
 msgid "Duplicates log file"
 msgstr ""
 
-#: duplicates.py:161
+#: duplicates.py:162
 msgid "No duplicate groups were found when searching with: <b>{0}</b>"
 msgstr ""
 
-#: duplicates.py:163 duplicates.py:276 duplicates.py:309 duplicates.py:316
+#: duplicates.py:164 duplicates.py:277 duplicates.py:310 duplicates.py:317
 msgid "No duplicates"
 msgstr ""
 
-#: duplicates.py:165 duplicates.py:172 duplicates.py:278
+#: duplicates.py:166 duplicates.py:173 duplicates.py:279
 msgid "Show this information again"
 msgstr ""
 
-#: duplicates.py:168
+#: duplicates.py:169
 msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
 msgstr ""
 
-#: duplicates.py:275 duplicates.py:317
+#: duplicates.py:276 duplicates.py:318
 msgid "No more duplicate groups exist from your search."
 msgstr ""
 
-#: duplicates.py:310
+#: duplicates.py:311
 msgid "The current duplicate group no longer exists. You cannot perform this action."
 msgstr ""
 
-#: duplicates.py:668
+#: duplicates.py:669
 msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
 msgstr ""
 
-#: duplicates.py:823
+#: duplicates.py:821
 msgid ""
 "Results of {0} comparison:\n"
 "    Source library: {1}\n"
@@ -712,27 +720,27 @@ msgid ""
 "{3}"
 msgstr ""
 
-#: duplicates.py:875
+#: duplicates.py:893
 msgid "Click 'Show details' to see the results."
 msgstr ""
 
-#: duplicates.py:885 duplicates.py:997
+#: duplicates.py:904 duplicates.py:1030
 msgid "Analysing duplicates in target database"
 msgstr ""
 
-#: duplicates.py:888 duplicates.py:1005
+#: duplicates.py:906 duplicates.py:1039
 msgid "Analysing duplicates in current database"
 msgstr ""
 
-#: duplicates.py:904
+#: duplicates.py:937
 msgid "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against the library at: {2}"
 msgstr ""
 
-#: duplicates.py:993
+#: duplicates.py:1026
 msgid "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
 msgstr ""
 
-#: duplicates.py:1029
+#: duplicates.py:1063
 msgid "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against the library at: {2}"
 msgstr ""
 
