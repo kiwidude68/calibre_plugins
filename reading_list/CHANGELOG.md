@@ -1,9 +1,10 @@
 # Reading List Change Log
 
-## [1.15.0] - 2022-10-XX
+## [1.15.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add Help button to menu and configuration dialog.
+- Ukranian translation (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
