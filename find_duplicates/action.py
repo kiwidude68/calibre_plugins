@@ -311,8 +311,16 @@ class FindDuplicatesAction(InterfaceAction):
     def clear_duplicate_results(self, clear_search=True, reapply_restriction=True):
         if not self.clear_duplicate_mode_action.isEnabled():
             return
-        self.duplicate_finder.clear_duplicates_mode(clear_search, reapply_restriction)
-        self.has_advanced_results = False
+        if self.has_advanced_results:
+            # For advanced search resutls we haven't made changes to search restrictions
+            # or highlighting. Just remove temp markers
+            self.has_advanced_results = False
+            marked_ids = dict()
+            self.gui.current_db.set_marked_ids(marked_ids)
+            if clear_search:
+                self.gui.search.clear()
+        else:
+            self.duplicate_finder.clear_duplicates_mode(clear_search, reapply_restriction)
         self.update_actions_enabled()
 
     def user_has_cleared_search(self):
