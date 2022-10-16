@@ -1,10 +1,10 @@
 # Quick Preferences Change Log
 
-## [1.7.0] - 2022-10-XX
+## [1.7.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Help button to menu and configuration dialog.
-- Ukranian translations (@yuchor)
+- Ukranian translations (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code

@@ -3,16 +3,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Caarmi, 2022
 # Виктор, 2022
 # ashed <craysy@gmail.com>, 2022
+# Caarmi, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:57+0100\n"
+"POT-Creation-Date: 2022-10-10 19:34+0100\n"
 "PO-Revision-Date: 2022-09-11 10:14+0000\n"
-"Last-Translator: ashed <craysy@gmail.com>, 2022\n"
+"Last-Translator: Caarmi, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:592
+#: ..\common\common_dialogs.py:84 config.py:600
 msgid "Keyboard shortcuts"
 msgstr "Сочетания клавиш..."
 
@@ -33,7 +33,7 @@ msgstr "Перезагрузите calibre сейчас"
 msgid "Preferences for:"
 msgstr "Предпочтения для:"
 
-#: ..\common\common_dialogs.py:160 config.py:699
+#: ..\common\common_dialogs.py:160 config.py:712
 msgid "Clear"
 msgstr "Очистить"
 
@@ -45,7 +45,7 @@ msgstr "Очистить все настройки для плагина"
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
+msgstr "Импорт списка"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -61,11 +61,11 @@ msgstr "Вы должны перезагрузить calibre впоследст�
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Настройки изменены"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "Настройки этого плагина в этой библиотеке были изменены."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -79,7 +79,7 @@ msgstr "Вы действительно хотите очистить настр
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "Настройки удалены"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
@@ -87,24 +87,26 @@ msgstr "Все настройки для этого плагина в этой �
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Копировать в Буфер обмена"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Не определено"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr ""
+msgstr "Требуется перезапуск"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
+"Изображение обложки не найдено - перед использованием нужно перезапустить "
+"calibre!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Создать новый столбец"
 
 #: action.py:32
 msgid "Quick Preferences"
@@ -122,7 +124,7 @@ msgstr "Перезаписывать существующие форматы п�
 msgid "Create new record for each duplicate format"
 msgstr "Создавать новую запись для каждого повторяющегося формата"
 
-#: action.py:93 config.py:580
+#: action.py:93 config.py:588
 msgid "Swap author names"
 msgstr "Поменять местами имя и фамилию автора"
 
@@ -142,130 +144,138 @@ msgstr "Тип автоматического слияния"
 msgid "Preferences"
 msgstr "Настройки"
 
-#: action.py:119
+#: action.py:120
 msgid "&Customize plugin"
 msgstr "&Настроить плагин"
 
-#: action.py:153
+#: action.py:122 config.py:605
+msgid "&Help"
+msgstr "Спр&авка"
+
+#: action.py:156
 msgid "Cannot switch regular expression"
 msgstr "Не удалось поменять регулярное выражение"
 
-#: action.py:154
+#: action.py:157
 msgid "No regular expression specified in this menu item."
 msgstr "Для данного пункта меню не указано регулярное выражение."
 
-#: action.py:163
+#: action.py:166
 msgid "Cannot change enabled metadata sources"
 msgstr "Не удалось изменить выбранные источники метаданных"
 
-#: action.py:164
+#: action.py:167
 msgid "List of metadata sources is empty"
 msgstr "Список источников метаданных пуст"
 
-#: config.py:140
+#: config.py:143
 msgid "Regex File Pattern"
 msgstr "Регулярное выражение для имен файлов"
 
-#: config.py:140
+#: config.py:143
 msgid "Swap Names"
 msgstr "Имя ↔ фамилия"
 
-#: config.py:140 config.py:300
+#: config.py:143 config.py:306
 msgid "Menu Title"
 msgstr "Заголовок меню"
 
-#: config.py:213 config.py:377
+#: config.py:217 config.py:383
 msgid "Are you sure you want to delete this menu item?"
 msgstr "Вы действительно хотите удалить этот элемент меню?"
 
-#: config.py:215 config.py:379
-msgid "Are you sure you want to delete the selected menu items?"
-msgstr "Вы действительно хотите удалить выделенные элементы меню?"
+#: config.py:219 config.py:385
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "Вы уверены, что хотите удалить выбранные пункты меню {0}?"
 
-#: config.py:216 config.py:380 config.py:642 config.py:650
+#: config.py:220 config.py:386 config.py:655 config.py:663
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: config.py:300
+#: config.py:306
 msgid "Enabled Sources"
 msgstr "Активные источники"
 
-#: config.py:455
+#: config.py:463
 msgid "Configure the file pattern menu items to display:"
 msgstr "Настройка элементов меню для шаблона имени файла:"
 
-#: config.py:476 config.py:533
+#: config.py:484 config.py:541
 msgid "Move row up"
 msgstr "Переместить вверх"
 
-#: config.py:483 config.py:540
+#: config.py:491 config.py:548
 msgid "Add menu item row"
 msgstr "Добавить элемент меню"
 
-#: config.py:490 config.py:547
+#: config.py:498 config.py:555
 msgid "Delete menu item row"
 msgstr "Удалить элемент меню"
 
-#: config.py:497 config.py:554
+#: config.py:505 config.py:562
 msgid "Reset to defaults"
 msgstr "Сброс"
 
-#: config.py:504 config.py:561
+#: config.py:512 config.py:569
 msgid "Move row down"
 msgstr "Переместить вниз"
 
-#: config.py:516
+#: config.py:524
 msgid "Configure the Enabled metadata sources menu items to display"
 msgstr "Настройка элементов меню для источников метаданных:"
 
-#: config.py:575
+#: config.py:583
 msgid "Include in menu:"
 msgstr "Включать в меню:"
 
-#: config.py:581
+#: config.py:589
 msgid "Read metadata from file"
 msgstr "Установить метаданные из файла"
 
-#: config.py:582
+#: config.py:590
 msgid "Automerge added books"
 msgstr "Автослияние добавляемых книг"
 
-#: config.py:593
+#: config.py:601
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Редактирование сочетаний клавиш, связанных с этим плагином"
 
-#: config.py:643
+#: config.py:656
 msgid ""
 "Are you sure you want to reset to the plugin default menu?<br>Any "
 "modifications to file pattern menu items will be discarded."
 msgstr ""
+"Вы уверены, что хотите вернуться к умолчальному меню плагина? <br>Любые "
+"изменения элементов меню паттернов файлов будут отменены."
 
-#: config.py:651
+#: config.py:664
 msgid ""
 "Are you sure you want to reset to the plugin default menu?<br>Any "
 "modifications to metadata source menu items will be discarded."
 msgstr ""
+"Вы уверены, что хотите вернуться к умолчальному меню плагина? <br>Любые "
+"изменения пунктов меню источника метаданных будут отменены."
 
-#: config.py:679
+#: config.py:692
 msgid "Metadata Source Plugins"
 msgstr "Плагины источников метаданных"
 
-#: config.py:683
+#: config.py:696
 msgid "Select the Metadata sources to be enabled"
 msgstr "Выберите активные источники метаданных"
 
-#: config.py:696
+#: config.py:709
 msgid "Get Current"
-msgstr ""
+msgstr "Получить текущий"
 
-#: config.py:697
+#: config.py:710
 msgid "Get the currently enabled Metadata sources"
-msgstr ""
+msgstr "Получить текущие включенные источники метаданных"
 
-#: config.py:700
+#: config.py:713
 msgid "Clear all selected sources"
 msgstr "Очистить все выделенные источники"
 
-#: config.py:757
+#: config.py:766
 msgid "Source"
 msgstr "Источник"
