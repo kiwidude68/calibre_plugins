@@ -3,124 +3,139 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Pk11 <epicpkmn11@outlook.com>, 2022
+# Maurizio Malagoli <malagoli.maurizio@gmail.com>, 2022
+# Gabriele Pandocchi <gabriele@pandocchi.it>, 2022
+# Alberto Canepa <alby.canepa@gmail.com>, 2022
+# Giuseppe Pignataro <rogepix@gmail.com>, 2022
+# Marta Mingolla <martamingolla@yandex.com>, 2022
+# Ettore Mazzitelli, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-10 20:32+0100\n"
 "PO-Revision-Date: 2022-09-13 20:23+0000\n"
-"Last-Translator: Pk11 <epicpkmn11@outlook.com>, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/calibre/teams/19337/ja/)\n"
+"Last-Translator: Ettore Mazzitelli, 2022\n"
+"Language-Team: Italian (https://www.transifex.com/calibre/teams/19337/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: it\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\common\common_dialogs.py:84 config.py:219
 msgid "Keyboard shortcuts"
-msgstr "キーボードショートカット"
+msgstr "Scorciatoie tastiera"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "今すぐcalibreを再起動します"
+msgstr "Riavvia calibre adesso"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr ""
+msgstr "Preferenze per:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "クリア"
+msgstr "Pulisci"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "プラグインの全ての設定をクリアします"
+msgstr "Cancellare tutte le impostazioni per il plugin?"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
+"Sicuro di voler cambiare la configurazione nella libreria di questo plugin?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
-msgstr "他のライブラリにどれかまたはcalibreプラグインのフォルダにJSONファイルに保存された設定は変更されていません。"
+msgstr ""
+"Qualsiasi configurazione nelle altre librerie o salvate in un file JSON "
+"nella cartella dei  plugin calibre non sarà toccata "
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "あとでcalibreを再起動が必要です。"
+msgstr "Successivamente devi riavviare calibre "
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Impostazioni cambiate"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
 msgstr ""
+"La configurazione di questo plugin calibre in questa libreria è stata "
+"modificata "
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "今すぐcalibreを再起動してください。"
+msgstr "Riavvia calibre adesso."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr "このライブラリにのこのプラグインの設定をクリアしてもよろしいですか？"
+msgstr ""
+"Sei sicuro di voler cancellare le impostazioni per il plugin di questa "
+"libreria?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "Impostazioni cancellate "
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "このライブラリにこのプラグインの全ての設定はクリアされました。"
+msgstr ""
+"Tutte le impostazioni per il plugin della libreria sono state cancellate."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copia negli appunti "
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "未定義"
+msgstr "Non definito"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr ""
+msgstr "Riavvio richiesto"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
+"Immagine del titolo non trovata - Devi riavviare Calibre prima di utilizzare"
+" questo plugin!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Crea una nuova colonna "
 
 #: action.py:30
 msgid "Resize Cover"
-msgstr "表紙のサイズ変更"
+msgstr "Ridimensiona copertina"
 
 #: action.py:66
 msgid "Size: {0}(w) x {1}(h)"
-msgstr "サイズ：{0}×{1}"
+msgstr "Dimensione: {0}(w) x {1}(h)"
 
 #: action.py:69 config.py:73
 msgid "Keep aspect ratio"
-msgstr "アスペクト比を保つ"
+msgstr "Mantieni proporzioni"
 
 #: action.py:71
 msgid "Only shrink"
-msgstr "縮むのみ"
+msgstr "Restringi soltanto"
 
 #: action.py:81
 msgid "&Customize plugin"
-msgstr "プラグインをカスタマイズ (&C)"
+msgstr "&Plugin Personalizza "
 
 #: action.py:83 config.py:224
 msgid "&Help"
@@ -128,68 +143,68 @@ msgstr ""
 
 #: action.py:114
 msgid "No covers resized"
-msgstr "サイズ変更された表紙はありません"
+msgstr "Nessuna copertina ridimensionata"
 
 #: action.py:114
 msgid "None of the selected book(s) have covers"
-msgstr "選択された本に表紙はありません"
+msgstr "Nessuno dei libri selezionati ha le copertine"
 
 #: config.py:73
 msgid "Height"
-msgstr "高さ"
+msgstr "Altezza"
 
 #: config.py:73
 msgid "Only shrink larger images"
-msgstr "より大きな画像のみを縮める"
+msgstr "Riduci solo le immagini più larghe "
 
 #: config.py:73
 msgid "Width"
-msgstr "幅"
+msgstr "Larghezza"
 
 #: config.py:73 config.py:94 config.py:109 config.py:165 config.py:167
 msgid "Default"
-msgstr "デフォルト"
+msgstr "Predefinita, Predefinito"
 
 #: config.py:146
 msgid "Cannot delete"
-msgstr "削除できません"
+msgstr "Non può essere cancellata"
 
 #: config.py:146
 msgid "You must have at least one resize menu item"
-msgstr "サイズ変更のメニュー項目は一つ以上必要があります"
+msgstr "Devi avere almeno un elemento del menu Ridimensiona "
 
 #: config.py:148
 msgid "Are you sure you want to delete this resize menu item?"
-msgstr "このサイズ変更のメニュー項目を削除するもよしいですか？"
+msgstr "Sei sicuro di voler cancellare l'elemento del menu Ridimensiona?"
 
 #: config.py:150
 msgid "Are you sure you want to delete the selected {0} resize menu items?"
-msgstr "選択された{0}個サイズ変更のメニュー項目を削除するもよろしいですか？"
+msgstr "Sei sicuro di voler cancellare le voci del menu selezionate {0}?"
 
 #: config.py:151
 msgid "Are you sure?"
-msgstr "本当によろしいですか？"
+msgstr "Sei sicuro/a?"
 
 #: config.py:180
 msgid "Cover resize options:"
-msgstr "表紙のサイズ変更オプション："
+msgstr "Opzioni ridimensionamento copertina:"
 
 #: config.py:196
 msgid "Add resize menu item row"
-msgstr "サイズ変更のメニュー項目行を追加する"
+msgstr "Aggiungi riga dell'elemento di menu Ridimensiona"
 
 #: config.py:203
 msgid "Delete resize menu item row"
-msgstr "サイズ変更のメニュー項目行を削除する"
+msgstr "Cancella la riga della vice di menu Ridimensiona"
 
 #: config.py:213
 msgid "Set as Toolbar Button Default"
-msgstr "ツールバーボタンのデフォルトに設定する"
+msgstr "Definisci come Bottone Predefinito della Barra degli strumenti "
 
 #: config.py:214
 msgid "Set this size as the default on the menu button"
-msgstr "このサイズをメニューボタンのデフォルトに設定する"
+msgstr "Aggiusta questa grandezza come predefinita nel bottone del menu"
 
 #: config.py:220
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "このプラグインに関連付けていますキーボードショートカットを編集します。"
+msgstr "Modifica la scorciatoia da tastiera associata a questo plugin."

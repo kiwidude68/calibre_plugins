@@ -10,13 +10,14 @@
 # Piotr Strębski <strebski@gmail.com>, 2022
 # Ola Kleniewska <anyzeklove@gmail.com>, 2022
 # Grant Drake, 2022
+# The Name <moje.konto+transifex@posteo.org>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:51+0100\n"
+"POT-Creation-Date: 2022-10-10 20:32+0100\n"
 "PO-Revision-Date: 2022-09-13 20:23+0000\n"
-"Last-Translator: Grant Drake, 2022\n"
+"Last-Translator: The Name <moje.konto+transifex@posteo.org>, 2022\n"
 "Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:215
+#: ..\common\common_dialogs.py:84 config.py:219
 msgid "Keyboard shortcuts"
 msgstr "Skróty klawiszowe"
 
@@ -35,7 +36,7 @@ msgstr "Uruchom calibre ponownie."
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr ""
+msgstr "Preferencje dla:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
@@ -50,6 +51,8 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
+"Czy na pewno chcesz zmienić swoje ustawienia w tej bibliotece dla tej "
+"wtyczki?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -65,11 +68,11 @@ msgstr "Musisz potem ponownie uruchomić calibre."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Ustawienia zostały zmienione"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "Ustawienia dla tej wtyczki w tej bibliotece zostały zmienione."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -94,26 +97,26 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopiuj do schowka"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Nieokreślony"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Wymagane ponowne uruchomienie"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
 "uruchomić Calibre!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Utwórz nową kolumnę"
 
 #: action.py:30
 msgid "Resize Cover"
@@ -123,7 +126,7 @@ msgstr "Zmień rozmiar okładki"
 msgid "Size: {0}(w) x {1}(h)"
 msgstr "Rozmiar: {0}(w) x {1}(h)"
 
-#: action.py:69 config.py:67
+#: action.py:69 config.py:73
 msgid "Keep aspect ratio"
 msgstr "Zachowaj proporcje"
 
@@ -135,70 +138,74 @@ msgstr "Tylko pomniejszaj"
 msgid "&Customize plugin"
 msgstr "&Konfiguruj wtyczkę"
 
-#: action.py:112
+#: action.py:83 config.py:224
+msgid "&Help"
+msgstr ""
+
+#: action.py:114
 msgid "No covers resized"
 msgstr "Rozmiary okładek nie zostały zmienione"
 
-#: action.py:112
+#: action.py:114
 msgid "None of the selected book(s) have covers"
 msgstr "Żadna z zaznaczonych książek nie ma okładek"
 
-#: config.py:67
+#: config.py:73
 msgid "Height"
 msgstr "Wysokość"
 
-#: config.py:67
+#: config.py:73
 msgid "Only shrink larger images"
 msgstr "Pomniejszaj tylko większe okładki"
 
-#: config.py:67
+#: config.py:73
 msgid "Width"
 msgstr "Szerokość"
 
-#: config.py:67 config.py:93 config.py:108 config.py:161 config.py:163
+#: config.py:73 config.py:94 config.py:109 config.py:165 config.py:167
 msgid "Default"
 msgstr "Domyślne"
 
-#: config.py:144
+#: config.py:146
 msgid "Cannot delete"
 msgstr "Nie można usunąć"
 
-#: config.py:144
+#: config.py:146
 msgid "You must have at least one resize menu item"
 msgstr "Musisz wybrać co najmniej jeden element menu zmiany rozmiaru"
 
-#: config.py:146
+#: config.py:148
 msgid "Are you sure you want to delete this resize menu item?"
 msgstr "Czy na pewno chcesz usunąć ten element z menu?"
 
-#: config.py:148
+#: config.py:150
 msgid "Are you sure you want to delete the selected {0} resize menu items?"
 msgstr "Czy na pewno chcesz usunąć zaznaczone elementy {0} z menu?"
 
-#: config.py:149
+#: config.py:151
 msgid "Are you sure?"
 msgstr "Jesteś pewien?"
 
-#: config.py:176
+#: config.py:180
 msgid "Cover resize options:"
 msgstr "Opcje zmiany rozmiaru okładek:"
 
-#: config.py:192
+#: config.py:196
 msgid "Add resize menu item row"
 msgstr "Dodaj do menu element zmiany rozmiaru"
 
-#: config.py:199
+#: config.py:203
 msgid "Delete resize menu item row"
 msgstr "Usuń z menu element zmiany rozmiaru"
 
-#: config.py:209
+#: config.py:213
 msgid "Set as Toolbar Button Default"
 msgstr "Ustaw jako domyślny przycisk na pasku narzędzi"
 
-#: config.py:210
+#: config.py:214
 msgid "Set this size as the default on the menu button"
 msgstr "Ustaw ten rozmiar jako domyślny w przycisku na menu"
 
-#: config.py:216
+#: config.py:220
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Edytuj skróty klawiszowe, które dotyczą tej wtyczki"

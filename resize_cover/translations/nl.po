@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:51+0100\n"
+"POT-Creation-Date: 2022-10-10 20:32+0100\n"
 "PO-Revision-Date: 2022-09-13 20:23+0000\n"
 "Last-Translator: W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2022\n"
 "Language-Team: Dutch (https://www.transifex.com/calibre/teams/19337/nl/)\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:215
+#: ..\common\common_dialogs.py:84 config.py:219
 msgid "Keyboard shortcuts"
 msgstr "Sneltoetsen"
 
@@ -94,20 +94,20 @@ msgstr "Alle instellingen voor de plugin in deze bibliotheek zijn gewist."
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Niet gedefinieerd"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -119,7 +119,7 @@ msgstr "Omslag herschalen"
 msgid "Size: {0}(w) x {1}(h)"
 msgstr "Formaat: {0}(b) x {1}(h)"
 
-#: action.py:69 config.py:67
+#: action.py:69 config.py:73
 msgid "Keep aspect ratio"
 msgstr "Behoud verhoudingen"
 
@@ -131,72 +131,76 @@ msgstr "Alleen verkleinen"
 msgid "&Customize plugin"
 msgstr "&Plug-in aanpassen"
 
-#: action.py:112
+#: action.py:83 config.py:224
+msgid "&Help"
+msgstr ""
+
+#: action.py:114
 msgid "No covers resized"
 msgstr "Geen omslagen herschaald"
 
-#: action.py:112
+#: action.py:114
 msgid "None of the selected book(s) have covers"
 msgstr "Geen van de geselecteerde boek(en) heeft(hebben) omslagen"
 
-#: config.py:67
+#: config.py:73
 msgid "Height"
 msgstr "Hoogte"
 
-#: config.py:67
+#: config.py:73
 msgid "Only shrink larger images"
 msgstr "Verklein alleen grotere afbeeldingen"
 
-#: config.py:67
+#: config.py:73
 msgid "Width"
 msgstr "Breedte"
 
-#: config.py:67 config.py:93 config.py:108 config.py:161 config.py:163
+#: config.py:73 config.py:94 config.py:109 config.py:165 config.py:167
 msgid "Default"
 msgstr "Standaard"
 
-#: config.py:144
+#: config.py:146
 msgid "Cannot delete"
 msgstr "Verwijderen niet mogelijk"
 
-#: config.py:144
+#: config.py:146
 msgid "You must have at least one resize menu item"
 msgstr "Je moet op zijn minst één herschaal menu item hebben"
 
-#: config.py:146
+#: config.py:148
 msgid "Are you sure you want to delete this resize menu item?"
 msgstr "Weet u zeker dat u het formaat herschaal item wilt verwijderen?"
 
-#: config.py:148
+#: config.py:150
 msgid "Are you sure you want to delete the selected {0} resize menu items?"
 msgstr ""
 "Bent u zeker dat u de geselecteerde {0} herschaal menu items wilt "
 "verwijderen?"
 
-#: config.py:149
+#: config.py:151
 msgid "Are you sure?"
 msgstr "Bent u zeker?"
 
-#: config.py:176
+#: config.py:180
 msgid "Cover resize options:"
 msgstr "Omslag herschaal opties:"
 
-#: config.py:192
+#: config.py:196
 msgid "Add resize menu item row"
 msgstr "Herschalen menu item rij toevoegen"
 
-#: config.py:199
+#: config.py:203
 msgid "Delete resize menu item row"
 msgstr "Herschalen menu item rij verwijderen"
 
-#: config.py:209
+#: config.py:213
 msgid "Set as Toolbar Button Default"
 msgstr "Als Werkbalk Standaardknop instellen"
 
-#: config.py:210
+#: config.py:214
 msgid "Set this size as the default on the menu button"
 msgstr "Zet dit formaat als standaard voor de menuknop"
 
-#: config.py:216
+#: config.py:220
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Bewerk de sneltoetsen voor deze plug-in"

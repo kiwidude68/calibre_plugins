@@ -1,9 +1,16 @@
 # Resize Cover Change Log
 
-## [1.2.0] - 2022-10-XX
+## [1.2.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add Help button to menu and configuration dialog.
+- Dutch translation (W.P.M.E. Hofland)
+- Italian translation (Ettore Mazzitelli)
+- Japanese translation (Pk11)
+- Portuguese translation (Comfy.n)
+- Russian translation (ashed, Caarmi)
+- Spanish translation (@dunhill)
+- Ukranian translation (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code

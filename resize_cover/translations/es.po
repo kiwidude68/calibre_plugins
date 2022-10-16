@@ -3,15 +3,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Walter Paterno <walter.paterno@gmail.com>, 2022
 # Darío Hereñú, 2022
 # Jellby <jellby@yahoo.com>, 2022
+# Walter Paterno <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:51+0100\n"
+"POT-Creation-Date: 2022-10-10 20:32+0100\n"
 "PO-Revision-Date: 2022-09-13 20:23+0000\n"
 "Last-Translator: Grant Drake, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:215
+#: ..\common\common_dialogs.py:84 config.py:219
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
@@ -97,24 +97,24 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar Calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Crear nueva columna"
 
 #: action.py:30
 msgid "Resize Cover"
@@ -124,7 +124,7 @@ msgstr "Redimensionar portada"
 msgid "Size: {0}(w) x {1}(h)"
 msgstr "Tamaño: {0}(anchura) × {1}(altura)"
 
-#: action.py:69 config.py:67
+#: action.py:69 config.py:73
 msgid "Keep aspect ratio"
 msgstr "Mantener la relación de aspecto"
 
@@ -136,74 +136,78 @@ msgstr "Sólo encoger"
 msgid "&Customize plugin"
 msgstr "&Personalizar complemento"
 
-#: action.py:112
+#: action.py:83 config.py:224
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: action.py:114
 msgid "No covers resized"
 msgstr "No se ha redimensionado ninguna portada"
 
-#: action.py:112
+#: action.py:114
 msgid "None of the selected book(s) have covers"
-msgstr "Ninguno de los libros seleccionados tiene portada"
+msgstr "Ningún libro(s) seleccionados tiene portada"
 
-#: config.py:67
+#: config.py:73
 msgid "Height"
 msgstr "Altura"
 
-#: config.py:67
+#: config.py:73
 msgid "Only shrink larger images"
 msgstr "Reducir sólo las imágenes más grandes"
 
-#: config.py:67
+#: config.py:73
 msgid "Width"
 msgstr "Anchura"
 
-#: config.py:67 config.py:93 config.py:108 config.py:161 config.py:163
+#: config.py:73 config.py:94 config.py:109 config.py:165 config.py:167
 msgid "Default"
 msgstr "Predeterminado"
 
-#: config.py:144
+#: config.py:146
 msgid "Cannot delete"
 msgstr "No se puede borrar"
 
-#: config.py:144
+#: config.py:146
 msgid "You must have at least one resize menu item"
 msgstr "Debe haber al menos un elemento de menú de redimensionado"
 
-#: config.py:146
+#: config.py:148
 msgid "Are you sure you want to delete this resize menu item?"
 msgstr ""
 "¿Está seguro de querer eliminar este elemento de menú de redimensionado?"
 
-#: config.py:148
+#: config.py:150
 msgid "Are you sure you want to delete the selected {0} resize menu items?"
 msgstr ""
 "¿Está seguro de querer eliminar los {0} elementos de menú de redimensionado "
 "seleccionados?"
 
-#: config.py:149
+#: config.py:151
 msgid "Are you sure?"
 msgstr "¿Está seguro?"
 
-#: config.py:176
+#: config.py:180
 msgid "Cover resize options:"
 msgstr "Opciones de redimensionado de portada:"
 
-#: config.py:192
+#: config.py:196
 msgid "Add resize menu item row"
 msgstr "Añadir fila de elementos de menú de redimensionado"
 
-#: config.py:199
+#: config.py:203
 msgid "Delete resize menu item row"
 msgstr "Eliminar fila de elementos de menú de redimensionado"
 
-#: config.py:209
+#: config.py:213
 msgid "Set as Toolbar Button Default"
 msgstr ""
 "Establecer como acción predeterminada del botón de la barra de herramientas"
 
-#: config.py:210
+#: config.py:214
 msgid "Set this size as the default on the menu button"
 msgstr "Establecer este tamaño como el predeterminado en el botón del menú"
 
-#: config.py:216
+#: config.py:220
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Modificar los atajos de teclado asociados con este complemento"
