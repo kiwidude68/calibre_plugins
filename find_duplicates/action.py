@@ -192,9 +192,9 @@ class FindDuplicatesAction(InterfaceAction):
             self.gui.search.clear()
         d = FindLibraryDuplicatesDialog(self.gui)
         if d.exec_() == d.Accepted:
-            finder = CrossLibraryDuplicateFinder(self.gui)
-            finder.run_library_duplicates_check()
-            self.has_advanced_results = finder.display_results
+            self.library_finder = CrossLibraryDuplicateFinder(self.gui)
+            self.library_finder.run_library_duplicates_check()
+            self.has_advanced_results = self.library_finder.display_results
             self.update_actions_enabled()
 
     def find_variations(self):
@@ -312,23 +312,18 @@ class FindDuplicatesAction(InterfaceAction):
         if not self.clear_duplicate_mode_action.isEnabled():
             return
         if self.has_advanced_results:
-            # For advanced search resutls we haven't made changes to search restrictions
-            # or highlighting. Just remove temp markers
+            self.library_finder.clear_gui_duplicates_mode(clear_search, reapply_restriction)
             self.has_advanced_results = False
-            marked_ids = dict()
-            self.gui.current_db.set_marked_ids(marked_ids)
-            if clear_search:
-                self.gui.search.clear()
         else:
             self.duplicate_finder.clear_duplicates_mode(clear_search, reapply_restriction)
         self.update_actions_enabled()
 
     def user_has_cleared_search(self):
-        if self.duplicate_finder.is_valid_to_clear_search():
+        if self.has_advanced_results or self.duplicate_finder.is_valid_to_clear_search():
             self.clear_duplicate_results(clear_search=False)
 
     def user_has_changed_restriction(self, idx):
-        if self.duplicate_finder.is_valid_to_clear_search():
+        if self.has_advanced_results or self.duplicate_finder.is_valid_to_clear_search():
             self.clear_duplicate_results(clear_search=False, reapply_restriction=False)
 
     def show_configuration(self):

@@ -1,8 +1,9 @@
 # Find Duplicates Change Log
 
-## [1.10.2] - 2022-10-16
+## [1.10.3] - 2022-10-17
 ### Added
 - Configuration option for Find Library Duplicates on whether to display the results in library.
+- Automatically apply a virtual library restriction if viewing library duplicate results
 ### Changed
 - Find Library Duplicates now displays all books in results if doing an authors only search.
 - Find Library Duplicates now respects any virtual library search restriction for authors only (already did so for the other comparison types).
@@ -11,6 +12,7 @@
 - Find Metadata Variations dialog did not remove items from Rename dropdown when choosing Ignore
 - Find Metadata Variations dialog included Rename items for entries with no variations found.
 - Ensure Clear duplicate results menu enabled when showing Library duplicates.
+- Restore virtual library correctly after viewing library duplicates.
 
 ## [1.10.1] - 2022-10-14
 ### Changed

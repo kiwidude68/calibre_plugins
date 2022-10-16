@@ -57,8 +57,73 @@ class ExemptionMap(defaultdict):
             return list_of_sets[0] - set([key])
         return set().union(*list_of_sets) - set([key])
 
+class FinderBase(object):
 
-class DuplicateFinder(object):
+    def __init__(self, gui):
+        self.gui = gui
+        self.db = gui.library_view.model().db
+        self._ignore_clear_signal = False
+        self.persist_gui_state()
+
+    def is_valid_to_clear_search(self):
+        return not self._ignore_clear_signal
+
+    def clear_gui_duplicates_mode(self, clear_search=True, reapply_restriction=True, restore_sort=True):
+        self._clear_all_book_marks()
+        if clear_search:
+            self.gui.search.clear()
+        self._restore_previous_gui_state(reapply_restriction, restore_sort)
+
+    def _clear_all_book_marks(self):
+        marked_ids = dict()
+        self.gui.current_db.set_marked_ids(marked_ids)
+
+    def persist_gui_state(self):
+        r = self.gui.search_restriction
+        self._restore_restriction = str(r.currentText())
+        self._restore_restriction_is_text = False
+        if self._restore_restriction:
+            # How do we know whether this is a named search or a text search?
+            # TODO: hacks below will work for 0.7.56 and later, will change it when 0.7.57 released
+            special_menu = str(r.itemText(1))
+            self._restore_restriction_is_text = special_menu == self._restore_restriction
+            if self._restore_restriction.startswith('*') and r.currentIndex() == 2:
+                self._restore_restriction_is_text = True
+                self._restore_restriction = self._restore_restriction[1:]
+        self._restore_highlighting_state = config['highlight_search_matches']
+        self.sort_history = self.gui.library_view.get_state().get('sort_history', [])
+
+    def _restore_previous_gui_state(self, reapply_restriction=True, restore_sort=False):
+        # Restore the user's GUI to it's previous glory
+        self.apply_highlight_if_different(self._restore_highlighting_state)
+        if reapply_restriction:
+            self.apply_restriction_if_different(self._restore_restriction,
+                                                self._restore_restriction_is_text)
+        if restore_sort:
+            try:
+                max_sort_levels = min(tweaks['maximum_resort_levels'], len(self.sort_history))
+                self.gui.library_view.apply_sort_history(self.sort_history, max_sort_levels=max_sort_levels)
+            except Exception as e:
+                if DEBUG:
+                    prints('Find Duplicates: Error(s) when restoring sort history: {}'.format(e))
+
+    def apply_highlight_if_different(self, new_state):
+        if config['highlight_search_matches'] != new_state:
+            config['highlight_search_matches'] = new_state
+            self.gui.set_highlight_only_button_icon()
+
+    def apply_restriction_if_different(self, restriction, is_text_restriction=True):
+        prev_ignore = self._ignore_clear_signal
+        self._ignore_clear_signal = True
+        if str(self.gui.search_restriction.currentText()) not in [restriction, '*'+restriction]:
+            if is_text_restriction:
+                self.gui.apply_text_search_restriction(restriction)
+            else:
+                self.gui.apply_named_search_restriction(restriction)
+        self._ignore_clear_signal = prev_ignore
+
+
+class DuplicateFinder(FinderBase):
     '''
     Responsible for executing a duplicates search and navigating the results
     '''
@@ -68,20 +133,14 @@ class DuplicateFinder(object):
     DUPLICATE_GROUP_MARK = 'duplicate_group_'
 
     def __init__(self, gui):
-        self.gui = gui
-        self.db = gui.library_view.model().db
-        self._ignore_clear_signal = False
+        super(DuplicateFinder, self).__init__(gui)
         book_exemptions, author_exemptions = cfg.get_exemption_lists(self.db)
         self._book_exemptions_map = ExemptionMap(book_exemptions)
         self._author_exemptions_map = ExemptionMap(author_exemptions)
         self._is_showing_duplicate_exemptions = False
         self._books_for_group_map = None
         self._groups_for_book_map = None
-        self._persist_gui_state()
         self.clear_duplicates_mode()
-
-    def is_valid_to_clear_search(self):
-        return not self._ignore_clear_signal
 
     def clear_duplicates_mode(self, clear_search=True, reapply_restriction=True):
         '''
@@ -104,23 +163,15 @@ class DuplicateFinder(object):
         self._algorithm_text = None
         self._duplicate_search_mode = None
         self._current_group_id = None
-        self._clear_all_book_marks()
-        if clear_search:
-            self.gui.search.clear()
-        self._restore_previous_gui_state(reapply_restriction, restore_sort)
-
-    def _clear_all_book_marks(self):
-        marked_ids = dict()
-        self.gui.current_db.set_marked_ids(marked_ids)
+        self.clear_gui_duplicates_mode(clear_search, reapply_restriction, restore_sort)
 
     def run_book_duplicates_check(self):
         '''
         Execute a duplicates search using the specified algorithm and display results
         '''
-        
         if not self.is_showing_duplicate_exemptions() and not self.has_results():
             # We are in a safe state to preserve the users current restriction/highlighting
-            self._persist_gui_state()
+            self.persist_gui_state()
         self.clear_duplicates_mode()
 
         search_type = cfg.plugin_prefs.get(cfg.KEY_SEARCH_TYPE, 'titleauthor')
@@ -380,7 +431,7 @@ class DuplicateFinder(object):
         '''
         if not self.is_showing_duplicate_exemptions() and not self.has_results():
             # We are in a safe state to preserve the users current restriction/highlighting
-            self._persist_gui_state()
+            self.persist_gui_state()
 
         # Make sure we prune any deleted books from our book exemptions map
         marked = self.BOOK_EXEMPTION_MARK
@@ -650,17 +701,17 @@ class DuplicateFinder(object):
     def _refresh_duplicate_display_mode(self):
         self.gui.library_view.multisort((('marked', True), ('authors', True), ('title', True)),
                                         only_if_different=not self._is_new_search)
-        self._apply_highlight_if_different(self._is_show_all_duplicates_mode)
+        self.apply_highlight_if_different(self._is_show_all_duplicates_mode)
         if self._is_show_all_duplicates_mode:
             restriction = 'marked:%s' % self.DUPLICATES_MARK
-            self._apply_restriction_if_different(restriction)
+            self.apply_restriction_if_different(restriction)
 
     def _search_for_duplicate_group(self, group_id):
         marked_text = 'marked:%s%04d' % (self.DUPLICATE_GROUP_MARK, group_id)
         if self._is_show_all_duplicates_mode:
             self.gui.search.set_search_string(marked_text)
         else:
-            self._apply_restriction_if_different(marked_text)
+            self.apply_restriction_if_different(marked_text)
             # When displaying groups one at a time, we need to move selection
             self.gui.library_view.set_current_row(0)
 
@@ -671,53 +722,9 @@ class DuplicateFinder(object):
 
     def _refresh_exemption_display_mode(self, marked):
         self._is_showing_duplicate_exemptions = True
-        self._apply_highlight_if_different(False)
+        self.apply_highlight_if_different(False)
         restriction = 'marked:%s' % marked
-        self._apply_restriction_if_different(restriction)
-
-    def _persist_gui_state(self):
-        r = self.gui.search_restriction
-        self._restore_restriction = str(r.currentText())
-        self._restore_restriction_is_text = False
-        if self._restore_restriction:
-            # How do we know whether this is a named search or a text search?
-            # TODO: hacks below will work for 0.7.56 and later, will change it when 0.7.57 released
-            special_menu = str(r.itemText(1))
-            self._restore_restriction_is_text = special_menu == self._restore_restriction
-            if self._restore_restriction.startswith('*') and r.currentIndex() == 2:
-                self._restore_restriction_is_text = True
-                self._restore_restriction = self._restore_restriction[1:]
-        self._restore_highlighting_state = config['highlight_search_matches']
-        self.sort_history = self.gui.library_view.get_state().get('sort_history', [])
-
-    def _restore_previous_gui_state(self, reapply_restriction=True, restore_sort=False):
-        # Restore the user's GUI to it's previous glory
-        self._apply_highlight_if_different(self._restore_highlighting_state)
-        if reapply_restriction:
-            self._apply_restriction_if_different(self._restore_restriction,
-                                                 self._restore_restriction_is_text)
-        if restore_sort:
-            try:
-                max_sort_levels = min(tweaks['maximum_resort_levels'], len(self.sort_history))
-                self.gui.library_view.apply_sort_history(self.sort_history, max_sort_levels=max_sort_levels)
-            except Exception as e:
-                if DEBUG:
-                    prints('Find Duplicates: Error(s) when restoring sort history: {}'.format(e))
-
-    def _apply_highlight_if_different(self, new_state):
-        if config['highlight_search_matches'] != new_state:
-            config['highlight_search_matches'] = new_state
-            self.gui.set_highlight_only_button_icon()
-
-    def _apply_restriction_if_different(self, restriction, is_text_restriction=True):
-        prev_ignore = self._ignore_clear_signal
-        self._ignore_clear_signal = True
-        if str(self.gui.search_restriction.currentText()) not in [restriction, '*'+restriction]:
-            if is_text_restriction:
-                self.gui.apply_text_search_restriction(restriction)
-            else:
-                self.gui.apply_named_search_restriction(restriction)
-        self._ignore_clear_signal = prev_ignore
+        self.apply_restriction_if_different(restriction)
 
     def _remove_duplicate_group(self, group_id):
         book_ids = self._books_for_group_map[group_id]
@@ -781,11 +788,10 @@ class DuplicateFinder(object):
                         self.db.remove_format(other_book_id, fmt, index_is_id=True, notify=False)
 
 
-class CrossLibraryDuplicateFinder(object):
+class CrossLibraryDuplicateFinder(FinderBase):
 
     def __init__(self, gui):
-        self.gui = gui
-        self.db = gui.current_db
+        super(CrossLibraryDuplicateFinder, self).__init__(gui)
         self.log = GUILog()
 
     def run_library_duplicates_check(self):
@@ -896,7 +902,8 @@ class CrossLibraryDuplicateFinder(object):
                 for book_id in duplicate_book_ids:
                     marked_ids[book_id] = 'library_duplicate'
                 self.gui.current_db.set_marked_ids(marked_ids)
-                self.gui.search.set_search_string('marked:library_duplicate')
+                self.apply_restriction_if_different('marked:library_duplicate')
+
                 debug_print('Find Duplicates -> Library -> Marked results displayed')
         return msg
 

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-16 04:02+0100\n"
+"POT-Creation-Date: 2022-10-16 13:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,7 @@ msgstr ""
 msgid "Create new column"
 msgstr ""
 
-#: action.py:45 dialogs.py:162 dialogs.py:1055 duplicates.py:171
+#: action.py:45 dialogs.py:162 dialogs.py:1055 duplicates.py:222
 msgid "Find Duplicates"
 msgstr ""
 
@@ -243,19 +243,19 @@ msgstr ""
 msgid "This action will remove any duplicate exemptions for your selection. This will allow them to potentially appear as duplicates together in a future duplicate search."
 msgstr ""
 
-#: action.py:335
+#: action.py:338
 msgid "Choose file"
 msgstr ""
 
-#: action.py:336
+#: action.py:339
 msgid "Saved duplicates"
 msgstr ""
 
-#: action.py:362
+#: action.py:365
 msgid "Export completed"
 msgstr ""
 
-#: action.py:363
+#: action.py:366
 msgid "Exported to: {}"
 msgstr ""
 
@@ -683,35 +683,35 @@ msgstr ""
 msgid "Duplicates log file"
 msgstr ""
 
-#: duplicates.py:162
+#: duplicates.py:213
 msgid "No duplicate groups were found when searching with: <b>{0}</b>"
 msgstr ""
 
-#: duplicates.py:164 duplicates.py:277 duplicates.py:310 duplicates.py:317
+#: duplicates.py:215 duplicates.py:328 duplicates.py:361 duplicates.py:368
 msgid "No duplicates"
 msgstr ""
 
-#: duplicates.py:166 duplicates.py:173 duplicates.py:279
+#: duplicates.py:217 duplicates.py:224 duplicates.py:330
 msgid "Show this information again"
 msgstr ""
 
-#: duplicates.py:169
+#: duplicates.py:220
 msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
 msgstr ""
 
-#: duplicates.py:276 duplicates.py:318
+#: duplicates.py:327 duplicates.py:369
 msgid "No more duplicate groups exist from your search."
 msgstr ""
 
-#: duplicates.py:311
+#: duplicates.py:362
 msgid "The current duplicate group no longer exists. You cannot perform this action."
 msgstr ""
 
-#: duplicates.py:669
+#: duplicates.py:720
 msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
 msgstr ""
 
-#: duplicates.py:821
+#: duplicates.py:827
 msgid ""
 "Results of {0} comparison:\n"
 "    Source library: {1}\n"
@@ -720,27 +720,27 @@ msgid ""
 "{3}"
 msgstr ""
 
-#: duplicates.py:893
+#: duplicates.py:899
 msgid "Click 'Show details' to see the results."
 msgstr ""
 
-#: duplicates.py:904 duplicates.py:1030
+#: duplicates.py:911 duplicates.py:1037
 msgid "Analysing duplicates in target database"
 msgstr ""
 
-#: duplicates.py:906 duplicates.py:1039
+#: duplicates.py:913 duplicates.py:1046
 msgid "Analysing duplicates in current database"
 msgstr ""
 
-#: duplicates.py:937
+#: duplicates.py:944
 msgid "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against the library at: {2}"
 msgstr ""
 
-#: duplicates.py:1026
+#: duplicates.py:1033
 msgid "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
 msgstr ""
 
-#: duplicates.py:1063
+#: duplicates.py:1070
 msgid "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against the library at: {2}"
 msgstr ""
 
