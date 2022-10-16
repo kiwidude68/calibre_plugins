@@ -134,22 +134,32 @@ class ListComboBox(QComboBox):
 
     def __init__(self, parent, values, selected_value=None):
         QComboBox.__init__(self, parent)
-        self.values = values
+        self.setMaximumWidth(200)
+        # Some books have terrible quality "identifiers" on them which have very long "names"
+        # So you end up with SomeVeryLongName:SomeVeryLongName or whatever in calibre
+        # This can force the combobox to display crazily wide values
+        # Lets restrict everything to 50 characters with an ellipses in the display values.
+        self.raw_values = values
+        self.display_values = [self._truncate(x) for x in values]
         if selected_value is not None:
             self.populate_combo(selected_value)
+
+    def _truncate(self, input):
+        return input if len(input) <= 50 else input[0:47]+'...'
 
     def populate_combo(self, selected_value):
         self.clear()
         selected_idx = idx = -1
-        for value in self.values:
+        for display_value in self.display_values:
             idx = idx + 1
-            self.addItem(value)
-            if value == selected_value:
+            self.addItem(display_value)
+            if self.raw_values[idx] == selected_value:
                 selected_idx = idx
         self.setCurrentIndex(selected_idx)
 
     def selected_value(self):
-        return str(self.currentText())
+        idx = self.currentIndex()
+        return self.raw_values[idx]
 
 
 class FindBookDuplicatesDialog(SizePersistedDialog):

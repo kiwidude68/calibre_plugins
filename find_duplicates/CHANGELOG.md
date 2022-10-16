@@ -1,6 +1,6 @@
 # Find Duplicates Change Log
 
-## [1.10.3] - 2022-10-17
+## [1.10.4] - 2022-10-17
 ### Added
 - Configuration option for Find Library Duplicates on whether to display the results in library.
 - Automatically apply a virtual library restriction if viewing library duplicate results
@@ -13,6 +13,7 @@
 - Find Metadata Variations dialog included Rename items for entries with no variations found.
 - Ensure Clear duplicate results menu enabled when showing Library duplicates.
 - Restore virtual library correctly after viewing library duplicates.
+- Constrain the identifiers dropdowns to a maximum width for bad quality identifier data in calibre.
 
 ## [1.10.1] - 2022-10-14
 ### Changed

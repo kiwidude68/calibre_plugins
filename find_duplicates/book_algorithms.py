@@ -417,8 +417,9 @@ def create_algorithm(gui, db, search_type, identifier_type, title_match, author_
     Returns a tuple of the algorithm and a summary description
     '''
     if search_type == 'identifier':
+        display_identifier = identifier_type if len(identifier_type) <+ 50 else identifier_type[0:47]+'...'
         return IdentifierAlgorithm(gui, db, bex_map, identifier_type), \
-                    _("matching '{0}' identifier").format(identifier_type)
+                    _("matching '{0}' identifier").format(display_identifier)
     elif search_type == 'binary':
         return BinaryCompareAlgorithm(gui, db, bex_map), \
                     _('binary compare')
