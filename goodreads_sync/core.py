@@ -191,8 +191,10 @@ class HttpHelper(object):
             debug_print('Content: %s' % content)
             traceback.print_stack()
         detail = 'URL: {0}\nResponse Code: {1}\n{2}'.format(url, response['status'], content)
-        error_dialog(self.gui, 'Goodreads Failure',
-                     'The request contacting Goodreads has failed. Please try again.',
+        error_dialog(self.gui, _('Goodreads Failure'),
+                     _('The request contacting Goodreads has failed.')+'\n'+
+                     _('If it reoccurs you may have exceeded a request limit imposed by Goodreads.')+'\n'+
+                     _('In which case wait an additional 5-10 minutes before retrying.'),
                      det_msg=detail, show=True)
         return (None, None)
 
@@ -303,7 +305,12 @@ class HttpHelper(object):
         if _response:
             if action == 'add':
                 root = self.get_xml_tree(content)
-                return int(root.findtext('review-id'))
+                review_id = root.findtext('review-id')
+                if (review_id):
+                    return int(review_id)
+                # If we didnt get the review id then we probably got rate limited in the response.
+                # Don't currently have the actual response goodreads send to detect this.
+                self._handle_failure(_response, content, url)
         return None
 
     def create_review(self, oauth_client, shelf_name, goodreads_id, rating, date_read, review_text):

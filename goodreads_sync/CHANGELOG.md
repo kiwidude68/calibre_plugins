@@ -2,11 +2,15 @@
 
 ## [1.16.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+### Added
+- Ukranian translation (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
 - Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Goodreads-Sync)
 - Replace Help link on configuration dialog with a button.
+- Attempt to give a more helpful message if Goodreads apply an http request limit when using add/remove books.
+- Spanish translation (@dunhill)
 ### Fixed
 - Update reading progress should only apply "read" shelf actions when progress >= 100 ([#2][i2])
 - Update reading progress should apply "currently-reading" shelf actions when progress < 100 ([#2][i2])

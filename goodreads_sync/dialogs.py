@@ -1801,6 +1801,9 @@ class DoAddRemoveDialog(SizePersistedDialog):
                 goodreads_id = calibre_book['goodreads_id']
                 for shelf_name in selected_shelves:
                     review_id = self.grhttp.add_remove_book_to_shelf(client, shelf_name, goodreads_id, self.action)
+                    if not review_id:
+                        # Could have had a Goodreads failure, stop immediately.
+                        break
                 # If adding books and rating/date read columns update the Goodreads review
                 if review_id and self.action == 'add':
                     added_books.append(calibre_book)
@@ -1818,6 +1821,9 @@ class DoAddRemoveDialog(SizePersistedDialog):
                             review_text = calibre_book['calibre_review_text']
                             calibre_book['goodreads_review_text'] = review_text
                         self.grhttp.update_review(client, shelf_name, review_id, goodreads_id, rating, date_read, review_text)
+                if not review_id:
+                    # Don't keep trying to add books
+                    break
 
         # Finally, apply any "add" actions to books that were added to shelf
         if len(added_books) > 0:
