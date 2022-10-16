@@ -1,5 +1,10 @@
 # Goodreads Change Log
 
+## [1.7.2] - 2022-10-16
+### Added
+- German translation (@Dustin Steiner)
+- Portuguese translation (@Comfy.n)
+
 ## [1.7.1] - 2022-10-09
 ### Added
 - Added an option to ignore all genre -> tag mappings, to get all genres from Goodreads. Increase your `Max number of tags to download` setting if you use this option because you may miss tags otherwise.

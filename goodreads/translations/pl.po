@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-24 15:08+0100\n"
+"POT-Creation-Date: 2022-10-09 14:46+0100\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
 "Last-Translator: konrad … <konrad.krulikowski@gmail.com>, 2022\n"
 "Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
@@ -99,62 +99,72 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Kopiuj do schowka"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Nieokreślony"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Wymagane ponowne uruchomienie"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Nie znaleziono obrazu okładki. Aby móc korzystać z tej wtyczki, musisz "
 "uruchomić Calibre ponownie!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr "Utwórz nową kolumnę"
 
-#: config.py:153
+#: config.py:154
 msgid "Goodreads Genre"
 msgstr "Gatunek wg Goodreads"
 
-#: config.py:153
+#: config.py:154
 msgid "Maps to Calibre Tag"
 msgstr "Odwzorowuje na znacznik Calibre"
 
-#: config.py:222
+#: config.py:223
 msgid "Goodreads genre to calibre tag mappings"
 msgstr "Odwzorowanie znaczników Goodreads na znaczniki Calibre"
 
-#: config.py:235
+#: config.py:228
+msgid "Filter and map genres to calibre tags"
+msgstr ""
+
+#: config.py:229
+msgid ""
+"When checked, only specific calibre tags will be used as per below.\n"
+"When unchecked, all Goodreads genres will be added as tags."
+msgstr ""
+
+#: config.py:242
 msgid "Add genre mapping"
 msgstr "Dodaj odwzorowanie gatunków"
 
-#: config.py:242
+#: config.py:249
 msgid "Delete genre mapping"
 msgstr "Usuń odwzorowanie gatunków"
 
-#: config.py:249
+#: config.py:256
 msgid "Rename Goodreads genre"
 msgstr "Zmień nazwę gatunku Goodreads"
 
-#: config.py:256
+#: config.py:263
 msgid "Reset to plugin default mappings"
 msgstr "Przywróć odwzorowania domyślne wtyczki"
 
-#: config.py:262
+#: config.py:269
 msgid "Other options"
 msgstr "Pozostałe opcje"
 
-#: config.py:267
+#: config.py:274
 msgid "Scan multiple editions for title/author searches (slower)"
 msgstr "Sprawdzaj wydania przy wyszukiwaniu wg tytułu/autora (wolniej)"
 
-#: config.py:268
+#: config.py:275
 msgid ""
 "When checked will perform an additional search to scan the top ranked\n"
 "Goodreads editions (if available) to exclude audiobook editions.\n"
@@ -163,11 +173,11 @@ msgstr ""
 "Ta opcja spowoduje dodatkowe przeszukanie najwyżej ocenianych wydań Goodreads (o ile są dostępne), w celu wykluczenia wydań audiobooków.\n"
 "Bez tej opcji otrzymasz rezultaty szybciej, ale bez informacji o wydaniach."
 
-#: config.py:274
+#: config.py:281
 msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
 msgstr "Pobierz wszystkich autorów (np. ilustratorów, redaktorów serii itp.)"
 
-#: config.py:275
+#: config.py:282
 msgid ""
 "When this option is checked, all authors are retrieved.\n"
 "\n"
@@ -177,11 +187,11 @@ msgstr ""
 "\n"
 "Gdy opcja jest odznaczona (domyślnie), zwracany jest tylko główny autor (autorzy)."
 
-#: config.py:280
+#: config.py:287
 msgid "Get ASIN for kindle editions"
 msgstr "Pobierz ASIN dla wydań na kindle"
 
-#: config.py:281
+#: config.py:288
 msgid ""
 "When this option is checked, in cases where Goodreads has an ASIN listed\n"
 "instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
@@ -191,11 +201,11 @@ msgstr ""
 "zamiast ISBN. Przydaje się w przypadku książek, które mają już\n"
 "określony identyfikator Goodreads dla wydań na Kindle."
 
-#: config.py:287
+#: config.py:294
 msgid "Use first published date"
 msgstr "Użyj daty pierwszej publikacji"
 
-#: config.py:288
+#: config.py:295
 msgid ""
 "If checked, the first published date for this book is used rather than\n"
 "that of the actual book edition."
@@ -203,55 +213,55 @@ msgstr ""
 "Jeśli zaznaczone, używana jest data pierwszej publikacji tej książki \n"
 "zamiast daty właściwego wydania książki."
 
-#: config.py:293
+#: config.py:300
 msgid "Get precise rating into 'grrating' identifier"
 msgstr ""
 
-#: config.py:294
+#: config.py:301
 msgid ""
 "If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
 "you can display as a custom column."
 msgstr ""
 
-#: config.py:299
+#: config.py:306
 msgid "Get #votes for rating into 'grvotes' identifier"
 msgstr ""
 
-#: config.py:300
+#: config.py:307
 msgid ""
 "If checked, pulls number of votes producing this rating into an identifier\n"
 "you can display as a custom column."
 msgstr ""
 
-#: config.py:320 config.py:351
+#: config.py:328 config.py:359
 msgid "Add new mapping"
 msgstr "Dodaj nowe odwzorowanie"
 
-#: config.py:321 config.py:352
+#: config.py:329 config.py:360
 msgid "Enter a Goodreads genre name to create a mapping for:"
 msgstr ""
 "Wpisz nazwę gatunku Goodreads, dla którego chcesz utworzyć odwzorowanie:"
 
-#: config.py:332
+#: config.py:340
 msgid "Add Failed"
 msgstr "Dodanie nie powiodło się"
 
-#: config.py:332 config.py:364
+#: config.py:340 config.py:372
 msgid "A genre with the same name already exists"
 msgstr "Gatunek o tej nazwie już istnieje"
 
-#: config.py:340 config.py:371
+#: config.py:348 config.py:379
 msgid "Are you sure?"
 msgstr "Jesteś pewien?"
 
-#: config.py:341
+#: config.py:349
 msgid "Are you sure you want to delete the selected genre mappings?"
 msgstr "Czy na pewno chcesz usunąć wybrane odwzorowania gatunków?"
 
-#: config.py:364
+#: config.py:372
 msgid "Rename Failed"
 msgstr "Zmiana nazwy nie powiodła się"
 
-#: config.py:372
+#: config.py:380
 msgid "Are you sure you want to reset to the plugin default genre mappings?"
 msgstr "Czy na pewno chcesz przywrócić odwzorowania domyślne gatunków?"
