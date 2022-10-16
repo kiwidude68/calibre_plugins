@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-09 18:59+0100\n"
+"POT-Creation-Date: 2022-10-09 11:34+0100\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
@@ -20,31 +20,122 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: action.py:37
+#: ..\common\common_dialogs.py:84 config.py:69
+msgid "Keyboard shortcuts"
+msgstr "Клавіатурні скорочення"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Перезавантажити Calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Налаштування:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Очистити"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Очистити всі налаштування для цього додатка"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте змінити ваші налаштування у цій бібліотеці для цього"
+" додатка?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Будь-які налаштування в інших бібліотеках, або збережені в файлі JSON в "
+"папці ваший плагінів не будуть змінені."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Після цього ви повинні перезавантажити Calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Параметри змінено"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Параметри для цього додатка у цій бібліотеці було змінено."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Будь ласка, перезавантажте Calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте очистити ваші налаштування в цій бібліотцеці для "
+"даного плагіну?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Параметри вилучено"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Всі налаштування для цього плагіну в цій бібліотеці були очищені."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Копіювати до буфера обміну"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "Невизначено"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Потрібен перезапуск"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
+" користуватися цим додатком!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "Створити стовпчик"
+
+#: action.py:33
 msgid "Clipboard Search"
 msgstr "Пошук у буфері обміну"
 
-#: action.py:60 config.py:55
+#: action.py:59 config.py:58
 msgid "Text search"
 msgstr "Текстовий пошук"
 
-#: action.py:62 config.py:56
+#: action.py:61 config.py:59
 msgid "Exact text search"
 msgstr "Точний текстовий пошук"
 
-#: action.py:65
+#: action.py:64
 msgid "&Customize plugin"
 msgstr "&Налаштувати додаток"
 
-#: config.py:50
+#: action.py:66 config.py:74
+msgid "&Help"
+msgstr "&Довідка"
+
+#: config.py:53
 msgid "Default action for toolbar button click"
 msgstr "Типова дія у відповідь на натискання кнопки панелі інструментів"
 
-#: config.py:65 config.py:80
-msgid "Keyboard shortcuts"
-msgstr "Клавіатурні гарячі клавіші"
-
-#: config.py:66
+#: config.py:70
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 "Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."

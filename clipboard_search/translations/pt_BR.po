@@ -3,14 +3,14 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Wagner Marques <wagnermarques00@hotmail.com>, 2022
 # Paulo_Neto <layoutbr@lexxa.com.br>, 2022
+# Wagner Marques <wagnermarques00@hotmail.com>, 2022
 # Cm Fy, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-09 18:59+0100\n"
+"POT-Creation-Date: 2022-10-09 11:34+0100\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
 "Last-Translator: Cm Fy, 2022\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/calibre/teams/19337/pt_BR/)\n"
@@ -21,30 +21,121 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: action.py:37
-msgid "Clipboard Search"
-msgstr ""
-
-#: action.py:60 config.py:55
-msgid "Text search"
-msgstr ""
-
-#: action.py:62 config.py:56
-msgid "Exact text search"
-msgstr ""
-
-#: action.py:65
-msgid "&Customize plugin"
-msgstr "Customizar plugin"
-
-#: config.py:50
-msgid "Default action for toolbar button click"
-msgstr "Ação padrão para o clique na barra de ferramentas"
-
-#: config.py:65 config.py:80
+#: ..\common\common_dialogs.py:84 config.py:69
 msgid "Keyboard shortcuts"
 msgstr "Atalhos do teclado"
 
-#: config.py:66
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reinicie o calibre agora"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Preferências para:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Limpar"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Limpar todas as configurações para este plugin"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Tem certeza que deseja modificar suas configurações nesta biblioteca para "
+"este plugin?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Qualquer configuração em outras bibliotecas ou armazenadas em um arquivo "
+"JSON na pasta dos seus plugins do calibre não serão tocadas."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Você precisa reiniciar o calibre depois disso."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Configurações modificadas"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "As configurações para este plugin nesta biblioteca foram modificadas."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Reinicie o calibre agora."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Você tem certeza que deseja limpar as configurações em sua biblioteca para "
+"este plugin?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Configurações removidas"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Todas as configurações deste plugin nesta biblioteca foram limpas."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Copiar para a área de transferência"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "Não definido"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Reinicialização requerida"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Imagem do título não encontrada - você deve reiniciar o Calbre antes de "
+"utilizar este plugin!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "Criar nova coluna"
+
+#: action.py:33
+msgid "Clipboard Search"
+msgstr ""
+
+#: action.py:59 config.py:58
+msgid "Text search"
+msgstr ""
+
+#: action.py:61 config.py:59
+msgid "Exact text search"
+msgstr ""
+
+#: action.py:64
+msgid "&Customize plugin"
+msgstr "Customizar plugin"
+
+#: action.py:66 config.py:74
+msgid "&Help"
+msgstr ""
+
+#: config.py:53
+msgid "Default action for toolbar button click"
+msgstr "Ação padrão para o clique na barra de ferramentas"
+
+#: config.py:70
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Editar atalhos de teclado associados com este plugin"

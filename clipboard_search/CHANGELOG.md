@@ -1,11 +1,18 @@
 # Clipboard Search Change Log
 
-## [1.4.0] - 2022-10-XX
+## [1.4.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
-- Add translation support.
-- Transalations for Catalan, German, Spanish, Estonian, French, Italian, Japanese, Norwegian, Netherlands, Polish, Portuguese, Romanian, Russian, Swedish, Turkish, Ukranian - thanks to everyone!!!
 - Add a Help button to the menu and configuration dialog.
+- Add translation support.
+- German translation (Dustin Steiner)
+- Spanish translation (dunhill)
+- French translation (lentrad)
+- Italian translation (Ettore Mazzitelli)
+- Polish translation (moje konto)
+- Portuguese translation (Comfy.n)
+- Russian translation (Caarmi)
+- Ukranian translation (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code.
