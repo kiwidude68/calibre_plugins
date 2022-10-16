@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Андрій М. <dexteritymaster@gmail.com>, 2022
+# Yuri Chornoivan <yurchor@ukr.net>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-09 20:50+0100\n"
+"PO-Revision-Date: 2022-09-19 14:59+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
+"Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:689
+msgid "Keyboard shortcuts"
+msgstr "Клавіатурні скорочення"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Перезавантажити Calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Налаштування:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Очистити"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Очистити всі налаштування для цього плагіну"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте змінити ваші налаштування у цій бібліотеці для цього"
+" додатка?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Будь-які налаштування в інших бібліотеках, або збережені в файлі JSON в "
+"папці ваший плагінів не будуть змінені."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Після цього ви повинні перезавантажити Calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Параметри змінено"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Параметри для цього додатка у цій бібліотеці було змінено."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Будь ласка, перезавантажте Calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте очистити ваші налаштування в цій бібліотцеці для "
+"даного плагіну?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Параметри вилучено"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Всі налаштування для цього плагіну в цій бібліотеці були очищені."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Копіювати до буфера обміну"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "Невизначено"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Потрібен перезапуск"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
+" користуватися цим додатком!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "Створити стовпчик"
+
+#: action.py:31
+msgid "Open With"
+msgstr "Відкрити за допомогою"
+
+#: action.py:81
+msgid "&Customize plugin"
+msgstr "&Налаштувати додаток"
+
+#: action.py:83 config.py:694
+msgid "&Help"
+msgstr "&Довідка"
+
+#: action.py:157
+msgid "No book selected"
+msgstr "Не позначено жодної книги"
+
+#: action.py:157 action.py:164 action.py:183 action.py:189
+msgid "Cannot open with"
+msgstr "Не вдалося відкрити у програмі"
+
+#: action.py:164
+msgid "Book has no cover."
+msgstr "У книги немає обкладинки."
+
+#: action.py:172
+msgid "Open With template error"
+msgstr "Помилка у шаблоні відкриття"
+
+#: action.py:184
+msgid "No %s format available. First convert the book to %s."
+msgstr ""
+"Немає доступного формату %s. Спочатку, виконайте перетворення книги до %s."
+
+#: action.py:190
+msgid "Path not specified for this format in your configuration."
+msgstr "У ваших налаштуваннях не вказано шляху для цього формату."
+
+#: config.py:205
+msgid "Format"
+msgstr "Формат"
+
+#: config.py:205
+msgid "Image"
+msgstr "Зображення"
+
+#: config.py:205
+msgid "Submenu"
+msgstr "Підменю"
+
+#: config.py:205
+msgid "Title"
+msgstr "Назва"
+
+#: config.py:206
+msgid "Application Path"
+msgstr "Шлях до програми"
+
+#: config.py:206
+msgid "Args"
+msgstr "Аргументи"
+
+#: config.py:294 config.py:299
+msgid "Select the application to execute for this format"
+msgstr "Виберіть програму, яку слід виконувати для цього формату"
+
+#: config.py:354
+msgid "Edit Path"
+msgstr "Змінти шлях"
+
+#: config.py:355
+msgid "Choose a new path for this application:"
+msgstr "Виберіть новий шлях для цієї програми:"
+
+#: config.py:402
+msgid "Are you sure you want to delete this menu item?"
+msgstr "Ви хочете вилучити цей пункт меню?"
+
+#: config.py:404
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "Ви справді хочете вилучити позначені {0} пункти меню?"
+
+#: config.py:405 config.py:590 config.py:763 config.py:772
+msgid "Are you sure?"
+msgstr "Ви певні?"
+
+#: config.py:515
+msgid "Add New Image"
+msgstr "Додати нове зображення"
+
+#: config.py:518
+msgid "&Select image source"
+msgstr "В&иберіть джерело зображення"
+
+#: config.py:521
+msgid "From &web domain favicon"
+msgstr "З favicon &інтернет-домену"
+
+#: config.py:528
+msgid "From .png &file"
+msgstr "З &файла .png"
+
+#: config.py:541
+msgid "&Save as filename:"
+msgstr "З&берегти як назву файла:"
+
+#: config.py:565
+msgid "Select a .png file for the menu icon"
+msgstr "Виберіть файл .png для піктограми меню"
+
+#: config.py:571
+msgid "Cannot select image"
+msgstr "Не вдалося вибрати зображення"
+
+#: config.py:572 config.py:610
+msgid "Source image must be a .png file."
+msgstr "Джерелом зображення має бути файл .png."
+
+#: config.py:580 config.py:584 config.py:598 config.py:606 config.py:609
+#: config.py:612
+msgid "Cannot import image"
+msgstr "Не вдалося імпортувати зображення"
+
+#: config.py:581
+msgid "You must specify a filename to save as."
+msgstr "Вам слід вказати назву файла для зберігання даних."
+
+#: config.py:585
+msgid "The save as filename should consist of a filename only."
+msgstr "Назва файла має містити лише назву файла."
+
+#: config.py:591
+msgid "An image with this name already exists - overwrite it?"
+msgstr "Зображення з такою назвою вже існує. Перезаписати його?"
+
+#: config.py:599
+msgid "You must specify a web domain url"
+msgstr "Вам слід вказати адресу інтернет-домену"
+
+#: config.py:607
+msgid "You must specify a source file."
+msgstr "Вам слід вказати початковий файл."
+
+#: config.py:613
+msgid "Source image does not exist!"
+msgstr "Початкового зображення не існує!"
+
+#: config.py:633
+msgid "&Select and configure the menu items to display:"
+msgstr "&Виберіть і налаштуйте пункти меню для показу:"
+
+#: config.py:649
+msgid "Move row up"
+msgstr "Пересунути рядок вище"
+
+#: config.py:656
+msgid "Add menu item row"
+msgstr "Додати рядок пункту меню"
+
+#: config.py:663
+msgid "Delete menu item row"
+msgstr "Вилучити рядок пункту меню"
+
+#: config.py:670
+msgid "Reset to defaults"
+msgstr "Скинути до типових"
+
+#: config.py:677
+msgid "Move row down"
+msgstr "Пересунути рядок нижче"
+
+#: config.py:690
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
+
+#: config.py:737
+msgid "&Edit Path"
+msgstr "З&мінити шлях"
+
+#: config.py:743
+msgid "&Add image"
+msgstr "Д&одати зображення"
+
+#: config.py:746
+msgid "&Open images folder"
+msgstr "&Відкрити теку зображень"
+
+#: config.py:752
+msgid "&Import"
+msgstr "&Імпортувати"
+
+#: config.py:755
+msgid "&Export"
+msgstr "&Експортувати"
+
+#: config.py:764
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr "Ви справді хочете повернутися до типового меню додатка?"
+
+#: config.py:765
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr "Усі зміни до налаштувань і нетипові пункти меню буде відкинуто."
+
+#: config.py:773
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr "Теки ще не існує. Хочете її створити?"
+
+#: config.py:790
+msgid "Import Failed"
+msgstr "Не вдалося імпортувати"
+
+#: config.py:791
+msgid "This is not a valid OWIP export archive"
+msgstr "Цей архів не є коректним експортованим архівом OWIP"
+
+#: config.py:803
+msgid "%d menu items added"
+msgstr "Додано %d пунктів меню"
+
+#: config.py:803
+msgid "Import completed"
+msgstr "Імпортування завершено"
+
+#: config.py:813
+msgid "Cannot export"
+msgstr "Не вдалося експортувати"
+
+#: config.py:814
+msgid "No menu items selected to export."
+msgstr "Не позначено пунктів меню для експортування."
+
+#: config.py:842
+msgid "%d menu items exported to<br>%s"
+msgstr "Експортовано %d пунктів меню до<br>%s"
+
+#: config.py:842
+msgid "Export completed"
+msgstr "Експортування завершено"
+
+#: config.py:849
+msgid "Select a menu file archive to import"
+msgstr "Виберіть файл архіву меню для імпортування"
+
+#: config.py:857
+msgid "Save archive as"
+msgstr "Зберегти архів як"
