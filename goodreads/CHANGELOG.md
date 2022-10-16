@@ -1,12 +1,9 @@
 # Goodreads Change Log
 
-## [1.7.2] - 2022-10-16
+## [1.7.1] - 2022-10-16
 ### Added
 - German translation (@Dustin Steiner)
 - Portuguese translation (@Comfy.n)
-
-## [1.7.1] - 2022-10-09
-### Added
 - Added an option to ignore all genre -> tag mappings, to get all genres from Goodreads. Increase your `Max number of tags to download` setting if you use this option because you may miss tags otherwise.
 ### Changed
 - No longer support hierarchical genres (as not in new website design). So a book with genres of `Fantasy` and `Fantasy > Urban Fantasy` will get returned with `Fantasy` and `Urban Fantasy` genres instead on old web pages. The new web page design will also return the same. Users should review their genre mappings in the configuration dialog and replace any `X > Y` hierarchical mappings with one for just `Y` instead.
