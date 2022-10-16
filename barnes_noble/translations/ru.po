@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-08 20:50+0100\n"
+"POT-Creation-Date: 2022-09-19 16:29+0100\n"
 "PO-Revision-Date: 2022-09-08 19:50+0000\n"
 "Last-Translator: Caarmi, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/calibre/teams/19337/ru/)\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: config.py:52
+#: config.py:48
 msgid "Maximum title/author search matches to evaluate (1 = fastest):"
 msgstr "Макс. число совпадений по названию/автору (1 = быстрее всего):"
 
-#: config.py:53
+#: config.py:49
 msgid ""
 "Increasing this value will consider more editions but also increase search times.\n"
 "\n"
@@ -36,11 +36,11 @@ msgstr ""
 "Это увеличит шансы найти обложку большего размера, но не гарантирует \n"
 "этого."
 
-#: config.py:65
+#: config.py:61
 msgid "Get all contributing authors (e.g. editors, illustrators etc)"
 msgstr "Загружать всех соавторов (редакторов, иллюстраторов и т.д.)"
 
-#: config.py:66
+#: config.py:62
 msgid ""
 "When this option is checked, all authors are retrieved.\n"
 "\n"

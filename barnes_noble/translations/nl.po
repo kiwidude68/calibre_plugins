@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-08 20:50+0100\n"
+"POT-Creation-Date: 2022-09-19 16:29+0100\n"
 "PO-Revision-Date: 2022-09-08 19:50+0000\n"
 "Last-Translator: peter <luc@ditbenik.be>, 2022\n"
 "Language-Team: Dutch (https://www.transifex.com/calibre/teams/19337/nl/)\n"
@@ -19,12 +19,12 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: config.py:52
+#: config.py:48
 msgid "Maximum title/author search matches to evaluate (1 = fastest):"
 msgstr ""
 "Maximum aantal te overwegen titel/auteur zoekovereenkomsten (1=snelst):"
 
-#: config.py:53
+#: config.py:49
 msgid ""
 "Increasing this value will consider more editions but also increase search times.\n"
 "\n"
@@ -36,11 +36,11 @@ msgstr ""
 "Dit vergroot  de kans op het vinden van een grotere omslagafbeelding\n"
 "maar geeft geen  garantie."
 
-#: config.py:65
+#: config.py:61
 msgid "Get all contributing authors (e.g. editors, illustrators etc)"
 msgstr "Haal alle bijdragende auteurs op (bv. bewerkers, illustrators, enz.)"
 
-#: config.py:66
+#: config.py:62
 msgid ""
 "When this option is checked, all authors are retrieved.\n"
 "\n"

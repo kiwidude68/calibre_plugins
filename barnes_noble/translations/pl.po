@@ -3,28 +3,27 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Jellby <jellby@yahoo.com>, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
+# Marek Mazurowski <marek.mazurowski@gmail.com>, 2022
+# The Name <moje.konto+transifex@posteo.org>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-19 16:29+0100\n"
 "PO-Revision-Date: 2022-09-08 19:50+0000\n"
-"Last-Translator: Walter Paterno <walter.paterno@gmail.com>, 2022\n"
-"Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: The Name <moje.konto+transifex@posteo.org>, 2022\n"
+"Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: config.py:48
 msgid "Maximum title/author search matches to evaluate (1 = fastest):"
 msgstr ""
-"Máximo número de coincidencias de búsqueda de título o autor para evaluar (1"
-" = más rápido):"
+"Maksymalna ilość dopasowań tytuł/autor do oszacowania (1 = najszybciej):"
 
 #: config.py:49
 msgid ""
@@ -33,16 +32,10 @@ msgid ""
 "This will increase the potential likelihood of getting a larger cover image\n"
 "but does not guarantee it."
 msgstr ""
-"Si se aumenta este valor se considerarán más ediciones pero también aumentarán los tiempos de búsqueda.\n"
-"\n"
-"Esto incrementará potencialmente la probabilidad de obtener una imagen de portada más grande.\n"
-"pero no lo garantiza."
 
 #: config.py:61
 msgid "Get all contributing authors (e.g. editors, illustrators etc)"
-msgstr ""
-"Obtener todos los autores contribuyentes (por ejemplo, editores, "
-"ilustradores, etc.)"
+msgstr "Pobierz wszystkich autorów (np. edytorów, ilustratorów itp.)"
 
 #: config.py:62
 msgid ""
@@ -50,6 +43,6 @@ msgid ""
 "\n"
 "When unchecked (default) only the primary author(s) are returned."
 msgstr ""
-"Cuando se marca esta opción, se recuperan todos los autores.\n"
+"Gdy opcja jest zaznaczona, pobierani są wszyscy autorzy.\n"
 "\n"
-"Cuando no está marcada (predeterminado), sólo se devuelven los autor(es) principales."
+"Gdy opcja jest odznaczona (domyślnie) zwracany jest tylko główny autor (autorzy)."

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-08 20:50+0100\n"
+"POT-Creation-Date: 2022-09-19 16:29+0100\n"
 "PO-Revision-Date: 2022-09-08 19:50+0000\n"
 "Last-Translator: Pk11 <epicpkmn11@outlook.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/calibre/teams/19337/ja/)\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: config.py:52
+#: config.py:48
 msgid "Maximum title/author search matches to evaluate (1 = fastest):"
 msgstr "タイトル・著者の検索を実行しますの最大数（1 = 高速）："
 
-#: config.py:53
+#: config.py:49
 msgid ""
 "Increasing this value will consider more editions but also increase search times.\n"
 "\n"
@@ -34,11 +34,11 @@ msgstr ""
 "\n"
 "より大きな表紙画像が得られる可能性を上げるが、保証するものではありません。"
 
-#: config.py:65
+#: config.py:61
 msgid "Get all contributing authors (e.g. editors, illustrators etc)"
 msgstr "全ての貢献する著者を取得します（例：エディター、イラストレーターなど）"
 
-#: config.py:66
+#: config.py:62
 msgid ""
 "When this option is checked, all authors are retrieved.\n"
 "\n"
