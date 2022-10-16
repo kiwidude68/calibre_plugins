@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Adolfo Jayme-Barrientos, 2022
+# Darío Hereñú, 2022
+# Jellby <jellby@yahoo.com>, 2022
+# Walter Paterno <walter.paterno@gmail.com>, 2022
+# Grant Drake, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-09 20:09+0100\n"
+"PO-Revision-Date: 2022-09-19 15:02+0000\n"
+"Last-Translator: Grant Drake, 2022\n"
+"Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:42
+msgid "Keyboard shortcuts"
+msgstr "Atajos de teclado"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reiniciar Calibre ahora"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Preferencias para: "
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Borrar"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Borrar todas las configuraciones para este complemento"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
+"este complemento?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
+" en su carpeta de complementos de calibre no se modificará."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Debe reiniciar calibre después."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Configuración modificada"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Se ha cambiado la configuración de este complemento en esta biblioteca."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Reinicie calibre ahora."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
+"este complemento?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Configuración eliminada"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Se han borrado todas las configuraciones para este complemento en esta "
+"biblioteca."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Copiar al portapapeles"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "Indefinido"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Reinicio requerido"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"No se encontró la imagen del título - debe reiniciar Calibre antes de usar "
+"este complemento!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "Crear nueva columna"
+
+#: action.py:31
+msgid "Manage Series"
+msgstr "Administrar serie"
+
+#: action.py:51
+msgid "Cannot manage series"
+msgstr "No se puede administrar la serie"
+
+#: action.py:52
+msgid "No books selected"
+msgstr "Ningún libro seleccionado"
+
+#: config.py:43
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Edite los atajos de teclado asociados con este complemento"
+
+#: config.py:47 dialogs.py:476
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: dialogs.py:57 dialogs.py:60
+msgid "Lock Series Index"
+msgstr "Bloqueo Índice de series"
+
+#: dialogs.py:64
+msgid "Series index for book:"
+msgstr "Índice de serie para el libro:"
+
+#: dialogs.py:79
+msgid "&Assign this index value to all remaining books"
+msgstr "&Asigne este valor de índice a todos los libros restantes"
+
+#: dialogs.py:101
+msgid "You have conflicting or out of sequence series indexes"
+msgstr "Tiene índices de series en conflicto o fuera de secuencia"
+
+#: dialogs.py:104
+msgid "Empty book added to series"
+msgstr "Libro vacío agregado a la serie"
+
+#: dialogs.py:107
+msgid "The book data has been changed"
+msgstr "Los datos del libro han sido cambiados"
+
+#: dialogs.py:110
+msgid "The series data is unchanged"
+msgstr "Los datos de la series no se modifican"
+
+#: dialogs.py:131
+msgid "Value assigned by user"
+msgstr "Valor asignado por el usuario"
+
+#: dialogs.py:178
+msgid "Lock old series index"
+msgstr "Bloquear índice de series antiguas"
+
+#: dialogs.py:182
+msgid "Lock series index"
+msgstr "Bloquear Índice de series"
+
+#: dialogs.py:186 dialogs.py:437
+msgid "Unlock series index"
+msgstr "Desbloquear índice de series"
+
+#: dialogs.py:190
+msgid "Unlock all series index"
+msgstr "Desbloquear el índice de todas las series"
+
+#: dialogs.py:197
+msgid "Add empty books"
+msgstr "Añadir libros vacíos"
+
+#: dialogs.py:204
+msgid "Original Series Index"
+msgstr "Índice de series originales"
+
+#: dialogs.py:204
+msgid "Original Series Name"
+msgstr "Nombre de la serie original"
+
+#: dialogs.py:204 dialogs.py:225
+msgid "PubDate"
+msgstr "Fecha de publicación"
+
+#: dialogs.py:205
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#: dialogs.py:225
+msgid "Author(s)"
+msgstr "Autor(es)"
+
+#: dialogs.py:225
+msgid "New Series"
+msgstr "Series nuevas"
+
+#: dialogs.py:225
+msgid "Series"
+msgstr "Series"
+
+#: dialogs.py:225
+msgid "Title"
+msgstr "Título"
+
+#: dialogs.py:325
+msgid "Old"
+msgstr "Antigua"
+
+#: dialogs.py:328
+msgid "New"
+msgstr "Nueva"
+
+#: dialogs.py:369
+msgid "Create or Modify Series"
+msgstr "Crear o modificar series"
+
+#: dialogs.py:376
+msgid "Series &Column:"
+msgstr "&Columna Series:"
+
+#: dialogs.py:384
+msgid "Series &Name:"
+msgstr "&Nombre de Series:"
+
+#: dialogs.py:397
+msgid "&Start At:"
+msgstr "&Empieza en:"
+
+#: dialogs.py:418
+msgid "Move book up in series (Alt+Up)"
+msgstr "Mover libro hacia arriba en serie (Alt+Arriba)"
+
+#: dialogs.py:420
+msgid "Alt+Up"
+msgstr "Alt+Arriba"
+
+#: dialogs.py:424
+msgid "Move book down in series (Alt+Down)"
+msgstr "Mover libro hacia abajo en serie (Alt+Abajo)"
+
+#: dialogs.py:426
+msgid "Alt+Down"
+msgstr "Alt+Abajo"
+
+#: dialogs.py:432
+msgid "Lock to index value"
+msgstr "Bloquear al valor del índice"
+
+#: dialogs.py:444
+msgid "Add empty book to the series list"
+msgstr "Agregar libro vacío a la lista de series"
+
+#: dialogs.py:446
+msgid "Ctrl+Shift+E"
+msgstr "Ctrl+Mayús+E"
+
+#: dialogs.py:450
+msgid "Remove book from the series list"
+msgstr "Eliminar libro de la lista de series"
+
+#: dialogs.py:457
+msgid "Move series index to left of decimal point (Alt+Left)"
+msgstr ""
+"Mover el índice de la serie a la izquierda del punto decimal (Alt+Izquierda)"
+
+#: dialogs.py:459
+msgid "Alt+Left"
+msgstr "Alt+Izquierda"
+
+#: dialogs.py:463
+msgid "Move series index to right of decimal point (Alt+Right)"
+msgstr ""
+"Mover el índice de la serie a la derecha del punto decimal (Alt+Derecha)"
+
+#: dialogs.py:465
+msgid "Alt+Right"
+msgstr "Alt+Derecha"
+
+#: dialogs.py:474
+msgid "&Restore Original Series"
+msgstr "&Restaurar Serie Original"
+
+#: dialogs.py:633
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: dialogs.py:658
+msgid "Are you sure?"
+msgstr "Está usted seguro?"
+
+#: dialogs.py:659
+msgid "Remove the selected book(s) from the series list?"
+msgstr "¿Eliminar libro seleccionado(s) de la lista de series?"
