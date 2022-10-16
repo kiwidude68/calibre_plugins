@@ -1,11 +1,13 @@
 # Search The Internet Change Log
 
-## [1.10.0] - 2022-10-XX
+## [1.10.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add Help to menu.
 - Add full translation support.
-- Translations for Spanish, Russian, Ukranian.
+- Spanish translation (Darío Hereñú)
+- Russian translation (Caarmi)
+- Ukranian translation (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.x or later.
 - Refactoring of common code
