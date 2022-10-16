@@ -3,15 +3,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Yuri Chornoivan <yurchor@ukr.net>, 2022
 # Андрій М. <dexteritymaster@gmail.com>, 2022
+# Yuri Chornoivan <yurchor@ukr.net>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:44+0100\n"
+"POT-Creation-Date: 2022-10-10 21:20+0100\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
-"Last-Translator: Андрій М. <dexteritymaster@gmail.com>, 2022\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,9 +20,9 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:80
+#: ..\common\common_dialogs.py:84 config.py:88
 msgid "Keyboard shortcuts"
-msgstr "Клавіатурні гарячі клавіші"
+msgstr "Клавіатурні скорочення"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
@@ -45,6 +45,8 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
+"Ви впевнені, що бажаєте змінити ваші налаштування у цій бібліотеці для цього"
+" додатка?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -60,15 +62,15 @@ msgstr "Після цього ви повинні перезавантажити
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Параметри змінено"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "Параметри для цього додатка у цій бібліотеці було змінено."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Будь-ласка перезавантажте Calibre."
+msgstr "Будь ласка, перезавантажте Calibre."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
@@ -80,7 +82,7 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "Параметри вилучено"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
@@ -88,24 +90,26 @@ msgstr "Всі налаштування для цього плагіну в ці
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Копіювати до буфера обміну"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Невизначено"
+msgstr "Не визначено"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Потрібен перезапуск"
 
 #: ..\common\common_widgets.py:149
-msgid "Restart required"
-msgstr ""
-
-#: ..\common\common_widgets.py:150
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
+"Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
+" користуватися цим додатком!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Створити стовпчик"
 
 #: action.py:34
 msgid "History"
@@ -123,39 +127,43 @@ msgstr "Вперед"
 msgid "Clear search history"
 msgstr "Спорожнити журнал пошуку"
 
-#: action.py:111
+#: action.py:112
 msgid "&Customize plugin"
 msgstr "&Налаштувати додаток"
 
-#: action.py:188
+#: action.py:114 config.py:93
+msgid "&Help"
+msgstr "&Довідка"
+
+#: action.py:191
 msgid "Are you sure?"
 msgstr "Ви певні?"
 
-#: action.py:189
+#: action.py:192
 msgid "Are you sure you want to clear the search history?"
 msgstr "Ви справді хочете спорожнити журнал пошуку?"
 
-#: config.py:50
+#: config.py:58
 msgid "Default action for toolbar button click"
 msgstr "Типова дія у відповідь на натискання кнопки панелі інструментів"
 
-#: config.py:55
+#: config.py:63
 msgid "Previous search"
 msgstr "Попередній пошук"
 
-#: config.py:56
+#: config.py:64
 msgid "Dropdown menu"
 msgstr "Спадне меню"
 
-#: config.py:66
+#: config.py:74
 msgid "Display last x searches in menu (0=Unlimited)"
 msgstr "Показувати у меню вказану кількість пошуків (0=без обмежень)"
 
-#: config.py:74
+#: config.py:82
 msgid "Keep separate history per library"
 msgstr "Зберігати окремі журнали для бібліотек"
 
-#: config.py:75
+#: config.py:83
 msgid ""
 "When checked will maintain a separate history per library\n"
 "when you switch between them."
@@ -163,7 +171,7 @@ msgstr ""
 "Якщо позначено, додаток зберігатиме окремі журнали для різних бібліотек, "
 "коли ви перемикатиметеся між ними."
 
-#: config.py:81
+#: config.py:89
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 "Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."

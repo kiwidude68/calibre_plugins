@@ -3,169 +3,174 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Виктор, 2022
-# ashed <craysy@gmail.com>, 2022
-# Caarmi, 2022
+# Cm Fy, 2022
+# 68aa2b710696597d2c15b3d803993bee_52a723c <d707001f82511d8467de1cfc369e967e_419818>, 2022
+# Eusébia Rodrigues <catarinarodrigues432@gmail.com>, 2022
+# Paulo Pereira <pauloizidoro@gmail.com>, 2022
+# Manuela Silva <mmsrs@sky.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-10 21:20+0100\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
-"Last-Translator: Caarmi, 2022\n"
-"Language-Team: Russian (https://www.transifex.com/calibre/teams/19337/ru/)\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>, 2022\n"
+"Language-Team: Portuguese (https://www.transifex.com/calibre/teams/19337/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\common\common_dialogs.py:84 config.py:88
 msgid "Keyboard shortcuts"
-msgstr "Сочетания клавиш..."
+msgstr "Atalhos do teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Перезагрузите calibre сейчас"
+msgstr "Reinicie o Calibre agora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Предпочтения для:"
+msgstr "Preferências para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Очистить"
+msgstr "Limpar"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Очистить все настройки для плагина"
+msgstr "Limpar todas as definições deste plugin"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr "Импорт списка"
+msgstr ""
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Любые настройки в других библиотеках или сохраненные в файле JSON в папке "
-"плагинов calibre не будут затронуты."
+"Quaisquer definições noutras bibliotecas ou armazenadas num ficheiro JSON no"
+" seu directório de extensões do calibre não serão tocados."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Вы должны перезагрузить calibre впоследствии."
+msgstr "É necessário reiniciar o Calibre posteriormente."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Настройки изменены"
+msgstr "Definições alteradas"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Настройки этого плагина в этой библиотеке были изменены."
+msgstr ""
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Пожалуйста, перезагрузите calibre сейчас."
+msgstr "Por favor reinicie o calibre agora."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr "Вы действительно хотите очистить настройки плагина в библиотеке?"
+msgstr ""
+"Tem a certeza que pretende limpar todas as configurações da extensão para "
+"esta biblioteca?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Настройки удалены"
+msgstr "Definições eliminadas"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Все настройки для этого плагина в этой библиотеке были очищены."
+msgstr ""
+"Todas as definições para esta extensão foram removidos desta biblioteca."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Копировать в Буфер обмена"
+msgstr "Copiar para a área de transferência"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Не определено"
+msgstr "Não definido"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Требуется перезапуск"
+msgstr "Necessário reiniciar"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Изображение обложки не найдено - перед использованием нужно перезапустить "
-"calibre!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Создать новый столбец"
+msgstr "Criar nova coluna"
 
 #: action.py:34
 msgid "History"
-msgstr "История"
+msgstr "Histórico"
 
 #: action.py:88
 msgid "Goto previous"
-msgstr "К предыдущему"
+msgstr "Anterior"
 
 #: action.py:90
 msgid "Goto next"
-msgstr "К следующему"
+msgstr "Seguinte"
 
 #: action.py:109
 msgid "Clear search history"
-msgstr "Очистить историю поиска"
+msgstr "Limpar histórico de busca"
 
 #: action.py:112
 msgid "&Customize plugin"
-msgstr "&Настроить плагин"
+msgstr "Customizar plugin"
 
 #: action.py:114 config.py:93
 msgid "&Help"
-msgstr "Спр&авка"
+msgstr ""
 
 #: action.py:191
 msgid "Are you sure?"
-msgstr "Вы уверены?"
+msgstr "Tem certeza?"
 
 #: action.py:192
 msgid "Are you sure you want to clear the search history?"
-msgstr "Вы действительно хотите очистить историю поиска?"
+msgstr "Tem certeza que deseja limpar o histórico de buscas?"
 
 #: config.py:58
 msgid "Default action for toolbar button click"
-msgstr "Действие по умолчанию при нажатии кнопки панели инструментов"
+msgstr "Ação padrão para o clique na barra de ferramentas"
 
 #: config.py:63
 msgid "Previous search"
-msgstr "Предыдущий поиск"
+msgstr "Busca anterior"
 
 #: config.py:64
 msgid "Dropdown menu"
-msgstr "Выпадающее меню"
+msgstr "Menu dropdown"
 
 #: config.py:74
 msgid "Display last x searches in menu (0=Unlimited)"
-msgstr "Число последних поисков в меню (0=неограничено)"
+msgstr "Exibir últimas x buscas no menu (0=sem limite)"
 
 #: config.py:82
 msgid "Keep separate history per library"
-msgstr "Отдельная история для каждой библиотеки"
+msgstr "Manter histórico separado para cada biblioteca"
 
 #: config.py:83
 msgid ""
 "When checked will maintain a separate history per library\n"
 "when you switch between them."
-msgstr "Вести отдельную историю для каждой библиотеки."
+msgstr ""
+"Quando marcada essa opção, serão mantidos históricos separados para cada biblioteca\n"
+"quando alternando entre bibliotecas disponíveis"
 
 #: config.py:89
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Редактирование сочетаний клавиш, связанных с этим плагином"
+msgstr "Editar atalhos de teclado associados a este plugin"

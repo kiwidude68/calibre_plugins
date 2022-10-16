@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Walter Paterno <walter.paterno@gmail.com>, 2022
-# Jellby <jellby@yahoo.com>, 2022
 # Darío Hereñú, 2022
+# Jellby <jellby@yahoo.com>, 2022
 # Grant Drake, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:44+0100\n"
+"POT-Creation-Date: 2022-10-10 21:20+0100\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
 "Last-Translator: Grant Drake, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:80
+#: ..\common\common_dialogs.py:84 config.py:88
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
@@ -97,24 +97,24 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar Calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Crear nueva columna"
 
 #: action.py:34
 msgid "History"
@@ -132,39 +132,43 @@ msgstr "Ir al siguiente"
 msgid "Clear search history"
 msgstr "Limpiar historial de búsqueda"
 
-#: action.py:111
+#: action.py:112
 msgid "&Customize plugin"
 msgstr "&Personalizar complemento"
 
-#: action.py:188
+#: action.py:114 config.py:93
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: action.py:191
 msgid "Are you sure?"
 msgstr "¿Está seguro?"
 
-#: action.py:189
+#: action.py:192
 msgid "Are you sure you want to clear the search history?"
 msgstr "¿Está seguro de querer borrar el historial de búsqueda?"
 
-#: config.py:50
+#: config.py:58
 msgid "Default action for toolbar button click"
 msgstr "Acción predeterminada al pulsar el botón de la barra de herramientas"
 
-#: config.py:55
+#: config.py:63
 msgid "Previous search"
 msgstr "Búsqueda anterior"
 
-#: config.py:56
+#: config.py:64
 msgid "Dropdown menu"
 msgstr "Menú desplegable"
 
-#: config.py:66
+#: config.py:74
 msgid "Display last x searches in menu (0=Unlimited)"
 msgstr "Mostrar las últimas x búsquedas en el menú (0=ilimitado)"
 
-#: config.py:74
+#: config.py:82
 msgid "Keep separate history per library"
 msgstr "Mantener un historial separado por biblioteca"
 
-#: config.py:75
+#: config.py:83
 msgid ""
 "When checked will maintain a separate history per library\n"
 "when you switch between them."
@@ -172,6 +176,6 @@ msgstr ""
 "Cuando está marcada, se mantendrá un historial separado por biblioteca\n"
 "al cambiar entre ellas."
 
-#: config.py:81
+#: config.py:89
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Modificar los atajos de teclado asociados con este complemento"
