@@ -3,15 +3,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Jellby <jellby@yahoo.com>, 2022
 # Adolfo Jayme-Barrientos, 2022
 # Darío Hereñú, 2022
+# Jellby <jellby@yahoo.com>, 2022
+# Walter Paterno <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:08+0100\n"
+"POT-Creation-Date: 2022-10-09 12:50+0100\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: Grant Drake, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:327
+#: ..\common\common_dialogs.py:84 config.py:334
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
@@ -97,36 +98,36 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título -  debe reiniciar Calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Crear nueva columna"
 
 #: action.py:29
 msgid "Generate Cover"
-msgstr "Generar carátula"
+msgstr "Generar Portada"
 
 #: action.py:29
 msgid "Generate a customised cover"
-msgstr "Genera una carátula personalizada"
+msgstr "Genera una portada personalizada"
 
 #: action.py:59
 msgid "Cannot generate covers"
-msgstr "No se pueden generar carátulas"
+msgstr "No se pueden generar portadas"
 
 #: action.py:60
 msgid "No books selected"
@@ -154,41 +155,45 @@ msgstr ""
 
 #: action.py:133 action.py:143
 msgid "Cannot generate cover"
-msgstr "No se pueden generar carátulas"
+msgstr "No se pueden generar portadas"
 
 #: action.py:134
 msgid "Missing metadata passed for book to generate cover"
-msgstr "Faltan metadatos para que el libro genere la carátula"
+msgstr "Faltan metadatos para que el libro genere la portada"
 
 #: action.py:144
 msgid "No cover settings exist named: \"%s\""
-msgstr "No existe ninguna configuración de carátula llamada: \"%s\""
+msgstr "No existe ninguna configuración de portada llamada: \"%s\""
 
-#: config.py:313
+#: config.py:320
 msgid "After generating cover:"
-msgstr "Después de generar carátula:"
+msgstr "Después de generar portada:"
 
-#: config.py:322
+#: config.py:329
 msgid "Update column:"
 msgstr "Columna de actualización:"
 
-#: config.py:323
+#: config.py:330
 msgid "Update value:"
 msgstr "Valor de actualización:"
 
-#: config.py:328
+#: config.py:335
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Edite los atajos de teclado asociados con este complemento"
 
-#: config.py:332
+#: config.py:339
 msgid "View library preferences"
-msgstr ""
+msgstr "Ver preferencias de la biblioteca"
 
-#: config.py:333
+#: config.py:340
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 "Ver datos almacenados en la base de datos de la biblioteca para este "
 "complemento"
+
+#: config.py:344 dialogs.py:1396
+msgid "&Help"
+msgstr "&Ayuda"
 
 #: dialogs.py:64
 msgid "Cancel"
@@ -196,7 +201,7 @@ msgstr "Cancelar"
 
 #: dialogs.py:65
 msgid "Generating %d covers"
-msgstr ""
+msgstr "Generando %d portadas"
 
 #: dialogs.py:95
 msgid "Generating: "
@@ -216,33 +221,35 @@ msgstr "¿Qué quieres hacer?"
 
 #: dialogs.py:132
 msgid "Discard Changes"
-msgstr ""
+msgstr "Descartar los cambios"
 
 #: dialogs.py:133
 msgid ""
 "Revert unsaved changes and generate cover using the original<br/>setting "
 "values (not as shown)"
 msgstr ""
+"Deshacer los cambios sin guardar y generar la portada usando los<br/>valores"
+" de configuración originales (no lo que se muestra)"
 
 #: dialogs.py:138
 msgid "Don't Save Yet"
-msgstr ""
+msgstr "No guardar aún"
 
 #: dialogs.py:139
 msgid ""
 "Generate cover using these settings.<br/>You can revert or save the changes "
 "when you next enter dialog."
 msgstr ""
-"Genere la carátula usando esta configuración.<br/>Puede revertir o guardar "
+"Genere la portada usando esta configuración.<br/>Puede revertir o guardar "
 "los cambios la próxima vez que ingrese al diálogo."
 
 #: dialogs.py:142
 msgid "Save Changes"
-msgstr ""
+msgstr "Guardar cambios"
 
 #: dialogs.py:143
 msgid "Generate cover using these settings and save for future usage"
-msgstr "Genere una carátula con estos ajustes y guárdela para uso futuro"
+msgstr "Genere una portada con estos ajustes y guárdela para uso futuro"
 
 #: dialogs.py:427 dialogs.py:505
 msgid "Saved Settings:"
@@ -320,7 +327,7 @@ msgstr "No se puede eliminar"
 msgid "You cannot remove the default setting"
 msgstr "No puede eliminar la configuración predeterminada"
 
-#: dialogs.py:573 dialogs.py:818 dialogs.py:1465 dialogs.py:1484
+#: dialogs.py:573 dialogs.py:818 dialogs.py:1468 dialogs.py:1487
 msgid "Are you sure?"
 msgstr "Estas seguro?"
 
@@ -370,7 +377,7 @@ msgstr "Exportación completada"
 
 #: dialogs.py:724
 msgid "Cover setting exported to<br>%s"
-msgstr "Configuración de carátula exportada a<br>%s"
+msgstr "Configuración de portada exportada a<br>%s"
 
 #: dialogs.py:732
 msgid "Select setting file(s) to import"
@@ -406,7 +413,7 @@ msgstr "No se pudo cambiar el nombre de la imagen"
 
 #: dialogs.py:801
 msgid "Add cover images"
-msgstr "Agregar imágenes de carátulas"
+msgstr "Agregar imágenes de portadas"
 
 #: dialogs.py:816
 msgid "You cannot remove this image"
@@ -513,7 +520,7 @@ msgid ""
 "When checked, the same font family is used for all text content on the cover"
 msgstr ""
 "Cuando se marca, se usa la misma familia de fuentes para todo el contenido "
-"de texto en la carátula"
+"de texto en la portada"
 
 #: dialogs.py:982
 msgid "Auto-reduce font size to fit on one line"
@@ -566,7 +573,7 @@ msgstr "Tamaño:"
 
 #: dialogs.py:1110
 msgid "Cover width:"
-msgstr "Ancho de carátula:"
+msgstr "Ancho de portada:"
 
 #: dialogs.py:1111
 msgid "The width in pixels of the output .jpg file"
@@ -574,7 +581,7 @@ msgstr "El ancho en píxeles del archivo .jpg de salida"
 
 #: dialogs.py:1117
 msgid "Cover height:"
-msgstr "Altura de carátula:"
+msgstr "Altura de portada:"
 
 #: dialogs.py:1118
 msgid "The height in pixels of the output .jpg file"
@@ -582,7 +589,7 @@ msgstr "La altura en píxeles del archivo .jpg de salida"
 
 #: dialogs.py:1124
 msgid "Stretch image to use as cover background"
-msgstr "Estirar la imagen para usarla como fondo de carátula"
+msgstr "Estirar la imagen para usarla como fondo de portada"
 
 #: dialogs.py:1125
 msgid ""
@@ -595,15 +602,15 @@ msgstr ""
 #: dialogs.py:1129
 msgid "Resize cover dimensions to match background image"
 msgstr ""
-"Cambiar el tamaño de las dimensiones de la carátula para que coincidan con "
-"la imagen de fondo"
+"Cambiar el tamaño de las dimensiones de la portada para que coincidan con la"
+" imagen de fondo"
 
 #: dialogs.py:1130
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
 msgstr ""
-"Marque esto para cambiar automáticamente el tamaño de la caŕatula según\n"
+"Marque esto para cambiar automáticamente el tamaño de la portada según\n"
 "las dimensiones de la imagen de fondo elegida actualmente"
 
 #: dialogs.py:1134
@@ -617,7 +624,7 @@ msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
 msgstr ""
-"Marque esto para cambiar automáticamente el tamaño de la imagen de carátula para que se ajuste al\n"
+"Marque esto para cambiar automáticamente el tamaño de la imagen de portada para que se ajuste al\n"
 "el área máxima disponible si es demasiado pequeña"
 
 #: dialogs.py:1141
@@ -633,7 +640,7 @@ msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
 msgstr ""
-"El margen en píxeles desde la parte superior de la carátula\n"
+"El margen en píxeles desde la parte superior de la portada\n"
 "al primer contenido"
 
 #: dialogs.py:1155
@@ -645,7 +652,7 @@ msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
 msgstr ""
-"El margen en píxeles desde la parte inferior de la carátula\n"
+"El margen en píxeles desde la parte inferior de la portada\n"
 "al último contenido"
 
 #: dialogs.py:1164
@@ -657,7 +664,7 @@ msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
 msgstr ""
-"El margen mínimo en píxeles desde la izquierda de la carátula\n"
+"El margen mínimo en píxeles desde la izquierda de la portada\n"
 "al contenido del texto"
 
 #: dialogs.py:1173
@@ -669,7 +676,7 @@ msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
 msgstr ""
-"El margen mínimo en píxeles desde la derecha de la carátula\n"
+"El margen mínimo en píxeles desde la derecha de la portada\n"
 "al contenido del texto"
 
 #: dialogs.py:1182
@@ -698,7 +705,7 @@ msgstr "Anchos de borde:"
 
 #: dialogs.py:1205
 msgid "Cover border:"
-msgstr "Borde de la carátula:"
+msgstr "Borde de portada:"
 
 #: dialogs.py:1206
 msgid ""
@@ -706,7 +713,7 @@ msgid ""
 "of the cover. Specify 0 for no border"
 msgstr ""
 "El ancho en píxeles de un borde alrededor del borde\n"
-"de la carátula. Especifique 0 para no tener borde"
+"de portada. Especifique 0 para no tener borde"
 
 #: dialogs.py:1213
 msgid "Image border:"
@@ -729,7 +736,7 @@ msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
 msgstr ""
-"Modifique el orden de los elementos de la carátula y\n"
+"Modifique el orden de los elementos de portada y\n"
 "si se muestran usando la casilla de verificación"
 
 #: dialogs.py:1268
@@ -758,7 +765,7 @@ msgid ""
 "but you prefer to see FN LN on the book cover"
 msgstr ""
 "Utilice esta opción si sus autores están almacenados como LN, FN\n"
-"pero prefieres ver FN LN en la carátula del libro"
+"pero prefieres ver FN LN en la portada del libro"
 
 #: dialogs.py:1299
 msgid "Series text:"
@@ -800,11 +807,11 @@ msgstr "Serie:"
 
 #: dialogs.py:1350
 msgid "Cover Options"
-msgstr "Opciones de carátula"
+msgstr "Opciones de Portada"
 
 #: dialogs.py:1353
 msgid "Generate Custom Cover"
-msgstr "Generar carátula personalizada"
+msgstr "Generar portada personalizada"
 
 #: dialogs.py:1374
 msgid "Settings"
@@ -840,16 +847,16 @@ msgstr "Sobrescribe tu configuración guardada actual"
 
 #: dialogs.py:1393
 msgid " Customize... "
-msgstr ""
+msgstr "Personalizar..."
 
 #: dialogs.py:1394
 msgid "Set general options for this plugin"
 msgstr "Establecer opciones generales para este complemento"
 
-#: dialogs.py:1466
+#: dialogs.py:1469
 msgid "Revert to your previously saved values for '%s'?"
 msgstr "¿Volver a los valores guardados anteriormente para '%s'?"
 
-#: dialogs.py:1485
+#: dialogs.py:1488
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr "¿Sobrescribir la configuración '%s' con los valores actuales?"

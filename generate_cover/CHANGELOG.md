@@ -1,9 +1,10 @@
 # Generate Cover Change Log
 
-## [2.3.0] - 2022-09-XX
+## [2.3.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add a Help button to the configuration dialog.
+- Ukranian translation (@yurchor)
 ### Changed
 - Move user images from `/resources/images/generate_cover` to `/plugins/generate_cover` to prevent loss if user has not yet migrated to Calibre 6.
 - **Breaking:** Drop PyQt4 support.

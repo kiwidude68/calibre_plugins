@@ -5,13 +5,13 @@
 # Translators:
 # JimmXinu, 2022
 # Grant Drake, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
+# lentrad <lentrad@gmail.com>, 2022
 # Ptit Prince <leporello1791@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:08+0100\n"
+"POT-Creation-Date: 2022-10-09 12:50+0100\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: Ptit Prince <leporello1791@gmail.com>, 2022\n"
 "Language-Team: French (https://www.transifex.com/calibre/teams/19337/fr/)\n"
@@ -22,17 +22,17 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:327
+#: ..\common\common_dialogs.py:84 config.py:334
 msgid "Keyboard shortcuts"
 msgstr "Raccourcis clavier"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Redémarrer Calibre maintenant"
+msgstr "Redémarrer calibre maintenant"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Préférences pour:"
+msgstr "Préférences pour :"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
@@ -47,6 +47,8 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
+"Êtes-vous certain de vouloir modifier vos paramètres dans cette bibliothèque"
+" pour cette extension ?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -54,7 +56,7 @@ msgid ""
 "plugins folder will not be touched."
 msgstr ""
 "Tous les paramètres dans d'autres librairies ou stockés dans un fichier JSON"
-" dans votre répertoire d'extensions calibre ne seront pas modifiés."
+" dans votre répertoire d'extensions calibre ne seront pas impactés."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -67,6 +69,8 @@ msgstr "Paramètres modifiés"
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
 msgstr ""
+"Les paramètres pour cette extenssion dans cette bibliothèque ont été "
+"modifiés."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -92,26 +96,26 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copier dans le presse-papier"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Non-définie"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Redémarrage nécessaire"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "L'image d'icone n'a pas était trouvée - vous devez redémarrer Calibre avant "
 "d'utiliser ce plugin !"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Créer une nouvelle colonne"
 
 #: action.py:29
 msgid "Generate Cover"
@@ -131,7 +135,7 @@ msgstr "Aucun livre sélectionné"
 
 #: action.py:82
 msgid "Corrupted setting: \"%s\" has incorrect internal name of: \"%s\")"
-msgstr "Paramètre corrompue : \"%s\" a un nom interne incorrect de : \"%s\")"
+msgstr "Paramètre corrompu : \"%s\" a un nom interne incorrect de : \"%s\")"
 
 #: action.py:86
 msgid "Corrupted Configuration File"
@@ -164,31 +168,35 @@ msgstr ""
 msgid "No cover settings exist named: \"%s\""
 msgstr "Il n'existe pas de configuration de couverture nommés : \"%s\""
 
-#: config.py:313
+#: config.py:320
 msgid "After generating cover:"
 msgstr "Après avoir généré une couverture :"
 
-#: config.py:322
+#: config.py:329
 msgid "Update column:"
-msgstr "Mettre a jour la colonne :"
+msgstr "Mettre à jour la colonne :"
 
-#: config.py:323
+#: config.py:330
 msgid "Update value:"
 msgstr "Valeur mise a jour :"
 
-#: config.py:328
+#: config.py:335
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Modifier les raccourcis clavier associés à cette extension"
 
-#: config.py:332
+#: config.py:339
 msgid "View library preferences"
-msgstr ""
+msgstr "Voir les préférences de la bibliothèque"
 
-#: config.py:333
+#: config.py:340
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 "Voir les données stockées dans la base de données de la bibliothèque pour "
 "cette extension"
+
+#: config.py:344 dialogs.py:1396
+msgid "&Help"
+msgstr ""
 
 #: dialogs.py:64
 msgid "Cancel"
@@ -196,7 +204,7 @@ msgstr "Annuler"
 
 #: dialogs.py:65
 msgid "Generating %d covers"
-msgstr ""
+msgstr "Générer %dcouvertures"
 
 #: dialogs.py:95
 msgid "Generating: "
@@ -204,7 +212,7 @@ msgstr "Génération : "
 
 #: dialogs.py:124
 msgid "Unsaved Changes"
-msgstr "Modification non sauvegardés"
+msgstr "Modifications non sauvegardées"
 
 #: dialogs.py:128
 msgid "You have unsaved changes to the <b>%s</b> setting.<br>"
@@ -218,7 +226,7 @@ msgstr "Que voulez-vous faire ?"
 
 #: dialogs.py:132
 msgid "Discard Changes"
-msgstr ""
+msgstr " Abandonner les Modifications "
 
 #: dialogs.py:133
 msgid ""
@@ -226,11 +234,11 @@ msgid ""
 "values (not as shown)"
 msgstr ""
 "Annuler les modifications non sauvegardées et générer une couverture<br/>en "
-"utilisant les valeurs initiales de la configuration (pas ceux affiché)"
+"utilisant les valeurs initiales de la configuration (pas ceux affichés)"
 
 #: dialogs.py:138
 msgid "Don't Save Yet"
-msgstr ""
+msgstr " Ne pas Enregistrer Tout de suite "
 
 #: dialogs.py:139
 msgid ""
@@ -243,13 +251,13 @@ msgstr ""
 
 #: dialogs.py:142
 msgid "Save Changes"
-msgstr ""
+msgstr " Enregistrer les Modifications "
 
 #: dialogs.py:143
 msgid "Generate cover using these settings and save for future usage"
 msgstr ""
-"Générer une couverture à l'aide de cette configurations et les conservers "
-"pour un usage ultérieur"
+"Générer une couverture à l'aide de cette configuration et les conserver pour"
+" un usage ultérieur"
 
 #: dialogs.py:427 dialogs.py:505
 msgid "Saved Settings:"
@@ -327,7 +335,7 @@ msgstr "Impossible de supprimer"
 msgid "You cannot remove the default setting"
 msgstr "Vous ne pouvez pas supprimer la configuration par défaut"
 
-#: dialogs.py:573 dialogs.py:818 dialogs.py:1465 dialogs.py:1484
+#: dialogs.py:573 dialogs.py:818 dialogs.py:1468 dialogs.py:1487
 msgid "Are you sure?"
 msgstr "Êtes-vous sûr ?"
 
@@ -848,16 +856,16 @@ msgstr "Écraser les réglages actuelement sauvegardé"
 
 #: dialogs.py:1393
 msgid " Customize... "
-msgstr ""
+msgstr "Personnaliser..."
 
 #: dialogs.py:1394
 msgid "Set general options for this plugin"
 msgstr "Définir les options générales pour ce plugin"
 
-#: dialogs.py:1466
+#: dialogs.py:1469
 msgid "Revert to your previously saved values for '%s'?"
 msgstr "Réinitialiser les valeurs pour le paramètre \"%s\" ?"
 
-#: dialogs.py:1485
+#: dialogs.py:1488
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr "Remplacer le paramètre \"%s\" par les valeurs actuelles ?"
