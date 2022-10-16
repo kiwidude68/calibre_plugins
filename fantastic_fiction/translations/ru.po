@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Виктор, 2022
+# Caarmi, 2022
+# ashed <craysy@gmail.com>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-08 15:21+0100\n"
+"PO-Revision-Date: 2022-09-19 15:16+0000\n"
+"Last-Translator: ashed <craysy@gmail.com>, 2022\n"
+"Language-Team: Russian (https://www.transifex.com/calibre/teams/19337/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "Сочетания клавиш..."
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Перезагрузите calibre сейчас"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Предпочтения для:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Очистить"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Очистить все настройки для плагина"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "Импорт списка"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Любые настройки в других библиотеках или сохраненные в файле JSON в папке "
+"плагинов calibre не будут затронуты."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Вы должны перезагрузить calibre впоследствии."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Настройки изменены"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Настройки этого плагина в этой библиотеке были изменены."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Пожалуйста, перезагрузите calibre сейчас."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "Вы действительно хотите очистить настройки плагина в библиотеке?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Настройки удалены"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Все настройки для этого плагина в этой библиотеке были очищены."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Копировать в Буфер обмена"
+
+#: ..\common\common_widgets.py:90
+msgid "Undefined"
+msgstr "Не определено"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Требуется перезапуск"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Изображение обложки не найдено - перед использованием нужно перезапустить "
+"calibre!"
+
+#: ..\common\common_widgets.py:192
+msgid "Create new column"
+msgstr "Создать новый столбец"
+
+#: config.py:52
+msgid "Other Options"
+msgstr "Другие опции"
+
+#: config.py:60
+msgid "If genre found in comments:"
+msgstr "Если жанр найден в комментариях:"
+
+#: config.py:61
+msgid ""
+"A subset (at this time) of the books in Fantastic Fiction\n"
+"contain a hyperlinked Genre at the bottom of the comments."
+msgstr ""
+"Подмножество (на данный момент) книг Fantastic Fiction.\n"
+"содержать гиперссылку «Жанр» внизу комментариев."
+
+#: config.py:67
+msgid "Reduce header sizes in comments"
+msgstr "Уменьшить размеры заголовков в комментариях"
+
+#: config.py:68
+msgid ""
+"For some books the website book description uses larger heading\n"
+"tags that look out of place inside a calibre library.\n"
+"Enabling this option reduces those header tags in size values"
+msgstr ""
+"Для некоторых книг в описании книги на веб-сайте используются увеличенные теги заголовка,\n"
+"которые выглядят неуместными в библиотеке calibre.\n"
+"Включение этой опции уменьшает размер этих тегов заголовков"
+
+#: config.py:75
+msgid "Use published date from oldest edition"
+msgstr ""
+
+#: config.py:76
+msgid ""
+"The year the book was first published is shown with the title. The editions "
+"include the publishing month. Select this option if you want to use the "
+"oldest edition from the year of publishing."
+msgstr ""
+"Год первого издания книги указан в названии. Издания включают месяц "
+"публикации. Выберите этот параметр, если вы хотите использовать самый старый"
+" год публикации."
