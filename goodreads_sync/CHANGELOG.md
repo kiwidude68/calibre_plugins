@@ -14,9 +14,11 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Fixed
 - Update reading progress should only apply "read" shelf actions when progress >= 100 ([#2][i2])
 - Update reading progress should apply "currently-reading" shelf actions when progress < 100 ([#2][i2])
-- Disable the rating/review/date-read cehckboxes on the 'currently-reading' shelf. The 'read' shelf actions are used for these instead when you finish a book for reading progress purposes.
+- Disable the rating/review/date-read checkboxes on the 'currently-reading' shelf. The 'read' shelf actions are used for these instead when you finish a book for reading progress purposes.
 - Various other bugs related to the "Update reading progress" feature.
 - Deleting menu rows could have wrong selected items. (@capink)
+
+[i2]: https://github.com/kiwidude68/calibre_plugins/issues/2
 
 ## [1.15.6] - 2022-08-15
 ### Fixed
@@ -348,5 +350,3 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.0.0] - 2011-02-27
 _Initial release of Goodreads Sync plugin_
-
-[i2]: https://github.com/kiwidude68/calibre_plugins/issues/2
