@@ -5,14 +5,14 @@
 # Translators:
 # Adolfo Jayme-Barrientos, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2022
-# Jellby <jellby@yahoo.com>, 2022
 # Darío Hereñú, 2022
+# Jellby <jellby@yahoo.com>, 2022
 # Grant Drake, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:50+0100\n"
+"POT-Creation-Date: 2022-10-10 21:01+0100\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
 "Last-Translator: Grant Drake, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:86
+#: ..\common\common_dialogs.py:84 config.py:93
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
@@ -98,24 +98,24 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar Calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Crear nueva columna"
 
 #: action.py:35
 msgid "User category"
@@ -161,82 +161,86 @@ msgstr "Administrar categorías de usuario"
 msgid "&Customize plugin"
 msgstr "&Personalizar complemento"
 
-#: action.py:156
+#: action.py:138 config.py:98
+msgid "&Help"
+msgstr "&Ayuda"
+
+#: action.py:158
 msgid "View user category"
 msgstr "Ver categoría de usuario"
 
-#: action.py:159
+#: action.py:161
 msgid "Manage user category"
 msgstr "Administrar categoría de usuario"
 
-#: action.py:164
+#: action.py:166
 msgid "Add %s to user category: %s"
 msgstr "Añadir %s a la categoría de usuario: %s"
 
-#: action.py:166
+#: action.py:168
 msgid "Move %s to user category: %s"
 msgstr "Mover%s a la categoría de usuario: %s"
 
-#: action.py:168
+#: action.py:170
 msgid "Remove %s from user category: %s"
 msgstr "Eliminar %s de la categoría de usuario: %s"
 
-#: action.py:270 action.py:278
+#: action.py:272 action.py:280
 msgid "Cannot modify user category"
 msgstr "No se puede modificar la categoría de usuario"
 
-#: action.py:271
+#: action.py:273
 msgid "No new values in books selected"
 msgstr "No hay nuevos valores en los libros seleccionados"
 
-#: action.py:279
+#: action.py:281
 msgid "Selected user category not found. Please restart Calibre."
 msgstr "No se encontró la categoría de usuario seleccionada. Reinicie calibre"
 
-#: action.py:338
+#: action.py:340
 msgid "Cannot view user category"
 msgstr "No se puede visualizar la categoría de usuario"
 
-#: action.py:339
+#: action.py:341
 msgid "User category not found"
 msgstr "Categoría de usuario no encontrada"
 
-#: config.py:45
+#: config.py:52
 msgid "Add to user category"
 msgstr "Añadir a categoría de usuario"
 
-#: config.py:46
+#: config.py:53
 msgid "Move to user category"
 msgstr "Mover a categoría de usuario"
 
-#: config.py:47
+#: config.py:54
 msgid "Remove from user category"
 msgstr "Eliminar de categoría de usuario"
 
-#: config.py:50
+#: config.py:57
 msgid "Authors"
 msgstr "Autores"
 
-#: config.py:51
+#: config.py:58
 msgid "Series"
 msgstr "Series"
 
-#: config.py:52
+#: config.py:59
 msgid "Publishers"
 msgstr "Editoriales"
 
-#: config.py:53
+#: config.py:60
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: config.py:63
+#: config.py:70
 msgid "Menu actions to display:"
 msgstr "Acciones de menú a mostrar:"
 
-#: config.py:74
+#: config.py:81
 msgid "Book metadata types to add/remove:"
 msgstr "Tipos de metadatos de libro a añadir o eliminar:"
 
-#: config.py:87
+#: config.py:94
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Modificar los atajos de teclado asociados con este complemento"

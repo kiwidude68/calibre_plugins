@@ -3,18 +3,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Cm Fy, 2022
 # Thiago Oliveira <thiago.eec@gmail.com>, 2022
 # Weigler Godoy, 2022
 # Paulo_Neto <layoutbr@lexxa.com.br>, 2022
 # Wagner Marques <wagnermarques00@hotmail.com>, 2022
+# Cm Fy, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:50+0100\n"
+"POT-Creation-Date: 2022-10-10 21:01+0100\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
-"Last-Translator: Wagner Marques <wagnermarques00@hotmail.com>, 2022\n"
+"Last-Translator: Cm Fy, 2022\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/calibre/teams/19337/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:86
+#: ..\common\common_dialogs.py:84 config.py:93
 msgid "Keyboard shortcuts"
 msgstr "Atalhos do teclado"
 
@@ -33,7 +33,7 @@ msgstr "Reinicie o calibre agora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr ""
+msgstr "Preferências para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
@@ -48,6 +48,8 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
+"Tem certeza que deseja modificar suas configurações nesta biblioteca para "
+"este plugin?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -63,11 +65,11 @@ msgstr "Você precisa reiniciar o calibre depois disso."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Configurações modificadas"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "As configurações para este plugin nesta biblioteca foram modificadas."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -83,7 +85,7 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "Configurações removidas"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
@@ -91,24 +93,26 @@ msgstr "Todas as configurações deste plugin nesta biblioteca foram limpas."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copiar para a área de transferência"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Não definido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr ""
+msgstr "Reinicialização requerida"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
+"Imagem do título não encontrada - você deve reiniciar o Calbre antes de "
+"utilizar este plugin!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Criar nova coluna"
 
 #: action.py:35
 msgid "User category"
@@ -154,84 +158,88 @@ msgstr "Gerenciar categorias de usuário"
 msgid "&Customize plugin"
 msgstr "Customizar plugin"
 
-#: action.py:156
+#: action.py:138 config.py:98
+msgid "&Help"
+msgstr ""
+
+#: action.py:158
 msgid "View user category"
 msgstr "Ver categorias de usuários"
 
-#: action.py:159
+#: action.py:161
 msgid "Manage user category"
 msgstr "Gerenciar categorias de usuários"
 
-#: action.py:164
+#: action.py:166
 msgid "Add %s to user category: %s"
 msgstr "Adicionar %s a uma categoria de usuário: %s"
 
-#: action.py:166
+#: action.py:168
 msgid "Move %s to user category: %s"
 msgstr "Mover %s para uma categoria de usuário: %s"
 
-#: action.py:168
+#: action.py:170
 msgid "Remove %s from user category: %s"
 msgstr "Remover %s de uma categoria de usuário: %s"
 
-#: action.py:270 action.py:278
+#: action.py:272 action.py:280
 msgid "Cannot modify user category"
 msgstr "Impossível modificar a categoria de usuário"
 
-#: action.py:271
+#: action.py:273
 msgid "No new values in books selected"
 msgstr "Nenhuma informação nova nos livros selecionados"
 
-#: action.py:279
+#: action.py:281
 msgid "Selected user category not found. Please restart Calibre."
 msgstr ""
 "Categoria de usuário selecionada não encontrada. Por favor, reinicie o "
 "Calibre."
 
-#: action.py:338
+#: action.py:340
 msgid "Cannot view user category"
 msgstr "Impossível ver a categoria de usuário"
 
-#: action.py:339
+#: action.py:341
 msgid "User category not found"
 msgstr "Categoria de usuário não encontrada"
 
-#: config.py:45
+#: config.py:52
 msgid "Add to user category"
 msgstr "Adicionar a uma categoria de usuário"
 
-#: config.py:46
+#: config.py:53
 msgid "Move to user category"
 msgstr "Mover para uma categoria de usuário"
 
-#: config.py:47
+#: config.py:54
 msgid "Remove from user category"
 msgstr "Remover de uma categoria de usuário"
 
-#: config.py:50
+#: config.py:57
 msgid "Authors"
 msgstr "Autores"
 
-#: config.py:51
+#: config.py:58
 msgid "Series"
 msgstr "Série"
 
-#: config.py:52
+#: config.py:59
 msgid "Publishers"
 msgstr "Editoras"
 
-#: config.py:53
+#: config.py:60
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: config.py:63
+#: config.py:70
 msgid "Menu actions to display:"
 msgstr "Ações de menu para exibir:"
 
-#: config.py:74
+#: config.py:81
 msgid "Book metadata types to add/remove:"
 msgstr "Tipos de metadata de livros para adicionar/remover:"
 
-#: config.py:87
+#: config.py:94
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Editar atalhos de teclado associados a este plugin"

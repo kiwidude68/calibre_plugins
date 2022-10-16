@@ -5,13 +5,14 @@
 # Translators:
 # Виктор, 2022
 # ashed <craysy@gmail.com>, 2022
+# Caarmi, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:50+0100\n"
+"POT-Creation-Date: 2022-10-10 21:01+0100\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
-"Last-Translator: ashed <craysy@gmail.com>, 2022\n"
+"Last-Translator: Caarmi, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:86
+#: ..\common\common_dialogs.py:84 config.py:93
 msgid "Keyboard shortcuts"
 msgstr "Сочетания клавиш..."
 
@@ -44,7 +45,7 @@ msgstr "Очистить все настройки для плагина"
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
+msgstr "Импорт списка"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -60,11 +61,11 @@ msgstr "Вы должны перезагрузить calibre впоследст�
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Настройки изменены"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "Настройки этого плагина в этой библиотеке были изменены."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -78,7 +79,7 @@ msgstr "Вы действительно хотите очистить настр
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "Настройки удалены"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
@@ -86,24 +87,26 @@ msgstr "Все настройки для этого плагина в этой �
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Копировать в Буфер обмена"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Не определено"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr ""
+msgstr "Требуется перезапуск"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
+"Изображение обложки не найдено - перед использованием нужно перезапустить "
+"calibre!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "Создать новый столбец"
 
 #: action.py:35
 msgid "User category"
@@ -149,84 +152,88 @@ msgstr "Управление категориями пользователей"
 msgid "&Customize plugin"
 msgstr "&Настроить плагин"
 
-#: action.py:156
+#: action.py:138 config.py:98
+msgid "&Help"
+msgstr "Спр&авка"
+
+#: action.py:158
 msgid "View user category"
 msgstr "Посмотреть категорию пользователя"
 
-#: action.py:159
+#: action.py:161
 msgid "Manage user category"
 msgstr "Управление категорией пользователя"
 
-#: action.py:164
+#: action.py:166
 msgid "Add %s to user category: %s"
 msgstr "Добавить %s в категорию пользователей: %s"
 
-#: action.py:166
+#: action.py:168
 msgid "Move %s to user category: %s"
 msgstr "Переместить %s в категорию пользователей: %s"
 
-#: action.py:168
+#: action.py:170
 msgid "Remove %s from user category: %s"
 msgstr "Удалить %s из категории пользователей: %s"
 
-#: action.py:270 action.py:278
+#: action.py:272 action.py:280
 msgid "Cannot modify user category"
 msgstr "Невозможно изменить категорию пользователя"
 
-#: action.py:271
+#: action.py:273
 msgid "No new values in books selected"
 msgstr "В книгах не выбрано новых значений"
 
-#: action.py:279
+#: action.py:281
 msgid "Selected user category not found. Please restart Calibre."
 msgstr ""
 "Выбранная категория пользователя не найдена. Пожалуйста, перезапустите "
 "Calibre."
 
-#: action.py:338
+#: action.py:340
 msgid "Cannot view user category"
 msgstr "Невозможно просмотреть категорию пользователя"
 
-#: action.py:339
+#: action.py:341
 msgid "User category not found"
 msgstr "Категория пользователя не найдена"
 
-#: config.py:45
+#: config.py:52
 msgid "Add to user category"
 msgstr "Добавить в категорию пользователей"
 
-#: config.py:46
+#: config.py:53
 msgid "Move to user category"
 msgstr "Переместить в категорию пользователя"
 
-#: config.py:47
+#: config.py:54
 msgid "Remove from user category"
 msgstr "Удалить из категории пользователей"
 
-#: config.py:50
+#: config.py:57
 msgid "Authors"
 msgstr "Авторы"
 
-#: config.py:51
+#: config.py:58
 msgid "Series"
 msgstr "Серии"
 
-#: config.py:52
+#: config.py:59
 msgid "Publishers"
 msgstr "Издатели"
 
-#: config.py:53
+#: config.py:60
 msgid "Tags"
 msgstr "Теги"
 
-#: config.py:63
+#: config.py:70
 msgid "Menu actions to display:"
 msgstr "Действия меню для отображения:"
 
-#: config.py:74
+#: config.py:81
 msgid "Book metadata types to add/remove:"
 msgstr "Типы метаданных книги для добавления/удаления:"
 
-#: config.py:87
+#: config.py:94
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Редактирование сочетаний клавиш, связанных с этим плагином"

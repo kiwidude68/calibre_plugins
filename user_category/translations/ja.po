@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 15:50+0100\n"
+"POT-Creation-Date: 2022-10-10 21:01+0100\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
 "Last-Translator: Pk11 <epicpkmn11@outlook.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/calibre/teams/19337/ja/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:86
+#: ..\common\common_dialogs.py:84 config.py:93
 msgid "Keyboard shortcuts"
 msgstr "キーボードショートカット"
 
@@ -85,20 +85,20 @@ msgstr "このライブラリにこのプラグインの全ての設定はクリ
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "未定義"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr ""
 
@@ -146,82 +146,86 @@ msgstr "ユーザーカテゴリを管理します"
 msgid "&Customize plugin"
 msgstr "プラグインをカスタマイズ (&C)"
 
-#: action.py:156
+#: action.py:138 config.py:98
+msgid "&Help"
+msgstr ""
+
+#: action.py:158
 msgid "View user category"
 msgstr "ユーザーカテゴリを表示します"
 
-#: action.py:159
+#: action.py:161
 msgid "Manage user category"
 msgstr "ユーザーカテゴリを管理します"
 
-#: action.py:164
+#: action.py:166
 msgid "Add %s to user category: %s"
 msgstr "次のユーザーカテゴリに%sを追加します：%s"
 
-#: action.py:166
+#: action.py:168
 msgid "Move %s to user category: %s"
 msgstr "次のユーザーカテゴリに%sを移動します：%s"
 
-#: action.py:168
+#: action.py:170
 msgid "Remove %s from user category: %s"
 msgstr "次のユーザーカテゴリから%sを削除します：%s"
 
-#: action.py:270 action.py:278
+#: action.py:272 action.py:280
 msgid "Cannot modify user category"
 msgstr "ユーザーカテゴリを変更できません"
 
-#: action.py:271
+#: action.py:273
 msgid "No new values in books selected"
 msgstr "選択された本に新たな値はありません"
 
-#: action.py:279
+#: action.py:281
 msgid "Selected user category not found. Please restart Calibre."
 msgstr "選択されたユーザーカテゴリが見つかりません。calibreを再起動してください。"
 
-#: action.py:338
+#: action.py:340
 msgid "Cannot view user category"
 msgstr "ユーザーカテゴリを表示できません"
 
-#: action.py:339
+#: action.py:341
 msgid "User category not found"
 msgstr "ユーザーカテゴリが見つかりません"
 
-#: config.py:45
+#: config.py:52
 msgid "Add to user category"
 msgstr "ユーザーカテゴリに追加します"
 
-#: config.py:46
+#: config.py:53
 msgid "Move to user category"
 msgstr "ユーザーカテゴリに移動します"
 
-#: config.py:47
+#: config.py:54
 msgid "Remove from user category"
 msgstr "ユーザーカテゴリから削除します"
 
-#: config.py:50
+#: config.py:57
 msgid "Authors"
 msgstr "著者"
 
-#: config.py:51
+#: config.py:58
 msgid "Series"
 msgstr "シリーズ"
 
-#: config.py:52
+#: config.py:59
 msgid "Publishers"
 msgstr "出版社"
 
-#: config.py:53
+#: config.py:60
 msgid "Tags"
 msgstr "タグ"
 
-#: config.py:63
+#: config.py:70
 msgid "Menu actions to display:"
 msgstr "表示されるメニュー項目："
 
-#: config.py:74
+#: config.py:81
 msgid "Book metadata types to add/remove:"
 msgstr "追加・削除される本メタデータのタイプ："
 
-#: config.py:87
+#: config.py:94
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "このプラグインに関連付けていますキーボードショートカットを編集します。"
