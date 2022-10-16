@@ -19,23 +19,26 @@ ignore_author_words = ['von', 'van', 'jr', 'sr', 'i', 'ii', 'iii', 'second', 'th
 IGNORE_AUTHOR_WORDS_MAP = dict((k,True) for k in ignore_author_words)
 
 def ids_for_field(db, ids_of_books, field_name):
-    # First get all the names for the desired books.
-    # Use a set to make them unique
-    unique_names = set()
-    for tup in db.all_field_for(field_name, ids_of_books).values():
-        for val in tup:
-            unique_names.add(val)
-    # Now get the ids for the names and build the pairs
-    id_field_pairs = list()
-    for name in unique_names:
-        id_field_pairs.append((db.get_item_id(field_name, name), name))
-    return id_field_pairs
+	# First get all the names for the desired books.
+	# Use a set to make them unique
+	unique_names = set()
+	for tup in db.all_field_for(field_name, ids_of_books).values():
+		for val in tup:
+			unique_names.add(val)
+	# reverse the map of ids to names so id_map[name] gives the id
+	id_map = {v:k for k,v in db.get_id_map(field_name).items()}
+	# Now build the pairs (id, name)
+	id_field_pairs = list()
+	for name in unique_names:
+		id_field_pairs.append((id_map[name], name))
+	return id_field_pairs
 
 def get_field_pairs(db, field):
     # Get the list of books in the current VL
     ids_in_vl = db.data.search_getting_ids('', '', use_virtual_library=True)
     # Get the id,val pairs for the desired field
-    field_pairs = ids_for_field(db.new_api, ids_in_vl, field)
+    db_ref = db.new_api if hasattr(db, 'new_api') else db
+    field_pairs = ids_for_field(db_ref, ids_in_vl, field)
     return field_pairs
 
 def set_soundex_lengths(title_len, author_len):
@@ -70,7 +73,6 @@ def authors_to_list(db, book_id):
     if authors:
         return [a.strip().replace('|',',') for a in authors.split(',')]
     return []
-
 
 def fuzzy_it(text, patterns=None):
     fuzzy_title_patterns = [(re.compile(pat, re.IGNORECASE), repl) for pat, repl in

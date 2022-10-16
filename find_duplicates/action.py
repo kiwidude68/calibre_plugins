@@ -64,6 +64,7 @@ class FindDuplicatesAction(InterfaceAction):
     def initialization_complete(self):
         # Delay instantiating our finder as we require access to the library view
         self.duplicate_finder = DuplicateFinder(self.gui)
+        self.has_advanced_results = False
         self.update_actions_enabled()
         self.gui.search.cleared.connect(self.user_has_cleared_search) 
         self.gui.search_restriction.currentIndexChanged.connect(self.user_has_changed_restriction)
@@ -167,7 +168,7 @@ class FindDuplicatesAction(InterfaceAction):
         self.mark_group_exempt_action.setEnabled(has_results)
         self.mark_all_groups_exempt_action.setEnabled(has_results)
         is_showing_exemptions = self.duplicate_finder.is_showing_duplicate_exemptions()
-        self.clear_duplicate_mode_action.setEnabled(has_results or is_showing_exemptions)
+        self.clear_duplicate_mode_action.setEnabled(has_results or is_showing_exemptions or self.has_advanced_results)
         self.export_duplicates_action.setEnabled(has_results)
 
         # As some actions could be via shortcut keys we need them enabled
@@ -193,6 +194,8 @@ class FindDuplicatesAction(InterfaceAction):
         if d.exec_() == d.Accepted:
             finder = CrossLibraryDuplicateFinder(self.gui)
             finder.run_library_duplicates_check()
+            self.has_advanced_results = finder.display_results
+            self.update_actions_enabled()
 
     def find_variations(self):
         if self.clear_duplicate_mode_action.isEnabled():
@@ -213,7 +216,7 @@ class FindDuplicatesAction(InterfaceAction):
         # some changes to those visible rows
         if not d.is_showing_books():
             self.gui.search.set_search_string(query)
-            self.gui.library_view.select_rows(ids)
+            self.gui.library_view.select_rows(ids)        
         self.gui.tags_view.recount()
         if d.is_showing_books():
             self.gui.search.do_search()
@@ -309,6 +312,7 @@ class FindDuplicatesAction(InterfaceAction):
         if not self.clear_duplicate_mode_action.isEnabled():
             return
         self.duplicate_finder.clear_duplicates_mode(clear_search, reapply_restriction)
+        self.has_advanced_results = False
         self.update_actions_enabled()
 
     def user_has_cleared_search(self):

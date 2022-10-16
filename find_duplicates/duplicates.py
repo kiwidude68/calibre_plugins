@@ -16,6 +16,7 @@ from calibre.gui2 import config, info_dialog, error_dialog
 from calibre.gui2.dialogs.confirm_delete import confirm
 from calibre.utils.logging import GUILog
 from calibre.utils.config import tweaks
+from calibre.devices.usbms.driver import debug_print
 
 import calibre_plugins.find_duplicates.config as cfg
 from calibre_plugins.find_duplicates.book_algorithms import (create_algorithm,
@@ -687,9 +688,7 @@ class DuplicateFinder(object):
                 self._restore_restriction_is_text = True
                 self._restore_restriction = self._restore_restriction[1:]
         self._restore_highlighting_state = config['highlight_search_matches']
-        # update: preserve sort {
         self.sort_history = self.gui.library_view.get_state().get('sort_history', [])
-        # }
 
     def _restore_previous_gui_state(self, reapply_restriction=True, restore_sort=False):
         # Restore the user's GUI to it's previous glory
@@ -697,7 +696,6 @@ class DuplicateFinder(object):
         if reapply_restriction:
             self._apply_restriction_if_different(self._restore_restriction,
                                                  self._restore_restriction_is_text)
-        # update: preserve sort {
         if restore_sort:
             try:
                 max_sort_levels = min(tweaks['maximum_resort_levels'], len(self.sort_history))
@@ -705,7 +703,6 @@ class DuplicateFinder(object):
             except Exception as e:
                 if DEBUG:
                     prints('Find Duplicates: Error(s) when restoring sort history: {}'.format(e))
-        # }
 
     def _apply_highlight_if_different(self, new_state):
         if config['highlight_search_matches'] != new_state:
@@ -806,6 +803,7 @@ class CrossLibraryDuplicateFinder(object):
         set_title_soundex_length(title_soundex_length)
         set_author_soundex_length(author_soundex_length)
         self.include_languages = cfg.plugin_prefs.get(cfg.KEY_INCLUDE_LANGUAGES, False)
+        self.display_results = cfg.plugin_prefs.get(cfg.KEY_DISPLAY_LIBRARY_RESULTS, False)
 
         # We will re-use the elements of the same basic algorithm code, but
         # only by calling specific functions to control what gets executed
@@ -827,20 +825,38 @@ class CrossLibraryDuplicateFinder(object):
 
     def _get_book_display_info(self, db, book_id, include_author=True, include_formats=True,
                                include_identifier=False):
-        title = db.title(book_id, index_is_id=True)
-        if include_author:
-            authors = ' & '.join(authors_to_list(db, book_id))
-            title = '%s / %s'%(title, authors)
-        if include_formats:
-            formats = db.formats(book_id, index_is_id=True)
-            if formats is None:
-                formats = 'No formats'
-            title = '%s [%s]'%(title, formats)
-        if include_identifier:
-            identifiers = db.get_identifiers(book_id, index_is_id=True)
-            identifier = identifiers.get(self.identifier_type, '')
-            title = '%s {%s:%s}'%(title, self.identifier_type, identifier)
-        return title
+        if hasattr(db, 'new_api'):
+            # Requires calibre 5.9 or later
+            mi = db.new_api.get_proxy_metadata(book_id)
+            text = mi.title
+            if include_author:
+                authors = ' & '.join(mi.authors)
+                text = '%s / %s'%(text, authors)
+            if include_formats:
+                formats = mi.formats
+                if formats is None:
+                    formats = '[No formats]'
+                text = '%s %s'%(text, formats)
+            if include_identifier:
+                identifiers = mi.identifiers
+                identifier = identifiers.get(self.identifier_type, '')
+                text = '%s {%s:%s}'%(text, self.identifier_type, identifier)
+            return text
+        else:
+            text = db.title(book_id, index_is_id=True)
+            if include_author:
+                authors = ' & '.join(authors_to_list(db, book_id))
+                text = '%s / %s'%(text, authors)
+            if include_formats:
+                formats = db.formats(book_id, index_is_id=True)
+                if formats is None:
+                    formats = 'No formats'
+                text = '%s [%s]'%(text, formats)
+            if include_identifier:
+                identifiers = db.get_identifiers(book_id, index_is_id=True)
+                identifier = identifiers.get(self.identifier_type, '')
+                text = '%s {%s:%s}'%(text, self.identifier_type, identifier)
+            return text
 
     def _do_comparison(self):
         '''
@@ -850,6 +866,7 @@ class CrossLibraryDuplicateFinder(object):
         So we will not be reporting duplicates within this database, only duplicates
         from each individual book in this database with the target database.
         '''
+        debug_print('Find Duplicates -> Library -> Start ({})'.format(self.search_type))
         algorithm, self.algorithm_text = create_algorithm(self.gui, self.db,
                         self.search_type, self.identifier_type,
                         self.title_match, self.author_match, None, None)
@@ -859,7 +876,7 @@ class CrossLibraryDuplicateFinder(object):
         if algorithm.duplicate_search_mode() == DUPLICATE_SEARCH_FOR_AUTHOR:
             # Author only comparisons need to be treated specially because we want to
             # iterate through authors, not book ids
-            duplicates_count, msg = self._do_author_only_comparison(algorithm)
+            duplicates_count, duplicate_book_ids, msg = self._do_author_only_comparison(algorithm)
 
         elif self.search_type == 'binary':
             # Binary comparison searches are a headache we can't solve by reusing the
@@ -871,23 +888,33 @@ class CrossLibraryDuplicateFinder(object):
             # This is an identifier or title/author search
             duplicates_count, duplicate_book_ids, msg = self._do_title_author_identifier_comparison(algorithm)
 
+        debug_print('Find Duplicates -> Library -> Search completed')
         if duplicates_count > 0:
             msg += "<br/><br/>" + _("Click 'Show details' to see the results.")
-            if duplicate_book_ids is not None:
+            if self.display_results and duplicate_book_ids is not None:
                 marked_ids = {}
                 for book_id in duplicate_book_ids:
                     marked_ids[book_id] = 'library_duplicate'
                 self.gui.current_db.set_marked_ids(marked_ids)
                 self.gui.search.set_search_string('marked:library_duplicate')
+                debug_print('Find Duplicates -> Library -> Marked results displayed')
         return msg
 
     def _do_author_only_comparison(self, algorithm):
         self.gui.status_bar.showMessage(_('Analysing duplicates in target database')+'...', 0)
         target_candidates_map, target_author_bookids_map = self._analyse_target_database()
-        # We will just look at an author by author basis, rather than by book id
         self.gui.status_bar.showMessage(_('Analysing duplicates in current database')+'...', 0)
         duplicates_count = 0
-        marked_ids = {}
+        duplicate_book_ids = []
+
+        # We will just look at an author by author basis, rather than by book id
+        # However in order to display the books affected afterwards, we need to keep track of them.
+        book_ids = algorithm.get_book_ids_to_consider()
+        author_books_map = defaultdict(set)
+        for book_id in book_ids:
+            book_authors = authors_to_list(self.db, book_id)
+            for author in book_authors:
+                author_books_map[author].add(book_id)
 
         authors = get_field_pairs(self.db, 'authors')
         author_names = [a[1].replace('|',',') for a in authors]
@@ -898,10 +925,8 @@ class CrossLibraryDuplicateFinder(object):
                 if author_hash in target_candidates_map:
                     self.log('Author in this library: %s'%author)
                     # Find the books for this author
-                    search = 'authors:"={}"'.format(author)
-                    book_ids = self.db.data.search_getting_ids(search,'',use_virtual_library=True)
-                    for book_id in book_ids:
-                        marked_ids[book_id] = 'library_duplicate'
+                    for book_id in author_books_map[author]:
+                        duplicate_book_ids.append(book_id)
                     duplicates_count += 1
                     for dup_author in sorted(list(target_candidates_map[author_hash])):
                         self.log('   Target library author: %s'%dup_author)
@@ -909,12 +934,9 @@ class CrossLibraryDuplicateFinder(object):
                             self.log('      Has book: %s'%self._get_book_display_info(self.target_db, book_id))
                     self.log('')
 
-        if len(marked_ids) > 0:
-            self.gui.current_db.set_marked_ids(marked_ids)
-            self.gui.search.set_search_string('marked:library_duplicate')
         msg = _('Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against the library at: {2}').format(
                     duplicates_count, self.algorithm_text, self.library_path)
-        return duplicates_count, msg
+        return duplicates_count, duplicate_book_ids, msg
 
     def _do_binary_comparison(self, algorithm):
         local_book_ids = algorithm.get_book_ids_to_consider()
@@ -1013,6 +1035,7 @@ class CrossLibraryDuplicateFinder(object):
         include_identifier = self.search_type == 'identifier'
         duplicate_book_ids = []
 
+        marked_ids = {}
         self.gui.status_bar.showMessage(_('Analysing duplicates in current database')+'...', 0)
         # Iterate through these books getting our hashes
         for book_id in book_ids:

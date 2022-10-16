@@ -756,7 +756,11 @@ class FindVariationsDialog(SizePersistedDialog):
         try:
             self.item_map, self.count_map, self.variations_map = \
                 self.alg.run_variation_check(match_type, item_type)
-            self.combo_items = list(self.item_map.values())
+            combo_item_texts = []
+            for item_id in self.item_map.keys():
+                if item_id in self.count_map:
+                    combo_item_texts.append(self.item_map[item_id])
+            self.combo_items = combo_item_texts
             self._populate_rename_combo()
             self._populate_items_list()
         finally:
@@ -902,7 +906,9 @@ class FindVariationsDialog(SizePersistedDialog):
 
     def _decode_list_item(self, lw):
         item_id = int(lw.data(Qt.UserRole))
-        item_text = self.item_map[item_id]
+        item_text = ''
+        if item_id in self.item_map:
+            item_text = self.item_map[item_id]
         return item_id, item_text
 
     def _rename_selected(self):
@@ -961,17 +967,21 @@ class FindVariationsDialog(SizePersistedDialog):
         # We will remove all selected items from the RHS from the map.
         item_lw = self.item_list.currentItem()
         item_id, item_text = self._decode_list_item(item_lw)
-        ignore_items = [item_id]
+        ignore_items = [(item_id, item_text)]
         for var_lw in self.variations_list.selectedItems():
-            ignore_items.append(self._decode_list_item(var_lw)[0])
+            ignore_items.append(self._decode_list_item(var_lw))
 
-        for ignore_item_id in ignore_items:
+        for ignore_item_id, ignore_item_text in ignore_items:
             var_ids_set = self.variations_map[ignore_item_id]
-            for other_item_id in ignore_items:
+            for other_item_id, other_item_text in ignore_items:
                 if other_item_id != ignore_item_id:
                     var_ids_set.remove(other_item_id)
             if len(var_ids_set) == 0:
                 del self.variations_map[ignore_item_id]
+                del self.item_map[ignore_item_id]
+                del self.count_map[ignore_item_id]
+            if ignore_item_text in self.combo_items:
+                self.combo_items.remove(ignore_item_text)
 
         # Update our on-screen presentation with the new lists - selection will be lost!
         self.variations_list.clear()
@@ -1138,6 +1148,9 @@ class FindLibraryDuplicatesDialog(SizePersistedDialog):
         self.include_languages_checkbox.setToolTip(_('When checked, books with identical titles but different\n'
                                                 'languages metadata field values will not show as duplicates'))
         compare_group_box_layout.addWidget(self.include_languages_checkbox)
+        self.display_results_checkbox = QCheckBox(_('Display duplicate books when search completes.'))
+        self.display_results_checkbox.setToolTip(_('Uncheck this option if you just want the output log.'))
+        compare_group_box_layout.addWidget(self.display_results_checkbox)
 
         button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
         button_box.accepted.connect(self._ok_clicked)
@@ -1164,6 +1177,8 @@ class FindLibraryDuplicatesDialog(SizePersistedDialog):
         self.author_soundex_spin.setValue(cfg.plugin_prefs.get(cfg.KEY_AUTHOR_SOUNDEX, 8))
         include_languages = cfg.plugin_prefs.get(cfg.KEY_INCLUDE_LANGUAGES, False)
         self.include_languages_checkbox.setChecked(include_languages)
+        display_results = cfg.plugin_prefs.get(cfg.KEY_DISPLAY_LIBRARY_RESULTS, False)
+        self.display_results_checkbox.setChecked(display_results)
 
         self.library_config = cfg.get_library_config(self.gui.current_db)
         self.location.setText(self.library_config.get(cfg.KEY_LAST_LIBRARY_COMPARE, ''))
@@ -1241,6 +1256,8 @@ class FindLibraryDuplicatesDialog(SizePersistedDialog):
         cfg.plugin_prefs[cfg.KEY_AUTHOR_MATCH] = self.author_match
         cfg.plugin_prefs[cfg.KEY_TITLE_SOUNDEX] = int(str(self.title_soundex_spin.value()))
         cfg.plugin_prefs[cfg.KEY_AUTHOR_SOUNDEX] = int(str(self.author_soundex_spin.value()))
+        cfg.plugin_prefs[cfg.KEY_INCLUDE_LANGUAGES] = self.include_languages_checkbox.isChecked()
+        cfg.plugin_prefs[cfg.KEY_DISPLAY_LIBRARY_RESULTS] = self.display_results_checkbox.isChecked()
         self.location.save_history()
         self.library_config[cfg.KEY_LAST_LIBRARY_COMPARE] = loc
         cfg.set_library_config(db, self.library_config)
