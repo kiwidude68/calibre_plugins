@@ -1,11 +1,13 @@
 # Import List Change Log
 
-## [1.9.0] - 2022-10-XX
+## [1.9.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
-- Add translation support.
 - Add backwards compatiblity to min calibre 3.41.0
-- Add Help button to configuration dialog
+- Add Help button to configuration dialog.
+- Add translation support.
+- Spanish translation (@dunhill)
+- Ukranian translation (@yurchor)
 ### Changed
 - Refactoring of common code
 - Changed wizard style of appearance, tweaked layouts.

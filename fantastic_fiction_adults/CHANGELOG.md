@@ -4,12 +4,12 @@
 ### Added
 - All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins
 - German translation (Dustin Steiner)
-- Spanish translation (dunhill)
 - French translation (lentrad)
 - Italian translation (Ettore Mazzitelli)
 - Polish translation (moje konto)
 - Portuguese translation (Comfy.n)
 - Russian translation (ashed)
+- Spanish translation (dunhill)
 - Ukranian translation (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.85.1 or later.

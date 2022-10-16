@@ -1,0 +1,1258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Андрій М. <dexteritymaster@gmail.com>, 2022
+# Yuri Chornoivan <yurchor@ukr.net>, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-09 20:07+0100\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
+"Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:929
+msgid "Keyboard shortcuts"
+msgstr "Клавіатурні скорочення"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Перезавантажити Calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Налаштування:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Очистити"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Очистити всі налаштування для цього плагіну"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте змінити ваші налаштування у цій бібліотеці для цього"
+" додатка?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Будь-які налаштування в інших бібліотеках, або збережені в файлі JSON в "
+"папці ваший плагінів не будуть змінені."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Після цього ви повинні перезавантажити Calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Параметри змінено"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Параметри для цього додатка у цій бібліотеці було змінено."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Будь ласка, перезавантажте Calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Ви впевнені, що бажаєте очистити ваші налаштування в цій бібліотцеці для "
+"даного плагіну?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Параметри вилучено"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Всі налаштування для цього плагіну в цій бібліотеці були очищені."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Копіювати до буфера обміну"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "Невизначено"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Потрібен перезапуск"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
+" користуватися цим додатком!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "Створити стовпчик"
+
+#: action.py:30
+msgid "Import List"
+msgstr "Список імпортування"
+
+#: action.py:30
+msgid "Import a list from the clipboard, CSV File or web page"
+msgstr "Імпортувати список із буфера обміну, файла CSV або вебсторінки"
+
+#: cmdline.py:129
+msgid "Choose library location to compare against"
+msgstr "Виберіть місце бібліотеки для порівняння"
+
+#: cmdline.py:133
+msgid "No existing library found"
+msgstr "Не знайдено наявної бібліотеки"
+
+#: cmdline.py:134
+msgid "There is no existing calibre library at {0}"
+msgstr "У {0} немає наявної бібліотеки calibre"
+
+#: cmdline.py:149
+msgid "Choose database"
+msgstr "Виберіть базу даних"
+
+#: cmdline.py:150
+msgid "Calibre db"
+msgstr "база даних calibre"
+
+#: cmdline.py:154
+msgid "Not a valid database file"
+msgstr "Не є коректним файлом бази даних"
+
+#: cmdline.py:155
+msgid "File ({}) is not a valid database file"
+msgstr "Файл ({}) не є коректним файлом бази даних"
+
+#: cmdline.py:204
+msgid "Choose Library"
+msgstr "Виберіть бібліотеку"
+
+#: cmdline.py:208
+msgid "Choose library"
+msgstr "Виберіть бібліотеку"
+
+#: cmdline.py:211
+msgid "Options"
+msgstr "Параметри"
+
+#: cmdline.py:218
+msgid "Override Database Path"
+msgstr "Перевизначити шлях до бази даних"
+
+#: cmdline.py:221
+msgid ""
+"Allows you to specify the full path to metadata.db. Using this variable you "
+"can have metadata.db be in a location other than the library folder."
+msgstr ""
+"Надає вам змогу вказати повний шлях до metadata.db. За допомогою цієї "
+"змінної ви можете скористатися metadata.db з іншого місця, ніж тека "
+"бібліотеки."
+
+#: cmdline.py:225
+msgid "Choose database path"
+msgstr "Виберіть шлях до бази даних"
+
+#: cmdline.py:230
+msgid "Re-initialize db every nth book (Experimental):"
+msgstr "Повторно ініціалізувати базу даних кожні n книг (експеримент):"
+
+#: cmdline.py:232
+msgid ""
+"Prevent gradual speed deterioration when importing large number of books"
+msgstr ""
+"Запобігає поступовому зменшенню швидкості при імпортуванні великої кількості"
+" книг"
+
+#: cmdline.py:260
+msgid "Error"
+msgstr "Помилка"
+
+#: cmdline.py:260
+msgid "You must choose a library"
+msgstr "Вам слід вибрати бібліотеку"
+
+#: config.py:930
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
+
+#: config.py:934
+msgid "Reset &confirmation dialogs"
+msgstr "Відновити ві&кна підтвердження"
+
+#: config.py:935
+msgid "Reset all show me again dialogs for the Import list plugin"
+msgstr ""
+"Відновити показ усіх діалогових вікон підтвердження для додатка імпортування"
+" списку"
+
+#: config.py:939
+msgid "&View library preferences"
+msgstr "П&ереглянути налаштування бібліотеки"
+
+#: config.py:940
+msgid "View data stored in the library database for this plugin"
+msgstr "Переглянути дані, збережені у базі даних бібліотеки для цього додатка"
+
+#: config.py:944
+msgid "&Help"
+msgstr "&Довідка"
+
+#: config.py:954
+msgid "Done"
+msgstr "Виконано"
+
+#: config.py:955
+msgid "Confirmation dialogs have all been reset"
+msgstr "Показ діалогових вікон підтвердження відновлено"
+
+#: encodings.py:98
+msgid "Add or Remove"
+msgstr "Додати або вилучити"
+
+#: encodings.py:99
+msgid "detect encoding"
+msgstr "визначити кодування"
+
+#: encodings.py:236
+msgid "Description"
+msgstr "Опис"
+
+#: encodings.py:236
+msgid "Encoding"
+msgstr "Кодування"
+
+#: encodings.py:241
+msgid "Choose Encodings"
+msgstr "Виберіть кодування"
+
+#: encodings.py:245
+msgid "Available Encodings:"
+msgstr "Доступні кодування:"
+
+#: encodings.py:249
+msgid "Chosen Encodings:"
+msgstr "Вибрані кодування:"
+
+#: encodings.py:261
+msgid "Add the selected encoding"
+msgstr "Додати вибране кодування"
+
+#: encodings.py:264
+msgid "Remove the selected encoding"
+msgstr "Вилучити вибране кодування"
+
+#: encodings.py:282
+msgid "Move the selected item up"
+msgstr "Пересунути позначений пункт вище"
+
+#: encodings.py:286
+msgid "Move the selected item down"
+msgstr "Пересунути позначений пункт нижче"
+
+#: encodings.py:290
+msgid "Reset to defaults"
+msgstr "Скинути до типових"
+
+#: encodings.py:356
+msgid "No encodings selected"
+msgstr "Не позначено жодного кодування"
+
+#: encodings.py:356 page_resolve.py:128 tab_common.py:360
+msgid "You must select one or more fields first."
+msgstr "Вам слід спочатку вибрати одне або декілька полів."
+
+#: models.py:101
+msgid "A matching book was found in your calibre library"
+msgstr "У вашій бібліотеці calibre знайдено відповідну книгу"
+
+#: models.py:103
+msgid ""
+"Multiple matches found for this title/author.\n"
+"Resolve this by selecting your match below."
+msgstr ""
+"Для цієї пари назва-автор знайдено декілька відповідників.\n"
+"Визначтеся із потрібним варіантом, позначивши його нижче."
+
+#: models.py:106
+msgid ""
+"No matching book found in your library.\n"
+"Add an empty book or search for a match below."
+msgstr ""
+"У вашій бібліотеці не знайдено відповідної книги.\n"
+"Додайте порожню книгу або пошукайте відповідник нижче."
+
+#: models.py:109
+msgid "An empty book will be added if you save this list"
+msgstr "Якщо ви збережете цей список, до бібліотеки буде додано порожню книгу"
+
+#: models.py:111
+msgid "This book was added to your list manually"
+msgstr "Цю книгу було додано до вашого списку вручну"
+
+#: models.py:147 page_resolve.py:615
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: page_import.py:101
+msgid "Show only rows with errors"
+msgstr "Показати лише рядки із помилками"
+
+#: page_import.py:103
+msgid ""
+"<p style=\"font-style:italic;margin-left:30px;\">(errors highlighted in "
+"<span style=\"color:red;\">red</span>)</p>"
+msgstr ""
+"<p style=\"font-style:italic;margin-left:30px;\">(помилки позначено <span "
+"style=\"color:red;\">червоним</span>)</p>"
+
+#: page_import.py:127
+msgid ""
+"Some cells contain data that does not match calibre datatypes.\n"
+"\t\tErrors are detailed below:\n"
+msgstr ""
+"Деякі комірки містять дані, які не відповідають типам даних calibre.\n"
+"\t\tДокладніше про помилки нижче:\n"
+
+#: page_import.py:135
+msgid ""
+"\n"
+"Title field is mandatory. The following rows contain empty titles:\n"
+"{}\n"
+msgstr ""
+"\n"
+"Поле назви є обов'язковим. У вказаних нижче рядках містяться порожні назви:\n"
+"{}\n"
+
+#: page_import.py:142
+msgid ""
+"\n"
+"Column \"{colname}\" must contain only data of type \"{datatype}\".\n"
+"\t\tThe following rows have invalid type for column {colname}:\n"
+msgstr ""
+"\n"
+"У стовпчику «{colname}» мають міститися лише дані типу «{datatype}».\n"
+"\t\tУ вказаних нижче рядка маємо некоректний тип для стовпчика {colname}:\n"
+
+#: page_import.py:147
+msgid "Validation errors details"
+msgstr "Подробиці щодо помилок"
+
+#: page_import.py:197
+msgid "Title field is mandatory and cannot be empty"
+msgstr "Це поле є обов'язковим до заповнення і не може бути порожнім"
+
+#: page_import.py:208
+msgid "Data must be of type: {}"
+msgstr "Тип, до якого мають належати дані: {}"
+
+#: page_import.py:310
+msgid "Step 1: Configure a list source"
+msgstr "Крок 1. Налаштовування джерела списку"
+
+#: page_import.py:324
+msgid "User Settings"
+msgstr "Параметри користувача"
+
+#: page_import.py:325
+msgid "Predefined"
+msgstr "Попередньо визначене"
+
+#: page_import.py:326
+msgid "Clipboard"
+msgstr "Буфер обміну"
+
+#: page_import.py:327
+msgid "CSV File"
+msgstr "файл CSV"
+
+#: page_import.py:328
+msgid "Web Page"
+msgstr "вебсторінка"
+
+#: page_import.py:375 page_resolve.py:420
+msgid "&Remove book"
+msgstr "Ви&лучити книгу"
+
+#: page_import.py:376
+msgid "Remove selected books from the list"
+msgstr "Вилучити позначені книги зі списку"
+
+#: page_import.py:380
+msgid "&Export to csv"
+msgstr "&Експортувати до CSV"
+
+#: page_import.py:381
+msgid "Export selected books to csv file"
+msgstr "Експортувати позначені книги до файла CSV"
+
+#: page_import.py:393 page_resolve.py:574
+msgid "Are you sure you want to remove the selected books from the list?"
+msgstr "Ви справді хочете вилучити позначені книги зі списку?"
+
+#: page_import.py:413
+msgid "Choose file for exported csv"
+msgstr "Виберіть файл для експортованого CSV"
+
+#: page_persist.py:80
+msgid "Current step progress:"
+msgstr "Поточний поступ за кроками:"
+
+#: page_persist.py:86
+msgid "Step"
+msgstr "Крок"
+
+#: page_persist.py:101
+msgid "Importing"
+msgstr "Імпортування"
+
+#: page_persist.py:111
+msgid "Aborting"
+msgstr "Перериваємо"
+
+#: page_persist.py:171
+msgid "Step 3: Save your imported list / configuration"
+msgstr "Крок 3: збереження вашого списку/налаштувань імпортування"
+
+#: page_persist.py:175
+msgid "Reading List plugin:"
+msgstr "Додаток списку читання:"
+
+#: page_persist.py:180
+msgid ""
+"If you have the <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Reading "
+"list</a> plugin installed, you can store the imported books into a list for "
+"use by that plugin."
+msgstr ""
+"Якщо у вашій системі встановлено додаток <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Список "
+"читання</a>, ви можете зберегти імпортовані книги до списку, який може бути "
+"використано цим додатком."
+
+#: page_persist.py:184
+msgid "&Do not use the Reading List plugin"
+msgstr "&Не використовувати додаток «Список читання»"
+
+#: page_persist.py:186
+msgid "Create a &new list:"
+msgstr "С&творити список:"
+
+#: page_persist.py:188
+msgid "&Update an existing list:"
+msgstr "&Оновити наявний список:"
+
+#: page_persist.py:190
+msgid "&Clear list first replacing with the imported books"
+msgstr "Сп&орожнити список і замінити його списком імпортованих книг"
+
+#: page_persist.py:210
+msgid "Save configuration:"
+msgstr "Зберегти налаштування:"
+
+#: page_persist.py:215
+msgid ""
+"You can choose to store the current import settings, if you intend to import"
+" from this source again in future."
+msgstr ""
+"Ви можете наказати програмі зберегти поточні параметри імпортування, якщо "
+"маєте намір у майбутньому імпортувати дані з цього джерела знову."
+
+#: page_persist.py:217
+msgid "&Do not save the current settings"
+msgstr "&Не зберігати поточні параметри"
+
+#: page_persist.py:219
+msgid "&Save settings as:"
+msgstr "З&берегти параметри як:"
+
+#: page_persist.py:380
+msgid "Custom Column Missing"
+msgstr "Немає нетипового стовпчика"
+
+#: page_persist.py:381
+msgid ""
+"You are importing to a custom column '%s' which does not exist in this "
+"library.<p>"
+msgstr ""
+"Ви імпортуєте дані до нетипового стовпчика «%s», якщо не існує у цій "
+"бібліотеці.<p>"
+
+#: page_persist.py:382
+msgid ""
+"This column will be ignored. Either add a matching custom column or edit "
+"your import statement."
+msgstr ""
+"Цей стовпчик буде проігноровано. Або додайте відповідний нетиповий стовпчик "
+"або змініть вашу інструкцію імпортування."
+
+#: page_persist.py:389
+msgid "ImportList plugin: no metadata found for column:"
+msgstr "Додаток імпортування списку: не знайдено метаданих для стовпчика:"
+
+#: page_persist.py:448
+msgid "Adding books (%(idx)d of %(count)d): %(title)s"
+msgstr "Додаємо книги, (%(idx)d з %(count)d): %(title)s"
+
+#: page_persist.py:460
+msgid "Updating books (%(idx)d of %(count)d): %(title)s"
+msgstr "Оновлюємо книги, (%(idx)d з %(count)d): %(title)s"
+
+#: page_persist.py:482
+msgid "You have not specified a reading list name"
+msgstr "Вами не вказано назви списку читання"
+
+#: page_persist.py:482 page_persist.py:488
+msgid "Invalid List Name"
+msgstr "Некоректна назва списку"
+
+#: page_persist.py:488
+msgid "Another list exists with this name"
+msgstr "Існує інший список із такою самою назвою"
+
+#: page_persist.py:502
+msgid "Invalid Setting Name"
+msgstr "Некоректна назва налаштувань"
+
+#: page_persist.py:502
+msgid "You have not specified a setting name"
+msgstr "Вами не вказано назви налаштувань"
+
+#: page_persist.py:545
+msgid "Failed"
+msgstr "Помилка"
+
+#: page_resolve.py:56
+msgid "Update metadata fields"
+msgstr "Оновити поля метаданих"
+
+#: page_resolve.py:70
+msgid "Select all"
+msgstr "Вибрати усе"
+
+#: page_resolve.py:72
+msgid "Clear all"
+msgstr "Вилучити все"
+
+#: page_resolve.py:128 tab_common.py:360
+msgid "No fields selected"
+msgstr "Не вибрано жодного поля"
+
+#: page_resolve.py:202
+msgid "Step 2: Match list of books against your library"
+msgstr "Крок 2: встановлення відповідності списку книг ваші бібліотеці"
+
+#: page_resolve.py:216
+msgid "Show All"
+msgstr "Показати усі"
+
+#: page_resolve.py:218
+msgid "Matched"
+msgstr "Відповідні"
+
+#: page_resolve.py:219
+msgid "Unmatched"
+msgstr "Невідповідні"
+
+#: page_resolve.py:229
+msgid "Filter by match algorithm"
+msgstr "Фільтрувати за алгоритмом відповідності"
+
+#: page_resolve.py:238
+msgid "Books in list:"
+msgstr "Книги у списку:"
+
+#: page_resolve.py:240 page_resolve.py:1032 page_resolve.py:1036
+msgid "Matches in library:"
+msgstr "Відповідники у бібліотеці:"
+
+#: page_resolve.py:258
+msgid "Clear the match associated with the selected books in the list"
+msgstr "Очистити відповідність, пов'язану із позначеними книгами у списку"
+
+#: page_resolve.py:262
+msgid "Remove the selected books from the list"
+msgstr "Вилучити позначені книги зі списку"
+
+#: page_resolve.py:266
+msgid "Create an empty book for the selected books in the list"
+msgstr "Створити порожню книгу для позначених книг у списку"
+
+#: page_resolve.py:270
+msgid "Update metadata for the selected books in the list"
+msgstr "Оновити метадані для позначених книг у списку"
+
+#: page_resolve.py:274
+msgid "Revert metadata for the selected books back to existing values"
+msgstr "Повернутися до наявних значень метаданих для позначених книг у списку"
+
+#: page_resolve.py:283
+msgid "Possible matches for selected book:"
+msgstr "Можливі відповідники позначеної книги:"
+
+#: page_resolve.py:291
+msgid "Search:"
+msgstr "Шукати:"
+
+#: page_resolve.py:293
+msgid "&Go!"
+msgstr "Пере&йти!"
+
+#: page_resolve.py:313
+msgid "Select this book as the match for this list title"
+msgstr "Позначити цю книгу як відповідник для цього заголовка списку"
+
+#: page_resolve.py:317
+msgid "Append this book as a new item on the list"
+msgstr "Дописати цю книгу як новий пункт у списку"
+
+#: page_resolve.py:417
+msgid "&Clear match"
+msgstr "&Очистити відповідність"
+
+#: page_resolve.py:425
+msgid "Match &empty book"
+msgstr "Відповідність &порожній книзі"
+
+#: page_resolve.py:428
+msgid "&Update metadata"
+msgstr "&Оновити метадані"
+
+#: page_resolve.py:431
+msgid "&Revert metadata"
+msgstr "&Відновити метадані"
+
+#: page_resolve.py:434
+msgid "S&wap Author Names"
+msgstr "По&міняти місцями частини імені автора"
+
+#: page_resolve.py:435
+msgid "Swap selected author names between FN LN and LN,FN"
+msgstr ""
+"Поміняти місцями у записах авторів «Ім'я Прізвище» на «Прізвище, Ім'я»"
+
+#: page_resolve.py:439
+msgid "&Search for title/author"
+msgstr "&Шукати назву/автора"
+
+#: page_resolve.py:440
+msgid "&Search your library using a simplified title/author of this book"
+msgstr "&Шукати цю книгу у вашій бібліотеці за спрощеним записом назва/автор"
+
+#: page_resolve.py:442
+msgid "Search for &title"
+msgstr "Шукати за &назвою"
+
+#: page_resolve.py:443
+msgid "&Search your library using a simplified title of this book"
+msgstr "&Шукати цю книгу у вашій бібліотеці за спрощеним записом назви"
+
+#: page_resolve.py:445
+msgid "Search for &author"
+msgstr "Шукати за &автором"
+
+#: page_resolve.py:446
+msgid "&Search your library using a simplified author of this book"
+msgstr "&Шукати цю книгу у вашій бібліотеці за спрощеним записом автора"
+
+#: page_resolve.py:466
+msgid "&Select Book"
+msgstr "Поз&начити книгу"
+
+#: page_resolve.py:471
+msgid "&Append to list"
+msgstr "Д&описати до списку"
+
+#: page_resolve.py:562
+msgid "*** No Match ***"
+msgstr "*** Немає відповідників ***"
+
+#: page_resolve.py:726
+msgid "Are you sure you want to add the selected book to the list?"
+msgstr "Ви справді хочете додати позначену книгу до списку?"
+
+#: page_resolve.py:757
+msgid "No Match"
+msgstr "Немає відповідників"
+
+#: page_resolve.py:841
+msgid "*** Multiple Matches ***"
+msgstr "*** Декілька відповідників ***"
+
+#: page_resolve.py:866
+msgid "Multiple Matches"
+msgstr "Декілька відповідників"
+
+#: page_resolve.py:925
+msgid "Displaying all similar matches for this book"
+msgstr "Показати усі подібні відповідники для цієї книги"
+
+#: page_resolve.py:943
+msgid "Search for a book in your library"
+msgstr "Шукати книгу у вашій бібліотеці"
+
+#: page_resolve.py:1034
+msgid "Matches in library:(1 match)"
+msgstr "Відповідники у бібліотеці: (1 відповідник)"
+
+#: tab_clipboard.py:50
+msgid "&Paste your book list here:"
+msgstr "Вс&тавте ваш список книг сюди:"
+
+#: tab_clipboard.py:56
+msgid "&Paste"
+msgstr "&Вставити"
+
+#: tab_clipboard.py:57
+msgid "Replace all text above with the contents of your clipboard"
+msgstr "Замінити увесь текст вище на вміст вашого буфера обміну даними"
+
+#: tab_clipboard.py:68
+msgid "Conversion expression:"
+msgstr "Вираз перетворення:"
+
+#: tab_clipboard.py:73
+msgid ""
+"Set a <a href=\"http://manual.calibre-ebook.com/regexp.html\">regular "
+"expression</a> to use for titles and other metadata. The group names you can"
+" use include"
+msgstr ""
+"Встановіть <a href=\"http://manual.calibre-"
+"ebook.com/regexp.html\">формальний вираз</a>, яким слід скористатися для "
+"назв та інших метаданих. До назв груп, якими ви можете скористатися, "
+"включено такі:"
+
+#: tab_clipboard.py:87
+msgid "Choose a predefined named pattern"
+msgstr "Виберіть попередньо визначений іменований взірець"
+
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:304
+msgid "&Clear"
+msgstr "Сп&орожнити"
+
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:305
+msgid "Clear all settings back to the defaults on this tab"
+msgstr "Повернути усім параметрам на цій вкладці типові значення"
+
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:307
+msgid "&Fields"
+msgstr "По&ля"
+
+#: tab_clipboard.py:100
+msgid "Add expression for field to import"
+msgstr "Додайте вираз для полів, які слід імпортувати"
+
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:310
+msgid "Reverse order"
+msgstr "Зворотний порядок"
+
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:311
+msgid "Display the books in the opposite order to the source"
+msgstr "Показати книги у протилежному порядку щодо джерела"
+
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:312
+msgid "&Preview"
+msgstr "&Перегляд"
+
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:313
+msgid "Preview the results in the books grid"
+msgstr "Переглянути результати у таблиці книг"
+
+#: tab_clipboard.py:173
+msgid "Failed to parse page:\n"
+msgstr "Не вдалося обробити сторінку:\n"
+
+#: tab_clipboard.py:174
+msgid "Invalid regular expression"
+msgstr "Помилка у формальному виразі"
+
+#: tab_common.py:140
+msgid "Title"
+msgstr "Назва"
+
+#: tab_common.py:141
+msgid "Authors"
+msgstr "Автори"
+
+#: tab_common.py:142
+msgid "Series"
+msgstr "Цикли"
+
+#: tab_common.py:143
+msgid "Series Index"
+msgstr "Номер у циклі"
+
+#: tab_common.py:144
+msgid "Published"
+msgstr "Опубліковано"
+
+#: tab_common.py:145
+msgid "Publisher"
+msgstr "Видавець"
+
+#: tab_common.py:146
+msgid "Rating"
+msgstr "Оцінка"
+
+#: tab_common.py:147
+msgid "Tags"
+msgstr "Мітки"
+
+#: tab_common.py:148
+msgid "Comments"
+msgstr "Коментарі"
+
+#: tab_common.py:149
+msgid "Languages"
+msgstr "Мови"
+
+#: tab_common.py:317
+msgid "Select field(s) to add:"
+msgstr "Виберіть поля для додавання:"
+
+#: tab_common.py:369
+msgid "Select fields to import:"
+msgstr "Позначте поля для імпортування:"
+
+#: tab_common.py:436
+msgid "&Match Method:"
+msgstr "С&посіб порівняння"
+
+#: tab_common.py:439
+msgid "&Title/Author"
+msgstr "&Назва/Автор"
+
+#: tab_common.py:443
+msgid "&Identifier:"
+msgstr "&Ідентифікатор:"
+
+#: tab_csv.py:102
+msgid "&Import from file:"
+msgstr "І&мпортувати з файла:"
+
+#: tab_csv.py:114
+msgid "Choose the file to import"
+msgstr "Вибір файла для імпортування"
+
+#: tab_csv.py:121
+msgid "&Contents:"
+msgstr "З&міст:"
+
+#: tab_csv.py:126 tab_webpage.py:210
+msgid "&Encoding:"
+msgstr "&Кодування:"
+
+#: tab_csv.py:142
+msgid "&Delimiter:"
+msgstr "&Роздільник:"
+
+#: tab_csv.py:146
+msgid "&Tab"
+msgstr "&Табуляція"
+
+#: tab_csv.py:147
+msgid "&Other:"
+msgstr "&Інше:"
+
+#: tab_csv.py:156
+msgid "Processing:"
+msgstr "Обробка:"
+
+#: tab_csv.py:160
+msgid "S&kip first row"
+msgstr "П&ропустити перший рядок"
+
+#: tab_csv.py:161
+msgid "Select this option to ignore the first row of column headings"
+msgstr ""
+"Позначте цей пункт, щоб програма проігнорувала перший рядок заголовків "
+"стовпчиків"
+
+#: tab_csv.py:162
+msgid "&Unquote"
+msgstr "В&илучити лапки"
+
+#: tab_csv.py:163
+msgid "Remove any quotes around columns of data"
+msgstr "Вилучити усі лапки навколо стовпчиків у даних"
+
+#: tab_csv.py:165
+msgid "Tidy"
+msgstr "Почистити"
+
+#: tab_csv.py:166
+msgid ""
+"Clean title and authors before importing. This is intended for web imports but is optional for csv\n"
+"It includes removing leading and trailing periods and commas, removing some special characters\n"
+"and removing numbers indicating a position at the begining of the string."
+msgstr ""
+"Почистити записи назви і авторів до імпортування. Цю процедуру призначено для імпортування даних з інтернету, але нею можна скористатися і для csv.\n"
+"У результаті буде вилучено початкові і кінцеві крапки і коми, деякі спеціальні символи і\n"
+"числа, що позначають позицію на початку рядка."
+
+#: tab_csv.py:184
+msgid " &Columns To Import: "
+msgstr " С&товпчики для імпортування: "
+
+#: tab_csv.py:210 tab_webpage.py:308
+msgid "Select field(s) to import"
+msgstr "Виберіть поля для імпортування"
+
+#: tab_csv.py:213
+msgid "&From headers"
+msgstr "З з&аголовків"
+
+#: tab_csv.py:214
+msgid "Guess field(s) from csv headers"
+msgstr "Вгадувати поля із заголовків csv"
+
+#: tab_csv.py:318
+msgid "Select a CSV file to import"
+msgstr "Виберіть файл CSV для імпортування"
+
+#: tab_csv.py:318
+msgid "import CSV file dialog"
+msgstr "вікно імпортування файлів CSV"
+
+#: tab_csv.py:344
+msgid "File not specified"
+msgstr "Не вказано файл"
+
+#: tab_csv.py:344
+msgid "You have not specified a path to a CSV file"
+msgstr "Вами не вказано шляху до файла CSV"
+
+#: tab_csv.py:349
+msgid "File not found"
+msgstr "Файл не знайдено"
+
+#: tab_csv.py:349
+msgid "No file found at this location"
+msgstr "У вказаному місці файла не виявлено"
+
+#: tab_csv.py:366
+msgid "Invalid options"
+msgstr "Некоректні параметри"
+
+#: tab_csv.py:366
+msgid "You have not specified a delimiter"
+msgstr "Вами не вказано роздільник"
+
+#: tab_settings.py:47
+msgid "Browser"
+msgstr "Навігатор"
+
+#: tab_settings.py:48
+msgid "View related website page in your web browser"
+msgstr ""
+"Переглянути пов'язану вебсторінку у вашій програмі для перегляду інтернету"
+
+#: tab_settings.py:50
+msgid "Edit"
+msgstr "Змінити"
+
+#: tab_settings.py:51
+msgid "Edit this saved setting"
+msgstr "Редагувати ці збережені налаштування"
+
+#: tab_settings.py:105
+msgid "Delete"
+msgstr "Вилучити"
+
+#: tab_settings.py:107
+msgid "Rename"
+msgstr "Перейменувати"
+
+#: tab_settings.py:109
+msgid "Export"
+msgstr "Експортувати"
+
+#: tab_settings.py:111
+msgid "Import."
+msgstr "Імпортувати."
+
+#: tab_settings.py:126
+msgid "Are you sure you want to remove the setting \"%s\"?"
+msgstr "Ви справді хочете вилучити запис налаштувань «%s»?"
+
+#: tab_settings.py:127
+msgid "import_list_delete_setting"
+msgstr "import_list_delete_setting"
+
+#: tab_settings.py:140 tab_settings.py:141
+msgid "New setting name:"
+msgstr "Нова назва параметра:"
+
+#: tab_settings.py:148
+msgid "Setting exists"
+msgstr "Такий параметр вже існує"
+
+#: tab_settings.py:149
+msgid "A saved setting already exists with this name."
+msgstr "Вже існує збережений параметр із цією назвою."
+
+#: tab_settings.py:168
+msgid "Import Failed"
+msgstr "Не вдалося імпортувати"
+
+#: tab_settings.py:169
+msgid "This is not a valid Import List export archive"
+msgstr ""
+"Цей архів не є коректним архівом експортованих даних додатка «Імпортувати "
+"список»"
+
+#: tab_settings.py:176
+msgid "Import setting"
+msgstr "Імпортувати параметр"
+
+#: tab_settings.py:217
+msgid "Export completed"
+msgstr "Експортування завершено"
+
+#: tab_settings.py:218
+msgid "Cover setting exported to"
+msgstr "Налаштування обкладинки експортовано до"
+
+#: tab_settings.py:226
+msgid "Enter a unique name for this saved setting:"
+msgstr "Введіть унікальну назву для цих збережених налаштувань:"
+
+#: tab_settings.py:235
+msgid "Cannot add"
+msgstr "Не вдалося додати"
+
+#: tab_settings.py:236
+msgid "The name you specified is not unique"
+msgstr "Вказана вами назва не є унікальною"
+
+#: tab_settings.py:242
+msgid "Select setting file(s) to import"
+msgstr "Виберіть файли параметрів для імпортування"
+
+#: tab_settings.py:249
+msgid "Save setting as"
+msgstr "Зберегти параметр як"
+
+#: tab_settings.py:334
+msgid "View as List"
+msgstr "Перегляд списком"
+
+#: tab_settings.py:336
+msgid "View by Category"
+msgstr "Перегляд за категорією"
+
+#: tab_webpage.py:83
+msgid "Strip matching text"
+msgstr "Вилучити відповідний текст"
+
+#: tab_webpage.py:84
+msgid "Include matching text"
+msgstr "Включити відповідний текст"
+
+#: tab_webpage.py:99
+msgid "Choose a predefined pattern"
+msgstr "Вибрати попередньо визначений взірець"
+
+#: tab_webpage.py:104
+msgid "Clear the regular expression"
+msgstr "Вилучити формальний вираз"
+
+#: tab_webpage.py:184
+msgid "&Download from url:"
+msgstr "&Отримати з адреси:"
+
+#: tab_webpage.py:197
+msgid "Paste a URL from your clipboard"
+msgstr "Вставити адресу з буфера обміну даними"
+
+#: tab_webpage.py:202
+msgid "Open this url in your web browser"
+msgstr "Відкрити цю адрес у програмі для перегляду інтернету"
+
+#: tab_webpage.py:209
+msgid "&Source html:"
+msgstr "&Початковий html:"
+
+#: tab_webpage.py:211
+msgid "Specify the web page encoding if not utf-8"
+msgstr "Вказати кодування вебсторінки, якщо це не utf-8"
+
+#: tab_webpage.py:214
+msgid "Load javascript"
+msgstr "Завантажити javascript"
+
+#: tab_webpage.py:215
+msgid ""
+"Enable this option if the web page renders its content using javascript"
+msgstr ""
+"Позначте цей пункт, якщо для обробки вмісту вебсторінки потрібен код "
+"javascript"
+
+#: tab_webpage.py:216
+msgid "&Delay:"
+msgstr "Затр&имка:"
+
+#: tab_webpage.py:217
+msgid "Additional delay in seconds to wait for web page javascript to execute"
+msgstr ""
+"Додаткова затримка очікування у секундах на виконання коду javascript "
+"вебсторінки"
+
+#: tab_webpage.py:236
+msgid "Find:"
+msgstr "Знайти:"
+
+#: tab_webpage.py:241
+msgid "&Text:"
+msgstr "&Текст:"
+
+#: tab_webpage.py:242
+msgid ""
+"Search for text to help locate the region of interest such as\n"
+"a book name when designing your xpath expressions"
+msgstr ""
+"Шукати текст для спрощення визначення потрібного місця, зокрема\n"
+"назви книги, при створенні ваших виразів xpath"
+
+#: tab_webpage.py:245
+msgid "Search for specific text"
+msgstr "Шукати вказаний текст"
+
+#: tab_webpage.py:247
+msgid "&Find"
+msgstr "&Знайти"
+
+#: tab_webpage.py:258
+msgid "XPath:"
+msgstr "XPath:"
+
+#: tab_webpage.py:263
+msgid ""
+"Specify XPath expressions to identify the parent rows and title / authors "
+"within each row in the source html."
+msgstr ""
+"Вкажіть вирази XPath для виявлення батьківських рядків та записів назви / "
+"авторів у кожному з рядків початкового коду html."
+
+#: tab_webpage.py:284
+msgid "0 occurrences"
+msgstr "0 відповідників"
+
+#: tab_webpage.py:285
+msgid "Number of matches using Test"
+msgstr "Кількість відповідників, де використано перевірку"
+
+#: tab_webpage.py:287
+msgid "Previous test result"
+msgstr "Попередній результат перевірки"
+
+#: tab_webpage.py:292
+msgid "Next test result"
+msgstr "Наступний результат перевірки"
+
+#: tab_webpage.py:356
+msgid "No matches"
+msgstr "Немає відповідників"
+
+#: tab_webpage.py:356
+msgid "No matches for:"
+msgstr "Немає відповідників:"
+
+#: tab_webpage.py:408
+msgid ""
+"Identify the parent node in the html source that contains a single book"
+msgstr ""
+"Виявити батьківський вузол у коді html, який містить дані однієї книги"
+
+#: tab_webpage.py:451
+msgid "Strip: %s"
+msgstr "Обрізати: %s"
+
+#: tab_webpage.py:453
+msgid "Include: %s"
+msgstr "Включити: %s"
+
+#: tab_webpage.py:456
+msgid "No expression"
+msgstr "Немає виразу"
+
+#: tab_webpage.py:572 tab_webpage.py:573
+msgid "Failed to download page"
+msgstr "Не вдалося отримати сторінку"
+
+#: tab_webpage.py:616
+msgid "You must specify an xpath"
+msgstr "Вам слід вказати xpath"
+
+#: tab_webpage.py:616 tab_webpage.py:623
+msgid "Test failed"
+msgstr "Перевірку не пройдено"
+
+#: tab_webpage.py:623
+msgid "No html source available to match against"
+msgstr "Немає початкового коду html для встановлення відповідності"
+
+#: tab_webpage.py:639 tab_webpage.py:785 tab_webpage.py:787 tab_webpage.py:789
+#: tab_webpage.py:791
+msgid "Invalid xpath"
+msgstr "Некоректне значення XPath"
+
+#: tab_webpage.py:640
+msgid "Your xpath expression is invalid"
+msgstr "Ваш вираз xpath є некоректним"
+
+#: tab_webpage.py:648
+msgid "occurrences"
+msgstr "відповідників"
+
+#: tab_webpage.py:785
+msgid "You have not specified any xpath expressions"
+msgstr "Вами не вказано жодних виразів xpath"
+
+#: tab_webpage.py:787
+msgid "You have not specified a title xpath expression"
+msgstr "Вами не вказано виразу xpath для назви"
+
+#: tab_webpage.py:789
+msgid "You must add a series_index xpath field if using series"
+msgstr "Вам слід додати поле xpath series_index, якщо використано цикли"
+
+#: tab_webpage.py:791
+msgid "You must add a series xpath field if using series index"
+msgstr "Вам слід додати поле xpath для циклу, якщо використано номер у циклі"
+
+#: tab_webpage.py:914 tab_webpage.py:915
+msgid "Failed to process page"
+msgstr "Не вдалося обробити сторінку"
+
+#: wizards.py:44
+msgid "Import Book List"
+msgstr "Імпортувати список книг"
+
+#: wizards.py:51
+msgid "&Options"
+msgstr "&Параметри"
