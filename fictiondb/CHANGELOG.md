@@ -1,7 +1,11 @@
 # FictionDB Change Log
 
-## [1.3.0] - 2022-10-XX
+## [1.3.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+### Added
+- Spanish translation (Jellby)
+- Russian translation (ashed)
+- Ukranian translation (@yurchor)
 ### Changed
 - **Breaking:** Drop PyQt4 support, require calibre 2.85.1 or later.
 - Refactoring of common code
