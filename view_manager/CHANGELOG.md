@@ -1,11 +1,15 @@
 # View Manager Change Log
 
-## [1.10.0] - 2022-10-XX
+## [1.10.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Add Help button to menu and configuration dialog.
 - Add translation support.
-- Translations for Spanish, French, Russian, Ukranian - thanks to all!
+- French translation (lentrad)
+- Polish translation (moje konto)
+- Russian translation (Caarmi)
+- Spanish translation (dunhill)
+- Ukranian translation (@yurchor)
 ### Changed
 - Support qt.core import syntax for future Qt compatibility
 - Refactoring of common code
