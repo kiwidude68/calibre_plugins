@@ -1148,8 +1148,8 @@ class FindLibraryDuplicatesDialog(SizePersistedDialog):
         self.include_languages_checkbox.setToolTip(_('When checked, books with identical titles but different\n'
                                                 'languages metadata field values will not show as duplicates'))
         compare_group_box_layout.addWidget(self.include_languages_checkbox)
-        self.display_results_checkbox = QCheckBox(_('Display duplicate books when search completes.'))
-        self.display_results_checkbox.setToolTip(_('Uncheck this option if you just want the output log.'))
+        self.display_results_checkbox = QCheckBox(_('Display duplicate books when search completes'))
+        self.display_results_checkbox.setToolTip(_('Uncheck this option if you just want the output log'))
         compare_group_box_layout.addWidget(self.display_results_checkbox)
 
         button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)

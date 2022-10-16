@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-16 13:09+0100\n"
+"POT-Creation-Date: 2022-10-16 13:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -636,11 +636,11 @@ msgid "Compare Options:"
 msgstr ""
 
 #: dialogs.py:1151
-msgid "Display duplicate books when search completes."
+msgid "Display duplicate books when search completes"
 msgstr ""
 
 #: dialogs.py:1152
-msgid "Uncheck this option if you just want the output log."
+msgid "Uncheck this option if you just want the output log"
 msgstr ""
 
 #: dialogs.py:1191
