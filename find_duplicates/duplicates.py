@@ -803,7 +803,7 @@ class CrossLibraryDuplicateFinder(object):
         set_title_soundex_length(title_soundex_length)
         set_author_soundex_length(author_soundex_length)
         self.include_languages = cfg.plugin_prefs.get(cfg.KEY_INCLUDE_LANGUAGES, False)
-        self.display_results = cfg.plugin_prefs.get(cfg.KEY_DISPLAY_LIBRARY_RESULTS, False)
+        self.display_results = cfg.plugin_prefs.get(cfg.KEY_DISPLAY_LIBRARY_RESULTS, True)
 
         # We will re-use the elements of the same basic algorithm code, but
         # only by calling specific functions to control what gets executed

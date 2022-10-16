@@ -1177,7 +1177,7 @@ class FindLibraryDuplicatesDialog(SizePersistedDialog):
         self.author_soundex_spin.setValue(cfg.plugin_prefs.get(cfg.KEY_AUTHOR_SOUNDEX, 8))
         include_languages = cfg.plugin_prefs.get(cfg.KEY_INCLUDE_LANGUAGES, False)
         self.include_languages_checkbox.setChecked(include_languages)
-        display_results = cfg.plugin_prefs.get(cfg.KEY_DISPLAY_LIBRARY_RESULTS, False)
+        display_results = cfg.plugin_prefs.get(cfg.KEY_DISPLAY_LIBRARY_RESULTS, True)
         self.display_results_checkbox.setChecked(display_results)
 
         self.library_config = cfg.get_library_config(self.gui.current_db)
