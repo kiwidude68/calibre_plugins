@@ -48,6 +48,12 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+READ_SHELF = 'read'
+CURRENTLY_READING_SHELF = 'currently-reading'
+
+KEY_DISPLAY_ACTIVE_SHELVES = 'display_active_shelves'
+KEY_LAST_SELECTED_SHELVES = 'last_selected_shelves'
+
 SHOW_BOOK_URL_PREFIX = '%s/book/show/' % cfg.URL
 SHOW_BOOK_URL_PREFIX2 = '%s/book/show/' % cfg.URL_HTTPS
 
@@ -346,7 +352,7 @@ class ChooseShelvesToSyncDialog(SizePersistedDialog):
         layout = QVBoxLayout(self)
         self.setLayout(layout)
 
-        self.default_prefs = { 'display_active_shelves': True, 'last_selected_shelves':[] }
+        self.default_prefs = { KEY_DISPLAY_ACTIVE_SHELVES: True, KEY_LAST_SELECTED_SHELVES:[] }
         other_prefs = gprefs.get(self.unique_pref_name+':other_prefs', self.default_prefs)
 
         self.values_list = QListWidget(self)
@@ -355,7 +361,7 @@ class ChooseShelvesToSyncDialog(SizePersistedDialog):
 
         self.display_active_shelves = QCheckBox(_('Show Active shelves only'))
         layout.addWidget(self.display_active_shelves)
-        self.display_active_shelves.setChecked(other_prefs.get('display_active_shelves',True))
+        self.display_active_shelves.setChecked(other_prefs.get(KEY_DISPLAY_ACTIVE_SHELVES,True))
         self.display_active_shelves.stateChanged[int].connect(self._display_active_shelves_changed)
 
         self.button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
@@ -363,7 +369,7 @@ class ChooseShelvesToSyncDialog(SizePersistedDialog):
         self.button_box.rejected.connect(self.reject)
         layout.addWidget(self.button_box)
 
-        self._display_shelves(other_prefs['last_selected_shelves'])
+        self._display_shelves(other_prefs[KEY_LAST_SELECTED_SHELVES])
 
         # Cause our dialog size to be restored from prefs or created on first usage
         self.resize_dialog()
@@ -388,8 +394,8 @@ class ChooseShelvesToSyncDialog(SizePersistedDialog):
 
     def _save_preferences(self):
         other_prefs = copy.deepcopy(self.default_prefs)
-        other_prefs['display_active_shelves'] = self.display_active_shelves.isChecked()
-        other_prefs['last_selected_shelves'] = self._get_selected_shelf_names()
+        other_prefs[KEY_DISPLAY_ACTIVE_SHELVES] = self.display_active_shelves.isChecked()
+        other_prefs[KEY_LAST_SELECTED_SHELVES] = self._get_selected_shelf_names()
         gprefs[self.unique_pref_name+':other_prefs'] = other_prefs
 
     def _get_selected_shelf_names(self):
@@ -590,7 +596,7 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         self.grhttp, self.id_caches, self.user_name, self.action, self.calibre_books = \
             (grhttp, id_caches, user_name, action, calibre_books)
         self.update_isbn = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_UPDATE_ISBN, 'NEVER')
-        self.default_prefs = { 'display_active_shelves': True, 'last_selected_shelves':[] }
+        self.default_prefs = { KEY_DISPLAY_ACTIVE_SHELVES: True, KEY_LAST_SELECTED_SHELVES:[] }
         self.reading_progress_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_READING_PROGRESS_COLUMN, '')
         self.rating_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_RATING_COLUMN, '')
         self.date_read_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_DATE_READ_COLUMN, '')
@@ -599,7 +605,6 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         self.is_rating_visible = False
         self.is_dateread_visible = False
         self.is_review_text_visible = False
-        self.read_shelf_name = 'read'
         self.plugin_action = plugin_action
 
         user_info = cfg.plugin_prefs[cfg.STORE_USERS].get(user_name)
@@ -731,9 +736,9 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         return self.put_finished_on_read_shelf.checkState() == Qt.Checked
 
     def put_finished_on_read_shelf_clicked(self, checked):
-        self.is_rating_visible = self.shelves_map[self.read_shelf_name].get(cfg.KEY_ADD_RATING, False) and checked
-        self.is_dateread_visible = self.shelves_map[self.read_shelf_name].get(cfg.KEY_ADD_DATE_READ, False) and checked
-        self.is_review_text_visible = self.shelves_map[self.read_shelf_name].get(cfg.KEY_ADD_REVIEW_TEXT, False) and checked
+        self.is_rating_visible = self.shelves_map[READ_SHELF].get(cfg.KEY_ADD_RATING, False) and checked
+        self.is_dateread_visible = self.shelves_map[READ_SHELF].get(cfg.KEY_ADD_DATE_READ, False) and checked
+        self.is_review_text_visible = self.shelves_map[READ_SHELF].get(cfg.KEY_ADD_REVIEW_TEXT, False) and checked
 
         self.summary_table.show_columns(self.is_rating_visible, self.is_dateread_visible, self.is_review_text_visible)
         
@@ -749,7 +754,8 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         upload_rating = self.is_rating_visible and len(self.rating_column) > 0
         upload_date_read = self.is_dateread_visible and len(self.date_read_column) > 0
         upload_review_text = self.is_review_text_visible and len(self.review_text_column) > 0
-        added_books = []
+        currently_reading_books = []
+        read_books = []
         self.plugin_action.progressbar_label(_('Updating Goodreads progress')+'...')
         self.plugin_action.progressbar_show(len(self.calibre_books))
         # Add/remove each linked book to the selected shelf
@@ -764,13 +770,14 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
                 self.grhttp.update_status(client, goodreads_id, progress, self.progress_is_percent, review_text)
                 if (upload_progress and progress):
                     calibre_book['goodreads_reading_progress'] = progress
-                    added_books.append(calibre_book)
 
                     if self.put_reading_on_currently_reading_shelf_checked and progress < 100:
-                        review_id = self.grhttp.add_remove_book_to_shelf(client, "currently-reading", goodreads_id, 'add')
+                        currently_reading_books.append(calibre_book)
+                        review_id = self.grhttp.add_remove_book_to_shelf(client, CURRENTLY_READING_SHELF, goodreads_id, 'add')
 
                     if self.put_finished_on_read_shelf_checked and progress >= 100:
-                        review_id = self.grhttp.add_remove_book_to_shelf(client, self.read_shelf_name, goodreads_id, 'add')
+                        read_books.append(calibre_book)
+                        review_id = self.grhttp.add_remove_book_to_shelf(client, READ_SHELF, goodreads_id, 'add')
                         # If adding books and rating/date read columns update the Goodreads review
                         if review_id:
                             if review_id and (upload_rating or upload_date_read or upload_review_text):
@@ -789,31 +796,36 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
                                     review_text = calibre_book['calibre_review_text']
                                     if review_text:
                                         calibre_book['goodreads_review_text'] = review_text
-                                self.grhttp.update_review(client, self.read_shelf_name, review_id, goodreads_id, rating, date_read, review_text)
-        # Finally, apply any "add" actions to books that were added to shelf
-        if len(added_books) > 0:
-            add_actions = []
-            # Include some actions for setting our rating/date read/review text if appropriate
-            if upload_progress:
-                update_progress_action = {'action':'ADD', 'column':self.reading_progress_column, 'value':'goodreads_reading_progress'}
-                add_actions.append(update_progress_action)
-                if self.put_finished_on_read_shelf_checked:
-                    if upload_rating:
-                        update_rating_action = {'action':'ADD', 'column':self.rating_column, 'value':'goodreads_rating'}
-                        add_actions.append(update_rating_action)
-                    if upload_date_read:
-                        upload_date_read_action = {'action':'ADD', 'column':self.date_read_column, 'value':'read_at'}
-                        add_actions.append(upload_date_read_action)
-                    if upload_review_text:
-                        upload_review_text_action = {'special':'review_text', 'action':'ADD', 'column':self.review_text_column, 'value':''}
-                        add_actions.append(upload_review_text_action)
-                    add_actions.extend(self.shelves_map[self.read_shelf_name].get(cfg.KEY_ADD_ACTIONS,[]))
-            if len(add_actions) > 0:
-                self.plugin_action.progressbar_label(_("Updating books in calibre..."))
-                CalibreDbHelper().apply_actions_to_calibre(self.gui, added_books, add_actions)
+                                self.grhttp.update_review(client, READ_SHELF, review_id, goodreads_id, rating, date_read, review_text)
+        # Finally, apply any "add" actions to books that were added to shelves
+        if len(currently_reading_books) > 0:
+            self._apply_add_actions_for_books(currently_reading_books, CURRENTLY_READING_SHELF, upload_progress)
+        if len(read_books) > 0:
+            self._apply_add_actions_for_books(read_books, READ_SHELF, upload_progress, upload_rating, upload_date_read, upload_review_text)
 
         self.accept()
         self.plugin_action.progressbar_hide()
+    
+    def _apply_add_actions_for_books(self, added_books, shelf_name, upload_progress, upload_rating=None, upload_date_read=None, upload_review_text=None):
+        add_actions = []
+        # Include some actions for setting our rating/date read/review text if appropriate
+        if upload_progress:
+            update_progress_action = {'action':'ADD', 'column':self.reading_progress_column, 'value':'goodreads_reading_progress'}
+            add_actions.append(update_progress_action)
+            if self.put_finished_on_read_shelf_checked:
+                if upload_rating:
+                    update_rating_action = {'action':'ADD', 'column':self.rating_column, 'value':'goodreads_rating'}
+                    add_actions.append(update_rating_action)
+                if upload_date_read:
+                    upload_date_read_action = {'action':'ADD', 'column':self.date_read_column, 'value':'read_at'}
+                    add_actions.append(upload_date_read_action)
+                if upload_review_text:
+                    upload_review_text_action = {'special':'review_text', 'action':'ADD', 'column':self.review_text_column, 'value':''}
+                    add_actions.append(upload_review_text_action)
+                add_actions.extend(self.shelves_map[shelf_name].get(cfg.KEY_ADD_ACTIONS,[]))
+        if len(add_actions) > 0:
+            self.plugin_action.progressbar_label(_("Updating books in calibre..."))
+            CalibreDbHelper().apply_actions_to_calibre(self.gui, added_books, add_actions)
 
     def save_preferences(self):
         other_prefs = copy.deepcopy(self.default_prefs)
@@ -1543,7 +1555,7 @@ class DoAddRemoveDialog(SizePersistedDialog):
         self.grhttp, self.id_caches, self.user_name, self.action, self.calibre_books = \
             (grhttp, id_caches, user_name, action, calibre_books)
         self.update_isbn = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_UPDATE_ISBN, 'NEVER')
-        self.default_prefs = { 'display_active_shelves': True, 'last_selected_shelves':[] }
+        self.default_prefs = { KEY_DISPLAY_ACTIVE_SHELVES: True, KEY_LAST_SELECTED_SHELVES:[] }
         self.rating_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_RATING_COLUMN, '')
         self.date_read_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_DATE_READ_COLUMN, '')
         self.review_text_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_REVIEW_TEXT_COLUMN, '')
@@ -1603,7 +1615,7 @@ class DoAddRemoveDialog(SizePersistedDialog):
         grid_layout.addWidget(self.values_list, 1, 0)
         self.display_active_shelves = QCheckBox(_('Show Active shelves only'))
         grid_layout.addWidget(self.display_active_shelves, 2, 0)
-        self.display_active_shelves.setChecked(other_prefs.get('display_active_shelves',True))
+        self.display_active_shelves.setChecked(other_prefs.get(KEY_DISPLAY_ACTIVE_SHELVES,True))
         self.display_active_shelves.stateChanged[int].connect(self.display_active_shelves_changed)
 
         self.summary_table = DoAddRemoveTableWidget(self, self.rating_column, self.date_read_column, self.review_text_column)
@@ -1648,7 +1660,7 @@ class DoAddRemoveDialog(SizePersistedDialog):
         self.cancel_button.clicked.connect(self.reject)
         layout.addWidget(button_box)
 
-        self.display_shelves(other_prefs['last_selected_shelves'])
+        self.display_shelves(other_prefs[KEY_LAST_SELECTED_SHELVES])
 
         self.resize(self.sizeHint())
 
@@ -1829,8 +1841,8 @@ class DoAddRemoveDialog(SizePersistedDialog):
 
     def save_preferences(self):
         other_prefs = copy.deepcopy(self.default_prefs)
-        other_prefs['display_active_shelves'] = self.display_active_shelves.isChecked()
-        other_prefs['last_selected_shelves'] = self._get_selected_shelf_names()
+        other_prefs[KEY_DISPLAY_ACTIVE_SHELVES] = self.display_active_shelves.isChecked()
+        other_prefs[KEY_LAST_SELECTED_SHELVES] = self._get_selected_shelf_names()
         gprefs[self.unique_pref_name+':other_prefs'] = other_prefs
 
     def handle_search_for_goodreads_books(self, rows, calibre_books):

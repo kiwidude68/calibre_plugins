@@ -645,32 +645,45 @@ class MaintainActionsDialog(SizePersistedDialog):
         spacerItem1 = QSpacerItem(20, 40, qSizePolicy_Minimum, qSizePolicy_Expanding)
         button_layout.addItem(spacerItem1)
 
+        # Do not allow ticking checkboxes for these items when the 'currently-reading' shelf,
+        # as they should only be applied on the 'read' shelf for reading progress purposes.
+        is_currently_reading_shelf = False
+        for shelf in shelves:
+            if shelf['name'] == 'currently-reading':
+                is_currently_reading_shelf = True
+                
         if is_shelf_add_actions:
             rating_title = _('Upload rating to Goodreads when adding to this shelf')
             date_read_title = _('Upload date read to Goodreads when adding to this shelf')
             review_text_title = _('Upload review text to Goodreads when adding to this shelf')
-            upload_rating_enabled = shelves[0].get(KEY_ADD_RATING, False)
-            upload_date_read_enabled = shelves[0].get(KEY_ADD_DATE_READ, False)
-            upload_review_text_enabled = shelves[0].get(KEY_ADD_REVIEW_TEXT, False)
+            upload_rating_enabled = shelves[0].get(KEY_ADD_RATING, False) and not is_currently_reading_shelf
+            upload_date_read_enabled = shelves[0].get(KEY_ADD_DATE_READ, False) and not is_currently_reading_shelf
+            upload_review_text_enabled = shelves[0].get(KEY_ADD_REVIEW_TEXT, False) and not is_currently_reading_shelf
         else:
             rating_title = _('Sync rating from Goodreads when syncing from this shelf')
             date_read_title = _('Sync date read from Goodreads when syncing from this shelf')
             review_text_title = _('Sync review text from Goodreads when syncing from this shelf')
-            upload_rating_enabled = shelves[0].get(KEY_SYNC_RATING, False)
-            upload_date_read_enabled = shelves[0].get(KEY_SYNC_DATE_READ, False)
-            upload_review_text_enabled = shelves[0].get(KEY_SYNC_REVIEW_TEXT, False)
+            upload_rating_enabled = shelves[0].get(KEY_SYNC_RATING, False) and not is_currently_reading_shelf
+            upload_date_read_enabled = shelves[0].get(KEY_SYNC_DATE_READ, False) and not is_currently_reading_shelf
+            upload_review_text_enabled = shelves[0].get(KEY_SYNC_REVIEW_TEXT, False) and not is_currently_reading_shelf
 
         self.upload_rating = QCheckBox(rating_title)
         layout.addWidget(self.upload_rating)
         self.upload_rating.setChecked(upload_rating_enabled)
+        if (is_currently_reading_shelf):
+            self.upload_rating.setDisabled(True)
 
         self.upload_date_read = QCheckBox(date_read_title)
         layout.addWidget(self.upload_date_read)
         self.upload_date_read.setChecked(upload_date_read_enabled)
+        if (is_currently_reading_shelf):
+            self.upload_date_read.setDisabled(True)
 
         self.upload_review_text = QCheckBox(review_text_title)
         layout.addWidget(self.upload_review_text)
         self.upload_review_text.setChecked(upload_review_text_enabled)
+        if (is_currently_reading_shelf):
+            self.upload_review_text.setDisabled(True)
 
         button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
         button_box.accepted.connect(self.accept)
