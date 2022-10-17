@@ -82,9 +82,9 @@ class ConfigWidget(QWidget):
         layout.addWidget(view_prefs_button)
 
     def save_settings(self):
-        self.library[KEY_COL_GCOVER] = self.gcover_col_combo.get_selected_column()
-        self.library[KEY_INTERVAL] = int(unicode(self.interval_lineEdit.text()))
-        set_library_config(self.plugin_action.gui.current_db, self.library)
+        self.library_config[KEY_COL_GCOVER] = self.gcover_col_combo.get_selected_column()
+        self.library_config[KEY_INTERVAL] = int(unicode(self.interval_lineEdit.text()))
+        set_library_config(self.plugin_action.gui.current_db, self.library_config)
 
     def get_custom_columns(self, column_types):
         custom_columns = self.plugin_action.gui.library_view.model().custom_columns
