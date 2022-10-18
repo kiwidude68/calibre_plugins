@@ -25,6 +25,8 @@ from calibre.utils.date import now, format_date, UNDEFINED_DATE
 
 from common_icons import get_pixmap
 
+# get_date_format
+#
 # CheckableTableWidgetItem
 # DateDelegate
 # DateTableWidgetItem
@@ -38,6 +40,17 @@ from common_icons import get_pixmap
 # KeyValueComboBox
 # NoWheelComboBox
 # ReadOnlyLineEdit
+
+# ----------------------------------------------
+#               Functions
+# ----------------------------------------------
+
+def get_date_format(tweak_name='gui_timestamp_display_format', default_fmt='dd MMM yyyy'):
+    from calibre.utils.config import tweaks
+    format = tweaks[tweak_name]
+    if format is None:
+        format = default_fmt
+    return format 
 
 # ----------------------------------------------
 #               Widgets
@@ -73,7 +86,6 @@ class CheckableTableWidgetItem(QTableWidgetItem):
         else:
             return self.checkState() == Qt.Checked
 
-
 from calibre.gui2.library.delegates import DateDelegate as _DateDelegate
 class DateDelegate(_DateDelegate):
     '''
@@ -83,8 +95,8 @@ class DateDelegate(_DateDelegate):
     '''
     def __init__(self, parent, fmt='dd MMM yyyy', default_to_today=True):
         super(DateDelegate, self).__init__(parent)
-        self.format = fmt
         self.default_to_today = default_to_today
+        self.format = get_date_format(default_fmt=fmt)
 
     def createEditor(self, parent, option, index):
         qde = QStyledItemDelegate.createEditor(self, parent, option, index)
@@ -119,7 +131,6 @@ class DateTableWidgetItem(QTableWidgetItem):
         if is_read_only:
             super(DateTableWidgetItem, self).__init__(format_date(date_read, fmt))
             self.setFlags(Qt.ItemIsSelectable|Qt.ItemIsEnabled)
-            self.setData(Qt.DisplayRole, QDateTime(date_read))
         else:
             super(DateTableWidgetItem, self).__init__('')
             self.setData(Qt.DisplayRole, QDateTime(date_read))

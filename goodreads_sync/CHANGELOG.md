@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.16.1] - 2022-10-18
+### Fixed
+- Date format on sync from shelf and reading progress dialogs no longer to show time element.
+
 ## [1.16.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

@@ -40,7 +40,7 @@ from calibre_plugins.goodreads_sync.common_compatibility import qSizePolicy_Mini
 from calibre_plugins.goodreads_sync.common_icons import get_icon, get_pixmap
 from calibre_plugins.goodreads_sync.common_dialogs import SizePersistedDialog
 from calibre_plugins.goodreads_sync.common_widgets import (DateDelegate, DateTableWidgetItem,
-                            ImageTitleLayout, ReadOnlyTableWidgetItem, ReadOnlyLineEdit)
+                            ImageTitleLayout, ReadOnlyTableWidgetItem, ReadOnlyLineEdit, get_date_format)
 from calibre_plugins.goodreads_sync.core import update_calibre_isbn_if_required, get_searchable_author, CalibreDbHelper
 
 try:
@@ -439,6 +439,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
         self.itemSelectionChanged.connect(self.item_selection_changed)
         self.doubleClicked.connect(self.search_for_goodreads_books_click)
         self.header_labels = [_('Status'), _('Title'), _('Author'), _('Series'), _('Progress'), _('Comment'), _('Rating'), _('Date Read'), _('Review')]
+        self.format = get_date_format()
 
     def setMinimumColumnWidth(self, col, minimum):
         if self.columnWidth(col) < minimum:
@@ -514,7 +515,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
             self.setItem(row, 8, QTableWidgetItem(calibre_book['calibre_review_text']))
         else:
             self.setItem(row, 6, RatingTableWidgetItem(0, is_read_only=True))
-            self.setItem(row, 7, DateTableWidgetItem(None, is_read_only=True))
+            self.setItem(row, 7, DateTableWidgetItem(None, is_read_only=True, fmt=self.format))
             self.setItem(row, 8, NumericTableWidgetItem(''))
         
         self.setSortingEnabled(True)
@@ -1905,6 +1906,7 @@ class DoShelfSyncTableWidget(QTableWidget):
         self.create_context_menu()
         self.itemSelectionChanged.connect(self.item_selection_changed)
         self.doubleClicked.connect(self.search_for_calibre_books_click)
+        self.format = get_date_format()
 
     def create_context_menu(self):
         self.setContextMenuPolicy(Qt.ActionsContextMenu)
@@ -1935,8 +1937,6 @@ class DoShelfSyncTableWidget(QTableWidget):
         self.setHorizontalHeaderLabels(header_labels)
         self.verticalHeader().setDefaultSectionSize(24)
 
-        # We need to re-sort the supplied data using the status attribute in the dictionary
-        #self.goodreads_books = sorted(goodreads_books, key=lambda k: '%d%s' % (k['status'], k['goodreads_id']))
         self.goodreads_books = goodreads_books
         for row, book in enumerate(self.goodreads_books):
             self.populate_table_row(row, book, book_index=row)
@@ -1949,7 +1949,7 @@ class DoShelfSyncTableWidget(QTableWidget):
         self.setRangeColumnWidth(1, 120, 200) # GR Title
         self.setRangeColumnWidth(2, 120, 200) # GR Author
         self.setMinimumColumnWidth(3, 90)
-        self.setMinimumColumnWidth(5, 90) # Ensure space for ISBN to be updated
+        self.setMinimumColumnWidth(5, 90) # Ensure space for date read to be updated
         self.setRangeColumnWidth(8, 120, 200) # calibre Title
         self.setRangeColumnWidth(9, 120, 200) # calibre Author
         self.setSortingEnabled(True)
@@ -1980,14 +1980,14 @@ class DoShelfSyncTableWidget(QTableWidget):
         self.setItem(row,  2, ReadOnlyTableWidgetItem(goodreads_book['goodreads_author']))
         self.setItem(row,  3, ReadOnlyTableWidgetItem(goodreads_book['goodreads_series']))
         self.setItem(row,  4, RatingTableWidgetItem(goodreads_book['goodreads_rating'] *2 , is_read_only=True))
-        self.setItem(row,  5, DateTableWidgetItem(goodreads_book['goodreads_read_at'], is_read_only=True))
+        self.setItem(row,  5, DateTableWidgetItem(goodreads_book['goodreads_read_at'], is_read_only=True, fmt=self.format))
         self.setItem(row,  6, ReadOnlyTableWidgetItem(goodreads_book['goodreads_isbn']))
         self.setItem(row,  7, ReadOnlyTableWidgetItem(goodreads_book['goodreads_shelves']))
         self.setItem(row,  8, SortableReadOnlyTableWidgetItem(goodreads_book['calibre_title'], sort_key=goodreads_book['calibre_title_sort']))
         self.setItem(row,  9, SortableReadOnlyTableWidgetItem(goodreads_book['calibre_author'], sort_key=goodreads_book['calibre_author_sort']))
         self.setItem(row, 10, ReadOnlyTableWidgetItem(goodreads_book['calibre_series']))
         self.setItem(row, 11, RatingTableWidgetItem(goodreads_book['calibre_rating'], is_read_only=True))
-        self.setItem(row, 12, DateTableWidgetItem(goodreads_book['calibre_date_read'], is_read_only=True))
+        self.setItem(row, 12, DateTableWidgetItem(goodreads_book['calibre_date_read'], is_read_only=True, fmt=self.format))
         self.setItem(row, 13, ReadOnlyTableWidgetItem(goodreads_book['calibre_isbn']))
         if book_index >= 0:
             self.setItem(row, 14, NumericTableWidgetItem(book_index, is_read_only=True))
@@ -2145,7 +2145,7 @@ class DoShelfSyncDialog(SizePersistedDialog):
         auto_match_result = gprefs.get(self.unique_pref_name+':auto match', False)
         self.auto_match_checkbox.setChecked(auto_match_result)
         self.auto_match_checkbox.stateChanged.connect(self.auto_match_state_changed)
-
+        
         button_box = QDialogButtonBox()
         self.sync_button = button_box.addButton(_('Sync Now'), QDialogButtonBox.AcceptRole)
         self.sync_button.setDefault(True)

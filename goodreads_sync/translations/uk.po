@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:05+0100\n"
+"POT-Creation-Date: 2022-10-16 14:23+0100\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:1034
+#: ..\common\common_dialogs.py:84 config.py:1049
 msgid "Keyboard shortcuts"
 msgstr "Клавіатурні скорочення"
 
@@ -92,169 +92,169 @@ msgstr "Всі налаштування для цього плагіну в ці
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:93
 msgid "Undefined"
 msgstr "Невизначено"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:148
 msgid "Restart required"
 msgstr "Потрібен перезапуск"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
 " користуватися цим додатком!"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:222
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
-#: action.py:56
+#: action.py:53
 msgid "Goodreads"
 msgstr "Goodreads"
 
-#: action.py:97 dialogs.py:1601
+#: action.py:94 dialogs.py:1597
 msgid "Add to shelf"
 msgstr "Додати на полицю"
 
-#: action.py:99 dialogs.py:1601
+#: action.py:96 dialogs.py:1597
 msgid "Remove from shelf"
 msgstr "Вилучити з полиці"
 
-#: action.py:101
+#: action.py:98
 msgid "Update reading progress"
 msgstr "Оновити поступ читання"
 
-#: action.py:104
+#: action.py:101
 msgid "Sync from shelf"
 msgstr "Синхронізувати з полицею"
 
-#: action.py:107
+#: action.py:104
 msgid "View shelf"
 msgstr "Переглянути полицю"
 
-#: action.py:111
+#: action.py:108
 msgid "Link to Goodreads"
 msgstr "Посилання на Goodreads"
 
-#: action.py:112
+#: action.py:109
 msgid "Add, replace or clear link to a Goodreads book"
 msgstr "Додати, замінити або вилучити посилання на книгу на Goodreads"
 
-#: action.py:114
+#: action.py:111
 msgid "Linked book"
 msgstr "Пов'язана книга"
 
-#: action.py:116
+#: action.py:113
 msgid "View linked book"
 msgstr "Переглянути пов'язану книгу"
 
-#: action.py:117
+#: action.py:114
 msgid "Open a web browser page showing the linked Goodreads book"
 msgstr ""
 "Відкрити сторінку браузера, де буде показано пов'язану книгу Goodreads"
 
-#: action.py:119 dialogs.py:244
+#: action.py:116 dialogs.py:250
 msgid "Switch Goodreads Edition"
 msgstr "Перемкнути видання Goodreads"
 
-#: action.py:120
+#: action.py:117
 msgid "Link to a different edition of a Goodreads book"
 msgstr "Пов'язати із іншим виданням книги Goodreads"
 
-#: action.py:127
+#: action.py:124
 msgid "Remove link"
 msgstr "Вилучити посилання"
 
-#: action.py:128
+#: action.py:125
 msgid "Clear the link with Goodreads"
 msgstr "Вилучити зв'язок із Goodreads"
 
-#: action.py:132
+#: action.py:129
 msgid "&Customize plugin"
 msgstr "&Налаштувати додаток"
 
-#: action.py:134
+#: action.py:131
 msgid "&Help"
 msgstr "&Довідка"
 
-#: action.py:150 action.py:182 action.py:211 action.py:217
+#: action.py:147 action.py:179 action.py:208 action.py:214
 msgid "User: {0}"
 msgstr "Користувач: {0}"
 
-#: action.py:208 action.py:222
+#: action.py:205 action.py:219
 msgid "Download tags from shelves"
 msgstr "Отримати мітки з полиць"
 
-#: action.py:209 action.py:212 action.py:223
+#: action.py:206 action.py:209 action.py:220
 msgid "Download shelves your book is on as tags"
 msgstr "Отримати полиці вашої книги як мітки"
 
-#: action.py:214 action.py:224
+#: action.py:211 action.py:221
 msgid "Upload tags as shelves"
 msgstr "Вивантажити мітки як полиці"
 
-#: action.py:215 action.py:218 action.py:225
+#: action.py:212 action.py:215 action.py:222
 msgid "Add book to shelves represented by your tags"
 msgstr "Додати книгу до полиць, які представлено вашими мітками"
 
-#: action.py:270
+#: action.py:267
 msgid "Added {0} books to shelf"
 msgstr "На полицю додано {0} книг"
 
-#: action.py:272
+#: action.py:269
 msgid "Removed {0} books from shelf"
 msgstr "Вилучити {0} книг з полиці"
 
-#: action.py:296
+#: action.py:293
 msgid "Updated progress for {0} books"
 msgstr "Оновлено поступ для {0} книг"
 
-#: action.py:305 action.py:333
+#: action.py:301 action.py:325
 msgid "Syncing books from shelves"
 msgstr "Синхронізуємо книги з полиць"
 
-#: action.py:308 action.py:318
+#: action.py:304 action.py:313
 msgid "Unable to Sync"
 msgstr "Не вдалося синхронізувати"
 
-#: action.py:309
+#: action.py:305
 msgid "You must specify sync actions or columns for at least one shelf first."
 msgstr ""
 "Вам спочатку слід вказати дії з синхронізації або стовпчики для принаймні "
 "однієї полиці."
 
-#: action.py:319
+#: action.py:314
 msgid "Unable to retrieve books for selected shelves."
 msgstr "Не вдалося отримати книги для позначених полиць."
 
-#: action.py:331
+#: action.py:324
 msgid "Synchronised {0} books from shelf"
 msgstr "Синхронізовано {0} книг з полиці"
 
-#: action.py:334
+#: action.py:326
 msgid "Updating books"
 msgstr "Оновлення книг"
 
-#: action.py:335
+#: action.py:327
 msgid "Book: %v"
 msgstr "Книга: %v"
 
-#: action.py:577
+#: action.py:535
 msgid "Too Many Rows"
 msgstr "Забагато рядків"
 
-#: action.py:578
+#: action.py:536
 msgid "Reduce your selection to at most 50 rows."
 msgstr "Зменште позначене до не більше 50 рядків."
 
-#: action.py:607 config.py:538 config.py:1178 dialogs.py:1785 dialogs.py:2469
+#: action.py:565 config.py:544 config.py:1193 dialogs.py:1781 dialogs.py:2466
 msgid "Are you sure?"
 msgstr "Ви певні?"
 
-#: action.py:608
+#: action.py:566
 msgid ""
 "Removing any linked Goodreads ids may result in you having to manually "
 "select the link again for these book(s)."
@@ -262,47 +262,47 @@ msgstr ""
 "Вилучення будь-яких пов'язаних ідентифікаторів Goodreads може призвести до "
 "потреби з вашого боку вручну вибрати посилання для цих книг."
 
-#: action.py:610
+#: action.py:568
 msgid "Are you sure you want to remove the link(s)?"
 msgstr "Ви справді хочете вилучити посилання?"
 
-#: action.py:619
+#: action.py:577
 msgid "Removing Goodreads ids from books"
 msgstr "Вилучення ідентифікаторів Goodreads з книг"
 
-#: action.py:661
+#: action.py:619
 msgid "No Goodreads Id"
 msgstr "Немає ідентифікатор Goodreads"
 
-#: action.py:662
+#: action.py:620
 msgid ""
 "You cannot switch editions for a book that is not already linked to "
 "Goodreads.<br>"
 msgstr ""
 "Не можна перемикати видання для книг, які ще не пов'язано із Goodreads.<br>"
 
-#: action.py:792
+#: action.py:749
 msgid "Updated tags for {0} books"
 msgstr "Оновлено мітки для {0} книг"
 
-#: action.py:794
+#: action.py:751
 msgid "No books required tags updating"
 msgstr "Жодна з книг не потребує оновлення міток"
 
-#: action.py:846
+#: action.py:803
 msgid "Updated {0} shelves for selected books"
 msgstr "Оновлено {0} полиць для позначених книг"
 
-#: action.py:848
+#: action.py:805
 msgid "No shelves required updating"
 msgstr "Жодна з полиць не потребує оновлення"
 
-#: action.py:896 action.py:912
+#: action.py:834 action.py:849
 msgid "Calibre must be restarted before the plugin can be configured."
 msgstr ""
 "Перш ніж додаток можна буде налаштувати, calibre має бути перезапущено."
 
-#: action.py:904
+#: action.py:841
 msgid ""
 "New custom colums have been created.\n"
 "You will need to restart calibre for this change to be applied."
@@ -310,23 +310,23 @@ msgstr ""
 "Було створено нові нетипові стовпчики.\n"
 "Вам слід перезапустити calibre, щоб цю зміну було застосовано."
 
-#: action.py:923
+#: action.py:858
 msgid "Goodreads Sync progress"
 msgstr "Поступ синхронізації Goodreads"
 
-#: config.py:128
+#: config.py:130
 msgid "Goodreads Tags"
 msgstr "Мітки Goodreads"
 
-#: config.py:131
+#: config.py:133
 msgid "Goodreads tags used for mapping to calbre."
 msgstr "Мітки Goodreads використано для прив'язки до calbre."
 
-#: config.py:133
+#: config.py:135
 msgid "Tags column:"
 msgstr "Стовпчик міток:"
 
-#: config.py:134
+#: config.py:136
 msgid ""
 "For use with the \"Download tags from shelves\" and \"Upload tags as "
 "shelves\" menu items"
@@ -334,19 +334,19 @@ msgstr ""
 "Для використання з пунктами меню «Отримати мітки з полиць» та «Вивантажити "
 "мітки як полиці»"
 
-#: config.py:138
+#: config.py:140
 msgid "Goodreads Rating"
 msgstr "Оцінка Goodreads"
 
-#: config.py:140
+#: config.py:142
 msgid "Rating for the book."
 msgstr "Оцінка книги."
 
-#: config.py:142
+#: config.py:144
 msgid "Rating column:"
 msgstr "Стовпчик оцінки:"
 
-#: config.py:143 config.py:152 config.py:161 config.py:170
+#: config.py:145 config.py:154 config.py:163 config.py:172
 msgid ""
 "For use with the \"Add to shelf\" and \"Sync from shelf\" menu items\n"
 "to synchronise with your Goodreads review for a book"
@@ -354,148 +354,148 @@ msgstr ""
 "Для використання з пунктами меню «Додати до полиці» і «Синхронізувати з полицею»\n"
 "з метою синхронізації з вашими рецензіями Goodreads для книги"
 
-#: config.py:147 dialogs.py:436 dialogs.py:1421 dialogs.py:1932
+#: config.py:149 dialogs.py:441 dialogs.py:1416 dialogs.py:1933
 msgid "Date Read"
 msgstr "Дата читання"
 
-#: config.py:149
+#: config.py:151
 msgid "Date when the book was last read."
 msgstr "Дата, коли книгу востаннє читали."
 
-#: config.py:151
+#: config.py:153
 msgid "Date read column:"
 msgstr "Стовпчик дати читання:"
 
-#: config.py:156
+#: config.py:158
 msgid "Goodreads Review"
 msgstr "Рецензія Goodreads"
 
-#: config.py:158
+#: config.py:160
 msgid "Review of book."
 msgstr "Рецензія щодо книги."
 
-#: config.py:160
+#: config.py:162
 msgid "Review text column:"
 msgstr "Стовпчик тексту рецензії:"
 
-#: config.py:165
+#: config.py:167
 msgid "Goodreads Progress"
 msgstr "Поступ Goodreads"
 
-#: config.py:167
+#: config.py:169
 msgid "Reading progress for the book"
 msgstr "Поступ читання книги"
 
-#: config.py:169
+#: config.py:171
 msgid "Reading progress column:"
 msgstr "Стовпчик поступу читання:"
 
-#: config.py:262
+#: config.py:267
 msgid "Never modify the calibre ISBN"
 msgstr "Ніколи не змінювати ISBN calibre"
 
-#: config.py:263
+#: config.py:268
 msgid "Replace calibre ISBN only if none present"
 msgstr "Замінити ISBN calibre, лише якщо його немає"
 
-#: config.py:264
+#: config.py:269
 msgid "Always overwrite calibre ISBN value"
 msgstr "Завжди перезаписувати значення ISBN calibre"
 
-#: config.py:293
+#: config.py:298
 msgid "Add value to column"
 msgstr "Додати значення до стовпчика"
 
-#: config.py:293
+#: config.py:298
 msgid "Remove value from column"
 msgstr "Вилучити значення зі стовпчика"
 
-#: config.py:337 config.py:342
+#: config.py:342 config.py:347
 msgid "None"
 msgstr "Немає"
 
-#: config.py:338 config.py:343
+#: config.py:343 config.py:348
 msgid "Today"
 msgstr "Сьогодні"
 
-#: config.py:344
+#: config.py:349
 msgid "Goodreads Date Read"
 msgstr "Дата читання Goodreads"
 
-#: config.py:345
+#: config.py:350
 msgid "Goodreads Date Added"
 msgstr "Дата додавання Goodreads"
 
-#: config.py:346
+#: config.py:351
 msgid "Goodreads Date Updated"
 msgstr "Дата оновлення Goodreads"
 
-#: config.py:347
+#: config.py:352
 msgid "Goodreads Date Started"
 msgstr "Дата початку Goodreads"
 
-#: config.py:377
+#: config.py:382
 msgid "Create Goodreads shelf"
 msgstr "Створити полицю Goodreads"
 
-#: config.py:383
+#: config.py:388
 msgid "Shelf name:"
 msgstr "Назва полиці:"
 
-#: config.py:387
+#: config.py:392
 msgid "A book can only be on one of your exclusive shelves"
 msgstr "Книга може перебувати лише на одній з ваших ексклюзивних полиць"
 
-#: config.py:388
+#: config.py:393
 msgid "Allowing customizing the order of books on this shelf"
 msgstr "Уможливлення налаштувань порядку книг на цій полиці"
 
-#: config.py:389
+#: config.py:394
 msgid "One shelf only can be featured at the top of your profile"
 msgstr "Рекомендованою на верхівці вашого профілю може бути лише одна полиця"
 
-#: config.py:432
+#: config.py:437
 msgid "Action"
 msgstr "Дія"
 
-#: config.py:432
+#: config.py:437
 msgid "Column"
 msgstr "Стовпчик"
 
-#: config.py:432
+#: config.py:437
 msgid "Value"
 msgstr "Значення"
 
-#: config.py:446
+#: config.py:451
 msgid "Invalid column"
 msgstr "Некоректний стовпчик"
 
-#: config.py:447
+#: config.py:452
 msgid "Removing the column '{0}' action as the column cannot be found"
 msgstr ""
 "Вилучаємо дію для стовпчика «{0}», оскільки не вдалося знайти стовпчик"
 
-#: config.py:535
+#: config.py:541
 msgid "Are you sure you want to delete this action?"
 msgstr "Ви справді хочете вилучити цю дію?"
 
-#: config.py:537
+#: config.py:543
 msgid "Are you sure you want to delete the selected {0} actions?"
 msgstr "Ви справді хочете вилучити позначені {0} дії?"
 
-#: config.py:591
+#: config.py:599
 msgid "Edit Shelf Add Actions"
 msgstr "Редагувати дії «Додати на полицю»"
 
-#: config.py:592
+#: config.py:600
 msgid "Edit add to shelf actions for {0} shelves"
 msgstr "Редагувати дії з полицею для {0} полиць"
 
-#: config.py:594
+#: config.py:602
 msgid "Edit add to shelf actions for '{0}' shelf"
 msgstr "Додати дії при додаванні до полиці для полиці «{0}»"
 
-#: config.py:595
+#: config.py:603
 msgid ""
 "&What should calibre do with matching linked books when you click 'Add to "
 "shelf'?"
@@ -503,19 +503,19 @@ msgstr ""
 "&Що має зробити calibre із відповідними пов'язаними книгами, коли ви "
 "натискатимете кнопку «Додати до полиці»?"
 
-#: config.py:598
+#: config.py:606
 msgid "Edit Shelf Sync Actions"
 msgstr "Редагувати дії при синхронізації полиці"
 
-#: config.py:599
+#: config.py:607
 msgid "Edit sync actions for {0} shelves"
 msgstr "Редагувати дії при синхронізації для {0} полиць"
 
-#: config.py:601
+#: config.py:609
 msgid "Edit sync actions for '{0}' shelf"
 msgstr "Редагувати дії з синхронізації для полиці «{0}»"
 
-#: config.py:602
+#: config.py:610
 msgid ""
 "&What should calibre do with matching linked books when you click 'Sync from"
 " shelf'?"
@@ -523,189 +523,185 @@ msgstr ""
 "&Що має зробити calibre із відповідними пов'язаними книгами, коли ви "
 "натискатимете кнопку «Синхронізувати полицю»?"
 
-#: config.py:627
+#: config.py:635
 msgid "Add action"
 msgstr "Додати дію"
 
-#: config.py:633
+#: config.py:641
 msgid "Delete action"
 msgstr "Вилучити дію"
 
-#: config.py:641
+#: config.py:656
 msgid "Upload rating to Goodreads when adding to this shelf"
 msgstr "Вивантажити оцінку на Goodreads при додаванні до цієї полиці"
 
-#: config.py:642
+#: config.py:657
 msgid "Upload date read to Goodreads when adding to this shelf"
 msgstr "Вивантажити дату читання на Goodreads при додаванні до цієї полиці"
 
-#: config.py:643
+#: config.py:658
 msgid "Upload review text to Goodreads when adding to this shelf"
 msgstr "Вивантажити текст рецензії на Goodreads при додаванні до цієї полиці"
 
-#: config.py:648
+#: config.py:663
 msgid "Sync rating from Goodreads when syncing from this shelf"
 msgstr "Синхронізувати оцінку з Goodreads при синхронізації з цією полицею"
 
-#: config.py:649
+#: config.py:664
 msgid "Sync date read from Goodreads when syncing from this shelf"
 msgstr ""
 "Синхронізувати дату читання з Goodreads при синхронізації з цією полицею"
 
-#: config.py:650
+#: config.py:665
 msgid "Sync review text from Goodreads when syncing from this shelf"
 msgstr ""
 "Синхронізувати текст рецензії з Goodreads при синхронізації з цією полицею"
 
-#: config.py:697
+#: config.py:718
 msgid "Active"
 msgstr "Активна"
 
-#: config.py:697
+#: config.py:718
 msgid "Count*"
 msgstr "Облік*"
 
-#: config.py:697
+#: config.py:718
 msgid "Shelf Add Actions"
 msgstr "Дії з додавання полиці"
 
-#: config.py:697
+#: config.py:718
 msgid "Shelf Name"
 msgstr "Назва полиці"
 
-#: config.py:697
+#: config.py:718
 msgid "Sync Actions"
 msgstr "Дії з синхронізації"
 
-#: config.py:697
+#: config.py:718
 msgid "calibre Tags"
 msgstr "Мітки calibre"
 
-#: config.py:716
+#: config.py:737
 msgid "Edit shelf add actions"
 msgstr "Редагувати дії з додавання полиці"
 
-#: config.py:719
+#: config.py:740
 msgid "Edit sync actions"
 msgstr "Редагувати дії з синхронізації"
 
-#: config.py:725
+#: config.py:746
 msgid "Make all Active"
 msgstr "Зробити активними усі"
 
-#: config.py:728
+#: config.py:749
 msgid "Make none Active"
 msgstr "Зробити неактивними усі"
 
-#: config.py:734
+#: config.py:755
 msgid "Edit Shelves on Goodreads"
 msgstr "Редагувати полиці на Goodreads"
 
-#: config.py:752
+#: config.py:773
 msgid "Shelf marked as exclusive"
 msgstr "Полицю позначено як виключну"
 
-#: config.py:755
+#: config.py:776
 msgid "Count as at last shelves list refresh"
 msgstr "Облік при освіженні списку останніх полиць"
 
-#: config.py:809
+#: config.py:830
 msgid "Add '{0}' to column '{1}', "
 msgstr "Додати «{0}» до стовпчика «{1}», "
 
-#: config.py:811
+#: config.py:832
 msgid "Remove '{0}' from column '{1}', "
 msgstr "Вилучити «{0}» зі стовпчика «{1}», "
 
-#: config.py:892
+#: config.py:913
 msgid "Select Goodreads user:"
 msgstr "Виберіть користувача Goodreads:"
 
-#: config.py:899
+#: config.py:920
 msgid "Add user profile"
 msgstr "Додати профіль користувача"
 
-#: config.py:904
+#: config.py:925
 msgid "Delete user profile"
 msgstr "Вилучити профіль користувача"
 
-#: config.py:908
+#: config.py:929
 msgid "Authorize Plugin with Goodreads"
 msgstr "Уповноважити додаток на Goodreads"
 
-#: config.py:914
-msgid "Help"
-msgstr "Довідка"
-
-#: config.py:920
+#: config.py:935
 msgid "User Shelves:"
 msgstr "Полиці користувача:"
 
-#: config.py:932
+#: config.py:947
 msgid "Refresh Shelves"
 msgstr "Освіжити полиці"
 
-#: config.py:933
+#: config.py:948
 msgid "Refresh the list of shelves and book counts from Goodreads"
 msgstr "Освіжити список полиць і облік книг за даними Goodreads"
 
-#: config.py:937
+#: config.py:952
 msgid "Add Shelf"
 msgstr "Додати полицю"
 
-#: config.py:938
+#: config.py:953
 msgid "Add a new shelf"
 msgstr "Додати нову полицю"
 
-#: config.py:943
+#: config.py:958
 msgid "Edit 'Shelf Add' Actions"
 msgstr "Редагувати дії «Додати на полицю»"
 
-#: config.py:944
+#: config.py:959
 msgid "Edit actions to apply when using 'Add to shelf'"
 msgstr ""
 "Редагувати дії, які слід застосувати при використанні пункту «Додати на "
 "полицю»"
 
-#: config.py:948
+#: config.py:963
 msgid "Edit 'Sync' Actions"
 msgstr "Редагувати дії «Синхронізувати»"
 
-#: config.py:949
+#: config.py:964
 msgid "Edit actions to apply when using 'Sync from shelf'"
 msgstr ""
 "Редагувати дії, які слід застосувати при використанні пункту «Синхронізувати"
 " з полицею»"
 
-#: config.py:958
+#: config.py:973
 msgid "Other Options:"
 msgstr "Інші параметри:"
 
-#: config.py:963
+#: config.py:978
 msgid "When linking to Goodreads:"
 msgstr "При пов'язуванні із Goodreads:"
 
-#: config.py:969
+#: config.py:984
 msgid "Display the 'Add to shelf' menu option"
 msgstr "Показати пункт меню «Додати на полицю»"
 
-#: config.py:970
+#: config.py:985
 msgid "Display the 'Remove from shelf' menu option"
 msgstr "Показати пункту меню «Вилучити з полиці»"
 
-#: config.py:971
+#: config.py:986
 msgid "Display the 'Update reading progress' menu option"
 msgstr "Показати пункт меню «Оновити поступ читання»"
 
-#: config.py:972
+#: config.py:987
 msgid "Display the 'Sync from shelf' menu option"
 msgstr "Показати пункт меню «Синхронізувати із полицею»"
 
-#: config.py:973
+#: config.py:988
 msgid "Display the 'View shelf' menu option"
 msgstr "Показати пункт меню «Переглянути полицю»"
 
-#: config.py:974
+#: config.py:989
 msgid ""
 "If the reading progress is the percent read, check this. Otherwise, the "
 "reading progress the page number."
@@ -713,28 +709,32 @@ msgstr ""
 "Якщо поступ читання визначається у відсотках читання, позначте цей пункт. "
 "Якщо пункт не буде позначено, поступ визначатимуться кількістю сторінок."
 
-#: config.py:974
+#: config.py:989
 msgid "Reading progress is percent read"
 msgstr "Поступ читання є часткою прочитаного"
 
-#: config.py:975
+#: config.py:990
 msgid "If adding empty books, store author as LN,FN"
 msgstr "При додаванні порожніх книг зберігати запис автора як «Прізвище,Ім'я»"
 
-#: config.py:984
+#: config.py:999
 msgid "Synchronisable Custom Columns:"
 msgstr "Придатні до синхронізації нетипові стовпчики:"
 
-#: config.py:1035
+#: config.py:1050
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 "Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
 
-#: config.py:1155
+#: config.py:1054
+msgid "Help"
+msgstr "Довідка"
+
+#: config.py:1170
 msgid "Add new user"
 msgstr "Додати нового користувача"
 
-#: config.py:1156
+#: config.py:1171
 msgid ""
 "You must create a profile for each Goodreads user you will connect "
 "to.<br>Enter a unique display name for this user profile:"
@@ -743,125 +743,146 @@ msgstr ""
 "якими ви встановлюватимете з'єднання.<br>Введіть унікальну показану назву "
 "для цього профілю користувача:"
 
-#: config.py:1164
+#: config.py:1179
 msgid "A user with the same name already exists"
 msgstr "Запис користувача із такою назвою вже існує"
 
-#: config.py:1164
+#: config.py:1179
 msgid "Add Failed"
 msgstr "Не вдалося додати"
 
-#: config.py:1179
+#: config.py:1194
 msgid "Do you want to delete the user profile for '{0}'"
 msgstr "Хочете вилучити профіль користувача для «{0}»"
 
-#: config.py:1196
+#: config.py:1211
 msgid "Confirm Authorization"
 msgstr "Підтвердження уповноваження"
 
-#: config.py:1197
+#: config.py:1212
 msgid ""
 "Have you clicked 'Allow access' for this plugin on the Goodreads website?"
 msgstr ""
 "Чи натисли ви кнопку «Allow access» для цього додатка на сайті Goodreads?"
 
-#: config.py:1212
+#: config.py:1227
 msgid "Goodreads failure"
 msgstr "Помилка на Goodreads"
 
-#: config.py:1212
+#: config.py:1227
 msgid "Unable to obtain the user id"
 msgstr "Не вдалося отримати ідентифікатор користувача"
 
-#: config.py:1258
+#: config.py:1273
 msgid "Duplicate shelf name"
 msgstr "Дублювання назви полиці"
 
-#: config.py:1259
+#: config.py:1274
 msgid "There is already a shelf named:"
 msgstr "Вже існує полиця із такою назвою:"
 
-#: core.py:48 core.py:459 core.py:461 dialogs.py:299 dialogs.py:301
-#: dialogs.py:1152 dialogs.py:1154
+#: core.py:48 core.py:465 core.py:467 dialogs.py:305 dialogs.py:307
+#: dialogs.py:1147 dialogs.py:1149
 msgid "Unknown"
 msgstr "Невідомо"
 
-#: core.py:402
+#: core.py:194
+msgid "Goodreads Failure"
+msgstr "Помилка на Goodreads"
+
+#: core.py:195
+msgid "The request contacting Goodreads has failed."
+msgstr "Запит щодо встановлення зв'язку з Goodreads зазнав невдачі."
+
+#: core.py:196
+msgid ""
+"If it reoccurs you may have exceeded a request limit imposed by Goodreads."
+msgstr ""
+"Якщо помилка повторюється, можливо, ви перевищили обмеження на кількість "
+"запитів, яке встановлено на Goodreads."
+
+#: core.py:197
+msgid "In which case wait an additional 5-10 minutes before retrying."
+msgstr ""
+"У цьому випадку зачекайте додаткові 5-10 хвилин, перш ніж повторювати "
+"спробу."
+
+#: core.py:408
 msgid "Page"
 msgstr "Сторінка"
 
-#: core.py:405
+#: core.py:411
 msgid "Syncing from shelf: {0}"
 msgstr "Синхронізація із полицею: {0}"
 
-#: dialogs.py:125 dialogs.py:968
+#: dialogs.py:131 dialogs.py:963
 msgid "View &book on Goodreads.com"
 msgstr "Переглянути &книгу на Goodreads.com"
 
-#: dialogs.py:132 dialogs.py:975
+#: dialogs.py:138 dialogs.py:970
 msgid "Paste Goodreads.com url"
 msgstr "Вставте адресу Goodreads.com"
 
-#: dialogs.py:133 dialogs.py:976
+#: dialogs.py:139 dialogs.py:971
 msgid "Ctrl+V"
 msgstr "Ctrl+V"
 
-#: dialogs.py:141
+#: dialogs.py:147
 msgid "Cover"
 msgstr "Обкладинка"
 
-#: dialogs.py:141
+#: dialogs.py:147
 msgid "Edition"
 msgstr "Видання"
 
-#: dialogs.py:141 dialogs.py:436 dialogs.py:984 dialogs.py:1218
-#: dialogs.py:1421
+#: dialogs.py:147 dialogs.py:441 dialogs.py:979 dialogs.py:1213
+#: dialogs.py:1416
 msgid "Title"
 msgstr "Назва"
 
-#: dialogs.py:247
+#: dialogs.py:253
 msgid "Goodreads.com Editions"
 msgstr "Видання Goodreads.com"
 
-#: dialogs.py:251 dialogs.py:1101
+#: dialogs.py:257 dialogs.py:1096
 msgid "Calibre book:"
 msgstr "Книга calibre:"
 
-#: dialogs.py:255 dialogs.py:1105 dialogs.py:1292
+#: dialogs.py:261 dialogs.py:1100 dialogs.py:1287
 msgid "Title:"
 msgstr "Назва:"
 
-#: dialogs.py:257 dialogs.py:1107 dialogs.py:1294
+#: dialogs.py:263 dialogs.py:1102 dialogs.py:1289
 msgid "Author:"
 msgstr "Автор:"
 
-#: dialogs.py:259 dialogs.py:1109 dialogs.py:1296
+#: dialogs.py:265 dialogs.py:1104 dialogs.py:1291
 msgid "Series:"
 msgstr "Цикл:"
 
-#: dialogs.py:261 dialogs.py:1111 dialogs.py:1298
+#: dialogs.py:267 dialogs.py:1106 dialogs.py:1293
 msgid "ISBN:"
 msgstr "ISBN:"
 
-#: dialogs.py:265
+#: dialogs.py:271
 msgid "Select the Goodreads edition to link to this calibre book:"
 msgstr "Виберіть видання Goodreads для пов'язування із цією книгою calibre:"
 
-#: dialogs.py:272 dialogs.py:1122
+#: dialogs.py:278 dialogs.py:1117
 msgid "You can drag/drop a Goodreads website link to add it to the results."
 msgstr ""
 "Ви можете перетягнути і скинути посилання на сайт Goodreads, щоб додати його"
 " до результатів."
 
-#: dialogs.py:281 dialogs.py:1133
+#: dialogs.py:287 dialogs.py:1128
 msgid "Search Goodreads.com"
 msgstr "Шукати на Goodreads.com"
 
-#: dialogs.py:284 dialogs.py:1136 dialogs.py:1356
+#: dialogs.py:290 dialogs.py:1131 dialogs.py:1351
 msgid "Skip"
 msgstr "Пропустити"
 
-#: dialogs.py:286 dialogs.py:1138 dialogs.py:1358
+#: dialogs.py:292 dialogs.py:1133 dialogs.py:1353
 msgid ""
 "Skip this book and move to the next:\n"
 "'{0}'"
@@ -869,63 +890,63 @@ msgstr ""
 "Пропустити цю книгу і перейти до наступної:\n"
 "«{0}»"
 
-#: dialogs.py:341
+#: dialogs.py:347
 msgid "Select shelves to sync from:"
 msgstr "Виберіть полиці для синхронізації:"
 
-#: dialogs.py:356 dialogs.py:1620
+#: dialogs.py:362 dialogs.py:1616
 msgid "Show Active shelves only"
 msgstr "Показувати лише активні полиці"
 
-#: dialogs.py:405 dialogs.py:1763
+#: dialogs.py:411 dialogs.py:1759
 msgid "No shelves selected"
 msgstr "Не позначено жодної полиці"
 
-#: dialogs.py:405 dialogs.py:1763
+#: dialogs.py:411 dialogs.py:1759
 msgid "You must select one or more shelves first."
 msgstr "Вам слід спочатку вибрати одну або декілька полиць."
 
-#: dialogs.py:436
+#: dialogs.py:441
 msgid "Comment"
 msgstr "Коментар"
 
-#: dialogs.py:436
+#: dialogs.py:441
 msgid "Progress"
 msgstr "Поступ"
 
-#: dialogs.py:436 dialogs.py:984 dialogs.py:1218 dialogs.py:1421
+#: dialogs.py:441 dialogs.py:979 dialogs.py:1213 dialogs.py:1416
 msgid "Author"
 msgstr "Автор"
 
-#: dialogs.py:436 dialogs.py:984 dialogs.py:1218 dialogs.py:1421
+#: dialogs.py:441 dialogs.py:979 dialogs.py:1213 dialogs.py:1416
 msgid "Series"
 msgstr "Цикли"
 
-#: dialogs.py:436 dialogs.py:1421
+#: dialogs.py:441 dialogs.py:1416
 msgid "Rating"
 msgstr "Оцінка"
 
-#: dialogs.py:436 dialogs.py:1421
+#: dialogs.py:441 dialogs.py:1416
 msgid "Review"
 msgstr "Рецензія"
 
-#: dialogs.py:436 dialogs.py:1421 dialogs.py:1930
+#: dialogs.py:441 dialogs.py:1416 dialogs.py:1931
 msgid "Status"
 msgstr "Стан"
 
-#: dialogs.py:444 dialogs.py:1430
+#: dialogs.py:449 dialogs.py:1425
 msgid "Search for book in Goodreads"
 msgstr "Шукати книгу на Goodreads"
 
-#: dialogs.py:450 dialogs.py:1436 dialogs.py:1922
+#: dialogs.py:455 dialogs.py:1431 dialogs.py:1923
 msgid "&View book on Goodreads.com"
 msgstr "Пере&глянути книгу на Goodreads.com"
 
-#: dialogs.py:630 dialogs.py:637
+#: dialogs.py:629 dialogs.py:636
 msgid "Update Reading Progress"
 msgstr "Оновити поступ читання"
 
-#: dialogs.py:644 dialogs.py:1608
+#: dialogs.py:643 dialogs.py:1604
 msgid ""
 "To fix missing links, double click to search for a matching book in "
 "Goodreads"
@@ -933,90 +954,90 @@ msgstr ""
 "Щоб виправити проблему із посиланнями, яких не вистачає, двічі клацніть для "
 "пошуку відповідної книги на Goodreads"
 
-#: dialogs.py:659
+#: dialogs.py:658
 msgid "Put books on currently-reading shelf"
 msgstr "Розмістити книги на полиці книг, які ви зараз читаєте"
 
-#: dialogs.py:660
+#: dialogs.py:659
 msgid ""
-"If the reading progress is being updated, but the books is not finished, put"
-" the books onto the 'currently-reading' shelf."
+"If the reading progress is being updated, but the books are not finished, "
+"put the books onto the 'currently-reading' shelf."
 msgstr ""
 "Якщо значення поступу читання оновлюється, але читання книг не завершено, "
 "розмістити книги на полиці «Зараз читаю»."
 
-#: dialogs.py:664
-msgid "Put Finished books on read shelf"
+#: dialogs.py:663
+msgid "Put finished books on read shelf"
 msgstr "Розмістити книги, які прочитано, на полиці прочитаних книг"
 
-#: dialogs.py:665
+#: dialogs.py:664
 msgid "If the reading progress is 100%, put the books onto the 'read' shelf."
 msgstr ""
 "Якщо значення поступу читання дорівнює 100%, розмістити книги на полиці "
 "«Прочитані»."
 
-#: dialogs.py:673 dialogs.py:1656
+#: dialogs.py:672 dialogs.py:1652
 msgid "Search Goodreads"
 msgstr "Шукати на Goodreads"
 
-#: dialogs.py:676
+#: dialogs.py:675
 msgid "Update Progress"
 msgstr "Оновити поступ"
 
-#: dialogs.py:680 dialogs.py:1663 dialogs.py:2155
+#: dialogs.py:679 dialogs.py:1659 dialogs.py:2153
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: dialogs.py:691 dialogs.py:701 dialogs.py:1720 dialogs.py:1730
+#: dialogs.py:690 dialogs.py:700 dialogs.py:1716 dialogs.py:1726
 msgid "No Goodreads book linked!"
 msgstr "Не пов'язано жодних книг Goodreads!"
 
-#: dialogs.py:704 dialogs.py:1733 dialogs.py:2291
+#: dialogs.py:703 dialogs.py:1729 dialogs.py:2289
 msgid "Ready"
 msgstr "Готово"
 
-#: dialogs.py:726 dialogs.py:1755 dialogs.py:2219
+#: dialogs.py:725 dialogs.py:1751 dialogs.py:2217
 msgid "{0} missing links"
 msgstr "{0} пропущених зв'язки"
 
-#: dialogs.py:728 dialogs.py:1757 dialogs.py:2221
+#: dialogs.py:727 dialogs.py:1753 dialogs.py:2219
 msgid "{0}, {1} warnings"
 msgstr "{0}, {1} попередження"
 
-#: dialogs.py:762
+#: dialogs.py:759
 msgid "Updating Goodreads progress"
 msgstr "Оновлення поступу на Goodreads"
 
-#: dialogs.py:829
+#: dialogs.py:827
 msgid "Updating books in calibre..."
 msgstr "Оновлення книг у calibre..."
 
-#: dialogs.py:900
+#: dialogs.py:895
 msgid "You are already linked to this calibre book"
 msgstr "Ви вже пов'язали цю книгу у calibre"
 
-#: dialogs.py:903
+#: dialogs.py:898
 msgid "This calibre book is linked to a different Goodreads book."
 msgstr "Цю книгу calibre пов'язано із іншою книгою Goodreads."
 
-#: dialogs.py:913
+#: dialogs.py:908
 msgid "You have already linked to this Goodreads book"
 msgstr "Ви вже пов'язали книгу з цією книгою Goodreads"
 
-#: dialogs.py:916
+#: dialogs.py:911
 msgid "This Goodreads book is linked to a different calibre book."
 msgstr "Цю книгу Goodreads пов'язано із іншою книгою calibre."
 
-#: dialogs.py:924
+#: dialogs.py:919
 msgid "You must link this calibre book to a matching book in Goodreads"
 msgstr ""
 "Вам слід пов'язати цю книгу calibre із відповідною книгою на Goodreads"
 
-#: dialogs.py:925
+#: dialogs.py:920
 msgid "No changes will be made to your shelf in Goodreads for this book"
 msgstr "До вашої полиці на Goodreads для цієї книги не буде внесено змін"
 
-#: dialogs.py:944
+#: dialogs.py:939
 msgid ""
 "You must link this Goodreads book to a matching book in calibre \n"
 "in order for any sync actions to be applied"
@@ -1024,7 +1045,7 @@ msgstr ""
 "Вам слід пов'язати цю книгу Goodreads із відповідною книгою у calibre, \n"
 "щоб можна було застосувати будь-які дії з синхронізації"
 
-#: dialogs.py:946
+#: dialogs.py:941
 msgid ""
 "No actions have been set for this shelf.\n"
 "Use 'Customize plugin' to specify the actions"
@@ -1032,11 +1053,11 @@ msgstr ""
 "Для цієї полиці не було встановлено дій.\n"
 "Скористайтеся пунктом «Налаштувати додаток» для визначення дій"
 
-#: dialogs.py:948
+#: dialogs.py:943
 msgid "Actions will be applied when you click Sync Now"
 msgstr "Дії буде застосовано, коли ви натиснете кнопку «Синхронізувати»"
 
-#: dialogs.py:949
+#: dialogs.py:944
 msgid ""
 "An empty book will be created in calibre for this book \n"
 "using the Goodreads metadata"
@@ -1044,156 +1065,156 @@ msgstr ""
 "Для цієї книги у calibre буде створено порожню книгу на \n"
 "основі метаданих Goodreads"
 
-#: dialogs.py:1092
+#: dialogs.py:1087
 msgid "Search for Goodreads book"
 msgstr "Шукати книгу Goodreads"
 
-#: dialogs.py:1095
+#: dialogs.py:1090
 msgid "Goodreads.com matches for Title/Author"
 msgstr "Відповідники на Goodreads.com для назви/автора"
 
-#: dialogs.py:1097
+#: dialogs.py:1092
 msgid "Goodreads.com matches for ISBN"
 msgstr "Відповідники Goodreads.com для ISBN"
 
-#: dialogs.py:1115
+#: dialogs.py:1110
 msgid "Select the Goodreads book to link to this calibre book:"
 msgstr "Виберіть книгу Goodreads для прив'язування до цієї книги calibre:"
 
-#: dialogs.py:1130
+#: dialogs.py:1125
 msgid "Switch Edition"
 msgstr "Перемкнути видання"
 
-#: dialogs.py:1181
+#: dialogs.py:1176
 msgid "No book selected"
 msgstr "Не позначено жодної книги"
 
-#: dialogs.py:1181
+#: dialogs.py:1176
 msgid "You must select a book to switch edition"
 msgstr "Вам слід позначити книгу, щоб перемкнути видання"
 
-#: dialogs.py:1188
+#: dialogs.py:1183
 msgid "Invalid book"
 msgstr "Некоректна книга"
 
-#: dialogs.py:1188
+#: dialogs.py:1183
 msgid "No goodreads work id found for this book"
 msgstr "Для цієї книги не знайдено робочого ідентифікатора goodreads"
 
-#: dialogs.py:1218
+#: dialogs.py:1213
 msgid "ISBN"
 msgstr "ISBN"
 
-#: dialogs.py:1282
+#: dialogs.py:1277
 msgid "Search for calibre Book"
 msgstr "Шукати книгу calibre"
 
-#: dialogs.py:1285
+#: dialogs.py:1280
 msgid "calibre Search Results"
 msgstr "Результати пошуку у calibre"
 
-#: dialogs.py:1288
+#: dialogs.py:1283
 msgid "Goodreads book:"
 msgstr "Книга Goodreads:"
 
-#: dialogs.py:1302
+#: dialogs.py:1297
 msgid "Select a calibre book to link to this Goodreads book:"
 msgstr "Виберіть книгу calibre для прив'язування до цієї книги Goodreads:"
 
-#: dialogs.py:1308
+#: dialogs.py:1303
 msgid "Or, try a different calibre search:"
 msgstr "Або спробуйте інший пошук у calibre:"
 
-#: dialogs.py:1313
+#: dialogs.py:1308
 msgid "&Title:"
 msgstr "&Назва:"
 
-#: dialogs.py:1321
+#: dialogs.py:1316
 msgid "&Author:"
 msgstr "&Автор:"
 
-#: dialogs.py:1330
+#: dialogs.py:1325
 msgid "&Go!"
 msgstr "Д&авай!"
 
-#: dialogs.py:1333
+#: dialogs.py:1328
 msgid "Search again using this title/author"
 msgstr "Шукати знову за цією парою назва-автор"
 
-#: dialogs.py:1336
+#: dialogs.py:1331
 msgid "Clear the title field"
 msgstr "Спорожнити поле назви"
 
-#: dialogs.py:1340
+#: dialogs.py:1335
 msgid "Clear the author field"
 msgstr "Спорожнити поле автора"
 
-#: dialogs.py:1397
+#: dialogs.py:1392
 msgid "Overwrite Goodreads Link"
 msgstr "Перезаписати посилання Goodreads"
 
-#: dialogs.py:1398
+#: dialogs.py:1393
 msgid "This calibre book is already linked to a different Goodreads book."
 msgstr "Цю книгу calibre вже пов'язано із іншою книгою Goodreads."
 
-#: dialogs.py:1399
+#: dialogs.py:1394
 msgid "Only one Goodreads book can be linked to a calibre book at a time."
 msgstr ""
 "Одночасно із однією книгою Goodreads може бути пов'язано лише одну книгу "
 "calibre."
 
-#: dialogs.py:1400
+#: dialogs.py:1395
 msgid "Click Yes to overwrite the link to this book, No to Cancel"
 msgstr ""
 "Натисніть кнопку «Так», щоб перезаписати посилання на цю книгу, кнопку «Ні»,"
 " щоб скасувати перезаписування"
 
-#: dialogs.py:1613
+#: dialogs.py:1609
 msgid "Select shelf:"
 msgstr "Виберіть полицю:"
 
-#: dialogs.py:1614
+#: dialogs.py:1610
 msgid "Select one or more shelves to add or remove from"
 msgstr "Виберіть одну або декілька полиць для додавання або вилучення"
 
-#: dialogs.py:1639
+#: dialogs.py:1635
 msgid "Add calibre Rating to Goodreads"
 msgstr "Додати оцінку у calibre на Goodreads"
 
-#: dialogs.py:1645
+#: dialogs.py:1641
 msgid "Add calibre Date Read to Goodreads"
 msgstr "Додати дату читання calibre на Goodreads"
 
-#: dialogs.py:1651
+#: dialogs.py:1647
 msgid "Add calibre Review Text to Goodreads"
 msgstr "Додати текст рецензії calibre на Goodreads"
 
-#: dialogs.py:1659
+#: dialogs.py:1655
 msgid "Add to Shelf"
 msgstr "Додати на полицю"
 
-#: dialogs.py:1659
+#: dialogs.py:1655
 msgid "Remove from Shelf"
 msgstr "Вилучити з полиці"
 
-#: dialogs.py:1773
+#: dialogs.py:1769
 msgid "Too many shelves"
 msgstr "Забагато полиць"
 
-#: dialogs.py:1773
+#: dialogs.py:1769
 msgid "You cannot add to more than one exclusive shelf."
 msgstr "Ви не можете додати більше однієї виключної полиці."
 
-#: dialogs.py:1777
+#: dialogs.py:1773
 msgid "Exclusive Shelf Warning"
 msgstr "Попередження щодо виключної полиці"
 
-#: dialogs.py:1778
+#: dialogs.py:1774
 msgid "You are about to remove from a shelf marked as exclusive."
 msgstr ""
 "Ви наказали програмі вилучити книгу з полиці, яку позначено як виключну."
 
-#: dialogs.py:1779
+#: dialogs.py:1775
 msgid ""
 "This will result in these books being <b>moved</b> to one of your other "
 "shelves rather than being deleted from all shelves."
@@ -1201,11 +1222,11 @@ msgstr ""
 "Це призведе до того, що ці книги буде <b>пересунуто</b> до однієї з ваших "
 "інших полиць, а не вилучено з усіх полиць."
 
-#: dialogs.py:1781 dialogs.py:1787
+#: dialogs.py:1777 dialogs.py:1783
 msgid "Do you want to continue?"
 msgstr "Продовжити?"
 
-#: dialogs.py:1786
+#: dialogs.py:1782
 msgid ""
 "There are books in this list not yet linked to calibre which will be "
 "ignored."
@@ -1213,98 +1234,98 @@ msgstr ""
 "У цьому списку є книги, які ще не пов'язано із calibre. Їх буде "
 "проігноровано."
 
-#: dialogs.py:1910 dialogs.py:2157
+#: dialogs.py:1911 dialogs.py:2155
 msgid "Search calibre"
 msgstr "Шукати у calibre"
 
-#: dialogs.py:1916
+#: dialogs.py:1917
 msgid "Add empty book to calibre"
 msgstr "Додати порожню книгу у calibre"
 
-#: dialogs.py:1930
+#: dialogs.py:1931
 msgid "GR Author"
 msgstr "Автор на GR"
 
-#: dialogs.py:1930
+#: dialogs.py:1931
 msgid "GR Title"
 msgstr "Назва на GR"
 
-#: dialogs.py:1931
+#: dialogs.py:1932
 msgid "GR Date Read"
 msgstr "Дата читання на GR"
 
-#: dialogs.py:1931
+#: dialogs.py:1932
 msgid "GR ISBN"
 msgstr "ISBN GR"
 
-#: dialogs.py:1931
+#: dialogs.py:1932
 msgid "GR Rating"
 msgstr "Оцінка на GR"
 
-#: dialogs.py:1931
+#: dialogs.py:1932
 msgid "GR Series"
 msgstr "Цикл на GR"
 
-#: dialogs.py:1931
+#: dialogs.py:1932
 msgid "Linked to calibre Title"
 msgstr "Пов'язано із назвою calibre"
 
-#: dialogs.py:1931
+#: dialogs.py:1932
 msgid "Shelves"
 msgstr "Полиці"
 
-#: dialogs.py:1932
+#: dialogs.py:1933
 msgid "calibre Author"
 msgstr "Автор у calibre"
 
-#: dialogs.py:1932
+#: dialogs.py:1933
 msgid "calibre ISBN"
 msgstr "ISBN calibre"
 
-#: dialogs.py:1932
+#: dialogs.py:1933
 msgid "calibre Rating"
 msgstr "Оцінка у calibre"
 
-#: dialogs.py:1932
+#: dialogs.py:1933
 msgid "calibre Series"
 msgstr "Цикл у calibre"
 
-#: dialogs.py:2080
+#: dialogs.py:2081
 msgid "Sync from Goodreads Shelf"
 msgstr "Синхронізувати із полицею на Goodreads"
 
-#: dialogs.py:2093
+#: dialogs.py:2094
 msgid "Sync from '{0}' shelf"
 msgstr "Синхронізувати з полицею «{0}»"
 
-#: dialogs.py:2095
+#: dialogs.py:2096
 msgid "Sync from {0} shelves"
 msgstr "Синхронізувати із полицями {0}"
 
-#: dialogs.py:2101
+#: dialogs.py:2102
 msgid ""
 "To fix missing links, double click to search for a matching book in calibre."
 msgstr ""
 "Щоб виправити проблему із посиланнями, яких не вистачає, двічі клацніть для "
 "пошуку відповідної книги у calibre."
 
-#: dialogs.py:2124
+#: dialogs.py:2122
 msgid "The following actions will be performed for books that are synced:"
 msgstr "Наступні дії буде виконано для книг, які синхронізуються:"
 
-#: dialogs.py:2132
+#: dialogs.py:2130
 msgid "Add Goodreads Rating to calibre"
 msgstr "Додати оцінку Goodreads до calibre"
 
-#: dialogs.py:2137
+#: dialogs.py:2135
 msgid "Add Goodreads Date Read to calibre"
 msgstr "Додати дату читання Goodreads до calibre"
 
-#: dialogs.py:2142
+#: dialogs.py:2140
 msgid "Add Goodreads Review Text to calibre"
 msgstr "Додати текст рецензії Goodreads до calibre"
 
-#: dialogs.py:2145
+#: dialogs.py:2143
 msgid ""
 "When searching calibre, if only one result is found then automatically link "
 "to it without prompting"
@@ -1312,35 +1333,35 @@ msgstr ""
 "При пошуку у calibre, якщо буде знайдено один результат, автоматично "
 "пов'язати його без додаткових запитів"
 
-#: dialogs.py:2152
+#: dialogs.py:2150
 msgid "Sync Now"
 msgstr "Синхронізувати"
 
-#: dialogs.py:2175
+#: dialogs.py:2173
 msgid "For books on the <b>{0}</b> shelf:<br>"
 msgstr "Для книг на полиці <b>{0}</b>:<br>"
 
-#: dialogs.py:2179
+#: dialogs.py:2177
 msgid "+ Add '{0}' to column '{1}'<br>"
 msgstr "+ Додати «{0}» до стовпчика «{1}»<br>"
 
-#: dialogs.py:2181
+#: dialogs.py:2179
 msgid "- Remove '{0}' from column '{1}'<br>"
 msgstr "- Вилучити «{0}» зі стовпчика «{1}»<br>"
 
-#: dialogs.py:2223
+#: dialogs.py:2221
 msgid "{0}, {1} books to add"
 msgstr "{0}, {1} книг для додавання"
 
-#: dialogs.py:2294
+#: dialogs.py:2292
 msgid "No calibre book linked!"
 msgstr "Не пов'язано жодної книги calibre!"
 
-#: dialogs.py:2343
+#: dialogs.py:2340
 msgid "Add to calibre"
 msgstr "Додати до calibre"
 
-#: dialogs.py:2470
+#: dialogs.py:2467
 msgid ""
 "There are books in this list not yet linked to calibre which will be "
 "ignored.<p><p>Are you sure you want to continue?"
