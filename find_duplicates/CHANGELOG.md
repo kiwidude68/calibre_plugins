@@ -1,5 +1,13 @@
 # Find Duplicates Change Log
 
+## [1.10.5] - 2022-10-18
+### Added
+- Display an error dialog if user tries to sort by Identifier with no identifier type selected.
+### Changed
+- Sort the list of identifier types on the Find Duplicates dropdown.
+### Fixed
+- If user has no identifier types would throw index out of range exception.
+
 ## [1.10.4] - 2022-10-17
 ### Added
 - Configuration option for Find Library Duplicates on whether to display the results in library.

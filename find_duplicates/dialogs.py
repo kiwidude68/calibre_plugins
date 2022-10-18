@@ -159,6 +159,8 @@ class ListComboBox(QComboBox):
 
     def selected_value(self):
         idx = self.currentIndex()
+        if idx < 0:
+            return ''
         return self.raw_values[idx]
 
 
@@ -169,6 +171,7 @@ class FindBookDuplicatesDialog(SizePersistedDialog):
     def __init__(self, gui):
         SizePersistedDialog.__init__(self, gui, 'duplicate finder plugin:duplicate dialog')
 
+        self.gui = gui
         self.setWindowTitle(_('Find Duplicates'))
         layout = QVBoxLayout(self)
         self.setLayout(layout)
@@ -190,7 +193,7 @@ class FindBookDuplicatesDialog(SizePersistedDialog):
             search_type_group_box_layout.addWidget(rdo)
         layout.addSpacing(5)
 
-        self.identifier_types = gui.current_db.get_all_identifier_types()
+        self.identifier_types = sorted(gui.current_db.get_all_identifier_types())
         self.identifier_combo = ListComboBox(self, self.identifier_types)
         search_type_group_box_layout.insertWidget(3, self.identifier_combo)
 
@@ -363,6 +366,9 @@ class FindBookDuplicatesDialog(SizePersistedDialog):
                 self.author_match = list(AUTHOR_DESCS.keys())[1]
 
     def _ok_clicked(self):
+        if not self._is_valid_to_continue():
+            return error_dialog(self.gui, _('Invalid Criteria'),
+                                _('You must select an identifier type to search by Identifier.'), show=True)
         cfg.plugin_prefs[cfg.KEY_SEARCH_TYPE] = self.search_type
         cfg.plugin_prefs[cfg.KEY_IDENTIFIER_TYPE] = self.identifier_combo.selected_value()
         cfg.plugin_prefs[cfg.KEY_TITLE_MATCH] = self.title_match
@@ -378,6 +384,12 @@ class FindBookDuplicatesDialog(SizePersistedDialog):
         cfg.plugin_prefs[cfg.KEY_INCLUDE_LANGUAGES] = self.include_languages_checkbox.isChecked()
         cfg.plugin_prefs[cfg.KEY_AUTO_DELETE_BINARY_DUPS] = self.auto_delete_binary_dups_checkbox.isChecked()
         self.accept()
+    
+    def _is_valid_to_continue(self):
+        if self.search_type == 'identifier':
+            if self.identifier_combo.selected_value() == '':
+                return False
+        return True
 
 
 class BookExemptionsTableWidget(QTableWidget):
@@ -1097,7 +1109,7 @@ class FindLibraryDuplicatesDialog(SizePersistedDialog):
             search_type_group_box_layout.addWidget(rdo)
         layout.addSpacing(5)
 
-        self.identifier_types = gui.current_db.get_all_identifier_types()
+        self.identifier_types = sorted(gui.current_db.get_all_identifier_types())
         self.identifier_combo = ListComboBox(self, self.identifier_types)
         search_type_group_box_layout.insertWidget(3, self.identifier_combo)
 
