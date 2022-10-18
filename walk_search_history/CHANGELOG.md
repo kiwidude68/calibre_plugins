@@ -1,5 +1,9 @@
 # Walk Search History Change Log
 
+## [1.5.1] - 2022-10-18
+### Fixed
+- Ensure ampersands are doubled up to display correctly for History menu items.
+
 ## [1.5.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

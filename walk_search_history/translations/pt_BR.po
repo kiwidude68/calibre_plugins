@@ -134,7 +134,7 @@ msgstr "Customizar plugin"
 
 #: action.py:114 config.py:93
 msgid "&Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: action.py:191
 msgid "Are you sure?"
@@ -170,7 +170,7 @@ msgid ""
 "when you switch between them."
 msgstr ""
 "Quando marcada essa opção, serão mantidos históricos separados para cada biblioteca\n"
-"quando alternando entre bibliotecas disponíveis"
+"ao alternar entre bibliotecas disponíveis"
 
 #: config.py:89
 msgid "Edit the keyboard shortcuts associated with this plugin"

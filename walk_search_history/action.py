@@ -98,7 +98,9 @@ class WalkSearchHistoryAction(InterfaceAction):
             for i, history_item in enumerate(self.visited_history_state.items()):
                 if limit > 0 and i == limit:
                     break
-                ac = create_menu_action_unique(self, m, history_item, shortcut=False,
+                # Ensure we escape ampersands
+                display_history_item = history_item.replace('&','&&')
+                ac = create_menu_action_unique(self, m, display_history_item, shortcut=False,
                                       triggered=partial(self.goto_search_item, history_item))
                 if history_item == current_search:
                     ac.setCheckable(True)
