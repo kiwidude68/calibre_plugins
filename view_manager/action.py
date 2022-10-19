@@ -277,10 +277,7 @@ class ViewManagerAction(InterfaceAction):
         if len(search_name) == 0:
             self.gui.search.clear()
         else:
-            idx = self.gui.saved_search.findText(search_name)
-            if idx != -1:
-                self.gui.saved_search.setCurrentIndex(idx)
-                self.gui.saved_search.saved_search_selected(search_name)
+            self.gui.search.set_search_string(f'search:"={search_name}"')
 
     def contruct_state_from_view_info(self, cfg_key, view_info):
         model = self.gui.library_view.model()

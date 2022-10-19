@@ -1,5 +1,9 @@
 # View Manager Change Log
 
+## [1.10.1] - 2022-10-16
+### Changed
+- Apply search using different calibre API call in advance of it being removed. (@cbhaley)
+
 ## [1.10.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
