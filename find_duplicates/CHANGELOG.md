@@ -1,5 +1,9 @@
 # Find Duplicates Change Log
 
+## [1.10.6] - 2022-10-19
+### Fixed
+- Fix Metadata Variations broken for series/publisher with none type not iterable error.
+
 ## [1.10.5] - 2022-10-18
 ### Added
 - Display an error dialog if user tries to sort by Identifier with no identifier type selected.

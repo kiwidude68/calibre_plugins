@@ -20,7 +20,7 @@ class ActionFindDuplicates(InterfaceActionBase):
     description             = 'Find possible duplicate books based on their metadata'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
-    version                 = (1, 10, 5)
+    version                 = (1, 10, 6)
     minimum_calibre_version = (2, 0, 0)
 
     #: This field defines the GUI plugin class that contains all the code

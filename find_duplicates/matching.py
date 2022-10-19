@@ -21,17 +21,21 @@ IGNORE_AUTHOR_WORDS_MAP = dict((k,True) for k in ignore_author_words)
 def ids_for_field(db, ids_of_books, field_name):
 	# First get all the names for the desired books.
 	# Use a set to make them unique
-	unique_names = set()
-	for tup in db.all_field_for(field_name, ids_of_books).values():
-		for val in tup:
-			unique_names.add(val)
+    unique_names = set()
+    val = db.all_field_for(field_name, ids_of_books)
+    for field_value in db.all_field_for(field_name, ids_of_books).values():
+        if type(field_value) is tuple:
+            for val in field_value:
+                unique_names.add(val)
+        elif field_value:
+            unique_names.add(field_value)
 	# reverse the map of ids to names so id_map[name] gives the id
-	id_map = {v:k for k,v in db.get_id_map(field_name).items()}
-	# Now build the pairs (id, name)
-	id_field_pairs = list()
-	for name in unique_names:
-		id_field_pairs.append((id_map[name], name))
-	return id_field_pairs
+    id_map = {v:k for k,v in db.get_id_map(field_name).items()}
+    # Now build the pairs (id, name)
+    id_field_pairs = list()
+    for name in unique_names:
+        id_field_pairs.append((id_map[name], name))
+    return id_field_pairs
 
 def get_field_pairs(db, field):
     # Get the list of books in the current VL
