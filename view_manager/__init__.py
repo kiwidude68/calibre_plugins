@@ -12,7 +12,7 @@ class ActionViewManager(InterfaceActionBase):
     plugin class. The actual interface plugin class is called InterfacePlugin
     and is defined in the ui.py file, as specified in the actual_plugin field
     below.
-
+v
     The reason for having two classes is that it allows the command line
     calibre utilities to run without needing to load the GUI libraries.
     '''
