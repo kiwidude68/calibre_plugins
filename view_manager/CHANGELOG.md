@@ -1,6 +1,6 @@
 # View Manager Change Log
 
-## [1.10.1] - 2022-10-16
+## [1.10.2] - 2022-10-19
 ### Changed
 - Apply search using different calibre API call in advance of it being removed. (@cbhaley)
 
