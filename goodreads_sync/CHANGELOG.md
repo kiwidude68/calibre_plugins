@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.16.2] - 2022-10-19
+### Fixed
+- Fix regression from 1.16.1 on update reading progress for date related formatting.
+
 ## [1.16.1] - 2022-10-18
 ### Fixed
 - Date format on sync from shelf and reading progress dialogs no longer to show time element.

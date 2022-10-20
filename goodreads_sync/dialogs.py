@@ -1945,6 +1945,10 @@ class DoShelfSyncTableWidget(QTableWidget):
         self.setItemDelegateForColumn(4, delegate)
         self.setItemDelegateForColumn(11, delegate)
 
+        delegate = DateDelegate(self)
+        self.setItemDelegateForColumn(5, delegate)
+        self.setItemDelegateForColumn(12, delegate)
+        
         self.resizeColumnsToContents()
         self.setRangeColumnWidth(1, 120, 200) # GR Title
         self.setRangeColumnWidth(2, 120, 200) # GR Author
