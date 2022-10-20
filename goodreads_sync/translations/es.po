@@ -6,15 +6,15 @@
 # Adolfo Jayme-Barrientos, 2022
 # Darío Hereñú, 2022
 # Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2022
+# Jellby <jellby@yahoo.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-16 14:23+0100\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
-"Last-Translator: Walter Paterno <walter.paterno@gmail.com>, 2022\n"
+"Last-Translator: Jellby <jellby@yahoo.com>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -796,7 +796,7 @@ msgstr "Desconocido"
 
 #: core.py:194
 msgid "Goodreads Failure"
-msgstr "Falla de Goodreads"
+msgstr "Fallo de Goodreads"
 
 #: core.py:195
 msgid "The request contacting Goodreads has failed."
@@ -806,12 +806,12 @@ msgstr "La solicitud de contacto con Goodreads ha fallado."
 msgid ""
 "If it reoccurs you may have exceeded a request limit imposed by Goodreads."
 msgstr ""
-"Si vuelve a ocurrir, es posible que haya excedido un límite de solicitud "
+"Si vuelve a ocurrir, es posible que haya excedido un límite de solicitudes "
 "impuesto por Goodreads."
 
 #: core.py:197
 msgid "In which case wait an additional 5-10 minutes before retrying."
-msgstr "En cuyo caso, espere 5-10 minutos antes de volver a intentarlo."
+msgstr "En tal caso, espere 5-10 minutos antes de volver a intentarlo."
 
 #: core.py:408
 msgid "Page"
@@ -970,12 +970,12 @@ msgid ""
 "If the reading progress is being updated, but the books are not finished, "
 "put the books onto the 'currently-reading' shelf."
 msgstr ""
-"Si el progreso de la lectura se está actualizando, pero los libros no están "
-"terminados, colóquelos en el estante de \"lectura actual\"."
+"Si se está actualizando el progreso de lectura, pero los libros no están "
+"terminados, poner los libros en el estante de «lectura actual»."
 
 #: dialogs.py:663
 msgid "Put finished books on read shelf"
-msgstr "Ponga los libros terminados en el estante de lectura"
+msgstr "Poner los libros terminados en el estante de libros leídos"
 
 #: dialogs.py:664
 msgid "If the reading progress is 100%, put the books onto the 'read' shelf."
