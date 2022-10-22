@@ -9,7 +9,7 @@ from six import text_type as unicode
 class SearchHistoryState:
     # Keep a history of searches.
     # This class is our "visited" history, and is used for the dropdown menu
-    # It is also the base class for our ActiveSearchHistoryState class which is
+    # It is also the base class for our NavigationSearchHistoryState class which is
     # used for the fwd/bwd navigation.
 
     MAX_HISTORY = 25
@@ -69,7 +69,9 @@ class NavigationSearchHistoryState(SearchHistoryState):
         self.position = 0
 
     def get_current(self):
+        print('get_current:',self.snapshot)
         if self.position != -1:
+            print('get_current at position:',self.snapshot[self.position])
             return self.snapshot[self.position]
         return ''
 

@@ -1,5 +1,9 @@
 # Walk Search History Change Log
 
+## [1.5.2] - 2022-10-18
+### Changed
+- When navigating do not include empty searches in forward/backward list.
+
 ## [1.5.1] - 2022-10-18
 ### Fixed
 - Ensure ampersands are doubled up to display correctly for History menu items.

@@ -153,8 +153,8 @@ class WalkSearchHistoryAction(InterfaceAction):
         # Only add it to our visited history if it is not an empty search
         if text:
             self.visited_history_state.insert(text)
-        # Ensure our navigation history of searches is updated
-        self.navigation_history_state.insert(text)
+            # Ensure our navigation history of searches is updated
+            self.navigation_history_state.insert(text)
 
     def find_previous_search(self):
         if self.gui.search.count() == 0:
