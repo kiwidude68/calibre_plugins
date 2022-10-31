@@ -69,12 +69,12 @@ class FinderBase(object):
         return not self._ignore_clear_signal
 
     def clear_gui_duplicates_mode(self, clear_search=True, reapply_restriction=True, restore_sort=True):
-        self._clear_all_book_marks()
+        self.clear_all_book_marks()
         if clear_search:
             self.gui.search.clear()
         self._restore_previous_gui_state(reapply_restriction, restore_sort)
 
-    def _clear_all_book_marks(self):
+    def clear_all_book_marks(self):
         marked_ids = dict()
         self.gui.current_db.set_marked_ids(marked_ids)
 
@@ -828,6 +828,14 @@ class CrossLibraryDuplicateFinder(FinderBase):
                     self.algorithm_text, self.db.library_path, self.library_path, txt)
         d = SummaryMessageBox(self.gui, 'Library Duplicates', message, det_msg=txt)
         d.exec_()
+
+    def clear_all_book_marks(self):
+        '''
+        Different behavior where we will clear only our specific marker, leaving any others
+        '''
+        db = self.gui.current_db
+        marked_ids = {k:v for k,v in db.data.marked_ids.items() if v != 'library_duplicate'}
+        db.set_marked_ids(marked_ids)
 
     def _get_book_display_info(self, db, book_id, include_author=True, include_formats=True,
                                include_identifier=False):

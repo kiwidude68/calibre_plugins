@@ -1,5 +1,11 @@
 # Find Duplicates Change Log
 
+## [1.10.7] - 2022-10-31
+### Added
+- Add Polish translation (konrad, Adam, Marcin, Piotr, Ola, Moje, Silatiw)
+### Changed
+- Clearing after a Library Duplicates search now removes only the marked_duplicates marker, not all markers. (@cbhaley)
+
 ## [1.10.6] - 2022-10-19
 ### Fixed
 - Fix Metadata Variations broken for series/publisher with none type not iterable error.
