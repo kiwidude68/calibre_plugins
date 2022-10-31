@@ -1,5 +1,9 @@
 # Modify ePub Change Log
 
+## [1.8.1] - 2022-10-31
+### Changed
+- Inserting jacket at front of book always skips 1 or sometimes 2 pages trying to detect cover/titlepage.
+
 ## [1.8.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
@@ -11,7 +15,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - Refactoring of common code
 - Removed help file, point to [GitHub Wiki](https://github.com/kiwidude68/calibre_plugins/wiki/Modify-ePub)
 
-## [1.7.3] - 2022-04-25
+## [1.7.3m] - 2022-04-25
 ### Fixed
 - Remove some python 3 code inadvertently left in after debugging. (@chaley)
 

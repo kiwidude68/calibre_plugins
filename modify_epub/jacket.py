@@ -29,18 +29,25 @@ def add_replace_jacket(container, log, mi, output_profile, jacket_end_book):
     container.add_to_manifest(id, href)
 
     # Next add it to the spine. We want it at the start of the book, but
-    # after the Calibre titlepage
+    # after the Calibre titlepage and cover image.
     # TODO: Might want to make this a bit more bulletproof by looking at the guide etc.
 
-    insert_pos = 0
+    insert_pos = 1
     spine_items = list(container.get_spine_items())
-    if len(spine_items) and spine_items[0].get('id').startswith('titlepage'):
-        insert_pos = 1
+    while insert_pos < len(spine_items):
+        spine_id = spine_items[insert_pos].get('id').lower()
+        if not is_cover_or_title_id(spine_id):
+            break
+        insert_pos += 1
+
     if jacket_end_book:
         insert_pos = -1
     container.add_to_spine(id, index=insert_pos)
     container.set(container.opf_name, container.opf)
     return True
+
+def is_cover_or_title_id(spine_id):
+    return spine_id.startswith('cvi') or spine_id.startswith('cover') or spine_id.startswith('titlepage') or spine_id.startswith('tp')
 
 def remove_non_legacy_jacket(container, log):
     for name in list(container.name_path_map.keys()):
