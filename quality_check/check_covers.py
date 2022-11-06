@@ -60,9 +60,9 @@ class CoverCheck(BaseCheck):
             mark_book = False
             if is_file_size_check:
                 cover_size = os.path.getsize(cover_path)
-                if check_type == 'less than' and cover_size < min_file_size:
+                if check_type == _('less than') and cover_size < min_file_size:
                     mark_book = True
-                elif check_type == 'greater than' and cover_size > min_file_size:
+                elif check_type == _('greater than') and cover_size > min_file_size:
                     mark_book = True
             else:
                 try:
@@ -71,17 +71,17 @@ class CoverCheck(BaseCheck):
                     self.log(_('Failed to identify cover:'), cover_path)
                 else:
                     (cover_width, cover_height) = im.size
-                    if check_type == 'less than':
+                    if check_type == _('less than'):
                         if cover_width < min_image_width:
                             mark_book = True
                         elif cover_height < min_image_height:
                             mark_book = True
-                    elif check_type == 'greater than':
+                    elif check_type == _('greater than'):
                         if cover_width > min_image_width and min_image_width != 0:
                             mark_book = True
                         elif cover_height > min_image_height and min_image_height != 0:
                             mark_book = True
-                    elif check_type == 'equal to':
+                    elif check_type == _('equal to'):
                         if min_image_height == 0:
                             if cover_width == min_image_width:
                                 mark_book = True
@@ -90,7 +90,7 @@ class CoverCheck(BaseCheck):
                                 mark_book = True
                         elif cover_width == min_image_width and cover_height == min_image_height:
                             mark_book = True
-                    elif check_type == 'not equal to':
+                    elif check_type == _('not equal to'):
                         if min_image_width != 0:
                             if cover_width != min_image_width:
                                 mark_book = True

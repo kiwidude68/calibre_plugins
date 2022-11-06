@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 21:11+0100\n"
+"POT-Creation-Date: 2022-11-06 15:31+0000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
@@ -97,22 +97,22 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título - debe reiniciar Calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
@@ -216,9 +216,25 @@ msgstr "Quality Check a fallado"
 msgid "Unknown menu key for %s of '%s'"
 msgstr "Tecla de menú desconocida para %s de '%s'"
 
+#: check_covers.py:63 check_covers.py:74 dialogs.py:77
+msgid "less than"
+msgstr "menos que"
+
+#: check_covers.py:65 check_covers.py:79 dialogs.py:77
+msgid "greater than"
+msgstr "más grande"
+
 #: check_covers.py:71
 msgid "Failed to identify cover:"
 msgstr "No se pudo identificar la portada:"
+
+#: check_covers.py:84 dialogs.py:79
+msgid "equal to"
+msgstr "igual a"
+
+#: check_covers.py:93 dialogs.py:79
+msgid "not equal to"
+msgstr "no igual a"
 
 #: check_covers.py:104
 msgid "books for covers"
@@ -1932,22 +1948,6 @@ msgstr "Cancelar"
 #: dialogs.py:60
 msgid "%s %d %s  (%d matches)..."
 msgstr "%s %d %s ( %dcoincidencias)..."
-
-#: dialogs.py:77
-msgid "greater than"
-msgstr "más grande"
-
-#: dialogs.py:77
-msgid "less than"
-msgstr "menos que"
-
-#: dialogs.py:79
-msgid "equal to"
-msgstr "igual a"
-
-#: dialogs.py:79
-msgid "not equal to"
-msgstr "no igual a"
 
 #: dialogs.py:122
 msgid "Cover Search Options"

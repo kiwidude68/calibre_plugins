@@ -1,5 +1,11 @@
 # Quality Check Change Log
 
+## [1.13.1] - 2021-11-06
+### Added
+- Polish translation (silatiw)
+### Fixed
+- Translated cover checks not working. (silatiw)
+
 ## [1.13.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

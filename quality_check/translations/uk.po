@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 21:11+0100\n"
+"POT-Creation-Date: 2022-11-06 15:31+0000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
@@ -92,22 +92,22 @@ msgstr "Всі налаштування для цього плагіну в ці
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Невизначено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Потрібен перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
 " користуватися цим додатком!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
@@ -208,9 +208,25 @@ msgstr "Не вдалося виконати перевірку якості"
 msgid "Unknown menu key for %s of '%s'"
 msgstr "Невідомий ключ меню для %s «%s»"
 
+#: check_covers.py:63 check_covers.py:74 dialogs.py:77
+msgid "less than"
+msgstr "менше"
+
+#: check_covers.py:65 check_covers.py:79 dialogs.py:77
+msgid "greater than"
+msgstr "більше"
+
 #: check_covers.py:71
 msgid "Failed to identify cover:"
 msgstr "Не вдалося ідентифікувати обкладинку:"
+
+#: check_covers.py:84 dialogs.py:79
+msgid "equal to"
+msgstr "дорівнює"
+
+#: check_covers.py:93 dialogs.py:79
+msgid "not equal to"
+msgstr "не дорівнює"
 
 #: check_covers.py:104
 msgid "books for covers"
@@ -1901,22 +1917,6 @@ msgstr "Скасувати"
 #: dialogs.py:60
 msgid "%s %d %s  (%d matches)..."
 msgstr "%s %d %s  (%d відповідників)..."
-
-#: dialogs.py:77
-msgid "greater than"
-msgstr "більше"
-
-#: dialogs.py:77
-msgid "less than"
-msgstr "менше"
-
-#: dialogs.py:79
-msgid "equal to"
-msgstr "дорівнює"
-
-#: dialogs.py:79
-msgid "not equal to"
-msgstr "не дорівнює"
 
 #: dialogs.py:122
 msgid "Cover Search Options"
