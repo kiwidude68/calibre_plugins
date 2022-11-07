@@ -1,5 +1,11 @@
 # Walk Search History Change Log
 
+## [1.5.3] - 2022-11-07
+### Changed
+- When empty searches occur (e.g. switch virtual library, clear search) remove any history forward of the current position.
+### Fixed
+- Navigating back after an empty search will show the last non-empty search, not second to last. (ownedbycats)
+
 ## [1.5.2] - 2022-10-18
 ### Changed
 - When navigating do not include empty searches in forward/backward list.

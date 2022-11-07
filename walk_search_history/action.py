@@ -150,11 +150,14 @@ class WalkSearchHistoryAction(InterfaceAction):
         if self.is_navigating_history:
             # Search has been triggered by this plugin - nothing to do:
             return
-        # Only add it to our visited history if it is not an empty search
+        # Only add it to our history if it is not an empty search
         if text:
-            self.visited_history_state.insert(text)
+            self.visited_history_state.append(text)
             # Ensure our navigation history of searches is updated
-            self.navigation_history_state.insert(text)
+            self.navigation_history_state.append(text)
+        else:
+            # Special behavior depending on where we are in the history navigation.
+            self.navigation_history_state.reset_after_empty_search()
 
     def find_previous_search(self):
         if self.gui.search.count() == 0:
@@ -185,8 +188,8 @@ class WalkSearchHistoryAction(InterfaceAction):
 
     def goto_search_item(self, selected_text):
         # User has selected an item in the history to jump to from the menu
-        # Update for our history menu to reflect the new position
-        self.visited_history_state.insert(selected_text)
+        # Update our history menu to reflect the new position moving it to the top
+        self.visited_history_state.append(selected_text)
         self.gui.search.set_search_string(selected_text, store_in_history=True)
 
     def clear_search_history(self):
@@ -201,8 +204,8 @@ class WalkSearchHistoryAction(InterfaceAction):
         # Clear the config history where the history is persisted
         config[self.gui.search.opt_name] = []
         # Ensure our own state histories are cleared too
-        self.navigation_history_state.clear()
         self.visited_history_state.clear()
+        self.navigation_history_state.clear()
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)
