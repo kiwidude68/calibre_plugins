@@ -275,7 +275,6 @@ def migrate_config_setting(schema_version, setting_name, setting, is_current=Fal
         if DEBUG:
             prints('Generate Cover - Upgrading to 1.59 schema for setting: ',setting_name)
         setting[KEY_RESIZE_IMAGE_TO_FIT] = False
-    return setting
 
     # Version 2.2.1 changed images to be stored in the calibre/plugins
     # folder
@@ -283,6 +282,7 @@ def migrate_config_setting(schema_version, setting_name, setting, is_current=Fal
         if DEBUG:
             prints('Generate Cover - Upgrading to 2.21 schema for setting: ',setting_name)
         setting[KEY_IMAGE_FILE] = migrate_image_file(setting[KEY_IMAGE_FILE])
+    return setting
 
 
 def migrate_library_config_if_required(db, library_config):

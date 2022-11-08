@@ -55,33 +55,47 @@ try:
 except:
     AnyFile = QFileDialog.AnyFile
 
-class GenerateCoverProgressDialog(QProgressDialog):
-    '''
-    Progress dialog for generating multiple covers rather than displaying the status
-    '''
-    def __init__(self, gui, books, db):
-        self.total_count = len(books)
-        QProgressDialog.__init__(self, '', _('Cancel'), 0, self.total_count, gui)
-        self.setWindowTitle(_('Generating %d covers')%self.total_count)
-        self.setMinimumWidth(500)
-        self.books, self.db = books, db
-        self.gui = gui
-
-        library_config = cfg.get_library_config(db)
-        self.update_column = library_config.get(cfg.PREFS_KEY_UPDATE_COLUMN, '')
-        self.update_value = library_config.get(cfg.PREFS_KEY_UPDATE_VALUE, '')
-        custom_columns = db.field_metadata.custom_field_metadata()
-        if self.update_column != 'tags':
-            if self.update_column not in custom_columns:
+def update_custom_columns_if_required(db, mi):
+    library_config = cfg.get_library_config(db)
+    update_column = library_config.get(cfg.PREFS_KEY_UPDATE_COLUMN, '')
+    update_value = library_config.get(cfg.PREFS_KEY_UPDATE_VALUE, '')
+    custom_columns = db.field_metadata.custom_field_metadata()
+    if update_column:
+        if update_column != 'tags':
+            if update_column not in custom_columns:
                 # Custom column does not exist
-                self.update_column = ''
+                update_column = ''
                 library_config[cfg.PREFS_KEY_UPDATE_COLUMN] = ''
                 library_config[cfg.PREFS_KEY_UPDATE_VALUE] = ''
                 cfg.set_library_config(db, library_config)
             else:
-                self.update_col = custom_columns[self.update_column]
-                self.update_column_type = self.update_col['datatype']
-                self.update_label = self.db.field_metadata.key_to_label(self.update_column)
+                update_col = custom_columns[update_column]
+                update_column_type = update_col['datatype']
+                update_label = db.field_metadata.key_to_label(update_column)
+    if update_column and update_value:
+        if update_column == 'tags':
+            db.set_tags(mi.id, update_value.split(','), append=True)
+        elif update_column_type == 'bool':
+            new_value = update_value.lower() == 'y'
+            db.set_custom(mi.id, new_value, label=update_label)
+        elif update_column_type == 'text':
+            if update_col['is_multiple']:
+                db.set_custom_bulk_multiple([mi.id], add=[update_value], label=update_label)
+            else:
+                db.set_custom(mi.id, update_value, label=update_label)
+
+
+class GenerateCoverProgressDialog(QProgressDialog):
+    '''
+    Progress dialog for generating multiple covers rather than displaying the status
+    '''
+    def __init__(self, gui, books, db, options):
+        self.total_count = len(books)
+        QProgressDialog.__init__(self, '', _('Cancel'), 0, self.total_count, gui)
+        self.setWindowTitle(_('Generating %d covers')%self.total_count)
+        self.setMinimumWidth(500)
+        self.books, self.db, self.options = books, db, options
+        self.gui = gui
         self.i = 0
         # QTimer workaround on Win 10 on first go for Win10/Qt6 users not displaying dialog properly.
         QTimer.singleShot(100, self.do_generate_cover)
@@ -93,20 +107,9 @@ class GenerateCoverProgressDialog(QProgressDialog):
         mi = self.books[self.i]
 
         self.setLabelText(_('Generating: ')+mi.title)
-        cover_data = generate_cover_for_book(mi, db=self.db.new_api)
+        cover_data = generate_cover_for_book(mi, options=self.options, db=self.db.new_api)
         self.db.set_cover(mi.id, cover_data)
-        if self.update_column and self.update_value:
-            if self.update_column == 'tags':
-                print(('Setting tags for book to:',self.update_value))
-                self.db.set_tags(mi.id, self.update_value.split(','), append=True)
-            elif self.update_column_type == 'bool':
-                new_value = self.update_value.lower() == 'y'
-                self.db.set_custom(mi.id, new_value, label=self.update_label)
-            elif self.update_column_type == 'text':
-                if self.update_col['is_multiple']:
-                    self.db.set_custom_bulk_multiple([mi.id], add=[self.update_value], label=self.update_label)
-                else:
-                    self.db.set_custom(mi.id, self.update_value, label=self.update_label)
+        update_custom_columns_if_required(self.db, mi)
 
         self.i += 1
         self.setValue(self.i)
@@ -119,7 +122,7 @@ class GenerateCoverProgressDialog(QProgressDialog):
 
 class UnsavedSettingsDialog(QDialog):
 
-    def __init__(self, parent, setting_name, allow_dont_save=False):
+    def __init__(self, parent, setting_name):
         QDialog.__init__(self, parent)
         self.setWindowTitle(_('Unsaved Changes'))
         layout = QVBoxLayout(self)
@@ -130,24 +133,44 @@ class UnsavedSettingsDialog(QDialog):
         # Dialog buttons
         button_box = QDialogButtonBox()
         self.discard_changes_button = button_box.addButton( ' '+_('Discard Changes')+' ', QDialogButtonBox.RejectRole)
-        self.discard_changes_button.setToolTip(_('Revert unsaved changes and generate cover using the original<br/>'
-                                                 'setting values (not as shown)'))
+        self.discard_changes_button.setToolTip(_('Revert unsaved changes'))
         self.discard_changes_button.clicked.connect(self.reject)
-        self.is_deferred_save = False
-        if allow_dont_save:
-            self.dont_save_setting_button = button_box.addButton( ' '+_('Don\'t Save Yet')+' ', QDialogButtonBox.ApplyRole)
-            self.dont_save_setting_button.setToolTip(_('Generate cover using these settings.<br/>'
-                                                       'You can revert or save the changes when you next enter dialog.'))
-            self.dont_save_setting_button.clicked.connect(self.on_dont_save_clicked)
         self.save_setting_button = button_box.addButton( ' '+_('Save Changes')+' ', QDialogButtonBox.AcceptRole)
-        self.save_setting_button.setToolTip(_('Generate cover using these settings and save for future usage'))
+        self.save_setting_button.setToolTip(_('Overwrite current profile with these changes'))
         self.save_setting_button.clicked.connect(self.accept)
         layout.addWidget(button_box)
 
         self.resize(self.sizeHint())
 
+
+class UnsavedSettingsGenerateDialog(QDialog):
+
+    def __init__(self, parent, setting_name):
+        QDialog.__init__(self, parent)
+        self.setWindowTitle(_('Unsaved Changes'))
+        layout = QVBoxLayout(self)
+        self.setLayout(layout)
+
+        layout.addWidget(QLabel(_('You have unsaved changes to the <b>%s</b> setting.<br>') % setting_name +
+                                _('What do you want to do?'), self))
+        # Dialog buttons
+        button_box = QDialogButtonBox()
+        self.save_setting_button = button_box.addButton( ' '+_('Generate && Save')+' ', QDialogButtonBox.ActionRole)
+        self.save_setting_button.setToolTip(_('Generate cover using these settings and save for future usage'))
+        self.save_setting_button.clicked.connect(self.accept)
+        self.discard_changes_button = button_box.addButton( ' '+_('Generate && Revert')+' ', QDialogButtonBox.ActionRole)
+        self.discard_changes_button.setToolTip(_('Generate cover using these settings then discard them'))
+        self.discard_changes_button.clicked.connect(self.on_dont_save_clicked)
+        self.is_deferred_revert = False
+        self.cancel_button = button_box.addButton( ' '+_('Cancel')+' ', QDialogButtonBox.RejectRole)
+        self.cancel_button.setToolTip(_('Cancel action'))
+        self.cancel_button.clicked.connect(self.reject)
+        layout.addWidget(button_box)
+
+        self.resize(self.sizeHint())
+
     def on_dont_save_clicked(self):
-        self.is_deferred_save = True
+        self.is_deferred_revert = True
         self.accept()
 
 
@@ -1340,6 +1363,7 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.book, self.images_dir = (book, images_dir)
         self.is_multiple_books = is_multiple_books
         self.current = cfg.plugin_prefs[cfg.STORE_CURRENT]
+        self.is_deferred_revert = False
 
         self.block_updates = True
         self._preview_timer = QTimer(self)
@@ -1433,13 +1457,16 @@ class CoverOptionsDialog(SizePersistedDialog):
             else:
                 # With autosave turned off we will ask user what to do with changes
                 current_setting_name = self.current[cfg.KEY_NAME]
-                d = UnsavedSettingsDialog(self, current_setting_name, allow_dont_save=True)
+                d = UnsavedSettingsGenerateDialog(self, current_setting_name)
                 d.exec_()
                 if d.result() == d.Accepted:
-                    if not d.is_deferred_save:
+                    # Either "Generate + Save" or "Generate + Revert"
+                    self.is_deferred_revert = d.is_deferred_revert
+                    if not d.is_deferred_revert:
                         self.persist_saved_setting(prompt=False, update_display=False)
                 elif d.result() == d.Rejected:
-                    self.revert_to_saved(prompt=False, update_display=False)
+                    # User clicked cancel - do not exit this dialog.
+                    return
         self.accept()
 
     def reject_clicked(self):

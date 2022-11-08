@@ -9,14 +9,15 @@ except NameError:
     pass # load_translations() added in calibre 1.9
 
 import six
-import os
+import os, copy
 from calibre.constants import DEBUG
 from calibre.gui2 import error_dialog
 from calibre.gui2.actions import InterfaceAction
 
 import calibre_plugins.generate_cover.config as cfg
 from calibre_plugins.generate_cover.common_icons import set_plugin_icon_resources, get_icon
-from calibre_plugins.generate_cover.dialogs import CoverOptionsDialog, GenerateCoverProgressDialog
+from calibre_plugins.generate_cover.dialogs import (update_custom_columns_if_required, CoverOptionsDialog, 
+                                                    GenerateCoverProgressDialog)
 from calibre_plugins.generate_cover.draw import generate_cover_for_book
 
 PLUGIN_ICONS = ['images/generate_cover.png', 'images/rename.png',
@@ -66,10 +67,13 @@ class GenerateCoverAction(InterfaceAction):
 
         if d.result() != d.Accepted:
             return
-
+        # User proceeding with a cover generation
+        options = copy.deepcopy(d.current)
+        if d.is_deferred_revert:
+            d.revert_to_saved(prompt=False,update_display=False)
         current_idx = self.gui.library_view.currentIndex()
         db = self.gui.library_view.model().db
-        GenerateCoverProgressDialog(self.gui, books, db)
+        GenerateCoverProgressDialog(self.gui, books, db, options)
         self.gui.library_view.model().current_changed(current_idx, current_idx)
         if self.gui.cover_flow:
             self.gui.cover_flow.dataChanged()
@@ -150,6 +154,8 @@ class GenerateCoverAction(InterfaceAction):
             mi._path_to_cover = path_to_cover
 
         cover_data = generate_cover_for_book(mi, options=options, db=db.new_api)
+        if db:
+            update_custom_columns_if_required(db, mi)
 
         if not path_to_cover and db:
             # Overwrite the cover for this particular book

@@ -1,5 +1,16 @@
 # Generate Cover Change Log
 
+## [2.3.1] - 2022-11-07
+### Changed
+- Rewrite of unsaved changes dialog when OK is pressed on cover options dialog:
+    - Rename `Save Changes` to `Generate & Save` button
+    - Add `Generate & Revert` button
+    - Add `Cancel` button
+    - Remove `Discard Changes` button
+    - Remove `Dont Save Yet` button
+### Fixed
+- Generating a cover from FFF plugin will now respect any settings by user to update a custom column after cover generation.
+
 ## [2.3.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
