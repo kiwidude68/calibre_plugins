@@ -218,11 +218,11 @@ msgstr "Nieznany klawisz menu dla %s z '%s'"
 
 #: check_covers.py:63 check_covers.py:74 dialogs.py:77
 msgid "less than"
-msgstr ""
+msgstr "mniejszy niż"
 
 #: check_covers.py:65 check_covers.py:79 dialogs.py:77
 msgid "greater than"
-msgstr ""
+msgstr "większy od"
 
 #: check_covers.py:71
 msgid "Failed to identify cover:"
@@ -230,11 +230,11 @@ msgstr "Nie udało się zidentyfikować okładki:"
 
 #: check_covers.py:84 dialogs.py:79
 msgid "equal to"
-msgstr ""
+msgstr "równy"
 
 #: check_covers.py:93 dialogs.py:79
 msgid "not equal to"
-msgstr ""
+msgstr "różny od"
 
 #: check_covers.py:104
 msgid "books for covers"

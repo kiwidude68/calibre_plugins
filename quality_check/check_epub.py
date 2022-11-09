@@ -1788,17 +1788,21 @@ class EpubCheck(BaseCheck):
                     if self._is_drm_encrypted(zf, contents):
                         self.log.error('SKIPPING BOOK (DRM Encrypted): ', get_title_authors_text(db, book_id))
                         return False
-                    for resource_name in self._manifest_worthy_names(zf):
-                        extension = resource_name[resource_name.rfind('.'):].lower()
-                        if extension in NON_HTML_FILES:
-                            continue
-                        data = self.zf_read(zf, resource_name).lower()
-                        # Only interested in the body without any html tags
-                        body_text = self._extract_body_text(data)
-                        if body_text.find('\'') != -1 or body_text.find('"') != -1:
-                            self.log(_('Unsmartened punctuation in: <b>%s</b>')% get_title_authors_text(db, book_id))
-                            self.log('\t<span style="color:darkgray">%s</span>'% resource_name)
-                            return True
+                    opf_name = self._get_opf_xml(path_to_book, zf)
+                    if opf_name:
+                        manifest_items_map = self._get_opf_items_map(zf, opf_name, spine_only=True)
+                        contents = zf.namelist()
+                        for resource_name in manifest_items_map:
+                            extension = resource_name[resource_name.rfind('.'):].lower()
+                            if extension in NON_HTML_FILES:
+                                continue
+                            data = self.zf_read(zf, resource_name).lower()
+                            # Only interested in the body without any html tags
+                            body_text = self._extract_body_text(data)
+                            if body_text.find('\'') != -1 or body_text.find('"') != -1:
+                                self.log(_('Unsmartened punctuation in: <b>%s</b>')% get_title_authors_text(db, book_id))
+                                self.log('\t<span style="color:darkgray">%s</span>'% resource_name)
+                                return True
                     return False
 
             except InvalidEpub as e:
@@ -1846,14 +1850,23 @@ class EpubCheck(BaseCheck):
             if item_name in zf.namelist():
                 return item_name
 
-    def _get_opf_items_map(self, zf, opf_name, opf_xml=None, rebase_href=True):
+    def _get_opf_items_map(self, zf, opf_name, opf_xml=None, rebase_href=True, spine_only=False):
         if not opf_xml:
             opf_xml = self._get_opf_tree(zf, opf_name)
         items = opf_xml.xpath(r'child::opf:manifest/opf:item[@href]',
                               namespaces={'opf':OPF_NS})
+        spine_items = []
+        if spine_only:
+            spine_items = opf_xml.xpath(r'child::opf:spine/opf:itemref/@idref',
+                              namespaces={'opf':OPF_NS})
+
         items_map = {}
         opf_dir = posixpath.dirname(opf_name)
         for item in items:
+            if spine_only:
+                id = item.attrib['id']
+                if not id in spine_items:
+                    continue
             if rebase_href:
                 item_name = self._href_to_name(item.attrib['href'], opf_dir)
             else:
