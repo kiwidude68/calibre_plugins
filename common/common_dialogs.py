@@ -26,7 +26,7 @@ except NameError:
 
 from calibre.gui2 import gprefs, info_dialog, Application
 from calibre.gui2.keyboard import ShortcutConfig
-from common_icons import get_icon
+exec("from " + __name__.rpartition('.')[0] + ".common_icons import get_icon")
 
 
 # ----------------------------------------------
