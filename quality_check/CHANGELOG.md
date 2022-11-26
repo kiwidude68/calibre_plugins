@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.13.3] - 2021-11-26
+### Fixed
+- Polish translation missing special substitution character for Fix Asin
+
 ## [1.13.2] - 2021-11-09
 ### Fixed
 - Smarten punctuation now only checks files in the spine, ensuring excludes nav.xhtml

@@ -7,17 +7,17 @@
 # Piotr Strębski <strebski@gmail.com>, 2022
 # Adam Humienny <adam.humienny@gmail.com>, 2022
 # Ola Kleniewska <anyzeklove@gmail.com>, 2022
-# Grant Drake, 2022
 # The Name <moje.konto+transifex@posteo.org>, 2022
 # Marek Mazurowski <marek.mazurowski@gmail.com>, 2022
 # Silatiw Witalis, 2022
+# Grant Drake, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-11-06 15:31+0000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: Silatiw Witalis, 2022\n"
+"Last-Translator: Grant Drake, 2022\n"
 "Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -852,7 +852,7 @@ msgstr "Naprawiono ASIN dla %d książek"
 
 #: check_fix.py:362
 msgid "%d books updated, see log for details"
-msgstr "% książek zaktualizowano. Zobacz szczególy"
+msgstr "%d książek zaktualizowano. Zobacz szczególy"
 
 #: check_metadata.py:93
 msgid "All searched books have a valid Title Sort"
