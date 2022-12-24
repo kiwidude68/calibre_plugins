@@ -1,5 +1,9 @@
 # Goodreads Change Log
 
+## [1.7.2] - 2022-12-24
+### Fixed
+- Return None rather than empty string when no description present, for better result merging.
+
 ## [1.7.1] - 2022-10-16
 ### Added
 - German translation (@Dustin Steiner)

@@ -264,9 +264,12 @@ class Worker(Thread): # Get details
 
         try:
             if book_json:
-                mi.comments = self.parse_comments(book_json)
+                comments = self.parse_comments(book_json)
             else:
-                mi.comments = self.parse_comments_legacy(root)
+                comments = self.parse_comments_legacy(root)
+            self.log.info('parse_comments: ', comments)
+            if comments:
+                mi.comments = comments
         except:
             self.log.exception('Error parsing comments for url: %r'%self.url)
 
@@ -317,7 +320,6 @@ class Worker(Thread): # Get details
             if self.cover_url is not None:
                 self.plugin.cache_identifier_to_cover_url(self.goodreads_id,
                         self.cover_url)
-
         self.plugin.clean_downloaded_metadata(mi)
 
         self.result_queue.put(mi)
@@ -521,6 +523,8 @@ class Worker(Thread): # Get details
         if "description" not in book_json:
             return None
         description = book_json["description"]
+        if not description:
+            return None
         comments = sanitize_comments_html(description)
         return comments
 
@@ -529,6 +533,8 @@ class Worker(Thread): # Get details
         description_node = root.xpath('//div[@id="descriptionContainer"]/div[@id="description"]/span')
         if description_node:
             desc = description_node[0] if len(description_node) == 1 else description_node[1]
+            if not desc or not desc.strip():
+                return None
             less_link = desc.xpath('a[@class="actionLinkLite"]')
             if less_link is not None and len(less_link):
                 desc.remove(less_link[0])
