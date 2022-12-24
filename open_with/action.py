@@ -25,6 +25,8 @@ from calibre_plugins.open_with.common_icons import set_plugin_icon_resources, ge
 from calibre_plugins.open_with.common_menus import (unregister_menu_actions, create_menu_action_unique,
                                                     create_menu_item)
 
+FILENAME_TOKEN = "%FILENAME%"
+
 class OpenWithAction(InterfaceAction):
 
     name = 'Open With'
@@ -206,11 +208,8 @@ class OpenWithAction(InterfaceAction):
 
         else:
             # For Windows/Linux merge any optional command line args with the app/file paths
-            app_args_list = []
-            if app_args:
-                app_args_list = app_args.split(',')
-            app_args_list.insert(0, external_app_path)
-            app_args_list.append(path_to_file)
+            app_args_list = self.get_args_list(external_app_path, app_args, path_to_file)
+            
             if iswindows:
                 # Different behavior required for pre calibre 5.4.0
                 # https://www.mobileread.com/forums/showpost.php?p=4048886&postcount=355
@@ -224,13 +223,32 @@ class OpenWithAction(InterfaceAction):
                 clean_env['LD_LIBRARY_PATH'] = ''
                 subprocess.Popen(app_args_list, env=clean_env)
 
+    def get_args_list(self, external_app_path, app_args, path_to_file):
+        # Optionally allow our %FILENAME% token be substituted to a specific argument position
+        # Otherwise the filename will be appended as the last argument.
+        app_args_list = []
+        if app_args:
+            # The user might not have comma separated their command line args though!
+            app_args_list = app_args.split(',')
+
+        has_filename_token = False
+        for i in range(len(app_args_list)):
+            if FILENAME_TOKEN in app_args_list[i]:
+                has_filename_token = True
+                app_args_list[i] = app_args_list[i].replace(FILENAME_TOKEN, path_to_file)
+
+        app_args_list.insert(0, external_app_path)
+        if not has_filename_token:
+            app_args_list.append(path_to_file)
+        return app_args_list
+
     def launch_windows_5_4_plus(self, external_app_path, app_args_list, path_to_file):
         # Add to the recently opened files list to support windows jump lists etc.
         from calibre.gui2 import add_to_recent_docs
         add_to_recent_docs(path_to_file)
 
         DETACHED_PROCESS = 0x00000008
-        print('About to run a command:', external_app_path)
+        print('About to run a command:', app_args_list)
         clean_env = dict(os.environ)
         del clean_env['PATH']
         subprocess.Popen(app_args_list, creationflags=DETACHED_PROCESS, env=clean_env)
@@ -243,7 +261,7 @@ class OpenWithAction(InterfaceAction):
         # for users who have non-ascii library paths
         # However we need a special case for Sigil which has issues with C runtime paths
         DETACHED_PROCESS = 0x00000008
-        print('About to run a command:', external_app_path)
+        print('About to run a command:', app_args_list)
         if external_app_path.lower().endswith('sigil.exe'):
             clean_env = dict(os.environ)
             del clean_env['PATH']

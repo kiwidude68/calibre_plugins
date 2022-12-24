@@ -1,5 +1,12 @@
 # Open With Change Log
 
+## [1.8.1] - 2022-12-24
+### Added
+- Support reordering filename in command arguments with special token `%FILENAME%` ([#7][i7])
+- Polish translation
+
+[i7]: https://github.com/kiwidude68/calibre_plugins/issues/7
+
 ## [1.8.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
