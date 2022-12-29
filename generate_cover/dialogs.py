@@ -654,8 +654,8 @@ class SavedSettingsTab(QWidget):
                         f.write(zf.read('gc_setting.json'))
 
                     # Read the .JSON file to get the setting (migrating to latest schema if required)
-                    archive_config = JSONConfig('resources/images/generate_cover/gc_setting')
-                    setting_version = archive_config[cfg.STORE_SCHEMA_VERSION]
+                    archive_config = JSONConfig('plugins/Generate Cover/gc_setting')
+                    setting_version = archive_config.get(cfg.STORE_SCHEMA_VERSION, 0)
                     ## six.itervalues doesn't have a next() in Calibre's bundled version?
                     # setting = six.itervalues(archive_config[cfg.STORE_SAVED_SETTINGS]).next()
                     ## Whatever.  This is ugly, but it works for getting the 'first' value.
@@ -715,7 +715,6 @@ class SavedSettingsTab(QWidget):
         images_dir = self.parent_dialog.images_dir
         if not os.path.exists(images_dir):
             os.makedirs(images_dir)
-
         # Make a setting copy
         setting = copy.deepcopy(selected_setting)
         image_name = setting[cfg.KEY_IMAGE_FILE]
@@ -729,7 +728,7 @@ class SavedSettingsTab(QWidget):
         # before zipping and deleting afterwards
         export_settings = {}
         export_settings[setting[cfg.KEY_NAME]] = setting
-        archive_config = JSONConfig('resources/images/generate_cover/gc_setting')
+        archive_config = JSONConfig('plugins/Generate Cover/gc_setting')
         archive_config.set(cfg.STORE_SAVED_SETTINGS, export_settings)
         archive_config.set(cfg.STORE_SCHEMA_VERSION, cfg.DEFAULT_SCHEMA_VERSION)
 

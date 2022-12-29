@@ -1,5 +1,9 @@
 # Generate Cover Change Log
 
+## [2.3.2] - 2022-12-29
+### Fixed
+- Export and import not working correctly
+
 ## [2.3.1] - 2022-11-07
 ### Changed
 - Rewrite of unsaved changes dialog when OK is pressed on cover options dialog:
