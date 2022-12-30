@@ -23,7 +23,8 @@ except NameError:
 from calibre.gui2 import error_dialog, UNDEFINED_QDATETIME
 from calibre.utils.date import now, format_date, UNDEFINED_DATE
 
-from common_icons import get_pixmap
+exec("from " + __name__.rpartition('.')[0] + ".common_icons import get_pixmap")
+
 
 # get_date_format
 #

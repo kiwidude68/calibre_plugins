@@ -8,7 +8,7 @@ __copyright__ = '2022, Grant Drake'
 
 from calibre.gui2.actions import menu_action_unique_name
 from calibre.constants import numeric_version as calibre_version
-from common_icons import get_icon
+exec("from " + __name__.rpartition('.')[0] + ".common_icons import get_icon")
 
 # ----------------------------------------------
 #          Global resources / state
