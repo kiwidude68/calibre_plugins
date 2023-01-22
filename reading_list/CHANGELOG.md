@@ -1,5 +1,9 @@
 # Reading List Change Log
 
+## [1.15.1] - 2023-01-22
+### Fixed
+- Sorting broken in 1.14.0 of Edit List for removing a row.
+
 ## [1.15.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

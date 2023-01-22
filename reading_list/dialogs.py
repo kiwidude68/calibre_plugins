@@ -100,7 +100,8 @@ class EditListTableWidget(QTableWidget):
 
     def remove_selected_rows(self):
         self.setFocus()
-        rows = sorted(rows, key=lambda x: x.row(), reverse=True)
+        selrows = self.selectionModel().selectedRows()
+        rows = sorted(selrows, key=lambda x: x.row(), reverse=True)
         if len(rows) == 0:
             return
         message = _('<p>Are you sure you want to remove this book from the list?')
