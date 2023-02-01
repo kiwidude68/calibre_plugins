@@ -1,5 +1,10 @@
 # Goodreads Change Log
 
+## [1.7.3] - 2023-02-01
+### Fixed
+- Fix to handle books with no contributors. (@busches)
+- Fix for legacy comments parsing with no strip() function. (@MartinCa)
+
 ## [1.7.2] - 2022-12-24
 ### Fixed
 - Return None rather than empty string when no description present, for better result merging.
