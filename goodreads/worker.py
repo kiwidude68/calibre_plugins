@@ -535,9 +535,10 @@ class Worker(Thread): # Get details
         # Look for description in a second span that gets expanded when interactively displayed [@id="display:none"]
         description_node = root.xpath('//div[@id="descriptionContainer"]/div[@id="description"]/span')
         if description_node:
-            desc = description_node[0] if len(description_node) == 1 else description_node[1]
-            if not desc or not desc.strip():
+            desc_nodes = [x for x in description_node if tostring(x, method='html', encoding=unicode).strip()]
+            if len(desc_nodes) == 0:
                 return None
+            desc = desc_nodes[0] if len(desc_nodes) == 1 else desc_nodes[1]
             less_link = desc.xpath('a[@class="actionLinkLite"]')
             if less_link is not None and len(less_link):
                 desc.remove(less_link[0])
