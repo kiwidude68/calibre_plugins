@@ -415,6 +415,9 @@ class Worker(Thread): # Get details
         get_all_authors = cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GET_ALL_AUTHORS]
         authors = []
         for contributor_json in contributors_list_json:
+            if (contributor_json.get("name") is None):
+                continue
+
             author_name = contributor_json["name"]
             self.log.info('parse_authors - author: %s'%author_name)
             if get_all_authors:
