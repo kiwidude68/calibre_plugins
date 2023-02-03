@@ -4,18 +4,18 @@
 # 
 # Translators:
 # JimmXinu, 2022
-# Ptit Prince <leporello1791@gmail.com>, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022
 # lentrad <lentrad@gmail.com>, 2022
 # un_pogaz, 2022
+# Ptit Prince <leporello1791@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 11:26+0100\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
-"Last-Translator: un_pogaz, 2022\n"
+"Last-Translator: Ptit Prince <leporello1791@gmail.com>, 2022\n"
 "Language-Team: French (https://www.transifex.com/calibre/teams/19337/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -142,7 +142,7 @@ msgstr "Personnaliser l'extension"
 
 #: action.py:101 config.py:461
 msgid "&Help"
-msgstr ""
+msgstr "&Aide"
 
 #: action.py:136 action.py:195
 msgid "Configure plugin"

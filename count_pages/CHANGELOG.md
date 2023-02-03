@@ -1,5 +1,9 @@
 # Count Pages Change Log
 
+## [1.12.1] - 2023-02-03
+### Fixed
+- Fix for change to Goodreads website layout for page count source.
+
 ## [1.12.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

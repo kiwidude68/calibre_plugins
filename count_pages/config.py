@@ -62,11 +62,12 @@ PAGE_DOWNLOADS = {
                   'goodreads':
                     {
                      'URL': 'http://www.goodreads.com/book/show/%s',
-                    'pages_xpath': '//div[@id="details"]/div[@class="row"]/span[@itemprop="numberOfPages"]/text()',
+                     'pages_xpath': '//div[@class="FeaturedDetails"]/p[@data-testid="pagesFormat"]/text()',
                      'name': 'Goodreads',
                      'id': 'goodreads',
                      'icon': 'images/goodreads.png',
-                     'active': True
+                     'active': True,
+                     'pages_regex': '([0-9]+) pages'
                     },
                   'lubimyczytac.pl':
                     {
