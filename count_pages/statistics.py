@@ -193,6 +193,12 @@ def _get_page_count_accurate(iterator):
     # As a backstop count the characters using the "fast count" algorithm
     # and use that number instead
     fast_count = int(len(epub_html) / 2400) + 1
+    if (fast_count > count) :
+        # Before we are use the backstop, we should strip out the html
+        # otherwise our count could be vastly over-stated.
+        epub_html = _read_epub_contents(iterator, strip_html=True)
+        fast_count = int(len(epub_html) / 2400) + 1
+
     print('\tEstimated accurate page count')
     print('\t  Lines:', len(lines), ' Divs:', num_divs, ' Paras:', num_paras)
     print('\t  Accurate count:', count, ' Fast count:', fast_count)
