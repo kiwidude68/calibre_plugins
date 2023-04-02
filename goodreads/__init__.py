@@ -30,7 +30,7 @@ class Goodreads(Source):
     name = 'Goodreads'
     description = 'Downloads metadata and covers from Goodreads'
     author = 'Grant Drake'
-    version = (1, 7, 3)
+    version = (1, 7, 4)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])
@@ -50,7 +50,6 @@ class Goodreads(Source):
         from calibre.utils.random_ua import random_common_chrome_user_agent
         return random_common_chrome_user_agent()
 
-
     def config_widget(self):
         '''
         Overriding the default configuration screen for our own custom configuration
@@ -63,7 +62,6 @@ class Goodreads(Source):
         if goodreads_id:
             return ('Goodreads', goodreads_id,
                     '%s/book/show/%s' % (Goodreads.BASE_URL, goodreads_id))
-
 
     def id_from_url(self, url):
         match = re.match(self.BASE_URL + "/book/show/(\d+).*", url)

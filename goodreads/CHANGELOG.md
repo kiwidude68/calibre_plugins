@@ -1,5 +1,11 @@
 # Goodreads Change Log
 
+## [1.7.4] - 2023-04-02
+### Changed
+- Dutch translation (@M. de Boer)
+### Fixed
+- Fix to handle Goodreads working best only with Chrome based browsers. (@changhuapeng)
+
 ## [1.7.3] - 2023-02-01
 ### Fixed
 - Fix to handle books with no contributors. (@busches)
