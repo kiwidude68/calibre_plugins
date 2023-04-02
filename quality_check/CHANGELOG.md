@@ -1,14 +1,18 @@
 # Quality Check Change Log
 
-## [1.13.3] - 2021-11-26
+## [1.13.4] - 2023-04-02
+### Fixed
+- EPubCheck had typo when trying to log out missing book format (isarl)
+
+## [1.13.3] - 2022-11-26
 ### Fixed
 - Polish translation missing special substitution character for Fix Asin
 
-## [1.13.2] - 2021-11-09
+## [1.13.2] - 2022-11-09
 ### Fixed
 - Smarten punctuation now only checks files in the spine, ensuring excludes nav.xhtml
 
-## [1.13.1] - 2021-11-06
+## [1.13.1] - 2022-11-06
 ### Added
 - Polish translation (silatiw)
 ### Fixed

@@ -436,7 +436,7 @@ class EpubCheck(BaseCheck):
         def evaluate_book(book_id, db):
             path_to_book = db.format_abspath(book_id, 'EPUB', index_is_id=True)
             if not path_to_book:
-                self.log.error('ERROR: EPUB format is missing: ', self._get_title_authors_text(db, book_id))
+                self.log.error('ERROR: EPUB format is missing: ', get_title_authors_text(db, book_id))
                 return False
             try:
                 with ZipFile(path_to_book, 'r') as zf:
