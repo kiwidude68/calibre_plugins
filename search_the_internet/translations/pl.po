@@ -1,0 +1,397 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Marek Mazurowski <marek.mazurowski@gmail.com>, 2022
+# konrad … <konrad.krulikowski@gmail.com>, 2022
+# Adam Humienny <adam.humienny@gmail.com>, 2022
+# Marcin Kozioł <koziol.martin@gmail.com>, 2022
+# Ola Kleniewska <anyzeklove@gmail.com>, 2022
+# Piotr Strębski <strebski@gmail.com>, 2022
+# Grant Drake, 2022
+# The Name <moje.konto+transifex@posteo.org>, 2022
+# Silatiw Witalis, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-10 20:47+0100\n"
+"PO-Revision-Date: 2022-09-13 19:01+0000\n"
+"Last-Translator: Silatiw Witalis, 2022\n"
+"Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:892
+msgid "Keyboard shortcuts"
+msgstr "Skróty klawiszowe"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Uruchom calibre ponownie"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Preferencje dla:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Wyczyść wszystkie ustawienia dla tej wtyczki"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Czy na pewno chcesz zmienić swoje ustawienia w tej bibliotece dla tej "
+"wtyczki?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Żadne ustawienia w innych bibliotekach lub przechowywane w pliku JSON w "
+"folderze wtyczek Calibre nie zostaną zmienione."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Musisz potem ponownie uruchomić calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Ustawienia zostały zmienione"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Ustawienia dla tej wtyczki w tej bibliotece zostały zmienione."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Proszę ponownie uruchom calibre teraz."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Czy jesteś pewny, że chcesz wyczyścić wszystkie ustawienia w tej bibliotece "
+"dla tej wtyczki?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Ustawienia zostały usunięte"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Wszystkie ustawienia dla tej wtyczki w tej bibliotece zostały wyczyszczone."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiuj do schowka"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "Nieokreślony"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "Wymagane ponowne uruchomienie"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
+"uruchomić Calibre!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "Utwórz nową kolumnę"
+
+#: action.py:46
+msgid "Search Internet"
+msgstr "Search Internet"
+
+#: action.py:92 config.py:544 config.py:930
+msgid "Open Group"
+msgstr "Otwórz grupę"
+
+#: action.py:94
+msgid "&Customize plugin"
+msgstr "Konfiguruj wtyczkę"
+
+#: action.py:96 config.py:897
+msgid "&Help"
+msgstr "&Help"
+
+#: action.py:143
+msgid "Cannot open link"
+msgstr "Nie można otworzyć linku"
+
+#: action.py:144
+msgid "This menu item has not been configured with a url."
+msgstr "Ta pozycja menu nie została skonfigurowana z adresem url."
+
+#: action.py:176 action.py:188
+msgid "Invalid URL"
+msgstr "Nieprawidłowy adres URL"
+
+#: action.py:177
+msgid ""
+"You cannot use POST for this url as you have not specified any arguments "
+"after a ?"
+msgstr ""
+"Nie możesz użyć POST dla tego adresu url, ponieważ nie podałeś żadnych "
+"argumentów po ?"
+
+#: action.py:189
+msgid "You cannot use POST for this url as it does not have name=value for "
+msgstr ""
+"Nie możesz użyć POST dla tego adresu url, ponieważ nie posiada on name=value"
+" dla"
+
+#: config.py:289
+msgid "Select test data"
+msgstr "Wybierz dane do testowania url"
+
+#: config.py:298
+msgid "&Select test book:"
+msgstr "Wybierz testową książkę:"
+
+#: config.py:311
+msgid "Title:"
+msgstr "Tytuł:"
+
+#: config.py:313
+msgid "Author:"
+msgstr "Autor:"
+
+#: config.py:315
+msgid "Publisher:"
+msgstr "Wydawca:"
+
+#: config.py:359 config.py:502
+msgid "Add New Image"
+msgstr "Dodaj nową ikonę"
+
+#: config.py:362
+msgid "&Select image source"
+msgstr "Wybierz źródło ikony"
+
+#: config.py:365
+msgid "From &web domain favicon"
+msgstr "Z domeny internetowej"
+
+#: config.py:372
+msgid "From .png &file"
+msgstr "Z pliku .png"
+
+#: config.py:385
+msgid "&Save as filename:"
+msgstr "Zapisz jako:"
+
+#: config.py:409
+msgid "Select a .png file for the menu icon"
+msgstr "Wybierz plik .png dla ikony menu"
+
+#: config.py:415
+msgid "Cannot select image"
+msgstr "Nie można wybrać ikony"
+
+#: config.py:416 config.py:454
+msgid "Source image must be a .png file."
+msgstr "Ikona źródłowa musi być plikiem .png."
+
+#: config.py:424 config.py:428 config.py:442 config.py:450 config.py:453
+#: config.py:456
+msgid "Cannot import image"
+msgstr "Nie można importować ikony"
+
+#: config.py:425
+msgid "You must specify a filename to save as."
+msgstr "Musisz określić nazwę pliku, jako który chcesz zapisać."
+
+#: config.py:429
+msgid "The save as filename should consist of a filename only."
+msgstr "Zapis jako nazwa pliku powinien składać się tylko z nazwy pliku."
+
+#: config.py:434 config.py:716 config.py:988 config.py:997
+msgid "Are you sure?"
+msgstr "Jesteś pewien?"
+
+#: config.py:435
+msgid "An image with this name already exists - overwrite it?"
+msgstr "Ikona o tej nazwie już istnieje - nadpisać ją?"
+
+#: config.py:443
+msgid "You must specify a web domain url"
+msgstr "Musisz określić adres url domeny internetowej"
+
+#: config.py:451
+msgid "You must specify a source file."
+msgstr "Musisz określić plik źródłowy."
+
+#: config.py:457
+msgid "Source image does not exist!"
+msgstr "Obraz źródłowy nie istnieje!"
+
+#: config.py:544
+msgid "Submenu"
+msgstr "Podmenu"
+
+#: config.py:544
+msgid "Title"
+msgstr "Tytuł"
+
+#: config.py:545
+msgid "Encoding"
+msgstr "Kodowanie"
+
+#: config.py:545
+msgid "Image"
+msgstr "Ikona"
+
+#: config.py:545
+msgid "Method"
+msgstr "Metoda"
+
+#: config.py:545
+msgid "Url"
+msgstr "Url"
+
+#: config.py:713
+msgid "Are you sure you want to delete this menu item?"
+msgstr "Czy na pewno chcesz usunąć tę pozycję menu?"
+
+#: config.py:715
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "Czy na pewno chcesz usunąć wybrane {0} pozycje menu?"
+
+#: config.py:836
+msgid "Select and configure the menu items to display:"
+msgstr "Zaznacz pozycję i konfiguruj wiersz menu:"
+
+#: config.py:852
+msgid "Move row up"
+msgstr "Przesuń wiersz w górę"
+
+#: config.py:859
+msgid "Add menu item row"
+msgstr "Dodaj wiersz menu"
+
+#: config.py:866
+msgid "Delete menu item row"
+msgstr "Usuń wiersz menu"
+
+#: config.py:873
+msgid "Reset to defaults"
+msgstr "Reset do ustawień domyślnych"
+
+#: config.py:880
+msgid "Move row down"
+msgstr "Przesuń wiersz w dół"
+
+#: config.py:893
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Edytuj skróty klawiszowe związane z tą wtyczką"
+
+#: config.py:954
+msgid "Add image"
+msgstr "Dodaj ikonę"
+
+#: config.py:957
+msgid "Open images folder"
+msgstr "Otwórz folder z ikonami .png"
+
+#: config.py:963
+msgid "Move active to top"
+msgstr "Przenieś aktywny na górę"
+
+#: config.py:969
+msgid "Test url"
+msgstr "Test adresu url"
+
+#: config.py:970
+msgid "Ctrl+T"
+msgstr "Ctrl+T"
+
+#: config.py:973
+msgid "Test url using"
+msgstr "Konfiguracja testu adresu url"
+
+#: config.py:974
+msgid "Ctrl+Shift+T"
+msgstr "Ctrl+Shift+T"
+
+#: config.py:980
+msgid "Import"
+msgstr "Importuj"
+
+#: config.py:983
+msgid "Export"
+msgstr "Eksportuj"
+
+#: config.py:989
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr "Czy na pewno chcesz przywrócić domyślne menu wtyczki?"
+
+#: config.py:990
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr ""
+"Wszelkie zmodyfikowane elementy konfiguracji i menu niestandardowego zostaną"
+" odrzucone."
+
+#: config.py:998
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr "Folder nie istnieje. Czy chcesz go utworzyć?"
+
+#: config.py:1017
+msgid "Cannot test"
+msgstr "Nie można testować"
+
+#: config.py:1018
+msgid "You must select a menu item with a url to test it."
+msgstr "Musisz wybrać pozycję menu z adresem url, aby ją przetestować."
+
+#: config.py:1040
+msgid "Import Failed"
+msgstr "Importowanie nie powiodło się"
+
+#: config.py:1041
+msgid "This is not a valid STIP export archive"
+msgstr "To nie jest prawidłowe archiwum eksportowe STIP"
+
+#: config.py:1053
+msgid "Import completed"
+msgstr "Import zakończony"
+
+#: config.py:1053
+msgid "{0} menu items added"
+msgstr "dodano {0} pozycji menu"
+
+#: config.py:1063
+msgid "Cannot export"
+msgstr "Nie można eksportować"
+
+#: config.py:1064
+msgid "No menu items selected to export."
+msgstr "Nie wybrano żadnych pozycji menu do eksportu."
+
+#: config.py:1092
+msgid "Export completed"
+msgstr "Eksport zakończony"
+
+#: config.py:1101
+msgid "Select a menu file archive to import"
+msgstr "Wybierz archiwum plików menu do importu"

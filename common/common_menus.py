@@ -30,7 +30,8 @@ def unregister_menu_actions(ia):
     '''
     global plugin_menu_actions
     for action in plugin_menu_actions:
-        ia.gui.keyboard.unregister_shortcut(action.calibre_shortcut_unique_name)
+        if hasattr(action, 'calibre_shortcut_unique_name'):
+            ia.gui.keyboard.unregister_shortcut(action.calibre_shortcut_unique_name)
         # starting in calibre 2.10.0, actions are registers at
         # the top gui level for OSX' benefit.
         if calibre_version >= (2,10,0):

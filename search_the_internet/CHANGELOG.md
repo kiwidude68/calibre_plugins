@@ -1,4 +1,10 @@
 # Search The Internet Change Log
+ 
+## [1.10.1] - 2023-04-02
+### Added
+- Polish translation (various).
+### Fixed
+- Changing menu configuration with a submenu present in your list would error
 
 ## [1.10.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
