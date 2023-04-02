@@ -61,7 +61,7 @@ PAGE_ALGORITHMS = [_('Paragraphs (APNX accurate)'), _('E-book Viewer (calibre)')
 PAGE_DOWNLOADS = {
                   'goodreads':
                     {
-                     'URL': 'http://www.goodreads.com/book/show/%s',
+                     'URL': 'https://www.goodreads.com/book/show/%s',
                      'pages_xpath': '//div[@class="FeaturedDetails"]/p[@data-testid="pagesFormat"]/text()',
                      'name': 'Goodreads',
                      'id': 'goodreads',
@@ -663,8 +663,8 @@ class StatisticsTab(QWidget):
         readability_layout = QGridLayout()
         readability_group_box.setLayout(readability_layout)
 
-        readability_label = QLabel(_('Readability statistics available are <a href="http://en.wikipedia.org/wiki/Flesch-Kincaid_readability_test">Flesch-Kincaid</a> '
-                                     'or <a href="http://en.wikipedia.org/wiki/Gunning_fog_index">Gunning Fog Index</a>.'), self)
+        readability_label = QLabel(_('Readability statistics available are <a href="https://en.wikipedia.org/wiki/Flesch-Kincaid_readability_test">Flesch-Kincaid</a> '
+                                     'or <a href="https://en.wikipedia.org/wiki/Gunning_fog_index">Gunning Fog Index</a>.'), self)
         readability_layout.addWidget(readability_label, 0, 0, 1, 3)
         readability_label.linkActivated.connect(self.parent_dialog._link_activated)
 

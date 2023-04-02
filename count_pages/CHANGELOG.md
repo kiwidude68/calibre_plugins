@@ -1,5 +1,11 @@
 # Count Pages Change Log
 
+## [1.13.0] - 2023-04-02
+### Fixed
+- Gunning Fog was broken due to english.pickle needing to use LF line endings instead of CRLF (@jonathanking)
+- Fast count now strips html before estimating count (@sgmoore)
+- Switch from http to https for Goodreads website (@blockloop)
+
 ## [1.12.1] - 2023-02-03
 ### Fixed
 - Fix for change to Goodreads website layout for page count source.
