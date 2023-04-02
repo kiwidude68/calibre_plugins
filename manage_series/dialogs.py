@@ -757,6 +757,8 @@ class SeriesDialog(SizePersistedDialog):
             safe_title = self.convert_to_search_text(book.title())
             safe_author = self.convert_author_to_search_text(book.authors()[0])
             url = URLS[name].replace('{title}', safe_title).replace('{author}', safe_author)
+            if not isinstance(url, bytes):
+                url = url.encode('utf-8')
             open_url(QUrl.fromEncoded(url))
 
     def convert_to_search_text(self, text, encoding='utf-8'):

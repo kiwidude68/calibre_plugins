@@ -1,5 +1,11 @@
 # Manage Series Change Log
 
+## [1.5.1] - 2023-04-02
+### Added
+- Russian translation (ashed)
+### Fixed
+- Search websites context menu items were broken (@creeperwithrabies)
+
 ## [1.5.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
