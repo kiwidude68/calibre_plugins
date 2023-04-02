@@ -45,6 +45,12 @@ class Goodreads(Source):
     BASE_URL = 'https://www.goodreads.com'
     MAX_EDITIONS = 5
 
+    @property
+    def user_agent(self):
+        from calibre.utils.random_ua import random_common_chrome_user_agent
+        return random_common_chrome_user_agent()
+
+
     def config_widget(self):
         '''
         Overriding the default configuration screen for our own custom configuration
