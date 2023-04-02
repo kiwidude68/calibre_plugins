@@ -71,5 +71,4 @@ class ConfigWidget(DefaultConfigWidget):
         new_prefs = {}
         new_prefs[KEY_MAX_DOWNLOADS] = int(unicode(self.max_downloads_spin.value()))
         new_prefs[KEY_GET_ALL_AUTHORS] = self.all_authors_checkbox.checkState() == Qt.Checked
-        new_prefs[KEY_APPEND_TOC] = self.toc_checkbox.checkState() == Qt.Checked
         plugin_prefs[STORE_NAME] = new_prefs

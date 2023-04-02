@@ -5,13 +5,14 @@
 # Translators:
 # Marek Mazurowski <marek.mazurowski@gmail.com>, 2022
 # The Name <moje.konto+transifex@posteo.org>, 2022
+# Marcin Kozioł <koziol.martin@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-19 16:29+0100\n"
 "PO-Revision-Date: 2022-09-08 19:50+0000\n"
-"Last-Translator: The Name <moje.konto+transifex@posteo.org>, 2022\n"
+"Last-Translator: Marcin Kozioł <koziol.martin@gmail.com>, 2023\n"
 "Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,6 +33,10 @@ msgid ""
 "This will increase the potential likelihood of getting a larger cover image\n"
 "but does not guarantee it."
 msgstr ""
+"Zwiększenie tej wartości spowoduje uwzględnienie większej liczby wydań, ale także wydłuży czas wyszukiwania.\n"
+"\n"
+"Zwiększy to potencjalne prawdopodobieństwo uzyskania większego obrazu okładki\n"
+"ale tego nie gwarantuje."
 
 #: config.py:61
 msgid "Get all contributing authors (e.g. editors, illustrators etc)"

@@ -1,5 +1,11 @@
 # Barnes & Noble Change Log
 
+## [1.5.0] - 2023-04-02
+### Changed
+- B&N identifier now just using the numeric store value alone, without the sub-page prefix.
+### Fixed
+- Configuration screen broken from removal of TOC feature. (aragonit)
+
 ## [1.4.0] - 2022-10-16
 ### Added
 - All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins

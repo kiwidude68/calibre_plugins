@@ -154,7 +154,7 @@ class Worker(Thread): # Get details
         self.result_queue.put(mi)
 
     def parse_barnes_noble_id(self, url):
-        result = re.search('barnesandnoble.com/(.*/.*/\d+)', url)
+        result = re.search('barnesandnoble.com/.*/(\d+)', url)
         if result:
             return result.groups(0)[0]
 

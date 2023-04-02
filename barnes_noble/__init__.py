@@ -26,7 +26,7 @@ class BarnesNoble(Source):
     name = 'Barnes & Noble'
     description = 'Downloads metadata and covers from Barnes & Noble'
     author = 'Grant Drake'
-    version = (1, 4, 0)
+    version = (1, 5, 0)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])
@@ -36,9 +36,9 @@ class BarnesNoble(Source):
     has_html_comments = True
     supports_gzip_transfer_encoding = True
 
-    BASE_URL = 'http://search.barnesandnoble.com'
-    BROWSE_URL = 'http://www.barnesandnoble.com'
-    SEARCH_URL = 'http://www.barnesandnoble.com/s?'
+    BASE_URL = 'https://search.barnesandnoble.com'
+    BROWSE_URL = 'https://www.barnesandnoble.com'
+    SEARCH_URL = 'https://www.barnesandnoble.com/s?'
 
     def config_widget(self):
         '''
@@ -50,8 +50,19 @@ class BarnesNoble(Source):
     def get_book_url(self, identifiers):
         barnes_noble_id = identifiers.get('barnesnoble', None)
         if barnes_noble_id:
-            url = '%s/%s' % (BarnesNoble.BROWSE_URL, barnes_noble_id)
+            url = self.format_url_for_id(barnes_noble_id)
             return ('barnesnoble', barnes_noble_id, url)
+
+    def format_url_for_id(self, barnes_noble_id):
+        if '/' in barnes_noble_id:
+            # historically the B&N identifier was the full path to the book 
+            # e.g. w/loyalty-lisa-scottoline/1141707914
+            url = '%s/%s' % (BarnesNoble.BROWSE_URL, barnes_noble_id)
+        else:
+            # As of 1.5.0 the B&N identifier will just be a numeric identifier e.g. 1141707914
+            # B&N will itself redirect to a page with the full URL, or we use w/<id> e.g. w/1141707914
+            url = '%s/w/%s' % (BarnesNoble.BROWSE_URL, barnes_noble_id)
+        return url
 
     def create_query(self, log, title=None, authors=None, identifiers={}):
         isbn = check_isbn(identifiers.get('isbn', None))
@@ -120,7 +131,9 @@ class BarnesNoble(Source):
         br = self.browser
         if barnes_noble_id:
             log.info('Found barnes noble ID: %r' % barnes_noble_id)
-            matches.append('%s/%s' % (BarnesNoble.BROWSE_URL, barnes_noble_id))
+            id_url = self.format_url_for_id(barnes_noble_id)
+            log.info('Adding match: %s' % id_url)
+            matches.append(id_url)
         else:
             # Barnes & Noble doesn't cope very well with non ascii names so convert
             title = get_udc().decode(title)
