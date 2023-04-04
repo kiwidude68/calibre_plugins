@@ -66,7 +66,12 @@ class Worker(Thread): # Get details
 
     def run(self):
         try:
-            self.get_details()
+            retry = True
+            retryCount = 0
+            while retry and retryCount <= 10:
+                retryCount += 1
+                self.log('Get details attempt #%d'%retryCount)
+                retry = self.get_details()
         except:
             self.log.exception('get_details failed for url: %r'%self.url)
 
@@ -87,21 +92,21 @@ class Worker(Thread): # Get details
             else:
                 msg = 'Failed to make details query: %r'%self.url
                 self.log.exception(msg)
-            return
+            return False
 
         #open('e:\\goodreads.html', 'wb').write(raw)
         raw_utf8 = raw.decode('utf-8', errors='replace')
 
         if '<title>404 - ' in raw_utf8:
             self.log.error('URL malformed: %r'%self.url)
-            return
+            return False
 
         try:
             root = parse_html(raw_utf8)
         except:
             msg = 'Failed to parse goodreads details page: %r'%self.url
             self.log.exception(msg)
-            return
+            return False
 
         try:
             # Look at the <title> attribute for page to make sure that we were actually returned
@@ -123,15 +128,18 @@ class Worker(Thread): # Get details
             msg = 'Failed to parse goodreads details page: %r'%self.url
             msg += tostring(errmsg, method='text', encoding=unicode).strip()
             self.log.error(msg)
-            return
+            return False
 
         try:
             (book_json, series_json, contributors_list_json, work_json) = self.parse_book_json(root)
+            if not book_json:
+                self.log('No book_json found in this response, retrying for another response')
+                return True
             self.parse_details(root, book_json, series_json, contributors_list_json, work_json)
         except:
             msg = 'Failed attempting to read book json meta tag from: %r'%self.url
             self.log.exception(msg)
-            return
+            return False
         
     def parse_book_json(self, root):
         self.log.info('Trying to parse book json for 2022 web page format')
@@ -144,6 +152,11 @@ class Worker(Thread): # Get details
             book_props_json = json.loads(script_node[0].text)
             # script has a complicated hierarchy we need to traverse to get node we want
             apolloState = book_props_json["props"]["pageProps"]["apolloState"]
+            # There can be random results where apolloState is empty, so have to fallback to parsing page
+            if len(apolloState.keys()) == 0:
+                self.log.info('Empty apolloState node, will scrape page instead')
+                return (None, None, None, None)
+
             # now must iterate keys to find the one starting with Book, and array of all Contributors
             book_json = None
             series_json = None
@@ -172,6 +185,8 @@ class Worker(Thread): # Get details
             return (None, None, None, None)
     
     def parse_details(self, root, book_json, series_json, contributors_list_json, work_json):
+        title = None
+        authors = []
         try:
             goodreads_id = self.parse_goodreads_id(self.url)
         except:
@@ -183,14 +198,12 @@ class Worker(Thread): # Get details
                 title = self.parse_title(book_json)
         except:
             self.log.exception('Error parsing title for url: %r'%self.url)
-            title = None
 
         try:
             if (book_json):
                 authors = self.parse_authors(contributors_list_json)
         except:
             self.log.exception('Error parsing authors for url: %r'%self.url)
-            authors = []
 
         if not title or not authors or not goodreads_id:
             self.log.error('Could not parse all of title/authors/goodreads id from: %r'%self.url)
