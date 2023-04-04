@@ -335,21 +335,23 @@ class Worker(Thread): # Get details
         # User either requests all authors, or only the primary authors (latter is the default)
         # If "only primary authors", only bring them in if:
         # 1. They are first author in the list, and/or
-        # 2. They are a 'Goodreads Author'
+        # 2. They have the same contributor type as the first author.
         get_all_authors = cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GET_ALL_AUTHORS]
         authors = []
+        first_contrib_type = None
         for contributor_json in contributors_list_json:
             if (contributor_json.get("name") is None):
                 continue
 
             author_name = contributor_json["name"]
-            self.log.info('parse_authors - author: %s'%author_name)
+            contrib_type = contributor_json["__typename"]
+            if not first_contrib_type:
+                first_contrib_type = contrib_type
+            self.log.info('parse_authors - author=%s type=%s' % (author_name, contrib_type))
             if get_all_authors:
                 authors.append(author_name)
             else:
-                if contributor_json["isGrAuthor"]:
-                    authors.append(author_name)
-                elif len(authors) == 0:
+                if contrib_type == first_contrib_type:
                     authors.append(author_name)
                 else:
                     break

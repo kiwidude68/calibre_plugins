@@ -1,5 +1,10 @@
 # Goodreads Change Log
 
+## [1.7.5] - 2023-04-04
+### Changed
+- **Breaking:** Require calibre 2.81.0 or later due to change in 1.7.4 for random chrome user agent. Use calibre 6.x for a better guarantee it will work.
+- Parsing authors now includes all with same contributing type as first author in list (only applies when Get all contributing authors is unchecked).
+
 ## [1.7.4] - 2023-04-02
 ### Changed
 - Dutch translation (@M. de Boer)

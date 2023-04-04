@@ -30,8 +30,8 @@ class Goodreads(Source):
     name = 'Goodreads'
     description = 'Downloads metadata and covers from Goodreads'
     author = 'Grant Drake'
-    version = (1, 7, 4)
-    minimum_calibre_version = (2, 0, 0)
+    version = (1, 7, 5)
+    minimum_calibre_version = (2, 81, 0)
 
     capabilities = frozenset(['identify', 'cover'])
     touched_fields = frozenset(['title', 'authors', 'identifier:goodreads',
@@ -47,8 +47,13 @@ class Goodreads(Source):
 
     @property
     def user_agent(self):
-        from calibre.utils.random_ua import random_common_chrome_user_agent
-        return random_common_chrome_user_agent()
+        try:
+            from calibre.utils.random_ua import random_common_chrome_user_agent
+            return random_common_chrome_user_agent()
+        except:
+            # Fallback to earlier calibre
+            from calibre.utils.random_ua import random_chrome_ua
+            return random_chrome_ua()
 
     def config_widget(self):
         '''
