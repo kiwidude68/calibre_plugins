@@ -4,6 +4,7 @@ __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
 import re, json, os, traceback, collections
+from datetime import datetime
 import xml.etree.ElementTree as et
 
 # calibre Python 3 compatibility.
@@ -27,10 +28,12 @@ except NameError:
 from calibre.constants import DEBUG
 from calibre.ebooks.metadata import fmt_sidx, authors_to_string, check_isbn
 from calibre.ebooks.oeb.parse_utils import RECOVER_PARSER
+from calibre.ebooks.BeautifulSoup import BeautifulSoup
 from calibre.gui2 import error_dialog, open_url
 from calibre.utils.config import tweaks
 from calibre.utils.cleantext import clean_ascii_chars
 from calibre.utils.date import parse_date, now, UNDEFINED_DATE
+from calibre.utils.iso8601 import local_tz
 from calibre import get_parsed_proxy
 from calibre import browser
 from calibre.devices.usbms.driver import debug_print
@@ -399,9 +402,60 @@ class HttpHelper(object):
             return ''
         return content
 
-    def get_goodreads_books_on_shelves(self, user_name, shelves, per_page=100):
+    def get_goodreads_books_on_shelves_html(self, user_name, shelves, per_page=100):
         # Returns a dictionary of books on these Goodreads shelf by goodreads id, None if an error
-        debug_print("HttpHelper::get_goodreads_books_on_shelves: user_name=%s" % (user_name, ))
+        debug_print("HttpHelper::get_goodreads_books_on_shelves_html: user_name=%s" % (user_name, ))
+        oauth_client = self.create_oauth_client(user_name)
+        user_id = cfg.plugin_prefs[cfg.STORE_USERS][user_name][cfg.KEY_USER_ID]
+        shelf_books = collections.OrderedDict()
+
+        self.plugin_action.progressbar_format(_('Page')+': %v')
+        for shelf in shelves:
+            shelf_name = shelf['name']
+            self.plugin_action.progressbar_label(_("Syncing from shelf: {0}").format(shelf_name))
+            page = 0
+            while True:
+                # Will need to retrieve books in pages with multiple calls if many on the list
+                page = page + 1
+                # Use this url to test reading from someone elses shelf
+                url = '%s/review/list/%s?print=true&shelf=%s&page=%d&per_page=%d' % \
+                            (cfg.URL_HTTPS, user_id, shelf_name, page, per_page)
+                debug_print("get_goodreads_books_on_shelves_html: url=", url)
+                (response, content) = self._oauth_request_get(oauth_client, url)
+#                 open('E:\\test.html','w').write(content)
+                self.plugin_action.progressbar_increment()
+                if not response:
+                    return
+                soup = BeautifulSoup(content, 'html.parser')
+                review_nodes = soup.find_all("tr", class_="review")
+                if not review_nodes:
+                    break
+                for review_node in review_nodes:
+                    book = self._convert_review_html_table_row_to_book(review_node, shelf_name)
+                    if book and book['goodreads_id'] not in shelf_books:
+                        shelf_books[book['goodreads_id']] = book
+
+                next_page_link = soup.select("a.next_page")
+                if not next_page_link:
+                    # At the last page since the "next page" text is not a link
+                    break
+                elif page == 1:
+                    # This can be slow so config the progressbar correctly
+                    prev = next_page_link[0].previous_sibling # Whitespace
+                    if prev:
+                        prev = prev.previous_sibling
+                    if prev:
+                        try:
+                            last_page_number = int(prev.string)
+                            self.plugin_action.pb.set_maximum(last_page_number)
+                        except ValueError:
+                            pass
+        return shelf_books
+
+    def get_goodreads_books_on_shelves_xml(self, user_name, shelves, per_page=100):
+        # Returns a dictionary of books on these Goodreads shelf by goodreads id, None if an error
+
+        debug_print("HttpHelper::get_goodreads_books_on_shelves_xml: user_name=%s" % (user_name, ))
         oauth_client = self.create_oauth_client(user_name)
         shelf_books = collections.OrderedDict()
         
@@ -555,6 +609,86 @@ class HttpHelper(object):
         book['goodreads_review_text'] = ''
         return book
 
+    def _convert_review_html_table_row_to_book(self, html_table_row_soup, shelf_name, include_work=False):
+        book = {}
+
+        goodreads_id_soup = html_table_row_soup.find('div', attrs={'data-resource-type': 'Book'})
+        goodreads_id = goodreads_id_soup['data-resource-id']
+        book['goodreads_id'] = goodreads_id
+
+        def get_multi_date_field_text(field_name):
+            field_soup = html_table_row_soup.find('td', class_=field_name).find('div', 'value')
+            # All text in the value element concatenated, handles linked values.
+            date_values = field_soup.find_all('span', class_='date_read_value')
+            return ["".join(elm.strings).strip() for elm in date_values]
+
+        def get_field_text(field_name):
+            field_soup = html_table_row_soup.find('td', class_=field_name)
+            # All text in the value element concatenated, handles linked values.
+            field_text = "".join(field_soup.find("div", "value").strings).strip()
+
+            # Remove "[edit]" from the value since it's part of the data, even in print mode
+            if field_text.endswith("[edit]"): # Is this the same in all languages?
+                field_text = field_text[:-6].strip()
+
+            if field_text != field_text.strip():
+                debug_print("STRIPPING::::: ", repr(field_text), field_soup)
+            return field_text
+
+        # <td class="field isbn13" style="display: none"><label>isbn13</label><div class="value">    9780446401241  </div>
+        # isbn13_soup = html_table_row_soup.find('td', class_='isbn13')
+        # isbn = isbn13_soup.find("div", class_="value").string.strip()
+        isbn = get_field_text("isbn13")
+        # isbn = book_node.findtext('isbn13')
+        book['goodreads_isbn'] = isbn
+
+        (title, series) = self._convert_goodreads_title_with_series(get_field_text('title'))
+        book['goodreads_title'] = title
+        debug_print("HttpHelper::_convert_review_html_table_row_to_book - title=", title)
+        book['goodreads_series'] = series
+
+        # Only the first author is included, sometimes with an asterisk
+        author = get_field_text('author')
+        if author.endswith('*'):
+            author = author[:-1].strip()
+        # Switch from "Last, First" to "First Last"
+        book['goodreads_author'] = " ".join(name.strip() for name in reversed(author.split(",", maxsplit=1)))
+
+        shelves = get_field_text('shelves')
+        if "add to shelves" in shelves:  # Only get shelves for yourself, not for others
+            shelves = shelf_name
+        if shelves:
+            book['goodreads_shelves'] = shelves
+            book['goodreads_shelves_list'] = [shelf.strip() for shelf in shelves.split(",")]
+
+        # Format is <tr id="review_<review-id>">...
+        book['goodreads_review_id'] = html_table_row_soup['id'].split('_')[1]
+
+        # Count lit stars for rating. Lit stars have class=p10, unlit are class=p0.
+        rating_field_soup = html_table_row_soup.find('td', class_='rating')
+        goodreads_user_rating = len(rating_field_soup.find_all("span", class_="p10"))
+        book['goodreads_rating'] = goodreads_user_rating
+
+        book['goodreads_started_at'] = self._parse_goodreads_html_date(get_field_text("date_started"))
+
+        read_date_texts = get_multi_date_field_text("date_read")
+        book['goodreads_read_at'] = UNDEFINED_DATE
+        if read_date_texts:
+            read_dates = [self._parse_goodreads_html_date(d) for d in read_date_texts]
+            read_dates = [d for d in read_dates if d != UNDEFINED_DATE]
+            if read_dates:
+                book['goodreads_read_at'] = min(read_dates)
+
+        book['goodreads_date_added'] = self._parse_goodreads_html_date(get_field_text("date_added"))
+
+        book['goodreads_date_updated'] = ''
+        book['goodreads_review_text'] = ''
+        if include_work:
+            href_with_work = html_table_row_soup.find('td', class_='format').find('a')['href']
+            # Will be something like 'work/editions/2751627'
+            book['goodreads_work_id'] = href_with_work.split('/')[-1]
+        return book
+
     def _convert_review_xml_node_to_book(self, review_node, include_work=False):
 #         debug_print("HttpHelper::_convert_review_xml_node_to_book - review_node=", tostring(review_node))
         book_node = review_node.find('book')
@@ -584,10 +718,10 @@ class HttpHelper(object):
             book['goodreads_review_id'] = review_node.findtext('id')
             book['goodreads_rating'] = int(review_node.findtext('rating'))
             # Get the various date fields in case the user has sync actions for them
-            book['goodreads_started_at'] = self._parse_goodreads_date(review_node.findtext('started_at'))
-            book['goodreads_read_at'] = self._parse_goodreads_date(review_node.findtext('read_at'))
-            book['goodreads_date_added'] = self._parse_goodreads_date(review_node.findtext('date_added'))
-            book['goodreads_date_updated'] = self._parse_goodreads_date(review_node.findtext('date_updated'))
+            book['goodreads_started_at'] = self._parse_goodreads_xml_date(review_node.findtext('started_at'))
+            book['goodreads_read_at'] = self._parse_goodreads_xml_date(review_node.findtext('read_at'))
+            book['goodreads_date_added'] = self._parse_goodreads_xml_date(review_node.findtext('date_added'))
+            book['goodreads_date_updated'] = self._parse_goodreads_xml_date(review_node.findtext('date_updated'))
             #review_text = review_node.findtext('body')
             book['goodreads_review_text'] = review_node.findtext('body').strip()
             if len(book['goodreads_review_text']) > 0:
@@ -609,10 +743,39 @@ class HttpHelper(object):
                 book['goodreads_work_id'] = work_node.findtext('id')
         return book
 
-    def _parse_goodreads_date(self, date_text):
+    def _parse_goodreads_xml_date(self, date_text):
         if date_text == '':
             return UNDEFINED_DATE
         return parse_date(date_text, assume_utc=True, as_utc=False)
+
+    def _parse_goodreads_html_date(self, date_text):
+        if not date_text or date_text == 'not set':
+            return UNDEFINED_DATE
+
+        try:
+            # Three formats
+            # 1. YYYY
+            # 2. MMM YYYY
+            # 3. MMM D, YYYY
+            # Can't use strptime since it depends on the users's locale, but it's
+            # possible to write a custom parser.
+            parts = date_text.split(" ")
+            year = int(parts[-1])
+            if len(parts) in (2, 3):
+                # Use position in list as month number
+                month = ["", "jan", "feb", "mar", "apr", "may", "jun",
+                     "jul", "aug", "sep", "oct", "nov", "dec"].index(parts[0].lower())
+            else:
+                month = 1
+            if len(parts) == 3:
+                # Strip comma and convert to integer
+                day = int(parts[1][:-1])
+            else:
+                day = 1
+            return datetime(year=year, month=month, day=day, tzinfo=local_tz)
+        except ValueError:
+            debug_print('_parse_goodreads_html_date: Failed to parse date ', repr(date_text))
+            return UNDEFINED_DATE
 
     def _convert_goodreads_title_with_series(self, text):
         # This function attempts to convert a myriad of Goodreads title
