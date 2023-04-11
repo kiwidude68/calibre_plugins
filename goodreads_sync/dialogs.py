@@ -415,13 +415,9 @@ class ChooseShelvesToSyncDialog(SizePersistedDialog):
         for shelf in self.shelves:
             if shelf['name'] in self.selected_shelf_names:
                 self.selected_shelves.append(shelf)
-        
+
         self.plugin_action.progressbar_show(1)
-        use_xml_api = False # Not maintained and does not include date read
-        if use_xml_api:
-            self.goodreads_shelf_books = self.grhttp.get_goodreads_books_on_shelves_xml(self.user_name, self.selected_shelves)
-        else:
-            self.goodreads_shelf_books = self.grhttp.get_goodreads_books_on_shelves_html(self.user_name, self.selected_shelves)
+        self.goodreads_shelf_books = self.grhttp.get_goodreads_books_on_shelves(self.user_name, self.selected_shelves)
         self.plugin_action.progressbar_hide()
         self.accept()
 

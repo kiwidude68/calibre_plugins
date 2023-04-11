@@ -402,6 +402,40 @@ class HttpHelper(object):
             return ''
         return content
 
+    def get_goodreads_books_on_shelves(self, user_name, shelves, per_page=100):
+        # The XML API is not maintained and does not include date read for newly read books but
+        # has better authors and shelf data and is very fast. We let it be the base of the data
+        # and just pick what is missing from HTML.
+        books = self.get_goodreads_books_on_shelves_xml(user_name, shelves, per_page)
+        html_book_data = self.get_goodreads_books_on_shelves_html(user_name, shelves, per_page)
+
+        for book_id, html_book in html_book_data.items():
+            if book_id in books:
+                self._merge_book_into(html_book, books[book_id])
+            else:
+                books[book_id] = html_book
+
+        return books
+
+    def _merge_book_into(self, new_book_data, target_book):
+        # If target_book has missing or truncated data that seems to be better
+        # in new_book_data, then the new_book_data will be copied to target_book
+        new_shelves = new_book_data['goodreads_shelves_list']
+        shelves = target_book['goodreads_shelves_list']
+        for shelf in new_shelves:
+            if shelf not in shelves: # Scales badly if there are hundreds of shelves
+                shelves.append(shelf)
+        target_book['goodreads_shelves'] = ','.join(shelves)
+
+        for date_property in ('goodreads_started_at', 'goodreads_read_at',
+                            'goodreads_date_added', 'goodreads_date_updated'):
+            if target_book[date_property] == UNDEFINED_DATE:
+                target_book[date_property] = new_book_data[date_property]
+
+        for longest_text_property in ('goodreads_author', 'goodreads_review_text'):
+            if len(new_book_data[longest_text_property]) > len(target_book[longest_text_property]):
+                target_book[longest_text_property] = new_book_data[longest_text_property]
+
     def get_goodreads_books_on_shelves_html(self, user_name, shelves, per_page=100):
         # Returns a dictionary of books on these Goodreads shelf by goodreads id, None if an error
         debug_print("HttpHelper::get_goodreads_books_on_shelves_html: user_name=%s" % (user_name, ))
@@ -412,7 +446,7 @@ class HttpHelper(object):
         self.plugin_action.progressbar_format(_('Page')+': %v')
         for shelf in shelves:
             shelf_name = shelf['name']
-            self.plugin_action.progressbar_label(_("Syncing from shelf: {0}").format(shelf_name))
+            self.plugin_action.progressbar_label(_("Syncing pass 2/2 from shelf: {0}").format(shelf_name))
             page = 0
             while True:
                 # Will need to retrieve books in pages with multiple calls if many on the list
@@ -434,6 +468,8 @@ class HttpHelper(object):
                     book = self._convert_review_html_table_row_to_book(review_node, shelf_name)
                     if book and book['goodreads_id'] not in shelf_books:
                         shelf_books[book['goodreads_id']] = book
+                    else:
+                        self._merge_book_into(book, shelf_books[book['goodreads_id']])
 
                 next_page_link = soup.select("a.next_page")
                 if not next_page_link:
@@ -462,7 +498,7 @@ class HttpHelper(object):
         self.plugin_action.progressbar_format(_('Page')+': %v')
         for shelf in shelves:
             shelf_name = shelf['name']
-            self.plugin_action.progressbar_label(_("Syncing from shelf: {0}").format(shelf_name))
+            self.plugin_action.progressbar_label(_("Syncing pass 1/2 for shelf: {0}").format(shelf_name))
             page = 0
             while True:
                 self.plugin_action.progressbar_increment()
@@ -618,7 +654,6 @@ class HttpHelper(object):
 
         def get_multi_date_field_text(field_name):
             field_soup = html_table_row_soup.find('td', class_=field_name).find('div', 'value')
-            # All text in the value element concatenated, handles linked values.
             date_values = field_soup.find_all('span', class_='date_read_value')
             return ["".join(elm.strings).strip() for elm in date_values]
 
@@ -647,7 +682,8 @@ class HttpHelper(object):
         debug_print("HttpHelper::_convert_review_html_table_row_to_book - title=", title)
         book['goodreads_series'] = series
 
-        # Only the first author is included, sometimes with an asterisk
+        # Only the first author is included, sometimes with an asterisk, indicating
+        # "Goodreads Author"
         author = get_field_text('author')
         if author.endswith('*'):
             author = author[:-1].strip()
@@ -655,7 +691,7 @@ class HttpHelper(object):
         book['goodreads_author'] = " ".join(name.strip() for name in reversed(author.split(",", maxsplit=1)))
 
         shelves = get_field_text('shelves')
-        if "add to shelves" in shelves:  # Only get shelves for yourself, not for others
+        if "add to shelves" in shelves:  # Can only get shelves for yourself, not for others, so shelves is almost expected to be wrong.
             shelves = shelf_name
         if shelves:
             book['goodreads_shelves'] = shelves
@@ -666,22 +702,23 @@ class HttpHelper(object):
 
         # Count lit stars for rating. Lit stars have class=p10, unlit are class=p0.
         rating_field_soup = html_table_row_soup.find('td', class_='rating')
-        goodreads_user_rating = len(rating_field_soup.find_all("span", class_="p10"))
+        goodreads_user_rating = len(rating_field_soup.find_all('span', class_='p10'))
         book['goodreads_rating'] = goodreads_user_rating
 
-        book['goodreads_started_at'] = self._parse_goodreads_html_date(get_field_text("date_started"))
+        for book_field, multi_date_field in (
+            ('goodreads_started_at', 'date_started'),
+            ('goodreads_read_at', 'date_read')):
+            # Pick the first of possibly many dates
+            read_date_texts = get_multi_date_field_text(multi_date_field)
+            book[book_field] = UNDEFINED_DATE
+            if read_date_texts:
+                read_dates = [self._parse_goodreads_html_date(d) for d in read_date_texts]
+                read_dates = [d for d in read_dates if d != UNDEFINED_DATE]
+                if read_dates:
+                    book[book_field] = min(read_dates)
 
-        read_date_texts = get_multi_date_field_text("date_read")
-        book['goodreads_read_at'] = UNDEFINED_DATE
-        if read_date_texts:
-            read_dates = [self._parse_goodreads_html_date(d) for d in read_date_texts]
-            read_dates = [d for d in read_dates if d != UNDEFINED_DATE]
-            if read_dates:
-                book['goodreads_read_at'] = min(read_dates)
-
-        book['goodreads_date_added'] = self._parse_goodreads_html_date(get_field_text("date_added"))
-
-        book['goodreads_date_updated'] = ''
+        book['goodreads_date_added'] = self._parse_goodreads_html_date(get_field_text('date_added'))
+        book['goodreads_date_updated'] = UNDEFINED_DATE
         book['goodreads_review_text'] = ''
         if include_work:
             href_with_work = html_table_row_soup.find('td', class_='format').find('a')['href']
