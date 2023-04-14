@@ -405,11 +405,16 @@ class Worker(Thread): # Get details
             if img_url:
                 # Unfortunately Goodreads sometimes have broken links so we need to do
                 # an additional request to see if the URL actually exists
+                self.log.info('Visiting image url: %s'%img_url)
                 info = self.browser.open_novisit(img_url, timeout=self.timeout).info()
                 if int(info.get('Content-Length')) > 1000:
                     return img_url
                 else:
                     self.log.warning('Broken image for url: %s'%img_url)
+            else:
+                self.log.warning('Empty imageUrl found in book json trying to retrieve cover URL')
+        else:
+            self.log.warning('No imageUrl found in book json to retrieve cover URL')
 
     def parse_isbn(self, book_json):
         isbn = None

@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__ = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import time, json, re
+import time, json, re, random
 try:
     from urllib.parse import quote
 except ImportError:
@@ -23,7 +23,7 @@ from calibre.ebooks.metadata import check_isbn
 from calibre.ebooks.metadata.sources.base import Source, fixcase, fixauthors
 from calibre.utils.icu import lower
 from calibre.utils.cleantext import clean_ascii_chars
-
+from calibre.constants import numeric_version as calibre_version
 
 class Goodreads(Source):
 
@@ -47,13 +47,21 @@ class Goodreads(Source):
 
     @property
     def user_agent(self):
-        try:
+        # This utter filth is necessary to deal with periods of time when calibre did or did not have
+        # various iterations of a random chrome user agent function.
+        if calibre_version >= (5,40,0):
             from calibre.utils.random_ua import random_common_chrome_user_agent
             return random_common_chrome_user_agent()
-        except:
-            # Fallback to earlier calibre
+        elif  calibre_version <= (5,8,1):
             from calibre.utils.random_ua import random_chrome_ua
             return random_chrome_ua()
+        else:
+            # From 5.9.0 to 5.39.1 there was no function, we will have to replicate the equivalent code here
+            from calibre.utils.random_ua import all_chrome_versions, random_desktop_platform
+            chrome_version = random.choice(all_chrome_versions())
+            render_chrome_version = 'Mozilla/5.0 ({p}) AppleWebKit/{wv} (KHTML, like Gecko) Chrome/{cv} Safari/{wv}'.format(
+                p=random_desktop_platform(), wv=chrome_version['webkit_version'], cv=chrome_version['chrome_version'])
+            return render_chrome_version
 
     def config_widget(self):
         '''
