@@ -26,7 +26,7 @@ class BarnesNoble(Source):
     name = 'Barnes & Noble'
     description = 'Downloads metadata and covers from Barnes & Noble'
     author = 'Grant Drake'
-    version = (1, 5, 0)
+    version = (1, 5, 1)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])

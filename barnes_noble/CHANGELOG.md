@@ -1,5 +1,11 @@
 # Barnes & Noble Change Log
 
+## [1.5.1] - 2023-04-14
+### Added
+- Turkish translation (Bora Atıcı)
+### Fixed
+- Fix for some code from long ago that would remove any characters of 'series' from series names.
+
 ## [1.5.0] - 2023-04-02
 ### Changed
 - B&N identifier now just using the numeric store value alone, without the sub-page prefix.

@@ -167,7 +167,7 @@ class Worker(Thread): # Get details
                     series_index = None
                     if len(series_info) > 1:
                         series_index = float(series_info[1])
-                    series_name = series_info[0].rstrip('Series').strip()
+                    series_name = series_info[0].strip()
                     return (series_name, series_index)
         return (None, None)
 
