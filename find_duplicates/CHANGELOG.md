@@ -1,5 +1,11 @@
 # Find Duplicates Change Log
 
+## [1.10.8] - 2023-04-14
+### Added
+- Add Turkish translation (Bora Atıcı)
+### Fixed
+- Prevent error appearing in log when a book format does not exist when doing Binary Compare
+
 ## [1.10.7] - 2022-10-31
 ### Added
 - Add Polish translation (konrad, Adam, Marcin, Piotr, Ola, Moje, Silatiw)

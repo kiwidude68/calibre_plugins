@@ -3,285 +3,273 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# konrad … <konrad.krulikowski@gmail.com>, 2022
-# Adam Humienny <adam.humienny@gmail.com>, 2022
-# Marcin Kozioł <koziol.martin@gmail.com>, 2022
-# Piotr Strębski <strebski@gmail.com>, 2022
-# Ola Kleniewska <anyzeklove@gmail.com>, 2022
-# Grant Drake, 2022
-# The Name <moje.konto+transifex@posteo.org>, 2022
-# Silatiw Witalis, 2022
+# tarakbumba <tarakbumba@gmail.com>, 2022
+# Emre Deniz, 2022
+# mahmut özcan <faradundamarti@yandex.com>, 2022
+# MUSTAFA ANAR <mstf.anar@gmail.com>, 2022
+# Bora Atıcı, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-18 19:16+0100\n"
 "PO-Revision-Date: 2022-09-19 15:11+0000\n"
-"Last-Translator: Silatiw Witalis, 2022\n"
-"Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
+"Last-Translator: Bora Atıcı, 2023\n"
+"Language-Team: Turkish (https://app.transifex.com/calibre/teams/19337/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:141
 msgid "Keyboard shortcuts"
-msgstr "Skróty klawiszowe"
+msgstr "Klavye kısayolları"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Uruchom calibre ponownie"
+msgstr "Calibre'yi şimdi yeniden başlatın"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencje dla:"
+msgstr "Tercihler:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Wyczyść"
+msgstr "Temizle"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Wyczyść wszystkie ustawienia dla tej wtyczki"
+msgstr "Bu eklentinin tüm ayarlarını sıfırla"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Czy na pewno chcesz zmienić swoje ustawienia w tej bibliotece dla tej "
-"wtyczki?"
+"Bu eklenti için bu kitaplıktaki ayarlarınızı değiştirmek istediğinizden emin"
+" misiniz?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Żadne ustawienia w innych bibliotekach lub przechowywane w pliku JSON w "
-"folderze wtyczek Calibre nie zostaną zmienione."
+"Diğer kitaplıklardaki veya calibre eklentiler klasörü JSON dosyasında "
+"saklanan ayarlara dokunulmaz."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Musisz potem ponownie uruchomić calibre."
+msgstr "Daha sonra calibre'yi yeniden başlatmalısınız."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Ustawienia zostały zmienione"
+msgstr "Ayarlar değiştirildi"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Ustawienia dla tej wtyczki w tej bibliotece zostały zmienione."
+msgstr "Bu kitaplıktaki bu eklentinin ayarları değiştirildi."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Proszę ponownie uruchom calibre teraz."
+msgstr "Lütfen calibre'yi şimdi yeniden başlatın."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"Czy jesteś pewny, że chcesz wyczyścić wszystkie ustawienia w tej bibliotece "
-"dla tej wtyczki?"
+msgstr "Bu eklentinin ayarlarını sıfırlama isteğinizden emin misiniz?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Ustawienia zostały usunięte"
+msgstr "Ayarlar silindi"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Wszystkie ustawienia dla tej wtyczki w tej bibliotece zostały wyczyszczone."
+msgstr "Bu kitaplıktaki bu eklenti için tüm ayarlar sıfırlandı."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Kopiuj do schowka"
+msgstr "Panoya kopyala"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Nieokreślony"
+msgstr "Tanımsız"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Wymagane ponowne uruchomienie"
+msgstr "Yeniden başlatma gerekiyor"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
-"uruchomić Calibre!"
+"Başlık görüntüsü bulunamadı - bu eklentiyi kullanmadan önce Calibre'yi "
+"yeniden başlatmalısınız!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Utwórz nową kolumnę"
+msgstr "Yeni sütun oluştur"
 
 #: action.py:45 dialogs.py:175 dialogs.py:1077 duplicates.py:222
 msgid "Find Duplicates"
-msgstr "Find Duplicates"
+msgstr "Eşleşenleri Bul"
 
 #: action.py:87
 msgid "&Find book duplicates"
-msgstr "Znajdź duplikaty książek"
+msgstr "&Kitap eşleşenlerini bul"
 
 #: action.py:89
 msgid "Find library duplicates"
-msgstr "Znajdź duplikaty w bibliotekach"
+msgstr "Kitaplık eşleşenlerini bulun"
 
 #: action.py:90
 msgid "Find books that are duplicated in another library compared to this one"
-msgstr ""
-"Znajdź książki, które są duplikowane w innej bibliotece w porównaniu do tej"
+msgstr "Buna kıyasla başka bir kitaplıktaki eş kitapları bulun"
 
 #: action.py:93
 msgid "Find metadata &variations"
-msgstr "Znajdź podobne metadane"
+msgstr "Meta veri çeşitlemelerini bulun"
 
 #: action.py:94
 msgid ""
 "Find & rename variations in author, publisher, series or tags names that may"
 " indicate duplicates"
 msgstr ""
-"Znajdź i zmień nazwy wariantów autora, wydawcy, serii lub tagów, które mogą "
-"wskazywać na duplikaty"
 
 #: action.py:97
 msgid "&Next result"
-msgstr "&Następny wynik"
+msgstr "&Sonraki sonuç"
 
 #: action.py:98
 msgid "Display the next duplicate result group"
-msgstr "Wyświetl następną grupę wyników"
+msgstr "Sonraki eş sonuç grubunu göster"
 
 #: action.py:100
 msgid "&Previous result"
-msgstr "&Poprzedni wynik"
+msgstr "&Önceki sonuç"
 
 #: action.py:101
 msgid "Display the previous duplicate result group"
-msgstr "Wyświetl poprzednią grupę wyników"
+msgstr "Önceki eş sonuç grubunu göster"
 
 #: action.py:104
 msgid "&Mark current group as exempt"
-msgstr "Oznacz bieżącą grupę jako wykluczoną"
+msgstr "&Geçerli grubu muaf olarak işaretle"
 
 #: action.py:105
 msgid ""
 "Mark the current group as not duplicates and exempt from future "
 "consideration"
 msgstr ""
-"Oznacz obecną grupę jako nieduplikowaną i wykluczoną z przyszłych wyszukiwań"
+"Mevcut grubu eşleşmeyen olarak işaretleyin ve gelecekteki değerlendirmelerde"
+" hariç tutun"
 
 #: action.py:108
 msgid "Mark &all groups as exempt"
-msgstr "Oznacz wszystkie grupy jako wykluczone"
+msgstr "&Tüm grupları muaf olarak işaretle"
 
 #: action.py:109
 msgid ""
 "Mark all remaining duplicate groups as exempt from future consideration"
 msgstr ""
-"Oznacz wszystkie pozostałe zduplikowane grupy jako wyłączone z przyszłych "
-"rozważań"
+"Kalan tüm eşleşen gruplarını gelecekteki değerlendirmelerden muaf olarak "
+"işaretle"
 
 #: action.py:113
 msgid "&Show all book duplicate exemptions"
-msgstr "Pokaż wszystkie wykluczone duplikaty książek"
+msgstr "&Tüm eşleşen kitap muafiyetlerini göster"
 
 #: action.py:114
 msgid "Show all books that have book duplicate exemption pairings"
-msgstr ""
-"Pokaż wszystkie książki, które mają zduplikowane pary wykluczeń książek"
+msgstr "Eşleşen kitap muafiyeti olan tüm kitapları göster"
 
 #: action.py:117
 msgid "&Show all author duplicate exemptions"
-msgstr "Pokaż wszystkie wykluczenia duplikatów autora"
+msgstr "&Tüm eşleşen yazar muafiyetlerini göster"
 
 #: action.py:118
 msgid "Show all books that have author duplicate exemption pairings"
-msgstr ""
-"Pokaż wszystkie książki, które mają autora zduplikowanych par wykluczonych"
+msgstr "Eşleşen yazar muafiyeti olan tüm kitapları göster"
 
 #: action.py:121
 msgid "&Manage exemptions for this book"
-msgstr "Zarządzaj wykluczeniami dla tej książki"
+msgstr "&Bu kitap için muafiyetleri yönet"
 
 #: action.py:122
 msgid "Show duplicate exemptions for this book to enable removal"
-msgstr "Pokaż wykluczenia dla tej książki aby umożliwić usunięcie"
+msgstr ""
 
 #: action.py:125
 msgid "&Remove selected exemptions"
-msgstr "Usuń zaznaczenie wykluczenia"
+msgstr "&Seçili muafiyetleri kaldır"
 
 #: action.py:126
 msgid "Remove any duplicate book/author exemptions for the selected books"
-msgstr "Usuń wszystkie wykluczenia książki/autora dla wybranych książek"
+msgstr "Seçili kitaplar için eşleşen kitap/yazar muafiyetlerini kaldırın"
 
 #: action.py:130
 msgid "&Clear duplicate results"
-msgstr "Wyczyść otrzymany rezultat"
+msgstr "&Eşleşen sonuçlarını temizle"
 
 #: action.py:131
 msgid "Exit duplicate search mode"
-msgstr "Wyjdź z trybu wyszukiwania duplikatów"
+msgstr "Eşleşen arama modundan çık"
 
 #: action.py:135
 msgid "&Export duplicate groups"
-msgstr "&Eksportuj grupę duplikatów"
+msgstr "Eşleşen gruplarını dışa aktarın"
 
 #: action.py:136
 msgid "Export duplicates groups to a json file"
-msgstr "Eksportuj duplikaty grup do pliku .json"
+msgstr "Eşleşen grupları bir json dosyasına aktarın"
 
 #: action.py:140
 msgid "&Customize plugin"
-msgstr "Konfiguruj wtyczkę"
+msgstr "&Eklentiyi özelleştir"
 
 #: action.py:142
 msgid "&Help"
-msgstr "&Help"
+msgstr "&Yardım"
 
 #: action.py:248
 msgid ""
 "This action will ensure that each of the {0} in the group are exempt from "
 "appearing together again in future."
 msgstr ""
-"To działanie zapewni, że każda z książek {0} w grupie będzie wykluczona z "
-"pojawiania się w przyszłych wyszukiwaniach duplikatów."
 
 #: action.py:251 action.py:304
 msgid "Are you <b>sure</b> you want to proceed?"
-msgstr "Czy <b>jesteś pewny</b>, że chcesz kontynuować?"
+msgstr "Devam etmek <b>istiyor musunuz</b>?"
 
 #: action.py:259
 msgid "No duplicates in group"
-msgstr "Brak duplikatów w grupie"
+msgstr "Grupta eşleşen yok"
 
 #: action.py:260
 msgid "There are no duplicates remaining in this group."
-msgstr "W tej grupie nie ma duplikatów."
+msgstr "Bu grupta eşleşen kalmadı."
 
 #: action.py:271 action.py:276
 msgid "Cannot manage exemptions"
-msgstr "Nie można zarządzać wykluczeniami"
+msgstr "Muafiyetler yönetilemiyor"
 
 #: action.py:272
 msgid "No book selected"
-msgstr "Brak zaznaczonych książek"
+msgstr "Kitap seçilmedi"
 
 #: action.py:277
 msgid "This book has no duplicate exemptions"
-msgstr "Ta książka nie ma zduplikowanych wykluczeń"
+msgstr "Bu kitapta eşleşen muafiyeti yok"
 
 #: action.py:298
 msgid "Invalid selection"
-msgstr "Nieprawidłowy wybór"
+msgstr "Geçersiz seçim"
 
 #: action.py:299
 msgid "You must select at least one book."
-msgstr "Musisz wybrać co najmniej jedną książkę."
+msgstr "En az bir kitap seçmelisiniz."
 
 #: action.py:300
 msgid ""
@@ -289,74 +277,74 @@ msgid ""
 "will allow them to potentially appear as duplicates together in a future "
 "duplicate search."
 msgstr ""
-"To działanie spowoduje usunięcie zaznaczenia jako wykluczonych z szukania "
-"duplikatów. W przyszłym wyszukiwaniu pojawią się one w grupach jako "
-"duplikaty."
+"Bu işlem, seçiminiz için eşleşen muafiyetleri kaldıracaktır. Bu, gelecekteki"
+" bir eşleşen aramada potansiyel olarak kopyalar olarak görünmelerine izin "
+"verecektir."
 
 #: action.py:338
 msgid "Choose file"
-msgstr "Wybierz plik"
+msgstr "Dosya seçin"
 
 #: action.py:339
 msgid "Saved duplicates"
-msgstr "Zapisane duplikaty"
+msgstr "Eşleşenler kaydedildi"
 
 #: action.py:365
 msgid "Export completed"
-msgstr "Eksport zakończony"
+msgstr "Dışa aktarma tamamlandı"
 
 #: action.py:366
 msgid "Exported to: {}"
-msgstr "Wyeksportowano do: {}"
+msgstr "Şuraya dışa aktarıldı: {}"
 
 #: book_algorithms.py:53
 msgid "Analysing {0} books for duplicates"
-msgstr "Analizowanie {0} książek pod kątem duplikatów"
+msgstr "{0} kitap eşleşmeler için inceleniyor"
 
 #: book_algorithms.py:422
 msgid "matching '{0}' identifier"
-msgstr "pasujący identyfikator '{0}'"
+msgstr ""
 
 #: book_algorithms.py:425
 msgid "binary compare"
-msgstr "porównanie binarne"
+msgstr "ikili karşılaştırma"
 
 #: book_algorithms.py:430
 msgid "ignore title, {0} author"
-msgstr "ignoruj tytuł, {0} autor"
+msgstr ""
 
 #: book_algorithms.py:434
 msgid "{0} title, {1} author"
-msgstr "{0} tytuł, {1} autor"
+msgstr "{0} başlık, {1} yazar"
 
 #: config.py:143
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Edytuj skróty klawiszowe, które dotyczą tej wtyczki"
+msgstr "Bu eklenti ile ilişkilendirilen klavye kısayollarını düzenle"
 
 #: config.py:147
 msgid "Reset &confirmation dialogs"
-msgstr "Resetuj potwierdzające okna dialogowe"
+msgstr "&Onay iletişim kutularını sıfırla"
 
 #: config.py:148
 msgid "Reset all show me again dialogs for the Find Duplicates plugin"
 msgstr ""
-"Zresetuj wszystkie, pokaż mi ponownie okna dialogowe wtyczki Find Duplicates"
+"Eşleşenleri Bul eklentisi için tüm tekrar göster iletişim kutularını sıfırla"
 
 #: config.py:152
 msgid "&View library preferences"
-msgstr "Podgląd preferencji biblioteki"
+msgstr "Kitaplık tercihlerini görüntüle"
 
 #: config.py:153
 msgid "View data stored in the library database for this plugin"
-msgstr "Zobacz dane tej wtyczki przechowywane w bazie danych biblioteki"
+msgstr "Bu eklenti için kitaplık veri tabanına kayıtlı verileri görüntüle"
 
 #: config.py:169
 msgid "Done"
-msgstr "Gotowe"
+msgstr "Tamam"
 
 #: config.py:170
 msgid "Confirmation dialogs have all been reset"
-msgstr "Wszystkie potwierdzenia zostały przywrócone"
+msgstr "Onaylama diyaloglarının tümü sıfırlandı"
 
 #: dialogs.py:51
 msgid ""
@@ -365,10 +353,10 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
-"<b> Utworzone wyszukiwanie: </b><br/>- Znajdź grupy książek, które mają "
-"identyczny identyfikator ISBN, Amazon, LubimyCzytac itp. <br/>- Oznaczenie "
-"grupy jako wykluczonej, zapobiegnie pojawianiu się tych konkretnych książek "
-"w przyszłych wyszukiwaniach duplikatów."
+"<b>Eşleşen kitap arama</b><br/>- ISBN, amazon kimliği, goodreads, uri vb. "
+"aynı tanımlayıcıya sahip kitap gruplarını bulun.<br/>- Bir grubu muaf olarak"
+" işaretlemek, söz konusu kitapların gelecekteki eşleşen kitap aramalarında "
+"birlikte görünmesini engelleyecektir."
 
 #: dialogs.py:57
 msgid ""
@@ -379,14 +367,6 @@ msgid ""
 " duplicates.<br/>- Marking a group as exempt will prevent those specific "
 "books from appearing together in future duplicate book searches."
 msgstr ""
-"<b>Utworzone wyszukiwanie: </b><br/>- Znajdź grupy książek, których format "
-"książki jest identyczny binarnie.<br/>- Porównuje rzeczywisty rozmiar pliku "
-"każdego formatu książki w Twojej bibliotece, obliczając SHA hash, aby "
-"porównać zawartość w przypadku dopasowania rozmiarów. <br/>- Książki "
-"znalezione przy użyciu tego wyszukiwania mają gwarancję, że będą "
-"duplikatami. <br/>- Oznaczenie grupy jako wykluczonej, zapobiegnie "
-"pojawianiu się tych konkretnych książek razem w przyszłych wyszukiwaniach "
-"zduplikowanych książek."
 
 #: dialogs.py:66
 msgid ""
@@ -395,11 +375,6 @@ msgid ""
 "case.<br/>- Marking a group as exempt will prevent those specific books from"
 " appearing together in future duplicate book searches."
 msgstr ""
-"<b>Utworzone wyszukiwanie: </b><br/>- Znajdź grupy książek o <b> identycznym"
-" tytule </b> i {0} <br/>- Tytuły muszą być dokładnie takie same, ignorowana "
-"jest wielkość liter. <br/>- Oznaczenie grupy jako wykluczonej, zapobiegnie "
-"występowaniu tych konkretnych książek w przyszłych wyszukiwaniach "
-"duplikatów."
 
 #: dialogs.py:71
 msgid ""
@@ -409,12 +384,6 @@ msgid ""
 "Automerge.<br/>- Marking a group as exempt will prevent those specific books"
 " from appearing together in future duplicate book searches."
 msgstr ""
-"<b>Utworzone wyszukiwanie: </b><br/>- Znajdź grupy książek o <b> podobnym "
-"tytule </b>i {0} <br/>- Podobne (similar) tytuły powodują usunięcie "
-"wspólnych znaków interpunkcyjnych i przedrostków oraz stosuje tę samą logikę"
-" dopasowywania tytułów, co Automerge.<br/>-Oznaczenie grupy jako "
-"wykluczonej, zapobiegnie występowaniu tych konkretnych książek w przyszłych "
-"wyszukiwaniach duplikatów."
 
 #: dialogs.py:77
 msgid ""
@@ -424,12 +393,6 @@ msgid ""
 "a group as exempt will prevent those specific books from appearing together "
 "in future duplicate book searches."
 msgstr ""
-"<b> Utworzone wyszukiwanie: </b><br/>- Znajdź grupy książek z <b> podobnie "
-"brzmiącym tytułem </b> i {0} <br/> - Dopasowania tytułów fonetycznych są "
-"oparte na takim samym usunięciu znaków interpunkcyjnych i typowych "
-"przedrostków, jak przy wyszukiwaniu podobnych tytułów. <br/>- Oznaczenie "
-"grupy jako zwolnionej, zapobiegnie pojawianiu się tych konkretnych książek w"
-" przyszłych wyszukiwaniach duplikatów."
 
 #: dialogs.py:83
 msgid ""
@@ -439,12 +402,6 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
-"<b>Utworzone wyszukiwanie: </b><br/>- Znajdź grupy książek z <b> "
-"\"rozmytym\" tytułem </b> i {0} <br/>- Rozmyte (fuzzy) dopasowania tytułu "
-"usuwają wszystkie znaki interpunkcyjne, podtytuły i wszelkie słowa typu "
-"„and”, „or„ lub „aka” w tytule. <br/>- Oznaczenie grupy jako wykluczonej, "
-"zapobiegnie pojawianiu się tych konkretnych książek w przyszłych "
-"wyszukiwaniach duplikatów."
 
 #: dialogs.py:89
 msgid ""
@@ -454,107 +411,97 @@ msgid ""
 "group as exempt will prevent any books by those authors from appearing "
 "together in future duplicate author searches."
 msgstr ""
-"<b>Utworzone wyszukiwanie: </b><br/>- Znajdź duplikaty <b>ignorując tytuł "
-"</b>znajdź duplikaty, tylko  {0} <br/>- Ignorując wyszukiwania tytułów można"
-" szybko znaleźć warianty nazw autorów niezależnie od tytułu książki. <br/>- "
-"Oznaczenie grupy jako wykluczonej, zapobiegnie pojawianiu się razem "
-"wszystkich książek tych autorów w przyszłych wyszukiwaniach autorów."
 
 #: dialogs.py:98
 msgid ""
 "an <b>identical author</b>.<br/>- Authors must match exactly excluding case."
 msgstr ""
-"z <b>identycznym autorem</b>. <br/>- Imię i Nazwisko musi być takie samo, "
-"ignorowana jest wielkość liter."
+"<b>aynı  yazar</b>.<br/>- Yazarlar büyük/küçük harf hariç tam olarak "
+"eşleşmelidir."
 
 #: dialogs.py:100
 msgid ""
 "a <b>similar author</b>.<br/>- Similar authors differ only in punctuation, "
 "initials or order of their names."
 msgstr ""
-"z <b>podobnym autorem </b>.<br/>- Podobni (similar) autorzy różnią się "
-"jedynie interpunkcją lub kolejnością imienia i nazwiska."
+"<b>benzer yazar</b>.<br/>- Benzer yazarlar sadece noktalama işaretleri, baş "
+"harfleri veya adlarının sıralamasında farklılık gösterir."
 
 #: dialogs.py:103
 msgid ""
 "a <b>soundex author</b>.<br/>- Soundex author matches start with the same "
 "removal of punctuation and ordering as a similar author search."
 msgstr ""
-"z <b>podobnie brzmiącym autorem</b>. <br/>- Dopasowania fonetyczne (soundex)"
-" autora rozpoczynają się od usunięcia interpunkcji i kolejności, jak w "
-"przypadku wyszukiwania podobnego (similar) autora."
+"<b>soundex yazar</b>.<br/>- Soundex yazar eşleştirmeleri, benzer bir yazar "
+"aramasıyla aynı noktalama işaretleri ve sıralamayla başlar."
 
 #: dialogs.py:106
 msgid ""
 "a <b>fuzzy match author</b>.<br/>- Fuzzy author matches compare using their "
 "surnames and only the first initial."
 msgstr ""
-"z <b>\"rozmytym\" (fuzzy) autorem </b>.<br/>- Dopasowania autora rozmytego "
-"(fuzzy) są porównywane przy użyciu ich nazwisk i tylko pierwszej litery "
-"inicjału."
 
 #: dialogs.py:109
 msgid "<b>ignoring the author</b>."
-msgstr "<b>ignorując autora</b>."
+msgstr "<b>Yazarı görmezden gel</b>."
 
 #: dialogs.py:178
 msgid "Duplicate Search Options"
-msgstr "Opcje wyszukiwania duplikatów"
+msgstr "Eşleşen Arama Seçenekleri"
 
 #: dialogs.py:182
 msgid "Duplicate Search Type"
-msgstr "Sposób wyszukiwania duplikatów"
+msgstr "Eşleşen Arama Türü"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Binary Compare"
-msgstr "Porównanie binarne"
+msgstr "İkili Karşılaştır"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Identifier"
-msgstr "Identyfikator"
+msgstr "Tanımlayıcı"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Title/Author"
-msgstr "Tytuł/Autor"
+msgstr "Başlık/Yazar"
 
 #: dialogs.py:203
 msgid "Title Matching"
-msgstr "Dopasowywanie tytułów"
+msgstr "Başlık Eşleştirme"
 
 #: dialogs.py:215 dialogs.py:236 dialogs.py:686 dialogs.py:1131
 #: dialogs.py:1152
 msgid "Length:"
-msgstr "Długość:"
+msgstr "Uzunluk:"
 
 #: dialogs.py:216 dialogs.py:687 dialogs.py:1132
 msgid ""
 "The shorter the soundex length, the greater likelihood of false positives.\n"
 "Large soundex values reduce your chances of matches"
 msgstr ""
-"Im krótsza długość fonetyczna, tym większe prawdopodobieństwo fałszywych trafień.\n"
-"Duże wartości zwiększają Twoje szanse na trafienie"
+"Soundex uzunluğu ne kadar kısa olursa yanlış olasılığı o kadar artar.\n"
+"Büyük soundex değerleri eşleşme şansınızı azaltır"
 
 #: dialogs.py:224
 msgid "Author Matching"
-msgstr "Dopasowywanie autorów"
+msgstr "Yazar Eşleştirme"
 
 #: dialogs.py:249
 msgid "Result Options"
-msgstr "Opcje wyświetlania rezultatów wyszukiwania"
+msgstr "Sonuç Seçenekleri"
 
 #: dialogs.py:253
 msgid "Show all groups at once with highlighting"
-msgstr "Pokaż wszystkie grupy naraz z podświetleniem"
+msgstr "Vurgulayarak tüm grupları aynı anda göster"
 
 #: dialogs.py:254
 msgid "Show one group at a time"
-msgstr "Pokazuj jedną grupę naraz"
+msgstr "Her seferinde bir grup göster"
 
 #: dialogs.py:257
 msgid "Highlight authors in the tag browser for ignore title searches"
 msgstr ""
-"Otwórz przeglądarkę etykiet i podświetl autora. Działa, kiedy Dopasowywanie "
-"tytułów = Ignore"
+"Başlık aramalarını yok saymak için etiket tarayıcısında yazarları vurgula"
 
 #: dialogs.py:258
 msgid ""
@@ -562,39 +509,36 @@ msgid ""
 "are shown in the tag browser and highlighted if multiple groups shown.\n"
 "Only applies for author duplicate searches."
 msgstr ""
-"Gdy jest zaznaczone, to zapewni automatyczne otworzenie przeglądarki \n"
-"etykiet i podświetlenie nazwiska autora z grupy zaznaczonej na zielono. \n"
-"Opcja ta działa tylko wtedy gdy ustawienie \"Dopasowywanie tytułów\" \n"
-"jest zaznaczone \"Ignore\"."
+"İşaretlendiğinde, geçerli grubun yazarlarının etiket tarayıcısında \n"
+"gösterilmesini ve birden fazla grup gösteriliyorsa vurgulanmasını sağlar. \n"
+"Yalnızca eşleşen yazar aramaları için geçerlidir."
 
 #: dialogs.py:262
 msgid "Sort groups by number of duplicates"
-msgstr "Sortuj grupy według liczby duplikatów"
+msgstr "Grupları eşleşme sayısına göre sırala"
 
 #: dialogs.py:263
 msgid ""
 "When unchecked, will sort by an approximation of the title\n"
 "or by author if title is being ignored"
 msgstr ""
-"Gdy odznaczone, posortuje według przybliżonego tytułu\n"
-"(lub autora, jeśli tytuł jest ignorowany)"
+"İşaretlenmediğinde, başlığın yaklaşık haline veya başlık \n"
+"göz ardı ediliyorsa yazara göre sıralar"
 
 #: dialogs.py:266 dialogs.py:1169
 msgid "Include languages metadata when comparing titles"
-msgstr "Język w metadanych wpływa na wynik porównania tytułów"
+msgstr "Başlıkları karşılaştırırken dillerin meta verilerini dahil edin"
 
 #: dialogs.py:267 dialogs.py:1170
 msgid ""
 "When checked, books with identical titles but different\n"
 "languages metadata field values will not show as duplicates"
 msgstr ""
-"Gdy ta opcja jest zaznaczona, to książki z identycznymi tytułami, ale z różną wartością\n"
-"w polu metadanych \"Język\" nie będą wyświetlane jako duplikaty"
 
 #: dialogs.py:270
 msgid "When doing a Binary Compare, automatically remove duplicate formats"
 msgstr ""
-"Podczas porównywania binarnego automatycznie usuwaj zduplikowane formaty"
+"İkili Karşılaştırma yaparken, eşleşen biçimleri otomatik olarak kaldırın"
 
 #: dialogs.py:272
 msgid ""
@@ -605,29 +549,23 @@ msgid ""
 "Note that the book records themselves are not deleted, and will still appear in the\n"
 "results for merging even if they now have no formats."
 msgstr ""
-"Po zaznaczeniu i uruchomieniu wyszukiwania duplikatów binarnych, jeśli zostaną znalezione zduplikowane formaty\n"
-"wtedy wszystkie oprócz jednego są usuwane. Zachowany zostanie format z najstarszego zapisu książki.\n"
-"Jest to wygodna funkcja, gdy masz skojarzonych z wieloma formatami\n"
-"każdej książki, dlatego nie jest oczywiste, która z nich jest duplikatem.\n"
-"Zwróć uwagę, że same rekordy książek nie są usuwane i nadal będą widoczne w pliku\n"
-"wyniki do scalenia, nawet jeśli nie mają teraz formatów."
 
 #: dialogs.py:370
 msgid "Invalid Criteria"
-msgstr "Nieprawidłowe kryteria"
+msgstr "Geçersiz Kriter"
 
 #: dialogs.py:371
 msgid "You must select an identifier type to search by Identifier."
 msgstr ""
-"Musisz wybrać typ identyfikatora do wyszukiwania według identyfikatora."
+"Tanımlayıcıya göre arama yapmak için bir tanımlayıcı türü seçmelisiniz."
 
 #: dialogs.py:504
 msgid "Manage Duplicate Exemptions"
-msgstr "Zarządzaj wykluczeniami duplikatów"
+msgstr "Eşleşen Muafiyetlerini Yönetin"
 
 #: dialogs.py:507
 msgid "Manage Exemptions"
-msgstr "Zarządzaj wykluczeniami"
+msgstr "Muafiyetleri Yönet"
 
 #: dialogs.py:513
 msgid ""
@@ -635,9 +573,9 @@ msgid ""
 "books.<br/>To allow future duplicate consideration, tick the remove checkbox"
 " and click ok."
 msgstr ""
-"Pierwsza poniższa książka nigdy nie pojawi się jako duplikat z następującymi"
-" książkami. <br/> Aby w przyszłości uwzględnić duplikat, zaznacz pole wyboru"
-" 'Usuń' i kliknij OK."
+"Aşağıdaki ilk kitap, sonraki kitapların kopyası olarak asla "
+"görünmeyecek.<br/>Gelecekte eşleşen değerlendirmeye izin vermek için, kaldır"
+" onay kutusunu işaretleyin ve Tamam'ı tıklayın."
 
 #: dialogs.py:528
 msgid ""
@@ -645,130 +583,131 @@ msgid ""
 "authors.<br/>To allow future duplicate consideration, tick the remove "
 "checkbox and click ok."
 msgstr ""
-"Poniżsi autorzy nigdy nie pojawią się jako duplikaty z następującymi "
-"autorami. <br/> Aby w przyszłości uwzględnić duplikat, zaznacz pole wyboru "
-"'Usuń' i kliknij OK."
+"Aşağıdaki yazarlar hiçbir zaman aşağıdaki yazarların kopyası olarak "
+"görünmeyecek.<br/>Gelecekte eşleşen değerlendirmeye izin vermek için, kaldır"
+" onay kutusunu işaretleyin ve Tamam'ı tıklayın."
 
 #: dialogs.py:645
 msgid "Find Duplicates Plugin"
-msgstr "Wtyczka Znajdź duplikaty"
+msgstr "Yinelenenleri Bul Eklentisi"
 
 #: dialogs.py:649
 msgid "Find Metadata Variations"
-msgstr "Znajdź podobne metadane"
+msgstr "Meta veri çeşitlemelerini Bul"
 
 #: dialogs.py:653
 msgid "Choose metadata column:"
-msgstr "Wybierz kolumnę metadanych:"
+msgstr "Meta veri sütununu seçin:"
 
 #: dialogs.py:657
 msgid "Authors"
-msgstr "Autorzy"
+msgstr "Yazarlar"
 
 #: dialogs.py:660
 msgid "Series"
-msgstr "Seria"
+msgstr "Diziler"
 
 #: dialogs.py:663
 msgid "Publisher"
-msgstr "Wydawca"
+msgstr "Yayımcı"
 
 #: dialogs.py:666
 msgid "Tags"
-msgstr "Tagi"
+msgstr "Etiketler"
 
 #: dialogs.py:675
 msgid "Choose similarity level:"
-msgstr "Wybierz poziom podobieństwa:"
+msgstr "Benzerlik seviyesini seçin:"
 
 #: dialogs.py:679
 msgid "Similar"
-msgstr "Podobny"
+msgstr "Benzer"
 
 #: dialogs.py:682
 msgid "Soundex"
-msgstr "Fonetyczny"
+msgstr "Soundex"
 
 #: dialogs.py:684
 msgid "Fuzzy"
-msgstr "Rozmyty"
+msgstr ""
 
 #: dialogs.py:691
 msgid "Search"
-msgstr "Szukaj"
+msgstr "Ara"
 
 #: dialogs.py:693
 msgid "Search for results"
-msgstr "Szukaj wyników"
+msgstr ""
 
 #: dialogs.py:704
 msgid "Search results:"
-msgstr "Rezultat szukania:"
+msgstr "Arama Sonuçları:"
 
 #: dialogs.py:710
 msgid "Authors:"
-msgstr "Autorzy:"
+msgstr "Yazarlar:"
 
 #: dialogs.py:711 dialogs.py:910
 msgid "Variations:"
-msgstr "Wariant:"
+msgstr "Çeşitlemeler:"
 
 #: dialogs.py:726
 msgid "&Show matching books"
-msgstr "Pokaż pasujące książki"
+msgstr "&Eşleşen kitapları göster"
 
 #: dialogs.py:727
 msgid "As a group is selected, show the search results in the library view"
-msgstr "Po wybraniu grupy wyświetl wyniki wyszukiwania w widoku biblioteki"
+msgstr "Bir grup seçildiğinde, arama sonuçlarını kitaplık görünümünde göster"
 
 #: dialogs.py:730
 msgid "Rename to:"
-msgstr "Zamień na:"
+msgstr "Yeniden adlandır:"
 
 #: dialogs.py:747
 msgid "&Rename"
-msgstr "Zamień"
+msgstr "&Yeniden adlandır"
 
 #: dialogs.py:748
 msgid "Rename all of the selected items to this name"
-msgstr "Zmień nazwę wszystkich wybranych elementów na tę nazwę"
+msgstr "Seçilen tüm öğeleri bu adla yeniden adlandırın"
 
 #: dialogs.py:751
 msgid "&Ignore"
-msgstr "&Ignoruj"
+msgstr ""
 
 #: dialogs.py:752
 msgid "Ignore all selected items from consideration at this time"
-msgstr "Zignoruj ​​wszystkie wybrane elementy z rozważania"
+msgstr ""
 
 #: dialogs.py:791
 msgid "No matches"
-msgstr "Brak wyników"
+msgstr "Eşleşme yok"
 
 #: dialogs.py:791
 msgid "You have no variations of {0} using this criteria"
-msgstr "Nie masz odmian {0} korzystających z tych kryteriów"
+msgstr ""
 
 #: dialogs.py:851
 msgid "Use this variation name"
-msgstr "Użyj tego wariantu nazwy"
+msgstr "Bu çeşitlemenin adını kullan"
 
 #: dialogs.py:914
 msgid "Variations of: {0}"
-msgstr "Zamień na: {0}"
+msgstr "Çeşitlemeleri: {0}"
 
 #: dialogs.py:950
 msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
-msgstr "Jesteś pewny, że zaznaczoną nazwę {0} chcesz zamienić na \"{1}\"?"
+msgstr ""
+"Seçilen {0} öğelerini \"{1}\" olarak yeniden adlandırmak istediğinizden emin"
+" misiniz?"
 
 #: dialogs.py:1037
 msgid ""
 "<b>Book duplicate search</b><br/>- Report books in this library which have "
 "an identical identifier for books in the target library.<br/>"
 msgstr ""
-"<b>Wyszukiwanie zduplikowanych książek</b><br/>- Znajdź książki w tej "
-"bibliotece, które mają identyczny identyfikator dla książek w bibliotece "
-"docelowej.<br/>"
+"<b>Eşleşen kitap arama</b><br/>- Hedef kitaplıktaki kitaplar için aynı "
+"tanımlayıcıya sahip olan bu kitaplıktaki kitapları bildirin.<br/>"
 
 #: dialogs.py:1041
 msgid ""
@@ -778,12 +717,6 @@ msgid ""
 "compare contents where sizes match.<br/>- Books found using this search are "
 "guaranteed to be duplicates."
 msgstr ""
-"<b>Wyszukiwanie zduplikowanych książek </b><br/>- Znajdź książki w tej "
-"bibliotece, które są binarnie identyczne z książkami w bibliotece docelowej."
-" <br/>- Porównuje rzeczywisty rozmiar pliku każdego formatu książki w Twoich"
-" bibliotekach, obliczając hash SHA do porównywania treści w przypadku "
-"dopasowania rozmiarów. <br/>- Książki znalezione przy użyciu tego "
-"wyszukiwania mają gwarancję, że są duplikatami."
 
 #: dialogs.py:1048
 msgid ""
@@ -791,10 +724,9 @@ msgid ""
 " your target library with an <b>identical title</b> and {0}<br/>- Titles "
 "must match exactly excluding case."
 msgstr ""
-"<b> Wyszukiwanie zduplikowanych tytułów </b><br/>- Znajdź książki z tej "
-"biblioteki w porównaniu z biblioteką docelową o <b> identycznym tytule </b> "
-"i {0} <br/>- Tytuły muszą być dokładnie takie same, ignorowana jest wielkość"
-" liter."
+"<b>Eşleşen başlık arama</b><br/>- Bu kitaplıktaki kitapları, <b>aynı "
+"başlık</b> ve {0} ile hedef kitaplığınızla karşılaştırın. <br/>- Başlıklar, "
+"büyük/küçük harf hariç tam olarak eşleşmelidir."
 
 #: dialogs.py:1051
 msgid ""
@@ -803,11 +735,6 @@ msgid ""
 " matches apply removal of common punctuation and prefixes and applies the "
 "same title matching logic as Automerge."
 msgstr ""
-"<b> Wyszukiwanie zduplikowanych tytułów </b><br/>- Znajdź książki z tej "
-"biblioteki w porównaniu z biblioteką docelową o <b> podobnym tytule </b> i "
-"{0} <br/>- Podobne (similar) tytuły powodują usunięcie wspólnych znaków "
-"interpunkcyjnych i przedrostków oraz stosuje tę samą logikę dopasowywania "
-"tytułów, co Automerge."
 
 #: dialogs.py:1055
 msgid ""
@@ -816,11 +743,6 @@ msgid ""
 " matches are based on the same removal of punctuation and common prefixes as"
 " a similar title search."
 msgstr ""
-"<b> Wyszukiwanie zduplikowanych tytułów </b><br/>- Znajdź książki z tej "
-"biblioteki w porównaniu z biblioteką docelową o <b> podobnie brzmiącym "
-"tytule </b> i {0} <br/>- Podobne fonetyczne (soundex) tytuły powodują "
-"usunięcie wspólnych znaków interpunkcyjnych i przedrostków oraz stosuje tę "
-"samą logikę dopasowywania tytułów, co Automerge."
 
 #: dialogs.py:1059
 msgid ""
@@ -829,11 +751,6 @@ msgid ""
 "matches remove all punctuation, subtitles and any words after 'and', 'or' or"
 " 'aka' in the title."
 msgstr ""
-"<b> Wyszukiwanie zduplikowanych tytułów </b><br/>- Znajdź książki w tej "
-"bibliotece w porównaniu z biblioteką docelową, używając <b> \"rozmytego\" "
-"tytułu </b> i {0} <br/>- Rozmyte dopasowania (fuzzy) tytułów usuwają "
-"wszystkie znaki interpunkcyjne, podtytuły i wszelkie słowa po „and”, „or\" "
-"lub „aka” w tytule."
 
 #: dialogs.py:1063
 msgid ""
@@ -842,120 +759,114 @@ msgid ""
 "searches are best to find variations of author names regardless of the books"
 " you have for each."
 msgstr ""
-"<b>Utworzone wyszukiwanie: </b><br/>- Znajdź książki z tej biblioteki w "
-"porównaniu z biblioteką docelową <b>ignorując tytuł</b> za pomocą {0} <br/>-"
-" Ignorując wyszukiwania tytułów można szybko znaleźć warianty nazw autorów "
-"pomijając porównywanie tytułu."
 
 #: dialogs.py:1080
 msgid "Cross Library Search Options"
-msgstr "Opcje porównywania bibliotek"
+msgstr "Kütüphaneler Arası Arama Seçenekleri"
 
 #: dialogs.py:1084
 msgid "Compare With Library:"
-msgstr "Porównywanie z biblioteką:"
+msgstr "Kütüphane ile Karşılaştır:"
 
 #: dialogs.py:1088
 msgid "Library:"
-msgstr "Biblioteka:"
+msgstr "Kütüphane:"
 
 #: dialogs.py:1098
 msgid "Duplicate Search Type:"
-msgstr "Sposób wyszukiwania duplikatów:"
+msgstr "Eşleşen Arama Türü:"
 
 #: dialogs.py:1119
 msgid "Title Matching:"
-msgstr "Dopasowywanie tytułów:"
+msgstr "Başlık Eşleştirme:"
 
 #: dialogs.py:1140
 msgid "Author Matching:"
-msgstr "Dopasowywanie autorów:"
+msgstr "Yazar Eşleştirme:"
 
 #: dialogs.py:1165
 msgid "Compare Options:"
-msgstr "Opcje porównywania:"
+msgstr "Karşılaştırma Seçenekleri:"
 
 #: dialogs.py:1173
 msgid "Display duplicate books when search completes"
-msgstr "Wyświetl zduplikowane książki po zakończeniu wyszukiwania"
+msgstr "Arama tamamlandığında eşleşen kitapları göster"
 
 #: dialogs.py:1174
 msgid "Uncheck this option if you just want the output log"
-msgstr "Odznacz tę opcję, jeśli chcesz tylko log wyjściowy"
+msgstr ""
+"Yalnızca çıktı günlüğünü istiyorsanız bu seçeneğin işaretini kaldırın."
 
 #: dialogs.py:1213
 msgid "Choose library location to compare against"
-msgstr "Wybierz lokalizację biblioteki do porównania"
+msgstr "Karşılaştırılacak kütüphane konumunu seçin"
 
 #: dialogs.py:1264
 msgid "No library specified"
-msgstr "Nie określono biblioteki"
+msgstr "Kütüphane belirtilmedi"
 
 #: dialogs.py:1265
 msgid "You must specify a library path"
-msgstr "Musisz określić ścieżkę biblioteki"
+msgstr "Bir kitaplık yolu belirtmelisiniz"
 
 #: dialogs.py:1268
 msgid "Same as current"
-msgstr "Taki sam jak bieżący"
+msgstr "Mevcutla aynı"
 
 #: dialogs.py:1269
 msgid "The location {0} contains the current calibre library"
-msgstr "Lokalizacja {0} zawiera aktualną bibliotekę"
+msgstr ""
 
 #: dialogs.py:1271
 msgid "No existing library found"
-msgstr "Nie znaleziono biblioteki"
+msgstr "Mevcut kitaplık bulunamadı"
 
 #: dialogs.py:1272
 msgid "There is no existing calibre library at {0}"
-msgstr "Nie ma biblioteki calibre w {0}"
+msgstr "{0} konumunda mevcut calibre kitaplığı yok"
 
 #: dialogs.py:1295
 msgid "Save log"
-msgstr "Zapisz log"
+msgstr "Kayıt günlüğü"
 
 #: dialogs.py:1302
 msgid "Save Find Duplicates log"
-msgstr "Zapisz log Find Duplicates"
+msgstr "Eşleşenleri Bulma günlüğünü kaydet"
 
 #: dialogs.py:1303
 msgid "Duplicates log file"
-msgstr "Plik log duplikatów"
+msgstr "Eşleşenler günlük dosyası"
 
 #: duplicates.py:213
 msgid "No duplicate groups were found when searching with: <b>{0}</b>"
-msgstr ""
-"Nie znaleziono zduplikowanych grup podczas wyszukiwania za pomocą: "
-"<b>{0}</b>"
+msgstr "Şununla arama yapılırken eşleşen grup bulunamadı: <b>{0}</b>"
 
 #: duplicates.py:215 duplicates.py:328 duplicates.py:361 duplicates.py:368
 msgid "No duplicates"
-msgstr "Brak duplikatów"
+msgstr "Eşleşen yok"
 
 #: duplicates.py:217 duplicates.py:224 duplicates.py:330
 msgid "Show this information again"
-msgstr "Pokaż te informacje ponownie"
+msgstr "Bu bilgiyi tekrar göster"
 
 #: duplicates.py:220
 msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
-msgstr ""
-"Znaleziono {0} zduplikowanych grup podczas wyszukiwania za pomocą: "
-"<b>{1}</b>"
+msgstr "Şununla arama yaparken {0} eşleşen grup bulundu: <b>{1}</b>"
 
 #: duplicates.py:327 duplicates.py:369
 msgid "No more duplicate groups exist from your search."
-msgstr "W wynikach wyszukiwania nie ma więcej zduplikowanych grup."
+msgstr "Aramanızda eşleşen grup yok."
 
 #: duplicates.py:362
 msgid ""
 "The current duplicate group no longer exists. You cannot perform this "
 "action."
-msgstr "Zduplikowana grupa już nie istnieje. Nie możesz wykonać tej akcji."
+msgstr ""
+"Geçerli eşleşen grup artık mevcut değil. Bu eylemi gerçekleştiremezsiniz."
 
 #: duplicates.py:720
 msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
-msgstr "Wyświetlam #{0} z {0} pozostałych zduplikowanych grup dla {0}"
+msgstr "{0} için kalan {0} yinelenen gruptan #{0} tanesi gösteriliyor"
 
 #: duplicates.py:827
 msgid ""
@@ -965,43 +876,32 @@ msgid ""
 "\n"
 "{3}"
 msgstr ""
-"Wyniki porównania {0}:\n"
-"     Biblioteka źródłowa: {1}\n"
-"     Biblioteka docelowa: {2}\n"
-"\n"
-"{3}"
 
 #: duplicates.py:899
 msgid "Click 'Show details' to see the results."
-msgstr "Kliknij 'Pokaż szczegóły', aby zobaczyć wyniki."
+msgstr "Sonuçları görmek için 'Ayrıntıları göster'i tıklayın."
 
 #: duplicates.py:911 duplicates.py:1037
 msgid "Analysing duplicates in target database"
-msgstr "Analizowanie duplikatów w docelowej bazie danych"
+msgstr "Hedef veri tabanındaki eşleşmeleri çözümleme"
 
 #: duplicates.py:913 duplicates.py:1046
 msgid "Analysing duplicates in current database"
-msgstr "Analizowanie duplikatów w bieżącej bazie danych"
+msgstr "Mevcut veri tabanındaki eşleşenleri çözümleme"
 
 #: duplicates.py:944
 msgid ""
 "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
 msgstr ""
-"Znaleziono <b>{0} autorów</b> z potencjalnymi duplikatami przy użyciu "
-"<b>{1}</b> w bibliotece pod adresem: {2}"
 
 #: duplicates.py:1033
 msgid ""
 "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
 msgstr ""
-"Znaleziono <b>{0} książki</b> z duplikatami binarnymi w bibliotece pod "
-"adresem: {1}"
 
 #: duplicates.py:1070
 msgid ""
 "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
 msgstr ""
-"Znaleziono <b>{0} książki</b> z potencjalnymi duplikatami za pomocą "
-"<b>{1}</b> w bibliotece pod adresem: {2}"

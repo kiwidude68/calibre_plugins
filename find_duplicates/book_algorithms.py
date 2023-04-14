@@ -292,10 +292,11 @@ class BinaryCompareAlgorithm(IdentifierAlgorithm):
         for fmt in formats.split(','):
             try:
                 stat_metadata = self.db.format_metadata(book_id, fmt)
-                mtime = stat_metadata['mtime']
-                size = stat_metadata['size']
-                candidates_map[size].add((book_id, fmt, mtime))
-                count += 1
+                if "mtime" in stat_metadata:
+                    mtime = stat_metadata['mtime']
+                    size = stat_metadata['size']
+                    candidates_map[size].add((book_id, fmt, mtime))
+                    count += 1
             except:
                 traceback.print_exc()
         return count
