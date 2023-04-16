@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.16.3] - 2023-04-16
+### Fixed
+- Remove books from shelf would only remove first book when there are multiple.
+
 ## [1.16.2] - 2022-10-19
 ### Fixed
 - Fix regression from 1.16.1 on update reading progress for date related formatting.

@@ -296,6 +296,8 @@ class HttpHelper(object):
         # Return Review id if book was added.
         url = '%s/shelf/add_to_shelf.xml' % cfg.URL_HTTPS
         body_info = {'name': shelf_name, 'book_id': goodreads_id}
+        if DEBUG:
+            debug_print('Add/remove book action: %s book: %s' % (action, body_info))
         success_status = '201'
         if action == 'remove':
             body_info['a'] = 'remove'
@@ -311,6 +313,10 @@ class HttpHelper(object):
                 # If we didnt get the review id then we probably got rate limited in the response.
                 # Don't currently have the actual response goodreads send to detect this.
                 self._handle_failure(_response, content, url)
+            else:
+                 # For remove from shelf actions we don't get the review id back but we need to 
+                 # pretend we have one so the calling code does not abort processing books
+                 return -1
         return None
 
     def create_review(self, oauth_client, shelf_name, goodreads_id, rating, date_read, review_text):
