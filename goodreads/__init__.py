@@ -30,7 +30,7 @@ class Goodreads(Source):
     name = 'Goodreads'
     description = 'Downloads metadata and covers from Goodreads'
     author = 'Grant Drake'
-    version = (1, 7, 7)
+    version = (1, 7, 8)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])
@@ -304,33 +304,35 @@ class Goodreads(Source):
         for result in first_result:
             title = result.xpath('./a')[0].text_content().strip()
             authors = result.xpath('./span[@itemprop="author"]/div/a/span')[0].text_content().strip().split(',')
-            if ismatch(title, authors):
-                log.info('Found match: %d %s %s' % (i, title, authors))
-
-                book_details_node = first_result[i].xpath('./div')
-                book_details_node = result.xpath('./div')
-                if book_details_node:
-                    import calibre_plugins.goodreads.config as cfg
-                    c = cfg.plugin_prefs[cfg.STORE_NAME]
-                    if c[cfg.KEY_GET_EDITIONS]:
-                        # We need to read the editions for this book and get the matches from those
-                        log.debug("_parse_search_results: trying to get editions...")
-                        for editions_text in book_details_node[0].xpath('./span/a[@href]/text()'):
-                            log.debug("_parse_search_results: looping on editions_text=%s" % (editions_text,))
-                            if editions_text == '1 edition':
-                                # There is no point in doing the extra hop
-                                log.info('Not scanning editions as only one edition found')
-                                break
-                            editions_url = Goodreads.BASE_URL + editions_text.getparent().get('href')
-                            log.debug("_parse_search_results: editions_url= %s" % (editions_url, ))
-                            if '/work/editions/' in editions_url:
-                                log.info('Examining up to %s: %s' % (editions_text, editions_url))
-                                self._parse_editions_for_book(log, editions_url, matches, timeout, title_tokens)
-                                return
-                    main_book_link = first_result[i].xpath('./a/@href')
-                    log.debug("_parse_search_results: not using editions -'./a/@href': %s" % (main_book_link[0], ))
-                    result_url = Goodreads.BASE_URL + first_result[i].xpath('./a/@href')[0]
-                    matches.append(result_url)
+            # Ugly hack in here but not sure of a more elegant way to exclude large print editions
+            # because the calibre base logic is preferring them over non large print
+            if 'Large Print Edition' not in title or len(matches) == 0:
+                if ismatch(title, authors):
+                    log.info('Found match: %d %s %s' % (i, title, authors))                
+                    book_details_node = first_result[i].xpath('./div')
+                    book_details_node = result.xpath('./div')
+                    if book_details_node:
+                        import calibre_plugins.goodreads.config as cfg
+                        c = cfg.plugin_prefs[cfg.STORE_NAME]
+                        if c[cfg.KEY_GET_EDITIONS]:
+                            # We need to read the editions for this book and get the matches from those
+                            log.debug("_parse_search_results: trying to get editions...")
+                            for editions_text in book_details_node[0].xpath('./span/a[@href]/text()'):
+                                log.debug("_parse_search_results: looping on editions_text=%s" % (editions_text,))
+                                if editions_text == '1 edition':
+                                    # There is no point in doing the extra hop
+                                    log.info('Not scanning editions as only one edition found')
+                                    break
+                                editions_url = Goodreads.BASE_URL + editions_text.getparent().get('href')
+                                log.debug("_parse_search_results: editions_url= %s" % (editions_url, ))
+                                if '/work/editions/' in editions_url:
+                                    log.info('Examining up to %s: %s' % (editions_text, editions_url))
+                                    self._parse_editions_for_book(log, editions_url, matches, timeout, title_tokens)
+                                    return
+                        main_book_link = first_result[i].xpath('./a/@href')
+                        log.debug("_parse_search_results: not using editions -'./a/@href': %s" % (main_book_link[0], ))
+                        result_url = Goodreads.BASE_URL + first_result[i].xpath('./a/@href')[0]
+                        matches.append(result_url)
             i += 1
 
     def _parse_editions_for_book(self, log, editions_url, matches, timeout, title_tokens):
@@ -428,6 +430,21 @@ class Goodreads(Source):
         except:
             log.exception('Failed to download cover from:', cached_url)
 
+    def test_fields(self, mi):
+        '''
+        Overridden because for our tests below we don't get all fields back for all books being tested
+        and some fields are only populated conditionally based on user settings.
+        '''
+        ignore_fields = ['identifier:isbn', 'identifier:grrating', 'identifier:grvotes', 'publisher', 'languages', 'tags', 'pubdate']
+        for key in self.touched_fields:
+            if key not in ignore_fields:
+                if key.startswith('identifier:'):
+                    key = key.partition(':')[-1]
+                    if not mi.has_identifier(key):
+                        return 'identifier: ' + key
+                elif mi.is_null(key):
+                    return key
+
 
 if __name__ == '__main__': # tests
     # To run these test use:
@@ -478,5 +495,12 @@ if __name__ == '__main__': # tests
                  authors_test(['Michael Connelly']),
                  series_test('Jack McEvoy', 1.0),
                  isbn_test('9780752863917')]
+            ),
+
+            (# A book with a a large print edition variant
+                {'title':'Starship Thrive', 'authors':['Ginger Booth']},
+                [title_test('Starship Thrive', exact=True),
+                 authors_test(['Ginger Booth']),
+                 series_test('Thrive Space Colony Adventures', 4.0)]
             ),
         ])

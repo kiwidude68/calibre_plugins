@@ -1,5 +1,9 @@
 # Goodreads Change Log
 
+## [1.7.8] - 2023-04-22
+### Changed
+- Large print editions will be ignored if a non large print match is found first.
+
 ## [1.7.7] - 2023-04-14
 ### Fixed
 - Support calibre versions 5.9.0 to 5.39.1 which did not have a random chrome user agent function.
