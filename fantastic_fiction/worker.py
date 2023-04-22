@@ -121,13 +121,6 @@ class Worker(Thread): # Get details
         except:
             self.log.exception('Error parsing comments for url: %r'%self.url)
 
-        try:
-            isbn, mi.publisher = self.parse_isbn_and_publisher(root)
-            if isbn:
-                self.isbn = mi.isbn = isbn
-        except:
-            self.log.exception('Error parsing ISBN/publisher for url: %r'%self.url)
-
         mi.source_relevance = self.relevance
 
         if self.ff_id:
@@ -261,23 +254,6 @@ class Worker(Thread): # Get details
         comments = comments.replace('<h3>',  '<h4>')
         comments = comments.replace('</h3>', '</h4>')
         return comments
-
-    def parse_isbn_and_publisher(self, root):
-        # We will just grab the first ISBN that we can find on the page with a publisher
-        isbn = None
-        publisher = None
-        edition_nodes = root.xpath('//div[@class="ff"]/div[@class="e"]/div/text()')
-        RE_ISBN = re.compile(u'([0-9\-])+', re.UNICODE)
-        for i, edition_text in enumerate(edition_nodes):
-            if edition_text[:5] == 'ISBN:':
-                isbn_text = edition_text[6:]
-                isbn_match = re.search(RE_ISBN, isbn_text)
-                if isbn_match:
-                    isbn = isbn_match.group()
-            if edition_text[:10] == 'Publisher:':
-                publisher = edition_text[11:]
-                break
-        return isbn, publisher
 
     def parse_cover(self, root):
         cover_node = root.xpath('//div[@class="ff"]/div/img[@class="bookimage"]')

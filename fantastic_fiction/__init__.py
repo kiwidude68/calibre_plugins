@@ -63,14 +63,13 @@ class FantasticFiction(Source):
     name = 'Fantastic Fiction'
     description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
-    version = (1, 6, 0)
+    version = (1, 6, 1)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ff'
     capabilities = frozenset(['identify', 'cover'])
     touched_fields = frozenset(['title', 'authors', 'identifier:' + ID_NAME,
-        'identifier:isbn', 'comments', 'publisher', 'pubdate',
-        'series'])
+        'comments', 'pubdate', 'series'])
     has_html_comments = True
     supports_gzip_transfer_encoding = True
 
@@ -136,6 +135,7 @@ class FantasticFiction(Source):
             tokens = []
             if title:
                 title = title.replace('?', '')
+                title = title.replace('&', 'and')
                 if ' a novel' in title:
                     title = title.replace(' a novel', '')
                 if title.startswith('the '):
@@ -352,6 +352,14 @@ if __name__ == '__main__':  # tests
                 [title_test('61 Hours',
                     exact=True), authors_test(['Lee Child']),
                     series_test('Jack Reacher', 14.0)]
+
+            ),
+            
+            (# A book with an ampersand
+                {'title':"Prosper & Thrive", 'authors':['Ginger Booth']},
+                [title_test("Prosper & Thrive", exact=True), 
+                 authors_test(['Ginger Booth']),
+                 series_test('Thrive Space Colony Adventures', 7.0)]
 
             ),
 

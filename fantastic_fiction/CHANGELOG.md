@@ -1,5 +1,11 @@
 # Fantastic Fiction Change Log
 
+## [1.6.1] - 2023-04-22
+### Changed
+- Remove ISBN and Publisher as fields the plugin reports it could return, as data no longer on FF website
+### Fixed
+- Books with an ampersand in title will change to the word 'and' to better match search results
+
 ## [1.6.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
