@@ -1,6 +1,8 @@
 # Fantastic Fiction Change Log
 
 ## [1.6.1] - 2023-04-22
+### Added
+- Turkish translation (Bora Atıcı)
 ### Changed
 - Remove ISBN and Publisher as fields the plugin reports it could return, as data no longer on FF website
 ### Fixed
