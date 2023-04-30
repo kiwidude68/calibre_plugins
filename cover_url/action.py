@@ -108,7 +108,8 @@ class CoverUrlAction(InterfaceAction):
                 msg += '<p>'+_('Could not find covers for %d book(s).') % len(failed_ids)
 
         if update_count == 0:
-            return error_dialog(self.gui, _('Download covers failed'), msg, det_msg=det_msg, show=True)
+            #return error_dialog(self.gui, _('Download covers failed'), msg, det_msg=det_msg, show=True)
+            return
 
         self._update_covers_column(updated_ids)
 

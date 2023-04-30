@@ -61,8 +61,8 @@ class GoodreadsCoverWorker(Thread):
                 self.log.exception(msg)
             return
 
-        raw = raw.decode('utf-8', errors='replace')
         #open('D:\\t.html', 'wb').write(raw)
+        raw = raw.decode('utf-8', errors='replace')
 
         if '<title>404 - ' in raw:
             self.log.error('URL malformed: %r'%self.url)
@@ -78,7 +78,7 @@ class GoodreadsCoverWorker(Thread):
         errmsg = root.xpath('//*[@id="errorMessage"]')
         if errmsg:
             msg = 'Failed to parse goodreads details page: %r'%self.url
-            msg += tostring(errmsg, method='text', encoding=unicode).strip()
+            msg += tostring(errmsg, method='text', encoding='unicode').strip()
             self.log.error(msg)
             return
 
