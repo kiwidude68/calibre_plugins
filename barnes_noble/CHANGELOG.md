@@ -6,7 +6,7 @@
 
 ## [1.5.1] - 2023-04-14
 ### Added
-- Turkish translation (Bora Atıcı)
+- Turkish translation (Bora Atıcı) 
 ### Fixed
 - Fix for some code from long ago that would remove any characters of 'series' from series names.
 
