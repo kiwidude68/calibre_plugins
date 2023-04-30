@@ -102,7 +102,7 @@ class DownloadPagesWorker():
         errmsg = root.xpath('//*[@id="errorMessage"]')
         if errmsg:
             msg = 'Failed to parse download source details page: %r'%self.url
-            msg += tostring(errmsg, method='text', encoding=unicode).strip()
+            msg += tostring(errmsg, method='text', encoding='unicode').strip()
             print(msg)
             return
 

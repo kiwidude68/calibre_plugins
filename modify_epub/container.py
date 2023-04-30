@@ -679,7 +679,7 @@ class WritableContainer(Container):
     def set(self, name, val):
         if hasattr(val, 'xpath'):
             self.etree_data_map[name] = val
-            val = unicode_type(etree.tostring(val, encoding=unicode))
+            val = unicode_type(etree.tostring(val, encoding='unicode'))
         else:
             # If we have modified the raw text directly then it invalidates
             # any etree we may have stored, so clear from the cache.
@@ -884,7 +884,7 @@ class ExtendedContainer(WritableContainer):
         data = self.get_parsed_etree(html_name)
         body = XPath('//h:body')(data)
         if body:
-            text = etree.tostring(body[0], method='text', encoding=unicode)
+            text = etree.tostring(body[0], method='text', encoding='unicode')
         else:
             text = ''
         text = re.sub(r'\s+', '', text)

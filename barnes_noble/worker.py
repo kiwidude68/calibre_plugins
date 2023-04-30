@@ -249,7 +249,7 @@ class Worker(Thread): # Get details
                 span_authors = root.xpath('//div[@class="w-box wgt-productTitle"]/h1/em')
             if not span_authors:
                 return
-            authors_html = tostring(span_authors[0], method='text', encoding=unicode).replace('\n','').strip()
+            authors_html = tostring(span_authors[0], method='text', encoding='unicode').replace('\n','').strip()
             if authors_html.startswith('by'):
                 authors_html = authors_html[2:]
             authors_type_map = OrderedDict()
@@ -422,7 +422,7 @@ class Worker(Thread): # Get details
         # http://www.barnesandnoble.com/w/collected-stories-saul-bellow/1100154883?ean=9780143107255
         description_node = root.xpath('//div[@itemprop="description"]')
         if description_node:
-            comments = tostring(description_node[0], method='html', encoding=unicode).strip()
+            comments = tostring(description_node[0], method='html', encoding='unicode').strip()
             comments = sanitize_comments_html(comments)
 
         if comments:

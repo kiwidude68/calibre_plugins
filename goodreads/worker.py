@@ -126,7 +126,7 @@ class Worker(Thread): # Get details
         errmsg = root.xpath('//*[@id="errorMessage"]')
         if errmsg:
             msg = 'Failed to parse goodreads details page: %r'%self.url
-            msg += tostring(errmsg, method='text', encoding=unicode).strip()
+            msg += tostring(errmsg, method='text', encoding='unicode').strip()
             self.log.error(msg)
             return False
 

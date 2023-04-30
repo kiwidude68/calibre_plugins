@@ -202,5 +202,5 @@ def call_pdftohtml(log, output_dir, pdf_name, first=None, last=None):
 
         with open(index_file, 'rb') as f:
             root = etree.fromstring(clean_ascii_chars(f.read()))
-            text = etree.tostring(root, method='text', encoding=unicode)
+            text = etree.tostring(root, method='text', encoding='unicode')
             return text

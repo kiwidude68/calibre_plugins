@@ -724,7 +724,7 @@ class HttpHelper(object):
             for idx, data_row_node in enumerate(edition_data_node.xpath('div[@class="dataRow"]')):
                 if idx == 0:
                     continue # Will be the title
-                text = tostring(data_row_node, method='text', encoding=unicode).strip()
+                text = tostring(data_row_node, method='text', encoding='unicode').strip()
                 if text.startswith('Published'):
                     continue
                 goodreads_edition_book['goodreads_edition'] = text
