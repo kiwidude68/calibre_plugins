@@ -1,5 +1,9 @@
 # Barnes & Noble Change Log
 
+## [1.5.2] - 2023-04-30
+### Fixed
+- Remove trailing comma from series names.
+
 ## [1.5.1] - 2023-04-14
 ### Added
 - Turkish translation (Bora Atıcı)

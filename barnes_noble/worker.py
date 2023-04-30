@@ -203,17 +203,17 @@ class Worker(Thread): # Get details
         match = re.search('\(([^\)]+) Series #(\d+)\)', title_text)
         if not match:
             #self.log('Title has no Series word in title, trying without it:',title_text)
-            match = re.search('\(([^\)]+) #(\d+)\)', title_text)
+            match = re.search('\(([^\)]+), #(\d+)\)', title_text)
         if match:
             series_name = match.groups(0)[0]
             series_index = float(match.groups(0)[1])
             title = title_text.rpartition('(')[0].strip()
-            #self.log('Title has series info as follows:',title, 'Series:',series_name, 'Idx:',series_index)
+            self.log('Title has series info as follows:',title, 'Series:',series_name, 'Idx:',series_index)
             return (title, series_name, series_index)
         else:
             # Search series info from the Product Details section of website since it was not found in the title
             (series_name, series_index) = self.parse_series(root)
-            #self.log('Title and series info retrieved separately as follows:',title_text, 'Series:',series_name, 'Idx:', series_index)
+            self.log('Title and series info retrieved separately as follows:',title_text, 'Series:',series_name, 'Idx:', series_index)
             return (title_text, series_name, series_index)
 
     def parse_authors(self, root):
