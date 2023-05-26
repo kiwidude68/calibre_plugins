@@ -22,12 +22,10 @@ from calibre_plugins.fantastic_fiction.common_widgets import KeyValueComboBox
 STORE_NAME = 'Options'
 KEY_GENRE_ACTION = 'genreAction'
 KEY_REDUCE_HEADINGS = 'reduceHeadings'
-KEY_OLDEST_EDITION = 'oldestEdition'
 
 DEFAULT_STORE_VALUES = {
     KEY_GENRE_ACTION: 'DISCARD',
-    KEY_REDUCE_HEADINGS: False,
-    KEY_OLDEST_EDITION: False
+    KEY_REDUCE_HEADINGS: False
 }
 
 GENRE_TYPES = OrderedDict([
@@ -72,14 +70,6 @@ class ConfigWidget(DefaultConfigWidget):
         reduce_headings = c.get(KEY_REDUCE_HEADINGS, False)
         self.headings_checkbox.setChecked(reduce_headings)
         
-        self.oldest_edition_checkbox = QCheckBox(_('Use published date from oldest edition'), self)
-        self.oldest_edition_checkbox.setToolTip(_('The year the book was first published is shown with the title. '
-                                                  'The editions include the publishing month. '
-                                                  'Select this option if you want to use the oldest edition from the year of publishing.'))
-        options_group_box_layout.addWidget(self.oldest_edition_checkbox)
-        oldest_edition = c.get(KEY_OLDEST_EDITION, False)
-        self.oldest_edition_checkbox.setChecked(oldest_edition)
-        
         options_group_box_layout.addStretch(1)
 
     def commit(self):
@@ -87,5 +77,4 @@ class ConfigWidget(DefaultConfigWidget):
         new_prefs = {}
         new_prefs[KEY_GENRE_ACTION] = self.genreCombo.selected_key()
         new_prefs[KEY_REDUCE_HEADINGS] = self.headings_checkbox.checkState() == Qt.Checked
-        new_prefs[KEY_OLDEST_EDITION] = self.oldest_edition_checkbox.checkState() == Qt.Checked
         plugin_prefs[STORE_NAME] = new_prefs

@@ -63,7 +63,7 @@ class FantasticFiction(Source):
     name = 'Fantastic Fiction'
     description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
-    version = (1, 6, 1)
+    version = (1, 6, 2)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ff'

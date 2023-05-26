@@ -1,5 +1,11 @@
 # Fantastic Fiction Change Log
 
+## [1.6.2] - 2023-04-22
+### Changed
+- Remove oldest edition configuration setting as no longer available for scraping
+### Fixed
+- Website changes meant published date not being parsed correctly sometimes
+
 ## [1.6.1] - 2023-04-22
 ### Added
 - Turkish translation (Bora Atıcı)

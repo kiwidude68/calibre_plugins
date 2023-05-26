@@ -55,8 +55,8 @@ class Worker(Thread): # Get details
                 self.log.exception(msg)
             return
 
-        raw = raw.decode('utf-8', errors='replace')
         #open('D:\\ff.html', 'wb').write(raw)
+        raw = raw.decode('utf-8', errors='replace')
 
         if '<title>404 - ' in raw:
             self.log.error('URL malformed: %r'%self.url)
@@ -175,34 +175,24 @@ class Worker(Thread): # Get details
     def parse_published_date(self, root):
         book_year = ''
         pub_date = None
-        oldest_edition = cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_OLDEST_EDITION, False)
 
-        # FantasticFiction has the published year with the book title.
-        year_node = root.xpath('//div[@class="bookheading"]/span[@class="year"]/a')
-        if year_node:
-            year = int(year_node[0].text)
+        # FantasticFiction has the published year with the book title inside parenthesis - but the year might be hyperlinked!.
+        year_node_with_anchor = root.xpath('//div[@class="bookheading"]/span[@class="year"]/a')
+        year_text = None
+        if year_node_with_anchor:
+            year_text = year_node_with_anchor[0].text
+        else:
+            # Try again without the anchor
+            year_node = root.xpath('//div[@class="bookheading"]/span[@class="year"]')
+            if year_node:
+                year_text = year_node[0].text[1:-1] # strip parenthesis
+        if year_text:
+            year = int(year_text)
             from calibre.utils.date import utc_tz
             book_year = datetime.datetime(year, 1, 1, tzinfo=utc_tz)
             pub_date = book_year
+            self.log.info('parse_published_date assigning Jan 1st for year: ', book_year)
         
-        if oldest_edition:
-            edition_nodes = root.xpath('//div[@class="ff"]/div[@class="sectionhead"]')
-            edition_nodes = root.xpath('//div[@class="ff"]/div[@class="e"]/preceding-sibling::div[@class="sectionhead"]')
-            oldest_edition_date = datetime.datetime(pub_date.year + 1, 1, 1, tzinfo=utc_tz)
-            have_edition_with_month = False
-            if len(edition_nodes) > 0:
-                for edition_node in edition_nodes:
-                    edition_date = edition_node.text.split(":")[0].strip()
-                    if len(edition_date.split()) > 1:
-                        have_edition_with_month = True
-                        edition_date = datetime.datetime.strptime(edition_date, '%B %Y').replace(tzinfo=utc_tz)
-                        if edition_date < oldest_edition_date:
-                            oldest_edition_date = edition_date
-                    #self.log.info('parse_published_date - edition_date: "%s" ' % (edition_date))
-                    #self.log.info('parse_published_date - oldest_edition_date: "%s" ' % (oldest_edition_date))
-
-            pub_date = oldest_edition_date if have_edition_with_month else pub_date
-        #self.log.info('parse_published_date - final pub_date: "%s" ' % (pub_date))
         return pub_date
 
     def parse_comments_and_tags(self, root):
