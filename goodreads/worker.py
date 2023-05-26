@@ -446,25 +446,25 @@ class Worker(Thread): # Get details
     def parse_publish_date(self, book_json, work_json, first_published):
         pub_date = None
         # Publication time can be in multiple places. In book_json it will be the
-        # edition publication date, whereas in work_json it seems to be the first published.
-        parent_json = book_json
-        if first_published:
-            parent_json = work_json
-        if "publicationTime" in parent_json["details"]:
-            epoch_time = parent_json["details"]["publicationTime"]
-            #self.log.info('Raw publication time: ', epoch_time)
-            if epoch_time is not None:
-                # Their time seems to have an extra 3 trailing zeroes which causes conversion grief!
-                try:
-                    epoch_time = int(epoch_time) // 1000
-                    #self.log.info('Unix epoch publication time: ', epoch_time)
-                    pub_date = utcfromtimestamp(epoch_time)
-                    if first_published:
-                        self.log.info('parse_publish_date: %s (First published)'%pub_date)
-                    else:
-                        self.log.info('parse_publish_date: %s (Edition)'%pub_date)
-                except:
-                    self.log.error('Failed to convert unix pub date to datetime of: ', epoch_time)
+        # edition publication date, whereas in work_json it seems to be the first published (if present).
+        epoch_time = None
+        # We will use the book publication entry as a fallback if look for first published and work_json value is null
+        if "publicationTime" in book_json["details"]:
+            epoch_time = book_json["details"]["publicationTime"]
+        if first_published and "publicationTime" in work_json["details"] and work_json["details"]["publicationTime"]:
+            epoch_time = work_json["details"]["publicationTime"]
+        if epoch_time:
+            # Their time seems to have an extra 3 trailing zeroes which causes conversion grief!
+            try:
+                epoch_time = int(epoch_time) // 1000
+                #self.log.info('Unix epoch publication time: ', epoch_time)
+                pub_date = utcfromtimestamp(epoch_time)
+                if first_published:
+                    self.log.info('parse_publish_date: %s (First published)'%pub_date)
+                else:
+                    self.log.info('parse_publish_date: %s (Edition)'%pub_date)
+            except:
+                self.log.error('Failed to convert unix pub date to datetime of: ', epoch_time)
         return pub_date
 
     def parse_tags(self, book_json):

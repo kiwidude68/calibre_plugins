@@ -1,5 +1,11 @@
 # Goodreads Change Log
 
+## [1.7.9] - 2023-05-26
+### Added
+- Latvian translation (@ciepina)
+### Fixed
+- Publication date not always present in work part of json, so fallback to that in book details json.
+
 ## [1.7.8] - 2023-04-22
 ### Changed
 - Large print editions will be ignored if a non large print match is found first.

@@ -30,7 +30,7 @@ class Goodreads(Source):
     name = 'Goodreads'
     description = 'Downloads metadata and covers from Goodreads'
     author = 'Grant Drake'
-    version = (1, 7, 8)
+    version = (1, 7, 9)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])
