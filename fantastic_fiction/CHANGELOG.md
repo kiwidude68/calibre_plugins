@@ -1,5 +1,9 @@
 # Fantastic Fiction Change Log
 
+## [1.6.3] - 2023-06-20
+### Fixed
+- Since now only matching on title, consider all candidates returned not just top 3. (nurbles62)
+
 ## [1.6.2] - 2023-04-22
 ### Changed
 - Remove oldest edition configuration setting as no longer available for scraping

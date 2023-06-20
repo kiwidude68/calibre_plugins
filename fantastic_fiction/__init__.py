@@ -63,7 +63,7 @@ class FantasticFiction(Source):
     name = 'Fantastic Fiction'
     description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
-    version = (1, 6, 2)
+    version = (1, 6, 3)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ff'
@@ -197,17 +197,12 @@ class FantasticFiction(Source):
             # Our response contains a json dictionary 
             json_result = json.loads(raw)
             if json_result['hits']['found'] > 0:
-                max_ids_to_search = 4
-                count = 0
                 for hit in json_result['hits']['hit']:
                     data = hit['fields']
                     # Now grab the match from the search result, provided the
                     # title and authors appear to be for the same book
                     self._parse_book_script_detail(log, title, authors, data, matches)
                     if matches:
-                        break
-                    count += 1
-                    if count >= max_ids_to_search:
                         break
             if not matches:
                 log.error('No matches found')
