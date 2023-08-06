@@ -63,13 +63,13 @@ class FantasticFiction(Source):
     name = 'Fantastic Fiction'
     description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
-    version = (1, 6, 3)
+    version = (1, 6, 4)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ff'
     capabilities = frozenset(['identify', 'cover'])
     touched_fields = frozenset(['title', 'authors', 'identifier:' + ID_NAME,
-        'comments', 'pubdate', 'series'])
+        'comments', 'pubdate', 'series', 'tags'])
     has_html_comments = True
     supports_gzip_transfer_encoding = True
 

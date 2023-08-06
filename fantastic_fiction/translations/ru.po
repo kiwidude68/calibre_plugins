@@ -3,7 +3,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Виктор, 2022
+# Victor, 2022
 # Caarmi, 2022
 # ashed <craysy@gmail.com>, 2022
 # 

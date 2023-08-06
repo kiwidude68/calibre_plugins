@@ -208,13 +208,13 @@ class Worker(Thread): # Get details
                 external_link.getparent().remove(external_link)
 
             comments = tostring(description_node[0], method='html', encoding='unicode')
-            find_text = 'Genre: <a href'
+            find_text = 'Genre: <a '
             genre_index = comments.find(find_text)
             if genre_index > -1:
                 genre_action = cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GENRE_ACTION]
                 # Strip the genre out of the comments
                 genre_links = comments[genre_index:-6]
-                tags = re.findall(r'<a href="[^"]+">([^<]+)</a>', genre_links)
+                tags = re.findall(r'<a[^>]+>([^<]+)</a>', genre_links)
                 if (re.search(r'<br>\s*$', comments[:genre_index])):
                     if genre_action == 'KEEP':
                         comments = comments[:genre_index + len('Genre: ')] + ' ,'.join(tags)
@@ -229,8 +229,8 @@ class Worker(Thread): # Get details
                     # Get the genre values as a list for tags
                     tags = None
             comments = sanitize_comments_html(comments)
-            # Additional sanitization replacing header tags
             
+            # Additional sanitization replacing header tags
             replace_headers = cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_REDUCE_HEADINGS, False)
             if replace_headers:
                 comments = self.replace_header_tags(comments)

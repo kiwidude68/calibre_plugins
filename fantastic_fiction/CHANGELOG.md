@@ -1,5 +1,10 @@
 # Fantastic Fiction Change Log
 
+## [1.6.4] - 2023-08-06
+### Fixed
+- Tags was incorrectly removed as a configuration option in a previous release.
+- Genre not being stripped from description for either of the "Move" or "Discard" options. (MegAnne)
+
 ## [1.6.3] - 2023-06-20
 ### Fixed
 - Since now only matching on title, consider all candidates returned not just top 3. (nurbles62)

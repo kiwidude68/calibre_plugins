@@ -61,7 +61,7 @@ class GoodreadsCoverWorker(Thread):
                 self.log.exception(msg)
             return
 
-        #open('D:\\t.html', 'wb').write(raw)
+        #open('D:\\cover_url.html', 'wb').write(raw)
         raw = raw.decode('utf-8', errors='replace')
 
         if '<title>404 - ' in raw:
