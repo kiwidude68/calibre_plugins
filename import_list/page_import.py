@@ -62,7 +62,7 @@ def to_int(val, strict_int=True):
     this function converts to float first
     '''
     try:
-        val = float(val)
+        val = float(val.replace(',',''))
     except:
         raise ValueError
     if strict_int:

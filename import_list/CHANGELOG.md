@@ -1,5 +1,11 @@
 # Import List Change Log
 
+## [1.9.1] - 2023-08-06
+### Added
+- Russian translation (various)
+### Fixed
+- Strip commas from numeric columns when importing and trying to convert to integer. (Rellwood)
+
 ## [1.9.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
