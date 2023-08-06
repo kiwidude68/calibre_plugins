@@ -1,5 +1,12 @@
 # Quality Check Change Log
 
+## [1.13.5] - 2023-08-06
+### Added
+- Latvian translation (ciepina)
+- Russian translation (ashed)
+### Fixed
+- Truncate long book titles in progress dialog to ensure does not get oversized. (ownedbycats)
+
 ## [1.13.4] - 2023-04-02
 ### Fixed
 - EPubCheck had typo when trying to log out missing book format (isarl)

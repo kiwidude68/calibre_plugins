@@ -32,6 +32,8 @@ from calibre_plugins.quality_check.common_dialogs import SizePersistedDialog, Vi
 from calibre_plugins.quality_check.common_icons import get_icon
 from calibre_plugins.quality_check.common_widgets import ImageTitleLayout, ReadOnlyTableWidgetItem
 
+def truncate_title(title, length = 75):
+    return (title[:length] + '...') if len(title) > length else title
 
 class QualityProgressDialog(QProgressDialog):
 
@@ -56,7 +58,7 @@ class QualityProgressDialog(QProgressDialog):
         book_id = self.book_ids[self.i]
         self.i += 1
 
-        dtitle = self.db.title(book_id, index_is_id=True)
+        dtitle = truncate_title(self.db.title(book_id, index_is_id=True))
         self.setWindowTitle(_('%s %d %s  (%d matches)...') % (self.action_type, self.total_count, self.status_msg_type, len(self.result_ids)))
         self.setLabelText('%s: %s'%(self.action_type, dtitle))
         if self.callback_fn(book_id, self.db):
@@ -606,7 +608,7 @@ class ApplyFixProgressDialog(QProgressDialog):
         book_id = self.book_ids[self.i]
         self.i += 1
 
-        title = self.db.title(book_id, index_is_id=True)
+        title = truncate_title(self.db.title(book_id, index_is_id=True))
         self.setLabelText(_('Fixing')+': '+title)
 
         # Call our callback FIX function to perform the work.
