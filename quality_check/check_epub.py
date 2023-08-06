@@ -53,7 +53,8 @@ OPF_FILES   = ['.opf']
 NCX_FILES   = ['.ncx']
 JAVASCRIPT_FILES = ['.js']
 CRAP_FILES = ['.thmx','.plist']
-NON_HTML_FILES = IMAGE_FILES + FONT_FILES + CSS_FILES + OPF_FILES + NCX_FILES + JAVASCRIPT_FILES + CRAP_FILES
+EPUB_FILES = ['.epub']
+NON_HTML_FILES = IMAGE_FILES + FONT_FILES + CSS_FILES + OPF_FILES + NCX_FILES + JAVASCRIPT_FILES + CRAP_FILES + EPUB_FILES
 
 NCX_NS = 'http://www.daisy.org/z3986/2005/ncx/'
 
@@ -171,6 +172,9 @@ class EpubCheck(BaseCheck):
             self.check_epub_javascript()
         elif menu_key == 'check_epub_smarten_punc':
             self.check_epub_smarten_punctuation()
+
+        elif menu_key == 'check_epub_inside_epub':
+            self.check_epub_inside_epub()
 
         elif menu_key == 'search_epub':
             self.search_epub()
@@ -1986,3 +1990,37 @@ class EpubCheck(BaseCheck):
             pass
         data, _ = xml_to_unicode(data)
         return fix_data(data)
+
+    def check_epub_inside_epub(self):
+
+        def evaluate_book(book_id, db):
+            path_to_book = db.format_abspath(book_id, 'EPUB', index_is_id=True)
+            if not path_to_book:
+                self.log.error('ERROR: EPUB format is missing: ', get_title_authors_text(db, book_id))
+                return False
+            try:
+                found = False
+                displayed_path = False
+                with ZipFile(path_to_book, 'r') as zf:
+                    for resource_name in self._manifest_worthy_names(zf):
+                        extension = resource_name[resource_name.rfind('.'):].lower()
+                        if extension in EPUB_FILES:
+                            if not displayed_path:
+                                displayed_path = True
+                                self.log('ePub found in: <b>%s</b>'%get_title_authors_text(db, book_id))
+                            self.log('\t<span style="color:darkgray">%s</span>'%resource_name)
+                            found = True
+                return found
+
+            except InvalidEpub as e:
+                self.log.error('Invalid epub:', e)
+                return False
+            except:
+                self.log.error('ERROR parsing book: ', path_to_book)
+                self.log(traceback.format_exc())
+                return False
+
+        self.check_all_files(evaluate_book,
+                             no_match_msg='No searched ePub books have a ePub inside',
+                             marked_text='epub_inside_epub',
+                             status_msg_type='ePub books with a ePub inside')
