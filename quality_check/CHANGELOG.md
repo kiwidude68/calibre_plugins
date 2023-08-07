@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.13.6] - 2023-08-06
+### Added
+- New Check ePub inside ePub feature (@un-pogaz)
+
 ## [1.13.5] - 2023-08-06
 ### Added
 - Latvian translation (ciepina)
