@@ -377,7 +377,7 @@ class GoodreadsSyncAction(InterfaceAction):
         gr_cache = self.id_caches.goodreads_to_calibre_ids()
         cb_cache = self.id_caches.calibre_to_goodreads_ids()
         for book in goodreads_books:
-            self.progressbar_label("Updating book %s" % book['calibre_id'])
+            self.progressbar_label(_("Updating book") + " %s" % book['calibre_id'])
             self.progressbar_increment()
             # As 'updated' will be used to determine whether to update the gui rows,
             # we also consider whether user changed the calibre rating, date read or review text columns
@@ -510,7 +510,7 @@ class GoodreadsSyncAction(InterfaceAction):
         _gr_cache = self.id_caches.goodreads_to_calibre_ids()
         _cb_cache = self.id_caches.calibre_to_goodreads_ids()
         for book in calibre_books:
-            self.progressbar_label("Updating book %s" % book['calibre_id'])
+            self.progressbar_label(_("Updating book") + " %s" % book['calibre_id'])
             self.progressbar_increment()
             book['updated'] = False
             calibre_id = book['calibre_id']
