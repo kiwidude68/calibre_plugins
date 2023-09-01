@@ -1,5 +1,9 @@
 # Count Pages Change Log
 
+## [1.13.1] - 2023-09-01
+### Changed
+- E-book Viewer page count should now match what calibre produces.
+
 ## [1.13.0] - 2023-04-02
 ### Fixed
 - Gunning Fog was broken due to english.pickle needing to use LF line endings instead of CRLF (@jonathanking)

@@ -4,6 +4,7 @@ __license__ = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
 import re, os, shutil
+import tempfile
 
 from six import text_type as unicode
 
@@ -51,12 +52,16 @@ def get_page_count(iterator, book_path, page_algorithm, custom_chars_per_page=0)
 
     count = 0
     if page_algorithm == 0:
+        print('\tCalculating page count using APNX Accurate algorithm')
         count = _get_page_count_accurate(iterator)
     elif page_algorithm == 1:
-        count = _get_page_count_calibre(iterator)
+        print('\tCalculating page count using Calibre E-book Viewer algorithm')
+        count = _get_page_count_calibre(book_path)
     elif page_algorithm == 2:
+        print('\tCalculating page count using Adobe Digital Editions algorithm')
         count = _get_page_count_adobe(iterator, book_path)
     elif page_algorithm == 3:
+        print('\tCalculating page count using custom chars per page algorithm')
         count = _get_page_count_custom(iterator, custom_chars_per_page)
 
     print('\tPage count:', count)
@@ -113,11 +118,33 @@ def _get_page_count_adobe(iterator, book_path):
     return pages
 
 
-def _get_page_count_calibre(iterator):
+def _get_page_count_calibre(book_path):
     '''
     This algorithm uses the ebook viewer page count.
     '''
-    count = sum(iterator.pages)
+    from calibre.srv.render_book import render
+    from calibre.ptempfile import TemporaryDirectory
+    import json, math
+
+    html_body_length = 0
+    with TemporaryDirectory() as tdir:
+        render(book_path, tdir, book_hash=None, serialize_metadata=False,
+            extract_annotations=False, virtualize_resources=True, max_workers=0)
+        manifest_path = os.path.join(tdir, 'calibre-book-manifest.json')
+        f = open(manifest_path, "r")
+        manifest_json = json.load(f)
+        f.close()
+        if "spine" not in manifest_json:
+            raise ValueError('Could not read spine in manifest json after extracting book: ' + book_path)
+        if "files" not in manifest_json:
+            raise ValueError('Could not read files in manifest json after extracting book: ' + book_path)
+        for file_path in manifest_json["spine"]:
+            if file_path not in manifest_json["files"]:
+                continue
+            spine_file = manifest_json["files"][file_path]
+            if "length" in spine_file:
+                html_body_length += spine_file["length"]
+    count = math.ceil(html_body_length / 1000)
     return count
 
 
