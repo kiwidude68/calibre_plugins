@@ -9,7 +9,7 @@
 
 This plugin was requested on the Plugin Ideas sticky thread, and allows retrieving book metadata from the [www.fictiondb.com](https://www.fictiondb.com/) website.
 
-This website can have good descriptions for books and often excellent potential tags data with a range of genre, sub-genre, time period and tags information that can be optionally retrieved into your tags column (configure in the preferences for this plugin).
+This website can have good descriptions for books and often excellent potential tags data with a range of genre, sub-genre and themes information that can be optionally retrieved into your tags column (configure in the preferences for this plugin).
 
 Note also that while the website supports multiple types of series (not only an author series but also multi-author and publisher series), this plugin will only retrieve for author series, and only if an order has been defined. This is due to the limitations of the calibre series column. 
 
@@ -18,7 +18,7 @@ For more information, see the [Wiki](https://github.com/kiwidude68/calibre_plugi
 ## Main Features
 
 - Can retrieve title, author, comments, series, publisher, publication date, rating, tags and (small!) cover
-- Configure which of the genres, sub-genres, themes, time period and tags sections you want retrieved into your calibre tags column.
+- Configure which of the genres, sub-genres and themes sections you want retrieved into your calibre tags column.
 - Also retrieves a FictionDB id, which can be used to directly jump to the page for a specific book from the book details pane (like Goodreads/ISBN etc).
 
 ## Development / Contributions

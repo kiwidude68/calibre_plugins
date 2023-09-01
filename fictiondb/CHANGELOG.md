@@ -1,5 +1,14 @@
 # FictionDB Change Log
 
+## [1.4.0] - 2023-09-01
+### Added
+- Turkish translation
+### Changed
+- Configuration options changed for tags removing unavailable data options such as age classification. 
+- Options now are genres (checked by default), sub-genres (unchecked) and themes (unchecked).
+### Fixed
+- Updates for site changes for genres and publish date.
+
 ## [1.3.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

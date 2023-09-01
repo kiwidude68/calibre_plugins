@@ -18,15 +18,13 @@ from calibre.utils.config import JSONConfig
 
 STORE_NAME = 'Options'
 KEY_GET_GENRE_AS_TAGS          = 'getGenreAsTags'
-KEY_GET_CLASSIFICATION_AS_TAGS = 'getClassificationAsTags'
-KEY_GET_TIME_PERIOD_AS_TAGS    = 'getTimePeriodAsTags'
-KEY_GET_AGE_LEVEL_AS_TAGS      = 'getAgeLevelAsTags'
+KEY_GET_SUB_GENRE_AS_TAGS      = 'getSubGenreAsTags'
+KEY_GET_THEMES_AS_TAGS         = 'getThemesAsTags'
 
 DEFAULT_STORE_VALUES = {
     KEY_GET_GENRE_AS_TAGS: True,
-    KEY_GET_CLASSIFICATION_AS_TAGS: False,
-    KEY_GET_TIME_PERIOD_AS_TAGS: False,
-    KEY_GET_AGE_LEVEL_AS_TAGS: False
+    KEY_GET_SUB_GENRE_AS_TAGS: False,
+    KEY_GET_THEMES_AS_TAGS: False
 }
 
 # This is where all preferences for this plugin will be stored
@@ -55,23 +53,17 @@ class ConfigWidget(DefaultConfigWidget):
         self.get_genre_as_tags_checkbox.setChecked(get_option(KEY_GET_GENRE_AS_TAGS))
         other_group_box_layout.addWidget(self.get_genre_as_tags_checkbox)
 
-        self.get_sub_classification_as_tags_checkbox = QCheckBox(_('Include \'Classification\' in the Tags column'), self)
-        self.get_sub_classification_as_tags_checkbox.setToolTip(_('When checked if a book has any Classification defined they will be\n'
+        self.get_sub_genres_as_tags_checkbox = QCheckBox(_('Include \'Sub-Genres\' in the Tags column'), self)
+        self.get_sub_genres_as_tags_checkbox.setToolTip(_('When checked if a book has any Sub-Genres defined they will be\n'
                                                         'returned in the Tags column from this plugin.'))
-        self.get_sub_classification_as_tags_checkbox.setChecked(get_option(KEY_GET_CLASSIFICATION_AS_TAGS))
-        other_group_box_layout.addWidget(self.get_sub_classification_as_tags_checkbox)
+        self.get_sub_genres_as_tags_checkbox.setChecked(get_option(KEY_GET_SUB_GENRE_AS_TAGS))
+        other_group_box_layout.addWidget(self.get_sub_genres_as_tags_checkbox)
 
-        self.get_time_period_as_tags_checkbox = QCheckBox(_('Include \'Time Period\' in the Tags column'), self)
-        self.get_time_period_as_tags_checkbox.setToolTip(_('When checked if a book has any Time Periods defined it will be\n'
+        self.get_themes_as_tags_checkbox = QCheckBox(_('Include \'Themes\' in the Tags column'), self)
+        self.get_themes_as_tags_checkbox.setToolTip(_('When checked if a book has any Themes defined it will be\n'
                                                          'returned in the Tags column from this plugin.'))
-        self.get_time_period_as_tags_checkbox.setChecked(get_option(KEY_GET_TIME_PERIOD_AS_TAGS))
-        other_group_box_layout.addWidget(self.get_time_period_as_tags_checkbox)
-
-        self.get_age_level_as_tags_checkbox = QCheckBox(_("Include 'Age Level' in the Tags column"), self)
-        self.get_age_level_as_tags_checkbox.setToolTip(_("When checked, if a book has an 'Age Level' defined it will be\n"
-                                                         "returned in the Tags column from this plugin."))
-        self.get_age_level_as_tags_checkbox.setChecked(get_option(KEY_GET_AGE_LEVEL_AS_TAGS))
-        other_group_box_layout.addWidget(self.get_age_level_as_tags_checkbox)
+        self.get_themes_as_tags_checkbox.setChecked(get_option(KEY_GET_THEMES_AS_TAGS))
+        other_group_box_layout.addWidget(self.get_themes_as_tags_checkbox)
 
         other_group_box_layout.addStretch(1)
 
@@ -80,8 +72,7 @@ class ConfigWidget(DefaultConfigWidget):
 
         new_prefs = {}
         new_prefs[KEY_GET_GENRE_AS_TAGS] = self.get_genre_as_tags_checkbox.checkState() == Qt.Checked
-        new_prefs[KEY_GET_CLASSIFICATION_AS_TAGS] = self.get_sub_classification_as_tags_checkbox.checkState() == Qt.Checked
-        new_prefs[KEY_GET_TIME_PERIOD_AS_TAGS]    = self.get_time_period_as_tags_checkbox.checkState() == Qt.Checked
-        new_prefs[KEY_GET_AGE_LEVEL_AS_TAGS]      = self.get_age_level_as_tags_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_SUB_GENRE_AS_TAGS] = self.get_sub_genres_as_tags_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_THEMES_AS_TAGS] = self.get_themes_as_tags_checkbox.checkState() == Qt.Checked
         plugin_prefs[STORE_NAME] = new_prefs
 

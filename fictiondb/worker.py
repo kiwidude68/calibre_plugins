@@ -61,8 +61,8 @@ class Worker(Thread): # Get details
                 self.log.exception(msg)
             return
 
+#        open('e:\\fictiondb.html', 'wb').write(raw)
         raw = raw.decode('utf-8', errors='replace')
-#         open('e:\\fictiondb.html', 'wb').write(raw)
 
         if '<title>404 - ' in raw:
             self.log.error('URL malformed: %r'%self.url)
@@ -177,8 +177,7 @@ class Worker(Thread): # Get details
             if self.isbn:
                 self.plugin.cache_isbn_to_identifier(self.isbn, self.fictiondb_id)
             if self.cover_url:
-                self.plugin.cache_identifier_to_cover_url(self.fictiondb_id,
-                        self.cover_url)
+                self.plugin.cache_identifier_to_cover_url(self.fictiondb_id, self.cover_url)
 
         self.plugin.clean_downloaded_metadata(mi)
 
@@ -254,14 +253,15 @@ class Worker(Thread): # Get details
                 index += 1
 
     def parse_publish_date(self, root):
-        pub_date_node = ''.join(root.xpath('//h6[text()="Published:"]/../div[@class="project-terms"]/text()'))
+        pub_date_node = ''.join(root.xpath('//h6[text()="Published:"]/../div[contains(@class,"project-terms")]/text()'))
         if pub_date_node:
             # Could be variations of:
-            # <h4> (paperback)</h4>
-            # <h4>2008 (paperback)</h4>
-            # <h4>Oct-2008 (hardcover)</h4>
-            # <h4>Oct-13-2008 (release date)</h4>
+            # <div> (paperback)</div>
+            # <div>2008 (paperback)</div>
+            # <div>Oct-2008 (hardcover)</div>
+            # <div>Oct-13-2008 (release date)</div>
             pub_date_text = pub_date_node.strip()
+            self.log('parse_publish_date - text: ', pub_date_text)
             if pub_date_text[0] != '(':
                 if pub_date_text.find(" ") >= 0:
                     return self._convert_date_text(pub_date_text.rpartition(' ')[0])
@@ -269,7 +269,6 @@ class Worker(Thread): # Get details
                     return self._convert_date_text(pub_date_text)
 
     def parse_publisher(self, root):
-#         publisher_node = root.xpath('//div[@class="indreissue"]/div[@class=" reissues"]/h4/text()')
         publisher_node = root.xpath('//div[@class=" reissues"]/ul/li/text()')
         self.log('parse_publisher - publisher_node: ', publisher_node)
         if publisher_node:
@@ -282,47 +281,33 @@ class Worker(Thread): # Get details
         # FictionDB has multiple optional sections which can be used as tags depending on the user's preference.
         calibre_tags = list()
 
-        if cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GET_GENRE_AS_TAGS]:
-            # self._append_tags(root, 'Genre', calibre_tags, '//div[@class="row"]/div/div[@class="row"]/div/h4/../ul[@class="tagcloud-list"]')
-            self._append_tags(root, 'Genre', calibre_tags, '//div[@class="subpage-title"]/h5[text()[contains(.,"Genre")]]/../../ul[@class="tagcloud-list"]')
-        if cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GET_CLASSIFICATION_AS_TAGS]:
-            # self._append_tags(root, 'Classification', calibre_tags, '//div[@class="row"]/div/div[@class="row"]/div/h4/i[@class="fa fa-table"]/../../ul/li')
-            self._append_tags(root, 'CLASSIFICATION', calibre_tags, '//div[@class="subpage-title"]/h5[text()[contains(.,"CLASSIFICATION")]]/../../ul[@class="widget-list"]')
-        if cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GET_TIME_PERIOD_AS_TAGS]:
-            # self._append_tags(root, 'Time Period', calibre_tags, '//div[@class="row"]/div/div[@class="row"]/div/h4/i[@class="fa fa-clock-o"]/../../ul/li')
-            self._append_tags(root, 'TIME PERIOD', calibre_tags, '//div[@class="subpage-title"]/h5[text()[contains(.,"TIME PERIOD")]]/../../ul[@class="widget-list"]')
-        if cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GET_AGE_LEVEL_AS_TAGS]:
-            age_level_node = root.xpath('//h6[text()[contains(.,"Age Level:")]]/../div[@class="project-terms"]')
-            if age_level_node:
-                self.log("parse_tags: age_level_node found -", age_level_node[0].text)
-                try:
-                    age_level = age_level_node[0].text.strip()
-                    if len(age_level) > 0:
-                        calibre_tags.append(age_level)
-                except:
-                    self.log("parse_tags: problem getting age_level - age_level text=", age_level_node[0].text)
+        if cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_GET_GENRE_AS_TAGS, True):
+            self._append_tags(root, 'Genre', calibre_tags, '//div[@id="genres"]/div/div/h6[text()="Genres"]/../ul[@class=""]')
+        if cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_GET_SUB_GENRE_AS_TAGS, False):
+            self._append_tags(root, 'SubGenres', calibre_tags, '//div[@id="genres"]/div/div/h6[text()="Sub-Genres"]/../ul[@class=""]')
+        if cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_GET_THEMES_AS_TAGS, False):
+            self._append_tags(root, 'Themes', calibre_tags, '//div[@id="genres"]/div/div/h6[text()="Themes"]/../ul[@class=""]')
 
         if len(calibre_tags) > 0:
             return calibre_tags
 
     def _append_tags(self, root, group, calibre_tags, xpath_statement):
         tags_nodes = root.xpath(xpath_statement)
-        self.log('_append_tags - group=%s tags_nodes="%s"' % (group, tags_nodes,))
         if tags_nodes:
             for tags_node in tags_nodes:
-                self.log('_append_tags - tags_node: "%s"' % (tags_node,))
-                # sub_tags_nodes = tags_node.xpath('div/div/ul')
                 sub_tags_nodes = tags_node.xpath('./li')
                 if sub_tags_nodes:
                     for sub_tags_node in sub_tags_nodes:
                         tag = sub_tags_node.text_content().strip()
                         if tag and tag not in calibre_tags:
+                            self.log('_append_tags - group=%s tag="%s"' % (group, tag))
                             calibre_tags.append(tag)
                 else:
                     tag = tags_node.text_content().strip()
                     if tag and tag not in calibre_tags:
+                        self.log('_append_tags - group=%s tag="%s"' % (group, tag))
                         calibre_tags.append(tag)
-        self.log('_append_tags - group=%s tags: "%s"' % (group, calibre_tags))
+        self.log('_append_tags - group=%s all tags: "%s"' % (group, calibre_tags))
 
     def _convert_date_text(self, date_text):
         # Note that the date text could be "2003", "Dec-2003", "Dec-13-2003"

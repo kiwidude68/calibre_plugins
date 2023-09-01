@@ -3,167 +3,161 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Darío Hereñú, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2022
+# Çağla Turhan, 2022
+# MUSTAFA ANAR <mstf.anar@gmail.com>, 2022
+# Bora Atıcı, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-18 20:47+0100\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2022\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Bora Atıcı, 2023\n"
+"Language-Team: Turkish (https://app.transifex.com/calibre/teams/19337/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ..\common\common_dialogs.py:85
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "Klavye kısayolları"
 
 #: ..\common\common_dialogs.py:113
 msgid "Restart calibre now"
-msgstr "Reiniciar Calibre ahora"
+msgstr "Calibre'yi şimdi tekrar başlatın"
 
 #: ..\common\common_dialogs.py:129
 msgid "Preferences for:"
-msgstr "Preferencias para: "
+msgstr "Tercihler:"
 
 #: ..\common\common_dialogs.py:161
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Temizle"
 
 #: ..\common\common_dialogs.py:163
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "Bu eklentinin tüm ayarlarını sıfırla"
 
 #: ..\common\common_dialogs.py:190
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
-"este complemento?"
+"Bu eklenti için bu kitaplıktaki ayarlarınızı değiştirmek istediğinizden emin"
+" misiniz?"
 
 #: ..\common\common_dialogs.py:191 ..\common\common_dialogs.py:211
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
-" en su carpeta de complementos de calibre no se modificará."
+"Calibre eklenti klasöründeki diğer kitaplıklarda veya JSON dosyasında "
+"saklanan herhangi bir ayara dokunulmayacak."
 
 #: ..\common\common_dialogs.py:193 ..\common\common_dialogs.py:213
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "Calibre'yi yeniden başlatmanız gerekir."
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings changed"
-msgstr "Cambiar Configuraciones"
+msgstr "Ayarlar değiştirildi"
 
 #: ..\common\common_dialogs.py:202
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Se ha cambiado la configuración de este complemento en esta biblioteca."
+msgstr "Bu kitaplıktaki bu eklentinin ayarları değiştirildi."
 
 #: ..\common\common_dialogs.py:203 ..\common\common_dialogs.py:224
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "Lütfen Calibre'yi yeniden başlatın."
 
 #: ..\common\common_dialogs.py:210
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
-"este complemento?"
+msgstr "Bu eklentinin ayarlarını sıfırlama isteğinizden emin misiniz?"
 
 #: ..\common\common_dialogs.py:222
 msgid "Settings deleted"
-msgstr "Configuraciones eliminadas"
+msgstr "Ayarlar silindi"
 
 #: ..\common\common_dialogs.py:223
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Se han borrado todas las configuraciones para este complemento en esta "
-"biblioteca."
+msgstr "Bu eklenti için ayarlarınız sıfırlandı."
 
 #: ..\common\common_dialogs.py:298
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Panoya kopyala"
 
 #: ..\common\common_widgets.py:95
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "Tanımlanmamış"
 
 #: ..\common\common_widgets.py:150
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "Yeniden başlatma gerekiyor"
 
 #: ..\common\common_widgets.py:151
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Imagen de título no encontrada: ¡debe reiniciar Calibre antes de usar este "
-"complemento!"
+"Başlık görüntüsü bulunamadı - bu eklentiyi kullanmadan önce Calibre'yi "
+"yeniden başlatmalısınız!"
 
 #: ..\common\common_widgets.py:194
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "Yeni sütun oluştur"
 
 #: config.py:47
 msgid "Other options"
-msgstr "Otras opciones"
+msgstr "Diğer seçenekler"
 
 #: config.py:52
 msgid "Include 'Genres' in the Tags column"
-msgstr "Incluir «géneros» en la columna de etiquetas"
+msgstr "Etiketler sütununa \"Türler\" ekleyin"
 
 #: config.py:53
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Cuando se activa, si un libro tiene algún género definido,\n"
-"se devolverá en la columna de etiquetas de este complemento."
+"Bir kitabın tanımlanmış türlere sahip olup olmadığı kontrol \n"
+"edildiğinde, bunlar bu eklentinin Etiketler sütununa döndürülür."
 
 #: config.py:58
 msgid "Include 'Classification' in the Tags column"
-msgstr "Incluir «clasificación» en la columna de etiquetas"
+msgstr "Etiketler sütununa 'Sınıflandırma' ekleyin"
 
 #: config.py:59
 msgid ""
 "When checked if a book has any Classification defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Cuando se activa, si un libro tiene algúna clasificación definida,\n"
-"se devolverá en la columna de etiquetas de este complemento."
+"Bir kitabın tanımlanmış herhangi bir Sınıflandırması olup olmadığı kontrol \n"
+"edildiğinde, bunlar bu eklentinin Etiketler sütununa döndürülür."
 
 #: config.py:64
 msgid "Include 'Time Period' in the Tags column"
-msgstr "Incluir «periodo temporal» en la columna de etiquetas"
+msgstr "Etiketler sütununa 'Zaman Dönemi' ekleyin"
 
 #: config.py:65
 msgid ""
 "When checked if a book has any Time Periods defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Cuando se activa, si un libro tiene algún periodo temporal definido,\n"
-"se devolverá en la columna de etiquetas de este complemento."
+"Bir kitabın tanımlanmış herhangi bir Zaman Dönemi olup olmadığı kontrol \n"
+"edildiğinde, bunlar bu eklentinin Etiketler sütununa döndürülür."
 
 #: config.py:70
 msgid "Include 'Age Level' in the Tags column"
-msgstr "Incluir «nivel de edad» en la columna de etiquetas"
+msgstr "Etiketler sütununa 'Yaş Düzeyi' ekleyin"
 
 #: config.py:71
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Cuando se activa, si un libro tiene un nivel de edad definido,\n"
-"se devolverá en la columna de etiquetas de este complemento."
+"Bir kitabın 'Yaş Düzeyi' tanımlı olup olmadığı kontrol \n"
+"edildiğinde, bunlar bu eklentinin Etiketler sütununa döndürülür."
