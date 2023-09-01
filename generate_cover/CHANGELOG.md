@@ -1,6 +1,6 @@
 # Generate Cover Change Log
 
-## [2.3.2] - 2023-09-01
+## [2.3.3] - 2023-09-01
 ### Added
 - Russian translation (ashed)
 ### Changed
