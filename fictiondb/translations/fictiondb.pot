@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-18 20:47+0100\n"
+"POT-Creation-Date: 2023-09-01 18:27+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,123 +15,113 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:85
+#: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
 msgstr ""
 
-#: ..\common\common_dialogs.py:113
+#: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
 msgstr ""
 
-#: ..\common\common_dialogs.py:129
+#: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
 msgstr ""
 
-#: ..\common\common_dialogs.py:161
+#: ..\common\common_dialogs.py:160
 msgid "Clear"
 msgstr ""
 
-#: ..\common\common_dialogs.py:163
+#: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
 msgstr ""
 
-#: ..\common\common_dialogs.py:190
+#: ..\common\common_dialogs.py:189
 msgid "Are you sure you want to change your settings in this library for this plugin?"
 msgstr ""
 
-#: ..\common\common_dialogs.py:191 ..\common\common_dialogs.py:211
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid "Any settings in other libraries or stored in a JSON file in your calibre plugins folder will not be touched."
 msgstr ""
 
-#: ..\common\common_dialogs.py:193 ..\common\common_dialogs.py:213
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
 msgstr ""
 
-#: ..\common\common_dialogs.py:201
+#: ..\common\common_dialogs.py:200
 msgid "Settings changed"
 msgstr ""
 
-#: ..\common\common_dialogs.py:202
+#: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
 msgstr ""
 
-#: ..\common\common_dialogs.py:203 ..\common\common_dialogs.py:224
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
 msgstr ""
 
-#: ..\common\common_dialogs.py:210
+#: ..\common\common_dialogs.py:209
 msgid "Are you sure you want to clear your settings in this library for this plugin?"
 msgstr ""
 
-#: ..\common\common_dialogs.py:222
+#: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
 msgstr ""
 
-#: ..\common\common_dialogs.py:223
+#: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
 msgstr ""
 
-#: ..\common\common_dialogs.py:298
+#: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:95
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:151
+#: ..\common\common_widgets.py:161
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:194
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr ""
 
-#: config.py:47
+#: config.py:45
 msgid "Other options"
 msgstr ""
 
-#: config.py:52
+#: config.py:50
 msgid "Include 'Genres' in the Tags column"
 msgstr ""
 
-#: config.py:53
+#: config.py:51
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 
-#: config.py:58
-msgid "Include 'Classification' in the Tags column"
+#: config.py:56
+msgid "Include 'Sub-Genres' in the Tags column"
 msgstr ""
 
-#: config.py:59
+#: config.py:57
 msgid ""
-"When checked if a book has any Classification defined they will be\n"
+"When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 
-#: config.py:64
-msgid "Include 'Time Period' in the Tags column"
+#: config.py:62
+msgid "Include 'Themes' in the Tags column"
 msgstr ""
 
-#: config.py:65
+#: config.py:63
 msgid ""
-"When checked if a book has any Time Periods defined it will be\n"
-"returned in the Tags column from this plugin."
-msgstr ""
-
-#: config.py:70
-msgid "Include 'Age Level' in the Tags column"
-msgstr ""
-
-#: config.py:71
-msgid ""
-"When checked, if a book has an 'Age Level' defined it will be\n"
+"When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 
