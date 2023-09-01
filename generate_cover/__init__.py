@@ -20,7 +20,7 @@ class ActionGenerateCover(InterfaceActionBase):
     description             = 'Generate covers in Calibre with appearance options'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
-    version                 = (2, 3, 2)
+    version                 = (2, 3, 3)
     minimum_calibre_version = (2, 85, 1)
 
     #: This field defines the GUI plugin class that contains all the code
