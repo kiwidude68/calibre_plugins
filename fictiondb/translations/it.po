@@ -3,128 +3,131 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Çağla Turhan, 2022
-# MUSTAFA ANAR <mstf.anar@gmail.com>, 2022
-# Bora Atıcı, 2023
+# Giuseppe Pignataro <rogepix@gmail.com>, 2022
+# Maurizio Malagoli <malagoli.maurizio@gmail.com>, 2022
+# Marta Mingolla <martamingolla@yandex.com>, 2022
+# Ettore Mazzitelli, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2023-09-01 18:27+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
-"Last-Translator: Bora Atıcı, 2023\n"
-"Language-Team: Turkish (https://app.transifex.com/calibre/teams/19337/tr/)\n"
+"Last-Translator: Ettore Mazzitelli, 2022\n"
+"Language-Team: Italian (https://app.transifex.com/calibre/teams/19337/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: it\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Klavye kısayolları"
+msgstr "Scorciatoie tastiera"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Calibre'yi şimdi tekrar başlatın"
+msgstr "Riavvia calibre adesso"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Tercihler:"
+msgstr "Preferenze per:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Temizle"
+msgstr "Pulisci"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Bu eklentinin tüm ayarlarını sıfırla"
+msgstr "Cancellare tutte le impostazioni per il plugin?"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Bu eklenti için bu kitaplıktaki ayarlarınızı değiştirmek istediğinizden emin"
-" misiniz?"
+"Sicuro di voler cambiare la configurazione nella libreria di questo plugin?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Calibre eklenti klasöründeki diğer kitaplıklarda veya JSON dosyasında "
-"saklanan herhangi bir ayara dokunulmayacak."
+"Qualsiasi configurazione nelle altre librerie o salvate in un file JSON "
+"nella cartella dei  plugin calibre non sarà toccata "
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Calibre'yi yeniden başlatmanız gerekir."
+msgstr "Dopo devi riavviare calibre "
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Ayarlar değiştirildi"
+msgstr "Impostazioni cambiate"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Bu kitaplıktaki bu eklentinin ayarları değiştirildi."
+msgstr ""
+"La configurazione di questo plugin calibre in questa libreria è stata "
+"modificata "
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Lütfen Calibre'yi yeniden başlatın."
+msgstr "Riavvia calibre adesso."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr "Bu eklentinin ayarlarını sıfırlama isteğinizden emin misiniz?"
+msgstr ""
+"Sei sicuro di voler cancellare le impostazioni per il plugin di questa "
+"libreria?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Ayarlar silindi"
+msgstr "Impostazioni cancellate "
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Bu eklenti için ayarlarınız sıfırlandı."
+msgstr ""
+"Tutte le impostazioni per il plugin della libreria sono state cancellate."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Panoya kopyala"
+msgstr "Copia negli appunti "
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Tanımlanmamış"
+msgstr "Non definito"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Yeniden başlatma gerekiyor"
+msgstr "Riavvio richiesto"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Başlık görüntüsü bulunamadı - bu eklentiyi kullanmadan önce Calibre'yi "
-"yeniden başlatmalısınız!"
+"Immagine del titolo non trovata - Devi riavviare Calibre prima di utilizzare"
+" questo plugin!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Yeni sütun oluştur"
+msgstr "Crea una nuova colonna "
 
 #: config.py:45
 msgid "Other options"
-msgstr "Diğer seçenekler"
+msgstr "Altre opzioni"
 
 #: config.py:50
 msgid "Include 'Genres' in the Tags column"
-msgstr "Etiketler sütununa \"Türler\" ekleyin"
+msgstr ""
 
 #: config.py:51
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Bir kitabın tanımlanmış türlere sahip olup olmadığı kontrol \n"
-"edildiğinde, bunlar bu eklentinin Etiketler sütununa döndürülür."
 
 #: config.py:56
 msgid "Include 'Sub-Genres' in the Tags column"

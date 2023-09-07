@@ -1,8 +1,8 @@
 # FictionDB Change Log
 
-## [1.4.0] - 2023-09-01
+## [1.4.0] - 2023-09-07
 ### Added
-- Turkish translation
+- Dutch, French, German, Italian, Latvian, Polish, Portuguese, Turkish translations - thanks all!
 ### Changed
 - Configuration options changed for tags removing unavailable data options such as age classification. 
 - Options now are genres (checked by default), sub-genres (unchecked) and themes (unchecked).
