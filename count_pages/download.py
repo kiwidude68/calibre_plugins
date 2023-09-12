@@ -3,12 +3,13 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import socket, re
+import socket, re, random
 
 from six import text_type as unicode
 
 from lxml.html import fromstring, tostring
 from calibre import browser
+from calibre.constants import numeric_version as calibre_version
 
 from calibre_plugins.count_pages.config import PAGE_DOWNLOADS
 
@@ -58,10 +59,28 @@ class DownloadPagesWorker():
                 print('get_details failed for url: %r'%self.url)
                 raise
 
+    @property
+    def user_agent(self):
+        # This utter filth is necessary to deal with periods of time when calibre did or did not have
+        # various iterations of a random chrome user agent function.
+        if calibre_version >= (5,40,0):
+            from calibre.utils.random_ua import random_common_chrome_user_agent
+            return random_common_chrome_user_agent()
+        elif  calibre_version <= (5,8,1):
+            from calibre.utils.random_ua import random_chrome_ua
+            return random_chrome_ua()
+        else:
+            # From 5.9.0 to 5.39.1 there was no function, we will have to replicate the equivalent code here
+            from calibre.utils.random_ua import all_chrome_versions, random_desktop_platform
+            chrome_version = random.choice(all_chrome_versions())
+            render_chrome_version = 'Mozilla/5.0 ({p}) AppleWebKit/{wv} (KHTML, like Gecko) Chrome/{cv} Safari/{wv}'.format(
+                p=random_desktop_platform(), wv=chrome_version['webkit_version'], cv=chrome_version['chrome_version'])
+            return render_chrome_version
+
     def _get_details(self):
         try:
             print('Download source book url: %r'%self.url)
-            br = browser()
+            br = browser(user_agent=self.user_agent)
             raw = br.open_novisit(self.url, timeout=self.timeout).read().strip()
         except Exception as e:
             if callable(getattr(e, 'getcode', None)) and \
@@ -79,8 +98,8 @@ class DownloadPagesWorker():
             return
 
 #         raw = raw.decode('utf-8-sig', errors='replace')
+        #open('E:\\countpages-gr.html', 'wb').write(raw)
         raw = raw.decode('utf-8', errors='replace')
-#         open('E:\\t.html', 'w').write(raw)
         #print("_get_details: len(raw)=", len(raw))
 
         if '<title>404 - ' in raw:
@@ -110,7 +129,6 @@ class DownloadPagesWorker():
 
     def _parse_page_count(self, root, pages_xpath, pages_regex=None):
         print("_parse_page_count: start")
-        print("_parse_page_count: root.__class__=", root.__class__.__name__)
         print("_parse_page_count: pages_xpath='%s', =pages_regex='%s'" % (pages_xpath, pages_regex))
         try:
             pages = root.xpath(pages_xpath)

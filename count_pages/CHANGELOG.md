@@ -1,5 +1,11 @@
 # Count Pages Change Log
 
+## [1.13.2] - 2023-09-12
+### Added
+- Turkish translation
+### Fixed
+- Goodreads page count web scraping broken from website changes.
+
 ## [1.13.1] - 2023-09-01
 ### Changed
 - E-book Viewer page count should now match what calibre produces.
