@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-07 20:02+1000\n"
+"POT-Creation-Date: 2023-09-12 19:47+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1815,101 +1815,105 @@ msgstr ""
 msgid "quality check plugin:search epub dialog"
 msgstr ""
 
-#: dialogs.py:502
+#: dialogs.py:503
 msgid "Find expression"
 msgstr ""
 
-#: dialogs.py:512
+#: dialogs.py:517
+msgid "Clear search history"
+msgstr ""
+
+#: dialogs.py:522
 msgid "&Ignore case"
 msgstr ""
 
-#: dialogs.py:514
+#: dialogs.py:524
 msgid "&Show all occurrences"
 msgstr ""
 
-#: dialogs.py:515
+#: dialogs.py:525
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
 msgstr ""
 
-#: dialogs.py:520
+#: dialogs.py:530
 msgid "Scope"
 msgstr ""
 
-#: dialogs.py:525
+#: dialogs.py:535
 msgid "&HTML content"
 msgstr ""
 
-#: dialogs.py:526
+#: dialogs.py:536
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
 msgstr ""
 
-#: dialogs.py:528
+#: dialogs.py:538
 msgid "&CSS/xpgt stylesheets"
 msgstr ""
 
-#: dialogs.py:529
+#: dialogs.py:539
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr ""
 
-#: dialogs.py:530
+#: dialogs.py:540
 msgid "&Plain text content"
 msgstr ""
 
-#: dialogs.py:531
+#: dialogs.py:541
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
 msgstr ""
 
-#: dialogs.py:533
+#: dialogs.py:543
 msgid "&OPF manifest"
 msgstr ""
 
-#: dialogs.py:534
+#: dialogs.py:544
 msgid "Search the .opf manifest file"
 msgstr ""
 
-#: dialogs.py:535
+#: dialogs.py:545
 msgid "&NCX TOC"
 msgstr ""
 
-#: dialogs.py:536
+#: dialogs.py:546
 msgid "Search the NCX table of contents file"
 msgstr ""
 
-#: dialogs.py:537
+#: dialogs.py:547
 msgid "&Zip filenames"
 msgstr ""
 
-#: dialogs.py:538
+#: dialogs.py:548
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr ""
 
-#: dialogs.py:555
+#: dialogs.py:565
 msgid "No find text"
 msgstr ""
 
-#: dialogs.py:556
+#: dialogs.py:566
 msgid "You must specify a regular expression to search for."
 msgstr ""
 
-#: dialogs.py:576
+#: dialogs.py:575
 msgid "No search scope"
 msgstr ""
 
-#: dialogs.py:577
+#: dialogs.py:576
 msgid "You must specify a scope for the ePub search."
 msgstr ""
 
-#: dialogs.py:612
+#: dialogs.py:633
 msgid "Fixing"
 msgstr ""
 
-#: dialogs.py:625
+#: dialogs.py:646
 msgid "Fix completed"
 msgstr ""
 

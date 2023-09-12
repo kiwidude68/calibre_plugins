@@ -15,12 +15,12 @@ except NameError:
 try:
     from qt.core import (QVBoxLayout, QLabel, QRadioButton, QDialogButtonBox,
                           QGroupBox, QGridLayout, QComboBox, QProgressDialog,
-                          QTimer, QIcon, QTableWidget, QHBoxLayout,
+                          QTimer, QIcon, QTableWidget, QHBoxLayout, QLayout,
                           QAbstractItemView, Qt, QCheckBox, QSpinBox, QToolButton)
 except:
     from PyQt5.Qt import (QVBoxLayout, QLabel, QRadioButton, QDialogButtonBox,
                           QGroupBox, QGridLayout, QComboBox, QProgressDialog,
-                          QTimer, QIcon, QTableWidget, QHBoxLayout,
+                          QTimer, QIcon, QTableWidget, QHBoxLayout, QLayout,
                           QAbstractItemView, Qt, QCheckBox, QSpinBox, QToolButton)
 
 from calibre.ebooks.metadata import authors_to_string, fmt_sidx
@@ -498,23 +498,33 @@ class SearchEpubDialog(SizePersistedDialog):
         self.setLayout(layout)
         title_layout = ImageTitleLayout(self, 'search.png', _('Search ePubs'))
         layout.addLayout(title_layout)
+        layout.setSizeConstraint(QLayout.SetFixedSize)
 
         find_group = QGroupBox(_('Find expression'), self)
         layout.addWidget(find_group)
-        find_layout = QGridLayout()
+        find_layout = QVBoxLayout()
         find_group.setLayout(find_layout)
 
+        search_layout = QHBoxLayout()
+        find_layout.addLayout(search_layout)
         self.search_combo = QComboBox(self)
         self.search_combo.setEditable(True)
         self.search_combo.setCompleter(None)
-        find_layout.addWidget(self.search_combo, 0, 0, 1, 2)
+        self.search_combo.setMaximumWidth(230)
+        search_layout.addWidget(self.search_combo)
+
+        self.clear_history_button = QToolButton(self)
+        self.clear_history_button.setToolTip(_('Clear search history'))
+        self.clear_history_button.setIcon(QIcon(I('trash.png')))
+        self.clear_history_button.clicked.connect(self.clear_search_history_clicked)
+        search_layout.addWidget(self.clear_history_button)
 
         self.ignore_case_checkbox = QCheckBox(_('&Ignore case'), self)
-        find_layout.addWidget(self.ignore_case_checkbox, 1, 0, 1, 1)
+        find_layout.addWidget(self.ignore_case_checkbox)
         self.show_all_matches_checkbox = QCheckBox(_('&Show all occurrences'), self)
         self.show_all_matches_checkbox.setToolTip(_('If unchecked, the search of each ePub is stopped as soon as the first match is found.\n'
                                                   'If checked, all occurrences will be displayed in the log but it will run much slower.'))
-        find_layout.addWidget(self.show_all_matches_checkbox, 2, 0, 1, 2)
+        find_layout.addWidget(self.show_all_matches_checkbox)
 
         layout.addSpacing(5)
         scope_group = QGroupBox(_('Scope'), self)
@@ -554,9 +564,23 @@ class SearchEpubDialog(SizePersistedDialog):
         if not search_text:
             return error_dialog(self, _('No find text'),
                 _('You must specify a regular expression to search for.'), show=True)
-        search_opts = {}
         self.previous_finds = [f for f in self.previous_finds if f != search_text]
-        self.previous_finds.insert(0, search_text)
+        self.save_search_options()
+        any_scope_checked = False
+        for k,v in self.search_opts.items():
+            if k.startswith('scope') and v:
+                any_scope_checked = True
+                break
+        if not any_scope_checked:
+            return error_dialog(self, _('No search scope'),
+                _('You must specify a scope for the ePub search.'), show=True)
+        self.accept()
+
+    def save_search_options(self):
+        search_opts = {}
+        search_text = unicode(self.search_combo.currentText()).strip()
+        if search_text:
+            self.previous_finds.insert(0, search_text)
         # Keep last 10 items
         search_opts['previous_finds'] = self.previous_finds[:10]
         search_opts['ignore_case'] = self.ignore_case_checkbox.isChecked()
@@ -567,17 +591,14 @@ class SearchEpubDialog(SizePersistedDialog):
         search_opts['scope_opf'] = self.scope_opf_checkbox.isChecked()
         search_opts['scope_ncx'] = self.scope_ncx_checkbox.isChecked()
         search_opts['scope_zip'] = self.scope_zip_checkbox.isChecked()
-        any_scope_checked = False
-        for k,v in search_opts.items():
-            if k.startswith('scope') and v:
-                any_scope_checked = True
-                break
-        if not any_scope_checked:
-            return error_dialog(self, _('No search scope'),
-                _('You must specify a scope for the ePub search.'), show=True)
         gprefs[self.unique_pref_name+':search_opts'] = search_opts
         self.search_opts = search_opts
-        self.accept()
+
+    def clear_search_history_clicked(self):
+        self.search_combo.clear()
+        self.search_combo.clearEditText()
+        self.previous_finds = []
+        self.save_search_options()
 
     @property
     def search_options(self):

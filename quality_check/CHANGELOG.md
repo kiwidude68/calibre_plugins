@@ -1,5 +1,13 @@
 # Quality Check Change Log
 
+## [1.13.7] - 2023-09-12
+### Added
+- Search epub dialog now has a clear history button to remove all previous searches.
+### Changed
+- Search epub dialog now has a fixed width to prevent long searches over-sizing the dialog. ([#36][i36])
+
+[i36]: https://github.com/kiwidude68/calibre_plugins/issues/36
+
 ## [1.13.6] - 2023-08-06
 ### Added
 - New Check ePub inside ePub feature (@un-pogaz)
