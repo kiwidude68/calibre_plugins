@@ -287,6 +287,17 @@ class Worker(Thread): # Get details
             self._append_tags(root, 'SubGenres', calibre_tags, '//div[@id="genres"]/div/div/h6[text()="Sub-Genres"]/../ul[@class=""]')
         if cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_GET_THEMES_AS_TAGS, False):
             self._append_tags(root, 'Themes', calibre_tags, '//div[@id="genres"]/div/div/h6[text()="Themes"]/../ul[@class=""]')
+        if cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_GET_AGE_LEVEL_AS_TAGS, False):
+            age_level_node = root.xpath('//h6[contains(text(),"Age Level:")]/following-sibling::div[@class="project-terms small"]')
+            if age_level_node:
+                self.log("parse_tags: age_level_node found -", age_level_node[0].text)
+                try:
+                    age_level = age_level_node[0].text.strip()
+                    if len(age_level) > 0:
+                        calibre_tags.append(age_level)
+                except:
+                    self.log("parse_tags: problem getting age_level - age_level text=", age_level_node[0].text)
+
 
         if len(calibre_tags) > 0:
             return calibre_tags
