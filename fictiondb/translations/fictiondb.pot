@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-09-01 18:27+1000\n"
+"POT-Creation-Date: 2023-09-14 18:48+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,37 +91,47 @@ msgstr ""
 msgid "Create new column"
 msgstr ""
 
-#: config.py:45
+#: config.py:47
 msgid "Other options"
 msgstr ""
 
-#: config.py:50
+#: config.py:52
 msgid "Include 'Genres' in the Tags column"
 msgstr ""
 
-#: config.py:51
+#: config.py:53
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 
-#: config.py:56
+#: config.py:58
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr ""
 
-#: config.py:57
+#: config.py:59
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 
-#: config.py:62
+#: config.py:64
 msgid "Include 'Themes' in the Tags column"
 msgstr ""
 
-#: config.py:63
+#: config.py:65
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+
+#: config.py:70
+msgid "Include 'Age Level' in the Tags column"
+msgstr ""
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 
