@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-09-01 18:27+1000\n"
+"POT-Creation-Date: 2023-09-14 18:48+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: Bora Atıcı, 2023\n"
 "Language-Team: Turkish (https://app.transifex.com/calibre/teams/19337/tr/)\n"
@@ -110,15 +110,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Yeni sütun oluştur"
 
-#: config.py:45
+#: config.py:47
 msgid "Other options"
 msgstr "Diğer seçenekler"
 
-#: config.py:50
+#: config.py:52
 msgid "Include 'Genres' in the Tags column"
 msgstr "Etiketler sütununa \"Türler\" ekleyin"
 
-#: config.py:51
+#: config.py:53
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -126,22 +126,39 @@ msgstr ""
 "Bir kitabın tanımlanmış türlere sahip olup olmadığı kontrol \n"
 "edildiğinde, bunlar bu eklentinin Etiketler sütununa döndürülür."
 
-#: config.py:56
+#: config.py:58
 msgid "Include 'Sub-Genres' in the Tags column"
-msgstr ""
+msgstr "Etiketler sütununa 'Alt Türler'i ekleyin"
 
-#: config.py:57
+#: config.py:59
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"Bir kitabın tanımlanmış herhangi bir Alt Türe sahip olup olmadığı kontrol "
+"edildiğinde bunlar şöyle olacaktır: bu eklentinin Etiketler sütununda "
+"döndürülür."
 
-#: config.py:62
+#: config.py:64
 msgid "Include 'Themes' in the Tags column"
-msgstr ""
+msgstr "Etiketler sütununa 'Temalar'ı ekleyin"
 
-#: config.py:63
+#: config.py:65
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"Bir kitabın tanımlanmış herhangi bir Temaya sahip olup olmadığı kontrol \n"
+"edildiğinde, bu eklentinin Etiketler sütununda döndürülecektir."
+
+#: config.py:70
+msgid "Include 'Age Level' in the Tags column"
+msgstr "Etiketler sütununa 'Yaş Düzeyi' ekleyin"
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Bir kitabın 'Yaş Düzeyi' tanımlı olup olmadığı kontrol \n"
+"edildiğinde, bunlar bu eklentinin Etiketler sütununa döndürülür."

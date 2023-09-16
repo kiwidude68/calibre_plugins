@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-09-01 18:27+1000\n"
+"POT-Creation-Date: 2023-09-14 18:48+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: ashed <craysy@gmail.com>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -108,15 +108,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
-#: config.py:45
+#: config.py:47
 msgid "Other options"
 msgstr "Прочие параметры"
 
-#: config.py:50
+#: config.py:52
 msgid "Include 'Genres' in the Tags column"
 msgstr "Включить «Жанры» в столбец «Теги»"
 
-#: config.py:51
+#: config.py:53
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -124,11 +124,11 @@ msgstr ""
 "Если флажок установлен, и для книги определены какие-либо жанры, они будут\n"
 "возвращаться в столбце Теги из этого плагина."
 
-#: config.py:56
+#: config.py:58
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr "Включить «Поджанры» в столбец «Теги»"
 
-#: config.py:57
+#: config.py:59
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -136,14 +136,26 @@ msgstr ""
 "Если этот флажок установлен, если в книге определены какие-либо поджанры, они будут\n"
 "возвращаться в столбце «Теги» из этого плагина."
 
-#: config.py:62
+#: config.py:64
 msgid "Include 'Themes' in the Tags column"
 msgstr "Включить «Темы» в столбец «Теги»"
 
-#: config.py:63
+#: config.py:65
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 "Если этот флажок установлен, если в книге определены какие-либо Темы, они будут\n"
 "возвращаться в столбце «Теги» из этого плагина."
+
+#: config.py:70
+msgid "Include 'Age Level' in the Tags column"
+msgstr "Включить «Возрастной уровень» в столбец «Теги»."
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Если флажок установлен, и для книги определен «Возрастной уровень», он будет\n"
+"возвращаться в столбце Теги из этого плагина."

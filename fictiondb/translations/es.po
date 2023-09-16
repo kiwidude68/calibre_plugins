@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-09-01 18:27+1000\n"
+"POT-Creation-Date: 2023-09-14 18:48+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2023\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -116,15 +116,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
-#: config.py:45
+#: config.py:47
 msgid "Other options"
 msgstr "Otras opciones"
 
-#: config.py:50
+#: config.py:52
 msgid "Include 'Genres' in the Tags column"
 msgstr "Incluir «géneros» en la columna de etiquetas"
 
-#: config.py:51
+#: config.py:53
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -132,11 +132,11 @@ msgstr ""
 "Cuando se activa, si un libro tiene algún género definido,\n"
 "se devolverá en la columna de etiquetas de este complemento."
 
-#: config.py:56
+#: config.py:58
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr "Incluir «subgéneros» en la columna de etiquetas"
 
-#: config.py:57
+#: config.py:59
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -144,14 +144,26 @@ msgstr ""
 "Cuando se activa, si un libro tiene algún subgénero definido,\n"
 "se devolverá en la columna de etiquetas de este complemento."
 
-#: config.py:62
+#: config.py:64
 msgid "Include 'Themes' in the Tags column"
 msgstr "Incluir «temas» en la columna de etiquetas"
 
-#: config.py:63
+#: config.py:65
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 "Cuando se activa, si un libro tiene algún tema definido,\n"
+"se devolverá en la columna de etiquetas de este complemento."
+
+#: config.py:70
+msgid "Include 'Age Level' in the Tags column"
+msgstr "Incluir «nivel de edad» en la columna de etiquetas"
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Cuando se activa, si un libro tiene un nivel de edad definido,\n"
 "se devolverá en la columna de etiquetas de este complemento."

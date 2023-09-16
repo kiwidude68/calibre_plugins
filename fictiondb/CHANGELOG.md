@@ -1,5 +1,9 @@
 # FictionDB Change Log
 
+## [1.4.1] - 2023-09-16
+### Changed
+- Age classification reintroduced as it is present on some books (@2600box) 
+
 ## [1.4.0] - 2023-09-07
 ### Added
 - Dutch, French, German, Italian, Latvian, Polish, Portuguese, Turkish translations - thanks all!
