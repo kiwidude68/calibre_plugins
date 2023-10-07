@@ -138,6 +138,11 @@ class Container(object):
         existing = self.opf.xpath('//opf:manifest/opf:item[@href="%s"]'%q,
                 namespaces={'opf':OPF_NS})
         if not existing:
+            # Try again with unquoting special characters like %20
+            q = urlunquote(q)
+            existing = self.opf.xpath('//opf:manifest/opf:item[@href="%s"]'%q,
+                    namespaces={'opf':OPF_NS})
+        if not existing:
             return None
         return existing[0]
 

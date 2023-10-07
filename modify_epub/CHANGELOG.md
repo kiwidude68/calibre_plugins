@@ -1,5 +1,11 @@
 # Modify ePub Change Log
 
+## [1.8.2] - 2023-10-07
+### Added
+- Polish, Russian, Turkish translations
+### Fixed
+- Remove unmanifested files not correctly handling encoded spaces/brackets in names (@val-vin)
+
 ## [1.8.1] - 2022-10-31
 ### Changed
 - Inserting jacket at front of book always skips 1 or sometimes 2 pages trying to detect cover/titlepage.
