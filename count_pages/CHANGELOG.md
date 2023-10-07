@@ -1,5 +1,10 @@
 # Count Pages Change Log
 
+## [1.13.3] - 2023-10-07
+### Fixed
+- Improve page body extraction to correctly handle html entities to give more consistent results between formats
+- Missing images for databazeknih and cbdb, plus xpath fix (@seeder)
+
 ## [1.13.2] - 2023-09-12
 ### Added
 - Turkish translation

@@ -4,7 +4,7 @@
 # 
 # Translators:
 # JimmXinu, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
+# Dunhill <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022
 # lentrad <lentrad@gmail.com>, 2022
 # un_pogaz, 2022

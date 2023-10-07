@@ -90,10 +90,10 @@ PAGE_DOWNLOADS = {
                     },
                   'databazeknih.cz':
                     {
-                     'URL': 'https://www.databazeknih.cz/books/book-detail-more-info-ajax.php?bid=%s',
+                     'URL': 'https://www.databazeknih.cz/book-detail-more-info/%s',
                      'identifier_regex': '.*-(.*?)$',   # Only want the number at the end of the identifier
-                     'pages_xpath': '//td[@itemprop="numberOfPages"]/text()',
-                     'name': 'DatabazeKnih.cz',
+                     'pages_xpath': '//span[@itemprop="numberOfPages"]/text()',
+                     'name': 'databazeknih.cz',
                      'id': 'databazeknih',
                      'icon': 'images/databazeknih.png',
                      'active': False

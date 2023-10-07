@@ -4,11 +4,12 @@ __license__ = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
 import re, os, shutil
-import tempfile
 
 from six import text_type as unicode
 
 from calibre import prints
+from calibre.ebooks.BeautifulSoup import BeautifulSoup
+from calibre.ebooks.chardet import xml_to_unicode
 from calibre.ebooks.oeb.iterator import EbookIterator
 from calibre.utils.ipc.simple_worker import fork_job, WorkerError
 
@@ -240,8 +241,8 @@ def _get_page_count_custom(iterator, custom_chars_per_page):
     count = 0
     for path in iterator.spine:
         with open(path, 'rb') as f:
-            html = f.read().decode('utf-8', 'replace')
-            html = unicode(_extract_body_text(html)).strip()
+            raw = f.read().decode('utf-8', 'replace')
+            html = _get_body_text(raw)
             count = count + int(len(html) / custom_chars_per_page) + 1
     return count
 
@@ -286,22 +287,23 @@ def _read_epub_contents(iterator, strip_html=False):
     book_files = []
     for path in iterator.spine:
         with open(path, 'rb') as f:
-            html = f.read().decode('utf-8', 'replace')
+            raw = f.read().decode('utf-8', 'replace')
             if strip_html:
-                html = unicode(_extract_body_text(html)).strip()
+                html = _get_body_text(raw)
                 #print('FOUND HTML:', html)
+            else:
+                html = raw
         book_files.append(html)
     return ' '.join(book_files)
 
 
-def _extract_body_text(data):
-    '''
-    Get the body text of this html content with any html tags stripped
-    '''
-    body = RE_HTML_BODY.findall(data)
-    if body:
-        return RE_STRIP_MARKUP.sub('', body[0]).replace('.','. ')
-    return ''
+def _get_body_text(raw):
+    soup = BeautifulSoup(xml_to_unicode(raw, strip_encoding_pats=True, resolve_entities=True)[0])
+    body_tag = soup.body
+    html = ''
+    for string in body_tag.strings:
+        html += string.strip() + ' '
+    return html.strip()
 
 # ---------------------------------------------------------
 #    CBR/CBZ Page Count Functions

@@ -5,7 +5,7 @@
 # Translators:
 # Adolfo Jayme-Barrientos, 2022
 # Darío Hereñú, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
+# Dunhill <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022
 # Jellby <jellby@yahoo.com>, 2022
 # 
