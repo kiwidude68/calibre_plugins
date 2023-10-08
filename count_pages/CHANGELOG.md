@@ -1,5 +1,9 @@
 # Count Pages Change Log
 
+## [1.13.4] - 2023-10-08
+### Fixed
+- Identifier regex fix for databazeknih (@seeder)
+
 ## [1.13.3] - 2023-10-07
 ### Fixed
 - Improve page body extraction to correctly handle html entities to give more consistent results between formats

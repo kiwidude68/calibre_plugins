@@ -91,7 +91,7 @@ PAGE_DOWNLOADS = {
                   'databazeknih.cz':
                     {
                      'URL': 'https://www.databazeknih.cz/book-detail-more-info/%s',
-                     'identifier_regex': '.*-(.*?)$',   # Only want the number at the end of the identifier
+                     'identifier_regex': '(?:-{0,1})(\d+)$',   # Only want the number at the end of the identifier
                      'pages_xpath': '//span[@itemprop="numberOfPages"]/text()',
                      'name': 'databazeknih.cz',
                      'id': 'databazeknih',
