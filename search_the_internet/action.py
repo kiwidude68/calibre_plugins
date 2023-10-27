@@ -133,7 +133,8 @@ class SearchTheInternetAction(InterfaceAction):
                 self.search_web_for_book(row.row(), tokenised_url, encoding, method)
 
     def search_web_for_book(self, row, tokenised_url, encoding, method):
-        mi = self.db.get_metadata(row)
+        # Take a copy of the metadata so no risk of messing with anything important in memory!
+        mi = self.db.get_metadata(row).deepcopy_metadata()
         if not encoding:
             encoding = 'utf-8'
         self.open_tokenised_url(tokenised_url, encoding, method, mi)
@@ -142,23 +143,30 @@ class SearchTheInternetAction(InterfaceAction):
         if not tokenised_url:
             return error_dialog(self.gui, _('Cannot open link'),
                                 _('This menu item has not been configured with a url.'), show=True)
-        # Get all the values from the book's metadata
-        vals = mi.all_non_none_fields()
-        vals['title'] = self.convert_title_to_search_text(mi.title, encoding, method)
+        # Convert the book metadata into values that are more safely searchable
+        if mi.title:
+            mi.title = self.convert_title_to_search_text(mi.title, encoding, method)
         # Will only use the first author for the lookup if there are multiple
-        vals['author'] = self.convert_author_to_search_text(mi.authors[0], encoding, method)
-        vals['authors'] = vals['author'] # for name compatibility
-        # rebuild the values dict, converting values to internet safe versions
-        fixed_vals = {}
-        for k in vals:
-            fixed_vals[k] = unicode(vals[k]) # convert non-string types
-            if k not in ['author', 'authors', 'title']:
-                fixed_vals[k] = self.convert_to_search_text(fixed_vals[k], encoding, method)
+        if mi.authors:
+            mi.authors = [self.convert_author_to_search_text(mi.authors[0], encoding, method)]
+
+        # Convert other fields such as publisher in case user used them in their templates
+        for k in mi.all_field_keys():
+            try:
+                val = mi.get(k, None)
+                if val and k not in ['author', 'authors', 'title']:
+                    new_val = self.convert_to_search_text(val, encoding, method)
+                    if new_val != val:
+                        #debug_print('Sanitising: k=', k, ' val=', val, ' new_val=', new_val)
+                        mi.set(k, val)
+            except:
+                continue
 
         debug_print("open_tokenised_url - tokenised_url=", tokenised_url)
         debug_print("open_tokenised_url - mi=", mi)
-        debug_print("open_tokenised_url - fixed_vals=", fixed_vals)
         url = template_formatter.safe_format(tokenised_url, mi, 'STI template error', mi)
+        debug_print("open_tokenised_url - url=", url)
+
         if method == 'POST':
             # We will write to a temporary file to do a form submission
             url = self.create_local_file_for_post(url)
@@ -220,23 +228,25 @@ class SearchTheInternetAction(InterfaceAction):
         return os.path.abspath(temp_file.name)
 
     def convert_to_search_text(self, text, encoding, method):
-        # First we strip characters we will definitely not want to pass through.
-        # Periods from author initials etc do not need to be supplied
-        text = text.replace('.', '').replace('  ',' ')
-        # Now encode the text using Python function with chosen encoding
-        if method == 'GET':
-            text = quote_plus(text.encode(encoding, 'ignore'))
-            # If we ended up with double spaces as plus signs (++) replace them
-            text = text.replace('++','+')
-        else:
-            # For HTTP Post we do not want the encoding performed
-            text = text.encode(encoding, 'ignore')
-        return text
+        try:
+            # First we strip characters we will definitely not want to pass through.
+            # Periods from author initials etc do not need to be supplied
+            new_text = text.replace('.', '').replace('&', '').replace('  ',' ')
+            # Now encode the text using Python function with chosen encoding
+            if method == 'GET':
+                new_text = quote_plus(new_text.encode(encoding, 'ignore'))
+                # If we ended up with double spaces as plus signs (++) replace them
+                new_text = new_text.replace('++','+')
+            else:
+                # For HTTP Post we do not want the encoding performed
+                new_text = new_text.encode(encoding, 'ignore')
+            return new_text
+        except:
+            return text
 
     def convert_title_to_search_text(self, title, encoding, method):
-        # Ampersands are going to cause grief if this is an HTTP POST request because
-        # of the crude splitting of the URL we do on ampersands. So strip them.
-        if method == 'POST':
+        # Ampersands are going to cause grief so strip them.
+        if '&' in title:
             title = title.replace('&','')
         return self.convert_to_search_text(title, encoding, method)
 

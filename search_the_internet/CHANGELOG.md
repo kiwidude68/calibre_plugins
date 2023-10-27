@@ -1,5 +1,9 @@
 # Search The Internet Change Log
- 
+  
+## [1.10.2] - 2023-10-27
+### Fixed
+- Fields like title and author are sanitised so once again only first author is used if multiple and ampersands ignored.
+
 ## [1.10.1] - 2023-04-02
 ### Added
 - Polish translation (various).
