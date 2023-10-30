@@ -232,14 +232,11 @@ class SearchTheInternetAction(InterfaceAction):
             # First we strip characters we will definitely not want to pass through.
             # Periods from author initials etc do not need to be supplied
             new_text = text.replace('.', '').replace('&', '').replace('  ',' ')
-            # Now encode the text using Python function with chosen encoding
+            # Now encode the text using Python function with chosen encoding - but only for GET not POST
             if method == 'GET':
                 new_text = quote_plus(new_text.encode(encoding, 'ignore'))
                 # If we ended up with double spaces as plus signs (++) replace them
                 new_text = new_text.replace('++','+')
-            else:
-                # For HTTP Post we do not want the encoding performed
-                new_text = new_text.encode(encoding, 'ignore')
             return new_text
         except:
             return text
