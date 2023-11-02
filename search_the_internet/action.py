@@ -169,7 +169,7 @@ class SearchTheInternetAction(InterfaceAction):
 
         if method == 'POST':
             # We will write to a temporary file to do a form submission
-            url = self.create_local_file_for_post(url)
+            url = self.create_local_file_for_post(url, encoding)
             if url is None:
                 return
             open_url(QUrl('file:///' + url))
@@ -179,7 +179,7 @@ class SearchTheInternetAction(InterfaceAction):
                 url = url.encode('utf-8')
             open_url(QUrl.fromEncoded(url))
 
-    def create_local_file_for_post(self, url):
+    def create_local_file_for_post(self, url, encoding):
         if url.find('?') == -1:
             error_dialog(self.gui, _('Invalid URL'), 
                          _('You cannot use POST for this url '
@@ -223,7 +223,7 @@ class SearchTheInternetAction(InterfaceAction):
         # Write out to a temp file
         temp_file = self.interface_action_base_plugin.temporary_file('_post.html')
         temp_file_data = base_file_contents.format(js_submit, url_parts[0], input_fields)
-        temp_file.write(temp_file_data.encode("UTF-8"))
+        temp_file.write(temp_file_data.encode(encoding))
         temp_file.close()
         return os.path.abspath(temp_file.name)
 

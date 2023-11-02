@@ -1,5 +1,9 @@
 # Search The Internet Change Log
-    
+        
+## [1.10.4] - 2023-11-02
+### Fixed
+- Put back encoding of title/authors for POST requests but make it on the temp file instead.
+
 ## [1.10.3] - 2023-10-30
 ### Fixed
 - Remove encoding of authors for POST requests
