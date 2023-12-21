@@ -6,15 +6,15 @@
 # Adolfo Jayme-Barrientos, 2022
 # Darío Hereñú, 2022
 # Grant Drake, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# Jellby <jellby@yahoo.com>, 2022
+# Walter Paterno <walter.paterno@gmail.com>, 2023
+# Jellby <jellby@yahoo.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-16 14:23+0100\n"
+"POT-Creation-Date: 2023-08-21 19:53+1000\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2022\n"
+"Last-Translator: Jellby <jellby@yahoo.com>, 2023\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,8 +56,8 @@ msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
-" en su carpeta de complementos de calibre no se modificará."
+"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
+"la carpeta de complementos de calibre no se modificarán."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -98,22 +98,22 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título - debe reiniciar Calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
@@ -121,11 +121,11 @@ msgstr "Crear nueva columna"
 msgid "Goodreads"
 msgstr "Goodreads"
 
-#: action.py:94 dialogs.py:1597
+#: action.py:94 dialogs.py:1598
 msgid "Add to shelf"
 msgstr "Añadir al estante"
 
-#: action.py:96 dialogs.py:1597
+#: action.py:96 dialogs.py:1598
 msgid "Remove from shelf"
 msgstr "Eliminar del estante"
 
@@ -248,6 +248,10 @@ msgstr "Actualizando libros"
 msgid "Book: %v"
 msgstr "Libro: %v"
 
+#: action.py:380 action.py:513
+msgid "Updating book"
+msgstr "Actualizando libro"
+
 #: action.py:535
 msgid "Too Many Rows"
 msgstr "Demasiadas filas"
@@ -256,7 +260,7 @@ msgstr "Demasiadas filas"
 msgid "Reduce your selection to at most 50 rows."
 msgstr "Reduzca su selección a un máximo de 50 filas."
 
-#: action.py:565 config.py:544 config.py:1193 dialogs.py:1781 dialogs.py:2466
+#: action.py:565 config.py:544 config.py:1193 dialogs.py:1782 dialogs.py:2470
 msgid "Are you sure?"
 msgstr "¿Estás seguro?"
 
@@ -313,8 +317,8 @@ msgid ""
 "New custom colums have been created.\n"
 "You will need to restart calibre for this change to be applied."
 msgstr ""
-"Se ha creado una nueva columna personalizada.\n"
-"Deberá reiniciar calibre para que se aplique este cambio."
+"Se han creado nuevas columnas personalizadas.\n"
+"Deberá reiniciar calibre para que este cambio tenga efecto."
 
 #: action.py:858
 msgid "Goodreads Sync progress"
@@ -360,7 +364,7 @@ msgstr ""
 "Para usar con los elementos de menú \"Agregar al estante\"y \"Sincronizar "
 "desde el estante\"\\ nsincronizar con su reseña de Goodreads para un libro"
 
-#: config.py:149 dialogs.py:441 dialogs.py:1416 dialogs.py:1933
+#: config.py:149 dialogs.py:441 dialogs.py:1417 dialogs.py:1935
 msgid "Date Read"
 msgstr "Fecha de lectura"
 
@@ -507,8 +511,8 @@ msgid ""
 "&What should calibre do with matching linked books when you click 'Add to "
 "shelf'?"
 msgstr ""
-"¿Qué debe hacer calibre con los libros vinculados coincidentes al hacer clic"
-" en \"Agregar al estante\"?"
+"¿&Qué debe hacer calibre con los libros vinculados coincidentes al hacer "
+"pulsar en «Añadir al estante»?"
 
 #: config.py:606
 msgid "Edit Shelf Sync Actions"
@@ -789,8 +793,8 @@ msgstr "Nombre de estante duplicado"
 msgid "There is already a shelf named:"
 msgstr "Ya existe un estante llamado:"
 
-#: core.py:48 core.py:465 core.py:467 dialogs.py:305 dialogs.py:307
-#: dialogs.py:1147 dialogs.py:1149
+#: core.py:48 core.py:471 core.py:473 dialogs.py:305 dialogs.py:307
+#: dialogs.py:1148 dialogs.py:1150
 msgid "Unknown"
 msgstr "Desconocido"
 
@@ -813,23 +817,23 @@ msgstr ""
 msgid "In which case wait an additional 5-10 minutes before retrying."
 msgstr "En tal caso, espere 5-10 minutos antes de volver a intentarlo."
 
-#: core.py:408
+#: core.py:414
 msgid "Page"
 msgstr "Página"
 
-#: core.py:411
+#: core.py:417
 msgid "Syncing from shelf: {0}"
 msgstr "Sincronizando desde estantería: {0}"
 
-#: dialogs.py:131 dialogs.py:963
+#: dialogs.py:131 dialogs.py:964
 msgid "View &book on Goodreads.com"
 msgstr "Ver Li&bro en Goodreads.com"
 
-#: dialogs.py:138 dialogs.py:970
+#: dialogs.py:138 dialogs.py:971
 msgid "Paste Goodreads.com url"
 msgstr "Pegar URL de Goodreads.com"
 
-#: dialogs.py:139 dialogs.py:971
+#: dialogs.py:139 dialogs.py:972
 msgid "Ctrl+V"
 msgstr "Ctrl+V"
 
@@ -841,8 +845,8 @@ msgstr "Portada"
 msgid "Edition"
 msgstr "Edición"
 
-#: dialogs.py:147 dialogs.py:441 dialogs.py:979 dialogs.py:1213
-#: dialogs.py:1416
+#: dialogs.py:147 dialogs.py:441 dialogs.py:980 dialogs.py:1214
+#: dialogs.py:1417
 msgid "Title"
 msgstr "Título"
 
@@ -850,23 +854,23 @@ msgstr "Título"
 msgid "Goodreads.com Editions"
 msgstr "Goodreads.com Ediciones"
 
-#: dialogs.py:257 dialogs.py:1096
+#: dialogs.py:257 dialogs.py:1097
 msgid "Calibre book:"
 msgstr "Libro en Calibre:"
 
-#: dialogs.py:261 dialogs.py:1100 dialogs.py:1287
+#: dialogs.py:261 dialogs.py:1101 dialogs.py:1288
 msgid "Title:"
 msgstr "Título"
 
-#: dialogs.py:263 dialogs.py:1102 dialogs.py:1289
+#: dialogs.py:263 dialogs.py:1103 dialogs.py:1290
 msgid "Author:"
 msgstr "Autor"
 
-#: dialogs.py:265 dialogs.py:1104 dialogs.py:1291
+#: dialogs.py:265 dialogs.py:1105 dialogs.py:1292
 msgid "Series:"
 msgstr "Serie:"
 
-#: dialogs.py:267 dialogs.py:1106 dialogs.py:1293
+#: dialogs.py:267 dialogs.py:1107 dialogs.py:1294
 msgid "ISBN:"
 msgstr "ISBN:"
 
@@ -875,21 +879,21 @@ msgid "Select the Goodreads edition to link to this calibre book:"
 msgstr ""
 "Seleccione la edición Goodreads para vincular a este libro de calibre:"
 
-#: dialogs.py:278 dialogs.py:1117
+#: dialogs.py:278 dialogs.py:1118
 msgid "You can drag/drop a Goodreads website link to add it to the results."
 msgstr ""
 "Puede arrastrar / soltar un enlace al sitio web de Goodreads para agregarlo "
 "a los resultados."
 
-#: dialogs.py:287 dialogs.py:1128
+#: dialogs.py:287 dialogs.py:1129
 msgid "Search Goodreads.com"
 msgstr "Busca en Goodreads.com"
 
-#: dialogs.py:290 dialogs.py:1131 dialogs.py:1351
+#: dialogs.py:290 dialogs.py:1132 dialogs.py:1352
 msgid "Skip"
 msgstr "Omitir"
 
-#: dialogs.py:292 dialogs.py:1133 dialogs.py:1353
+#: dialogs.py:292 dialogs.py:1134 dialogs.py:1354
 msgid ""
 "Skip this book and move to the next:\n"
 "'{0}'"
@@ -901,15 +905,15 @@ msgstr ""
 msgid "Select shelves to sync from:"
 msgstr "Seleccione los estantes para sincronizar:"
 
-#: dialogs.py:362 dialogs.py:1616
+#: dialogs.py:362 dialogs.py:1617
 msgid "Show Active shelves only"
 msgstr "Mostrar solo estantes activos"
 
-#: dialogs.py:411 dialogs.py:1759
+#: dialogs.py:411 dialogs.py:1760
 msgid "No shelves selected"
 msgstr "No hay estantes seleccionados"
 
-#: dialogs.py:411 dialogs.py:1759
+#: dialogs.py:411 dialogs.py:1760
 msgid "You must select one or more shelves first."
 msgstr "Debe seleccionar uno o más estantes primero."
 
@@ -921,39 +925,39 @@ msgstr "Comentario"
 msgid "Progress"
 msgstr "Progreso"
 
-#: dialogs.py:441 dialogs.py:979 dialogs.py:1213 dialogs.py:1416
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
 msgid "Author"
 msgstr "Autor"
 
-#: dialogs.py:441 dialogs.py:979 dialogs.py:1213 dialogs.py:1416
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
 msgid "Series"
 msgstr "Series"
 
-#: dialogs.py:441 dialogs.py:1416
+#: dialogs.py:441 dialogs.py:1417
 msgid "Rating"
 msgstr "Valoración"
 
-#: dialogs.py:441 dialogs.py:1416
+#: dialogs.py:441 dialogs.py:1417
 msgid "Review"
 msgstr "Sinopsis"
 
-#: dialogs.py:441 dialogs.py:1416 dialogs.py:1931
+#: dialogs.py:441 dialogs.py:1417 dialogs.py:1933
 msgid "Status"
 msgstr "Estado"
 
-#: dialogs.py:449 dialogs.py:1425
+#: dialogs.py:450 dialogs.py:1426
 msgid "Search for book in Goodreads"
 msgstr "Buscar libro en Goodreads"
 
-#: dialogs.py:455 dialogs.py:1431 dialogs.py:1923
+#: dialogs.py:456 dialogs.py:1432 dialogs.py:1925
 msgid "&View book on Goodreads.com"
 msgstr "&Ver libro en Goodreads.com"
 
-#: dialogs.py:629 dialogs.py:636
+#: dialogs.py:630 dialogs.py:637
 msgid "Update Reading Progress"
 msgstr "Actualizar progreso de lectura"
 
-#: dialogs.py:643 dialogs.py:1604
+#: dialogs.py:644 dialogs.py:1605
 msgid ""
 "To fix missing links, double click to search for a matching book in "
 "Goodreads"
@@ -961,11 +965,11 @@ msgstr ""
 "Para corregir los enlaces faltantes, haga doble clic para buscar un libro "
 "coincidente en Goodreads"
 
-#: dialogs.py:658
+#: dialogs.py:659
 msgid "Put books on currently-reading shelf"
 msgstr "Poner libros en el estante de lectura actual"
 
-#: dialogs.py:659
+#: dialogs.py:660
 msgid ""
 "If the reading progress is being updated, but the books are not finished, "
 "put the books onto the 'currently-reading' shelf."
@@ -973,79 +977,79 @@ msgstr ""
 "Si se está actualizando el progreso de lectura, pero los libros no están "
 "terminados, poner los libros en el estante de «lectura actual»."
 
-#: dialogs.py:663
+#: dialogs.py:664
 msgid "Put finished books on read shelf"
 msgstr "Poner los libros terminados en el estante de libros leídos"
 
-#: dialogs.py:664
+#: dialogs.py:665
 msgid "If the reading progress is 100%, put the books onto the 'read' shelf."
 msgstr ""
 "Si el progreso de la lectura es del 100%, coloque los libros en el estante "
 "de \"lectura\"."
 
-#: dialogs.py:672 dialogs.py:1652
+#: dialogs.py:673 dialogs.py:1653
 msgid "Search Goodreads"
 msgstr "Buscar Goodreads"
 
-#: dialogs.py:675
+#: dialogs.py:676
 msgid "Update Progress"
 msgstr "Progreso de actualización"
 
-#: dialogs.py:679 dialogs.py:1659 dialogs.py:2153
+#: dialogs.py:680 dialogs.py:1660 dialogs.py:2157
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: dialogs.py:690 dialogs.py:700 dialogs.py:1716 dialogs.py:1726
+#: dialogs.py:691 dialogs.py:701 dialogs.py:1717 dialogs.py:1727
 msgid "No Goodreads book linked!"
 msgstr "¡Ningún libro de Goodreads vinculado!"
 
-#: dialogs.py:703 dialogs.py:1729 dialogs.py:2289
+#: dialogs.py:704 dialogs.py:1730 dialogs.py:2293
 msgid "Ready"
 msgstr "Listo"
 
-#: dialogs.py:725 dialogs.py:1751 dialogs.py:2217
+#: dialogs.py:726 dialogs.py:1752 dialogs.py:2221
 msgid "{0} missing links"
 msgstr "{0} link faltantes"
 
-#: dialogs.py:727 dialogs.py:1753 dialogs.py:2219
+#: dialogs.py:728 dialogs.py:1754 dialogs.py:2223
 msgid "{0}, {1} warnings"
 msgstr "{0}, {1} advertencias"
 
-#: dialogs.py:759
+#: dialogs.py:760
 msgid "Updating Goodreads progress"
 msgstr "Actualización del progreso de Goodreads"
 
-#: dialogs.py:827
+#: dialogs.py:828
 msgid "Updating books in calibre..."
 msgstr "Actualizando libros en calibre..."
 
-#: dialogs.py:895
+#: dialogs.py:896
 msgid "You are already linked to this calibre book"
-msgstr "Ya estás vinculado a este libro de calibre"
+msgstr "Este libro de calibre ya está vinculado"
 
-#: dialogs.py:898
+#: dialogs.py:899
 msgid "This calibre book is linked to a different Goodreads book."
 msgstr "Este libro de calibre está vinculado a otro libro de Goodreads."
 
-#: dialogs.py:908
+#: dialogs.py:909
 msgid "You have already linked to this Goodreads book"
 msgstr "Ya te has vinculado a este libro en Goodreads"
 
-#: dialogs.py:911
+#: dialogs.py:912
 msgid "This Goodreads book is linked to a different calibre book."
 msgstr ""
-"Este libro de Goodreads está vinculado a un libro de diferente calibre."
+"Este libro de Goodreads está vinculado a un libro diferente en calibre."
 
-#: dialogs.py:919
+#: dialogs.py:920
 msgid "You must link this calibre book to a matching book in Goodreads"
 msgstr ""
 "Debe linkear este libro de Calibre a un libro coincidente en Goodreads"
 
-#: dialogs.py:920
+#: dialogs.py:921
 msgid "No changes will be made to your shelf in Goodreads for this book"
 msgstr "No se realizarán cambios en su estante en Goodreads para este libro"
 
-#: dialogs.py:939
+#: dialogs.py:940
 msgid ""
 "You must link this Goodreads book to a matching book in calibre \n"
 "in order for any sync actions to be applied"
@@ -1053,7 +1057,7 @@ msgstr ""
 "Debe linkear este libro de Goodreads a un libro coincidente en Calibre \n"
 "para que se apliquen las acciones de sincronización"
 
-#: dialogs.py:941
+#: dialogs.py:942
 msgid ""
 "No actions have been set for this shelf.\n"
 "Use 'Customize plugin' to specify the actions"
@@ -1061,11 +1065,11 @@ msgstr ""
 "No se han establecido acciones para este estante. \n"
 "Use 'Personalizar plugin' para especificar las acciones"
 
-#: dialogs.py:943
+#: dialogs.py:944
 msgid "Actions will be applied when you click Sync Now"
 msgstr "Las acciones se aplicarán cuando haga clic en Sincronizar ahora"
 
-#: dialogs.py:944
+#: dialogs.py:945
 msgid ""
 "An empty book will be created in calibre for this book \n"
 "using the Goodreads metadata"
@@ -1073,154 +1077,154 @@ msgstr ""
 "Se creará un libro vacío en Calibre para este libro \n"
 "utilizando los metadatos de Goodreads"
 
-#: dialogs.py:1087
+#: dialogs.py:1088
 msgid "Search for Goodreads book"
 msgstr "Buscar el libro en Goodreads"
 
-#: dialogs.py:1090
+#: dialogs.py:1091
 msgid "Goodreads.com matches for Title/Author"
 msgstr "Goodreads.com coincide con Título/Autor"
 
-#: dialogs.py:1092
+#: dialogs.py:1093
 msgid "Goodreads.com matches for ISBN"
 msgstr "Goodreads.com coincide con ISBN"
 
-#: dialogs.py:1110
+#: dialogs.py:1111
 msgid "Select the Goodreads book to link to this calibre book:"
 msgstr "Seleccione el libro Goodreads para vincular a este libro de Calibre:"
 
-#: dialogs.py:1125
+#: dialogs.py:1126
 msgid "Switch Edition"
 msgstr "Cambiar Edición"
 
-#: dialogs.py:1176
+#: dialogs.py:1177
 msgid "No book selected"
 msgstr "Ningún libro seleccionado"
 
-#: dialogs.py:1176
+#: dialogs.py:1177
 msgid "You must select a book to switch edition"
 msgstr "Debes seleccionar un libro para cambiar de edición"
 
-#: dialogs.py:1183
+#: dialogs.py:1184
 msgid "Invalid book"
 msgstr "Libro inválido"
 
-#: dialogs.py:1183
+#: dialogs.py:1184
 msgid "No goodreads work id found for this book"
 msgstr "No se ha encontrado la id."
 
-#: dialogs.py:1213
+#: dialogs.py:1214
 msgid "ISBN"
 msgstr "ISBN"
 
-#: dialogs.py:1277
+#: dialogs.py:1278
 msgid "Search for calibre Book"
-msgstr "Buscar libor en Calibre"
+msgstr "Buscar libro en Calibre"
 
-#: dialogs.py:1280
+#: dialogs.py:1281
 msgid "calibre Search Results"
 msgstr "Resultados de búsqueda de Calibre"
 
-#: dialogs.py:1283
+#: dialogs.py:1284
 msgid "Goodreads book:"
 msgstr "Libro de Goodreads:"
 
-#: dialogs.py:1297
+#: dialogs.py:1298
 msgid "Select a calibre book to link to this Goodreads book:"
 msgstr ""
 "Seleccione un libro de Calibre para vincular a este libro de Goodreads:"
 
-#: dialogs.py:1303
+#: dialogs.py:1304
 msgid "Or, try a different calibre search:"
 msgstr "O intente una búsqueda en Calibre diferente:"
 
-#: dialogs.py:1308
+#: dialogs.py:1309
 msgid "&Title:"
 msgstr "&Título:"
 
-#: dialogs.py:1316
+#: dialogs.py:1317
 msgid "&Author:"
 msgstr "&Autor:"
 
-#: dialogs.py:1325
+#: dialogs.py:1326
 msgid "&Go!"
 msgstr "&Ir!"
 
-#: dialogs.py:1328
+#: dialogs.py:1329
 msgid "Search again using this title/author"
 msgstr "Buscar de nuevo usando este título/autor"
 
-#: dialogs.py:1331
+#: dialogs.py:1332
 msgid "Clear the title field"
 msgstr "Borrar el campo del título"
 
-#: dialogs.py:1335
+#: dialogs.py:1336
 msgid "Clear the author field"
 msgstr "Borrar el campo del autor"
 
-#: dialogs.py:1392
+#: dialogs.py:1393
 msgid "Overwrite Goodreads Link"
 msgstr "Sobrescribir enlace de Goodreads"
 
-#: dialogs.py:1393
+#: dialogs.py:1394
 msgid "This calibre book is already linked to a different Goodreads book."
 msgstr "Este libro de calibre ya está vinculado a otro libro de Goodreads."
 
-#: dialogs.py:1394
+#: dialogs.py:1395
 msgid "Only one Goodreads book can be linked to a calibre book at a time."
 msgstr ""
-"Solo se puede vincular un libro de Goodreads a un libro de calibre a la vez."
+"Sólo se puede vincular un libro de Goodreads a un libro de calibre a la vez."
 
-#: dialogs.py:1395
+#: dialogs.py:1396
 msgid "Click Yes to overwrite the link to this book, No to Cancel"
 msgstr ""
 "Haga clic en Sí para sobrescribir el enlace a este libro, No para cancelar"
 
-#: dialogs.py:1609
+#: dialogs.py:1610
 msgid "Select shelf:"
 msgstr "Seleccionar estante:"
 
-#: dialogs.py:1610
+#: dialogs.py:1611
 msgid "Select one or more shelves to add or remove from"
 msgstr "Seleccione uno o más estantes para agregar o eliminar"
 
-#: dialogs.py:1635
+#: dialogs.py:1636
 msgid "Add calibre Rating to Goodreads"
 msgstr "Agregar calificación de Calibre a Goodreads"
 
-#: dialogs.py:1641
+#: dialogs.py:1642
 msgid "Add calibre Date Read to Goodreads"
 msgstr "Agregar Fecha de lectura de Calibre a Goodreads"
 
-#: dialogs.py:1647
+#: dialogs.py:1648
 msgid "Add calibre Review Text to Goodreads"
 msgstr "Agregar texto de sinopsis de Calibre a Goodreads"
 
-#: dialogs.py:1655
+#: dialogs.py:1656
 msgid "Add to Shelf"
 msgstr "Añadir al estante"
 
-#: dialogs.py:1655
+#: dialogs.py:1656
 msgid "Remove from Shelf"
 msgstr "Eliminar del estante"
 
-#: dialogs.py:1769
+#: dialogs.py:1770
 msgid "Too many shelves"
 msgstr "Demasiados estantes"
 
-#: dialogs.py:1769
+#: dialogs.py:1770
 msgid "You cannot add to more than one exclusive shelf."
 msgstr "No puede agregar a más de un estante exclusivo."
 
-#: dialogs.py:1773
+#: dialogs.py:1774
 msgid "Exclusive Shelf Warning"
 msgstr "Advertencia exclusiva de estante"
 
-#: dialogs.py:1774
+#: dialogs.py:1775
 msgid "You are about to remove from a shelf marked as exclusive."
 msgstr "Está a punto de eliminar de un estante marcado como exclusivo."
 
-#: dialogs.py:1775
+#: dialogs.py:1776
 msgid ""
 "This will result in these books being <b>moved</b> to one of your other "
 "shelves rather than being deleted from all shelves."
@@ -1228,11 +1232,11 @@ msgstr ""
 "Esto dará como resultado que estos libros se <b>muevan</b> a uno de sus "
 "otros estantes en lugar de eliminarse de todos los estantes."
 
-#: dialogs.py:1777 dialogs.py:1783
+#: dialogs.py:1778 dialogs.py:1784
 msgid "Do you want to continue?"
 msgstr "¿Quieres continuar?"
 
-#: dialogs.py:1782
+#: dialogs.py:1783
 msgid ""
 "There are books in this list not yet linked to calibre which will be "
 "ignored."
@@ -1240,100 +1244,100 @@ msgstr ""
 "Hay libros en esta lista que aún no están vinculados a calibre y que se "
 "ignorarán."
 
-#: dialogs.py:1911 dialogs.py:2155
+#: dialogs.py:1913 dialogs.py:2159
 msgid "Search calibre"
 msgstr "Buscar en Calibre"
 
-#: dialogs.py:1917
+#: dialogs.py:1919
 msgid "Add empty book to calibre"
 msgstr "Agregar libro vacío a Calibre"
 
-#: dialogs.py:1931
+#: dialogs.py:1933
 msgid "GR Author"
 msgstr "GR Autor"
 
-#: dialogs.py:1931
+#: dialogs.py:1933
 msgid "GR Title"
 msgstr " GR Título"
 
-#: dialogs.py:1932
+#: dialogs.py:1934
 msgid "GR Date Read"
 msgstr "GR Fecha Leída"
 
-#: dialogs.py:1932
+#: dialogs.py:1934
 msgid "GR ISBN"
 msgstr "GR ISBN"
 
-#: dialogs.py:1932
+#: dialogs.py:1934
 msgid "GR Rating"
 msgstr "Clasificación GR"
 
-#: dialogs.py:1932
+#: dialogs.py:1934
 msgid "GR Series"
 msgstr "GR Series"
 
-#: dialogs.py:1932
+#: dialogs.py:1934
 msgid "Linked to calibre Title"
 msgstr "Linkeado al título de Calibre"
 
-#: dialogs.py:1932
+#: dialogs.py:1934
 msgid "Shelves"
 msgstr "Estantes"
 
-#: dialogs.py:1933
+#: dialogs.py:1935
 msgid "calibre Author"
 msgstr "Calibre Autor"
 
-#: dialogs.py:1933
+#: dialogs.py:1935
 msgid "calibre ISBN"
 msgstr "Calibre ISBN"
 
-#: dialogs.py:1933
+#: dialogs.py:1935
 msgid "calibre Rating"
 msgstr "Calibre Ranting"
 
-#: dialogs.py:1933
+#: dialogs.py:1935
 msgid "calibre Series"
 msgstr "Calibre Series"
 
-#: dialogs.py:2081
+#: dialogs.py:2085
 msgid "Sync from Goodreads Shelf"
 msgstr "Sincronizar desde el estante de Goodreads"
 
-#: dialogs.py:2094
+#: dialogs.py:2098
 msgid "Sync from '{0}' shelf"
 msgstr "Sincronizar desde el estante '{0}'"
 
-#: dialogs.py:2096
+#: dialogs.py:2100
 msgid "Sync from {0} shelves"
 msgstr "Sincronizar desde {0} estantes"
 
-#: dialogs.py:2102
+#: dialogs.py:2106
 msgid ""
 "To fix missing links, double click to search for a matching book in calibre."
 msgstr ""
 "Para corregir los enlaces faltantes, haga doble clic para buscar un libro "
 "coincidente en Calibre"
 
-#: dialogs.py:2122
+#: dialogs.py:2126
 msgid "The following actions will be performed for books that are synced:"
 msgstr ""
 "Las siguientes acciones se realizarán para los libros que están "
 "sincronizados:"
 
-#: dialogs.py:2130
+#: dialogs.py:2134
 msgid "Add Goodreads Rating to calibre"
 msgstr "Agregar calificación Goodreads a Calibre"
 
-#: dialogs.py:2135
+#: dialogs.py:2139
 msgid "Add Goodreads Date Read to calibre"
 msgstr "Agregar Fecha de leído de Goodreads a Calibre"
 
-#: dialogs.py:2140
+#: dialogs.py:2144
 msgid "Add Goodreads Review Text to calibre"
 msgstr "Agregar texto de sinopsis de Goodreads a Calibre"
 
-#: dialogs.py:2143
+#: dialogs.py:2147
 msgid ""
 "When searching calibre, if only one result is found then automatically link "
 "to it without prompting"
@@ -1341,35 +1345,35 @@ msgstr ""
 "Al buscar en Calibre, si solo se encuentra un resultado, se vincula "
 "automáticamente sin preguntar"
 
-#: dialogs.py:2150
+#: dialogs.py:2154
 msgid "Sync Now"
 msgstr "Sincronizar ahora"
 
-#: dialogs.py:2173
+#: dialogs.py:2177
 msgid "For books on the <b>{0}</b> shelf:<br>"
 msgstr "Para libros en el <b>{0}</b> estante:<b>"
 
-#: dialogs.py:2177
+#: dialogs.py:2181
 msgid "+ Add '{0}' to column '{1}'<br>"
 msgstr "+ Agregar '{0}' a la columna '{1}'<br>"
 
-#: dialogs.py:2179
+#: dialogs.py:2183
 msgid "- Remove '{0}' from column '{1}'<br>"
 msgstr "- Eliminar '{0}' de la columna '{1}'<br>"
 
-#: dialogs.py:2221
+#: dialogs.py:2225
 msgid "{0}, {1} books to add"
 msgstr "{0}, {1} libros para agregar"
 
-#: dialogs.py:2292
+#: dialogs.py:2296
 msgid "No calibre book linked!"
 msgstr "¡Ningún libro de Calibre linkeado!"
 
-#: dialogs.py:2340
+#: dialogs.py:2344
 msgid "Add to calibre"
 msgstr "Agregar a Calibre"
 
-#: dialogs.py:2467
+#: dialogs.py:2471
 msgid ""
 "There are books in this list not yet linked to calibre which will be "
 "ignored.<p><p>Are you sure you want to continue?"

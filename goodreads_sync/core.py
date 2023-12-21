@@ -189,13 +189,26 @@ class HttpHelper(object):
             debug_print('Goodreads failure calling: %s' % url)
             debug_print('Response: %s' % response)
             debug_print('Content: %s' % content)
-            traceback.print_stack()
+            #traceback.print_stack()
         detail = 'URL: {0}\nResponse Code: {1}\n{2}'.format(url, response['status'], content)
+        if (response['status'] == '404'):
+            root = et.fromstring(content)
+            errorNode = root.find('error')
+            if errorNode:
+                friendlyMessage = errorNode.findtext('friendly')
+                if not friendlyMessage:
+                    friendlyMessage = errorNode.findtext('detail')
+                if (friendlyMessage):
+                    error_dialog(self.gui, _('Goodreads Failure'),
+                                friendlyMessage,
+                                det_msg=detail, show=True)
+                return (None, None)
+        
         error_dialog(self.gui, _('Goodreads Failure'),
-                     _('The request contacting Goodreads has failed.')+'\n'+
-                     _('If it reoccurs you may have exceeded a request limit imposed by Goodreads.')+'\n'+
-                     _('In which case wait an additional 5-10 minutes before retrying.'),
-                     det_msg=detail, show=True)
+                    _('The request contacting Goodreads has failed.')+'\n'+
+                    _('If it reoccurs you may have exceeded a request limit imposed by Goodreads.')+'\n'+
+                    _('In which case wait an additional 5-10 minutes before retrying.'),
+                    det_msg=detail, show=True)
         return (None, None)
 
     def view_shelf(self, user_name, shelf_name):

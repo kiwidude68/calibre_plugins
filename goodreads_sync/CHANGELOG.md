@@ -1,5 +1,11 @@
 # Goodreads Sync Change Log
 
+## [1.16.4] - 2023-12-21
+### Added
+- Display specific friendly error message if available rather than generic response when get goodreads errors.
+- Russian translation (@craysy)
+- Tamil translation (@anishprabu.t)
+
 ## [1.16.3] - 2023-04-16
 ### Fixed
 - Remove books from shelf would only remove first book when there are multiple.

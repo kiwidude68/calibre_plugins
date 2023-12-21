@@ -1,0 +1,1406 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# அனிச் பிரபு தி, 2022
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-08-21 19:53+1000\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:1049
+msgid "Keyboard shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "இதற்கான விருப்பத்தேர்வுகள்:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "இந்த சொருகி அனைத்து அமைப்புகளையும் அழிக்கவும்"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை மாற்ற விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"பிற நூலகங்களில் உள்ள எந்த அமைப்புகளும் அல்லது உங்கள் காலிபர் செருகுநிரல்கள் "
+"கோப்புறையில் ஒரு JSON கோப்பில் சேமிக்கப்படாது."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "நீங்கள் பின்னர் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "அமைப்புகள் மாற்றப்பட்டன"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அமைப்புகள் மாற்றப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "தயவுசெய்து இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை அழிக்க விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "அமைப்புகள் நீக்கப்பட்டன"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"தலைப்பு படம் கிடைக்கவில்லை - இந்த சொருகி பயன்படுத்துவதற்கு முன்பு நீங்கள் "
+"காலிபரை மறுதொடக்கம் செய்ய வேண்டும்!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
+
+#: action.py:53
+msgid "Goodreads"
+msgstr "குட்ஸ்"
+
+#: action.py:94 dialogs.py:1598
+msgid "Add to shelf"
+msgstr "அலமாரியில் சேர்க்கவும்"
+
+#: action.py:96 dialogs.py:1598
+msgid "Remove from shelf"
+msgstr "அலமாரியில் இருந்து அகற்றவும்"
+
+#: action.py:98
+msgid "Update reading progress"
+msgstr "வாசிப்பு முன்னேற்றத்தைப் புதுப்பிக்கவும்"
+
+#: action.py:101
+msgid "Sync from shelf"
+msgstr "அலமாரியில் இருந்து ஒத்திசைக்கவும்"
+
+#: action.py:104
+msgid "View shelf"
+msgstr "அலமாரியைப் பாருங்கள்"
+
+#: action.py:108
+msgid "Link to Goodreads"
+msgstr "குட்ரெட்ஸுடன் இணைப்பு"
+
+#: action.py:109
+msgid "Add, replace or clear link to a Goodreads book"
+msgstr ""
+"குட்ரெட்ஸ் புத்தகத்தில் இணைப்பைச் சேர்க்கவும், மாற்றவும் அல்லது அழிக்கவும்"
+
+#: action.py:111
+msgid "Linked book"
+msgstr "இணைக்கப்பட்ட புத்தகம்"
+
+#: action.py:113
+msgid "View linked book"
+msgstr "இணைக்கப்பட்ட புத்தகத்தைக் காண்க"
+
+#: action.py:114
+msgid "Open a web browser page showing the linked Goodreads book"
+msgstr ""
+"இணைக்கப்பட்ட குட்ரெட்ஸ் புத்தகத்தைக் காட்டும் வலை உலாவி பக்கத்தைத் "
+"திறக்கவும்"
+
+#: action.py:116 dialogs.py:250
+msgid "Switch Goodreads Edition"
+msgstr "குட்ரெட்ஸ் பதிப்பை மாற்றவும்"
+
+#: action.py:117
+msgid "Link to a different edition of a Goodreads book"
+msgstr "குட்ரெட்ஸ் புத்தகத்தின் வேறு பதிப்பிற்கான இணைப்பு"
+
+#: action.py:124
+msgid "Remove link"
+msgstr "இணைப்பை அகற்று"
+
+#: action.py:125
+msgid "Clear the link with Goodreads"
+msgstr "குட்ரெட்ஸுடன் இணைப்பை அழிக்கவும்"
+
+#: action.py:129
+msgid "&Customize plugin"
+msgstr "& சொருகி தனிப்பயனாக்கு"
+
+#: action.py:131
+msgid "&Help"
+msgstr "&உதவி"
+
+#: action.py:147 action.py:179 action.py:208 action.py:214
+msgid "User: {0}"
+msgstr "பயனர்: {0}"
+
+#: action.py:205 action.py:219
+msgid "Download tags from shelves"
+msgstr "அலமாரிகளிலிருந்து குறிச்சொற்களைப் பதிவிறக்கவும்"
+
+#: action.py:206 action.py:209 action.py:220
+msgid "Download shelves your book is on as tags"
+msgstr "அலமாரிகளைப் பதிவிறக்குங்கள் உங்கள் புத்தகம் குறிச்சொற்களாக உள்ளது"
+
+#: action.py:211 action.py:221
+msgid "Upload tags as shelves"
+msgstr "குறிச்சொற்களை அலமாரிகளாக பதிவேற்றவும்"
+
+#: action.py:212 action.py:215 action.py:222
+msgid "Add book to shelves represented by your tags"
+msgstr ""
+"உங்கள் குறிச்சொற்களால் குறிப்பிடப்படும் அலமாரிகளில் புத்தகத்தைச் சேர்க்கவும்"
+
+#: action.py:267
+msgid "Added {0} books to shelf"
+msgstr "அலமாரியில் {0} புத்தகங்கள் சேர்க்கப்பட்டன"
+
+#: action.py:269
+msgid "Removed {0} books from shelf"
+msgstr "அலமாரியில் இருந்து {0} புத்தகங்களை அகற்றியது"
+
+#: action.py:293
+msgid "Updated progress for {0} books"
+msgstr "{0} புத்தகங்களுக்கான புதுப்பிக்கப்பட்ட முன்னேற்றம்"
+
+#: action.py:301 action.py:325
+msgid "Syncing books from shelves"
+msgstr "அலமாரிகளிலிருந்து புத்தகங்களை ஒத்திசைத்தல்"
+
+#: action.py:304 action.py:313
+msgid "Unable to Sync"
+msgstr "ஒத்திசைக்க முடியவில்லை"
+
+#: action.py:305
+msgid "You must specify sync actions or columns for at least one shelf first."
+msgstr ""
+"முதலில் ஒரு அலமாரிக்கு ஒத்திசைவு செயல்கள் அல்லது நெடுவரிசைகளை நீங்கள் "
+"குறிப்பிட வேண்டும்."
+
+#: action.py:314
+msgid "Unable to retrieve books for selected shelves."
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட அலமாரிகளுக்கான புத்தகங்களை மீட்டெடுக்க முடியவில்லை."
+
+#: action.py:324
+msgid "Synchronised {0} books from shelf"
+msgstr "அலமாரியில் இருந்து ஒத்திசைக்கப்பட்ட {0} புத்தகங்கள்"
+
+#: action.py:326
+msgid "Updating books"
+msgstr "புத்தகங்களைப் புதுப்பித்தல்"
+
+#: action.py:327
+msgid "Book: %v"
+msgstr "புத்தகம்: %வி"
+
+#: action.py:380 action.py:513
+msgid "Updating book"
+msgstr "புத்தகம் புதுப்பித்தல்"
+
+#: action.py:535
+msgid "Too Many Rows"
+msgstr "பல வரிசைகள்"
+
+#: action.py:536
+msgid "Reduce your selection to at most 50 rows."
+msgstr "உங்கள் தேர்வை அதிகபட்சம் 50 வரிசைகளாகக் குறைக்கவும்."
+
+#: action.py:565 config.py:544 config.py:1193 dialogs.py:1782 dialogs.py:2470
+msgid "Are you sure?"
+msgstr "நீ சொல்வது உறுதியா?"
+
+#: action.py:566
+msgid ""
+"Removing any linked Goodreads ids may result in you having to manually "
+"select the link again for these book(s)."
+msgstr ""
+"இணைக்கப்பட்ட குட்ரெட்ஸ் ஐடிகளை அகற்றுவது இந்த புத்தகத்திற்கான (கள்) இணைப்பை "
+"மீண்டும் கைமுறையாகத் தேர்ந்தெடுக்கலாம்."
+
+#: action.py:568
+msgid "Are you sure you want to remove the link(s)?"
+msgstr "இணைப்பு (களை) அகற்ற விரும்புகிறீர்களா?"
+
+#: action.py:577
+msgid "Removing Goodreads ids from books"
+msgstr "புத்தகங்களிலிருந்து குட்ரெட்ஸ் ஐடிகளை அகற்றுதல்"
+
+#: action.py:619
+msgid "No Goodreads Id"
+msgstr "குட்ரெட்ஸ் ஐடி இல்லை"
+
+#: action.py:620
+msgid ""
+"You cannot switch editions for a book that is not already linked to "
+"Goodreads.<br>"
+msgstr ""
+"குட்ரெட்களுடன் ஏற்கனவே இணைக்கப்படாத ஒரு புத்தகத்திற்கான பதிப்புகளை நீங்கள் "
+"மாற்ற முடியாது. <br>"
+
+#: action.py:749
+msgid "Updated tags for {0} books"
+msgstr "{0} புத்தகங்களுக்கான புதுப்பிக்கப்பட்ட குறிச்சொற்கள்"
+
+#: action.py:751
+msgid "No books required tags updating"
+msgstr "குறிச்சொற்கள் புதுப்பிக்க வேண்டிய புத்தகங்கள் தேவையில்லை"
+
+#: action.py:803
+msgid "Updated {0} shelves for selected books"
+msgstr "தேர்ந்தெடுக்கப்பட்ட புத்தகங்களுக்கான {0} அலமாரிகள் புதுப்பிக்கப்பட்டன"
+
+#: action.py:805
+msgid "No shelves required updating"
+msgstr "அலமாரிகளுக்கு புதுப்பிக்க தேவையில்லை"
+
+#: action.py:834 action.py:849
+msgid "Calibre must be restarted before the plugin can be configured."
+msgstr ""
+"சொருகி கட்டமைக்கப்படுவதற்கு முன்பு காலிபர் மறுதொடக்கம் செய்யப்பட வேண்டும்."
+
+#: action.py:841
+msgid ""
+"New custom colums have been created.\n"
+"You will need to restart calibre for this change to be applied."
+msgstr ""
+"புதிய தனிப்பயன் நெடுவரிசை உருவாக்கப்பட்டுள்ளது. \n"
+" இந்த மாற்றம் பயன்படுத்தப்படுவதற்கு நீங்கள் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: action.py:858
+msgid "Goodreads Sync progress"
+msgstr "குட்ரெட்ஸ் ஒத்திசைவு முன்னேற்றம்"
+
+#: config.py:130
+msgid "Goodreads Tags"
+msgstr "குட்ரெட்ஸ் குறிச்சொற்கள்"
+
+#: config.py:133
+msgid "Goodreads tags used for mapping to calbre."
+msgstr ""
+"குட்ரெட்ஸ் குறிச்சொற்கள் கால்ப்ரேவுக்கு மேப்பிங் செய்ய "
+"பயன்படுத்தப்படுகின்றன."
+
+#: config.py:135
+msgid "Tags column:"
+msgstr "குறிச்சொற்கள் நெடுவரிசை:"
+
+#: config.py:136
+msgid ""
+"For use with the \"Download tags from shelves\" and \"Upload tags as "
+"shelves\" menu items"
+msgstr ""
+"\"அலமாரிகளிலிருந்து குறிச்சொற்களைப் பதிவிறக்குங்கள்\" மற்றும் "
+"\"குறிச்சொற்களை அலமாரிகளாக பதிவேற்றுதல்\" மெனு உருப்படிகளுடன் பயன்படுத்த"
+
+#: config.py:140
+msgid "Goodreads Rating"
+msgstr "குட்ரெட்ஸ் மதிப்பீடு"
+
+#: config.py:142
+msgid "Rating for the book."
+msgstr "புத்தகத்திற்கான மதிப்பீடு."
+
+#: config.py:144
+msgid "Rating column:"
+msgstr "மதிப்பீட்டு நெடுவரிசை:"
+
+#: config.py:145 config.py:154 config.py:163 config.py:172
+msgid ""
+"For use with the \"Add to shelf\" and \"Sync from shelf\" menu items\n"
+"to synchronise with your Goodreads review for a book"
+msgstr ""
+"\"அலமாரியில் சேர்\" மற்றும் \"அலமாரியில் இருந்து ஒத்திசைவு\" மெனு உருப்படிகளுடன் பயன்படுத்த \n"
+" ஒரு புத்தகத்திற்கான உங்கள் குட்ரெட்ஸ் மதிப்பாய்வுடன் ஒத்திசைக்க"
+
+#: config.py:149 dialogs.py:441 dialogs.py:1417 dialogs.py:1935
+msgid "Date Read"
+msgstr "தேதி படித்தது"
+
+#: config.py:151
+msgid "Date when the book was last read."
+msgstr "புத்தகம் கடைசியாக வாசிக்கப்பட்ட தேதி."
+
+#: config.py:153
+msgid "Date read column:"
+msgstr "தேதி படிப்பு நெடுவரிசை:"
+
+#: config.py:158
+msgid "Goodreads Review"
+msgstr "குட்ரெட்ஸ் விமர்சனம்"
+
+#: config.py:160
+msgid "Review of book."
+msgstr "புத்தகத்தின் விமர்சனம்."
+
+#: config.py:162
+msgid "Review text column:"
+msgstr "உரை நெடுவரிசையை மதிப்பாய்வு செய்யவும்:"
+
+#: config.py:167
+msgid "Goodreads Progress"
+msgstr "குட்ரெட்ஸ் முன்னேற்றம்"
+
+#: config.py:169
+msgid "Reading progress for the book"
+msgstr "புத்தகத்திற்கான முன்னேற்றத்தைப் படித்தல்"
+
+#: config.py:171
+msgid "Reading progress column:"
+msgstr "முன்னேற்ற நெடுவரிசையைப் படித்தல்:"
+
+#: config.py:267
+msgid "Never modify the calibre ISBN"
+msgstr "காலிபர் ஐ.எஸ்.பி.என்"
+
+#: config.py:268
+msgid "Replace calibre ISBN only if none present"
+msgstr "யாரும் இல்லையென்றால் மட்டுமே காலிபர் ஐ.எஸ்.பி.என்"
+
+#: config.py:269
+msgid "Always overwrite calibre ISBN value"
+msgstr "எப்போதும் காலிபர் ஐ.எஸ்.பி.என் மதிப்பை மேலெழுதவும்"
+
+#: config.py:298
+msgid "Add value to column"
+msgstr "நெடுவரிசையில் மதிப்பு சேர்க்கவும்"
+
+#: config.py:298
+msgid "Remove value from column"
+msgstr "நெடுவரிசையிலிருந்து மதிப்பை அகற்று"
+
+#: config.py:342 config.py:347
+msgid "None"
+msgstr "எதுவுமில்லை"
+
+#: config.py:343 config.py:348
+msgid "Today"
+msgstr "இன்று"
+
+#: config.py:349
+msgid "Goodreads Date Read"
+msgstr "குட்ரெட்ஸ் தேதி படித்தது"
+
+#: config.py:350
+msgid "Goodreads Date Added"
+msgstr "குட்ரெட்ஸ் தேதி சேர்க்கப்பட்டது"
+
+#: config.py:351
+msgid "Goodreads Date Updated"
+msgstr "குட்ரெட்ஸ் தேதி புதுப்பிக்கப்பட்டது"
+
+#: config.py:352
+msgid "Goodreads Date Started"
+msgstr "குட்ரெட்ஸ் தேதி தொடங்கியது"
+
+#: config.py:382
+msgid "Create Goodreads shelf"
+msgstr "குட்ரெட்ஸ் அலமாரியை உருவாக்கவும்"
+
+#: config.py:388
+msgid "Shelf name:"
+msgstr "அலமாரியில் பெயர்:"
+
+#: config.py:392
+msgid "A book can only be on one of your exclusive shelves"
+msgstr ""
+"ஒரு புத்தகம் உங்கள் பிரத்யேக அலமாரிகளில் ஒன்றில் மட்டுமே இருக்க முடியும்"
+
+#: config.py:393
+msgid "Allowing customizing the order of books on this shelf"
+msgstr "இந்த அலமாரியில் புத்தகங்களின் வரிசையைத் தனிப்பயனாக்க அனுமதிக்கிறது"
+
+#: config.py:394
+msgid "One shelf only can be featured at the top of your profile"
+msgstr ""
+"ஒரு அலமாரியை உங்கள் சுயவிவரத்தின் மேற்புறத்தில் மட்டுமே இடம்பெற முடியும்"
+
+#: config.py:437
+msgid "Action"
+msgstr "செயல்"
+
+#: config.py:437
+msgid "Column"
+msgstr "நெடுவரிசை"
+
+#: config.py:437
+msgid "Value"
+msgstr "மதிப்பு"
+
+#: config.py:451
+msgid "Invalid column"
+msgstr "தவறான நெடுவரிசை"
+
+#: config.py:452
+msgid "Removing the column '{0}' action as the column cannot be found"
+msgstr "'{0}' என்ற நெடுவரிசையை அகற்றுவது நெடுவரிசையைக் காண முடியாது"
+
+#: config.py:541
+msgid "Are you sure you want to delete this action?"
+msgstr "இந்த செயலை நீக்க விரும்புகிறீர்களா?"
+
+#: config.py:543
+msgid "Are you sure you want to delete the selected {0} actions?"
+msgstr "தேர்ந்தெடுக்கப்பட்ட {0} செயல்களை நீக்க விரும்புகிறீர்களா?"
+
+#: config.py:599
+msgid "Edit Shelf Add Actions"
+msgstr "திருத்து அலமாரியில் செயல்களைச் சேர்க்கவும்"
+
+#: config.py:600
+msgid "Edit add to shelf actions for {0} shelves"
+msgstr "திருத்து {0} அலமாரிகளுக்கு அலமாரியில் செயல்களைச் சேர்க்கவும்"
+
+#: config.py:602
+msgid "Edit add to shelf actions for '{0}' shelf"
+msgstr "திருத்து '{0}' அலமாரியில் அலமாரியில் செயல்களைச் சேர்க்கவும்"
+
+#: config.py:603
+msgid ""
+"&What should calibre do with matching linked books when you click 'Add to "
+"shelf'?"
+msgstr ""
+"'அலமாரியில் சேர்' என்பதைக் கிளிக் செய்யும் போது இணைக்கப்பட்ட புத்தகங்களை "
+"பொருத்துவதில் காலிபர் என்ன செய்ய வேண்டும்?"
+
+#: config.py:606
+msgid "Edit Shelf Sync Actions"
+msgstr "அலமாரியில் ஒத்திசைவு செயல்களைத் திருத்து"
+
+#: config.py:607
+msgid "Edit sync actions for {0} shelves"
+msgstr "{0} அலமாரிகளுக்கு ஒத்திசைவு செயல்களைத் திருத்தவும்"
+
+#: config.py:609
+msgid "Edit sync actions for '{0}' shelf"
+msgstr "'{0}' அலமாரிக்கு ஒத்திசைவு செயல்களைத் திருத்தவும்"
+
+#: config.py:610
+msgid ""
+"&What should calibre do with matching linked books when you click 'Sync from"
+" shelf'?"
+msgstr ""
+"'அலமாரியில் இருந்து ஒத்திசைவு' என்பதைக் கிளிக் செய்யும் போது இணைக்கப்பட்ட "
+"புத்தகங்களை பொருத்துவதில் காலிபர் என்ன செய்ய வேண்டும்?"
+
+#: config.py:635
+msgid "Add action"
+msgstr "செயலைச் சேர்க்கவும்"
+
+#: config.py:641
+msgid "Delete action"
+msgstr "செயலை நீக்கு"
+
+#: config.py:656
+msgid "Upload rating to Goodreads when adding to this shelf"
+msgstr "இந்த அலமாரியில் சேர்க்கும்போது மதிப்பீட்டை குட்ரெட்ஸில் பதிவேற்றவும்"
+
+#: config.py:657
+msgid "Upload date read to Goodreads when adding to this shelf"
+msgstr ""
+"பதிவேற்றும் தேதி இந்த அலமாரியில் சேர்க்கும்போது குட்ரெட்ஸுக்கு படிக்கவும்"
+
+#: config.py:658
+msgid "Upload review text to Goodreads when adding to this shelf"
+msgstr ""
+"இந்த அலமாரியில் சேர்க்கும்போது குட்ரெட்ஸில் மதிப்பாய்வு உரையை பதிவேற்றவும்"
+
+#: config.py:663
+msgid "Sync rating from Goodreads when syncing from this shelf"
+msgstr ""
+"இந்த அலமாரியில் இருந்து ஒத்திசைக்கும்போது குட்ரெட்ஸிடமிருந்து மதிப்பீட்டை "
+"ஒத்திசைக்கவும்"
+
+#: config.py:664
+msgid "Sync date read from Goodreads when syncing from this shelf"
+msgstr ""
+"இந்த அலமாரியில் இருந்து ஒத்திசைக்கும்போது குட்ரெட்ஸிடமிருந்து படித்த "
+"ஒத்திசைவு தேதி"
+
+#: config.py:665
+msgid "Sync review text from Goodreads when syncing from this shelf"
+msgstr ""
+"இந்த அலமாரியில் இருந்து ஒத்திசைக்கும்போது குட்ரெட்ஸிடமிருந்து உரையை "
+"ஒத்திசைக்கவும்"
+
+#: config.py:718
+msgid "Active"
+msgstr "செயலில்"
+
+#: config.py:718
+msgid "Count*"
+msgstr "எண்ணிக்கை*"
+
+#: config.py:718
+msgid "Shelf Add Actions"
+msgstr "அலமாரியில் செயல்களைச் சேர்க்கவும்"
+
+#: config.py:718
+msgid "Shelf Name"
+msgstr "அலமாரியில் பெயர்"
+
+#: config.py:718
+msgid "Sync Actions"
+msgstr "செயல்களை ஒத்திசைக்கவும்"
+
+#: config.py:718
+msgid "calibre Tags"
+msgstr "காலிபர் குறிச்சொற்கள்"
+
+#: config.py:737
+msgid "Edit shelf add actions"
+msgstr "திருத்து அலமாரியில் செயல்களைச் சேர்க்கவும்"
+
+#: config.py:740
+msgid "Edit sync actions"
+msgstr "ஒத்திசைவு செயல்களைத் திருத்தவும்"
+
+#: config.py:746
+msgid "Make all Active"
+msgstr "அனைத்தையும் செயலில் செய்யுங்கள்"
+
+#: config.py:749
+msgid "Make none Active"
+msgstr "எதுவும் சுறுசுறுப்பாக இருக்காது"
+
+#: config.py:755
+msgid "Edit Shelves on Goodreads"
+msgstr "குட்ரெட்களில் அலமாரிகளைத் திருத்தவும்"
+
+#: config.py:773
+msgid "Shelf marked as exclusive"
+msgstr "பிரத்தியேகமாக குறிக்கப்பட்ட அலமாரி"
+
+#: config.py:776
+msgid "Count as at last shelves list refresh"
+msgstr "கடைசி அலமாரிகளில் பட்டியல் புதுப்பிப்பு"
+
+#: config.py:830
+msgid "Add '{0}' to column '{1}', "
+msgstr "'{1}' நெடுவரிசையில் '{0}' சேர்க்கவும்,"
+
+#: config.py:832
+msgid "Remove '{0}' from column '{1}', "
+msgstr "'{1}' நெடுவரிசையிலிருந்து '{0}' ஐ அகற்று,"
+
+#: config.py:913
+msgid "Select Goodreads user:"
+msgstr "குட்ரெட்ஸ் பயனரைத் தேர்ந்தெடுக்கவும்:"
+
+#: config.py:920
+msgid "Add user profile"
+msgstr "பயனர் சுயவிவரத்தைச் சேர்க்கவும்"
+
+#: config.py:925
+msgid "Delete user profile"
+msgstr "பயனர் சுயவிவரத்தை நீக்கு"
+
+#: config.py:929
+msgid "Authorize Plugin with Goodreads"
+msgstr "குட்ரெட்களுடன் சொருகி அங்கீகரிக்கவும்"
+
+#: config.py:935
+msgid "User Shelves:"
+msgstr "பயனர் அலமாரிகள்:"
+
+#: config.py:947
+msgid "Refresh Shelves"
+msgstr "அலமாரிகளைப் புதுப்பிக்கவும்"
+
+#: config.py:948
+msgid "Refresh the list of shelves and book counts from Goodreads"
+msgstr ""
+"குட்ரெட்களிலிருந்து அலமாரிகள் மற்றும் புத்தக எண்ணிக்கையின் பட்டியலைப் "
+"புதுப்பிக்கவும்"
+
+#: config.py:952
+msgid "Add Shelf"
+msgstr "அலமாரியைச் சேர்க்கவும்"
+
+#: config.py:953
+msgid "Add a new shelf"
+msgstr "புதிய அலமாரியைச் சேர்க்கவும்"
+
+#: config.py:958
+msgid "Edit 'Shelf Add' Actions"
+msgstr "'ஷெல்ஃப் சேர்' செயல்களைத் திருத்து"
+
+#: config.py:959
+msgid "Edit actions to apply when using 'Add to shelf'"
+msgstr ""
+"'அலமாரியில் சேர்' பயன்படுத்தும்போது விண்ணப்பிக்க வேண்டிய செயல்களைத் "
+"திருத்தவும்"
+
+#: config.py:963
+msgid "Edit 'Sync' Actions"
+msgstr "'ஒத்திசைவு' செயல்களைத் திருத்து"
+
+#: config.py:964
+msgid "Edit actions to apply when using 'Sync from shelf'"
+msgstr ""
+"'அலமாரியில் இருந்து ஒத்திசைவு' பயன்படுத்தும் போது விண்ணப்பிக்க வேண்டிய "
+"செயல்களைத் திருத்தவும்"
+
+#: config.py:973
+msgid "Other Options:"
+msgstr "பிற விருப்பங்கள்:"
+
+#: config.py:978
+msgid "When linking to Goodreads:"
+msgstr "குட்ரெட்களுடன் இணைக்கும்போது:"
+
+#: config.py:984
+msgid "Display the 'Add to shelf' menu option"
+msgstr "'அலமாரியில் சேர்' மெனு விருப்பத்தைக் காண்பி"
+
+#: config.py:985
+msgid "Display the 'Remove from shelf' menu option"
+msgstr "'அலமாரியில் இருந்து அகற்று' மெனு விருப்பத்தைக் காண்பி"
+
+#: config.py:986
+msgid "Display the 'Update reading progress' menu option"
+msgstr "'புதுப்பிப்பு வாசிப்பு முன்னேற்றம்' மெனு விருப்பத்தைக் காண்பி"
+
+#: config.py:987
+msgid "Display the 'Sync from shelf' menu option"
+msgstr "'அலமாரியில் இருந்து ஒத்திசைவு' மெனு விருப்பத்தைக் காண்பி"
+
+#: config.py:988
+msgid "Display the 'View shelf' menu option"
+msgstr "'அலமாரியைக் காண்க' மெனு விருப்பத்தைக் காண்பி"
+
+#: config.py:989
+msgid ""
+"If the reading progress is the percent read, check this. Otherwise, the "
+"reading progress the page number."
+msgstr ""
+"வாசிப்பு முன்னேற்றம் சதவீதம் படித்தால், இதைச் சரிபார்க்கவும். இல்லையெனில், "
+"வாசிப்பு பக்க எண்ணை முன்னேற்றுகிறது."
+
+#: config.py:989
+msgid "Reading progress is percent read"
+msgstr "முன்னேற்றம் வாசிப்பு சதவீதம் வாசிக்கப்படுகிறது"
+
+#: config.py:990
+msgid "If adding empty books, store author as LN,FN"
+msgstr ""
+"வெற்று புத்தகங்களைச் சேர்த்தால், எழுத்தாளரை எல்.என், எஃப்.என் என சேமிக்கவும்"
+
+#: config.py:999
+msgid "Synchronisable Custom Columns:"
+msgstr "ஒத்திசைக்கக்கூடிய தனிப்பயன் நெடுவரிசைகள்:"
+
+#: config.py:1050
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
+
+#: config.py:1054
+msgid "Help"
+msgstr "உதவி"
+
+#: config.py:1170
+msgid "Add new user"
+msgstr "புதிய பயனரைச் சேர்க்கவும்"
+
+#: config.py:1171
+msgid ""
+"You must create a profile for each Goodreads user you will connect "
+"to.<br>Enter a unique display name for this user profile:"
+msgstr ""
+"நீங்கள் இணைக்கும் ஒவ்வொரு குட்ரெட்ஸ் பயனருக்கும் ஒரு சுயவிவரத்தை உருவாக்க "
+"வேண்டும். <br> இந்த பயனர் சுயவிவரத்திற்கு தனித்துவமான காட்சி பெயரை "
+"உள்ளிடவும்:"
+
+#: config.py:1179
+msgid "A user with the same name already exists"
+msgstr "அதே பெயரைக் கொண்ட ஒரு பயனர் ஏற்கனவே இருக்கிறார்"
+
+#: config.py:1179
+msgid "Add Failed"
+msgstr "சேர்க்க முடியவில்லை"
+
+#: config.py:1194
+msgid "Do you want to delete the user profile for '{0}'"
+msgstr "'{0}' க்கான பயனர் சுயவிவரத்தை நீக்க விரும்புகிறீர்களா?"
+
+#: config.py:1211
+msgid "Confirm Authorization"
+msgstr "அங்கீகாரத்தை உறுதிப்படுத்தவும்"
+
+#: config.py:1212
+msgid ""
+"Have you clicked 'Allow access' for this plugin on the Goodreads website?"
+msgstr ""
+"குட்ரெட்ஸ் இணையதளத்தில் இந்த சொருகி 'அணுகலை அனுமதிக்கவும்' என்பதைக் கிளிக் "
+"செய்துள்ளீர்களா?"
+
+#: config.py:1227
+msgid "Goodreads failure"
+msgstr "குட்ரெட்ஸ் தோல்வி"
+
+#: config.py:1227
+msgid "Unable to obtain the user id"
+msgstr "பயனர் ஐடியைப் பெற முடியவில்லை"
+
+#: config.py:1273
+msgid "Duplicate shelf name"
+msgstr "நகல் அலமாரியின் பெயர்"
+
+#: config.py:1274
+msgid "There is already a shelf named:"
+msgstr "ஏற்கனவே பெயரிடப்பட்ட ஒரு அலமாரி உள்ளது:"
+
+#: core.py:48 core.py:471 core.py:473 dialogs.py:305 dialogs.py:307
+#: dialogs.py:1148 dialogs.py:1150
+msgid "Unknown"
+msgstr "தெரியவில்லை"
+
+#: core.py:194
+msgid "Goodreads Failure"
+msgstr "குட்ரெட்ஸ் தோல்வி"
+
+#: core.py:195
+msgid "The request contacting Goodreads has failed."
+msgstr "குட்ரெட்ஸைத் தொடர்பு கொள்ளும் கோரிக்கை தோல்வியுற்றது."
+
+#: core.py:196
+msgid ""
+"If it reoccurs you may have exceeded a request limit imposed by Goodreads."
+msgstr ""
+"இது மீண்டும் நிகழ்கிறது என்றால், குட்ரெட்ஸ் விதித்த கோரிக்கை வரம்பை நீங்கள் "
+"தாண்டியிருக்கலாம்."
+
+#: core.py:197
+msgid "In which case wait an additional 5-10 minutes before retrying."
+msgstr ""
+"இந்த விஷயத்தில் மீண்டும் முயற்சிக்கும் முன் கூடுதலாக 5-10 நிமிடங்கள் "
+"காத்திருங்கள்."
+
+#: core.py:414
+msgid "Page"
+msgstr "பக்கம்"
+
+#: core.py:417
+msgid "Syncing from shelf: {0}"
+msgstr "அலமாரியில் இருந்து ஒத்திசைத்தல்: {0}"
+
+#: dialogs.py:131 dialogs.py:964
+msgid "View &book on Goodreads.com"
+msgstr "Goodreads.com இல் காண்க & முன்பதிவு செய்யுங்கள்"
+
+#: dialogs.py:138 dialogs.py:971
+msgid "Paste Goodreads.com url"
+msgstr "Goodreads.com URL ஐ ஒட்டவும்"
+
+#: dialogs.py:139 dialogs.py:972
+msgid "Ctrl+V"
+msgstr "Ctrl+v"
+
+#: dialogs.py:147
+msgid "Cover"
+msgstr "கவர்"
+
+#: dialogs.py:147
+msgid "Edition"
+msgstr "பதிப்பு"
+
+#: dialogs.py:147 dialogs.py:441 dialogs.py:980 dialogs.py:1214
+#: dialogs.py:1417
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: dialogs.py:253
+msgid "Goodreads.com Editions"
+msgstr "Goodreads.com பதிப்புகள்"
+
+#: dialogs.py:257 dialogs.py:1097
+msgid "Calibre book:"
+msgstr "காலிபர் புத்தகம்:"
+
+#: dialogs.py:261 dialogs.py:1101 dialogs.py:1288
+msgid "Title:"
+msgstr "தலைப்பு:"
+
+#: dialogs.py:263 dialogs.py:1103 dialogs.py:1290
+msgid "Author:"
+msgstr "நூலாசிரியர்:"
+
+#: dialogs.py:265 dialogs.py:1105 dialogs.py:1292
+msgid "Series:"
+msgstr "தொடர்:"
+
+#: dialogs.py:267 dialogs.py:1107 dialogs.py:1294
+msgid "ISBN:"
+msgstr "ISBN:"
+
+#: dialogs.py:271
+msgid "Select the Goodreads edition to link to this calibre book:"
+msgstr ""
+"இந்த காலிபர் புத்தகத்துடன் இணைக்க குட்ரெட்ஸ் பதிப்பைத் தேர்ந்தெடுக்கவும்:"
+
+#: dialogs.py:278 dialogs.py:1118
+msgid "You can drag/drop a Goodreads website link to add it to the results."
+msgstr ""
+"முடிவுகளில் சேர்க்க குட்ரெட்ஸ் வலைத்தள இணைப்பை நீங்கள் இழுக்க/கைவிடலாம்."
+
+#: dialogs.py:287 dialogs.py:1129
+msgid "Search Goodreads.com"
+msgstr "Goodreads.com ஐத் தேடுங்கள்"
+
+#: dialogs.py:290 dialogs.py:1132 dialogs.py:1352
+msgid "Skip"
+msgstr "தவிர்க்கவும்"
+
+#: dialogs.py:292 dialogs.py:1134 dialogs.py:1354
+msgid ""
+"Skip this book and move to the next:\n"
+"'{0}'"
+msgstr ""
+"இந்த புத்தகத்தைத் தவிர்த்து அடுத்த இடத்திற்குச் செல்லுங்கள்: \n"
+" '{0}'"
+
+#: dialogs.py:347
+msgid "Select shelves to sync from:"
+msgstr "இதிலிருந்து ஒத்திசைக்க அலமாரிகளைத் தேர்ந்தெடுக்கவும்:"
+
+#: dialogs.py:362 dialogs.py:1617
+msgid "Show Active shelves only"
+msgstr "செயலில் அலமாரிகளை மட்டுமே காட்டு"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "No shelves selected"
+msgstr "அலமாரிகள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "You must select one or more shelves first."
+msgstr ""
+"நீங்கள் முதலில் ஒன்று அல்லது அதற்கு மேற்பட்ட அலமாரிகளைத் தேர்ந்தெடுக்க "
+"வேண்டும்."
+
+#: dialogs.py:441
+msgid "Comment"
+msgstr "கருத்து"
+
+#: dialogs.py:441
+msgid "Progress"
+msgstr "முன்னேற்றம்"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Author"
+msgstr "நூலாசிரியர்"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Series"
+msgstr "தொடர்"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Rating"
+msgstr "மதிப்பீடு"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Review"
+msgstr "விமர்சனம்"
+
+#: dialogs.py:441 dialogs.py:1417 dialogs.py:1933
+msgid "Status"
+msgstr "நிலை"
+
+#: dialogs.py:450 dialogs.py:1426
+msgid "Search for book in Goodreads"
+msgstr "குட்ரெட்ஸில் புத்தகத்தைத் தேடுங்கள்"
+
+#: dialogs.py:456 dialogs.py:1432 dialogs.py:1925
+msgid "&View book on Goodreads.com"
+msgstr "& Goodreads.com இல் புத்தகத்தைக் காண்க"
+
+#: dialogs.py:630 dialogs.py:637
+msgid "Update Reading Progress"
+msgstr "வாசிப்பு முன்னேற்றத்தைப் புதுப்பிக்கவும்"
+
+#: dialogs.py:644 dialogs.py:1605
+msgid ""
+"To fix missing links, double click to search for a matching book in "
+"Goodreads"
+msgstr ""
+"காணாமல் போன இணைப்புகளை சரிசெய்ய, குட்ரெட்ஸில் பொருந்தக்கூடிய புத்தகத்தைத் "
+"தேட இருமுறை கிளிக் செய்க"
+
+#: dialogs.py:659
+msgid "Put books on currently-reading shelf"
+msgstr "தற்போது வாசிக்கும் அலமாரியில் புத்தகங்களை வைக்கவும்"
+
+#: dialogs.py:660
+msgid ""
+"If the reading progress is being updated, but the books are not finished, "
+"put the books onto the 'currently-reading' shelf."
+msgstr ""
+"வாசிப்பு முன்னேற்றம் புதுப்பிக்கப்பட்டால், ஆனால் புத்தகங்கள் "
+"முடிக்கப்படவில்லை என்றால், புத்தகங்களை 'தற்போது வாசிக்கும்' அலமாரியில் "
+"வைக்கவும்."
+
+#: dialogs.py:664
+msgid "Put finished books on read shelf"
+msgstr "முடிக்கப்பட்ட புத்தகங்களை வாசிப்பு அலமாரியில் வைக்கவும்"
+
+#: dialogs.py:665
+msgid "If the reading progress is 100%, put the books onto the 'read' shelf."
+msgstr ""
+"வாசிப்பு முன்னேற்றம் 100%என்றால், புத்தகங்களை 'படிக்கவும்' அலமாரியில் "
+"வைக்கவும்."
+
+#: dialogs.py:673 dialogs.py:1653
+msgid "Search Goodreads"
+msgstr "குட்ரெட்ஸைத் தேடுங்கள்"
+
+#: dialogs.py:676
+msgid "Update Progress"
+msgstr "முன்னேற்றத்தைப் புதுப்பிக்கவும்"
+
+#: dialogs.py:680 dialogs.py:1660 dialogs.py:2157
+msgid "Cancel"
+msgstr "ரத்துசெய்"
+
+#: dialogs.py:691 dialogs.py:701 dialogs.py:1717 dialogs.py:1727
+msgid "No Goodreads book linked!"
+msgstr "குட்ரெட்ஸ் புத்தகம் இணைக்கப்படவில்லை!"
+
+#: dialogs.py:704 dialogs.py:1730 dialogs.py:2293
+msgid "Ready"
+msgstr "தயார்"
+
+#: dialogs.py:726 dialogs.py:1752 dialogs.py:2221
+msgid "{0} missing links"
+msgstr "{0} இணைப்புகளைக் காணவில்லை"
+
+#: dialogs.py:728 dialogs.py:1754 dialogs.py:2223
+msgid "{0}, {1} warnings"
+msgstr "{0}, {1} எச்சரிக்கைகள்"
+
+#: dialogs.py:760
+msgid "Updating Goodreads progress"
+msgstr "குட்ரெட்ஸ் முன்னேற்றத்தை புதுப்பித்தல்"
+
+#: dialogs.py:828
+msgid "Updating books in calibre..."
+msgstr "காலிபரில் புத்தகங்களைப் புதுப்பித்தல் ..."
+
+#: dialogs.py:896
+msgid "You are already linked to this calibre book"
+msgstr "இந்த காலிபர் புத்தகத்துடன் நீங்கள் ஏற்கனவே இணைக்கப்பட்டுள்ளீர்கள்"
+
+#: dialogs.py:899
+msgid "This calibre book is linked to a different Goodreads book."
+msgstr ""
+"இந்த காலிபர் புத்தகம் வேறு குட்ரெட்ஸ் புத்தகத்துடன் இணைக்கப்பட்டுள்ளது."
+
+#: dialogs.py:909
+msgid "You have already linked to this Goodreads book"
+msgstr "இந்த குட்ரெட்ஸ் புத்தகத்துடன் நீங்கள் ஏற்கனவே இணைத்துள்ளீர்கள்"
+
+#: dialogs.py:912
+msgid "This Goodreads book is linked to a different calibre book."
+msgstr ""
+"இந்த குட்ரெட்ஸ் புத்தகம் வேறு காலிபர் புத்தகத்துடன் இணைக்கப்பட்டுள்ளது."
+
+#: dialogs.py:920
+msgid "You must link this calibre book to a matching book in Goodreads"
+msgstr ""
+"இந்த காலிபர் புத்தகத்தை குட்ரெட்ஸில் பொருந்தக்கூடிய புத்தகத்துடன் இணைக்க "
+"வேண்டும்"
+
+#: dialogs.py:921
+msgid "No changes will be made to your shelf in Goodreads for this book"
+msgstr ""
+"இந்த புத்தகத்திற்கான குட்ரெட்களில் உங்கள் அலமாரியில் எந்த மாற்றங்களும் "
+"செய்யப்படாது"
+
+#: dialogs.py:940
+msgid ""
+"You must link this Goodreads book to a matching book in calibre \n"
+"in order for any sync actions to be applied"
+msgstr ""
+"இந்த குட்ரெட்ஸ் புத்தகத்தை நீங்கள் ஒரு பொருந்தக்கூடிய புத்தகத்துடன் காலிபரில் இணைக்க வேண்டும் \n"
+" எந்தவொரு ஒத்திசைவு செயல்களும் பயன்படுத்தப்பட வேண்டும்"
+
+#: dialogs.py:942
+msgid ""
+"No actions have been set for this shelf.\n"
+"Use 'Customize plugin' to specify the actions"
+msgstr ""
+"இந்த அலமாரியில் எந்த நடவடிக்கையும் அமைக்கப்படவில்லை. \n"
+" செயல்களைக் குறிப்பிட 'சொருகி தனிப்பயனாக்கு' ஐப் பயன்படுத்தவும்"
+
+#: dialogs.py:944
+msgid "Actions will be applied when you click Sync Now"
+msgstr ""
+"நீங்கள் இப்போது ஒத்திசைவு என்பதைக் கிளிக் செய்யும் போது செயல்கள் "
+"பயன்படுத்தப்படும்"
+
+#: dialogs.py:945
+msgid ""
+"An empty book will be created in calibre for this book \n"
+"using the Goodreads metadata"
+msgstr ""
+"இந்த புத்தகத்திற்கான காலிபரில் ஒரு வெற்று புத்தகம் உருவாக்கப்படும் \n"
+" குட்ரெட்ஸ் மெட்டாடேட்டாவைப் பயன்படுத்துதல்"
+
+#: dialogs.py:1088
+msgid "Search for Goodreads book"
+msgstr "குட்ரெட்ஸ் புத்தகத்தைத் தேடுங்கள்"
+
+#: dialogs.py:1091
+msgid "Goodreads.com matches for Title/Author"
+msgstr "தலைப்பு/ஆசிரியருக்கான குட்ரெட்ஸ்.காம் போட்டிகள்"
+
+#: dialogs.py:1093
+msgid "Goodreads.com matches for ISBN"
+msgstr "ISBN க்கான goodreads.com பொருத்தங்கள்"
+
+#: dialogs.py:1111
+msgid "Select the Goodreads book to link to this calibre book:"
+msgstr ""
+"இந்த காலிபர் புத்தகத்துடன் இணைக்க குட்ரெட்ஸ் புத்தகத்தைத் தேர்ந்தெடுக்கவும்:"
+
+#: dialogs.py:1126
+msgid "Switch Edition"
+msgstr "சுவிட்ச் பதிப்பு"
+
+#: dialogs.py:1177
+msgid "No book selected"
+msgstr "எந்த புத்தகமும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: dialogs.py:1177
+msgid "You must select a book to switch edition"
+msgstr "பதிப்பை மாற்ற ஒரு புத்தகத்தைத் தேர்ந்தெடுக்க வேண்டும்"
+
+#: dialogs.py:1184
+msgid "Invalid book"
+msgstr "தவறான புத்தகம்"
+
+#: dialogs.py:1184
+msgid "No goodreads work id found for this book"
+msgstr "இந்த புத்தகத்திற்கு குட்ரெட்ஸ் வேலை ஐடி எதுவும் கிடைக்கவில்லை"
+
+#: dialogs.py:1214
+msgid "ISBN"
+msgstr "ISBN"
+
+#: dialogs.py:1278
+msgid "Search for calibre Book"
+msgstr "காலிபர் புத்தகத்தைத் தேடுங்கள்"
+
+#: dialogs.py:1281
+msgid "calibre Search Results"
+msgstr "காலிபர் தேடல் முடிவுகள்"
+
+#: dialogs.py:1284
+msgid "Goodreads book:"
+msgstr "குட்ரெட்ஸ் புத்தகம்:"
+
+#: dialogs.py:1298
+msgid "Select a calibre book to link to this Goodreads book:"
+msgstr ""
+"இந்த குட்ரெட்ஸ் புத்தகத்துடன் இணைக்க ஒரு காலிபர் புத்தகத்தைத் "
+"தேர்ந்தெடுக்கவும்:"
+
+#: dialogs.py:1304
+msgid "Or, try a different calibre search:"
+msgstr "அல்லது, வேறு காலிபர் தேடலை முயற்சிக்கவும்:"
+
+#: dialogs.py:1309
+msgid "&Title:"
+msgstr "&தலைப்பு:"
+
+#: dialogs.py:1317
+msgid "&Author:"
+msgstr "&நூலாசிரியர்:"
+
+#: dialogs.py:1326
+msgid "&Go!"
+msgstr "&போ!"
+
+#: dialogs.py:1329
+msgid "Search again using this title/author"
+msgstr "இந்த தலைப்பு/ஆசிரியரைப் பயன்படுத்தி மீண்டும் தேடுங்கள்"
+
+#: dialogs.py:1332
+msgid "Clear the title field"
+msgstr "தலைப்பு புலத்தை அழிக்கவும்"
+
+#: dialogs.py:1336
+msgid "Clear the author field"
+msgstr "ஆசிரியர் புலத்தை அழிக்கவும்"
+
+#: dialogs.py:1393
+msgid "Overwrite Goodreads Link"
+msgstr "குட்ரெட்ஸ் இணைப்பை மேலெழுதவும்"
+
+#: dialogs.py:1394
+msgid "This calibre book is already linked to a different Goodreads book."
+msgstr ""
+"இந்த காலிபர் புத்தகம் ஏற்கனவே வேறு குட்ரெட்ஸ் புத்தகத்துடன் "
+"இணைக்கப்பட்டுள்ளது."
+
+#: dialogs.py:1395
+msgid "Only one Goodreads book can be linked to a calibre book at a time."
+msgstr ""
+"ஒரே நேரத்தில் ஒரு குட்ரெட்ஸ் புத்தகத்தை மட்டுமே ஒரு காலிபர் புத்தகத்துடன் "
+"இணைக்க முடியும்."
+
+#: dialogs.py:1396
+msgid "Click Yes to overwrite the link to this book, No to Cancel"
+msgstr ""
+"இந்த புத்தகத்திற்கான இணைப்பை மேலெழுத ஆம் என்பதைக் கிளிக் செய்க, ரத்து செய்ய "
+"வேண்டாம்"
+
+#: dialogs.py:1610
+msgid "Select shelf:"
+msgstr "அலமாரியைத் தேர்ந்தெடுக்கவும்:"
+
+#: dialogs.py:1611
+msgid "Select one or more shelves to add or remove from"
+msgstr ""
+"சேர்க்க அல்லது அகற்ற ஒன்று அல்லது அதற்கு மேற்பட்ட அலமாரிகளைத் "
+"தேர்ந்தெடுக்கவும்"
+
+#: dialogs.py:1636
+msgid "Add calibre Rating to Goodreads"
+msgstr "குட்ரெட்களில் காலிபர் மதிப்பீட்டைச் சேர்க்கவும்"
+
+#: dialogs.py:1642
+msgid "Add calibre Date Read to Goodreads"
+msgstr "குட்ரெட்ஸில் படித்த தேதியைச் சேர்க்கவும்"
+
+#: dialogs.py:1648
+msgid "Add calibre Review Text to Goodreads"
+msgstr "குட்ரெட்ஸில் காலிபர் மறுஆய்வு உரையைச் சேர்க்கவும்"
+
+#: dialogs.py:1656
+msgid "Add to Shelf"
+msgstr "அலமாரியில் சேர்க்கவும்"
+
+#: dialogs.py:1656
+msgid "Remove from Shelf"
+msgstr "அலமாரியில் இருந்து அகற்றவும்"
+
+#: dialogs.py:1770
+msgid "Too many shelves"
+msgstr "பல அலமாரிகள்"
+
+#: dialogs.py:1770
+msgid "You cannot add to more than one exclusive shelf."
+msgstr "ஒன்றுக்கு மேற்பட்ட பிரத்யேக அலமாரியில் நீங்கள் சேர்க்க முடியாது."
+
+#: dialogs.py:1774
+msgid "Exclusive Shelf Warning"
+msgstr "பிரத்யேக அலமாரி எச்சரிக்கை"
+
+#: dialogs.py:1775
+msgid "You are about to remove from a shelf marked as exclusive."
+msgstr ""
+"பிரத்தியேகமாக குறிக்கப்பட்ட அலமாரியில் இருந்து நீங்கள் அகற்றப் போகிறீர்கள்."
+
+#: dialogs.py:1776
+msgid ""
+"This will result in these books being <b>moved</b> to one of your other "
+"shelves rather than being deleted from all shelves."
+msgstr ""
+"இதன் விளைவாக இந்த புத்தகங்கள் <b> நகர்த்தப்படும் </b> எல்லா "
+"அலமாரிகளிலிருந்தும் நீக்கப்படுவதை விட உங்கள் மற்ற அலமாரிகளில் ஒன்றிற்கு."
+
+#: dialogs.py:1778 dialogs.py:1784
+msgid "Do you want to continue?"
+msgstr "நீங்கள் தொடர விரும்புகிறீர்களா?"
+
+#: dialogs.py:1783
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored."
+msgstr ""
+"இந்த பட்டியலில் இன்னும் காலிபருடன் இணைக்கப்படாத புத்தகங்கள் உள்ளன, அவை "
+"புறக்கணிக்கப்படும்."
+
+#: dialogs.py:1913 dialogs.py:2159
+msgid "Search calibre"
+msgstr "காலிபரைத் தேடுங்கள்"
+
+#: dialogs.py:1919
+msgid "Add empty book to calibre"
+msgstr "காலிபரில் வெற்று புத்தகத்தைச் சேர்க்கவும்"
+
+#: dialogs.py:1933
+msgid "GR Author"
+msgstr "Gr ஆசிரியர்"
+
+#: dialogs.py:1933
+msgid "GR Title"
+msgstr "Gr தலைப்பு"
+
+#: dialogs.py:1934
+msgid "GR Date Read"
+msgstr "Gr தேதி படித்தது"
+
+#: dialogs.py:1934
+msgid "GR ISBN"
+msgstr "Gr isbn"
+
+#: dialogs.py:1934
+msgid "GR Rating"
+msgstr "Gr மதிப்பீடு"
+
+#: dialogs.py:1934
+msgid "GR Series"
+msgstr "ஜி.ஆர் தொடர்"
+
+#: dialogs.py:1934
+msgid "Linked to calibre Title"
+msgstr "காலிபர் தலைப்புடன் இணைக்கப்பட்டுள்ளது"
+
+#: dialogs.py:1934
+msgid "Shelves"
+msgstr "அலமாரிகள்"
+
+#: dialogs.py:1935
+msgid "calibre Author"
+msgstr "காலிபர் ஆசிரியர்"
+
+#: dialogs.py:1935
+msgid "calibre ISBN"
+msgstr "காலிபர் ஐ.எஸ்.பி.என்"
+
+#: dialogs.py:1935
+msgid "calibre Rating"
+msgstr "காலிபர் மதிப்பீடு"
+
+#: dialogs.py:1935
+msgid "calibre Series"
+msgstr "காலிபர் தொடர்"
+
+#: dialogs.py:2085
+msgid "Sync from Goodreads Shelf"
+msgstr "குட்ரெட்ஸ் அலமாரியில் இருந்து ஒத்திசைக்கவும்"
+
+#: dialogs.py:2098
+msgid "Sync from '{0}' shelf"
+msgstr "'{0}' அலமாரியில் இருந்து ஒத்திசைக்கவும்"
+
+#: dialogs.py:2100
+msgid "Sync from {0} shelves"
+msgstr "{0} அலமாரிகளிலிருந்து ஒத்திசைக்கவும்"
+
+#: dialogs.py:2106
+msgid ""
+"To fix missing links, double click to search for a matching book in calibre."
+msgstr ""
+"காணாமல் போன இணைப்புகளை சரிசெய்ய, காலிபரில் பொருந்தக்கூடிய புத்தகத்தைத் தேட "
+"இருமுறை கிளிக் செய்க."
+
+#: dialogs.py:2126
+msgid "The following actions will be performed for books that are synced:"
+msgstr "ஒத்திசைக்கப்பட்ட புத்தகங்களுக்கு பின்வரும் நடவடிக்கைகள் செய்யப்படும்:"
+
+#: dialogs.py:2134
+msgid "Add Goodreads Rating to calibre"
+msgstr "காலிபரில் குட்ரெட்ஸ் மதிப்பீட்டைச் சேர்க்கவும்"
+
+#: dialogs.py:2139
+msgid "Add Goodreads Date Read to calibre"
+msgstr "குட்ரெட்ஸ் தேதியை காலிபரில் சேர்க்கவும்"
+
+#: dialogs.py:2144
+msgid "Add Goodreads Review Text to calibre"
+msgstr "குட்ரெட்ஸ் மறுஆய்வு உரையை காலிபரில் சேர்க்கவும்"
+
+#: dialogs.py:2147
+msgid ""
+"When searching calibre, if only one result is found then automatically link "
+"to it without prompting"
+msgstr ""
+"காலிபரைத் தேடும்போது, ஒரே ஒரு முடிவு மட்டுமே காணப்பட்டால், தானாகவே கேட்காமல்"
+" இணைக்கவும்"
+
+#: dialogs.py:2154
+msgid "Sync Now"
+msgstr "இப்போது ஒத்திசைக்கவும்"
+
+#: dialogs.py:2177
+msgid "For books on the <b>{0}</b> shelf:<br>"
+msgstr "<b> {0} </b> அலமாரியில் உள்ள புத்தகங்களுக்கு: <br>"
+
+#: dialogs.py:2181
+msgid "+ Add '{0}' to column '{1}'<br>"
+msgstr "+ நெடுவரிசையில் '{0}' சேர்க்கவும் '{1}' <br>"
+
+#: dialogs.py:2183
+msgid "- Remove '{0}' from column '{1}'<br>"
+msgstr "- '{0}' நெடுவரிசையிலிருந்து '{1}' <br> ஐ அகற்று"
+
+#: dialogs.py:2225
+msgid "{0}, {1} books to add"
+msgstr "{0}, {1} புத்தகங்கள்"
+
+#: dialogs.py:2296
+msgid "No calibre book linked!"
+msgstr "காலிபர் புத்தகம் எதுவும் இணைக்கப்படவில்லை!"
+
+#: dialogs.py:2344
+msgid "Add to calibre"
+msgstr "காலிபரில் சேர்க்கவும்"
+
+#: dialogs.py:2471
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored.<p><p>Are you sure you want to continue?"
+msgstr ""
+"இந்த பட்டியலில் இன்னும் காலிபருடன் இணைக்கப்படாத புத்தகங்கள் உள்ளன, அவை "
+"புறக்கணிக்கப்படும். <p> <p> நீங்கள் தொடர விரும்புகிறீர்களா?"
