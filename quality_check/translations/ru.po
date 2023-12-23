@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Victor, 2022
-# Caarmi, 2022
 # ashed <craysy@gmail.com>, 2023
+# Caarmi, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-07 20:02+1000\n"
+"POT-Creation-Date: 2023-09-12 19:47+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: ashed <craysy@gmail.com>, 2023\n"
+"Last-Translator: Caarmi, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1989,19 +1989,23 @@ msgstr "Удалить выбранные книги из исключений"
 msgid "quality check plugin:search epub dialog"
 msgstr "quality check plugin:search epub dialog"
 
-#: dialogs.py:502
+#: dialogs.py:503
 msgid "Find expression"
 msgstr "Выражение поиска"
 
-#: dialogs.py:512
+#: dialogs.py:517
+msgid "Clear search history"
+msgstr "Очистить историю поиска"
+
+#: dialogs.py:522
 msgid "&Ignore case"
 msgstr "&Игнорировать регистр"
 
-#: dialogs.py:514
+#: dialogs.py:524
 msgid "&Show all occurrences"
 msgstr "&Показать все вхождения"
 
-#: dialogs.py:515
+#: dialogs.py:525
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
@@ -2009,15 +2013,15 @@ msgstr ""
 "Если не отмечено, поиск каждого ePub прекращается после нахождения первого совпадения.\n"
 "Если отмечено, все вхождения будут отображаться в журнале, но это замедляет работу."
 
-#: dialogs.py:520
+#: dialogs.py:530
 msgid "Scope"
 msgstr "Область"
 
-#: dialogs.py:525
+#: dialogs.py:535
 msgid "&HTML content"
 msgstr "&Содержимое HTML"
 
-#: dialogs.py:526
+#: dialogs.py:536
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
@@ -2025,19 +2029,19 @@ msgstr ""
 "Искать во всех файлах содержащих html, включая любые html теги.\n"
 "Если вы также отметили параметр \"Обычный текст\", этот параметр игнорируется."
 
-#: dialogs.py:528
+#: dialogs.py:538
 msgid "&CSS/xpgt stylesheets"
 msgstr "&Таблицы стилей CSS/xpgt"
 
-#: dialogs.py:529
+#: dialogs.py:539
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr "Искать во всех таблицах стилей css или Adobe .xpgt"
 
-#: dialogs.py:530
+#: dialogs.py:540
 msgid "&Plain text content"
 msgstr "Т&екстовое содержимое"
 
-#: dialogs.py:531
+#: dialogs.py:541
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
@@ -2045,51 +2049,51 @@ msgstr ""
 "Искать body текст html-файлов со всеми вырезанными html-тегами.\n"
 "Если вы также отметили параметр HTML-контент, он будет проигнорирован в пользу этого."
 
-#: dialogs.py:533
+#: dialogs.py:543
 msgid "&OPF manifest"
 msgstr "&Манифест OPF"
 
-#: dialogs.py:534
+#: dialogs.py:544
 msgid "Search the .opf manifest file"
 msgstr "Искать файл манифеста .opf"
 
-#: dialogs.py:535
+#: dialogs.py:545
 msgid "&NCX TOC"
 msgstr "О&главление NCX"
 
-#: dialogs.py:536
+#: dialogs.py:546
 msgid "Search the NCX table of contents file"
 msgstr "Искать в файле NCX (таблице содержания)"
 
-#: dialogs.py:537
+#: dialogs.py:547
 msgid "&Zip filenames"
 msgstr "&Имена файлов в Zip"
 
-#: dialogs.py:538
+#: dialogs.py:548
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr "Искать имена файлов внутри файла ePub (zip)"
 
-#: dialogs.py:555
+#: dialogs.py:565
 msgid "No find text"
 msgstr "Нет текста для поиска"
 
-#: dialogs.py:556
+#: dialogs.py:566
 msgid "You must specify a regular expression to search for."
 msgstr "Вы должны указать регулярное выражение для поиска."
 
-#: dialogs.py:576
+#: dialogs.py:575
 msgid "No search scope"
 msgstr "Не указана область поиска"
 
-#: dialogs.py:577
+#: dialogs.py:576
 msgid "You must specify a scope for the ePub search."
 msgstr "Необходимо указать область поиска ePub."
 
-#: dialogs.py:612
+#: dialogs.py:633
 msgid "Fixing"
 msgstr "Исправление"
 
-#: dialogs.py:625
+#: dialogs.py:646
 msgid "Fix completed"
 msgstr "Исправление завершено"
 

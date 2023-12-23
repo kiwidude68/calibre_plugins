@@ -1,5 +1,10 @@
 # Quality Check Change Log
 
+## [1.13.8] - 2023-12-23
+### Added
+- New 'Check corrupt zip' feature looks for non-standard zip files (conversion may fix)
+- Tamil translation (anishprabu.t)
+
 ## [1.13.7] - 2023-09-12
 ### Added
 - Search epub dialog now has a clear history button to remove all previous searches.
@@ -10,7 +15,7 @@
 
 ## [1.13.6] - 2023-08-06
 ### Added
-- New Check ePub inside ePub feature (@un-pogaz)
+- New 'Check ePub inside' ePub feature (@un-pogaz)
 
 ## [1.13.5] - 2023-08-06
 ### Added

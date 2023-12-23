@@ -7,17 +7,17 @@
 # Piotr Strębski <strebski@gmail.com>, 2022
 # Adam Humienny <adam.humienny@gmail.com>, 2022
 # Ola Kleniewska <anyzeklove@gmail.com>, 2022
-# The Name <moje.konto+transifex@posteo.org>, 2022
 # Marek Mazurowski <marek.mazurowski@gmail.com>, 2022
 # Silatiw Witalis, 2022
 # Grant Drake, 2022
+# The Name <moje.konto+transifex@posteo.org>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-07 20:02+1000\n"
+"POT-Creation-Date: 2023-09-12 19:47+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: Grant Drake, 2022\n"
+"Last-Translator: The Name <moje.konto+transifex@posteo.org>, 2023\n"
 "Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2031,19 +2031,23 @@ msgstr "Usuń wykluczenie zaznaczonych książek"
 msgid "quality check plugin:search epub dialog"
 msgstr ""
 
-#: dialogs.py:502
+#: dialogs.py:503
 msgid "Find expression"
 msgstr "Znajdź wyrażenie"
 
-#: dialogs.py:512
+#: dialogs.py:517
+msgid "Clear search history"
+msgstr "Wyczyść historię wyszukiwania"
+
+#: dialogs.py:522
 msgid "&Ignore case"
 msgstr "&Ignoruj wielkość liter"
 
-#: dialogs.py:514
+#: dialogs.py:524
 msgid "&Show all occurrences"
 msgstr "Pokaż wszystkie wystąpienia"
 
-#: dialogs.py:515
+#: dialogs.py:525
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
@@ -2051,15 +2055,15 @@ msgstr ""
 "Jeśli nie zaznaczone, wyszukiwanie każdego ePub zostanie zatrzymane zaraz po znalezieniu pierwszego dopasowania.\n"
 "Jeśli zaznaczone, wszystkie wystąpienia będą wyświetlane w dzienniku, ale będzie działać znacznie wolniej."
 
-#: dialogs.py:520
+#: dialogs.py:530
 msgid "Scope"
 msgstr "Zakres przeszukiwania"
 
-#: dialogs.py:525
+#: dialogs.py:535
 msgid "&HTML content"
 msgstr "Zawartość HTML"
 
-#: dialogs.py:526
+#: dialogs.py:536
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
@@ -2067,19 +2071,19 @@ msgstr ""
 "Przeszukaj wszystkie pliki html, w tym wszystkie tagi html.\n"
 "Jeśli zaznaczono również opcję 'Zwykły tekst', ta opcja jest ignorowana."
 
-#: dialogs.py:528
+#: dialogs.py:538
 msgid "&CSS/xpgt stylesheets"
 msgstr "&CSS/xpgt arkusze stylów"
 
-#: dialogs.py:529
+#: dialogs.py:539
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr "Przeszukaj wszystkie pliki .css lub Adobe .xpgt stylesheets"
 
-#: dialogs.py:530
+#: dialogs.py:540
 msgid "&Plain text content"
 msgstr "Zwykły tekst"
 
-#: dialogs.py:531
+#: dialogs.py:541
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
@@ -2087,51 +2091,51 @@ msgstr ""
 "Szukaj tekstu podstawowego plików html ze wszystkimi znacznikami html.\n"
 "Jeśli zaznaczyłeś również opcję zawartości HTML, jest to ignorowane na korzyść tego wyboru."
 
-#: dialogs.py:533
+#: dialogs.py:543
 msgid "&OPF manifest"
 msgstr ""
 
-#: dialogs.py:534
+#: dialogs.py:544
 msgid "Search the .opf manifest file"
 msgstr "Szukaj w plikach manifestu .opf"
 
-#: dialogs.py:535
+#: dialogs.py:545
 msgid "&NCX TOC"
 msgstr "&NCX TOC spis treści"
 
-#: dialogs.py:536
+#: dialogs.py:546
 msgid "Search the NCX table of contents file"
 msgstr "Przeszukaj plik spisu treści NCX"
 
-#: dialogs.py:537
+#: dialogs.py:547
 msgid "&Zip filenames"
 msgstr "Pliki .zip"
 
-#: dialogs.py:538
+#: dialogs.py:548
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr "Szukaj w plikach .zip jeśli znajdują się w ePub"
 
-#: dialogs.py:555
+#: dialogs.py:565
 msgid "No find text"
 msgstr "Nie znaleziono tekstu"
 
-#: dialogs.py:556
+#: dialogs.py:566
 msgid "You must specify a regular expression to search for."
 msgstr "Wpisz ciąg znaków do wyszukania w książkach."
 
-#: dialogs.py:576
+#: dialogs.py:575
 msgid "No search scope"
 msgstr "Brak zakresu wyszukiwania"
 
-#: dialogs.py:577
+#: dialogs.py:576
 msgid "You must specify a scope for the ePub search."
 msgstr "Musisz określić zakres wyszukiwania ePub."
 
-#: dialogs.py:612
+#: dialogs.py:633
 msgid "Fixing"
 msgstr "Naprawiam"
 
-#: dialogs.py:625
+#: dialogs.py:646
 msgid "Fix completed"
 msgstr "Naprawa kompletna"
 

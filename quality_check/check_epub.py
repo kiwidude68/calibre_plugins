@@ -147,6 +147,8 @@ class EpubCheck(BaseCheck):
             self.check_epub_conversion(check_converted=True)
         elif menu_key == 'check_epub_not_converted':
             self.check_epub_conversion(check_converted=False)
+        elif menu_key == 'check_epub_corrupt_zip':
+            self.check_epub_corrupt_zip()
 
         elif menu_key == 'check_epub_no_container':
             self.check_epub_no_container()
@@ -968,6 +970,28 @@ class EpubCheck(BaseCheck):
         self.check_all_files(evaluate_book,
                              no_match_msg=msg, marked_text=marked_text,
                              status_msg_type=_('ePub books for calibre conversions'))
+
+
+    def check_epub_corrupt_zip(self):
+
+        def evaluate_book(book_id, db):
+            path_to_book = db.format_abspath(book_id, 'EPUB', index_is_id=True)
+            if not path_to_book:
+                self.log.error('ERROR: EPUB format is missing: ', get_title_authors_text(db, book_id))
+                return False
+            try:
+                with ZipFile(path_to_book, 'r') as zf:
+                    return False
+
+            except InvalidEpub:
+                return True
+            except:
+                return True
+
+        self.check_all_files(evaluate_book,
+                             no_match_msg=_('All searched ePub books have a valid zip format'),
+                             marked_text='epub_corrupt_zip',
+                             status_msg_type=_('ePub books for corrupted zip format'))
 
 
     def check_epub_no_container(self):

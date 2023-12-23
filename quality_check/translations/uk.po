@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-07 20:02+1000\n"
+"POT-Creation-Date: 2023-09-12 19:47+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2023\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
@@ -1998,19 +1998,23 @@ msgstr "Вилучити позначені книги з виключень"
 msgid "quality check plugin:search epub dialog"
 msgstr "вікно plugin:search epub перевірки якості"
 
-#: dialogs.py:502
+#: dialogs.py:503
 msgid "Find expression"
 msgstr "Знайти вираз"
 
-#: dialogs.py:512
+#: dialogs.py:517
+msgid "Clear search history"
+msgstr "Спорожнити журнал пошуку"
+
+#: dialogs.py:522
 msgid "&Ignore case"
 msgstr "&Без врахування регістру"
 
-#: dialogs.py:514
+#: dialogs.py:524
 msgid "&Show all occurrences"
 msgstr "&Шукати усі повторення"
 
-#: dialogs.py:515
+#: dialogs.py:525
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
@@ -2018,15 +2022,15 @@ msgstr ""
 "Якщо не позначено, пошук в усіх ePub буде зупинено, щойно буде виявлено перший відповідник.\n"
 "Якщо позначено, у журналі буде показано усі відповідники, але обробка триватиме довше."
 
-#: dialogs.py:520
+#: dialogs.py:530
 msgid "Scope"
 msgstr "Область"
 
-#: dialogs.py:525
+#: dialogs.py:535
 msgid "&HTML content"
 msgstr "В&міст HTML"
 
-#: dialogs.py:526
+#: dialogs.py:536
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
@@ -2034,19 +2038,19 @@ msgstr ""
 "Шукати в усіх файлах вмісту HTML, зокрема у будь-яких теґах HTML.\n"
 "Якщо вами позначено пункт простого текстового вмісту, цей пункт буде проігноровано."
 
-#: dialogs.py:528
+#: dialogs.py:538
 msgid "&CSS/xpgt stylesheets"
 msgstr "&Таблиці стилів CSS/xpgt"
 
-#: dialogs.py:529
+#: dialogs.py:539
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr "Шукати усі таблиці стилів .xpgt css або Adobe"
 
-#: dialogs.py:530
+#: dialogs.py:540
 msgid "&Plain text content"
 msgstr "З&вичайний текстовий вміст"
 
-#: dialogs.py:531
+#: dialogs.py:541
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
@@ -2054,51 +2058,51 @@ msgstr ""
 "Шукати у тексті тіла (body) файлів HTML із вилученням усіх теґів HTML.\n"
 "Якщо вами також позначено пункт вмісту HTML, його буде проігноровано і використано цей пункт."
 
-#: dialogs.py:533
+#: dialogs.py:543
 msgid "&OPF manifest"
 msgstr "М&аніфест OPF"
 
-#: dialogs.py:534
+#: dialogs.py:544
 msgid "Search the .opf manifest file"
 msgstr "Шукати файл маніфесту .opf"
 
-#: dialogs.py:535
+#: dialogs.py:545
 msgid "&NCX TOC"
 msgstr "З&міст NCX"
 
-#: dialogs.py:536
+#: dialogs.py:546
 msgid "Search the NCX table of contents file"
 msgstr "Шукати файл таблиці змісту NCX"
 
-#: dialogs.py:537
+#: dialogs.py:547
 msgid "&Zip filenames"
 msgstr "&Назви файлів у zip"
 
-#: dialogs.py:538
+#: dialogs.py:548
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr "Шукати файли за назвами у файлі ePub (zip)"
 
-#: dialogs.py:555
+#: dialogs.py:565
 msgid "No find text"
 msgstr "Не знайдено тексту"
 
-#: dialogs.py:556
+#: dialogs.py:566
 msgid "You must specify a regular expression to search for."
 msgstr "Вам слід вказати формальний вираз для пошуку."
 
-#: dialogs.py:576
+#: dialogs.py:575
 msgid "No search scope"
 msgstr "Немає області пошуку"
 
-#: dialogs.py:577
+#: dialogs.py:576
 msgid "You must specify a scope for the ePub search."
 msgstr "Вам слід вказати область для пошуку ePub."
 
-#: dialogs.py:612
+#: dialogs.py:633
 msgid "Fixing"
 msgstr "Виправляємо"
 
-#: dialogs.py:625
+#: dialogs.py:646
 msgid "Fix completed"
 msgstr "Виправлення завершено"
 

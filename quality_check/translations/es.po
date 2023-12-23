@@ -5,15 +5,15 @@
 # Translators:
 # Darío Hereñú, 2022
 # Grant Drake, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
 # Jellby <jellby@yahoo.com>, 2023
+# Walter Paterno <walter.paterno@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-07 20:02+1000\n"
+"POT-Creation-Date: 2023-09-12 19:47+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2023\n"
+"Last-Translator: Walter Paterno <walter.paterno@gmail.com>, 2023\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2029,19 +2029,23 @@ msgstr "Eliminar los libros seleccionados de las exclusiones"
 msgid "quality check plugin:search epub dialog"
 msgstr "quality check plugin: cuadro de diálogo de búsqueda de epub"
 
-#: dialogs.py:502
+#: dialogs.py:503
 msgid "Find expression"
 msgstr "Encontrar expresión"
 
-#: dialogs.py:512
+#: dialogs.py:517
+msgid "Clear search history"
+msgstr "Limpiar historial de búsqueda"
+
+#: dialogs.py:522
 msgid "&Ignore case"
 msgstr "&Ignorar mayúsculas"
 
-#: dialogs.py:514
+#: dialogs.py:524
 msgid "&Show all occurrences"
 msgstr "Mostrar toda&s las ocurrencias"
 
-#: dialogs.py:515
+#: dialogs.py:525
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
@@ -2049,15 +2053,15 @@ msgstr ""
 "Si no se marca, la búsqueda de cada ePub se detiene tan pronto como se encuentra la primera coincidencia.\n"
 "Si está marcado, todas las ocurrencias se mostrarán en el registro, pero se ejecutará mucho más lento."
 
-#: dialogs.py:520
+#: dialogs.py:530
 msgid "Scope"
 msgstr "Alcance"
 
-#: dialogs.py:525
+#: dialogs.py:535
 msgid "&HTML content"
 msgstr "Contenido &HTML"
 
-#: dialogs.py:526
+#: dialogs.py:536
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
@@ -2065,19 +2069,19 @@ msgstr ""
 "Busque todos los archivos de contenido html, incluidas las etiquetas html.\n"
 "Si también marcó la opción Contenido de texto sin formato, esta opción se ignora."
 
-#: dialogs.py:528
+#: dialogs.py:538
 msgid "&CSS/xpgt stylesheets"
 msgstr "Hojas de estilo &CSS/xpgt"
 
-#: dialogs.py:529
+#: dialogs.py:539
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr "Buscar todas las hojas de estilo CSS o Adobe .xpgt"
 
-#: dialogs.py:530
+#: dialogs.py:540
 msgid "&Plain text content"
 msgstr "&Contenido de texto sin formato"
 
-#: dialogs.py:531
+#: dialogs.py:541
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
@@ -2085,51 +2089,51 @@ msgstr ""
 "Busque el texto del cuerpo de los archivos html con todas las etiquetas html eliminadas.\n"
 "Si también marcó la opción de contenido HTML, se ignora a favor de esto."
 
-#: dialogs.py:533
+#: dialogs.py:543
 msgid "&OPF manifest"
 msgstr "&OPF manifiesto"
 
-#: dialogs.py:534
+#: dialogs.py:544
 msgid "Search the .opf manifest file"
 msgstr "Busque el archivo de manifiesto .opf"
 
-#: dialogs.py:535
+#: dialogs.py:545
 msgid "&NCX TOC"
 msgstr "&NCX TOC"
 
-#: dialogs.py:536
+#: dialogs.py:546
 msgid "Search the NCX table of contents file"
 msgstr "Buscar en el archivo de tabla de contenido de NCX"
 
-#: dialogs.py:537
+#: dialogs.py:547
 msgid "&Zip filenames"
 msgstr "Nombres de archivo &Zip"
 
-#: dialogs.py:538
+#: dialogs.py:548
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr "Busque los nombres de archivo dentro del archivo ePub (zip)"
 
-#: dialogs.py:555
+#: dialogs.py:565
 msgid "No find text"
 msgstr "No encontrar texto"
 
-#: dialogs.py:556
+#: dialogs.py:566
 msgid "You must specify a regular expression to search for."
 msgstr "Debe especificar una expresión regular para buscar."
 
-#: dialogs.py:576
+#: dialogs.py:575
 msgid "No search scope"
 msgstr "Sin alcance de búsqueda"
 
-#: dialogs.py:577
+#: dialogs.py:576
 msgid "You must specify a scope for the ePub search."
 msgstr "Debe especificar un alcance para la búsqueda ePub."
 
-#: dialogs.py:612
+#: dialogs.py:633
 msgid "Fixing"
 msgstr "Arreglando"
 
-#: dialogs.py:625
+#: dialogs.py:646
 msgid "Fix completed"
 msgstr "Arreglo completado"
 
