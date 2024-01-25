@@ -1,9 +1,11 @@
 # Quality Check Change Log
 
-## [1.13.8] - 2023-12-23
+## [1.13.8] - 2024-01-25
 ### Added
-- New 'Check corrupt zip' feature looks for non-standard zip files (conversion may fix)
+- New 'Check corrupt zip' feature looks for non-standard zip files (conversion may fix) ([#49][i49])
 - Tamil translation (anishprabu.t)
+
+[i49]: https://github.com/kiwidude68/calibre_plugins/issues/49
 
 ## [1.13.7] - 2023-09-12
 ### Added
