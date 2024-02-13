@@ -76,90 +76,8 @@ class QueueProgressDialog(QProgressDialog):
     def do_book(self):
         book_id = self.book_ids[self.i]
         self.i += 1
-
         try:
-            done = False
-            title_author = self._getTitleAuthor(book_id)
-            book_formats = get_available_formats_for_book(self.db, book_id)
-            statistics_to_run = []
-            for statistic, col_name in self.statistics_cols_map.items():
-                if not col_name:
-                    continue
-                # Special case for the Adobe page count algorithm - requires an EPUB.
-                if statistic == cfg.STATISTIC_PAGE_COUNT and self.pages_algorithm == 2 and 'epub' not in book_formats and not self.page_count_mode == 'Download':
-                    self.warnings.append((book_id, _('ADOBE page count requires EPUB format')))
-                    continue
-                lbl = self.labels_map[col_name]
-                existing_val = self.db.get_custom(book_id, label=lbl, index_is_id=True)
-                if self.overwrite_existing or existing_val is None or existing_val == 0:
-                    statistics_to_run.append(statistic)
-
-            if not self.overwrite_existing:
-                # Since we are not forcing overwriting an existing value we need
-                # to check whether this book has an existing value in each column.
-                # No point in performing statistics if book already has values.
-                if not statistics_to_run:
-                    self.bad[book_id] = _('Book already has all statistics and overwrite is turned off')
-                    done = True
-
-            download_sources = []
-            if not done:
-                if cfg.STATISTIC_PAGE_COUNT in statistics_to_run and self.page_count_mode == 'Download':
-                    # We will be attempting to download a page count from a website.
-                    identifiers = self.db.get_identifiers(book_id, index_is_id=True)
-                    if self.download_source:
-                        identifier = identifiers.get(cfg.PAGE_DOWNLOADS[self.download_source]['id'], None)
-                        if identifier:
-                            download_sources.append((self.download_source, identifier))
-                    else:
-                        c = cfg.plugin_prefs[cfg.STORE_NAME]
-                        configured_download_sources = c.get(cfg.KEY_DOWNLOAD_SOURCES, cfg.DEFAULT_STORE_VALUES[cfg.KEY_DOWNLOAD_SOURCES])
-                        check_all_sources = c.get(cfg.KEY_CHECK_ALL_SOURCES, cfg.DEFAULT_STORE_VALUES[cfg.KEY_CHECK_ALL_SOURCES])
-                        for download_source in configured_download_sources:
-                            if download_source[1]:
-                                identifier = identifiers.get(cfg.PAGE_DOWNLOADS[download_source[0]]['id'], None)
-                                if identifier:
-                                    download_sources.append((download_source[0], identifier))
-                                    if not check_all_sources:
-                                        break
-                            
-                    if not len(download_sources):
-                        # No point in continuing with this book
-                        self.bad[book_id] = _('No identifiers for selected download sources')
-                        done = True
-                    elif len(statistics_to_run) == 1:
-                        # Since not counting anything else, we have all we need at this point to continue
-                        self.books_to_scan.append((book_id, title_author, None,
-                                                   download_sources, statistics_to_run))
-                        done = True
-
-            if not done:
-                found_format = False
-                input_formats = [f for f in self.input_order if f in book_formats]
-                for bf in input_formats:
-                    # Special case for the Adobe page count algorithm - only EPUB format can be analysed.
-                    if bf != 'epub' and cfg.STATISTIC_PAGE_COUNT in statistics_to_run and self.pages_algorithm == 2:
-                        continue
-                    if self.db.has_format(book_id, bf, index_is_id=True):
-                        self.setLabelText(_('Queueing ')+title_author)
-                        try:
-                            # Copy the book to the temp directory, using book id as filename
-                            dest_file = os.path.join(self.tdir, '%d.%s'%(book_id, bf.lower()))
-                            with open(dest_file, 'w+b') as f:
-                                self.db.copy_format_to(book_id, bf, f, index_is_id=True)
-                            self.books_to_scan.append((book_id, title_author, dest_file,
-                                                       download_sources, statistics_to_run))
-                            found_format = True
-                            print("For book '%s', using format %s" % (title_author, bf))
-                        except:
-                            traceback.print_exc()
-                            self.bad[book_id] = traceback.format_exc()
-                        # Either found a format or book is bad - stop looking through formats
-                        break
-
-                # If we didn't find a compatible format, did we absolutely need one?
-                if not found_format:
-                    self.bad[book_id] = _('No convertible format found')
+            self._prepare_book(book_id)
         except:
             traceback.print_exc()
             self.bad[book_id] = traceback.format_exc()
@@ -169,6 +87,98 @@ class QueueProgressDialog(QProgressDialog):
             return self.do_queue()
         else:
             QTimer.singleShot(0, self.do_book)
+
+    def _prepare_book(self, book_id):
+        title_author = self._getTitleAuthor(book_id)
+        book_formats = get_available_formats_for_book(self.db, book_id)
+
+        # We have a set of configured custom columns indicating the set of possible stats to run.
+        # For each of those statistics, evaluate whether it should be recalculated for this book.
+        statistics_to_run = []
+        for statistic, col_name in self.statistics_cols_map.items():
+            if not col_name:
+                continue
+            # Special case for the Adobe page count algorithm - requires an EPUB.
+            if statistic == cfg.STATISTIC_PAGE_COUNT and self.pages_algorithm == 2 and 'epub' not in book_formats \
+                and not self.page_count_mode == 'Download':
+                self.warnings.append((book_id, _('ADOBE page count requires EPUB format')))
+                continue
+            lbl = self.labels_map[col_name]
+            # If user is not overwriting existing stats and we have a value for this stat then we won't include it.
+            existing_val = self.db.get_custom(book_id, label=lbl, index_is_id=True)
+            if self.overwrite_existing or existing_val is None or existing_val == 0:
+                statistics_to_run.append(statistic)
+
+        if not self.overwrite_existing and not statistics_to_run:
+            # Since we are not forcing overwriting an existing value we need
+            # to check whether this book has an existing value in each column.
+            # No point in performing statistics if book already has values.
+            self.bad[book_id] = _('Book already has all statistics and overwrite is turned off')
+            return
+
+        download_sources = []
+        if self.page_count_mode == 'Download' and cfg.STATISTIC_PAGE_COUNT in statistics_to_run:
+            # We will be attempting to download a page count from a website.
+            identifiers = self.db.get_identifiers(book_id, index_is_id=True)
+            if self.download_source:
+                # Download from this specific website
+                identifier = identifiers.get(cfg.PAGE_DOWNLOADS[self.download_source]['id'], None)
+                if identifier:
+                    download_sources.append((self.download_source, identifier))
+            else:
+                # Attempt to download from configured websites or first that has a matching identifier.
+                c = cfg.plugin_prefs[cfg.STORE_NAME]
+                configured_download_sources = c.get(cfg.KEY_DOWNLOAD_SOURCES, cfg.DEFAULT_STORE_VALUES[cfg.KEY_DOWNLOAD_SOURCES])
+                check_all_sources = c.get(cfg.KEY_CHECK_ALL_SOURCES, cfg.DEFAULT_STORE_VALUES[cfg.KEY_CHECK_ALL_SOURCES])
+                for download_source in configured_download_sources:
+                    if download_source[1]: # Whether source is to be used
+                        identifier = identifiers.get(cfg.PAGE_DOWNLOADS[download_source[0]]['id'], None)
+                        if identifier:
+                            download_sources.append((download_source[0], identifier))
+                            if not check_all_sources:
+                                break
+            if not len(download_sources):
+                # No point in continuing with this book
+                self.warnings.append((book_id, _('No identifiers for selected download sources')))
+                return
+            if len(statistics_to_run) == 1:
+                # Since not counting anything else, we have all we need at this point to continue
+                self.books_to_scan.append((book_id, title_author, None,
+                                            download_sources, statistics_to_run))
+                return
+
+        found_format = False
+        input_formats = [f for f in self.input_order if f in book_formats]
+        for bf in input_formats:
+            # Special case for the Adobe page count algorithm - only EPUB format can be analysed.
+            if bf != 'epub' and cfg.STATISTIC_PAGE_COUNT in statistics_to_run and self.pages_algorithm == 2:
+                continue
+            if self.db.has_format(book_id, bf, index_is_id=True):
+                self.setLabelText(_('Queueing ')+title_author)
+                try:
+                    # Copy the book to the temp directory, using book id as filename
+                    dest_file = os.path.join(self.tdir, '%d.%s'%(book_id, bf.lower()))
+                    with open(dest_file, 'w+b') as f:
+                        self.db.copy_format_to(book_id, bf, f, index_is_id=True)
+                    self.books_to_scan.append((book_id, title_author, dest_file,
+                                                download_sources, statistics_to_run))
+                    found_format = True
+                    print("For book '%s', using format %s" % (title_author, bf))
+                except:
+                    traceback.print_exc()
+                    self.bad[book_id] = traceback.format_exc()
+                # Either found a format or book is bad - stop looking through formats
+                break
+
+        # If we didn't find a compatible format, did we absolutely need one?
+        # If we are doing a page count using downloads, we should still allow that to go ahead
+        if not found_format:
+            if len(download_sources) > 0:
+                self.warnings.append((book_id, _('No format found for word count, but page count download will be attempted')))
+                self.books_to_scan.append((book_id, title_author, None,
+                                            download_sources, statistics_to_run))
+            else:
+                self.bad[book_id] = _('No convertible format found')
 
     def do_queue(self):
         self.hide()

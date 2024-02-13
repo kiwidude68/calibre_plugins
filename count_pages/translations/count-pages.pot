@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:26+0100\n"
+"POT-Creation-Date: 2024-02-14 02:13+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:452
+#: ..\common\common_dialogs.py:84 config.py:453
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:101 config.py:461
+#: action.py:101 config.py:462
 msgid "&Help"
 msgstr ""
 
@@ -189,85 +189,85 @@ msgstr ""
 msgid "Paragraphs (APNX accurate)"
 msgstr ""
 
-#: config.py:121
+#: config.py:122
 msgid "Download page/word counts"
 msgstr ""
 
-#: config.py:123
+#: config.py:124
 msgid "Estimate page/word counts"
 msgstr ""
 
-#: config.py:124
+#: config.py:125
 msgid " - all sources"
 msgstr ""
 
-#: config.py:263
+#: config.py:264
 msgid "Statistics"
 msgstr ""
 
-#: config.py:264
+#: config.py:265
 msgid "Other"
 msgstr ""
 
-#: config.py:352
+#: config.py:353
 msgid "Download options:"
 msgstr ""
 
-#: config.py:367
+#: config.py:368
 msgid "Move source up (Alt+Up)"
 msgstr ""
 
-#: config.py:369
+#: config.py:370
 msgid "Alt+Up"
 msgstr ""
 
-#: config.py:373
+#: config.py:374
 msgid "Move source down (Alt+Down)"
 msgstr ""
 
-#: config.py:375
+#: config.py:376
 msgid "Alt+Down"
 msgstr ""
 
-#: config.py:379
+#: config.py:380
 msgid "Show download from all sources menu item"
 msgstr ""
 
-#: config.py:381
+#: config.py:382
 msgid ""
 "Show a menu item to attempt to download the page\n"
 "count from all active sources. Only sources for which\n"
 "the book has an id will be tried.\n"
 msgstr ""
 
-#: config.py:388
+#: config.py:389
 msgid "Try to download page count from each source"
 msgstr ""
 
-#: config.py:389
+#: config.py:390
 msgid ""
 "If this option is checked, each download source is\n"
 "tried until a page count is successfully\n"
 "fetched.\n"
 msgstr ""
 
-#: config.py:397
+#: config.py:398
 msgid "Other options:"
 msgstr ""
 
-#: config.py:403
+#: config.py:404
 msgid "&Button default:"
 msgstr ""
 
-#: config.py:404
+#: config.py:405
 msgid "If plugin is placed as a toolbar button, choose a default action when clicked on"
 msgstr ""
 
-#: config.py:415
+#: config.py:416
 msgid "Always overwrite an existing word/page count"
 msgstr ""
 
-#: config.py:416
+#: config.py:417
 msgid ""
 "Uncheck this option if you have manually populated values in\n"
 "either of your page/word custom columns, and never want the\n"
@@ -277,11 +277,11 @@ msgid ""
 "into a column and just want the zero/blank column populated."
 msgstr ""
 
-#: config.py:425
+#: config.py:426
 msgid "Update the statistics even if they have not changed"
 msgstr ""
 
-#: config.py:426
+#: config.py:427
 msgid ""
 "Check this option if you want the statistics to be updated in\n"
 "the books metadata even if they have not changed. Using this\n"
@@ -289,11 +289,11 @@ msgid ""
 "even when the statistics have not changed."
 msgstr ""
 
-#: config.py:433
+#: config.py:434
 msgid "Use Preferred Output Format if available"
 msgstr ""
 
-#: config.py:434
+#: config.py:435
 msgid ""
 "Check this option to calculate the statistics using the format selected\n"
 "as the Preferred Output Format. If this format is not found, or the\n"
@@ -303,11 +303,11 @@ msgid ""
 "Note: ePub will always be used if the ADE page count algorithm is selected."
 msgstr ""
 
-#: config.py:443
+#: config.py:444
 msgid "Prompt to save counts"
 msgstr ""
 
-#: config.py:444
+#: config.py:445
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -315,121 +315,121 @@ msgid ""
 "this book record at the same time they will be lost."
 msgstr ""
 
-#: config.py:453
+#: config.py:454
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:455
+#: config.py:456
 msgid "&Library preferences"
 msgstr ""
 
-#: config.py:456
+#: config.py:457
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
-#: config.py:472
+#: config.py:473
 msgid "Done"
 msgstr ""
 
-#: config.py:473
+#: config.py:474
 msgid "Confirmation dialogs have all been reset"
 msgstr ""
 
-#: config.py:536
+#: config.py:537
 msgid "Identifier"
 msgstr ""
 
-#: config.py:536
+#: config.py:537
 msgid "On Menu"
 msgstr ""
 
-#: config.py:536
+#: config.py:537
 msgid "Source"
 msgstr ""
 
-#: config.py:601
+#: config.py:602
 msgid "Page count options:"
 msgstr ""
 
-#: config.py:606
+#: config.py:607
 msgid "&Custom column:"
 msgstr ""
 
-#: config.py:607
+#: config.py:608
 msgid "Leave this blank if you do not want to count pages"
 msgstr ""
 
-#: config.py:616
+#: config.py:617
 msgid "&Algorithm:"
 msgstr ""
 
-#: config.py:617
+#: config.py:618
 msgid "Choose which algorithm to use if you have specified a page count column"
 msgstr ""
 
-#: config.py:626
+#: config.py:627
 msgid "C&hars per page:"
 msgstr ""
 
-#: config.py:627
+#: config.py:628
 msgid "If using the Custom algorithm, specify how many characters per page including spaces."
 msgstr ""
 
-#: config.py:637
+#: config.py:638
 msgid "Word count options:"
 msgstr ""
 
-#: config.py:641
+#: config.py:642
 msgid "C&ustom column:"
 msgstr ""
 
-#: config.py:642
+#: config.py:643
 msgid "Leave this blank if you do not want to count words"
 msgstr ""
 
-#: config.py:651
+#: config.py:652
 msgid "Use ICU algorithm"
 msgstr ""
 
-#: config.py:652
+#: config.py:653
 msgid ""
 "The ICU algorithm is a more complete word count and supports multiple locales.\n"
 "Uncheck this to use the original word count algorithm."
 msgstr ""
 
-#: config.py:660
+#: config.py:661
 msgid "Readability options:"
 msgstr ""
 
-#: config.py:665
-msgid "Readability statistics available are <a href=\"http://en.wikipedia.org/wiki/Flesch-Kincaid_readability_test\">Flesch-Kincaid</a> or <a href=\"http://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog Index</a>."
-msgstr ""
-
-#: config.py:670
-msgid "&Flesch Reading Ease:"
+#: config.py:666
+msgid "Readability statistics available are <a href=\"https://en.wikipedia.org/wiki/Flesch-Kincaid_readability_test\">Flesch-Kincaid</a> or <a href=\"https://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog Index</a>."
 msgstr ""
 
 #: config.py:671
+msgid "&Flesch Reading Ease:"
+msgstr ""
+
+#: config.py:672
 msgid ""
 "Specify the custom column to store a computed Flesch Reading Ease score.\n"
 "Leave this blank if you do not want to calculate it"
 msgstr ""
 
-#: config.py:681
+#: config.py:682
 msgid "Flesch-&Kincaid Grade:"
 msgstr ""
 
-#: config.py:682
+#: config.py:683
 msgid ""
 "Specify the custom column to store a computed Flesch-Kincaid Grade Level score.\n"
 "Leave this blank if you do not want to calculate it"
 msgstr ""
 
-#: config.py:692
+#: config.py:693
 msgid "&Gunning Fog Index:"
 msgstr ""
 
-#: config.py:693
+#: config.py:694
 msgid ""
 "Specify the custom column to store a computed Gunning Fog Index score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -447,31 +447,35 @@ msgstr ""
 msgid "Queueing books for counting statistics"
 msgstr ""
 
-#: dialogs.py:90
+#: dialogs.py:104
 msgid "ADOBE page count requires EPUB format"
 msgstr ""
 
-#: dialogs.py:102
+#: dialogs.py:116
 msgid "Book already has all statistics and overwrite is turned off"
 msgstr ""
 
-#: dialogs.py:128
+#: dialogs.py:142
 msgid "No identifiers for selected download sources"
 msgstr ""
 
-#: dialogs.py:144
+#: dialogs.py:157
 msgid "Queueing "
 msgstr ""
 
-#: dialogs.py:162
+#: dialogs.py:177
+msgid "No format found for word count, but page count download will be attempted"
+msgstr ""
+
+#: dialogs.py:181
 msgid "No convertible format found"
 msgstr ""
 
-#: dialogs.py:191
+#: dialogs.py:201
 msgid "Could not analyse some statistics in %d of %d books, for reasons shown in details below."
 msgstr ""
 
-#: dialogs.py:192
+#: dialogs.py:202
 msgid "Page/word/statistics warnings"
 msgstr ""
 

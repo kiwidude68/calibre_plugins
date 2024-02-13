@@ -1,5 +1,12 @@
 # Count Pages Change Log
 
+## [1.13.5] - 2024-02-13
+### Added
+- Finnish translation
+- Tamil translation
+### Changed
+- A download of page count for a book will still be attempted (with warning dialog) even if word count is configured but book has no formats.
+
 ## [1.13.4] - 2023-10-08
 ### Fixed
 - Identifier regex fix for databazeknih (@seeder)
