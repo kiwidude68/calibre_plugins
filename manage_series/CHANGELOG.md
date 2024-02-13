@@ -1,5 +1,12 @@
 # Manage Series Change Log
 
+## [1.5.2] - 2024-02-14
+### Added
+- Finnish translation
+- Tamil translation
+### Fixed
+- Move rows up/down could error in certain circumstances.
+
 ## [1.5.1] - 2023-04-02
 ### Added
 - Russian translation (ashed)

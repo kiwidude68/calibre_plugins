@@ -20,7 +20,7 @@ class ActionManageSeries(InterfaceActionBase):
     description             = 'A GUI for manipulating selected books into a series'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
-    version                 = (1, 5, 1)
+    version                 = (1, 5, 2)
     minimum_calibre_version = (2, 0, 0)
 
     #: This field defines the GUI plugin class that contains all the code

@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# அனிச் பிரபு தி, 2022
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-09 20:09+0100\n"
+"PO-Revision-Date: 2022-09-19 15:02+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:42
+msgid "Keyboard shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "இதற்கான விருப்பத்தேர்வுகள்:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "இந்த சொருகி அனைத்து அமைப்புகளையும் அழிக்கவும்"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை மாற்ற விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"பிற நூலகங்களில் உள்ள எந்த அமைப்புகளும் அல்லது உங்கள் காலிபர் செருகுநிரல்கள் "
+"கோப்புறையில் ஒரு JSON கோப்பில் சேமிக்கப்படாது."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "நீங்கள் பின்னர் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "அமைப்புகள் மாற்றப்பட்டன"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அமைப்புகள் மாற்றப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "தயவுசெய்து இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை அழிக்க விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "அமைப்புகள் நீக்கப்பட்டன"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"தலைப்பு படம் கிடைக்கவில்லை - இந்த சொருகி பயன்படுத்துவதற்கு முன்பு நீங்கள் "
+"காலிபரை மறுதொடக்கம் செய்ய வேண்டும்!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
+
+#: action.py:31
+msgid "Manage Series"
+msgstr "தொடரை நிர்வகிக்கவும்"
+
+#: action.py:51
+msgid "Cannot manage series"
+msgstr "தொடரை நிர்வகிக்க முடியாது"
+
+#: action.py:52
+msgid "No books selected"
+msgstr "புத்தகங்கள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: config.py:43
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
+
+#: config.py:47 dialogs.py:476
+msgid "&Help"
+msgstr "&உதவி"
+
+#: dialogs.py:57 dialogs.py:60
+msgid "Lock Series Index"
+msgstr "பூட்டு தொடர் அட்டவணை"
+
+#: dialogs.py:64
+msgid "Series index for book:"
+msgstr "புத்தகத்திற்கான தொடர் அட்டவணை:"
+
+#: dialogs.py:79
+msgid "&Assign this index value to all remaining books"
+msgstr ""
+"& மீதமுள்ள அனைத்து புத்தகங்களுக்கும் இந்த குறியீட்டு மதிப்பை ஒதுக்கவும்"
+
+#: dialogs.py:101
+msgid "You have conflicting or out of sequence series indexes"
+msgstr "உங்களிடம் முரண்பட்டது அல்லது வரிசை தொடர் குறியீடுகள் உள்ளன"
+
+#: dialogs.py:104
+msgid "Empty book added to series"
+msgstr "தொடரில் வெற்று புத்தகம் சேர்க்கப்பட்டது"
+
+#: dialogs.py:107
+msgid "The book data has been changed"
+msgstr "புத்தக தரவு மாற்றப்பட்டுள்ளது"
+
+#: dialogs.py:110
+msgid "The series data is unchanged"
+msgstr "தொடர் தரவு மாறாமல் உள்ளது"
+
+#: dialogs.py:131
+msgid "Value assigned by user"
+msgstr "பயனரால் ஒதுக்கப்பட்ட மதிப்பு"
+
+#: dialogs.py:178
+msgid "Lock old series index"
+msgstr "பழைய தொடர் குறியீட்டை பூட்டவும்"
+
+#: dialogs.py:182
+msgid "Lock series index"
+msgstr "பூட்டு தொடர் அட்டவணை"
+
+#: dialogs.py:186 dialogs.py:437
+msgid "Unlock series index"
+msgstr "தொடர் குறியீட்டைத் திறக்கவும்"
+
+#: dialogs.py:190
+msgid "Unlock all series index"
+msgstr "அனைத்து தொடர் குறியீட்டைத் திறக்கவும்"
+
+#: dialogs.py:197
+msgid "Add empty books"
+msgstr "வெற்று புத்தகங்களைச் சேர்க்கவும்"
+
+#: dialogs.py:204
+msgid "Original Series Index"
+msgstr "அசல் தொடர் அட்டவணை"
+
+#: dialogs.py:204
+msgid "Original Series Name"
+msgstr "அசல் தொடர் பெயர்"
+
+#: dialogs.py:204 dialogs.py:225
+msgid "PubDate"
+msgstr "வெளியீட்டு"
+
+#: dialogs.py:205
+msgid "Sort by"
+msgstr "வரிசைப்படுத்தவும்"
+
+#: dialogs.py:225
+msgid "Author(s)"
+msgstr "ஆசிரியர் (கள்)"
+
+#: dialogs.py:225
+msgid "New Series"
+msgstr "புதிய தொடர்"
+
+#: dialogs.py:225
+msgid "Series"
+msgstr "தொடர்"
+
+#: dialogs.py:225
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: dialogs.py:325
+msgid "Old"
+msgstr "பழைய"
+
+#: dialogs.py:328
+msgid "New"
+msgstr "புதியது"
+
+#: dialogs.py:369
+msgid "Create or Modify Series"
+msgstr "தொடரை உருவாக்கவும் அல்லது மாற்றவும்"
+
+#: dialogs.py:376
+msgid "Series &Column:"
+msgstr "தொடர் & நெடுவரிசை:"
+
+#: dialogs.py:384
+msgid "Series &Name:"
+msgstr "தொடர் & பெயர்:"
+
+#: dialogs.py:397
+msgid "&Start At:"
+msgstr "&தொடங்கும் இடம் அல்லது நேரம்:"
+
+#: dialogs.py:418
+msgid "Move book up in series (Alt+Up)"
+msgstr "தொடரில் புத்தகத்தை நகர்த்தவும் (Alt+UP)"
+
+#: dialogs.py:420
+msgid "Alt+Up"
+msgstr "Alt+up"
+
+#: dialogs.py:424
+msgid "Move book down in series (Alt+Down)"
+msgstr "தொடரில் புத்தகத்தை நகர்த்தவும் (alt+down)"
+
+#: dialogs.py:426
+msgid "Alt+Down"
+msgstr "Alt+down"
+
+#: dialogs.py:432
+msgid "Lock to index value"
+msgstr "குறியீட்டு மதிப்புக்கு பூட்டவும்"
+
+#: dialogs.py:444
+msgid "Add empty book to the series list"
+msgstr "தொடர் பட்டியலில் வெற்று புத்தகத்தைச் சேர்க்கவும்"
+
+#: dialogs.py:446
+msgid "Ctrl+Shift+E"
+msgstr "Ctrl+shift+e"
+
+#: dialogs.py:450
+msgid "Remove book from the series list"
+msgstr "தொடர் பட்டியலிலிருந்து புத்தகத்தை அகற்று"
+
+#: dialogs.py:457
+msgid "Move series index to left of decimal point (Alt+Left)"
+msgstr "தொடர் குறியீட்டை தசம புள்ளியின் இடதுபுறமாக நகர்த்தவும் (ALT+இடது)"
+
+#: dialogs.py:459
+msgid "Alt+Left"
+msgstr "Alt+இடது"
+
+#: dialogs.py:463
+msgid "Move series index to right of decimal point (Alt+Right)"
+msgstr "தொடர் குறியீட்டை தசம புள்ளியின் வலதுபுறமாக நகர்த்தவும் (Alt+வலது)"
+
+#: dialogs.py:465
+msgid "Alt+Right"
+msgstr "Alt+சரி"
+
+#: dialogs.py:474
+msgid "&Restore Original Series"
+msgstr "& அசல் தொடரை மீட்டெடுங்கள்"
+
+#: dialogs.py:633
+msgid "Unknown"
+msgstr "தெரியவில்லை"
+
+#: dialogs.py:658
+msgid "Are you sure?"
+msgstr "நீ சொல்வது உறுதியா?"
+
+#: dialogs.py:659
+msgid "Remove the selected book(s) from the series list?"
+msgstr "தொடர் பட்டியலிலிருந்து தேர்ந்தெடுக்கப்பட்ட புத்தகத்தை (களை) அகற்றவா?"

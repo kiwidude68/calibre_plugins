@@ -680,15 +680,15 @@ class SeriesDialog(SizePersistedDialog):
         rows = self.series_table.selectionModel().selectedRows()
         if len(rows) == 0:
             return
-        first_sel_row = rows[0].row()
-        if first_sel_row <= 0:
-            return
-        # Workaround for strange selection bug in Qt which "alters" the selection
-        # in certain circumstances which meant move down only worked properly "once"
         selrows = []
         for row in rows:
             selrows.append(row.row())
         selrows.sort()
+        first_sel_row = selrows[0]
+        if first_sel_row <= 0:
+            return
+        # Workaround for strange selection bug in Qt which "alters" the selection
+        # in certain circumstances which meant move down only worked properly "once"
         for selrow in selrows:
             self.series_table.swap_row_widgets(selrow - 1, selrow + 1)
             self.books[selrow-1], self.books[selrow] = self.books[selrow], self.books[selrow-1]
@@ -704,15 +704,15 @@ class SeriesDialog(SizePersistedDialog):
         rows = self.series_table.selectionModel().selectedRows()
         if len(rows) == 0:
             return
-        last_sel_row = rows[-1].row()
-        if last_sel_row == self.series_table.rowCount() - 1:
-            return
-        # Workaround for strange selection bug in Qt which "alters" the selection
-        # in certain circumstances which meant move down only worked properly "once"
         selrows = []
         for row in rows:
             selrows.append(row.row())
         selrows.sort()
+        last_sel_row = selrows[-1]
+        if last_sel_row == self.series_table.rowCount() - 1:
+            return
+        # Workaround for strange selection bug in Qt which "alters" the selection
+        # in certain circumstances which meant move down only worked properly "once"
         for selrow in reversed(selrows):
             self.series_table.swap_row_widgets(selrow + 2, selrow)
             self.books[selrow+1], self.books[selrow] = self.books[selrow], self.books[selrow+1]
