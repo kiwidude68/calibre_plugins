@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:26+0100\n"
+"POT-Creation-Date: 2024-02-14 02:13+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: Grant Drake, 2022\n"
 "Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:452
+#: ..\common\common_dialogs.py:84 config.py:453
 msgid "Keyboard shortcuts"
 msgstr "Klávesové zkratky"
 
@@ -85,20 +85,20 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgstr "&Stáhnout počet stran/slov - všechny zdroje"
 msgid "&Customize plugin"
 msgstr "&Přizpůsobit modul"
 
-#: action.py:101 config.py:461
+#: action.py:101 config.py:462
 msgid "&Help"
 msgstr ""
 
@@ -204,51 +204,51 @@ msgstr "E-book Viewer (calibre)"
 msgid "Paragraphs (APNX accurate)"
 msgstr "Odstavce (APNX přesnost)"
 
-#: config.py:121
+#: config.py:122
 msgid "Download page/word counts"
 msgstr "Stáhnout počet stran/slov"
 
-#: config.py:123
+#: config.py:124
 msgid "Estimate page/word counts"
 msgstr "Odhad počtu stran/slov"
 
-#: config.py:124
+#: config.py:125
 msgid " - all sources"
 msgstr " - všechny zroje"
 
-#: config.py:263
+#: config.py:264
 msgid "Statistics"
 msgstr "Statistiky"
 
-#: config.py:264
+#: config.py:265
 msgid "Other"
 msgstr "Ostatní"
 
-#: config.py:352
+#: config.py:353
 msgid "Download options:"
 msgstr "Nastavení stahování:"
 
-#: config.py:367
+#: config.py:368
 msgid "Move source up (Alt+Up)"
 msgstr "Posunout zdroj nahoru (Alt+Nahoru)"
 
-#: config.py:369
+#: config.py:370
 msgid "Alt+Up"
 msgstr "Alt+Nahoru"
 
-#: config.py:373
+#: config.py:374
 msgid "Move source down (Alt+Down)"
 msgstr "Posunout zdroj dolů (Alt+Dolů)"
 
-#: config.py:375
+#: config.py:376
 msgid "Alt+Down"
 msgstr "Alt+Dolů"
 
-#: config.py:379
+#: config.py:380
 msgid "Show download from all sources menu item"
 msgstr "Zobrazit stahování ze všech zdrojů v nabídce"
 
-#: config.py:381
+#: config.py:382
 msgid ""
 "Show a menu item to attempt to download the page\n"
 "count from all active sources. Only sources for which\n"
@@ -258,26 +258,26 @@ msgstr ""
 "zdrojů. Budou využity pouze ty zdroje, ke kterým má kniha přiřazený "
 "identifikátor."
 
-#: config.py:388
+#: config.py:389
 msgid "Try to download page count from each source"
 msgstr "Pokusit se stáhnout počet stran ze všech zdrojů"
 
-#: config.py:389
+#: config.py:390
 msgid ""
 "If this option is checked, each download source is\n"
 "tried until a page count is successfully\n"
 "fetched.\n"
 msgstr ""
 
-#: config.py:397
+#: config.py:398
 msgid "Other options:"
 msgstr "Další možnosti:"
 
-#: config.py:403
+#: config.py:404
 msgid "&Button default:"
 msgstr "&Výchozí akce tlačítka:"
 
-#: config.py:404
+#: config.py:405
 msgid ""
 "If plugin is placed as a toolbar button, choose a default action when "
 "clicked on"
@@ -285,11 +285,11 @@ msgstr ""
 "Pokud je modul umístěn jako tlačítko v liště, vyberte výchozí akci, kterou "
 "modul vykoná kliknutím na tlačítko"
 
-#: config.py:415
+#: config.py:416
 msgid "Always overwrite an existing word/page count"
 msgstr "Vždy přepsat existující počet stran/slov"
 
-#: config.py:416
+#: config.py:417
 msgid ""
 "Uncheck this option if you have manually populated values in\n"
 "either of your page/word custom columns, and never want the\n"
@@ -301,11 +301,11 @@ msgstr ""
 "Nezaškrtávejte tuto možnost, pokud chcete hodnoty zadávat manuálně a "
 "nechcete je přepisovat."
 
-#: config.py:425
+#: config.py:426
 msgid "Update the statistics even if they have not changed"
 msgstr "Aktualizovat statistiky i když zůstaly stejné"
 
-#: config.py:426
+#: config.py:427
 msgid ""
 "Check this option if you want the statistics to be updated in\n"
 "the books metadata even if they have not changed. Using this\n"
@@ -316,11 +316,11 @@ msgstr ""
 "přesto, že se nezměnily. Časové razítko 'Změněno' se vám při každém zápisu "
 "aktualizuje i když se statistiky nezmění."
 
-#: config.py:433
+#: config.py:434
 msgid "Use Preferred Output Format if available"
 msgstr "Použít upřednostěný výstupní formát, pokud je to možné"
 
-#: config.py:434
+#: config.py:435
 msgid ""
 "Check this option to calculate the statistics using the format selected\n"
 "as the Preferred Output Format. If this format is not found, or the\n"
@@ -332,11 +332,11 @@ msgstr ""
 "Zaškrtněte tuto možnost, pokud chcete počítat statistiky s využitím Upřednostňovaného výstupního formátu. Pokud není tento formát nalezen nebo není tato možnost zaškrtnuta, bude použit první formát ze seznamu Upřednostňovaných výstupních formátů. Upřednostňované výstupní a vstupní formáty se nastavují v Předvolbách v záložce Chování.\n"
 "Poznámka: ePub se použije vždy při použití algoritmu ADE pro počítání stran."
 
-#: config.py:443
+#: config.py:444
 msgid "Prompt to save counts"
 msgstr "Vynutit ukládání počtů"
 
-#: config.py:444
+#: config.py:445
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -347,64 +347,64 @@ msgstr ""
 "oken. Pokud necháte možnost nezaškrtnutou, je zde malé riziko, že když "
 "provedete změny v záznamu knihy ve stejný čas, mohou být ztraceny."
 
-#: config.py:453
+#: config.py:454
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Upravit klávesové zkratky spojené s tímto modulem"
 
-#: config.py:455
+#: config.py:456
 msgid "&Library preferences"
 msgstr ""
 
-#: config.py:456
+#: config.py:457
 msgid "View data stored in the library database for this plugin"
 msgstr "Zobrazit data tohoto modulu uložená v databázi"
 
-#: config.py:472
+#: config.py:473
 msgid "Done"
 msgstr "Hotovo"
 
-#: config.py:473
+#: config.py:474
 msgid "Confirmation dialogs have all been reset"
 msgstr "Potvrzovací okna byla restartována"
 
-#: config.py:536
+#: config.py:537
 msgid "Identifier"
 msgstr "Identifikátor"
 
-#: config.py:536
+#: config.py:537
 msgid "On Menu"
 msgstr "V rozbalovací nabídce"
 
-#: config.py:536
+#: config.py:537
 msgid "Source"
 msgstr "Zdroj"
 
-#: config.py:601
+#: config.py:602
 msgid "Page count options:"
 msgstr "Nastavení počítání stran:"
 
-#: config.py:606
+#: config.py:607
 msgid "&Custom column:"
 msgstr "&Vlastní sloupec:"
 
-#: config.py:607
+#: config.py:608
 msgid "Leave this blank if you do not want to count pages"
 msgstr "Nechte prázdné, pokud nechcete počítat stránky"
 
-#: config.py:616
+#: config.py:617
 msgid "&Algorithm:"
 msgstr "&Algoritmus:"
 
-#: config.py:617
+#: config.py:618
 msgid ""
 "Choose which algorithm to use if you have specified a page count column"
 msgstr "Vyberte si, který algoritmus chcete používat pro počítání stran"
 
-#: config.py:626
+#: config.py:627
 msgid "C&hars per page:"
 msgstr "Z&naků na stránku:"
 
-#: config.py:627
+#: config.py:628
 msgid ""
 "If using the Custom algorithm, specify how many characters per page "
 "including spaces."
@@ -412,23 +412,23 @@ msgstr ""
 "Pokud používáte Vlastní algoritmus, určete kolik znaků se vejde na stránku "
 "včetně mezer."
 
-#: config.py:637
+#: config.py:638
 msgid "Word count options:"
 msgstr "Nastavení počítání slov:"
 
-#: config.py:641
+#: config.py:642
 msgid "C&ustom column:"
 msgstr "V&lastní sloupec:"
 
-#: config.py:642
+#: config.py:643
 msgid "Leave this blank if you do not want to count words"
 msgstr "Nechte prázdné, pokud nechcete počítat slova"
 
-#: config.py:651
+#: config.py:652
 msgid "Use ICU algorithm"
 msgstr "Použít algoritmus ICU"
 
-#: config.py:652
+#: config.py:653
 msgid ""
 "The ICU algorithm is a more complete word count and supports multiple locales.\n"
 "Uncheck this to use the original word count algorithm."
@@ -436,24 +436,24 @@ msgstr ""
 "Algoritmus ICU počítá slova přesněji.\n"
 "Nezaškrtávejte, pokud chcete použít originální algoritmus pro počítání slov."
 
-#: config.py:660
+#: config.py:661
 msgid "Readability options:"
 msgstr "Nastavení schopnosti čtení:"
 
-#: config.py:665
+#: config.py:666
 msgid ""
 "Readability statistics available are <a "
-"href=\"http://en.wikipedia.org/wiki/Flesch-"
+"href=\"https://en.wikipedia.org/wiki/Flesch-"
 "Kincaid_readability_test\">Flesch-Kincaid</a> or <a "
-"href=\"http://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog "
+"href=\"https://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog "
 "Index</a>."
 msgstr ""
 
-#: config.py:670
+#: config.py:671
 msgid "&Flesch Reading Ease:"
 msgstr "&Flesch Reading Ease:"
 
-#: config.py:671
+#: config.py:672
 msgid ""
 "Specify the custom column to store a computed Flesch Reading Ease score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -461,11 +461,11 @@ msgstr ""
 "Určete vlastní sloupec pro ukládání Flesch Reading Ease skóre.\n"
 "Nechte prázdné, pokud toto nechcete počítat"
 
-#: config.py:681
+#: config.py:682
 msgid "Flesch-&Kincaid Grade:"
 msgstr "Flesch-&Kincaid Grade:"
 
-#: config.py:682
+#: config.py:683
 msgid ""
 "Specify the custom column to store a computed Flesch-Kincaid Grade Level score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -473,11 +473,11 @@ msgstr ""
 "Určete vlastní sloupec pro ukládání Flesch-Kincaid Grade Level skóre.\n"
 "Nechte prázdné, pokud toto nechcete počítat"
 
-#: config.py:692
+#: config.py:693
 msgid "&Gunning Fog Index:"
 msgstr "&Gunning Fog Index:"
 
-#: config.py:693
+#: config.py:694
 msgid ""
 "Specify the custom column to store a computed Gunning Fog Index score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -497,27 +497,32 @@ msgstr "Pracuji"
 msgid "Queueing books for counting statistics"
 msgstr "Knihy čekají ve frontě na počítání statistik"
 
-#: dialogs.py:90
+#: dialogs.py:104
 msgid "ADOBE page count requires EPUB format"
 msgstr "Pro počítání stran pomocí ADOBE potřebujete mít knihu ve formátu EPUB"
 
-#: dialogs.py:102
+#: dialogs.py:116
 msgid "Book already has all statistics and overwrite is turned off"
 msgstr "Kniha již obsahuje veškeré statistiky a přepisování je vypnuto"
 
-#: dialogs.py:128
+#: dialogs.py:142
 msgid "No identifiers for selected download sources"
 msgstr "Nenalezen identifikátor pro vybrané zdroje"
 
-#: dialogs.py:144
+#: dialogs.py:157
 msgid "Queueing "
 msgstr "Ve frontě"
 
-#: dialogs.py:162
+#: dialogs.py:177
+msgid ""
+"No format found for word count, but page count download will be attempted"
+msgstr ""
+
+#: dialogs.py:181
 msgid "No convertible format found"
 msgstr "Nenalezen podporovaný formát"
 
-#: dialogs.py:191
+#: dialogs.py:201
 msgid ""
 "Could not analyse some statistics in %d of %d books, for reasons shown in "
 "details below."
@@ -525,6 +530,6 @@ msgstr ""
 "Z důvodů uvedených níže nešla provést analýza některých statistik v %d z %d "
 "knih."
 
-#: dialogs.py:192
+#: dialogs.py:202
 msgid "Page/word/statistics warnings"
 msgstr "Varování stran/slov/statistik."

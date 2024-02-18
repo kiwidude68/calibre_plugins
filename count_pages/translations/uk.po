@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Andrii M. <dexteritymaster@gmail.com>, 2022
-# Yuri Chornoivan <yurchor@ukr.net>, 2022
+# Yuri Chornoivan <yurchor@ukr.net>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:26+0100\n"
+"POT-Creation-Date: 2024-02-14 02:13+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2024\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:452
+#: ..\common\common_dialogs.py:84 config.py:453
 msgid "Keyboard shortcuts"
 msgstr "Клавіатурні скорочення"
 
@@ -92,22 +92,22 @@ msgstr "Всі налаштування для цього плагіну в ці
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Невизначено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Потрібен перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
 " користуватися цим додатком!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
@@ -135,7 +135,7 @@ msgstr "&Отримати кількість сторінок або слів �
 msgid "&Customize plugin"
 msgstr "&Налаштувати додаток"
 
-#: action.py:101 config.py:461
+#: action.py:101 config.py:462
 msgid "&Help"
 msgstr "&Довідка"
 
@@ -215,51 +215,51 @@ msgstr "Переглядач електронних книг (calibre)"
 msgid "Paragraphs (APNX accurate)"
 msgstr "Абзаци (точний APNX)"
 
-#: config.py:121
+#: config.py:122
 msgid "Download page/word counts"
 msgstr "Отримати дані обліку сторінок або слів"
 
-#: config.py:123
+#: config.py:124
 msgid "Estimate page/word counts"
 msgstr "Оцінити кількість сторінок або слів"
 
-#: config.py:124
+#: config.py:125
 msgid " - all sources"
 msgstr "– усі джерела"
 
-#: config.py:263
+#: config.py:264
 msgid "Statistics"
 msgstr "Дані"
 
-#: config.py:264
+#: config.py:265
 msgid "Other"
 msgstr "Інше"
 
-#: config.py:352
+#: config.py:353
 msgid "Download options:"
 msgstr "Параметри отримання:"
 
-#: config.py:367
+#: config.py:368
 msgid "Move source up (Alt+Up)"
 msgstr "Пересунути джерело вище (Alt+↑)"
 
-#: config.py:369
+#: config.py:370
 msgid "Alt+Up"
 msgstr "Alt+↑"
 
-#: config.py:373
+#: config.py:374
 msgid "Move source down (Alt+Down)"
 msgstr "Пересунути джерело нижче (Alt+↓)"
 
-#: config.py:375
+#: config.py:376
 msgid "Alt+Down"
 msgstr "Alt+↓"
 
-#: config.py:379
+#: config.py:380
 msgid "Show download from all sources menu item"
 msgstr "Показати пункт меню отримання з усіх джерел"
 
-#: config.py:381
+#: config.py:382
 msgid ""
 "Show a menu item to attempt to download the page\n"
 "count from all active sources. Only sources for which\n"
@@ -269,11 +269,11 @@ msgstr ""
 "з усіх активних джерел. Спробу буде здійснено лише для джерел,\n"
 "де у книги є ідентифікатор.\n"
 
-#: config.py:388
+#: config.py:389
 msgid "Try to download page count from each source"
 msgstr "Спробувати отримати кількість сторінок з кожного джерела"
 
-#: config.py:389
+#: config.py:390
 msgid ""
 "If this option is checked, each download source is\n"
 "tried until a page count is successfully\n"
@@ -283,15 +283,15 @@ msgstr ""
 "отримати дані з кожного джерела, аж доки не отримає\n"
 "успішно кількість сторінок.\n"
 
-#: config.py:397
+#: config.py:398
 msgid "Other options:"
 msgstr "Інші параметри:"
 
-#: config.py:403
+#: config.py:404
 msgid "&Button default:"
 msgstr "Типова дія &кнопки"
 
-#: config.py:404
+#: config.py:405
 msgid ""
 "If plugin is placed as a toolbar button, choose a default action when "
 "clicked on"
@@ -299,11 +299,11 @@ msgstr ""
 "Якщо для додатка створено кнопку панелі інструментів, вибір типової дії при "
 "натисканні кнопки"
 
-#: config.py:415
+#: config.py:416
 msgid "Always overwrite an existing word/page count"
 msgstr "Завжди перезаписувати наявні кількості слів та сторінок"
 
-#: config.py:416
+#: config.py:417
 msgid ""
 "Uncheck this option if you have manually populated values in\n"
 "either of your page/word custom columns, and never want the\n"
@@ -319,11 +319,11 @@ msgstr ""
 "пунктів кількості сторінок і слів, але у деяких книг вже є значення у "
 "стовпчику, і потрібно занулити або спорожнити заповнені стовпчики."
 
-#: config.py:425
+#: config.py:426
 msgid "Update the statistics even if they have not changed"
 msgstr "Оновлювати дані, навіть якщо їх не змінено"
 
-#: config.py:426
+#: config.py:427
 msgid ""
 "Check this option if you want the statistics to be updated in\n"
 "the books metadata even if they have not changed. Using this\n"
@@ -335,11 +335,11 @@ msgstr ""
 "оновлювати змінену часову позначку для книги, навіть якщо статистичні дані "
 "не було змніено."
 
-#: config.py:433
+#: config.py:434
 msgid "Use Preferred Output Format if available"
 msgstr "Використовувати бажаний формат виведення, якщо доступний"
 
-#: config.py:434
+#: config.py:435
 msgid ""
 "Check this option to calculate the statistics using the format selected\n"
 "as the Preferred Output Format. If this format is not found, or the\n"
@@ -351,11 +351,11 @@ msgstr ""
 "Позначте цей пункт для обчислення статистичних даних з використанням формату, який вибрано як бажаний формат виведення. Якщо дані у цьому форматі не буде знайдено або пункт не позначено, буде використано перший з форматів у списку бажаних форматів вхідних даних. Параметри бажаного виведення та введення визначаються на сторінці «Поведінка» налаштувань calibre.\n"
 "Зауваження: якщо вибрано алгоритм обчислення кількості сторінок ADE, завжди буде використано ePub."
 
-#: config.py:443
+#: config.py:444
 msgid "Prompt to save counts"
 msgstr "Питати про збереження обліку"
 
-#: config.py:444
+#: config.py:445
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -367,67 +367,67 @@ msgstr ""
 "ризик втрати інших змін, які програма може записувати одночасно із внесенням"
 " змін до цього запису книги."
 
-#: config.py:453
+#: config.py:454
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 "Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
 
-#: config.py:455
+#: config.py:456
 msgid "&Library preferences"
 msgstr "Налаштування &бібліотеки"
 
-#: config.py:456
+#: config.py:457
 msgid "View data stored in the library database for this plugin"
 msgstr "Переглянути дані, збережені у базі даних бібліотеки для цього додатка"
 
-#: config.py:472
+#: config.py:473
 msgid "Done"
 msgstr "Виконано"
 
-#: config.py:473
+#: config.py:474
 msgid "Confirmation dialogs have all been reset"
 msgstr "Показ діалогових вікон підтвердження відновлено"
 
-#: config.py:536
+#: config.py:537
 msgid "Identifier"
 msgstr "Ідентифікатор"
 
-#: config.py:536
+#: config.py:537
 msgid "On Menu"
 msgstr "У меню"
 
-#: config.py:536
+#: config.py:537
 msgid "Source"
 msgstr "Джерело"
 
-#: config.py:601
+#: config.py:602
 msgid "Page count options:"
 msgstr "Параметри кількості сторінок:"
 
-#: config.py:606
+#: config.py:607
 msgid "&Custom column:"
 msgstr "&Нетиповий стовпчик:"
 
-#: config.py:607
+#: config.py:608
 msgid "Leave this blank if you do not want to count pages"
 msgstr "Не заповнюйте, якщо не хочете лічити сторінки"
 
-#: config.py:616
+#: config.py:617
 msgid "&Algorithm:"
 msgstr "&Алгоритм:"
 
-#: config.py:617
+#: config.py:618
 msgid ""
 "Choose which algorithm to use if you have specified a page count column"
 msgstr ""
 "Вибір алгоритму, який буде використано, якщо вами вказано стовпчик кількості"
 " сторінок"
 
-#: config.py:626
+#: config.py:627
 msgid "C&hars per page:"
 msgstr "С&имволів на сторінку:"
 
-#: config.py:627
+#: config.py:628
 msgid ""
 "If using the Custom algorithm, specify how many characters per page "
 "including spaces."
@@ -435,23 +435,23 @@ msgstr ""
 "Якщо використано алгоритм «Нетиповий», визначення кількості символів на "
 "сторінку, включно з пробілами."
 
-#: config.py:637
+#: config.py:638
 msgid "Word count options:"
 msgstr "Параметри кількості слів:"
 
-#: config.py:641
+#: config.py:642
 msgid "C&ustom column:"
 msgstr "Н&етиповий стовпчик:"
 
-#: config.py:642
+#: config.py:643
 msgid "Leave this blank if you do not want to count words"
 msgstr "Не заповнюйте, якщо не хочете лічити слова"
 
-#: config.py:651
+#: config.py:652
 msgid "Use ICU algorithm"
 msgstr "Використати алгоритм ICU"
 
-#: config.py:652
+#: config.py:653
 msgid ""
 "The ICU algorithm is a more complete word count and supports multiple locales.\n"
 "Uncheck this to use the original word count algorithm."
@@ -459,29 +459,29 @@ msgstr ""
 "Алгоритм ICU є повнішим обліком слів із підтримкою декількох локалей.\n"
 "Зніміть позначку з цього пункту, щоб скористатися початковим алгоритмом обліку слів."
 
-#: config.py:660
+#: config.py:661
 msgid "Readability options:"
 msgstr "Параметри зручності:"
 
-#: config.py:665
+#: config.py:666
 msgid ""
 "Readability statistics available are <a "
-"href=\"http://en.wikipedia.org/wiki/Flesch-"
+"href=\"https://en.wikipedia.org/wiki/Flesch-"
 "Kincaid_readability_test\">Flesch-Kincaid</a> or <a "
-"href=\"http://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog "
+"href=\"https://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog "
 "Index</a>."
 msgstr ""
 "Індекс зручності читання доступний у форматі <a "
-"href=\"http://en.wikipedia.org/wiki/Flesch-Kincaid_readability_test\">Флеша-"
-"Кінкейда</a> або <a "
-"href=\"http://en.wikipedia.org/wiki/Gunning_fog_index\">індексу туманності "
+"href=\"https://en.wikipedia.org/wiki/Flesch-"
+"Kincaid_readability_test\">Флеша-Кінкейда</a> або <a "
+"href=\"https://en.wikipedia.org/wiki/Gunning_fog_index\">індексу туманності "
 "Ґаннінґа</a>."
 
-#: config.py:670
+#: config.py:671
 msgid "&Flesch Reading Ease:"
 msgstr "Простота читання за &Флешем:"
 
-#: config.py:671
+#: config.py:672
 msgid ""
 "Specify the custom column to store a computed Flesch Reading Ease score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -489,11 +489,11 @@ msgstr ""
 "Вкажіть нетиповий стовпчик для зберігання обчисленого значення простоти читання за Флешем.\n"
 "Не заповнюйте, якщо обчислення цього значення не потрібне."
 
-#: config.py:681
+#: config.py:682
 msgid "Flesch-&Kincaid Grade:"
 msgstr "І&ндекст Флеша-Кінкейда:"
 
-#: config.py:682
+#: config.py:683
 msgid ""
 "Specify the custom column to store a computed Flesch-Kincaid Grade Level score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -501,11 +501,11 @@ msgstr ""
 "Вкажіть нетиповий стовпчик для зберігання обчисленого індекса Флеша-Кінкейда.\n"
 "Не заповнюйте, якщо обчислення цього значення не потрібне."
 
-#: config.py:692
+#: config.py:693
 msgid "&Gunning Fog Index:"
 msgstr "Індекс туманності &Ґаннінґа:"
 
-#: config.py:693
+#: config.py:694
 msgid ""
 "Specify the custom column to store a computed Gunning Fog Index score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -525,27 +525,34 @@ msgstr "Обробляємо"
 msgid "Queueing books for counting statistics"
 msgstr "Створення черги книг для обчислення статистики"
 
-#: dialogs.py:90
+#: dialogs.py:104
 msgid "ADOBE page count requires EPUB format"
 msgstr "Для обчислення кількості сторінок ADOBE потрібен формат EPUB"
 
-#: dialogs.py:102
+#: dialogs.py:116
 msgid "Book already has all statistics and overwrite is turned off"
 msgstr "Для книги вже визначено усі статистичні дані, і перезапис вимкнено"
 
-#: dialogs.py:128
+#: dialogs.py:142
 msgid "No identifiers for selected download sources"
 msgstr "Немає ідентифікаторів для вибраних джерел отримання даних"
 
-#: dialogs.py:144
+#: dialogs.py:157
 msgid "Queueing "
 msgstr "Черга"
 
-#: dialogs.py:162
+#: dialogs.py:177
+msgid ""
+"No format found for word count, but page count download will be attempted"
+msgstr ""
+"Не знайдено формату для кількості слів, але буде здійснено спробу отримати "
+"дані щодо кількості сторінок"
+
+#: dialogs.py:181
 msgid "No convertible format found"
 msgstr "Не знайдено придатного до перетворення формату"
 
-#: dialogs.py:191
+#: dialogs.py:201
 msgid ""
 "Could not analyse some statistics in %d of %d books, for reasons shown in "
 "details below."
@@ -553,6 +560,6 @@ msgstr ""
 "Не вдалося проаналізувати деякі дані у %d з %d книг з причин, які наведено у"
 " подробицях нижче."
 
-#: dialogs.py:192
+#: dialogs.py:202
 msgid "Page/word/statistics warnings"
 msgstr "Попередження щодо сторінок, слів та статистики"
