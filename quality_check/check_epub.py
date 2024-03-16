@@ -26,7 +26,7 @@ from calibre.ebooks.conversion.preprocess import HTMLPreProcessor
 from calibre.ebooks.metadata.epub import Encryption
 from calibre.ebooks.oeb.base import XPath
 from calibre.ebooks.oeb.parse_utils import RECOVER_PARSER, NotHTML, parse_html
-from calibre.utils.zipfile import ZipFile
+from calibre.utils.zipfile import ZipFile, BadZipfile
 
 from calibre_plugins.quality_check.check_base import BaseCheck
 from calibre_plugins.quality_check.dialogs import SearchEpubDialog
@@ -981,9 +981,13 @@ class EpubCheck(BaseCheck):
                 return False
             try:
                 with ZipFile(path_to_book, 'r') as zf:
+                    for e in zf.namelist():
+                        zf.read(e)
                     return False
 
             except InvalidEpub:
+                return True
+            except BadZipfile:
                 return True
             except:
                 return True
