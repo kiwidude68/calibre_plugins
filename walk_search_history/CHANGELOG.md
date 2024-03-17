@@ -1,5 +1,11 @@
 # Walk Search History Change Log
 
+## [1.5.4] - 2024-03-17
+### Added
+- Dutch translation
+- Tamil translation
+- Turkish translation
+
 ## [1.5.3] - 2022-11-07
 ### Changed
 - When empty searches occur (e.g. switch virtual library, clear search) remove any history forward of the current position.

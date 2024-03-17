@@ -3,7 +3,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Андрій М. <dexteritymaster@gmail.com>, 2022
+# Andrii M. <dexteritymaster@gmail.com>, 2022
 # Yuri Chornoivan <yurchor@ukr.net>, 2022
 # 
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2022-10-10 21:20+0100\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
-"Language-Team: Ukrainian (https://www.transifex.com/calibre/teams/19337/uk/)\n"
+"Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

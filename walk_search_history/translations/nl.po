@@ -3,175 +3,176 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Paulo_Neto <layoutbr@lexxa.com.br>, 2022
-# Wagner Marques <wagnermarques00@hotmail.com>, 2022
-# Cm Fy, 2022
+# peter <luc@ditbenik.be>, 2022
+# Mario Moens <marimo.it4u@gmail.com>, 2022
+# W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2022
+# M. de Boer <de.boer.melle@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-10 21:20+0100\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
-"Last-Translator: Cm Fy, 2022\n"
-"Language-Team: Portuguese (Brazil) (https://app.transifex.com/calibre/teams/19337/pt_BR/)\n"
+"Last-Translator: M. de Boer <de.boer.melle@gmail.com>, 2023\n"
+"Language-Team: Dutch (https://app.transifex.com/calibre/teams/19337/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: pt_BR\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:88
 msgid "Keyboard shortcuts"
-msgstr "Atalhos do teclado"
+msgstr "Sneltoetsen"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reinicie o calibre agora"
+msgstr "Calibre nu herstarten"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferências para:"
+msgstr "Voorkeuren voor: "
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpar"
+msgstr "Wis"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Limpar todas as configurações para este plugin"
+msgstr "Wis alle instellingen van deze plugin"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Tem certeza que deseja modificar suas configurações nesta biblioteca para "
-"este plugin?"
+"Weet u zeker dat u uw instellingen in deze bibliotheek voor deze plug-in "
+"wilt wijzigen?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Qualquer configuração em outras bibliotecas ou armazenadas em um arquivo "
-"JSON na pasta dos seus plugins do calibre não serão tocadas."
+"Instellingen in andere bibliotheken of opgeslagen in een JSON-bestand in uw "
+"Calibre plugins-folder worden niet aangeroerd."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Você precisa reiniciar o calibre depois disso."
+msgstr "U dient calibre achteraf te herstarten."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configurações modificadas"
+msgstr "Instellingen gewijzigd"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "As configurações para este plugin nesta biblioteca foram modificadas."
+msgstr "Instellingen voor deze plug-in in deze bibliotheek zijn gewijzigd."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie o calibre agora."
+msgstr "Herstart calibre nu alstublieft."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Você tem certeza que deseja limpar as configurações em sua biblioteca para "
-"este plugin?"
+"Bent u zeker dat u uw instellingen in deze bibliotheek voor deze "
+"invoegtoepassing/plugin wilt wissen?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configurações removidas"
+msgstr "Instellingen verwijderd"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Todas as configurações deste plugin nesta biblioteca foram limpas."
+msgstr "Alle instellingen voor de plugin in deze bibliotheek zijn gewist."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar para a área de transferência"
+msgstr "Kopieer naar klembord"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Não definido"
+msgstr "Niet gedefinieerd"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Reinicialização requerida"
+msgstr "Opnieuw opstarten vereist"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Imagem do título não encontrada - você deve reiniciar o Calbre antes de "
-"utilizar este plugin!"
+"Titelafbeelding niet gevonden - u moet Calibre opnieuw opstarten voordat u "
+"deze plug-in gebruikt!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Criar nova coluna"
+msgstr "Nieuwe kolom maken"
 
 #: action.py:34
 msgid "History"
-msgstr "Histórico"
+msgstr "Geschiedenis"
 
 #: action.py:88
 msgid "Goto previous"
-msgstr "Anterior"
+msgstr "Ga naar vorige"
 
 #: action.py:90
 msgid "Goto next"
-msgstr "Seguinte"
+msgstr "Ga naar volgende"
 
 #: action.py:109
 msgid "Clear search history"
-msgstr "Limpar histórico de busca"
+msgstr "Zoekhistoriek wissen"
 
 #: action.py:112
 msgid "&Customize plugin"
-msgstr "Customizar plugin"
+msgstr "&Plug-in aanpassen"
 
 #: action.py:114 config.py:93
 msgid "&Help"
-msgstr "Ajuda"
+msgstr "&Help"
 
 #: action.py:191
 msgid "Are you sure?"
-msgstr "Tem certeza?"
+msgstr "Bent u zeker?"
 
 #: action.py:192
 msgid "Are you sure you want to clear the search history?"
-msgstr "Tem certeza que deseja limpar o histórico de buscas?"
+msgstr "Bent u zeker dat u de zoekhistoriek wil wissen?"
 
 #: config.py:58
 msgid "Default action for toolbar button click"
-msgstr "Ação padrão para o clique na barra de ferramentas"
+msgstr "Standaard actie voor werkbalkknopklik"
 
 #: config.py:63
 msgid "Previous search"
-msgstr "Busca anterior"
+msgstr "Vorige opzoeking"
 
 #: config.py:64
 msgid "Dropdown menu"
-msgstr "Menu dropdown"
+msgstr "Uitklapmenu"
 
 #: config.py:74
 msgid "Display last x searches in menu (0=Unlimited)"
-msgstr "Exibir últimas x buscas no menu (0=sem limite)"
+msgstr "Toon laatste x opzoekingen in menu (0=Onbeperkt)"
 
 #: config.py:82
 msgid "Keep separate history per library"
-msgstr "Manter histórico separado para cada biblioteca"
+msgstr "Aparte geschiedenis per bibliotheek"
 
 #: config.py:83
 msgid ""
 "When checked will maintain a separate history per library\n"
 "when you switch between them."
 msgstr ""
-"Quando marcada essa opção, serão mantidos históricos separados para cada biblioteca\n"
-"ao alternar entre bibliotecas disponíveis"
+"Indien aangevinkt wordt een aparte geschiedenis bijgehouden\n"
+"per bibliotheek als u er tussen schakelt."
 
 #: config.py:89
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Editar atalhos de teclado associados a este plugin"
+msgstr "Bewerk de sneltoetsen voor deze plugin"

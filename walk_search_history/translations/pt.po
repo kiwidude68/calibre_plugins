@@ -6,16 +6,16 @@
 # Cm Fy, 2022
 # 68aa2b710696597d2c15b3d803993bee_52a723c <d707001f82511d8467de1cfc369e967e_419818>, 2022
 # Eusébia Rodrigues <catarinarodrigues432@gmail.com>, 2022
-# Paulo Pereira <pauloizidoro@gmail.com>, 2022
 # Manuela Silva <mmsrs@sky.com>, 2022
+# Paulo Pereira <pauloizidoro@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-10 21:20+0100\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
-"Last-Translator: Manuela Silva <mmsrs@sky.com>, 2022\n"
-"Language-Team: Portuguese (https://www.transifex.com/calibre/teams/19337/pt/)\n"
+"Last-Translator: Paulo Pereira <pauloizidoro@gmail.com>, 2024\n"
+"Language-Team: Portuguese (https://app.transifex.com/calibre/teams/19337/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:84 config.py:88
 msgid "Keyboard shortcuts"
-msgstr "Atalhos do teclado"
+msgstr "Atalhos de teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
@@ -125,23 +125,23 @@ msgstr "Seguinte"
 
 #: action.py:109
 msgid "Clear search history"
-msgstr "Limpar histórico de busca"
+msgstr "Limpar histórico da pesquisa"
 
 #: action.py:112
 msgid "&Customize plugin"
-msgstr "Customizar plugin"
+msgstr "Personalizar plugin"
 
 #: action.py:114 config.py:93
 msgid "&Help"
-msgstr ""
+msgstr "&Ajuda"
 
 #: action.py:191
 msgid "Are you sure?"
-msgstr "Tem certeza?"
+msgstr "Tem a certeza?"
 
 #: action.py:192
 msgid "Are you sure you want to clear the search history?"
-msgstr "Tem certeza que deseja limpar o histórico de buscas?"
+msgstr "Tem a certeza que deseja limpar o histórico de pesquisas?"
 
 #: config.py:58
 msgid "Default action for toolbar button click"
@@ -149,11 +149,11 @@ msgstr "Ação padrão para o clique na barra de ferramentas"
 
 #: config.py:63
 msgid "Previous search"
-msgstr "Busca anterior"
+msgstr "Pesquisa anterior"
 
 #: config.py:64
 msgid "Dropdown menu"
-msgstr "Menu dropdown"
+msgstr "Menu suspenso"
 
 #: config.py:74
 msgid "Display last x searches in menu (0=Unlimited)"
