@@ -1,6 +1,17 @@
 # Ratings Change Log
 
-## [1.2.0] - 2022-10-XX
+## [1.2.1] - 2024-03-17
+### Added
+- French translation
+- German translation
+- Portuguese translation
+- Portuguese (Brazil) translation
+- Russian translation
+- Tamil translation
+- Turkish translation
+- Ukranian translation
+
+## [1.2.0] - 2022-10-01
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
 - Help button to menu and configuration dialog.

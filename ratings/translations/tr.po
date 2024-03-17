@@ -3,255 +3,254 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Darío Hereñú, 2022
-# Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# Emre Deniz, 2022
+# tarakbumba <tarakbumba@gmail.com>, 2022
+# Çağla Turhan, 2022
+# MUSTAFA ANAR <mstf.anar@gmail.com>, 2022
+# Bora Atıcı, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-10 19:45+0100\n"
 "PO-Revision-Date: 2022-09-19 14:48+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Bora Atıcı, 2023\n"
+"Language-Team: Turkish (https://app.transifex.com/calibre/teams/19337/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:97
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "Klavye kısayolları"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "Calibre'yi şimdi tekrar başlatın"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "Tercihler:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Boş alan"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "Bu eklentinin tüm ayarlarını sıfırla"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+"Bu eklenti için bu kitaplıktaki ayarlarınızı değiştirmek istediğinizden emin"
+" misiniz?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"Calibre eklenti klasöründeki diğer kitaplıklarda veya JSON dosyasında "
+"saklanan herhangi bir ayara dokunulmayacak."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "Calibre'yi yeniden başlatmanız gerekir."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "Ayarlar değiştirildi"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr "Bu kitaplıktaki bu eklentinin ayarları değiştirildi."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "Lütfen Calibre'yi yeniden başlatın."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+msgstr "Bu eklentinin ayarlarını sıfırlama isteğinizden emin misiniz?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "Ayarlar silindi"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr "Bu eklenti için ayarlarınız sıfırlandı."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Panoya kopyala"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "Tanımlanmamış"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "Yeniden başlatma gerekiyor"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"Başlık görüntüsü bulunamadı - bu eklentiyi kullanmadan önce Calibre'yi "
+"yeniden başlatmalısınız!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "Yeni sütun oluştur"
 
 #: action.py:35
 msgid "Get the rating and counts from Amazon/Goodreads.com"
-msgstr "Obtener la calificación y los recuentos de Amazon o Goodreads.com"
+msgstr "Değeri ve değerlendirme sayılarını Amazon/Goodreads.com'dan alın"
 
 #: action.py:35
 msgid "Ratings"
-msgstr "Ratings"
+msgstr "Değerlendirmeler"
 
 #: action.py:67
 msgid "&Get all ratings"
-msgstr "&Obtener todas las calificaciones"
+msgstr "&Tüm değerleri al"
 
 #: action.py:68
 msgid "Download ratings for all configured sources"
-msgstr "Descargar calificaciones de todos los orígenes configurados"
+msgstr "Yapılandırılan tüm kaynaklar için değerlendirmeleri indirin"
 
 #: action.py:72
 msgid "&Get Amazon ratings"
-msgstr "&Obtener calificaciones de Amazon"
+msgstr "&Amazon değerlerini al"
 
 #: action.py:73
 msgid "Download ratings for Amazon only"
-msgstr "Descargar calificaciones sólo de Amazon"
+msgstr "Yalnızca Amazon için değerlendirmeleri indirin"
 
 #: action.py:76
 msgid "&Get Goodreads ratings"
-msgstr "&Obtener calificaciones de Goodreads"
+msgstr "&Goodreads değerlerini al"
 
 #: action.py:77
 msgid "Download ratings for Goodreads only"
-msgstr "Descargar calificaciones sólo de Goodreads"
+msgstr "Yalnızca Goodreads için değerlendirmeleri indirin"
 
 #: action.py:81
 msgid "&Customize plugin"
-msgstr "&Personalizar complemento"
+msgstr "&Eklentiyi özelleştir"
 
 #: action.py:83 config.py:107
 msgid "&Help"
-msgstr "&Ayuda"
+msgstr "&Yardım"
 
 #: action.py:105
 msgid "Configure plugin"
-msgstr "Configurar complemento"
+msgstr "Eklentiyi yapılandır"
 
 #: action.py:106
 msgid ""
 "You must specify a custom column first. Do you want to configure this now?"
 msgstr ""
-"Primero debe especificar una columna personalizada. ¿Quiere hacerlo ahora?"
+"Önce özel bir sütun belirtmelisiniz. Bunu şimdi yapılandırmak istiyor "
+"musunuz?"
 
 #: action.py:130
 msgid "Failed to download ratings"
-msgstr "Fallo al descargar calificaciones"
+msgstr "Değerlendirmeler indirilemedi"
 
 #: action.py:133
 msgid "Download ratings completed"
-msgstr "Descarga de calificaciones completada"
+msgstr "Değerleri indirme tamamlandı"
 
 #: action.py:138
 msgid "Downloaded ratings for <b>%d book(s)</b>."
-msgstr "Calificaciones descargadas para <b>%d libro(s)</b>."
+msgstr "<b>%dkitap</b> için indirilen değerler."
 
 #: action.py:139
 msgid "Proceed with updating your library?"
-msgstr "¿Continuar con la actualización de la biblioteca?"
+msgstr "Kitaplığınızı güncellemeye devam edilsin mi?"
 
 #: action.py:145
 msgid "Could not find ratings for %d book(s)."
-msgstr "No se pudo encontrar calificaciones para %d libro(s)."
+msgstr "%d kitap için değer bulunamadı."
 
 #: action.py:148
 msgid "Download ratings failed"
-msgstr "La descarga de calificaciones falló"
+msgstr "Değerlendirmeler indirilemedi"
 
 #: action.py:153
 msgid "Download log"
-msgstr "Registro de descarga"
+msgstr "İndirme günlüğü"
 
 #: action.py:153
 msgid "Download ratings complete"
-msgstr "Descarga de calificaciones completada"
+msgstr "Değerlendirmeleri indirme tamamlandı"
 
 #: action.py:186
 msgid "Unknown"
-msgstr "Desconocido"
+msgstr "Bilinmeyen"
 
 #: config.py:73
 msgid "Amazon Rating:"
-msgstr "Calificación de Amazon:"
+msgstr "Amazon Değeri:"
 
 #: config.py:79
 msgid "Amazon Rating Count:"
-msgstr "Recuento de calificaciones de Amazon:"
+msgstr "Amazon Değerlendirme Sayısı:"
 
 #: config.py:85
 msgid "Goodreads Rating:"
-msgstr "Calificación de Goodreads:"
+msgstr "Goodreads Değeri:"
 
 #: config.py:91
 msgid "Goodreads Rating Count:"
-msgstr "Recuento de calificaciones de Goodreads:"
+msgstr "Goodreads Değerlendirme Sayısı:"
 
 #: config.py:98
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Modificar los atajos de teclado asociados con este complemento"
+msgstr "Bu eklenti ile ilişkilendirilen klavye kısayollarını düzenle"
 
 #: config.py:102
 msgid "&View library preferences"
-msgstr "&Ver preferencias de biblioteca"
+msgstr "Kitaplık tercihlerini görüntüle"
 
 #: config.py:103
 msgid "View data stored in the library database for this plugin"
-msgstr ""
-"Ver los datos almacenados en la base de datos de la biblioteca para este "
-"complemento"
+msgstr "Bu eklenti için kitaplık veri tabanına kayıtlı verileri görüntüle"
 
 #: jobs.py:24
 msgid "Download ratings for %d books"
-msgstr "Descargar calificaciones para %d libros"
+msgstr "%d kitap için değerlendirmeleri indirin"
 
 #: jobs.py:27
 msgid "Download Ratings started"
-msgstr "Descarga de calificaciones iniciada"
+msgstr "Değer İndirmeleri başladı"
 
 #: jobs.py:67
 msgid "Aborting"
-msgstr "Abortando"
+msgstr "İptal ediliyor"
 
 #: jobs.py:76
 msgid "No Amazon or Goodreads id for this book"
-msgstr "No hay ID de Amazon o Goodreads para este libro"
+msgstr "Bu kitap için Amazon veya Goodreads kimliği yok"
 
 #: jobs.py:120
 msgid "No rating found for book"
-msgstr "No se ha encontrado ninguna calificación para el libro."
+msgstr "Kitap için değerlendirme bulunamadı"
 
 #: jobs.py:123
 msgid "Exception occurred"
-msgstr "Ocurrió una excepción"
+msgstr "İstisna oluştu"
 
 #: jobs.py:126
 msgid "Processed %d of %d"
-msgstr "Procesando %d de %d"
+msgstr "%d/%d işlendi"
