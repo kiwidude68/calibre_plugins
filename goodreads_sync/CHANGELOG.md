@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.16.5] - 2024-03-17
+### Updated
+- Spanish translation
+
 ## [1.16.4] - 2023-12-21
 ### Added
 - Display specific friendly error message if available rather than generic response when get goodreads errors.
