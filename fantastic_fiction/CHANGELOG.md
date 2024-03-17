@@ -1,5 +1,10 @@
 # Fantastic Fiction Change Log
 
+## [1.6.5] - 2024-03-17
+### Added
+- Finnish translation
+- Tamil translation
+
 ## [1.6.4] - 2023-08-06
 ### Fixed
 - Tags was incorrectly removed as a configuration option in a previous release.

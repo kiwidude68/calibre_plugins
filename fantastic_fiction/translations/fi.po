@@ -3,134 +3,130 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Darío Hereñú, 2022
-# Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# Veikko Muurikainen, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-08 15:21+0100\n"
 "PO-Revision-Date: 2022-09-19 15:16+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Veikko Muurikainen, 2024\n"
+"Language-Team: Finnish (https://app.transifex.com/calibre/teams/19337/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "Pikanäppäimet"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "Käynnistä calibre uudelleen"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "Asetukset:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Tyhjennä"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "Tyhjennä tämän lisäosan kaikki asetukset"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+"Haluatko varmasti muuttaa tämän kirjaston asetuksia tälle laajennukselle?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"Muiden kirjastojen tai calibre-laajennuskansioon tallennettujen JSON-"
+"tiedostojen asetuksiin ei puututa."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "Calibre on käynnistettävä sen jälkeen uudelleen."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "Asetukset muutettu"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr "Tämän laajennuksen asetuksia tässä kirjastossa on muutettu."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "Käynnistä calibre uudelleen."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+"Haluatko varmasti tyhjentää tämän laajennuksen asetukset tässä kirjastossa?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "Asetukset poistettu"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr "Kaikki tämän laajennuksen asetukset tässä kirjastossa on tyhjennetty."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Kopioi leikepöydälle"
 
 #: ..\common\common_widgets.py:90
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "Määrittelemätön"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "Tarvitaan uudelleenkäynnistys"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"Otsikkokuvaa ei löydy - Calibre on käynnistettävä uudelleen ennen tämän "
+"laajennuksen käyttöä!"
 
 #: ..\common\common_widgets.py:192
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "Luo uusi sarake"
 
 #: config.py:52
 msgid "Other Options"
-msgstr "Otras opciones"
+msgstr "Muut vaihtoehdot"
 
 #: config.py:60
 msgid "If genre found in comments:"
-msgstr "Si se encuentra el género en los comentarios:"
+msgstr "Jos lajityyppi löytyy kommenteista:"
 
 #: config.py:61
 msgid ""
 "A subset (at this time) of the books in Fantastic Fiction\n"
 "contain a hyperlinked Genre at the bottom of the comments."
 msgstr ""
-"Una parte (en este momento) de los libros en Fantastic Fiction\n"
-"contiene un género enlazado al final de los comentarios."
+"Osa (tällä hetkellä) Fantastic Fiction kirjoista\n"
+"sisältäää hyperlinkitetyn lajityypin kommenttien alareunassa."
 
 #: config.py:67
 msgid "Reduce header sizes in comments"
-msgstr "Reducir los tamaños de encabezado en los comentarios"
+msgstr ""
 
 #: config.py:68
 msgid ""
@@ -138,14 +134,10 @@ msgid ""
 "tags that look out of place inside a calibre library.\n"
 "Enabling this option reduces those header tags in size values"
 msgstr ""
-"Para algunos libros la descripción del sitio web usa etiquetas de\n"
-"encabezado grandes que parecen fuera de lugar en una biblioteca\n"
-"de calibre. Si se activa esta opción los tamaños de dichas etiquetas\n"
-"de encabezado se reducirán"
 
 #: config.py:75
 msgid "Use published date from oldest edition"
-msgstr "Usar fecha de publicación de la edición más antigua"
+msgstr ""
 
 #: config.py:76
 msgid ""
@@ -153,6 +145,3 @@ msgid ""
 "include the publishing month. Select this option if you want to use the "
 "oldest edition from the year of publishing."
 msgstr ""
-"El año en que el libro se publicó por primera vez se muestra con el título. "
-"Las ediciones incluyen el mes de publicación. Seleccione esta opción si "
-"quiere usar la edición más antigua según el año de publicación."

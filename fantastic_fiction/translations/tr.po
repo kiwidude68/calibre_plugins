@@ -123,10 +123,12 @@ msgid ""
 "A subset (at this time) of the books in Fantastic Fiction\n"
 "contain a hyperlinked Genre at the bottom of the comments."
 msgstr ""
+"Fantastik Kurgu'daki kitapların bir alt kümesi (şu anda) \n"
+"yorumların alt kısmında bir Tür köprüsü içerir."
 
 #: config.py:67
 msgid "Reduce header sizes in comments"
-msgstr ""
+msgstr "Yorumlardaki başlık boyutlarını azaltın"
 
 #: config.py:68
 msgid ""
@@ -134,10 +136,13 @@ msgid ""
 "tags that look out of place inside a calibre library.\n"
 "Enabling this option reduces those header tags in size values"
 msgstr ""
+"Bazı kitaplar için web sitesi kitap açıklaması, calibre kitaplığı içinde "
+"yersiz görünen daha büyük başlık etiketleri kullanır. Bu seçeneğin "
+"etkinleştirilmesi, boyut değerlerindeki başlık etiketlerini azaltır"
 
 #: config.py:75
 msgid "Use published date from oldest edition"
-msgstr ""
+msgstr "En eski baskıdan yayınlanma tarihini kullan"
 
 #: config.py:76
 msgid ""
@@ -145,3 +150,6 @@ msgid ""
 "include the publishing month. Select this option if you want to use the "
 "oldest edition from the year of publishing."
 msgstr ""
+"Kitabın ilk yayınlandığı yıl başlığıyla birlikte gösterilir. Basımlar "
+"yayınlanma ayını içerir. Yayınlandığı yıla ait en eski basımı kullanmak "
+"istiyorsanız bu seçeneği seçin."
