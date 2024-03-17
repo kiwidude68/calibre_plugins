@@ -3,283 +3,272 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme-Barrientos, 2022
-# Grant Drake, 2022
-# Darío Hereñú, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# ciepina <ciepina@balticom.lv>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-18 19:16+0100\n"
 "PO-Revision-Date: 2022-09-19 15:11+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: ciepina <ciepina@balticom.lv>, 2023\n"
+"Language-Team: Latvian (https://app.transifex.com/calibre/teams/19337/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:141
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "Īsinājumtaustiņi"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "Restartējiet Calibre"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "Iestatījumi:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Notīrīt"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "Notīrīt visus šī spraudņa iestatījumus"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+"Vai tiešām vēlaties mainīt iestatījumus šajā bibliotēkā šim spraudnim?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"Netiek aizskarti nekādi iestatījumi citās bibliotēkās vai JSON failā jūsu "
+"calibre spraudņu mapē."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "Pēc tam jums ir jārestartē calibre."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "Iestatījumi mainīti"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr "Šī spraudņa iestatījumi šajā bibliotēkā ir mainīti."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "Lūdzu, restartējiet calibre."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+msgstr "Vai tiešām vēlaties notīrīt iestatījumus šim spraudnim bibliotēkā?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "Iestatījumi izdzēsti"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr "Visi šī spraudņa iestatījumi bibliotēkā ir notīrīti."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Kopēt starpliktuvē"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "Nenoteikts"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "Nepieciešams restarts"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"Vāka attēls nav atrasts - pirms šī spraudņa izmantošanas ir jārestartē "
+"Calibre!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "Izveidot jaunu kolonnu"
 
 #: action.py:45 dialogs.py:175 dialogs.py:1077 duplicates.py:222
 msgid "Find Duplicates"
-msgstr "Find Duplicates"
+msgstr "Dublikāti"
 
 #: action.py:87
 msgid "&Find book duplicates"
-msgstr "&Buscar duplicados de libros"
+msgstr "&Atrast grāmatu dublikātus"
 
 #: action.py:89
 msgid "Find library duplicates"
-msgstr "Buscar duplicados de biblioteca"
+msgstr "Atrast bibliotēkas dublikātus"
 
 #: action.py:90
 msgid "Find books that are duplicated in another library compared to this one"
-msgstr ""
-"Buscar libros que están duplicados en otra biblioteca en comparación con "
-"ésta"
+msgstr "Atrast grāmatas, kas ir dublētas citā bibliotēkā salīdzinot ar šo"
 
 #: action.py:93
 msgid "Find metadata &variations"
-msgstr "Buscar &variaciones de metadatos"
+msgstr "Atrast metadatus &variācijas"
 
 #: action.py:94
 msgid ""
 "Find & rename variations in author, publisher, series or tags names that may"
 " indicate duplicates"
 msgstr ""
-"Buscar y cambiar el nombre de variaciones en los nombres de autor, "
-"editorial, serie o etiquetas que puedan indicar duplicados"
+"Atrast & pārdēvēt autora, izdevēja, sērijas vai birku nosaukumu variantus, "
+"kas var norādīt uz dublikātiem"
 
 #: action.py:97
 msgid "&Next result"
-msgstr "&Siguiente resultado"
+msgstr "&Nākamais rezultāts"
 
 #: action.py:98
 msgid "Display the next duplicate result group"
-msgstr "Mostrar el siguiente grupo de resultados duplicados"
+msgstr "Parādīt nākamo grupas dublikātu rezultātu"
 
 #: action.py:100
 msgid "&Previous result"
-msgstr "&Resultado anterior"
+msgstr "&Iepriekšējais rezultāts"
 
 #: action.py:101
 msgid "Display the previous duplicate result group"
-msgstr "Mostrar el grupo de resultados duplicados anterior"
+msgstr "Parādīt iepriekšējo grupas dublikātu rezultātu"
 
 #: action.py:104
 msgid "&Mark current group as exempt"
-msgstr "&Marcar grupo actual como exento"
+msgstr "&Atzīmēt tekošo grupu kā atbrīvotu"
 
 #: action.py:105
 msgid ""
 "Mark the current group as not duplicates and exempt from future "
 "consideration"
 msgstr ""
-"Marcar el grupo actual como no duplicado y exento de consideración futura"
+"Atzīmēt šo grupu kā bez dublikātiem un atbrīvot no turpmākas izskatīšanas"
 
 #: action.py:108
 msgid "Mark &all groups as exempt"
-msgstr "Marcar &todos los grupos como exentos"
+msgstr "Atzīmēt &visas grupas kā atbrīvotas"
 
 #: action.py:109
 msgid ""
 "Mark all remaining duplicate groups as exempt from future consideration"
 msgstr ""
-"Marcar todos los grupos duplicados restantes como exentos de consideración "
-"futura"
+"Atzīmēt visas atlikušās dublikātu grupas kā atbrīvotas no turpmākās "
+"izskatīšanas"
 
 #: action.py:113
 msgid "&Show all book duplicate exemptions"
-msgstr "&Mostrar todas las exenciones de duplicados de libros"
+msgstr "&Rādīt visus atbrīvotos grāmatu dublikātus"
 
 #: action.py:114
 msgid "Show all books that have book duplicate exemption pairings"
-msgstr ""
-"Mostrar todos los libros que tienen exenciones de duplicados de libros"
+msgstr "Rādīt visas grāmatas, kurām ir grāmatu dublikātu atbrīvojumu pāri"
 
 #: action.py:117
 msgid "&Show all author duplicate exemptions"
-msgstr "&Mostrar todas las exenciones de duplicados de autor"
+msgstr "&Rādīt visus autora dublikātu atbrīvojumus"
 
 #: action.py:118
 msgid "Show all books that have author duplicate exemption pairings"
-msgstr "Mostrar todos los libros que tienen exenciones de duplicados de autor"
+msgstr "Rādīt visas grāmatas, kurām ir autoru dublikātu atbrīvojumu pāri"
 
 #: action.py:121
 msgid "&Manage exemptions for this book"
-msgstr "&Administrar exenciones para este libro"
+msgstr "&Pārvaldīt šīs grāmatas atbrīvojumus"
 
 #: action.py:122
 msgid "Show duplicate exemptions for this book to enable removal"
-msgstr ""
-"Mostrar exenciones de duplicada para este libro para permitir su eliminación"
+msgstr "Rādīt šīs grāmatas atbrīvojumu dublikātus, lai noņemtu"
 
 #: action.py:125
 msgid "&Remove selected exemptions"
-msgstr "&Eliminar exenciones seleccionadas"
+msgstr "&Noņemt atlasītos atbrīvojumus"
 
 #: action.py:126
 msgid "Remove any duplicate book/author exemptions for the selected books"
 msgstr ""
-"Eliminar exenciones de duplicado de libro o autor para los libros "
-"seleccionados"
+"Noņemt visus dublētus grāmatu/autoru atbrīvojumus atlasītajām grāmatām"
 
 #: action.py:130
 msgid "&Clear duplicate results"
-msgstr "&Limpiar resultados duplicados"
+msgstr "&Notīrīt dublētos rezultātus"
 
 #: action.py:131
 msgid "Exit duplicate search mode"
-msgstr "Salir del modo de búsqueda de duplicados"
+msgstr "Iziet no dublikātu meklēšanas režīma"
 
 #: action.py:135
 msgid "&Export duplicate groups"
-msgstr "&Exportar grupos de duplicados"
+msgstr "&Eksportēt dublētās grupas"
 
 #: action.py:136
 msgid "Export duplicates groups to a json file"
-msgstr "Exportar grupos de duplicados a un archivo json"
+msgstr "Eksportēt grupu dublikātus uz json failu"
 
 #: action.py:140
 msgid "&Customize plugin"
-msgstr "&Personalizar complemento"
+msgstr "&Pielāgot spraudni"
 
 #: action.py:142
 msgid "&Help"
-msgstr "&Ayuda"
+msgstr "&Palīdzība"
 
 #: action.py:248
 msgid ""
 "This action will ensure that each of the {0} in the group are exempt from "
 "appearing together again in future."
 msgstr ""
-"Esta acción asegurará que cada uno de los {0} en el grupo estén exentos de "
-"volver a aparecer juntos en el futuro."
+"Šī darbība nodrošinās, ka katrs no {0} grupas ir atbrīvots no turpmākas "
+"parādīšanās kopā."
 
 #: action.py:251 action.py:304
 msgid "Are you <b>sure</b> you want to proceed?"
-msgstr "¿Está <b>seguro</b> de querer continuar?"
+msgstr "Vai esat <b>pārliecināts</b> , ka vēlaties turpināt?"
 
 #: action.py:259
 msgid "No duplicates in group"
-msgstr "No hay duplicados en el grupo"
+msgstr "Grupā nav dublikātu"
 
 #: action.py:260
 msgid "There are no duplicates remaining in this group."
-msgstr "No quedan duplicados en este grupo."
+msgstr "Šajā grupā nav palicis neviens dublikāts."
 
 #: action.py:271 action.py:276
 msgid "Cannot manage exemptions"
-msgstr "No se pueden gestionar las exenciones"
+msgstr "Nevar pārvaldīt atbrīvojumus"
 
 #: action.py:272
 msgid "No book selected"
-msgstr "Ningún libro seleccionado"
+msgstr "Nav atlasīta neviena grāmata"
 
 #: action.py:277
 msgid "This book has no duplicate exemptions"
-msgstr "Este libro no tiene exenciones de duplicado"
+msgstr "Šai grāmatai nav dublikātu atbrīvojumu"
 
 #: action.py:298
 msgid "Invalid selection"
-msgstr "Selección no válida"
+msgstr "Nederīga atlase"
 
 #: action.py:299
 msgid "You must select at least one book."
-msgstr "Debe seleccionar al menos un libro."
+msgstr "Ir jāatlasa vismaz viena grāmata."
 
 #: action.py:300
 msgid ""
@@ -287,77 +276,72 @@ msgid ""
 "will allow them to potentially appear as duplicates together in a future "
 "duplicate search."
 msgstr ""
-"Esta acción eliminará cualquier exención de duplicados en la selección. Esto"
-" hace que puedan volver a aparecer potencialmente como duplicados en una "
-"futura búsqueda de duplicados."
+"Veicot šo darbību, jūsu atlasei tiks noņemti dublēti atbrīvojumi. Tas ļaus "
+"tiem turpmākajā dublikātu meklēšanā kopā parādīties kā dublikāti."
 
 #: action.py:338
 msgid "Choose file"
-msgstr "Elegir archivo"
+msgstr "Izvēlēties failu"
 
 #: action.py:339
 msgid "Saved duplicates"
-msgstr "Duplicados guardados"
+msgstr "Saglabāti dublikāti"
 
 #: action.py:365
 msgid "Export completed"
-msgstr "Exportación completada"
+msgstr "Eksportēšana ir pabeigta"
 
 #: action.py:366
 msgid "Exported to: {}"
-msgstr "Exportado a: {}"
+msgstr "Eksportēts uz: {}"
 
 #: book_algorithms.py:53
 msgid "Analysing {0} books for duplicates"
-msgstr "Analizando {0} libros para buscar duplicados "
+msgstr "Notiek dublikātu analīze {0} grāmatās"
 
 #: book_algorithms.py:422
 msgid "matching '{0}' identifier"
-msgstr "identificador «{0}» coincidente"
+msgstr "atbilst '{0}' identifikatoram"
 
 #: book_algorithms.py:425
 msgid "binary compare"
-msgstr "comparación binaria"
+msgstr "binārais salīdzinājums"
 
 #: book_algorithms.py:430
 msgid "ignore title, {0} author"
-msgstr "ignorar el título, autor {0}"
+msgstr "ignorēt nosaukumu, {0} autors"
 
 #: book_algorithms.py:434
 msgid "{0} title, {1} author"
-msgstr "título {0}, autor {1}"
+msgstr "{0} nosaukums, {1} autors"
 
 #: config.py:143
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Modificar los atajos de teclado asociados con este complemento"
+msgstr "Rediģēt ar šo spraudni saistītos īsinājumtaustiņus"
 
 #: config.py:147
 msgid "Reset &confirmation dialogs"
-msgstr "Restablecer cuadros de diálogo de &confirmación"
+msgstr "Atiestatīt &apstiprinājuma dialogus"
 
 #: config.py:148
 msgid "Reset all show me again dialogs for the Find Duplicates plugin"
-msgstr ""
-"Restablecer todos los cuadros de diálogo «Mostrar otra vez» del complemento "
-"Find Duplicates"
+msgstr "Rādīt vēlreiz visus atiestatītos spraudņa Atrast dublikātus dialogus"
 
 #: config.py:152
 msgid "&View library preferences"
-msgstr "&Ver preferencias de biblioteca"
+msgstr "&Skatīt bibliotēkas iestatījumus"
 
 #: config.py:153
 msgid "View data stored in the library database for this plugin"
-msgstr ""
-"Ver los datos almacenados en la base de datos de la biblioteca para este "
-"complemento"
+msgstr "Skatīt šī spraudņa bibliotēkas datubāzē saglabātos datus"
 
 #: config.py:169
 msgid "Done"
-msgstr "Hecho"
+msgstr "Gatavs"
 
 #: config.py:170
 msgid "Confirmation dialogs have all been reset"
-msgstr "Se han restablecido todos los diálogos de confirmación"
+msgstr "Visi apstiprinājuma dialogi ir atiestatīti"
 
 #: dialogs.py:51
 msgid ""
@@ -366,10 +350,10 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de libros duplicados</b><br/>- Buscar grupos de libros que "
-"tienen un identificador idéntico, como ISBN, ID de Amazon, Goodreads, uri, "
-"etc.<br/>- Marcar un grupo como exento evitará que esos libros específicos "
-"aparezcan juntos en futuras búsquedas de libros duplicados."
+"<b>Grāmatu dublikātu meklēšana</b><br/>- Atrod grāmatu grupas, kurām ir "
+"identisks identifikators, piemēram, ISBN, amazon id, goodreads, url "
+"utt.<br/>- Atzīmējot grupu kā atbrīvotu, šīs konkrētās grāmatas netiks "
+"rādītas kopā turpmākajos grāmatu dublikātu meklējumos."
 
 #: dialogs.py:57
 msgid ""
@@ -380,14 +364,13 @@ msgid ""
 " duplicates.<br/>- Marking a group as exempt will prevent those specific "
 "books from appearing together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de libros duplicados</b><br/>- Buscar grupos de libros que "
-"tienen un formato de libro que es idéntico en su código binario.<br/>- Se "
-"compara el tamaño real de archivo de cada formato de libro en la biblioteca,"
-" calculando un código de verificación SHA para comparar el contenido cuando "
-"los tamaños coinciden.<br/>- Los libros encontrados con esta búsqueda son "
-"duplicados con toda seguridad.<br/>- Marcar un grupo como exento evitará que"
-" esos libros específicos aparezcan juntos en futuras búsquedas de libros "
-"duplicados."
+"<b>Grāmatu dublikātu meklēšana</b><br/>- Atrod grāmatu grupas, kuru grāmatas"
+" formāts ir bināri identisks.<br/>- Salīdzina katra jūsu bibliotēkas grāmatu"
+" formāta faktisko faila lielumu, aprēķinot SHA jaucējkodu, lai salīdzinātu "
+"saturu, kur izmēri sakrīt..<br/>- Grāmatas, kas atrastas, izmantojot šo "
+"meklēšanu, tiek garantētas kā dublikāti.<br/>- Atzīmējot grupu kā atbrīvotu,"
+" šīs konkrētās grāmatas netiks rādītas kopā turpmākajos grāmatu dublikātu "
+"meklējumos."
 
 #: dialogs.py:66
 msgid ""
@@ -396,11 +379,10 @@ msgid ""
 "case.<br/>- Marking a group as exempt will prevent those specific books from"
 " appearing together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de título duplicado</b><br/>- Buscar grupos de libros con un "
-"<b>título idéntico</b> y {0}<br/>- Los títulos deben coincidir exactamente "
-"sin distinción de mayúsculas y minúsculas.<br/>- Marcar un grupo como exento"
-" evitará que esos libros específicos aparezcan juntos en futuras búsquedas "
-"de libros duplicados."
+"<b>Nosaukuma dublikātu meklēšana</b><br/>- Atrod grāmatu grupas ar "
+"<b>identisku nosaukumu</b> un {0}<br/>- Nosaukumiem precīzi jāatbilst "
+"gadījumam.<br/>- Atzīmējot grupu kā atbrīvotu, šīs konkrētās grāmatas netiks"
+" rādītas kopā turpmākajos grāmatu dublikātu meklējumos."
 
 #: dialogs.py:71
 msgid ""
@@ -410,12 +392,12 @@ msgid ""
 "Automerge.<br/>- Marking a group as exempt will prevent those specific books"
 " from appearing together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de título duplicado</b><br/>- Buscar grupos de libros con un "
-"<b>título similar</b> y {0}<br/>- Las coincidencias de título similares se "
-"realizan con eliminación de signos de puntuación y prefijos comunes y con la"
-" misma lógica que la unión automática.<br/>- Marcar un grupo como exento "
-"evitará que esos libros específicos aparezcan juntos en futuras búsquedas de"
-" libros duplicados."
+"<b>Nosaukuma dublikātu meklēšana</b><br/>- Atrod grāmatu grupas ar "
+"<b>līdzīgu nosaukumu</b> un {0}<br/>- Līdzīgas nosaukumu atbilstības piemēro"
+" parasto pieturzīmju un prefiksu noņemšanu un izmanto tādu pašu nosaukumu "
+"saskaņošanas loģiku kā Automerge.<br/>- Atzīmējot grupu kā atbrīvotu, šīs "
+"konkrētās grāmatas netiks rādītas kopā turpmākajos grāmatu dublikātu "
+"meklējumos."
 
 #: dialogs.py:77
 msgid ""
@@ -425,12 +407,11 @@ msgid ""
 "a group as exempt will prevent those specific books from appearing together "
 "in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de título duplicado</b><br/>- Buscar grupos de libros con un "
-"mismo <b>«soundex» de título (algoritmo fonético)</b> y {0}<br/>- Las "
-"coincidencias de título por «soundex» se basan en la misma eliminación de "
-"puntuación y prefijos comunes que una búsqueda de título similar.<br/>- "
-"Marcar un grupo como exento evitará que esos libros específicos aparezcan "
-"juntos en futuras búsquedas de libros duplicados."
+"<b>Nosaukuma dublikātu meklēšana</b><br/>- Atrod grāmatu grupas ar "
+"<b>soundex nosaukumu</b> un {0}<br/>- Soundex nosaukumu atbilstības pamatā "
+"ir tāda pati pieturzīmju un parasto priedēkļu noņemšana kā līdzīga nosaukuma"
+" meklēšana.<br/>- Atzīmējot grupu kā atbrīvotu, šīs konkrētās grāmatas "
+"netiks rādītas kopā turpmākajos grāmatu dublikātu meklējumos."
 
 #: dialogs.py:83
 msgid ""
@@ -440,12 +421,11 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de título duplicado</b><br/>- Buscar grupos de libros con un "
-"mismo <b>título borroso</b> y {0}<br/>- Las coincidencias de título borroso "
-"eliminan todos los signos de puntuación, subtítulos y cualquier palabra "
-"después de «and» (y), «or» (o) o «aka» (alias) en el título.<br/>- Marcar un"
-" grupo como exento evitará que esos libros específicos aparezcan juntos en "
-"futuras búsquedas de libros duplicados."
+"<b>Nosaukuma dublikātu meklēšana</b><br/>- Atrod grāmatu grupas ar "
+"<b>izplūdušu nosaukumu</b> un {0}<br/>- Izplūdušo nosaukumu atbilstības "
+"noņem visas pieturzīmes, subtitrus un vārdus nosaukumā aiz \"un\", \"vai\" "
+"vai \"aka\".<br/>- Atzīmējot grupu kā atbrīvotu, šīs konkrētās grāmatas "
+"netiks rādītas kopā turpmākajos grāmatu dublikātu meklējumos."
 
 #: dialogs.py:89
 msgid ""
@@ -455,107 +435,103 @@ msgid ""
 "group as exempt will prevent any books by those authors from appearing "
 "together in future duplicate author searches."
 msgstr ""
-"<b>Búsqueda de autor duplicado</b><br/>- Buscar grupos de libros "
-"<b>ignorando el título</b> con {0}<br/>- Las búsquedas en las que se ignora "
-"el título son las mejores para encontrar variaciones de nombres de autores "
-"independientemente de los libros que existan para cada uno.<br/>- Marcar un "
-"grupo como exento evitará que los libros de esos autores aparezcan juntos en"
-" futuras búsquedas de autores duplicados."
+"<b>Autora dublikātu meklēšana</b><br/>- Atrod grāmatu grupas, kas <b>ignorē "
+"nosaukumu</b> ar {0}<br/>- Ignorēt nosaukumu meklēšanu vislabāk ir atrast "
+"autoru vārdu variācijas neatkarīgi no grāmatām, kas jums ir par katru.<br/>-"
+" Atzīmējot grupu kā atbrīvotu, tiks novērsta šo autoru grāmatu parādīšanās "
+"kopā turpmākajos autoru meklējumos."
 
 #: dialogs.py:98
 msgid ""
 "an <b>identical author</b>.<br/>- Authors must match exactly excluding case."
 msgstr ""
-"un <b>autor idéntico</b>.<br/>- Los autores deben coincidir exactamente sin "
-"distinción de mayúsculas y minúsculas."
+"ar <b>identisks autors</b>.<br/>- Autoriem ir precīzi jāatbilst "
+"izslēdzošajam reģistram."
 
 #: dialogs.py:100
 msgid ""
 "a <b>similar author</b>.<br/>- Similar authors differ only in punctuation, "
 "initials or order of their names."
 msgstr ""
-"un <b>autor similar</b>.<br/>- Los autores similares difieren solo en "
-"puntuación, iniciales u orden de sus nombres."
+"ar <b>līdzīgs autors</b>.<br/>- Līdzīgi autori atšķiras tikai ar "
+"pieturzīmēm, iniciāļiem vai savu vārdu secību."
 
 #: dialogs.py:103
 msgid ""
 "a <b>soundex author</b>.<br/>- Soundex author matches start with the same "
 "removal of punctuation and ordering as a similar author search."
 msgstr ""
-"un <b>«soundex» de autor (algoritmo fonético)</b>.<br/>- Las coincidencias "
-"de autor por «soundex» comienzan con la misma eliminación de puntuación y "
-"orden que una búsqueda de autor similar."
+"ar <b>soundex autors</b>.<br/>- Soundex autoru atbilstības sākas ar tādu "
+"pašu pieturzīmju noņemšanu un secību kā līdzīga autora meklēšana."
 
 #: dialogs.py:106
 msgid ""
 "a <b>fuzzy match author</b>.<br/>- Fuzzy author matches compare using their "
 "surnames and only the first initial."
 msgstr ""
-"un <b>autor de coincidencia borrosa</b>.<br/>- Las coincidencias borrosas de"
-" autor comparan sólo sus apellidos y la primera inicial."
+"ar <b>izplūdis atbilstības autors</b>.<br/>- Neskaidras autoru atbilstības "
+"tiek salīdzinātas, izmantojot viņu uzvārdus un tikai pirmo iniciāli."
 
 #: dialogs.py:109
 msgid "<b>ignoring the author</b>."
-msgstr "<b>ignorando el autor</b>."
+msgstr "<b>ignorējot autoru</b>."
 
 #: dialogs.py:178
 msgid "Duplicate Search Options"
-msgstr "Opciones de búsqueda de duplicados"
+msgstr "Dublikātu meklēšanas opcijas"
 
 #: dialogs.py:182
 msgid "Duplicate Search Type"
-msgstr "Tipo de búsqueda de duplicados"
+msgstr "Dublikātu meklēšanas veids"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Binary Compare"
-msgstr "Comparación binaria"
+msgstr "Binārais"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Identifier"
-msgstr "Identificador"
+msgstr "Identifikators"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Title/Author"
-msgstr "Título o autor"
+msgstr "Nosaukums/Autors"
 
 #: dialogs.py:203
 msgid "Title Matching"
-msgstr "Coincidencia de títulos"
+msgstr "Nosaukuma sakritība"
 
 #: dialogs.py:215 dialogs.py:236 dialogs.py:686 dialogs.py:1131
 #: dialogs.py:1152
 msgid "Length:"
-msgstr "Longitud:"
+msgstr "Garums:"
 
 #: dialogs.py:216 dialogs.py:687 dialogs.py:1132
 msgid ""
 "The shorter the soundex length, the greater likelihood of false positives.\n"
 "Large soundex values reduce your chances of matches"
 msgstr ""
-"Cuanto más corta es la longitud del «soundex», mayor es la probabilidad de falsos positivos.\n"
-"Valores grandes reducen las posibilidades de coincidencias"
+"Jo īsāks skaņas garums, jo lielāka ir viltus pozitīvu rezultātu iespējamība.\n"
+"Lielas skaņas vērtības samazina sakritības izredzes"
 
 #: dialogs.py:224
 msgid "Author Matching"
-msgstr "Coincidencia de autor"
+msgstr "Autora sakritība"
 
 #: dialogs.py:249
 msgid "Result Options"
-msgstr "Opciones de resultados"
+msgstr "Rezultātu opcijas"
 
 #: dialogs.py:253
 msgid "Show all groups at once with highlighting"
-msgstr "Mostrar todos los grupos a la vez con resaltado"
+msgstr "Rādīt visas grupas vienlaikus izceļot"
 
 #: dialogs.py:254
 msgid "Show one group at a time"
-msgstr "Mostrar un grupo a la vez"
+msgstr "Rādīt vienu grupu vienlaikus"
 
 #: dialogs.py:257
 msgid "Highlight authors in the tag browser for ignore title searches"
-msgstr ""
-"Resaltar los autores en el navegador de etiquetas para búsquedas que ignoran"
-" el título"
+msgstr "Iezīmēt autorus birku pārlūkā, lai ignorētu nosaukumu meklēšanu"
 
 #: dialogs.py:258
 msgid ""
@@ -563,39 +539,37 @@ msgid ""
 "are shown in the tag browser and highlighted if multiple groups shown.\n"
 "Only applies for author duplicate searches."
 msgstr ""
-"Cuando se marca, se asegurará de que los autores del grupo actual\n"
-"se muestran en el navegador de etiquetas y se resaltan si se muestran varios grupos.\n"
-"Sólo aplica para búsquedas de autor duplicado."
+"Atzīmējot, tiks nodrošināts, ka pašreizējās grupas autori\n"
+"tiek parādīti birku pārlūkā un izcelti, ja tiek rādītas vairākas grupas.\n"
+"Attiecas tikai uz autora dublikātu meklēšanu."
 
 #: dialogs.py:262
 msgid "Sort groups by number of duplicates"
-msgstr "Ordenar grupos por número de duplicados"
+msgstr "Kārtot grupas pēc dublikātu skaita"
 
 #: dialogs.py:263
 msgid ""
 "When unchecked, will sort by an approximation of the title\n"
 "or by author if title is being ignored"
 msgstr ""
-"Cuando no está marcado, se ordenará por una aproximación del título\n"
-"o por autor si se ignora el título"
+"Ja nav atzīmēts, tiks sakārtots pēc nosaukuma\n"
+"vai pēc autora, ja nosaukums tiek ignorēts"
 
 #: dialogs.py:266 dialogs.py:1169
 msgid "Include languages metadata when comparing titles"
-msgstr "Incluir metadatos de idioma al comparar títulos"
+msgstr "Salīdzinot nosaukumus, iekļaut valodu metadatus"
 
 #: dialogs.py:267 dialogs.py:1170
 msgid ""
 "When checked, books with identical titles but different\n"
 "languages metadata field values will not show as duplicates"
 msgstr ""
-"Cuando está marcado, libros con títulos idénticos pero diferentes\n"
-"valores en el campo de metadatos de idioma no se mostrarán como duplicados"
+"Atzīmējot, grāmatas ar identiskiem, bet atšķirīgiem nosaukumiem\n"
+"valodu metadatu lauku vērtības netiks rādītas kā dublikāti"
 
 #: dialogs.py:270
 msgid "When doing a Binary Compare, automatically remove duplicate formats"
-msgstr ""
-"Al hacer una comparación binaria, eliminar automáticamente los formatos "
-"duplicados"
+msgstr "Veicot bināro salīdzināšanu, automātiski noņemiet dublētos formātus"
 
 #: dialogs.py:272
 msgid ""
@@ -606,29 +580,28 @@ msgid ""
 "Note that the book records themselves are not deleted, and will still appear in the\n"
 "results for merging even if they now have no formats."
 msgstr ""
-"Cuando está marcado y se ejecuta la búsqueda de duplicados binarios, si se encuentran formatos duplicados\n"
-"se eliminaránn todos menos uno. Se mantendrá en el registro el formato de libro más antiguo.\n"
-"Ésta es una función útal cuando tiene múltiples formatos asociados con\n"
-"cada libro y, por lo tanto, no es obvio cuál de ellos es el duplicado.\n"
-"Tenga en cuenta que los registros del libro en sí no se eliminan y seguirán apareciendo en el\n"
-"resultado para la unión, incluso si ya no tienen formatos."
+"Ja ir atzīmēts, tiek palaista binārā dublikātu meklēšana, ja tiek atrasti dublikātu formāti\n"
+"tad visi, izņemot vienu, tiek dzēsti. Tiks saglabāts vecākās grāmatas ieraksta formāts.\n"
+"Šī ir ērtību funkcija, ja jums ir saistīti vairāki formāti\n"
+"katrai grāmatai, un tāpēc nav uzreiz skaidrs, kura no tām ir dublikāts.\n"
+"Ņemiet vērā, ka paši grāmatu ieraksti netiek dzēsti un joprojām būs redzams\n"
+"apvienošanas rezultāts, pat ja tiem tagad nav formātu."
 
 #: dialogs.py:370
 msgid "Invalid Criteria"
-msgstr "Criterios no válidos"
+msgstr "Nederīgi kritēriji"
 
 #: dialogs.py:371
 msgid "You must select an identifier type to search by Identifier."
-msgstr ""
-"Debe seleccionar un tipo de identificador para buscar por identificador."
+msgstr "Lai meklētu pēc identifikatora, jāizvēlas identifikatora veids."
 
 #: dialogs.py:504
 msgid "Manage Duplicate Exemptions"
-msgstr "Administrar exenciones de duplicados"
+msgstr "Pārvaldīt dublētos atbrīvojumus"
 
 #: dialogs.py:507
 msgid "Manage Exemptions"
-msgstr "Administrar exenciones"
+msgstr "Pārvaldīt atbrīvojumus"
 
 #: dialogs.py:513
 msgid ""
@@ -636,9 +609,9 @@ msgid ""
 "books.<br/>To allow future duplicate consideration, tick the remove checkbox"
 " and click ok."
 msgstr ""
-"El primer libro de abajo nunca aparecerá como un duplicado con los "
-"siguientes libros.<br/>Para permitir la consideración de duplicados en el "
-"futuro, marque la casilla de verificación Eliminar y pulse en Aceptar."
+"Pirmā norādītā grāmata nekad neparādīsies kā dublikāts ar nākamajām "
+"grāmatām.<br/>Lai turpmāk varētu apsvērt dublikātus, atzīmējiet izvēlni "
+"Noņemt un klikšķiniet uz Labi."
 
 #: dialogs.py:528
 msgid ""
@@ -646,134 +619,129 @@ msgid ""
 "authors.<br/>To allow future duplicate consideration, tick the remove "
 "checkbox and click ok."
 msgstr ""
-"Los autores a de abajo nunca aparecerán como duplicados con los siguientes "
-"autores.<br/>Para permitir la consideración de duplicados en el futuro, "
-"marque la casilla de verificación Eliminar y pulse en Aceptar."
+"Norādītie autori nekad netiks rādīti kā dublikāti ar tālāk norādītajiem "
+"autoriem.<br/>Lai turpmāk varētu izskatīt dublikātus, atzīmējiet izvēlni "
+"Noņemt un klikšķiniet uz Labi."
 
 #: dialogs.py:645
 msgid "Find Duplicates Plugin"
-msgstr "complemento Find Duplicates"
+msgstr "Spraudnis Atrast dublikātu"
 
 #: dialogs.py:649
 msgid "Find Metadata Variations"
-msgstr "Buscar variaciones de metadatos"
+msgstr "Atrast metadatu variācijas"
 
 #: dialogs.py:653
 msgid "Choose metadata column:"
-msgstr "Elegir columna de metadatos:"
+msgstr "Izvēlēties metadatu kolonnu:"
 
 #: dialogs.py:657
 msgid "Authors"
-msgstr "Autores"
+msgstr "Autori"
 
 #: dialogs.py:660
 msgid "Series"
-msgstr "Serie"
+msgstr "Sērija"
 
 #: dialogs.py:663
 msgid "Publisher"
-msgstr "Editorial"
+msgstr "Izdevējs"
 
 #: dialogs.py:666
 msgid "Tags"
-msgstr "Etiquetas"
+msgstr "Birkas"
 
 #: dialogs.py:675
 msgid "Choose similarity level:"
-msgstr "Elegir el nivel de semejanza:"
+msgstr "Izvēlēties līdzības līmeni:"
 
 #: dialogs.py:679
 msgid "Similar"
-msgstr "Similar"
+msgstr "Līdzīgi"
 
 #: dialogs.py:682
 msgid "Soundex"
-msgstr "Soundex (algoritmo fonético)"
+msgstr "Soundex"
 
 #: dialogs.py:684
 msgid "Fuzzy"
-msgstr "Borrosa"
+msgstr "Izplūdis"
 
 #: dialogs.py:691
 msgid "Search"
-msgstr "Buscar"
+msgstr "Meklēt"
 
 #: dialogs.py:693
 msgid "Search for results"
-msgstr "Buscar resultados"
+msgstr "Meklēt rezultātus"
 
 #: dialogs.py:704
 msgid "Search results:"
-msgstr "Resultados de la búsqueda:"
+msgstr "Meklēšanas rezultāti:"
 
 #: dialogs.py:710
 msgid "Authors:"
-msgstr "Autores:"
+msgstr "Autori:"
 
 #: dialogs.py:711 dialogs.py:910
 msgid "Variations:"
-msgstr "Variaciones:"
+msgstr "Variācijas:"
 
 #: dialogs.py:726
 msgid "&Show matching books"
-msgstr "&Mostrar libros coincidentes"
+msgstr "&Rādīt atbilstošās grāmatas"
 
 #: dialogs.py:727
 msgid "As a group is selected, show the search results in the library view"
-msgstr ""
-"A medida que se selecciona un grupo, mostrar los resultados de búsqueda en "
-"la vista de biblioteca"
+msgstr "Kad grupa ir atlasīta, rādiet meklēšanas rezultātus bibliotēkas skatā"
 
 #: dialogs.py:730
 msgid "Rename to:"
-msgstr "Cambiar nombre a:"
+msgstr "Pārdēvēt:"
 
 #: dialogs.py:747
 msgid "&Rename"
-msgstr "&Cambiar nombre"
+msgstr "&Pārdēvēt"
 
 #: dialogs.py:748
 msgid "Rename all of the selected items to this name"
-msgstr "Cambiar el nombre de todos los elementos seleccionados a este nombre"
+msgstr "Pārdēvēt visus atlasītos vienumus ar šo nosaukumu"
 
 #: dialogs.py:751
 msgid "&Ignore"
-msgstr "&Ignorar"
+msgstr "&Izlaist"
 
 #: dialogs.py:752
 msgid "Ignore all selected items from consideration at this time"
-msgstr "Ignorar todos los elementos seleccionados en esta ocasión"
+msgstr "Izlaist visus atlasītos vienumus"
 
 #: dialogs.py:791
 msgid "No matches"
-msgstr "No hay coincidencias"
+msgstr "Nav sakritību"
 
 #: dialogs.py:791
 msgid "You have no variations of {0} using this criteria"
-msgstr "No hay variaciones de {0} usando este criterio"
+msgstr "Izmantojot šo kritēriju, jums nav {0} variantu"
 
 #: dialogs.py:851
 msgid "Use this variation name"
-msgstr "Usar este nombre de variación"
+msgstr "Izmantot šo varianta nosaukumu"
 
 #: dialogs.py:914
 msgid "Variations of: {0}"
-msgstr "Variaciones de: {0}"
+msgstr "Variācijas: {0}"
 
 #: dialogs.py:950
 msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
-msgstr ""
-"¿Está seguro de querer cambiar el nombre de los {0} elementos seleccionados "
-"a «{1}»?"
+msgstr "Vai tiešām vēlaties pārdēvēt atlasītos {0} vienumus par \"{1}\"?"
 
 #: dialogs.py:1037
 msgid ""
 "<b>Book duplicate search</b><br/>- Report books in this library which have "
 "an identical identifier for books in the target library.<br/>"
 msgstr ""
-"<b>Búsqueda de libros duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca que tengan un identificador idéntico a libros en la biblioteca de"
-" destino.<br/>"
+"<b>Grāmatu dublikātu meklēšana</b><br/>- Ziņo par grāmatām šajā bibliotēkā, "
+"kurām ir identisks identifikators grāmatām mērķa bibliotēkā.<br/>"
 
 #: dialogs.py:1041
 msgid ""
@@ -783,12 +751,12 @@ msgid ""
 "compare contents where sizes match.<br/>- Books found using this search are "
 "guaranteed to be duplicates."
 msgstr ""
-"<b>Búsqueda de libros duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca que sean idénticos a nivel binario a libros en la biblioteca de "
-"destino.<br/>- Se compara el tamaño real de archivo de cada formato de libro"
-" en las bibliotecas, calculando un código de comprobación SHA para comparar "
-"el contenidos cuando los tamaños coinciden.<br/>- Los libros encontrados con"
-" esta búsqueda son idénticos con toda seguridad."
+"<b>Grāmatu dublikātu meklēšana</b><br/>- Ziņo par grāmatām šajā bibliotēkā, "
+"kas ir bināri identiskas grāmatām jūsu mērķa bibliotēkā.<br/>- Salīdzina "
+"katra jūsu bibliotēkās esošo grāmatu formāta faktisko faila lielumu, "
+"skaitļojot SHA hash, lai salīdzinātu saturu, kur izmēri atbilst.<br/>- "
+"Grāmatas, kas atrastas, izmantojot šo meklēšanu, tiek garantētas kā "
+"dublikāti."
 
 #: dialogs.py:1048
 msgid ""
@@ -796,10 +764,9 @@ msgid ""
 " your target library with an <b>identical title</b> and {0}<br/>- Titles "
 "must match exactly excluding case."
 msgstr ""
-"<b>Búsqueda de títulos duplicados</b><br/>- Informar sobre libros de esta "
-"biblioteca con un <b>título idéntico</b>y {0} con respecto a libros en la "
-"biblioteca de destino.<br/>- Los títulos deben coincidir exactamente sin "
-"distinción de mayúsculas y minúsculas."
+"<b>Nosaukuma dublikāta meklēšana</b><br/>- Ziņo par grāmatām šajā bibliotēkā"
+" salīdzinājumā ar jūsu mērķa bibliotēku par <b>identisku nosaukumu</b> un "
+"{0}<br/>- Nosaukumiem ir precīzi jāsakrīt, izslēdzot lielos burtus."
 
 #: dialogs.py:1051
 msgid ""
@@ -808,11 +775,11 @@ msgid ""
 " matches apply removal of common punctuation and prefixes and applies the "
 "same title matching logic as Automerge."
 msgstr ""
-"<b> Búsqueda de títulos duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca con un <b>título similar</b> y {0} con respecto a libros en la "
-"biblioteca de destino.<br/>- Para las coincidencias de título similares se "
-"eliminan puntuación y prefijos comunes y se emplea la misma lógica de que "
-"para la unión automática."
+"<b>Nosaukuma dublikāta meklēšana</b><br/>- Ziņo par grāmatām šajā bibliotēkā"
+" salīdzinājumā ar jūsu mērķa bibliotēku ar <b>līdzīgu nosaukumu</b> un "
+"{0}<br/>- Līdzīgas nosaukumu atbilstības piemēro parasto pieturzīmju un "
+"prefiksu noņemšanu un izmanto tādu pašu nosaukuma saskaņošanas loģiku kā "
+"Automerge."
 
 #: dialogs.py:1055
 msgid ""
@@ -821,11 +788,10 @@ msgid ""
 " matches are based on the same removal of punctuation and common prefixes as"
 " a similar title search."
 msgstr ""
-"<b>Búsqueda duplicada de título</b><br/>- Informe libros en esta biblioteca "
-"en comparación con su biblioteca de destino con un <b>título por "
-"fonética</b> y {0}<br/>- Las coincidencias de título por fonética se basan "
-"en la misma eliminación de puntuación y prefijos comunes que una búsqueda de"
-" título similar."
+"<b>Nosaukuma dublikātu meklēšana</b><br/>- Ziņo par grāmatām šajā "
+"bibliotēkā, salīdzinot ar jūsu mērķa bibliotēku ar <b>soundex nosaukumu</b> "
+"un {0}<br/>- Soundex nosaukumu atbilstības ir balstītas par tādu pašu "
+"pieturzīmju un parasto prefiksu noņemšanu kā līdzīga nosaukuma meklēšanai."
 
 #: dialogs.py:1059
 msgid ""
@@ -834,11 +800,10 @@ msgid ""
 "matches remove all punctuation, subtitles and any words after 'and', 'or' or"
 " 'aka' in the title."
 msgstr ""
-"<b> Búsqueda de títulos duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca con un mismo <b>título borroso</b> y {0} con respecto a libros de"
-" la biblioteca de destino.<br/>- Para las coincidencias de título borroso se"
-" elimina toda puntuación, subtítulos y cualquier palabra después de «and» "
-"(y), «or» (o) o «aka» (alias) en el título."
+"<b>Nosaukuma dublikāta meklēšana</b><br/>- Ziņo par grāmatām šajā "
+"bibliotēkā, salīdzinot ar jūsu mērķa bibliotēku ar <b>izplūdušu "
+"nosaukumu</b> un {0}<br/>- Izplūdušo nosaukumu atbilstības, noņem visas "
+"pieturzīmes, subtitrus un jebkuri vārdi pēc “un”, “vai” vai “aka” nosaukumā."
 
 #: dialogs.py:1063
 msgid ""
@@ -847,119 +812,116 @@ msgid ""
 "searches are best to find variations of author names regardless of the books"
 " you have for each."
 msgstr ""
-"<b>Búsqueda de autores duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca <b>ignorando el título</b> con {0} con respecto a libros en la "
-"biblioteca de destino.<br/>- Las búsquedas en las que se ignora el título "
-"son mejores para encontrar variaciones en los nombres de los autores "
-"independientemente de los libros que haya para cada uno."
+"<b>Autora dublikāta meklēšana</b><br/>- Ziņo par grāmatām šajā bibliotēkā, "
+"salīdzinot ar jūsu mērķa bibliotēku, <b>ignorējot nosaukumu</b> ar {0}<br/>-"
+" Ignorēt nosaukumu meklēšanu vislabāk ir atrast autoru vārdu variācijas "
+"neatkarīgi no grāmatām, kas jums ir par katru."
 
 #: dialogs.py:1080
 msgid "Cross Library Search Options"
-msgstr "Opciones de búsqueda entre bibliotecas"
+msgstr "Vairāku bibliotēku meklēšanas opcijas"
 
 #: dialogs.py:1084
 msgid "Compare With Library:"
-msgstr "Comparar con la biblioteca:"
+msgstr "Salīdzināt ar bibliotēku:"
 
 #: dialogs.py:1088
 msgid "Library:"
-msgstr "Biblioteca:"
+msgstr "Bibliotēka:"
 
 #: dialogs.py:1098
 msgid "Duplicate Search Type:"
-msgstr "Tipo de búsqueda de duplicados:"
+msgstr "Dublikātu meklēšanas veids:"
 
 #: dialogs.py:1119
 msgid "Title Matching:"
-msgstr "Coincidencia de títulos:"
+msgstr "Nosaukuma atbilstība:"
 
 #: dialogs.py:1140
 msgid "Author Matching:"
-msgstr "Coincidencia de autores:"
+msgstr "Autora atbilstība:"
 
 #: dialogs.py:1165
 msgid "Compare Options:"
-msgstr "Opciones de comparación:"
+msgstr "Salīdzināt opcijas:"
 
 #: dialogs.py:1173
 msgid "Display duplicate books when search completes"
-msgstr "Mostrar libros duplicados al finalizar la búsqueda"
+msgstr "Kad meklēšana ir pabeigta, rādiet grāmatu dublikātus"
 
 #: dialogs.py:1174
 msgid "Uncheck this option if you just want the output log"
-msgstr "Desmarcar esta opción si sólo se desea el registro de salida."
+msgstr "Noņemt atzīmi no šīs opcijas, ja vēlaties tikai izvades žurnālu"
 
 #: dialogs.py:1213
 msgid "Choose library location to compare against"
-msgstr "Elegir la ubicación de la biblioteca con la que comparar"
+msgstr "Izvēlieties bibliotēku, ar kuru salīdzināt"
 
 #: dialogs.py:1264
 msgid "No library specified"
-msgstr "Ninguna biblioteca especificada"
+msgstr "Nav norādīta bibliotēka"
 
 #: dialogs.py:1265
 msgid "You must specify a library path"
-msgstr "Debe especificar una ruta de biblioteca"
+msgstr "Ir jānorāda bibliotēka"
 
 #: dialogs.py:1268
 msgid "Same as current"
-msgstr "Igual que la actual"
+msgstr "Tāds pats kā tekošais"
 
 #: dialogs.py:1269
 msgid "The location {0} contains the current calibre library"
-msgstr "La ubicación {0} contiene la biblioteca de calibre actual"
+msgstr "Vietnē {0} ir pašreizējā calibre bibliotēka"
 
 #: dialogs.py:1271
 msgid "No existing library found"
-msgstr "No se encontró una biblioteca existente"
+msgstr "Bibliotēka nav atrasta"
 
 #: dialogs.py:1272
 msgid "There is no existing calibre library at {0}"
-msgstr "No hay una biblioteca de calibre existente en {0}"
+msgstr "Vietnē {0} nav calibre bibliotēkas"
 
 #: dialogs.py:1295
 msgid "Save log"
-msgstr "Guardar registro"
+msgstr "Saglabāt žurnālu"
 
 #: dialogs.py:1302
 msgid "Save Find Duplicates log"
-msgstr "Guardar registro de Find Duplicates"
+msgstr "Saglabāt Atrast dublikātu žurnālu"
 
 #: dialogs.py:1303
 msgid "Duplicates log file"
-msgstr "Archivo de registro de duplicados"
+msgstr "Dublikātu žurnāls"
 
 #: duplicates.py:213
 msgid "No duplicate groups were found when searching with: <b>{0}</b>"
-msgstr "No se encontraron grupos de duplicados al buscar con: <b>{0}</b>"
+msgstr "Meklējot ar: <b>{0}</b>, dublikātu grupas netika atrastas"
 
 #: duplicates.py:215 duplicates.py:328 duplicates.py:361 duplicates.py:368
 msgid "No duplicates"
-msgstr "No hay duplicados"
+msgstr "Nav dublikātu"
 
 #: duplicates.py:217 duplicates.py:224 duplicates.py:330
 msgid "Show this information again"
-msgstr "Mostrar esta información nuevamente"
+msgstr "Rādiet šo informāciju vēlreiz"
 
 #: duplicates.py:220
 msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
-msgstr "Se encontraron {0} grupos duplicados al buscar con: <b>{1}</b>"
+msgstr "Meklējot ar: <b>{1}</b>, atrasti {0} grupu dublikāti"
 
 #: duplicates.py:327 duplicates.py:369
 msgid "No more duplicate groups exist from your search."
-msgstr "No existen más grupos duplicados en la búsqueda."
+msgstr "Meklēšanā vairs nav dublētu grupu."
 
 #: duplicates.py:362
 msgid ""
 "The current duplicate group no longer exists. You cannot perform this "
 "action."
-msgstr ""
-"El grupo de duplicados actual ya no existe. No se puede realizar esta "
-"acción."
+msgstr "Šī dublikātu grupa vairs nepastāv. Jūs nevarat veikt šo darbību."
 
 #: duplicates.py:720
 msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
-msgstr "Mostrando #{0} de {0} grupos de duplicados restantes para {0}"
+msgstr "Tiek rādītas #{0}. no {0} atlikušajām dublētajām grupām {0}"
 
 #: duplicates.py:827
 msgid ""
@@ -969,43 +931,41 @@ msgid ""
 "\n"
 "{3}"
 msgstr ""
-"Resultados de la comparación {0}:\n"
-"     Biblioteca de origen: {1}\n"
-"     Biblioteca de destino: {2}\n"
+"Salīdzināšanas {0} rezultāti:\n"
+"    Avota bibliotēka: {1}\n"
+"    Mērķa bibliotēka: {2}\n"
 "\n"
 "{3}"
 
 #: duplicates.py:899
 msgid "Click 'Show details' to see the results."
-msgstr "Pulse en «Mostrar detalles» para ver los resultados."
+msgstr "Klikšķiniet \"Rādīt informāciju\", lai redzētu rezultātus."
 
 #: duplicates.py:911 duplicates.py:1037
 msgid "Analysing duplicates in target database"
-msgstr "Analizando duplicados en la base de datos de destino"
+msgstr "Dublikātu analīze mērķa datu bāzē"
 
 #: duplicates.py:913 duplicates.py:1046
 msgid "Analysing duplicates in current database"
-msgstr "Analizando duplicados en la base de datos actual"
+msgstr "Dublikātu analīze tekošajā datu bāzē"
 
 #: duplicates.py:944
 msgid ""
 "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
 msgstr ""
-"Se encontraron <b>{0} autores</b> con posibles duplicados usando <b>{1}</b> "
-"frente a la biblioteca en: {2}"
+"Atrasti <b>{0} autori</b> ar iespējamiem dublikātiem, izmantojot <b>{1}</b> "
+"bibliotēku: {2}"
 
 #: duplicates.py:1033
 msgid ""
 "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
-msgstr ""
-"Se encontraron <b>{0} libros</b> con duplicados binarios frente a la "
-"biblioteca en: {1}"
+msgstr "Atrastas <b>{0} grāmatas</b> ar bināriem dublikātiem bibliotēkā: {1}"
 
 #: duplicates.py:1070
 msgid ""
 "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
 msgstr ""
-"Se encontraron <b>{0} libros</b> con posibles duplicados usando <b>{1}</b> "
-"frente a la biblioteca en: {2}"
+"Atrastas <b>{0} grāmatas</b> ar iespējamiem dublikātiem, izmantojot "
+"<b>{1}</b> bibliotēku: {2}"

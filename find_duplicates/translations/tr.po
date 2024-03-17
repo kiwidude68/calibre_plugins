@@ -137,6 +137,8 @@ msgid ""
 "Find & rename variations in author, publisher, series or tags names that may"
 " indicate duplicates"
 msgstr ""
+"Yazar, yayıncı, dizi veya etiket adlarında kopyaları gösterebilecek "
+"varyasyonları bulun ve yeniden adlandırın"
 
 #: action.py:97
 msgid "&Next result"
@@ -200,6 +202,8 @@ msgstr "&Bu kitap için muafiyetleri yönet"
 #: action.py:122
 msgid "Show duplicate exemptions for this book to enable removal"
 msgstr ""
+"Kaldırma işlemini etkinleştirmek için bu kitabın yinelenen muafiyetlerini "
+"gösterin"
 
 #: action.py:125
 msgid "&Remove selected exemptions"
@@ -238,6 +242,8 @@ msgid ""
 "This action will ensure that each of the {0} in the group are exempt from "
 "appearing together again in future."
 msgstr ""
+"Bu işlem, gruptaki {0} kişiden her birinin gelecekte tekrar birlikte "
+"görünmekten muaf tutulmasını sağlayacaktır."
 
 #: action.py:251 action.py:304
 msgid "Are you <b>sure</b> you want to proceed?"
@@ -303,7 +309,7 @@ msgstr "{0} kitap eşleşmeler için inceleniyor"
 
 #: book_algorithms.py:422
 msgid "matching '{0}' identifier"
-msgstr ""
+msgstr "eşleşen '{0}' tanımlayıcısı"
 
 #: book_algorithms.py:425
 msgid "binary compare"
@@ -311,7 +317,7 @@ msgstr "ikili karşılaştırma"
 
 #: book_algorithms.py:430
 msgid "ignore title, {0} author"
-msgstr ""
+msgstr "başlığı yoksay, {0} yazar"
 
 #: book_algorithms.py:434
 msgid "{0} title, {1} author"
@@ -367,6 +373,13 @@ msgid ""
 " duplicates.<br/>- Marking a group as exempt will prevent those specific "
 "books from appearing together in future duplicate book searches."
 msgstr ""
+"<b>Kitap yinelemeli arama</b><br/>- Aynı ikili kitap biçimine sahip kitap "
+"gruplarını bulun.<br/>- Kitaplığınızdaki her kitap biçiminin gerçek dosya "
+"boyutunu karşılaştırır ve boyutların eşleştiği içerikleri karşılaştırmak "
+"için bir SHA karması hesaplar.<br/>- Bunu kullanarak bulunan kitaplar "
+"aramanın kopya olması garanti edilir. <br/>- Bir grubun muaf olarak "
+"işaretlenmesi, bu belirli kitapların gelecekte tekrarlanan kitap "
+"aramalarında bir arada görünmesini engelleyecektir."
 
 #: dialogs.py:66
 msgid ""
@@ -375,6 +388,11 @@ msgid ""
 "case.<br/>- Marking a group as exempt will prevent those specific books from"
 " appearing together in future duplicate book searches."
 msgstr ""
+"<b>Yinelenen başlık araması</b><br/>- <b>Aynı başlığa</b> ve {0} sahip kitap"
+" gruplarını bulun <br/>- Başlıklar, büyük/küçük harf hariç tam olarak "
+"eşleşmelidir.<br/>- Bir grubun muaf olarak işaretlenmesi, bu belirli "
+"kitapların gelecekteki yinelenen kitap aramalarında birlikte görünmesini "
+"engelleyecektir."
 
 #: dialogs.py:71
 msgid ""
@@ -384,6 +402,12 @@ msgid ""
 "Automerge.<br/>- Marking a group as exempt will prevent those specific books"
 " from appearing together in future duplicate book searches."
 msgstr ""
+"<b>Yinelenen başlık arama</b><br/>- <b>Benzer başlığa</b> ve {0} sahip kitap"
+" gruplarını bulun<br/>- Benzer başlık eşleşmeleri, yaygın noktalama "
+"işaretlerinin ve öneklerin kaldırılmasını sağlar ve Otomatik Birleştirme ile"
+" aynı başlık eşleştirme mantığını uygular.<br/>- Bir grubu muaf olarak "
+"işaretlemek, söz konusu belirli kitapları engelleyecektir Gelecekteki "
+"mükerrer kitap aramalarında birlikte görünmenin önlenmesi."
 
 #: dialogs.py:77
 msgid ""
@@ -393,6 +417,12 @@ msgid ""
 "a group as exempt will prevent those specific books from appearing together "
 "in future duplicate book searches."
 msgstr ""
+"<b>Yinelenen başlık arama</b><br/>- <b>Soundex başlıklı</b> kitap gruplarını"
+" bulun ve {0}<br/>- Soundex başlık eşleşmeleri, benzer başlık aramasında "
+"olduğu gibi noktalama işaretlerinin ve ortak öneklerin kaldırılmasına "
+"dayanır.<br/>- Bir grubu muaf olarak işaretlemek, söz konusu belirli "
+"kitapları engelleyecektir Gelecekteki mükerrer kitap aramalarında birlikte "
+"görünmenin önlenmesi."
 
 #: dialogs.py:83
 msgid ""
@@ -402,6 +432,12 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
+"<b>Yinelenen başlık arama</b><br/>- Bulanık başlığa</b> ve {0} sahip kitap "
+"gruplarını bulun  <br/>- Bulanık başlık eşleşmeleri, tüm noktalama "
+"işaretlerini, alt başlıkları ve başlıktaki 've', 'veya' veya 'aka'dan "
+"sonraki tüm kelimeleri kaldırın.<br/>- Bir grubun muaf olarak işaretlenmesi,"
+" bu belirli kitapların gelecekteki mükerrer kitap aramalarında bir arada "
+"görünmesini engelleyecektir."
 
 #: dialogs.py:89
 msgid ""
@@ -411,6 +447,12 @@ msgid ""
 "group as exempt will prevent any books by those authors from appearing "
 "together in future duplicate author searches."
 msgstr ""
+"<b>Yinelenen yazar arama</b><br/>- Kitap gruplarını bulun {0} ile<b>başlığı "
+"yok sayarak</b><br/>- Başlık aramalarını göz ardı etmek, her biri için sahip"
+" olduğunuz kitaplara bakılmaksızın yazar adlarının çeşitlemelerini bulmak "
+"için en iyisidir. <br/>- Bir grubun muaf olarak işaretlenmesi, bu yazarların"
+" kitaplarının gelecekteki mükerrer yazar aramalarında birlikte görünmesini "
+"engelleyecektir."
 
 #: dialogs.py:98
 msgid ""
@@ -440,6 +482,8 @@ msgid ""
 "a <b>fuzzy match author</b>.<br/>- Fuzzy author matches compare using their "
 "surnames and only the first initial."
 msgstr ""
+"<b>bulanık eşleşen yazar</b>.<br/>- Bulanık yazar eşleşmeleri, soyadlarının "
+"yalnızca ilk harfi kullanılarak karşılaştırılır."
 
 #: dialogs.py:109
 msgid "<b>ignoring the author</b>."
@@ -534,6 +578,8 @@ msgid ""
 "When checked, books with identical titles but different\n"
 "languages metadata field values will not show as duplicates"
 msgstr ""
+"İşaretlendiğinde, aynı başlığa sahip ancak farklı dillerdeki meta veri \n"
+"alanı değerlerine sahip kitaplar kopya olarak gösterilmeyecek"
 
 #: dialogs.py:270
 msgid "When doing a Binary Compare, automatically remove duplicate formats"
@@ -549,6 +595,12 @@ msgid ""
 "Note that the book records themselves are not deleted, and will still appear in the\n"
 "results for merging even if they now have no formats."
 msgstr ""
+"İşaretlendiğinde ve yinelenen biçimler bulunursa İkili yinelenen arama çalıştırıldığında \n"
+"daha sonra biri hariç hepsi silinir. En eski kitap kaydındaki biçim korunacaktır. \n"
+"Bu, ilişkili birden fazla biçimin olduğu durumlar için kullanışlı bir fonksiyondur \n"
+"her kitap ve dolayısıyla bunlardan hangisinin kopya olduğu hemen belli değil. \n"
+"Kitap kayıtlarının silinmediğini ve kitap kayıtlarında görünmeye devam \n"
+"edeceğini unutmayın. artık biçimleri olmasa bile birleştirme sonuçları."
 
 #: dialogs.py:370
 msgid "Invalid Criteria"
@@ -629,7 +681,7 @@ msgstr "Soundex"
 
 #: dialogs.py:684
 msgid "Fuzzy"
-msgstr ""
+msgstr "Bulanık"
 
 #: dialogs.py:691
 msgid "Search"
@@ -637,7 +689,7 @@ msgstr "Ara"
 
 #: dialogs.py:693
 msgid "Search for results"
-msgstr ""
+msgstr "Sonuçları ara"
 
 #: dialogs.py:704
 msgid "Search results:"
@@ -677,7 +729,7 @@ msgstr ""
 
 #: dialogs.py:752
 msgid "Ignore all selected items from consideration at this time"
-msgstr ""
+msgstr "Şu anda değerlendirmeye alınan seçili öğelerin tümünü yoksay"
 
 #: dialogs.py:791
 msgid "No matches"
@@ -685,7 +737,7 @@ msgstr "Eşleşme yok"
 
 #: dialogs.py:791
 msgid "You have no variations of {0} using this criteria"
-msgstr ""
+msgstr "Bu kriteri kullanan {0} varyasyonunuz yok"
 
 #: dialogs.py:851
 msgid "Use this variation name"
@@ -717,6 +769,11 @@ msgid ""
 "compare contents where sizes match.<br/>- Books found using this search are "
 "guaranteed to be duplicates."
 msgstr ""
+"<b>Yinelenen kitap arama</b><br/>- Bu kitaplıktaki, hedef kitaplığınızdaki "
+"kitaplarla aynı ikili olan kitapları rapor edin.<br/>- Kitaplıklarınızdaki "
+"her kitap biçiminin gerçek dosya boyutunu karşılaştırır ve boyutların "
+"eşleştiği içerikleri karşılaştırmak için bir SHA karması hesaplar.<br/>- Bu "
+"aramayı kullanarak bulunan kitapların kopya olması garanti edilir."
 
 #: dialogs.py:1048
 msgid ""
@@ -735,6 +792,11 @@ msgid ""
 " matches apply removal of common punctuation and prefixes and applies the "
 "same title matching logic as Automerge."
 msgstr ""
+"<b>Yinelenen başlık arama</b><br/>- Bu kitaplıktaki kitapları <b>benzer "
+"başlığa</b> ve {0} sahip hedef kitaplığınızla karşılaştırarak "
+"raporlayın<br/>- Benzer başlık eşleşmeleri, yaygın noktalama işaretlerinin "
+"ve öneklerin kaldırılmasını sağlar ve Otomatik Birleştirme ile aynı başlık "
+"eşleştirme mantığını uygular."
 
 #: dialogs.py:1055
 msgid ""
@@ -815,7 +877,7 @@ msgstr "Mevcutla aynı"
 
 #: dialogs.py:1269
 msgid "The location {0} contains the current calibre library"
-msgstr ""
+msgstr "{0} konumu geçerli calibre kitaplığını içeriyor"
 
 #: dialogs.py:1271
 msgid "No existing library found"
@@ -876,6 +938,11 @@ msgid ""
 "\n"
 "{3}"
 msgstr ""
+"{0} karşılaştırmasının sonuçları: \n"
+"   Kaynak kitaplık: {1}\n"
+"   Hedef kitaplık: {2}\n"
+"\n"
+"{3}"
 
 #: duplicates.py:899
 msgid "Click 'Show details' to see the results."
@@ -894,14 +961,19 @@ msgid ""
 "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
 msgstr ""
+"Şu adresteki kitaplığa karşı <b>{1}</b> kullanan, potansiyel kopyalara sahip"
+" <b>{0} yazar1</b>bulundu: {2}"
 
 #: duplicates.py:1033
 msgid ""
 "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
 msgstr ""
+"Şu adresteki kitaplıkta ikili kopyalara sahip <b>{0} kitap</b> bulundu: {1}"
 
 #: duplicates.py:1070
 msgid ""
 "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
 msgstr ""
+"Şu adresteki kitaplıkta <b>{1}</b> kullanılarak potansiyel kopyalara sahip "
+"<b>{0} kitap</b> bulundu: {2}"

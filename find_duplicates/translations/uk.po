@@ -3,7 +3,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Андрій М. <dexteritymaster@gmail.com>, 2022
+# Andrii M. <dexteritymaster@gmail.com>, 2022
 # Yuri Chornoivan <yurchor@ukr.net>, 2022
 # 
 msgid ""

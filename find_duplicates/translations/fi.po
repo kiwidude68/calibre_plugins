@@ -3,283 +3,279 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme-Barrientos, 2022
-# Grant Drake, 2022
-# Darío Hereñú, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# Veikko Muurikainen, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-18 19:16+0100\n"
 "PO-Revision-Date: 2022-09-19 15:11+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Veikko Muurikainen, 2024\n"
+"Language-Team: Finnish (https://app.transifex.com/calibre/teams/19337/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:141
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "Pikanäppäimet"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "Käynnistä calibre uudelleen"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "Asetukset kohteelle:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Tyhjennä"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "Tyhjennä kaikki tämän laajennuksen asetukset"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+"Oletko varma, että haluat muuttaa asetuksia tässä kirjastossa tälle "
+"laajennukselle?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"Muissa kirjastoissa oleviin tai calibre laajennuskansioon JSON-tiedostoon "
+"tallennettuihin asetuksiin ei puututa."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "Sinun on käynnistettävä calibre sen jälkeen uudelleen."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "Asetuksia muutettu"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr "Tämän laajennuksen asetuksia tässä kirjastossa on muutettu."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "Käynnistä calibre uudelleen."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+"Oletko varma, että haluat tyhjentää tämän kirjaston asetukset tätä "
+"laajennusta varten?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "Asetuksia poistettu"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr "Kaikki tämän laajennuksen asetukset tässä kirjastossa on tyhjennetty."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Kopioi leikepöydälle"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "Määrittelemätön"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "Uudelleenkäynnistys vaaditaan"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"Otsikkokuvaa ei löydy - sinun on käynnistettävä Calibre uudelleen ennen "
+"tämän laajennuksen käyttöä!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "Luo uusi sarake"
 
 #: action.py:45 dialogs.py:175 dialogs.py:1077 duplicates.py:222
 msgid "Find Duplicates"
-msgstr "Find Duplicates"
+msgstr "Kaksoiskappaleiden haku"
 
 #: action.py:87
 msgid "&Find book duplicates"
-msgstr "&Buscar duplicados de libros"
+msgstr "&Etsi kirjan kaksoiskappaleet"
 
 #: action.py:89
 msgid "Find library duplicates"
-msgstr "Buscar duplicados de biblioteca"
+msgstr "Etsi kirjaston kaksoiskappaleet"
 
 #: action.py:90
 msgid "Find books that are duplicated in another library compared to this one"
 msgstr ""
-"Buscar libros que están duplicados en otra biblioteca en comparación con "
-"ésta"
+"Etsi kirjoja, jotka ovat päällekkäisiä toisessa kirjastossa verrattuna tähän"
+" kirjastoon"
 
 #: action.py:93
 msgid "Find metadata &variations"
-msgstr "Buscar &variaciones de metadatos"
+msgstr "Etsi metadatan &muunnelmia"
 
 #: action.py:94
 msgid ""
 "Find & rename variations in author, publisher, series or tags names that may"
 " indicate duplicates"
 msgstr ""
-"Buscar y cambiar el nombre de variaciones en los nombres de autor, "
-"editorial, serie o etiquetas que puedan indicar duplicados"
+"Etsi ja nimeä uudelleen tekijän, kustantajan, sarjan tai tunnisteiden "
+"nimissä esiintyviä muunnelmia, jotka voivat viitata päällekkäisyyksiin"
 
 #: action.py:97
 msgid "&Next result"
-msgstr "&Siguiente resultado"
+msgstr "Seuraava tulos"
 
 #: action.py:98
 msgid "Display the next duplicate result group"
-msgstr "Mostrar el siguiente grupo de resultados duplicados"
+msgstr "Näytä seuraava kaksoistulosryhmä"
 
 #: action.py:100
 msgid "&Previous result"
-msgstr "&Resultado anterior"
+msgstr "Edellinen tulos"
 
 #: action.py:101
 msgid "Display the previous duplicate result group"
-msgstr "Mostrar el grupo de resultados duplicados anterior"
+msgstr "Näytä edellinen kaksoistulosryhmä"
 
 #: action.py:104
 msgid "&Mark current group as exempt"
-msgstr "&Marcar grupo actual como exento"
+msgstr "Merkitse nykyinen ryhmä poikkeukseksi"
 
 #: action.py:105
 msgid ""
 "Mark the current group as not duplicates and exempt from future "
 "consideration"
 msgstr ""
-"Marcar el grupo actual como no duplicado y exento de consideración futura"
+"Merkitse nykyinen ryhmä ei-päällekkäiseksi ja jätä se pois tulevasta "
+"tarkastelusta"
 
 #: action.py:108
 msgid "Mark &all groups as exempt"
-msgstr "Marcar &todos los grupos como exentos"
+msgstr "Merkitse &kaikki ryhmät poikkeuksiksi"
 
 #: action.py:109
 msgid ""
 "Mark all remaining duplicate groups as exempt from future consideration"
 msgstr ""
-"Marcar todos los grupos duplicados restantes como exentos de consideración "
-"futura"
+"Merkitse kaikki jäljelle jäävät päällekkäiset ryhmät vapautetuiksi tulevasta"
+" tarkastelusta"
 
 #: action.py:113
 msgid "&Show all book duplicate exemptions"
-msgstr "&Mostrar todas las exenciones de duplicados de libros"
+msgstr "Näytä kaikki kirjan kaksoiskappaleiden poikkeukset"
 
 #: action.py:114
 msgid "Show all books that have book duplicate exemption pairings"
 msgstr ""
-"Mostrar todos los libros que tienen exenciones de duplicados de libros"
+"Näytä kaikki kirjat, joissa on kirjan kaksoiskappaleiden poikkeuslupapareja"
 
 #: action.py:117
 msgid "&Show all author duplicate exemptions"
-msgstr "&Mostrar todas las exenciones de duplicados de autor"
+msgstr "Näytä kaikki tekijä-kaksoiskappaleiden poikkeukset"
 
 #: action.py:118
 msgid "Show all books that have author duplicate exemption pairings"
-msgstr "Mostrar todos los libros que tienen exenciones de duplicados de autor"
+msgstr "Näytä kaikki kirjat, joissa on tekijän kaksoiskappalepoikkeusparit"
 
 #: action.py:121
 msgid "&Manage exemptions for this book"
-msgstr "&Administrar exenciones para este libro"
+msgstr "&Käsittele tämän kirjan poikkeuksia"
 
 #: action.py:122
 msgid "Show duplicate exemptions for this book to enable removal"
 msgstr ""
-"Mostrar exenciones de duplicada para este libro para permitir su eliminación"
+"Näytä tämän kirjan päällekkäiset poikkeukset poistamisen mahdollistamiseksi"
 
 #: action.py:125
 msgid "&Remove selected exemptions"
-msgstr "&Eliminar exenciones seleccionadas"
+msgstr "&Poista valitut poikkeukset"
 
 #: action.py:126
 msgid "Remove any duplicate book/author exemptions for the selected books"
-msgstr ""
-"Eliminar exenciones de duplicado de libro o autor para los libros "
-"seleccionados"
+msgstr "Poista valituista kirjoista päällekkäiset kirjan/tekijän poikkeukset"
 
 #: action.py:130
 msgid "&Clear duplicate results"
-msgstr "&Limpiar resultados duplicados"
+msgstr "&Poista päällekkäiset tulokset"
 
 #: action.py:131
 msgid "Exit duplicate search mode"
-msgstr "Salir del modo de búsqueda de duplicados"
+msgstr "Poistu kaksoiskappaleiden hakutilasta"
 
 #: action.py:135
 msgid "&Export duplicate groups"
-msgstr "&Exportar grupos de duplicados"
+msgstr "Vi&e päällekkäiset ryhmät"
 
 #: action.py:136
 msgid "Export duplicates groups to a json file"
-msgstr "Exportar grupos de duplicados a un archivo json"
+msgstr "Vie kaksoiskappaleiden ryhmät json-tiedostoon"
 
 #: action.py:140
 msgid "&Customize plugin"
-msgstr "&Personalizar complemento"
+msgstr "&Mukauta laajennusta"
 
 #: action.py:142
 msgid "&Help"
-msgstr "&Ayuda"
+msgstr "&Ohje"
 
 #: action.py:248
 msgid ""
 "This action will ensure that each of the {0} in the group are exempt from "
 "appearing together again in future."
 msgstr ""
-"Esta acción asegurará que cada uno de los {0} en el grupo estén exentos de "
-"volver a aparecer juntos en el futuro."
+"Tällä toimenpiteellä varmistetaan, että kaikki ryhmässä {0} olevat eivät "
+"enää esiinny jatkossa yhdessä."
 
 #: action.py:251 action.py:304
 msgid "Are you <b>sure</b> you want to proceed?"
-msgstr "¿Está <b>seguro</b> de querer continuar?"
+msgstr "Haluatko <b>varmasti</b> jatkaa?"
 
 #: action.py:259
 msgid "No duplicates in group"
-msgstr "No hay duplicados en el grupo"
+msgstr "Ryhmässä ei ole kaksoiskappaleita"
 
 #: action.py:260
 msgid "There are no duplicates remaining in this group."
-msgstr "No quedan duplicados en este grupo."
+msgstr "Tässä ryhmässä ei ole kaksoiskappaleita."
 
 #: action.py:271 action.py:276
 msgid "Cannot manage exemptions"
-msgstr "No se pueden gestionar las exenciones"
+msgstr "Poikkeuksia ei voida käsitellä"
 
 #: action.py:272
 msgid "No book selected"
-msgstr "Ningún libro seleccionado"
+msgstr "Kirjaa ei ole valittu"
 
 #: action.py:277
 msgid "This book has no duplicate exemptions"
-msgstr "Este libro no tiene exenciones de duplicado"
+msgstr "Tässä kirjassa ei ole päällekkäisiä poikkeuksia"
 
 #: action.py:298
 msgid "Invalid selection"
-msgstr "Selección no válida"
+msgstr "Virheellinen valinta"
 
 #: action.py:299
 msgid "You must select at least one book."
-msgstr "Debe seleccionar al menos un libro."
+msgstr "Sinun on valittava ainakin yksi kirja."
 
 #: action.py:300
 msgid ""
@@ -287,77 +283,75 @@ msgid ""
 "will allow them to potentially appear as duplicates together in a future "
 "duplicate search."
 msgstr ""
-"Esta acción eliminará cualquier exención de duplicados en la selección. Esto"
-" hace que puedan volver a aparecer potencialmente como duplicados en una "
-"futura búsqueda de duplicados."
+"Tämä toiminto poistaa kaikki päällekkäiset poikkeukset valintasi osalta. "
+"Näin ne voivat mahdollisesti näkyä päällekkäisinä myöhemmin tehtävissä "
+"päällekkäishauissa."
 
 #: action.py:338
 msgid "Choose file"
-msgstr "Elegir archivo"
+msgstr "Valitse tiedosto"
 
 #: action.py:339
 msgid "Saved duplicates"
-msgstr "Duplicados guardados"
+msgstr "Tallennetut kaksoiskappaleet"
 
 #: action.py:365
 msgid "Export completed"
-msgstr "Exportación completada"
+msgstr "Vienti valmistui"
 
 #: action.py:366
 msgid "Exported to: {}"
-msgstr "Exportado a: {}"
+msgstr "Viety osoitteeseen: {}"
 
 #: book_algorithms.py:53
 msgid "Analysing {0} books for duplicates"
-msgstr "Analizando {0} libros para buscar duplicados "
+msgstr "Analysoidaan {0} kirjaa kaksoiskappaleiden osalta"
 
 #: book_algorithms.py:422
 msgid "matching '{0}' identifier"
-msgstr "identificador «{0}» coincidente"
+msgstr "vastaava '{0}' tunniste"
 
 #: book_algorithms.py:425
 msgid "binary compare"
-msgstr "comparación binaria"
+msgstr "binäärivertailu"
 
 #: book_algorithms.py:430
 msgid "ignore title, {0} author"
-msgstr "ignorar el título, autor {0}"
+msgstr "ohita otsikko, {0} tekijä"
 
 #: book_algorithms.py:434
 msgid "{0} title, {1} author"
-msgstr "título {0}, autor {1}"
+msgstr "{0} otsikko, {1} tekijä"
 
 #: config.py:143
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Modificar los atajos de teclado asociados con este complemento"
+msgstr "Muokkaa tähän laajennukseen liittyviä pikanäppäimiä"
 
 #: config.py:147
 msgid "Reset &confirmation dialogs"
-msgstr "Restablecer cuadros de diálogo de &confirmación"
+msgstr "Nollaa &vahvistusdialogit"
 
 #: config.py:148
 msgid "Reset all show me again dialogs for the Find Duplicates plugin"
 msgstr ""
-"Restablecer todos los cuadros de diálogo «Mostrar otra vez» del complemento "
-"Find Duplicates"
+"Nollaa kaikki Näytä minut uudelleen -valintaikkunat Etsi kaksoiskappaleet "
+"-laajennuksessa"
 
 #: config.py:152
 msgid "&View library preferences"
-msgstr "&Ver preferencias de biblioteca"
+msgstr "&Näytä kirjastoasetukset"
 
 #: config.py:153
 msgid "View data stored in the library database for this plugin"
-msgstr ""
-"Ver los datos almacenados en la base de datos de la biblioteca para este "
-"complemento"
+msgstr "Näytä tämän laajennuksen kirjastotietokantaan tallennetut tiedot"
 
 #: config.py:169
 msgid "Done"
-msgstr "Hecho"
+msgstr "Valmis"
 
 #: config.py:170
 msgid "Confirmation dialogs have all been reset"
-msgstr "Se han restablecido todos los diálogos de confirmación"
+msgstr "Kaikki vahvistusvalintaikkunat on nollattu"
 
 #: dialogs.py:51
 msgid ""
@@ -366,10 +360,10 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de libros duplicados</b><br/>- Buscar grupos de libros que "
-"tienen un identificador idéntico, como ISBN, ID de Amazon, Goodreads, uri, "
-"etc.<br/>- Marcar un grupo como exento evitará que esos libros específicos "
-"aparezcan juntos en futuras búsquedas de libros duplicados."
+"<b>Kirjojen kaksoiskappalehaku</b><br/>- Etsi kirjaryhmiä, joilla on "
+"identtinen tunniste, kuten ISBN, amazon id, goodreads, uri jne.<br/>- Ryhmän"
+" merkitseminen vapautetuksi estää näitä kirjoja esiintymästä yhdessä "
+"tulevissa kaksoiskappalehauissa."
 
 #: dialogs.py:57
 msgid ""
@@ -380,14 +374,13 @@ msgid ""
 " duplicates.<br/>- Marking a group as exempt will prevent those specific "
 "books from appearing together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de libros duplicados</b><br/>- Buscar grupos de libros que "
-"tienen un formato de libro que es idéntico en su código binario.<br/>- Se "
-"compara el tamaño real de archivo de cada formato de libro en la biblioteca,"
-" calculando un código de verificación SHA para comparar el contenido cuando "
-"los tamaños coinciden.<br/>- Los libros encontrados con esta búsqueda son "
-"duplicados con toda seguridad.<br/>- Marcar un grupo como exento evitará que"
-" esos libros específicos aparezcan juntos en futuras búsquedas de libros "
-"duplicados."
+"<b>Kirjojen kaksoiskappalehaku</b><br/>- Etsitään kirjaryhmiä, joiden "
+"kirjaformaatti on binäärisesti identtinen.<br/>- Vertailee jokaisen "
+"kirjastossasi olevan kirjaformaatin todellista tiedostokokoa ja laskee SHA-"
+"hashin vertaillakseen sisältöjä, joiden koot ovat yhteneväiset.<br/>- "
+"Kirjat, jotka on löydetty tämän haun avulla, ovat takuuvarmasti "
+"kaksoiskappaleita.<br/>- Ryhmän merkitseminen vapautetuksi estää näitä "
+"kirjoja esiintymästä yhdessä tulevissa kaksoiskappaleiden kirjahauissa."
 
 #: dialogs.py:66
 msgid ""
@@ -396,11 +389,11 @@ msgid ""
 "case.<br/>- Marking a group as exempt will prevent those specific books from"
 " appearing together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de título duplicado</b><br/>- Buscar grupos de libros con un "
-"<b>título idéntico</b> y {0}<br/>- Los títulos deben coincidir exactamente "
-"sin distinción de mayúsculas y minúsculas.<br/>- Marcar un grupo como exento"
-" evitará que esos libros específicos aparezcan juntos en futuras búsquedas "
-"de libros duplicados."
+"<b>Nimikkeiden kaksoiskappaleiden haku</b><br/>- Etsi kirjaryhmiä, joilla on"
+" <b>identtinen nimi</b> ja {0}<br/>- Nimikkeiden on vastattava täsmälleen "
+"lukuun ottamatta isoja ja pieniä kirjaimia.<br/>- Ryhmän merkitseminen "
+"vapautetuksi estää näitä tiettyjä kirjoja esiintymästä yhdessä tulevissa "
+"kirjojen kaksoiskappaleiden hauissa."
 
 #: dialogs.py:71
 msgid ""
@@ -410,12 +403,12 @@ msgid ""
 "Automerge.<br/>- Marking a group as exempt will prevent those specific books"
 " from appearing together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de título duplicado</b><br/>- Buscar grupos de libros con un "
-"<b>título similar</b> y {0}<br/>- Las coincidencias de título similares se "
-"realizan con eliminación de signos de puntuación y prefijos comunes y con la"
-" misma lógica que la unión automática.<br/>- Marcar un grupo como exento "
-"evitará que esos libros específicos aparezcan juntos en futuras búsquedas de"
-" libros duplicados."
+"<b>Nimikkeiden kaksoiskappaleihaku</b><br/>- Etsi kirjaryhmiä, joilla on <b>"
+" samankaltainen otsikko</b> ja {0}<br/>- Samankaltaisen otsikon osumat "
+"poistaa yhteiset välimerkit ja etuliitteet ja soveltavat samaa otsikoiden "
+"täsmäytyslogiikkaa kuin Automerge.<br/>- Ryhmän merkitseminen vapautetuksi "
+"estää näitä kirjoja esiintymästä yhdessä tulevissa kirjojen "
+"kaksoiskappaleiden hauissa."
 
 #: dialogs.py:77
 msgid ""
@@ -425,12 +418,12 @@ msgid ""
 "a group as exempt will prevent those specific books from appearing together "
 "in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de título duplicado</b><br/>- Buscar grupos de libros con un "
-"mismo <b>«soundex» de título (algoritmo fonético)</b> y {0}<br/>- Las "
-"coincidencias de título por «soundex» se basan en la misma eliminación de "
-"puntuación y prefijos comunes que una búsqueda de título similar.<br/>- "
-"Marcar un grupo como exento evitará que esos libros específicos aparezcan "
-"juntos en futuras búsquedas de libros duplicados."
+"<b>Nimikkeiden kaksoiskappalehaku</b><br/>- Etsi kirjaryhmiä, joilla on "
+"<b>soundex-nimike</b> ja {0}<br/>- Soundex-nimikkeiden osumat perustuvat "
+"samaan välimerkkien ja yhteisten etuliitteiden poistoon kuin samankaltaisten"
+" nimikkeiden haku.<br/>- Ryhmän merkitseminen vapautetuksi estää näitä "
+"tiettyjä kirjoja esiintymästä yhdessä tulevissa kirjojen kaksoiskappaleiden "
+"hauissa."
 
 #: dialogs.py:83
 msgid ""
@@ -440,12 +433,12 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
-"<b>Búsqueda de título duplicado</b><br/>- Buscar grupos de libros con un "
-"mismo <b>título borroso</b> y {0}<br/>- Las coincidencias de título borroso "
-"eliminan todos los signos de puntuación, subtítulos y cualquier palabra "
-"después de «and» (y), «or» (o) o «aka» (alias) en el título.<br/>- Marcar un"
-" grupo como exento evitará que esos libros específicos aparezcan juntos en "
-"futuras búsquedas de libros duplicados."
+"<b>Nimikkeiden kaksoiskappalehaku</b><br/>- Etsi kirjaryhmiä, joilla on "
+"<b>epäselvä otsikko</b> ja {0}<br/>- Epäselvän otsikon osumat poistaa kaikki"
+" välimerkit, väliotsikot ja kaikki sanat, jotka ovat \"ja\", \"tai\" tai "
+"\"aka\" jälkeen otsikossa.<br/>- Ryhmän merkitseminen vapautetuksi estää "
+"näitä kirjoja esiintymästä yhdessä kirjojen kaksoiskappaleiden hauissa "
+"tulevaisuudessa."
 
 #: dialogs.py:89
 msgid ""
@@ -455,107 +448,104 @@ msgid ""
 "group as exempt will prevent any books by those authors from appearing "
 "together in future duplicate author searches."
 msgstr ""
-"<b>Búsqueda de autor duplicado</b><br/>- Buscar grupos de libros "
-"<b>ignorando el título</b> con {0}<br/>- Las búsquedas en las que se ignora "
-"el título son las mejores para encontrar variaciones de nombres de autores "
-"independientemente de los libros que existan para cada uno.<br/>- Marcar un "
-"grupo como exento evitará que los libros de esos autores aparezcan juntos en"
-" futuras búsquedas de autores duplicados."
+"<b>Tekijän kaksoishaku</b><br/>- Etsi kirjaryhmiä <b>jättäen nimet "
+"huomioimatta</b> käyttämällä {0}<br/>- Ohita nimikehaut ovat parasta löytää "
+"muunnelmia kirjailijoiden nimistä riippumatta kirjat, jotka sinulla on "
+"kullekin.<br/>– Ryhmän merkitseminen vapautetuksi estää näiden kirjoittajien"
+" kirjoja näkymästä yhdessä tulevissa päällekkäisissä kirjailijahauissa."
 
 #: dialogs.py:98
 msgid ""
 "an <b>identical author</b>.<br/>- Authors must match exactly excluding case."
 msgstr ""
-"un <b>autor idéntico</b>.<br/>- Los autores deben coincidir exactamente sin "
-"distinción de mayúsculas y minúsculas."
+"<b>identtinen tekijä</b>.<br/>- Tekijöiden on täsmättävä lukuun ottamatta "
+"kirjainkokoa."
 
 #: dialogs.py:100
 msgid ""
 "a <b>similar author</b>.<br/>- Similar authors differ only in punctuation, "
 "initials or order of their names."
 msgstr ""
-"un <b>autor similar</b>.<br/>- Los autores similares difieren solo en "
-"puntuación, iniciales u orden de sus nombres."
+"<b>samankaltainen tekijä</b>.<br/>- Samankaltaiset tekijät eroavat "
+"toisistaan vain välimerkeissä, nimikirjaimissa tai nimien järjestyksessä."
 
 #: dialogs.py:103
 msgid ""
 "a <b>soundex author</b>.<br/>- Soundex author matches start with the same "
 "removal of punctuation and ordering as a similar author search."
 msgstr ""
-"un <b>«soundex» de autor (algoritmo fonético)</b>.<br/>- Las coincidencias "
-"de autor por «soundex» comienzan con la misma eliminación de puntuación y "
-"orden que una búsqueda de autor similar."
+"a <b>Soundex-tekijä</b>.<br/>- Soundex-tekijätapaukset alkavat samalla "
+"tavalla, kun välimerkit ja järjestys poistetaan, kuin vastaavanlaisessa "
+"tekijähaussa."
 
 #: dialogs.py:106
 msgid ""
 "a <b>fuzzy match author</b>.<br/>- Fuzzy author matches compare using their "
 "surnames and only the first initial."
 msgstr ""
-"un <b>autor de coincidencia borrosa</b>.<br/>- Las coincidencias borrosas de"
-" autor comparan sólo sus apellidos y la primera inicial."
+"<b>Sumea vastaavuustekijä</b>.<br/>- Sumea tekijätäsmäys vertaa sukunimiä ja"
+" vain ensimmäistä alkukirjainta."
 
 #: dialogs.py:109
 msgid "<b>ignoring the author</b>."
-msgstr "<b>ignorando el autor</b>."
+msgstr "<b>tekijän jättäminen huomioimatta</b>."
 
 #: dialogs.py:178
 msgid "Duplicate Search Options"
-msgstr "Opciones de búsqueda de duplicados"
+msgstr "Kaksoiskappaleiden hakuasetukset"
 
 #: dialogs.py:182
 msgid "Duplicate Search Type"
-msgstr "Tipo de búsqueda de duplicados"
+msgstr "Kaksoiskappaleiden hakutyyppi"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Binary Compare"
-msgstr "Comparación binaria"
+msgstr "Binäärivertailu"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Identifier"
-msgstr "Identificador"
+msgstr "Tunniste"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Title/Author"
-msgstr "Título o autor"
+msgstr "Nimi/Tekijä"
 
 #: dialogs.py:203
 msgid "Title Matching"
-msgstr "Coincidencia de títulos"
+msgstr "Nimivastaavuus"
 
 #: dialogs.py:215 dialogs.py:236 dialogs.py:686 dialogs.py:1131
 #: dialogs.py:1152
 msgid "Length:"
-msgstr "Longitud:"
+msgstr "Pituus:"
 
 #: dialogs.py:216 dialogs.py:687 dialogs.py:1132
 msgid ""
 "The shorter the soundex length, the greater likelihood of false positives.\n"
 "Large soundex values reduce your chances of matches"
 msgstr ""
-"Cuanto más corta es la longitud del «soundex», mayor es la probabilidad de falsos positivos.\n"
-"Valores grandes reducen las posibilidades de coincidencias"
+"Mitä lyhyempi soundexin pituus on, sitä suurempi on väärien positiivisten tulosten todennäköisyys.\n"
+"Suuret soundex-arvot vähentävät mahdollisuuksia saada osumia"
 
 #: dialogs.py:224
 msgid "Author Matching"
-msgstr "Coincidencia de autor"
+msgstr "Tekijävastaavuus"
 
 #: dialogs.py:249
 msgid "Result Options"
-msgstr "Opciones de resultados"
+msgstr "Tulosasetukset"
 
 #: dialogs.py:253
 msgid "Show all groups at once with highlighting"
-msgstr "Mostrar todos los grupos a la vez con resaltado"
+msgstr "Näytä kaikki ryhmät kerralla korostamalla"
 
 #: dialogs.py:254
 msgid "Show one group at a time"
-msgstr "Mostrar un grupo a la vez"
+msgstr "Näytä yksi ryhmä kerrallaan"
 
 #: dialogs.py:257
 msgid "Highlight authors in the tag browser for ignore title searches"
-msgstr ""
-"Resaltar los autores en el navegador de etiquetas para búsquedas que ignoran"
-" el título"
+msgstr "Korosta tekijät tagiselaimessa ohittaaksesi otsikkohaut"
 
 #: dialogs.py:258
 msgid ""
@@ -563,39 +553,38 @@ msgid ""
 "are shown in the tag browser and highlighted if multiple groups shown.\n"
 "Only applies for author duplicate searches."
 msgstr ""
-"Cuando se marca, se asegurará de que los autores del grupo actual\n"
-"se muestran en el navegador de etiquetas y se resaltan si se muestran varios grupos.\n"
-"Sólo aplica para búsquedas de autor duplicado."
+"Kun tämä valitaan, varmistetaan, että nykyisen ryhmän tekijät \n"
+"näytetään tagiselaimessa ja korostetaan, jos näytetään useita ryhmiä.\n"
+"Koskee vain tekijöiden kaksoiskappalehakuja."
 
 #: dialogs.py:262
 msgid "Sort groups by number of duplicates"
-msgstr "Ordenar grupos por número de duplicados"
+msgstr "Lajittele ryhmät kaksoiskappaleiden määrän mukaan"
 
 #: dialogs.py:263
 msgid ""
 "When unchecked, will sort by an approximation of the title\n"
 "or by author if title is being ignored"
 msgstr ""
-"Cuando no está marcado, se ordenará por una aproximación del título\n"
-"o por autor si se ignora el título"
+"Kun valintamerkki poistetaan, lajittelu tapahtuu otsikon likimääräisen arvon mukaan\n"
+"tai tekijän mukaan, jos otsikkoa ei oteta huomioon"
 
 #: dialogs.py:266 dialogs.py:1169
 msgid "Include languages metadata when comparing titles"
-msgstr "Incluir metadatos de idioma al comparar títulos"
+msgstr "Sisällytä kielten metadata otsikoita verrattaessa"
 
 #: dialogs.py:267 dialogs.py:1170
 msgid ""
 "When checked, books with identical titles but different\n"
 "languages metadata field values will not show as duplicates"
 msgstr ""
-"Cuando está marcado, libros con títulos idénticos pero diferentes\n"
-"valores en el campo de metadatos de idioma no se mostrarán como duplicados"
+"Kun tämä on valittuna, kirjat, joilla on samat nimet, mutta erilaiset\n"
+"kielten metadatakenttien arvot, eivät näy kaksoiskappaleina"
 
 #: dialogs.py:270
 msgid "When doing a Binary Compare, automatically remove duplicate formats"
 msgstr ""
-"Al hacer una comparación binaria, eliminar automáticamente los formatos "
-"duplicados"
+"Kun teet binäärivertailua, poista automaattisesti päällekkäiset formaatit"
 
 #: dialogs.py:272
 msgid ""
@@ -606,29 +595,30 @@ msgid ""
 "Note that the book records themselves are not deleted, and will still appear in the\n"
 "results for merging even if they now have no formats."
 msgstr ""
-"Cuando está marcado y se ejecuta la búsqueda de duplicados binarios, si se encuentran formatos duplicados\n"
-"se eliminaránn todos menos uno. Se mantendrá en el registro el formato de libro más antiguo.\n"
-"Ésta es una función útal cuando tiene múltiples formatos asociados con\n"
-"cada libro y, por lo tanto, no es obvio cuál de ellos es el duplicado.\n"
-"Tenga en cuenta que los registros del libro en sí no se eliminan y seguirán apareciendo en el\n"
-"resultado para la unión, incluso si ya no tienen formatos."
+"Kun tämä on valittuna ja binäärinen kaksoiskappalehaku suoritetaan, jos kaksoismuodot löytyvät\n"
+"kaikki paitsi yksi poistetaan. Vanhimmassa kirjatietueessa oleva muoto säilytetään.\n"
+"Tämä on kätevä toiminto silloin, kun on useita formaatteja, jotka on liitetty\n"
+"jokaiseen kirjaan, eikä näin ollen ole selvää, mikä näistä on kaksoiskappale.\n"
+"Huomaa, että kirjatietueita ei poisteta, vaan ne näkyvät edelleen\n"
+"yhdistämisen tuloksissa, vaikka niillä ei nyt olisikaan formaatteja."
 
 #: dialogs.py:370
 msgid "Invalid Criteria"
-msgstr "Criterios no válidos"
+msgstr "Virheelliset perusteet"
 
 #: dialogs.py:371
 msgid "You must select an identifier type to search by Identifier."
 msgstr ""
-"Debe seleccionar un tipo de identificador para buscar por identificador."
+"Sinun on valittava tunnisteen tyyppi, jos haluat tehdä haun tunnisteen "
+"mukaan."
 
 #: dialogs.py:504
 msgid "Manage Duplicate Exemptions"
-msgstr "Administrar exenciones de duplicados"
+msgstr "Päällekkäisten poikkeusten käsittely"
 
 #: dialogs.py:507
 msgid "Manage Exemptions"
-msgstr "Administrar exenciones"
+msgstr "Poikkeusten hallinta"
 
 #: dialogs.py:513
 msgid ""
@@ -636,9 +626,9 @@ msgid ""
 "books.<br/>To allow future duplicate consideration, tick the remove checkbox"
 " and click ok."
 msgstr ""
-"El primer libro de abajo nunca aparecerá como un duplicado con los "
-"siguientes libros.<br/>Para permitir la consideración de duplicados en el "
-"futuro, marque la casilla de verificación Eliminar y pulse en Aceptar."
+"Ensimmäinen alla oleva kirja ei koskaan näy kaksoiskappaleena seuraavien "
+"kirjojen kanssa.<br/>Jos haluat sallia kaksoiskappaleiden huomioimisen "
+"tulevaisuudessa, rastita Poista-valintaruutu ja napsauta ok."
 
 #: dialogs.py:528
 msgid ""
@@ -646,134 +636,131 @@ msgid ""
 "authors.<br/>To allow future duplicate consideration, tick the remove "
 "checkbox and click ok."
 msgstr ""
-"Los autores a de abajo nunca aparecerán como duplicados con los siguientes "
-"autores.<br/>Para permitir la consideración de duplicados en el futuro, "
-"marque la casilla de verificación Eliminar y pulse en Aceptar."
+"Alla olevat tekijät eivät koskaan näy päällekkäisinä seuraavien tekijöiden "
+"kanssa.<br/>Jos haluat sallia päällekkäisyyksien huomioimisen "
+"tulevaisuudessa, rastita Poista valintaruutu ja napsauta ok."
 
 #: dialogs.py:645
 msgid "Find Duplicates Plugin"
-msgstr "complemento Find Duplicates"
+msgstr "Kaksoiskappaleiden haku"
 
 #: dialogs.py:649
 msgid "Find Metadata Variations"
-msgstr "Buscar variaciones de metadatos"
+msgstr "Metadatamuunnelmien haku"
 
 #: dialogs.py:653
 msgid "Choose metadata column:"
-msgstr "Elegir columna de metadatos:"
+msgstr "Valitse metadata-sarake:"
 
 #: dialogs.py:657
 msgid "Authors"
-msgstr "Autores"
+msgstr "Tekijät"
 
 #: dialogs.py:660
 msgid "Series"
-msgstr "Serie"
+msgstr "Sarjat"
 
 #: dialogs.py:663
 msgid "Publisher"
-msgstr "Editorial"
+msgstr "Kustantaja"
 
 #: dialogs.py:666
 msgid "Tags"
-msgstr "Etiquetas"
+msgstr "Tagit"
 
 #: dialogs.py:675
 msgid "Choose similarity level:"
-msgstr "Elegir el nivel de semejanza:"
+msgstr "Valitse samankaltaisuustaso:"
 
 #: dialogs.py:679
 msgid "Similar"
-msgstr "Similar"
+msgstr "Samankaltaiset"
 
 #: dialogs.py:682
 msgid "Soundex"
-msgstr "Soundex (algoritmo fonético)"
+msgstr "Soundex"
 
 #: dialogs.py:684
 msgid "Fuzzy"
-msgstr "Borrosa"
+msgstr "Sumea"
 
 #: dialogs.py:691
 msgid "Search"
-msgstr "Buscar"
+msgstr "Etsi"
 
 #: dialogs.py:693
 msgid "Search for results"
-msgstr "Buscar resultados"
+msgstr "Hae tuloksia"
 
 #: dialogs.py:704
 msgid "Search results:"
-msgstr "Resultados de la búsqueda:"
+msgstr "Hakutulokset:"
 
 #: dialogs.py:710
 msgid "Authors:"
-msgstr "Autores:"
+msgstr "Tekijät:"
 
 #: dialogs.py:711 dialogs.py:910
 msgid "Variations:"
-msgstr "Variaciones:"
+msgstr "Variaatiot:"
 
 #: dialogs.py:726
 msgid "&Show matching books"
-msgstr "&Mostrar libros coincidentes"
+msgstr "Näytä va&staavat kirjat"
 
 #: dialogs.py:727
 msgid "As a group is selected, show the search results in the library view"
-msgstr ""
-"A medida que se selecciona un grupo, mostrar los resultados de búsqueda en "
-"la vista de biblioteca"
+msgstr "Kun ryhmä on valittu, näytä hakutulokset kirjastonäkymässä"
 
 #: dialogs.py:730
 msgid "Rename to:"
-msgstr "Cambiar nombre a:"
+msgstr "Nimeä uudelleen:"
 
 #: dialogs.py:747
 msgid "&Rename"
-msgstr "&Cambiar nombre"
+msgstr "&Nimeä uudelleen"
 
 #: dialogs.py:748
 msgid "Rename all of the selected items to this name"
-msgstr "Cambiar el nombre de todos los elementos seleccionados a este nombre"
+msgstr "Nimeä kaikki valitut kohteet uudelleen tällä nimellä"
 
 #: dialogs.py:751
 msgid "&Ignore"
-msgstr "&Ignorar"
+msgstr "Oh&ita"
 
 #: dialogs.py:752
 msgid "Ignore all selected items from consideration at this time"
-msgstr "Ignorar todos los elementos seleccionados en esta ocasión"
+msgstr "Jätä kaikki valitut kohteet huomiotta tällä hetkellä"
 
 #: dialogs.py:791
 msgid "No matches"
-msgstr "No hay coincidencias"
+msgstr "Ei vastaavaavuuksia"
 
 #: dialogs.py:791
 msgid "You have no variations of {0} using this criteria"
-msgstr "No hay variaciones de {0} usando este criterio"
+msgstr "Sinulla ei ole variaatioita {0}:stä tämän kriteerin perusteella"
 
 #: dialogs.py:851
 msgid "Use this variation name"
-msgstr "Usar este nombre de variación"
+msgstr "Käytä tätä variaation nimeä"
 
 #: dialogs.py:914
 msgid "Variations of: {0}"
-msgstr "Variaciones de: {0}"
+msgstr "Variaatiot: {0}"
 
 #: dialogs.py:950
 msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
 msgstr ""
-"¿Está seguro de querer cambiar el nombre de los {0} elementos seleccionados "
-"a «{1}»?"
+"Oletko varma, että haluat nimetä valitut {0}-kohteet uudelleen muotoon "
+"\"{1}\"?"
 
 #: dialogs.py:1037
 msgid ""
 "<b>Book duplicate search</b><br/>- Report books in this library which have "
 "an identical identifier for books in the target library.<br/>"
 msgstr ""
-"<b>Búsqueda de libros duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca que tengan un identificador idéntico a libros en la biblioteca de"
-" destino.<br/>"
+"<b>Kirjojen kaksoiskappalehaku</b><br/>- Raportoi tässä kirjastossa olevat "
+"kirjat, joilla on sama tunniste kuin kohdekirjaston kirjoilla.<br/>"
 
 #: dialogs.py:1041
 msgid ""
@@ -783,12 +770,12 @@ msgid ""
 "compare contents where sizes match.<br/>- Books found using this search are "
 "guaranteed to be duplicates."
 msgstr ""
-"<b>Búsqueda de libros duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca que sean idénticos a nivel binario a libros en la biblioteca de "
-"destino.<br/>- Se compara el tamaño real de archivo de cada formato de libro"
-" en las bibliotecas, calculando un código de comprobación SHA para comparar "
-"el contenidos cuando los tamaños coinciden.<br/>- Los libros encontrados con"
-" esta búsqueda son idénticos con toda seguridad."
+"<b>Kirjojen kaksoiskappalehaku</b><br/>- Raportoi tässä kirjastossa olevat "
+"kirjat, jotka ovat binäärisesti identtisiä kohdekirjastossasi olevien "
+"kirjojen kanssa.<br/>- Vertaa kirjastojen jokaisen kirjamuodon todellista "
+"tiedostokokoa ja laskee SHA-hashin vertaillakseen sisältöjä, joiden koot "
+"ovat yhteneväiset.<br/>- Tämän haun avulla löydetyt kirjat ovat taatusti "
+"kaksoiskappaleita."
 
 #: dialogs.py:1048
 msgid ""
@@ -796,10 +783,10 @@ msgid ""
 " your target library with an <b>identical title</b> and {0}<br/>- Titles "
 "must match exactly excluding case."
 msgstr ""
-"<b>Búsqueda de títulos duplicados</b><br/>- Informar sobre libros de esta "
-"biblioteca con un <b>título idéntico</b>y {0} con respecto a libros en la "
-"biblioteca de destino.<br/>- Los títulos deben coincidir exactamente sin "
-"distinción de mayúsculas y minúsculas."
+"<b>Nimikkeiden kaksoiskappalehaku</b><br/>- Raportoi tässä kirjastossa "
+"olevat kirjat verrattuna kohdekirjastoosi, joilla on <b>identtinen nimi</b> "
+"ja {0}<br/>- Otsikoiden on täsmättävä lukuun ottamatta isoja ja pieniä "
+"kirjaimia."
 
 #: dialogs.py:1051
 msgid ""
@@ -808,11 +795,11 @@ msgid ""
 " matches apply removal of common punctuation and prefixes and applies the "
 "same title matching logic as Automerge."
 msgstr ""
-"<b> Búsqueda de títulos duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca con un <b>título similar</b> y {0} con respecto a libros en la "
-"biblioteca de destino.<br/>- Para las coincidencias de título similares se "
-"eliminan puntuación y prefijos comunes y se emplea la misma lógica de que "
-"para la unión automática."
+"<b>Nimikkeiden kaksoiskappalehaku</b><br/>- Raportoi tässä kirjastossa "
+"olevat kirjat verrattuna kohdekirjastoosi, joilla on <b>samankaltainen "
+"otsikko</b> ja {0}<br/>- Samankaltaisten otsikoiden vastaavuuksiin "
+"sovelletaan yhteisten välimerkkien ja etuliitteiden poistamista, ja se "
+"soveltaa samaa otsikoiden täsmäytyslogiikkaa kuin Automerge."
 
 #: dialogs.py:1055
 msgid ""
@@ -821,11 +808,10 @@ msgid ""
 " matches are based on the same removal of punctuation and common prefixes as"
 " a similar title search."
 msgstr ""
-"<b>Búsqueda duplicada de título</b><br/>- Informe libros en esta biblioteca "
-"en comparación con su biblioteca de destino con un <b>título por "
-"fonética</b> y {0}<br/>- Las coincidencias de título por fonética se basan "
-"en la misma eliminación de puntuación y prefijos comunes que una búsqueda de"
-" título similar."
+"<b>Nimikkeiden kaksoiskappalehaku</b><br/>- Raportoi tässä kirjastossa "
+"olevat kirjat verrattuna kohdekirjastoosi, joilla on <b>soundex-otsikko</b> "
+"ja {0}<br/>- Soundex-otsikon vastaavuudet perustuvat samaan välimerkkien ja "
+"yhteisten etuliitteiden poistoon kuin samankaltaisten nimikkeiden haku."
 
 #: dialogs.py:1059
 msgid ""
@@ -834,11 +820,10 @@ msgid ""
 "matches remove all punctuation, subtitles and any words after 'and', 'or' or"
 " 'aka' in the title."
 msgstr ""
-"<b> Búsqueda de títulos duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca con un mismo <b>título borroso</b> y {0} con respecto a libros de"
-" la biblioteca de destino.<br/>- Para las coincidencias de título borroso se"
-" elimina toda puntuación, subtítulos y cualquier palabra después de «and» "
-"(y), «or» (o) o «aka» (alias) en el título."
+"<b>Nimikkeiden kaksoiskappalehaku</b><br/>- Raportoi tässä kirjastossa "
+"olevat kirjat verrattuna kohdekirjastoosi, joilla on <b>sumea otsikko</b> ja"
+" {0}<br/>- Sumea otsikko-osumat poistavat kaikki välimerkit, alaotsikot ja "
+"kaikki sanat otsikon 'ja', 'tai' tai 'aka' jälkeen."
 
 #: dialogs.py:1063
 msgid ""
@@ -847,119 +832,122 @@ msgid ""
 "searches are best to find variations of author names regardless of the books"
 " you have for each."
 msgstr ""
-"<b>Búsqueda de autores duplicados</b><br/>- Informar sobre libros en esta "
-"biblioteca <b>ignorando el título</b> con {0} con respecto a libros en la "
-"biblioteca de destino.<br/>- Las búsquedas en las que se ignora el título "
-"son mejores para encontrar variaciones en los nombres de los autores "
-"independientemente de los libros que haya para cada uno."
+"<b>Tekijän kaksoiskappalehaku</b><br/>- Raportoi tässä kirjastossa olevat "
+"kirjat verrattuna kohdekirjastoosi <b>huomioimatta otsikkoa</b> {0}<br/>- "
+"Otsikon huomioimatta jättäminen -haun avulla löydät parhaiten kirjailijan "
+"nimien variaatioita riippumatta siitä, kuinka monta kirjaa sinulla on "
+"kustakin."
 
 #: dialogs.py:1080
 msgid "Cross Library Search Options"
-msgstr "Opciones de búsqueda entre bibliotecas"
+msgstr "Kirjastojen väliset hakuasetukset"
 
 #: dialogs.py:1084
 msgid "Compare With Library:"
-msgstr "Comparar con la biblioteca:"
+msgstr "Vertaa kirjastoon:"
 
 #: dialogs.py:1088
 msgid "Library:"
-msgstr "Biblioteca:"
+msgstr "Kirjasto:"
 
 #: dialogs.py:1098
 msgid "Duplicate Search Type:"
-msgstr "Tipo de búsqueda de duplicados:"
+msgstr "Kaksoiskappaleen hakutyyppi:"
 
 #: dialogs.py:1119
 msgid "Title Matching:"
-msgstr "Coincidencia de títulos:"
+msgstr "Otsikon vastaavuus:"
 
 #: dialogs.py:1140
 msgid "Author Matching:"
-msgstr "Coincidencia de autores:"
+msgstr "Tekijän vastaavuus:"
 
 #: dialogs.py:1165
 msgid "Compare Options:"
-msgstr "Opciones de comparación:"
+msgstr "Vertailuasetukset:"
 
 #: dialogs.py:1173
 msgid "Display duplicate books when search completes"
-msgstr "Mostrar libros duplicados al finalizar la búsqueda"
+msgstr "Näytä päällekkäiset kirjat, kun haku on valmis"
 
 #: dialogs.py:1174
 msgid "Uncheck this option if you just want the output log"
-msgstr "Desmarcar esta opción si sólo se desea el registro de salida."
+msgstr "Poista tämä vaihtoehto, jos haluat vain tulostuslokin"
 
 #: dialogs.py:1213
 msgid "Choose library location to compare against"
-msgstr "Elegir la ubicación de la biblioteca con la que comparar"
+msgstr "Valitse kirjaston sijainti, johon vertailla"
 
 #: dialogs.py:1264
 msgid "No library specified"
-msgstr "Ninguna biblioteca especificada"
+msgstr "Kirjastoa ei ole määritetty"
 
 #: dialogs.py:1265
 msgid "You must specify a library path"
-msgstr "Debe especificar una ruta de biblioteca"
+msgstr "Kirjastopolku on määritettävä"
 
 #: dialogs.py:1268
 msgid "Same as current"
-msgstr "Igual que la actual"
+msgstr "Sama kuin nykyinen"
 
 #: dialogs.py:1269
 msgid "The location {0} contains the current calibre library"
-msgstr "La ubicación {0} contiene la biblioteca de calibre actual"
+msgstr "Sijainti {0} sisältää nykyisen calibre-kirjaston"
 
 #: dialogs.py:1271
 msgid "No existing library found"
-msgstr "No se encontró una biblioteca existente"
+msgstr "Olemassa olevaa kirjastoa ei löytynyt"
 
 #: dialogs.py:1272
 msgid "There is no existing calibre library at {0}"
-msgstr "No hay una biblioteca de calibre existente en {0}"
+msgstr "Osoitteessa {0} ei ole olemassa olevaa calibre-kirjastoa"
 
 #: dialogs.py:1295
 msgid "Save log"
-msgstr "Guardar registro"
+msgstr "Tallenna loki"
 
 #: dialogs.py:1302
 msgid "Save Find Duplicates log"
-msgstr "Guardar registro de Find Duplicates"
+msgstr "Tallenna Etsi kaksoiskappaleet -loki"
 
 #: dialogs.py:1303
 msgid "Duplicates log file"
-msgstr "Archivo de registro de duplicados"
+msgstr "Kaksoiskappaleiden lokitiedosto"
 
 #: duplicates.py:213
 msgid "No duplicate groups were found when searching with: <b>{0}</b>"
-msgstr "No se encontraron grupos de duplicados al buscar con: <b>{0}</b>"
+msgstr "Kaksoisryhmiä ei löytynyt hakusanoilla: <b>{0}</b>"
 
 #: duplicates.py:215 duplicates.py:328 duplicates.py:361 duplicates.py:368
 msgid "No duplicates"
-msgstr "No hay duplicados"
+msgstr "Kaksoiskappaleita ei ole"
 
 #: duplicates.py:217 duplicates.py:224 duplicates.py:330
 msgid "Show this information again"
-msgstr "Mostrar esta información nuevamente"
+msgstr "Näytä nämä tiedot uudelleen"
 
 #: duplicates.py:220
 msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
-msgstr "Se encontraron {0} grupos duplicados al buscar con: <b>{1}</b>"
+msgstr ""
+"{0} päällekkäistä ryhmää löytyi, kun haku suoritettiin seuraavalla "
+"hakusanalla: <b>{1}</b>"
 
 #: duplicates.py:327 duplicates.py:369
 msgid "No more duplicate groups exist from your search."
-msgstr "No existen más grupos duplicados en la búsqueda."
+msgstr "Hakusi perusteella päällekkäisiä ryhmiä ei ole enää."
 
 #: duplicates.py:362
 msgid ""
 "The current duplicate group no longer exists. You cannot perform this "
 "action."
 msgstr ""
-"El grupo de duplicados actual ya no existe. No se puede realizar esta "
-"acción."
+"Nykyistä kaksoiskappaleryhmää ei enää ole olemassa. Et voi suorittaa tätä "
+"toimintoa."
 
 #: duplicates.py:720
 msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
-msgstr "Mostrando #{0} de {0} grupos de duplicados restantes para {0}"
+msgstr ""
+"Näytetään #{0} / {0} jäljellä olevista päällekkäisistä ryhmistä {0}:lle."
 
 #: duplicates.py:827
 msgid ""
@@ -969,43 +957,42 @@ msgid ""
 "\n"
 "{3}"
 msgstr ""
-"Resultados de la comparación {0}:\n"
-"     Biblioteca de origen: {1}\n"
-"     Biblioteca de destino: {2}\n"
+"{0}-vertailun tulokset:\n"
+"    Lähdekirjasto: {1}\n"
+"    Kohdekirjasto: {2}\n"
 "\n"
 "{3}"
 
 #: duplicates.py:899
 msgid "Click 'Show details' to see the results."
-msgstr "Pulse en «Mostrar detalles» para ver los resultados."
+msgstr "Näytä tulokset napsauttamalla 'Näytä tiedot'."
 
 #: duplicates.py:911 duplicates.py:1037
 msgid "Analysing duplicates in target database"
-msgstr "Analizando duplicados en la base de datos de destino"
+msgstr "Kohdetietokannan kaksoiskappaleiden analysointi"
 
 #: duplicates.py:913 duplicates.py:1046
 msgid "Analysing duplicates in current database"
-msgstr "Analizando duplicados en la base de datos actual"
+msgstr "Nykyisen tietokannan kaksoiskappaleiden analysointi"
 
 #: duplicates.py:944
 msgid ""
 "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
 msgstr ""
-"Se encontraron <b>{0} autores</b> con posibles duplicados usando <b>{1}</b> "
-"frente a la biblioteca en: {2}"
+"Löytyi <b>{0} tekijää</b> mahdollisilla kaksoiskappaleilla käyttämällä "
+"<b>{1}</b>-kirjastoa osoitteessa {2}"
 
 #: duplicates.py:1033
 msgid ""
 "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
 msgstr ""
-"Se encontraron <b>{0} libros</b> con duplicados binarios frente a la "
-"biblioteca en: {1}"
+"Löytyi <b>{0} kirjaa</b> binäärikopioineen kirjastosta osoitteessa: {1}"
 
 #: duplicates.py:1070
 msgid ""
 "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
 msgstr ""
-"Se encontraron <b>{0} libros</b> con posibles duplicados usando <b>{1}</b> "
-"frente a la biblioteca en: {2}"
+"Löytyi <b>{0} kirjaa</b>, joilla on mahdollisia kaksoiskappaleita "
+"käyttämällä <b>{1}</b> kirjastoa vastaan osoitteessa: {2}"

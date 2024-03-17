@@ -1,5 +1,12 @@
 # Find Duplicates Change Log
 
+## [1.10.9] - 2024-03-17
+### Added
+- Finnish translation
+- Latvian translation
+- Russian translation
+- Tamil translation
+
 ## [1.10.8] - 2023-04-14
 ### Added
 - Add Turkish translation (Bora Atıcı)
