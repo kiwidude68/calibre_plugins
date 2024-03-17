@@ -11,14 +11,15 @@
 # Marcin Kozioł <koziol.martin@gmail.com>, 2022
 # Grant Drake, 2022
 # The Name <moje.konto+transifex@posteo.org>, 2022
+# Silatiw Witalis, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-10 21:11+0100\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
-"Last-Translator: The Name <moje.konto+transifex@posteo.org>, 2022\n"
-"Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
+"Last-Translator: Silatiw Witalis, 2022\n"
+"Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,7 +33,7 @@ msgstr "Skróty klawiszowe"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Uruchom calibre ponownie."
+msgstr "Uruchom calibre ponownie"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
@@ -120,39 +121,39 @@ msgstr "Utwórz nową kolumnę"
 
 #: action.py:38
 msgid "View Manager"
-msgstr "Menadżer Widoku"
+msgstr "View Manager"
 
 #: action.py:87
 msgid "&Save View Columns"
-msgstr "&S Zapisz Kolumny Widoku"
+msgstr "Zapisz pozycje kolumn"
 
 #: action.py:89
 msgid "&Save View Sort"
-msgstr "&S Zapisz Sortowanie Widoku"
+msgstr "Zapisz sortowanie"
 
 #: action.py:92
 msgid "Re-Apply Current View"
-msgstr "Zastosuj Ponownie Bieżący Widok"
+msgstr "Zastosuj ponownie bieżący widok"
 
 #: action.py:99
 msgid "&Create new View"
-msgstr "&C Utwórz nowy Widok"
+msgstr "Utwórz nowy widok"
 
 #: action.py:102
 msgid "Previous View"
-msgstr "Poprzedni Widok"
+msgstr "Poprzedni widok"
 
 #: action.py:104
 msgid "Next View"
-msgstr "Następny Widok"
+msgstr "Następny widok"
 
 #: action.py:108
 msgid "&Customize plugin"
-msgstr "&Konfiguruj wtyczkę"
+msgstr "Konfiguruj wtyczkę"
 
 #: action.py:110 config.py:579
 msgid "&Help"
-msgstr ""
+msgstr "&Help"
 
 #: action.py:158
 msgid "Add new view"
@@ -223,6 +224,8 @@ msgid ""
 "Split Book List will only be shown if this is checked. This will be checked "
 "if you save a Split View."
 msgstr ""
+"Lista książek  będzie pokazywana w dwóch panelach (lewy i prawy) tylko "
+"wtedy, gdy to jest zaznaczone."
 
 #: config.py:465
 msgid "Sort order"
@@ -242,63 +245,70 @@ msgstr "Opcje Wyszukiwania i Biblioteki Wirtualnej"
 
 #: config.py:508
 msgid "Apply saved search"
-msgstr "Zastosuj zapisane wyszukiwanie"
+msgstr "Zastosuj 'Zapisane wyszukiwanie'"
 
 #: config.py:509
 msgid "Apply the selected saved search when the View is activated."
-msgstr ""
+msgstr "Zastosuj wybrane zapisane wyszukiwanie, gdy widok jest aktywny."
 
 #: config.py:517
 msgid "Switch to Virtual library"
-msgstr ""
+msgstr "Włącz 'Wirtualną bibliotekę'"
 
 #: config.py:518
 msgid "Switch to the selected Virtual library when the View is activated."
-msgstr ""
+msgstr "Przełączenie do wybranej biblioteki wirtualnej po włączeniu widoku."
 
 #: config.py:520
 msgid "Virtual library to switch to."
-msgstr ""
+msgstr "Włącz 'Wirtualną bibliotekę' po wybraniu tego widoku."
 
 #: config.py:525
 msgid "Apply VL additional search restriction"
-msgstr ""
+msgstr "Zastosuj  'Dodatkowe ograniczenie' w wirtualnej bibliotece"
 
 #: config.py:526
 msgid ""
 "Apply the selected saved search as a Virtual library additional restriction "
 "when the View is activated."
 msgstr ""
+"Zastosuj wybrane zapisane wyszukiwanie jako dodatkowe\n"
+"ograniczenie włączonej biblioteki wirtualnej."
 
 #: config.py:527
 msgid "Clear VL restriction search"
-msgstr ""
+msgstr "Bez dodatkowych ograniczeń"
 
 #: config.py:528
 msgid "Saved search to apply as VL additional search restriction."
 msgstr ""
+"Wybierz zapisane wyszukiwanie jako\n"
+"dodatkowe ograniczenie wirtualnej biblioteki."
 
 #: config.py:542
 msgid "General Options"
-msgstr "Główne Opcje"
+msgstr "Główne opcje"
 
 #: config.py:547
 msgid "Jump to the top when applying this View"
-msgstr ""
+msgstr "Idź na górę podczas stosowania tego widoku"
 
 #: config.py:551
 msgid "When restarting Calibre or switching to this library"
-msgstr ""
+msgstr "Po restarcie calibre lub przełączeniu na tę bibliotekę"
 
 #: config.py:552
 msgid "Automatically apply view:"
-msgstr "Automatycznie zastosuj widok:"
+msgstr "… automatycznie zastosuj widok:"
 
 #: config.py:558
 msgid ""
 "Enabling this option may override any startup search restriction or title "
 "sort set in Preferences -> Behaviour/Tweaks."
 msgstr ""
+"Uwaga! Włączenie tej opcji może zastąpić ograniczenia wyszukiwania "
+"startowego lub sortowania tytułów ustawione w Preferencjach -> 'Zachowanie' "
+"i/lub 'Parametry'."
 
 #: config.py:571
 msgid "Edit the keyboard shortcuts associated with this plugin"
@@ -306,7 +316,7 @@ msgstr "Edytuj skróty klawiszowe związane z tą wtyczką"
 
 #: config.py:573
 msgid "&View library preferences"
-msgstr "Podgląd preferencji biblioteki…"
+msgstr "Podgląd preferencji biblioteki"
 
 #: config.py:574
 msgid "View data stored in the library database for this plugin"

@@ -1,5 +1,11 @@
 # View Manager Change Log
 
+## [1.10.3] - 2024-03-17
+### Added
+- Finnish translation
+- Tamil translation
+- Turkish translation
+
 ## [1.10.2] - 2022-10-19
 ### Changed
 - Apply search using different calibre API call in advance of it being removed. (@cbhaley)
