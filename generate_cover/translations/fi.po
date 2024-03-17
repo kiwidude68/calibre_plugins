@@ -3,141 +3,136 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme-Barrientos, 2022
-# Darío Hereñú, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# Veikko Muurikainen, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-11-08 11:12+0000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Veikko Muurikainen, 2024\n"
+"Language-Team: Finnish (https://app.transifex.com/calibre/teams/19337/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:334
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "Pikanäppäimet"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "Käynnistä calibre uudelleen"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "Asetukset kohteelle:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Tyhjennä"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "Tyhjennä kaikki tämän laajennuksen asetukset"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+"Oletko varma, että haluat muuttaa asetuksia tässä kirjastossa tälle "
+"laajennukselle?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"Muissa kirjastoissa oleviin tai calibre laajennuskansioon JSON-tiedostoon "
+"tallennettuihin asetuksiin ei puututa."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "Sinun on käynnistettävä calibre sen jälkeen uudelleen."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "Asetuksia muutettu"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr "Tämän laajennuksen asetuksia tässä kirjastossa on muutettu."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "Käynnistä calibre uudelleen."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+"Oletko varma, että haluat tyhjentää tämän kirjaston asetukset tätä "
+"laajennusta varten?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "Asetuksia poistettu"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr "Kaikki tämän laajennuksen asetukset tässä kirjastossa on tyhjennetty."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Kopioi leikepöydälle"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "Määrittelemätön"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "Uudelleenkäynnistys vaaditaan"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"Otsikkokuvaa ei löydy - sinun on käynnistettävä Calibre uudelleen ennen "
+"tämän laajennuksen käyttöä!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "Luo uusi sarake"
 
 #: action.py:30
 msgid "Generate Cover"
-msgstr "Generate Cover"
+msgstr "Kannen luominen"
 
 #: action.py:30
 msgid "Generate a customised cover"
-msgstr "Generar una portada personalizada"
+msgstr "Luo mukautettu kansi"
 
 #: action.py:60
 msgid "Cannot generate covers"
-msgstr "No se pueden generar portadas"
+msgstr "Kansia ei voi luoda"
 
 #: action.py:61
 msgid "No books selected"
-msgstr "Ningún libro seleccionado"
+msgstr "Ei valittuja kirjoja"
 
 #: action.py:86
 msgid "Corrupted setting: \"%s\" has incorrect internal name of: \"%s\")"
-msgstr ""
-"Configuración dañada: «%s» tiene un nombre interno incorrecto de: «%s»)"
+msgstr "Vioittunut asetus: \"%s\" on virheellinen sisäinen nimi: \"%s\")"
 
 #: action.py:90
 msgid "Corrupted Configuration File"
-msgstr "Archivo de configuración dañado"
+msgstr "Vioittunut asetustiedosto"
 
 #: action.py:91
 msgid ""
@@ -146,362 +141,359 @@ msgid ""
 "for this plugin so it can be fixed.</p><p>The configuration has been fixed "
 "automatically.</p>"
 msgstr ""
-"<p>El archivo de configuración estaba dañado (ver Detalles).</p>)<p>Por "
-"favor, informe sobre las acciones recientes exactas que llevaron a esta "
-"situación en el hilo del foro de MobileRead para este complemento para que "
-"se pueda arreglar.</p><p>La configuración se ha corregido automáticamente. "
-"</p>"
+"<p>Konfiguraatiotiedostosi on vioittunut (katso "
+"Yksityiskohdat).</p>)<p>Raportoi tarkat viimeaikaiset toimesi, jotka "
+"johtivat tähän, tämän laajennuksen MobileRead-foorumiketjussa, jotta asia "
+"voidaan korjata.</p><p>Konfiguraatio on korjattu automaattisesti.</p>"
 
 #: action.py:137 action.py:147
 msgid "Cannot generate cover"
-msgstr "No se pueden generar portadas"
+msgstr "Kantta ei voida luoda"
 
 #: action.py:138
 msgid "Missing metadata passed for book to generate cover"
-msgstr "Faltan metadatos para que el libro genere la portada"
+msgstr "Puuttuva metadata, joka on siirretty kirjaa varten kannen luomiseksi"
 
 #: action.py:148
 msgid "No cover settings exist named: \"%s\""
-msgstr "No existe ninguna configuración de portada llamada: «%s»"
+msgstr "Kansiasetuksia nimeltä \"%s\" ei ole olemassa"
 
 #: config.py:320
 msgid "After generating cover:"
-msgstr "Después de generar portada:"
+msgstr "Kannen luomisen jälkeen:"
 
 #: config.py:329
 msgid "Update column:"
-msgstr "Columna de actualización:"
+msgstr "Päivitä sarake:"
 
 #: config.py:330
 msgid "Update value:"
-msgstr "Valor de actualización:"
+msgstr "Päivitä arvo:"
 
 #: config.py:335
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Modificar los atajos de teclado asociados con este complemento"
+msgstr "Muokkaa tähän laajennukseen liittyviä pikanäppäimiä"
 
 #: config.py:339
 msgid "View library preferences"
-msgstr "Ver preferencias de la biblioteca"
+msgstr "Näytä kirjaston asetukset"
 
 #: config.py:340
 msgid "View data stored in the library database for this plugin"
-msgstr ""
-"Ver datos almacenados en la base de datos de la biblioteca para este "
-"complemento"
+msgstr "Näytä tämän laajennuksen kirjastotietokantaan tallennetut tiedot"
 
 #: config.py:344 dialogs.py:1420
 msgid "&Help"
-msgstr "&Ayuda"
+msgstr "&Ohje"
 
 #: dialogs.py:94 dialogs.py:165
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Peruuta"
 
 #: dialogs.py:95
 msgid "Generating %d covers"
-msgstr "Generando %d portadas"
+msgstr "Luodaan %d kantta"
 
 #: dialogs.py:109
 msgid "Generating: "
-msgstr "Generando: "
+msgstr "Luodaan: "
 
 #: dialogs.py:127 dialogs.py:150
 msgid "Unsaved Changes"
-msgstr "Cambios no guardados"
+msgstr "Tallentamattomat muutokset"
 
 #: dialogs.py:131 dialogs.py:154
 msgid "You have unsaved changes to the <b>%s</b> setting.<br>"
-msgstr "Tiene cambios sin guardar en la configuración <b>%s </b>.<br>"
+msgstr "Sinulla on tallentamattomia muutoksia asetukseen <b>%s</b>.<br>"
 
 #: dialogs.py:132 dialogs.py:155
 msgid "What do you want to do?"
-msgstr "¿Qué desea hacer?"
+msgstr "Mitä haluat tehdä?"
 
 #: dialogs.py:135
 msgid "Discard Changes"
-msgstr "Descartar los cambios"
+msgstr "Hylkää muutokset"
 
 #: dialogs.py:136
 msgid "Revert unsaved changes"
-msgstr "Deshacer los cambios sin guardar"
+msgstr "Palauta tallentamattomat muutokset"
 
 #: dialogs.py:138
 msgid "Save Changes"
-msgstr "Guardar cambios"
+msgstr "Tallenna muutokset"
 
 #: dialogs.py:139
 msgid "Overwrite current profile with these changes"
-msgstr "Aplicar estos cambios al perfil actual"
+msgstr "Korvaa nykyinen profiili näillä muutoksilla"
 
 #: dialogs.py:158
 msgid "Generate && Save"
-msgstr "Generar y guardar"
+msgstr "Luo ja tallenna"
 
 #: dialogs.py:159
 msgid "Generate cover using these settings and save for future usage"
-msgstr "Generar una portada con estos ajustes y guardarla para uso futuro"
+msgstr "Luo kansi näillä asetuksilla ja tallenna tulevaa käyttöä varten"
 
 #: dialogs.py:161
 msgid "Generate && Revert"
-msgstr "Generar y deshacer"
+msgstr "Luo ja Palauta"
 
 #: dialogs.py:162
 msgid "Generate cover using these settings then discard them"
-msgstr "Generar portada con esta configuración y olvidarla (la configuración)"
+msgstr "Luo kansi näillä asetuksilla ja hylkää ne sitten"
 
 #: dialogs.py:166
 msgid "Cancel action"
-msgstr "Cancelar acción"
+msgstr "Peruuta toiminto"
 
 #: dialogs.py:450 dialogs.py:528
 msgid "Saved Settings:"
-msgstr "Configuraciones guardadas:"
+msgstr "Tallennetut asetukset:"
 
 #: dialogs.py:460
 msgid "Autosave settings"
-msgstr "Guardado automático"
+msgstr "Automaattitallennusasetukset"
 
 #: dialogs.py:461
 msgid ""
 "Do not prompt to save changes to a setting. Always save when\n"
 "switching to another setting, clicking OK or using Import/Export."
 msgstr ""
-"No solicitar guardar cambios en una configuración. Guardar siempre al\n"
-"cambiar a otra configuración, pulsar en Aceptar o usar Importar/Exportar."
+"Älä pyydä tallentamaan asetusten muutoksia. Tallenna aina kun\n"
+"kun siirryt toiseen asetukseen, napsautat OK tai käytät Tuo/Vie."
 
 #: dialogs.py:468
 msgid "Add setting"
-msgstr "Añadir configuración"
+msgstr "Lisää asetus"
 
 #: dialogs.py:473
 msgid "Rename setting"
-msgstr "Cambiar el nombre a la configuración"
+msgstr "Nimeä asetus uudelleen"
 
 #: dialogs.py:479 dialogs.py:667
 msgid "Import setting"
-msgstr "Importar configuración"
+msgstr "Tuo asetus"
 
 #: dialogs.py:484
 msgid "Export setting"
-msgstr "Exportar configuración"
+msgstr "Vie asetus"
 
 #: dialogs.py:490
 msgid "Delete setting from this list"
-msgstr "Eliminar configuración de esta lista"
+msgstr "Poista asetus tästä luettelosta"
 
 #: dialogs.py:498
 msgid "Select Image:"
-msgstr "Seleccionar imagen:"
+msgstr "Valitse kuva:"
 
 #: dialogs.py:509
 msgid "Add image to this list"
-msgstr "Añadir imagen a esta lista"
+msgstr "Lisää kuva tähän luetteloon"
 
 #: dialogs.py:514
 msgid "Rename image"
-msgstr "Cambiar nombre de la imagen"
+msgstr "Nimeä kuva uudelleen"
 
 #: dialogs.py:519
 msgid "Remove image from this list"
-msgstr "Eliminar imagen de esta lista"
+msgstr "Poista kuva tästä luettelosta"
 
 #: dialogs.py:530
 msgid "Saved Settings: (*unsaved changes)"
-msgstr "Configuración guardada: (* cambios no guardados)"
+msgstr "Tallennetut asetukset: (*tallentamattomat muutokset)"
 
 #: dialogs.py:561
 msgid "Add new setting"
-msgstr "Añadir nueva confuguración"
+msgstr "Lisää uusi asetus"
 
 #: dialogs.py:584
 msgid "Cannot add"
-msgstr "No se puede añadir"
+msgstr "Ei voi lisätä"
 
 #: dialogs.py:585
 msgid "The name you specified is not unique"
-msgstr "El nombre especificado no es único"
+msgstr "Määrittämäsi nimi ei ole yksilöllinen"
 
 #: dialogs.py:594 dialogs.py:838
 msgid "Cannot remove"
-msgstr "No se puede eliminar"
+msgstr "Ei voi poista"
 
 #: dialogs.py:595
 msgid "You cannot remove the default setting"
-msgstr "No se puede eliminar la configuración predeterminada"
+msgstr "Oletusasetusta ei voi poistaa"
 
 #: dialogs.py:596 dialogs.py:841 dialogs.py:1495 dialogs.py:1514
 msgid "Are you sure?"
-msgstr "¿Está seguro?"
+msgstr "Oletko varma?"
 
 #: dialogs.py:597
 msgid "Are you sure you want to remove the '%s' setting?"
-msgstr "¿Está seguro de querer eliminar la configuración «%s»?"
+msgstr "Haluatko varmasti poistaa '%s'-asetuksen?"
 
 #: dialogs.py:610 dialogs.py:788 dialogs.py:814
 msgid "Cannot rename"
-msgstr "No se puede cambiar el nombre"
+msgstr "Nimeä ei voi muuttaa"
 
 #: dialogs.py:611
 msgid "You cannot rename the default setting"
-msgstr "No se puede cambiar el nombre de la configuración predeterminada"
+msgstr "Oletusasetusta ei voi nimetä uudelleen"
 
 #: dialogs.py:612 dialogs.py:613
 msgid "New setting name:"
-msgstr "Nuevo nombre de configuración:"
+msgstr "Uusi asetuksen nimi:"
 
 #: dialogs.py:621
 msgid "Setting exists"
-msgstr "La configuración existe"
+msgstr "Asetus on olemassa"
 
 #: dialogs.py:622
 msgid "A saved setting already exists with this name."
-msgstr "Ya existe una configuración guardada con este nombre."
+msgstr "Tällä nimellä on jo tallennettu asetus."
 
 #: dialogs.py:647
 msgid "Import Failed"
-msgstr "Fallo al importar"
+msgstr "Tuonti epäonnistui"
 
 #: dialogs.py:648
 msgid "This is not a valid Generate Cover export archive"
-msgstr "Éste no es un archivo de exportación de Generate Cover válido"
+msgstr "Tämä ei ole kelvollinen Luo kansi -vientiarkisto"
 
 #: dialogs.py:686
 msgid "Cannot import"
-msgstr "No se puede importar"
+msgstr "Tuonti ei onnistu"
 
 #: dialogs.py:687 dialogs.py:880
 msgid "Failed to copy image"
-msgstr "Error al copiar la imagen"
+msgstr "Kuvan kopiointi epäonnistui"
 
 #: dialogs.py:746
 msgid "Export completed"
-msgstr "Exportación completada"
+msgstr "Vienti valmistui"
 
 #: dialogs.py:747
 msgid "Cover setting exported to<br>%s"
-msgstr "Configuración de portada exportada a<br>%s"
+msgstr "Kansiasetukset viety osoitteeseen<br>%s"
 
 #: dialogs.py:755
 msgid "Select setting file(s) to import"
-msgstr "Seleccionar archivo(s) de configuración para importar"
+msgstr "Valitse tuotavat asetustiedostot"
 
 #: dialogs.py:756 dialogs.py:762
 msgid "GC Files"
-msgstr "Archivos GC"
+msgstr "GC-tiedostot"
 
 #: dialogs.py:762
 msgid "Save setting as"
-msgstr "Guardar configuración como"
+msgstr "Tallenna asetus nimellä"
 
 #: dialogs.py:789
 msgid "You cannot rename this image"
-msgstr "No se puede cambiar el nombre de esta imagen"
+msgstr "Tätä kuvaa ei voi nimetä uudelleen"
 
 #: dialogs.py:791 dialogs.py:792
 msgid "New image name:"
-msgstr "Nuevo nombre de imagen:"
+msgstr "Uusi kuvan nimi:"
 
 #: dialogs.py:809
 msgid "File exists"
-msgstr "El archivo existe"
+msgstr "Tiedosto on olemassa"
 
 #: dialogs.py:810
 msgid "An image already exists with this name."
-msgstr "Ya existe una imagen con este nombre."
+msgstr "Tällä nimellä oleva kuva on jo olemassa."
 
 #: dialogs.py:815
 msgid "Failed to rename image"
-msgstr "No se pudo cambiar el nombre de la imagen"
+msgstr "Kuvan uudelleennimeäminen epäonnistui"
 
 #: dialogs.py:824
 msgid "Add cover images"
-msgstr "Añadir imágenes de portada"
+msgstr "Lisää kansikuvia"
 
 #: dialogs.py:839
 msgid "You cannot remove this image"
-msgstr "No se puede eliminar esta imagen"
+msgstr "Tätä kuvaa ei voi poistaa"
 
 #: dialogs.py:842
 msgid "Are you sure you want to delete the image: %s"
-msgstr "Está seguro de querer eliminar la imagen: %s"
+msgstr "Haluatko varmasti poistaa kuvan: %s"
 
 #: dialogs.py:853 dialogs.py:911
 msgid "Cannot write"
-msgstr "No se puede escribir"
+msgstr "Ei voi kirjoittaa"
 
 #: dialogs.py:854
 msgid "You do not have permission to delete the file"
-msgstr "No tiene permiso para borrar el archivo"
+msgstr "Sinulla ei ole oikeuksia poistaa tiedostoa"
 
 #: dialogs.py:867
 msgid "Cannot read"
-msgstr "No se puede leer"
+msgstr "Lukeminen ei onnistu"
 
 #: dialogs.py:868
 msgid "You do not have permission to read the file."
-msgstr "No tiene permiso para leer el archivo."
+msgstr "Sinulla ei ole oikeuksia lukea tiedostoa."
 
 #: dialogs.py:879
 msgid "Cannot copy"
-msgstr "No se puede copiar"
+msgstr "Ei voi kopioida"
 
 #: dialogs.py:893
 msgid "Overwrite existing"
-msgstr "Reemplazar existentes"
+msgstr "Korvaa olemassa oleva"
 
 #: dialogs.py:894
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
-msgstr "Ya existe un archivo de imagen con este nombre. ¿Desea reemplazarlo?"
+msgstr "Tällä nimellä on jo olemassa kuvatiedosto. Haluatko korvata sen?"
 
 #: dialogs.py:897
 msgid "Enter image name"
-msgstr "Introduzca el nombre de la imagen"
+msgstr "Anna kuvan nimi"
 
 #: dialogs.py:898
 msgid "Enter a unique name for this image:"
-msgstr "Introduzca un nombre único para esta imagen:"
+msgstr "Anna tälle kuvalle yksilöllinen nimi:"
 
 #: dialogs.py:912
 msgid "You do not have permission to overwrite the file"
-msgstr "No tiene permiso para reemplazar el archivo"
+msgstr "Sinulla ei ole oikeuksia tiedoston korvaamiseen"
 
 #: dialogs.py:948
 msgid "Title"
-msgstr "Título"
+msgstr "Nimi"
 
 #: dialogs.py:949
 msgid "Author"
-msgstr "Autor"
+msgstr "Tekijä"
 
 #: dialogs.py:950
 msgid "Series"
-msgstr "Serie"
+msgstr "Sarjat"
 
 #: dialogs.py:951
 msgid "Custom"
-msgstr "Personalizada"
+msgstr "Mukautettu"
 
 #: dialogs.py:954
 msgid "Background"
-msgstr "Fondo"
+msgstr "Tausta"
 
 #: dialogs.py:955
 msgid "Border"
-msgstr "Borde"
+msgstr "Reuna"
 
 #: dialogs.py:956
 msgid "Fill"
-msgstr "Relleno"
+msgstr "Täyttö"
 
 #: dialogs.py:957
 msgid "Stroke"
-msgstr "Trazo"
+msgstr "Korostusviiva"
 
 #: dialogs.py:970
 msgid "Fonts:"
-msgstr "Tipos de letra:"
+msgstr "Fontit:"
 
 #: dialogs.py:979
 msgid ""
@@ -509,281 +501,277 @@ msgid ""
 "If font set to 'Default', uses the tweak value from\n"
 "'generate_cover_title_font' if present."
 msgstr ""
-"Seleccione una tipo de letra y especifique un tamaño en píxeles.\n"
-"Si el tipo de letra se establece en «Predeterminado», se usa el valor del ajuste\n"
-"«generate_cover_title_font» si está presente."
+"Valitse fontti ja määritä koko pikseleinä.\n"
+"Jos fontin arvoksi on asetettu 'Oletus', käytetään arvoa, joka on määritetty kohdassa\n"
+"'generate_cover_title_font', jos se on olemassa."
 
 #: dialogs.py:997
 msgid "Use the same font family for all text"
-msgstr "Utilìzar la misma familia de tipo de letra para todo el texto"
+msgstr "Käytä samaa kirjasinperhettä kaikissa teksteissä"
 
 #: dialogs.py:998
 msgid ""
 "When checked, the same font family is used for all text content on the cover"
 msgstr ""
-"Cuando se marca, se usa la misma familia de tipo de letra para todo el "
-"contenido de texto en la portada"
+"Kun valittuna, samaa kirjasinperhettä käytetään kaikissa kansikuvan "
+"tekstisisällöissä"
 
 #: dialogs.py:1005
 msgid "Auto-reduce font size to fit on one line"
 msgstr ""
-"Reducir automáticamente el tamaño de letra para que quepa en una línea"
+"Pienennä fonttikokoa automaattisesti, jotta se mahtuisi yhdelle riville"
 
 #: dialogs.py:1006
 msgid ""
 "When checked, the font size will be used as a maximum size.\n"
 "A reduced size will be used where needed to fit text on one line."
 msgstr ""
-"Cuando se marca, el tamaño de letra se utilizará como tamaño máximo.\n"
-"Se utilizará un tamaño reducido cuando sea necesario para ajustar el texto en una línea."
+"Kun tämä on valittuna, kirjasinkokoa käytetään enimmäiskokona.\n"
+"Pienempää kokoa käytetään tarvittaessa, jotta teksti mahtuisi yhdelle riville."
 
 #: dialogs.py:1012
 msgid "Colors:"
-msgstr "Colores:"
+msgstr "Värit:"
 
 #: dialogs.py:1028
 msgid "Reset %s color"
-msgstr "Restablecer color de %s"
+msgstr "Nollaa %s väri"
 
 #: dialogs.py:1033
 msgid "Select a %s color"
-msgstr "Seleccionar un color de %s"
+msgstr "Valitse väri %s"
 
 #: dialogs.py:1041
 msgid "Apply"
-msgstr "Aplicar"
+msgstr "Käytä"
 
 #: dialogs.py:1042
 msgid "When checked, stroke color is drawn around text"
-msgstr "Cuando está marcada, el color del trazo se dibuja alrededor del texto"
+msgstr "Kun valittuna, tekstin ympärille piirretään rajausväri"
 
 #: dialogs.py:1054
 msgid "Left aligned"
-msgstr "Alineado a la izquierda"
+msgstr "Vasemmalle tasattu"
 
 #: dialogs.py:1056
 msgid "Centered"
-msgstr "Centrado"
+msgstr "Keskitetty"
 
 #: dialogs.py:1058
 msgid "Right aligned"
-msgstr "Alineado a la derecha"
+msgstr "Oikealle tasattu"
 
 #: dialogs.py:1129
 msgid "Size:"
-msgstr "Tamaño:"
+msgstr "Koko:"
 
 #: dialogs.py:1133
 msgid "Cover width:"
-msgstr "Ancho de portada:"
+msgstr "Kannen leveys:"
 
 #: dialogs.py:1134
 msgid "The width in pixels of the output .jpg file"
-msgstr "El ancho en píxeles del archivo .jpg de salida"
+msgstr "Tulostettavan .jpg-tiedoston leveys pikseleinä"
 
 #: dialogs.py:1140
 msgid "Cover height:"
-msgstr "Altura de portada:"
+msgstr "Kannen korkeus:"
 
 #: dialogs.py:1141
 msgid "The height in pixels of the output .jpg file"
-msgstr "La altura en píxeles del archivo .jpg de salida"
+msgstr "Tulostettavan .jpg-tiedoston korkeus pikseleinä"
 
 #: dialogs.py:1147
 msgid "Stretch image to use as cover background"
-msgstr "Estirar la imagen para usarla como fondo de portada"
+msgstr "Venytä kuvaa käytettäväksi kannen taustana"
 
 #: dialogs.py:1148
 msgid ""
 "Check this to overlay text on the image background.\n"
 "Uncheck this to place text around the image."
 msgstr ""
-"Marcar para superponer el texto sobre el fondo de la imagen.\n"
-"Desmarcar esta opción para colocar el texto alrededor de la imagen."
+"Valitse tämä, jos haluat peittää tekstin kuvan taustalla.\n"
+"Poista valinta, jos haluat sijoittaa tekstiä kuvan ympärille."
 
 #: dialogs.py:1152
 msgid "Resize cover dimensions to match background image"
-msgstr ""
-"Cambiar las dimensiones de la portada para que coincidan con la imagen de "
-"fondo"
+msgstr "Muuta kansikuvan kokoa vastaamaan taustakuvaa"
 
 #: dialogs.py:1153
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
 msgstr ""
-"Marcar para cambiar automáticamente el tamaño de la portada según\n"
-"las dimensiones de la imagen de fondo elegida actualmente"
+"Valitse tämä, jos haluat muuttaa kannen kokoa automaattisesti\n"
+"valitun taustakuvan mittoihin"
 
 #: dialogs.py:1157
 msgid "Resize image to scale up if smaller than available area"
-msgstr ""
-"Cambiar el tamaño de la imagen para ampliarla si es más pequeña que el área "
-"disponible"
+msgstr "Muuta kuvan kokoa, jos se on pienempi kuin käytettävissä oleva alue"
 
 #: dialogs.py:1158
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
 msgstr ""
-"Marcar para cambiar automáticamente el tamaño de la imagen de portada para que se ajuste al\n"
-"el área máxima disponible si es demasiado pequeña"
+"Valitsemalla tämän voit muuttaa kansikuvan kokoa automaattisesti niin, että se mahtuu\n"
+"käytettävissä olevaan enimmäisalueeseen, jos se on liian pieni"
 
 #: dialogs.py:1164
 msgid "Margins:"
-msgstr "Márgenes:"
+msgstr "Marginaalit:"
 
 #: dialogs.py:1169
 msgid "Top margin:"
-msgstr "Margen superior:"
+msgstr "Ylämarginaali:"
 
 #: dialogs.py:1170
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
 msgstr ""
-"El margen en píxeles desde la parte superior de la portada\n"
-"al primer contenido"
+"Marginaali pikseleinä kannen yläreunasta \n"
+"ensimmäiseen sisältöön"
 
 #: dialogs.py:1178
 msgid "Bottom margin:"
-msgstr "Margen inferior:"
+msgstr "Alamarginaali:"
 
 #: dialogs.py:1179
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
 msgstr ""
-"El margen en píxeles desde la parte inferior de la portada\n"
-"al último contenido"
+"Marginaali pikseleinä kannen alareunasta\n"
+"viimeiseen sisältöön"
 
 #: dialogs.py:1187
 msgid "Left margin:"
-msgstr "Margen izquierdo:"
+msgstr "Vasen marginaali:"
 
 #: dialogs.py:1188
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
 msgstr ""
-"El margen mínimo en píxeles desde la izquierda de la portada\n"
-"al contenido de texto"
+"Pienin marginaali pikseleinä kannen vasemmalta reunalta\n"
+"tekstin sisältöön"
 
 #: dialogs.py:1196
 msgid "Right margin:"
-msgstr "Margen derecho:"
+msgstr "Oikea marginaali:"
 
 #: dialogs.py:1197
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
 msgstr ""
-"El margen mínimo en píxeles desde la derecha de la portada\n"
-"al contenido de texto"
+"Pienin marginaali pikseleinä kannen oikeasta reunasta\n"
+"tekstin sisältöön"
 
 #: dialogs.py:1205
 msgid "Text padding:"
-msgstr "Espaciado de texto:"
+msgstr "Tekstitäyte:"
 
 #: dialogs.py:1206
 msgid "The spacing in pixels between successive lines of text"
-msgstr "El espacio en píxeles entre líneas sucesivas de texto"
+msgstr "Peräkkäisten tekstirivien välinen etäisyys pikseleinä"
 
 #: dialogs.py:1213
 msgid "Image padding:"
-msgstr "Espaciado de imagen:"
+msgstr "Kuvan täyte:"
 
 #: dialogs.py:1214
 msgid ""
 "The spacing in pixels between the image and text\n"
 "placed above and below it"
 msgstr ""
-"El espacio en píxeles entre la imagen y el texto\n"
-"colocado arriba y abajo"
+"Kuvan ja tekstin välinen etäisyys pikseleinä\n"
+"sijoitettu sen ylä- ja alapuolelle"
 
 #: dialogs.py:1224
 msgid "Border Widths:"
-msgstr "Anchos de borde:"
+msgstr "Reunojen leveydet:"
 
 #: dialogs.py:1228
 msgid "Cover border:"
-msgstr "Borde de portada:"
+msgstr "Kannen reunus:"
 
 #: dialogs.py:1229
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
 msgstr ""
-"El ancho en píxeles de un borde alrededor\n"
-"de la portada. Especifique 0 para no tener borde"
+"Reunan ympärillä olevan reunuksen leveys pikseleinä\n"
+"kannen reunuksen ympärillä. Määritä 0, jos reunaa ei ole"
 
 #: dialogs.py:1236
 msgid "Image border:"
-msgstr "Borde de la imagen:"
+msgstr "Kuvan reuna:"
 
 #: dialogs.py:1237
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the image. Specify 0 for no border"
 msgstr ""
-"El ancho en píxeles de un borde alrededor\n"
-"de la imagen. Especifique 0 para no tener borde"
+"Reunan leveys pikseleinä\n"
+"kuvasta. Määritä 0 ilman reunaa"
 
 #: dialogs.py:1276
 msgid "Field Order:"
-msgstr "Orden campos:"
+msgstr "Kenttäjärjestys:"
 
 #: dialogs.py:1277
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
 msgstr ""
-"Modificar el orden de los elementos de portada y\n"
-"si se muestran o no según la casilla de verificación"
+"Muuta kansilehden kohteiden järjestystä ja\n"
+"näytetäänkö ne valintaruudun avulla"
 
 #: dialogs.py:1291
 msgid "Move field up"
-msgstr "Mover campo hacia arriba"
+msgstr "Siirrä kenttää ylöspäin"
 
 #: dialogs.py:1298
 msgid "Move field down"
-msgstr "Mover campo hacia abajo"
+msgstr "Siirrä kenttää alaspäin"
 
 #: dialogs.py:1304
 msgid "Custom Text:"
-msgstr "Texto personalizado:"
+msgstr "Mukautettu teksti:"
 
 #: dialogs.py:1313
 msgid "Other Options:"
-msgstr "Otras opciones:"
+msgstr "Muut asetukset:"
 
 #: dialogs.py:1317
 msgid "Swap author LN,FN to FN LN"
-msgstr "Intercambiar autor de apellido, nombre a nombre apellido"
+msgstr "Vaihda tekijä LN,FN muotoon FN LN"
 
 #: dialogs.py:1318
 msgid ""
 "Use this option if your authors are stored as LN, FN\n"
 "but you prefer to see FN LN on the book cover"
 msgstr ""
-"Utilizar esta opción si los autores están almacenados como apellido, nombre\n"
-"pero prefiere tener nombre apellido en la portada del libro"
+"Käytä tätä vaihtoehtoa, jos tekijät on tallennettu muodossa LN, FN\n"
+"mutta haluat nähdä kirjan kannessa mieluummin FN LN"
 
 #: dialogs.py:1322
 msgid "Series text:"
-msgstr "Texto de la serie:"
+msgstr "Sarjojen teksti:"
 
 #: dialogs.py:1323
 msgid ""
 "Change the way series information is displayed.\n"
 "Useful for non-English languages!"
 msgstr ""
-"Cambiar la forma en que se muestra la información de la serie.\n"
-"¡Útil para idiomas distintos al inglés!"
+"Muuta sarjatietojen näyttötapaa.\n"
+"Hyödyllinen muille kuin englannin kielille!"
 
 #: dialogs.py:1331
 msgid "Metadata: (*not saved)"
-msgstr "Metadatos: (* no guardados)"
+msgstr "Metadata: (*ei tallennettu)"
 
 #: dialogs.py:1332
 msgid ""
@@ -791,74 +779,74 @@ msgid ""
 "These are not saved as part of the settings profile.\n"
 "This functionality is disabled if multiple books are selected."
 msgstr ""
-"Opcionalmente, reeplazar el texto de estos campos para este libro.\n"
-"Esto no se guarda como parte del perfil de configuración.\n"
-"Esta funcionalidad está deshabilitada si se seleccionan varios libros."
+"Vaihtoehtoisesti voit korvata näiden kenttien tekstin tämän kirjan osalta.\n"
+"Näitä ei tallenneta osaksi asetusprofiilia.\n"
+"Tämä toiminto ei ole käytössä, jos useita kirjoja on valittu."
 
 #: dialogs.py:1338
 msgid "Title:"
-msgstr "Título:"
+msgstr "Nimi:"
 
 #: dialogs.py:1341
 msgid "Author:"
-msgstr "Autor:"
+msgstr "Tekijä:"
 
 #: dialogs.py:1344
 msgid "Series:"
-msgstr "Serie:"
+msgstr "Sarjat:"
 
 #: dialogs.py:1374
 msgid "Cover Options"
-msgstr "Opciones de portada"
+msgstr "Kansiasetukset"
 
 #: dialogs.py:1377
 msgid "Generate Custom Cover"
-msgstr "Generar portada personalizada"
+msgstr "Luo mukautettu kansi"
 
 #: dialogs.py:1398
 msgid "Settings"
-msgstr "Ajustes"
+msgstr "Asetukset"
 
 #: dialogs.py:1399
 msgid "Fonts"
-msgstr "Tipos de letra"
+msgstr "Fontit"
 
 #: dialogs.py:1400
 msgid "Dimensions"
-msgstr "Dimensiones"
+msgstr "Mitat"
 
 #: dialogs.py:1401
 msgid "Contents"
-msgstr "Contenido"
+msgstr "Sisällöt"
 
 #: dialogs.py:1411
 msgid " Revert "
-msgstr "Revertir "
+msgstr " Palauta "
 
 #: dialogs.py:1412
 msgid "Revert to your previous saved setting values"
-msgstr "Volver a los valores de configuración guardados anteriormente"
+msgstr "Palaa edellisiin tallennettuihin asetusarvoihin"
 
 #: dialogs.py:1414
 msgid " Save "
-msgstr "Guardar"
+msgstr " Tallenna "
 
 #: dialogs.py:1415
 msgid "Overwrite your current saved setting"
-msgstr "Reemplazar la configuración guardada actual"
+msgstr "Korvaa nykyinen tallennettu asetus"
 
 #: dialogs.py:1417
 msgid " Customize... "
-msgstr "Personalizar..."
+msgstr " Mukautus... "
 
 #: dialogs.py:1418
 msgid "Set general options for this plugin"
-msgstr "Establecer opciones generales para este complemento"
+msgstr "Aseta tämän laajennuksen yleiset asetukset"
 
 #: dialogs.py:1496
 msgid "Revert to your previously saved values for '%s'?"
-msgstr "¿Volver a los valores guardados anteriormente para «%s»?"
+msgstr "Palautetaanko aiemmin tallennetut '%s'-arvot?"
 
 #: dialogs.py:1515
 msgid "Overwrite the '%s' setting with the current values?"
-msgstr "¿Reemplazar la configuración «%s» con los valores actuales?"
+msgstr "Korvataanko asetus '%s' nykyisillä arvoilla?"

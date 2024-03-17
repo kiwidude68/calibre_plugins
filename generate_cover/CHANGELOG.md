@@ -1,5 +1,10 @@
 # Generate Cover Change Log
 
+## [2.3.4] - 2024-03-17
+### Added
+- Finnish translation
+- Tamil translation
+
 ## [2.3.3] - 2023-09-01
 ### Added
 - Russian translation (ashed)
