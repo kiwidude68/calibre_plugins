@@ -6,16 +6,16 @@
 # Adolfo Jayme-Barrientos, 2022
 # Darío Hereñú, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2022
-# Jellby <jellby@yahoo.com>, 2022
 # Grant Drake, 2022
+# Jellby <jellby@yahoo.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 20:50+0100\n"
 "PO-Revision-Date: 2022-09-19 14:59+0000\n"
-"Last-Translator: Grant Drake, 2022\n"
-"Language-Team: Spanish (https://www.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
+"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,15 +29,15 @@ msgstr "Atajos de teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar Calibre ahora"
+msgstr "Reiniciar calibre ahora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para: "
+msgstr "Preferencias para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Borrar"
+msgstr "Limpiar"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
@@ -48,16 +48,16 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer cambiar la configuración del complemento en esta "
+"biblioteca?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
-" en su carpeta de complementos de calibre no se modificará."
+"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
+"la carpeta de complementos de calibre no se modificarán."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -69,8 +69,7 @@ msgstr "Configuración modificada"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Se ha cambiado la configuración de este complemento en esta biblioteca."
+msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -81,8 +80,8 @@ msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer borrar la configuración del complemento en esta "
+"biblioteca?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -90,9 +89,7 @@ msgstr "Configuración eliminada"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Se han borrado todas las configuraciones para este complemento en esta "
-"biblioteca."
+msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
@@ -110,7 +107,7 @@ msgstr "Reinicio requerido"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título - debe reiniciar Calibre antes de usar "
+"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
 #: ..\common\common_widgets.py:222
@@ -119,7 +116,7 @@ msgstr "Crear nueva columna"
 
 #: action.py:31
 msgid "Open With"
-msgstr "Abrir con"
+msgstr "Open With"
 
 #: action.py:81
 msgid "&Customize plugin"
@@ -143,15 +140,15 @@ msgstr "El libro no tiene portada."
 
 #: action.py:172
 msgid "Open With template error"
-msgstr "Abrir con error de plantilla"
+msgstr "Error de plantilla Open With"
 
 #: action.py:184
 msgid "No %s format available. First convert the book to %s."
-msgstr "No %shay formato disponible. Primero convierta el libro a %s."
+msgstr "No hay formato %s disponible. Primero convierta el libro a %s."
 
 #: action.py:190
 msgid "Path not specified for this format in your configuration."
-msgstr "Ruta no especificada para este formato en su configuración."
+msgstr "Ruta no especificada para este formato en la configuración."
 
 #: config.py:205
 msgid "Format"
@@ -171,7 +168,7 @@ msgstr "Título"
 
 #: config.py:206
 msgid "Application Path"
-msgstr "Aplicar Ruta"
+msgstr "Ruta de aplicación"
 
 #: config.py:206
 msgid "Args"
@@ -179,15 +176,15 @@ msgstr "Argumentos"
 
 #: config.py:294 config.py:299
 msgid "Select the application to execute for this format"
-msgstr "Seleccione la aplicación a ejecutar para este formato"
+msgstr "Seleccionar la aplicación a ejecutar para este formato"
 
 #: config.py:354
 msgid "Edit Path"
-msgstr "Editar Ruta"
+msgstr "Modificar ruta"
 
 #: config.py:355
 msgid "Choose a new path for this application:"
-msgstr "Elija una nueva ruta para esta aplicación:"
+msgstr "Elegir una nueva ruta para esta aplicación:"
 
 #: config.py:402
 msgid "Are you sure you want to delete this menu item?"
@@ -200,7 +197,7 @@ msgstr ""
 
 #: config.py:405 config.py:590 config.py:763 config.py:772
 msgid "Are you sure?"
-msgstr "Está usted seguro?"
+msgstr "¿Está seguro?"
 
 #: config.py:515
 msgid "Add New Image"
@@ -266,7 +263,7 @@ msgstr "¡La imagen de origen no existe!"
 
 #: config.py:633
 msgid "&Select and configure the menu items to display:"
-msgstr "&Seleccione y configure los elementos del menú para mostrar:"
+msgstr "&Seleccionar y configurar los elementos del menú para mostrar:"
 
 #: config.py:649
 msgid "Move row up"
@@ -290,11 +287,11 @@ msgstr "Mover fila hacia abajo"
 
 #: config.py:690
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Edite los atajos de teclado asociados con este complemento"
+msgstr "Modificar los atajos de teclado asociados con este complemento"
 
 #: config.py:737
 msgid "&Edit Path"
-msgstr "&Editar ruta"
+msgstr "&Modificar ruta"
 
 #: config.py:743
 msgid "&Add image"
@@ -333,11 +330,11 @@ msgstr "Fallo al importar"
 
 #: config.py:791
 msgid "This is not a valid OWIP export archive"
-msgstr "Este no es un archivo de exportación OWIP válido"
+msgstr "Éste no es un archivo de exportación OWIP válido"
 
 #: config.py:803
 msgid "%d menu items added"
-msgstr "%delementos de menú agregados"
+msgstr "%delementos de menú añadidos"
 
 #: config.py:803
 msgid "Import completed"
@@ -353,7 +350,7 @@ msgstr "No hay elementos de menú seleccionados para exportar."
 
 #: config.py:842
 msgid "%d menu items exported to<br>%s"
-msgstr "%delementos de menú exportados a <br>%s"
+msgstr "%d elementos de menú exportados a <br>%s"
 
 #: config.py:842
 msgid "Export completed"

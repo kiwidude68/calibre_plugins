@@ -1,5 +1,10 @@
 # Open With Change Log
 
+## [1.8.2] - 2024-03-17
+### Added
+- Russian translation
+- Tamil translation
+
 ## [1.8.1] - 2022-12-24
 ### Added
 - Support reordering filename in command arguments with special token `%FILENAME%` ([#4][i4])

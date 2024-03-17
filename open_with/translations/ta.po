@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# அனிச் பிரபு தி, 2022
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-09 20:50+0100\n"
+"PO-Revision-Date: 2022-09-19 14:59+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:689
+msgid "Keyboard shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "இதற்கான விருப்பத்தேர்வுகள்:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "இந்த சொருகி அனைத்து அமைப்புகளையும் அழிக்கவும்"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை மாற்ற விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"பிற நூலகங்களில் உள்ள எந்த அமைப்புகளும் அல்லது உங்கள் காலிபர் செருகுநிரல்கள் "
+"கோப்புறையில் ஒரு JSON கோப்பில் சேமிக்கப்படாது."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "நீங்கள் பின்னர் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "அமைப்புகள் மாற்றப்பட்டன"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அமைப்புகள் மாற்றப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "தயவுசெய்து இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை அழிக்க விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "அமைப்புகள் நீக்கப்பட்டன"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"தலைப்பு படம் கிடைக்கவில்லை - இந்த சொருகி பயன்படுத்துவதற்கு முன்பு நீங்கள் "
+"காலிபரை மறுதொடக்கம் செய்ய வேண்டும்!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
+
+#: action.py:31
+msgid "Open With"
+msgstr "உடன் திறந்திருக்கும்"
+
+#: action.py:81
+msgid "&Customize plugin"
+msgstr "& சொருகி தனிப்பயனாக்கு"
+
+#: action.py:83 config.py:694
+msgid "&Help"
+msgstr "&உதவி"
+
+#: action.py:157
+msgid "No book selected"
+msgstr "எந்த புத்தகமும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: action.py:157 action.py:164 action.py:183 action.py:189
+msgid "Cannot open with"
+msgstr "உடன் திறக்க முடியாது"
+
+#: action.py:164
+msgid "Book has no cover."
+msgstr "புத்தகத்திற்கு எந்த கவர் இல்லை."
+
+#: action.py:172
+msgid "Open With template error"
+msgstr "வார்ப்புரு பிழையுடன் திறக்கவும்"
+
+#: action.py:184
+msgid "No %s format available. First convert the book to %s."
+msgstr "%கள் வடிவம் கிடைக்கவில்லை. முதலில் புத்தகத்தை %s ஆக மாற்றவும்."
+
+#: action.py:190
+msgid "Path not specified for this format in your configuration."
+msgstr "உங்கள் உள்ளமைவில் இந்த வடிவமைப்பிற்கு பாதை குறிப்பிடப்படவில்லை."
+
+#: config.py:205
+msgid "Format"
+msgstr "வடிவம்"
+
+#: config.py:205
+msgid "Image"
+msgstr "படம்"
+
+#: config.py:205
+msgid "Submenu"
+msgstr "துணைமெனு"
+
+#: config.py:205
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: config.py:206
+msgid "Application Path"
+msgstr "பயன்பாட்டு பாதை"
+
+#: config.py:206
+msgid "Args"
+msgstr "ஆர்க்ஸ்"
+
+#: config.py:294 config.py:299
+msgid "Select the application to execute for this format"
+msgstr "இந்த வடிவமைப்பிற்கு இயக்க பயன்பாட்டைத் தேர்ந்தெடுக்கவும்"
+
+#: config.py:354
+msgid "Edit Path"
+msgstr "பாதையைத் திருத்து"
+
+#: config.py:355
+msgid "Choose a new path for this application:"
+msgstr "இந்த பயன்பாட்டிற்கு புதிய பாதையைத் தேர்வுசெய்க:"
+
+#: config.py:402
+msgid "Are you sure you want to delete this menu item?"
+msgstr "இந்த மெனு உருப்படியை நீக்க விரும்புகிறீர்களா?"
+
+#: config.py:404
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "தேர்ந்தெடுக்கப்பட்ட {0} மெனு உருப்படிகளை நீக்க விரும்புகிறீர்களா?"
+
+#: config.py:405 config.py:590 config.py:763 config.py:772
+msgid "Are you sure?"
+msgstr "நீ சொல்வது உறுதியா?"
+
+#: config.py:515
+msgid "Add New Image"
+msgstr "புதிய படத்தைச் சேர்க்கவும்"
+
+#: config.py:518
+msgid "&Select image source"
+msgstr "& பட மூலத்தைத் தேர்ந்தெடுக்கவும்"
+
+#: config.py:521
+msgid "From &web domain favicon"
+msgstr "& வலை டொமைன் ஃபாவிகானிலிருந்து"
+
+#: config.py:528
+msgid "From .png &file"
+msgstr ".Png கோப்பிலிருந்து"
+
+#: config.py:541
+msgid "&Save as filename:"
+msgstr "& கோப்பு பெயராக சேமிக்கவும்:"
+
+#: config.py:565
+msgid "Select a .png file for the menu icon"
+msgstr "மெனு ஐகானுக்கு .png கோப்பைத் தேர்ந்தெடுக்கவும்"
+
+#: config.py:571
+msgid "Cannot select image"
+msgstr "படத்தைத் தேர்ந்தெடுக்க முடியாது"
+
+#: config.py:572 config.py:610
+msgid "Source image must be a .png file."
+msgstr "மூல படம் ஒரு .png கோப்பாக இருக்க வேண்டும்."
+
+#: config.py:580 config.py:584 config.py:598 config.py:606 config.py:609
+#: config.py:612
+msgid "Cannot import image"
+msgstr "படத்தை இறக்குமதி செய்ய முடியாது"
+
+#: config.py:581
+msgid "You must specify a filename to save as."
+msgstr "சேமிக்க ஒரு கோப்பு பெயரை நீங்கள் குறிப்பிட வேண்டும்."
+
+#: config.py:585
+msgid "The save as filename should consist of a filename only."
+msgstr ""
+"கோப்பு பெயராக சேமிப்பது ஒரு கோப்பு பெயரை மட்டுமே கொண்டிருக்க வேண்டும்."
+
+#: config.py:591
+msgid "An image with this name already exists - overwrite it?"
+msgstr "இந்த பெயரைக் கொண்ட ஒரு படம் ஏற்கனவே உள்ளது - அதை மேலெழுதவா?"
+
+#: config.py:599
+msgid "You must specify a web domain url"
+msgstr "நீங்கள் ஒரு வலை டொமைன் URL ஐ குறிப்பிட வேண்டும்"
+
+#: config.py:607
+msgid "You must specify a source file."
+msgstr "நீங்கள் ஒரு மூல கோப்பைக் குறிப்பிட வேண்டும்."
+
+#: config.py:613
+msgid "Source image does not exist!"
+msgstr "மூல படம் இல்லை!"
+
+#: config.py:633
+msgid "&Select and configure the menu items to display:"
+msgstr "& காண்பிக்க மெனு உருப்படிகளைத் தேர்ந்தெடுத்து உள்ளமைக்கவும்:"
+
+#: config.py:649
+msgid "Move row up"
+msgstr "வரிசையை நகர்த்தவும்"
+
+#: config.py:656
+msgid "Add menu item row"
+msgstr "மெனு உருப்படி வரிசையைச் சேர்க்கவும்"
+
+#: config.py:663
+msgid "Delete menu item row"
+msgstr "மெனு உருப்படி வரிசையை நீக்கு"
+
+#: config.py:670
+msgid "Reset to defaults"
+msgstr "இயல்புநிலைகளுக்கு மீட்டமைக்கவும்"
+
+#: config.py:677
+msgid "Move row down"
+msgstr "வரிசையை கீழே நகர்த்தவும்"
+
+#: config.py:690
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
+
+#: config.py:737
+msgid "&Edit Path"
+msgstr "& திருத்தும்"
+
+#: config.py:743
+msgid "&Add image"
+msgstr "படத்தைச் சேர்க்கவும்"
+
+#: config.py:746
+msgid "&Open images folder"
+msgstr "& திறந்த படங்களின் கோப்புறை"
+
+#: config.py:752
+msgid "&Import"
+msgstr "& இறக்குமதி"
+
+#: config.py:755
+msgid "&Export"
+msgstr "& ஏற்றுமதி"
+
+#: config.py:764
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr "சொருகி இயல்புநிலை மெனுவுக்கு மீட்டமைக்க விரும்புகிறீர்களா?"
+
+#: config.py:765
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr ""
+"மாற்றியமைக்கப்பட்ட உள்ளமைவு மற்றும் தனிப்பயன் மெனு உருப்படிகள் "
+"நிராகரிக்கப்படும்."
+
+#: config.py:773
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr "கோப்புறை இன்னும் இல்லை. அதை உருவாக்க விரும்புகிறீர்களா?"
+
+#: config.py:790
+msgid "Import Failed"
+msgstr "இறக்குமதி தோல்வியடைந்தது"
+
+#: config.py:791
+msgid "This is not a valid OWIP export archive"
+msgstr "இது செல்லுபடியாகும் OWIP ஏற்றுமதி காப்பகம் அல்ல"
+
+#: config.py:803
+msgid "%d menu items added"
+msgstr "%டி மெனு உருப்படிகள் சேர்க்கப்பட்டன"
+
+#: config.py:803
+msgid "Import completed"
+msgstr "இறக்குமதி முடிந்தது"
+
+#: config.py:813
+msgid "Cannot export"
+msgstr "ஏற்றுமதி செய்ய முடியாது"
+
+#: config.py:814
+msgid "No menu items selected to export."
+msgstr "ஏற்றுமதி செய்ய மெனு உருப்படிகள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை."
+
+#: config.py:842
+msgid "%d menu items exported to<br>%s"
+msgstr "%d மெனு உருப்படிகள் <br>%s க்கு ஏற்றுமதி செய்யப்படுகின்றன"
+
+#: config.py:842
+msgid "Export completed"
+msgstr "ஏற்றுமதி முடிந்தது"
+
+#: config.py:849
+msgid "Select a menu file archive to import"
+msgstr "இறக்குமதி செய்ய மெனு கோப்பு காப்பகத்தைத் தேர்ந்தெடுக்கவும்"
+
+#: config.py:857
+msgid "Save archive as"
+msgstr "காப்பகத்தை சேமிக்கவும்"
