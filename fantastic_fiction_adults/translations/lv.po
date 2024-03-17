@@ -3,114 +3,109 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Paulo_Neto <layoutbr@lexxa.com.br>, 2022
-# Wagner Marques <wagnermarques00@hotmail.com>, 2022
-# Cm Fy, 2022
+# ciepina <ciepina@balticom.lv>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-19 16:15+0100\n"
 "PO-Revision-Date: 2022-09-19 15:16+0000\n"
-"Last-Translator: Cm Fy, 2022\n"
-"Language-Team: Portuguese (Brazil) (https://app.transifex.com/calibre/teams/19337/pt_BR/)\n"
+"Last-Translator: ciepina <ciepina@balticom.lv>, 2023\n"
+"Language-Team: Latvian (https://app.transifex.com/calibre/teams/19337/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: pt_BR\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Atalhos do teclado"
+msgstr "Īsinājumtaustiņi"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reinicie o calibre agora"
+msgstr "Restartējiet Calibre"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferências para:"
+msgstr "Iestatījumi:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpar"
+msgstr "Notīrīt"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Limpar todas as configurações para este plugin"
+msgstr "Notīrīt visus šī spraudņa iestatījumus"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Tem certeza que deseja modificar suas configurações nesta biblioteca para "
-"este plugin?"
+"Vai tiešām vēlaties mainīt iestatījumus šajā bibliotēkā šim spraudnim?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Qualquer configuração em outras bibliotecas ou armazenadas em um arquivo "
-"JSON na pasta dos seus plugins do calibre não serão tocadas."
+"Netiek aizskarti nekādi iestatījumi citās bibliotēkās vai JSON failā jūsu "
+"calibre spraudņu mapē."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Você precisa reiniciar o calibre depois disso."
+msgstr "Pēc tam jums ir jārestartē calibre."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configurações modificadas"
+msgstr "Iestatījumi mainīti"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "As configurações para este plugin nesta biblioteca foram modificadas."
+msgstr "Šī spraudņa iestatījumi šajā bibliotēkā ir mainīti."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie o calibre agora."
+msgstr "Lūdzu, restartējiet calibre."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"Você tem certeza que deseja limpar as configurações em sua biblioteca para "
-"este plugin?"
+msgstr "Vai tiešām vēlaties notīrīt iestatījumus šim spraudnim bibliotēkā?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configurações removidas"
+msgstr "Iestatījumi izdzēsti"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Todas as configurações deste plugin nesta biblioteca foram limpas."
+msgstr "Visi šī spraudņa iestatījumi bibliotēkā ir notīrīti."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar para a área de transferência"
+msgstr "Kopēt starpliktuvē"
 
 #: ..\common\common_widgets.py:94
 msgid "Undefined"
-msgstr "Não definido"
+msgstr "Nenoteikts"
 
 #: ..\common\common_widgets.py:149
 msgid "Restart required"
-msgstr "Reinicialização requerida"
+msgstr "Nepieciešams restarts"
 
 #: ..\common\common_widgets.py:150
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Imagem do título não encontrada - você deve reiniciar o Calbre antes de "
-"utilizar este plugin!"
+"Vāka attēls nav atrasts - pirms šī spraudņa izmantošanas ir jārestartē "
+"Calibre!"
 
 #: ..\common\common_widgets.py:193
 msgid "Create new column"
-msgstr "Criar nova coluna"
+msgstr "Izveidot jaunu kolonnu"
 
 #: config.py:29
 msgid "Discard genre from comments"

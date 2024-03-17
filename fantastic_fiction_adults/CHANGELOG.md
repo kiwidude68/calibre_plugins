@@ -1,5 +1,15 @@
 # Fantastic Fiction Adults Change Log
 
+## [1.3.1] - 2024-03-17
+### Added
+- Catalan translation
+- Dutch translation
+- Finnish translation
+- Latvian translation
+- Swedish translation
+- Tamil translation
+- Turkish translation
+
 ## [1.3.0] - 2022-10-16
 ### Added
 - All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins

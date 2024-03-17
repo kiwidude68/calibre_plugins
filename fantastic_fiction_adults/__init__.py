@@ -101,7 +101,7 @@ class FantasticFictionAdults(Source):
     name                    = 'Fantastic Fiction Adults'
     description             = 'Downloads metadata and covers from ffadultsonly.com'
     author                  = 'Grant Drake'
-    version                 = (1, 3, 0)
+    version                 = (1, 3, 1)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ffa'
