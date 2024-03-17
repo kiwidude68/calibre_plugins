@@ -3,143 +3,142 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Victor, 2022
-# ashed <craysy@gmail.com>, 2022
-# Caarmi, 2022
+# ciepina <ciepina@balticom.lv>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 11:50+0100\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
-"Last-Translator: Caarmi, 2022\n"
-"Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
+"Last-Translator: ciepina <ciepina@balticom.lv>, 2023\n"
+"Language-Team: Latvian (https://app.transifex.com/calibre/teams/19337/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Сочетания клавиш..."
+msgstr "Īsinājumtaustiņi"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Перезагрузите calibre сейчас"
+msgstr "Restartējiet Calibre"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Предпочтения для:"
+msgstr "Iestatījumi:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Очистить"
+msgstr "Notīrīt"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Очистить все настройки для плагина"
+msgstr "Notīrīt visus šī spraudņa iestatījumus"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr "Импорт списка"
+msgstr ""
+"Vai tiešām vēlaties mainīt iestatījumus šajā bibliotēkā šim spraudnim?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Любые настройки в других библиотеках или сохраненные в файле JSON в папке "
-"плагинов calibre не будут затронуты."
+"Netiek aizskarti nekādi iestatījumi citās bibliotēkās vai JSON failā jūsu "
+"calibre spraudņu mapē."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Вы должны перезагрузить calibre впоследствии."
+msgstr "Pēc tam jums ir jārestartē calibre."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Настройки изменены"
+msgstr "Iestatījumi mainīti"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Настройки этого плагина в этой библиотеке были изменены."
+msgstr "Šī spraudņa iestatījumi šajā bibliotēkā ir mainīti."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Пожалуйста, перезагрузите calibre сейчас."
+msgstr "Lūdzu, restartējiet calibre."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr "Вы действительно хотите очистить настройки плагина в библиотеке?"
+msgstr "Vai tiešām vēlaties notīrīt iestatījumus šim spraudnim bibliotēkā?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Настройки удалены"
+msgstr "Iestatījumi izdzēsti"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Все настройки для этого плагина в этой библиотеке были очищены."
+msgstr "Visi šī spraudņa iestatījumi bibliotēkā ir notīrīti."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Копировать в Буфер обмена"
+msgstr "Kopēt starpliktuvē"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Не определено"
+msgstr "Nenoteikts"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Требуется перезапуск"
+msgstr "Nepieciešams restarts"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Изображение обложки не найдено - перед использованием нужно перезапустить "
-"calibre!"
+"Vāka attēls nav atrasts - pirms šī spraudņa izmantošanas ir jārestartē "
+"Calibre!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Создать новый столбец"
+msgstr "Izveidot jaunu kolonnu"
 
 #: action.py:68
 msgid "Favourites"
-msgstr "Избранное"
+msgstr ""
 
 #: action.py:155
 msgid "&Customize plugin"
-msgstr "&Настроить плагин"
+msgstr "&Pielāgot spraudni"
 
 #: action.py:157 config.py:213
 msgid "&Help"
-msgstr "Спр&авка"
+msgstr "&Palīdzība"
 
 #: config.py:64
 msgid "Separator"
-msgstr "Разделитель"
+msgstr ""
 
 #: config.py:184
 msgid "Move the selected menu item up"
-msgstr "Переместить выбранный пункт меню вверх"
+msgstr ""
 
 #: config.py:188
 msgid "Move the selected menu item down"
-msgstr "Переместить выбранный пункт меню вниз"
+msgstr ""
 
 #: config.py:192
 msgid "Remove the selected item from the menu"
-msgstr "Удалить выбранный пункт из меню"
+msgstr ""
 
 #: config.py:196
 msgid "Add a separator to the menu following the selected item"
-msgstr "Добавить разделитель в меню после выбранного пункта"
+msgstr ""
 
 #: config.py:200
 msgid "Rename the menu item for when it appears on your Favourites menu"
-msgstr "Переименовать пункт меню, когда он появится в меню «Избранное»."
+msgstr ""

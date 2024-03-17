@@ -1,5 +1,19 @@
 # Favourites Menu Change Log
 
+## [1.3.1] - 2024-03-17
+### Added
+- Catalan translation
+- Dutch translation
+- Finnish translation
+- German translation
+- Italian translation
+- Latvian translation
+- Portuguese translation
+- Portuguese (Brazil) translation
+- Swedish translation
+- Tamil translation
+- Turkish translation
+
 ## [1.3.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added

@@ -10,7 +10,7 @@ class ActionFavouritesMenu(InterfaceActionBase):
     description             = 'Create a customised toolbar menu button for features from other plugins or calibre menus to save screen space'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
-    version                 = (1, 3, 0)
+    version                 = (1, 3, 1)
     minimum_calibre_version = (2, 0, 0)
 
     actual_plugin           = 'calibre_plugins.favourites_menu.action:FavouritesMenuAction'
