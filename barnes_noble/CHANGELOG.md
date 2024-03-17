@@ -1,5 +1,11 @@
 # Barnes & Noble Change Log
 
+## [1.5.3] - 2024-03-17
+### Added
+- Finnish and Tamil translations.
+### Changed
+- Spanish and Portuguese translations.
+
 ## [1.5.2] - 2023-04-30
 ### Fixed
 - Remove trailing comma from series names.

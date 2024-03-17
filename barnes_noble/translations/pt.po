@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Cm Fy, 2022
+# Paulo Pereira <pauloizidoro@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-09-19 16:29+0100\n"
 "PO-Revision-Date: 2022-09-08 19:50+0000\n"
-"Last-Translator: Cm Fy, 2022\n"
+"Last-Translator: Paulo Pereira <pauloizidoro@gmail.com>, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/calibre/teams/19337/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,15 +33,14 @@ msgid ""
 "This will increase the potential likelihood of getting a larger cover image\n"
 "but does not guarantee it."
 msgstr ""
-"Incrementando-se este valor, serão consideradas mais edições, porém a duração das buscas também aumentará.\n"
+"Incrementando-se este valor, serão consideradas mais edições, porém o tempo de pesquisa também aumentará.\n"
 "\n"
-"Isto aumentará as possibilidades de se obter imagens maiores das capas\n"
-"mas não é garantido."
+"Isto aumentará possibilidade de se obter imagens maiores das capas mas não é garantido."
 
 #: config.py:61
 msgid "Get all contributing authors (e.g. editors, illustrators etc)"
 msgstr ""
-"Obter os nomes de todos os colaboradores (e.g. editores, ilustradores etc.)"
+"Obter os nomes de todos os colaboradores (ex. editores, ilustradores, etc.)"
 
 #: config.py:62
 msgid ""
