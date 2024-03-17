@@ -1,5 +1,10 @@
 # Reading List Change Log
 
+## [1.15.2] - 2024-03-17
+### Added
+- Russian translation
+- Tamil translation
+
 ## [1.15.1] - 2023-01-22
 ### Fixed
 - Sorting broken in 1.14.0 of Edit List for removing a row.

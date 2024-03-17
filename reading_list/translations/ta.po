@@ -1,0 +1,986 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Arun Sundaram <arunistheking@gmail.com>, 2022
+# அனிச் பிரபு தி, 2022
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-10 20:06+0100\n"
+"PO-Revision-Date: 2022-09-19 14:51+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:1159
+msgid "Keyboard shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "இதற்கான விருப்பத்தேர்வுகள்:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "இந்த சொருகி அனைத்து அமைப்புகளையும் அழிக்கவும்"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை மாற்ற விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"பிற நூலகங்களில் உள்ள எந்த அமைப்புகளும் அல்லது உங்கள் காலிபர் செருகுநிரல்கள் "
+"கோப்புறையில் ஒரு JSON கோப்பில் சேமிக்கப்படாது."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "நீங்கள் பின்னர் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "அமைப்புகள் மாற்றப்பட்டன"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அமைப்புகள் மாற்றப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "தயவுசெய்து இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை அழிக்க விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "அமைப்புகள் நீக்கப்பட்டன"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"தலைப்பு படம் கிடைக்கவில்லை - இந்த சொருகி பயன்படுத்துவதற்கு முன்பு நீங்கள் "
+"காலிபரை மறுதொடக்கம் செய்ய வேண்டும்!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
+
+#: action.py:48
+msgid "Reading List"
+msgstr "படித்தல் பட்டியல்"
+
+#: action.py:48
+msgid "View or edit lists of books"
+msgstr "புத்தகங்களின் பட்டியல்களைக் காண்க அல்லது திருத்தவும்"
+
+#: action.py:150
+msgid "Add to default list"
+msgstr "இயல்புநிலை பட்டியலில் சேர்க்கவும்"
+
+#: action.py:153
+msgid "Add to %s list"
+msgstr "%S பட்டியலில் சேர்க்கவும்"
+
+#: action.py:158
+msgid "Add to list"
+msgstr "பட்டியலில் சேர்க்கவும்"
+
+#: action.py:159
+msgid "Add to the specified list"
+msgstr "குறிப்பிட்ட பட்டியலில் சேர்க்கவும்"
+
+#: action.py:161
+msgid "Add to the \"%s\" list"
+msgstr "\"%S\" பட்டியலில் சேர்க்கவும்"
+
+#: action.py:165
+msgid "Add to list: %s"
+msgstr "பட்டியலில் சேர்க்கவும்: %கள்"
+
+#: action.py:167
+msgid "Add to all lists"
+msgstr "எல்லா பட்டியல்களிலும் சேர்க்கவும்"
+
+#: action.py:173
+msgid "Add series to default list"
+msgstr "இயல்புநிலை பட்டியலில் தொடரைச் சேர்க்கவும்"
+
+#: action.py:176
+msgid "Add series to %s list"
+msgstr "%S பட்டியலில் தொடரைச் சேர்க்கவும்"
+
+#: action.py:181
+msgid "Add series to list"
+msgstr "பட்டியலுக்கு தொடரைச் சேர்க்கவும்"
+
+#: action.py:182
+msgid "Add all books in series to the specified list"
+msgstr "குறிப்பிட்ட பட்டியலில் அனைத்து புத்தகங்களையும் தொடரில் சேர்க்கவும்"
+
+#: action.py:184
+msgid "Add series to the \"%s\" list"
+msgstr "\"%S\" பட்டியலில் தொடரைச் சேர்க்கவும்"
+
+#: action.py:188
+msgid "Add series to list: %s"
+msgstr "பட்டியலில் தொடரைச் சேர்க்கவும்: %கள்"
+
+#: action.py:190
+msgid "Add series to all lists"
+msgstr "எல்லா பட்டியல்களுக்கும் தொடரைச் சேர்க்கவும்"
+
+#: action.py:196 action.py:198
+msgid "Move to list"
+msgstr "பட்டியலுக்கு நகர்த்தவும்"
+
+#: action.py:202
+msgid "Remove from default list"
+msgstr "இயல்புநிலை பட்டியலிலிருந்து அகற்று"
+
+#: action.py:210
+msgid "Remove from list"
+msgstr "பட்டியியல் இருந்து நீக்கு"
+
+#: action.py:211
+msgid "Remove from the specified list"
+msgstr "குறிப்பிட்ட பட்டியலிலிருந்து அகற்று"
+
+#: action.py:213
+msgid "Remove from the \"%s\" list"
+msgstr "\"%S\" பட்டியலிலிருந்து அகற்று"
+
+#: action.py:217
+msgid "Remove from list: %s"
+msgstr "பட்டியலிலிருந்து அகற்று: %கள்"
+
+#: action.py:219
+msgid "Remove from all lists"
+msgstr "எல்லா பட்டியல்களிலிருந்தும் அகற்று"
+
+#: action.py:226
+msgid "View default list"
+msgstr "இயல்புநிலை பட்டியலைக் காண்க"
+
+#: action.py:228 action.py:237
+msgid "View %s list (%d)"
+msgstr "%S பட்டியலைக் காண்க ( %d)"
+
+#: action.py:235 action.py:251 action.py:262
+msgid "View books on the \"%s\" list"
+msgstr "\"%கள்\" பட்டியலில் உள்ள புத்தகங்களைக் காண்க"
+
+#: action.py:240 action.py:255 action.py:266
+msgid "View list: %s"
+msgstr "பட்டியல் பட்டியல்: %கள்"
+
+#: action.py:243 action.py:246
+msgid "View list"
+msgstr "பட்டியலைக் காண்க"
+
+#: action.py:244
+msgid "View books on the specified list"
+msgstr "குறிப்பிட்ட பட்டியலில் உள்ள புத்தகங்களைக் காண்க"
+
+#: action.py:271
+msgid "Edit default list"
+msgstr "இயல்புநிலை பட்டியலைத் திருத்தவும்"
+
+#: action.py:274
+msgid "Edit %s list"
+msgstr "%S பட்டியலைத் திருத்து"
+
+#: action.py:279
+msgid "Edit list"
+msgstr "பட்டியலைத் திருத்து"
+
+#: action.py:280
+msgid "Edit books on the specified list"
+msgstr "குறிப்பிட்ட பட்டியலில் புத்தகங்களைத் திருத்தவும்"
+
+#: action.py:282
+msgid "Edit books on the \"%s\" list"
+msgstr "\"%கள்\" பட்டியலில் புத்தகங்களைத் திருத்தவும்"
+
+#: action.py:286
+msgid "Edit list: %s"
+msgstr "பட்டியலைத் திருத்து: %கள்"
+
+#: action.py:290
+msgid "Clear default list"
+msgstr "இயல்புநிலை பட்டியலை அழிக்கவும்"
+
+#: action.py:293
+msgid "Clear %s list"
+msgstr "தெளிவான %s பட்டியல்"
+
+#: action.py:298 action.py:301
+msgid "Clear list"
+msgstr "பட்டியலை அழிக்க"
+
+#: action.py:299
+msgid "Clear all from the specified list"
+msgstr "குறிப்பிட்ட பட்டியலிலிருந்து அனைத்தையும் அழிக்கவும்"
+
+#: action.py:306
+msgid "Clear the \"%s\" list"
+msgstr "\"%S\" பட்டியலை அழிக்கவும்"
+
+#: action.py:310
+msgid "Clear list: %s"
+msgstr "தெளிவான பட்டியல்: %கள்"
+
+#: action.py:312
+msgid "Clear list (%d)"
+msgstr "தெளிவான பட்டியல் (%டி)"
+
+#: action.py:316
+msgid "Set default list"
+msgstr "இயல்புநிலை பட்டியலை அமைக்கவும்"
+
+#: action.py:317
+msgid "Switch the list to use as the current default"
+msgstr "தற்போதைய இயல்புநிலையாக பயன்படுத்த பட்டியலை மாற்றவும்"
+
+#: action.py:320 action.py:330
+msgid "Set your default list to \"%s\""
+msgstr "உங்கள் இயல்புநிலை பட்டியலை \"%s\" ஆக அமைக்கவும்"
+
+#: action.py:324 action.py:334
+msgid "Set default list: %s"
+msgstr "இயல்புநிலை பட்டியலை அமைக்கவும்: %கள்"
+
+#: action.py:337 action.py:338
+msgid "Sync Now"
+msgstr "இப்போது ஒத்திசைக்கவும்"
+
+#: action.py:342
+msgid "&Customize plugin"
+msgstr "& சொருகி தனிப்பயனாக்கு"
+
+#: action.py:345 config.py:1174
+msgid "&Help"
+msgstr "&உதவி"
+
+#: action.py:353
+msgid "Sync Now (%d)"
+msgstr "இப்போது ஒத்திசைக்கவும் (%டி)"
+
+#: action.py:362 action.py:380
+msgid "Cannot add to list"
+msgstr "பட்டியலில் சேர்க்க முடியாது"
+
+#: action.py:363 action.py:381 action.py:583 action.py:700 action.py:744
+#: action.py:788 action.py:828 action.py:866
+msgid "No list name specified"
+msgstr "பட்டியல் பெயர் குறிப்பிடப்படவில்லை"
+
+#: action.py:461 config.py:1103
+msgid "Are you sure?"
+msgstr "நீ சொல்வது உறுதியா?"
+
+#: action.py:462
+msgid "Are you sure you want to clear the '%s' reading list?"
+msgstr "'%S' வாசிப்பு பட்டியலை அழிக்க விரும்புகிறீர்களா?"
+
+#: action.py:508
+msgid "The selected book(s) already exist on this list: <b>%s</b>"
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட புத்தகம் (கள்) ஏற்கனவே இந்த பட்டியலில் உள்ளன: <b>%கள் "
+"</b>"
+
+#: action.py:510
+msgid "Failed to add to list"
+msgstr "பட்டியலில் சேர்க்கத் தவறிவிட்டது"
+
+#: action.py:519
+msgid "Added %d books to your %s list"
+msgstr "உங்கள் %s பட்டியலில் %d புத்தகங்கள் சேர்க்கப்பட்டன"
+
+#: action.py:561
+msgid "Added to %d reading lists"
+msgstr "%D வாசிப்பு பட்டியல்களில் சேர்க்கப்பட்டது"
+
+#: action.py:582
+msgid "Cannot remove from list"
+msgstr "பட்டியலிலிருந்து அகற்ற முடியாது"
+
+#: action.py:601
+msgid "The selected book(s) do not exist on this list"
+msgstr "தேர்ந்தெடுக்கப்பட்ட புத்தகம் (கள்) இந்த பட்டியலில் இல்லை"
+
+#: action.py:611 action.py:765 action.py:809
+msgid "Removed %d books from your %s list"
+msgstr "உங்கள் %s பட்டியலிலிருந்து %d புத்தகங்களை அகற்றியது"
+
+#: action.py:658
+msgid "Removed from %d reading lists"
+msgstr "%D வாசிப்பு பட்டியல்களிலிருந்து அகற்றப்பட்டது"
+
+#: action.py:694 action.py:699
+msgid "Cannot move to list"
+msgstr "பட்டியலுக்கு செல்ல முடியாது"
+
+#: action.py:695
+msgid "No source list names specified"
+msgstr "மூல பட்டியல் பெயர்கள் எதுவும் குறிப்பிடப்படவில்லை"
+
+#: action.py:720
+msgid "Moved %d books to your list(s)"
+msgstr "உங்கள் பட்டியலில் (கள்) %d புத்தகங்கள் நகர்த்தப்பட்டன"
+
+#: action.py:743
+msgid "Cannot clear list"
+msgstr "பட்டியலை அழிக்க முடியாது"
+
+#: action.py:755
+msgid "No books exist on this list"
+msgstr "இந்த பட்டியலில் புத்தகங்கள் எதுவும் இல்லை"
+
+#: action.py:787
+msgid "Cannot edit list"
+msgstr "பட்டியலைத் திருத்த முடியாது"
+
+#: action.py:827
+msgid "Cannot view list"
+msgstr "பட்டியலைக் காண முடியாது"
+
+#: action.py:865 action.py:874
+msgid "Cannot create list"
+msgstr "பட்டியலை உருவாக்க முடியாது"
+
+#: action.py:868
+msgid "Reading List: Cannot create list as list_name not specified"
+msgstr ""
+"படித்தல் பட்டியல்: பட்டியல்_பெயராக குறிப்பிடப்படாத பட்டியலை உருவாக்க "
+"முடியாது"
+
+#: action.py:875
+msgid "A list already exists with this name"
+msgstr "இந்த பெயருடன் ஏற்கனவே ஒரு பட்டியல் உள்ளது"
+
+#: action.py:877
+msgid "Reading List: Cannot create list as list_name is duplicate:"
+msgstr ""
+"படித்தல் பட்டியல்: பட்டியல்_பெயர் நகல் என்பதால் பட்டியலை உருவாக்க முடியாது:"
+
+#: action.py:1017
+msgid "READING LIST: Device disconnected"
+msgstr "படித்தல் பட்டியல்: சாதனம் துண்டிக்கப்பட்டது"
+
+#: action.py:1026
+msgid "READING LIST: Metadata available:"
+msgstr "படித்தல் பட்டியல்: மெட்டாடேட்டா கிடைக்கிறது:"
+
+#: action.py:1071
+msgid "READING LIST: Device found to sync to:"
+msgstr "படித்தல் பட்டியல்: ஒத்திசைக்க சாதனம்:"
+
+#: action.py:1074
+msgid "READING LIST: Not syncing to device as not active"
+msgstr "படித்தல் பட்டியல்: செயலில் இல்லாத சாதனத்துடன் ஒத்திசைக்கவில்லை"
+
+#: action.py:1079
+msgid "READING LIST: Sync Now - force_sync="
+msgstr "படித்தல் பட்டியல்: இப்போது ஒத்திசைக்கவும் - force_sync ="
+
+#: action.py:1094
+msgid "Cannot sync to device"
+msgstr "சாதனத்துடன் ஒத்திசைக்க முடியாது"
+
+#: action.py:1095
+msgid "No device found for UUID: %s"
+msgstr "UUID க்கு எந்த சாதனமும் கிடைக்கவில்லை: %s"
+
+#: action.py:1109
+msgid "READING LIST: Updating automatic column list(s) "
+msgstr "படித்தல் பட்டியல்: தானியங்கி நெடுவரிசை பட்டியல் (கள்) புதுப்பித்தல்"
+
+#: action.py:1134
+msgid "READING LIST: Not syncing '%s' to device as autosync is false"
+msgstr ""
+"படித்தல் பட்டியல்: '%கள்' சாதனத்துடன் ஆட்டோசின்க் என ஒத்திசைக்காதது தவறானது"
+
+#: action.py:1142
+msgid "READING LIST: Updating automatic device list(s) "
+msgstr "படித்தல் பட்டியல்: தானியங்கி சாதன பட்டியல் (கள்) புதுப்பித்தல்"
+
+#: action.py:1196
+msgid "READING LIST: Skipping %d books in '%s' list with no formats"
+msgstr ""
+"படித்தல் பட்டியல்: வடிவங்கள் இல்லாத ' %எஸ்' பட்டியலில் %டி புத்தகங்களைத் "
+"தவிர்ப்பது"
+
+#: action.py:1200
+msgid "READING LIST: Syncing %d books in '%s' to: %s (location:%s)"
+msgstr ""
+"படித்தல் பட்டியல்: %டி புத்தகங்களை ' %கள்' இல் ஒத்திசைத்தல்: %கள் (இடம்: "
+"%கள்)"
+
+#: action.py:1209
+msgid "READING LIST: No books on '%s' list need to be synced"
+msgstr ""
+"படித்தல் பட்டியல்: '%s' பட்டியலில் எந்த புத்தகங்களும் ஒத்திசைக்கப்பட "
+"வேண்டியதில்லை"
+
+#: action.py:1234
+msgid "Main memory"
+msgstr "முதன்மை நினைவகம்"
+
+#: action.py:1237
+msgid "Storage Card A"
+msgstr "சேமிப்பக அட்டை a"
+
+#: action.py:1240
+msgid "Storage Card B"
+msgstr "சேமிப்பக அட்டை ஆ"
+
+#: action.py:1245
+msgid "READING LIST: No books on '%s' list found on device to remove"
+msgstr ""
+"படித்தல் பட்டியல்: நீக்குவதற்கு சாதனத்தில் '%எஸ்' பட்டியலில் புத்தகங்கள் "
+"எதுவும் இல்லை"
+
+#: action.py:1256
+msgid "Reading List error"
+msgstr "பட்டியல் பிழை"
+
+#: action.py:1257
+msgid "Unable to find the Remove Books plugin"
+msgstr "அகற்றும் புத்தக சொருகி கண்டுபிடிக்க முடியவில்லை"
+
+#: action.py:1284
+msgid "Deleting books from device."
+msgstr "சாதனத்திலிருந்து புத்தகங்களை நீக்குகிறது."
+
+#: action.py:1323
+msgid "READING LIST: Auto-populating device list: "
+msgstr "படித்தல் பட்டியல்: தானாக மக்கள்தொகை சாதன பட்டியல்:"
+
+#: action.py:1328
+msgid "READING LIST: Removing %d ids from automatic list: %s"
+msgstr ""
+"படித்தல் பட்டியல்: தானியங்கி பட்டியலிலிருந்து %d ஐடிகளை நீக்குதல்: %கள்"
+
+#: action.py:1331
+msgid "READING LIST: Adding %d ids to automatic list: %s"
+msgstr "படித்தல் பட்டியல்: தானியங்கி பட்டியலில் %d ஐடிகளைச் சேர்ப்பது: %கள்"
+
+#: action.py:1341
+msgid "READING LIST: Auto-populating search list: "
+msgstr "படித்தல் பட்டியல்: தானாக மக்கள்தொகை தேடல் பட்டியல்:"
+
+#: action.py:1346
+msgid ""
+"READING LIST: Aborting updating auto-search list as has no expression: "
+msgstr ""
+"படித்தல் பட்டியல்: வெளிப்பாடு இல்லாதபடி ஆட்டோ-தேடல் பட்டியலை புதுப்பித்தல்:"
+
+#: action.py:1350
+msgid "READING LIST: Now %d ids on automatic list: %s"
+msgstr "படித்தல் பட்டியல்: இப்போது தானியங்கி பட்டியலில் %d ஐடிகள்: %கள்"
+
+#: action.py:1356
+msgid "READING LIST: Attempting to recreate Kindle collections"
+msgstr ""
+"படித்தல் பட்டியல்: கின்டெல் சேகரிப்புகளை மீண்டும் உருவாக்க முயற்சிக்கிறது"
+
+#: action.py:1359
+msgid "Kindle Collections Failed"
+msgstr "கின்டெல் சேகரிப்புகள் தோல்வியடைந்தன"
+
+#: action.py:1360
+msgid ""
+"You must have the Kindle Collections plugin installed in order to recreate "
+"collections after a sync."
+msgstr ""
+"ஒரு ஒத்திசைவுக்குப் பிறகு சேகரிப்புகளை மீண்டும் உருவாக்க நீங்கள் கின்டெல் "
+"சேகரிப்பு சொருகி நிறுவப்பட்டிருக்க வேண்டும்."
+
+#: config.py:77
+msgid "*Any Device"
+msgstr "*எந்த சாதனமும்"
+
+#: config.py:79
+msgid "Manually add/remove items"
+msgstr "உருப்படிகளை கைமுறையாக சேர்க்கவும்/அகற்றவும்"
+
+#: config.py:80
+msgid "Auto populated from books on device"
+msgstr "சாதனத்தில் உள்ள புத்தகங்களிலிருந்து தானாகவே உள்ளது"
+
+#: config.py:81
+msgid "Auto populated from search"
+msgstr "தேடலில் இருந்து ஆட்டோ மக்கள்தொகை கொண்டது"
+
+#: config.py:83
+msgid "Add new list items to device"
+msgstr "சாதனத்தில் புதிய பட்டியல் உருப்படிகளைச் சேர்க்கவும்"
+
+#: config.py:84
+msgid "Add/overwrite all list items to device"
+msgstr "சாதனத்தில் அனைத்து பட்டியல் உருப்படிகளையும் சேர்க்கவும்/மேலெழுதவும்"
+
+#: config.py:85
+msgid "Remove list items from device"
+msgstr "சாதனத்திலிருந்து பட்டியல் உருப்படிகளை அகற்று"
+
+#: config.py:86
+msgid "Replace device with list, add new items only"
+msgstr "சாதனத்தை பட்டியலுடன் மாற்றவும், புதிய உருப்படிகளை மட்டும் சேர்க்கவும்"
+
+#: config.py:87
+msgid "Replace device with list, add/overwrite all"
+msgstr "சாதனத்தை பட்டியலுடன் மாற்றவும், அனைத்தையும் சேர்க்கவும்/மேலெழுதவும்"
+
+#: config.py:89
+msgid "Auto populate list from books on device"
+msgstr "சாதனத்தில் உள்ள புத்தகங்களிலிருந்து ஆட்டோ விரிவாக்கம்"
+
+#: config.py:91
+msgid "Do not update calibre column"
+msgstr "காலிபர் நெடுவரிசையை புதுப்பிக்க வேண்டாம்"
+
+#: config.py:92
+msgid "Update column for add or remove"
+msgstr "சேர்க்க அல்லது அகற்ற நெடுவரிசையைப் புதுப்பிக்கவும்"
+
+#: config.py:93
+msgid "Update column for add to list only"
+msgstr "பட்டியலுக்கு மட்டுமே சேர்க்க நெடுவரிசையைப் புதுப்பிக்கவும்"
+
+#: config.py:94
+msgid "Update column for remove from list only"
+msgstr "பட்டியலிலிருந்து மட்டும் அகற்ற நெடுவரிசையைப் புதுப்பிக்கவும்"
+
+#: config.py:436
+msgid "Kindle Collections"
+msgstr "கின்டெல் சேகரிப்புகள்"
+
+#: config.py:436
+msgid "Location"
+msgstr "இடம்"
+
+#: config.py:436
+msgid "Menu"
+msgstr "பட்டியல்"
+
+#: config.py:436
+msgid "Name"
+msgstr "பெயர்"
+
+#: config.py:436
+msgid "Status"
+msgstr "நிலை"
+
+#: config.py:540
+msgid "Lists:"
+msgstr "பட்டியல்கள்:"
+
+#: config.py:547
+msgid "Add list"
+msgstr "பட்டியலைச் சேர்க்கவும்"
+
+#: config.py:552
+msgid "Delete list"
+msgstr "பட்டியலை நீக்கு"
+
+#: config.py:557 config.py:931
+msgid "Rename list"
+msgstr "பட்டியல் மறுபெயரிடுதல்"
+
+#: config.py:565
+msgid "Population Options:"
+msgstr "மக்கள்தொகை விருப்பங்கள்:"
+
+#: config.py:573
+msgid "&List type:"
+msgstr "& பட்டியல் வகை:"
+
+#: config.py:574
+msgid "Choose how this list will be populated"
+msgstr ""
+"இந்த பட்டியல் எவ்வாறு மக்கள்தொகை கொண்டதாக இருக்கும் என்பதைத் தேர்வுசெய்க"
+
+#: config.py:581
+msgid "&Auto populate from search:"
+msgstr "& ஆட்டோ தேடலில் இருந்து மக்கள் தொகை:"
+
+#: config.py:582
+msgid ""
+"If list is populated from a search, specify the calibre search expression"
+msgstr ""
+"ஒரு தேடலில் இருந்து பட்டியல் மக்கள் தொகை இருந்தால், காலிபர் தேடல் "
+"வெளிப்பாட்டைக் குறிப்பிடவும்"
+
+#: config.py:590
+msgid "Sync Options:"
+msgstr "ஒத்திசைவு விருப்பங்கள்:"
+
+#: config.py:598
+msgid "&Device to sync this list to:"
+msgstr "& இந்த பட்டியலை ஒத்திசைக்க சாதனம்:"
+
+#: config.py:599
+msgid ""
+"By specifying a device you can sync either manually or\n"
+"automatically the contents of a list to that device.\n"
+"This replaces the Book Sync plugin functionality"
+msgstr ""
+"ஒரு சாதனத்தைக் குறிப்பிடுவதன் மூலம் நீங்கள் கைமுறையாக அல்லது ஒத்திசைக்கலாம் \n"
+" தானாகவே அந்த சாதனத்தின் பட்டியலின் உள்ளடக்கங்கள். \n"
+" இது புத்தக ஒத்திசைவு சொருகி செயல்பாட்டை மாற்றுகிறது"
+
+#: config.py:607
+msgid "&When syncing this list:"
+msgstr "& இந்த பட்டியலை ஒத்திசைக்கும்போது:"
+
+#: config.py:608
+msgid ""
+"Control how your items are synced to the device.\n"
+"Sync only new items, sync all items overwriting existing\n"
+"or use this list to just remove items from your device."
+msgstr ""
+"உங்கள் உருப்படிகள் சாதனத்துடன் எவ்வாறு ஒத்திசைக்கப்படுகின்றன என்பதைக் கட்டுப்படுத்தவும். \n"
+" புதிய உருப்படிகளை மட்டுமே ஒத்திசைக்கவும், இருக்கும் அனைத்து பொருட்களையும் ஒத்திசைக்கவும் \n"
+" அல்லது உங்கள் சாதனத்திலிருந்து உருப்படிகளை அகற்ற இந்த பட்டியலைப் பயன்படுத்தவும்."
+
+#: config.py:616
+msgid "Sync to this device as soon as it is connected"
+msgstr "இந்த சாதனம் இணைக்கப்பட்டவுடன் அதை ஒத்திசைக்கவும்"
+
+#: config.py:617
+msgid ""
+"Uncheck this option if you prefer to manually sync to your device.\n"
+"If no device is specified this checkbox has no effect"
+msgstr ""
+"உங்கள் சாதனத்துடன் கைமுறையாக ஒத்திசைக்க விரும்பினால் இந்த விருப்பத்தைத் தேர்வு செய்யவும். \n"
+" எந்த சாதனமும் குறிப்பிடப்படவில்லை என்றால் இந்த தேர்வுப்பெட்டியில் எந்த விளைவும் இல்லை"
+
+#: config.py:621
+msgid "Clear this list after a sync to this device"
+msgstr "இந்த சாதனத்திற்கு ஒத்திசைவுக்குப் பிறகு இந்த பட்டியலை அழிக்கவும்"
+
+#: config.py:622
+msgid ""
+"If unchecked, only items not on the device already will be synced.\n"
+"If no device is specified this checkbox has no effect.\n"
+"This option can only be used with manual type lists."
+msgstr ""
+"தேர்வு செய்யப்படாவிட்டால், சாதனத்தில் இல்லாத உருப்படிகள் மட்டுமே ஏற்கனவே ஒத்திசைக்கப்படும். \n"
+" எந்த சாதனமும் குறிப்பிடப்படவில்லை என்றால் இந்த தேர்வுப்பெட்டியில் எந்த விளைவும் இல்லை. \n"
+" இந்த விருப்பத்தை கையேடு வகை பட்டியல்களுடன் மட்டுமே பயன்படுத்த முடியும்."
+
+#: config.py:630
+msgid "Column Update Options:"
+msgstr "நெடுவரிசை புதுப்பிப்பு விருப்பங்கள்:"
+
+#: config.py:638
+msgid "When &changing this list:"
+msgstr "எப்போது & இந்த பட்டியலை மாற்றுவது:"
+
+#: config.py:639
+msgid ""
+"Optionally modify tags or a custom column when you\n"
+"add and/or remove items from this list."
+msgstr ""
+"நீங்கள் போது குறிச்சொற்கள் அல்லது தனிப்பயன் நெடுவரிசையை விருப்பமாக மாற்றவும் \n"
+" இந்த பட்டியலிலிருந்து உருப்படிகளைச் சேர்க்கவும்/அல்லது அகற்றவும்."
+
+#: config.py:646
+msgid "&Column to update:"
+msgstr "புதுப்பிக்க நெடுவரிசை:"
+
+#: config.py:647
+msgid ""
+"Optionally specify a column to add/remove a value from\n"
+"when adding or removing items from this list"
+msgstr ""
+"ஒரு மதிப்பைச் சேர்க்க/அகற்ற ஒரு நெடுவரிசையை விருப்பமாக குறிப்பிடவும் \n"
+" இந்த பட்டியலிலிருந்து உருப்படிகளைச் சேர்க்கும்போது அல்லது அகற்றும்போது"
+
+#: config.py:655
+msgid "&Value in column to add/remove:"
+msgstr "& சேர்க்க/அகற்ற நெடுவரிசையில் மதிப்பு:"
+
+#: config.py:656
+msgid ""
+"Specify the tag or custom column value to be added when adding\n"
+"to this list or removed when the book is taken off the list"
+msgstr ""
+"சேர்க்கும்போது சேர்க்க வேண்டிய குறிச்சொல் அல்லது தனிப்பயன் நெடுவரிசை மதிப்பைக் குறிப்பிடவும் \n"
+" இந்த பட்டியலில் அல்லது புத்தகம் பட்டியலில் இருந்து எடுக்கப்படும் போது அகற்றப்பட்டது"
+
+#: config.py:666
+msgid "Reading Order Options:"
+msgstr "ஆர்டர் விருப்பங்களைப் படித்தல்:"
+
+#: config.py:674
+msgid "&Store in series column:"
+msgstr "& தொடர் நெடுவரிசையில் சேமிக்கவும்:"
+
+#: config.py:675
+msgid ""
+"You can optionally display the current reading list order\n"
+"in a custom series column. You should not edit this column directly!\n"
+"Only usable with Manually managed lists that are not Cleared on Sync."
+msgstr ""
+"தற்போதைய வாசிப்பு பட்டியல் வரிசையை நீங்கள் விருப்பமாகக் காட்டலாம் \n"
+" தனிப்பயன் தொடர் நெடுவரிசையில். இந்த நெடுவரிசையை நீங்கள் நேரடியாக திருத்தக்கூடாது! \n"
+" ஒத்திசைவில் அழிக்கப்படாத கைமுறையாக நிர்வகிக்கப்பட்ட பட்டியல்களுடன் மட்டுமே பயன்படுத்தக்கூடியது."
+
+#: config.py:683
+msgid "&Series name:"
+msgstr "& தொடர் பெயர்:"
+
+#: config.py:684
+msgid ""
+"Specify the name for this reading order series\n"
+"If left blank, will use the name of the list this book is on."
+msgstr ""
+"இந்த வாசிப்பு ஆர்டர் தொடருக்கான பெயரைக் குறிப்பிடவும் \n"
+" காலியாக இருந்தால், இந்த புத்தகம் இயக்கத்தில் உள்ள பட்டியலின் பெயரைப் பயன்படுத்தும்."
+
+#: config.py:693
+msgid "Display Options:"
+msgstr "காட்சி விருப்பங்கள்:"
+
+#: config.py:701
+msgid "Move \"View list\" to the top level of the plugin menu for this list"
+msgstr ""
+"இந்த பட்டியலுக்கான சொருகி மெனுவின் மேல் நிலைக்கு \"காட்சி பட்டியலை\" "
+"நகர்த்தவும்"
+
+#: config.py:702
+msgid ""
+"By default Reading List creates a View List submenu for all your lists when you have multiple.\n"
+"If checked, this list will be moved to the top level menu for ease of access.\n"
+"NOTE: Your \"default\" list will always appear on the top menu, regardless of this checkbox"
+msgstr ""
+"இயல்புநிலையாக வாசிப்பு பட்டியல் உங்களிடம் பல இருக்கும்போது உங்கள் எல்லா பட்டியல்களுக்கும் ஒரு பார்வை பட்டியல் துணைமெனுவை உருவாக்குகிறது. \n"
+" சரிபார்க்கப்பட்டால், இந்த பட்டியல் அணுகலை எளிதாக்குவதற்காக மேல் நிலை மெனுவுக்கு மாற்றப்படும். \n"
+" குறிப்பு: இந்த தேர்வுப்பெட்டியைப் பொருட்படுத்தாமல், உங்கள் \"இயல்புநிலை\" பட்டியல் எப்போதும் மேல் மெனுவில் தோன்றும்"
+
+#: config.py:707
+msgid "Apply reading list order when viewing list"
+msgstr ""
+"பட்டியலைப் பார்க்கும்போது வாசிப்பு பட்டியல் வரிசையைப் பயன்படுத்துங்கள்"
+
+#: config.py:708
+msgid ""
+"If checked, viewing a reading list will also change your Calibre sort order.\n"
+"Lists can be manually reordered using this plugin, defaulting to order added to list.\n"
+"If unchecked, current calibre sort will be left unchanged when you view the list."
+msgstr ""
+"சரிபார்க்கப்பட்டால், வாசிப்பு பட்டியலைப் பார்ப்பது உங்கள் காலிபர் வரிசை வரிசையையும் மாற்றும். \n"
+" இந்த சொருகி பயன்படுத்தி பட்டியல்களை கைமுறையாக மறுவரிசைப்படுத்தலாம், பட்டியலில் சேர்க்கப்பட்ட ஆர்டருக்கு இயல்புநிலை. \n"
+" தேர்வு செய்யப்படாவிட்டால், நீங்கள் பட்டியலைப் பார்க்கும்போது தற்போதைய காலிபர் வகை மாறாமல் இருக்கும்."
+
+#: config.py:714
+msgid "Restore sort after viewing list"
+msgstr "பட்டியலைப் பார்த்த பிறகு வரிசையை மீட்டெடுங்கள்"
+
+#: config.py:715
+msgid ""
+"If checked, calibre sort will be restored to its original state after\n"
+"the user quits the reading list view by changing or clearing calibre's\n"
+"search, switching libraries, or quitting calibre."
+msgstr ""
+"சரிபார்க்கப்பட்டால், காலிபர் வகை அதன் அசல் நிலைக்கு மீட்டமைக்கப்படும் \n"
+" காலிபர்ஸை மாற்றுவதன் மூலம் அல்லது அழிப்பதன் மூலம் பயனர் வாசிப்பு பட்டியல் காட்சியை விட்டு வெளியேறுகிறார் \n"
+" நூலகங்களைத் தேடுங்கள், மாறுதல் அல்லது காலிபர் விட்டு வெளியேறுதல்."
+
+#: config.py:905
+msgid "Add new list"
+msgstr "புதிய பட்டியலைச் சேர்க்கவும்"
+
+#: config.py:906
+msgid "Default"
+msgstr "இயல்புநிலை"
+
+#: config.py:906
+msgid "Enter a unique display name for this list:"
+msgstr "இந்த பட்டியலுக்கு தனித்துவமான காட்சி பெயரை உள்ளிடவும்:"
+
+#: config.py:914 config.py:944
+msgid "Add failed"
+msgstr "தோல்வியுற்றது"
+
+#: config.py:915 config.py:945
+msgid "A list with the same name already exists"
+msgstr "அதே பெயருடன் ஒரு பட்டியல் ஏற்கனவே உள்ளது"
+
+#: config.py:932
+msgid "Enter a new display name for this list:"
+msgstr "இந்த பட்டியலுக்கு புதிய காட்சி பெயரை உள்ளிடவும்:"
+
+#: config.py:963
+msgid "Cannot delete"
+msgstr "நீக்க முடியாது"
+
+#: config.py:964
+msgid "You must have at least one list"
+msgstr "உங்களிடம் குறைந்தது ஒரு பட்டியலைக் கொண்டிருக்க வேண்டும்"
+
+#: config.py:966
+msgid "Do you want to delete the list named '%s'"
+msgstr "'%S' என்ற பெயரில் நீக்க விரும்புகிறீர்களா?"
+
+#: config.py:998
+msgid "Devices:"
+msgstr "சாதனங்கள்:"
+
+#: config.py:1009
+msgid "Add connected device"
+msgstr "இணைக்கப்பட்ட சாதனத்தைச் சேர்க்கவும்"
+
+#: config.py:1011
+msgid ""
+"If you do not have a device connected currently, either plug one\n"
+"in now or exit the dialog and connect to folder/iTunes first"
+msgstr ""
+"உங்களிடம் தற்போது சாதனம் இணைக்கப்பட்டிருந்தால், ஒன்றை செருகவும் \n"
+" இப்போது அல்லது உரையாடலில் இருந்து வெளியேறி முதலில் கோப்புறை/ஐடியூன்ஸ் உடன் இணைக்கவும்"
+
+#: config.py:1018
+msgid "Rename the currently connected device"
+msgstr "தற்போது இணைக்கப்பட்ட சாதனத்தை மறுபெயரிடுங்கள்"
+
+#: config.py:1023
+msgid "Delete this device from the device list"
+msgstr "சாதன பட்டியலிலிருந்து இந்த சாதனத்தை நீக்கவும்"
+
+#: config.py:1069 config.py:1073 config.py:1092
+msgid "Rename failed"
+msgstr "மறுபெயரிடப்பட்டது தோல்வியுற்றது"
+
+#: config.py:1070 config.py:1100
+msgid "You must select a device first"
+msgstr "நீங்கள் முதலில் ஒரு சாதனத்தைத் தேர்ந்தெடுக்க வேண்டும்"
+
+#: config.py:1074
+msgid "You can only rename a device that is currently connected"
+msgstr "தற்போது இணைக்கப்பட்டுள்ள சாதனத்தை மட்டுமே நீங்கள் மறுபெயரிட முடியும்"
+
+#: config.py:1078
+msgid "Rename device"
+msgstr "சாதனம் மறுபெயரிடுங்கள்"
+
+#: config.py:1079
+msgid "Enter a new display name for this device:"
+msgstr "இந்த சாதனத்திற்கு புதிய காட்சி பெயரை உள்ளிடவும்:"
+
+#: config.py:1093
+msgid "An error occured while renaming."
+msgstr "மறுபெயரிடும்போது பிழை ஏற்பட்டது."
+
+#: config.py:1099
+msgid "Delete failed"
+msgstr "நீக்கு தோல்வியுற்றது"
+
+#: config.py:1104
+msgid "You are about to remove the <b>%s</b> device from this list. "
+msgstr "இந்த பட்டியலிலிருந்து <b>%கள் </b> சாதனத்தை அகற்ற உள்ளீர்கள்."
+
+#: config.py:1105
+msgid "Are you sure you want to continue?"
+msgstr "நீங்கள் தொடர விரும்புகிறீர்களா?"
+
+#: config.py:1160
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
+
+#: config.py:1164
+msgid "Reset &confirmation dialogs"
+msgstr "மீட்டமை மற்றும் உறுதிப்படுத்தல் உரையாடல்கள்"
+
+#: config.py:1165
+msgid "Reset all show me again dialogs for the Reading List plugin"
+msgstr ""
+"மீட்டமை அனைத்தும் வாசிப்பு பட்டியல் சொருகி மீண்டும் உரையாடல்களைக் காட்டு"
+
+#: config.py:1169
+msgid "&View library preferences"
+msgstr "& நூலக விருப்பங்களைக் காண்க"
+
+#: config.py:1170
+msgid "View data stored in the library database for this plugin"
+msgstr "இந்த சொருகி நூலக தரவுத்தளத்தில் சேமிக்கப்பட்ட தரவைக் காண்க"
+
+#: config.py:1179
+msgid "Show dialog when removing books from device"
+msgstr "சாதனத்திலிருந்து புத்தகங்களை அகற்றும்போது உரையாடலைக் காட்டு"
+
+#: config.py:1180
+msgid ""
+"If syncing your list means books are removed from your device, then\n"
+"a dialog will be displayed allowing you to confirm first.\n"
+"Uncheck this option to allow unattended syncing to your device."
+msgstr ""
+"உங்கள் பட்டியலை ஒத்திசைப்பது என்றால் உங்கள் சாதனத்திலிருந்து புத்தகங்கள் அகற்றப்படும் \n"
+" முதலில் உறுதிப்படுத்த உங்களை அனுமதிக்கும் உரையாடல் காண்பிக்கப்படும். \n"
+" உங்கள் சாதனத்தில் கவனிக்கப்படாத ஒத்திசைவை அனுமதிக்க இந்த விருப்பத்தைத் தேர்வுநீக்கவும்."
+
+#: config.py:1192
+msgid "Done"
+msgstr "முடிந்தது"
+
+#: config.py:1193
+msgid "Confirmation dialogs have all been reset"
+msgstr "உறுதிப்படுத்தல் உரையாடல்கள் அனைத்தும் மீட்டமைக்கப்பட்டுள்ளன"
+
+#: config.py:1215
+msgid "Lists"
+msgstr "பட்டியல்கள்"
+
+#: config.py:1216
+msgid "Devices"
+msgstr "சாதனங்கள்"
+
+#: config.py:1217
+msgid "Other"
+msgstr "மற்றொன்று"
