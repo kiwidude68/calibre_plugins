@@ -1,5 +1,9 @@
 # Search The Internet Change Log
         
+## [1.10.5] - 2024-03-17
+### Added
+- Tamil translation
+
 ## [1.10.4] - 2023-11-02
 ### Fixed
 - Put back encoding of title/authors for POST requests but make it on the temp file instead.
