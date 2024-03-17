@@ -3,189 +3,185 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Piotr Strębski <strebski@gmail.com>, 2022
-# Adam Humienny <adam.humienny@gmail.com>, 2022
-# Marcin Kozioł <koziol.martin@gmail.com>, 2022
-# Ola Kleniewska <anyzeklove@gmail.com>, 2022
-# The Name <moje.konto+transifex@posteo.org>, 2022
-# Grant Drake, 2022
-# Grzegorz Adamek, 2023
+# Veikko Muurikainen, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-08 18:57+0100\n"
 "PO-Revision-Date: 2022-09-19 15:18+0000\n"
-"Last-Translator: Grzegorz Adamek, 2023\n"
-"Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
+"Last-Translator: Veikko Muurikainen, 2024\n"
+"Language-Team: Finnish (https://app.transifex.com/calibre/teams/19337/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:119
 msgid "Keyboard shortcuts"
-msgstr "Skróty klawiaturowe"
+msgstr "Pikanäppäimet"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Uruchom teraz ponownie Calibre"
+msgstr "Käynnistä calibre uudelleen"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencje dla:"
+msgstr "Asetukset kohteelle:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Wyczyść"
+msgstr "Tyhjennä"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Wyczyść wszystkie ustawienia tej wtyczki"
+msgstr "Tyhjennä kaikki tämän laajennuksen asetukset"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Czy na pewno chcesz zmienić swoje ustawienia w tej bibliotece dla tej "
-"wtyczki?"
+"Oletko varma, että haluat muuttaa asetuksia tässä kirjastossa tälle "
+"laajennukselle?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Żadne ustawienia w innych bibliotekach lub przechowywane w pliku JSON w "
-"folderze wtyczek Calibre nie zostaną zmienione."
+"Muissa kirjastoissa oleviin tai calibre laajennuskansioon JSON-tiedostoon "
+"tallennettuihin asetuksiin ei puututa."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Musisz potem ponownie uruchomić calibre."
+msgstr "Sinun on käynnistettävä calibre sen jälkeen uudelleen."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Ustawienia zostały zmienione"
+msgstr "Asetuksia muutettu"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Ustawienia dla tej wtyczki w tej bibliotece zostały zmienione."
+msgstr "Tämän laajennuksen asetuksia tässä kirjastossa on muutettu."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Proszę ponownie uruchom calibre teraz."
+msgstr "Käynnistä calibre uudelleen."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Czy jesteś pewny, że chcesz wyczyścić wszystkie ustawienia w tej bibliotece "
-"dla tej wtyczki?"
+"Oletko varma, että haluat tyhjentää tämän kirjaston asetukset tätä "
+"laajennusta varten?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Ustawienia zostały usunięte"
+msgstr "Asetuksia poistettu"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Wszystkie ustawienia dla tej wtyczki w tej bibliotece zostały wyczyszczone."
+msgstr "Kaikki tämän laajennuksen asetukset tässä kirjastossa on tyhjennetty."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Kopiuj do schowka"
+msgstr "Kopioi leikepöydälle"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Nieokreślony"
+msgstr "Määrittelemätön"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Wymagane jest ponowne uruchomienie"
+msgstr "Uudelleenkäynnistys vaaditaan"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
-"uruchomić Calibre!"
+"Otsikkokuvaa ei löydy - sinun on käynnistettävä Calibre uudelleen ennen "
+"tämän laajennuksen käyttöä!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Utwórz nową kolumnę"
+msgstr "Luo uusi sarake"
 
 #: action.py:28
 msgid "Extract ISBN from the selected book format"
-msgstr "Wyodrębnij ISBN z wybranego formatu książki"
+msgstr "Poimi ISBN valitusta kirjaformaatista"
 
 #: action.py:28 action.py:74
 msgid "Extract ISBN"
-msgstr "Wyodrębnij ISBN"
+msgstr "Poimi ISBN"
 
 #: action.py:43
 msgid "No rows selected"
-msgstr "Nie zaznaczono wierszy"
+msgstr "Rivejä ei ole valittu"
 
 #: action.py:44
 msgid "You must select one or more books to perform this action."
-msgstr "Aby wykonać tę czynność, musisz wybrać jedną lub więcej książek, "
+msgstr ""
+"Sinun on valittava yksi tai useampi kirja suorittaaksesi tämän toiminnon."
 
 #: action.py:78
 msgid "Extracting ISBN for {0} books"
-msgstr "Wyodrębnianie ISBN dla {0} książek"
+msgstr "Poimitaan {0} kirjan ISBN"
 
 #: action.py:91
 msgid "Failed to extract isbns"
-msgstr "Nie udało się wyodrębnić ISBN"
+msgstr "ISBN purku epäonnistui"
 
 #: action.py:94
 msgid "ISBN extract completed"
-msgstr "Wyodrębniono ISBN"
+msgstr "ISBN purku valmistui"
 
 #: action.py:99
 msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
-msgstr ""
+msgstr "Purku ISBN löytyi <b>{0} uusi ISBN</b>."
 
 #: action.py:100
 msgid "Proceed with updating your library?"
-msgstr "Kontynuować aktualizację swojej biblioteki?"
+msgstr "Jatketaanko kirjaston päivittämistä?"
 
 #: action.py:106
 msgid ""
 "Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
 "existing value."
 msgstr ""
+"ISBN-numeroa ei löytynyt {0} kirjalle ja {1} kirja vastasi niiden olemassa "
+"olevaa arvoa."
 
 #: action.py:109
 msgid "Could not find an ISBN for {0} book(s)."
-msgstr ""
+msgstr "ISBN-numeroa ei löytynyt {0} kirjalle."
 
 #: action.py:111
 msgid "Found {0} book(s) where ISBN matched the existing value."
-msgstr ""
+msgstr "Löytyi {0} kirjaa, joiden ISBN vastasi olemassa olevaa arvoa."
 
 #: action.py:113
 msgid "Click \"Show details\" to see which books."
-msgstr "Kliknij „Pokaż szczegóły”, aby zobaczyć, które książki."
+msgstr "Klikkaa \"Näytä tiedot\" nähdäksesi, mitkä kirjat."
 
 #: action.py:118
 msgid "Scan failed"
-msgstr "Skanowanie się nie powiodło"
+msgstr "Skannaus epäonnistui"
 
 #: action.py:118 action.py:127
 msgid "Scan log"
-msgstr "Dziennik skanowania"
+msgstr "Skannausloki"
 
 #: action.py:127
 msgid "Scan complete"
-msgstr "Skanowanie zakończone"
+msgstr "Skannaus valmis"
 
 #: action.py:153
 msgid "Some books changed"
-msgstr "Niektóre książki się zmieniły"
+msgstr "Jotkin kirjat muuttuivat"
 
 #: action.py:154
 msgid ""
@@ -194,49 +190,47 @@ msgid ""
 "Click \"Show details\" to see the list of changed books. Do you want to "
 "proceed?"
 msgstr ""
-"Metadane niektórych książek w bibliotece zmieniły się od momentu rozpoczęcia"
-" pobierania. Jeśli będziesz kontynuował, niektóre z tych zmian mogą zostać "
-"zastąpione. Kliknij „Pokaż szczegóły”, aby wyświetlić listę zmienionych "
-"książek. Czy chcesz kontynuować?"
+"Joidenkin kirjastossasi olevien kirjojen metadata on muuttunut latauksen "
+"aloittamisen jälkeen. Jos jatkat, jotkin näistä muutoksista voidaan korvata."
+" Napsauta \"Näytä tiedot\" nähdäksesi luettelon muuttuneista kirjoista. "
+"Haluatko jatkaa?"
 
 #: action.py:165 jobs.py:226
 msgid "Unknown"
-msgstr "Nieznany"
+msgstr "Tuntematon"
 
 #: config.py:40
 msgid "Do not change my search"
-msgstr "Nie zmieniaj mojego wyszukiwania"
+msgstr "Älä muuta hakuani"
 
 #: config.py:41
 msgid "Show the books that have new or updated ISBNs"
-msgstr "Pokaż książki, które mają nowe lub zaktualizowane numery ISBN"
+msgstr "Näytä kirjat, joilla on uudet tai päivitetyt ISBN-tunnukset"
 
 #: config.py:68
 msgid "When the scan completes:"
-msgstr "Po zakończeniu skanowania:"
+msgstr "Kun skannaus on suoritettu:"
 
 #: config.py:73
 msgid "Valid prefixes for ISBN-13 (comma separated):"
-msgstr "Prawidłowe prefiksy dla ISBN-13 (oddzielone przecinkami):"
+msgstr "ISBN-13 kelvolliset etuliitteet (pilkulla erotettuna):"
 
 #: config.py:78
 msgid "Selected books before running as a background job:"
-msgstr "Wybrane książki uruchom jako zadanie w tle:"
+msgstr "Valitut kirjat ennen suorittamista taustatehtävänä:"
 
 #: config.py:79
 msgid "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
-"Praca w tle jest wolniejsza, ale jest to jedyny sposób, aby tego uniknąć\n"
+"Taustatyönä suorittaminen on hitaampaa, mutta se on ainoa tapa välttää\n"
 
 #: config.py:80
 msgid "memory leaks and will keep the UI more responsive."
-msgstr ""
-"pamięć wycieka i sprawi, że interfejs użytkownika będzie bardziej "
-"responsywny."
+msgstr "muistivuodot ja pitää käyttöliittymä reagoivampana."
 
 #: config.py:89
 msgid "Batch size running as a background job:"
-msgstr "Rozmiar wsadu działa jako zadanie w tle:"
+msgstr "Eräkoko, joka suoritetaan taustatehtävänä:"
 
 #: config.py:90
 msgid ""
@@ -244,13 +238,13 @@ msgid ""
 "extract for a large group you can cancel/close calibre without\n"
 "losing all of your results as you can cancel the pending groups."
 msgstr ""
-"Książki zostaną podzielone na partie, aby mieć pewność, że jeśli uruchomisz\n"
-"wypakowanie dla dużej grupy, możesz anulować/zamknąć Calibre bez utraty\n"
-"wszystkich wyników, ponieważ możesz anulować oczekujące grupy."
+"Kirjat jaetaan eriin, jolloin varmistetaan, että jos suoritat\n"
+"purun suurelle ryhmälle, voit peruuttaa/sulkea calibren ilman että\n"
+"menetät kaikkia tuloksiasi, koska voit peruuttaa vireillä olevat ryhmät."
 
 #: config.py:102
 msgid "Display failure dialog if ISBN not found or identical"
-msgstr ""
+msgstr "Näytä virheikkuna, jos ISBN-numeroa ei löydy tai se on identtinen"
 
 #: config.py:103
 msgid ""
@@ -258,10 +252,13 @@ msgid ""
 "about no ISBN being found in the book or it is the same as\n"
 "your current value."
 msgstr ""
+"Poista tämä vaihtoehto, jos et halua, että sinua pyydetään poistamaan kehotus\n"
+"siitä, että kirjasta ei löydy ISBN-numeroa, tai se on sama kuin\n"
+"nykyinen arvo."
 
 #: config.py:110
 msgid "Prompt to apply ISBN changes"
-msgstr ""
+msgstr "Kehotus soveltaa ISBN-muutoksia"
 
 #: config.py:111
 msgid ""
@@ -270,61 +267,59 @@ msgid ""
 "option unchecked that if you are making other changes to\n"
 "this book record at the same time they will be lost."
 msgstr ""
-"Odznacz tę opcję jeśli chcesz, aby zmiany były wprowadzane\n"
-"bez okienka z potwierdzeniem. Istnieje małe ryzyko przy opcji\n"
-"odznaczonej, że jeśli zrobisz jakieś inne zmiany w zapisie tej\n"
-"książki w tym samym czasie – mogą one zostać utracone."
+"Poista tämä vaihtoehto, jos haluat, että muutokset otetaan käyttöön ilman\n"
+"vahvistusikkunaa. Tähän liittyy pieni riski,\n"
+"että jos teet muita muutoksia tähän\n"
+"kirjatietueeseen samaan aikaan, ne menetetään."
 
 #: config.py:120
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Edytuj skróty klawiaturowe powiązane z tą wtyczką"
+msgstr "Muokkaa tähän laajennukseen liittyviä pikanäppäimiä"
 
 #: config.py:124
 msgid "Help"
-msgstr "Pomoc"
+msgstr "Ohje"
 
 #: dialogs.py:25
 msgid "Queueing books for extracting ISBN"
-msgstr "Kolejkowanie książek w celu wyodrębnienia numeru ISBN"
+msgstr "Jonotuskirjat ISBN-numeron purkamista varten"
 
 #: dialogs.py:53
 msgid "Queueing"
-msgstr "W kolejce"
+msgstr "Jonotus"
 
 #: dialogs.py:73
 msgid "Extract ISBN failed"
-msgstr "Wyodrębnienie numeru ISBN się nie powiodło"
+msgstr "ISBN purku epäonnistui"
 
 #: dialogs.py:74
 msgid "Scan aborted as no books with formats found."
-msgstr ""
-"Skanowanie przerwane, ponieważ nie znaleziono książek w formatach epub lub "
-"pdf."
+msgstr "Skannaus keskeytetty, koska ei löytynyt kirjoja, joilla on formaatti."
 
 #: jobs.py:41
 msgid "Extract ISBN for %d books"
-msgstr "Wyodrębnij ISBN dla %d książek"
+msgstr "Pura %d kirjan ISBN"
 
 #: jobs.py:44
 msgid "Extract ISBN started"
-msgstr "Rozpoczęto wyodrębnianie numeru ISBN"
+msgstr "ISBN-numeron purkaminen aloitettu"
 
 #: jobs.py:96
 msgid "Scanned %d of %d"
-msgstr "Przeskanowano %d z %d"
+msgstr "Skannattu %d / %d"
 
 #: jobs.py:113
 msgid "No formats"
-msgstr ""
+msgstr "Ei formaatteja"
 
 #: jobs.py:115
 msgid "ISBN not found"
-msgstr "ISBN nie znaleziony"
+msgstr "ISBN ei löydy"
 
 #: jobs.py:121
 msgid "Same ISBN"
-msgstr ""
+msgstr "Sama ISBN"
 
 #: jobs.py:127
 msgid "Extracted"
-msgstr ""
+msgstr "Poimittu"

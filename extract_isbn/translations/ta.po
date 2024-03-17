@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-08 18:57+0100\n"
+"PO-Revision-Date: 2022-09-19 15:18+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:119
+msgid "Keyboard shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "இதற்கான விருப்பத்தேர்வுகள்:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "இந்த சொருகி அனைத்து அமைப்புகளையும் அழிக்கவும்"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை மாற்ற விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"பிற நூலகங்களில் உள்ள எந்த அமைப்புகளும் அல்லது உங்கள் காலிபர் செருகுநிரல்கள் "
+"கோப்புறையில் ஒரு JSON கோப்பில் சேமிக்கப்படாது."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "நீங்கள் பின்னர் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "அமைப்புகள் மாற்றப்பட்டன"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அமைப்புகள் மாற்றப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "தயவுசெய்து இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை அழிக்க விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "அமைப்புகள் நீக்கப்பட்டன"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"தலைப்பு படம் கிடைக்கவில்லை - இந்த சொருகி பயன்படுத்துவதற்கு முன்பு நீங்கள் "
+"காலிபரை மறுதொடக்கம் செய்ய வேண்டும்!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
+
+#: action.py:28
+msgid "Extract ISBN from the selected book format"
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட புத்தக வடிவமைப்பிலிருந்து ISBN ஐ பிரித்தெடுக்கவும்"
+
+#: action.py:28 action.py:74
+msgid "Extract ISBN"
+msgstr "ISBN ஐ பிரித்தெடுக்கவும்"
+
+#: action.py:43
+msgid "No rows selected"
+msgstr "வரிசைகள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: action.py:44
+msgid "You must select one or more books to perform this action."
+msgstr ""
+"இந்த செயலைச் செய்ய நீங்கள் ஒன்று அல்லது அதற்கு மேற்பட்ட புத்தகங்களைத் "
+"தேர்ந்தெடுக்க வேண்டும்."
+
+#: action.py:78
+msgid "Extracting ISBN for {0} books"
+msgstr "{0} புத்தகங்களுக்கு ISBN ஐ பிரித்தெடுத்தல்"
+
+#: action.py:91
+msgid "Failed to extract isbns"
+msgstr "ISBN களைப் பிரித்தெடுப்பதில் தோல்வி"
+
+#: action.py:94
+msgid "ISBN extract completed"
+msgstr "ஐ.எஸ்.பி.என் சாறு முடிந்தது"
+
+#: action.py:99
+msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
+msgstr "ISBN ஐ பிரித்தெடுக்கவும் <b> {0} புதிய ISBN (கள்) </b>."
+
+#: action.py:100
+msgid "Proceed with updating your library?"
+msgstr "உங்கள் நூலகத்தைப் புதுப்பிப்பதில் தொடரவா?"
+
+#: action.py:106
+msgid ""
+"Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
+"existing value."
+msgstr ""
+"{0} புத்தகம் (கள்) மற்றும் {1} புத்தகம் (கள்) ஆகியவற்றிற்கான ஒரு ISBN ஐக் "
+"கண்டுபிடிக்க முடியவில்லை."
+
+#: action.py:109
+msgid "Could not find an ISBN for {0} book(s)."
+msgstr "{0} புத்தகம் (கள்) க்கு ஒரு ISBN ஐக் கண்டுபிடிக்க முடியவில்லை."
+
+#: action.py:111
+msgid "Found {0} book(s) where ISBN matched the existing value."
+msgstr "{0} புத்தகம் (கள்) ஐ.எஸ்.பி.என் தற்போதுள்ள மதிப்புடன் பொருந்தியது."
+
+#: action.py:113
+msgid "Click \"Show details\" to see which books."
+msgstr "எந்த புத்தகங்களைக் காண \"விவரங்களைக் காட்டு\" என்பதைக் கிளிக் செய்க."
+
+#: action.py:118
+msgid "Scan failed"
+msgstr "ஸ்கேன் தோல்வியடைந்தது"
+
+#: action.py:118 action.py:127
+msgid "Scan log"
+msgstr "பதிவு ஸ்கேன்"
+
+#: action.py:127
+msgid "Scan complete"
+msgstr "ஸ்கேன் முழுமையானது"
+
+#: action.py:153
+msgid "Some books changed"
+msgstr "சில புத்தகங்கள் மாறின"
+
+#: action.py:154
+msgid ""
+"The metadata for some books in your library has changed since you started "
+"the download. If you proceed, some of those changes may be overwritten. "
+"Click \"Show details\" to see the list of changed books. Do you want to "
+"proceed?"
+msgstr ""
+"நீங்கள் பதிவிறக்கத்தைத் தொடங்கியதிலிருந்து உங்கள் நூலகத்தில் சில "
+"புத்தகங்களுக்கான மெட்டாடேட்டா மாறிவிட்டது. நீங்கள் தொடர்ந்தால், அந்த "
+"மாற்றங்களில் சில மேலெழுதப்படலாம். மாற்றப்பட்ட புத்தகங்களின் பட்டியலைக் காண "
+"\"விவரங்களைக் காட்டு\" என்பதைக் கிளிக் செய்க. நீங்கள் தொடர "
+"விரும்புகிறீர்களா?"
+
+#: action.py:165 jobs.py:226
+msgid "Unknown"
+msgstr "தெரியவில்லை"
+
+#: config.py:40
+msgid "Do not change my search"
+msgstr "எனது தேடலை மாற்ற வேண்டாம்"
+
+#: config.py:41
+msgid "Show the books that have new or updated ISBNs"
+msgstr ""
+"புதிய அல்லது புதுப்பிக்கப்பட்ட ISBN களைக் கொண்ட புத்தகங்களைக் காட்டுங்கள்"
+
+#: config.py:68
+msgid "When the scan completes:"
+msgstr "ஸ்கேன் முடிந்ததும்:"
+
+#: config.py:73
+msgid "Valid prefixes for ISBN-13 (comma separated):"
+msgstr "ISBN-13 க்கான செல்லுபடியாகும் முன்னொட்டுகள் (கமா பிரிக்கப்பட்டவை):"
+
+#: config.py:78
+msgid "Selected books before running as a background job:"
+msgstr "பின்னணி வேலையாக இயங்குவதற்கு முன் தேர்ந்தெடுக்கப்பட்ட புத்தகங்கள்:"
+
+#: config.py:79
+msgid "Running as a background job is slower but is the only way to avoid\n"
+msgstr "பின்னணி வேலையாக இயங்குவது மெதுவாக உள்ளது, ஆனால் தவிர்க்க ஒரே வழி"
+
+#: config.py:80
+msgid "memory leaks and will keep the UI more responsive."
+msgstr "நினைவக கசிந்து, UI ஐ மேலும் பதிலளிக்கும்."
+
+#: config.py:89
+msgid "Batch size running as a background job:"
+msgstr "பின்னணி வேலையாக இயங்கும் தொகுதி அளவு:"
+
+#: config.py:90
+msgid ""
+"Books will be broken into batches to ensure that if you run\n"
+"extract for a large group you can cancel/close calibre without\n"
+"losing all of your results as you can cancel the pending groups."
+msgstr ""
+"நீங்கள் ஓடினால் என்பதை உறுதிப்படுத்த புத்தகங்கள் தொகுதிகளாக உடைக்கப்படும் \n"
+" ஒரு பெரிய குழுவிற்கு பிரித்தெடுக்கலாம் நீங்கள் இல்லாமல் காலிபரை ரத்து செய்யலாம்/மூடலாம் \n"
+" நிலுவையில் உள்ள குழுக்களை ரத்துசெய்ய முடியும் என்பதால் உங்கள் எல்லா முடிவுகளையும் இழப்பது."
+
+#: config.py:102
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr ""
+"ஐ.எஸ்.பி.என் காணப்படாவிட்டால் அல்லது ஒரே மாதிரியாக இருந்தால் தோல்வி "
+"உரையாடலைக் காண்பி"
+
+#: config.py:103
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr ""
+"நீங்கள் விரும்பினால் இந்த விருப்பத்தைத் தேர்வுநீக்கவும் \n"
+" எந்த ISBN புத்தகத்திலும் காணப்படவில்லை அல்லது அது சமம் \n"
+" உங்கள் தற்போதைய மதிப்பு."
+
+#: config.py:110
+msgid "Prompt to apply ISBN changes"
+msgstr "ISBN மாற்றங்களைப் பயன்படுத்தத் தூண்டுதல்"
+
+#: config.py:111
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+"மாற்றங்கள் இல்லாமல் பயன்படுத்த விரும்பினால் இந்த விருப்பத்தைத் தேர்வுநீக்கவும் \n"
+" உறுதிப்படுத்தல் உரையாடல். இதில் ஒரு சிறிய ஆபத்து உள்ளது \n"
+" நீங்கள் மற்ற மாற்றங்களைச் செய்கிறீர்கள் என்றால் தேர்வு செய்யப்படாது \n"
+" இந்த புத்தக பதிவு அதே நேரத்தில் அவை இழக்கப்படும்."
+
+#: config.py:120
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
+
+#: config.py:124
+msgid "Help"
+msgstr "உதவி"
+
+#: dialogs.py:25
+msgid "Queueing books for extracting ISBN"
+msgstr "ISBN ஐ பிரித்தெடுப்பதற்கான புத்தகங்களை வரிசைப்படுத்துதல்"
+
+#: dialogs.py:53
+msgid "Queueing"
+msgstr "வரிசை"
+
+#: dialogs.py:73
+msgid "Extract ISBN failed"
+msgstr "பிரித்தெடுத்தல் ISBN தோல்வியுற்றது"
+
+#: dialogs.py:74
+msgid "Scan aborted as no books with formats found."
+msgstr "வடிவங்கள் இல்லாத புத்தகங்கள் இல்லாததால் ஸ்கேன் கைவிடப்பட்டது."
+
+#: jobs.py:41
+msgid "Extract ISBN for %d books"
+msgstr "%D புத்தகங்களுக்கு ISBN ஐ பிரித்தெடுக்கவும்"
+
+#: jobs.py:44
+msgid "Extract ISBN started"
+msgstr "பிரித்தெடுத்தல் ஐ.எஸ்.பி.என் தொடங்கியது"
+
+#: jobs.py:96
+msgid "Scanned %d of %d"
+msgstr "%D இன் %d"
+
+#: jobs.py:113
+msgid "No formats"
+msgstr "வடிவங்கள் இல்லை"
+
+#: jobs.py:115
+msgid "ISBN not found"
+msgstr "ISBN கண்டுபிடிக்கப்படவில்லை"
+
+#: jobs.py:121
+msgid "Same ISBN"
+msgstr "அதே ISBN"
+
+#: jobs.py:127
+msgid "Extracted"
+msgstr "பிரித்தெடுக்கப்பட்டது"

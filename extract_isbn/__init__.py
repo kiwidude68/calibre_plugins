@@ -20,7 +20,7 @@ class ActionExtractISBN(InterfaceActionBase):
     description             = 'Extracts the ISBN from the text content of a book format if available'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
-    version                 = (1, 6, 0)
+    version                 = (1, 6, 1)
     minimum_calibre_version = (2, 0, 0)
 
     #: This field defines the GUI plugin class that contains all the code
