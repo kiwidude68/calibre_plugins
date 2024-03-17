@@ -14,6 +14,7 @@
 ## [2.3.2] - 2022-12-29
 ### Added
 - Russian translation (ashed)
+
 ### Changed
 - Allow dialog to have a reduced minimum height by around 100px for use on smaller screen sizes
 

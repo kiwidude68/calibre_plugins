@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# அனிச் பிரபு தி, 2022
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-09 14:46+0100\n"
+"PO-Revision-Date: 2022-09-07 15:49+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "இதற்கான விருப்பத்தேர்வுகள்:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "இந்த சொருகி அனைத்து அமைப்புகளையும் அழிக்கவும்"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை மாற்ற விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"பிற நூலகங்களில் உள்ள எந்த அமைப்புகளும் அல்லது உங்கள் காலிபர் செருகுநிரல்கள் "
+"கோப்புறையில் ஒரு JSON கோப்பில் சேமிக்கப்படாது."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "நீங்கள் பின்னர் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "அமைப்புகள் மாற்றப்பட்டன"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அமைப்புகள் மாற்றப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "தயவுசெய்து இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை அழிக்க விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "அமைப்புகள் நீக்கப்பட்டன"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"தலைப்பு படம் கிடைக்கவில்லை - இந்த சொருகி பயன்படுத்துவதற்கு முன்பு நீங்கள் "
+"காலிபரை மறுதொடக்கம் செய்ய வேண்டும்!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
+
+#: config.py:154
+msgid "Goodreads Genre"
+msgstr "நல்லவாசிப்புகள் வகை"
+
+#: config.py:154
+msgid "Maps to Calibre Tag"
+msgstr "காலிபர் குறிச்சொல்லுக்கான வரைபடங்கள்"
+
+#: config.py:223
+msgid "Goodreads genre to calibre tag mappings"
+msgstr "நல்லவாசிப்புகள் வகை முதல் காலிபர் டேக் மேப்பிங்ஸ்"
+
+#: config.py:228
+msgid "Filter and map genres to calibre tags"
+msgstr "காலிபர் குறிச்சொற்களுக்கு வகைகளை வடிகட்டி வரைபடமாக்கவும்"
+
+#: config.py:229
+msgid ""
+"When checked, only specific calibre tags will be used as per below.\n"
+"When unchecked, all Goodreads genres will be added as tags."
+msgstr ""
+"சரிபார்க்கும்போது, குறிப்பிட்ட காலிபர் குறிச்சொற்கள் மட்டுமே கீழே பயன்படுத்தப்படும். \n"
+" தேர்வு செய்யப்படும்போது, அனைத்து குட்ரெட்ஸ் வகைகளும் குறிச்சொற்களாக சேர்க்கப்படும்."
+
+#: config.py:242
+msgid "Add genre mapping"
+msgstr "வகை மேப்பிங்கைச் சேர்க்கவும்"
+
+#: config.py:249
+msgid "Delete genre mapping"
+msgstr "வகை மேப்பிங்கை நீக்கு"
+
+#: config.py:256
+msgid "Rename Goodreads genre"
+msgstr "நல்லவாசிப்புகள் வகையை மறுபெயரிடவும்"
+
+#: config.py:263
+msgid "Reset to plugin default mappings"
+msgstr "சொருகி இயல்புநிலை மேப்பிங்கிற்கு மீட்டமைக்கவும்"
+
+#: config.py:269
+msgid "Other options"
+msgstr "மற்ற விருப்பங்கள்"
+
+#: config.py:274
+msgid "Scan multiple editions for title/author searches (slower)"
+msgstr ""
+"தலைப்பு/ஆசிரியர் தேடல்களுக்கு பல பதிப்புகளை ஸ்கேன் செய்யவும் (மெதுவாக)"
+
+#: config.py:275
+msgid ""
+"When checked will perform an additional search to scan the top ranked\n"
+"Goodreads editions (if available) to exclude audiobook editions.\n"
+"When unchecked you will get a faster search but the edition is indeterminate."
+msgstr ""
+"சரிபார்த்தால், ஆடியோபுக் பதிப்புகளைத் தவிர்த்து, சிறந்த தரவரிசையில் உள்ள \n"
+"நல்லவாசிப்புகள் பதிப்புகளை (கிடைத்தால்) ஸ்கேன் செய்ய கூடுதல் தேடலைச் செய்யும்.\n"
+"தேர்வு செய்யாதபோது, விரைவான தேடலைப் பெறுவீர்கள், ஆனால் பதிப்பு நிச்சயமற்றதாக இருக்கும்."
+
+#: config.py:281
+msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
+msgstr ""
+"பங்களிக்கும் அனைத்து ஆசிரியர்களையும் பெறுங்கள் (எ.கா. இல்லஸ்ட்ரேட்டர்கள், "
+"தொடர் ஆசிரியர்கள் போன்றவை)"
+
+#: config.py:282
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"இந்த விருப்பம் சரிபார்க்கப்பட்டால், அனைத்து ஆசிரியர்களும் மீட்டெடுக்கப்படுவார்கள்.\n"
+"\n"
+"தேர்வு செய்யப்படாதபோது (இயல்புநிலை) முதன்மை ஆசிரியர்(கள்) மட்டுமே திரும்பும்."
+
+#: config.py:287
+msgid "Get ASIN for kindle editions"
+msgstr "கிண்டில் பதிப்புகளுக்கு ASINஐப் பெறவும்"
+
+#: config.py:288
+msgid ""
+"When this option is checked, in cases where Goodreads has an ASIN listed\n"
+"instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
+"already have the specific Goodreads identifier of a Kindle editon."
+msgstr ""
+"இந்த விருப்பம் சரிபார்க்கப்பட்டால், ISBNக்குப் பதிலாக குட்ரீட்ஸில் ASIN பட்டியலிடப்பட்டால், \n"
+"ASIN மீட்டெடுக்கப்படும். கிண்டில் எடிட்டனின் குறிப்பிட்ட நல்லவாசிப்புகள் அடையாளங்காட்டி ஏற்கனவே \n"
+"உள்ள புத்தகங்களுக்கு இது பயனுள்ளதாக இருக்கும்."
+
+#: config.py:294
+msgid "Use first published date"
+msgstr "முதல் வெளியிடப்பட்ட தேதியைப் பயன்படுத்தவும்"
+
+#: config.py:295
+msgid ""
+"If checked, the first published date for this book is used rather than\n"
+"that of the actual book edition."
+msgstr ""
+"சரிபார்த்தால், இந்த புத்தகத்திற்கான முதல் வெளியிடப்பட்ட தேதி, \n"
+"உண்மையான புத்தக பதிப்பை விட பயன்படுத்தப்படும்."
+
+#: config.py:300
+msgid "Get precise rating into 'grrating' identifier"
+msgstr "'கிரேரேட்டிங்' அடையாளங்காட்டியில் துல்லியமான மதிப்பீட்டைப் பெறுங்கள்"
+
+#: config.py:301
+msgid ""
+"If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+"சரிபார்க்கப்பட்டால், துல்லியமான மதிப்பீட்டை (எ.கா. 3.78) ஒரு அடையாளங்காட்டிக்கு இழுக்கிறது \n"
+" நீங்கள் தனிப்பயன் நெடுவரிசையாக காட்டலாம்."
+
+#: config.py:306
+msgid "Get #votes for rating into 'grvotes' identifier"
+msgstr "'Grvotes' அடையாளங்காட்டியில் மதிப்பீட்டிற்கான #Votes ஐப் பெறுங்கள்"
+
+#: config.py:307
+msgid ""
+"If checked, pulls number of votes producing this rating into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+"சரிபார்க்கப்பட்டால், இந்த மதிப்பீட்டை உருவாக்கும் வாக்குகளின் எண்ணிக்கையை அடையாளங்காட்டிக்கு இழுக்கிறது \n"
+" நீங்கள் தனிப்பயன் நெடுவரிசையாக காட்டலாம்."
+
+#: config.py:328 config.py:359
+msgid "Add new mapping"
+msgstr "புதிய மேப்பிங்கைச் சேர்க்கவும்"
+
+#: config.py:329 config.py:360
+msgid "Enter a Goodreads genre name to create a mapping for:"
+msgstr "ஒரு மேப்பிங்கை உருவாக்க நல்லவாசிப்புகள் வகையின் பெயரை உள்ளிடவும்:"
+
+#: config.py:340
+msgid "Add Failed"
+msgstr "சேர்க்க முடியவில்லை"
+
+#: config.py:340 config.py:372
+msgid "A genre with the same name already exists"
+msgstr "அதே பெயரில் ஒரு வகை ஏற்கனவே உள்ளது"
+
+#: config.py:348 config.py:379
+msgid "Are you sure?"
+msgstr "நீ சொல்வது உறுதியா?"
+
+#: config.py:349
+msgid "Are you sure you want to delete the selected genre mappings?"
+msgstr "தேர்ந்தெடுக்கப்பட்ட வகை மேப்பிங்கை நிச்சயமாக நீக்க விரும்புகிறீர்களா?"
+
+#: config.py:372
+msgid "Rename Failed"
+msgstr "மறுபெயரிட முடியவில்லை"
+
+#: config.py:380
+msgid "Are you sure you want to reset to the plugin default genre mappings?"
+msgstr ""
+"செருகுநிரல் இயல்பு வகை மேப்பிங்கிற்கு நிச்சயமாக மீட்டமைக்க "
+"விரும்புகிறீர்களா?"

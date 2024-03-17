@@ -1,5 +1,9 @@
 # Goodreads Change Log
 
+## [1.7.10] - 2023-03-17
+### Added
+- Tamil translation
+
 ## [1.7.9] - 2023-05-26
 ### Added
 - Latvian translation (@ciepina)
