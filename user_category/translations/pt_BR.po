@@ -15,7 +15,7 @@ msgstr ""
 "POT-Creation-Date: 2022-10-10 21:01+0100\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
 "Last-Translator: Cm Fy, 2022\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/calibre/teams/19337/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/calibre/teams/19337/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -160,7 +160,7 @@ msgstr "Customizar plugin"
 
 #: action.py:138 config.py:98
 msgid "&Help"
-msgstr ""
+msgstr "&Ajuda"
 
 #: action.py:158
 msgid "View user category"
