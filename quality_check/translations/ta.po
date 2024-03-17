@@ -4,14 +4,14 @@
 # 
 # Translators:
 # அனிச் பிரபு தி, 2022
-# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2023-12-23 21:11+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2024\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -484,10 +484,11 @@ msgstr "காலிபர் மாற்றங்களுக்கான எ�
 #: check_epub.py:992
 msgid "All searched ePub books have a valid zip format"
 msgstr ""
+"தேடப்பட்ட அனைத்து இபப் புத்தகங்களும் சரியான சிப் வடிவத்தைக் கொண்டுள்ளன"
 
 #: check_epub.py:994
 msgid "ePub books for corrupted zip format"
-msgstr ""
+msgstr "சிதைந்த சிப் வடிவமைப்பிற்கான இபப் புத்தகங்கள்"
 
 #: check_epub.py:1019
 msgid "All searched ePub books have a valid container.xml file"
@@ -505,7 +506,7 @@ msgstr "காணாமல் போன கொள்கலன். Xml கோப�
 
 #: check_epub.py:1042
 msgid "\tIncorrect container.xml namespace in"
-msgstr "தவறான கொள்கலன். எக்ஸ்எம்எல் பெயர்வெளி"
+msgstr "\tதவறான கொள்கலன். எக்ஸ்எம்எல் பெயர்வெளி"
 
 #: check_epub.py:1049
 msgid "\tIncorrect .opf manifest namespace in"
@@ -533,7 +534,7 @@ msgstr "டி.சி அல்லாத எபப் புத்தகங்�
 
 #: check_epub.py:1122
 msgid "Manifest file missing from: <b>%s</b>"
-msgstr "இதிலிருந்து வெளிப்படையான கோப்பு இல்லை: <b>%கள் </b>"
+msgstr "இதிலிருந்து வெளிப்படையான கோப்பு இல்லை: <b>%s </b>"
 
 #: check_epub.py:1136
 msgid "All searched ePub books have a valid opf manifest"
@@ -1410,11 +1411,13 @@ msgstr "காலிபர் மாற்றத்தை சரிபார்�
 
 #: config.py:101
 msgid "Check corrupt zip"
-msgstr ""
+msgstr "சிதைந்த சிப்பை சரிபார்க்கவும்"
 
 #: config.py:101
 msgid "Check for ePub zip that is corrupted, may need conversion to fix"
 msgstr ""
+"இபப் சிப் சிதைந்துள்ளதா எனச் சரிபார்க்கவும், அதைச் சரிசெய்ய மாற்ற "
+"வேண்டியிருக்கலாம்"
 
 #: config.py:103
 msgid "Check <address> smart-tags"

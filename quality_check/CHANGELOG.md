@@ -1,5 +1,10 @@
 # Quality Check Change Log
 
+## [1.13.9] - 2024-03-17
+### Changed
+- The 'Check corrupt zip' feature also considers individual file corruption issues (#un-pogaz)
+- Updated Spanish and Tamil translations
+
 ## [1.13.8] - 2024-01-25
 ### Added
 - New 'Check corrupt zip' feature looks for non-standard zip files (conversion may fix) ([#49][i49])

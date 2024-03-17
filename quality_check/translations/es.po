@@ -5,15 +5,15 @@
 # Translators:
 # Darío Hereñú, 2022
 # Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2023
 # Walter Paterno <walter.paterno@gmail.com>, 2023
+# Jellby <jellby@yahoo.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2023-12-23 21:11+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: Walter Paterno <walter.paterno@gmail.com>, 2023\n"
+"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,15 +28,15 @@ msgstr "Atajos de teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar Calibre ahora"
+msgstr "Reiniciar calibre ahora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para: "
+msgstr "Preferencias para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Borrar"
+msgstr "Limpiar"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
@@ -47,16 +47,16 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer cambiar la configuración del complemento en esta "
+"biblioteca?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
-" en su carpeta de complementos de calibre no se modificará."
+"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
+"la carpeta de complementos de calibre no se modificarán."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -68,8 +68,7 @@ msgstr "Configuración modificada"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Se ha cambiado la configuración de este complemento en esta biblioteca."
+msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -80,8 +79,8 @@ msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer borrar la configuración del complemento en esta "
+"biblioteca?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -89,9 +88,7 @@ msgstr "Configuración eliminada"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Se han borrado todas las configuraciones para este complemento en esta "
-"biblioteca."
+msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
@@ -109,7 +106,7 @@ msgstr "Reinicio requerido"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título - debe reiniciar Calibre antes de usar "
+"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
 #: ..\common\common_widgets.py:234
@@ -157,7 +154,7 @@ msgstr "Libro(s) seleccionado(s)"
 
 #: action.py:138
 msgid "Run check against selected book(s) only"
-msgstr "Ejecute el cheque solo con los libros seleccionados"
+msgstr "Comprobar sólo los libros seleccionados"
 
 #: action.py:139
 msgid "Search Scope -> Selection"
@@ -178,7 +175,7 @@ msgstr "Ver exclusiones"
 
 #: action.py:149
 msgid "View exclusions you have added for each Quality Check"
-msgstr "Ver las exclusiones que ha agregado para cada control de calidad"
+msgstr "Ver las exclusiones que se han añadido para cada control de calidad"
 
 #: action.py:154
 msgid "&Customize plugin"
@@ -481,11 +478,11 @@ msgstr "libros ePub para conversiones de calibre"
 
 #: check_epub.py:992
 msgid "All searched ePub books have a valid zip format"
-msgstr ""
+msgstr "Todos los libros ePub comprobados tienen un formato zip válido"
 
 #: check_epub.py:994
 msgid "ePub books for corrupted zip format"
-msgstr ""
+msgstr "libros ePub por formato zip corrupto"
 
 #: check_epub.py:1019
 msgid "All searched ePub books have a valid container.xml file"
@@ -758,8 +755,8 @@ msgstr "Renombrado a ascii %dde %dautores de libros"
 #: check_fix.py:172
 msgid "\"Check and repair book sizes\" requires calibre version 5.9 or higher."
 msgstr ""
-"\"Comprobar y reparar tamaños de libros\" requiere la versión de calibre 5.9"
-" o superior."
+"«Comprobar y reparar tamaños de libros» requiere la versión de calibre 5.9 o"
+" superior."
 
 #: check_fix.py:177
 msgid "books for invalid file sizes"
@@ -802,8 +799,8 @@ msgstr ""
 msgid ""
 "If you do you will remove \"Empty book\" entries and corrupt your database."
 msgstr ""
-"Si lo hace, eliminará las entradas de \"Libro vacío\" y corromperá su base "
-"de datos."
+"Si lo hace, eliminará las entradas de «Libro vacío» y corromperá su base de "
+"datos."
 
 #: check_fix.py:233
 msgid "No files deleted"
@@ -1382,11 +1379,12 @@ msgstr "No compruebe la conversión de calibre"
 
 #: config.py:101
 msgid "Check corrupt zip"
-msgstr ""
+msgstr "Comprobar zip corrupto"
 
 #: config.py:101
 msgid "Check for ePub zip that is corrupted, may need conversion to fix"
 msgstr ""
+"Comprobar zip corrupto en ePub, puede requerir una conversión para corregir"
 
 #: config.py:103
 msgid "Check <address> smart-tags"
@@ -1468,7 +1466,7 @@ msgid ""
 "Check for ePub formats with book level CSS margins conflicting with calibre "
 "Preferences"
 msgstr ""
-"Verificar los formatos ePub con márgenes CSS a nivel de libro que entren en "
+"Comprobar los formatos ePub con márgenes CSS a nivel de libro que entren en "
 "conflicto con las preferencias de calibre"
 
 #: config.py:110
@@ -1539,7 +1537,7 @@ msgstr "Verificar el identificador ASIN faltante"
 msgid "Check Twitter/Facebook disabled"
 msgstr ""
 "Verificar los formatos MOBI/AZW/AZW3 sin un ASIN en EXTH 113 y EXTH 504 para"
-" habilitar las funciones de \"compartir\" en Facebook o Twitter"
+" habilitar las funciones de «compartir» en Facebook o Twitter"
 
 #: config.py:117
 msgid ""
@@ -1547,7 +1545,7 @@ msgid ""
 "504 to enable \"share\" features on Facebook or Twitter"
 msgstr ""
 "Verificar los formatos MOBI/AZW/AZW3 sin un ASIN en EXTH 113 y EXTH 504 para"
-" habilitar las funciones de \"compartir\" en Facebook o Twitter"
+" habilitar las funciones de «compartir» en Facebook o Twitter"
 
 #: config.py:118
 msgid "Check clipping limit"
@@ -1840,20 +1838,20 @@ msgstr "Buscar ePubs"
 msgid ""
 "For the selected book(s) swap author names between FN LN and LN, FN formats"
 msgstr ""
-"Para los libros seleccionados, cambie los nombres de los autores entre los "
-"formatos FN LN y LN, FN"
+"Para los libros seleccionados, cambiar los nombres de los autores entre los "
+"formatos nombre apellido y apellido, nombre"
 
 #: config.py:157
 msgid "Swap author FN LN <-> LN,FN"
-msgstr "Intercambiar autor FN LN <->LN, FN"
+msgstr "Intercambiar autor nombre apellido <-> apellido, nombre"
 
 #: config.py:158
 msgid ""
 "For the selected book(s) reformat the author initials to your configured "
 "preference"
 msgstr ""
-"Para los libros seleccionados, vuelva a formatear las iniciales del autor "
-"según sus preferencias configuradas"
+"Para los libros seleccionados, volver a formatear las iniciales del autor "
+"según las preferencias configuradas"
 
 #: config.py:158
 msgid "Reformat author initials"
@@ -1940,7 +1938,7 @@ msgstr "Formato de las iniciales del autor:"
 msgid ""
 "For use with the \"Check Author initials\" option, set your preferred format"
 msgstr ""
-"Para usar con la opción \"Verificar iniciales del autor\", configure su "
+"Para usar con la opción «Verificar iniciales del autor», configure su "
 "formato preferido"
 
 #: config.py:321
@@ -1949,7 +1947,7 @@ msgstr "Menús visibles"
 
 #: config.py:330
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Edite los atajos de teclado asociados con este complemento"
+msgstr "Modificar los atajos de teclado asociados con este complemento"
 
 #: config.py:334
 msgid "&View library preferences"
@@ -2011,11 +2009,11 @@ msgstr "Quality Check registro"
 
 #: dialogs.py:266
 msgid "quality check plugin:exclude add dialog"
-msgstr "quality check plugin: excluir agregar diálogo"
+msgstr "complemento quality check: excluir diálogo de adición"
 
 #: dialogs.py:275
 msgid "Quality Check Add Exclusions"
-msgstr "Control de calidad Agregar exclusiones"
+msgstr "Añadir exclusiones de control de calidad"
 
 #: dialogs.py:278
 msgid "Exclude Books"
@@ -2023,7 +2021,7 @@ msgstr "Excluir libros"
 
 #: dialogs.py:282
 msgid "Exclude selected books(s) from the following Quality Check:"
-msgstr "Excluya los libros seleccionados del siguiente control de calidad:"
+msgstr "Excluir los libros seleccionados del siguiente control de calidad:"
 
 #: dialogs.py:386
 msgid "quality check plugin:exclude view dialog"
@@ -2043,7 +2041,7 @@ msgstr "Eliminar los libros seleccionados de las exclusiones"
 
 #: dialogs.py:471
 msgid "quality check plugin:search epub dialog"
-msgstr "quality check plugin: cuadro de diálogo de búsqueda de epub"
+msgstr "complemento quality check: cuadro de diálogo de búsqueda de epub"
 
 #: dialogs.py:503
 msgid "Find expression"
