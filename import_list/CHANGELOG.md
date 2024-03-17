@@ -1,5 +1,9 @@
 # Import List Change Log
 
+## [1.9.2] - 2024-03-17
+### Added
+- Tamil translation
+
 ## [1.9.1] - 2023-08-06
 ### Added
 - Russian translation (various)

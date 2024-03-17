@@ -5,16 +5,16 @@
 # Translators:
 # Adolfo Jayme-Barrientos, 2022
 # Darío Hereñú, 2022
-# Jellby <jellby@yahoo.com>, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022
+# Jellby <jellby@yahoo.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 20:07+0100\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
-"Last-Translator: Grant Drake, 2022\n"
+"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,15 +29,15 @@ msgstr "Atajos de teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar Calibre ahora"
+msgstr "Reiniciar calibre ahora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para: "
+msgstr "Preferencias para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Borrar"
+msgstr "Limpiar"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
@@ -48,16 +48,16 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer cambiar la configuración del complemento en esta "
+"biblioteca?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
-" en su carpeta de complementos de calibre no se modificará."
+"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
+"la carpeta de complementos de calibre no se modificarán."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -69,8 +69,7 @@ msgstr "Configuración modificada"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Se ha cambiado la configuración de este complemento en esta biblioteca."
+msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -81,8 +80,8 @@ msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer borrar la configuración del complemento en esta "
+"biblioteca?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -90,9 +89,7 @@ msgstr "Configuración eliminada"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Se han borrado todas las configuraciones para este complemento en esta "
-"biblioteca."
+msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
@@ -110,7 +107,7 @@ msgstr "Reinicio requerido"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título - debe reiniciar Calibre antes de usar "
+"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
 #: ..\common\common_widgets.py:222
@@ -119,7 +116,7 @@ msgstr "Crear nueva columna"
 
 #: action.py:30
 msgid "Import List"
-msgstr "Importar Lista"
+msgstr "Import List"
 
 #: action.py:30
 msgid "Import a list from the clipboard, CSV File or web page"
@@ -204,7 +201,7 @@ msgstr "Debes elegir una biblioteca"
 
 #: config.py:930
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Edite los atajos de teclado asociados con este complemento"
+msgstr "Modificar los atajos de teclado asociados con este complemento"
 
 #: config.py:934
 msgid "Reset &confirmation dialogs"
@@ -268,7 +265,7 @@ msgstr "Codificaciones elegidas:"
 
 #: encodings.py:261
 msgid "Add the selected encoding"
-msgstr "Agregue la codificación seleccionada"
+msgstr "Añadir la codificación seleccionada"
 
 #: encodings.py:264
 msgid "Remove the selected encoding"
@@ -311,16 +308,16 @@ msgid ""
 "No matching book found in your library.\n"
 "Add an empty book or search for a match below."
 msgstr ""
-"No se encontró ningún libro coincidente en su biblioteca.\n"
-"Agregue un libro vacío o busque una coincidencia a continuación."
+"No se encontró ningún libro coincidente en la biblioteca.\n"
+"Añada un libro vacío o busque una coincidencia a continuación."
 
 #: models.py:109
 msgid "An empty book will be added if you save this list"
-msgstr "Se agregará un libro vacío si guarda esta lista"
+msgstr "Se añadirá un libro vacío si guarda esta lista"
 
 #: models.py:111
 msgid "This book was added to your list manually"
-msgstr "Este libro fue agregado a su lista manualmente"
+msgstr "Este libro se añadió a la lista manualmente"
 
 #: models.py:147 page_resolve.py:615
 msgid "Unknown"
@@ -363,7 +360,7 @@ msgid ""
 "\t\tThe following rows have invalid type for column {colname}:\n"
 msgstr ""
 "\n"
-"Columna \"{colname}\" debe contener solo datos de tipo \"{DataType}\".\n"
+"Columna «{colname}» debe contener solo datos de tipo «{DataType}».\n"
 "\t\tLas siguientes filas tienen un tipo no válido para la columna {colname}:\n"
 
 #: page_import.py:147
@@ -420,8 +417,7 @@ msgstr "Exportar libros seleccionados a archivo csv"
 
 #: page_import.py:393 page_resolve.py:574
 msgid "Are you sure you want to remove the selected books from the list?"
-msgstr ""
-"¿Estás seguro de que quieres eliminar los libros seleccionados de la lista?"
+msgstr "¿Está seguro de querer eliminar los libros seleccionados de la lista?"
 
 #: page_import.py:413
 msgid "Choose file for exported csv"
@@ -449,7 +445,7 @@ msgstr "Paso 3: Guarde su lista / configuración importada"
 
 #: page_persist.py:175
 msgid "Reading List plugin:"
-msgstr "Lista de Lectura plugin:"
+msgstr "complemento Reading List:"
 
 #: page_persist.py:180
 msgid ""
@@ -516,8 +512,8 @@ msgid ""
 "This column will be ignored. Either add a matching custom column or edit "
 "your import statement."
 msgstr ""
-"Esta columna será ignorada. Agregue una columna personalizada coincidente o "
-"edite su declaración de importación."
+"Esta columna será ignorada. Añada una columna personalizada coincidente o "
+"modifique la declaración de importación."
 
 #: page_persist.py:389
 msgid "ImportList plugin: no metadata found for column:"
@@ -525,7 +521,7 @@ msgstr "Complemento ImportList: no se encontraron metadatos para la columna:"
 
 #: page_persist.py:448
 msgid "Adding books (%(idx)d of %(count)d): %(title)s"
-msgstr "Agregando libros ( %(idx)dde%(count)d):%(title)s"
+msgstr "Añadiendo libros (%(idx)d de %(count)d): %(title)s"
 
 #: page_persist.py:460
 msgid "Updating books (%(idx)d of %(count)d): %(title)s"
@@ -640,7 +636,7 @@ msgstr ""
 
 #: page_resolve.py:317
 msgid "Append this book as a new item on the list"
-msgstr "Agregar este libro como un elemento nuevo en la lista"
+msgstr "Añadir este libro como un elemento nuevo en la lista"
 
 #: page_resolve.py:417
 msgid "&Clear match"
@@ -664,7 +660,9 @@ msgstr "&Intercambiar nombres de autor"
 
 #: page_resolve.py:435
 msgid "Swap selected author names between FN LN and LN,FN"
-msgstr "Intercambiar nombres de autores seleccionados entre FN LN y LN,FN"
+msgstr ""
+"Intercambiar nombres de autores seleccionados entre los formatos nombre "
+"apellido y apellido, nombre"
 
 #: page_resolve.py:439
 msgid "&Search for title/author"
@@ -697,7 +695,7 @@ msgstr "&Seleccionar libro"
 
 #: page_resolve.py:471
 msgid "&Append to list"
-msgstr "&Agregar a la lista"
+msgstr "&Añadir a la lista"
 
 #: page_resolve.py:562
 msgid "*** No Match ***"
@@ -705,7 +703,7 @@ msgstr "*** Sin coincidencia ***"
 
 #: page_resolve.py:726
 msgid "Are you sure you want to add the selected book to the list?"
-msgstr "¿Está seguro de que desea agregar el libro seleccionado a la lista?"
+msgstr "¿Está seguro de querer añadir el libro seleccionado a la lista?"
 
 #: page_resolve.py:757
 msgid "No Match"
@@ -768,7 +766,7 @@ msgstr "&Limpiar"
 #: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:305
 msgid "Clear all settings back to the defaults on this tab"
 msgstr ""
-"Borra todas las configuraciones a los valores predeterminados en esta "
+"Restaurar todas las configuraciones a los valores predeterminados en esta "
 "pestaña"
 
 #: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:307
@@ -777,7 +775,7 @@ msgstr "&Campos"
 
 #: tab_clipboard.py:100
 msgid "Add expression for field to import"
-msgstr "Agregar expresión para el campo a importar"
+msgstr "Añadir expresión para el campo a importar"
 
 #: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:310
 msgid "Reverse order"
@@ -845,7 +843,7 @@ msgstr "Idiomas"
 
 #: tab_common.py:317
 msgid "Select field(s) to add:"
-msgstr "Seleccione campo(s) para agregar:"
+msgstr "Seleccionar campo(s) para añadir:"
 
 #: tab_common.py:369
 msgid "Select fields to import:"
@@ -1009,7 +1007,7 @@ msgstr "Importar."
 
 #: tab_settings.py:126
 msgid "Are you sure you want to remove the setting \"%s\"?"
-msgstr "¿Estás seguro de que deseas eliminar la configuración \"%s\"?"
+msgstr "¿Está seguro de querer eliminar la configuración «%s»?"
 
 #: tab_settings.py:127
 msgid "import_list_delete_setting"
@@ -1053,7 +1051,7 @@ msgstr "Ingrese un nombre único para esta configuración guardada:"
 
 #: tab_settings.py:235
 msgid "Cannot add"
-msgstr "No se puede agregar"
+msgstr "No se puede añadir"
 
 #: tab_settings.py:236
 msgid "The name you specified is not unique"
@@ -1249,11 +1247,11 @@ msgstr "No ha especificado una expresión xpath de título"
 
 #: tab_webpage.py:789
 msgid "You must add a series_index xpath field if using series"
-msgstr "Debe agregar un campo xpath series_index si usa series"
+msgstr "Debe añadir un campo xpath series_index si usa series"
 
 #: tab_webpage.py:791
 msgid "You must add a series xpath field if using series index"
-msgstr "Debe agregar un campo xpath de serie si usa el índice de serie"
+msgstr "Debe añadir un campo xpath de serie si usa el índice de serie"
 
 #: tab_webpage.py:914 tab_webpage.py:915
 msgid "Failed to process page"

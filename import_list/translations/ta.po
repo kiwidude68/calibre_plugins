@@ -1,0 +1,1275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Arun Sundaram <arunistheking@gmail.com>, 2022
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-09 20:07+0100\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:929
+msgid "Keyboard shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "இதற்கான விருப்பத்தேர்வுகள்:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "இந்த சொருகி அனைத்து அமைப்புகளையும் அழிக்கவும்"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை மாற்ற விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"பிற நூலகங்களில் உள்ள எந்த அமைப்புகளும் அல்லது உங்கள் காலிபர் செருகுநிரல்கள் "
+"கோப்புறையில் ஒரு JSON கோப்பில் சேமிக்கப்படாது."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "நீங்கள் பின்னர் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "அமைப்புகள் மாற்றப்பட்டன"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அமைப்புகள் மாற்றப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "தயவுசெய்து இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை அழிக்க விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "அமைப்புகள் நீக்கப்பட்டன"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"தலைப்பு படம் கிடைக்கவில்லை - இந்த சொருகி பயன்படுத்துவதற்கு முன்பு நீங்கள் "
+"காலிபரை மறுதொடக்கம் செய்ய வேண்டும்!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
+
+#: action.py:30
+msgid "Import List"
+msgstr "இறக்குமதி பட்டியல்"
+
+#: action.py:30
+msgid "Import a list from the clipboard, CSV File or web page"
+msgstr ""
+"கிளிப்போர்டு, சி.எஸ்.வி கோப்பு அல்லது வலைப்பக்கத்திலிருந்து ஒரு பட்டியலை "
+"இறக்குமதி செய்க"
+
+#: cmdline.py:129
+msgid "Choose library location to compare against"
+msgstr "ஒப்பிடுவதற்கு நூலக இருப்பிடத்தைத் தேர்வுசெய்க"
+
+#: cmdline.py:133
+msgid "No existing library found"
+msgstr "தற்போதுள்ள நூலகம் எதுவும் கிடைக்கவில்லை"
+
+#: cmdline.py:134
+msgid "There is no existing calibre library at {0}"
+msgstr "{0 at இல் ஏற்கனவே காலிபர் நூலகம் இல்லை"
+
+#: cmdline.py:149
+msgid "Choose database"
+msgstr "தரவுத்தளத்தைத் தேர்வுசெய்க"
+
+#: cmdline.py:150
+msgid "Calibre db"
+msgstr "காலிபர் டி.பி."
+
+#: cmdline.py:154
+msgid "Not a valid database file"
+msgstr "சரியான தரவுத்தள கோப்பு அல்ல"
+
+#: cmdline.py:155
+msgid "File ({}) is not a valid database file"
+msgstr "கோப்பு ({}) சரியான தரவுத்தள கோப்பு அல்ல"
+
+#: cmdline.py:204
+msgid "Choose Library"
+msgstr "நூலகத்தைத் தேர்வுசெய்க"
+
+#: cmdline.py:208
+msgid "Choose library"
+msgstr "நூலகத்தைத் தேர்வுசெய்க"
+
+#: cmdline.py:211
+msgid "Options"
+msgstr "விருப்பங்கள்"
+
+#: cmdline.py:218
+msgid "Override Database Path"
+msgstr "தரவுத்தள பாதையை மீறவும்"
+
+#: cmdline.py:221
+msgid ""
+"Allows you to specify the full path to metadata.db. Using this variable you "
+"can have metadata.db be in a location other than the library folder."
+msgstr ""
+"Metadata.db க்கான முழு பாதையையும் குறிப்பிட உங்களை அனுமதிக்கிறது. இந்த "
+"மாறியைப் பயன்படுத்தி நீங்கள் மெட்டாடேட்டா.டிபி நூலகக் கோப்புறையைத் தவிர வேறு"
+" இடத்தில் இருக்க முடியும்."
+
+#: cmdline.py:225
+msgid "Choose database path"
+msgstr "தரவுத்தள பாதையைத் தேர்வுசெய்க"
+
+#: cmdline.py:230
+msgid "Re-initialize db every nth book (Experimental):"
+msgstr "ஒவ்வொரு nth புத்தகத்தையும் (சோதனை) மீண்டும் துவக்கவும்:"
+
+#: cmdline.py:232
+msgid ""
+"Prevent gradual speed deterioration when importing large number of books"
+msgstr ""
+"அதிக எண்ணிக்கையிலான புத்தகங்களை இறக்குமதி செய்யும் போது படிப்படியான வேக "
+"மோசமியைத் தடுக்கவும்"
+
+#: cmdline.py:260
+msgid "Error"
+msgstr "பிழை"
+
+#: cmdline.py:260
+msgid "You must choose a library"
+msgstr "நீங்கள் ஒரு நூலகத்தைத் தேர்வு செய்ய வேண்டும்"
+
+#: config.py:930
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
+
+#: config.py:934
+msgid "Reset &confirmation dialogs"
+msgstr "மீட்டமை மற்றும் உறுதிப்படுத்தல் உரையாடல்கள்"
+
+#: config.py:935
+msgid "Reset all show me again dialogs for the Import list plugin"
+msgstr ""
+"அனைத்தையும் மீட்டமைக்கவும் இறக்குமதி பட்டியல் சொருகி எனக்கு மீண்டும் "
+"உரையாடல்களைக் காட்டு"
+
+#: config.py:939
+msgid "&View library preferences"
+msgstr "& நூலக விருப்பங்களைக் காண்க"
+
+#: config.py:940
+msgid "View data stored in the library database for this plugin"
+msgstr "இந்த சொருகி நூலக தரவுத்தளத்தில் சேமிக்கப்பட்ட தரவைக் காண்க"
+
+#: config.py:944
+msgid "&Help"
+msgstr "&உதவி"
+
+#: config.py:954
+msgid "Done"
+msgstr "முடிந்தது"
+
+#: config.py:955
+msgid "Confirmation dialogs have all been reset"
+msgstr "உறுதிப்படுத்தல் உரையாடல்கள் அனைத்தும் மீட்டமைக்கப்பட்டுள்ளன"
+
+#: encodings.py:98
+msgid "Add or Remove"
+msgstr "சேர்க்கவும் அல்லது அகற்றவும்"
+
+#: encodings.py:99
+msgid "detect encoding"
+msgstr "குறியாக்கத்தைக் கண்டறியவும்"
+
+#: encodings.py:236
+msgid "Description"
+msgstr "விளக்கம்"
+
+#: encodings.py:236
+msgid "Encoding"
+msgstr "குறியாக்கம்"
+
+#: encodings.py:241
+msgid "Choose Encodings"
+msgstr "குறியாக்கங்களைத் தேர்வுசெய்க"
+
+#: encodings.py:245
+msgid "Available Encodings:"
+msgstr "கிடைக்கும் குறியாக்கங்கள்:"
+
+#: encodings.py:249
+msgid "Chosen Encodings:"
+msgstr "தேர்ந்தெடுக்கப்பட்ட குறியாக்கங்கள்:"
+
+#: encodings.py:261
+msgid "Add the selected encoding"
+msgstr "தேர்ந்தெடுக்கப்பட்ட குறியாக்கத்தைச் சேர்க்கவும்"
+
+#: encodings.py:264
+msgid "Remove the selected encoding"
+msgstr "தேர்ந்தெடுக்கப்பட்ட குறியாக்கத்தை அகற்று"
+
+#: encodings.py:282
+msgid "Move the selected item up"
+msgstr "தேர்ந்தெடுக்கப்பட்ட உருப்படியை நகர்த்தவும்"
+
+#: encodings.py:286
+msgid "Move the selected item down"
+msgstr "தேர்ந்தெடுக்கப்பட்ட உருப்படியை கீழே நகர்த்தவும்"
+
+#: encodings.py:290
+msgid "Reset to defaults"
+msgstr "இயல்புநிலைகளுக்கு மீட்டமைக்கவும்"
+
+#: encodings.py:356
+msgid "No encodings selected"
+msgstr "குறியாக்கங்கள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: encodings.py:356 page_resolve.py:128 tab_common.py:360
+msgid "You must select one or more fields first."
+msgstr ""
+"நீங்கள் முதலில் ஒன்று அல்லது அதற்கு மேற்பட்ட புலங்களைத் தேர்ந்தெடுக்க "
+"வேண்டும்."
+
+#: models.py:101
+msgid "A matching book was found in your calibre library"
+msgstr "உங்கள் காலிபர் நூலகத்தில் பொருந்தக்கூடிய புத்தகம் காணப்பட்டது"
+
+#: models.py:103
+msgid ""
+"Multiple matches found for this title/author.\n"
+"Resolve this by selecting your match below."
+msgstr ""
+"இந்த தலைப்பு/ஆசிரியருக்கு பல போட்டிகள் காணப்படுகின்றன. \n"
+" கீழே உங்கள் போட்டியைத் தேர்ந்தெடுப்பதன் மூலம் இதைத் தீர்க்கவும்."
+
+#: models.py:106
+msgid ""
+"No matching book found in your library.\n"
+"Add an empty book or search for a match below."
+msgstr ""
+"உங்கள் நூலகத்தில் பொருந்தக்கூடிய புத்தகம் எதுவும் இல்லை. \n"
+" வெற்று புத்தகத்தைச் சேர்க்கவும் அல்லது கீழே ஒரு போட்டியைத் தேடுங்கள்."
+
+#: models.py:109
+msgid "An empty book will be added if you save this list"
+msgstr "இந்த பட்டியலை நீங்கள் சேமித்தால் வெற்று புத்தகம் சேர்க்கப்படும்"
+
+#: models.py:111
+msgid "This book was added to your list manually"
+msgstr "இந்த புத்தகம் உங்கள் பட்டியலில் கைமுறையாக சேர்க்கப்பட்டது"
+
+#: models.py:147 page_resolve.py:615
+msgid "Unknown"
+msgstr "தெரியவில்லை"
+
+#: page_import.py:101
+msgid "Show only rows with errors"
+msgstr "பிழைகள் கொண்ட வரிசைகளை மட்டும் காட்டு"
+
+#: page_import.py:103
+msgid ""
+"<p style=\"font-style:italic;margin-left:30px;\">(errors highlighted in "
+"<span style=\"color:red;\">red</span>)</p>"
+msgstr "<p style = \"font-style: italic; விளிம்பு-இடது: 30px;\""
+
+#: page_import.py:127
+msgid ""
+"Some cells contain data that does not match calibre datatypes.\n"
+"\t\tErrors are detailed below:\n"
+msgstr ""
+"சில கலங்களில் காலிபர் தரவுத்தொகுப்புகளுடன் பொருந்தாத தரவு உள்ளது. \n"
+" பிழைகள் கீழே விவரிக்கப்பட்டுள்ளன:"
+
+#: page_import.py:135
+msgid ""
+"\n"
+"Title field is mandatory. The following rows contain empty titles:\n"
+"{}\n"
+msgstr ""
+"தலைப்பு புலம் கட்டாயமாகும். பின்வரும் வரிசைகளில் வெற்று தலைப்புகள் உள்ளன: \n"
+" {}"
+
+#: page_import.py:142
+msgid ""
+"\n"
+"Column \"{colname}\" must contain only data of type \"{datatype}\".\n"
+"\t\tThe following rows have invalid type for column {colname}:\n"
+msgstr ""
+"\"{கோல்நேம்}\" நெடுவரிசையில் \"{டேட்டாடைப்}\" என்ற வகையின் தரவு மட்டுமே இருக்க வேண்டும். \n"
+" பின்வரும் வரிசைகள் நெடுவரிசைக்கு தவறான வகையைக் கொண்டுள்ளன {கோல்நேம்}:"
+
+#: page_import.py:147
+msgid "Validation errors details"
+msgstr "சரிபார்ப்பு பிழைகள் விவரங்கள்"
+
+#: page_import.py:197
+msgid "Title field is mandatory and cannot be empty"
+msgstr "தலைப்பு புலம் கட்டாயமானது மற்றும் காலியாக இருக்க முடியாது"
+
+#: page_import.py:208
+msgid "Data must be of type: {}"
+msgstr "தரவு வகையாக இருக்க வேண்டும்: {}"
+
+#: page_import.py:310
+msgid "Step 1: Configure a list source"
+msgstr "படி 1: பட்டியல் மூலத்தை உள்ளமைக்கவும்"
+
+#: page_import.py:324
+msgid "User Settings"
+msgstr "பயனர் அமைப்புகள்"
+
+#: page_import.py:325
+msgid "Predefined"
+msgstr "முன் வரையறுக்கப்பட்டுள்ளது"
+
+#: page_import.py:326
+msgid "Clipboard"
+msgstr "கிளிப்போர்டு"
+
+#: page_import.py:327
+msgid "CSV File"
+msgstr "சி.எஸ்.வி கோப்பு"
+
+#: page_import.py:328
+msgid "Web Page"
+msgstr "வலைப்பக்கம்"
+
+#: page_import.py:375 page_resolve.py:420
+msgid "&Remove book"
+msgstr "& புத்தகத்தை அகற்று"
+
+#: page_import.py:376
+msgid "Remove selected books from the list"
+msgstr "பட்டியலிலிருந்து தேர்ந்தெடுக்கப்பட்ட புத்தகங்களை அகற்றவும்"
+
+#: page_import.py:380
+msgid "&Export to csv"
+msgstr "CSV க்கு ஏற்றுமதி"
+
+#: page_import.py:381
+msgid "Export selected books to csv file"
+msgstr "தேர்ந்தெடுக்கப்பட்ட புத்தகங்களை CSV கோப்பில் ஏற்றுமதி செய்யுங்கள்"
+
+#: page_import.py:393 page_resolve.py:574
+msgid "Are you sure you want to remove the selected books from the list?"
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட புத்தகங்களை பட்டியலிலிருந்து அகற்ற விரும்புகிறீர்களா?"
+
+#: page_import.py:413
+msgid "Choose file for exported csv"
+msgstr "ஏற்றுமதி செய்யப்பட்ட CSV க்கான கோப்பைத் தேர்வுசெய்க"
+
+#: page_persist.py:80
+msgid "Current step progress:"
+msgstr "தற்போதைய படி முன்னேற்றம்:"
+
+#: page_persist.py:86
+msgid "Step"
+msgstr "படி"
+
+#: page_persist.py:101
+msgid "Importing"
+msgstr "இறக்குமதி"
+
+#: page_persist.py:111
+msgid "Aborting"
+msgstr "கருக்கலைப்பு"
+
+#: page_persist.py:171
+msgid "Step 3: Save your imported list / configuration"
+msgstr "படி 3: உங்கள் இறக்குமதி செய்யப்பட்ட பட்டியல் / உள்ளமைவைச் சேமிக்கவும்"
+
+#: page_persist.py:175
+msgid "Reading List plugin:"
+msgstr "பட்டியல் சொருகி படித்தல்:"
+
+#: page_persist.py:180
+msgid ""
+"If you have the <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Reading "
+"list</a> plugin installed, you can store the imported books into a list for "
+"use by that plugin."
+msgstr ""
+"உங்களிடம் <a "
+"href=\"http://www.mobileeread.com/forums/showthread.php?t=134856\"> வாசிப்பு"
+" பட்டியல் </a> சொருகி நிறுவப்பட்டிருந்தால், இறக்குமதி செய்யப்பட்ட "
+"புத்தகங்களை பயன்பாட்டிற்கான பட்டியலில் சேமிக்கலாம் அந்த சொருகி மூலம்."
+
+#: page_persist.py:184
+msgid "&Do not use the Reading List plugin"
+msgstr "வாசிப்பு பட்டியல் சொருகி பயன்படுத்த வேண்டாம்"
+
+#: page_persist.py:186
+msgid "Create a &new list:"
+msgstr "புதிய பட்டியலை உருவாக்கவும்:"
+
+#: page_persist.py:188
+msgid "&Update an existing list:"
+msgstr "& ஏற்கனவே உள்ள பட்டியலைப் புதுப்பிக்கவும்:"
+
+#: page_persist.py:190
+msgid "&Clear list first replacing with the imported books"
+msgstr ""
+"& தெளிவான பட்டியல் முதலில் இறக்குமதி செய்யப்பட்ட புத்தகங்களுடன் மாற்றுகிறது"
+
+#: page_persist.py:210
+msgid "Save configuration:"
+msgstr "உள்ளமைவைச் சேமிக்கவும்:"
+
+#: page_persist.py:215
+msgid ""
+"You can choose to store the current import settings, if you intend to import"
+" from this source again in future."
+msgstr ""
+"எதிர்காலத்தில் இந்த மூலத்திலிருந்து மீண்டும் இறக்குமதி செய்ய விரும்பினால், "
+"தற்போதைய இறக்குமதி அமைப்புகளை சேமிக்க நீங்கள் தேர்வு செய்யலாம்."
+
+#: page_persist.py:217
+msgid "&Do not save the current settings"
+msgstr "தற்போதைய அமைப்புகளை சேமிக்க வேண்டாம்"
+
+#: page_persist.py:219
+msgid "&Save settings as:"
+msgstr "& அமைப்புகளைச் சேமிக்கவும்:"
+
+#: page_persist.py:380
+msgid "Custom Column Missing"
+msgstr "தனிப்பயன் நெடுவரிசை இல்லை"
+
+#: page_persist.py:381
+msgid ""
+"You are importing to a custom column '%s' which does not exist in this "
+"library.<p>"
+msgstr ""
+"இந்த நூலகத்தில் இல்லாத '%s' தனிப்பயன் நெடுவரிசைக்கு நீங்கள் இறக்குமதி "
+"செய்கிறீர்கள். <p>"
+
+#: page_persist.py:382
+msgid ""
+"This column will be ignored. Either add a matching custom column or edit "
+"your import statement."
+msgstr ""
+"இந்த நெடுவரிசை புறக்கணிக்கப்படும். பொருந்தக்கூடிய தனிப்பயன் நெடுவரிசையைச் "
+"சேர்க்கவும் அல்லது உங்கள் இறக்குமதி அறிக்கையைத் திருத்தவும்."
+
+#: page_persist.py:389
+msgid "ImportList plugin: no metadata found for column:"
+msgstr "இறக்குமதி பட்டியல் சொருகி: நெடுவரிசைக்கு மெட்டாடேட்டா இல்லை:"
+
+#: page_persist.py:448
+msgid "Adding books (%(idx)d of %(count)d): %(title)s"
+msgstr "புத்தகங்களைச் சேர்ப்பது ( %(idx) d of %(எண்ணிக்கை) d): %(தலைப்பு) கள்"
+
+#: page_persist.py:460
+msgid "Updating books (%(idx)d of %(count)d): %(title)s"
+msgstr ""
+"புத்தகங்களைப் புதுப்பித்தல் ( %(idx) d of %(எண்ணிக்கை) d): %(தலைப்பு) கள்"
+
+#: page_persist.py:482
+msgid "You have not specified a reading list name"
+msgstr "வாசிப்பு பட்டியல் பெயரை நீங்கள் குறிப்பிடவில்லை"
+
+#: page_persist.py:482 page_persist.py:488
+msgid "Invalid List Name"
+msgstr "தவறான பட்டியல் பெயர்"
+
+#: page_persist.py:488
+msgid "Another list exists with this name"
+msgstr "இந்த பெயருடன் மற்றொரு பட்டியல் உள்ளது"
+
+#: page_persist.py:502
+msgid "Invalid Setting Name"
+msgstr "தவறான அமைப்பு பெயர்"
+
+#: page_persist.py:502
+msgid "You have not specified a setting name"
+msgstr "நீங்கள் ஒரு அமைப்பின் பெயரைக் குறிப்பிடவில்லை"
+
+#: page_persist.py:545
+msgid "Failed"
+msgstr "தோல்வி"
+
+#: page_resolve.py:56
+msgid "Update metadata fields"
+msgstr "மெட்டாடேட்டா புலங்களை புதுப்பிக்கவும்"
+
+#: page_resolve.py:70
+msgid "Select all"
+msgstr "அனைத்தையும் தெரிவுசெய்"
+
+#: page_resolve.py:72
+msgid "Clear all"
+msgstr "அனைத்தையும் அழி"
+
+#: page_resolve.py:128 tab_common.py:360
+msgid "No fields selected"
+msgstr "எந்த புலங்களும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: page_resolve.py:202
+msgid "Step 2: Match list of books against your library"
+msgstr "படி 2: உங்கள் நூலகத்திற்கு எதிரான புத்தகங்களின் பட்டியல்"
+
+#: page_resolve.py:216
+msgid "Show All"
+msgstr "அனைத்தையும் காட்டு"
+
+#: page_resolve.py:218
+msgid "Matched"
+msgstr "பொருந்தியது"
+
+#: page_resolve.py:219
+msgid "Unmatched"
+msgstr "குறிப்பிடப்படாத"
+
+#: page_resolve.py:229
+msgid "Filter by match algorithm"
+msgstr "போட்டி வழிமுறை மூலம் வடிகட்டவும்"
+
+#: page_resolve.py:238
+msgid "Books in list:"
+msgstr "பட்டியலில் உள்ள புத்தகங்கள்:"
+
+#: page_resolve.py:240 page_resolve.py:1032 page_resolve.py:1036
+msgid "Matches in library:"
+msgstr "நூலகத்தில் பொருந்துகிறது:"
+
+#: page_resolve.py:258
+msgid "Clear the match associated with the selected books in the list"
+msgstr ""
+"பட்டியலில் தேர்ந்தெடுக்கப்பட்ட புத்தகங்களுடன் தொடர்புடைய போட்டியை அழிக்கவும்"
+
+#: page_resolve.py:262
+msgid "Remove the selected books from the list"
+msgstr "பட்டியலிலிருந்து தேர்ந்தெடுக்கப்பட்ட புத்தகங்களை அகற்றவும்"
+
+#: page_resolve.py:266
+msgid "Create an empty book for the selected books in the list"
+msgstr ""
+"பட்டியலில் தேர்ந்தெடுக்கப்பட்ட புத்தகங்களுக்கு வெற்று புத்தகத்தை "
+"உருவாக்கவும்"
+
+#: page_resolve.py:270
+msgid "Update metadata for the selected books in the list"
+msgstr ""
+"பட்டியலில் தேர்ந்தெடுக்கப்பட்ட புத்தகங்களுக்கான மெட்டாடேட்டாவைப் "
+"புதுப்பிக்கவும்"
+
+#: page_resolve.py:274
+msgid "Revert metadata for the selected books back to existing values"
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட புத்தகங்களுக்கான மெட்டாடேட்டாவை ஏற்கனவே இருக்கும் "
+"மதிப்புகளுக்கு மாற்றவும்"
+
+#: page_resolve.py:283
+msgid "Possible matches for selected book:"
+msgstr "தேர்ந்தெடுக்கப்பட்ட புத்தகத்திற்கான சாத்தியமான போட்டிகள்:"
+
+#: page_resolve.py:291
+msgid "Search:"
+msgstr "தேடல்:"
+
+#: page_resolve.py:293
+msgid "&Go!"
+msgstr "&போ!"
+
+#: page_resolve.py:313
+msgid "Select this book as the match for this list title"
+msgstr ""
+"இந்த பட்டியல் தலைப்புக்கான பொருத்தமாக இந்த புத்தகத்தைத் தேர்ந்தெடுக்கவும்"
+
+#: page_resolve.py:317
+msgid "Append this book as a new item on the list"
+msgstr "இந்த புத்தகத்தை பட்டியலில் ஒரு புதிய உருப்படியாக சேர்க்கவும்"
+
+#: page_resolve.py:417
+msgid "&Clear match"
+msgstr "& தெளிவான போட்டி"
+
+#: page_resolve.py:425
+msgid "Match &empty book"
+msgstr "போட்டி & வெற்று புத்தகம்"
+
+#: page_resolve.py:428
+msgid "&Update metadata"
+msgstr "& மெட்டாடேட்டாவைப் புதுப்பிக்கவும்"
+
+#: page_resolve.py:431
+msgid "&Revert metadata"
+msgstr "& மெட்டாடேட்டாவை மாற்றியமைக்கவும்"
+
+#: page_resolve.py:434
+msgid "S&wap Author Names"
+msgstr "எஸ் & வாப் ஆசிரியர் பெயர்கள்"
+
+#: page_resolve.py:435
+msgid "Swap selected author names between FN LN and LN,FN"
+msgstr ""
+"Fn ln மற்றும் ln, fn க்கு இடையில் தேர்ந்தெடுக்கப்பட்ட எழுத்தாளர் பெயர்களை "
+"இடமாற்றம் செய்யுங்கள்"
+
+#: page_resolve.py:439
+msgid "&Search for title/author"
+msgstr "& தலைப்பு/ஆசிரியரைத் தேடுங்கள்"
+
+#: page_resolve.py:440
+msgid "&Search your library using a simplified title/author of this book"
+msgstr ""
+"இந்த புத்தகத்தின் எளிமைப்படுத்தப்பட்ட தலைப்பு/ஆசிரியரைப் பயன்படுத்தி உங்கள் "
+"நூலகத்தைத் தேடுங்கள்"
+
+#: page_resolve.py:442
+msgid "Search for &title"
+msgstr "தேடு & தலைப்பு"
+
+#: page_resolve.py:443
+msgid "&Search your library using a simplified title of this book"
+msgstr ""
+"இந்த புத்தகத்தின் எளிமைப்படுத்தப்பட்ட தலைப்பைப் பயன்படுத்தி உங்கள் "
+"நூலகத்தைத் தேடுங்கள்"
+
+#: page_resolve.py:445
+msgid "Search for &author"
+msgstr "& ஆசிரியரைத் தேடுங்கள்"
+
+#: page_resolve.py:446
+msgid "&Search your library using a simplified author of this book"
+msgstr ""
+"இந்த புத்தகத்தின் எளிமைப்படுத்தப்பட்ட ஆசிரியரைப் பயன்படுத்தி உங்கள் "
+"நூலகத்தைத் தேடுங்கள்"
+
+#: page_resolve.py:466
+msgid "&Select Book"
+msgstr "& புத்தகத்தைத் தேர்ந்தெடுக்கவும்"
+
+#: page_resolve.py:471
+msgid "&Append to list"
+msgstr "பட்டியலிட சேர்க்கவும்"
+
+#: page_resolve.py:562
+msgid "*** No Match ***"
+msgstr "*** பொருத்தம் இல்லை ***"
+
+#: page_resolve.py:726
+msgid "Are you sure you want to add the selected book to the list?"
+msgstr "தேர்ந்தெடுக்கப்பட்ட புத்தகத்தை பட்டியலில் சேர்க்க விரும்புகிறீர்களா?"
+
+#: page_resolve.py:757
+msgid "No Match"
+msgstr "பொருத்தம் இல்லை"
+
+#: page_resolve.py:841
+msgid "*** Multiple Matches ***"
+msgstr "*** பல போட்டிகள் ***"
+
+#: page_resolve.py:866
+msgid "Multiple Matches"
+msgstr "பல போட்டிகள்"
+
+#: page_resolve.py:925
+msgid "Displaying all similar matches for this book"
+msgstr "இந்த புத்தகத்திற்கான அனைத்து ஒத்த போட்டிகளையும் காண்பிக்கும்"
+
+#: page_resolve.py:943
+msgid "Search for a book in your library"
+msgstr "உங்கள் நூலகத்தில் ஒரு புத்தகத்தைத் தேடுங்கள்"
+
+#: page_resolve.py:1034
+msgid "Matches in library:(1 match)"
+msgstr "நூலகத்தில் போட்டிகள்: (1 போட்டி)"
+
+#: tab_clipboard.py:50
+msgid "&Paste your book list here:"
+msgstr "உங்கள் புத்தக பட்டியலை இங்கே ஒட்டவும்:"
+
+#: tab_clipboard.py:56
+msgid "&Paste"
+msgstr "& பேஸ்ட்"
+
+#: tab_clipboard.py:57
+msgid "Replace all text above with the contents of your clipboard"
+msgstr ""
+"மேலே உள்ள அனைத்து உரைகளையும் உங்கள் கிளிப்போர்டின் உள்ளடக்கங்களுடன் "
+"மாற்றவும்"
+
+#: tab_clipboard.py:68
+msgid "Conversion expression:"
+msgstr "மாற்று வெளிப்பாடு:"
+
+#: tab_clipboard.py:73
+msgid ""
+"Set a <a href=\"http://manual.calibre-ebook.com/regexp.html\">regular "
+"expression</a> to use for titles and other metadata. The group names you can"
+" use include"
+msgstr ""
+"தலைப்புகள் மற்றும் பிற மெட்டாடேட்டாவுக்குப் பயன்படுத்த ஒரு <a "
+"href=\"http://manual.calibre-ebook.com/regexp.html\"> வழக்கமான வெளிப்பாடு "
+"</a> ஐ அமைக்கவும். நீங்கள் பயன்படுத்தக்கூடிய குழு பெயர்கள் அடங்கும்"
+
+#: tab_clipboard.py:87
+msgid "Choose a predefined named pattern"
+msgstr "முன் வரையறுக்கப்பட்ட பெயரிடப்பட்ட வடிவத்தைத் தேர்வுசெய்க"
+
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:304
+msgid "&Clear"
+msgstr "& தெளிவான"
+
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:305
+msgid "Clear all settings back to the defaults on this tab"
+msgstr ""
+"இந்த தாவலில் உள்ள இயல்புநிலைகளுக்கு எல்லா அமைப்புகளையும் மீண்டும் அழிக்கவும்"
+
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:307
+msgid "&Fields"
+msgstr "& புலங்கள்"
+
+#: tab_clipboard.py:100
+msgid "Add expression for field to import"
+msgstr "இறக்குமதி செய்ய புலத்திற்கு வெளிப்பாட்டைச் சேர்க்கவும்"
+
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:310
+msgid "Reverse order"
+msgstr "பின்னோக்கு வரிசை"
+
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:311
+msgid "Display the books in the opposite order to the source"
+msgstr "புத்தகங்களை எதிர் வரிசையில் மூலத்திற்கு காண்பி"
+
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:312
+msgid "&Preview"
+msgstr "&முன்னோட்ட"
+
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:313
+msgid "Preview the results in the books grid"
+msgstr "புத்தகங்கள் கட்டத்தில் முடிவுகளை முன்னோட்டமிடுங்கள்"
+
+#: tab_clipboard.py:173
+msgid "Failed to parse page:\n"
+msgstr "பக்கத்தை அலசத் தவறிவிட்டது:"
+
+#: tab_clipboard.py:174
+msgid "Invalid regular expression"
+msgstr "தவறான வழக்கமான வெளிப்பாடு"
+
+#: tab_common.py:140
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: tab_common.py:141
+msgid "Authors"
+msgstr "ஆசிரியர்கள்"
+
+#: tab_common.py:142
+msgid "Series"
+msgstr "தொடர்"
+
+#: tab_common.py:143
+msgid "Series Index"
+msgstr "தொடர் அட்டவணை"
+
+#: tab_common.py:144
+msgid "Published"
+msgstr "வெளியிடப்பட்டது"
+
+#: tab_common.py:145
+msgid "Publisher"
+msgstr "பதிப்பகத்தார்"
+
+#: tab_common.py:146
+msgid "Rating"
+msgstr "மதிப்பீடு"
+
+#: tab_common.py:147
+msgid "Tags"
+msgstr "குறிச்சொற்கள்"
+
+#: tab_common.py:148
+msgid "Comments"
+msgstr "கருத்துகள்"
+
+#: tab_common.py:149
+msgid "Languages"
+msgstr "மொழிகள்"
+
+#: tab_common.py:317
+msgid "Select field(s) to add:"
+msgstr "சேர்க்க புலம் (களை) தேர்ந்தெடுக்கவும்:"
+
+#: tab_common.py:369
+msgid "Select fields to import:"
+msgstr "இறக்குமதி செய்ய புலங்களைத் தேர்ந்தெடுக்கவும்:"
+
+#: tab_common.py:436
+msgid "&Match Method:"
+msgstr "& போட்டி முறை:"
+
+#: tab_common.py:439
+msgid "&Title/Author"
+msgstr "& தலைப்பு/ஆசிரியர்"
+
+#: tab_common.py:443
+msgid "&Identifier:"
+msgstr "& அடையாளங்காட்டி:"
+
+#: tab_csv.py:102
+msgid "&Import from file:"
+msgstr "& கோப்பிலிருந்து இறக்குமதி:"
+
+#: tab_csv.py:114
+msgid "Choose the file to import"
+msgstr "இறக்குமதி செய்ய கோப்பைத் தேர்வுசெய்க"
+
+#: tab_csv.py:121
+msgid "&Contents:"
+msgstr "& பொருளடக்கம்:"
+
+#: tab_csv.py:126 tab_webpage.py:210
+msgid "&Encoding:"
+msgstr "& குறியாக்கம்:"
+
+#: tab_csv.py:142
+msgid "&Delimiter:"
+msgstr "& டிலிமிட்டர்:"
+
+#: tab_csv.py:146
+msgid "&Tab"
+msgstr "& தாவல்"
+
+#: tab_csv.py:147
+msgid "&Other:"
+msgstr "& பிற:"
+
+#: tab_csv.py:156
+msgid "Processing:"
+msgstr "செயலாக்கம்:"
+
+#: tab_csv.py:160
+msgid "S&kip first row"
+msgstr "எஸ் & கிப் முதல் வரிசை"
+
+#: tab_csv.py:161
+msgid "Select this option to ignore the first row of column headings"
+msgstr ""
+"நெடுவரிசை தலைப்புகளின் முதல் வரிசையை புறக்கணிக்க இந்த விருப்பத்தைத் "
+"தேர்ந்தெடுக்கவும்"
+
+#: tab_csv.py:162
+msgid "&Unquote"
+msgstr "& Unquote"
+
+#: tab_csv.py:163
+msgid "Remove any quotes around columns of data"
+msgstr "தரவின் நெடுவரிசைகளைச் சுற்றியுள்ள எந்த மேற்கோள்களையும் அகற்றவும்"
+
+#: tab_csv.py:165
+msgid "Tidy"
+msgstr "நேர்த்தியான"
+
+#: tab_csv.py:166
+msgid ""
+"Clean title and authors before importing. This is intended for web imports but is optional for csv\n"
+"It includes removing leading and trailing periods and commas, removing some special characters\n"
+"and removing numbers indicating a position at the begining of the string."
+msgstr ""
+"இறக்குமதி செய்வதற்கு முன் தலைப்பு மற்றும் ஆசிரியர்கள். இது வலை இறக்குமதிக்காக வடிவமைக்கப்பட்டுள்ளது, ஆனால் இது CSV க்கு விருப்பமானது \n"
+" இதில் முன்னணி மற்றும் பின்தங்கிய காலங்கள் மற்றும் காற்புள்ளிகளை அகற்றுதல், சில சிறப்பு எழுத்துக்களை நீக்குதல் ஆகியவை அடங்கும் \n"
+" மற்றும் சரத்தின் தொடக்கத்தில் ஒரு நிலையைக் குறிக்கும் எண்களை நீக்குதல்."
+
+#: tab_csv.py:184
+msgid " &Columns To Import: "
+msgstr "இறக்குமதி செய்ய வேண்டிய நெடுவரிசைகள்:"
+
+#: tab_csv.py:210 tab_webpage.py:308
+msgid "Select field(s) to import"
+msgstr "இறக்குமதி செய்ய புலம் (களை) தேர்ந்தெடுக்கவும்"
+
+#: tab_csv.py:213
+msgid "&From headers"
+msgstr "& தலைப்புகளிலிருந்து"
+
+#: tab_csv.py:214
+msgid "Guess field(s) from csv headers"
+msgstr "சி.எஸ்.வி தலைப்புகளிலிருந்து புலம் (கள்) யூகிக்கவும்"
+
+#: tab_csv.py:318
+msgid "Select a CSV file to import"
+msgstr "இறக்குமதி செய்ய CSV கோப்பைத் தேர்ந்தெடுக்கவும்"
+
+#: tab_csv.py:318
+msgid "import CSV file dialog"
+msgstr "CSV கோப்பு உரையாடலை இறக்குமதி செய்யுங்கள்"
+
+#: tab_csv.py:344
+msgid "File not specified"
+msgstr "கோப்பு குறிப்பிடப்படவில்லை"
+
+#: tab_csv.py:344
+msgid "You have not specified a path to a CSV file"
+msgstr "CSV கோப்பிற்கான பாதையை நீங்கள் குறிப்பிடவில்லை"
+
+#: tab_csv.py:349
+msgid "File not found"
+msgstr "கோப்பு கிடைக்கவில்லை"
+
+#: tab_csv.py:349
+msgid "No file found at this location"
+msgstr "இந்த இடத்தில் எந்த கோப்பும் காணப்படவில்லை"
+
+#: tab_csv.py:366
+msgid "Invalid options"
+msgstr "தவறான விருப்பங்கள்"
+
+#: tab_csv.py:366
+msgid "You have not specified a delimiter"
+msgstr "நீங்கள் ஒரு டிலிமிட்டரைக் குறிப்பிடவில்லை"
+
+#: tab_settings.py:47
+msgid "Browser"
+msgstr "உலாவி"
+
+#: tab_settings.py:48
+msgid "View related website page in your web browser"
+msgstr "தொடர்புடைய வலைத்தள பக்கத்தை உங்கள் வலை உலாவியில் காண்க"
+
+#: tab_settings.py:50
+msgid "Edit"
+msgstr "தொகு"
+
+#: tab_settings.py:51
+msgid "Edit this saved setting"
+msgstr "இந்த சேமித்த அமைப்பைத் திருத்தவும்"
+
+#: tab_settings.py:105
+msgid "Delete"
+msgstr "அழி"
+
+#: tab_settings.py:107
+msgid "Rename"
+msgstr "மறுபெயரிடுங்கள்"
+
+#: tab_settings.py:109
+msgid "Export"
+msgstr "ஏற்றுமதி"
+
+#: tab_settings.py:111
+msgid "Import."
+msgstr "இறக்குமதி."
+
+#: tab_settings.py:126
+msgid "Are you sure you want to remove the setting \"%s\"?"
+msgstr "அமைப்புகளை அகற்ற விரும்புகிறீர்களா?"
+
+#: tab_settings.py:127
+msgid "import_list_delete_setting"
+msgstr "இறக்குமதி_லிஸ்ட்_டெலெட்_செட்டிங்"
+
+#: tab_settings.py:140 tab_settings.py:141
+msgid "New setting name:"
+msgstr "புதிய அமைப்பு பெயர்:"
+
+#: tab_settings.py:148
+msgid "Setting exists"
+msgstr "அமைப்பு உள்ளது"
+
+#: tab_settings.py:149
+msgid "A saved setting already exists with this name."
+msgstr "சேமித்த அமைப்பு ஏற்கனவே இந்த பெயருடன் உள்ளது."
+
+#: tab_settings.py:168
+msgid "Import Failed"
+msgstr "இறக்குமதி தோல்வியடைந்தது"
+
+#: tab_settings.py:169
+msgid "This is not a valid Import List export archive"
+msgstr "இது சரியான இறக்குமதி பட்டியல் ஏற்றுமதி காப்பகம் அல்ல"
+
+#: tab_settings.py:176
+msgid "Import setting"
+msgstr "இறக்குமதி அமைப்பு"
+
+#: tab_settings.py:217
+msgid "Export completed"
+msgstr "ஏற்றுமதி முடிந்தது"
+
+#: tab_settings.py:218
+msgid "Cover setting exported to"
+msgstr "ஏற்றுமதி செய்யப்பட்ட கவர் அமைப்பு"
+
+#: tab_settings.py:226
+msgid "Enter a unique name for this saved setting:"
+msgstr "இந்த சேமித்த அமைப்பிற்கு தனித்துவமான பெயரை உள்ளிடவும்:"
+
+#: tab_settings.py:235
+msgid "Cannot add"
+msgstr "சேர்க்க முடியாது"
+
+#: tab_settings.py:236
+msgid "The name you specified is not unique"
+msgstr "நீங்கள் குறிப்பிட்ட பெயர் தனித்துவமானது அல்ல"
+
+#: tab_settings.py:242
+msgid "Select setting file(s) to import"
+msgstr "இறக்குமதி செய்ய கோப்பு (களை) அமைத்தல் என்பதைத் தேர்ந்தெடுக்கவும்"
+
+#: tab_settings.py:249
+msgid "Save setting as"
+msgstr "அமைப்பை சேமிக்கவும்"
+
+#: tab_settings.py:334
+msgid "View as List"
+msgstr "பட்டியலாக காண்க"
+
+#: tab_settings.py:336
+msgid "View by Category"
+msgstr "வகை மூலம் காண்க"
+
+#: tab_webpage.py:83
+msgid "Strip matching text"
+msgstr "பொருந்தும் உரை"
+
+#: tab_webpage.py:84
+msgid "Include matching text"
+msgstr "பொருந்தக்கூடிய உரையை சேர்க்கவும்"
+
+#: tab_webpage.py:99
+msgid "Choose a predefined pattern"
+msgstr "முன் வரையறுக்கப்பட்ட வடிவத்தைத் தேர்வுசெய்க"
+
+#: tab_webpage.py:104
+msgid "Clear the regular expression"
+msgstr "வழக்கமான வெளிப்பாட்டை அழிக்கவும்"
+
+#: tab_webpage.py:184
+msgid "&Download from url:"
+msgstr "URL இலிருந்து பதிவிறக்கு:"
+
+#: tab_webpage.py:197
+msgid "Paste a URL from your clipboard"
+msgstr "உங்கள் கிளிப்போர்டிலிருந்து ஒரு URL ஐ ஒட்டவும்"
+
+#: tab_webpage.py:202
+msgid "Open this url in your web browser"
+msgstr "இந்த URL ஐ உங்கள் வலை உலாவியில் திறக்கவும்"
+
+#: tab_webpage.py:209
+msgid "&Source html:"
+msgstr "& மூல HTML:"
+
+#: tab_webpage.py:211
+msgid "Specify the web page encoding if not utf-8"
+msgstr "UTF-8 இல்லையென்றால் வலைப்பக்க குறியாக்கத்தைக் குறிப்பிடவும்"
+
+#: tab_webpage.py:214
+msgid "Load javascript"
+msgstr "ஜாவாஸ்கிரிப்டை ஏற்றவும்"
+
+#: tab_webpage.py:215
+msgid ""
+"Enable this option if the web page renders its content using javascript"
+msgstr ""
+"வலைப்பக்கம் ஜாவாஸ்கிரிப்டைப் பயன்படுத்தி அதன் உள்ளடக்கத்தை வழங்கினால் இந்த "
+"விருப்பத்தை இயக்கவும்"
+
+#: tab_webpage.py:216
+msgid "&Delay:"
+msgstr "& தாமதம்:"
+
+#: tab_webpage.py:217
+msgid "Additional delay in seconds to wait for web page javascript to execute"
+msgstr ""
+"வலைப்பக்க ஜாவாஸ்கிரிப்ட் செயல்படுத்த காத்திருக்க வினாடிகளில் கூடுதல் தாமதம்"
+
+#: tab_webpage.py:236
+msgid "Find:"
+msgstr "கண்டுபிடி:"
+
+#: tab_webpage.py:241
+msgid "&Text:"
+msgstr "& உரை:"
+
+#: tab_webpage.py:242
+msgid ""
+"Search for text to help locate the region of interest such as\n"
+"a book name when designing your xpath expressions"
+msgstr ""
+"போன்ற ஆர்வமுள்ள பகுதியைக் கண்டறிய உரையைத் தேடுங்கள் \n"
+" உங்கள் எக்ஸ்பாத் வெளிப்பாடுகளை வடிவமைக்கும்போது புத்தகப் பெயர்"
+
+#: tab_webpage.py:245
+msgid "Search for specific text"
+msgstr "குறிப்பிட்ட உரையைத் தேடுங்கள்"
+
+#: tab_webpage.py:247
+msgid "&Find"
+msgstr "& கண்டுபிடி"
+
+#: tab_webpage.py:258
+msgid "XPath:"
+msgstr "எக்ஸ்பாத்:"
+
+#: tab_webpage.py:263
+msgid ""
+"Specify XPath expressions to identify the parent rows and title / authors "
+"within each row in the source html."
+msgstr ""
+"HTML மூலத்தில் ஒவ்வொரு வரிசையிலும் பெற்றோர் வரிசைகள் மற்றும் தலைப்பு / "
+"ஆசிரியர்களை அடையாளம் காண எக்ஸ்பாத் வெளிப்பாடுகளைக் குறிப்பிடவும்."
+
+#: tab_webpage.py:284
+msgid "0 occurrences"
+msgstr "0 நிகழ்வுகள்"
+
+#: tab_webpage.py:285
+msgid "Number of matches using Test"
+msgstr "சோதனையைப் பயன்படுத்தி போட்டிகளின் எண்ணிக்கை"
+
+#: tab_webpage.py:287
+msgid "Previous test result"
+msgstr "முந்தைய சோதனை முடிவு"
+
+#: tab_webpage.py:292
+msgid "Next test result"
+msgstr "அடுத்த சோதனை முடிவு"
+
+#: tab_webpage.py:356
+msgid "No matches"
+msgstr "போட்டிகள் இல்லை"
+
+#: tab_webpage.py:356
+msgid "No matches for:"
+msgstr "இதற்கான போட்டிகள் இல்லை:"
+
+#: tab_webpage.py:408
+msgid ""
+"Identify the parent node in the html source that contains a single book"
+msgstr ""
+"ஒற்றை புத்தகத்தைக் கொண்ட HTML மூலத்தில் பெற்றோர் முனையை அடையாளம் காணவும்"
+
+#: tab_webpage.py:451
+msgid "Strip: %s"
+msgstr "துண்டு: %கள்"
+
+#: tab_webpage.py:453
+msgid "Include: %s"
+msgstr "அடங்கும்: %கள்"
+
+#: tab_webpage.py:456
+msgid "No expression"
+msgstr "வெளிப்பாடு இல்லை"
+
+#: tab_webpage.py:572 tab_webpage.py:573
+msgid "Failed to download page"
+msgstr "பக்கத்தைப் பதிவிறக்கத் தவறிவிட்டது"
+
+#: tab_webpage.py:616
+msgid "You must specify an xpath"
+msgstr "நீங்கள் ஒரு எக்ஸ்பாதைக் குறிப்பிட வேண்டும்"
+
+#: tab_webpage.py:616 tab_webpage.py:623
+msgid "Test failed"
+msgstr "சோதனை தோல்வியடைந்தது"
+
+#: tab_webpage.py:623
+msgid "No html source available to match against"
+msgstr "பொருந்தக்கூடிய HTML ஆதாரம் எதுவும் கிடைக்கவில்லை"
+
+#: tab_webpage.py:639 tab_webpage.py:785 tab_webpage.py:787 tab_webpage.py:789
+#: tab_webpage.py:791
+msgid "Invalid xpath"
+msgstr "தவறான எக்ஸ்பாத்"
+
+#: tab_webpage.py:640
+msgid "Your xpath expression is invalid"
+msgstr "உங்கள் எக்ஸ்பாத் வெளிப்பாடு தவறானது"
+
+#: tab_webpage.py:648
+msgid "occurrences"
+msgstr "நிகழ்வுகள்"
+
+#: tab_webpage.py:785
+msgid "You have not specified any xpath expressions"
+msgstr "நீங்கள் எந்த எக்ஸ்பாத் வெளிப்பாடுகளையும் குறிப்பிடவில்லை"
+
+#: tab_webpage.py:787
+msgid "You have not specified a title xpath expression"
+msgstr "தலைப்பு எக்ஸ்பாத் வெளிப்பாட்டை நீங்கள் குறிப்பிடவில்லை"
+
+#: tab_webpage.py:789
+msgid "You must add a series_index xpath field if using series"
+msgstr ""
+"தொடரைப் பயன்படுத்தினால் நீங்கள் ஒரு தொடர்_இண்டெக்ஸ் எக்ஸ்பாத் புலத்தைச் "
+"சேர்க்க வேண்டும்"
+
+#: tab_webpage.py:791
+msgid "You must add a series xpath field if using series index"
+msgstr ""
+"தொடர் குறியீட்டைப் பயன்படுத்தினால் நீங்கள் ஒரு தொடர் எக்ஸ்பாத் புலத்தைச் "
+"சேர்க்க வேண்டும்"
+
+#: tab_webpage.py:914 tab_webpage.py:915
+msgid "Failed to process page"
+msgstr "பக்கத்தை செயலாக்குவதில் தோல்வி"
+
+#: wizards.py:44
+msgid "Import Book List"
+msgstr "இறக்குமதி புத்தக பட்டியல்"
+
+#: wizards.py:51
+msgid "&Options"
+msgstr "&விருப்பங்கள்"
