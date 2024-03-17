@@ -3,290 +3,278 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# Darío Hereñú, 2022
-# Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# ciepina <ciepina@balticom.lv>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-10 19:34+0100\n"
 "PO-Revision-Date: 2022-09-11 10:14+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: ciepina <ciepina@balticom.lv>, 2023\n"
+"Language-Team: Latvian (https://app.transifex.com/calibre/teams/19337/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:600
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "Īsinājumtaustiņi"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "Restartējiet Calibre"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "Iestatījumi:"
 
 #: ..\common\common_dialogs.py:160 config.py:712
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Notīrīt"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "Notīrīt visus šī spraudņa iestatījumus"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+"Vai tiešām vēlaties mainīt iestatījumus šajā bibliotēkā šim spraudnim?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"Netiek aizskarti nekādi iestatījumi citās bibliotēkās vai JSON failā jūsu "
+"calibre spraudņu mapē."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "Pēc tam jums ir jārestartē calibre."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "Iestatījumi mainīti"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr "Šī spraudņa iestatījumi šajā bibliotēkā ir mainīti."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "Lūdzu, restartējiet calibre."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+msgstr "Vai tiešām vēlaties notīrīt iestatījumus šim spraudnim bibliotēkā?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "Iestatījumi izdzēsti"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr "Visi šī spraudņa iestatījumi bibliotēkā ir notīrīti."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Kopēt starpliktuvē"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "Nenoteikts"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "Nepieciešams restarts"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"Vāka attēls nav atrasts - pirms šī spraudņa izmantošanas ir jārestartē "
+"Calibre!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "Izveidot jaunu kolonnu"
 
 #: action.py:32
 msgid "Quick Preferences"
-msgstr "Quick Preferences"
+msgstr "Ātrās iespējas"
 
 #: action.py:37
 msgid "Ignore duplicate incoming formats"
-msgstr "Ignorar formatos entrantes duplicados"
+msgstr "Ignorēt ienākošos dublikātu formātus"
 
 #: action.py:38
 msgid "Overwrite existing duplicate formats"
-msgstr "Remplazar formatos duplicados existentes"
+msgstr "Pārrakstīt esošos dublikātu formātus"
 
 #: action.py:39
 msgid "Create new record for each duplicate format"
-msgstr "Crear un nuevo registro para cada formato duplicado"
+msgstr "Izveidot jaunu ierakstu katram formāta dublikātam"
 
 #: action.py:93 config.py:588
 msgid "Swap author names"
-msgstr "Intercambiar nombres de autor"
+msgstr "Mainīt autoru vārdus"
 
 #: action.py:97
 msgid "Read metadata from file contents"
-msgstr "Leer metadatos del contenido del archivo"
+msgstr "Lasīt datus no faila satura"
 
 #: action.py:101
 msgid "Automerge added books if exist"
-msgstr "Unir automáticamente los libros añadidos si existen"
+msgstr "Automātiski pievienot grāmatas, ja tādas ir"
 
 #: action.py:105
 msgid "Automerge type"
-msgstr "Tipo de unión automática"
+msgstr "Apvienošanas veids"
 
 #: action.py:117
 msgid "Preferences"
-msgstr "Preferencias"
+msgstr "Izvēle"
 
 #: action.py:120
 msgid "&Customize plugin"
-msgstr "&Personalizar complemento"
+msgstr "&Pielāgot spraudni"
 
 #: action.py:122 config.py:605
 msgid "&Help"
-msgstr "&Ayuda"
+msgstr "&Palīdzība"
 
 #: action.py:156
 msgid "Cannot switch regular expression"
-msgstr "No se puede cambiar la expresión regular"
+msgstr "Nevar pārslēgt regulāro izteiksmi"
 
 #: action.py:157
 msgid "No regular expression specified in this menu item."
-msgstr ""
-"No se ha especificado ninguna expresión regular en este elemento de menú."
+msgstr "Izvēlnē nav norādīta regulāra izteiksme."
 
 #: action.py:166
 msgid "Cannot change enabled metadata sources"
-msgstr "No se pueden cambiar los orígenes de metadatos habilitados"
+msgstr "Nevar mainīt iespējotos datu avotus"
 
 #: action.py:167
 msgid "List of metadata sources is empty"
-msgstr "La lista de orígenes de metadatos está vacía"
+msgstr "Metadatu saraksts ir tukšs"
 
 #: config.py:143
 msgid "Regex File Pattern"
-msgstr "Expresión regular de patrón de archivo"
+msgstr "Regex faila modelis"
 
 #: config.py:143
 msgid "Swap Names"
-msgstr "Intercambiar nombres"
+msgstr "Mainīt vārdus"
 
 #: config.py:143 config.py:306
 msgid "Menu Title"
-msgstr "Título del menú"
+msgstr "Izvēlnes nosaukums"
 
 #: config.py:217 config.py:383
 msgid "Are you sure you want to delete this menu item?"
-msgstr "¿Está seguro de querer eliminar este elemento del menú?"
+msgstr "Vēlaties dzēst šo izvēlnes vienumu?"
 
 #: config.py:219 config.py:385
 msgid "Are you sure you want to delete the selected {0} menu items?"
 msgstr ""
-"¿Está seguro de querer eliminar los {0} elementos de menú seleccionados?"
 
 #: config.py:220 config.py:386 config.py:655 config.py:663
 msgid "Are you sure?"
-msgstr "¿Está seguro?"
+msgstr "Vai esat pārliecināts?"
 
 #: config.py:306
 msgid "Enabled Sources"
-msgstr "Orígenes habilitados"
+msgstr "Iespējotie avoti"
 
 #: config.py:463
 msgid "Configure the file pattern menu items to display:"
-msgstr "Configurar los elementos del menú de patrón de archivo a mostrar:"
+msgstr "Konfigurēt failu izvēlnes elementus, lai rādītu:"
 
 #: config.py:484 config.py:541
 msgid "Move row up"
-msgstr "Mover fila hacia arriba"
+msgstr "Pārvietot rindu augstāk"
 
 #: config.py:491 config.py:548
 msgid "Add menu item row"
-msgstr "Añadir fila de elementos de menú"
+msgstr "Pievienot izvēlnes vienumu rindu"
 
 #: config.py:498 config.py:555
 msgid "Delete menu item row"
-msgstr "Eliminar fila de elementos de menú"
+msgstr "Dzēst izvēlnes vienuma rindu"
 
 #: config.py:505 config.py:562
 msgid "Reset to defaults"
-msgstr "Restablecer los valores predeterminados"
+msgstr "Atiestatīt pēc noklusējuma"
 
 #: config.py:512 config.py:569
 msgid "Move row down"
-msgstr "Mover fila hacia abajo"
+msgstr "Pārvietot rindu zemāk"
 
 #: config.py:524
 msgid "Configure the Enabled metadata sources menu items to display"
-msgstr ""
-"Configurar los elementos del menú de orígenes de metadatos habilitados a "
-"mostrar"
+msgstr "Konfigurēt iespējoto datu izvēlnes vienumus"
 
 #: config.py:583
 msgid "Include in menu:"
-msgstr "Incluir en el menú:"
+msgstr "Iekļaut izvēlnē:"
 
 #: config.py:589
 msgid "Read metadata from file"
-msgstr "Leer metadatos del archivo"
+msgstr "Datu lasīšana no faila"
 
 #: config.py:590
 msgid "Automerge added books"
-msgstr "Unir automáticamente los libros añadidos"
+msgstr "Automātiski sapludināt pievienotās grāmatas"
 
 #: config.py:601
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Modificar los atajos de teclado asociados con este complemento"
+msgstr "Rediģēt spraudņa īsinājumtaustiņu"
 
 #: config.py:656
 msgid ""
 "Are you sure you want to reset to the plugin default menu?<br>Any "
 "modifications to file pattern menu items will be discarded."
 msgstr ""
-"¿Está seguro de querer restablecer el menú predeterminado del "
-"complemento?<br>Se descartarán todas las modificaciones en los elementos del"
-" menú de patrón de archivo."
+"Vēlaties atiestatīt spraudņa noklusējuma izvēlni? <br>Visas failu izvēlnes "
+"elementu izmaiņas tiks noņemtas."
 
 #: config.py:664
 msgid ""
 "Are you sure you want to reset to the plugin default menu?<br>Any "
 "modifications to metadata source menu items will be discarded."
 msgstr ""
-"¿Está seguro de querer restablecer el menú predeterminado del "
-"complemento?<br>Se descartarán todas las modificaciones en los elementos del"
-" menú de origen de metadatos."
+"Vēlaties atiestatīt spraudņa noklusējuma izvēlni?<br>Visas metadatu izvēlnes"
+" elementu izmaiņas tiks noņemtas."
 
 #: config.py:692
 msgid "Metadata Source Plugins"
-msgstr "Complementos de origen de metadatos"
+msgstr "Metadatu spraudņi"
 
 #: config.py:696
 msgid "Select the Metadata sources to be enabled"
-msgstr "Seleccionar las fuentes de metadatos que se habilitarán"
+msgstr "Atlasīt metadatus, kas jāiespējo"
 
 #: config.py:709
 msgid "Get Current"
-msgstr "Obtener actuales"
+msgstr "Iegūt tekošo"
 
 #: config.py:710
 msgid "Get the currently enabled Metadata sources"
-msgstr "Obtener los orígenes de metadatos habilitados actualmente"
+msgstr "Iegūt pašlaik iespējotos metadatus"
 
 #: config.py:713
 msgid "Clear all selected sources"
-msgstr "Borrar todos los orígenes seleccionados"
+msgstr "Notīrīt visus atlasītos"
 
 #: config.py:766
 msgid "Source"
-msgstr "Origen"
+msgstr "Avots"

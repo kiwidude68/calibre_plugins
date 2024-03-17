@@ -20,7 +20,7 @@ class ActionQuickPreferences(InterfaceActionBase):
     description             = 'Allows quickly changing common preferences via a toolbar menu or shortcuts'
     supported_platforms     = ['windows', 'osx', 'linux'] # Platforms this plugin will run on
     author                  = 'Grant Drake'
-    version                 = (1, 7, 0)
+    version                 = (1, 7, 1)
     minimum_calibre_version = (2, 0, 0)
 
     #: This field defines the GUI plugin class that contains all the code

@@ -1,5 +1,11 @@
 # Quick Preferences Change Log
 
+## [1.7.1] - 2024-03-17
+### Added
+- Latvian translation
+- Tamil translation
+- Turkish translation
+
 ## [1.7.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
