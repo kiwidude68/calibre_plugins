@@ -8,13 +8,14 @@
 # Grant Drake, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2022
 # lentrad <lentrad@gmail.com>, 2022
+# Paul Muraille <paul.muraille@tictips.net>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-09-01 18:27+1000\n"
+"POT-Creation-Date: 2023-09-14 18:48+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
-"Last-Translator: lentrad <lentrad@gmail.com>, 2022\n"
+"Last-Translator: Paul Muraille <paul.muraille@tictips.net>, 2023\n"
 "Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,7 +101,7 @@ msgstr "Copier dans le presse-papier"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Non-définie"
+msgstr "Non définie"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
@@ -110,43 +111,55 @@ msgstr "Redémarrage nécessaire"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"L'image d'icone n'a pas était trouvée - vous devez redémarrer Calibre avant "
-"d'utiliser ce plugin !"
+"L'image du titre n'a pas été trouvée - vous devez redémarrer Calibre avant "
+"d'utiliser cette extension !"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Créer une nouvelle colonne"
 
-#: config.py:45
+#: config.py:47
 msgid "Other options"
 msgstr "Autres options"
 
-#: config.py:50
+#: config.py:52
 msgid "Include 'Genres' in the Tags column"
-msgstr ""
+msgstr "Inclure 'Genres' dans la colonne Étiquettes"
 
-#: config.py:51
+#: config.py:53
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"Coché : tout livre dont le genre est défini apparaîtra dans la colonne "
+"Étiquettes de cette extension"
 
-#: config.py:56
+#: config.py:58
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr ""
 
-#: config.py:57
+#: config.py:59
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
 
-#: config.py:62
+#: config.py:64
 msgid "Include 'Themes' in the Tags column"
 msgstr ""
 
-#: config.py:63
+#: config.py:65
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+
+#: config.py:70
+msgid "Include 'Age Level' in the Tags column"
+msgstr ""
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""

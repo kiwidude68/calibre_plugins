@@ -1,5 +1,9 @@
 # FictionDB Change Log
 
+## [1.4.2] - 2024-03-17
+### Added
+- Tamil translation 
+
 ## [1.4.1] - 2023-09-16
 ### Changed
 - Age classification reintroduced as it is present on some books (@2600box) 
