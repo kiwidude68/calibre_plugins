@@ -1,0 +1,650 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-10-09 20:29+0100\n"
+"PO-Revision-Date: 2022-09-19 15:00+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:63
+msgid "Keyboard shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "இதற்கான விருப்பத்தேர்வுகள்:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "இந்த சொருகி அனைத்து அமைப்புகளையும் அழிக்கவும்"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை மாற்ற விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"பிற நூலகங்களில் உள்ள எந்த அமைப்புகளும் அல்லது உங்கள் காலிபர் செருகுநிரல்கள் "
+"கோப்புறையில் ஒரு JSON கோப்பில் சேமிக்கப்படாது."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "நீங்கள் பின்னர் காலிபரை மறுதொடக்கம் செய்ய வேண்டும்."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "அமைப்புகள் மாற்றப்பட்டன"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அமைப்புகள் மாற்றப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "தயவுசெய்து இப்போது காலிபரை மறுதொடக்கம் செய்யுங்கள்."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"இந்த சொருகி இந்த நூலகத்தில் உங்கள் அமைப்புகளை அழிக்க விரும்புகிறீர்களா?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "அமைப்புகள் நீக்கப்பட்டன"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: ..\common\common_widgets.py:93
+msgid "Undefined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: ..\common\common_widgets.py:148
+msgid "Restart required"
+msgstr "மறுதொடக்கம் தேவை"
+
+#: ..\common\common_widgets.py:149
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"தலைப்பு படம் கிடைக்கவில்லை - இந்த சொருகி பயன்படுத்துவதற்கு முன்பு நீங்கள் "
+"காலிபரை மறுதொடக்கம் செய்ய வேண்டும்!"
+
+#: ..\common\common_widgets.py:222
+msgid "Create new column"
+msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
+
+#: action.py:35
+msgid "Modify the contents of an ePub without a conversion"
+msgstr "ஒரு மாற்றமின்றி ஒரு எபப்பின் உள்ளடக்கங்களை மாற்றவும்"
+
+#: action.py:35 dialogs.py:100
+msgid "Modify ePub"
+msgstr "எபப் மாற்றவும்"
+
+#: action.py:47 action.py:58
+msgid "Cannot modify ePub"
+msgstr "EPUB ஐ மாற்ற முடியாது"
+
+#: action.py:48
+msgid "You must select one or more books to perform this action."
+msgstr ""
+"இந்த செயலைச் செய்ய நீங்கள் ஒன்று அல்லது அதற்கு மேற்பட்ட புத்தகங்களைத் "
+"தேர்ந்தெடுக்க வேண்டும்."
+
+#: action.py:59
+msgid "No ePub available. First convert the book to ePub."
+msgstr "எபப் எதுவும் கிடைக்கவில்லை. முதலில் புத்தகத்தை EPUB ஆக மாற்றவும்."
+
+#: action.py:88
+msgid "Failed to modify ePubs"
+msgstr "எபப்களை மாற்றுவதில் தோல்வி"
+
+#: action.py:91
+msgid "Modify ePub completed"
+msgstr "EPUB ஐ மாற்றியமைத்தது"
+
+#: action.py:95
+msgid ""
+"No ePub files were updated. If this isn't what you expected then press the "
+"Show details button to check for errors in the log."
+msgstr ""
+"எபப் கோப்புகள் எதுவும் புதுப்பிக்கப்படவில்லை. இது நீங்கள் எதிர்பார்த்தது "
+"இல்லையென்றால், பதிவில் உள்ள பிழைகளைச் சரிபார்க்க காட்சி விவரங்கள் பொத்தானை "
+"அழுத்தவும்."
+
+#: action.py:97
+msgid "Modify ePub changed no files"
+msgstr "மாற்றியமைக்கவும் எபப் மாற்றங்கள் இல்லை கோப்புகள் இல்லை"
+
+#: action.py:105
+msgid ""
+"Modify ePub modified <b>%d ePub files(s)</b> into a temporary location. "
+"Proceed with replacing the versions in your library?"
+msgstr ""
+"எபப் மாற்றியமைக்கப்பட்ட <b>%டி எபப் கோப்புகள் (கள்) </b> ஐ தற்காலிக "
+"இருப்பிடமாக மாற்றவும். உங்கள் நூலகத்தில் உள்ள பதிப்புகளை மாற்றுவதைத் தொடரவா?"
+
+#: action.py:110
+msgid "Modify ePub complete"
+msgstr "EPUB முழுமையான மாற்றவும்"
+
+#: action.py:110
+msgid "Modify log"
+msgstr "பதிவை மாற்றவும்"
+
+#: config.py:52
+msgid "Other options:"
+msgstr "பிற விருப்பங்கள்:"
+
+#: config.py:57
+msgid "Prompt to save epubs"
+msgstr "எபப்களை சேமிக்க தூண்டுதல்"
+
+#: config.py:58
+msgid ""
+"Uncheck this option if you want changes applied without a confirmation "
+"dialog."
+msgstr ""
+"உறுதிப்படுத்தல் உரையாடல் இல்லாமல் மாற்றங்களை நீங்கள் விரும்பினால் இந்த "
+"விருப்பத்தைத் தேர்வு செய்யவும்."
+
+#: config.py:64
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
+
+#: config.py:68
+msgid "&Help"
+msgstr "&உதவி"
+
+#: dialogs.py:36
+msgid "Remove iTunes files"
+msgstr "ஐடியூன்ஸ் கோப்புகளை அகற்று"
+
+#: dialogs.py:36
+msgid ""
+"Removes any iTunesMetadata.plist or artwork files\n"
+"added by viewing the ePub in iTunes"
+msgstr ""
+"எந்த itunesmetadata.plist அல்லது கலைப்படைப்பு கோப்புகளையும் நீக்குகிறது \n"
+" ஐடியூன்ஸ் இல் எபப் பார்ப்பதன் மூலம் சேர்க்கப்பட்டது"
+
+#: dialogs.py:37
+msgid "Remove any bookmark files added by the calibre ebook viewer"
+msgstr ""
+"காலிபர் மின்புத்தக பார்வையாளரால் சேர்க்கப்பட்ட எந்த புக்மார்க்கு "
+"கோப்புகளையும் அகற்று"
+
+#: dialogs.py:37
+msgid "Remove calibre bookmark files"
+msgstr "காலிபர் புக்மார்க்கு கோப்புகளை அகற்று"
+
+#: dialogs.py:38
+msgid "Remove OS artifact files"
+msgstr "OS கலைப்பொருள் கோப்புகளை அகற்று"
+
+#: dialogs.py:38
+msgid ""
+"Removes any OS artifacts like thumbs.db or .DS_Store\n"
+"that are not needed by the ePub"
+msgstr ""
+"Thumbs.db அல்லது .ds_store போன்ற எந்த OS கலைப்பொருட்களையும் நீக்குகிறது \n"
+" அவை எபப் தேவையில்லை"
+
+#: dialogs.py:39
+msgid ""
+"Remove any unused jpg, png or gif image files that are not referenced\n"
+"from the html pages. This can occur as the result of careless ePub editing."
+msgstr ""
+"குறிப்பிடப்படாத பயன்படுத்தப்படாத JPG, PNG அல்லது GIF படக் கோப்புகளை அகற்றவும் \n"
+" HTML பக்கங்களிலிருந்து. கவனக்குறைவான எபப் எடிட்டிங் விளைவாக இது ஏற்படலாம்."
+
+#: dialogs.py:39
+msgid "Remove unused image files"
+msgstr "பயன்படுத்தப்படாத படக் கோப்புகளை அகற்று"
+
+#: dialogs.py:40
+msgid "De-indent (aka unpretty)"
+msgstr "டி-இன்டென்ட் (அக்கா ஃபர்னெடி)"
+
+#: dialogs.py:40
+msgid "Remove indentation from HTML files"
+msgstr "HTML கோப்புகளிலிருந்து உள்தள்ளலை அகற்று"
+
+#: dialogs.py:41
+msgid "Remove remnants of Kobo DRM"
+msgstr "கோபோ டி.ஆர்.எம் இன் எச்சங்களை அகற்று"
+
+#: dialogs.py:41
+msgid "Strip Kobo DRM remnants"
+msgstr "ஸ்ட்ரிப் கோபோ டிஆர்எம் எச்சங்கள்"
+
+#: dialogs.py:42
+msgid "Remove spans without attributes"
+msgstr "பண்புக்கூறுகள் இல்லாமல் இடைவெளிகளை அகற்று"
+
+#: dialogs.py:42
+msgid "Strip spans"
+msgstr "ஸ்ட்ரிப் ஸ்பான்ஸ்"
+
+#: dialogs.py:46
+msgid ""
+"Remove entries in the manifest for files listed that do not exist in the "
+"ePub"
+msgstr ""
+"EPUB இல் இல்லாத பட்டியலிடப்பட்ட கோப்புகளுக்கான மேனிஃபெஸ்டில் உள்ளீடுகளை "
+"அகற்று"
+
+#: dialogs.py:46
+msgid "Remove missing file entries from manifest"
+msgstr "காணாமல் போன கோப்பு உள்ளீடுகளை மேனிஃபெஸ்டிலிருந்து அகற்று"
+
+#: dialogs.py:47
+msgid ""
+"Add files to manifest that are in the ePub but do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks)"
+msgstr ""
+"EPUB இல் இருக்கும் ஆனால் .opf மேனிஃபெஸ்டில் இல்லை என்பதை வெளிப்படுத்த கோப்புகளைச் சேர்க்கவும் \n"
+" (ஐடியூன்ஸ்/காலிபர் புக்மார்க்குகளைத் தவிர்த்து)"
+
+#: dialogs.py:47
+msgid "Add unmanifested files to manifest"
+msgstr "வெளிப்படுத்தப்படாத கோப்புகளை வெளிப்படுத்த"
+
+#: dialogs.py:48
+msgid ""
+"Remove files from the ePub that do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks). Will not be applied if the add option is also checked"
+msgstr ""
+".Opf மேனிஃபெஸ்டில் இல்லாத EPUB இலிருந்து கோப்புகளை அகற்று \n"
+" (ஐடியூன்ஸ்/காலிபர் புக்மார்க்குகளைத் தவிர்த்து). சேர் விருப்பமும் சரிபார்க்கப்பட்டால் பயன்படுத்தப்படாது"
+
+#: dialogs.py:48
+msgid "Remove unmanifested files from ePub"
+msgstr "EPUB இலிருந்து வெளிப்படுத்தப்படாத கோப்புகளை அகற்றவும்"
+
+#: dialogs.py:52
+msgid ""
+"Remove any Adobe .xpgt file margins to prevent them\n"
+"interfering with viewing"
+msgstr ""
+"எந்த அடோப் .xpgt கோப்பு விளிம்புகளையும் தடுக்க அவற்றைத் தடுக்கவும் \n"
+" பார்ப்பதில் குறுக்கிடுதல்"
+
+#: dialogs.py:52
+msgid "Remove margins from Adobe .xpgt files"
+msgstr "அடோப் .xpgt கோப்புகளிலிருந்து விளிம்புகளை அகற்று"
+
+#: dialogs.py:53
+msgid ""
+"Delete the .xpgt file completely from the epub\n"
+"as well as removing any links from the xhtml files"
+msgstr ""
+".Xpgt கோப்பை EPUB இலிருந்து முழுமையாக நீக்கவும் \n"
+" அத்துடன் XHTML கோப்புகளிலிருந்து எந்த இணைப்புகளையும் அகற்றுவது"
+
+#: dialogs.py:53
+msgid "Remove Adobe .xpgt files and links"
+msgstr "அடோப் .xpgt கோப்புகள் மற்றும் இணைப்புகளை அகற்று"
+
+#: dialogs.py:54
+msgid "Remove Adobe resource DRM meta tags"
+msgstr "அடோப் வள டிஆர்எம் மெட்டா குறிச்சொற்களை அகற்று"
+
+#: dialogs.py:54
+msgid ""
+"Remove any meta tags from the xhtml files that\n"
+"contain DRM urn identifiers."
+msgstr ""
+"XHTML கோப்புகளிலிருந்து எந்த மெட்டா குறிச்சொற்களையும் அகற்றவும் \n"
+" டி.ஆர்.எம் உர்ன் அடையாளங்காட்டிகளைக் கொண்டுள்ளது."
+
+#: dialogs.py:55
+msgid "Remove page maps"
+msgstr "பக்க வரைபடங்களை அகற்று"
+
+#: dialogs.py:55
+msgid "Removes all types of page map files"
+msgstr "அனைத்து வகையான பக்க வரைபடக் கோப்புகளையும் நீக்குகிறது"
+
+#: dialogs.py:56
+msgid "Remove ONLY Google Play page maps"
+msgstr "Google Play பக்க வரைபடங்களை மட்டும் அகற்று"
+
+#: dialogs.py:56
+msgid "Removes only Google Play page map files"
+msgstr "Google Play பக்க வரைபடக் கோப்புகளை மட்டுமே நீக்குகிறது"
+
+#: dialogs.py:60
+msgid "Flatten TOC hierarchy in NCX file"
+msgstr "NCX கோப்பில் TOC வரிசைக்கு தட்டையானது"
+
+#: dialogs.py:60
+msgid ""
+"Restructure the NCX to contain no nesting of navPoint items.\n"
+"For users whose devices do not support a hierarchical TOC."
+msgstr ""
+"நேவ்பாயிண்ட் உருப்படிகளின் கூடு எதுவும் இல்லை என்று NCX ஐ மறுசீரமைக்கவும். \n"
+" சாதனங்கள் ஒரு படிநிலை TOC ஐ ஆதரிக்காத பயனர்களுக்கு."
+
+#: dialogs.py:61
+msgid ""
+"Any NCX entries that point to missing html pages will be removed.\n"
+"Orphaned NCX links can happen as a result of a calibre conversion for covers."
+msgstr ""
+"HTML பக்கங்களைக் காணவில்லை என்பதை சுட்டிக்காட்டும் எந்த NCX உள்ளீடுகளும் அகற்றப்படும். \n"
+" மறைமுகமான என்.சி.எக்ஸ் இணைப்புகள் அட்டைகளுக்கான காலிபர் மாற்றத்தின் விளைவாக நிகழலாம்."
+
+#: dialogs.py:61
+msgid "Remove broken TOC entries in NCX file"
+msgstr "NCX கோப்பில் உடைந்த TOC உள்ளீடுகளை அகற்று"
+
+#: dialogs.py:65
+msgid "Remove all calibre jackets, both legacy and current"
+msgstr "மரபு மற்றும் நடப்பு இரண்டையும் அகற்றவும்"
+
+#: dialogs.py:65
+msgid "Remove all metadata jackets"
+msgstr "அனைத்து மெட்டாடேட்டா ஜாக்கெட்டுகளையும் அகற்றவும்"
+
+#: dialogs.py:66
+msgid "Remove jackets generated using versions of calibre prior to 0.6.50"
+msgstr ""
+"0.6.50 க்கு முன்னர் காலிபரின் பதிப்புகளைப் பயன்படுத்தி உருவாக்கப்பட்ட "
+"ஜாக்கெட்டுகளை அகற்றவும்"
+
+#: dialogs.py:66
+msgid "Remove legacy metadata jackets"
+msgstr "மரபு மெட்டாடேட்டா ஜாக்கெட்டுகளை அகற்றவும்"
+
+#: dialogs.py:67
+msgid "Add a jacket if not existing, or replace a non-legacy jacket"
+msgstr ""
+"இல்லை என்றால் ஜாக்கெட் சேர்க்கவும், அல்லது சட்டமன்றமற்ற ஜாக்கெட்டை மாற்றவும்"
+
+#: dialogs.py:67
+msgid "Add/replace metadata jacket"
+msgstr "மெட்டாடேட்டா ஜாக்கெட்டைச் சேர்க்கவும்/மாற்றவும்"
+
+#: dialogs.py:68
+msgid ""
+"If a jacket is added/replaced, it is placed at the end of the book instead "
+"of the beginning"
+msgstr ""
+"ஒரு ஜாக்கெட் சேர்க்கப்பட்டால்/மாற்றப்பட்டால், அது தொடக்கத்திற்கு பதிலாக "
+"புத்தகத்தின் முடிவில் வைக்கப்படுகிறது"
+
+#: dialogs.py:68
+msgid "Jacket at the end of the book"
+msgstr "புத்தகத்தின் முடிவில் ஜாக்கெட்"
+
+#: dialogs.py:72
+msgid "Remove broken image pages"
+msgstr "உடைந்த பட பக்கங்களை அகற்று"
+
+#: dialogs.py:72
+msgid ""
+"Remove html page(s) that contain only an image tag for which\n"
+"the linked image does not exist in the epub"
+msgstr ""
+"பட குறிச்சொல்லை மட்டுமே கொண்ட HTML பக்கம் (களை) அகற்று \n"
+" இணைக்கப்பட்ட படம் EPUB இல் இல்லை"
+
+#: dialogs.py:73
+msgid ""
+"If a cover page is identifiable in the epub then it is completely removed"
+msgstr ""
+"ஒரு கவர் பக்கம் EPUB இல் அடையாளம் காணப்பட்டால் அது முற்றிலும் அகற்றப்படும்"
+
+#: dialogs.py:73
+msgid "Remove existing cover"
+msgstr "இருக்கும் அட்டையை அகற்று"
+
+#: dialogs.py:74
+msgid ""
+"If a cover page is identifiable in the epub then it is replaced\n"
+"otherwise a new cover page is inserted"
+msgstr ""
+"ஒரு கவர் பக்கம் EPUB இல் அடையாளம் காணப்பட்டால் அது மாற்றப்படும் \n"
+" இல்லையெனில் புதிய கவர் பக்கம் செருகப்படுகிறது"
+
+#: dialogs.py:74
+msgid "Insert or replace cover"
+msgstr "அட்டையை செருகவும் அல்லது மாற்றவும்"
+
+#: dialogs.py:78
+msgid "Update metadata"
+msgstr "மெட்டாடேட்டாவைப் புதுப்பிக்கவும்"
+
+#: dialogs.py:78
+msgid ""
+"Update the manifest with the latest calibre metadata\n"
+"and replace an existing identifiable cover if possible."
+msgstr ""
+"சமீபத்திய காலிபர் மெட்டாடேட்டாவுடன் மேனிஃபெஸ்டைப் புதுப்பிக்கவும் \n"
+" முடிந்தால் ஏற்கனவே அடையாளம் காணக்கூடிய அட்டையை மாற்றவும்."
+
+#: dialogs.py:79
+msgid ""
+"Remove any metadata from the .opf manifest that is not in the dc: namespace.\n"
+"Such entries are created by editing in Sigil or calibre updating metadata.\n"
+"Use this option if publishing your ePubs externally."
+msgstr ""
+"டி.சி: பெயர்வெளியில் இல்லாத .opf மேனிஃபெஸ்டிலிருந்து எந்த மெட்டாடேட்டாவையும் அகற்றவும். \n"
+" இத்தகைய உள்ளீடுகள் சிகில் அல்லது காலிபர் புதுப்பித்தல் மெட்டாடேட்டாவில் திருத்துவதன் மூலம் உருவாக்கப்படுகின்றன. \n"
+" உங்கள் எபப்களை வெளிப்புறமாக வெளியிட்டால் இந்த விருப்பத்தைப் பயன்படுத்தவும்."
+
+#: dialogs.py:79
+msgid "Remove non dc: metadata elements"
+msgstr "அல்லாத டி.சி: மெட்டாடேட்டா கூறுகளை அகற்றவும்"
+
+#: dialogs.py:83
+msgid "Encode HTML in UTF-8"
+msgstr "UTF-8 இல் HTML ஐ குறியாக்கம் செய்யுங்கள்"
+
+#: dialogs.py:83
+msgid ""
+"Removes any existing <meta> charset tags on html pages and encodes in UTF-8.\n"
+"For use where ebook does not display quotes in calibre viewer correctly."
+msgstr ""
+"HTML பக்கங்களில் தற்போதுள்ள <மெட்டா> சார்ஸெட் குறிச்சொற்களை நீக்குகிறது மற்றும் யுடிஎஃப் -8 இல் குறியீடுகள். \n"
+" காலிபர் பார்வையாளரில் மேற்கோள்களை சரியாகக் காண்பிக்காத இடத்தைப் பயன்படுத்தவும்."
+
+#: dialogs.py:84
+msgid "Remove embedded fonts"
+msgstr "உட்பொதிக்கப்பட்ட எழுத்துருக்களை அகற்றவும்"
+
+#: dialogs.py:84
+msgid ""
+"Remove embedded fonts from the manifest and their files to reduce ePub size.\n"
+"Also removes @font-face declarations."
+msgstr ""
+"EPUB அளவைக் குறைக்க மேனிஃபெஸ்ட் மற்றும் அவற்றின் கோப்புகளிலிருந்து உட்பொதிக்கப்பட்ட எழுத்துருக்களை அகற்றவும். \n"
+" @எழுத்துரு-முக அறிவிப்புகளையும் நீக்குகிறது."
+
+#: dialogs.py:85
+msgid "Modify @page and body margin styles"
+msgstr "@பக்கம் மற்றும் உடல் விளிம்பு பாணிகளை மாற்றவும்"
+
+#: dialogs.py:85
+msgid ""
+"Replace margin styles for @page or body with your calibre defaults in a new @page style.\n"
+"If your calibre defaults are negative, removes the margin attributes and if necessary the CSS file."
+msgstr ""
+"புதிய @பக்கம் பாணியில் உங்கள் காலிபர் இயல்புநிலைகளுடன் @பக்கம் அல்லது உடலுக்கான விளிம்பு பாணிகளை மாற்றவும். \n"
+" உங்கள் காலிபர் இயல்புநிலை எதிர்மறையாக இருந்தால், விளிம்பு பண்புகளை நீக்குகிறது மற்றும் தேவைப்பட்டால் CSS கோப்பு."
+
+#: dialogs.py:86
+msgid "Append extra CSS"
+msgstr "கூடுதல் CSS ஐ சேர்க்கவும்"
+
+#: dialogs.py:86
+msgid ""
+"Appends any Extra CSS you have defined in your calibre defaults to every .CSS file.\n"
+"If you have no extra CSS defined or text already contained then it does nothing."
+msgstr ""
+"ஒவ்வொரு .css கோப்பிற்கும் உங்கள் காலிபர் இயல்புநிலையில் நீங்கள் வரையறுத்துள்ள கூடுதல் CSS ஐச் சேர்க்கிறது. \n"
+" உங்களிடம் கூடுதல் CSS வரையறுக்கப்பட்டிருந்தால் அல்லது ஏற்கனவே உரை இல்லை என்றால் அது எதுவும் செய்யாது."
+
+#: dialogs.py:87
+msgid "Convert html to use smart quotes and emdash characters"
+msgstr ""
+"ஸ்மார்ட் மேற்கோள்கள் மற்றும் எம்டாஷ் எழுத்துக்களைப் பயன்படுத்த HTML ஐ "
+"மாற்றவும்"
+
+#: dialogs.py:87
+msgid "Smarten punctuation"
+msgstr "ஸ்மார்டன் நிறுத்தற்குறி"
+
+#: dialogs.py:88
+msgid "Remove any .js files and inline javascript blocks"
+msgstr "எந்த .js கோப்புகளையும் இன்லைன் ஜாவாஸ்கிரிப்ட் தொகுதிகளையும் அகற்றவும்"
+
+#: dialogs.py:88
+msgid "Remove inline javascript and files"
+msgstr "இன்லைன் ஜாவாஸ்கிரிப்ட் மற்றும் கோப்புகளை அகற்று"
+
+#: dialogs.py:103
+msgid "Modify ePub Options"
+msgstr "EPUB விருப்பங்களை மாற்றவும்"
+
+#: dialogs.py:128
+msgid "Known Artifacts"
+msgstr "அறியப்பட்ட கலைப்பொருட்கள்"
+
+#: dialogs.py:129
+msgid "Manifest"
+msgstr "பகிரங்கமான"
+
+#: dialogs.py:130
+msgid "Adobe"
+msgstr "அடோப்"
+
+#: dialogs.py:131
+msgid "Table of Contents"
+msgstr "உள்ளடக்க அட்டவணை"
+
+#: dialogs.py:133
+msgid "HTML && Styles"
+msgstr "HTML && ஸ்டைல்கள்"
+
+#: dialogs.py:134
+msgid "Metadata Jackets"
+msgstr "மெட்டாடேட்டா ஜாக்கெட்டுகள்"
+
+#: dialogs.py:135
+msgid "Covers"
+msgstr "கவர்கள்"
+
+#: dialogs.py:136
+msgid "Metadata"
+msgstr "மெட்டாடேட்டா"
+
+#: dialogs.py:142
+msgid "Clear all"
+msgstr "அனைத்தையும் அழி"
+
+#: dialogs.py:143
+msgid "Clear all selections"
+msgstr "அனைத்து தேர்வுகளையும் அழிக்கவும்"
+
+#: dialogs.py:145
+msgid "Save"
+msgstr "சேமிக்கவும்"
+
+#: dialogs.py:146
+msgid ""
+"Save the current selected settings for future recall with the Restore button"
+msgstr ""
+"மீட்டெடுக்கும் பொத்தானைக் கொண்டு எதிர்கால நினைவுகூரலுக்கான தற்போதைய "
+"தேர்ந்தெடுக்கப்பட்ட அமைப்புகளைச் சேமிக்கவும்"
+
+#: dialogs.py:148
+msgid "Restore"
+msgstr "மீட்டமை"
+
+#: dialogs.py:149
+msgid "Restore your settings set when the Save button was last clicked"
+msgstr "சேமி பொத்தானைக் கிளிக் செய்தபோது உங்கள் அமைப்புகளை அமைக்கவும்"
+
+#: dialogs.py:179
+msgid "No options selected"
+msgstr "விருப்பங்கள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+
+#: dialogs.py:180
+msgid "You must select at least one option to continue"
+msgstr ""
+"தொடர குறைந்தபட்சம் ஒரு விருப்பத்தையாவது நீங்கள் தேர்ந்தெடுக்க வேண்டும்"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Cancel"
+msgstr "ரத்துசெய்"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Working"
+msgstr "வேலை"
+
+#: dialogs.py:207
+msgid "Queueing books for modifying ePubs"
+msgstr "எபப்களை மாற்றுவதற்கான புத்தகங்களை வரிசைப்படுத்துதல்"
+
+#: dialogs.py:223
+msgid "Queueing"
+msgstr "வரிசை"
+
+#: dialogs.py:255
+msgid "Could not modify ePub for some books"
+msgstr "சில புத்தகங்களுக்கு EPUB ஐ மாற்ற முடியவில்லை"
+
+#: dialogs.py:256
+msgid ""
+"Could not modify %d of %d books, because no ePub source format was found."
+msgstr ""
+"%D புத்தகங்களின் %d ஐ மாற்ற முடியவில்லை, ஏனெனில் EPUB மூல வடிவம் எதுவும் "
+"காணப்படவில்லை."
+
+#: dialogs.py:276
+msgid "Adding %d modified ePubs"
+msgstr "%D மாற்றியமைக்கப்பட்ட எபப்களைச் சேர்ப்பது"
+
+#: dialogs.py:297
+msgid "Adding"
+msgstr "சேர்த்து"
+
+#: dialogs.py:312
+msgid "ePub files updated"
+msgstr "EPUB கோப்புகள் புதுப்பிக்கப்பட்டன"

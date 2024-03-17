@@ -4,16 +4,16 @@
 # 
 # Translators:
 # Darío Hereñú, 2022
-# Dunhill <walter.paterno@gmail.com>, 2022
+# Walter Paterno <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2022
+# Jellby <jellby@yahoo.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 20:29+0100\n"
 "PO-Revision-Date: 2022-09-19 15:00+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2022\n"
+"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,15 +28,15 @@ msgstr "Atajos de teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar Calibre ahora"
+msgstr "Reiniciar calibre ahora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para: "
+msgstr "Preferencias para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Borrar"
+msgstr "Limpiar"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
@@ -47,16 +47,16 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea cambiar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer cambiar la configuración del complemento en esta "
+"biblioteca?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Cualquier configuración en otras bibliotecas o almacenada en un archivo JSON"
-" en su carpeta de complementos de calibre no se modificará."
+"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
+"la carpeta de complementos de calibre no se modificarán."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -68,8 +68,7 @@ msgstr "Configuración modificada"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Se ha cambiado la configuración de este complemento en esta biblioteca."
+msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -80,8 +79,8 @@ msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de que desea borrar su configuración en esta biblioteca para "
-"este complemento?"
+"¿Está seguro de querer borrar la configuración del complemento en esta "
+"biblioteca?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -89,9 +88,7 @@ msgstr "Configuración eliminada"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Se han borrado todas las configuraciones para este complemento en esta "
-"biblioteca."
+msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
@@ -109,7 +106,7 @@ msgstr "Reinicio requerido"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título - debe reiniciar Calibre antes de usar "
+"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
 #: ..\common\common_widgets.py:222
@@ -122,7 +119,7 @@ msgstr "Modificar el contenido de un ePub sin conversión"
 
 #: action.py:35 dialogs.py:100
 msgid "Modify ePub"
-msgstr "Modificar ePub"
+msgstr "Modifiy ePub"
 
 #: action.py:47 action.py:58
 msgid "Cannot modify ePub"
@@ -149,28 +146,28 @@ msgid ""
 "No ePub files were updated. If this isn't what you expected then press the "
 "Show details button to check for errors in the log."
 msgstr ""
-"No se actualizaron archivos ePub. Si esto no es lo que esperaba, presione el"
-" botón Mostrar detalles para verificar si hay errores en el registro."
+"No se actualizó ningún archivo ePub. Si esto no es lo que esperaba, pulse el"
+" botón «Mostrar detalles» para verificar si hay errores en el registro."
 
 #: action.py:97
 msgid "Modify ePub changed no files"
-msgstr "Modificar ePub no cambió ningún archivo"
+msgstr "Modify ePub no cambió ningún archivo"
 
 #: action.py:105
 msgid ""
 "Modify ePub modified <b>%d ePub files(s)</b> into a temporary location. "
 "Proceed with replacing the versions in your library?"
 msgstr ""
-"Modifica ePub modficado <b>%darchivo(s) ePub</b>en una ubicación temporal. "
-"¿Quieres continuar reemplazando las versiones en tu biblioteca?"
+"Modify ePub modficó <b>%d archivo(s) ePub</b> en una ubicación temporal. "
+"¿Desea reemplazar las versiones en la biblioteca?"
 
 #: action.py:110
 msgid "Modify ePub complete"
-msgstr "Modificar ePub completo"
+msgstr "Modify ePub completado"
 
 #: action.py:110
 msgid "Modify log"
-msgstr "Modificar registro"
+msgstr "Registro de modificación"
 
 #: config.py:52
 msgid "Other options:"
@@ -178,7 +175,7 @@ msgstr "Otras opciones:"
 
 #: config.py:57
 msgid "Prompt to save epubs"
-msgstr "Preguntar para guardar epubs"
+msgstr "Preguntar para guardar ePubs"
 
 #: config.py:58
 msgid ""
@@ -205,13 +202,13 @@ msgid ""
 "Removes any iTunesMetadata.plist or artwork files\n"
 "added by viewing the ePub in iTunes"
 msgstr ""
-"Elimina cualquier iTunesMetadata.plist o archivos artwork\n"
-"agregado al ver el ePub en iTunes"
+"Elimina cualquier archivo iTunesMetadata.plist o a artwork\n"
+"añadido al visualizar el ePub en iTunes"
 
 #: dialogs.py:37
 msgid "Remove any bookmark files added by the calibre ebook viewer"
 msgstr ""
-"Elimine los archivos de marcadores agregados por el visor de libros "
+"Eliminar los archivos de marcadores añadidos por el visor de libros "
 "electrónicos de calibre"
 
 #: dialogs.py:37
@@ -220,14 +217,14 @@ msgstr "Eliminar archivos de marcadores de calibre"
 
 #: dialogs.py:38
 msgid "Remove OS artifact files"
-msgstr "Eliminar archivos artifices del sistema operativo"
+msgstr "Eliminar archivos espurios del sistema operativo"
 
 #: dialogs.py:38
 msgid ""
 "Removes any OS artifacts like thumbs.db or .DS_Store\n"
 "that are not needed by the ePub"
 msgstr ""
-"Elimina cualquier problema del sistema operativo como thumbs.db o .DS_Store\n"
+"Elimina archivos espurios del sistema operativo como thumbs.db o .DS_Store\n"
 "que no son necesarios para el ePub"
 
 #: dialogs.py:39
@@ -235,8 +232,8 @@ msgid ""
 "Remove any unused jpg, png or gif image files that are not referenced\n"
 "from the html pages. This can occur as the result of careless ePub editing."
 msgstr ""
-"Elimine cualquier archivo de imagen jpg, png o gif no utilizado que no esté referenciado\n"
-"de las páginas html. Esto puede ocurrir como resultado de una edición ePub descuidada."
+"Eliminar cualquier archivo de imagen jpg, png o gif no utilizado que no esté referenciado\n"
+"en las páginas html. Esto puede ocurrir como resultado de una modificación descuidada del ePub."
 
 #: dialogs.py:39
 msgid "Remove unused image files"
@@ -244,7 +241,7 @@ msgstr "Eliminar archivos de imagen no utilizados"
 
 #: dialogs.py:40
 msgid "De-indent (aka unpretty)"
-msgstr "De-indent (aka unpretty)"
+msgstr "Quitar sangría (desembellecer)"
 
 #: dialogs.py:40
 msgid "Remove indentation from HTML files"
@@ -260,7 +257,7 @@ msgstr "Elimina los restos de DRM de Kobo"
 
 #: dialogs.py:42
 msgid "Remove spans without attributes"
-msgstr "Eliminar tramos sin atributos"
+msgstr "Eliminar etiquetas <span> sin atributos"
 
 #: dialogs.py:42
 msgid "Strip spans"
@@ -271,24 +268,23 @@ msgid ""
 "Remove entries in the manifest for files listed that do not exist in the "
 "ePub"
 msgstr ""
-"Eliminar entradas en el manifiesto para los archivos enumerados que no "
-"existen en el ePub"
+"Eliminar entradas en el manifiesto para archivos que no existen en el ePub"
 
 #: dialogs.py:46
 msgid "Remove missing file entries from manifest"
-msgstr "Eliminar las entradas de archivo que faltan del manifiesto"
+msgstr "Eliminar del manifiesta las entradas de archivo que faltan"
 
 #: dialogs.py:47
 msgid ""
 "Add files to manifest that are in the ePub but do not exist in the .opf manifest\n"
 "(excluding iTunes/calibre bookmarks)"
 msgstr ""
-"Agregar archivos al manifiesto que están en ePub pero que no existen en el manifiesto .opf\n"
-"(excepto marcadores de iTunes/calibre)"
+"Añadir archivos al manifiesto que están en el ePub pero que no existen en el manifiesto .opf\n"
+"(excepto marcadores de iTunes o calibre)"
 
 #: dialogs.py:47
 msgid "Add unmanifested files to manifest"
-msgstr "Agregar archivos no manifestados al manifiesto"
+msgstr "Añadir archivos no manifestados al manifiesto"
 
 #: dialogs.py:48
 msgid ""
@@ -296,19 +292,19 @@ msgid ""
 "(excluding iTunes/calibre bookmarks). Will not be applied if the add option is also checked"
 msgstr ""
 "Eliminar archivos del ePub que no existen en el manifiesto .opf\n"
-"(excepto marcadores de iTunes/calibre). No se aplicará si la opción de agregar también está marcada"
+"(excepto marcadores de iTunes o calibre). No se aplicará si la opción de añadir también está marcada"
 
 #: dialogs.py:48
 msgid "Remove unmanifested files from ePub"
-msgstr "Eliminar archivos no manifiestos de ePub"
+msgstr "Eliminar del ePub los archivos que no están en el manifiesto"
 
 #: dialogs.py:52
 msgid ""
 "Remove any Adobe .xpgt file margins to prevent them\n"
 "interfering with viewing"
 msgstr ""
-"Elimine los márgenes de los archivos .xpgt de Adobe para evitarlos\n"
-"interferir con la visualización"
+"Eliminar los márgenes de los archivos .xpgt de Adobe para evitarl que\n"
+"interfieran con la visualización"
 
 #: dialogs.py:52
 msgid "Remove margins from Adobe .xpgt files"
@@ -319,8 +315,8 @@ msgid ""
 "Delete the .xpgt file completely from the epub\n"
 "as well as removing any links from the xhtml files"
 msgstr ""
-"Elimine el archivo .xpgt completamente del epub\n"
-"así como eliminar cualquier enlace de los archivos xhtml"
+"Eliminar el archivo .xpgt completamente del epub,\n"
+"así como cualquier enlace en los archivos xhtml"
 
 #: dialogs.py:53
 msgid "Remove Adobe .xpgt files and links"
@@ -328,15 +324,15 @@ msgstr "Eliminar archivos y enlaces Adobe .xpgt"
 
 #: dialogs.py:54
 msgid "Remove Adobe resource DRM meta tags"
-msgstr "Eliminar metaetiquetas DRM de recursos de Adobe"
+msgstr "Eliminar etiquetas meta de recursos DRM de Adobe"
 
 #: dialogs.py:54
 msgid ""
 "Remove any meta tags from the xhtml files that\n"
 "contain DRM urn identifiers."
 msgstr ""
-"Elimine cualquier metaetiqueta de los archivos xhtml que\n"
-"contener identificadores de urna DRM."
+"Eliminar cualquier todas las etiquetas meta de los archivos xhtml que\n"
+"contengan identificadores urn DRM."
 
 #: dialogs.py:55
 msgid "Remove page maps"
@@ -352,11 +348,11 @@ msgstr "Eliminar SÓLO los mapas de la página de Google Play"
 
 #: dialogs.py:56
 msgid "Removes only Google Play page map files"
-msgstr "Elimina solo archivos de mapas de páginas de Google Play"
+msgstr "Eliminar sólo los archivos de mapas de página de Google Play"
 
 #: dialogs.py:60
 msgid "Flatten TOC hierarchy in NCX file"
-msgstr "Aplanar la jerarquía TOC en el archivo NCX"
+msgstr "Aplanar la jerarquía del índice en el archivo NCX"
 
 #: dialogs.py:60
 msgid ""
@@ -364,24 +360,24 @@ msgid ""
 "For users whose devices do not support a hierarchical TOC."
 msgstr ""
 "Reestructurar el NCX para que no contenga elementos de navPoint anidados.\n"
-"Para usuarios cuyos dispositivos no admiten una TOC jerárquica."
+"Para usuarios cuyos dispositivos no admiten un índice jerárquico."
 
 #: dialogs.py:61
 msgid ""
 "Any NCX entries that point to missing html pages will be removed.\n"
 "Orphaned NCX links can happen as a result of a calibre conversion for covers."
 msgstr ""
-"Se eliminarán todas las entradas de NCX que apunten a páginas html faltantes.\n"
-"Los enlaces NCX huérfanos pueden ocurrir como resultado de una conversión de calibre para portadas."
+"Se eliminarán todas las entradas de NCX que apunten a páginas html no existentes.\n"
+"Estos enlaces NCX huérfanos pueden ser el resultado de una conversión de calibre para portadas."
 
 #: dialogs.py:61
 msgid "Remove broken TOC entries in NCX file"
-msgstr "Eliminar entradas TOC rotas en el archivo NCX"
+msgstr "Eliminar entradas de índice rotas en el archivo NCX"
 
 #: dialogs.py:65
 msgid "Remove all calibre jackets, both legacy and current"
 msgstr ""
-"Retire todas las sobrecubiertas de calibre, tanto heredadas como actuales"
+"Eliminar todas las sobrecubiertas de calibre, tanto heredadas como actuales"
 
 #: dialogs.py:65
 msgid "Remove all metadata jackets"
@@ -395,23 +391,23 @@ msgstr ""
 
 #: dialogs.py:66
 msgid "Remove legacy metadata jackets"
-msgstr "Eliminar sobrecubiertas de metadatos heredados"
+msgstr "Eliminar sobrecubiertas de metadatos heredadas"
 
 #: dialogs.py:67
 msgid "Add a jacket if not existing, or replace a non-legacy jacket"
 msgstr ""
-"Agregue una sobrecubierta si no existe, o reemplace una que no sea heredada"
+"Añadir una sobrecubierta si no existe, o reemplazar una que no sea heredada"
 
 #: dialogs.py:67
 msgid "Add/replace metadata jacket"
-msgstr "Agregar/reemplazar sobrecubierta de metadatos"
+msgstr "Añadir o reemplazar sobrecubierta de metadatos"
 
 #: dialogs.py:68
 msgid ""
 "If a jacket is added/replaced, it is placed at the end of the book instead "
 "of the beginning"
 msgstr ""
-"Si se agrega/reemplaza una sobrecubierta, se coloca al final del libro en "
+"Si se añade o reemplaza una sobrecubierta, se coloca al final del libro en "
 "lugar del principio"
 
 #: dialogs.py:68
@@ -420,37 +416,36 @@ msgstr "Subrecubierta al final del libro"
 
 #: dialogs.py:72
 msgid "Remove broken image pages"
-msgstr "Elimina páginas de imágenes rotas"
+msgstr "Eliminar páginas de imágenes rotas"
 
 #: dialogs.py:72
 msgid ""
 "Remove html page(s) that contain only an image tag for which\n"
 "the linked image does not exist in the epub"
 msgstr ""
-"Elimina la página(s) html que contengan solo una etiqueta de imagen para la cual\n"
-"la imagen enlazada no existe en el epub"
+"Eliminar las páginas html que contengan sólo una etiqueta de imagen cuya\n"
+"imagen enlazada no existe en el ePub"
 
 #: dialogs.py:73
 msgid ""
 "If a cover page is identifiable in the epub then it is completely removed"
-msgstr ""
-"Si una portada es identificable en el epub, entonces se elimina por completo"
+msgstr "Si una portada es identificable en el ePub, se elimina por completo"
 
 #: dialogs.py:73
 msgid "Remove existing cover"
-msgstr "Elimina la portada existente"
+msgstr "Eliminar portada existente"
 
 #: dialogs.py:74
 msgid ""
 "If a cover page is identifiable in the epub then it is replaced\n"
 "otherwise a new cover page is inserted"
 msgstr ""
-"Si una portada es identificable en el epub, entonces se reemplaza\n"
-",de lo contrario, se inserta una nueva portada"
+"Si una portada es identificable en el epub, se reemplaza,\n"
+"de lo contrario se inserta una nueva portada"
 
 #: dialogs.py:74
 msgid "Insert or replace cover"
-msgstr "Insertar o reemplazar la portada"
+msgstr "Insertar o reemplazar portada"
 
 #: dialogs.py:78
 msgid "Update metadata"
@@ -462,7 +457,7 @@ msgid ""
 "and replace an existing identifiable cover if possible."
 msgstr ""
 "Actualizar el manifiesto con los últimos metadatos de calibre\n"
-"y reemplace una portada identificable existente si es posible."
+"y sustituir una portada identificable existente si es posible."
 
 #: dialogs.py:79
 msgid ""
@@ -470,13 +465,13 @@ msgid ""
 "Such entries are created by editing in Sigil or calibre updating metadata.\n"
 "Use this option if publishing your ePubs externally."
 msgstr ""
-"Elimina cualquier metadato del manifiesto .opf que no esté en el espacio de nombres dc:.\n"
-"Dichas entradas se crean mediante la edición en Sigil o la actualización de metadatos de calibre.\n"
+"Eliminar cualquier metadato del manifiesto .opf que no esté en el espacio de nombres dc:.\n"
+"Tales entradas se crean mediante la edición en Sigil o la actualización de metadatos de calibre.\n"
 "Use esta opción si publica sus ePubs externamente."
 
 #: dialogs.py:79
 msgid "Remove non dc: metadata elements"
-msgstr "Elimina non dc: elementos de metadatos"
+msgstr "Eliminar elementos de metadatos no dc:"
 
 #: dialogs.py:83
 msgid "Encode HTML in UTF-8"
@@ -487,49 +482,49 @@ msgid ""
 "Removes any existing <meta> charset tags on html pages and encodes in UTF-8.\n"
 "For use where ebook does not display quotes in calibre viewer correctly."
 msgstr ""
-"Elimina cualquier etiqueta de conjunto de caracteres existente<meta> en las páginas html y codifica en UTF-8.\n"
+"Eliminar cualquier etiqueta <meta> de conjunto de caracteres existente en las páginas html y codificar en UTF-8.\n"
 "Para usar cuando el libro electrónico no muestra correctamente las comillas en el visor de calibre."
 
 #: dialogs.py:84
 msgid "Remove embedded fonts"
-msgstr "Elimina fuentes incrustadas"
+msgstr "Eliminar fuentes incrustadas"
 
 #: dialogs.py:84
 msgid ""
 "Remove embedded fonts from the manifest and their files to reduce ePub size.\n"
 "Also removes @font-face declarations."
 msgstr ""
-"Elimina las fuentes incrustadas del manifiesto y sus archivos para reducir el tamaño del ePub.\n"
-"También elimina las declaraciones @font-face."
+"Eliminar las fuentes incrustadas del manifiesto y sus archivos para reducir el tamaño del ePub.\n"
+"Eliminar también las declaraciones @font-face."
 
 #: dialogs.py:85
 msgid "Modify @page and body margin styles"
-msgstr "Modifica los estilos de @page y margen del cuerpo"
+msgstr "Modificar el margen en los estilos de @page y body"
 
 #: dialogs.py:85
 msgid ""
 "Replace margin styles for @page or body with your calibre defaults in a new @page style.\n"
 "If your calibre defaults are negative, removes the margin attributes and if necessary the CSS file."
 msgstr ""
-"Reemplazar los estilos de margen para @página o cuerpo con sus valores predeterminados de calibre en un nuevo estilo de @página.\n"
+"Reemplazar los estilos de margen para @page o body con los valores predeterminados de calibre en un nuevo estilo de @page.\n"
 "Si los valores predeterminados de calibre son negativos, elimina los atributos de margen y, si es necesario, el archivo CSS."
 
 #: dialogs.py:86
 msgid "Append extra CSS"
-msgstr "Agrega CSS adicional"
+msgstr "Añadir CSS adicional"
 
 #: dialogs.py:86
 msgid ""
 "Appends any Extra CSS you have defined in your calibre defaults to every .CSS file.\n"
 "If you have no extra CSS defined or text already contained then it does nothing."
 msgstr ""
-"Agrega cualquier CSS adicional que haya definido en sus valores predeterminados de calibre a cada archivo .CSS.\n"
-"Si no tiene CSS adicional definido o texto ya contenido, entonces no hace nada."
+"Añade cualquier CSS adicional que haya definido en los valores predeterminados de calibre a cada archivo .CSS.\n"
+"Si no hay ningún CSS adicional definido o el texto ya está presente, entonces no hace nada."
 
 #: dialogs.py:87
 msgid "Convert html to use smart quotes and emdash characters"
 msgstr ""
-"Convierte html para usar comillas tipográficas y caracteres de guión largo"
+"Convertir el html para usar comillas tipográficas y caracteres de raya"
 
 #: dialogs.py:87
 msgid "Smarten punctuation"
@@ -537,15 +532,15 @@ msgstr "Mejorar la puntuación"
 
 #: dialogs.py:88
 msgid "Remove any .js files and inline javascript blocks"
-msgstr "Elimina cualquier archivo .js y bloques de javascript en línea"
+msgstr "Eliminar cualquier archivo .js y bloques de javascript en línea"
 
 #: dialogs.py:88
 msgid "Remove inline javascript and files"
-msgstr "Elimina javascript y archivos en línea"
+msgstr "Eliminar javascript en línea y en archivos"
 
 #: dialogs.py:103
 msgid "Modify ePub Options"
-msgstr "Modify ePub Opciones"
+msgstr "Opciones de Modify ePub"
 
 #: dialogs.py:128
 msgid "Known Artifacts"
@@ -553,7 +548,7 @@ msgstr "Problemas conocidos"
 
 #: dialogs.py:129
 msgid "Manifest"
-msgstr "Manifiesto "
+msgstr "Manifiesto"
 
 #: dialogs.py:130
 msgid "Adobe"
@@ -565,7 +560,7 @@ msgstr "Índice"
 
 #: dialogs.py:133
 msgid "HTML && Styles"
-msgstr "HTML && Estilos"
+msgstr "HTML &y Estilos"
 
 #: dialogs.py:134
 msgid "Metadata Jackets"
@@ -585,7 +580,7 @@ msgstr "Limpiar todo"
 
 #: dialogs.py:143
 msgid "Clear all selections"
-msgstr "Borrar todas las selecciones"
+msgstr "Limpiar todas las selecciones"
 
 #: dialogs.py:145
 msgid "Save"
@@ -595,7 +590,7 @@ msgstr "Guardar"
 msgid ""
 "Save the current selected settings for future recall with the Restore button"
 msgstr ""
-"Guarde la configuración seleccionada actual para recuperarla en el futuro "
+"Guardar la configuración seleccionada actual para recuperarla en el futuro "
 "con el botón Restaurar"
 
 #: dialogs.py:148
@@ -605,8 +600,8 @@ msgstr "Restaurar"
 #: dialogs.py:149
 msgid "Restore your settings set when the Save button was last clicked"
 msgstr ""
-"Restaure la configuración establecida cuando se hizo clic por última vez en "
-"el botón Guardar"
+"Restaurar la configuración establecida cuando se pulsó por última vez el "
+"botón Guardar"
 
 #: dialogs.py:179
 msgid "No options selected"
@@ -614,7 +609,7 @@ msgstr "No hay opciones seleccionadas"
 
 #: dialogs.py:180
 msgid "You must select at least one option to continue"
-msgstr "Debe seleccionar al menos una opción para continuar"
+msgstr "Debe seleccionarse al menos una opción para continuar"
 
 #: dialogs.py:206 dialogs.py:275
 msgid "Cancel"
@@ -630,26 +625,26 @@ msgstr "Poner en cola libros para modificar ePubs"
 
 #: dialogs.py:223
 msgid "Queueing"
-msgstr "Haciendo cola"
+msgstr "Poniendo en cola"
 
 #: dialogs.py:255
 msgid "Could not modify ePub for some books"
-msgstr "No se pudo modificar ePub para algunos libros"
+msgstr "No se pudo modificar el ePub para algunos libros"
 
 #: dialogs.py:256
 msgid ""
 "Could not modify %d of %d books, because no ePub source format was found."
 msgstr ""
-"No se pudo modificar%d los %dlibros, porque no se encontró el formato fuente"
-" ePub."
+"No se pudieron modificar %d de %d libros, porque no se encontró el formato "
+"ePub de origen."
 
 #: dialogs.py:276
 msgid "Adding %d modified ePubs"
-msgstr "Agregando %dePubs modificados"
+msgstr "Añadiendo %dePubs modificados"
 
 #: dialogs.py:297
 msgid "Adding"
-msgstr "Agregando"
+msgstr "Añadiendo"
 
 #: dialogs.py:312
 msgid "ePub files updated"

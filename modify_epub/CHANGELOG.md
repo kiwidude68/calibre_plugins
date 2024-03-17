@@ -1,5 +1,9 @@
 # Modify ePub Change Log
 
+## [1.8.3] - 2024-03-17
+### Added
+- Tamil translation
+
 ## [1.8.2] - 2023-10-07
 ### Added
 - Polish, Russian, Turkish translations
