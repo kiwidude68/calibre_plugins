@@ -5,16 +5,17 @@
 # Translators:
 # Gabriele Pandocchi <gabriele@pandocchi.it>, 2022
 # Marta Mingolla <martamingolla@yandex.com>, 2022
-# Giuseppe Pignataro <rogepix@gmail.com>, 2022
+# Giuseppe Pignataro (Fastbyte01) <rogepix@gmail.com>, 2022
 # Ettore Mazzitelli, 2022
+# Michele Galimberti <galimbertimichele@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 11:34+0100\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
-"Last-Translator: Ettore Mazzitelli, 2022\n"
-"Language-Team: Italian (https://www.transifex.com/calibre/teams/19337/it/)\n"
+"Last-Translator: Michele Galimberti <galimbertimichele@gmail.com>, 2024\n"
+"Language-Team: Italian (https://app.transifex.com/calibre/teams/19337/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -133,7 +134,7 @@ msgstr "&Plugin Personalizza "
 
 #: action.py:66 config.py:74
 msgid "&Help"
-msgstr ""
+msgstr "&Aiuto"
 
 #: config.py:53
 msgid "Default action for toolbar button click"

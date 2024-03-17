@@ -3,121 +3,115 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# JimmXinu, 2022
-# Sebastian Keller <Haggard@gmx.de>, 2022
-# ILB, 2022
-# Grant Drake, 2022
-# Ettore Atalan <atalanttore@googlemail.com>, 2022
-# Dustin Steiner, 2022
-# e13493b2a936f499f30a988e8a2df4be_22a66bf <faf36a540214319109e3a8bf5cbd8af8_453360>, 2023
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Merarom <merarom@yahoo.es>, 2022
+# Jonatan Nyberg, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 11:34+0100\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
-"Last-Translator: e13493b2a936f499f30a988e8a2df4be_22a66bf <faf36a540214319109e3a8bf5cbd8af8_453360>, 2023\n"
-"Language-Team: German (https://app.transifex.com/calibre/teams/19337/de/)\n"
+"Last-Translator: Jonatan Nyberg, 2023\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: de\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:69
 msgid "Keyboard shortcuts"
-msgstr "Tastenkombinationen"
+msgstr "Tangentbordsgenvägar"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Calibre jetzt neu starten"
+msgstr "Starta om calibre nu."
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Einstellungen für:"
+msgstr "Inställningar för:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Löschen"
+msgstr "Rensa"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Alle Einstellungen für dieses Plugin löschen"
+msgstr "Rensa alla inställningar för detta tillägg"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Sind Sie sicher, dass Sie die Einstellungen in dieser Bibliothek für dieses "
-"Plugin ändern möchten?"
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Einstellungen in anderen Bibliotheken oder in einer JSON-Datei in Ihrem "
-"Calibre Plugin-Folder werden nicht verändert."
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Sie müssen Calibre danach neu starten."
+msgstr "Du måste starta om calibre efteråt."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Einstellungen verändert"
+msgstr "Inställningar ändrade"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
 msgstr ""
-"Einstellungen für dieses Plugin in dieser Bibliothek wurden verändert."
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Bitte starten Sie Calibre jetzt neu."
+msgstr "Var god starta om calibre nu."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Sind sie sicher, dass sie alle Einstellungen in dieser Bibliothek für diese "
-"Plugin zurücksetzen möchten?"
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Einstellungen gelöscht"
+msgstr "Inställningar borttagna"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Alle Einstellungen für dieses Plugin in dieser Bibliothek wurden "
-"zurückgesetzt."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "In Zwischenablage kopieren"
+msgstr "Kopiera till urklipp"
 
 #: ..\common\common_widgets.py:93
 msgid "Undefined"
-msgstr "Undefiniert"
+msgstr "Odefinerad"
 
 #: ..\common\common_widgets.py:148
 msgid "Restart required"
-msgstr "Neustart erforderlich"
+msgstr "Kräver omstart"
 
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Titelbild nicht gefunden - Sie müssen Calibre neu starten, bevor Sie dieses "
-"Plugin verwenden können!"
+"Titelbilden hittades inte - du måste starta om caliber innan du använder "
+"denna insticksmodul!"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr "Neue Spalte erstellen"
+msgstr "Skapa ny kolumn"
 
 #: action.py:33
 msgid "Clipboard Search"
@@ -133,11 +127,11 @@ msgstr ""
 
 #: action.py:64
 msgid "&Customize plugin"
-msgstr "Erweiterung anpassen"
+msgstr "&Anpassa insticksmodul"
 
 #: action.py:66 config.py:74
 msgid "&Help"
-msgstr "&Hilfe"
+msgstr "&Hjälp"
 
 #: config.py:53
 msgid "Default action for toolbar button click"
@@ -146,5 +140,5 @@ msgstr ""
 #: config.py:70
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
-"Bearbeiten Sie die Tastenkombinationen, die mit diesem Plugin verbunden "
-"sind."
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"

@@ -1,5 +1,17 @@
 # Clipboard Search Change Log
 
+## [1.4.1] - 2024-03-17
+### Added
+- Catalan translation
+- Finnish translation
+- Latvian translation
+- Portuguese translation
+- Swedish translation
+- Tamil translation
+- Turkish translation
+- Chinese (China) translation
+- Chinese (Taiwan) translation
+
 ## [1.4.0] - 2022-10-16
 _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
 ### Added
@@ -10,7 +22,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 - French translation (lentrad)
 - Italian translation (Ettore Mazzitelli)
 - Polish translation (moje konto)
-- Portuguese translation (Comfy.n)
+- Portuguese (Brazil) translation (Comfy.n)
 - Russian translation (Caarmi)
 - Ukranian translation (@yurchor)
 ### Changed

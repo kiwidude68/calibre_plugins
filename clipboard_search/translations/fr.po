@@ -5,17 +5,17 @@
 # Translators:
 # Nicolas F. <fernetn@gmail.com>, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2022
-# Ptit Prince <leporello1791@gmail.com>, 2022
 # Grant Drake, 2022
 # lentrad <lentrad@gmail.com>, 2022
+# Ptit Prince <leporello1791@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 11:34+0100\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
-"Last-Translator: lentrad <lentrad@gmail.com>, 2022\n"
-"Language-Team: French (https://www.transifex.com/calibre/teams/19337/fr/)\n"
+"Last-Translator: Ptit Prince <leporello1791@gmail.com>, 2022\n"
+"Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -135,7 +135,7 @@ msgstr "&Personnaliser le plug-in"
 
 #: action.py:66 config.py:74
 msgid "&Help"
-msgstr ""
+msgstr "&Aide"
 
 #: config.py:53
 msgid "Default action for toolbar button click"

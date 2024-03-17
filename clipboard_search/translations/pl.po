@@ -10,14 +10,15 @@
 # Adam Humienny <adam.humienny@gmail.com>, 2022
 # Grant Drake, 2022
 # The Name <moje.konto+transifex@posteo.org>, 2022
+# Silatiw Witalis, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 11:34+0100\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
-"Last-Translator: The Name <moje.konto+transifex@posteo.org>, 2022\n"
-"Language-Team: Polish (https://www.transifex.com/calibre/teams/19337/pl/)\n"
+"Last-Translator: Silatiw Witalis, 2022\n"
+"Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -135,7 +136,7 @@ msgstr "&Konfiguruj wtyczkę"
 
 #: action.py:66 config.py:74
 msgid "&Help"
-msgstr ""
+msgstr "&Help"
 
 #: config.py:53
 msgid "Default action for toolbar button click"
