@@ -1,5 +1,11 @@
 # Goodreads Change Log
 
+## [1.8.0] - 2023-03-19
+### Fixed
+- Changed the source from where the authors metaadata is being scraped from, to better respect turning off the `Get all contributing authors` setting so as to not always return all authors. Note pseudonyms for authors will return both names. -([#53][i53])
+
+[i53]: https://github.com/kiwidude68/calibre_plugins/issues/53
+
 ## [1.7.10] - 2023-03-17
 ### Added
 - Tamil translation

@@ -201,7 +201,7 @@ class Worker(Thread): # Get details
 
         try:
             if (book_json):
-                authors = self.parse_authors(contributors_list_json)
+                authors = self.parse_authors(book_json, contributors_list_json)
         except:
             self.log.exception('Error parsing authors for url: %r'%self.url)
 
@@ -343,31 +343,37 @@ class Worker(Thread): # Get details
             self.log.info("parse_series: series_name='%s', series_index='%s'" % (series_name, series_index))
             return (series_name, series_index)
 
-    def parse_authors(self, contributors_list_json):
+    def parse_authors(self, book_json, contributors_list_json):
         # 2022 version we use the json from script in page to retrieve the details
-        # User either requests all authors, or only the primary authors (latter is the default)
-        # If "only primary authors", only bring them in if:
-        # 1. They are first author in the list, and/or
-        # 2. They have the same contributor type as the first author.
+        # User either requests all contributing authors, or only the main authors (latter is the default)
+        # We would do this by only including authors who have a role of "Author"
+        # according to the primaryContriborEdge/secondaryContributorEdges sections of book json.
         get_all_authors = cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GET_ALL_AUTHORS]
         authors = []
-        first_contrib_type = None
+        author_contributor_ids = []
+        # Start with the primary contributor
+        if (book_json.get("primaryContributorEdge") is None):
+            return authors
+        primary = book_json["primaryContributorEdge"]
+        role = primary["role"]
+        if (role == "Author" or role == "Pseudonym" or get_all_authors):
+            contributor = primary["node"]["__ref"]
+            author_contributor_ids.append(contributor[12:]) # strip off "Contributor:"
+        if (book_json.get("secondaryContributorEdges") is not None):
+            for secondary in book_json["secondaryContributorEdges"]:
+                role = secondary["role"]
+                if (role == "Author" or get_all_authors):
+                    contributor = secondary["node"]["__ref"]
+                    author_contributor_ids.append(contributor[12:]) # strip off "Contributor:""
+        
         for contributor_json in contributors_list_json:
             if (contributor_json.get("name") is None):
                 continue
-
-            author_name = contributor_json["name"]
-            contrib_type = contributor_json["__typename"]
-            if not first_contrib_type:
-                first_contrib_type = contrib_type
-            self.log.info('parse_authors - author=%s type=%s' % (author_name, contrib_type))
-            if get_all_authors:
+            id = contributor_json["id"]
+            if (id in author_contributor_ids):
+                author_name = contributor_json["name"]
+                self.log.info('parse_authors - author=%s' % author_name)
                 authors.append(author_name)
-            else:
-                if contrib_type == first_contrib_type:
-                    authors.append(author_name)
-                else:
-                    break
         return authors
 
     def parse_rating(self, work_json):
