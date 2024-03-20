@@ -981,7 +981,11 @@ class EpubCheck(BaseCheck):
                 return False
             try:
                 with ZipFile(path_to_book, 'r') as zf:
-                    for e in zf.namelist():
+                    for e in zf.infolist():
+                        if e.filename.endswith('/'): #file represent a folder
+                            continue
+                        if e.file_size == 0: #file is empty (cannot be read)
+                            continue
                         zf.read(e)
                     return False
 
