@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import os
+import os, re
 from functools import partial
 
 # calibre Python 3 compatibility.
@@ -150,21 +150,22 @@ class SearchTheInternetAction(InterfaceAction):
         if mi.authors:
             mi.authors = [self.convert_author_to_search_text(mi.authors[0], encoding, method)]
 
-        # Convert other fields such as publisher in case user used them in their templates
-        for k in mi.all_field_keys():
+        # Originally this plugin url encoded the metadata fields before submitting to the template
+        # However the flaw with this is the template function could fail due to that encoding
+        # or custom columns etc would also not get properly encoded.
+        # My solution is to evaluate the tokens individually from the url, then url encode their result
+        # before replacing back in the url in place of the token.
+        # So https://foo.com/search?query={title}+{author} would strip out {title} and {author} respectively.
+        url = tokenised_url
+        for token in re.findall(r"\{.*?\}", tokenised_url):
             try:
-                val = mi.get(k, None)
-                if val and k not in ['author', 'authors', 'title']:
-                    new_val = self.convert_to_search_text(val, encoding, method)
-                    if new_val != val:
-                        #debug_print('Sanitising: k=', k, ' val=', val, ' new_val=', new_val)
-                        mi.set(k, val)
+                evaluated = template_formatter.safe_format(token, mi, 'STI template error', mi)
+                safe_value = self.convert_to_search_text(evaluated, encoding, method)
+                url = url.replace(token, safe_value)
             except:
                 continue
 
         debug_print("open_tokenised_url - tokenised_url=", tokenised_url)
-        debug_print("open_tokenised_url - mi=", mi)
-        url = template_formatter.safe_format(tokenised_url, mi, 'STI template error', mi)
         debug_print("open_tokenised_url - url=", url)
 
         if method == 'POST':
@@ -245,7 +246,8 @@ class SearchTheInternetAction(InterfaceAction):
         # Ampersands are going to cause grief so strip them.
         if '&' in title:
             title = title.replace('&','')
-        return self.convert_to_search_text(title, encoding, method)
+        return title
+        #return self.convert_to_search_text(title, encoding, method)
 
     def convert_author_to_search_text(self, author, encoding, method):
         # We want to convert the author name to FN LN format if it is stored LN, FN
@@ -268,7 +270,8 @@ class SearchTheInternetAction(InterfaceAction):
                 surname = parts.pop(0)
                 parts.append(surname)
                 fn_ln_author = ' '.join(parts).strip()
-        return self.convert_to_search_text(fn_ln_author, encoding, method)
+        return fn_ln_author
+        #return self.convert_to_search_text(fn_ln_author, encoding, method)
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)

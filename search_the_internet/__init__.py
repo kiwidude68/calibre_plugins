@@ -20,7 +20,7 @@ class ActionSearchTheInternet(InterfaceActionBase):
     description             = 'Search various websites for the selected books'
     supported_platforms     = ['windows', 'osx', 'linux'] # Platforms this plugin will run on
     author                  = 'Grant Drake'
-    version                 = (1, 10, 5)
+    version                 = (1, 11, 0)
     minimum_calibre_version = (2, 0, 0)
 
 	#: Qt5 mods by Steve Urbach, rel 2

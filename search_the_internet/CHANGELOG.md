@@ -1,5 +1,10 @@
 # Search The Internet Change Log
         
+## [1.11.0] - 2024-03-22
+### Changed
+- URL encoding of template expressions now occurs after evaluating each expression individually. This means that all custom columns should get url encoded and will also not break evaluation of functions like {title:transliterate()}
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+        
 ## [1.10.5] - 2024-03-17
 ### Added
 - Tamil translation
