@@ -1,5 +1,10 @@
 # Quality Check Change Log
 
+## [1.13.10] - 2024-03-23
+### Fixed
+- The 'Check corrupt zip' feature included some false-positives (#un-pogaz)
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
 ## [1.13.9] - 2024-03-17
 ### Changed
 - The 'Check corrupt zip' feature also considers individual file corruption issues (#un-pogaz)

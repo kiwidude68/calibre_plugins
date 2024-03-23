@@ -145,10 +145,10 @@ class SearchTheInternetAction(InterfaceAction):
                                 _('This menu item has not been configured with a url.'), show=True)
         # Convert the book metadata into values that are more safely searchable
         if mi.title:
-            mi.title = self.convert_title_to_search_text(mi.title, encoding, method)
+            mi.title = self.convert_title_to_search_text(mi.title)
         # Will only use the first author for the lookup if there are multiple
         if mi.authors:
-            mi.authors = [self.convert_author_to_search_text(mi.authors[0], encoding, method)]
+            mi.authors = [self.convert_author_to_search_text(mi.authors[0])]
 
         # Originally this plugin url encoded the metadata fields before submitting to the template
         # However the flaw with this is the template function could fail due to that encoding
@@ -242,14 +242,13 @@ class SearchTheInternetAction(InterfaceAction):
         except:
             return text
 
-    def convert_title_to_search_text(self, title, encoding, method):
+    def convert_title_to_search_text(self, title):
         # Ampersands are going to cause grief so strip them.
         if '&' in title:
             title = title.replace('&','')
         return title
-        #return self.convert_to_search_text(title, encoding, method)
 
-    def convert_author_to_search_text(self, author, encoding, method):
+    def convert_author_to_search_text(self, author):
         # We want to convert the author name to FN LN format if it is stored LN, FN
         # We do this because some websites (Kobo) have crappy search engines that
         # will not match Adams+Douglas but will match Douglas+Adams
@@ -271,7 +270,6 @@ class SearchTheInternetAction(InterfaceAction):
                 parts.append(surname)
                 fn_ln_author = ' '.join(parts).strip()
         return fn_ln_author
-        #return self.convert_to_search_text(fn_ln_author, encoding, method)
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)
