@@ -200,10 +200,10 @@ class Worker(Thread): # Get details
         # "Some title (XXX #1)"
         # "Some title (XXX Series #1)"
         # "Some title (Some text) (XXX Series #1)"
-        match = re.search('\(([^\)]+) Series #(\d+)\)', title_text)
+        match = re.search(r'\(([^\)]+) Series #(\d+)\)', title_text)
         if not match:
             #self.log('Title has no Series word in title, trying without it:',title_text)
-            match = re.search('\(([^\)]+), #(\d+)\)', title_text)
+            match = re.search(r'\(([^\)]+), #(\d+)\)', title_text)
         if match:
             series_name = match.groups(0)[0]
             series_index = float(match.groups(0)[1])

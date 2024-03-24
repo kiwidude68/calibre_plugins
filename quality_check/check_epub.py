@@ -62,7 +62,7 @@ ENCRYPTION_PATH = 'META-INF/encryption.xml'
 
 RE_HTML_BODY = re.compile(u'<body[^>]*>(.*)</body>', re.UNICODE | re.DOTALL)
 RE_STRIP_MARKUP = re.compile(u'<[^>]+>', re.UNICODE)
-RE_WHITESPACE = re.compile(u'\s+', re.UNICODE | re.DOTALL)
+RE_WHITESPACE = re.compile(r'\s+', re.UNICODE | re.DOTALL)
 
 OCF_NS = 'urn:oasis:names:tc:opendocument:xmlns:container'
 OPF_NS = 'http://www.idpf.org/2007/opf'
@@ -1460,7 +1460,7 @@ class EpubCheck(BaseCheck):
                 return False
 
         self.check_all_files(evaluate_book,
-                             no_match_msg=_('No searched ePub books have \<address\> smart tags'),
+                             no_match_msg=_(r'No searched ePub books have \<address\> smart tags'),
                              marked_text='epub_address_tags',
                              status_msg_type=_('ePub books for <address> smart tags'))
 
@@ -1581,7 +1581,7 @@ class EpubCheck(BaseCheck):
             for match in RE_BOOK_MGNS.finditer(data):
                 styles = match.group('styles').lower().strip()
                 # delete trailing semicolons
-                styles = re.sub('\s*;$', '', styles)
+                styles = re.sub(r'\s*;$', '', styles)
                 if match.group('selector').lower() == 'body' and styles.find('margin') != -1:
                     self.log('\t\tMargins are defined in a body tag')
                     return True
@@ -1591,7 +1591,7 @@ class EpubCheck(BaseCheck):
                     if style:
                         style = [s.strip() for s in style.split(':')]
                         property_type = re.sub('-','_', style[0])
-                        value = float(re.sub('[^\d.]+', '', style[1]))
+                        value = float(re.sub(r'[^\d.]+', '', style[1]))
 
                         if property_type == 'margin': # Not a calibre set value, so we will just replace the whole value
                             self.log(_('\t\t\'margin\' property found, so does not match calibre preferences'))

@@ -44,7 +44,7 @@ class Baen(Source):
             # Try the legacy identifier from previous version of this plugin
             baen_id = identifiers.get('webscription', None)
         if baen_id:
-            match_groups = re.search('p-\d+-(.*)', baen_id)
+            match_groups = re.search(r'p-\d+-(.*)', baen_id)
             if match_groups and len(match_groups.groups(0)) == 1:
                 baen_id = match_groups.groups(0)[0]
         return baen_id
@@ -195,8 +195,8 @@ class Baen(Source):
         # by Author1, Author2
         # by Author1, Author2 and Author3
         # by Author1<br />Edited by Author2 (we have replaced <br /> with comma above)
-        authors_text = re.sub('[Ee]dited\sby ', '', authors_text).strip()
-        authors_text = re.sub('\sand\s', ',', authors_text)
+        authors_text = re.sub(r'[Ee]dited\sby ', '', authors_text).strip()
+        authors_text = re.sub(r'\sand\s', ',', authors_text)
         if authors_text.lower().startswith('by '):
             authors_text = authors_text[3:]
         #log.info('_cleanup_authors: authors="%s"' % authors_text)

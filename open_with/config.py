@@ -50,28 +50,28 @@ PLUGIN_ICONS = ['open_with.png', 'image_add.png', 'import.png', 'export.png']
 COL_NAMES = ['active', 'menuText', 'subMenu', 'format', 'image', 'appPath', 'appArgs']
 
 DEFAULT_MENU_SET_WINDOWS = [
-        (True,  'Sigil (EPUB)',             '', 'EPUB',    'owp_sigil.png',    'C:\\Program Files\\Sigil\\Sigil.exe', ''),
-        (False, 'Adobe Digital Ed (EPUB)',  '', 'EPUB',    'owp_ade.png',      'C:\\Program Files\\Adobe\\Adobe Digital Editions\\digitaleditions.exe', ''),
-        (False, 'Adobe Digital x64 (EPUB)', '', 'EPUB',    'owp_ade.png',      'C:\\Program Files (x86)\\Adobe\\Adobe Digital Editions\\digitaleditions.exe', ''),
-        (False, 'EPUBReader (EPUB)',        '', 'EPUB',    'owp_firefox.png',  'C:\\Program Files\\Mozilla Firefox\\firefox.exe', ''),
+        (True,  'Sigil (EPUB)',             '', 'EPUB',    'owp_sigil.png',    r'C:\\Program Files\\Sigil\\Sigil.exe', ''),
+        (False, 'Adobe Digital Ed (EPUB)',  '', 'EPUB',    'owp_ade.png',      r'C:\\Program Files\\Adobe\\Adobe Digital Editions\\digitaleditions.exe', ''),
+        (False, 'Adobe Digital x64 (EPUB)', '', 'EPUB',    'owp_ade.png',      r'C:\\Program Files (x86)\\Adobe\\Adobe Digital Editions\\digitaleditions.exe', ''),
+        (False, 'EPUBReader (EPUB)',        '', 'EPUB',    'owp_firefox.png',  r'C:\\Program Files\\Mozilla Firefox\\firefox.exe', ''),
         (False, '', '', '', '', '', '', ''),
-        (False, 'MS Paint (Cover)',         '', 'COVER',   'owp_mspaint.png',  'C:\\Windows\\System32\\mspaint.exe', ''),
-        (False, 'PSP 7 (Cover)',            '', 'COVER',   'owp_psp.png',      'C:\\Program Files\\Jasc Software Inc\\Paint Shop Pro 7\\psp.exe', ''),
-        (False, 'PSP 7 x64 (Cover)',        '', 'COVER',   'owp_psp.png',      'C:\\Program Files (x86)\\Jasc Software Inc\\Paint Shop Pro 7\\psp.exe', ''),
-        (False, 'Paint.NET (Cover)',        '', 'COVER',   'owp_paintnet.png', 'C:\\Program Files\\Paint.NET\\PaintDotNet.exe', ''),
-        (False, 'Photoshop CS5 (Cover)',    '', 'COVER',   'owp_pshop.png',    'C:\\Program Files\\Adobe\Adobe Photoshop CS5\\Photoshop.exe', ''),
-        (False, 'Photoshop CS5 x64 (Cover)','', 'COVER',   'owp_pshop.png',    'C:\\Program Files (x86)\\Adobe\Adobe Photoshop CS5\\Photoshop.exe', ''),
+        (False, 'MS Paint (Cover)',         '', 'COVER',   'owp_mspaint.png',  r'C:\\Windows\\System32\\mspaint.exe', ''),
+        (False, 'PSP 7 (Cover)',            '', 'COVER',   'owp_psp.png',      r'C:\\Program Files\\Jasc Software Inc\\Paint Shop Pro 7\\psp.exe', ''),
+        (False, 'PSP 7 x64 (Cover)',        '', 'COVER',   'owp_psp.png',      r'C:\\Program Files (x86)\\Jasc Software Inc\\Paint Shop Pro 7\\psp.exe', ''),
+        (False, 'Paint.NET (Cover)',        '', 'COVER',   'owp_paintnet.png', r'C:\\Program Files\\Paint.NET\\PaintDotNet.exe', ''),
+        (False, 'Photoshop CS5 (Cover)',    '', 'COVER',   'owp_pshop.png',    r'C:\\Program Files\\Adobe\Adobe Photoshop CS5\\Photoshop.exe', ''),
+        (False, 'Photoshop CS5 x64 (Cover)','', 'COVER',   'owp_pshop.png',    r'C:\\Program Files (x86)\\Adobe\Adobe Photoshop CS5\\Photoshop.exe', ''),
         (False, '', '', '', '', '', '', ''),
-        (False, 'Calibre (EPUB)',           '', 'EPUB',    'owp_calibre.png',  'C:\\Program Files\\Calibre2\\ebook-viewer.exe', ''),
-        (False, 'Calibre x64 (EPUB)',       '', 'EPUB',    'owp_calibre.png',  'C:\\Program Files (x86)\\Calibre2\\ebook-viewer.exe', ''),
-        (False, 'Calibre (MOBI)',           '', 'MOBI',    'owp_calibre.png',  'C:\\Program Files\\Calibre2\\ebook-viewer.exe', ''),
-        (False, 'Calibre x64 (MOBI)',       '', 'MOBI',    'owp_calibre.png',  'C:\\Program Files (x86)\\Calibre2\\ebook-viewer.exe', ''),
+        (False, 'Calibre (EPUB)',           '', 'EPUB',    'owp_calibre.png',  r'C:\\Program Files\\Calibre2\\ebook-viewer.exe', ''),
+        (False, 'Calibre x64 (EPUB)',       '', 'EPUB',    'owp_calibre.png',  r'C:\\Program Files (x86)\\Calibre2\\ebook-viewer.exe', ''),
+        (False, 'Calibre (MOBI)',           '', 'MOBI',    'owp_calibre.png',  r'C:\\Program Files\\Calibre2\\ebook-viewer.exe', ''),
+        (False, 'Calibre x64 (MOBI)',       '', 'MOBI',    'owp_calibre.png',  r'C:\\Program Files (x86)\\Calibre2\\ebook-viewer.exe', ''),
         (False, '', '', '', '', '', '', ''),
-        (False, 'Adobe Acrobat (PDF)',      '', 'PDF',     'owp_acrobat.png',  'C:\\Program Files\\Adobe\\Acrobat 10.0\\Acrobat\\Acrobat.exe', ''),
-        (False, 'Adobe Acrobat x64 (PDF)',  '', 'PDF',     'owp_acrobat.png',  'C:\\Program Files (x86)\\Adobe\\Acrobat 10.0\\Acrobat\\Acrobat.exe', ''),
-        (False, 'Adobe Digital Ed (PDF)',   '', 'PDF',     'owp_ade.png',      'C:\\Program Files\\Adobe\\Adobe Digital Editions\\digitaleditions.exe', ''),
-        (False, 'Adobe Digital x64 (PDF)',  '', 'PDF',     'owp_ade.png',      'C:\\Program Files (x86)\\Adobe\\Adobe Digital Editions\\digitaleditions.exe', ''),
-        (False, 'Briss (PDF)',              '', 'PDF',     'owp_briss.png',    'C:\\Program Files\\briss\\briss.exe', '')]
+        (False, 'Adobe Acrobat (PDF)',      '', 'PDF',     'owp_acrobat.png',  r'C:\\Program Files\\Adobe\\Acrobat 10.0\\Acrobat\\Acrobat.exe', ''),
+        (False, 'Adobe Acrobat x64 (PDF)',  '', 'PDF',     'owp_acrobat.png',  r'C:\\Program Files (x86)\\Adobe\\Acrobat 10.0\\Acrobat\\Acrobat.exe', ''),
+        (False, 'Adobe Digital Ed (PDF)',   '', 'PDF',     'owp_ade.png',      r'C:\\Program Files\\Adobe\\Adobe Digital Editions\\digitaleditions.exe', ''),
+        (False, 'Adobe Digital x64 (PDF)',  '', 'PDF',     'owp_ade.png',      r'C:\\Program Files (x86)\\Adobe\\Adobe Digital Editions\\digitaleditions.exe', ''),
+        (False, 'Briss (PDF)',              '', 'PDF',     'owp_briss.png',    r'C:\\Program Files\\briss\\briss.exe', '')]
 DEFAULT_MENU_SET_OSX = [
         (True,  'Sigil (EPUB)',             '', 'EPUB',    'owp_sigil.png',    '/Applications/Sigil.app', ''),
         (False, 'Adobe Digital Ed (EPUB)',  '', 'EPUB',    'owp_ade.png',      '/Applications/Adobe Digital Editions.app', ''),
@@ -138,7 +138,7 @@ def get_pathed_icon(icon_name):
     We prefix our icons for two reasons:
     
     1. If they really are built-in icons from this zip file, then they sit in the zip subfolder 'images'
-    2. If they were instead user-added images, they will sit in the folder: resources\images\Open With\
+    2. If they were instead user-added images, they will sit in the folder: resources\\images\\Open With\\
         however the logic in get_pixmap() would not look for them there due to the if statement that says
         anything not prefixed with 'images/' is assumed to be a calibre built-in icon.
     
@@ -486,7 +486,7 @@ class MenuTableWidget(QTableWidget):
         image_names = get_default_icon_names()
         # Remove all the images that do not have the owp_ prefix
         image_names = [x for x in image_names if x.startswith('owp_')]
-        # Now read any images from the config\resources\images\Open With directory if any
+        # Now read any images from the config\\resources\\images\\Open With directory if any
         self.resources_dir = os.path.join(config_dir, 'resources/images/Open With')
         if iswindows:
             self.resources_dir = os.path.normpath(self.resources_dir)
@@ -781,7 +781,7 @@ class ConfigWidget(QWidget):
         archive_path = self.pick_archive_to_import()
         if not archive_path:
             return
-        # Write the whole file contents into the resources\images directory
+        # Write the whole file contents into the resources\\images directory
         if not os.path.exists(table.resources_dir):
             os.makedirs(table.resources_dir)
         with ZipFile(archive_path, 'r') as zf:

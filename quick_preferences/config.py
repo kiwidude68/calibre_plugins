@@ -51,13 +51,13 @@ DEFAULT_MENUS = [
     {
         KEY_ACTIVE: True,
         KEY_TITLE: 'Title - Author (Default)',
-        KEY_REGEX: '(?P<title>.+) - (?P<author>[^_]+)',
+        KEY_REGEX: r'(?P<title>.+) - (?P<author>[^_]+)',
         KEY_SWAP_NAMES: None
     },
     {
         KEY_ACTIVE: True,
         KEY_TITLE: 'Author [- Series #]- Title',
-        KEY_REGEX: '^(?P<author>((?!\s-\s).)+)\s-\s(?:(?:\[\s*)?(?P<series>.+)\s(?P<series_index>[\d\.]+)(?:\s*\])?\s-\s)?(?P<title>[^(]+)(?:\(.*\))?',
+        KEY_REGEX: r'^(?P<author>((?!\s-\s).)+)\s-\s(?:(?:\[\s*)?(?P<series>.+)\s(?P<series_index>[\d\.]+)(?:\s*\])?\s-\s)?(?P<title>[^(]+)(?:\(.*\))?',
         KEY_SWAP_NAMES: None
     }
 ]

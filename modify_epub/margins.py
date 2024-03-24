@@ -54,7 +54,7 @@ class MarginsUpdater(object):
 
         styles = match[2].lower().strip()
         # delete trailing semicolons
-        styles = re.sub('\s*;$', '', styles)
+        styles = re.sub(r'\s*;$', '', styles)
         # match string to prefs
         styles = re.sub('margin-', 'margin_', styles)
         if match[1].lower() == 'body' and styles.find('margin') != -1:
@@ -66,7 +66,7 @@ class MarginsUpdater(object):
                 continue
             style = [s.strip() for s in style.split(':')]
             property_type = re.sub('-','_', style[0])
-            value = float(re.sub('[^\d.]+', '', style[1]))
+            value = float(re.sub(r'[^\d.]+', '', style[1]))
 
             if property_type == 'margin': # Not a calibre set value, so we will just replace the whole value
                 return True
@@ -101,7 +101,7 @@ class MarginsUpdater(object):
         css_id = match.group('cssid')
         styles = match.group('styles').strip()
         # delete trailing semicolons
-        styles = re.sub('\s*;$', '', styles)
+        styles = re.sub(r'\s*;$', '', styles)
         stylelist = styles.split(';')
         retained_styles = []
         for style in stylelist:

@@ -29,10 +29,10 @@ try:
 except NameError:
     pass
 
-DEFAULT_CLIP_PATTERNS = [('Title - Author', '(?P<title>.*?) \- (?P<authors>.*)'),
-                         ('Title by Author', '(?P<title>.*?) by (?P<authors>.*)'),
-                         ('Title / Author', '(?P<title>.*?) / (?P<authors>.*)'),
-                         ('Title (Author)', '(?P<title>.*?) \((?P<authors>.*)\)')]
+DEFAULT_CLIP_PATTERNS = [('Title - Author', r'(?P<title>.*?) \- (?P<authors>.*)'),
+                         ('Title by Author', r'(?P<title>.*?) by (?P<authors>.*)'),
+                         ('Title / Author', r'(?P<title>.*?) / (?P<authors>.*)'),
+                         ('Title (Author)', r'(?P<title>.*?) \((?P<authors>.*)\)')]
     
 class ImportClipboardTab(QWidget):
 
@@ -165,8 +165,8 @@ class ImportClipboardTab(QWidget):
         regex = None
         defined_columns = []
         if expression:
-            defined_columns = re.findall('\?P<([^>]+)>', expression)
-            expression = re.sub('(?i)\?P<identifier:', '?P<', expression)
+            defined_columns = re.findall(r'\?P<([^>]+)>', expression)
+            expression = re.sub(r'(?i)\?P<identifier:', '?P<', expression)
             try:
                 regex = re.compile(expression, re.UNICODE)
             except:
@@ -235,7 +235,7 @@ class ImportClipboardTab(QWidget):
         # Identify which columns the user has configured
         columns = ['title', 'authors']
         text = str(self.pat_combo.currentText())
-        defined_columns = re.findall('\?P<([^>]+)>', text)
+        defined_columns = re.findall(r'\?P<([^>]+)>', text)
         for column in defined_columns:
             if column not in columns:
                 columns.append(column)

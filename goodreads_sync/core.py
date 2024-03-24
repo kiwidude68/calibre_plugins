@@ -744,7 +744,7 @@ class HttpHelper(object):
                 break
 
             book_url = ''.join(edition_data_node.xpath('div[@class="dataRow"]/a/@href'))
-            goodreads_edition_book['goodreads_id'] = re.search('/book/show/(\d+)', book_url).groups(0)[0]
+            goodreads_edition_book['goodreads_id'] = re.search(r'/book/show/(\d+)', book_url).groups(0)[0]
             goodreads_edition_book['goodreads_title'] = ''.join(edition_data_node.xpath('div[@class="dataRow"]/a[@class="bookTitle"]/text()'))
             cover_url = ''.join(edition_node.xpath('div[@class="leftAlignedImage"]/a/img/@src'))
             if 'nocover' in cover_url:
@@ -755,9 +755,9 @@ class HttpHelper(object):
             isbn_node = edition_data_node.xpath('div[@class="moreDetails hideDetails"]/div[@class="dataRow"][2]/div[@class="dataValue"]/span[@class="greyText"]/text()')
             if len(isbn_node) > 0:
                 isbn = None
-                match_isbn = re.search(': (\d+)', isbn_node[0])
+                match_isbn = re.search(r': (\d+)', isbn_node[0])
                 if not match_isbn:
-                    match_isbn = re.search('(\d+)', isbn_node[0])
+                    match_isbn = re.search(r'(\d+)', isbn_node[0])
                 if match_isbn:
                     isbn = match_isbn.groups(0)[0]
                     if check_isbn(isbn):

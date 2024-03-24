@@ -128,7 +128,7 @@ def convert_regexp_to_nongrouping(pattern):
     # This regexp substitution function replaces the string '('
     # with the string '(?:', but otherwise makes no changes.
     def subfunc(m):
-        return re.sub('^\((\?P<[^>]*>)?$', '(?:', m.group())
+        return re.sub(r'^\((\?P<[^>]*>)?$', '(?:', m.group())
 
     # Scan through the regular expression.  If we see any backslashed
     # characters, ignore them.  If we see a named group, then

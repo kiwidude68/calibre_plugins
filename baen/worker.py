@@ -166,7 +166,7 @@ class Worker(Thread): # Get details
     def parse_published_date(self, root):
         published_node = root.xpath('//div[@class="product-shop"]//p[@class="publish-date"]')
         if published_node:
-            date_match = re.search('Published:\s+(\d+)/(\d+)/(\d+)', published_node[0].text.strip())
+            date_match = re.search(r'Published:\s+(\d+)/(\d+)/(\d+)', published_node[0].text.strip())
             if date_match:
                 year = int(date_match.groups(0)[2])
                 month = int(date_match.groups(0)[0])
@@ -198,7 +198,7 @@ class Worker(Thread): # Get details
         if cover_node:
             cover_node = cover_node[0].xpath('//a[@onclick]')
             #self.log.info('parse_cover: cover_node=', cover_node[0].get('onclick') )
-            match = re.search('window.open\(\'(.*?)\'', cover_node[0].get('onclick'))
+            match = re.search(r'window.open\(\'(.*?)\'', cover_node[0].get('onclick'))
             if match:
                 self.log.info('parse_cover: cover="%s"' % match.groups(0)[0])
                 cover_url = match.groups(0)[0]

@@ -47,7 +47,7 @@ def create_menu_action_unique(ia, parent_menu, menu_text, image=None, tooltip=No
     InterfaceAction.create_menu_action() function which ensures that regardless of
     whether a shortcut is specified it will appear in Preferences->Keyboard
 
-    For a full description of the parameters, see: calibre\gui2\actions\__init__.py
+    For a full description of the parameters, see: calibre\\gui2\\actions\\__init__.py
     '''
     orig_shortcut = shortcut
     kb = ia.gui.keyboard

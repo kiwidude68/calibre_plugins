@@ -314,7 +314,7 @@ class Worker(Thread): # Get details
         self.result_queue.put(mi)
 
     def parse_goodreads_id(self, url):
-        return re.search('/show/(\d+)', url).groups(0)[0]
+        return re.search(r'/show/(\d+)', url).groups(0)[0]
 
     def parse_title(self, book_json):
         if "title" not in book_json:

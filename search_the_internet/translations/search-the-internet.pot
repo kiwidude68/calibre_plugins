@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 20:47+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr ""
 
@@ -107,23 +107,23 @@ msgstr ""
 msgid "&Help"
 msgstr ""
 
-#: action.py:143
+#: action.py:144
 msgid "Cannot open link"
 msgstr ""
 
-#: action.py:144
+#: action.py:145
 msgid "This menu item has not been configured with a url."
 msgstr ""
 
-#: action.py:176 action.py:188
+#: action.py:185 action.py:197
 msgid "Invalid URL"
 msgstr ""
 
-#: action.py:177
+#: action.py:186
 msgid "You cannot use POST for this url as you have not specified any arguments after a ?"
 msgstr ""
 
-#: action.py:189
+#: action.py:198
 msgid "You cannot use POST for this url as it does not have name=value for "
 msgstr ""
 

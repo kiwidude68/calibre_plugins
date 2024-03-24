@@ -220,7 +220,7 @@ class SwitchEditionTableWidget(QTableWidget):
         self.add_url_to_grid(url)
 
     def add_url_to_grid(self, url):
-        match = re.search('/show/(\d+)', url)
+        match = re.search(r'/show/(\d+)', url)
         if not match:
             return
         goodreads_id = match.group(1)
@@ -1058,7 +1058,7 @@ class PickGoodreadsBookTableWidget(QTableWidget):
         self.add_url_to_grid(url)
 
     def add_url_to_grid(self, url):
-        match = re.search('/show/(\d+)', url)
+        match = re.search(r'/show/(\d+)', url)
         if not match:
             return
         goodreads_id = match.group(1)

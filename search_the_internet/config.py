@@ -260,7 +260,7 @@ def get_pathed_icon(icon_name):
     We prefix our icons for two reasons:
     
     1. If they really are built-in icons from this zip file, then they sit in the zip subfolder 'images'
-    2. If they were instead user-added images, they will sit in the folder: resources\images\Search The Internet\
+    2. If they were instead user-added images, they will sit in the folder: resources\\images\\Search The Internet\\
         however the logic in get_pixmap() would not look for them there due to the if statement that says
         anything not prefixed with 'images/' is assumed to be a calibre built-in icon.
     
@@ -518,7 +518,7 @@ class MenuTableWidget(QTableWidget):
         image_names = get_default_icon_names()
         # Remove all the images that do not have the stip_ prefix
         image_names = [x for x in image_names if x.startswith('stip_')]
-        # Now read any images from the config\resources\images directory if any
+        # Now read any images from the config\\resources\\images directory if any
         self.resources_dir = get_local_images_dir('Search The Internet')
 
         if os.path.exists(self.resources_dir):
@@ -1031,7 +1031,7 @@ class ConfigWidget(QWidget):
         archive_path = self.pick_archive_name_to_import()
         if not archive_path:
             return
-        # Write the whole file contents into the resources\images directory
+        # Write the whole file contents into the resources\\images directory
         if not os.path.exists(table.resources_dir):
             os.makedirs(table.resources_dir)
         with ZipFile(archive_path, 'r') as zf:

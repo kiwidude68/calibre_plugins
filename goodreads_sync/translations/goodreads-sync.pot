@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-21 19:53+1000\n"
+"POT-Creation-Date: 2024-03-24 18:01+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -719,32 +719,32 @@ msgstr ""
 msgid "There is already a shelf named:"
 msgstr ""
 
-#: core.py:48 core.py:471 core.py:473 dialogs.py:305 dialogs.py:307
+#: core.py:48 core.py:484 core.py:486 dialogs.py:305 dialogs.py:307
 #: dialogs.py:1148 dialogs.py:1150
 msgid "Unknown"
 msgstr ""
 
-#: core.py:194
+#: core.py:202 core.py:207
 msgid "Goodreads Failure"
 msgstr ""
 
-#: core.py:195
+#: core.py:208
 msgid "The request contacting Goodreads has failed."
 msgstr ""
 
-#: core.py:196
+#: core.py:209
 msgid "If it reoccurs you may have exceeded a request limit imposed by Goodreads."
 msgstr ""
 
-#: core.py:197
+#: core.py:210
 msgid "In which case wait an additional 5-10 minutes before retrying."
 msgstr ""
 
-#: core.py:414
+#: core.py:427
 msgid "Page"
 msgstr ""
 
-#: core.py:417
+#: core.py:430
 msgid "Syncing from shelf: {0}"
 msgstr ""
 

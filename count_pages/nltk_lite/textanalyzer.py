@@ -15,7 +15,7 @@ from six import text_type as unicode
 
 class TextAnalyzer(object):
 
-    tokenizer = RegexpTokenizer('(?u)\W+|\$[\d\.]+|\S+')
+    tokenizer = RegexpTokenizer(r'(?u)\W+|\$[\d\.]+|\S+')
     special_chars = ['.', ',', '!', '?']
 
     def __init__(self, eng_tokenizer_pickle):

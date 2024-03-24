@@ -67,7 +67,7 @@ PAGE_DOWNLOADS = {
                      'id': 'goodreads',
                      'icon': 'images/goodreads.png',
                      'active': True,
-                     'pages_regex': '([0-9]+) pages'
+                     'pages_regex': r'([0-9]+) pages'
                     },
                   'lubimyczytac.pl':
                     {
@@ -86,12 +86,12 @@ PAGE_DOWNLOADS = {
                      'id': 'skoob',
                      'icon': 'images/skoob.png',
                      'active': False,
-                     'pages_regex': 'ginas: ([0-9]+)' # First group in match should be the page counts
+                     'pages_regex': r'ginas: ([0-9]+)' # First group in match should be the page counts
                     },
                   'databazeknih.cz':
                     {
                      'URL': 'https://www.databazeknih.cz/book-detail-more-info/%s',
-                     'identifier_regex': '(?:-{0,1})(\d+)$',   # Only want the number at the end of the identifier
+                     'identifier_regex': r'(?:-{0,1})(\d+)$',   # Only want the number at the end of the identifier
                      'pages_xpath': '//span[@itemprop="numberOfPages"]/text()',
                      'name': 'databazeknih.cz',
                      'id': 'databazeknih',

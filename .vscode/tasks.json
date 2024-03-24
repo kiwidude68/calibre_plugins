@@ -164,22 +164,6 @@
             },
         },
         {
-            "label": "Cover Url -> Generate .pot",
-            "type": "shell",
-            "command": ".\\generate-pot.cmd",
-            "options": {
-                "cwd": "${workspaceFolder}\\cover_url\\.build"
-            },
-        },
-        {
-            "label": "Cover Url -> Transifex Pull",
-            "type": "shell",
-            "command": ".\\transifex-pull.cmd",
-            "options": {
-                "cwd": "${workspaceFolder}\\cover_url\\.build"
-            },
-        },
-        {
             "label": "Cover Url -> Release",
             "type": "shell",
             "command": ".\\release.cmd",

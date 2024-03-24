@@ -77,7 +77,7 @@ class Goodreads(Source):
                     '%s/book/show/%s' % (Goodreads.BASE_URL, goodreads_id))
 
     def id_from_url(self, url):
-        match = re.match(self.BASE_URL + "/book/show/(\d+).*", url)
+        match = re.match(self.BASE_URL + r"/book/show/(\d+).*", url)
         if match:
             return (self.ID_NAME, match.groups(0)[0])
         return None

@@ -82,7 +82,7 @@ def tidy_author(author_text, regex=None, regex_is_strip=True):
                 return ''
 #     print("tidy_author: before - author_text='%s'" % author_text)
     # When scraping from web in particular, remove newlines and extra space
-    author_text = re.sub('\s+', ' ', author_text).strip()
+    author_text = re.sub(r'\s+', ' ', author_text).strip()
     # If it starts with a leading comma strip that.
     if author_text.startswith(','):
         author_text = author_text[1:].strip()

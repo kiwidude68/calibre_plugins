@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 21:20+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr ""
 
@@ -103,23 +103,23 @@ msgstr ""
 msgid "Goto next"
 msgstr ""
 
-#: action.py:109
+#: action.py:111
 msgid "Clear search history"
 msgstr ""
 
-#: action.py:112
+#: action.py:114
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:114 config.py:93
+#: action.py:116 config.py:93
 msgid "&Help"
 msgstr ""
 
-#: action.py:191
+#: action.py:196
 msgid "Are you sure?"
 msgstr ""
 
-#: action.py:192
+#: action.py:197
 msgid "Are you sure you want to clear the search history?"
 msgstr ""
 

@@ -149,7 +149,7 @@ class Worker(Thread): # Get details
     def parse_series(self, root):
         title = root.xpath('//head/title')
         if title:
-            series_match = re.search('\((.*), book ([\.\d+]+)\)', title[0].text.strip())
+            series_match = re.search(r'\((.*), book ([\.\d+]+)\)', title[0].text.strip())
             if series_match:
                 series_name = series_match.groups(0)[0].strip()
                 series_index = series_match.groups(0)[1]
