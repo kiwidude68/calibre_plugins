@@ -7,13 +7,14 @@
 # Fan Xu <xlivevil@aliyun.com>, 2022
 # 高垚鑫, 2022
 # RERBIN MA, 2022
+# tony shen <anthanny@hotmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 14:46+0100\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
-"Last-Translator: RERBIN MA, 2022\n"
+"Last-Translator: tony shen <anthanny@hotmail.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,11 +100,11 @@ msgstr "需要重启"
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
-msgstr ""
+msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre！"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "创建新列"
 
 #: config.py:154
 msgid "Goodreads Genre"
@@ -119,13 +120,15 @@ msgstr "Goodreads类别转换本地标签"
 
 #: config.py:228
 msgid "Filter and map genres to calibre tags"
-msgstr ""
+msgstr "过滤流派并将其映射到 calibre 标签"
 
 #: config.py:229
 msgid ""
 "When checked, only specific calibre tags will be used as per below.\n"
 "When unchecked, all Goodreads genres will be added as tags."
 msgstr ""
+"选中后，将仅使用特定calibre标签，如下所示。 \n"
+"取消选中时，所有 Goodreads 流派都将添加为标签。"
 
 #: config.py:242
 msgid "Add genre mapping"
@@ -199,23 +202,27 @@ msgstr "若选中，将采用本书的首次出版时间而非新版本的实际
 
 #: config.py:300
 msgid "Get precise rating into 'grrating' identifier"
-msgstr ""
+msgstr "在“光栅”标识符中获取精确的评级"
 
 #: config.py:301
 msgid ""
 "If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
 "you can display as a custom column."
 msgstr ""
+"如果选中，则会将精确评级（例如 3.78）提取到标识符中\n"
+"您可以显示为自定义列。"
 
 #: config.py:306
 msgid "Get #votes for rating into 'grvotes' identifier"
-msgstr ""
+msgstr "将 #votes 评级放入“grvotes”标识符中"
 
 #: config.py:307
 msgid ""
 "If checked, pulls number of votes producing this rating into an identifier\n"
 "you can display as a custom column."
 msgstr ""
+"如果选中，则会将产生此评级的投票数提取到标识符中\n"
+"您可以显示为自定义列。"
 
 #: config.py:328 config.py:359
 msgid "Add new mapping"

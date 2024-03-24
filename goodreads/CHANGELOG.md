@@ -1,8 +1,12 @@
 # Goodreads Change Log
 
+## [1.8.1] - 2023-03-24
+### Fixed
+- Author metadata change of just taking the primary contributor (first) when a book has no contributors with a role of Author like comics.
+
 ## [1.8.0] - 2023-03-19
 ### Fixed
-- Changed the source from where the authors metaadata is being scraped from, to better respect turning off the `Get all contributing authors` setting so as to not always return all authors. Note pseudonyms for authors will return both names. -([#53][i53])
+- Changed the source from where the authors metadata is being scraped from, to better respect turning off the `Get all contributing authors` setting so as to not always return all authors. Note pseudonyms for authors will return both names. -([#53][i53])
 
 [i53]: https://github.com/kiwidude68/calibre_plugins/issues/53
 

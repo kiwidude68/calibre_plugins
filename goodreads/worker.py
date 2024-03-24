@@ -365,7 +365,13 @@ class Worker(Thread): # Get details
                 if (role == "Author" or get_all_authors):
                     contributor = secondary["node"]["__ref"]
                     author_contributor_ids.append(contributor[12:]) # strip off "Contributor:""
-        
+
+        if (not author_contributor_ids and not get_all_authors):
+            # We could not find a role = "Author" for this book. That can happen with comics for instance.
+            # In this circumstance just grab the primary contributor as author to use.
+            contributor = primary["node"]["__ref"]
+            author_contributor_ids.append(contributor[12:]) # strip off "Contributor:"
+       
         for contributor_json in contributors_list_json:
             if (contributor_json.get("name") is None):
                 continue
@@ -374,6 +380,8 @@ class Worker(Thread): # Get details
                 author_name = contributor_json["name"]
                 self.log.info('parse_authors - author=%s' % author_name)
                 authors.append(author_name)
+            
+
         return authors
 
     def parse_rating(self, work_json):
