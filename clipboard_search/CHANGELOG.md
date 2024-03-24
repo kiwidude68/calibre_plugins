@@ -1,5 +1,9 @@
 # Clipboard Search Change Log
 
+## [1.5.0] - 2024-03-24
+### Added
+- Add an Author search option (kacir)
+
 ## [1.4.1] - 2024-03-17
 ### Added
 - Catalan translation

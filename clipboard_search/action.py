@@ -14,6 +14,7 @@ from functools import partial
 
 from calibre.gui2.actions import InterfaceAction
 
+import re
 import calibre_plugins.clipboard_search.config as cfg
 from calibre_plugins.clipboard_search.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.clipboard_search.common_menus import unregister_menu_actions, create_menu_action_unique
@@ -57,9 +58,11 @@ class ClipboardSearchAction(InterfaceAction):
         m = self.menu
         m.clear()
         create_menu_action_unique(self, m, _('Text search'), shortcut='Ctrl+S',
-                         triggered=partial(self.search_using_clipboard_text, is_exact_search=False))
+                         triggered=partial(self.search_using_clipboard_text, search_mode=''))
         create_menu_action_unique(self, m, _('Exact text search'), PLUGIN_ICONS[1], shortcut='Ctrl+Shift+S',
-                         triggered=partial(self.search_using_clipboard_text, is_exact_search=True))
+                         triggered=partial(self.search_using_clipboard_text, search_mode='exact'))
+        create_menu_action_unique(self, m, _('Author search'), get_icon('user_profile.png'), shortcut='Ctrl+Alt+Shift+S',
+                         triggered=partial(self.search_using_clipboard_text, search_mode='author'))
         m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
@@ -72,17 +75,25 @@ class ClipboardSearchAction(InterfaceAction):
     def default_search_using_clipboard_text(self):
         self.search_using_clipboard_text(is_exact_search=self.default_search_is_exact)
 
-    def search_using_clipboard_text(self, is_exact_search=False):
+    def search_using_clipboard_text(self, search_mode=''):
         cb = QApplication.instance().clipboard()
         txt = unicode(cb.text()).strip()
-        if txt:
-            if is_exact_search:
-                # Surround search text with quotes if it does not have any already
-                if not txt.startswith('"'):
-                    txt = '"' + txt
-                if not txt.endswith('"'):
-                    txt += '"'
-            self.gui.search.set_search_string(txt, store_in_history=True)
+        if not txt:
+            return
+        if search_mode == 'exact':
+            # Surround search text with quotes if it does not have any already
+            if not txt.startswith('"'):
+                txt = '"' + txt
+            if not txt.endswith('"'):
+                txt += '"'
+        if search_mode == 'author':
+            # put string authors:" at the beginning of txt
+            txt=re.sub('^','authors:\"',txt)
+            # put " at the end of the string
+            txt=re.sub('$','\"',txt)
+            # replace whitespace (as many as possible) between names with " and authors:"
+            txt=re.sub(r'\s\s*','\" and authors:\"',txt)
+        self.gui.search.set_search_string(txt, store_in_history=True)
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)

@@ -8,13 +8,14 @@
 # 高垚鑫, 2022
 # RERBIN MA, 2022
 # Ander_Index <Ander_Index@outlook.com>, 2023
+# tony shen <anthanny@hotmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-09 11:34+0100\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
-"Last-Translator: Ander_Index <Ander_Index@outlook.com>, 2023\n"
+"Last-Translator: tony shen <anthanny@hotmail.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,23 +101,23 @@ msgstr "需要重启"
 #: ..\common\common_widgets.py:149
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
-msgstr ""
+msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre！"
 
 #: ..\common\common_widgets.py:222
 msgid "Create new column"
-msgstr ""
+msgstr "创建新列"
 
 #: action.py:33
 msgid "Clipboard Search"
-msgstr ""
+msgstr "剪贴板搜索"
 
 #: action.py:59 config.py:58
 msgid "Text search"
-msgstr ""
+msgstr "文本搜索"
 
 #: action.py:61 config.py:59
 msgid "Exact text search"
-msgstr ""
+msgstr "附加文本搜索"
 
 #: action.py:64
 msgid "&Customize plugin"
@@ -128,7 +129,7 @@ msgstr "帮助 (&H)"
 
 #: config.py:53
 msgid "Default action for toolbar button click"
-msgstr ""
+msgstr "单击工具栏按钮的默认操作"
 
 #: config.py:70
 msgid "Edit the keyboard shortcuts associated with this plugin"

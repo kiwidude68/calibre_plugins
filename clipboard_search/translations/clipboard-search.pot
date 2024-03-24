@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:34+0100\n"
+"POT-Creation-Date: 2024-03-24 17:37+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,39 +75,43 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr ""
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr ""
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr ""
 
-#: action.py:33
+#: action.py:34
 msgid "Clipboard Search"
 msgstr ""
 
-#: action.py:59 config.py:58
+#: action.py:60 config.py:58
 msgid "Text search"
 msgstr ""
 
-#: action.py:61 config.py:59
+#: action.py:62 config.py:59
 msgid "Exact text search"
 msgstr ""
 
 #: action.py:64
+msgid "Author search"
+msgstr ""
+
+#: action.py:67
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:66 config.py:74
+#: action.py:69 config.py:74
 msgid "&Help"
 msgstr ""
 
