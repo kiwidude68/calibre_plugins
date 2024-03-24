@@ -1,5 +1,12 @@
 # Import List Change Log
 
+## [1.9.3] - 2024-03-24
+### Changed
+- Do not auto-size columns in the 'matches in library' grid so that for instance a lot of tags would create a super wide column.
+- Move the Matched dropdown of algorithms into the radiobutton area to prevent need for dynamic show/hide.
+- Add a splitter for resizing between the Books in list / Matches in library grids
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
 ## [1.9.2] - 2024-03-17
 ### Added
 - Tamil translation

@@ -79,7 +79,6 @@ class MatchedBookView(QTableView):
         self.tags_delegate.set_database(self.db)
 
         self._set_delegates_for_columns()
-        self.resizeColumnsToContents()
         # Specify a minimum width for title, author and series
         offset = len(self.import_cols_map)
         self._set_minimum_column_width(offset, 150)

@@ -92,7 +92,8 @@ class ImportListWizard(QWizard):
         state['import_splitter_state'] = bytearray(self.import_page.splitter.saveState())
         state['import_preview_columns'] = self.import_page.get_preview_columns()
         state['import_preview_column_widths'] = self.import_page.get_preview_table_column_widths()
-        state['resolve_splitter_state'] = bytearray(self.resolve_page.splitter.saveState())
+        state['resolve_splitter_state_horiz'] = bytearray(self.resolve_page.horiz_splitter.saveState())
+        state['resolve_splitter_state_vert'] = bytearray(self.resolve_page.vert_splitter.saveState())
         state['resolve_search_column_widths'] = self.resolve_page.get_search_matches_table_column_widths()
         gprefs[self.unique_pref_name+':state'] = state
 
