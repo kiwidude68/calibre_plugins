@@ -231,8 +231,7 @@ class SearchTheInternetAction(InterfaceAction):
     def convert_to_search_text(self, text, encoding, method):
         try:
             # First we strip characters we will definitely not want to pass through.
-            # Periods from author initials etc do not need to be supplied
-            new_text = text.replace('.', '').replace('&', '').replace('  ',' ')
+            new_text = text.replace('&', '').replace('  ',' ')
             # Now encode the text using Python function with chosen encoding - but only for GET not POST
             if method == 'GET':
                 new_text = quote_plus(new_text.encode(encoding, 'ignore'))

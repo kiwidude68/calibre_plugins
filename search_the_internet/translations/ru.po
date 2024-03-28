@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 20:47+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 19:01+0000\n"
 "Last-Translator: Caarmi, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -89,22 +89,22 @@ msgstr "Все настройки для этого плагина в этой �
 msgid "Copy to clipboard"
 msgstr "Копировать в Буфер обмена"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Не определено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Требуется перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Изображение обложки не найдено - перед использованием нужно перезапустить "
 "calibre!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
@@ -124,19 +124,19 @@ msgstr "&Настроить плагин"
 msgid "&Help"
 msgstr "Спр&авка"
 
-#: action.py:143
+#: action.py:144
 msgid "Cannot open link"
 msgstr "Не могу открыть ссылку"
 
-#: action.py:144
+#: action.py:145
 msgid "This menu item has not been configured with a url."
 msgstr "Этот пункт меню не был настроен с URL-адресом."
 
-#: action.py:176 action.py:188
+#: action.py:185 action.py:197
 msgid "Invalid URL"
 msgstr "Неверный URL"
 
-#: action.py:177
+#: action.py:186
 msgid ""
 "You cannot use POST for this url as you have not specified any arguments "
 "after a ?"
@@ -144,7 +144,7 @@ msgstr ""
 "Вы не можете использовать POST для этого URL-адреса, так как вы не указали "
 "никаких аргументов после ?"
 
-#: action.py:189
+#: action.py:198
 msgid "You cannot use POST for this url as it does not have name=value for "
 msgstr ""
 "Вы не можете использовать POST для этого URL-адреса, так как он не имеет имя"

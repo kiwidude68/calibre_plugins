@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 20:47+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 19:01+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -95,22 +95,22 @@ msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
@@ -130,19 +130,19 @@ msgstr "&Personalizar complemento"
 msgid "&Help"
 msgstr "&Ayuda"
 
-#: action.py:143
+#: action.py:144
 msgid "Cannot open link"
 msgstr "No se puede abrir el enlace"
 
-#: action.py:144
+#: action.py:145
 msgid "This menu item has not been configured with a url."
 msgstr "Este elemento de menú no ha sido configurado con un URL."
 
-#: action.py:176 action.py:188
+#: action.py:185 action.py:197
 msgid "Invalid URL"
 msgstr "URL no válido"
 
-#: action.py:177
+#: action.py:186
 msgid ""
 "You cannot use POST for this url as you have not specified any arguments "
 "after a ?"
@@ -150,7 +150,7 @@ msgstr ""
 "No se puede usar POST para este URL porque no se ha especificado ningún "
 "argumento tras ?"
 
-#: action.py:189
+#: action.py:198
 msgid "You cannot use POST for this url as it does not have name=value for "
 msgstr ""
 "No se puede usar POST para este URL porque no tiene ningún nombre=valor"

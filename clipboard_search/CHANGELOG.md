@@ -3,6 +3,8 @@
 ## [1.5.0] - 2024-03-24
 ### Added
 - Add an Author search option (kacir)
+### Fixed
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
 
 ## [1.4.1] - 2024-03-17
 ### Added
