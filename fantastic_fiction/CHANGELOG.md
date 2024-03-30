@@ -1,5 +1,19 @@
 # Fantastic Fiction Change Log
 
+## [1.7.0] - 2024-03-30
+### Added
+- If the id is manually linked to the author index page, ensure the link returns a `.html` suffix rather than `.htm` required for individual book pages.
+- Catalan translation
+- Chinese (China) translation
+- Dutch translation
+- French translation
+- German translation
+- Italian translation
+- Natvian translation
+- Polish translation
+- Spanish (Brazil) translation
+- Swedish translation
+
 ## [1.6.5] - 2024-03-17
 ### Added
 - Finnish translation

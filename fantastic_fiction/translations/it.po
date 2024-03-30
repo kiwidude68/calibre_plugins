@@ -3,134 +3,134 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Darío Hereñú, 2022
-# Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# Giuseppe Pignataro (Fastbyte01) <rogepix@gmail.com>, 2022
+# Marta Mingolla <martamingolla@yandex.com>, 2022
+# Ettore Mazzitelli, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:58+1000\n"
 "PO-Revision-Date: 2022-09-19 15:16+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Ettore Mazzitelli, 2022\n"
+"Language-Team: Italian (https://app.transifex.com/calibre/teams/19337/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
+"Language: it\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "Scorciatoie tastiera"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "Riavvia calibre adesso"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "Preferenze per:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "Pulisci"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "Cancellare tutte le impostazioni per il plugin?"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+"Sicuro di voler cambiare la configurazione nella libreria di questo plugin?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"Qualsiasi configurazione nelle altre librerie o salvate in un file JSON "
+"nella cartella dei  plugin calibre non sarà toccata "
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "Dopo devi riavviare calibre "
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "Impostazioni cambiate"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr ""
+"La configurazione di questo plugin calibre in questa libreria è stata "
+"modificata "
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "Riavvia calibre adesso."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+"Sei sicuro di voler cancellare le impostazioni per il plugin di questa "
+"libreria?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "Impostazioni cancellate "
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr ""
+"Tutte le impostazioni per il plugin della libreria sono state cancellate."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "Copia negli appunti "
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "Non definito"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "Riavvio richiesto"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"Immagine del titolo non trovata - Devi riavviare Calibre prima di utilizzare"
+" questo plugin!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "Crea una nuova colonna "
 
 #: config.py:50
 msgid "Other Options"
-msgstr "Otras opciones"
+msgstr ""
 
 #: config.py:58
 msgid "If genre found in comments:"
-msgstr "Si se encuentra el género en los comentarios:"
+msgstr ""
 
 #: config.py:59
 msgid ""
 "A subset (at this time) of the books in Fantastic Fiction\n"
 "contain a hyperlinked Genre at the bottom of the comments."
 msgstr ""
-"Una parte (en este momento) de los libros en Fantastic Fiction\n"
-"contiene un género enlazado al final de los comentarios."
 
 #: config.py:65
 msgid "Reduce header sizes in comments"
-msgstr "Reducir los tamaños de encabezado en los comentarios"
+msgstr ""
 
 #: config.py:66
 msgid ""
@@ -138,7 +138,3 @@ msgid ""
 "tags that look out of place inside a calibre library.\n"
 "Enabling this option reduces those header tags in size values"
 msgstr ""
-"Para algunos libros la descripción del sitio web usa etiquetas de\n"
-"encabezado grandes que parecen fuera de lugar en una biblioteca\n"
-"de calibre. Si se activa esta opción los tamaños de dichas etiquetas\n"
-"de encabezado se reducirán"

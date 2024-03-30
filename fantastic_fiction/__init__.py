@@ -63,7 +63,7 @@ class FantasticFiction(Source):
     name = 'Fantastic Fiction'
     description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
-    version = (1, 6, 5)
+    version = (1, 7, 0)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ff'
@@ -85,8 +85,12 @@ class FantasticFiction(Source):
     def get_book_url(self, identifiers):
         ff_id = identifiers.get(self.ID_NAME, None)
         if ff_id:
-            return ('FantasticFiction', ff_id,
-                    '%s/%s.htm' % (FantasticFiction.BASE_URL, ff_id))
+            # Check for a special case of the ff_id ending in index, indicating the authors page
+            # In this case the suffix needs to be html, not htm
+            if ff_id.endswith('/index'):
+                return ('FantasticFiction', ff_id, '%s/%s.html' % (FantasticFiction.BASE_URL, ff_id))
+            return ('FantasticFiction', ff_id, '%s/%s.htm' % (FantasticFiction.BASE_URL, ff_id))
+            
 
     def id_from_url(self, url):
         match = re.match(self.BASE_URL + "/(.*)\.htm.*", url)
