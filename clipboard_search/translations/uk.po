@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Andrii M. <dexteritymaster@gmail.com>, 2022
-# Yuri Chornoivan <yurchor@ukr.net>, 2022
+# Yuri Chornoivan <yurchor@ukr.net>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:34+0100\n"
+"POT-Creation-Date: 2024-03-24 17:37+1000\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2024\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -92,42 +92,46 @@ msgstr "Всі налаштування для цього плагіну в ці
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Невизначено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Потрібен перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
 " користуватися цим додатком!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
-#: action.py:33
+#: action.py:34
 msgid "Clipboard Search"
 msgstr "Пошук у буфері обміну"
 
-#: action.py:59 config.py:58
+#: action.py:60 config.py:58
 msgid "Text search"
 msgstr "Текстовий пошук"
 
-#: action.py:61 config.py:59
+#: action.py:62 config.py:59
 msgid "Exact text search"
 msgstr "Точний текстовий пошук"
 
 #: action.py:64
+msgid "Author search"
+msgstr "Пошук за автором"
+
+#: action.py:67
 msgid "&Customize plugin"
 msgstr "&Налаштувати додаток"
 
-#: action.py:66 config.py:74
+#: action.py:69 config.py:74
 msgid "&Help"
 msgstr "&Довідка"
 

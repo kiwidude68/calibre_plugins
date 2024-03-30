@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:34+0100\n"
+"POT-Creation-Date: 2024-03-24 17:37+1000\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
 "Last-Translator: M. de Boer <de.boer.melle@gmail.com>, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/calibre/teams/19337/nl/)\n"
@@ -94,42 +94,46 @@ msgstr "Alle instellingen voor de plugin in deze bibliotheek zijn gewist."
 msgid "Copy to clipboard"
 msgstr "Kopieer naar klembord"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Niet gedefinieerd"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Opnieuw opstarten vereist"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Titelafbeelding niet gevonden - u moet Calibre opnieuw opstarten voordat u "
 "deze plug-in gebruikt!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Nieuwe kolom maken"
 
-#: action.py:33
+#: action.py:34
 msgid "Clipboard Search"
 msgstr "Klembord Opzoeking"
 
-#: action.py:59 config.py:58
+#: action.py:60 config.py:58
 msgid "Text search"
 msgstr "Tekst opzoeking"
 
-#: action.py:61 config.py:59
+#: action.py:62 config.py:59
 msgid "Exact text search"
 msgstr "Exacte tekst opzoeking"
 
 #: action.py:64
+msgid "Author search"
+msgstr ""
+
+#: action.py:67
 msgid "&Customize plugin"
 msgstr "&Plug-in aanpassen"
 
-#: action.py:66 config.py:74
+#: action.py:69 config.py:74
 msgid "&Help"
 msgstr "&Help"
 

@@ -1,6 +1,6 @@
 # Clipboard Search Change Log
 
-## [1.5.0] - 2024-03-24
+## [1.5.0] - 2024-03-30
 ### Added
 - Add an Author search option (kacir)
 ### Fixed

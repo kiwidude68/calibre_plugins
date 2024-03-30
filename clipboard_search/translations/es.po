@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:34+0100\n"
+"POT-Creation-Date: 2024-03-24 17:37+1000\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -94,42 +94,46 @@ msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
-#: action.py:33
+#: action.py:34
 msgid "Clipboard Search"
 msgstr "Clipboard Search"
 
-#: action.py:59 config.py:58
+#: action.py:60 config.py:58
 msgid "Text search"
 msgstr "Búsqueda de texto"
 
-#: action.py:61 config.py:59
+#: action.py:62 config.py:59
 msgid "Exact text search"
 msgstr "Búsqueda de texto exacto"
 
 #: action.py:64
+msgid "Author search"
+msgstr "Búsqueda de autor"
+
+#: action.py:67
 msgid "&Customize plugin"
 msgstr "&Personalizar complemento"
 
-#: action.py:66 config.py:74
+#: action.py:69 config.py:74
 msgid "&Help"
 msgstr "&Ayuda"
 
