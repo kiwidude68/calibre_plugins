@@ -1,5 +1,10 @@
 # Barnes & Noble Change Log
 
+## [1.5.4] - 2024-04-02
+### Added
+- Add support for pasting web urls as identifiers from the B&N website.
+- Chinese (China) translation.
+
 ## [1.5.3] - 2024-03-17
 ### Added
 - Finnish and Tamil translations.

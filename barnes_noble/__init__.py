@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import time
+import time, re
 from six import text_type as unicode
 from six.moves.urllib.parse import quote
 try:
@@ -26,11 +26,12 @@ class BarnesNoble(Source):
     name = 'Barnes & Noble'
     description = 'Downloads metadata and covers from Barnes & Noble'
     author = 'Grant Drake'
-    version = (1, 5, 3)
+    version = (1, 5, 4)
     minimum_calibre_version = (2, 0, 0)
 
+    ID_NAME = 'barnesnoble'
     capabilities = frozenset(['identify', 'cover'])
-    touched_fields = frozenset(['title', 'authors', 'identifier:barnesnoble',
+    touched_fields = frozenset(['title', 'authors', 'identifier:' + ID_NAME,
         'identifier:isbn', 'rating', 'comments', 'publisher', 'pubdate',
         'series'])
     has_html_comments = True
@@ -48,10 +49,10 @@ class BarnesNoble(Source):
         return ConfigWidget(self)
 
     def get_book_url(self, identifiers):
-        barnes_noble_id = identifiers.get('barnesnoble', None)
+        barnes_noble_id = identifiers.get(self.ID_NAME, None)
         if barnes_noble_id:
             url = self.format_url_for_id(barnes_noble_id)
-            return ('barnesnoble', barnes_noble_id, url)
+            return (self.ID_NAME, barnes_noble_id, url)
 
     def format_url_for_id(self, barnes_noble_id):
         if '/' in barnes_noble_id:
@@ -63,6 +64,12 @@ class BarnesNoble(Source):
             # B&N will itself redirect to a page with the full URL, or we use w/<id> e.g. w/1141707914
             url = '%s/w/%s' % (BarnesNoble.BROWSE_URL, barnes_noble_id)
         return url
+
+    def id_from_url(self, url):
+        match = re.match(self.BROWSE_URL + r"/.*/(\d+).*", url)
+        if match:
+            return (self.ID_NAME, match.groups(0)[0])
+        return None
 
     def create_query(self, log, title=None, authors=None, identifiers={}):
         isbn = check_isbn(identifiers.get('isbn', None))

@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Julien G. <julien.gong@gmail.com>, 2022
+# tony shen <anthanny@hotmail.com>, 2024
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:55+1000\n"
+"PO-Revision-Date: 2022-09-08 19:50+0000\n"
+"Last-Translator: tony shen <anthanny@hotmail.com>, 2024\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: config.py:48
+msgid "Maximum title/author search matches to evaluate (1 = fastest):"
+msgstr "要评估的最大标题/作者搜索匹配（1 = 最快）："
+
+#: config.py:49
+msgid ""
+"Increasing this value will consider more editions but also increase search times.\n"
+"\n"
+"This will increase the potential likelihood of getting a larger cover image\n"
+"but does not guarantee it."
+msgstr ""
+"增加此值将考虑更多版本，但也会增加搜索时间。\n"
+"\n"
+"这将增加获得更大封面图像的潜在可能性\n"
+"但不保证这一点。"
+
+#: config.py:61
+msgid "Get all contributing authors (e.g. editors, illustrators etc)"
+msgstr "获取所有贡献作者（例如编辑、插画家等）"
+
+#: config.py:62
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"若选中，将下载全部作者信息。\n"
+"\n"
+"若未选中（默认），仅下载主要作者（或作者们）信息。"
