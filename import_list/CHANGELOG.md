@@ -1,5 +1,9 @@
 # Import List Change Log
 
+## [1.9.4] - 2024-04-01
+### Fixed
+- Fix for calibre 7 for QFileDialog errors.
+
 ## [1.9.3] - 2024-03-24
 ### Changed
 - Do not auto-size columns in the 'matches in library' grid so that for instance a lot of tags would create a super wide column.
