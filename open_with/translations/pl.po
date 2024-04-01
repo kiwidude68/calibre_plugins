@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 20:50+0100\n"
+"POT-Creation-Date: 2024-03-24 18:04+1000\n"
 "PO-Revision-Date: 2022-09-19 14:59+0000\n"
 "Last-Translator: Silatiw Witalis, 2022\n"
 "Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
@@ -99,59 +99,59 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Kopiuj do schowka"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Nieokreślony"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Wymagane ponowne uruchomienie"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
 "uruchomić Calibre!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Utwórz nową kolumnę"
 
-#: action.py:31
+#: action.py:33
 msgid "Open With"
 msgstr "Open With"
 
-#: action.py:81
+#: action.py:83
 msgid "&Customize plugin"
 msgstr "&Konfiguruj wtyczkę"
 
-#: action.py:83 config.py:694
+#: action.py:85 config.py:694
 msgid "&Help"
 msgstr "&Help"
 
-#: action.py:157
+#: action.py:159
 msgid "No book selected"
 msgstr "Brak zaznaczonych książek"
 
-#: action.py:157 action.py:164 action.py:183 action.py:189
+#: action.py:159 action.py:166 action.py:185 action.py:191
 msgid "Cannot open with"
 msgstr "Nie można otworzyć za pomocą"
 
-#: action.py:164
+#: action.py:166
 msgid "Book has no cover."
 msgstr "Książka nie ma okładki."
 
-#: action.py:172
+#: action.py:174
 msgid "Open With template error"
 msgstr "Błąd szablonu Open With"
 
-#: action.py:184
+#: action.py:186
 msgid "No %s format available. First convert the book to %s."
 msgstr ""
 "Brak dostępnego formatu %s. Najpierw należy przekonwertować książkę na %s."
 
-#: action.py:190
+#: action.py:192
 msgid "Path not specified for this format in your configuration."
 msgstr "Ścieżka nie została określona dla tego formatu w Twojej konfiguracji."
 
