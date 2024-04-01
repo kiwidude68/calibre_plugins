@@ -160,7 +160,11 @@ class SearchTheInternetAction(InterfaceAction):
         for token in re.findall(r"\{.*?\}", tokenised_url):
             try:
                 evaluated = template_formatter.safe_format(token, mi, 'STI template error', mi)
-                safe_value = self.convert_to_search_text(evaluated, encoding, method)
+                # An additional hack to ensure {identifiers:select(doi)} is not url encoded replacing the / with %2F
+                if 'identifiers:select' in token:
+                    safe_value = evaluated
+                else:
+                    safe_value = self.convert_to_search_text(evaluated, encoding, method)
                 url = url.replace(token, safe_value)
             except:
                 continue

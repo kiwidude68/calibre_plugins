@@ -13,6 +13,7 @@ except ImportError:
     from urllib import urlretrieve
 
 from functools import partial
+from calibre.constants import numeric_version as calibre_version
 
 # Maintain backwards compatibility with older versions of Qt and calibre.
 try:
@@ -27,6 +28,11 @@ except:
                           QTableWidgetItem, QAbstractItemView, QComboBox, QUrl,
                           QGroupBox, QGridLayout, QRadioButton, QDialogButtonBox,
                           QPushButton, QToolButton, QSpacerItem, QModelIndex)
+
+try:
+    AnyFile = QFileDialog.FileMode.AnyFile
+except:
+    AnyFile = QFileDialog.AnyFile
 
 from calibre.ebooks.metadata.book.base import Metadata
 from calibre.gui2 import (error_dialog, question_dialog, info_dialog, choose_files,
@@ -59,6 +65,7 @@ DEFAULT_MENU_SET = [
         (False, '', '', False, '', '', '', 'GET'),
         (True,  'Amazon.com for Book',            '', False, 'stip_amazon.png',    'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords={author}+{title}', 'latin-1', 'GET'),
         (False, 'Amazon.co.uk for Book',          '', False, 'stip_amazon.png',    'https://www.amazon.co.uk/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords={author}+{title}', 'latin-1', 'GET'),
+        (False, 'Amazon.com.au for Book',         '', False, 'stip_amazon.png',    'https://www.amazon.com.au/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords={author}+{title}', 'latin-1', 'GET'),
         (False, '', '', False, '', '', '', 'GET'),
         (False, 'Barnes and Noble for Author',    '', False, 'stip_bn.png',        'https://www.barnesandnoble.com/s/{author}/_/M-8q8', 'utf-8', 'GET'),
         (False, 'Barnes and Noble for Book',      '', False, 'stip_bn.png',        'https://www.barnesandnoble.com/s/{author}+{title}/_/M-8q8', 'utf-8', 'GET'),
@@ -125,8 +132,8 @@ DEFAULT_MENU_SET = [
         (False, 'Waterstones for Title',          '', False, 'stip_wstones.png',   'https://www.waterstones.com/books/search/term/{title}', 'utf-8', 'GET'),
         (False, '', '', False, '', '', '', 'GET'),
         (False, 'WhatShouldIReadNext for ISBN',   '', False, 'stip_wsirn.png',     'https://www.whatshouldireadnext.com/isbn/{isbn}', 'utf-8', 'GET'),
-        (True,  '', '', False,  '', '', ''),
-        (True,  'Wikipedia for Author',           '', False, 'stip_wikipedia.png', 'https://en.wikipedia.org/w/index.php?title=Special%3ASearch&search={author}', 'utf-8', 'GET'),
+        (False,  '', '', False,  '', '', ''),
+        (False,  'Wikipedia for Author',           '', False, 'stip_wikipedia.png', 'https://en.wikipedia.org/w/index.php?title=Special%3ASearch&search={author}', 'utf-8', 'GET'),
         (False, 'Wikipedia for Book',             '', False, 'stip_wikipedia.png', 'https://en.wikipedia.org/w/index.php?title=Special%3ASearch&search={author}+{title}', 'utf-8', 'GET'),
         (False, 'Wikipedia for Title',            '', False, 'stip_wikipedia.png', 'https://en.wikipedia.org/w/index.php?title=Special%3ASearch&search={title}', 'utf-8', 'GET'),
         (False, '', '', False, '', '', '', 'GET'),
@@ -1004,13 +1011,13 @@ class ConfigWidget(QWidget):
                 return error_dialog(self, _('Import Failed'),
                                     _('This is not a valid STIP export archive'), show=True)
             for resource in contents:
-                fs = os.path.join(table.resources_dir,resource)
+                fs = os.path.join(table.resources_dir, resource)
                 with open(fs,'wb') as f:
                     f.write(zf.read(resource))
         json_path = os.path.join(table.resources_dir,'stip_menus.json')
         try:
             # Read the .JSON file to add to the menus then delete it.
-            archive_config = JSONConfig('resources/images/stip_menus')
+            archive_config = JSONConfig('resources/images/Search The Internet/stip_menus')
             menus_config = archive_config.get(STORE_MENUS_NAME).get(MENUS_KEY)
             # Now insert the menus into the table
             table.append_data(menus_config)
@@ -1040,7 +1047,7 @@ class ConfigWidget(QWidget):
         # Write our menu items out to a json file
         if not os.path.exists(table.resources_dir):
             os.makedirs(table.resources_dir)
-        archive_config = JSONConfig('resources/images/stip_menus')
+        archive_config = JSONConfig('resources/images/Search The Internet/stip_menus.json')
         export_menus = {}
         export_menus[MENUS_KEY] = data_items
         archive_config.set(STORE_MENUS_NAME, export_menus)
@@ -1071,7 +1078,7 @@ class ConfigWidget(QWidget):
 
     def pick_archive_name_to_export(self):
         fd = FileDialog(name='stip archive dialog', title='Save archive as', filters=[('STIP Files', ['zip'])],
-                        parent=self, add_all_files_filter=False, mode=QFileDialog.AnyFile)
+                        parent=self, add_all_files_filter=False, mode=AnyFile)
         fd.setParent(None)
         if not fd.accepted:
             return None

@@ -1,8 +1,11 @@
 # Search The Internet Change Log
 
-## [1.11.2] - 2024-03-31
+## [1.11.2] - 2024-04-01
 ### Changed
 - Remove many non-working sites from the default list, switch all to https
+- Do not url encode tokens which contain `identifier`, in order to ensure DOI fields work.
+### Fixed
+- Fix for calibre 7 for QFileDialog errors.
 
 ## [1.11.1] - 2024-03-28
 ### Changed
