@@ -73,7 +73,7 @@ class ClipboardSearchAction(InterfaceAction):
         self.default_search_is_exact = c[cfg.KEY_DEFAULT_SEARCH] == cfg.KEY_EXACT_SEARCH
 
     def default_search_using_clipboard_text(self):
-        self.search_using_clipboard_text(is_exact_search=self.default_search_is_exact)
+        self.search_using_clipboard_text(search_mode='exact')
 
     def search_using_clipboard_text(self, search_mode=''):
         cb = QApplication.instance().clipboard()
