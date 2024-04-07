@@ -1,5 +1,11 @@
 # Count Pages Change Log
 
+## [1.13.6] - 2024-04-07
+### Changed
+- Use podofo rather than pdfinfo to retrieve pdf page count. Shoudl fix issues for some users having problems with pdfinfo.exe
+### Fixed
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
 ## [1.13.5] - 2024-02-13
 ### Added
 - Finnish translation

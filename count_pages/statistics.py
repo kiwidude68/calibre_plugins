@@ -20,6 +20,26 @@ RE_STRIP_MARKUP = re.compile(u'<[^>]+>', re.UNICODE)
 
 def get_pdf_page_count(book_path):
     '''
+    Try to use podofo to parse the page count.
+    This apparently can file for badly formatted pdfs in which case fall back to
+    trying to use pdfinfo (which some users have reported issues with).
+    '''
+    from calibre.utils.podofo import get_podofo
+    podofo = get_podofo()
+    try:
+        p = podofo.PDFDoc()
+        with open(book_path, 'rb') as f:
+            raw = f.read()
+        p.load(raw)
+        page_count = p.page_count()
+        print('\tPDF page count using podofo:', page_count)
+        return int(page_count)
+    except:
+        print('\tFailed to get count using podofo, trying pdfinfo')
+        return get_pdf_page_count_using_pdfinfo(book_path)
+
+def get_pdf_page_count_using_pdfinfo(book_path):
+    '''
     Optimisation to read the actual page count for PDFs from the PDF itself.
     '''
     from calibre.ptempfile import TemporaryDirectory
