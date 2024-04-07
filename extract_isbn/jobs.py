@@ -268,6 +268,6 @@ def scan_format_for_isbn(log, title, book_format, book_path, in_process=True):
         log.info('  Scan time: %.2f secs' % (time.time() - start,))
         log.exception('ERROR: %s' % e)
     except:
-        log.exception('ERROR: %s' % sys.exc_info()[:2])
+        log.exception('ERROR: %s' % sys.exc_info()[1])
     else:
         return isbn

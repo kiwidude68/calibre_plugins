@@ -1,5 +1,14 @@
 # Extract ISBN Change Log
 
+## [1.6.2] - 2024-04-07
+### Added
+- Chinese (China) translation
+### Changed
+- Use podofo rather than pdfinfo to retrieve pdf page count. Shoudl fix issues for some users having problems with pdfinfo.exe
+### Fixed
+- If an exception occurred while attempting to scan a PDF, a second exception would occur when reporting it hiding the original.
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
 ## [1.6.1] - 2024-03-17
 ### Added
 - Finnish translation

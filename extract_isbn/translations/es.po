@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 18:57+0100\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
 "PO-Revision-Date: 2022-09-19 15:18+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:119
+#: ..\common\common_dialogs.py:84 config.py:122
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
@@ -93,22 +93,22 @@ msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
@@ -208,33 +208,33 @@ msgstr "No cambiar la búsqueda"
 msgid "Show the books that have new or updated ISBNs"
 msgstr "Mostrar los libros que tienen ISBN nuevos o actualizados"
 
-#: config.py:68
+#: config.py:71
 msgid "When the scan completes:"
 msgstr "Cuando se completa el escaneo:"
 
-#: config.py:73
+#: config.py:76
 msgid "Valid prefixes for ISBN-13 (comma separated):"
 msgstr "Prefijos válidos para ISBN-13 (separados por comas):"
 
-#: config.py:78
+#: config.py:81
 msgid "Selected books before running as a background job:"
 msgstr "Libros seleccionados antes de ejecutar como trabajo en segundo plano:"
 
-#: config.py:79
+#: config.py:82
 msgid "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
 "La ejecución como trabajo en segundo plano es más lenta, pero es la única "
 "forma de evitar\n"
 
-#: config.py:80
+#: config.py:83
 msgid "memory leaks and will keep the UI more responsive."
 msgstr "pérdidas de memoria y mantendrá la interfaz de usuario más receptiva."
 
-#: config.py:89
+#: config.py:92
 msgid "Batch size running as a background job:"
 msgstr "Tamaño de lote que se ejecuta como trabajo en segundo plano:"
 
-#: config.py:90
+#: config.py:93
 msgid ""
 "Books will be broken into batches to ensure that if you run\n"
 "extract for a large group you can cancel/close calibre without\n"
@@ -244,11 +244,11 @@ msgstr ""
 "la extracción para un grupo grande pueda cancelar o cerrar calibre sin\n"
 "perder todos los resultados, ya que puede cancelar los lotes pendientes."
 
-#: config.py:102
+#: config.py:105
 msgid "Display failure dialog if ISBN not found or identical"
 msgstr "Mostrar diálogo de fallo si el ISBN no se encuentra o es idéntico"
 
-#: config.py:103
+#: config.py:106
 msgid ""
 "Uncheck this option if you want do not want to be prompted\n"
 "about no ISBN being found in the book or it is the same as\n"
@@ -257,11 +257,11 @@ msgstr ""
 "Desmarcar esta casilla si no se desean advertencias cuando\n"
 "no se encuentre ISBN en el libro o sea igual al valor actual."
 
-#: config.py:110
+#: config.py:113
 msgid "Prompt to apply ISBN changes"
 msgstr "Confirmar para aplicar cambios de ISBN"
 
-#: config.py:111
+#: config.py:114
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -273,11 +273,11 @@ msgstr ""
 "un riesgo mínimo de que, si se hacen a la vez cambios\n"
 "en este registro de libro, se puedan perder."
 
-#: config.py:120
+#: config.py:123
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Modificar los atajos de teclado asociados con este complemento"
 
-#: config.py:124
+#: config.py:127
 msgid "Help"
 msgstr "Ayuda"
 

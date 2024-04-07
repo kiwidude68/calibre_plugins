@@ -3,186 +3,179 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# tarakbumba <tarakbumba@gmail.com>, 2022
-# Emre Deniz, 2022
-# Çağla Turhan, 2022
-# MUSTAFA ANAR <mstf.anar@gmail.com>, 2022
-# Bora Atıcı, 2023
+# 朱仁杰 <johnson19960308@gmail.com>, 2022
+# 高垚鑫, 2022
+# Fan Xu <xlivevil@aliyun.com>, 2022
+# RERBIN MA, 2022
+# zzz p, 2024
+# tony shen <anthanny@hotmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:58+1000\n"
 "PO-Revision-Date: 2022-09-19 15:18+0000\n"
-"Last-Translator: Bora Atıcı, 2023\n"
-"Language-Team: Turkish (https://app.transifex.com/calibre/teams/19337/tr/)\n"
+"Last-Translator: tony shen <anthanny@hotmail.com>, 2024\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ..\common\common_dialogs.py:84 config.py:122
 msgid "Keyboard shortcuts"
-msgstr "Klavye kısayolları"
+msgstr "键盘快捷键"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Calibre'yi şimdi tekrar başlatın"
+msgstr "现在重启 calibre"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Tercihler:"
+msgstr "首选项用于："
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Boş alan"
+msgstr "清除"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Bu eklentinin tüm ayarlarını sıfırla"
+msgstr "清除此插件的所有设置"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"Bu eklenti için bu kitaplıktaki ayarlarınızı değiştirmek istediğinizden emin"
-" misiniz?"
+msgstr "是否确实要更改此书库中插件的设置？"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
-msgstr ""
-"Calibre eklenti klasöründeki diğer kitaplıklarda veya JSON dosyasında "
-"saklanan herhangi bir ayara dokunulmayacak."
+msgstr "其他库中的任何设置或存储在calibre plugins文件夹中的JSON文件中的任何设置都不会被触动。"
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Calibre'yi yeniden başlatmanız gerekir."
+msgstr "您需要稍后重启 calibre"
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Ayarlar değiştirildi"
+msgstr "设置已修改"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Bu kitaplıktaki bu eklentinin ayarları değiştirildi."
+msgstr "此书库中此插件的设置已更改。"
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Lütfen Calibre'yi yeniden başlatın."
+msgstr "现在请重启 calibre"
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr "Bu eklentinin ayarlarını sıfırlama isteğinizden emin misiniz?"
+msgstr "是否确实要清除此插件库中的设置？"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Ayarlar silindi"
+msgstr "设置已删除"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Bu eklenti için ayarlarınız sıfırlandı."
+msgstr "此插件库中的所有设置都已清除。"
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Panoya kopyala"
+msgstr "复制到剪贴板"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Tanımlanmamış"
+msgstr "未定义的"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Yeniden başlatma gerekiyor"
+msgstr "需要重启"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
-msgstr ""
-"Başlık görüntüsü bulunamadı - bu eklentiyi kullanmadan önce Calibre'yi "
-"yeniden başlatmalısınız!"
+msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre！"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Yeni sütun oluştur"
+msgstr "创建新列"
 
 #: action.py:28
 msgid "Extract ISBN from the selected book format"
-msgstr "ISBN'yi seçilen kitap biçiminden çıkarın"
+msgstr "从选定的图书格式中提取ISBN"
 
 #: action.py:28 action.py:74
 msgid "Extract ISBN"
-msgstr "ISBN'yi çıkar"
+msgstr "提取ISBN"
 
 #: action.py:43
 msgid "No rows selected"
-msgstr "Satır seçilmedi"
+msgstr "未选择行"
 
 #: action.py:44
 msgid "You must select one or more books to perform this action."
-msgstr ""
-"Bu eylemi gerçekleştirmek için bir veya daha fazla kitap seçmelisiniz."
+msgstr "你必须选择一本或多本图书才能执行此操作。"
 
 #: action.py:78
 msgid "Extracting ISBN for {0} books"
-msgstr "{0} kitap için ISBN çıkarılıyor"
+msgstr "正在提取ISBN  {0} 本图书"
 
 #: action.py:91
 msgid "Failed to extract isbns"
-msgstr "ISBN'ler çıkarılamadı"
+msgstr "提取多个ISBN失败"
 
 #: action.py:94
 msgid "ISBN extract completed"
-msgstr "ISBN çıkarma tamamlandı"
+msgstr "ISBN提取已完成"
 
 #: action.py:99
 msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
-msgstr "ISBN çıkarma <b>{0} yeni ISBN</b> buldu."
+msgstr "插件找到<b>{0}个ISBN</b>."
 
 #: action.py:100
 msgid "Proceed with updating your library?"
-msgstr "Kitaplığınızı güncellemeye devam edilsin mi?"
+msgstr "是否继续更新你的图书库"
 
 #: action.py:106
 msgid ""
 "Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
 "existing value."
-msgstr ""
-"{0} kitap ve {1} kitap için mevcut değerleriyle eşleşen bir ISBN bulunamadı."
+msgstr "找不到 {0} 书籍(s) 的 ISBN，并且 {1} 书籍(s) 与其现有值相匹配。"
 
 #: action.py:109
 msgid "Could not find an ISBN for {0} book(s)."
-msgstr "{0} kitap için ISBN bulunamadı."
+msgstr "找不到｛0｝书籍的ISBN。 "
 
 #: action.py:111
 msgid "Found {0} book(s) where ISBN matched the existing value."
-msgstr "ISBN'nin mevcut değerle eşleştiği {0} kitap bulundu."
+msgstr "找到 {0} 本书，其中 ISBN 与现有值匹配。"
 
 #: action.py:113
 msgid "Click \"Show details\" to see which books."
-msgstr "Kitapları görmek için \"Ayrıntıları göster\"i tıklayın."
+msgstr "点击“显示详细信息”来查看图书。"
 
 #: action.py:118
 msgid "Scan failed"
-msgstr "Tarama başarısız oldu"
+msgstr "扫描失败"
 
 #: action.py:118 action.py:127
 msgid "Scan log"
-msgstr "Tarama günlüğü"
+msgstr "扫描日志"
 
 #: action.py:127
 msgid "Scan complete"
-msgstr "Tarama tamamlandı"
+msgstr "扫描成功"
 
 #: action.py:153
 msgid "Some books changed"
-msgstr "Bazı kitaplar değişti"
+msgstr "一些图书被更改"
 
 #: action.py:154
 msgid ""
@@ -191,48 +184,44 @@ msgid ""
 "Click \"Show details\" to see the list of changed books. Do you want to "
 "proceed?"
 msgstr ""
-"İndirmeye başladığınızdan bu yana kitaplığınızdaki bazı kitapların meta "
-"verileri değişti. Devam ederseniz bu değişikliklerden bazılarının üzerine "
-"yazılabilir. Değiştirilen kitapların listesini görmek için \"Ayrıntıları "
-"göster\"i tıklayın. Devam etmek istiyor musunuz?"
+"自您开始下载以来，您图书馆中某些图书的元数据已发生更改。 如果继续，其中一些更改可能会被覆盖。 点击“显示详细信息”即可查看已更改的书籍列表。 "
+"您想继续吗？"
 
 #: action.py:165 jobs.py:226
 msgid "Unknown"
-msgstr "Bilinmeyen"
+msgstr "未知"
 
 #: config.py:40
 msgid "Do not change my search"
-msgstr "Aramamı değiştirme"
+msgstr "不更改我的搜索结果"
 
 #: config.py:41
 msgid "Show the books that have new or updated ISBNs"
-msgstr "Yeni veya güncellenmiş ISBN'lere sahip kitapları göster"
+msgstr "显示具有新的或更新的 ISBN 的图书"
 
 #: config.py:71
 msgid "When the scan completes:"
-msgstr "Tarama tamamlandığında:"
+msgstr "当扫描已完成："
 
 #: config.py:76
 msgid "Valid prefixes for ISBN-13 (comma separated):"
-msgstr "ISBN-13 için geçerli önekler (virgülle ayrılmış):"
+msgstr "ISBN-13 的有效前缀（逗号分隔）："
 
 #: config.py:81
 msgid "Selected books before running as a background job:"
-msgstr "Arka plan işi olarak çalıştırılmadan önce seçilen kitaplar:"
+msgstr "作为后台作业运行之前选定的书籍："
 
 #: config.py:82
 msgid "Running as a background job is slower but is the only way to avoid\n"
-msgstr ""
-"Arka planda çalışmak daha yavaştır ancak bundan kaçınmanın tek yoludur\n"
+msgstr "作为后台作业运行速度较慢，但这是避免的唯一方法\n"
 
 #: config.py:83
 msgid "memory leaks and will keep the UI more responsive."
-msgstr ""
-"bellek sızıntısı olur ve kullanıcı arayüzünün daha duyarlı olmasını sağlar."
+msgstr "内存泄漏，并将使UI更具响应性。"
 
 #: config.py:92
 msgid "Batch size running as a background job:"
-msgstr "Arka plan işi olarak çalışan toplu iş boyutu:"
+msgstr "作为后台作业运行的批量大小："
 
 #: config.py:93
 msgid ""
@@ -240,13 +229,13 @@ msgid ""
 "extract for a large group you can cancel/close calibre without\n"
 "losing all of your results as you can cancel the pending groups."
 msgstr ""
-"Büyük bir grup için çıkarma çalıştırırsanız, bekleyen grupları iptal \n"
-"edebileceğiniz gibi tüm sonuçlarınızı kaybetmeden calibre'yi iptal \n"
-"edebilmenizi/kapatabilmenizi sağlamak için kitaplar gruplara bölünecektir."
+"书籍将被分为多个批次，以确保如果您为大型组\n"
+"运行摘录，您可以取消/关闭calibre，而不会丢失所\n"
+"有结果，因为您可以取消挂起的组。"
 
 #: config.py:105
 msgid "Display failure dialog if ISBN not found or identical"
-msgstr "ISBN bulunamazsa veya aynıysa hata iletişim kutusunu görüntüle"
+msgstr "如果未找到 ISBN 或 ISBN 相同，则显示失败对话框"
 
 #: config.py:106
 msgid ""
@@ -254,12 +243,13 @@ msgid ""
 "about no ISBN being found in the book or it is the same as\n"
 "your current value."
 msgstr ""
-"Kitapta ISBN bulunmadığı veya mevcut değerinizle aynı olduğunun \n"
-"sorulmasını istemiyorsanız bu seçeneğin işaretini kaldırın."
+"如果您不想收到关于在书中找不到 ISBN \n"
+"的提示或者它与您当前的值相同，请取消\n"
+"选中此选项。"
 
 #: config.py:113
 msgid "Prompt to apply ISBN changes"
-msgstr "ISBN değişikliklerini uygulama istemi"
+msgstr "提示应用ISBN更改"
 
 #: config.py:114
 msgid ""
@@ -268,59 +258,59 @@ msgid ""
 "option unchecked that if you are making other changes to\n"
 "this book record at the same time they will be lost."
 msgstr ""
-"Değişikliklerin onay iletişim kutusu olmadan uygulanmasını \n"
-"istiyorsanız bu seçeneğin işaretini kaldırın. Bu seçenek \n"
-"işaretlenmediğinde, bu kitap kaydında aynı anda başka değişiklikler \n"
-"yapıyorsanız bunların kaybolması gibi küçük bir risk vardır."
+"如果您希望在不出现确认对话框的情况下应用\n"
+"更改，请取消选中此选项。 未选中此选项存在\n"
+"一个小风险，即如果您同时对此图书记录进行\n"
+"其他更改，这些更改将会丢失。"
 
 #: config.py:123
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Bu eklenti ile ilişkilendirilen klavye kısayollarını düzenle"
+msgstr "编辑与此插件关联的键盘快捷键"
 
 #: config.py:127
 msgid "Help"
-msgstr "Yardım"
+msgstr "帮助"
 
 #: dialogs.py:25
 msgid "Queueing books for extracting ISBN"
-msgstr "ISBN'yi çıkarmak için kitapları sıraya koyma"
+msgstr "排队书籍以提取 ISBN"
 
 #: dialogs.py:53
 msgid "Queueing"
-msgstr "Kuyruk"
+msgstr "排队中"
 
 #: dialogs.py:73
 msgid "Extract ISBN failed"
-msgstr "ISBN çıkarma işlemi başarısız oldu"
+msgstr "提取 ISBN 失败"
 
 #: dialogs.py:74
 msgid "Scan aborted as no books with formats found."
-msgstr "Biçimli kitap bulunamadığından tarama iptal edildi."
+msgstr "扫描因未找到格式的书籍而中止。"
 
 #: jobs.py:41
 msgid "Extract ISBN for %d books"
-msgstr "%d kitap için ISBN'yi çıkarın"
+msgstr "提取%d书籍的 ISBN"
 
 #: jobs.py:44
 msgid "Extract ISBN started"
-msgstr "ISBN çıkarma işlemi başlatıldı"
+msgstr "提取ISBN已开始"
 
 #: jobs.py:96
 msgid "Scanned %d of %d"
-msgstr "%d / %d tarandı"
+msgstr "已扫描%d次，共%d次"
 
 #: jobs.py:113
 msgid "No formats"
-msgstr "Biçim yok"
+msgstr "无格式"
 
 #: jobs.py:115
 msgid "ISBN not found"
-msgstr "ISBN bulunamadı"
+msgstr "ISBN未找到"
 
 #: jobs.py:121
 msgid "Same ISBN"
-msgstr "Aynı ISBN"
+msgstr "相同ISBN"
 
 #: jobs.py:127
 msgid "Extracted"
-msgstr "Çıkarıldı"
+msgstr "已提取"

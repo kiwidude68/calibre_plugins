@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 18:57+0100\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
 "PO-Revision-Date: 2022-09-19 15:18+0000\n"
 "Last-Translator: Veikko Muurikainen, 2024\n"
 "Language-Team: Finnish (https://app.transifex.com/calibre/teams/19337/fi/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:119
+#: ..\common\common_dialogs.py:84 config.py:122
 msgid "Keyboard shortcuts"
 msgstr "Pikanäppäimet"
 
@@ -91,22 +91,22 @@ msgstr "Kaikki tämän laajennuksen asetukset tässä kirjastossa on tyhjennetty
 msgid "Copy to clipboard"
 msgstr "Kopioi leikepöydälle"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Määrittelemätön"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Uudelleenkäynnistys vaaditaan"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Otsikkokuvaa ei löydy - sinun on käynnistettävä Calibre uudelleen ennen "
 "tämän laajennuksen käyttöä!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Luo uusi sarake"
 
@@ -207,32 +207,32 @@ msgstr "Älä muuta hakuani"
 msgid "Show the books that have new or updated ISBNs"
 msgstr "Näytä kirjat, joilla on uudet tai päivitetyt ISBN-tunnukset"
 
-#: config.py:68
+#: config.py:71
 msgid "When the scan completes:"
 msgstr "Kun skannaus on suoritettu:"
 
-#: config.py:73
+#: config.py:76
 msgid "Valid prefixes for ISBN-13 (comma separated):"
 msgstr "ISBN-13 kelvolliset etuliitteet (pilkulla erotettuna):"
 
-#: config.py:78
+#: config.py:81
 msgid "Selected books before running as a background job:"
 msgstr "Valitut kirjat ennen suorittamista taustatehtävänä:"
 
-#: config.py:79
+#: config.py:82
 msgid "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
 "Taustatyönä suorittaminen on hitaampaa, mutta se on ainoa tapa välttää\n"
 
-#: config.py:80
+#: config.py:83
 msgid "memory leaks and will keep the UI more responsive."
 msgstr "muistivuodot ja pitää käyttöliittymä reagoivampana."
 
-#: config.py:89
+#: config.py:92
 msgid "Batch size running as a background job:"
 msgstr "Eräkoko, joka suoritetaan taustatehtävänä:"
 
-#: config.py:90
+#: config.py:93
 msgid ""
 "Books will be broken into batches to ensure that if you run\n"
 "extract for a large group you can cancel/close calibre without\n"
@@ -242,11 +242,11 @@ msgstr ""
 "purun suurelle ryhmälle, voit peruuttaa/sulkea calibren ilman että\n"
 "menetät kaikkia tuloksiasi, koska voit peruuttaa vireillä olevat ryhmät."
 
-#: config.py:102
+#: config.py:105
 msgid "Display failure dialog if ISBN not found or identical"
 msgstr "Näytä virheikkuna, jos ISBN-numeroa ei löydy tai se on identtinen"
 
-#: config.py:103
+#: config.py:106
 msgid ""
 "Uncheck this option if you want do not want to be prompted\n"
 "about no ISBN being found in the book or it is the same as\n"
@@ -256,11 +256,11 @@ msgstr ""
 "siitä, että kirjasta ei löydy ISBN-numeroa, tai se on sama kuin\n"
 "nykyinen arvo."
 
-#: config.py:110
+#: config.py:113
 msgid "Prompt to apply ISBN changes"
 msgstr "Kehotus soveltaa ISBN-muutoksia"
 
-#: config.py:111
+#: config.py:114
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -272,11 +272,11 @@ msgstr ""
 "että jos teet muita muutoksia tähän\n"
 "kirjatietueeseen samaan aikaan, ne menetetään."
 
-#: config.py:120
+#: config.py:123
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Muokkaa tähän laajennukseen liittyviä pikanäppäimiä"
 
-#: config.py:124
+#: config.py:127
 msgid "Help"
 msgstr "Ohje"
 

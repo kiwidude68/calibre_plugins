@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 18:57+0100\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
 "PO-Revision-Date: 2022-09-19 15:18+0000\n"
 "Last-Translator: Caarmi, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:119
+#: ..\common\common_dialogs.py:84 config.py:122
 msgid "Keyboard shortcuts"
 msgstr "Сочетания клавиш..."
 
@@ -89,22 +89,22 @@ msgstr "Все настройки для этого плагина в этой �
 msgid "Copy to clipboard"
 msgstr "Копировать в Буфер обмена"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Не определено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Требуется перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Изображение обложки не найдено - перед использованием нужно перезапустить "
 "calibre!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
@@ -203,33 +203,33 @@ msgstr "Не изменять мой поиск"
 msgid "Show the books that have new or updated ISBNs"
 msgstr "Показать книги с новыми или обновленными номерами ISBN"
 
-#: config.py:68
+#: config.py:71
 msgid "When the scan completes:"
 msgstr "Когда сканирование завершится:"
 
-#: config.py:73
+#: config.py:76
 msgid "Valid prefixes for ISBN-13 (comma separated):"
 msgstr "Допустимые префиксы для ISBN-13 (через запятую):"
 
-#: config.py:78
+#: config.py:81
 msgid "Selected books before running as a background job:"
 msgstr "Выбранные книги перед запуском в качестве фонового задания"
 
-#: config.py:79
+#: config.py:82
 msgid "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
 "Работа в качестве фонового задания медленнее, но это единственный способ "
 "избежать\n"
 
-#: config.py:80
+#: config.py:83
 msgid "memory leaks and will keep the UI more responsive."
 msgstr "утечки памяти и сделать пользовательский интерфейс более отзывчивым."
 
-#: config.py:89
+#: config.py:92
 msgid "Batch size running as a background job:"
 msgstr "Размер пакета, работающего в качестве фонового задания:"
 
-#: config.py:90
+#: config.py:93
 msgid ""
 "Books will be broken into batches to ensure that if you run\n"
 "extract for a large group you can cancel/close calibre without\n"
@@ -239,11 +239,11 @@ msgstr ""
 "извлечение для большой группы то можно отменить/закрыть calibre без\n"
 "потери всех результатов, так как вы сможете отменить ожидающие группы."
 
-#: config.py:102
+#: config.py:105
 msgid "Display failure dialog if ISBN not found or identical"
 msgstr "Показать диалоговое окно ошибки, если ISBN не найден или идентичен"
 
-#: config.py:103
+#: config.py:106
 msgid ""
 "Uncheck this option if you want do not want to be prompted\n"
 "about no ISBN being found in the book or it is the same as\n"
@@ -253,11 +253,11 @@ msgstr ""
 "о том, что ISBN не найден в книге, или его значение \n"
 "идентично текущему."
 
-#: config.py:110
+#: config.py:113
 msgid "Prompt to apply ISBN changes"
 msgstr "Запрос на применение изменений ISBN"
 
-#: config.py:111
+#: config.py:114
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -269,11 +269,11 @@ msgstr ""
 "со снятой опцией, потери вносимых изменений в\n"
 "эту книжную запись."
 
-#: config.py:120
+#: config.py:123
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Редактирование сочетаний клавиш, связанных с этим плагином"
 
-#: config.py:124
+#: config.py:127
 msgid "Help"
 msgstr "Справка"
 
