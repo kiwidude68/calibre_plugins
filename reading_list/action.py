@@ -58,6 +58,10 @@ class ReadingListAction(InterfaceAction):
         easier to test the plugin API when instantiating an ad-hoc instance via a main() func.
         '''
         InterfaceAction.__init__(self, parent, site_customization)
+        # Also allows us to dynamically change the button type, which is used before genesis()
+        quick_access = cfg.plugin_prefs[cfg.STORE_OPTIONS].get(cfg.KEY_QUICK_ACCESS, False)
+        if quick_access:
+            self.popup_type = QToolButton.MenuButtonPopup
 
     def genesis(self):
         self.menus_lock = threading.RLock()
@@ -71,11 +75,14 @@ class ReadingListAction(InterfaceAction):
         # Assign our menu to this action and an icon
         self.qaction.setMenu(self.menu)
         self.qaction.setIcon(get_icon(PLUGIN_ICONS[0]))
+        if self.popup_type == QToolButton.MenuButtonPopup:
+            self.qaction.triggered.connect(self._view_quick_access_list)
         self.menu.aboutToShow.connect(self.about_to_show_menu)
 
     def initialization_complete(self):
         self.connected_device_info = None
         self.view_list_name = None
+
         self.rebuild_menus()
         # Subscribe to device connection events
         device_signals.device_connection_changed.connect(self._on_device_connection_changed)
@@ -464,6 +471,13 @@ class ReadingListAction(InterfaceAction):
             return
         self.clear_list(list_name)
 
+    def _view_quick_access_list(self):
+        library = cfg.get_library_config(self.gui.current_db)
+        list_name = library.get(cfg.KEY_QUICK_ACCESS_LIST, 'Default')
+        if list_name == 'Default':
+            list_name = library.get(cfg.KEY_DEFAULT_LIST, None)
+        if list_name:
+            self.view_list(list_name)
 
     def get_list_names(self, exclude_auto=True):
         '''
