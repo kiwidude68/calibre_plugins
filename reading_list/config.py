@@ -1191,17 +1191,16 @@ class OtherTab(QWidget):
         quick_grid_layout = QGridLayout()
         quick_group_box_layout.addLayout(quick_grid_layout)
 
-        self.quick_access_checkbox = QCheckBox(_('Allow toolbar button click to view list (requires calibre restart)'), self)
+        self.quick_access_checkbox = QCheckBox(_('Allow toolbar button click to view list'), self)
         self.quick_access_checkbox.setToolTip(_('By default the toolbar button shows the plugin menu.\n'
-                                           'Check this option to instead display a reading list.\n'
-                                           'An arrow to the side of the button is clickable to see the plugin menu.'))
+                                           'Check this option to instead display a reading list.'))
         quick_grid_layout.addWidget(self.quick_access_checkbox, 0, 0, 1, 2)
 
-        self.library_config = get_library_config(plugin_action.gui.current_db)
-        self.lists = self.library_config[KEY_LISTS]
-        self.default_list = self.library_config[KEY_DEFAULT_LIST]
-        quick_list_name_label = QLabel(_('List name:'), self)
-        self.select_quick_list_combo = ListComboBox(self, self.lists, self.default_list)
+        library_config = get_library_config(plugin_action.gui.current_db)
+        self.lists = library_config[KEY_LISTS]
+        selected_list = library_config.get(KEY_QUICK_ACCESS_LIST, library_config[KEY_DEFAULT_LIST])
+        quick_list_name_label = QLabel(_('List to view:'), self)
+        self.select_quick_list_combo = ListComboBox(self, self.lists, selected_list)
         quick_grid_layout.addWidget(quick_list_name_label, 1, 0, 1, 1)
         quick_grid_layout.addWidget(self.select_quick_list_combo, 1, 1, 1, 1)
         quick_grid_layout.setColumnStretch(0, 1)
@@ -1299,6 +1298,8 @@ class ConfigWidget(QWidget):
         options[KEY_REMOVE_DIALOG] = self.other_tab.delete_confirmation_checkbox.checkState() == Qt.Checked
         options[KEY_QUICK_ACCESS] = self.other_tab.quick_access_checkbox.checkState() == Qt.Checked
         plugin_prefs[STORE_OPTIONS] = options
+
+        self.plugin_action.set_popup_mode()
 
     def edit_shortcuts(self):
         self.save_settings()
