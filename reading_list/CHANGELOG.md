@@ -1,5 +1,9 @@
 # Reading List Change Log
 
+## [1.15.4] - 2024-04-25
+### Changed
+- Limit title and author columns width on edit list dialog to prevent long names from over-sizing dialog.
+
 ## [1.15.3] - 2024-04-11
 ### Added
 - Quick access feature when enabled allows clicking on the reading list button to view your default list.
