@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 20:06+0100\n"
+"POT-Creation-Date: 2024-04-11 14:28+1000\n"
 "PO-Revision-Date: 2022-09-19 14:51+0000\n"
 "Last-Translator: ashed <craysy@gmail.com>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:1159
+#: ..\common\common_dialogs.py:84 config.py:1165
 msgid "Keyboard shortcuts"
 msgstr "Сочетания клавиш..."
 
@@ -91,22 +91,22 @@ msgstr "Все настройки для этого плагина в этой �
 msgid "Copy to clipboard"
 msgstr "Копировать в Буфер обмена"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Не определено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Требуется перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Изображение обложки не найдено - перед использованием нужно перезапустить "
 "calibre!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
@@ -118,412 +118,412 @@ msgstr "Список чтения"
 msgid "View or edit lists of books"
 msgstr "Просмотр или редактирование списков книг"
 
-#: action.py:150
+#: action.py:171
 msgid "Add to default list"
 msgstr "Добавить в список по умолчанию"
 
-#: action.py:153
+#: action.py:174
 msgid "Add to %s list"
 msgstr "Добавить в список %s"
 
-#: action.py:158
+#: action.py:179
 msgid "Add to list"
 msgstr "Добавить в список"
 
-#: action.py:159
+#: action.py:180
 msgid "Add to the specified list"
 msgstr "Добавить в указанный список"
 
-#: action.py:161
+#: action.py:182
 msgid "Add to the \"%s\" list"
 msgstr "Добавить в список \"%s\""
 
-#: action.py:165
+#: action.py:186
 msgid "Add to list: %s"
 msgstr "Добавить в список: %s"
 
-#: action.py:167
+#: action.py:188
 msgid "Add to all lists"
 msgstr "Добавить во все списки"
 
-#: action.py:173
+#: action.py:194
 msgid "Add series to default list"
 msgstr "Добавить серию в список по умолчанию"
 
-#: action.py:176
+#: action.py:197
 msgid "Add series to %s list"
 msgstr "Добавить серии в список %s"
 
-#: action.py:181
+#: action.py:202
 msgid "Add series to list"
 msgstr "Добавить серии в список"
 
-#: action.py:182
+#: action.py:203
 msgid "Add all books in series to the specified list"
 msgstr "Добавить все книги серии в указанный список"
 
-#: action.py:184
+#: action.py:205
 msgid "Add series to the \"%s\" list"
 msgstr "Добавить серии в список \"%s\""
 
-#: action.py:188
+#: action.py:209
 msgid "Add series to list: %s"
 msgstr "Добавить серии в список: %s"
 
-#: action.py:190
+#: action.py:211
 msgid "Add series to all lists"
 msgstr "Добавить серию во все списки"
 
-#: action.py:196 action.py:198
+#: action.py:217 action.py:219
 msgid "Move to list"
 msgstr "Переместить в список"
 
-#: action.py:202
+#: action.py:223
 msgid "Remove from default list"
 msgstr "Удалить из списка по умолчанию"
 
-#: action.py:210
+#: action.py:231
 msgid "Remove from list"
 msgstr "Удалить из списка"
 
-#: action.py:211
+#: action.py:232
 msgid "Remove from the specified list"
 msgstr "Удалить из указанного списка"
 
-#: action.py:213
+#: action.py:234
 msgid "Remove from the \"%s\" list"
 msgstr "Удалить из списка \"%s\""
 
-#: action.py:217
+#: action.py:238
 msgid "Remove from list: %s"
 msgstr "Удалить из списка: %s"
 
-#: action.py:219
+#: action.py:240
 msgid "Remove from all lists"
 msgstr "Удалить из всех списков"
 
-#: action.py:226
+#: action.py:247
 msgid "View default list"
 msgstr "Посмотреть список по умолчанию"
 
-#: action.py:228 action.py:237
+#: action.py:249 action.py:258
 msgid "View %s list (%d)"
 msgstr "Посмотреть %s список (%d)"
 
-#: action.py:235 action.py:251 action.py:262
+#: action.py:256 action.py:272 action.py:283
 msgid "View books on the \"%s\" list"
 msgstr "Посмотреть книги в списке \"%s\""
 
-#: action.py:240 action.py:255 action.py:266
+#: action.py:261 action.py:276 action.py:287
 msgid "View list: %s"
 msgstr "Посмотреть список: %s"
 
-#: action.py:243 action.py:246
+#: action.py:264 action.py:267
 msgid "View list"
 msgstr "Посмотреть список"
 
-#: action.py:244
+#: action.py:265
 msgid "View books on the specified list"
 msgstr "Посмотреть книги в указанном списке"
 
-#: action.py:271
+#: action.py:292
 msgid "Edit default list"
 msgstr "Изменить список по умолчанию"
 
-#: action.py:274
+#: action.py:295
 msgid "Edit %s list"
 msgstr "Редактировать %s список"
 
-#: action.py:279
+#: action.py:300
 msgid "Edit list"
 msgstr "Редактировать список"
 
-#: action.py:280
+#: action.py:301
 msgid "Edit books on the specified list"
 msgstr "Редактировать книги в указанном списке"
 
-#: action.py:282
+#: action.py:303
 msgid "Edit books on the \"%s\" list"
 msgstr "Редактировать книги в \"%s\" списке"
 
-#: action.py:286
+#: action.py:307
 msgid "Edit list: %s"
 msgstr "Редактировать список: %s"
 
-#: action.py:290
+#: action.py:311
 msgid "Clear default list"
 msgstr "Очистить список по умолчанию"
 
-#: action.py:293
+#: action.py:314
 msgid "Clear %s list"
 msgstr "Очистить %s список"
 
-#: action.py:298 action.py:301
+#: action.py:319 action.py:322
 msgid "Clear list"
 msgstr "Очистить список"
 
-#: action.py:299
+#: action.py:320
 msgid "Clear all from the specified list"
 msgstr "Очистить все из указанного списка"
 
-#: action.py:306
+#: action.py:327
 msgid "Clear the \"%s\" list"
 msgstr "Очистить \"%s\" список"
 
-#: action.py:310
+#: action.py:331
 msgid "Clear list: %s"
 msgstr "Очистить список: %s"
 
-#: action.py:312
+#: action.py:333
 msgid "Clear list (%d)"
 msgstr "Очистить список (%d)"
 
-#: action.py:316
+#: action.py:337
 msgid "Set default list"
 msgstr "Установить списком по умолчанию"
 
-#: action.py:317
+#: action.py:338
 msgid "Switch the list to use as the current default"
 msgstr "Переключить список для использования в качестве  умолчального"
 
-#: action.py:320 action.py:330
+#: action.py:341 action.py:351
 msgid "Set your default list to \"%s\""
 msgstr "Установить списком по умолчанию \"%s\""
 
-#: action.py:324 action.py:334
+#: action.py:345 action.py:355
 msgid "Set default list: %s"
 msgstr "Установить списком по умолчанию: %s"
 
-#: action.py:337 action.py:338
+#: action.py:358 action.py:359
 msgid "Sync Now"
 msgstr "Синхронизировать"
 
-#: action.py:342
+#: action.py:363
 msgid "&Customize plugin"
 msgstr "&Настроить плагин"
 
-#: action.py:345 config.py:1174
+#: action.py:366 config.py:1180
 msgid "&Help"
 msgstr "Спр&авка"
 
-#: action.py:353
+#: action.py:374
 msgid "Sync Now (%d)"
 msgstr "Синхронизировать (%d)"
 
-#: action.py:362 action.py:380
+#: action.py:383 action.py:401
 msgid "Cannot add to list"
 msgstr "Невозможно добавить в список"
 
-#: action.py:363 action.py:381 action.py:583 action.py:700 action.py:744
-#: action.py:788 action.py:828 action.py:866
+#: action.py:384 action.py:402 action.py:611 action.py:728 action.py:772
+#: action.py:816 action.py:856 action.py:894
 msgid "No list name specified"
 msgstr "Не указано имя списка"
 
-#: action.py:461 config.py:1103
+#: action.py:482 config.py:1109
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: action.py:462
+#: action.py:483
 msgid "Are you sure you want to clear the '%s' reading list?"
 msgstr "Вы хотите очистить список для чтения '%s'?"
 
-#: action.py:508
+#: action.py:536
 msgid "The selected book(s) already exist on this list: <b>%s</b>"
 msgstr " Выбранные книги уже есть в этом списке: <b>%s</b>"
 
-#: action.py:510
+#: action.py:538
 msgid "Failed to add to list"
 msgstr "Сбой добавления в список"
 
-#: action.py:519
+#: action.py:547
 msgid "Added %d books to your %s list"
 msgstr "Добавлено %d книг в ваш %s список"
 
-#: action.py:561
+#: action.py:589
 msgid "Added to %d reading lists"
 msgstr "Добавлено в %d списки чтения"
 
-#: action.py:582
+#: action.py:610
 msgid "Cannot remove from list"
 msgstr "Невозможно удалить из списка"
 
-#: action.py:601
+#: action.py:629
 msgid "The selected book(s) do not exist on this list"
 msgstr "Выбранных книг нет в этом списке"
 
-#: action.py:611 action.py:765 action.py:809
+#: action.py:639 action.py:793 action.py:837
 msgid "Removed %d books from your %s list"
 msgstr "Удалено %d книг из вашего %s списка"
 
-#: action.py:658
+#: action.py:686
 msgid "Removed from %d reading lists"
 msgstr "Удалено из %d списков чтения"
 
-#: action.py:694 action.py:699
+#: action.py:722 action.py:727
 msgid "Cannot move to list"
 msgstr "Невозможно переместить в список"
 
-#: action.py:695
+#: action.py:723
 msgid "No source list names specified"
 msgstr "Не указаны имена исходных списков"
 
-#: action.py:720
+#: action.py:748
 msgid "Moved %d books to your list(s)"
 msgstr "Перемещено %d книг в ваш список(-и)"
 
-#: action.py:743
+#: action.py:771
 msgid "Cannot clear list"
 msgstr "Невозможно очистить список"
 
-#: action.py:755
+#: action.py:783
 msgid "No books exist on this list"
 msgstr "В этом списке нет книг"
 
-#: action.py:787
+#: action.py:815
 msgid "Cannot edit list"
 msgstr "Невозможно редактировать список"
 
-#: action.py:827
+#: action.py:855
 msgid "Cannot view list"
 msgstr "Невозможно просмотреть список"
 
-#: action.py:865 action.py:874
+#: action.py:893 action.py:902
 msgid "Cannot create list"
 msgstr "Невозможно создать список"
 
-#: action.py:868
+#: action.py:896
 msgid "Reading List: Cannot create list as list_name not specified"
 msgstr ""
 "Список чтения: невозможно создать список, так как list_name не указано"
 
-#: action.py:875
+#: action.py:903
 msgid "A list already exists with this name"
 msgstr "Список с таким названием уже существует"
 
-#: action.py:877
+#: action.py:905
 msgid "Reading List: Cannot create list as list_name is duplicate:"
 msgstr ""
 "Список чтения: невозможно создать список, так как list_name дублируется:"
 
-#: action.py:1017
+#: action.py:1045
 msgid "READING LIST: Device disconnected"
 msgstr "СПИСОК ЧТЕНИЯ: Устройство отключено"
 
-#: action.py:1026
+#: action.py:1054
 msgid "READING LIST: Metadata available:"
 msgstr "СПИСОК ЧТЕНИЯ: Доступны метаданные:"
 
-#: action.py:1071
+#: action.py:1099
 msgid "READING LIST: Device found to sync to:"
 msgstr "СПИСОК ЧТЕНИЯ: Обнаружено устройство для синхронизации с:"
 
-#: action.py:1074
+#: action.py:1102
 msgid "READING LIST: Not syncing to device as not active"
 msgstr "СПИСОК ЧТЕНИЯ: нет синхронизации с неактивным устройством"
 
-#: action.py:1079
+#: action.py:1107
 msgid "READING LIST: Sync Now - force_sync="
 msgstr "СПИСОК ЧТЕНИЯ: Синхронизировать - force_sync="
 
-#: action.py:1094
+#: action.py:1122
 msgid "Cannot sync to device"
 msgstr "Невозможно синхронизировать с устройством"
 
-#: action.py:1095
+#: action.py:1123
 msgid "No device found for UUID: %s"
 msgstr "Не найдено устройство с UUID: %s"
 
-#: action.py:1109
+#: action.py:1137
 msgid "READING LIST: Updating automatic column list(s) "
 msgstr "СПИСОК ЧТЕНИЯ: Обновление авто списков столбцов"
 
-#: action.py:1134
+#: action.py:1162
 msgid "READING LIST: Not syncing '%s' to device as autosync is false"
 msgstr ""
 "СПИСОК ЧТЕНИЯ: Нет синхронизации '%s' с устройством, так как "
 "автосинхронизация неверна"
 
-#: action.py:1142
+#: action.py:1170
 msgid "READING LIST: Updating automatic device list(s) "
 msgstr "СПИСОК ЧТЕНИЯ: Обновление авто списков устройств"
 
-#: action.py:1196
+#: action.py:1224
 msgid "READING LIST: Skipping %d books in '%s' list with no formats"
 msgstr "СПИСОК ЧТЕНИЯ: Пропуск %d книг без форматов в '%s' списке"
 
-#: action.py:1200
+#: action.py:1228
 msgid "READING LIST: Syncing %d books in '%s' to: %s (location:%s)"
 msgstr "СПИСОК ЧТЕНИЯ: Синхронизация %d книг в '%s' с:%s (location:%s)"
 
-#: action.py:1209
+#: action.py:1237
 msgid "READING LIST: No books on '%s' list need to be synced"
 msgstr "СПИСОК ЧТЕНИЯ: Нет книг в '%s' списке, которые нужно синхронизировать"
 
-#: action.py:1234
+#: action.py:1262
 msgid "Main memory"
 msgstr "Основная память"
 
-#: action.py:1237
+#: action.py:1265
 msgid "Storage Card A"
 msgstr "Карта памяти А"
 
-#: action.py:1240
+#: action.py:1268
 msgid "Storage Card B"
 msgstr "Карта памяти B"
 
-#: action.py:1245
+#: action.py:1273
 msgid "READING LIST: No books on '%s' list found on device to remove"
 msgstr ""
 "СПИСОК ЧТЕНИЯ: Книги из списка '%s' для удаления не найдены на устройстве"
 
-#: action.py:1256
+#: action.py:1284
 msgid "Reading List error"
 msgstr "Ошибка Списка Чтения"
 
-#: action.py:1257
+#: action.py:1285
 msgid "Unable to find the Remove Books plugin"
 msgstr "Не удалось найти плагин Удалить книги"
 
-#: action.py:1284
+#: action.py:1312
 msgid "Deleting books from device."
 msgstr "Удаление книг с устройства."
 
-#: action.py:1323
+#: action.py:1351
 msgid "READING LIST: Auto-populating device list: "
 msgstr "СПИСОК ЧТЕНИЯ: Авто заполняющийся список устройств:"
 
-#: action.py:1328
+#: action.py:1356
 msgid "READING LIST: Removing %d ids from automatic list: %s"
 msgstr "СПИСОК ЧТЕНИЯ: Удаление %d идентификаторов из авто списка: %s"
 
-#: action.py:1331
+#: action.py:1359
 msgid "READING LIST: Adding %d ids to automatic list: %s"
 msgstr "СПИСОК ЧТЕНИЯ: Добавление %d идентификаторов в авто список: %s"
 
-#: action.py:1341
+#: action.py:1369
 msgid "READING LIST: Auto-populating search list: "
 msgstr "СПИСОК ЧТЕНИЯ: Авто заполняющийся список поиска:"
 
-#: action.py:1346
+#: action.py:1374
 msgid ""
 "READING LIST: Aborting updating auto-search list as has no expression: "
 msgstr ""
 "СПИСОК ЧТЕНИЯ: Прерывание обновления списка автопоиска, так как нет "
 "выражения:"
 
-#: action.py:1350
+#: action.py:1378
 msgid "READING LIST: Now %d ids on automatic list: %s"
 msgstr "СПИСОК ЧТЕНИЯ: Теперь %d идентификаторы в авто списке: %s"
 
-#: action.py:1356
+#: action.py:1384
 msgid "READING LIST: Attempting to recreate Kindle collections"
 msgstr "СПИСОК ЧТЕНИЯ: Попытка воссоздать коллекции Kindle"
 
-#: action.py:1359
+#: action.py:1387
 msgid "Kindle Collections Failed"
 msgstr "Сбой коллекций Kindle"
 
-#: action.py:1360
+#: action.py:1388
 msgid ""
 "You must have the Kindle Collections plugin installed in order to recreate "
 "collections after a sync."
@@ -531,129 +531,129 @@ msgstr ""
 "У вас должен быть установлен плагин Kindle Collections для воссоздания "
 "коллекций после синхронизации."
 
-#: config.py:77
+#: config.py:79
 msgid "*Any Device"
 msgstr "*Любое устройство"
 
-#: config.py:79
+#: config.py:81
 msgid "Manually add/remove items"
 msgstr "Вручную добавлять/удалять элементы"
 
-#: config.py:80
+#: config.py:82
 msgid "Auto populated from books on device"
 msgstr "Автозаполняется из книг на устройстве"
 
-#: config.py:81
+#: config.py:83
 msgid "Auto populated from search"
 msgstr "Автозаполняется из поиска"
 
-#: config.py:83
+#: config.py:85
 msgid "Add new list items to device"
 msgstr "Добавить новые элементы списка на устройство"
 
-#: config.py:84
+#: config.py:86
 msgid "Add/overwrite all list items to device"
 msgstr "Добавить/перезаписать все элементы списка на устройство"
 
-#: config.py:85
+#: config.py:87
 msgid "Remove list items from device"
 msgstr "Удалить элементы списка с устройства"
 
-#: config.py:86
+#: config.py:88
 msgid "Replace device with list, add new items only"
 msgstr "Заменить устройство списком, добавить только новые элементы"
 
-#: config.py:87
+#: config.py:89
 msgid "Replace device with list, add/overwrite all"
 msgstr "Заменить устройство списком, добавить/перезаписать все"
 
-#: config.py:89
+#: config.py:91
 msgid "Auto populate list from books on device"
 msgstr "Автоматически заполнять список из книг на устройстве"
 
-#: config.py:91
+#: config.py:93
 msgid "Do not update calibre column"
 msgstr "Не обновлять столбец calibre"
 
-#: config.py:92
+#: config.py:94
 msgid "Update column for add or remove"
 msgstr "Обновить столбец для добавления или удаления"
 
-#: config.py:93
+#: config.py:95
 msgid "Update column for add to list only"
 msgstr "Обновить столбец только для добавления в список"
 
-#: config.py:94
+#: config.py:96
 msgid "Update column for remove from list only"
 msgstr "Обновить столбец только для удаления из списка"
 
-#: config.py:436
+#: config.py:442
 msgid "Kindle Collections"
 msgstr "Коллекции Kindle"
 
-#: config.py:436
+#: config.py:442
 msgid "Location"
 msgstr "Расположение"
 
-#: config.py:436
+#: config.py:442
 msgid "Menu"
 msgstr "Меню"
 
-#: config.py:436
+#: config.py:442
 msgid "Name"
 msgstr "Имя"
 
-#: config.py:436
+#: config.py:442
 msgid "Status"
 msgstr "Статус"
 
-#: config.py:540
+#: config.py:546
 msgid "Lists:"
 msgstr "Списки:"
 
-#: config.py:547
+#: config.py:553
 msgid "Add list"
 msgstr "Добавить список"
 
-#: config.py:552
+#: config.py:558
 msgid "Delete list"
 msgstr "Удалить список"
 
-#: config.py:557 config.py:931
+#: config.py:563 config.py:937
 msgid "Rename list"
 msgstr "Переименовать список"
 
-#: config.py:565
+#: config.py:571
 msgid "Population Options:"
 msgstr "Варианты заполнения:"
 
-#: config.py:573
+#: config.py:579
 msgid "&List type:"
 msgstr "&Тип списка:"
 
-#: config.py:574
+#: config.py:580
 msgid "Choose how this list will be populated"
 msgstr "Выберите, как этот список будет заполнен"
 
-#: config.py:581
+#: config.py:587
 msgid "&Auto populate from search:"
 msgstr "&Автозаполнение из поиска:"
 
-#: config.py:582
+#: config.py:588
 msgid ""
 "If list is populated from a search, specify the calibre search expression"
 msgstr ""
 "Если список заполняется из поиска, укажите поисковое выражение calibre"
 
-#: config.py:590
+#: config.py:596
 msgid "Sync Options:"
 msgstr "Опции синхронизации:"
 
-#: config.py:598
+#: config.py:604
 msgid "&Device to sync this list to:"
 msgstr "&Устройство для синхронизации этого списка:"
 
-#: config.py:599
+#: config.py:605
 msgid ""
 "By specifying a device you can sync either manually or\n"
 "automatically the contents of a list to that device.\n"
@@ -663,11 +663,11 @@ msgstr ""
 "автоматически с содержимым списка для этого устройства.\n"
 "Это заменяет функциональность плагина Book Sync."
 
-#: config.py:607
+#: config.py:613
 msgid "&When syncing this list:"
 msgstr "&При синхронизации этого списка:"
 
-#: config.py:608
+#: config.py:614
 msgid ""
 "Control how your items are synced to the device.\n"
 "Sync only new items, sync all items overwriting existing\n"
@@ -677,11 +677,11 @@ msgstr ""
 "Синхронизировать только новые элементы, синхронизировать все элементы, перезаписывая существующие\n"
 "или использовать этот список, чтобы просто удалить элементы с вашего устройства."
 
-#: config.py:616
+#: config.py:622
 msgid "Sync to this device as soon as it is connected"
 msgstr "Синхронизировать с этим устройством, как только оно будет подключено"
 
-#: config.py:617
+#: config.py:623
 msgid ""
 "Uncheck this option if you prefer to manually sync to your device.\n"
 "If no device is specified this checkbox has no effect"
@@ -689,11 +689,11 @@ msgstr ""
 "Снимите этот флажок, если вы предпочитаете выполнять синхронизацию с устройством вручную.\n"
 "Если устройство не указано, этот флажок не влияет."
 
-#: config.py:621
+#: config.py:627
 msgid "Clear this list after a sync to this device"
 msgstr "Очистить этот список после синхронизации с этим устройством"
 
-#: config.py:622
+#: config.py:628
 msgid ""
 "If unchecked, only items not on the device already will be synced.\n"
 "If no device is specified this checkbox has no effect.\n"
@@ -703,15 +703,15 @@ msgstr ""
 "Если устройство не указано, этот флажок не влияет.\n"
 "Этот параметр можно использовать только со списками ручного ввода."
 
-#: config.py:630
+#: config.py:636
 msgid "Column Update Options:"
 msgstr "Параметры обновления столбца:"
 
-#: config.py:638
+#: config.py:644
 msgid "When &changing this list:"
 msgstr "При &изменении этого списка:"
 
-#: config.py:639
+#: config.py:645
 msgid ""
 "Optionally modify tags or a custom column when you\n"
 "add and/or remove items from this list."
@@ -719,11 +719,11 @@ msgstr ""
 "Опционально изменять теги или пользовательский столбец, при\n"
 "добавлении и/или удалении элементов из этого списка."
 
-#: config.py:646
+#: config.py:652
 msgid "&Column to update:"
 msgstr "&Столбец для обновления:"
 
-#: config.py:647
+#: config.py:653
 msgid ""
 "Optionally specify a column to add/remove a value from\n"
 "when adding or removing items from this list"
@@ -731,11 +731,11 @@ msgstr ""
 "При необходимости укажите столбец, из которого нужно добавить/удалить значение\n"
 "при добавлении или удалении элементов из этого списка"
 
-#: config.py:655
+#: config.py:661
 msgid "&Value in column to add/remove:"
 msgstr "&Значение в столбце для добавления/удаления:"
 
-#: config.py:656
+#: config.py:662
 msgid ""
 "Specify the tag or custom column value to be added when adding\n"
 "to this list or removed when the book is taken off the list"
@@ -743,15 +743,15 @@ msgstr ""
 "Укажите значение тега или пользовательского столбца, которое будет добавлено при добавлении\n"
 "в этот список или удаляется, когда книга удаляется из списка"
 
-#: config.py:666
+#: config.py:672
 msgid "Reading Order Options:"
 msgstr "Варианты порядка чтения:"
 
-#: config.py:674
+#: config.py:680
 msgid "&Store in series column:"
 msgstr "&Хранить в столбце серии:"
 
-#: config.py:675
+#: config.py:681
 msgid ""
 "You can optionally display the current reading list order\n"
 "in a custom series column. You should not edit this column directly!\n"
@@ -761,11 +761,11 @@ msgstr ""
 "в столбце пользовательской серии. Вы не должны редактировать этот столбец напрямую!\n"
 "Можно использовать только со списками, управляемыми вручную, которые не очищаются при синхронизации."
 
-#: config.py:683
+#: config.py:689
 msgid "&Series name:"
 msgstr "&Название серии:"
 
-#: config.py:684
+#: config.py:690
 msgid ""
 "Specify the name for this reading order series\n"
 "If left blank, will use the name of the list this book is on."
@@ -773,17 +773,17 @@ msgstr ""
 "Укажите имя для этой серии порядка чтения\n"
 "Если оставить пустым, будет использоваться название списка, в котором находится эта книга."
 
-#: config.py:693
+#: config.py:699
 msgid "Display Options:"
 msgstr "Опции отображения:"
 
-#: config.py:701
+#: config.py:707
 msgid "Move \"View list\" to the top level of the plugin menu for this list"
 msgstr ""
 "Переместить «Список просмотра» на верхний уровень меню плагина для этого "
 "списка."
 
-#: config.py:702
+#: config.py:708
 msgid ""
 "By default Reading List creates a View List submenu for all your lists when you have multiple.\n"
 "If checked, this list will be moved to the top level menu for ease of access.\n"
@@ -793,11 +793,11 @@ msgstr ""
 "Если этот флажок установлен, этот список будет перемещен в меню верхнего уровня для облегчения доступа.\n"
 "ПРИМЕЧАНИЕ. Ваш список «по умолчанию» всегда будет отображаться в верхнем меню, независимо от этого флажка."
 
-#: config.py:707
+#: config.py:713
 msgid "Apply reading list order when viewing list"
 msgstr "Применить порядок списка чтения при просмотре списка"
 
-#: config.py:708
+#: config.py:714
 msgid ""
 "If checked, viewing a reading list will also change your Calibre sort order.\n"
 "Lists can be manually reordered using this plugin, defaulting to order added to list.\n"
@@ -807,11 +807,11 @@ msgstr ""
 "Списки можно переупорядочивать вручную с помощью этого плагина, по умолчанию в порядке добавления в список.\n"
 "Если флажок не установлен, текущая сортировка  останется неизменной при просмотре списка."
 
-#: config.py:714
+#: config.py:720
 msgid "Restore sort after viewing list"
 msgstr "Восстановить сортировку после просмотра списка"
 
-#: config.py:715
+#: config.py:721
 msgid ""
 "If checked, calibre sort will be restored to its original state after\n"
 "the user quits the reading list view by changing or clearing calibre's\n"
@@ -821,51 +821,51 @@ msgstr ""
 "выхода пользователя из списка чтения при изменении или очистке calibre\n"
 "поиске, переключении библиотек или выходе из calibre."
 
-#: config.py:905
+#: config.py:911
 msgid "Add new list"
 msgstr "Добавить новый список"
 
-#: config.py:906
+#: config.py:912
 msgid "Default"
 msgstr "По умолчанию"
 
-#: config.py:906
+#: config.py:912
 msgid "Enter a unique display name for this list:"
 msgstr "Введите уникальное отображаемое имя для этого списка:"
 
-#: config.py:914 config.py:944
+#: config.py:920 config.py:950
 msgid "Add failed"
 msgstr "Сбой добавления"
 
-#: config.py:915 config.py:945
+#: config.py:921 config.py:951
 msgid "A list with the same name already exists"
 msgstr "Список с таким названием уже существует"
 
-#: config.py:932
+#: config.py:938
 msgid "Enter a new display name for this list:"
 msgstr "Введите новое отображаемое имя для этого списка:"
 
-#: config.py:963
+#: config.py:969
 msgid "Cannot delete"
 msgstr "Невозможно удалить"
 
-#: config.py:964
+#: config.py:970
 msgid "You must have at least one list"
 msgstr "У вас должен быть хотя бы один список"
 
-#: config.py:966
+#: config.py:972
 msgid "Do you want to delete the list named '%s'"
 msgstr "Вы хотите удалить список с именем '%s'"
 
-#: config.py:998
+#: config.py:1004
 msgid "Devices:"
 msgstr "Устройства:"
 
-#: config.py:1009
+#: config.py:1015
 msgid "Add connected device"
 msgstr "Добавить подключенное устройство"
 
-#: config.py:1011
+#: config.py:1017
 msgid ""
 "If you do not have a device connected currently, either plug one\n"
 "in now or exit the dialog and connect to folder/iTunes first"
@@ -873,78 +873,96 @@ msgstr ""
 "Если в данный момент у вас нет подключенного устройства, подключите его\n"
 "или выйдите из диалогового окна и сначала подключитесь к папке/iTunes"
 
-#: config.py:1018
+#: config.py:1024
 msgid "Rename the currently connected device"
 msgstr "Переименовать текущее подключенное устройство"
 
-#: config.py:1023
+#: config.py:1029
 msgid "Delete this device from the device list"
 msgstr "Удалить это устройство из списка устройств"
 
-#: config.py:1069 config.py:1073 config.py:1092
+#: config.py:1075 config.py:1079 config.py:1098
 msgid "Rename failed"
 msgstr "Переименование не удалось"
 
-#: config.py:1070 config.py:1100
+#: config.py:1076 config.py:1106
 msgid "You must select a device first"
 msgstr "Сначала необходимо выбрать устройство"
 
-#: config.py:1074
+#: config.py:1080
 msgid "You can only rename a device that is currently connected"
 msgstr ""
 "Вы можете переименовать только то устройство, которое в данный момент "
 "подключено"
 
-#: config.py:1078
+#: config.py:1084
 msgid "Rename device"
 msgstr "Переименовать устройство"
 
-#: config.py:1079
+#: config.py:1085
 msgid "Enter a new display name for this device:"
 msgstr "Введите новое отображаемое имя для этого устройства:"
 
-#: config.py:1093
+#: config.py:1099
 msgid "An error occured while renaming."
 msgstr "Произошла ошибка при переименовании."
 
-#: config.py:1099
+#: config.py:1105
 msgid "Delete failed"
 msgstr "Не удалось удалить"
 
-#: config.py:1104
+#: config.py:1110
 msgid "You are about to remove the <b>%s</b> device from this list. "
 msgstr "Вы собираетесь удалить <b>%s</b> устройство из этого списка."
 
-#: config.py:1105
+#: config.py:1111
 msgid "Are you sure you want to continue?"
 msgstr "Вы хотите продолжить?"
 
-#: config.py:1160
+#: config.py:1166
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Редактирование сочетаний клавиш, связанных с этим плагином"
 
-#: config.py:1164
+#: config.py:1170
 msgid "Reset &confirmation dialogs"
 msgstr "Сбросить диалоги &подтверждения"
 
-#: config.py:1165
+#: config.py:1171
 msgid "Reset all show me again dialogs for the Reading List plugin"
 msgstr "Сбросить все диалоги *снова показать мне* для плагина Список чтения"
 
-#: config.py:1169
+#: config.py:1175
 msgid "&View library preferences"
 msgstr "&Просмотр настроек библиотеки"
 
-#: config.py:1170
+#: config.py:1176
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 "Просмотр данных, хранящихся в базе данных библиотеки для этого плагина"
 
-#: config.py:1179
+#: config.py:1187
+msgid "Quick Access Options:"
+msgstr ""
+
+#: config.py:1194
+msgid "Allow toolbar button click to view list"
+msgstr ""
+
+#: config.py:1195
+msgid ""
+"By default the toolbar button shows the plugin menu.\n"
+"Check this option to instead display a reading list."
+msgstr ""
+
+#: config.py:1202
+msgid "List name:"
+msgstr ""
+
+#: config.py:1211
 msgid "Show dialog when removing books from device"
 msgstr "Показать диалоговое окно при удалении книг с устройства"
 
-#: config.py:1180
+#: config.py:1212
 msgid ""
 "If syncing your list means books are removed from your device, then\n"
 "a dialog will be displayed allowing you to confirm first.\n"
@@ -954,22 +972,22 @@ msgstr ""
 "вначале появится диалоговое окно, позволяющее подтверждение.\n"
 "Снимите этот флажок, чтобы разрешить автоматическую синхронизацию с вашим устройством."
 
-#: config.py:1192
+#: config.py:1224
 msgid "Done"
 msgstr "Готово"
 
-#: config.py:1193
+#: config.py:1225
 msgid "Confirmation dialogs have all been reset"
 msgstr "Все диалоги подтверждения были сброшены"
 
-#: config.py:1215
+#: config.py:1247
 msgid "Lists"
 msgstr "Списки"
 
-#: config.py:1216
+#: config.py:1248
 msgid "Devices"
 msgstr "Устройства"
 
-#: config.py:1217
+#: config.py:1249
 msgid "Other"
 msgstr "Другое"
