@@ -1,5 +1,9 @@
 # Barnes & Noble Change Log
 
+## [1.5.5] - 2024-05-11
+### Fixed
+- Changes to the B&N website causing timeouts requiring Chrome user-agent > 80 and some specific accept headers.
+
 ## [1.5.4] - 2024-04-02
 ### Added
 - Add support for pasting web urls as identifiers from the B&N website.

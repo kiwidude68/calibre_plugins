@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import time, re
+import time, re, random
 from six import text_type as unicode
 from six.moves.urllib.parse import quote
 try:
@@ -15,6 +15,7 @@ from collections import OrderedDict
 from lxml.html import fromstring
 
 from calibre import as_unicode
+from calibre.constants import numeric_version as calibre_version
 from calibre.ebooks.metadata import check_isbn
 from calibre.ebooks.metadata.sources.base import Source
 from calibre.utils.icu import lower
@@ -26,7 +27,7 @@ class BarnesNoble(Source):
     name = 'Barnes & Noble'
     description = 'Downloads metadata and covers from Barnes & Noble'
     author = 'Grant Drake'
-    version = (1, 5, 4)
+    version = (1, 5, 5)
     minimum_calibre_version = (2, 0, 0)
 
     ID_NAME = 'barnesnoble'
@@ -39,7 +40,7 @@ class BarnesNoble(Source):
 
     BASE_URL = 'https://search.barnesandnoble.com'
     BROWSE_URL = 'https://www.barnesandnoble.com'
-    SEARCH_URL = 'https://www.barnesandnoble.com/s?'
+    SEARCH_URL = 'https://www.barnesandnoble.com/s'
 
     def config_widget(self):
         '''
@@ -47,6 +48,11 @@ class BarnesNoble(Source):
         '''
         from calibre_plugins.barnes_noble.config import ConfigWidget
         return ConfigWidget(self)
+
+    @property
+    def user_agent(self):
+        # May 2024 - B&N started getting picky about the user agent, rejecting Chrome version 80 which was the calibre default.
+        return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 
     def get_book_url(self, identifiers):
         barnes_noble_id = identifiers.get(self.ID_NAME, None)
@@ -89,7 +95,7 @@ class BarnesNoble(Source):
                 tokens += [quote(t.encode('utf-8') if isinstance(t, unicode) else t) for t in author_tokens]
         if len(tokens) == 0:
             return None
-        return BarnesNoble.SEARCH_URL + 'store=book&keyword=' + '+'.join(tokens)
+        return BarnesNoble.SEARCH_URL + '/' + '%20'.join(tokens).lower()
 
     def get_cached_cover_url(self, identifiers):
         url = None
@@ -153,6 +159,8 @@ class BarnesNoble(Source):
             multiple_results_found = False
             try:
                 log.info('Querying: %s' % query)
+                br.set_current_header('Accept','*/*')
+                br.set_current_header('Accept-Encoding','gzip, deflate, br')
                 response = br.open_novisit(query, timeout=timeout)
                 # Check whether we got redirected to a book page.
                 # If we did, will use the url.
@@ -361,6 +369,8 @@ class BarnesNoble(Source):
         if abort.is_set():
             return
         br = self.browser
+        br.set_current_header('Accept','*/*')
+        br.set_current_header('Accept-Encoding','gzip, deflate, br')
         log('Downloading cover from:', cached_url)
         try:
             cdata = br.open_novisit(cached_url, timeout=timeout).read()
