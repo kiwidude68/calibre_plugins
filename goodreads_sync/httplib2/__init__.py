@@ -996,9 +996,9 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
                  strict=None, timeout=None, proxy_info=None,
                  ca_certs=None, disable_ssl_certificate_validation=False,
                  ssl_version=None):
-        httplib.HTTPSConnection.__init__(self, host, port=port,
-                                         key_file=key_file,
-                                         cert_file=cert_file)
+        context = ssl.create_default_context()
+        context.load_cert_chain(certfile=cert_file, keyfile=key_file)
+        httplib.HTTPSConnection.__init__(self, host, port=port, context=context)
         self.timeout = timeout
         self.proxy_info = proxy_info
         if ca_certs is None:
@@ -1181,12 +1181,10 @@ class AppEngineHttpsConnection(httplib.HTTPSConnection):
                  strict=None, timeout=None, proxy_info=None, ca_certs=None,
                  disable_ssl_certificate_validation=False,
                  ssl_version=None):
-        httplib.HTTPSConnection.__init__(self, host, port=port,
-                                         key_file=key_file,
-                                         cert_file=cert_file,
-                                         timeout=timeout)
-        self._fetch = _new_fixed_fetch(
-                not disable_ssl_certificate_validation)
+        context = ssl.create_default_context()
+        context.load_cert_chain(certfile=cert_file, keyfile=key_file)
+        httplib.HTTPSConnection.__init__(self, host, port=port, context=context, timeout=timeout)
+        self._fetch = _new_fixed_fetch(not disable_ssl_certificate_validation)
 
 # Use a different connection object for Google App Engine
 try:

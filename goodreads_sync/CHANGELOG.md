@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.16.6] - 2024-05-15
+### Fixed
+- Use `SSLContext` object to pass `key_file` and `cert_file` to `HTTPSConnection` constructor making the plugin Python 3.12 capable.
+
 ## [1.16.5] - 2024-03-17
 ### Updated
 - Spanish translation
