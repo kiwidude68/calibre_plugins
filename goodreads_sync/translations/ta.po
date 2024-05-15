@@ -4,14 +4,14 @@
 # 
 # Translators:
 # அனிச் பிரபு தி, 2022
-# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-21 19:53+1000\n"
+"POT-Creation-Date: 2024-03-24 18:01+1000\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
-"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2024\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -800,37 +800,37 @@ msgstr "நகல் அலமாரியின் பெயர்"
 msgid "There is already a shelf named:"
 msgstr "ஏற்கனவே பெயரிடப்பட்ட ஒரு அலமாரி உள்ளது:"
 
-#: core.py:48 core.py:471 core.py:473 dialogs.py:305 dialogs.py:307
+#: core.py:48 core.py:484 core.py:486 dialogs.py:305 dialogs.py:307
 #: dialogs.py:1148 dialogs.py:1150
 msgid "Unknown"
 msgstr "தெரியவில்லை"
 
-#: core.py:194
+#: core.py:202 core.py:207
 msgid "Goodreads Failure"
 msgstr "குட்ரெட்ஸ் தோல்வி"
 
-#: core.py:195
+#: core.py:208
 msgid "The request contacting Goodreads has failed."
 msgstr "குட்ரெட்ஸைத் தொடர்பு கொள்ளும் கோரிக்கை தோல்வியுற்றது."
 
-#: core.py:196
+#: core.py:209
 msgid ""
 "If it reoccurs you may have exceeded a request limit imposed by Goodreads."
 msgstr ""
 "இது மீண்டும் நிகழ்கிறது என்றால், குட்ரெட்ஸ் விதித்த கோரிக்கை வரம்பை நீங்கள் "
 "தாண்டியிருக்கலாம்."
 
-#: core.py:197
+#: core.py:210
 msgid "In which case wait an additional 5-10 minutes before retrying."
 msgstr ""
 "இந்த விஷயத்தில் மீண்டும் முயற்சிக்கும் முன் கூடுதலாக 5-10 நிமிடங்கள் "
 "காத்திருங்கள்."
 
-#: core.py:414
+#: core.py:427
 msgid "Page"
 msgstr "பக்கம்"
 
-#: core.py:417
+#: core.py:430
 msgid "Syncing from shelf: {0}"
 msgstr "அலமாரியில் இருந்து ஒத்திசைத்தல்: {0}"
 
