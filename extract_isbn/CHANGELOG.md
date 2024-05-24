@@ -1,5 +1,9 @@
 # Extract ISBN Change Log
 
+## [1.6.3] - 2024-05-24
+### Changed
+- PDF scans now include the `-c -hidden` arguments for pdftohtml and remove newline characters for matches (Paul Harden)
+
 ## [1.6.2] - 2024-04-07
 ### Added
 - Chinese (China) translation

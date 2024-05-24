@@ -185,7 +185,7 @@ def call_pdftohtml(log, output_dir, pdf_name, first=None, last=None):
                 unicode) else PDFTOHTML
 
         cmd = [exe, b'-enc', b'UTF-8', b'-noframes', b'-p', b'-nomerge',
-                b'-nodrm', b'-q', a(pdfsrc), a(index_file), b'-xml', b'-i']
+                b'-nodrm', b'-q', b'-c', b'-hidden', a(pdfsrc), a(index_file), b'-xml', b'-i']
 
         if isbsd:
             cmd.remove(b'-nodrm')
