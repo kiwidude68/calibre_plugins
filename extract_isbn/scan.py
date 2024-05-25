@@ -51,6 +51,7 @@ class BookScanner(object):
             if forward:
                 for match in RE_ISBN.finditer(book_file):
                     txt = match.group(1)
+                    txt = re.sub('\n', '', txt)     # it's possible that because of the pdf formatting the isbn will be spread over multiple lines
                     self._evaluate_isbn_match(txt)
             else:
                 matches = RE_ISBN.findall(book_file)
