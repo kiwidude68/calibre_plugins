@@ -992,13 +992,10 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
     the docs of socket.setdefaulttimeout():
     http://docs.python.org/library/socket.html#socket.setdefaulttimeout
     """
-    def __init__(self, host, port=None, key_file=None, cert_file=None,
+    def __init__(self, host, port=None, context=None,
                  strict=None, timeout=None, proxy_info=None,
                  ca_certs=None, disable_ssl_certificate_validation=False,
                  ssl_version=None):
-        context = ssl.create_default_context()
-        if cert_file:
-            context.load_cert_chain(certfile=cert_file, keyfile=key_file)
         httplib.HTTPSConnection.__init__(self, host, port=port, context=context)
         self.timeout = timeout
         self.proxy_info = proxy_info
@@ -1178,12 +1175,10 @@ class AppEngineHttpsConnection(httplib.HTTPSConnection):
     The parameters proxy_info, ca_certs, disable_ssl_certificate_validation,
     and ssl_version are all dropped on the ground.
     """
-    def __init__(self, host, port=None, key_file=None, cert_file=None,
+    def __init__(self, host, port=None, context=None,
                  strict=None, timeout=None, proxy_info=None, ca_certs=None,
                  disable_ssl_certificate_validation=False,
                  ssl_version=None):
-        context = ssl.create_default_context()
-        context.load_cert_chain(certfile=cert_file, keyfile=key_file)
         httplib.HTTPSConnection.__init__(self, host, port=port, context=context, timeout=timeout)
         self._fetch = _new_fixed_fetch(not disable_ssl_certificate_validation)
 
