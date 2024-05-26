@@ -17,10 +17,10 @@ class ActionGoodreadsSync(InterfaceActionBase):
     calibre utilities to run without needing to load the GUI libraries.
     '''
     name                    = 'Goodreads Sync'
-    description             = 'Sync from Calibre with the shelves of your GoodReads.com account'
+    description             = 'Sync from Calibre with the shelves of your goodreads.com account'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
-    version                 = (1, 16, 6)
+    version                 = (1, 16, 7)
     minimum_calibre_version = (2, 0, 0)
 
     #: This field defines the GUI plugin class that contains all the code
