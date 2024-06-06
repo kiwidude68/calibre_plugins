@@ -1,5 +1,9 @@
 # Reading List Change Log
 
+## [1.15.5] - 2024-06-02
+### Added
+- Add `Toggle on list` menu actions assignable via keyboard shortcuts.
+
 ## [1.15.4] - 2024-04-25
 ### Changed
 - Limit title and author columns width on edit list dialog to prevent long names from over-sizing dialog.
