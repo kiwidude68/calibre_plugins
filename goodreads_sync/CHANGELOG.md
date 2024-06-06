@@ -1,5 +1,10 @@
 # Goodreads Sync Change Log
 
+## [1.16.8] - 2024-06-06
+### Fixed
+- One last attempt at fixing key_file issues for linux users. (@bernieke)
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
 ## [1.16.6] - 2024-05-15
 ### Fixed
 - Use `SSLContext` object to pass `key_file` and `cert_file` to `HTTPSConnection` constructor making the plugin Python 3.12 capable. (@StegSchreck)
