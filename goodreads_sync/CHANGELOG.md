@@ -1,13 +1,5 @@
 # Goodreads Sync Change Log
 
-## [1.16.8] - 2024-06-02
-### Fixed
-- Upgrade httplib2 to Python3 only version for future Python 3.12 compatibility. Min calibre version requirement jumped to 5.0
-
-## [1.16.7] - 2024-05-26
-### Fixed
-- More `SSLContext` changes for `HTTPSConnection` constructor for making the plugin Python 3.12 capable. (@StegSchreck)
-
 ## [1.16.6] - 2024-05-15
 ### Fixed
 - Use `SSLContext` object to pass `key_file` and `cert_file` to `HTTPSConnection` constructor making the plugin Python 3.12 capable. (@StegSchreck)
