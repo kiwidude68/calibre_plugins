@@ -30,7 +30,7 @@ class Goodreads(Source):
     name = 'Goodreads'
     description = 'Downloads metadata and covers from Goodreads'
     author = 'Grant Drake'
-    version = (1, 8, 1)
+    version = (1, 8, 2)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])
@@ -73,7 +73,7 @@ class Goodreads(Source):
     def get_book_url(self, identifiers):
         goodreads_id = identifiers.get(self.ID_NAME, None)
         if goodreads_id:
-            return ('Goodreads', goodreads_id,
+            return ('goodreads', goodreads_id,
                     '%s/book/show/%s' % (Goodreads.BASE_URL, goodreads_id))
 
     def id_from_url(self, url):

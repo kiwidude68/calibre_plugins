@@ -1,5 +1,9 @@
 # Goodreads Change Log
 
+## [1.8.2] - 2024-06-13
+### Fixed
+- Fix casing of goodreads identifier in code so right-click remove in calibre feature will work (Terisa).
+
 ## [1.8.1] - 2023-03-24
 ### Fixed
 - Author metadata change of just taking the primary contributor (first) when a book has no contributors with a role of Author like comics.
