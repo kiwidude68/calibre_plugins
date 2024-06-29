@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-12-23 21:11+1000\n"
+"POT-Creation-Date: 2024-03-24 18:08+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: ciepina <ciepina@balticom.lv>, 2023\n"
 "Language-Team: Latvian (https://app.transifex.com/calibre/teams/19337/lv/)\n"
@@ -466,252 +466,252 @@ msgstr "Visas meklētās ePub grāmatas ir pārveidotas ar calibre"
 msgid "ePub books for calibre conversions"
 msgstr "ePub grāmatas calibre konvertēšanai"
 
-#: check_epub.py:992
+#: check_epub.py:1000
 msgid "All searched ePub books have a valid zip format"
 msgstr ""
 
-#: check_epub.py:994
+#: check_epub.py:1002
 msgid "ePub books for corrupted zip format"
 msgstr ""
 
-#: check_epub.py:1019
+#: check_epub.py:1027
 msgid "All searched ePub books have a valid container.xml file"
 msgstr "Visām meklētajām ePub grāmatām ir derīgs .xml konteiners"
 
-#: check_epub.py:1021
+#: check_epub.py:1029
 msgid "ePub books for missing container.xml"
 msgstr "ePub grāmatas bez .xml konteinera"
 
-#: check_epub.py:1037
+#: check_epub.py:1045
 msgid "\tMissing container.xml file in"
 msgstr "\tTrūkst .xml konteiners"
 
-#: check_epub.py:1042
+#: check_epub.py:1050
 msgid "\tIncorrect container.xml namespace in"
 msgstr "\tNepareizs nosaukums .xml konteinerā"
 
-#: check_epub.py:1049
+#: check_epub.py:1057
 msgid "\tIncorrect .opf manifest namespace in"
 msgstr "\tNepareizs .opf manifesta nosaukums"
 
-#: check_epub.py:1059
+#: check_epub.py:1067
 msgid "All searched ePub books have valid namespaces"
 msgstr "Visām meklētajām ePub grāmatām ir derīgi nosaukumi"
 
-#: check_epub.py:1061
+#: check_epub.py:1069
 msgid "ePub books for namespaces check"
 msgstr "ePub grāmatas nosaukumu pārbaude"
 
-#: check_epub.py:1098
+#: check_epub.py:1106
 msgid "All searched ePub books have only dc: elements in manifest"
 msgstr "Visām meklētajām ePub grāmatām ir tikai dc: elementi manifestā"
 
-#: check_epub.py:1100
+#: check_epub.py:1108
 msgid "ePub books for non dc: metadata check"
 msgstr "ePub grāmatas, kas nav dc: metadatu pārbaude"
 
-#: check_epub.py:1122
+#: check_epub.py:1130
 msgid "Manifest file missing from: <b>%s</b>"
 msgstr "Trūkst manifesta fails: <b>%s</b>"
 
-#: check_epub.py:1136
+#: check_epub.py:1144
 msgid "All searched ePub books have a valid opf manifest"
 msgstr "Visām meklētajām ePub grāmatām ir derīgs .opf manifests"
 
-#: check_epub.py:1138
+#: check_epub.py:1146
 msgid "ePub books for missing files in opf"
 msgstr "ePub grāmatas ar trūkstošiem .opf failiem"
 
-#: check_epub.py:1163 check_epub.py:1202
+#: check_epub.py:1171 check_epub.py:1210
 msgid "Ignoring DRM protected ePub: "
 msgstr "Ignorējot ar DRM aizsargātu ePub: "
 
-#: check_epub.py:1176
+#: check_epub.py:1184
 msgid "All searched ePub books have a flattened NCX TOC"
 msgstr "Visām meklētajām ePub grāmatām ir saplacināts NCX TOC"
 
-#: check_epub.py:1178
+#: check_epub.py:1186
 msgid "ePub books for NCX TOC hierarchy"
 msgstr "ePub grāmatas NCX TOC hierarhija"
 
-#: check_epub.py:1222
+#: check_epub.py:1230
 msgid "All searched ePub books have a NCX TOC with at least 3 items"
 msgstr "Visām meklētajām ePub grāmatām ir NCX TOC ar vismaz 3 vienumiem"
 
-#: check_epub.py:1224
+#: check_epub.py:1232
 msgid "ePub books for NCX TOC count"
 msgstr "ePub grāmatas NCX TOC skaitam"
 
-#: check_epub.py:1279
+#: check_epub.py:1287
 msgid "All searched ePub books have a NCX TOC with valid links"
 msgstr "Visām meklētajām ePub grāmatām ir NCX TOC ar derīgām saitēm"
 
-#: check_epub.py:1281
+#: check_epub.py:1289
 msgid "ePub books for broken NCX TOC links"
 msgstr "ePub grāmatas ar bojātām NCX TOC saitēm"
 
-#: check_epub.py:1324
+#: check_epub.py:1332
 msgid "All searched ePub books have valid guide entries"
 msgstr "Visās meklētajās ePub grāmatās ir derīgi ceļveža ieraksti"
 
-#: check_epub.py:1326
+#: check_epub.py:1334
 msgid "ePub books for broken guide links"
 msgstr "ePub grāmatas ar bojātām ceļvežu saitēm"
 
-#: check_epub.py:1360
+#: check_epub.py:1368
 msgid "No searched ePub books have oversize html files"
 msgstr "Nevienā meklētajā ePub grāmatā nav pārāk lieli HTML faili"
 
-#: check_epub.py:1362
+#: check_epub.py:1370
 msgid "ePub books for oversize html files"
 msgstr "ePub grāmatas ar liela izmēra html failiem"
 
-#: check_epub.py:1387
+#: check_epub.py:1395
 msgid "No searched ePub books have DRM"
 msgstr "Nevienai meklētajai ePub grāmatai nav DRM"
 
-#: check_epub.py:1389
+#: check_epub.py:1397
 msgid "ePub books for DRM"
 msgstr "ePub grāmatas ar DRM"
 
-#: check_epub.py:1421
+#: check_epub.py:1429
 msgid "No searched ePub books have Adobe DRM meta tags"
 msgstr "Nevienai meklētajai ePub grāmatai nav Adobe DRM meta birku"
 
-#: check_epub.py:1423
+#: check_epub.py:1431
 msgid "ePub books for Adobe DRM meta tags"
 msgstr "ePub grāmatas ar Adobe DRM meta birkām"
 
-#: check_epub.py:1455
+#: check_epub.py:1463
 msgid "No searched ePub books have \\<address\\> smart tags"
 msgstr "Nevienai meklētajai ePub grāmatai nav \\<adreses\\> viedās birkas"
 
-#: check_epub.py:1457
+#: check_epub.py:1465
 msgid "ePub books for <address> smart tags"
 msgstr "ePub grāmatas ar <address> viedajām birkām"
 
-#: check_epub.py:1476
+#: check_epub.py:1484
 msgid "Font found in: <b>%s</b>"
 msgstr "Atrasts fonts: <b>%s</b>"
 
-#: check_epub.py:1490
+#: check_epub.py:1498
 msgid "No searched ePub books have embedded fonts"
 msgstr "Nevienā meklētajā ePub grāmatā nav iegultu fontu"
 
-#: check_epub.py:1492
+#: check_epub.py:1500
 msgid "ePub books for embedded fonts"
 msgstr "ePub grāmatas ar iegultiem fontiem"
 
-#: check_epub.py:1510
+#: check_epub.py:1518
 msgid "CSS file contains @font-face: <b>%s</b>"
 msgstr "CSS failā ir @font-face: <b>%s</b>"
 
-#: check_epub.py:1516
+#: check_epub.py:1524
 msgid "At least one html file contains @font-face: <b>%s</b>"
 msgstr "Vismaz viens html fails satur @font-face: <b>%s</b>"
 
-#: check_epub.py:1530
+#: check_epub.py:1538
 msgid "No searched ePub books have @font-face declarations"
 msgstr "Nevienai meklētajai ePub grāmatai nav @font-face deklarācijas"
 
-#: check_epub.py:1532
+#: check_epub.py:1540
 msgid "ePub books for @font-face declarations"
 msgstr "ePub grāmatas ar @font-face deklarācijām"
 
-#: check_epub.py:1561
+#: check_epub.py:1569
 msgid "All searched ePub books have text-align:justify"
 msgstr "Visām meklētajām ePub grāmatām ir text-align:justify"
 
-#: check_epub.py:1563
+#: check_epub.py:1571
 msgid "ePub books for text-align:justify"
 msgstr "ePub grāmatas ar text-align:justify"
 
-#: check_epub.py:1589
+#: check_epub.py:1597
 msgid "\t\t'margin' property found, so does not match calibre preferences"
 msgstr "\t\t'margin' atrastais rekvizīts neatbilst calibre izvēlnei"
 
-#: check_epub.py:1592
+#: check_epub.py:1600
 msgid "\t\tNegative margin found, so does not match calibre preferences"
 msgstr "\t\tAtrasta negatīva piemale kas neatbilst calibre izvēlnei"
 
-#: check_epub.py:1601
+#: check_epub.py:1609
 msgid "\t\tMargins is not defined in pts so does not match calibre preferences"
 msgstr "\t\tPiemales nav definētas punktos kas neatbilst calibre izvēlnei"
 
-#: check_epub.py:1609 check_epub.py:1612 check_epub.py:1618
+#: check_epub.py:1617 check_epub.py:1620 check_epub.py:1626
 msgid "\t\tMargins are defined in pts but don't match calibre preferences"
 msgstr "\t\tPiemales ir noteiktas pts, taču tās neatbilst calibre izvēlei"
 
-#: check_epub.py:1621
+#: check_epub.py:1629
 msgid "\t\tMargins match calibre preferences"
 msgstr "\t\tPiemales atbilst calibre izvēlei"
 
-#: check_epub.py:1647
+#: check_epub.py:1655
 msgid "\tAnalyzing margins in "
 msgstr "\tAnalizē piemales "
 
-#: check_epub.py:1677
+#: check_epub.py:1685
 msgid "All searched ePub books match the calibre page setup preferences"
 msgstr ""
 "Visas meklētās ePub grāmatas atbilst calibre lapas iestatīšanas izvēlei"
 
-#: check_epub.py:1679
+#: check_epub.py:1687
 msgid "ePub books for body or @page css margins"
 msgstr "ePub grāmatas ar pamattekstu vai @page css piemalēm"
 
-#: check_epub.py:1717
+#: check_epub.py:1725
 msgid "All searched ePub books have book level margins defined"
 msgstr "Visām meklētajām ePub grāmatām ir noteiktas grāmatu līmeņa piemales"
 
-#: check_epub.py:1719
+#: check_epub.py:1727
 msgid "ePub books lacking body or @page css margins"
 msgstr "ePub grāmatām trūkst pamatteksta vai @page css piemales"
 
-#: check_epub.py:1755
+#: check_epub.py:1763
 msgid "No searched ePub books inline @page margins"
 msgstr "Nav meklētu ePub grāmatu kur iekļautas @page piemales"
 
-#: check_epub.py:1757
+#: check_epub.py:1765
 msgid "ePub books using inline @page or body css margins"
 msgstr "ePub grāmatas kur iekļautas @page vai pamatteksta css piemales"
 
-#: check_epub.py:1778
+#: check_epub.py:1786
 msgid "\tContains .js file: %s"
 msgstr "\tSatur .js failu: %s"
 
-#: check_epub.py:1784
+#: check_epub.py:1792
 msgid "\tContains inline javascript: %s"
 msgstr "\tSatur iekļautu javascript: %s"
 
-#: check_epub.py:1786
+#: check_epub.py:1794
 msgid "ePub with Javascript: %s"
 msgstr "ePub ar Javascript: %s"
 
-#: check_epub.py:1801
+#: check_epub.py:1809
 msgid "No searched ePub books have javascript"
 msgstr "Nevienai meklētajai ePub grāmatai nav javascript"
 
-#: check_epub.py:1803
+#: check_epub.py:1811
 msgid "ePub books for javascript"
 msgstr "ePub grāmatas ar javascript"
 
-#: check_epub.py:1831
+#: check_epub.py:1839
 msgid "Unsmartened punctuation in: <b>%s</b>"
 msgstr "Nepareizas pieturzīmes: <b>%s</b>"
 
-#: check_epub.py:1845
+#: check_epub.py:1853
 msgid "No searched ePub books need punctuation smartened"
 msgstr "Nevienai meklētajai ePub grāmatai nepiemērot viedās pieturzīmes"
 
-#: check_epub.py:1847
+#: check_epub.py:1855
 msgid "ePub books for smarten punctuation"
 msgstr "ePub grāmatas ar pareizām pieturzīmēm"
 
-#: check_epub.py:1865
+#: check_epub.py:1873
 msgid "Could not find OPF in:%s"
 msgstr "Nevar atrast OPF:%s"
 
-#: check_epub.py:1868
+#: check_epub.py:1876
 msgid "OPF file in container.xml not found in:%s"
 msgstr "OPF fails .xml konteinerā nav atrasts:%s"
 

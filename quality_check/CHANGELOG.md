@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.13.11] - 2024-06-29
+### Fixed
+- The 'Check missing EBOK cdetype' feature for MOBI not correctly identifying EBOK.
+
 ## [1.13.10] - 2024-03-23
 ### Fixed
 - The 'Check corrupt zip' feature included some false-positives (#un-pogaz)

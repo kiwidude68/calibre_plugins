@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Victor, 2022
-# ashed <craysy@gmail.com>, 2023
-# Caarmi, 2023
+# ashed <craysy@gmail.com>, 2024
+# Caarmi, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-12-23 21:11+1000\n"
+"POT-Creation-Date: 2024-03-24 18:08+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: Caarmi, 2023\n"
+"Last-Translator: Caarmi, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -466,261 +466,261 @@ msgstr "Все найденные книги ePub были конвертиро�
 msgid "ePub books for calibre conversions"
 msgstr "Книги ePub для конвертации в calibre"
 
-#: check_epub.py:992
+#: check_epub.py:1000
 msgid "All searched ePub books have a valid zip format"
 msgstr ""
 
-#: check_epub.py:994
+#: check_epub.py:1002
 msgid "ePub books for corrupted zip format"
 msgstr ""
 
-#: check_epub.py:1019
+#: check_epub.py:1027
 msgid "All searched ePub books have a valid container.xml file"
 msgstr "Все найденные книги ePub имеют действительный файл container.xml."
 
-#: check_epub.py:1021
+#: check_epub.py:1029
 msgid "ePub books for missing container.xml"
 msgstr "Книги ePub для отсутствующего container.xml"
 
-#: check_epub.py:1037
+#: check_epub.py:1045
 msgid "\tMissing container.xml file in"
 msgstr "\tОтсутствует файл container.xml в"
 
-#: check_epub.py:1042
+#: check_epub.py:1050
 msgid "\tIncorrect container.xml namespace in"
 msgstr "\tНеверное пространство имен container.xml в"
 
-#: check_epub.py:1049
+#: check_epub.py:1057
 msgid "\tIncorrect .opf manifest namespace in"
 msgstr "\tНеверное пространство имен манифеста .opf в"
 
-#: check_epub.py:1059
+#: check_epub.py:1067
 msgid "All searched ePub books have valid namespaces"
 msgstr "Все найденные книги ePub имеют действительные пространства имен."
 
-#: check_epub.py:1061
+#: check_epub.py:1069
 msgid "ePub books for namespaces check"
 msgstr "книги ePub для проверки пространств имен"
 
-#: check_epub.py:1098
+#: check_epub.py:1106
 msgid "All searched ePub books have only dc: elements in manifest"
 msgstr "Все искомые книги ePub содержат только элементы dc: в манифесте"
 
-#: check_epub.py:1100
+#: check_epub.py:1108
 msgid "ePub books for non dc: metadata check"
 msgstr "Книги ePub для не dc: проверка метаданных"
 
-#: check_epub.py:1122
+#: check_epub.py:1130
 msgid "Manifest file missing from: <b>%s</b>"
 msgstr "Отсутствует файл манифеста: <b>%s</b>"
 
-#: check_epub.py:1136
+#: check_epub.py:1144
 msgid "All searched ePub books have a valid opf manifest"
 msgstr "Все найденные книги ePub имеют действительный манифест opf"
 
-#: check_epub.py:1138
+#: check_epub.py:1146
 msgid "ePub books for missing files in opf"
 msgstr "книги ePub для отсутствующих файлов в opf"
 
-#: check_epub.py:1163 check_epub.py:1202
+#: check_epub.py:1171 check_epub.py:1210
 msgid "Ignoring DRM protected ePub: "
 msgstr "Игнорирование защищенных DRM ePub:"
 
-#: check_epub.py:1176
+#: check_epub.py:1184
 msgid "All searched ePub books have a flattened NCX TOC"
 msgstr "Все найденные книги ePub имеют уплощённое оглавление NCX."
 
-#: check_epub.py:1178
+#: check_epub.py:1186
 msgid "ePub books for NCX TOC hierarchy"
 msgstr "Книги ePub для иерархии NCX TOC"
 
-#: check_epub.py:1222
+#: check_epub.py:1230
 msgid "All searched ePub books have a NCX TOC with at least 3 items"
 msgstr ""
 "Все найденные книги ePub имеют оглавление NCX, содержащее не менее 3 "
 "элементов"
 
-#: check_epub.py:1224
+#: check_epub.py:1232
 msgid "ePub books for NCX TOC count"
 msgstr "Книги ePub для подсчета NCX TOC"
 
-#: check_epub.py:1279
+#: check_epub.py:1287
 msgid "All searched ePub books have a NCX TOC with valid links"
 msgstr ""
 "Все найденные книги ePub имеют оглавление NCX с действительными ссылками."
 
-#: check_epub.py:1281
+#: check_epub.py:1289
 msgid "ePub books for broken NCX TOC links"
 msgstr "Книги ePub для неработающих ссылок NCX TOC"
 
-#: check_epub.py:1324
+#: check_epub.py:1332
 msgid "All searched ePub books have valid guide entries"
 msgstr "Во всех найденных книгах ePub есть действительные путеводные записи"
 
-#: check_epub.py:1326
+#: check_epub.py:1334
 msgid "ePub books for broken guide links"
 msgstr "ePub-книги для битых путеводных ссылок"
 
-#: check_epub.py:1360
+#: check_epub.py:1368
 msgid "No searched ePub books have oversize html files"
 msgstr "В найденных книгах ePub нет html-файлов слишком большого размера"
 
-#: check_epub.py:1362
+#: check_epub.py:1370
 msgid "ePub books for oversize html files"
 msgstr "ePub-книги для больших html-файлов"
 
-#: check_epub.py:1387
+#: check_epub.py:1395
 msgid "No searched ePub books have DRM"
 msgstr "В найденных книгах ePub нет DRM"
 
-#: check_epub.py:1389
+#: check_epub.py:1397
 msgid "ePub books for DRM"
 msgstr "ePub книги для DRM"
 
-#: check_epub.py:1421
+#: check_epub.py:1429
 msgid "No searched ePub books have Adobe DRM meta tags"
 msgstr "В найденных книгах ePub нет метатегов Adobe DRM"
 
-#: check_epub.py:1423
+#: check_epub.py:1431
 msgid "ePub books for Adobe DRM meta tags"
 msgstr "Книги ePub для метатегов Adobe DRM"
 
-#: check_epub.py:1455
+#: check_epub.py:1463
 msgid "No searched ePub books have \\<address\\> smart tags"
 msgstr "В найденных книгах ePub нет смарт-тегов \\<address\\>"
 
-#: check_epub.py:1457
+#: check_epub.py:1465
 msgid "ePub books for <address> smart tags"
 msgstr "книги ePub для <address> смарт-тегов"
 
-#: check_epub.py:1476
+#: check_epub.py:1484
 msgid "Font found in: <b>%s</b>"
 msgstr "Шрифт найден в: <b>%s</b>"
 
-#: check_epub.py:1490
+#: check_epub.py:1498
 msgid "No searched ePub books have embedded fonts"
 msgstr "В найденных книгах ePub нет встроенных шрифтов"
 
-#: check_epub.py:1492
+#: check_epub.py:1500
 msgid "ePub books for embedded fonts"
 msgstr "книги ePub для встроенных шрифтов"
 
-#: check_epub.py:1510
+#: check_epub.py:1518
 msgid "CSS file contains @font-face: <b>%s</b>"
 msgstr "Файл CSS содержащий @font-face: <b>%s</b>"
 
-#: check_epub.py:1516
+#: check_epub.py:1524
 msgid "At least one html file contains @font-face: <b>%s</b>"
 msgstr "Как минимум один html-файл содержит @font-face: <b>%s</b>"
 
-#: check_epub.py:1530
+#: check_epub.py:1538
 msgid "No searched ePub books have @font-face declarations"
 msgstr "В найденных книгах ePub нет объявления @font-face"
 
-#: check_epub.py:1532
+#: check_epub.py:1540
 msgid "ePub books for @font-face declarations"
 msgstr "Книги ePub для объявлений @font-face"
 
-#: check_epub.py:1561
+#: check_epub.py:1569
 msgid "All searched ePub books have text-align:justify"
 msgstr "Все найденные книги ePub имеют text-align:justify"
 
-#: check_epub.py:1563
+#: check_epub.py:1571
 msgid "ePub books for text-align:justify"
 msgstr "книги ePub для text-align:justify"
 
-#: check_epub.py:1589
+#: check_epub.py:1597
 msgid "\t\t'margin' property found, so does not match calibre preferences"
 msgstr "\t\tсвойство 'margin' найдено, что не соответствует настройкам calibre"
 
-#: check_epub.py:1592
+#: check_epub.py:1600
 msgid "\t\tNegative margin found, so does not match calibre preferences"
 msgstr ""
 "\t\tНайдена отрицательная граница, что не соответствует предпочтениям "
 "calibre"
 
-#: check_epub.py:1601
+#: check_epub.py:1609
 msgid "\t\tMargins is not defined in pts so does not match calibre preferences"
 msgstr ""
 "\t\tГраницы  не определены в пунктах, что не соответствует предпочтениям "
 "calibre"
 
-#: check_epub.py:1609 check_epub.py:1612 check_epub.py:1618
+#: check_epub.py:1617 check_epub.py:1620 check_epub.py:1626
 msgid "\t\tMargins are defined in pts but don't match calibre preferences"
 msgstr ""
 "\t\tГраницы определены в пунктах, но не соответствуют предпочтениям calibre"
 
-#: check_epub.py:1621
+#: check_epub.py:1629
 msgid "\t\tMargins match calibre preferences"
 msgstr "\t\tГраницы соответствуют предпочтениям calibre"
 
-#: check_epub.py:1647
+#: check_epub.py:1655
 msgid "\tAnalyzing margins in "
 msgstr "\tАнализ полей в "
 
-#: check_epub.py:1677
+#: check_epub.py:1685
 msgid "All searched ePub books match the calibre page setup preferences"
 msgstr ""
 "Все найденные книги ePub соответствуют предпочтениям установки страницы "
 "calibre"
 
-#: check_epub.py:1679
+#: check_epub.py:1687
 msgid "ePub books for body or @page css margins"
 msgstr "Книги в формате ePub для тела или css границ страницы @page"
 
-#: check_epub.py:1717
+#: check_epub.py:1725
 msgid "All searched ePub books have book level margins defined"
 msgstr "У всех найденных книг ePub определены поля на уровне книги"
 
-#: check_epub.py:1719
+#: check_epub.py:1727
 msgid "ePub books lacking body or @page css margins"
 msgstr "В книгах ePub отсутствуют body или css поля @page"
 
-#: check_epub.py:1755
+#: check_epub.py:1763
 msgid "No searched ePub books inline @page margins"
 msgstr "Не найдены в ePub книгах инлайновые поля @page"
 
-#: check_epub.py:1757
+#: check_epub.py:1765
 msgid "ePub books using inline @page or body css margins"
 msgstr "ePub книги использующие инлайновые @page или body css поля"
 
-#: check_epub.py:1778
+#: check_epub.py:1786
 msgid "\tContains .js file: %s"
 msgstr "\tСодержит файл .js: %s"
 
-#: check_epub.py:1784
+#: check_epub.py:1792
 msgid "\tContains inline javascript: %s"
 msgstr "\tСодержит код javascript: %s"
 
-#: check_epub.py:1786
+#: check_epub.py:1794
 msgid "ePub with Javascript: %s"
 msgstr "ePub с Javascript: %s"
 
-#: check_epub.py:1801
+#: check_epub.py:1809
 msgid "No searched ePub books have javascript"
 msgstr "Не найдены ePub книги с javascript"
 
-#: check_epub.py:1803
+#: check_epub.py:1811
 msgid "ePub books for javascript"
 msgstr "ePub книги для javascript"
 
-#: check_epub.py:1831
+#: check_epub.py:1839
 msgid "Unsmartened punctuation in: <b>%s</b>"
 msgstr "Необработанная пунктуация в: <b>%s</b>"
 
-#: check_epub.py:1845
+#: check_epub.py:1853
 msgid "No searched ePub books need punctuation smartened"
 msgstr "Искомые ePub книги не нуждаются в исправлении пунктуации"
 
-#: check_epub.py:1847
+#: check_epub.py:1855
 msgid "ePub books for smarten punctuation"
 msgstr "ePub книги для улучшения пунктуации"
 
-#: check_epub.py:1865
+#: check_epub.py:1873
 msgid "Could not find OPF in:%s"
 msgstr "Не найден OPF в:%s"
 
-#: check_epub.py:1868
+#: check_epub.py:1876
 msgid "OPF file in container.xml not found in:%s"
 msgstr "OPF файл в container.xml не найден в:%s"
 
