@@ -601,6 +601,59 @@ class EpubCheck(BaseCheck):
 
     def check_epub_unused_images(self):
         RE_IMAGE = r'<(?:[a-z]*?\:)*?ima?ge?[^>]*?"[^"]*?%s"'
+        
+        def check_for_images_in_html_resources(zf, image_regexes, image_name_regexes, resource_names):
+            for resource_name in resource_names:
+                data = self.zf_read(zf, resource_name)
+                image_keys = list(image_regexes.keys())
+                for image_key in image_keys:
+                    regexes = image_regexes[image_key]
+                    for image_regex in regexes:
+                        if image_regex.search(data):
+                            #self.log.info('   FOUND: ', image_key, ' in: ', resource_name)
+                            image_regexes.pop(image_key)
+                            image_name_regexes.pop(image_key)
+                            break
+                if not image_regexes:
+                    break
+        
+        def check_for_images_in_css_resources(zf, image_regexes, image_name_regexes, resource_names):
+            #self.log.info('*** Scanning CSS for images')
+            for resource_name in resource_names:
+                data = self.zf_read(zf, resource_name)
+                image_keys = list(image_name_regexes.keys())
+                for image_key in image_keys:
+                    image_regex = image_name_regexes[image_key]
+                    #self.log.info('   Scanning css for image: ', image_key, ' regex: ', image_regex)
+                    if image_regex.search(data):
+                        #self.log.info('   FOUND: ', image_key, ' in: ', resource_name)
+                        image_name_regexes.pop(image_key)
+                        image_regexes.pop(image_key)
+                if not image_name_regexes:
+                    break
+
+        def check_for_images_in_opf_metadata(path_to_book, zf, image_regexes, image_name_regexes):
+            #self.log.info('*** Scanning OPF for images')
+            opf_name = self._get_opf_xml(path_to_book, zf)
+            if not opf_name:
+                return
+            # Determine the {value} in this tag if present <meta name="cover" content="{value}" />
+            opf_xml = self._get_opf_tree(zf, opf_name)
+            covers = opf_xml.xpath(r'child::opf:metadata/opf:meta[@name="cover" and @content]',
+                                   namespaces={'opf':OPF_NS})
+            if covers:
+                for cover_tag in covers:
+                    cover_id = cover_tag.get('content')
+                    image_keys = list(image_name_regexes.keys())
+                    for image_key in image_keys:
+                        image_regex = image_name_regexes[image_key]
+                        #self.log.info('   Scanning opf meta for image: ', image_key, ' regex: ', image_regex)
+                        if image_regex.search(cover_id):
+                            #self.log.info('   FOUND: ', image_key)
+                            image_name_regexes.pop(image_key)
+                            image_regexes.pop(image_key)
+                    if not image_name_regexes:
+                        break
 
         def evaluate_book(book_id, db):
             path_to_book = db.format_abspath(book_id, 'EPUB', index_is_id=True)
@@ -615,38 +668,38 @@ class EpubCheck(BaseCheck):
                         return False
                     # Build a list of regexes for all the image files in this epub
                     image_regexes = {}
+                    image_name_regexes = {}
                     html_resource_names = []
+                    css_resource_names = []
                     for resource_name in self._manifest_worthy_names(zf):
                         extension = resource_name[resource_name.rfind('.'):].lower()
                         if extension in IMAGE_FILES:
                             # Use the base name for the image since relative path might differ from html
                             # compared to the opf manifest
                             try:
-                                image = os.path.basename(resource_name).lower()
-                                image_enc = six.moves.urllib.request.pathname2url(image).lower()
+                                image = os.path.basename(resource_name)
+                                image_enc = six.moves.urllib.request.pathname2url(image)
                             except:
                                 self.log.error('ERROR parsing book: ', path_to_book)
                                 self.log.error(_('\tIssue with image name: '), resource_name)
                                 self.log(traceback.format_exc())
                                 return False
-                            image_regexes[resource_name] = [re.compile(RE_IMAGE % image, re.UNICODE)]
+                            image_name_regexes[resource_name] = re.compile(image, re.UNICODE | re.IGNORECASE)
+                            image_regexes[resource_name] = [re.compile(RE_IMAGE % image, re.UNICODE | re.IGNORECASE)]
                             if image_enc != image:
-                                image_regexes[resource_name].append(re.compile(RE_IMAGE % image_enc, re.UNICODE))
+                                image_regexes[resource_name].append(re.compile(RE_IMAGE % image_enc, re.UNICODE | re.IGNORECASE))
+                        elif extension in CSS_FILES:
+                            css_resource_names.append(resource_name)
                         elif extension not in NON_HTML_FILES:
                             html_resource_names.append(resource_name)
 
-                    if image_regexes and html_resource_names:
-                        for resource_name in html_resource_names:
-                            data = self.zf_read(zf, resource_name).lower()
-                            image_keys = list(image_regexes.keys())
-                            for image_key in image_keys:
-                                regexes = image_regexes[image_key]
-                                for image_regex in regexes:
-                                    if image_regex.search(data):
-                                        image_regexes.pop(image_key)
-                                        break
-                            if not image_regexes:
-                                break
+                    if image_regexes or html_resource_names:
+                        check_for_images_in_html_resources(zf, image_regexes, image_name_regexes, html_resource_names)
+                    if image_regexes or css_resource_names:
+                        check_for_images_in_css_resources(zf, image_regexes, image_name_regexes, css_resource_names)
+                    if image_regexes:
+                        check_for_images_in_opf_metadata(path_to_book, zf, image_regexes, image_name_regexes)
+                    
                     if image_regexes:
                         self.log(get_title_authors_text(db, book_id))
                         for resource_name in image_regexes.keys():

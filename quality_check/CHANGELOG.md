@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.13.12] - 2024-07-07
+### Fixed
+- The 'Check unused image files' feature for ePUB now includes CSS files and OPF files.
+
 ## [1.13.11] - 2024-06-29
 ### Fixed
 - The 'Check missing EBOK cdetype' feature for MOBI not correctly identifying EBOK.
