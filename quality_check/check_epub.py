@@ -632,28 +632,33 @@ class EpubCheck(BaseCheck):
                 if not image_name_regexes:
                     break
 
-        def check_for_images_in_opf_metadata(path_to_book, zf, image_regexes, image_name_regexes):
-            #self.log.info('*** Scanning OPF for images')
+        def check_for_images_in_opf_cover_meta(path_to_book, zf, image_regexes, image_name_regexes):
+            #self.log.info('*** Scanning OPF for images')            
             opf_name = self._get_opf_xml(path_to_book, zf)
             if not opf_name:
                 return
-            # Determine the {value} in this tag if present <meta name="cover" content="{value}" />
             opf_xml = self._get_opf_tree(zf, opf_name)
             covers = opf_xml.xpath(r'child::opf:metadata/opf:meta[@name="cover" and @content]',
                                    namespaces={'opf':OPF_NS})
+            cover_id = None
             if covers:
-                for cover_tag in covers:
-                    cover_id = cover_tag.get('content')
-                    image_keys = list(image_name_regexes.keys())
-                    for image_key in image_keys:
-                        image_regex = image_name_regexes[image_key]
-                        #self.log.info('   Scanning opf meta for image: ', image_key, ' regex: ', image_regex)
-                        if image_regex.search(cover_id):
-                            #self.log.info('   FOUND: ', image_key)
-                            image_name_regexes.pop(image_key)
-                            image_regexes.pop(image_key)
-                    if not image_name_regexes:
-                        break
+                cover_id = covers[0].get('content')
+            if cover_id:
+                items = opf_xml.xpath(r'child::opf:manifest/opf:item',
+                                      namespaces={'opf':OPF_NS})
+                image_keys = list(image_name_regexes.keys())
+                for item in items:
+                    if item.get('id', None) == cover_id:
+                        item_href = item.get('href', None)
+                        for image_key in image_keys:
+                            image_regex = image_name_regexes[image_key]
+                            #self.log.info('   Scanning opf meta for image: ', image_key, ' regex: ', image_regex)
+                            if image_regex.search(item_href):
+                                #self.log.info('   FOUND: ', image_key)
+                                image_name_regexes.pop(image_key)
+                                image_regexes.pop(image_key)
+                        if not image_name_regexes:
+                            break
 
         def evaluate_book(book_id, db):
             path_to_book = db.format_abspath(book_id, 'EPUB', index_is_id=True)
@@ -698,7 +703,7 @@ class EpubCheck(BaseCheck):
                     if image_regexes or css_resource_names:
                         check_for_images_in_css_resources(zf, image_regexes, image_name_regexes, css_resource_names)
                     if image_regexes:
-                        check_for_images_in_opf_metadata(path_to_book, zf, image_regexes, image_name_regexes)
+                        check_for_images_in_opf_cover_meta(path_to_book, zf, image_regexes, image_name_regexes)
                     
                     if image_regexes:
                         self.log(get_title_authors_text(db, book_id))
