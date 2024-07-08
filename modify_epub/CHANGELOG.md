@@ -1,5 +1,10 @@
 # Modify ePub Change Log
 
+## [1.8.4] - 2024-07-08
+### Fixed
+- Remove unused images now also checks inline css and opf cover.
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
 ## [1.8.3] - 2024-03-17
 ### Added
 - Tamil translation
