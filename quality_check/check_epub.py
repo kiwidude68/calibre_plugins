@@ -601,6 +601,7 @@ class EpubCheck(BaseCheck):
 
     def check_epub_unused_images(self):
         RE_IMAGE = r'<(?:[a-z]*?\:)*?ima?ge?[^>]*?"[^"]*?%s"'
+        RE_IMAGE_STYLE = r'background-image:[^\'>]*?url\(\'?[^\)]*?%s\'?\)'
         
         def check_for_images_in_html_resources(zf, image_regexes, image_name_regexes, resource_names):
             for resource_name in resource_names:
@@ -610,7 +611,7 @@ class EpubCheck(BaseCheck):
                     regexes = image_regexes[image_key]
                     for image_regex in regexes:
                         if image_regex.search(data):
-                            #self.log.info('   FOUND: ', image_key, ' in: ', resource_name)
+                            #self.log.info('\tFOUND (HTML): ', image_key, ' in: ', resource_name)
                             image_regexes.pop(image_key)
                             image_name_regexes.pop(image_key)
                             break
@@ -624,9 +625,9 @@ class EpubCheck(BaseCheck):
                 image_keys = list(image_name_regexes.keys())
                 for image_key in image_keys:
                     image_regex = image_name_regexes[image_key]
-                    #self.log.info('   Scanning css for image: ', image_key, ' regex: ', image_regex)
+                    #self.log.info('  Scanning css for image: ', image_key, ' regex: ', image_regex)
                     if image_regex.search(data):
-                        #self.log.info('   FOUND: ', image_key, ' in: ', resource_name)
+                        #self.log.info('\tFOUND (CSS): ', image_key, ' in: ', resource_name)
                         image_name_regexes.pop(image_key)
                         image_regexes.pop(image_key)
                 if not image_name_regexes:
@@ -652,9 +653,9 @@ class EpubCheck(BaseCheck):
                         item_href = item.get('href', None)
                         for image_key in image_keys:
                             image_regex = image_name_regexes[image_key]
-                            #self.log.info('   Scanning opf meta for image: ', image_key, ' regex: ', image_regex)
+                            #self.log.info('  Scanning opf meta for image: ', image_key, ' regex: ', image_regex)
                             if image_regex.search(item_href):
-                                #self.log.info('   FOUND: ', image_key)
+                                #self.log.info('\tFOUND (OPF): ', image_key)
                                 image_name_regexes.pop(image_key)
                                 image_regexes.pop(image_key)
                         if not image_name_regexes:
@@ -684,6 +685,7 @@ class EpubCheck(BaseCheck):
                             try:
                                 image = os.path.basename(resource_name)
                                 image_enc = six.moves.urllib.request.pathname2url(image)
+                                #self.log.info('Image: ', image)
                             except:
                                 self.log.error('ERROR parsing book: ', path_to_book)
                                 self.log.error(_('\tIssue with image name: '), resource_name)
@@ -691,8 +693,10 @@ class EpubCheck(BaseCheck):
                                 return False
                             image_name_regexes[resource_name] = re.compile(image, re.UNICODE | re.IGNORECASE)
                             image_regexes[resource_name] = [re.compile(RE_IMAGE % image, re.UNICODE | re.IGNORECASE)]
+                            image_regexes[resource_name].append(re.compile(RE_IMAGE_STYLE % image, re.UNICODE | re.IGNORECASE))
                             if image_enc != image:
                                 image_regexes[resource_name].append(re.compile(RE_IMAGE % image_enc, re.UNICODE | re.IGNORECASE))
+                                image_regexes[resource_name].append(re.compile(RE_IMAGE_STYLE % image_enc, re.UNICODE | re.IGNORECASE))
                         elif extension in CSS_FILES:
                             css_resource_names.append(resource_name)
                         elif extension not in NON_HTML_FILES:
@@ -706,9 +710,10 @@ class EpubCheck(BaseCheck):
                         check_for_images_in_opf_cover_meta(path_to_book, zf, image_regexes, image_name_regexes)
                     
                     if image_regexes:
+                        self.log('----------------------------------------------------')
                         self.log(get_title_authors_text(db, book_id))
                         for resource_name in image_regexes.keys():
-                            self.log(_('\tUnused image file: %s')%resource_name)
+                            self.log(_('\tUNUSED image file: %s')%resource_name)
                         return True
                     return False
 

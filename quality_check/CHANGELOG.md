@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.13.13] - 2024-08-02
+### Fixed
+- The 'Check unused image files' feature for ePUB now also checks inline style elements.
+
 ## [1.13.12] - 2024-07-07
 ### Fixed
 - The 'Check unused image files' feature for ePUB now includes CSS files and OPF files.
