@@ -1,5 +1,11 @@
 # Barnes & Noble Change Log
 
+## [1.5.6] - 2024-08-04
+### Added
+- Galician translation.
+### Fixed
+- Another user-agent update required. (@srvrguy)
+
 ## [1.5.5] - 2024-05-11
 ### Added
 - German translation.

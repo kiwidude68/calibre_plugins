@@ -27,7 +27,7 @@ class BarnesNoble(Source):
     name = 'Barnes & Noble'
     description = 'Downloads metadata and covers from Barnes & Noble'
     author = 'Grant Drake'
-    version = (1, 5, 5)
+    version = (1, 5, 6)
     minimum_calibre_version = (2, 0, 0)
 
     ID_NAME = 'barnesnoble'
@@ -52,7 +52,7 @@ class BarnesNoble(Source):
     @property
     def user_agent(self):
         # May 2024 - B&N started getting picky about the user agent, rejecting Chrome version 80 which was the calibre default.
-        return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+        return 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
 
     def get_book_url(self, identifiers):
         barnes_noble_id = identifiers.get(self.ID_NAME, None)
