@@ -15,11 +15,11 @@ except NameError:
     pass # load_translations() added in calibre 1.9
 
 try:
-    from qt.core import (QWidget, QVBoxLayout, QLabel, QUrl,
+    from qt.core import (QWidget, QVBoxLayout, QLabel, QUrl, QCheckBox, QSize,
                           QGroupBox, QGridLayout, QListWidget, QListWidgetItem,
                           QAbstractItemView, Qt, QPushButton, QSpinBox)
 except:
-    from PyQt5.Qt import (QWidget, QVBoxLayout, QLabel, QUrl,
+    from PyQt5.Qt import (QWidget, QVBoxLayout, QLabel, QUrl, QCheckBox, QSize,
                           QGroupBox, QGridLayout, QListWidget, QListWidgetItem,
                           QAbstractItemView, Qt, QPushButton, QSpinBox)
 
@@ -61,6 +61,7 @@ PREFS_KEY_SETTINGS = 'settings'
 KEY_EXCLUSIONS_BY_CHECK = 'exclusionsByCheck'
 KEY_AUTHOR_INITIALS_MODE = 'authorInitialsMode'
 AUTHOR_INITIALS_MODES = ['A.B.', 'A. B.', 'A B', 'AB']
+KEY_SUPPRESS_FIX_DIALOG = 'suppressFixDialog'
 
 DEFAULT_LIBRARY_VALUES = {
                           KEY_EXCLUSIONS_BY_CHECK: {  },
@@ -242,6 +243,7 @@ class VisibleMenuListWidget(QListWidget):
         QListWidget.__init__(self, parent)
         self.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.setIconSize(QSize(16,16))
         self.populate()
 
     def populate(self):
@@ -316,6 +318,12 @@ class ConfigWidget(QWidget):
         initials_mode = c.get(KEY_AUTHOR_INITIALS_MODE, AUTHOR_INITIALS_MODES[0])
         self.initials_combo = KeyValueComboBox(self, initials_map, initials_mode)
         other_layout.addWidget(self.initials_combo, 0, 1, 1, 1)
+ 
+        self.suppress_dialog_checkbox = QCheckBox(_('Suppress Fix summary dialogs'), self)
+        self.suppress_dialog_checkbox.setToolTip(_('Uncheck this option if you do not want interactive dialogs to appear summarising the operation'))
+        if c.get(KEY_SUPPRESS_FIX_DIALOG, False):
+            self.suppress_dialog_checkbox.setCheckState(Qt.Checked)
+        other_layout.addWidget(self.suppress_dialog_checkbox, 1, 0, 1, 2)
         other_layout.setColumnStretch(2, 1)
 
         menus_groupbox = QGroupBox(_('Visible menus'))
@@ -349,6 +357,7 @@ class ConfigWidget(QWidget):
             exclude_tag_text = exclude_tag_text[:-1]
         new_prefs[KEY_MAX_TAG_EXCLUSIONS] = [t.strip() for t in exclude_tag_text.split(',')]
         new_prefs[KEY_AUTHOR_INITIALS_MODE] = self.initials_combo.selected_key()
+        new_prefs[KEY_SUPPRESS_FIX_DIALOG] = self.suppress_dialog_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_SEARCH_SCOPE] = plugin_prefs[STORE_OPTIONS].get(KEY_SEARCH_SCOPE, SCOPE_LIBRARY)
 
         new_prefs[KEY_HIDDEN_MENUS] = self.visible_menus_list.get_hidden_menus()

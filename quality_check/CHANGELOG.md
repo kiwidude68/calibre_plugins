@@ -1,5 +1,11 @@
 # Quality Check Change Log
 
+## [1.13.14] - 2024-08-05
+### Added
+- Added a 'Suppress Fix summary dialogs' option to prevent a summary dialog showing the success/failure of the operation.
+### Fixed
+- Some of the icon sizes in the Configure dialog had larger icons.
+
 ## [1.13.13] - 2024-08-02
 ### Fixed
 - The 'Check unused image files' feature for ePUB now also checks inline style elements.

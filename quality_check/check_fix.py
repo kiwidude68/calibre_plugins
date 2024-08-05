@@ -179,7 +179,8 @@ class FixCheck(BaseCheck):
                     (total_count, self.updated_format_count, len(result_ids), cancelled_msg)
         self.gui.status_bar.showMessage(msg)
         if len(result_ids) == 0:
-            return info_dialog(self.gui, 'No Matches%s'%cancelled_msg, _('All book format sizes are correct'), show=True)
+            self.gui.status_bar.showMessage(_('All book format sizes are correct'))
+            return
         self.gui.library_view.model().refresh_ids(list(result_ids))
 
 
@@ -203,7 +204,8 @@ class FixCheck(BaseCheck):
                     (total_count, len(result_ids), cancelled_msg)
         self.gui.status_bar.showMessage(msg)
         if len(result_ids) == 0:
-            return info_dialog(self.gui, _('No Matches%s')%cancelled_msg, _('All books have up to date paths'), show=True)
+            self.gui.status_bar.showMessage(_('All books have up to date paths'))
+            return
         self.gui.library_view.model().refresh_ids(list(result_ids))
 
 
@@ -230,8 +232,14 @@ class FixCheck(BaseCheck):
         self._cleanup_directory_if_needed(path, messages, errors, delete_parent=False)
 
         if len(messages) == 0 and len(errors) == 0:
-            return info_dialog(self.gui, _('No files deleted'),
-                               _('No files/folders were found to be deleted'), show=True)
+            self.gui.status_bar.showMessage(_('No files/folders were found to be deleted'))
+            return
+
+        c = cfg.plugin_prefs[cfg.STORE_OPTIONS]
+        suppress_dialog = c.get(cfg.KEY_SUPPRESS_FIX_DIALOG, False)
+        if suppress_dialog:
+            self.gui.status_bar.showMessage(_('Cleanup completed'))
+            return
 
         msg = _('Deleted %d files/folders with %d errors. See details for more info.') % \
                 (len(messages), len(errors))
@@ -358,6 +366,11 @@ class FixCheck(BaseCheck):
                 d = ApplyFixProgressDialog(self.gui, _('Fixing ASIN for %d books'), book_ids, tdir, apply_fix)
                 d.exec_()
 
+            c = cfg.plugin_prefs[cfg.STORE_OPTIONS]
+            suppress_dialog = c.get(cfg.KEY_SUPPRESS_FIX_DIALOG, False)
+            if suppress_dialog:
+                self.gui.status_bar.showMessage(_('Fix ASIN completed'))
+                return
             sd = ResultsSummaryDialog(self.gui, _('Quality Check'),
                                      _('%d books updated, see log for details')%len(d.updated_ids),
                                      self.log)
