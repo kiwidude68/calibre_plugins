@@ -1,5 +1,12 @@
 # Fantastic Fiction Change Log
 
+## [1.7.1] - 2024-08-20
+### Added
+- Czech translation
+- Portuguese translation
+### Fixed
+- Search matching logic was too vague on title word matching and stopped after first book title vaguely similar.
+
 ## [1.7.0] - 2024-03-30
 ### Added
 - If the id is manually linked to the author index page, ensure the link returns a `.html` suffix rather than `.htm` required for individual book pages.

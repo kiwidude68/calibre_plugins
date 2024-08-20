@@ -17,7 +17,7 @@ from six import text_type as unicode
 
 from calibre import as_unicode
 from calibre.ebooks.metadata.sources.base import Source
-from calibre.utils.icu import lower
+from calibre.utils.icu import lower as icu_lower
 from calibre.utils.localization import get_udc
 
 # Querying FantasticFiction is complicated by the fact that the webpage is not a
@@ -63,7 +63,7 @@ class FantasticFiction(Source):
     name = 'Fantastic Fiction'
     description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
-    version = (1, 7, 0)
+    version = (1, 7, 1)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ff'
@@ -191,7 +191,7 @@ class FantasticFiction(Source):
             try:
                 log.info('Querying: %s' % query)
                 raw = br.open_novisit(query, timeout=timeout).read()
-                log.info('JSON Result: %s' % raw)
+                #log.info('JSON Result: %s' % raw)
                 # open('E:\\json.html', 'wb').write(raw)
             except Exception as e:
                 err = 'Failed to make identify query'
@@ -206,8 +206,6 @@ class FantasticFiction(Source):
                     # Now grab the match from the search result, provided the
                     # title and authors appear to be for the same book
                     self._parse_book_script_detail(log, title, authors, data, matches)
-                    if matches:
-                        break
             if not matches:
                 log.error('No matches found')
                 return
@@ -242,9 +240,6 @@ class FantasticFiction(Source):
         return None
 
     def _parse_book_script_detail(self, log, query_title, query_authors, data_map, matches):
-        title_tokens = list(self.get_title_tokens(query_title))
-        author_tokens = list(self.get_author_tokens(query_authors))
-
         # Now we have our data returned, check the title/author
         title = data_map['title']
         alt_title = ''
@@ -255,27 +250,10 @@ class FantasticFiction(Source):
             pass
         authors = [a.split('|')[1] for a in data_map['authorsinfo'].split('^')]
 
-        def ismatch(title, authors):
-            authors = lower(' '.join(authors))
-            title = lower(title)
-            match = not title_tokens
-            for t in title_tokens:
-                if lower(t) in title:
-                    match = True
-                    break
-            amatch = not author_tokens
-            for a in author_tokens:
-                if lower(a) in authors:
-                    amatch = True
-                    break
-            if not author_tokens: amatch = True
-            return match and amatch
-
-        correct_book = ismatch(title, authors)
+        correct_book = self.filter_result(log, query_title, query_authors, title, authors)
         if not correct_book and alt_title:
-            correct_book = ismatch(alt_title, authors)
+            correct_book = self.filter_result(log, query_title, query_authors, alt_title, authors)
         if not correct_book:
-            log.error('Rejecting as not close enough match: %s %s' % (title, authors))
             return
 
         # Get the detailed url to query next
@@ -283,6 +261,31 @@ class FantasticFiction(Source):
         result_url = '%s/%s' % (FantasticFiction.BASE_URL, pfn)
         matches.append(result_url)
 
+    def filter_result(self, log, query_title, query_authors, title, authors):
+        if title is not None:
+
+            def tokenize_title(x):
+                return icu_lower(x).replace("'", '').replace('"', '').rstrip(':')
+
+            tokens = {tokenize_title(x) for x in title.split() if len(x) > 3}
+            if tokens:
+                result_tokens = {tokenize_title(x) for x in query_title.split()}
+                if not tokens.intersection(result_tokens):
+                    log('Ignoring result:', title, 'as its title does not match')
+                    return False
+        if authors:
+            author_tokens = set()
+            for author in authors:
+                author_tokens |= {icu_lower(x) for x in author.split() if len(x) > 2}
+            result_tokens = set()
+            for author in query_authors:
+                result_tokens |= {icu_lower(x) for x in author.split() if len(x) > 2}
+            if author_tokens and not author_tokens.intersection(result_tokens):
+                log('Ignoring result:', title, 'by', ' & '.join(authors), 'as its author does not match')
+                return False
+        log('Potential match:', title, 'by', ' & '.join(authors))
+        return True
+    
     def download_cover(self, log, result_queue, abort,
             title=None, authors=None, identifiers={}, timeout=30):
         cached_url = self.get_cached_cover_url(identifiers)
