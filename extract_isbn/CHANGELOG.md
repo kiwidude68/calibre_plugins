@@ -1,5 +1,11 @@
 # Extract ISBN Change Log
 
+## [1.6.4] - 2024-09-05
+### Added
+- French translation
+### Changed
+- Some matches were being rejected due to preceding text like "ISBN-13 xxx" resulting in "-13 xxx" being tested for validity rather than "xxx"
+
 ## [1.6.3] - 2024-05-24
 ### Changed
 - PDF scans now include the `-c -hidden` arguments for pdftohtml and remove newline characters for matches (Paul Harden)
