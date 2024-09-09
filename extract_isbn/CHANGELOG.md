@@ -1,5 +1,9 @@
 # Extract ISBN Change Log
 
+## [1.6.5] - 2024-09-09
+### Changed
+- Implement an alternative approach to updating the ISBN metadata for books.
+
 ## [1.6.4] - 2024-09-05
 ### Added
 - French translation
