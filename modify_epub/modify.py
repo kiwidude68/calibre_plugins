@@ -483,37 +483,19 @@ class BookModifier(object):
         return dirtied
 
     def _smarten_punctuation(self, container):
-        from calibre.utils.smartypants import smartyPants
-        from calibre.ebooks.chardet import substitute_entites
-        from calibre.ebooks.conversion.utils import HeuristicProcessor
-        from uuid import uuid4
+        from calibre.ebooks.conversion.preprocess import smarten_punctuation
         dirtied = False
         self.log('\tApplying smarten punctuation')
         if container.is_drm_encrypted():
             self.log('ERROR - cannot smarten punctuation in DRM encrypted book')
             return False
 
-        def smarten_punctuation_for_page(html):
-            preprocessor = HeuristicProcessor(None, self.log)
-            start = 'calibre-smartypants-'+str(uuid4())
-            stop = 'calibre-smartypants-'+str(uuid4())
-            html = html.replace('<!--', start)
-            html = html.replace('-->', stop)
-            html = preprocessor.fix_nbsp_indents(html)
-            html = smartyPants(html)
-            html = html.replace(start, '<!--')
-            html = html.replace(stop, '-->')
-            # convert ellipsis to entities to prevent wrapping
-            html = re.sub(r'(?u)(?<=\w)\s?(\.\s?){2}\.', '&hellip;', html)
-            # convert double dashes to em-dash
-            html = re.sub(r'\s--\s', u'\u2014', html)
-            return substitute_entites(html)
-
         for name in container.get_html_names():
             html = container.get_raw(name)
-            new_html = smarten_punctuation_for_page(html)
+            new_html = smarten_punctuation(html, container.log)
             if html != new_html:
                 dirtied = True
+                new_html = strip_encoding_declarations(new_html)
                 container.set(name, new_html)
                 self.log('\t  Smartened punctuation in:', name)
         return dirtied
