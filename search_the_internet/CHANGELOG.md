@@ -1,5 +1,9 @@
 # Search The Internet Change Log
 
+## [1.11.3] - 2024-09-30
+### Changed
+- Change approach to invoking template engine to use proxy_metadata instead of deepcopy to avoid calibre bug.
+
 ## [1.11.2] - 2024-04-01
 ### Changed
 - Remove many non-working sites from the default list, switch all to https

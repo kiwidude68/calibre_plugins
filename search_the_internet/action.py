@@ -133,8 +133,8 @@ class SearchTheInternetAction(InterfaceAction):
                 self.search_web_for_book(row.row(), tokenised_url, encoding, method)
 
     def search_web_for_book(self, row, tokenised_url, encoding, method):
-        # Take a copy of the metadata so no risk of messing with anything important in memory!
-        mi = self.db.get_metadata(row).deepcopy_metadata()
+        # Get a readonly copy of metadata so no risk of messing with anything important in memory!
+        mi = self.db.new_api.get_proxy_metadata(self.db.id(row))
         if not encoding:
             encoding = 'utf-8'
         self.open_tokenised_url(tokenised_url, encoding, method, mi)
