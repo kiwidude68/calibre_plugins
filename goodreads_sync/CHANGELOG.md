@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.16.9] - 2024-10-04
+### Fixed
+- Better handling of 404 errors from books not found when linking that have an ISBN
+
 ## [1.16.8] - 2024-06-06
 ### Fixed
 - One last attempt at fixing key_file issues for linux users. (@bernieke)

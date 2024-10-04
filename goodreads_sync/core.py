@@ -164,17 +164,17 @@ class HttpHelper(object):
         # Perform a standard http request (OAUTH not required)
         # Set suppress_status for an invalid response code that you do not want to prompt
         # the user about.
-        debug_print('_request_get: url=%s' % url)
         try:
             if self.gui:
                 self.gui.status_bar.showMessage('Communicating with Goodreads...')
 
             if add_devkey:
                 url = url + '&key=%s' % self.devkey_token
-                debug_print('_request_get: url=%s' % url)
+            debug_print('_request_get: url=%s' % url)
             h = httplib2.Http(proxy_info=self.proxy_info, ca_certs=None, disable_ssl_certificate_validation=True)
             response, content = h.request(url, method='GET')
             status = response['status']
+            debug_print('_request_get: response status = ',status, 'suppress=', suppress_status)
             if status != success_status and status != suppress_status:
                 return self._handle_failure(response, content, url)
             if encoding:
@@ -192,6 +192,12 @@ class HttpHelper(object):
             #traceback.print_stack()
         detail = 'URL: {0}\nResponse Code: {1}\n{2}'.format(url, response['status'], content)
         if (response['status'] == '404'):
+            error_dialog(self.gui, _('Goodreads Failure'),
+                _('The request contacting Goodreads has failed.') + ' [' + response['status'] + ']\n',
+                det_msg=detail, show=True)
+            return (None, None)
+
+        try:
             root = et.fromstring(content)
             errorNode = root.find('error')
             if errorNode:
@@ -203,9 +209,12 @@ class HttpHelper(object):
                                 friendlyMessage,
                                 det_msg=detail, show=True)
                 return (None, None)
+        except:
+            debug_print('Failed to parse content into an error tree: %s' % content)
+            pass
         
         error_dialog(self.gui, _('Goodreads Failure'),
-                    _('The request contacting Goodreads has failed.')+'\n'+
+                    _('The request contacting Goodreads has failed.') + ' [' + response['status'] + ']\n'+
                     _('If it reoccurs you may have exceeded a request limit imposed by Goodreads.')+'\n'+
                     _('In which case wait an additional 5-10 minutes before retrying.'),
                     det_msg=detail, show=True)
@@ -527,8 +536,8 @@ class HttpHelper(object):
         # Returns None if an error
         # This particular URL has the option of a JSON file result (yay!)
         url = '%s/book/show?format=json&id=%s&page=1' % (cfg.URL_HTTPS, goodreads_id)
-        (response, content) = self._request_get(url)
-        if not response:
+        (response, content) = self._request_get(url, suppress_status='404')
+        if not response or response['status'] == '404':
             return
         content = clean_ascii_chars(content)
         content_json = json.loads(content)
