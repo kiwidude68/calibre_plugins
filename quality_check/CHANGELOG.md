@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.13.15] - 2024-08-05
+### Added
+- Display the count of matches in a book when finding all occurrences using 'Search ePubs'.
+
 ## [1.13.14] - 2024-08-05
 ### Added
 - Added a 'Suppress Fix summary dialogs' option to prevent a summary dialog showing the success/failure of the operation.

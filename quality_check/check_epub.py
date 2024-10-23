@@ -272,7 +272,7 @@ class EpubCheck(BaseCheck):
                                     break
                     if log_lines:
                         if show_all_matches:
-                            self.log(_('Matches in book: <b>%s</b>')%get_title_authors_text(db, book_id))
+                            self.log('%s '%len(log_lines) + _('Matches in book: <b>%s</b>')%get_title_authors_text(db, book_id))
                         else:
                             self.log(_('First match in book: <b>%s</b>')%get_title_authors_text(db, book_id))
                         for log_line in log_lines:
