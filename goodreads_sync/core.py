@@ -939,6 +939,7 @@ class CalibreSearcher(object):
             book['calibre_author_sort'] = ''
             book['calibre_series'] = ''
             book['calibre_rating'] = 0.
+            book['calibre_rating_allow_half_stars'] = False
             book['calibre_date_read'] = UNDEFINED_DATE
             book['calibre_review_text'] = ''
             book['calibre_reading_progress'] = -1
@@ -955,20 +956,25 @@ class CalibreSearcher(object):
         if mi.series:
             seridx = fmt_sidx(mi.series_index)
             book['calibre_series'] = '%s [%s]' % (mi.series, seridx)
-        self.get_uploadable_columns(mi, book)
+        self.get_uploadable_columns(db, mi, book)
 
         if not 'goodreads_id' in book:
             goodreads_id = self.id_caches.calibre_to_goodreads_ids().get(calibre_id, '')
             book['goodreads_id'] = goodreads_id
         return True
 
-    def get_uploadable_columns(self, mi, book):
+    def get_uploadable_columns(self, db, mi, book):
+        custom_columns = db.field_metadata.custom_field_metadata()
         rating_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_RATING_COLUMN, '')
         book['calibre_rating'] = 0
+        book['calibre_rating_allow_half_stars'] = False
         if rating_column:
             rating = mi.get(rating_column)
             if rating:
                 book['calibre_rating'] = int(rating)
+            if rating_column.startswith('#') and rating_column in custom_columns:
+                rating_custom_column = custom_columns[rating_column]
+                book['calibre_rating_allow_half_stars'] = rating_custom_column['display'].get('allow_half_stars', False)
 
         date_read_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_DATE_READ_COLUMN, '')
         book['calibre_date_read'] = UNDEFINED_DATE
