@@ -40,14 +40,21 @@ class CoverCheck(BaseCheck):
             return
 
         # The other options require iterating through the library data
-        check_type = d.check_type
+        check_type = 'none'
+        check_operator = d.check_operator
         if d.opt_file_size.isChecked():
-            is_file_size_check = True
+            check_type = 'file_size'
             min_file_size = d.file_size * 1024
-        else:
-            is_file_size_check = False
+        elif d.opt_dimensions.isChecked():
+            check_type = 'dimensions'
             min_image_width = d.image_width
             min_image_height = d.image_height
+        elif d.opt_aspect_ratio.isChecked():
+            check_type = 'aspect'
+            target_aspect_ratio = d.aspect_x / d.aspect_y
+            aspect_tolerance_amt = d.aspect_tolerance_pct * target_aspect_ratio / 100
+            min_aspect_ratio  = target_aspect_ratio - aspect_tolerance_amt
+            max_aspect_ratio  = target_aspect_ratio + aspect_tolerance_amt
 
         def evaluate_book(book_id, db):
             if not db.has_cover(book_id):
@@ -58,45 +65,24 @@ class CoverCheck(BaseCheck):
                 return False
 
             mark_book = False
-            if is_file_size_check:
+            if check_type == 'file_size':
                 cover_size = os.path.getsize(cover_path)
-                if check_type == _('less than') and cover_size < min_file_size:
+                if check_operator == _('less than') and cover_size < min_file_size:
                     mark_book = True
-                elif check_type == _('greater than') and cover_size > min_file_size:
+                elif check_operator == _('greater than') and cover_size > min_file_size:
                     mark_book = True
-            else:
+            else: # dimensions or aspect
                 try:
                     im = Image.open(cover_path)
                 except IOError:
                     self.log(_('Failed to identify cover:'), cover_path)
                 else:
                     (cover_width, cover_height) = im.size
-                    if check_type == _('less than'):
-                        if cover_width < min_image_width:
-                            mark_book = True
-                        elif cover_height < min_image_height:
-                            mark_book = True
-                    elif check_type == _('greater than'):
-                        if cover_width > min_image_width and min_image_width != 0:
-                            mark_book = True
-                        elif cover_height > min_image_height and min_image_height != 0:
-                            mark_book = True
-                    elif check_type == _('equal to'):
-                        if min_image_height == 0:
-                            if cover_width == min_image_width:
-                                mark_book = True
-                        elif min_image_width == 0:
-                            if cover_height == min_image_height:
-                                mark_book = True
-                        elif cover_width == min_image_width and cover_height == min_image_height:
-                            mark_book = True
-                    elif check_type == _('not equal to'):
-                        if min_image_width != 0:
-                            if cover_width != min_image_width:
-                                mark_book = True
-                        if min_image_height != 0:
-                            if cover_height != min_image_height:
-                                mark_book = True
+                    if check_type == 'dimensions':
+                        mark_book = self._evaluate_dimensions(check_operator, cover_width, cover_height, min_image_width, min_image_height)
+                    else:
+                        mark_book = self._evaluate_aspect_ratio(check_operator, cover_width, cover_height, min_aspect_ratio, max_aspect_ratio)
+                    
             return mark_book
 
         total_count, result_ids, cancelled_msg = self.check_all_files(evaluate_book,
@@ -114,4 +100,49 @@ class CoverCheck(BaseCheck):
                                      self.log)
             d.exec_()
 
+
+    def _evaluate_dimensions(self, check_operator, cover_width, cover_height, min_image_width, min_image_height):
+        if check_operator == _('less than'):
+            if cover_width < min_image_width:
+                return True
+            elif cover_height < min_image_height:
+                return True
+        elif check_operator == _('greater than'):
+            if cover_width > min_image_width and min_image_width != 0:
+                return True
+            elif cover_height > min_image_height and min_image_height != 0:
+                return True
+        elif check_operator == _('equal to'):
+            if min_image_height == 0:
+                if cover_width == min_image_width:
+                    return True
+            elif min_image_width == 0:
+                if cover_height == min_image_height:
+                    return True
+            elif cover_width == min_image_width and cover_height == min_image_height:
+                return True
+        elif check_operator == _('not equal to'):
+            if min_image_width != 0:
+                if cover_width != min_image_width:
+                    return True
+            if min_image_height != 0:
+                if cover_height != min_image_height:
+                    return True
+        return False
+
+    def _evaluate_aspect_ratio(self, check_operator, cover_width, cover_height, min_aspect_ratio, max_aspect_ratio):
+        aspect_ratio = cover_width / cover_height
+        if check_operator == _('less than'):
+            if aspect_ratio < min_aspect_ratio:
+                return True
+        elif check_operator == _('greater than'):
+            if aspect_ratio > max_aspect_ratio:
+                return True
+        elif check_operator == _('equal to'):
+            if aspect_ratio == min_aspect_ratio:
+                return True
+        elif check_operator == _('not equal to'):
+            if aspect_ratio < min_aspect_ratio or aspect_ratio > max_aspect_ratio:
+                return True
+        return False
 

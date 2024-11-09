@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.13.16] - 2024-11-09
+### Added
+- Cover search dialog now allows searching for books with covers based on their aspect ratios.
+
 ## [1.13.15] - 2024-08-05
 ### Added
 - Display the count of matches in a book when finding all occurrences using 'Search ePubs'.

@@ -101,18 +101,31 @@ class CoverOptionsDialog(SizePersistedDialog):
             self.opt_no_cover.setChecked(True)
         elif last_opt == 1:
             self.opt_file_size.setChecked(True)
-        else:
+        elif last_opt == 2:
             self.opt_dimensions.setChecked(True)
-        size_check_type = gprefs.get(self.unique_pref_name+':last_size_check_type', 'less than')
+        else:
+            self.opt_aspect_ratio.setChecked(True)
+
+        size_check_type = gprefs.get(self.unique_pref_name+':last_size_check_type', _('less than'))
         self.file_size_check_type.select_text(size_check_type)
-        dimensions_check_type = gprefs.get(self.unique_pref_name+':last_dimensions_check_type', 'less than')
-        self.dimensions_check_type.select_text(dimensions_check_type)
         last_size = gprefs.get(self.unique_pref_name+':last_size', 20)
         self.file_size_spin.setProperty('value', last_size)
-        last_width = gprefs.get(self.unique_pref_name+':last_width', 300)
+
+        dimensions_check_type = gprefs.get(self.unique_pref_name+':last_dimensions_check_type', _('less than'))
+        self.dimensions_check_type.select_text(dimensions_check_type)
+        last_width = gprefs.get(self.unique_pref_name+':last_width', 800)
         self.image_width_spin.setProperty('value', last_width)
-        last_height = gprefs.get(self.unique_pref_name+':last_height', 400)
+        last_height = gprefs.get(self.unique_pref_name+':last_height', 1200)
         self.image_height_spin.setProperty('value', last_height)
+
+        aspect_check_type = gprefs.get(self.unique_pref_name+':last_aspect_check_type', _('not equal to'))
+        self.aspect_check_type.select_text(aspect_check_type)
+        last_aspect_x = gprefs.get(self.unique_pref_name+':last_aspect_x', 800)
+        self.aspect_x_spin.setProperty('value', last_aspect_x)
+        last_aspect_y = gprefs.get(self.unique_pref_name+':last_aspect_y', 1200)
+        self.aspect_y_spin.setProperty('value', last_aspect_y)
+        last_aspect_tolerance = gprefs.get(self.unique_pref_name+':last_aspect_tolerance', 5)
+        self.aspect_tolerance_spin.setProperty('value', last_aspect_tolerance)
 
         # Cause our dialog size to be restored from prefs or created on first usage
         self.resize_dialog()
@@ -153,8 +166,28 @@ class CoverOptionsDialog(SizePersistedDialog):
         options_layout.addWidget(self.image_height_spin, 2, 2, 1, 1)
         options_layout.addWidget(QLabel(_('height')), 2, 3, 1, 1)
 
+        self.opt_aspect_ratio = QRadioButton(_('Cover aspect ratio is'), self)
+        options_layout.addWidget(self.opt_aspect_ratio, 3, 0, 1, 1)
+        self.aspect_check_type = CompareTypeComboBox(self)
+        options_layout.addWidget(self.aspect_check_type, 3, 1, 1, 1)
+        self.aspect_x_spin = QSpinBox(self)
+        self.aspect_x_spin.setMinimum(0)
+        self.aspect_x_spin.setMaximum(99000000)
+        options_layout.addWidget(self.aspect_x_spin, 3, 2, 1, 1)
+        options_layout.addWidget(QLabel(_('width')), 3, 3, 1, 1)
+        self.aspect_y_spin = QSpinBox(self)
+        self.aspect_y_spin.setMinimum(0)
+        self.aspect_y_spin.setMaximum(99000000)
+        options_layout.addWidget(self.aspect_y_spin, 4, 2, 1, 1)
+        options_layout.addWidget(QLabel(_('height')), 4, 3, 1, 1)
+        self.aspect_tolerance_spin = QSpinBox(self)
+        self.aspect_tolerance_spin.setMinimum(0)
+        self.aspect_tolerance_spin.setMaximum(99000000)
+        options_layout.addWidget(self.aspect_tolerance_spin, 5, 2, 1, 1)
+        options_layout.addWidget(QLabel('% ' + _('tolerance')), 5, 3, 1, 1)
+
         self.opt_no_cover = QRadioButton(_('No cover'), self)
-        options_layout.addWidget(self.opt_no_cover, 3, 0, 1, 1)
+        options_layout.addWidget(self.opt_no_cover, 6, 0, 1, 1)
 
         # Dialog buttons
         button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
@@ -167,23 +200,35 @@ class CoverOptionsDialog(SizePersistedDialog):
             gprefs[self.unique_pref_name+':last_opt'] = 0
         elif self.opt_file_size.isChecked():
             gprefs[self.unique_pref_name+':last_opt'] = 1
-        else:
+        elif self.opt_dimensions.isChecked():
             gprefs[self.unique_pref_name+':last_opt'] = 2
+        else:
+            gprefs[self.unique_pref_name+':last_opt'] = 3
+
         gprefs[self.unique_pref_name+':last_size_check_type'] = \
                             unicode(self.file_size_check_type.currentText()).strip()
+        gprefs[self.unique_pref_name+':last_size'] = self.file_size
+
         gprefs[self.unique_pref_name+':last_dimensions_check_type'] = \
                             unicode(self.dimensions_check_type.currentText()).strip()
-        gprefs[self.unique_pref_name+':last_size'] = self.file_size
         gprefs[self.unique_pref_name+':last_width'] = self.image_width
         gprefs[self.unique_pref_name+':last_height'] = self.image_height
+
+        gprefs[self.unique_pref_name+':last_aspect_check_type'] = \
+                            unicode(self.aspect_check_type.currentText()).strip()
+        gprefs[self.unique_pref_name+':last_aspect_x'] = self.aspect_x
+        gprefs[self.unique_pref_name+':last_aspect_y'] = self.aspect_y
+        gprefs[self.unique_pref_name+':last_aspect_tolerance'] = self.aspect_tolerance_pct
         self.accept()
 
     @property
-    def check_type(self):
+    def check_operator(self):
         if self.opt_file_size.isChecked():
             return unicode(self.file_size_check_type.currentText()).strip()
         elif self.opt_dimensions.isChecked():
             return unicode(self.dimensions_check_type.currentText()).strip()
+        elif self.opt_aspect_ratio.isChecked():
+            return unicode(self.aspect_check_type.currentText()).strip()
 
     @property
     def file_size(self):
@@ -196,6 +241,18 @@ class CoverOptionsDialog(SizePersistedDialog):
     @property
     def image_height(self):
         return int(unicode(self.image_height_spin.value()))
+
+    @property
+    def aspect_x(self):
+        return int(unicode(self.aspect_x_spin.value()))
+
+    @property
+    def aspect_y(self):
+        return int(unicode(self.aspect_y_spin.value()))
+
+    @property
+    def aspect_tolerance_pct(self):
+        return int(unicode(self.aspect_tolerance_spin.value()))
 
 
 class ResultsSummaryDialog(MessageBox): # {{{
