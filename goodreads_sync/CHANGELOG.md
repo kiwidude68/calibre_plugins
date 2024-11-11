@@ -1,5 +1,10 @@
 # Goodreads Sync Change Log
 
+## [1.16.11] - 2024-11-11
+### Fixed
+- Display the user friendly Goodreads message when attempting an action like Add to shelf if the book is invalidly linked.
+- Additional separator before the Configuration option in popdown menu.
+
 ## [1.16.10] - 2024-11-05
 ### Fixed
 - Support half stars in the rating column (if the user has that configured for their rating column). The goodreads rating will still be the rounded down value, but it will prevent the calibre value being rounded down/overwritten in this circumstance.

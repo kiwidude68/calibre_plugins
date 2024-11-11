@@ -101,13 +101,14 @@ class GoodreadsSyncAction(InterfaceAction):
                 self.create_action_with_users_sub_menu(m, _('Sync from shelf')+'...', 'sync', 'images/sync_from_shelf.png')
             if c.get(cfg.KEY_DISPLAY_VIEW_SHELF, True):
                 m.addSeparator()
-                self.create_sub_menu_for_users_action(m, _('View shelf'), 'view', 'images/view_shelf.png')
+                self.create_sub_menu_for_users_action(m, _('View shelf'), 'images/view_shelf.png')
             m.addSeparator()
 
             # Create menus for linking to Goodreads and working with linked books
             create_menu_action_unique(self, m, _('Link to Goodreads')+'...', 'images/link_add.png',
                     _('Add, replace or clear link to a Goodreads book'),
                     triggered=self.search_goodreads_to_link_book)
+            m.addSeparator()
             self.linked_book_submenu = m.addMenu(get_icon('images/link.png'), _('Linked book'))
 
             create_menu_action_unique(self, self.linked_book_submenu, _('View linked book'),
@@ -170,7 +171,7 @@ class GoodreadsSyncAction(InterfaceAction):
                                      shortcut_name=unique_name, unique_name=unique_name,
                                      triggered=triggered_action)
 
-    def create_sub_menu_for_users_action(self, parent_menu, title, action, image_name):
+    def create_sub_menu_for_users_action(self, parent_menu, title, image_name):
         sub_menu = parent_menu.addMenu(get_icon(image_name), title)
         sub_menu.setStatusTip(title)
         # If we have more than one user, define a second level sub-menu with user names
@@ -178,12 +179,12 @@ class GoodreadsSyncAction(InterfaceAction):
             for user_name in sorted(self.users.keys()):
                 user_sub_menu = sub_menu.addMenu(get_icon('user_profile.png'), _('User: {0}').format(user_name))
                 user_sub_menu.setStatusTip(user_sub_menu.title())
-                self.create_sub_menu_for_shelves_action(user_sub_menu, user_name, title, action)
+                self.create_sub_menu_for_shelves_action(user_sub_menu, user_name, title)
         else:
             user_name = list(self.users.keys())[0]
-            self.create_sub_menu_for_shelves_action(sub_menu, user_name, title, action)
+            self.create_sub_menu_for_shelves_action(sub_menu, user_name, title)
 
-    def create_sub_menu_for_shelves_action(self, parent_menu, user_name, title, action):
+    def create_sub_menu_for_shelves_action(self, parent_menu, user_name, title):
         user_info = self.users[user_name]
         shelves = user_info.get(cfg.KEY_SHELVES)
         if shelves:

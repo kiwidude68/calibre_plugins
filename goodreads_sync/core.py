@@ -191,11 +191,6 @@ class HttpHelper(object):
             debug_print('Content: %s' % content)
             #traceback.print_stack()
         detail = 'URL: {0}\nResponse Code: {1}\n{2}'.format(url, response['status'], content)
-        if (response['status'] == '404'):
-            error_dialog(self.gui, _('Goodreads Failure'),
-                _('The request contacting Goodreads has failed.') + ' [' + response['status'] + ']\n',
-                det_msg=detail, show=True)
-            return (None, None)
 
         try:
             root = et.fromstring(content)
@@ -212,6 +207,12 @@ class HttpHelper(object):
         except:
             debug_print('Failed to parse content into an error tree: %s' % content)
             pass
+        
+        if (response['status'] == '404'):
+            error_dialog(self.gui, _('Goodreads Failure'),
+                _('The request contacting Goodreads has failed.') + ' [' + response['status'] + ']\n',
+                det_msg=detail, show=True)
+            return (None, None)
         
         error_dialog(self.gui, _('Goodreads Failure'),
                     _('The request contacting Goodreads has failed.') + ' [' + response['status'] + ']\n'+
