@@ -1,5 +1,19 @@
 # Reading List Change Log
 
+## [1.15.5] - 2024-06-02
+### Added
+- Add `Toggle on list` menu actions assignable via keyboard shortcuts.
+
+## [1.15.4] - 2024-04-25
+### Changed
+- Limit title and author columns width on edit list dialog to prevent long names from over-sizing dialog.
+
+## [1.15.3] - 2024-04-11
+### Added
+- Quick access feature when enabled allows clicking on the reading list button to view your default list.
+### Fixed
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
 ## [1.15.2] - 2024-03-17
 ### Added
 - Russian translation

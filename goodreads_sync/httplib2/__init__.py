@@ -1287,22 +1287,11 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
     http://docs.python.org/library/socket.html#socket.setdefaulttimeout
     """
 
-    def __init__(
-        self,
-        host,
-        port=None,
-        key_file=None,
-        cert_file=None,
-        strict=None,
-        timeout=None,
-        proxy_info=None,
-        ca_certs=None,
-        disable_ssl_certificate_validation=False,
-        ssl_version=None,
-    ):
-        httplib.HTTPSConnection.__init__(
-            self, host, port=port, key_file=key_file, cert_file=cert_file
-        )
+    def __init__(self, host, port=None, context=None,
+                 strict=None, timeout=None, proxy_info=None,
+                 ca_certs=None, disable_ssl_certificate_validation=False,
+                 ssl_version=None):
+        httplib.HTTPSConnection.__init__(self, host, port=port, context=context)
         self.timeout = timeout
         self.proxy_info = proxy_info
         if ca_certs is None:
@@ -1553,30 +1542,12 @@ class AppEngineHttpsConnection(httplib.HTTPSConnection):
     The parameters proxy_info, ca_certs, disable_ssl_certificate_validation,
     and ssl_version are all dropped on the ground.
     """
-
-    def __init__(
-        self,
-        host,
-        port=None,
-        key_file=None,
-        cert_file=None,
-        strict=None,
-        timeout=None,
-        proxy_info=None,
-        ca_certs=None,
-        disable_ssl_certificate_validation=False,
-        ssl_version=None,
-    ):
-        httplib.HTTPSConnection.__init__(
-            self,
-            host,
-            port=port,
-            key_file=key_file,
-            cert_file=cert_file,
-            timeout=timeout,
-        )
+    def __init__(self, host, port=None, context=None,
+                 strict=None, timeout=None, proxy_info=None, ca_certs=None,
+                 disable_ssl_certificate_validation=False,
+                 ssl_version=None):
+        httplib.HTTPSConnection.__init__(self, host, port=port, context=context, timeout=timeout)
         self._fetch = _new_fixed_fetch(not disable_ssl_certificate_validation)
-
 
 # Use a different connection object for Google App Engine
 try:
@@ -2002,25 +1973,29 @@ class Http(object):
                 certs = list(self.certificates.iter(authority))
                 if scheme == "https":
                     if certs:
+                        context = ssl.create_default_context()
+                        context.load_cert_chain(
+                            keyfile=certs[0][0], certfile=certs[0][1])
                         conn = self.connections[conn_key] = connection_type(
-                            authority,
-                            key_file=certs[0][0],
-                            cert_file=certs[0][1],
-                            timeout=self.timeout,
-                            proxy_info=proxy_info,
-                            ca_certs=self.ca_certs,
-                            disable_ssl_certificate_validation=self.disable_ssl_certificate_validation,
-                            ssl_version=self.ssl_version,
-                        )
+                                authority, context=context,
+                                timeout=self.timeout,
+                                proxy_info=proxy_info,
+                                ca_certs=self.ca_certs,
+                                disable_ssl_certificate_validation=
+                                        self.disable_ssl_certificate_validation,
+                                        ssl_version=self.ssl_version)
+                        conn.key_file = certs[0][0]
+                        conn.cert_file = certs[0][1]
                     else:
                         conn = self.connections[conn_key] = connection_type(
-                            authority,
-                            timeout=self.timeout,
-                            proxy_info=proxy_info,
-                            ca_certs=self.ca_certs,
-                            disable_ssl_certificate_validation=self.disable_ssl_certificate_validation,
-                            ssl_version=self.ssl_version,
-                        )
+                                authority, timeout=self.timeout,
+                                proxy_info=proxy_info,
+                                ca_certs=self.ca_certs,
+                                disable_ssl_certificate_validation=
+                                        self.disable_ssl_certificate_validation,
+                                ssl_version=self.ssl_version)
+                        conn.key_file = None
+                        conn.cert_file = None
                 else:
                     conn = self.connections[conn_key] = connection_type(
                         authority, timeout=self.timeout, proxy_info=proxy_info

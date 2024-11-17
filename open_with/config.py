@@ -26,6 +26,11 @@ except ImportError:
                         QInputDialog, QSpacerItem, QModelIndex, QUrl)
 
 try:
+    AnyFile = QFileDialog.FileMode.AnyFile
+except:
+    AnyFile = QFileDialog.AnyFile
+
+try:
     load_translations()
 except NameError:
     pass # load_translations() added in calibre 1.9
@@ -855,7 +860,7 @@ class ConfigWidget(QWidget):
 
     def pick_archive_name_to_export(self):
         fd = FileDialog(name='owp archive dialog', title=_('Save archive as'), filters=[('OWIP Files', ['zip'])],
-                        parent=self, add_all_files_filter=False, mode=QFileDialog.FileMode.AnyFile)
+                        parent=self, add_all_files_filter=False, mode=AnyFile)
         fd.setParent(None)
         if not fd.accepted:
             return None

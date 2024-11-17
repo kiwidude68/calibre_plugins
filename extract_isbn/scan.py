@@ -12,7 +12,9 @@ from calibre.ebooks.metadata import check_isbn
 
 import calibre_plugins.extract_isbn.config as cfg
 
-RE_ISBN = re.compile(u'\s*([0-9\-\.–­―—\^ ]{9,18}[0-9xX])', re.UNICODE)
+# This used to look for up to 18 digits, had to bump this to 22 to account for "-10 " and "-13 "
+# prefixes when matching against text like "ISBN-10 xxx"
+RE_ISBN = re.compile(u'\s*([0-9\-\.–­―—\^ ]{9,22}[0-9xX])', re.UNICODE)
 
 RE_STRIP_STYLE = re.compile(u'<style[^<]+</style>', re.MULTILINE | re.UNICODE)
 RE_STRIP_MARKUP = re.compile(u'<[^>]+>', re.UNICODE)
@@ -51,6 +53,7 @@ class BookScanner(object):
             if forward:
                 for match in RE_ISBN.finditer(book_file):
                     txt = match.group(1)
+                    txt = re.sub('\n', '', txt)     # it's possible that because of the pdf formatting the isbn will be spread over multiple lines
                     self._evaluate_isbn_match(txt)
             else:
                 matches = RE_ISBN.findall(book_file)
@@ -60,6 +63,11 @@ class BookScanner(object):
                 break
 
     def _evaluate_isbn_match(self, original_text):
+        # The regex gettting the ISBNs csn get "fooled" by expressions like the following:
+        # ISBN-10 1-4020-4136-5
+        # In this circumstance it will return "-10 1-4020-4136-5" as the text, rather than "1-4020-4136-5"
+        if original_text.startswith('-10 ') or original_text.startswith('-13 '):
+            original_text = original_text[4:]
         txt = re.sub('[^0-9X]','', original_text)
         txt_len = len(txt)
         # Grant - next check for repeating digits like 1111111111

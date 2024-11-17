@@ -20,7 +20,7 @@ class ActionModifyEpub(InterfaceActionBase):
     description             = 'Apply cleanup tasks and updates to an ePub without doing a conversion'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake, with additions by Robert L. Hood, Leigh Parry, & Charles Haley'
-    version                 = (1, 8, 3)
+    version                 = (1, 8, 5)
     minimum_calibre_version = (2, 85, 1)
 
     #: This field defines the GUI plugin class that contains all the code

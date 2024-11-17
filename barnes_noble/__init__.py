@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import time
+import time, re, random
 from six import text_type as unicode
 from six.moves.urllib.parse import quote
 try:
@@ -15,6 +15,7 @@ from collections import OrderedDict
 from lxml.html import fromstring
 
 from calibre import as_unicode
+from calibre.constants import numeric_version as calibre_version
 from calibre.ebooks.metadata import check_isbn
 from calibre.ebooks.metadata.sources.base import Source
 from calibre.utils.icu import lower
@@ -26,11 +27,12 @@ class BarnesNoble(Source):
     name = 'Barnes & Noble'
     description = 'Downloads metadata and covers from Barnes & Noble'
     author = 'Grant Drake'
-    version = (1, 5, 3)
+    version = (1, 5, 6)
     minimum_calibre_version = (2, 0, 0)
 
+    ID_NAME = 'barnesnoble'
     capabilities = frozenset(['identify', 'cover'])
-    touched_fields = frozenset(['title', 'authors', 'identifier:barnesnoble',
+    touched_fields = frozenset(['title', 'authors', 'identifier:' + ID_NAME,
         'identifier:isbn', 'rating', 'comments', 'publisher', 'pubdate',
         'series'])
     has_html_comments = True
@@ -38,7 +40,7 @@ class BarnesNoble(Source):
 
     BASE_URL = 'https://search.barnesandnoble.com'
     BROWSE_URL = 'https://www.barnesandnoble.com'
-    SEARCH_URL = 'https://www.barnesandnoble.com/s?'
+    SEARCH_URL = 'https://www.barnesandnoble.com/s'
 
     def config_widget(self):
         '''
@@ -47,11 +49,16 @@ class BarnesNoble(Source):
         from calibre_plugins.barnes_noble.config import ConfigWidget
         return ConfigWidget(self)
 
+    @property
+    def user_agent(self):
+        # May 2024 - B&N started getting picky about the user agent, rejecting Chrome version 80 which was the calibre default.
+        return 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0'
+
     def get_book_url(self, identifiers):
-        barnes_noble_id = identifiers.get('barnesnoble', None)
+        barnes_noble_id = identifiers.get(self.ID_NAME, None)
         if barnes_noble_id:
             url = self.format_url_for_id(barnes_noble_id)
-            return ('barnesnoble', barnes_noble_id, url)
+            return (self.ID_NAME, barnes_noble_id, url)
 
     def format_url_for_id(self, barnes_noble_id):
         if '/' in barnes_noble_id:
@@ -63,6 +70,12 @@ class BarnesNoble(Source):
             # B&N will itself redirect to a page with the full URL, or we use w/<id> e.g. w/1141707914
             url = '%s/w/%s' % (BarnesNoble.BROWSE_URL, barnes_noble_id)
         return url
+
+    def id_from_url(self, url):
+        match = re.match(self.BROWSE_URL + r"/.*/(\d+).*", url)
+        if match:
+            return (self.ID_NAME, match.groups(0)[0])
+        return None
 
     def create_query(self, log, title=None, authors=None, identifiers={}):
         isbn = check_isbn(identifiers.get('isbn', None))
@@ -82,7 +95,7 @@ class BarnesNoble(Source):
                 tokens += [quote(t.encode('utf-8') if isinstance(t, unicode) else t) for t in author_tokens]
         if len(tokens) == 0:
             return None
-        return BarnesNoble.SEARCH_URL + 'store=book&keyword=' + '+'.join(tokens)
+        return BarnesNoble.SEARCH_URL + '/' + '%20'.join(tokens).lower()
 
     def get_cached_cover_url(self, identifiers):
         url = None
@@ -146,6 +159,8 @@ class BarnesNoble(Source):
             multiple_results_found = False
             try:
                 log.info('Querying: %s' % query)
+                br.set_current_header('Accept','*/*')
+                br.set_current_header('Accept-Encoding','gzip, deflate, br')
                 response = br.open_novisit(query, timeout=timeout)
                 # Check whether we got redirected to a book page.
                 # If we did, will use the url.
@@ -354,6 +369,8 @@ class BarnesNoble(Source):
         if abort.is_set():
             return
         br = self.browser
+        br.set_current_header('Accept','*/*')
+        br.set_current_header('Accept-Encoding','gzip, deflate, br')
         log('Downloading cover from:', cached_url)
         try:
             cdata = br.open_novisit(cached_url, timeout=timeout).read()

@@ -133,8 +133,8 @@ class SearchTheInternetAction(InterfaceAction):
                 self.search_web_for_book(row.row(), tokenised_url, encoding, method)
 
     def search_web_for_book(self, row, tokenised_url, encoding, method):
-        # Take a copy of the metadata so no risk of messing with anything important in memory!
-        mi = self.db.get_metadata(row).deepcopy_metadata()
+        # Get a readonly copy of metadata so no risk of messing with anything important in memory!
+        mi = self.db.new_api.get_proxy_metadata(self.db.id(row))
         if not encoding:
             encoding = 'utf-8'
         self.open_tokenised_url(tokenised_url, encoding, method, mi)
@@ -160,7 +160,11 @@ class SearchTheInternetAction(InterfaceAction):
         for token in re.findall(r"\{.*?\}", tokenised_url):
             try:
                 evaluated = template_formatter.safe_format(token, mi, 'STI template error', mi)
-                safe_value = self.convert_to_search_text(evaluated, encoding, method)
+                # An additional hack to ensure {identifiers:select(doi)} is not url encoded replacing the / with %2F
+                if 'identifiers:select' in token:
+                    safe_value = evaluated
+                else:
+                    safe_value = self.convert_to_search_text(evaluated, encoding, method)
                 url = url.replace(token, safe_value)
             except:
                 continue
@@ -231,8 +235,7 @@ class SearchTheInternetAction(InterfaceAction):
     def convert_to_search_text(self, text, encoding, method):
         try:
             # First we strip characters we will definitely not want to pass through.
-            # Periods from author initials etc do not need to be supplied
-            new_text = text.replace('.', '').replace('&', '').replace('  ',' ')
+            new_text = text.replace('&', '').replace('  ',' ')
             # Now encode the text using Python function with chosen encoding - but only for GET not POST
             if method == 'GET':
                 new_text = quote_plus(new_text.encode(encoding, 'ignore'))

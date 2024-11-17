@@ -198,21 +198,19 @@ class HttpHelper(object):
         # Perform a standard http request (OAUTH not required)
         # Set suppress_status for an invalid response code that you do not want to prompt
         # the user about.
-        debug_print("_request_get: url=%s" % url)
+
         try:
             if self.gui:
                 self.gui.status_bar.showMessage("Communicating with Goodreads...")
 
             if add_devkey:
-                url = url + "&key=%s" % self.devkey_token
-                debug_print("_request_get: url=%s" % url)
-            h = httplib2.Http(
-                proxy_info=self.proxy_info,
-                ca_certs=None,
-                disable_ssl_certificate_validation=True,
-            )
-            response, content = h.request(url, method="GET")
-            status = response["status"]
+                url = url + '&key=%s' % self.devkey_token
+            debug_print('_request_get: url=%s' % url)
+            h = httplib2.Http(proxy_info=self.proxy_info, ca_certs=None, disable_ssl_certificate_validation=True)
+            response, content = h.request(url, method='GET')
+            status = response['status']
+            debug_print('_request_get: response status = ',status, 'suppress=', suppress_status)
+
             if status != success_status and status != suppress_status:
                 return self._handle_failure(response, content, url)
             if encoding:
@@ -224,14 +222,14 @@ class HttpHelper(object):
 
     def _handle_failure(self, response, content, url):
         if DEBUG:
-            debug_print("Goodreads failure calling: %s" % url)
-            debug_print("Response: %s" % response)
-            debug_print("Content: %s" % content)
-            # traceback.print_stack()
-        detail = "URL: {0}\nResponse Code: {1}\n{2}".format(
-            url, response["status"], content
-        )
-        if response["status"] == "404":
+
+            debug_print('Goodreads failure calling: %s' % url)
+            debug_print('Response: %s' % response)
+            debug_print('Content: %s' % content)
+            #traceback.print_stack()
+        detail = 'URL: {0}\nResponse Code: {1}\n{2}'.format(url, response['status'], content)
+
+        try:
             root = et.fromstring(content)
             errorNode = root.find("error")
             if errorNode:
@@ -248,19 +246,21 @@ class HttpHelper(object):
                     )
                 return (None, None)
 
-        error_dialog(
-            self.gui,
-            _("Goodreads Failure"),
-            _("The request contacting Goodreads has failed.")
-            + "\n"
-            + _(
-                "If it reoccurs you may have exceeded a request limit imposed by Goodreads."
-            )
-            + "\n"
-            + _("In which case wait an additional 5-10 minutes before retrying."),
-            det_msg=detail,
-            show=True,
-        )
+        except:
+            debug_print('Failed to parse content into an error tree: %s' % content)
+            pass
+
+        if (response['status'] == '404'):
+            error_dialog(self.gui, _('Goodreads Failure'),
+                _('The request contacting Goodreads has failed.') + ' [' + response['status'] + ']\n',
+                det_msg=detail, show=True)
+            return (None, None)
+
+        error_dialog(self.gui, _('Goodreads Failure'),
+                    _('The request contacting Goodreads has failed.') + ' [' + response['status'] + ']\n'+
+                    _('If it reoccurs you may have exceeded a request limit imposed by Goodreads.')+'\n'+
+                    _('In which case wait an additional 5-10 minutes before retrying.'),
+                    det_msg=detail, show=True)
         return (None, None)
 
     def view_shelf(self, user_name, shelf_name):
@@ -668,9 +668,10 @@ class HttpHelper(object):
         # when you can't guarantee that the book is on one of your shelves.
         # Returns None if an error
         # This particular URL has the option of a JSON file result (yay!)
-        url = "%s/book/show?format=json&id=%s&page=1" % (cfg.URL_HTTPS, goodreads_id)
-        (response, content) = self._request_get(url)
-        if not response:
+
+        url = '%s/book/show?format=json&id=%s&page=1' % (cfg.URL_HTTPS, goodreads_id)
+        (response, content) = self._request_get(url, suppress_status='404')
+        if not response or response['status'] == '404':
             return
         content = clean_ascii_chars(content)
         content_json = json.loads(content)
@@ -1112,17 +1113,18 @@ class CalibreSearcher(object):
         if not db.data.has_id(calibre_id):
             # We have a problem. This id is not in the database.
             self.id_caches.remove_calibre_id_from_cache(calibre_id)
-            book["calibre_id"] = ""
-            book["calibre_isbn"] = ""
-            book["calibre_title"] = ""
-            book["calibre_title_sort"] = ""
-            book["calibre_author"] = ""
-            book["calibre_author_sort"] = ""
-            book["calibre_series"] = ""
-            book["calibre_rating"] = 0.0
-            book["calibre_date_read"] = UNDEFINED_DATE
-            book["calibre_review_text"] = ""
-            book["calibre_reading_progress"] = -1
+            book['calibre_id'] = ''
+            book['calibre_isbn'] = ''
+            book['calibre_title'] = ''
+            book['calibre_title_sort'] = ''
+            book['calibre_author'] = ''
+            book['calibre_author_sort'] = ''
+            book['calibre_series'] = ''
+            book['calibre_rating'] = 0.
+            book['calibre_rating_allow_half_stars'] = False
+            book['calibre_date_read'] = UNDEFINED_DATE
+            book['calibre_review_text'] = ''
+            book['calibre_reading_progress'] = -1
             return False
 
         book["calibre_id"] = calibre_id
@@ -1137,23 +1139,26 @@ class CalibreSearcher(object):
         book["calibre_series"] = ""
         if mi.series:
             seridx = fmt_sidx(mi.series_index)
-            book["calibre_series"] = "%s [%s]" % (mi.series, seridx)
-        self.get_uploadable_columns(mi, book)
+            book['calibre_series'] = '%s [%s]' % (mi.series, seridx)
+        self.get_uploadable_columns(db, mi, book)
 
         if not "goodreads_id" in book:
             goodreads_id = self.id_caches.calibre_to_goodreads_ids().get(calibre_id, "")
             book["goodreads_id"] = goodreads_id
         return True
 
-    def get_uploadable_columns(self, mi, book):
-        rating_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(
-            cfg.KEY_RATING_COLUMN, ""
-        )
-        book["calibre_rating"] = 0
+    def get_uploadable_columns(self, db, mi, book):
+        custom_columns = db.field_metadata.custom_field_metadata()
+        rating_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_RATING_COLUMN, '')
+        book['calibre_rating'] = 0
+        book['calibre_rating_allow_half_stars'] = False
         if rating_column:
             rating = mi.get(rating_column)
             if rating:
-                book["calibre_rating"] = int(rating)
+                book['calibre_rating'] = int(rating)
+            if rating_column.startswith('#') and rating_column in custom_columns:
+                rating_custom_column = custom_columns[rating_column]
+                book['calibre_rating_allow_half_stars'] = rating_custom_column['display'].get('allow_half_stars', False)
 
         date_read_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(
             cfg.KEY_DATE_READ_COLUMN, ""

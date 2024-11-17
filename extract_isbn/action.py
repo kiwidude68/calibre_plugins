@@ -157,17 +157,25 @@ class ExtractISBNAction(InterfaceAction):
                             'Click "Show details" to see the list of changed books. '
                             'Do you want to proceed?'), det_msg='\n'.join(modified)):
                     return
-        # At this point we want to re-use code in edit_metadata to go ahead and
-        # apply the changes. So we will replace the Metadata objects with some
-        # empty ones with only the isbn field set so only that field gets updated
-        id_map = {}
+        # Apply the changes (thanks @chaley!)
+        ndb = db.new_api
+        book_to_id_map = {}
+        applied_ids = []
         for i, title, last_modified, isbn in extracted_ids:
-            mi = Metadata(_('Unknown'))
-            mi.isbn = isbn
-            id_map[i] = mi
-        edit_metadata_action = self.gui.iactions['Edit Metadata']
-        edit_metadata_action.apply_metadata_changes(id_map,
-                                                    callback=self._mark_and_display_results)
+            # Get the existing identifiers for the book
+            identifiers_for_book = ndb.field_for('identifiers', i)
+            if 'isbn' in identifiers_for_book:
+                prev_value = identifiers_for_book['isbn']
+                if prev_value == isbn:
+                    continue
+            # Add/replace the ISBN identifer
+            identifiers_for_book['isbn'] = isbn
+            # Save the updated list of identifiers
+            book_to_id_map[i] = identifiers_for_book
+            applied_ids.append(i)
+        # Set all the books' identifier values
+        ndb.set_field('identifiers', book_to_id_map)
+        self._mark_and_display_results(applied_ids)
 
     def _mark_and_display_results(self, applied_ids):
         marked_ids = {}

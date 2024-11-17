@@ -3,13 +3,12 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Cm Fy, 2022
 # Paulo Pereira <pauloizidoro@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:29+0100\n"
+"POT-Creation-Date: 2024-03-24 17:55+1000\n"
 "PO-Revision-Date: 2022-09-08 19:50+0000\n"
 "Last-Translator: Paulo Pereira <pauloizidoro@gmail.com>, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/calibre/teams/19337/pt/)\n"
@@ -23,7 +22,7 @@ msgstr ""
 #: config.py:48
 msgid "Maximum title/author search matches to evaluate (1 = fastest):"
 msgstr ""
-"Quantidade máxima de correspondências de busca título/autor a serem "
+"Quantidade máxima de correspondências de pesquisa por título/autor a serem "
 "consideradas (1 = mais rápido):"
 
 #: config.py:49
@@ -48,6 +47,6 @@ msgid ""
 "\n"
 "When unchecked (default) only the primary author(s) are returned."
 msgstr ""
-"Quando esta opção estiver marcada, todos os nomes de autores e colaboradores serão obtidos.\n"
+"Quando esta opção estiver marcada, serão obtidos todos os nomes de autores e colaboradores.\n"
 "\n"
-"Estando desmarcada (configuração padrão), somente os nomes dos autores principais serão retornados."
+"Estando desmarcada (configuração padrão), apenas os nomes dos autores principais serão captados."

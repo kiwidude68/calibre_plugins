@@ -3,7 +3,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# peter <luc@ditbenik.be>, 2022
+# peter <klm@ditbenik.be>, 2022
 # Mario Moens <marimo.it4u@gmail.com>, 2022
 # W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2022
 # M. de Boer <de.boer.melle@gmail.com>, 2023
@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 14:46+0100\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
 "Last-Translator: M. de Boer <de.boer.melle@gmail.com>, 2023\n"
 "Language-Team: Dutch (https://app.transifex.com/calibre/teams/19337/nl/)\n"
@@ -94,22 +94,22 @@ msgstr "Alle instellingen voor de plugin in deze bibliotheek zijn gewist."
 msgid "Copy to clipboard"
 msgstr "Kopieer naar klembord"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Niet gedefinieerd"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Opnieuw opstarten vereist"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Titelafbeelding niet gevonden - u moet Calibre opnieuw opstarten voordat u "
 "deze plug-in gebruikt!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Nieuwe kolom maken"
 

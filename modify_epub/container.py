@@ -855,7 +855,7 @@ class ExtendedContainer(WritableContainer):
     def remove_unused_images(self, image_names):
         '''
         Given a list of "name" objects (paths to images relative to the root)
-        look across all html content to see if the image is linked from
+        look across all html content and css content to see if the image is linked from
         anywhere and if not then remove it.
         '''
         if not image_names:
@@ -865,17 +865,57 @@ class ExtendedContainer(WritableContainer):
         missing_map = {image_name.lower() : image_name for image_name in image_names}
         #self.log('Potential missing images:', missing_map)
 
+        def get_image_base_name(resource_name):
+            try:
+                return os.path.basename(resource_name)
+            except:
+                return resource_name
+
         for html_name in self.get_html_names():
             for image_name, _orig_href, _node in self.get_page_image_names(html_name):
                 if image_name.lower() in missing_map:
                     missing_map.pop(image_name.lower())
-                if not missing_map:
+                if len(missing_map) == 0:
                     break
-            if not missing_map:
+            if len(missing_map) == 0:
                 break
 
+        if len(missing_map) > 0:
+            # Check for inline style references
+            for css_name in self.get_css_names():
+                data = self.get_raw(css_name)
+                image_keys = list(missing_map.keys())
+                for image_key in image_keys:
+                    image_name = get_image_base_name(missing_map[image_key])
+                    image_regex = re.compile(image_name, re.UNICODE | re.IGNORECASE)
+                    #self.log.info('   Scanning css for image: ', image_key, ' regex: ', image_regex)
+                    if image_regex.search(data):
+                        #self.log.info('   FOUND: ', image_name, ' in: ', css_name)
+                        missing_map.pop(image_key)
+                if len(missing_map) == 0:
+                    break
+
+        if len(missing_map):
+            # Check for meta cover references
+            cover_id_meta = self.get_meta_content_item('cover')
+            if cover_id_meta is not None:
+                cover_id = cover_id_meta.get('content', None)
+                cover_item = self.get_manifest_item_by_id(cover_id)
+                #self.log.info('   Scanning opf for cover_item: ', cover_item, 'id:', cover_id)
+                if cover_item is not None:
+                    item_href = cover_item.get('href', None)
+                    #self.log.info('   Scanning opf for cover_item with href: ', item_href)
+                    image_keys = list(missing_map.keys())
+                    for image_key in image_keys:
+                        image_name = get_image_base_name(missing_map[image_key])
+                        image_regex = re.compile(image_name, re.UNICODE | re.IGNORECASE)
+                        #self.log.info('   Scanning opf for image: ', image_key, ' regex: ', image_regex)
+                        if image_regex.search(item_href):
+                            #self.log.info('   FOUND: ', image_name, ' in: ', item_href)
+                            missing_map.pop(image_key)
+
         # Any images we have left are unreferenced so remove from ePub.
-        if missing_map:
+        if len(missing_map) > 0:
             dirtied = True
             for image_name in missing_map.values():
                 self.log('\t  Removing unused image:', image_name)

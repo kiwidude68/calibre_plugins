@@ -3,14 +3,14 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# peter <luc@ditbenik.be>, 2022
+# peter <klm@ditbenik.be>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:29+0100\n"
+"POT-Creation-Date: 2024-03-24 17:55+1000\n"
 "PO-Revision-Date: 2022-09-08 19:50+0000\n"
-"Last-Translator: peter <luc@ditbenik.be>, 2022\n"
+"Last-Translator: peter <klm@ditbenik.be>, 2022\n"
 "Language-Team: Dutch (https://app.transifex.com/calibre/teams/19337/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

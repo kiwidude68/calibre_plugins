@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 20:47+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 19:01+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
@@ -92,22 +92,22 @@ msgstr "Всі налаштування для цього плагіну в ці
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Невизначено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Потрібен перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
 " користуватися цим додатком!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
@@ -127,19 +127,19 @@ msgstr "&Налаштувати додаток"
 msgid "&Help"
 msgstr "&Довідка"
 
-#: action.py:143
+#: action.py:144
 msgid "Cannot open link"
 msgstr "Не вдалося відкрити посилання"
 
-#: action.py:144
+#: action.py:145
 msgid "This menu item has not been configured with a url."
 msgstr "Для цього пункту меню не налаштовано адреси."
 
-#: action.py:176 action.py:188
+#: action.py:185 action.py:197
 msgid "Invalid URL"
 msgstr "Некоректна адреса"
 
-#: action.py:177
+#: action.py:186
 msgid ""
 "You cannot use POST for this url as you have not specified any arguments "
 "after a ?"
@@ -147,7 +147,7 @@ msgstr ""
 "Ви не можете скористатися POST для цієї адреси, оскільки вами не було "
 "вказано жодних аргументів після a ?"
 
-#: action.py:189
+#: action.py:198
 msgid "You cannot use POST for this url as it does not have name=value for "
 msgstr ""
 "Ви не можете скористатися POST для цієї адреси, оскільки у ній немає запису "

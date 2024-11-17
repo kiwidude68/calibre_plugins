@@ -1,5 +1,28 @@
 # Extract ISBN Change Log
 
+## [1.6.5] - 2024-09-09
+### Changed
+- Implement an alternative approach to updating the ISBN metadata for books.
+
+## [1.6.4] - 2024-09-05
+### Added
+- French translation
+### Changed
+- Some matches were being rejected due to preceding text like "ISBN-13 xxx" resulting in "-13 xxx" being tested for validity rather than "xxx"
+
+## [1.6.3] - 2024-05-24
+### Changed
+- PDF scans now include the `-c -hidden` arguments for pdftohtml and remove newline characters for matches (Paul Harden)
+
+## [1.6.2] - 2024-04-07
+### Added
+- Chinese (China) translation
+### Changed
+- Use podofo rather than pdfinfo to retrieve pdf page count. Shoudl fix issues for some users having problems with pdfinfo.exe
+### Fixed
+- If an exception occurred while attempting to scan a PDF, a second exception would occur when reporting it hiding the original.
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
 ## [1.6.1] - 2024-03-17
 ### Added
 - Finnish translation

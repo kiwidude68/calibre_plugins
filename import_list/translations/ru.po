@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 20:07+0100\n"
+"POT-Creation-Date: 2024-03-24 17:48+1000\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
 "Last-Translator: ashed <craysy@gmail.com>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -92,22 +92,22 @@ msgstr "Все настройки для этого плагина в этой �
 msgid "Copy to clipboard"
 msgstr "Копировать в Буфер обмена"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Не определено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Требуется перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Изображение обложки не найдено - перед использованием нужно перезапустить "
 "calibre!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
@@ -312,7 +312,7 @@ msgstr "Пустая книга будет добавлена, если вы с�
 msgid "This book was added to your list manually"
 msgstr "Эта книга была добавлена ​​в ваш список вручную"
 
-#: models.py:147 page_resolve.py:615
+#: models.py:147 page_resolve.py:631
 msgid "Unknown"
 msgstr "Неизвестный"
 
@@ -392,7 +392,7 @@ msgstr "Файл CSV"
 msgid "Web Page"
 msgstr "Веб-страница"
 
-#: page_import.py:375 page_resolve.py:420
+#: page_import.py:375 page_resolve.py:436
 msgid "&Remove book"
 msgstr "&Удалить книгу"
 
@@ -408,7 +408,7 @@ msgstr "&Экспорт в CSV"
 msgid "Export selected books to csv file"
 msgstr "Экспортировать выбранные книги в файл csv"
 
-#: page_import.py:393 page_resolve.py:574
+#: page_import.py:393 page_resolve.py:590
 msgid "Are you sure you want to remove the selected books from the list?"
 msgstr "Вы уверены, что хотите удалить выбранные книги из списка?"
 
@@ -564,156 +564,152 @@ msgstr "Нет выбранных полей"
 msgid "Step 2: Match list of books against your library"
 msgstr "Шаг 2. Сопоставьте список книг с вашей библиотекой."
 
-#: page_resolve.py:216
-msgid "Show All"
-msgstr "Все"
-
-#: page_resolve.py:218
-msgid "Matched"
-msgstr "Совпавшие"
-
-#: page_resolve.py:219
-msgid "Unmatched"
-msgstr "Несовпавшие"
-
-#: page_resolve.py:229
-msgid "Filter by match algorithm"
-msgstr "Фильтровать по алгоритму соответствия"
-
-#: page_resolve.py:238
+#: page_resolve.py:226
 msgid "Books in list:"
 msgstr "Книги в списке:"
 
-#: page_resolve.py:240 page_resolve.py:1032 page_resolve.py:1036
+#: page_resolve.py:242
+msgid "Show All"
+msgstr "Все"
+
+#: page_resolve.py:244
+msgid "Matched"
+msgstr "Совпавшие"
+
+#: page_resolve.py:245
+msgid "Unmatched"
+msgstr "Несовпавшие"
+
+#: page_resolve.py:257 page_resolve.py:1045 page_resolve.py:1049
 msgid "Matches in library:"
 msgstr "Совпадения в библиотеке:"
 
-#: page_resolve.py:258
+#: page_resolve.py:271
 msgid "Clear the match associated with the selected books in the list"
 msgstr "Очистить совпадение, связанное с выбранными книгами в списке"
 
-#: page_resolve.py:262
+#: page_resolve.py:275
 msgid "Remove the selected books from the list"
 msgstr "Удалить выбранные книги из списка"
 
-#: page_resolve.py:266
+#: page_resolve.py:279
 msgid "Create an empty book for the selected books in the list"
 msgstr "Создать пустую книгу для выбранных книг в списке"
 
-#: page_resolve.py:270
+#: page_resolve.py:283
 msgid "Update metadata for the selected books in the list"
 msgstr "Обновить метаданные для выбранных книг в списке"
 
-#: page_resolve.py:274
+#: page_resolve.py:287
 msgid "Revert metadata for the selected books back to existing values"
 msgstr "Вернуть метаданные для выбранных книг к существующим значениям"
 
-#: page_resolve.py:283
+#: page_resolve.py:296
 msgid "Possible matches for selected book:"
 msgstr "Возможные совпадения для выбранной книги:"
 
-#: page_resolve.py:291
+#: page_resolve.py:304
 msgid "Search:"
 msgstr "Поиск:"
 
-#: page_resolve.py:293
+#: page_resolve.py:306
 msgid "&Go!"
 msgstr "&Пуск!"
 
-#: page_resolve.py:313
+#: page_resolve.py:326
 msgid "Select this book as the match for this list title"
 msgstr "Выберите эту книгу в качестве совпадения с заголовком этого списка"
 
-#: page_resolve.py:317
+#: page_resolve.py:330
 msgid "Append this book as a new item on the list"
 msgstr "Добавить эту книгу как новый элемент в список"
 
-#: page_resolve.py:417
+#: page_resolve.py:433
 msgid "&Clear match"
 msgstr "&Очистить совпадение"
 
-#: page_resolve.py:425
+#: page_resolve.py:441
 msgid "Match &empty book"
 msgstr "Совпадение с &пустой книгой"
 
-#: page_resolve.py:428
+#: page_resolve.py:444
 msgid "&Update metadata"
 msgstr "&Обновить метаданные"
 
-#: page_resolve.py:431
+#: page_resolve.py:447
 msgid "&Revert metadata"
 msgstr "&Восстановить метаданные"
 
-#: page_resolve.py:434
+#: page_resolve.py:450
 msgid "S&wap Author Names"
 msgstr "По&менять местами имя и фамилию автора"
 
-#: page_resolve.py:435
+#: page_resolve.py:451
 msgid "Swap selected author names between FN LN and LN,FN"
 msgstr ""
 "Поменять местами выбранные имена авторов с Имя Фамилия на Фамилия, Имя"
 
-#: page_resolve.py:439
+#: page_resolve.py:455
 msgid "&Search for title/author"
 msgstr "&Поиск по названию/автору"
 
-#: page_resolve.py:440
+#: page_resolve.py:456
 msgid "&Search your library using a simplified title/author of this book"
 msgstr "&Поиск в библиотеке по упрощённому названию/автору этой книги"
 
-#: page_resolve.py:442
+#: page_resolve.py:458
 msgid "Search for &title"
 msgstr "Поиск по &названию"
 
-#: page_resolve.py:443
+#: page_resolve.py:459
 msgid "&Search your library using a simplified title of this book"
 msgstr "&Поиск в библиотеке по упрощённому названию этой книги"
 
-#: page_resolve.py:445
+#: page_resolve.py:461
 msgid "Search for &author"
 msgstr "Поиск по &автору"
 
-#: page_resolve.py:446
+#: page_resolve.py:462
 msgid "&Search your library using a simplified author of this book"
 msgstr "&Поиск в библиотеке по упрощённому автору этой книги"
 
-#: page_resolve.py:466
+#: page_resolve.py:482
 msgid "&Select Book"
 msgstr "&Выбрать книгу"
 
-#: page_resolve.py:471
+#: page_resolve.py:487
 msgid "&Append to list"
 msgstr "&Добавить в список"
 
-#: page_resolve.py:562
+#: page_resolve.py:578
 msgid "*** No Match ***"
 msgstr "*** Нет совпадений ***"
 
-#: page_resolve.py:726
+#: page_resolve.py:742
 msgid "Are you sure you want to add the selected book to the list?"
 msgstr "Вы уверены, что хотите добавить выбранную книгу в список?"
 
-#: page_resolve.py:757
+#: page_resolve.py:773
 msgid "No Match"
 msgstr "Нет совпадений"
 
-#: page_resolve.py:841
+#: page_resolve.py:857
 msgid "*** Multiple Matches ***"
 msgstr "*** Несколько совпадений ***"
 
-#: page_resolve.py:866
+#: page_resolve.py:882
 msgid "Multiple Matches"
 msgstr "Несколько совпадений"
 
-#: page_resolve.py:925
+#: page_resolve.py:941
 msgid "Displaying all similar matches for this book"
 msgstr "Отображение всех похожих совпадений для этой книги"
 
-#: page_resolve.py:943
+#: page_resolve.py:959
 msgid "Search for a book in your library"
 msgstr "Поиск книги в своей библиотеке"
 
-#: page_resolve.py:1034
+#: page_resolve.py:1047
 msgid "Matches in library:(1 match)"
 msgstr "Совпадения с библиотекой: (1 совпадение)"
 
@@ -747,15 +743,15 @@ msgstr ""
 msgid "Choose a predefined named pattern"
 msgstr "Выберите предопределённый именованный шаблон"
 
-#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:304
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:306
 msgid "&Clear"
 msgstr "О&чистить"
 
-#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:305
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:307
 msgid "Clear all settings back to the defaults on this tab"
 msgstr "Сбросьте все настройки до значений по умолчанию на этой вкладке"
 
-#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:307
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:309
 msgid "&Fields"
 msgstr "&Поля"
 
@@ -763,19 +759,19 @@ msgstr "&Поля"
 msgid "Add expression for field to import"
 msgstr "Добавить выражение для поля для импорта"
 
-#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:310
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:312
 msgid "Reverse order"
 msgstr "В обратном порядке"
 
-#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:311
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:313
 msgid "Display the books in the opposite order to the source"
 msgstr "Отображать книги в порядке, обратном исходному"
 
-#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:312
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:314
 msgid "&Preview"
 msgstr "&Просмотр"
 
-#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:313
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:315
 msgid "Preview the results in the books grid"
 msgstr "Предварительный просмотр результатов в сетке книг"
 
@@ -914,7 +910,7 @@ msgstr ""
 msgid " &Columns To Import: "
 msgstr "Импортируемые &столбцы:"
 
-#: tab_csv.py:210 tab_webpage.py:308
+#: tab_csv.py:210 tab_webpage.py:310
 msgid "Select field(s) to import"
 msgstr "Выберите поля для импорта"
 
@@ -1115,15 +1111,15 @@ msgstr ""
 "Дополнительная задержка в секундах для ожидания выполнения javascript веб-"
 "страницы"
 
-#: tab_webpage.py:236
+#: tab_webpage.py:238
 msgid "Find:"
 msgstr "Искать:"
 
-#: tab_webpage.py:241
+#: tab_webpage.py:243
 msgid "&Text:"
 msgstr "&Текст:"
 
-#: tab_webpage.py:242
+#: tab_webpage.py:244
 msgid ""
 "Search for text to help locate the region of interest such as\n"
 "a book name when designing your xpath expressions"
@@ -1131,19 +1127,19 @@ msgstr ""
 "Выполните поиск текста, чтобы помочь найти интересующую область, например\n"
 "имя книги при разработке выражений xpath"
 
-#: tab_webpage.py:245
+#: tab_webpage.py:247
 msgid "Search for specific text"
 msgstr "Поиск определённого текста"
 
-#: tab_webpage.py:247
+#: tab_webpage.py:249
 msgid "&Find"
 msgstr "&Искать"
 
-#: tab_webpage.py:258
+#: tab_webpage.py:260
 msgid "XPath:"
 msgstr "XPath:"
 
-#: tab_webpage.py:263
+#: tab_webpage.py:265
 msgid ""
 "Specify XPath expressions to identify the parent rows and title / authors "
 "within each row in the source html."
@@ -1151,94 +1147,94 @@ msgstr ""
 "Укажите выражения XPath для определения родительских строк и "
 "заголовков/авторов в каждой строке исходного html."
 
-#: tab_webpage.py:284
+#: tab_webpage.py:286
 msgid "0 occurrences"
 msgstr "0 вхождений"
 
-#: tab_webpage.py:285
+#: tab_webpage.py:287
 msgid "Number of matches using Test"
 msgstr "Количество совпадений с использованием теста"
 
-#: tab_webpage.py:287
+#: tab_webpage.py:289
 msgid "Previous test result"
 msgstr "Результат предыдущего теста"
 
-#: tab_webpage.py:292
+#: tab_webpage.py:294
 msgid "Next test result"
 msgstr "Результат следующего теста"
 
-#: tab_webpage.py:356
+#: tab_webpage.py:358
 msgid "No matches"
 msgstr "Нет совпадений"
 
-#: tab_webpage.py:356
+#: tab_webpage.py:358
 msgid "No matches for:"
 msgstr "Нет совпадений для:"
 
-#: tab_webpage.py:408
+#: tab_webpage.py:410
 msgid ""
 "Identify the parent node in the html source that contains a single book"
 msgstr ""
 "Определите родительский узел в исходном HTML-коде, содержащий одну книгу"
 
-#: tab_webpage.py:451
+#: tab_webpage.py:453
 msgid "Strip: %s"
 msgstr "Вырезать: %s"
 
-#: tab_webpage.py:453
+#: tab_webpage.py:455
 msgid "Include: %s"
 msgstr "Включить: %s"
 
-#: tab_webpage.py:456
+#: tab_webpage.py:458
 msgid "No expression"
 msgstr "Нет выражения"
 
-#: tab_webpage.py:572 tab_webpage.py:573
+#: tab_webpage.py:574 tab_webpage.py:575
 msgid "Failed to download page"
 msgstr "Не удалось загрузить страницу"
 
-#: tab_webpage.py:616
+#: tab_webpage.py:618
 msgid "You must specify an xpath"
 msgstr "Вы должны указать xpath"
 
-#: tab_webpage.py:616 tab_webpage.py:623
+#: tab_webpage.py:618 tab_webpage.py:625
 msgid "Test failed"
 msgstr "Сбой теста"
 
-#: tab_webpage.py:623
+#: tab_webpage.py:625
 msgid "No html source available to match against"
 msgstr "Нет источника html для сопоставления"
 
-#: tab_webpage.py:639 tab_webpage.py:785 tab_webpage.py:787 tab_webpage.py:789
-#: tab_webpage.py:791
+#: tab_webpage.py:641 tab_webpage.py:787 tab_webpage.py:789 tab_webpage.py:791
+#: tab_webpage.py:793
 msgid "Invalid xpath"
 msgstr "Неверный xpath"
 
-#: tab_webpage.py:640
+#: tab_webpage.py:642
 msgid "Your xpath expression is invalid"
 msgstr "Ваше выражение xpath недействительно"
 
-#: tab_webpage.py:648
+#: tab_webpage.py:650
 msgid "occurrences"
 msgstr "вхождений"
 
-#: tab_webpage.py:785
+#: tab_webpage.py:787
 msgid "You have not specified any xpath expressions"
 msgstr "Вы не указали никаких выражений xpath"
 
-#: tab_webpage.py:787
+#: tab_webpage.py:789
 msgid "You have not specified a title xpath expression"
 msgstr "Вы не указали выражение заголовка xpath"
 
-#: tab_webpage.py:789
+#: tab_webpage.py:791
 msgid "You must add a series_index xpath field if using series"
 msgstr "Вы должны добавить поле xpath series_index при использовании серии"
 
-#: tab_webpage.py:791
+#: tab_webpage.py:793
 msgid "You must add a series xpath field if using series index"
 msgstr "Вы должны добавить поле xpath серии, если используете индекс серии"
 
-#: tab_webpage.py:914 tab_webpage.py:915
+#: tab_webpage.py:916 tab_webpage.py:917
 msgid "Failed to process page"
 msgstr "Не удалось обработать страницу"
 

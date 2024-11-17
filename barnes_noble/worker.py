@@ -31,6 +31,8 @@ class Worker(Thread): # Get details
         self.log, self.timeout = log, timeout
         self.relevance, self.plugin = relevance, plugin
         self.browser = browser.clone_browser()
+        self.browser.set_current_header('Accept','*/*')
+        self.browser.set_current_header('Accept-Encoding','gzip, deflate, br')
         self.cover_url = self.barnes_noble_id = self.isbn = None
 
     def run(self):

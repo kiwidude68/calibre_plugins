@@ -1,5 +1,31 @@
 # Quality Check Change Log
 
+## [1.13.16] - 2024-11-09
+### Added
+- Cover search dialog now allows searching for books with covers based on their aspect ratios.
+
+## [1.13.15] - 2024-08-05
+### Added
+- Display the count of matches in a book when finding all occurrences using 'Search ePubs'.
+
+## [1.13.14] - 2024-08-05
+### Added
+- Added a 'Suppress Fix summary dialogs' option to prevent a summary dialog showing the success/failure of the operation.
+### Fixed
+- Some of the icon sizes in the Configure dialog had larger icons.
+
+## [1.13.13] - 2024-08-02
+### Fixed
+- The 'Check unused image files' feature for ePUB now also checks inline style elements.
+
+## [1.13.12] - 2024-07-07
+### Fixed
+- The 'Check unused image files' feature for ePUB now includes CSS files and OPF files.
+
+## [1.13.11] - 2024-06-29
+### Fixed
+- The 'Check missing EBOK cdetype' feature for MOBI not correctly identifying EBOK.
+
 ## [1.13.10] - 2024-03-23
 ### Fixed
 - The 'Check corrupt zip' feature included some false-positives (#un-pogaz)

@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 18:57+0100\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
 "PO-Revision-Date: 2022-09-19 15:18+0000\n"
 "Last-Translator: Grant Drake, 2022\n"
 "Language-Team: German (https://app.transifex.com/calibre/teams/19337/de/)\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:119
+#: ..\common\common_dialogs.py:84 config.py:122
 msgid "Keyboard shortcuts"
 msgstr "Tastenkürzel"
 
@@ -99,22 +99,22 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "In Zwischenablage kopieren"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Undefiniert"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Neustart erforderlich"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Titelbild nicht gefunden - Sie müssen Calibre neu starten, bevor Sie dieses "
 "Plugin verwenden können!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Neue Spalte erstellen"
 
@@ -214,34 +214,34 @@ msgstr "Suche nicht verändern"
 msgid "Show the books that have new or updated ISBNs"
 msgstr "Zeige Bücher mit neuen oder aktualisierten ISBNs an"
 
-#: config.py:68
+#: config.py:71
 msgid "When the scan completes:"
 msgstr "Wenn der Scan abgeschlossen ist:"
 
-#: config.py:73
+#: config.py:76
 msgid "Valid prefixes for ISBN-13 (comma separated):"
 msgstr "Gültige Präfixe für ISBN-13 (durch Kommas getrennt):"
 
-#: config.py:78
+#: config.py:81
 msgid "Selected books before running as a background job:"
 msgstr "Ausgewählte Bücher vor dem Ausführen als Hintergrundjob:"
 
-#: config.py:79
+#: config.py:82
 msgid "Running as a background job is slower but is the only way to avoid\n"
 msgstr ""
 "Das Ausführen als Hintergrundjob ist langsamer, aber die einzige "
 "Möglichkeit,\n"
 
-#: config.py:80
+#: config.py:83
 msgid "memory leaks and will keep the UI more responsive."
 msgstr ""
 "Speicherlecks zu vermeiden und die Benutzeroberfläche reagiert schneller."
 
-#: config.py:89
+#: config.py:92
 msgid "Batch size running as a background job:"
 msgstr "Stapelgröße als Hintergrundjob:"
 
-#: config.py:90
+#: config.py:93
 msgid ""
 "Books will be broken into batches to ensure that if you run\n"
 "extract for a large group you can cancel/close calibre without\n"
@@ -250,22 +250,22 @@ msgstr ""
 "Bücher werden in Stapel aufgeteilt, um sicherzustellen, das Calibre beendet werden kann,\n"
 "ohne alle Ihre Ergebnisse zu verlieren, da die ausstehenden Stapel einzeln beendet werden können."
 
-#: config.py:102
+#: config.py:105
 msgid "Display failure dialog if ISBN not found or identical"
 msgstr ""
 
-#: config.py:103
+#: config.py:106
 msgid ""
 "Uncheck this option if you want do not want to be prompted\n"
 "about no ISBN being found in the book or it is the same as\n"
 "your current value."
 msgstr ""
 
-#: config.py:110
+#: config.py:113
 msgid "Prompt to apply ISBN changes"
 msgstr ""
 
-#: config.py:111
+#: config.py:114
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -277,11 +277,11 @@ msgstr ""
 "deaktivierten Option wenn Du andere Änderungen vornimmst um\n"
 "dieses Buch record zur gleichen Zeit sie werden verloren sein."
 
-#: config.py:120
+#: config.py:123
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Bearbeiten Sie die mit diesem Plugin verknüpften Tastaturkürzel"
 
-#: config.py:124
+#: config.py:127
 msgid "Help"
 msgstr ""
 

@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 15:21+0100\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
 "PO-Revision-Date: 2022-09-19 15:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
@@ -92,34 +92,34 @@ msgstr "Всі налаштування для цього плагіну в ці
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: ..\common\common_widgets.py:90
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Невизначено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Потрібен перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
 " користуватися цим додатком!"
 
-#: ..\common\common_widgets.py:192
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
-#: config.py:52
+#: config.py:50
 msgid "Other Options"
 msgstr "Інші параметри"
 
-#: config.py:60
+#: config.py:58
 msgid "If genre found in comments:"
 msgstr "Якщо жанр буде знайдено у коментарях:"
 
-#: config.py:61
+#: config.py:59
 msgid ""
 "A subset (at this time) of the books in Fantastic Fiction\n"
 "contain a hyperlinked Genre at the bottom of the comments."
@@ -127,11 +127,11 @@ msgstr ""
 "Підмножина (на цей момент) книг на Fantastic Fiction\n"
 "містить гіперпосилання на жанр у нижній частині коментарів."
 
-#: config.py:67
+#: config.py:65
 msgid "Reduce header sizes in comments"
 msgstr "Зменшувати розміри заголовків у коментарях"
 
-#: config.py:68
+#: config.py:66
 msgid ""
 "For some books the website book description uses larger heading\n"
 "tags that look out of place inside a calibre library.\n"
@@ -140,17 +140,3 @@ msgstr ""
 "В описах деяких книг використано теґи більшого розміру заголовків,\n"
 "який займає зайве місце у бібліотеці calibre.\n"
 "Позначення цього пункту зменшує розміри у теґах розмірів заголовків"
-
-#: config.py:75
-msgid "Use published date from oldest edition"
-msgstr "Використовувати дату найстарішого видання"
-
-#: config.py:76
-msgid ""
-"The year the book was first published is shown with the title. The editions "
-"include the publishing month. Select this option if you want to use the "
-"oldest edition from the year of publishing."
-msgstr ""
-"Рік першого видання буде показано разом із заголовком. Записи видання "
-"включають місяць видання. Позначте цей пункт, якщо ви хочете скористатися "
-"датою найстарішого видання з запису року видання."

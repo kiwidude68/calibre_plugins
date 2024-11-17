@@ -58,6 +58,8 @@ PREFS_KEY_SETTINGS = 'settings'
 #                        }, ...
 KEY_LISTS = 'lists'
 KEY_DEFAULT_LIST = 'default'
+KEY_QUICK_ACCESS = 'quickAccess'
+KEY_QUICK_ACCESS_LIST = 'quickAccessList'
 KEY_CONTENT = 'content'
 KEY_MODIFY_ACTION = 'modifyAction'
 KEY_TAGS_COLUMN = 'tagsColumn'
@@ -128,11 +130,15 @@ DEFAULT_LIST_VALUES = {
 
 DEFAULT_LIBRARY_VALUES = {
                           KEY_DEFAULT_LIST: 'Default',
+                          KEY_QUICK_ACCESS_LIST: 'Default',
                           KEY_LISTS: { 'Default': DEFAULT_LIST_VALUES },
                           KEY_SCHEMA_VERSION: DEFAULT_SCHEMA_VERSION
                          }
 
-DEFAULT_LIST_OPTIONS = { KEY_REMOVE_DIALOG: True }
+DEFAULT_LIST_OPTIONS = { 
+                        KEY_REMOVE_DIALOG: True,
+                        KEY_QUICK_ACCESS: False,
+                       }
 
 # This is where all preferences for this plugin will be stored
 plugin_prefs = JSONConfig('plugins/Reading List')
@@ -1150,7 +1156,7 @@ class DevicesTab(QWidget):
 
 class OtherTab(QWidget):
 
-    def __init__(self, parent_dialog):
+    def __init__(self, parent_dialog, plugin_action):
         self.parent_dialog = parent_dialog
         QWidget.__init__(self)
         layout = QVBoxLayout()
@@ -1176,6 +1182,32 @@ class OtherTab(QWidget):
         help_button.clicked.connect(show_help)
         layout.addWidget(help_button)
 
+        # -------- Quick Access configuration ---------
+        layout.addSpacing(5)
+        quick_group_box = QGroupBox(_('Quick Access Options:'), self)
+        layout.addWidget(quick_group_box)
+        quick_group_box_layout = QVBoxLayout()
+        quick_group_box.setLayout(quick_group_box_layout)
+        quick_grid_layout = QGridLayout()
+        quick_group_box_layout.addLayout(quick_grid_layout)
+
+        self.quick_access_checkbox = QCheckBox(_('Allow toolbar button click to view list'), self)
+        self.quick_access_checkbox.setToolTip(_('By default the toolbar button shows the plugin menu.\n'
+                                           'Check this option to instead display a reading list.'))
+        quick_grid_layout.addWidget(self.quick_access_checkbox, 0, 0, 1, 2)
+
+        library_config = get_library_config(plugin_action.gui.current_db)
+        self.lists = library_config[KEY_LISTS]
+        selected_list = library_config.get(KEY_QUICK_ACCESS_LIST, library_config[KEY_DEFAULT_LIST])
+        quick_list_name_label = QLabel(_('List to view:'), self)
+        self.select_quick_list_combo = ListComboBox(self, self.lists, selected_list)
+        quick_grid_layout.addWidget(quick_list_name_label, 1, 0, 1, 1)
+        quick_grid_layout.addWidget(self.select_quick_list_combo, 1, 1, 1, 1)
+        quick_grid_layout.setColumnStretch(0, 1)
+        quick_grid_layout.setColumnStretch(1, 4)
+
+        # -------- Other configuration ---------
+        layout.addSpacing(5)
         self.delete_confirmation_checkbox = QCheckBox(_('Show dialog when removing books from device'), self)
         self.delete_confirmation_checkbox.setToolTip(_('If syncing your list means books are removed from your device, then\n'
                                            'a dialog will be displayed allowing you to confirm first.\n'
@@ -1211,7 +1243,7 @@ class ConfigWidget(QWidget):
 
         self.lists_tab = ListsTab(self, plugin_action)
         self.devices_tab = DevicesTab(self, plugin_action)
-        self.other_tab = OtherTab(self)
+        self.other_tab = OtherTab(self, plugin_action)
         tab_widget.addTab(self.lists_tab, _('Lists'))
         tab_widget.addTab(self.devices_tab, _('Devices'))
         tab_widget.addTab(self.other_tab, _('Other'))
@@ -1222,6 +1254,8 @@ class ConfigWidget(QWidget):
 
         remove_dialog = plugin_prefs[STORE_OPTIONS].get(KEY_REMOVE_DIALOG, True)
         self.other_tab.delete_confirmation_checkbox.setCheckState(Qt.Checked if remove_dialog else Qt.Unchecked)
+        quick_access = plugin_prefs[STORE_OPTIONS].get(KEY_QUICK_ACCESS, False)
+        self.other_tab.quick_access_checkbox.setCheckState(Qt.Checked if quick_access else Qt.Unchecked)
 
     def connect_signals(self):
         self.plugin_action.plugin_device_connection_changed.connect(self.devices_tab.on_device_connection_changed)
@@ -1256,11 +1290,16 @@ class ConfigWidget(QWidget):
         library_config = self.lists_tab.library_config
         library_config[KEY_LISTS] = self.lists_tab.lists
         library_config[KEY_DEFAULT_LIST] = self.lists_tab.default_list
+        quick_list_name = unicode(self.other_tab.select_quick_list_combo.currentText()).strip()
+        library_config[KEY_QUICK_ACCESS_LIST] = quick_list_name
         set_library_config(self.plugin_action.gui.current_db, library_config)
 
         options = {}
         options[KEY_REMOVE_DIALOG] = self.other_tab.delete_confirmation_checkbox.checkState() == Qt.Checked
+        options[KEY_QUICK_ACCESS] = self.other_tab.quick_access_checkbox.checkState() == Qt.Checked
         plugin_prefs[STORE_OPTIONS] = options
+
+        self.plugin_action.set_popup_mode()
 
     def edit_shortcuts(self):
         self.save_settings()

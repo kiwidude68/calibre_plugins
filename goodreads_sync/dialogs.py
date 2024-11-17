@@ -433,6 +433,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
         self.pin_view = None
         self.reading_progress_column = reading_progress_column
         self.rating_column = rating_column
+        self.allow_half_star_rating = False
         self.date_read_column = date_read_column
         self.review_text_column = review_text_column
         self.create_context_menu()
@@ -479,7 +480,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
         self.setMinimumColumnWidth(5, 220)
         delegate = TextWithLengthDelegate(self, 420) # The status comment is limited to 420 characters. 
         self.setItemDelegateForColumn(5, delegate)
-        delegate = RatingDelegate(self)
+        delegate = RatingDelegate(self, is_half_star=True) if self.allow_half_star_rating else RatingDelegate(self)
         self.setItemDelegateForColumn(6, delegate)
         self.setMinimumColumnWidth(6, 80)
         delegate = DateDelegate(self)
@@ -517,6 +518,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
             self.setItem(row, 6, RatingTableWidgetItem(0, is_read_only=True))
             self.setItem(row, 7, DateTableWidgetItem(None, is_read_only=True, fmt=self.format))
             self.setItem(row, 8, NumericTableWidgetItem(''))
+        self.allow_half_star_rating = calibre_book.get('calibre_rating_allow_half_stars', False)
         
         self.setSortingEnabled(True)
         self.blockSignals(False)
@@ -786,7 +788,7 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
                                 date_read = None
                                 review_text = None
                                 if upload_rating:
-                                    rating = int(calibre_book['calibre_rating']) / 2
+                                    rating = calibre_book['calibre_rating'] / 2
                                     if rating:
                                         calibre_book['goodreads_rating'] = rating
                                 if upload_date_read:
@@ -1411,6 +1413,7 @@ class DoAddRemoveTableWidget(QTableWidget):
     def __init__(self, parent, rating_column, date_read_column, review_text_column):
         QTableWidget.__init__(self, parent)
         self.rating_column, self.date_read_column, self.review_text_column = (rating_column, date_read_column, review_text_column)
+        self.allow_half_star_rating = False
         self.create_context_menu()
         self.itemSelectionChanged.connect(self.item_selection_changed)
         self.doubleClicked.connect(self.search_for_goodreads_books_click)
@@ -1451,7 +1454,7 @@ class DoAddRemoveTableWidget(QTableWidget):
         self.setMinimumColumnWidth(1, 120)
         self.setMinimumColumnWidth(2, 120)
 
-        delegate = RatingDelegate(self)
+        delegate = RatingDelegate(self, is_half_star=True) if self.allow_half_star_rating else RatingDelegate(self)
         self.setItemDelegateForColumn(4, delegate)
         self.setMinimumColumnWidth(4, 90)
         delegate = DateDelegate(self)
@@ -1480,6 +1483,7 @@ class DoAddRemoveTableWidget(QTableWidget):
         self.setItem(row, 5, DateTableWidgetItem(calibre_book['calibre_date_read'],
                                                  is_read_only=False, default_to_today=True))
         self.setItem(row, 6, QTableWidgetItem(calibre_book['calibre_review_text']))
+        self.allow_half_star_rating = calibre_book.get('calibre_rating_allow_half_stars', False)
 
         self.setSortingEnabled(True)
         self.blockSignals(False)
@@ -1813,7 +1817,7 @@ class DoAddRemoveDialog(SizePersistedDialog):
                         date_read = None
                         review_text = None
                         if upload_rating:
-                            rating = int(calibre_book['calibre_rating'] / 2)
+                            rating = calibre_book['calibre_rating'] / 2
                             calibre_book['goodreads_rating'] = rating
                         if upload_date_read:
                             date_read = calibre_book['calibre_date_read']

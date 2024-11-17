@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 20:50+0100\n"
+"POT-Creation-Date: 2024-03-24 18:04+1000\n"
 "PO-Revision-Date: 2022-09-19 14:59+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -95,58 +95,58 @@ msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
-#: action.py:31
+#: action.py:33
 msgid "Open With"
 msgstr "Open With"
 
-#: action.py:81
+#: action.py:83
 msgid "&Customize plugin"
 msgstr "&Personalizar complemento"
 
-#: action.py:83 config.py:694
+#: action.py:85 config.py:694
 msgid "&Help"
 msgstr "&Ayuda"
 
-#: action.py:157
+#: action.py:159
 msgid "No book selected"
 msgstr "Ningún libro seleccionado"
 
-#: action.py:157 action.py:164 action.py:183 action.py:189
+#: action.py:159 action.py:166 action.py:185 action.py:191
 msgid "Cannot open with"
 msgstr "No se puede abrir con"
 
-#: action.py:164
+#: action.py:166
 msgid "Book has no cover."
 msgstr "El libro no tiene portada."
 
-#: action.py:172
+#: action.py:174
 msgid "Open With template error"
 msgstr "Error de plantilla Open With"
 
-#: action.py:184
+#: action.py:186
 msgid "No %s format available. First convert the book to %s."
 msgstr "No hay formato %s disponible. Primero convierta el libro a %s."
 
-#: action.py:190
+#: action.py:192
 msgid "Path not specified for this format in your configuration."
 msgstr "Ruta no especificada para este formato en la configuración."
 

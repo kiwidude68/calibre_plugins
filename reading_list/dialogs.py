@@ -76,7 +76,9 @@ class EditListTableWidget(QTableWidget):
         self.setSortingEnabled(False)
         self.resizeColumnsToContents()
         self.setMinimumColumnWidth(0, 100)
+        self.setMaximumColumnWidth(0, 300)
         self.setMinimumColumnWidth(1, 100)
+        self.setMaximumColumnWidth(1, 300)
         self.setMinimumSize(300, 0)
         if len(books) > 0:
             self.selectRow(0)
@@ -84,6 +86,10 @@ class EditListTableWidget(QTableWidget):
     def setMinimumColumnWidth(self, col, minimum):
         if self.columnWidth(col) < minimum:
             self.setColumnWidth(col, minimum)
+
+    def setMaximumColumnWidth(self, col, maximum):
+        if self.columnWidth(col) > maximum:
+            self.setColumnWidth(col, maximum)
 
     def populate_table_row(self, row, book):
         title_cell = ReadOnlyTableWidgetItem(book['title'])

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-02-14 02:13+1000\n"
+"POT-Creation-Date: 2024-03-24 17:57+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: Veikko Muurikainen, 2024\n"
 "Language-Team: Finnish (https://app.transifex.com/calibre/teams/19337/fi/)\n"

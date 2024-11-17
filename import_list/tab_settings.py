@@ -17,6 +17,11 @@ except ImportError:
                         QSize, QTreeWidgetItem, QListWidget, QListWidgetItem,
                         QInputDialog, QFileDialog)
 
+try:
+    AnyFile = QFileDialog.FileMode.AnyFile
+except:
+    AnyFile = QFileDialog.AnyFile
+
 from calibre.debug import iswindows
 from calibre.gui2 import (error_dialog, choose_files, open_url,
                           info_dialog, FileDialog)
@@ -248,7 +253,7 @@ class UserSettingsTab(SettingsTab):
     def _pick_archive_name_to_export(self):
         fd = FileDialog(name='Import List plugin:pick archive dialog', title=_('Save setting as'),
                         parent=self.parent_page, filters=[('Setting Files', ['zip'])],
-                        add_all_files_filter=False, mode=QFileDialog.FileMode.AnyFile)
+                        add_all_files_filter=False, mode=AnyFile)
         fd.setParent(None)
         if not fd.accepted:
             return None

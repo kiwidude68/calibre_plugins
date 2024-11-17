@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-08 15:21+0100\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
 "PO-Revision-Date: 2022-09-19 15:16+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -93,34 +93,34 @@ msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:90
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:192
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
-#: config.py:52
+#: config.py:50
 msgid "Other Options"
 msgstr "Otras opciones"
 
-#: config.py:60
+#: config.py:58
 msgid "If genre found in comments:"
 msgstr "Si se encuentra el género en los comentarios:"
 
-#: config.py:61
+#: config.py:59
 msgid ""
 "A subset (at this time) of the books in Fantastic Fiction\n"
 "contain a hyperlinked Genre at the bottom of the comments."
@@ -128,11 +128,11 @@ msgstr ""
 "Una parte (en este momento) de los libros en Fantastic Fiction\n"
 "contiene un género enlazado al final de los comentarios."
 
-#: config.py:67
+#: config.py:65
 msgid "Reduce header sizes in comments"
 msgstr "Reducir los tamaños de encabezado en los comentarios"
 
-#: config.py:68
+#: config.py:66
 msgid ""
 "For some books the website book description uses larger heading\n"
 "tags that look out of place inside a calibre library.\n"
@@ -142,17 +142,3 @@ msgstr ""
 "encabezado grandes que parecen fuera de lugar en una biblioteca\n"
 "de calibre. Si se activa esta opción los tamaños de dichas etiquetas\n"
 "de encabezado se reducirán"
-
-#: config.py:75
-msgid "Use published date from oldest edition"
-msgstr "Usar fecha de publicación de la edición más antigua"
-
-#: config.py:76
-msgid ""
-"The year the book was first published is shown with the title. The editions "
-"include the publishing month. Select this option if you want to use the "
-"oldest edition from the year of publishing."
-msgstr ""
-"El año en que el libro se publicó por primera vez se muestra con el título. "
-"Las ediciones incluyen el mes de publicación. Seleccione esta opción si "
-"quiere usar la edición más antigua según el año de publicación."

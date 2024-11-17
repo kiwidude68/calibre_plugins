@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 20:07+0100\n"
+"POT-Creation-Date: 2024-03-24 17:48+1000\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2022\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
@@ -92,22 +92,22 @@ msgstr "Всі налаштування для цього плагіну в ці
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера обміну"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Невизначено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Потрібен перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Не знайдено титульного зображення — вам слід перезапустити Calibre, перш ніж"
 " користуватися цим додатком!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
@@ -314,7 +314,7 @@ msgstr "Якщо ви збережете цей список, до бібліо�
 msgid "This book was added to your list manually"
 msgstr "Цю книгу було додано до вашого списку вручну"
 
-#: models.py:147 page_resolve.py:615
+#: models.py:147 page_resolve.py:631
 msgid "Unknown"
 msgstr "Невідомо"
 
@@ -394,7 +394,7 @@ msgstr "файл CSV"
 msgid "Web Page"
 msgstr "вебсторінка"
 
-#: page_import.py:375 page_resolve.py:420
+#: page_import.py:375 page_resolve.py:436
 msgid "&Remove book"
 msgstr "Ви&лучити книгу"
 
@@ -410,7 +410,7 @@ msgstr "&Експортувати до CSV"
 msgid "Export selected books to csv file"
 msgstr "Експортувати позначені книги до файла CSV"
 
-#: page_import.py:393 page_resolve.py:574
+#: page_import.py:393 page_resolve.py:590
 msgid "Are you sure you want to remove the selected books from the list?"
 msgstr "Ви справді хочете вилучити позначені книги зі списку?"
 
@@ -566,156 +566,152 @@ msgstr "Не вибрано жодного поля"
 msgid "Step 2: Match list of books against your library"
 msgstr "Крок 2: встановлення відповідності списку книг ваші бібліотеці"
 
-#: page_resolve.py:216
-msgid "Show All"
-msgstr "Показати усі"
-
-#: page_resolve.py:218
-msgid "Matched"
-msgstr "Відповідні"
-
-#: page_resolve.py:219
-msgid "Unmatched"
-msgstr "Невідповідні"
-
-#: page_resolve.py:229
-msgid "Filter by match algorithm"
-msgstr "Фільтрувати за алгоритмом відповідності"
-
-#: page_resolve.py:238
+#: page_resolve.py:226
 msgid "Books in list:"
 msgstr "Книги у списку:"
 
-#: page_resolve.py:240 page_resolve.py:1032 page_resolve.py:1036
+#: page_resolve.py:242
+msgid "Show All"
+msgstr "Показати усі"
+
+#: page_resolve.py:244
+msgid "Matched"
+msgstr "Відповідні"
+
+#: page_resolve.py:245
+msgid "Unmatched"
+msgstr "Невідповідні"
+
+#: page_resolve.py:257 page_resolve.py:1045 page_resolve.py:1049
 msgid "Matches in library:"
 msgstr "Відповідники у бібліотеці:"
 
-#: page_resolve.py:258
+#: page_resolve.py:271
 msgid "Clear the match associated with the selected books in the list"
 msgstr "Очистити відповідність, пов'язану із позначеними книгами у списку"
 
-#: page_resolve.py:262
+#: page_resolve.py:275
 msgid "Remove the selected books from the list"
 msgstr "Вилучити позначені книги зі списку"
 
-#: page_resolve.py:266
+#: page_resolve.py:279
 msgid "Create an empty book for the selected books in the list"
 msgstr "Створити порожню книгу для позначених книг у списку"
 
-#: page_resolve.py:270
+#: page_resolve.py:283
 msgid "Update metadata for the selected books in the list"
 msgstr "Оновити метадані для позначених книг у списку"
 
-#: page_resolve.py:274
+#: page_resolve.py:287
 msgid "Revert metadata for the selected books back to existing values"
 msgstr "Повернутися до наявних значень метаданих для позначених книг у списку"
 
-#: page_resolve.py:283
+#: page_resolve.py:296
 msgid "Possible matches for selected book:"
 msgstr "Можливі відповідники позначеної книги:"
 
-#: page_resolve.py:291
+#: page_resolve.py:304
 msgid "Search:"
 msgstr "Шукати:"
 
-#: page_resolve.py:293
+#: page_resolve.py:306
 msgid "&Go!"
 msgstr "Пере&йти!"
 
-#: page_resolve.py:313
+#: page_resolve.py:326
 msgid "Select this book as the match for this list title"
 msgstr "Позначити цю книгу як відповідник для цього заголовка списку"
 
-#: page_resolve.py:317
+#: page_resolve.py:330
 msgid "Append this book as a new item on the list"
 msgstr "Дописати цю книгу як новий пункт у списку"
 
-#: page_resolve.py:417
+#: page_resolve.py:433
 msgid "&Clear match"
 msgstr "&Очистити відповідність"
 
-#: page_resolve.py:425
+#: page_resolve.py:441
 msgid "Match &empty book"
 msgstr "Відповідність &порожній книзі"
 
-#: page_resolve.py:428
+#: page_resolve.py:444
 msgid "&Update metadata"
 msgstr "&Оновити метадані"
 
-#: page_resolve.py:431
+#: page_resolve.py:447
 msgid "&Revert metadata"
 msgstr "&Відновити метадані"
 
-#: page_resolve.py:434
+#: page_resolve.py:450
 msgid "S&wap Author Names"
 msgstr "По&міняти місцями частини імені автора"
 
-#: page_resolve.py:435
+#: page_resolve.py:451
 msgid "Swap selected author names between FN LN and LN,FN"
 msgstr ""
 "Поміняти місцями у записах авторів «Ім'я Прізвище» на «Прізвище, Ім'я»"
 
-#: page_resolve.py:439
+#: page_resolve.py:455
 msgid "&Search for title/author"
 msgstr "&Шукати назву/автора"
 
-#: page_resolve.py:440
+#: page_resolve.py:456
 msgid "&Search your library using a simplified title/author of this book"
 msgstr "&Шукати цю книгу у вашій бібліотеці за спрощеним записом назва/автор"
 
-#: page_resolve.py:442
+#: page_resolve.py:458
 msgid "Search for &title"
 msgstr "Шукати за &назвою"
 
-#: page_resolve.py:443
+#: page_resolve.py:459
 msgid "&Search your library using a simplified title of this book"
 msgstr "&Шукати цю книгу у вашій бібліотеці за спрощеним записом назви"
 
-#: page_resolve.py:445
+#: page_resolve.py:461
 msgid "Search for &author"
 msgstr "Шукати за &автором"
 
-#: page_resolve.py:446
+#: page_resolve.py:462
 msgid "&Search your library using a simplified author of this book"
 msgstr "&Шукати цю книгу у вашій бібліотеці за спрощеним записом автора"
 
-#: page_resolve.py:466
+#: page_resolve.py:482
 msgid "&Select Book"
 msgstr "Поз&начити книгу"
 
-#: page_resolve.py:471
+#: page_resolve.py:487
 msgid "&Append to list"
 msgstr "Д&описати до списку"
 
-#: page_resolve.py:562
+#: page_resolve.py:578
 msgid "*** No Match ***"
 msgstr "*** Немає відповідників ***"
 
-#: page_resolve.py:726
+#: page_resolve.py:742
 msgid "Are you sure you want to add the selected book to the list?"
 msgstr "Ви справді хочете додати позначену книгу до списку?"
 
-#: page_resolve.py:757
+#: page_resolve.py:773
 msgid "No Match"
 msgstr "Немає відповідників"
 
-#: page_resolve.py:841
+#: page_resolve.py:857
 msgid "*** Multiple Matches ***"
 msgstr "*** Декілька відповідників ***"
 
-#: page_resolve.py:866
+#: page_resolve.py:882
 msgid "Multiple Matches"
 msgstr "Декілька відповідників"
 
-#: page_resolve.py:925
+#: page_resolve.py:941
 msgid "Displaying all similar matches for this book"
 msgstr "Показати усі подібні відповідники для цієї книги"
 
-#: page_resolve.py:943
+#: page_resolve.py:959
 msgid "Search for a book in your library"
 msgstr "Шукати книгу у вашій бібліотеці"
 
-#: page_resolve.py:1034
+#: page_resolve.py:1047
 msgid "Matches in library:(1 match)"
 msgstr "Відповідники у бібліотеці: (1 відповідник)"
 
@@ -750,15 +746,15 @@ msgstr ""
 msgid "Choose a predefined named pattern"
 msgstr "Виберіть попередньо визначений іменований взірець"
 
-#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:304
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:306
 msgid "&Clear"
 msgstr "Сп&орожнити"
 
-#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:305
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:307
 msgid "Clear all settings back to the defaults on this tab"
 msgstr "Повернути усім параметрам на цій вкладці типові значення"
 
-#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:307
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:309
 msgid "&Fields"
 msgstr "По&ля"
 
@@ -766,19 +762,19 @@ msgstr "По&ля"
 msgid "Add expression for field to import"
 msgstr "Додайте вираз для полів, які слід імпортувати"
 
-#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:310
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:312
 msgid "Reverse order"
 msgstr "Зворотний порядок"
 
-#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:311
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:313
 msgid "Display the books in the opposite order to the source"
 msgstr "Показати книги у протилежному порядку щодо джерела"
 
-#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:312
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:314
 msgid "&Preview"
 msgstr "&Перегляд"
 
-#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:313
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:315
 msgid "Preview the results in the books grid"
 msgstr "Переглянути результати у таблиці книг"
 
@@ -918,7 +914,7 @@ msgstr ""
 msgid " &Columns To Import: "
 msgstr " С&товпчики для імпортування: "
 
-#: tab_csv.py:210 tab_webpage.py:308
+#: tab_csv.py:210 tab_webpage.py:310
 msgid "Select field(s) to import"
 msgstr "Виберіть поля для імпортування"
 
@@ -1122,15 +1118,15 @@ msgstr ""
 "Додаткова затримка очікування у секундах на виконання коду javascript "
 "вебсторінки"
 
-#: tab_webpage.py:236
+#: tab_webpage.py:238
 msgid "Find:"
 msgstr "Знайти:"
 
-#: tab_webpage.py:241
+#: tab_webpage.py:243
 msgid "&Text:"
 msgstr "&Текст:"
 
-#: tab_webpage.py:242
+#: tab_webpage.py:244
 msgid ""
 "Search for text to help locate the region of interest such as\n"
 "a book name when designing your xpath expressions"
@@ -1138,19 +1134,19 @@ msgstr ""
 "Шукати текст для спрощення визначення потрібного місця, зокрема\n"
 "назви книги, при створенні ваших виразів xpath"
 
-#: tab_webpage.py:245
+#: tab_webpage.py:247
 msgid "Search for specific text"
 msgstr "Шукати вказаний текст"
 
-#: tab_webpage.py:247
+#: tab_webpage.py:249
 msgid "&Find"
 msgstr "&Знайти"
 
-#: tab_webpage.py:258
+#: tab_webpage.py:260
 msgid "XPath:"
 msgstr "XPath:"
 
-#: tab_webpage.py:263
+#: tab_webpage.py:265
 msgid ""
 "Specify XPath expressions to identify the parent rows and title / authors "
 "within each row in the source html."
@@ -1158,94 +1154,94 @@ msgstr ""
 "Вкажіть вирази XPath для виявлення батьківських рядків та записів назви / "
 "авторів у кожному з рядків початкового коду html."
 
-#: tab_webpage.py:284
+#: tab_webpage.py:286
 msgid "0 occurrences"
 msgstr "0 відповідників"
 
-#: tab_webpage.py:285
+#: tab_webpage.py:287
 msgid "Number of matches using Test"
 msgstr "Кількість відповідників, де використано перевірку"
 
-#: tab_webpage.py:287
+#: tab_webpage.py:289
 msgid "Previous test result"
 msgstr "Попередній результат перевірки"
 
-#: tab_webpage.py:292
+#: tab_webpage.py:294
 msgid "Next test result"
 msgstr "Наступний результат перевірки"
 
-#: tab_webpage.py:356
+#: tab_webpage.py:358
 msgid "No matches"
 msgstr "Немає відповідників"
 
-#: tab_webpage.py:356
+#: tab_webpage.py:358
 msgid "No matches for:"
 msgstr "Немає відповідників:"
 
-#: tab_webpage.py:408
+#: tab_webpage.py:410
 msgid ""
 "Identify the parent node in the html source that contains a single book"
 msgstr ""
 "Виявити батьківський вузол у коді html, який містить дані однієї книги"
 
-#: tab_webpage.py:451
+#: tab_webpage.py:453
 msgid "Strip: %s"
 msgstr "Обрізати: %s"
 
-#: tab_webpage.py:453
+#: tab_webpage.py:455
 msgid "Include: %s"
 msgstr "Включити: %s"
 
-#: tab_webpage.py:456
+#: tab_webpage.py:458
 msgid "No expression"
 msgstr "Немає виразу"
 
-#: tab_webpage.py:572 tab_webpage.py:573
+#: tab_webpage.py:574 tab_webpage.py:575
 msgid "Failed to download page"
 msgstr "Не вдалося отримати сторінку"
 
-#: tab_webpage.py:616
+#: tab_webpage.py:618
 msgid "You must specify an xpath"
 msgstr "Вам слід вказати xpath"
 
-#: tab_webpage.py:616 tab_webpage.py:623
+#: tab_webpage.py:618 tab_webpage.py:625
 msgid "Test failed"
 msgstr "Перевірку не пройдено"
 
-#: tab_webpage.py:623
+#: tab_webpage.py:625
 msgid "No html source available to match against"
 msgstr "Немає початкового коду html для встановлення відповідності"
 
-#: tab_webpage.py:639 tab_webpage.py:785 tab_webpage.py:787 tab_webpage.py:789
-#: tab_webpage.py:791
+#: tab_webpage.py:641 tab_webpage.py:787 tab_webpage.py:789 tab_webpage.py:791
+#: tab_webpage.py:793
 msgid "Invalid xpath"
 msgstr "Некоректне значення XPath"
 
-#: tab_webpage.py:640
+#: tab_webpage.py:642
 msgid "Your xpath expression is invalid"
 msgstr "Ваш вираз xpath є некоректним"
 
-#: tab_webpage.py:648
+#: tab_webpage.py:650
 msgid "occurrences"
 msgstr "відповідників"
 
-#: tab_webpage.py:785
+#: tab_webpage.py:787
 msgid "You have not specified any xpath expressions"
 msgstr "Вами не вказано жодних виразів xpath"
 
-#: tab_webpage.py:787
+#: tab_webpage.py:789
 msgid "You have not specified a title xpath expression"
 msgstr "Вами не вказано виразу xpath для назви"
 
-#: tab_webpage.py:789
+#: tab_webpage.py:791
 msgid "You must add a series_index xpath field if using series"
 msgstr "Вам слід додати поле xpath series_index, якщо використано цикли"
 
-#: tab_webpage.py:791
+#: tab_webpage.py:793
 msgid "You must add a series xpath field if using series index"
 msgstr "Вам слід додати поле xpath для циклу, якщо використано номер у циклі"
 
-#: tab_webpage.py:914 tab_webpage.py:915
+#: tab_webpage.py:916 tab_webpage.py:917
 msgid "Failed to process page"
 msgstr "Не вдалося обробити сторінку"
 

@@ -39,7 +39,8 @@ PLUGIN_ICONS = ['images/reading_list.png', 'images/device.png',
                 'images/device_connected.png', 'images/book_sync.png',
                 'images/arrow_down_double.png', 'images/arrow_down_double_bar.png',
                 'images/arrow_down_single.png', 'images/arrow_up_double.png',
-                'images/arrow_up_double_bar.png', 'images/arrow_up_single.png']
+                'images/arrow_up_double_bar.png', 'images/arrow_up_single.png',
+                'images/plusminus.png']
 
 class ReadingListAction(InterfaceAction):
 
@@ -71,11 +72,14 @@ class ReadingListAction(InterfaceAction):
         # Assign our menu to this action and an icon
         self.qaction.setMenu(self.menu)
         self.qaction.setIcon(get_icon(PLUGIN_ICONS[0]))
+        self.qaction.triggered.connect(self._view_quick_access_list)
         self.menu.aboutToShow.connect(self.about_to_show_menu)
 
     def initialization_complete(self):
         self.connected_device_info = None
         self.view_list_name = None
+
+        self.set_popup_mode()
         self.rebuild_menus()
         # Subscribe to device connection events
         device_signals.device_connection_changed.connect(self._on_device_connection_changed)
@@ -84,6 +88,18 @@ class ReadingListAction(InterfaceAction):
         self.gui.search.cleared.connect(self.restore_state)
         self.gui.search.changed.connect(self.restore_state)
 
+    def set_popup_mode(self):
+        quick_access = cfg.plugin_prefs[cfg.STORE_OPTIONS].get(cfg.KEY_QUICK_ACCESS, False)
+        if quick_access:
+            self.popup_type = QToolButton.MenuButtonPopup
+        else:
+            self.popup_type = QToolButton.InstantPopup
+        for bar in self.gui.bars_manager.bars:
+            w = bar.widgetForAction(self.qaction)
+            if w is not None:
+                w.setPopupMode(self.popup_type)
+                w.update()
+    
     def save_state(self):
         # Backup sort history
         self.sort_history = self.gui.library_view.get_state().get('sort_history', [])
@@ -202,7 +218,7 @@ class ReadingListAction(InterfaceAction):
             std_name = _('Remove from default list')
             unq_name = 'Remove from default list'
             if is_default_list_manual:
-                self.remove_action = create_menu_action_unique(self, m, std_name,
+                self.remove_action = create_menu_action_unique(self, m, _('Remove from %s list') % default_list_name,
                                                          image='minus.png', unique_name=unq_name,
                                                          shortcut_name=std_name, favourites_menu_unique_name=std_name,
                                                          triggered=partial(self._remove_selected_from_list, default_list_name))
@@ -220,6 +236,25 @@ class ReadingListAction(InterfaceAction):
                                                              image='minus.png',
                                                              unique_name='Remove from all lists',
                                                              triggered=self._remove_selected_from_all_lists)
+
+            m.addSeparator()
+            std_name = _('Toggle on default list')
+            unq_name = 'Toggle on default list'
+            if is_default_list_manual:
+                self.toggle_action = create_menu_action_unique(self, m, std_name,
+                                                         image=get_icon('images/plusminus.png'), unique_name=unq_name,
+                                                         shortcut_name=std_name, favourites_menu_unique_name=std_name,
+                                                         triggered=partial(self._toggle_selected_on_list, default_list_name))
+            if show_sub_menus:
+                self.toggle_sub_menu = m.addMenu(get_icon('images/plusminus.png'), _('Toggle on list'))
+                self.toggle_sub_menu.setStatusTip(_('Toggle on the specified list'))
+                for list_name in list_names:
+                    std_name = _('Toggle on the "%s" list') % list_name
+                    unq_name = 'Toggle on the "%s" list' % list_name
+                    create_menu_action_unique(self, self.toggle_sub_menu, list_name,
+                                        tooltip=std_name, unique_name=unq_name, shortcut_name=std_name,
+                                        favourites_menu_unique_name=_('Toggle on list: %s') % list_name,
+                                        triggered=partial(self._toggle_selected_on_list, list_name))
 
             m.addSeparator()
             list_content = library[cfg.KEY_LISTS][default_list_name][cfg.KEY_CONTENT]
@@ -353,10 +388,10 @@ class ReadingListAction(InterfaceAction):
                     self.sync_now_action.setText(_('Sync Now (%d)') % sync_total)
 
             self.gui.keyboard.finalize()
-
+            
     def about_to_show_menu(self):
         self.rebuild_menus()
-
+       
     def _add_selected_to_list(self, list_name):
         if list_name is None:
             return error_dialog(self.gui, _('Cannot add to list'),
@@ -429,6 +464,17 @@ class ReadingListAction(InterfaceAction):
             return
         selected_ids = self.gui.library_view.get_selected_ids()
         self.remove_books_from_all_lists(selected_ids)
+       
+    def _toggle_selected_on_list(self, list_name):
+        if list_name is None:
+            return error_dialog(self.gui, _('Cannot toggle on list'),
+                                _('No list name specified'), show=True)
+
+        rows = self.gui.library_view.selectionModel().selectedRows()
+        if not rows or len(rows) == 0:
+            return
+        selected_ids = self.gui.library_view.get_selected_ids()
+        self.toggle_books_on_list(list_name, selected_ids, refresh_screen=True)
 
     def _move_selected_to_list(self):
         rows = self.gui.library_view.selectionModel().selectedRows()
@@ -464,6 +510,13 @@ class ReadingListAction(InterfaceAction):
             return
         self.clear_list(list_name)
 
+    def _view_quick_access_list(self):
+        library = cfg.get_library_config(self.gui.current_db)
+        list_name = library.get(cfg.KEY_QUICK_ACCESS_LIST, 'Default')
+        if list_name == 'Default':
+            list_name = library.get(cfg.KEY_DEFAULT_LIST, None)
+        if list_name:
+            self.view_list(list_name)
 
     def get_list_names(self, exclude_auto=True):
         '''
@@ -482,11 +535,57 @@ class ReadingListAction(InterfaceAction):
         '''
         return cfg.get_book_list(self.gui.current_db, list_name)
 
+    def toggle_books_on_list(self, list_name, book_id_list, refresh_screen=True, display_warnings=True):
+        '''
+        This method is designed to be called from other plugins
+        list_name - must be a valid list name
+        book_id_list - list of calibre book ids to be added if not on list otherwise removed
+        refresh_screen - indicates whether to refresh the book details displayed in library view
+        display_warnings - option to suppress any error/warning dialogs if books already on list
+        '''
+        if refresh_screen:
+            previous = self.gui.library_view.currentIndex()
+        db = self.gui.current_db
+
+        with self.sync_lock:
+            book_ids = cfg.get_book_list(db, list_name)
+            id_map = OrderedDict([(book_id, True) for book_id in book_ids])
+            new_ids = []
+            removed_ids = []
+            for calibre_id in book_id_list:
+                if calibre_id not in id_map:
+                    new_ids.append(calibre_id)
+                    book_ids.append(calibre_id)
+                else:
+                    removed_ids.append(calibre_id)
+                    book_ids.remove(calibre_id)
+
+            cfg.set_book_list(db, list_name, book_ids)
+
+            # Add /remove tags to the books if necessary
+            any_tags_changed = False
+            if new_ids:
+                any_tags_changed |= self.apply_tags_to_list(list_name, new_ids, add=True)
+            if removed_ids:
+                any_tags_changed |= self.apply_tags_to_list(list_name, removed_ids, add=False)
+            changed_series_id_list = self.update_series_custom_column(list_name, book_ids)
+
+            if refresh_screen:
+                message = _('Added %d books, removed %d books on your %s list') % (len(new_ids), len(removed_ids), list_name)
+                self.gui.status_bar.showMessage(message, 3000)
+                if any_tags_changed:
+                    refresh_book_ids = set(changed_series_id_list).union(set(book_id_list))
+                    self.gui.library_view.model().refresh_ids(refresh_book_ids)
+                    current = self.gui.library_view.currentIndex()
+                    self.gui.library_view.model().current_changed(current, previous)
+                    self.gui.tags_view.recount()
+            return True
+
     def add_books_to_list(self, list_name, book_id_list, refresh_screen=True, display_warnings=True):
         '''
         This method is designed to be called from other plugins
         list_name - must be a valid list name
-        book_id_list - should be a list of calibre book ids to be added
+        book_id_list - list of calibre book ids to be added
         refresh_screen - indicates whether to refresh the book details displayed in library view
         display_warnings - option to suppress any error/warning dialogs if books already on list
         '''
@@ -512,7 +611,7 @@ class ReadingListAction(InterfaceAction):
             cfg.set_book_list(db, list_name, book_ids)
 
             # Add tags to the books if necessary
-            any_tags_changed = self.apply_tags_to_list(list_name, book_ids, add=True)
+            any_tags_changed = self.apply_tags_to_list(list_name, new_ids, add=True)
             changed_series_id_list = self.update_series_custom_column(list_name, book_ids)
 
             if refresh_screen:
@@ -529,7 +628,7 @@ class ReadingListAction(InterfaceAction):
     def add_books_to_all_lists(self, book_id_list, refresh_screen=True):
         '''
         This method is designed to be called from other plugins
-        book_id_list - should be a list of calibre book ids to be added
+        book_id_list - list of calibre book ids to be added
         refresh_screen - indicates whether to refresh the book details displayed in library view
         '''
         if refresh_screen:

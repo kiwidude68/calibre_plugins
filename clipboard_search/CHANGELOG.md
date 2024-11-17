@@ -1,8 +1,14 @@
 # Clipboard Search Change Log
 
-## [1.5.0] - 2024-03-24
+## [1.5.1] - 2024-04-03
+### Fixed
+- Default click action had typo from author search refactoring.
+
+## [1.5.0] - 2024-03-30
 ### Added
 - Add an Author search option (kacir)
+### Fixed
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
 
 ## [1.4.1] - 2024-03-17
 ### Added

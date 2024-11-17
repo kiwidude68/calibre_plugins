@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Andrii M. <dexteritymaster@gmail.com>, 2022
-# Yuri Chornoivan <yurchor@ukr.net>, 2023
+# Yuri Chornoivan <yurchor@ukr.net>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-12-23 21:11+1000\n"
+"POT-Creation-Date: 2024-08-05 20:03+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2023\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2024\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:329
+#: ..\common\common_dialogs.py:84 config.py:337
 msgid "Keyboard shortcuts"
 msgstr "Клавіатурні скорочення"
 
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Create new column"
 msgstr "Створити стовпчик"
 
-#: action.py:38 check_base.py:62 check_covers.py:112 check_fix.py:361
+#: action.py:38 check_base.py:62 check_covers.py:112 check_fix.py:374
 msgid "Quality Check"
 msgstr "Перевірка якості"
 
@@ -178,7 +178,7 @@ msgstr "Переглянути виключення, які було додан�
 msgid "&Customize plugin"
 msgstr "&Налаштувати додаток"
 
-#: action.py:156 config.py:339
+#: action.py:156 config.py:347
 msgid "&Help"
 msgstr "&Довідка"
 
@@ -240,8 +240,8 @@ msgstr "Перевірено %d книг, знайдено %d відповідн
 msgid "No matches found"
 msgstr "Відповідників не знайдено"
 
-#: check_covers.py:109 check_fix.py:206 check_metadata.py:172
-#: check_metadata.py:205 check_metadata.py:267 check_metadata.py:330
+#: check_covers.py:109 check_metadata.py:172 check_metadata.py:205
+#: check_metadata.py:267 check_metadata.py:330
 msgid "No Matches%s"
 msgstr "Немає відповідників%s"
 
@@ -285,8 +285,8 @@ msgstr "У жодній з книг ePub не виявлено шуканого 
 msgid "ePub books for search text"
 msgstr "Книги ePub на пошук тексту"
 
-#: check_epub.py:302 check_epub.py:342 check_epub.py:390 check_epub.py:608
-#: check_epub.py:678
+#: check_epub.py:302 check_epub.py:342 check_epub.py:390 check_epub.py:667
+#: check_epub.py:741
 msgid "ERROR: EPUB format is missing: "
 msgstr "ПОМИЛКА: немає формату EPUB: "
 
@@ -346,7 +346,7 @@ msgstr "У жодній з книг ePub немає файлів поза ман
 msgid "ePub books for unmanifested files"
 msgstr "Книги ePub на файли поза маніфестом"
 
-#: check_epub.py:547 check_epub.py:614 check_epub.py:684
+#: check_epub.py:547 check_epub.py:673 check_epub.py:747
 msgid "SKIPPING BOOK (DRM Encrypted): "
 msgstr "ПРОПУСКАЄМО КНИГУ (зашифровано DRM): "
 
@@ -366,357 +366,357 @@ msgstr "У жодній з книг ePub немає файлів з невико
 msgid "ePub books for unused CSS files"
 msgstr "Книги ePub на невикористані файли CSS"
 
-#: check_epub.py:629
+#: check_epub.py:691
 msgid "\tIssue with image name: "
 msgstr "\tПроблема із назвою зображення: "
 
-#: check_epub.py:653
-msgid "\tUnused image file: %s"
-msgstr "\tНевикористаний файл зображення: %s"
+#: check_epub.py:716
+msgid "\tUNUSED image file: %s"
+msgstr "\tНЕВИКОРИСТАНИЙ файл зображення: %s"
 
-#: check_epub.py:666
+#: check_epub.py:729
 msgid "No searched ePub books have unused image files"
 msgstr "У жодній з книг ePub немає файлів з невикористаними файлами зображень"
 
-#: check_epub.py:668
+#: check_epub.py:731
 msgid "ePub books for unused image files"
 msgstr "Книги ePub на невикористані файли зображень"
 
-#: check_epub.py:723
+#: check_epub.py:786
 msgid "\tBroken image link in:"
 msgstr "\tПомилкове посилання на зображення у:"
 
-#: check_epub.py:723
+#: check_epub.py:786
 msgid " of "
 msgstr " з "
 
-#: check_epub.py:735
+#: check_epub.py:798
 msgid "No searched ePub books have broken image links"
 msgstr "У жодній з книг ePub немає помилкових посилань на зображення"
 
-#: check_epub.py:737
+#: check_epub.py:800
 msgid "ePub books for broken image links"
 msgstr "Книги ePub на помилкові посилання на зображення"
 
-#: check_epub.py:780
+#: check_epub.py:843
 msgid "No searched ePub books have "
 msgstr "У жодній з книг ePub не виявлено "
 
-#: check_epub.py:782
+#: check_epub.py:845
 msgid "ePub books for "
 msgstr "Книги ePub на "
 
-#: check_epub.py:814
+#: check_epub.py:877
 msgid "No OPF file in:"
 msgstr "Тут немає файла OPF:"
 
-#: check_epub.py:819
+#: check_epub.py:882
 msgid "No supported meta tag or non-xml cover in:"
 msgstr "Тут не виявлено підтримуваного метатеґу або обкладинки xml:"
 
-#: check_epub.py:824
+#: check_epub.py:887
 msgid "DRM Encrypted cover in:"
 msgstr "Тут зашифрована DRM обкладинка:"
 
-#: check_epub.py:829
+#: check_epub.py:892
 msgid "Invalid cover image extension (%s) in:"
 msgstr "Тут некоректний суфікс назви зображення обкладинки (%s):"
 
-#: check_epub.py:842
+#: check_epub.py:905
 msgid "No searched ePub books have replaceable covers"
 msgstr "У жодній з книг ePub не виявлено придатних до заміни обкладинок"
 
-#: check_epub.py:845
+#: check_epub.py:908
 msgid "All searched ePub books have replaceable covers"
 msgstr "В усіх книгах ePub виявлено придатні до заміни обкладинки"
 
-#: check_epub.py:849
+#: check_epub.py:912
 msgid "ePub books for replaceable covers"
 msgstr "Книги ePub на придатні до заміни обкладинками"
 
-#: check_epub.py:885
+#: check_epub.py:948
 msgid "No searched ePub books have calibre SVG covers embedded"
 msgstr "У жодній з книг ePub не виявлено вбудованих calibre обкладинок SVG"
 
-#: check_epub.py:888
+#: check_epub.py:951
 msgid "All searched ePub books have calibre SVG covers embedded"
 msgstr "В усіх книгах ePub обкладинки SVG calibre вбудовано"
 
-#: check_epub.py:892
+#: check_epub.py:955
 msgid "ePub books for calibre SVG covers"
 msgstr "Книги ePub на обкладинки SVG calibre"
 
-#: check_epub.py:929
+#: check_epub.py:992
 msgid "No searched ePub books have calibre covers embedded"
 msgstr "У жодній з книг ePub не виявлено вбудованих calibre обкладинок"
 
-#: check_epub.py:932
+#: check_epub.py:995
 msgid "All searched ePub books have calibre covers embedded"
 msgstr "В усіх книгах ePub обкладинки calibre вбудовано"
 
-#: check_epub.py:936
+#: check_epub.py:999
 msgid "ePub books for calibre covers"
 msgstr "Книги ePub на обкладинки calibre"
 
-#: check_epub.py:965
+#: check_epub.py:1028
 msgid "No searched ePub books have been converted by calibre"
 msgstr "У жодній з книг ePub не було перетворено calibre"
 
-#: check_epub.py:968
+#: check_epub.py:1031
 msgid "All searched ePub books have been converted by calibre"
 msgstr "Усі книги ePub було перетворено calibre"
 
-#: check_epub.py:972
+#: check_epub.py:1035
 msgid "ePub books for calibre conversions"
 msgstr "Книги ePub на перетвореннями calibre"
 
-#: check_epub.py:992
+#: check_epub.py:1063
 msgid "All searched ePub books have a valid zip format"
 msgstr "Усі книги ePub мають коректний формат zip"
 
-#: check_epub.py:994
+#: check_epub.py:1065
 msgid "ePub books for corrupted zip format"
 msgstr "Книги ePub для пошкодженого формату zip"
 
-#: check_epub.py:1019
+#: check_epub.py:1090
 msgid "All searched ePub books have a valid container.xml file"
 msgstr "У всіх книгах ePub є коректний файл container.xml"
 
-#: check_epub.py:1021
+#: check_epub.py:1092
 msgid "ePub books for missing container.xml"
 msgstr "Книги ePub із пропущеним container.xml"
 
-#: check_epub.py:1037
+#: check_epub.py:1108
 msgid "\tMissing container.xml file in"
 msgstr "\tПропущено файл container.xml у"
 
-#: check_epub.py:1042
+#: check_epub.py:1113
 msgid "\tIncorrect container.xml namespace in"
 msgstr "\tПомилковий простір назв container.xml у"
 
-#: check_epub.py:1049
+#: check_epub.py:1120
 msgid "\tIncorrect .opf manifest namespace in"
 msgstr "\tПомилковий простір назв маніфесту .opf у"
 
-#: check_epub.py:1059
+#: check_epub.py:1130
 msgid "All searched ePub books have valid namespaces"
 msgstr "У всіх книгах ePub простори назв є коректними"
 
-#: check_epub.py:1061
+#: check_epub.py:1132
 msgid "ePub books for namespaces check"
 msgstr "Книги ePub для перевірки просторів назв"
 
-#: check_epub.py:1098
+#: check_epub.py:1169
 msgid "All searched ePub books have only dc: elements in manifest"
 msgstr "Усі книги ePub мають лише елементи dc: у маніфесті"
 
-#: check_epub.py:1100
+#: check_epub.py:1171
 msgid "ePub books for non dc: metadata check"
 msgstr "Книги ePub на метадані поза dc:"
 
-#: check_epub.py:1122
+#: check_epub.py:1193
 msgid "Manifest file missing from: <b>%s</b>"
 msgstr "Не знайдено файла маніфесту у: <b>%s</b>"
 
-#: check_epub.py:1136
+#: check_epub.py:1207
 msgid "All searched ePub books have a valid opf manifest"
 msgstr "Усі книги ePub мають коректний маніфест opf"
 
-#: check_epub.py:1138
+#: check_epub.py:1209
 msgid "ePub books for missing files in opf"
 msgstr "Книги ePub із пропущеними файлами в opf"
 
-#: check_epub.py:1163 check_epub.py:1202
+#: check_epub.py:1234 check_epub.py:1273
 msgid "Ignoring DRM protected ePub: "
 msgstr "Ігноруємо захищені DRM ePub: "
 
-#: check_epub.py:1176
+#: check_epub.py:1247
 msgid "All searched ePub books have a flattened NCX TOC"
 msgstr "У всіх книгах ePub є спрощену таблицю змісту NCX"
 
-#: check_epub.py:1178
+#: check_epub.py:1249
 msgid "ePub books for NCX TOC hierarchy"
 msgstr "Книги ePub на ієрархію змісту NCX"
 
-#: check_epub.py:1222
+#: check_epub.py:1293
 msgid "All searched ePub books have a NCX TOC with at least 3 items"
 msgstr "У всіх книгах ePub є таблицю змісту NCX з принаймні 3 пунктів"
 
-#: check_epub.py:1224
+#: check_epub.py:1295
 msgid "ePub books for NCX TOC count"
 msgstr "Книги ePub на облік змісту NCX"
 
-#: check_epub.py:1279
+#: check_epub.py:1350
 msgid "All searched ePub books have a NCX TOC with valid links"
 msgstr "Усі книги ePub мають зміст NCX із коректними посиланнями"
 
-#: check_epub.py:1281
+#: check_epub.py:1352
 msgid "ePub books for broken NCX TOC links"
 msgstr "Книги ePub на помилкові посилання змісту NCX"
 
-#: check_epub.py:1324
+#: check_epub.py:1395
 msgid "All searched ePub books have valid guide entries"
 msgstr "У всіх книгах ePub записи путівника є коректними"
 
-#: check_epub.py:1326
+#: check_epub.py:1397
 msgid "ePub books for broken guide links"
 msgstr "Книги ePub на помилкові посилання путівника"
 
-#: check_epub.py:1360
+#: check_epub.py:1431
 msgid "No searched ePub books have oversize html files"
 msgstr "У жодній з книг ePub немає файлів HTML із надмірним розміром"
 
-#: check_epub.py:1362
+#: check_epub.py:1433
 msgid "ePub books for oversize html files"
 msgstr "Книги ePub на файли html надмірного розміру"
 
-#: check_epub.py:1387
+#: check_epub.py:1458
 msgid "No searched ePub books have DRM"
 msgstr "У жодній з книг ePub не виявлено DRM"
 
-#: check_epub.py:1389
+#: check_epub.py:1460
 msgid "ePub books for DRM"
 msgstr "Книги ePub на DRM"
 
-#: check_epub.py:1421
+#: check_epub.py:1492
 msgid "No searched ePub books have Adobe DRM meta tags"
 msgstr "У жодній з книг ePub не виявлено метаміток DRM Adobe"
 
-#: check_epub.py:1423
+#: check_epub.py:1494
 msgid "ePub books for Adobe DRM meta tags"
 msgstr "Книги ePub на метамітки DRM Adobe"
 
-#: check_epub.py:1455
+#: check_epub.py:1526
 msgid "No searched ePub books have \\<address\\> smart tags"
 msgstr "У жодній з книг ePub не виявлено смартміток \\<address\\>"
 
-#: check_epub.py:1457
+#: check_epub.py:1528
 msgid "ePub books for <address> smart tags"
 msgstr "Книги ePub на смартмітки <address>"
 
-#: check_epub.py:1476
+#: check_epub.py:1547
 msgid "Font found in: <b>%s</b>"
 msgstr "Шрифт знайдено тут: <b>%s</b>"
 
-#: check_epub.py:1490
+#: check_epub.py:1561
 msgid "No searched ePub books have embedded fonts"
 msgstr "У жодній з книг ePub не виявлено вбудованих шрифтів"
 
-#: check_epub.py:1492
+#: check_epub.py:1563
 msgid "ePub books for embedded fonts"
 msgstr "Книги ePub на вбудовані шрифти"
 
-#: check_epub.py:1510
+#: check_epub.py:1581
 msgid "CSS file contains @font-face: <b>%s</b>"
 msgstr "Файл CSS містить @font-face: <b>%s</b>"
 
-#: check_epub.py:1516
+#: check_epub.py:1587
 msgid "At least one html file contains @font-face: <b>%s</b>"
 msgstr "Принаймні один файл html містить @font-face: <b>%s</b>"
 
-#: check_epub.py:1530
+#: check_epub.py:1601
 msgid "No searched ePub books have @font-face declarations"
 msgstr "У жодній з книг ePub не виявлено оголошень @font-face"
 
-#: check_epub.py:1532
+#: check_epub.py:1603
 msgid "ePub books for @font-face declarations"
 msgstr "Книги ePub на оголошення @font-face"
 
-#: check_epub.py:1561
+#: check_epub.py:1632
 msgid "All searched ePub books have text-align:justify"
 msgstr "У всіх книгах ePub є text-align:justify"
 
-#: check_epub.py:1563
+#: check_epub.py:1634
 msgid "ePub books for text-align:justify"
 msgstr "Книги ePub на text-align:justify"
 
-#: check_epub.py:1589
+#: check_epub.py:1660
 msgid "\t\t'margin' property found, so does not match calibre preferences"
 msgstr ""
 "\t\tВиявлено властивість «margin», отже, не відповідає налаштуванням calibre"
 
-#: check_epub.py:1592
+#: check_epub.py:1663
 msgid "\t\tNegative margin found, so does not match calibre preferences"
 msgstr "\t\tВиявлено від'ємне поле, отже, не відповідає налаштуванням calibre"
 
-#: check_epub.py:1601
+#: check_epub.py:1672
 msgid "\t\tMargins is not defined in pts so does not match calibre preferences"
 msgstr ""
 "\t\tПоля визначено не у пунктах, отже, не відповідає налаштуванням calibre"
 
-#: check_epub.py:1609 check_epub.py:1612 check_epub.py:1618
+#: check_epub.py:1680 check_epub.py:1683 check_epub.py:1689
 msgid "\t\tMargins are defined in pts but don't match calibre preferences"
 msgstr "\t\tПоля визначено у пунктах, але не відповідно до налаштувань calibre"
 
-#: check_epub.py:1621
+#: check_epub.py:1692
 msgid "\t\tMargins match calibre preferences"
 msgstr "\t\tПоля відповідають налаштуванням calibre"
 
-#: check_epub.py:1647
+#: check_epub.py:1718
 msgid "\tAnalyzing margins in "
 msgstr "\tАналізуємо поля у "
 
-#: check_epub.py:1677
+#: check_epub.py:1748
 msgid "All searched ePub books match the calibre page setup preferences"
 msgstr "Усі книги ePub відповідають налаштуванням сторінок calibre"
 
-#: check_epub.py:1679
+#: check_epub.py:1750
 msgid "ePub books for body or @page css margins"
 msgstr "Книги ePub на поля у body або CSS @page"
 
-#: check_epub.py:1717
+#: check_epub.py:1788
 msgid "All searched ePub books have book level margins defined"
 msgstr "В усіх книгах ePub визначено поля на рівні книги"
 
-#: check_epub.py:1719
+#: check_epub.py:1790
 msgid "ePub books lacking body or @page css margins"
 msgstr "Книги ePub, у яких не вистачає полів у css body або @page"
 
-#: check_epub.py:1755
+#: check_epub.py:1826
 msgid "No searched ePub books inline @page margins"
 msgstr "У жодній з книг ePub немає вбудованих полів @page"
 
-#: check_epub.py:1757
+#: check_epub.py:1828
 msgid "ePub books using inline @page or body css margins"
 msgstr "Книги ePub, де використано вбудовані поля CSS @page або body"
 
-#: check_epub.py:1778
+#: check_epub.py:1849
 msgid "\tContains .js file: %s"
 msgstr "\tМістить файл .js: %s"
 
-#: check_epub.py:1784
+#: check_epub.py:1855
 msgid "\tContains inline javascript: %s"
 msgstr "\tМістить вбудований код javascript: %s"
 
-#: check_epub.py:1786
+#: check_epub.py:1857
 msgid "ePub with Javascript: %s"
 msgstr "ePub із Javascript: %s"
 
-#: check_epub.py:1801
+#: check_epub.py:1872
 msgid "No searched ePub books have javascript"
 msgstr "У жодній з книг ePub не виявлено коду javascript"
 
-#: check_epub.py:1803
+#: check_epub.py:1874
 msgid "ePub books for javascript"
 msgstr "Книги ePub на javascript"
 
-#: check_epub.py:1831
+#: check_epub.py:1902
 msgid "Unsmartened punctuation in: <b>%s</b>"
 msgstr "Неоптимізована пунктуація тут: <b>%s</b>"
 
-#: check_epub.py:1845
+#: check_epub.py:1916
 msgid "No searched ePub books need punctuation smartened"
 msgstr "У жодній з книг ePub не потрібна оптимізація пунктуації"
 
-#: check_epub.py:1847
+#: check_epub.py:1918
 msgid "ePub books for smarten punctuation"
 msgstr "Книги ePub на оптимізацію пунктуації"
 
-#: check_epub.py:1865
+#: check_epub.py:1936
 msgid "Could not find OPF in:%s"
 msgstr "Не вдалося знайти OPF тут: %s"
 
-#: check_epub.py:1868
+#: check_epub.py:1939
 msgid "OPF file in container.xml not found in:%s"
 msgstr "Файл OPF у container.xml не знайдено тут:%s"
 
@@ -754,85 +754,85 @@ msgstr "Перевірено %d книг, оновлено %d розмірів �
 msgid "All book format sizes are correct"
 msgstr "Усі розміри форматів книг є правильними"
 
-#: check_fix.py:201
+#: check_fix.py:202
 msgid "books with paths missing commas"
 msgstr "книги зі шляхами, де пропущено коми"
 
-#: check_fix.py:202
+#: check_fix.py:203
 msgid "Checked %d books, updated %d paths%s"
 msgstr "Перевірено %d книг, оновлено %d шляхів%s"
 
-#: check_fix.py:206
+#: check_fix.py:207
 msgid "All books have up to date paths"
 msgstr "У всіх книгах шляхи є актуальними"
 
-#: check_fix.py:217
+#: check_fix.py:219
 msgid "Choose directory to cleanup"
 msgstr "Виберіть каталог для чищення"
 
-#: check_fix.py:222
+#: check_fix.py:224
 msgid "Invalid Folder"
 msgstr "Некоректна тека"
 
-#: check_fix.py:223
+#: check_fix.py:225
 msgid "You should not run this feature against a Calibre library folder."
 msgstr ""
 "Вам не слід користуватися цією можливістю для теки бібліотеки Calibre."
 
-#: check_fix.py:224
+#: check_fix.py:226
 msgid ""
 "If you do you will remove \"Empty book\" entries and corrupt your database."
 msgstr ""
 "Якщо ви це зробите, буде вилучено записи «Порожня книга», а базу даних буде "
 "зіпсовано."
 
-#: check_fix.py:233
-msgid "No files deleted"
-msgstr "Не було вилучено жодного файла"
-
-#: check_fix.py:234
+#: check_fix.py:235
 msgid "No files/folders were found to be deleted"
 msgstr "Не знайдено файлів або тек, які має бути вилучено"
 
-#: check_fix.py:236
+#: check_fix.py:241 check_fix.py:248
+msgid "Cleanup completed"
+msgstr "Чищення завершено"
+
+#: check_fix.py:244
 msgid "Deleted %d files/folders with %d errors. See details for more info."
 msgstr ""
 "Вилучено %d файлів або тек із %d помилками. Див. подробиці, щоб дізнатися "
 "більше."
 
-#: check_fix.py:240
-msgid "Cleanup completed"
-msgstr "Чищення завершено"
-
-#: check_fix.py:264
+#: check_fix.py:272
 msgid "Removed folder: %s"
 msgstr "Вилучена тека: %s"
 
-#: check_fix.py:268
+#: check_fix.py:276
 msgid "ERROR removing folder: %s"
 msgstr "ПОМИЛКА під час спроби вилучити теку: %s"
 
-#: check_fix.py:302
+#: check_fix.py:310
 msgid "Removed file: %s"
 msgstr "Вилучено файл: %s"
 
-#: check_fix.py:306
+#: check_fix.py:314
 msgid "ERROR removing file: %s"
 msgstr "ПОМИЛКА під час спроби вилучити файл: %s"
 
-#: check_fix.py:315 check_fix.py:318 check_fix.py:321
+#: check_fix.py:323 check_fix.py:326 check_fix.py:329
 msgid "identifier found"
 msgstr "Знайдено ідентифікатор"
 
-#: check_fix.py:324
+#: check_fix.py:332
 msgid "No ASIN found, using uuid"
 msgstr "Не знайдено ASIN, використовуємо uuid"
 
-#: check_fix.py:358
+#: check_fix.py:366
 msgid "Fixing ASIN for %d books"
 msgstr "Виправляємо ASIN для %d книг"
 
-#: check_fix.py:362
+#: check_fix.py:372
+msgid "Fix ASIN completed"
+msgstr "Виправлення ASIN завершено"
+
+#: check_fix.py:375
 msgid "%d books updated, see log for details"
 msgstr "%d книг оновлено, див. журнал, щоб дізнатися більше"
 
@@ -1032,32 +1032,32 @@ msgstr "Усі книги MOBI не містять обмежень на обр�
 msgid "MOBI books for clipping limits"
 msgstr "Книги MOBI на обмеження на обрізання"
 
-#: config.py:70
+#: config.py:71
 msgid "Check covers"
 msgstr "Перевірити обкладинки"
 
-#: config.py:70
+#: config.py:71
 msgid "Find books with book covers matching your criteria"
 msgstr "Знайти книги із обкладинками, що відповідають вашим критеріям"
 
-#: config.py:72
+#: config.py:73
 msgid "Check for ePub formats which have any calibre jacket"
 msgstr "Перевірити формати ePub, які містять будь-які обгортки calibre"
 
-#: config.py:72
+#: config.py:73
 msgid "Check having any jacket"
 msgstr "Перевірити на наявність обгортки"
 
-#: config.py:72 config.py:73 config.py:74 config.py:75 config.py:76
-#: config.py:77 config.py:78 config.py:79 config.py:80 config.py:81
-#: config.py:82 config.py:83 config.py:84 config.py:85 config.py:86
-#: config.py:87 config.py:88 config.py:89 config.py:90 config.py:91
-#: config.py:92 config.py:93 config.py:94 config.py:95 config.py:96
-#: config.py:97 config.py:98 config.py:99 config.py:100 config.py:101
+#: config.py:73 config.py:74 config.py:75 config.py:76 config.py:77
+#: config.py:78 config.py:79 config.py:80 config.py:81 config.py:82
+#: config.py:83 config.py:84 config.py:85 config.py:86 config.py:87
+#: config.py:88 config.py:89 config.py:90 config.py:91 config.py:92
+#: config.py:93 config.py:94 config.py:95 config.py:96 config.py:97
+#: config.py:98 config.py:99 config.py:100 config.py:101 config.py:102
 msgid "Check ePub Structure"
 msgstr "Перевірити структуру ePub"
 
-#: config.py:73
+#: config.py:74
 msgid ""
 "Check for ePub formats which have a calibre jacket from versions prior to "
 "0.6.51"
@@ -1065,27 +1065,27 @@ msgstr ""
 "Перевірити на формати ePub, які містять обгортку calibre з версій, які "
 "передували 0.6.51"
 
-#: config.py:73
+#: config.py:74
 msgid "Check having legacy jacket"
 msgstr "Перевірити на наявність застарілої обгортки"
 
-#: config.py:74
+#: config.py:75
 msgid "Check for ePub formats which have multiple jackets"
 msgstr "Перевірити формати ePub, які містять декілька обгорток"
 
-#: config.py:74
+#: config.py:75
 msgid "Check having multiple jackets"
 msgstr "Перевірити на наявність декількох обгорток"
 
-#: config.py:75
+#: config.py:76
 msgid "Check for ePub formats which do not have a jacket"
 msgstr "Перевірити на формати ePub, які не містять обгортки"
 
-#: config.py:75
+#: config.py:76
 msgid "Check missing jacket"
 msgstr "Перевірити на пропущену обгортку"
 
-#: config.py:76
+#: config.py:77
 msgid ""
 "Check for ePub formats with a missing container.xml indicating an invalid "
 "ePub"
@@ -1093,11 +1093,11 @@ msgstr ""
 "Перевірити на формати ePub, у яких пропущено container.xml, що вказує на "
 "некоректність ePub"
 
-#: config.py:76
+#: config.py:77
 msgid "Check missing container.xml"
 msgstr "Перевірити на пропущені container.xml"
 
-#: config.py:77
+#: config.py:78
 msgid ""
 "Check for ePub formats with invalid namespaces in the container xml or opf "
 "manifest"
@@ -1105,11 +1105,11 @@ msgstr ""
 "Перевірити на формати ePub із некоректними просторами назв у container.xml "
 "або маніфесті opf"
 
-#: config.py:77
+#: config.py:78
 msgid "Check invalid namespaces"
 msgstr "Перевірити на некоректні простори назв"
 
-#: config.py:78
+#: config.py:79
 msgid ""
 "Check for ePub formats with metadata elements in the opf manifest that are "
 "not in the dc: namespace"
@@ -1117,11 +1117,11 @@ msgstr ""
 "Перевірити на формати ePub із елементами метаданих у маніфесті opf, які не "
 "перебувають у просторі назв dc:"
 
-#: config.py:78
+#: config.py:79
 msgid "Check non-dc: metadata"
 msgstr "Перевірити на метадані поза dc:"
 
-#: config.py:79
+#: config.py:80
 msgid ""
 "Check for ePub formats with files missing that are listed in their opf "
 "manifest"
@@ -1129,11 +1129,11 @@ msgstr ""
 "Перевірити на формати ePub із файлами, яких немає, хоча їх оголошено у "
 "маніфесті opf"
 
-#: config.py:79
+#: config.py:80
 msgid "Check manifest files missing"
 msgstr "Перевірити на наявність файлів з маніфесту"
 
-#: config.py:80
+#: config.py:81
 msgid ""
 "Check for ePub formats with files that are not listed in their opf manifest "
 "excluding iTunes/bookmarks"
@@ -1141,11 +1141,11 @@ msgstr ""
 "Перевірити на формати ePub із файлами, яких немає у маніфесті opf, окрім "
 "файлів iTunes та закладок"
 
-#: config.py:80
+#: config.py:81
 msgid "Check unmanifested files"
 msgstr "Перевірити на файли поза маніфестом"
 
-#: config.py:81
+#: config.py:82
 msgid ""
 "Check for ePub formats with CSS files that are not referenced from any html "
 "pages"
@@ -1153,11 +1153,11 @@ msgstr ""
 "Перевірити на формати ePub із файлами CSS, на які не посилається жодна "
 "сторінка HTML"
 
-#: config.py:81
+#: config.py:82
 msgid "Check unused CSS files"
 msgstr "Перевірити на невикористані файли CSS"
 
-#: config.py:82
+#: config.py:83
 msgid ""
 "Check for ePub formats with image files that are not referenced from the "
 "xhtml pages"
@@ -1165,62 +1165,62 @@ msgstr ""
 "Перевірити на формати ePub із файлами зображень, на які не посилається жодна"
 " сторінка XHTML"
 
-#: config.py:82
+#: config.py:83
 msgid "Check unused image files"
 msgstr "Перевірити на невикористані файли зображень"
 
-#: config.py:83
+#: config.py:84
 msgid "Check broken image links"
 msgstr "Перевірити на помилкові посилання на зображення"
 
-#: config.py:83
+#: config.py:84
 msgid ""
 "Check for ePub formats with html pages that contain broken links to images"
 msgstr ""
 "Перевірити на формати ePub зі сторінками HTML, які містять помилкові "
 "посилання на зображення"
 
-#: config.py:84
+#: config.py:85
 msgid ""
 "Check for ePub formats with an iTunesMetadata.plist or iTunesArtwork file"
 msgstr ""
 "Перевірити на формати ePub із файлом iTunesMetadata.plist або iTunesArtwork"
 
-#: config.py:84
+#: config.py:85
 msgid "Check iTunes files"
 msgstr "Перевірити на файли iTunes"
 
-#: config.py:85
+#: config.py:86
 msgid "Check calibre bookmark files"
 msgstr "Перевірити на файли закладок calibre"
 
-#: config.py:85
+#: config.py:86
 msgid "Check for ePub formats with a calibre bookmarks file"
 msgstr "Перевірити на формати ePub, які містять файл закладок calibre"
 
-#: config.py:86
+#: config.py:87
 msgid "Check OS artifacts"
 msgstr "Перевірити на паразитні об'єкти ОС"
 
-#: config.py:86
+#: config.py:87
 msgid "Check for ePub formats with OS artifacts of .DS_Store or Thumbs.db"
 msgstr ""
 "Перевірити на формати ePub із паразитними об'єктами операційної системи, "
 ".DS_Store або Thumbs.db"
 
-#: config.py:87
+#: config.py:88
 msgid "Check ePub inside ePub"
 msgstr "Перевірити ePub всередині ePub"
 
-#: config.py:87
+#: config.py:88
 msgid "Check for ePub formats containing a ePub inside"
 msgstr "Виконати перевірку форматів ePub, які містять всередині ePub"
 
-#: config.py:88
+#: config.py:89
 msgid "Check NCX TOC hierarchical"
 msgstr "Перевірити на ієрархічність змісту NCX"
 
-#: config.py:88
+#: config.py:89
 msgid ""
 "Check for ePub formats with a NCX file TOC which is not flat (i.e. "
 "hierarchical)"
@@ -1228,32 +1228,32 @@ msgstr ""
 "Перевірити на формати ePub, які містять файл змісту NCX, який не є простим "
 "списком (тобто є ієрархічним)"
 
-#: config.py:89
+#: config.py:90
 msgid "Check NCX TOC with < 3 entries"
 msgstr "Перевірити на зміст NCX із < 3 записами"
 
-#: config.py:89
+#: config.py:90
 msgid "Check for ePub formats with a NCX file TOC with less than 3 entries"
 msgstr ""
 "Перевірити на формати ePub, які містять файл змісту NCX, у якому менше 3 "
 "записів"
 
-#: config.py:90
+#: config.py:91
 msgid "Check NCX TOC with broken links"
 msgstr "Перевірити на зміст NCX із помилковими посиланнями"
 
-#: config.py:90
+#: config.py:91
 msgid ""
 "Check for ePub formats with a NCX file TOC that contains broken html links"
 msgstr ""
 "Перевірити на формати ePub, які містять файл змісту NCX, який містить "
 "помилкові посилання HTML"
 
-#: config.py:91
+#: config.py:92
 msgid "Check <guide> broken links"
 msgstr "Перевірити на помилкові посилання <guide>"
 
-#: config.py:91
+#: config.py:92
 msgid ""
 "Check for ePub formats with broken links in the <guide> section of the "
 "manifest"
@@ -1261,7 +1261,7 @@ msgstr ""
 "Перевірити на формати ePub, які містять помилкові посилання у розділі "
 "<guide> маніфесту"
 
-#: config.py:92
+#: config.py:93
 msgid ""
 "Check for ePub formats with an individual html file size that requires "
 "splitting on some devices"
@@ -1269,23 +1269,23 @@ msgstr ""
 "Перевірити на формати ePub із розміром окремих файлів HTML, який "
 "потребуватиме поділу на деяких пристроях"
 
-#: config.py:92
+#: config.py:93
 msgid "Check oversize html files"
 msgstr "Перевірити на надмірний розмір файлів HTML"
 
-#: config.py:93
+#: config.py:94
 msgid "Check DRM"
 msgstr "Перевірити на DRM"
 
-#: config.py:93
+#: config.py:94
 msgid "Check for ePub formats with DRM encryption xml files"
 msgstr "Перевірити на формати ePub, які містять шифрування DRM файлів XML"
 
-#: config.py:94
+#: config.py:95
 msgid "Check Adobe DRM meta tag"
 msgstr "Перевірити на метамітки DRM Adobe"
 
-#: config.py:94
+#: config.py:95
 msgid ""
 "Check for ePub formats that contain html pages with an Adobe DRM meta "
 "identifier tag"
@@ -1293,7 +1293,7 @@ msgstr ""
 "Перевірити на формати ePub, які містять сторінки HTML, які містять "
 "метамітку-ідентифікатор DRM Adobe"
 
-#: config.py:95
+#: config.py:96
 msgid ""
 "Check for ePub formats with a cover that can be replaced when exporting or "
 "updating metadata with Modify ePub"
@@ -1302,11 +1302,11 @@ msgstr ""
 "при експортуванні або оновленні метаданих при використанні пункту «Змінити "
 "ePub»"
 
-#: config.py:95
+#: config.py:96
 msgid "Check replaceable cover"
 msgstr "Перевірити на придатну до заміни обкладинки"
 
-#: config.py:96
+#: config.py:97
 msgid ""
 "Check for ePub formats with no cover or a cover that cannot be replaced "
 "without a calibre conversion"
@@ -1314,15 +1314,15 @@ msgstr ""
 "Перевірити на формати ePub, які не містять обкладинки або містять "
 "обкладинку, яку не може бути замінено без перетворення calibre"
 
-#: config.py:96
+#: config.py:97
 msgid "Check non-replaceable cover"
 msgstr "Перевірити на непридатну до заміни обкладинку"
 
-#: config.py:97
+#: config.py:98
 msgid "Check calibre SVG cover"
 msgstr "Перевірити на обкладинку SVG calibre"
 
-#: config.py:97
+#: config.py:98
 msgid ""
 "Check for ePub formats with a cover that has been inserted by a calibre "
 "conversion or Modify ePub and that is SVG"
@@ -1330,7 +1330,7 @@ msgstr ""
 "Перевірити на формати ePub, які містять обкладинки, які вставлено під час "
 "перетворення calibre або дії «Змінити ePub» і які є файлами SVG"
 
-#: config.py:98
+#: config.py:99
 msgid ""
 "Check for ePub formats that have no calibre cover inserted by a calibre "
 "conversion or Modify ePub that is SVG"
@@ -1338,41 +1338,41 @@ msgstr ""
 "Перевірити на формати ePub, які не містять обкладинки, які вставлено під час"
 " перетворення calibre або дії «Змінити ePub» і які є файлами SVG"
 
-#: config.py:98
+#: config.py:99
 msgid "Check no calibre SVG cover"
 msgstr "Перевірити на відсутність обкладинки SVG"
 
-#: config.py:99
+#: config.py:100
 msgid "Check calibre conversion"
 msgstr "Перевірити на перетворення calibre"
 
-#: config.py:99
+#: config.py:100
 msgid "Check for ePub formats that have been converted by calibre"
 msgstr "Перевірити формати ePub, які були наслідком перетворення у calibre"
 
-#: config.py:100
+#: config.py:101
 msgid "Check for ePub formats that have not been converted by calibre"
 msgstr "Перевірити формати ePub, які не були наслідком перетворення у calibre"
 
-#: config.py:100
+#: config.py:101
 msgid "Check not calibre conversion"
 msgstr "Перевірити на відсутність перетворення calibre"
 
-#: config.py:101
+#: config.py:102
 msgid "Check corrupt zip"
 msgstr "Перевірка пошкодженості zip"
 
-#: config.py:101
+#: config.py:102
 msgid "Check for ePub zip that is corrupted, may need conversion to fix"
 msgstr ""
 "Перевірка на пошкодженість zip у ePub, може потребувати перетворення даних "
 "для виправлення"
 
-#: config.py:103
+#: config.py:104
 msgid "Check <address> smart-tags"
 msgstr "Перевірити на смартмітки <address>"
 
-#: config.py:103
+#: config.py:104
 msgid ""
 "Check for ePub formats that have <address> elements from a poor conversion "
 "with Word smart tags"
@@ -1380,25 +1380,25 @@ msgstr ""
 "Перевірити формати ePub із елементами <address>, які були наслідком "
 "помилкового перетворення із смартмітками Word"
 
-#: config.py:103 config.py:104 config.py:105 config.py:106 config.py:107
-#: config.py:108 config.py:109 config.py:110 config.py:111 config.py:112
-#: config.py:113
+#: config.py:104 config.py:105 config.py:106 config.py:107 config.py:108
+#: config.py:109 config.py:110 config.py:111 config.py:112 config.py:113
+#: config.py:114
 msgid "Check ePub Style"
 msgstr "Перевірити стиль ePub"
 
-#: config.py:104
+#: config.py:105
 msgid "Check embedded fonts"
 msgstr "Перевірити на вбудовані шрифти"
 
-#: config.py:104
+#: config.py:105
 msgid "Check for ePub formats with embedded fonts"
 msgstr "Перевірити на формати ePub із вбудованими шрифтами"
 
-#: config.py:105
+#: config.py:106
 msgid "Check @font-face"
 msgstr "Перевірити на @font-face"
 
-#: config.py:105
+#: config.py:106
 msgid ""
 "Check for ePub formats with CSS or html files that contain @font-face "
 "declarations"
@@ -1406,31 +1406,31 @@ msgstr ""
 "Перевірити на формати ePub із файлами CSS або HTML, які містять оголошення "
 "@font-face"
 
-#: config.py:106
+#: config.py:107
 msgid "Check Adobe .xpgt margins"
 msgstr "Перевірити поля .xpgt Adobe"
 
-#: config.py:106
+#: config.py:107
 msgid "Check for ePub formats with an xpgt file with non-zero margins"
 msgstr ""
 "Перевірити на формати ePub, які містять файл xpgt із ненульовими полями"
 
-#: config.py:107
+#: config.py:108
 msgid "Check Adobe inline .xpgt links"
 msgstr "Перевірити вбудовані посилання .xpgt Adobe"
 
-#: config.py:107
+#: config.py:108
 msgid ""
 "Check for ePub formats that contain html pages with links to an xpgt file"
 msgstr ""
 "Перевірити на формати ePub, які містять сторінки HTML, які містять посилання"
 " на файл xpgt"
 
-#: config.py:108
+#: config.py:109
 msgid "Check CSS non-justified"
 msgstr "Перевірити на CSS без вирівнювання за шириною"
 
-#: config.py:108
+#: config.py:109
 msgid ""
 "Check for ePub formats with CSS files that do not contain a text-align: "
 "justify style"
@@ -1438,11 +1438,11 @@ msgstr ""
 "Перевірити на формати ePub із файлами CSS, які не містять стилю text-align: "
 "justify"
 
-#: config.py:109
+#: config.py:110
 msgid "Check CSS book margins"
 msgstr "Перевірити поля книги у CSS"
 
-#: config.py:109
+#: config.py:110
 msgid ""
 "Check for ePub formats with book level CSS margins conflicting with calibre "
 "Preferences"
@@ -1450,43 +1450,43 @@ msgstr ""
 "Перевірити на формати ePub, які містять конфлікт між полями CSS на рівні "
 "книги і налаштуваннями calibre"
 
-#: config.py:110
+#: config.py:111
 msgid "Check CSS no book margins"
 msgstr "Перевірити наявність полів у CSS на рівні книги"
 
-#: config.py:110
+#: config.py:111
 msgid "Check for ePub formats that do not contain CSS book level margins"
 msgstr "Перевірити на формати ePub, які не містять полів у CSS на рівні книги"
 
-#: config.py:111
+#: config.py:112
 msgid "Check for ePub formats that contain @page CSS margins in each flow"
 msgstr ""
 "Перевірити на формати ePub, які містять записи полів @page у CSS у кожному з"
 " потоків даних"
 
-#: config.py:111
+#: config.py:112
 msgid "Check inline @page margins"
 msgstr "Перевірити на вбудовані поля @page"
 
-#: config.py:112
+#: config.py:113
 msgid "Check for ePub formats that contain inline javascript <script> blocks"
 msgstr ""
 "Перевірити на формати ePub, які містять вбудовані блоки <script> коду "
 "javascript"
 
-#: config.py:112
+#: config.py:113
 msgid "Check javascript <script>"
 msgstr "Перевірити на <script> javascript"
 
-#: config.py:113
+#: config.py:114
 msgid "Check for ePub formats that contain unsmartened punctuation"
 msgstr "Перевірити на формати ePub, які містять неоптимізовану пунктуацію"
 
-#: config.py:113
+#: config.py:114
 msgid "Check smarten punctuation"
 msgstr "Перевірити на оптимізованість пунктуації"
 
-#: config.py:115
+#: config.py:116
 msgid ""
 "Check for MOBI/AZW/AZW3 formats missing the cdetype of EBOK required for a "
 "Kindle Fire"
@@ -1494,15 +1494,15 @@ msgstr ""
 "Перевірити на формати MOBI/AZW/AZW3, у яких пропущено cdetype EBOK, який "
 "потрібен для Kindle Fire"
 
-#: config.py:115
+#: config.py:116
 msgid "Check missing EBOK cdetype"
 msgstr "Перевіряти на пропущений cdetype EBOK"
 
-#: config.py:115 config.py:116 config.py:117 config.py:118
+#: config.py:116 config.py:117 config.py:118 config.py:119
 msgid "Check Mobi"
 msgstr "Перевірити Mobi"
 
-#: config.py:116
+#: config.py:117
 msgid ""
 "Check for MOBI/AZW/AZW3 formats missing an ASIN in EXTH 113 required for "
 "reading on a Kindle Fire"
@@ -1510,15 +1510,15 @@ msgstr ""
 "Перевірити на формати MOBI/AZW/AZW3, у яких пропущено ASIN в EXTH 113, який "
 "потрібен для читання на Kindle Fire"
 
-#: config.py:116
+#: config.py:117
 msgid "Check missing ASIN identifier"
 msgstr "Перевірити на пропущений ідентифікатор ASIN"
 
-#: config.py:117
+#: config.py:118
 msgid "Check Twitter/Facebook disabled"
 msgstr "Перевірити на вимикання Twitter/Facebook"
 
-#: config.py:117
+#: config.py:118
 msgid ""
 "Check for MOBI/AZW/AZW3 formats missing an ASIN in both EXTH 113 and EXTH "
 "504 to enable \"share\" features on Facebook or Twitter"
@@ -1526,11 +1526,11 @@ msgstr ""
 "Перевірити на формати MOBI/AZW/AZW3, у яких пропущено ASIN в EXTH 113 і EXTH"
 " 504, який потрібен для можливостей «оприлюднення» у Facebook або Twitter"
 
-#: config.py:118
+#: config.py:119
 msgid "Check clipping limit"
 msgstr "Перевірити на обмеження на обрізання"
 
-#: config.py:118
+#: config.py:119
 msgid ""
 "Check for MOBI/AZW/AZW3 formats that have a clipping limit specified by the "
 "publisher in EXTH header 401"
@@ -1538,130 +1538,130 @@ msgstr ""
 "Перевірити на формати MOBI/AZW/AZW3, де вказано обмеження на обрізання "
 "видавцем у заголовку EXTH 401"
 
-#: config.py:120
+#: config.py:121
 msgid "Check title sort"
 msgstr "Перевірити на упорядкування назви"
 
-#: config.py:120
+#: config.py:121
 msgid "Find books with an invalid title sort value"
 msgstr "Знайти книги із некоректним значенням упорядковування заголовка"
 
-#: config.py:120 config.py:121 config.py:122 config.py:123 config.py:124
-#: config.py:125 config.py:126 config.py:127 config.py:128 config.py:129
-#: config.py:130 config.py:131 config.py:132 config.py:133 config.py:134
-#: config.py:135 config.py:136 config.py:137 config.py:138
+#: config.py:121 config.py:122 config.py:123 config.py:124 config.py:125
+#: config.py:126 config.py:127 config.py:128 config.py:129 config.py:130
+#: config.py:131 config.py:132 config.py:133 config.py:134 config.py:135
+#: config.py:136 config.py:137 config.py:138 config.py:139
 msgid "Check metadata"
 msgstr "Перевірити метадані"
 
-#: config.py:121
+#: config.py:122
 msgid "Check author sort"
 msgstr "Перевірити упорядкування записів авторів "
 
-#: config.py:121
+#: config.py:122
 msgid "Find books with an invalid author sort value"
 msgstr "Знайти книги із некоректним значенням упорядковування записів авторів"
 
-#: config.py:122
+#: config.py:123
 msgid "Check ISBN"
 msgstr "Перевірити ISBN"
 
-#: config.py:122
+#: config.py:123
 msgid "Find books with an invalid ISBN"
 msgstr "Знайти книги із некоректним ISBN"
 
-#: config.py:123
+#: config.py:124
 msgid "Check pubdate"
 msgstr "Перевірити дату видання"
 
-#: config.py:123
+#: config.py:124
 msgid ""
 "Find books with an invalid pubdate where it is set to the timestamp date"
 msgstr ""
 "Знайти книги із некоректною датою видання, яку встановлено за датою часової "
 "позначки"
 
-#: config.py:124
+#: config.py:125
 msgid "Check duplicate ISBN"
 msgstr "Перевірити на дублікати ISBN"
 
-#: config.py:124
+#: config.py:125
 msgid "Find books that have duplicate ISBN values"
 msgstr "Знайти книги із дублюванням значень ISBN"
 
-#: config.py:125
+#: config.py:126
 msgid "Check duplicate series"
 msgstr "Перевірити на дублікати у циклі"
 
-#: config.py:125
+#: config.py:126
 msgid "Find books that have duplicate series values"
 msgstr "Знайти книги із дублікатами значень циклу"
 
-#: config.py:126
+#: config.py:127
 msgid "Check series gaps"
 msgstr "Перевірити на пропуски у циклі"
 
-#: config.py:126 config.py:127
+#: config.py:127 config.py:128
 msgid "Find books that have gaps in their series index values"
 msgstr "Знайти книги із пропусками у значення покажчика циклу"
 
-#: config.py:127
+#: config.py:128
 msgid "Check series pubdate order"
 msgstr "Перевірити цикл на порядок дат видання"
 
-#: config.py:128
+#: config.py:129
 msgid "Check excess tags"
 msgstr "Перевірити на надмірні мітки"
 
-#: config.py:128
+#: config.py:129
 msgid "Find books with an excess number of tags"
 msgstr "Знайти книги із надмірною кількістю міток"
 
-#: config.py:129
+#: config.py:130
 msgid "Check html comments"
 msgstr "Перевірити на коментарі HTML"
 
-#: config.py:129
+#: config.py:130
 msgid "Find books which have comments html with style formatting embedded"
 msgstr ""
 "Знайти книги, які містять HTML-коментарі із вбудованим форматуванням стилем"
 
-#: config.py:130
+#: config.py:131
 msgid "Check no html comments"
 msgstr "Перевірити на коментарі без HTML"
 
-#: config.py:130
+#: config.py:131
 msgid "Find books which have comments with no html tags at all"
 msgstr "Знайти книги, які містять коментарі взагалі без теґів HTML"
 
-#: config.py:131
+#: config.py:132
 msgid "Check authors with commas"
 msgstr "Перевірити записи авторів на коми"
 
-#: config.py:131
+#: config.py:132
 msgid "Find authors with commas in their name"
 msgstr "Знайти записи авторів із комами в іменах"
 
-#: config.py:132
+#: config.py:133
 msgid "Check authors missing commas"
 msgstr "Перевірити записи авторів без ком"
 
-#: config.py:132
+#: config.py:133
 msgid "Find authors with no commas in their name"
 msgstr "Знайти записи авторів без ком у їхніх іменах"
 
-#: config.py:133
+#: config.py:134
 msgid "Check authors for case"
 msgstr "Перевірити записи авторів на регістр символів"
 
-#: config.py:133
+#: config.py:134
 msgid "Find authors which are all uppercase or all lowercase"
 msgstr "Знайти записи авторів, усі літери яких є або великими, або маленькими"
 
-#: config.py:134
+#: config.py:135
 msgid "Check authors non alphabetic"
 msgstr "Перевірити записи авторів на наявність символів поза абеткою"
 
-#: config.py:134
+#: config.py:135
 msgid ""
 "Find authors with non-alphabetic characters such as semi-colons indicating "
 "cruft or incorrect separators"
@@ -1669,158 +1669,158 @@ msgstr ""
 "Знайти записи авторів із символами поза абеткою, зокрема крапкою з комою, що"
 " вказує на некоректні або помилкові роздільники"
 
-#: config.py:135
+#: config.py:136
 msgid "Check authors non ascii"
 msgstr "Перевірити записи авторів на наявність символів поза ASCII"
 
-#: config.py:135
+#: config.py:136
 msgid "Find authors with non-ascii names (e.g. with diacritics)"
 msgstr ""
 "Знайти записи авторів, у яких є символи поза ASCII (наприклад, символи із "
 "діакритичними знаками)"
 
-#: config.py:136
+#: config.py:137
 msgid "Check authors initials"
 msgstr "Перевірити ініціали авторів"
 
-#: config.py:136
+#: config.py:137
 msgid ""
 "Find authors with initials that do not meet your preferred configuration"
 msgstr ""
 "Знайти записи авторів із ініціалами, які не відповідають бажаному формату"
 
-#: config.py:137
+#: config.py:138
 msgid "Check titles with series"
 msgstr "Перевірити на назви із вказаним циклом"
 
-#: config.py:137
+#: config.py:138
 msgid "Find titles with possible series info in their name"
 msgstr "Знайти назви, які містять дані циклу"
 
-#: config.py:138
+#: config.py:139
 msgid "Check titles for title case"
 msgstr "Перевірити назви на регістр заголовків"
 
-#: config.py:138
+#: config.py:139
 msgid "Find titles which are candidates to apply the titlecase function to"
 msgstr "Знайти назви, які є кандидатами на застосування функції titlecase"
 
-#: config.py:140
+#: config.py:141
 msgid "Check missing title"
 msgstr "Перевіряти на пропущену назву"
 
-#: config.py:140
+#: config.py:141
 msgid "Find books missing a title"
 msgstr "Знайти книги без назви"
 
-#: config.py:140 config.py:141 config.py:142 config.py:143 config.py:144
-#: config.py:145 config.py:146 config.py:147 config.py:148 config.py:149
-#: config.py:150
+#: config.py:141 config.py:142 config.py:143 config.py:144 config.py:145
+#: config.py:146 config.py:147 config.py:148 config.py:149 config.py:150
+#: config.py:151
 msgid "Check missing"
 msgstr "Перевіряти на пропущене"
 
-#: config.py:141
+#: config.py:142
 msgid "Check missing author"
 msgstr "Перевірити на пропущених авторів"
 
-#: config.py:141
+#: config.py:142
 msgid "Find books missing authors"
 msgstr "Знайти книги із пропущеними авторами"
 
-#: config.py:142
+#: config.py:143
 msgid "Check missing ISBN"
 msgstr "Перевірити на пропущений ISBN"
 
-#: config.py:142
+#: config.py:143
 msgid "Find books missing an ISBN identifier"
 msgstr "Знайти книги без ідентифікатора ISBN"
 
-#: config.py:143
+#: config.py:144
 msgid "Check missing pubdate"
 msgstr "Перевірити на пропущену дату видання"
 
-#: config.py:143
+#: config.py:144
 msgid "Find books missing published date"
 msgstr "Знайти книги із пропущеною датою видання"
 
-#: config.py:144
+#: config.py:145
 msgid "Check missing publisher"
 msgstr "Перевірити на пропущеного видавця"
 
-#: config.py:144
+#: config.py:145
 msgid "Find books missing publisher"
 msgstr "Знайти книги із пропущеним видавцем"
 
-#: config.py:145
+#: config.py:146
 msgid "Check missing tags"
 msgstr "Перевірити на пропущені мітки"
 
-#: config.py:145
+#: config.py:146
 msgid "Find books missing tags"
 msgstr "Знайти книги із пропущеними мітками"
 
-#: config.py:146
+#: config.py:147
 msgid "Check missing rating"
 msgstr "Перевірити на пропущені оцінки"
 
-#: config.py:146
+#: config.py:147
 msgid "Find books missing rating"
 msgstr "Знайти книги із пропущеними оцінками"
 
-#: config.py:147
+#: config.py:148
 msgid "Check missing comments"
 msgstr "Перевірити на пропущені коментарі"
 
-#: config.py:147
+#: config.py:148
 msgid "Find books missing comments"
 msgstr "Знайти книги з пропущеними коментарями"
 
-#: config.py:148
+#: config.py:149
 msgid "Check missing languages"
 msgstr "Перевірити на пропущені мови"
 
-#: config.py:148
+#: config.py:149
 msgid "Find books missing languages"
 msgstr "Знайти книги без вказаної мови"
 
-#: config.py:149
+#: config.py:150
 msgid "Check missing cover"
 msgstr "Перевірити на наявність обкладинки"
 
-#: config.py:149
+#: config.py:150
 msgid "Find books missing a cover"
 msgstr "Знайти книги без обкладинки"
 
-#: config.py:150
+#: config.py:151
 msgid "Check missing formats"
 msgstr "Перевірити на пропущені формати"
 
-#: config.py:150
+#: config.py:151
 msgid "Find books missing formats"
 msgstr "Знайти пропущені формати книг"
 
-#: config.py:152
+#: config.py:153
 msgid "Find ePub books with text matching your own regular expression"
 msgstr ""
 "Знайти книги ePub із текстом, що відповідає вказаному вами формальному "
 "виразу"
 
-#: config.py:152 dialogs.py:499
+#: config.py:153 dialogs.py:499
 msgid "Search ePubs"
 msgstr "Пошук ePub"
 
-#: config.py:157
+#: config.py:158
 msgid ""
 "For the selected book(s) swap author names between FN LN and LN, FN formats"
 msgstr ""
 "Для позначених книг поміняти у записах авторів формат «Ім'я Прізвище» на "
 "«Прізвище, Ім'я», і навпаки"
 
-#: config.py:157
+#: config.py:158
 msgid "Swap author FN LN <-> LN,FN"
 msgstr "Виконати заміну Ім'я Прізвище <-> Прізвище, Ім'я"
 
-#: config.py:158
+#: config.py:159
 msgid ""
 "For the selected book(s) reformat the author initials to your configured "
 "preference"
@@ -1828,11 +1828,11 @@ msgstr ""
 "Для позначних книг виконати переформатування ініціалів авторів за вказаними "
 "налаштуваннями"
 
-#: config.py:158
+#: config.py:159
 msgid "Reformat author initials"
 msgstr "Переформатувати ініціали авторів"
 
-#: config.py:159
+#: config.py:160
 msgid ""
 "For the selected book(s) rename the title to remove any accents and "
 "diacritics characters"
@@ -1840,39 +1840,39 @@ msgstr ""
 "Для позначених книг змінити назву так, щоб у ній не було символів із "
 "акцентами та діакритичних символів"
 
-#: config.py:159
+#: config.py:160
 msgid "Rename author to ascii"
 msgstr "Перевести ім'я автора у ascii"
 
-#: config.py:160
+#: config.py:161
 msgid "Check and repair book sizes"
 msgstr "Перевірити і виправити розміри книги"
 
-#: config.py:160
+#: config.py:161
 msgid "Check and update file sizes for your books"
 msgstr "перевірити і оновити розміри файлів для ваших книг"
 
-#: config.py:161
+#: config.py:162
 msgid "Check and rename book paths"
 msgstr "Перевірити і змінити назви шляхів до книг"
 
-#: config.py:161
+#: config.py:162
 msgid "Ensure book paths include commas if appropriate"
 msgstr "Забезпечити наявність у шляхах до книг ком, якщо це потрібно"
 
-#: config.py:162
+#: config.py:163
 msgid "Cleanup .opf files/folders"
 msgstr "Почистити файли .opf і теки"
 
-#: config.py:162
+#: config.py:163
 msgid "Delete orphaned opf/jpg files and remove empty folders"
 msgstr "Вилучити осиротілі файли opf/jpg і порожні теки"
 
-#: config.py:163
+#: config.py:164
 msgid "Fix ASIN for Kindle Fire"
 msgstr "Виправити ASIN для Kindle Fire"
 
-#: config.py:163
+#: config.py:164
 msgid ""
 "For MOBI/AZW/AZW3 formats, assign the current amazon identifier (uuid if not"
 " present) as an ASIN to EXTH 113 and 504 fields"
@@ -1880,55 +1880,66 @@ msgstr ""
 "Для форматів MOBI/AZW/AZW3 призначити поточний ідентифікатор amazon (uuid, "
 "якщо такого немає), як ASIN для полів EXTH 113 і 504"
 
-#: config.py:283
+#: config.py:285
 msgid "Check excess tags options"
 msgstr "Параметри перевірки на надмірні мітки"
 
-#: config.py:288
+#: config.py:290
 msgid "Maximum tags:"
 msgstr "Максимум теґів:"
 
-#: config.py:289
+#: config.py:291
 msgid "Books with more than this value will be displayed"
 msgstr "Буде показано книги із перевищенням цього значення"
 
-#: config.py:297
+#: config.py:299
 msgid "Exclude tags:"
 msgstr "Виключити теґи:"
 
-#: config.py:298
+#: config.py:300
 msgid "Exclude these tags from when counting the tags for each book"
 msgstr "Виключити ці теґи з обліку теґів для усіх книг"
 
-#: config.py:307
+#: config.py:309
 msgid "Other options"
 msgstr "Інші параметри"
 
-#: config.py:312
+#: config.py:314
 msgid "Author initials format:"
 msgstr "Формат ініціалів авторів:"
 
-#: config.py:313
+#: config.py:315
 msgid ""
 "For use with the \"Check Author initials\" option, set your preferred format"
 msgstr ""
 "Для використання разом із параметром «Перевірити ініціали авторів». "
 "Встановити бажаний формат"
 
-#: config.py:321
+#: config.py:322
+msgid "Suppress Fix summary dialogs"
+msgstr "Придушити вікна резюме виправлення"
+
+#: config.py:323
+msgid ""
+"Uncheck this option if you do not want interactive dialogs to appear "
+"summarising the operation"
+msgstr ""
+"Зніміть позначку з цього пункту, якщо вам не потрібні вікна із резюме дій"
+
+#: config.py:329
 msgid "Visible menus"
 msgstr "Видимі меню"
 
-#: config.py:330
+#: config.py:338
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 "Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
 
-#: config.py:334
+#: config.py:342
 msgid "&View library preferences"
 msgstr "П&ереглянути налаштування бібліотеки"
 
-#: config.py:335
+#: config.py:343
 msgid "View data stored in the library database for this plugin"
 msgstr "Переглянути дані, збережені у базі даних бібліотеки для цього додатка"
 

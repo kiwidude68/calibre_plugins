@@ -1,5 +1,27 @@
 # Goodreads Sync Change Log
 
+## [1.16.11] - 2024-11-11
+### Fixed
+- Display the user friendly Goodreads message when attempting an action like Add to shelf if the book is invalidly linked.
+- Additional separator before the Configuration option in popdown menu.
+
+## [1.16.10] - 2024-11-05
+### Fixed
+- Support half stars in the rating column (if the user has that configured for their rating column). The goodreads rating will still be the rounded down value, but it will prevent the calibre value being rounded down/overwritten in this circumstance.
+
+## [1.16.9] - 2024-10-04
+### Fixed
+- Better handling of 404 errors from books not found when linking that have an ISBN
+
+## [1.16.8] - 2024-06-06
+### Fixed
+- One last attempt at fixing key_file issues for linux users. (@bernieke)
+- Fix libpng warning: icCCP: known incorrect sRGB profile using `magick mogrify *.png`
+
+## [1.16.6] - 2024-05-15
+### Fixed
+- Use `SSLContext` object to pass `key_file` and `cert_file` to `HTTPSConnection` constructor making the plugin Python 3.12 capable. (@StegSchreck)
+
 ## [1.16.5] - 2024-03-17
 ### Updated
 - Spanish translation

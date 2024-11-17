@@ -56,7 +56,7 @@ class MobiCheck(BaseCheck):
                         if mmr.book_header:
                             exth = mmr.book_header.exth
                             if exth:
-                                if exth.cdetype == 'EBOK':
+                                if exth.cdetype == b'EBOK':
                                     # This book is valid
                                     continue
                                 else:
