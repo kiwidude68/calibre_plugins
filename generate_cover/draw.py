@@ -298,7 +298,7 @@ def generate_cover_for_book(mi, options=None, db=None):
     if custom_text:
         from calibre.ebooks.metadata.book.formatter import SafeFormat
         custom_text = SafeFormat().safe_format(
-            custom_text.replace('\n', '<br/>'), mi, 'GC template error', mi)
+            custom_text, mi, 'GC template error', mi).replace('<br/>','\n')
 
     fonts = options[cfg.KEY_FONTS]
     margin = options[cfg.KEY_MARGINS]['text']

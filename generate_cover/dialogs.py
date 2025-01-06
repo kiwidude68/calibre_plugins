@@ -1309,10 +1309,10 @@ class ContentsTab(QWidget):
         self.custom_label.setIndent(0)
         self.custom_label.setStyleSheet("""padding-top:4px""")
         options_layout.addWidget(self.custom_label, 0, 0, 1, 1)
+        options_layout.setRowStretch(0, 10)
         self.custom_text_ledit = QTextEdit(self)
         self.custom_text_ledit.textChanged.connect(self.changed)
         self.custom_text_ledit.setMinimumHeight(25)
-        self.custom_text_ledit.setMaximumHeight(100)
         options_layout.addWidget(self.custom_text_ledit, 0, 1, 1, 1)
         self.swap_author_checkbox = QCheckBox(_('Swap author LN,FN to FN LN'), self)
         self.swap_author_checkbox.setToolTip(_('Use this option if your authors are stored as LN, FN\n'

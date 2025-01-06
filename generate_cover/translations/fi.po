@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-08 11:12+0000\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: Veikko Muurikainen, 2024\n"
 "Language-Team: Finnish (https://app.transifex.com/calibre/teams/19337/fi/)\n"
@@ -314,7 +314,7 @@ msgstr "Ei voi lisätä"
 msgid "The name you specified is not unique"
 msgstr "Määrittämäsi nimi ei ole yksilöllinen"
 
-#: dialogs.py:594 dialogs.py:838
+#: dialogs.py:594 dialogs.py:837
 msgid "Cannot remove"
 msgstr "Ei voi poista"
 
@@ -322,7 +322,7 @@ msgstr "Ei voi poista"
 msgid "You cannot remove the default setting"
 msgstr "Oletusasetusta ei voi poistaa"
 
-#: dialogs.py:596 dialogs.py:841 dialogs.py:1495 dialogs.py:1514
+#: dialogs.py:596 dialogs.py:840 dialogs.py:1495 dialogs.py:1514
 msgid "Are you sure?"
 msgstr "Oletko varma?"
 
@@ -330,7 +330,7 @@ msgstr "Oletko varma?"
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "Haluatko varmasti poistaa '%s'-asetuksen?"
 
-#: dialogs.py:610 dialogs.py:788 dialogs.py:814
+#: dialogs.py:610 dialogs.py:787 dialogs.py:813
 msgid "Cannot rename"
 msgstr "Nimeä ei voi muuttaa"
 
@@ -362,140 +362,140 @@ msgstr "Tämä ei ole kelvollinen Luo kansi -vientiarkisto"
 msgid "Cannot import"
 msgstr "Tuonti ei onnistu"
 
-#: dialogs.py:687 dialogs.py:880
+#: dialogs.py:687 dialogs.py:879
 msgid "Failed to copy image"
 msgstr "Kuvan kopiointi epäonnistui"
 
-#: dialogs.py:746
+#: dialogs.py:745
 msgid "Export completed"
 msgstr "Vienti valmistui"
 
-#: dialogs.py:747
+#: dialogs.py:746
 msgid "Cover setting exported to<br>%s"
 msgstr "Kansiasetukset viety osoitteeseen<br>%s"
 
-#: dialogs.py:755
+#: dialogs.py:754
 msgid "Select setting file(s) to import"
 msgstr "Valitse tuotavat asetustiedostot"
 
-#: dialogs.py:756 dialogs.py:762
+#: dialogs.py:755 dialogs.py:761
 msgid "GC Files"
 msgstr "GC-tiedostot"
 
-#: dialogs.py:762
+#: dialogs.py:761
 msgid "Save setting as"
 msgstr "Tallenna asetus nimellä"
 
-#: dialogs.py:789
+#: dialogs.py:788
 msgid "You cannot rename this image"
 msgstr "Tätä kuvaa ei voi nimetä uudelleen"
 
-#: dialogs.py:791 dialogs.py:792
+#: dialogs.py:790 dialogs.py:791
 msgid "New image name:"
 msgstr "Uusi kuvan nimi:"
 
-#: dialogs.py:809
+#: dialogs.py:808
 msgid "File exists"
 msgstr "Tiedosto on olemassa"
 
-#: dialogs.py:810
+#: dialogs.py:809
 msgid "An image already exists with this name."
 msgstr "Tällä nimellä oleva kuva on jo olemassa."
 
-#: dialogs.py:815
+#: dialogs.py:814
 msgid "Failed to rename image"
 msgstr "Kuvan uudelleennimeäminen epäonnistui"
 
-#: dialogs.py:824
+#: dialogs.py:823
 msgid "Add cover images"
 msgstr "Lisää kansikuvia"
 
-#: dialogs.py:839
+#: dialogs.py:838
 msgid "You cannot remove this image"
 msgstr "Tätä kuvaa ei voi poistaa"
 
-#: dialogs.py:842
+#: dialogs.py:841
 msgid "Are you sure you want to delete the image: %s"
 msgstr "Haluatko varmasti poistaa kuvan: %s"
 
-#: dialogs.py:853 dialogs.py:911
+#: dialogs.py:852 dialogs.py:910
 msgid "Cannot write"
 msgstr "Ei voi kirjoittaa"
 
-#: dialogs.py:854
+#: dialogs.py:853
 msgid "You do not have permission to delete the file"
 msgstr "Sinulla ei ole oikeuksia poistaa tiedostoa"
 
-#: dialogs.py:867
+#: dialogs.py:866
 msgid "Cannot read"
 msgstr "Lukeminen ei onnistu"
 
-#: dialogs.py:868
+#: dialogs.py:867
 msgid "You do not have permission to read the file."
 msgstr "Sinulla ei ole oikeuksia lukea tiedostoa."
 
-#: dialogs.py:879
+#: dialogs.py:878
 msgid "Cannot copy"
 msgstr "Ei voi kopioida"
 
-#: dialogs.py:893
+#: dialogs.py:892
 msgid "Overwrite existing"
 msgstr "Korvaa olemassa oleva"
 
-#: dialogs.py:894
+#: dialogs.py:893
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr "Tällä nimellä on jo olemassa kuvatiedosto. Haluatko korvata sen?"
 
-#: dialogs.py:897
+#: dialogs.py:896
 msgid "Enter image name"
 msgstr "Anna kuvan nimi"
 
-#: dialogs.py:898
+#: dialogs.py:897
 msgid "Enter a unique name for this image:"
 msgstr "Anna tälle kuvalle yksilöllinen nimi:"
 
-#: dialogs.py:912
+#: dialogs.py:911
 msgid "You do not have permission to overwrite the file"
 msgstr "Sinulla ei ole oikeuksia tiedoston korvaamiseen"
 
-#: dialogs.py:948
+#: dialogs.py:947
 msgid "Title"
 msgstr "Nimi"
 
-#: dialogs.py:949
+#: dialogs.py:948
 msgid "Author"
 msgstr "Tekijä"
 
-#: dialogs.py:950
+#: dialogs.py:949
 msgid "Series"
 msgstr "Sarjat"
 
-#: dialogs.py:951
+#: dialogs.py:950
 msgid "Custom"
 msgstr "Mukautettu"
 
-#: dialogs.py:954
+#: dialogs.py:953
 msgid "Background"
 msgstr "Tausta"
 
-#: dialogs.py:955
+#: dialogs.py:954
 msgid "Border"
 msgstr "Reuna"
 
-#: dialogs.py:956
+#: dialogs.py:955
 msgid "Fill"
 msgstr "Täyttö"
 
-#: dialogs.py:957
+#: dialogs.py:956
 msgid "Stroke"
 msgstr "Korostusviiva"
 
-#: dialogs.py:970
+#: dialogs.py:969
 msgid "Fonts:"
 msgstr "Fontit:"
 
-#: dialogs.py:979
+#: dialogs.py:978
 msgid ""
 "Select a font and specify a size in pixels.\n"
 "If font set to 'Default', uses the tweak value from\n"
@@ -505,23 +505,23 @@ msgstr ""
 "Jos fontin arvoksi on asetettu 'Oletus', käytetään arvoa, joka on määritetty kohdassa\n"
 "'generate_cover_title_font', jos se on olemassa."
 
-#: dialogs.py:997
+#: dialogs.py:996
 msgid "Use the same font family for all text"
 msgstr "Käytä samaa kirjasinperhettä kaikissa teksteissä"
 
-#: dialogs.py:998
+#: dialogs.py:997
 msgid ""
 "When checked, the same font family is used for all text content on the cover"
 msgstr ""
 "Kun valittuna, samaa kirjasinperhettä käytetään kaikissa kansikuvan "
 "tekstisisällöissä"
 
-#: dialogs.py:1005
+#: dialogs.py:1004
 msgid "Auto-reduce font size to fit on one line"
 msgstr ""
 "Pienennä fonttikokoa automaattisesti, jotta se mahtuisi yhdelle riville"
 
-#: dialogs.py:1006
+#: dialogs.py:1005
 msgid ""
 "When checked, the font size will be used as a maximum size.\n"
 "A reduced size will be used where needed to fit text on one line."
@@ -529,63 +529,63 @@ msgstr ""
 "Kun tämä on valittuna, kirjasinkokoa käytetään enimmäiskokona.\n"
 "Pienempää kokoa käytetään tarvittaessa, jotta teksti mahtuisi yhdelle riville."
 
-#: dialogs.py:1012
+#: dialogs.py:1011
 msgid "Colors:"
 msgstr "Värit:"
 
-#: dialogs.py:1028
+#: dialogs.py:1027
 msgid "Reset %s color"
 msgstr "Nollaa %s väri"
 
-#: dialogs.py:1033
+#: dialogs.py:1032
 msgid "Select a %s color"
 msgstr "Valitse väri %s"
 
-#: dialogs.py:1041
+#: dialogs.py:1040
 msgid "Apply"
 msgstr "Käytä"
 
-#: dialogs.py:1042
+#: dialogs.py:1041
 msgid "When checked, stroke color is drawn around text"
 msgstr "Kun valittuna, tekstin ympärille piirretään rajausväri"
 
-#: dialogs.py:1054
+#: dialogs.py:1053
 msgid "Left aligned"
 msgstr "Vasemmalle tasattu"
 
-#: dialogs.py:1056
+#: dialogs.py:1055
 msgid "Centered"
 msgstr "Keskitetty"
 
-#: dialogs.py:1058
+#: dialogs.py:1057
 msgid "Right aligned"
 msgstr "Oikealle tasattu"
 
-#: dialogs.py:1129
+#: dialogs.py:1128
 msgid "Size:"
 msgstr "Koko:"
 
-#: dialogs.py:1133
+#: dialogs.py:1132
 msgid "Cover width:"
 msgstr "Kannen leveys:"
 
-#: dialogs.py:1134
+#: dialogs.py:1133
 msgid "The width in pixels of the output .jpg file"
 msgstr "Tulostettavan .jpg-tiedoston leveys pikseleinä"
 
-#: dialogs.py:1140
+#: dialogs.py:1139
 msgid "Cover height:"
 msgstr "Kannen korkeus:"
 
-#: dialogs.py:1141
+#: dialogs.py:1140
 msgid "The height in pixels of the output .jpg file"
 msgstr "Tulostettavan .jpg-tiedoston korkeus pikseleinä"
 
-#: dialogs.py:1147
+#: dialogs.py:1146
 msgid "Stretch image to use as cover background"
 msgstr "Venytä kuvaa käytettäväksi kannen taustana"
 
-#: dialogs.py:1148
+#: dialogs.py:1147
 msgid ""
 "Check this to overlay text on the image background.\n"
 "Uncheck this to place text around the image."
@@ -593,11 +593,11 @@ msgstr ""
 "Valitse tämä, jos haluat peittää tekstin kuvan taustalla.\n"
 "Poista valinta, jos haluat sijoittaa tekstiä kuvan ympärille."
 
-#: dialogs.py:1152
+#: dialogs.py:1151
 msgid "Resize cover dimensions to match background image"
 msgstr "Muuta kansikuvan kokoa vastaamaan taustakuvaa"
 
-#: dialogs.py:1153
+#: dialogs.py:1152
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -605,11 +605,11 @@ msgstr ""
 "Valitse tämä, jos haluat muuttaa kannen kokoa automaattisesti\n"
 "valitun taustakuvan mittoihin"
 
-#: dialogs.py:1157
+#: dialogs.py:1156
 msgid "Resize image to scale up if smaller than available area"
 msgstr "Muuta kuvan kokoa, jos se on pienempi kuin käytettävissä oleva alue"
 
-#: dialogs.py:1158
+#: dialogs.py:1157
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -617,15 +617,15 @@ msgstr ""
 "Valitsemalla tämän voit muuttaa kansikuvan kokoa automaattisesti niin, että se mahtuu\n"
 "käytettävissä olevaan enimmäisalueeseen, jos se on liian pieni"
 
-#: dialogs.py:1164
+#: dialogs.py:1163
 msgid "Margins:"
 msgstr "Marginaalit:"
 
-#: dialogs.py:1169
+#: dialogs.py:1168
 msgid "Top margin:"
 msgstr "Ylämarginaali:"
 
-#: dialogs.py:1170
+#: dialogs.py:1169
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
@@ -633,11 +633,11 @@ msgstr ""
 "Marginaali pikseleinä kannen yläreunasta \n"
 "ensimmäiseen sisältöön"
 
-#: dialogs.py:1178
+#: dialogs.py:1177
 msgid "Bottom margin:"
 msgstr "Alamarginaali:"
 
-#: dialogs.py:1179
+#: dialogs.py:1178
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -645,11 +645,11 @@ msgstr ""
 "Marginaali pikseleinä kannen alareunasta\n"
 "viimeiseen sisältöön"
 
-#: dialogs.py:1187
+#: dialogs.py:1186
 msgid "Left margin:"
 msgstr "Vasen marginaali:"
 
-#: dialogs.py:1188
+#: dialogs.py:1187
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -657,11 +657,11 @@ msgstr ""
 "Pienin marginaali pikseleinä kannen vasemmalta reunalta\n"
 "tekstin sisältöön"
 
-#: dialogs.py:1196
+#: dialogs.py:1195
 msgid "Right margin:"
 msgstr "Oikea marginaali:"
 
-#: dialogs.py:1197
+#: dialogs.py:1196
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -669,19 +669,19 @@ msgstr ""
 "Pienin marginaali pikseleinä kannen oikeasta reunasta\n"
 "tekstin sisältöön"
 
-#: dialogs.py:1205
+#: dialogs.py:1204
 msgid "Text padding:"
 msgstr "Tekstitäyte:"
 
-#: dialogs.py:1206
+#: dialogs.py:1205
 msgid "The spacing in pixels between successive lines of text"
 msgstr "Peräkkäisten tekstirivien välinen etäisyys pikseleinä"
 
-#: dialogs.py:1213
+#: dialogs.py:1212
 msgid "Image padding:"
 msgstr "Kuvan täyte:"
 
-#: dialogs.py:1214
+#: dialogs.py:1213
 msgid ""
 "The spacing in pixels between the image and text\n"
 "placed above and below it"
@@ -689,15 +689,15 @@ msgstr ""
 "Kuvan ja tekstin välinen etäisyys pikseleinä\n"
 "sijoitettu sen ylä- ja alapuolelle"
 
-#: dialogs.py:1224
+#: dialogs.py:1223
 msgid "Border Widths:"
 msgstr "Reunojen leveydet:"
 
-#: dialogs.py:1228
+#: dialogs.py:1227
 msgid "Cover border:"
 msgstr "Kannen reunus:"
 
-#: dialogs.py:1229
+#: dialogs.py:1228
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -705,11 +705,11 @@ msgstr ""
 "Reunan ympärillä olevan reunuksen leveys pikseleinä\n"
 "kannen reunuksen ympärillä. Määritä 0, jos reunaa ei ole"
 
-#: dialogs.py:1236
+#: dialogs.py:1235
 msgid "Image border:"
 msgstr "Kuvan reuna:"
 
-#: dialogs.py:1237
+#: dialogs.py:1236
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the image. Specify 0 for no border"
@@ -717,11 +717,11 @@ msgstr ""
 "Reunan leveys pikseleinä\n"
 "kuvasta. Määritä 0 ilman reunaa"
 
-#: dialogs.py:1276
+#: dialogs.py:1275
 msgid "Field Order:"
 msgstr "Kenttäjärjestys:"
 
-#: dialogs.py:1277
+#: dialogs.py:1276
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
@@ -729,21 +729,21 @@ msgstr ""
 "Muuta kansilehden kohteiden järjestystä ja\n"
 "näytetäänkö ne valintaruudun avulla"
 
-#: dialogs.py:1291
+#: dialogs.py:1290
 msgid "Move field up"
 msgstr "Siirrä kenttää ylöspäin"
 
-#: dialogs.py:1298
+#: dialogs.py:1297
 msgid "Move field down"
 msgstr "Siirrä kenttää alaspäin"
 
-#: dialogs.py:1304
-msgid "Custom Text:"
-msgstr "Mukautettu teksti:"
-
-#: dialogs.py:1313
+#: dialogs.py:1303
 msgid "Other Options:"
 msgstr "Muut asetukset:"
+
+#: dialogs.py:1307
+msgid "Custom text:"
+msgstr ""
 
 #: dialogs.py:1317
 msgid "Swap author LN,FN to FN LN"

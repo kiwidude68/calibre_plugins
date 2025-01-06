@@ -4,14 +4,14 @@
 # 
 # Translators:
 # அனிச் பிரபு தி, 2022
-# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-08 11:12+0000\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
-"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Last-Translator: தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2023\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -316,7 +316,7 @@ msgstr "சேர்க்க முடியாது"
 msgid "The name you specified is not unique"
 msgstr "நீங்கள் குறிப்பிட்ட பெயர் தனித்துவமானது அல்ல"
 
-#: dialogs.py:594 dialogs.py:838
+#: dialogs.py:594 dialogs.py:837
 msgid "Cannot remove"
 msgstr "அகற்ற முடியாது"
 
@@ -324,7 +324,7 @@ msgstr "அகற்ற முடியாது"
 msgid "You cannot remove the default setting"
 msgstr "இயல்புநிலை அமைப்பை நீங்கள் அகற்ற முடியாது"
 
-#: dialogs.py:596 dialogs.py:841 dialogs.py:1495 dialogs.py:1514
+#: dialogs.py:596 dialogs.py:840 dialogs.py:1495 dialogs.py:1514
 msgid "Are you sure?"
 msgstr "நீ சொல்வது உறுதியா?"
 
@@ -332,7 +332,7 @@ msgstr "நீ சொல்வது உறுதியா?"
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "'%கள்' அமைப்பை அகற்ற விரும்புகிறீர்களா?"
 
-#: dialogs.py:610 dialogs.py:788 dialogs.py:814
+#: dialogs.py:610 dialogs.py:787 dialogs.py:813
 msgid "Cannot rename"
 msgstr "மறுபெயரிட முடியாது"
 
@@ -364,141 +364,141 @@ msgstr "இது செல்லுபடியாகும் உருவா�
 msgid "Cannot import"
 msgstr "இறக்குமதி செய்ய முடியாது"
 
-#: dialogs.py:687 dialogs.py:880
+#: dialogs.py:687 dialogs.py:879
 msgid "Failed to copy image"
 msgstr "படத்தை நகலெடுப்பதில் தோல்வி"
 
-#: dialogs.py:746
+#: dialogs.py:745
 msgid "Export completed"
 msgstr "ஏற்றுமதி முடிந்தது"
 
-#: dialogs.py:747
+#: dialogs.py:746
 msgid "Cover setting exported to<br>%s"
 msgstr "கவர் அமைப்பு <br>%s க்கு ஏற்றுமதி செய்யப்படுகிறது"
 
-#: dialogs.py:755
+#: dialogs.py:754
 msgid "Select setting file(s) to import"
 msgstr "இறக்குமதி செய்ய கோப்பு (களை) அமைத்தல் என்பதைத் தேர்ந்தெடுக்கவும்"
 
-#: dialogs.py:756 dialogs.py:762
+#: dialogs.py:755 dialogs.py:761
 msgid "GC Files"
 msgstr "ஜி.சி கோப்புகள்"
 
-#: dialogs.py:762
+#: dialogs.py:761
 msgid "Save setting as"
 msgstr "அமைப்பை சேமிக்கவும்"
 
-#: dialogs.py:789
+#: dialogs.py:788
 msgid "You cannot rename this image"
 msgstr "இந்த படத்தை நீங்கள் மறுபெயரிட முடியாது"
 
-#: dialogs.py:791 dialogs.py:792
+#: dialogs.py:790 dialogs.py:791
 msgid "New image name:"
 msgstr "புதிய படத்தின் பெயர்:"
 
-#: dialogs.py:809
+#: dialogs.py:808
 msgid "File exists"
 msgstr "கோப்பு உள்ளது"
 
-#: dialogs.py:810
+#: dialogs.py:809
 msgid "An image already exists with this name."
 msgstr "இந்த பெயருடன் ஏற்கனவே ஒரு படம் உள்ளது."
 
-#: dialogs.py:815
+#: dialogs.py:814
 msgid "Failed to rename image"
 msgstr "படத்தை மறுபெயரிடுவதில் தோல்வி"
 
-#: dialogs.py:824
+#: dialogs.py:823
 msgid "Add cover images"
 msgstr "கவர் படங்களைச் சேர்க்கவும்"
 
-#: dialogs.py:839
+#: dialogs.py:838
 msgid "You cannot remove this image"
 msgstr "இந்த படத்தை நீங்கள் அகற்ற முடியாது"
 
-#: dialogs.py:842
+#: dialogs.py:841
 msgid "Are you sure you want to delete the image: %s"
 msgstr "படங்களை நீக்க விரும்புகிறீர்களா என்பது உறுதி"
 
-#: dialogs.py:853 dialogs.py:911
+#: dialogs.py:852 dialogs.py:910
 msgid "Cannot write"
 msgstr "எழுத முடியாது"
 
-#: dialogs.py:854
+#: dialogs.py:853
 msgid "You do not have permission to delete the file"
 msgstr "கோப்பை நீக்க உங்களுக்கு அனுமதி இல்லை"
 
-#: dialogs.py:867
+#: dialogs.py:866
 msgid "Cannot read"
 msgstr "படிக்க முடியாது"
 
-#: dialogs.py:868
+#: dialogs.py:867
 msgid "You do not have permission to read the file."
 msgstr "கோப்பைப் படிக்க உங்களுக்கு அனுமதி இல்லை."
 
-#: dialogs.py:879
+#: dialogs.py:878
 msgid "Cannot copy"
 msgstr "நகலெடுக்க முடியாது"
 
-#: dialogs.py:893
+#: dialogs.py:892
 msgid "Overwrite existing"
 msgstr "இருக்கும் மேலெழுதும்"
 
-#: dialogs.py:894
+#: dialogs.py:893
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr ""
 "இந்த பெயருடன் ஒரு படக் கோப்பு ஏற்கனவே உள்ளது. அதை மேலெழுத விரும்புகிறீர்களா?"
 
-#: dialogs.py:897
+#: dialogs.py:896
 msgid "Enter image name"
 msgstr "படத்தின் பெயரை உள்ளிடவும்"
 
-#: dialogs.py:898
+#: dialogs.py:897
 msgid "Enter a unique name for this image:"
 msgstr "இந்த படத்திற்கு ஒரு தனித்துவமான பெயரை உள்ளிடவும்:"
 
-#: dialogs.py:912
+#: dialogs.py:911
 msgid "You do not have permission to overwrite the file"
 msgstr "கோப்பை மேலெழுத உங்களுக்கு அனுமதி இல்லை"
 
-#: dialogs.py:948
+#: dialogs.py:947
 msgid "Title"
 msgstr "தலைப்பு"
 
-#: dialogs.py:949
+#: dialogs.py:948
 msgid "Author"
 msgstr "நூலாசிரியர்"
 
-#: dialogs.py:950
+#: dialogs.py:949
 msgid "Series"
 msgstr "தொடர்"
 
-#: dialogs.py:951
+#: dialogs.py:950
 msgid "Custom"
 msgstr "வழக்கம்"
 
-#: dialogs.py:954
+#: dialogs.py:953
 msgid "Background"
 msgstr "பின்னணி"
 
-#: dialogs.py:955
+#: dialogs.py:954
 msgid "Border"
 msgstr "எல்லை"
 
-#: dialogs.py:956
+#: dialogs.py:955
 msgid "Fill"
 msgstr "நிரப்பவும்"
 
-#: dialogs.py:957
+#: dialogs.py:956
 msgid "Stroke"
 msgstr "பக்கவாதம்"
 
-#: dialogs.py:970
+#: dialogs.py:969
 msgid "Fonts:"
 msgstr "எழுத்துருக்கள்:"
 
-#: dialogs.py:979
+#: dialogs.py:978
 msgid ""
 "Select a font and specify a size in pixels.\n"
 "If font set to 'Default', uses the tweak value from\n"
@@ -508,22 +508,22 @@ msgstr ""
 " எழுத்துரு 'இயல்புநிலை' என அமைக்கப்பட்டால், மாற்ற மதிப்பைப் பயன்படுத்துகிறது \n"
 " 'உருவாக்கம்_கவர்_டிடில்_ஃபோன்ட்' இருந்தால்."
 
-#: dialogs.py:997
+#: dialogs.py:996
 msgid "Use the same font family for all text"
 msgstr "எல்லா உரைக்கும் ஒரே எழுத்துரு குடும்பத்தைப் பயன்படுத்தவும்"
 
-#: dialogs.py:998
+#: dialogs.py:997
 msgid ""
 "When checked, the same font family is used for all text content on the cover"
 msgstr ""
 "சரிபார்க்கும்போது, அட்டைப்படத்தில் உள்ள அனைத்து உரை உள்ளடக்கங்களுக்கும் அதே "
 "எழுத்துரு குடும்பம் பயன்படுத்தப்படுகிறது"
 
-#: dialogs.py:1005
+#: dialogs.py:1004
 msgid "Auto-reduce font size to fit on one line"
 msgstr "ஒரு வரியில் பொருந்தும் வகையில் எழுத்துரு அளவு தானாக குறைக்கப்படுகிறது"
 
-#: dialogs.py:1006
+#: dialogs.py:1005
 msgid ""
 "When checked, the font size will be used as a maximum size.\n"
 "A reduced size will be used where needed to fit text on one line."
@@ -531,63 +531,63 @@ msgstr ""
 "சரிபார்க்கும்போது, எழுத்துரு அளவு அதிகபட்ச அளவாக பயன்படுத்தப்படும். \n"
 " ஒரு வரியில் உரையைப் பொருத்துவதற்குத் தேவையான இடத்தில் குறைக்கப்பட்ட அளவு பயன்படுத்தப்படும்."
 
-#: dialogs.py:1012
+#: dialogs.py:1011
 msgid "Colors:"
 msgstr "வண்ணங்கள்:"
 
-#: dialogs.py:1028
+#: dialogs.py:1027
 msgid "Reset %s color"
 msgstr "%S வண்ணத்தை மீட்டமை"
 
-#: dialogs.py:1033
+#: dialogs.py:1032
 msgid "Select a %s color"
 msgstr "ஒரு %s வண்ணத்தைத் தேர்ந்தெடுக்கவும்"
 
-#: dialogs.py:1041
+#: dialogs.py:1040
 msgid "Apply"
 msgstr "விண்ணப்பிக்கவும்"
 
-#: dialogs.py:1042
+#: dialogs.py:1041
 msgid "When checked, stroke color is drawn around text"
 msgstr "சரிபார்க்கும்போது, உரையைச் சுற்றி பக்கவாதம் நிறம் வரையப்படுகிறது"
 
-#: dialogs.py:1054
+#: dialogs.py:1053
 msgid "Left aligned"
 msgstr "இடது சீரமைக்கப்பட்டுள்ளது"
 
-#: dialogs.py:1056
+#: dialogs.py:1055
 msgid "Centered"
 msgstr "மையப்படுத்தப்பட்ட"
 
-#: dialogs.py:1058
+#: dialogs.py:1057
 msgid "Right aligned"
 msgstr "சரியான சீரமைக்கப்பட்ட"
 
-#: dialogs.py:1129
+#: dialogs.py:1128
 msgid "Size:"
 msgstr "அளவு:"
 
-#: dialogs.py:1133
+#: dialogs.py:1132
 msgid "Cover width:"
 msgstr "கவர் அகல:"
 
-#: dialogs.py:1134
+#: dialogs.py:1133
 msgid "The width in pixels of the output .jpg file"
 msgstr "வெளியீட்டின் பிக்சல்களில் அகலம் .jpg கோப்பு"
 
-#: dialogs.py:1140
+#: dialogs.py:1139
 msgid "Cover height:"
 msgstr "கவர் உயரம்:"
 
-#: dialogs.py:1141
+#: dialogs.py:1140
 msgid "The height in pixels of the output .jpg file"
 msgstr "வெளியீட்டின் பிக்சல்களில் உயரம் .jpg கோப்பு"
 
-#: dialogs.py:1147
+#: dialogs.py:1146
 msgid "Stretch image to use as cover background"
 msgstr "கவர் பின்னணியாகப் பயன்படுத்த படத்தை நீட்டவும்"
 
-#: dialogs.py:1148
+#: dialogs.py:1147
 msgid ""
 "Check this to overlay text on the image background.\n"
 "Uncheck this to place text around the image."
@@ -595,11 +595,11 @@ msgstr ""
 "பட பின்னணியில் உரையை மேலடுக்கு இதைச் சரிபார்க்கவும். \n"
 " படத்தைச் சுற்றி உரையை வைக்க இதைத் தேர்வுசெய்யவும்."
 
-#: dialogs.py:1152
+#: dialogs.py:1151
 msgid "Resize cover dimensions to match background image"
 msgstr "பின்னணி படத்துடன் பொருந்தக்கூடிய கவர் பரிமாணங்களை மறுஅளவிடுங்கள்"
 
-#: dialogs.py:1153
+#: dialogs.py:1152
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -607,11 +607,11 @@ msgstr ""
 "அதன் அடிப்படையில் அட்டையை தானாகவே மறுஅளவிடுவதற்கு இதைச் சரிபார்க்கவும் \n"
 " தற்போது தேர்ந்தெடுக்கப்பட்ட பின்னணி படத்தின் பரிமாணங்கள்"
 
-#: dialogs.py:1157
+#: dialogs.py:1156
 msgid "Resize image to scale up if smaller than available area"
 msgstr "கிடைக்கக்கூடிய பகுதியை விட சிறியதாக இருந்தால் படத்தை அளவிட"
 
-#: dialogs.py:1158
+#: dialogs.py:1157
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -619,15 +619,15 @@ msgstr ""
 "கவர் படத்தை தானாகவே மாற்றியமைக்க இதைச் சரிபார்க்கவும் \n"
 " இது மிகவும் சிறியதாக இருந்தால் அதிகபட்ச பகுதி கிடைக்கும்"
 
-#: dialogs.py:1164
+#: dialogs.py:1163
 msgid "Margins:"
 msgstr "விளிம்புகள்:"
 
-#: dialogs.py:1169
+#: dialogs.py:1168
 msgid "Top margin:"
 msgstr "மேல் விளிம்பு:"
 
-#: dialogs.py:1170
+#: dialogs.py:1169
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
@@ -635,11 +635,11 @@ msgstr ""
 "அட்டையின் மேலிருந்து பிக்சல்களில் விளிம்பு \n"
 " முதல் உள்ளடக்கத்திற்கு"
 
-#: dialogs.py:1178
+#: dialogs.py:1177
 msgid "Bottom margin:"
 msgstr "கீழ் விளிம்பு:"
 
-#: dialogs.py:1179
+#: dialogs.py:1178
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -647,11 +647,11 @@ msgstr ""
 "அட்டையின் அடிப்பகுதியில் இருந்து பிக்சல்களில் விளிம்பு \n"
 " கடைசி உள்ளடக்கத்திற்கு"
 
-#: dialogs.py:1187
+#: dialogs.py:1186
 msgid "Left margin:"
 msgstr "இடது விளிம்பு:"
 
-#: dialogs.py:1188
+#: dialogs.py:1187
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -659,11 +659,11 @@ msgstr ""
 "அட்டையின் இடதுபுறத்தில் இருந்து பிக்சல்களில் குறைந்தபட்ச விளிம்பு \n"
 " உரை உள்ளடக்கத்திற்கு"
 
-#: dialogs.py:1196
+#: dialogs.py:1195
 msgid "Right margin:"
 msgstr "வலது விளிம்பு:"
 
-#: dialogs.py:1197
+#: dialogs.py:1196
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -671,19 +671,19 @@ msgstr ""
 "அட்டையின் வலப்பக்கத்திலிருந்து பிக்சல்களில் குறைந்தபட்ச விளிம்பு \n"
 " உரை உள்ளடக்கத்திற்கு"
 
-#: dialogs.py:1205
+#: dialogs.py:1204
 msgid "Text padding:"
 msgstr "உரை திணிப்பு:"
 
-#: dialogs.py:1206
+#: dialogs.py:1205
 msgid "The spacing in pixels between successive lines of text"
 msgstr "அடுத்தடுத்த உரைக்கு இடையில் பிக்சல்களில் இடைவெளி"
 
-#: dialogs.py:1213
+#: dialogs.py:1212
 msgid "Image padding:"
 msgstr "பட திணிப்பு:"
 
-#: dialogs.py:1214
+#: dialogs.py:1213
 msgid ""
 "The spacing in pixels between the image and text\n"
 "placed above and below it"
@@ -691,15 +691,15 @@ msgstr ""
 "படத்திற்கும் உரைக்கும் இடையிலான பிக்சல்களில் இடைவெளி \n"
 " அதற்கு மேலேயும் கீழேயும் வைக்கப்படுகிறது"
 
-#: dialogs.py:1224
+#: dialogs.py:1223
 msgid "Border Widths:"
 msgstr "எல்லை அகலம்:"
 
-#: dialogs.py:1228
+#: dialogs.py:1227
 msgid "Cover border:"
 msgstr "கவர் எல்லை:"
 
-#: dialogs.py:1229
+#: dialogs.py:1228
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -707,11 +707,11 @@ msgstr ""
 "விளிம்பைச் சுற்றியுள்ள ஒரு எல்லையின் பிக்சல்களில் அகலம் \n"
 " கவர். எல்லைக்கு 0 ஐக் குறிப்பிடவும்"
 
-#: dialogs.py:1236
+#: dialogs.py:1235
 msgid "Image border:"
 msgstr "பட எல்லை:"
 
-#: dialogs.py:1237
+#: dialogs.py:1236
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the image. Specify 0 for no border"
@@ -719,11 +719,11 @@ msgstr ""
 "விளிம்பைச் சுற்றியுள்ள ஒரு எல்லையின் பிக்சல்களில் அகலம் \n"
 " படத்தின். எல்லைக்கு 0 ஐக் குறிப்பிடவும்"
 
-#: dialogs.py:1276
+#: dialogs.py:1275
 msgid "Field Order:"
 msgstr "புல ஒழுங்கு:"
 
-#: dialogs.py:1277
+#: dialogs.py:1276
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
@@ -731,21 +731,21 @@ msgstr ""
 "அட்டைப்படத்தில் உள்ள பொருட்களின் வரிசையை மாற்றவும் \n"
 " தேர்வுப்பெட்டியைப் பயன்படுத்தி அவை காண்பிக்கப்படுகின்றனவா"
 
-#: dialogs.py:1291
+#: dialogs.py:1290
 msgid "Move field up"
 msgstr "புலத்தை மேலே நகர்த்தவும்"
 
-#: dialogs.py:1298
+#: dialogs.py:1297
 msgid "Move field down"
 msgstr "புலத்தை கீழே நகர்த்தவும்"
 
-#: dialogs.py:1304
-msgid "Custom Text:"
-msgstr "தனிப்பயன் உரை:"
-
-#: dialogs.py:1313
+#: dialogs.py:1303
 msgid "Other Options:"
 msgstr "பிற விருப்பங்கள்:"
+
+#: dialogs.py:1307
+msgid "Custom text:"
+msgstr ""
 
 #: dialogs.py:1317
 msgid "Swap author LN,FN to FN LN"

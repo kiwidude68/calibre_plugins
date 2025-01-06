@@ -9,7 +9,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\baen\\.build"
-            },
+            }
         },
         {
             "label": "Baen -> Debug",
@@ -17,7 +17,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\baen\\.build"
-            },
+            }
         },
         {
             "label": "Baen -> Release",
@@ -25,7 +25,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\baen\\.build"
-            },
+            }
         },
         {
             "label": "Barnes Noble -> Build",
@@ -33,7 +33,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\barnes_noble\\.build"
-            },
+            }
         },
         {
             "label": "Barnes Noble -> Debug",
@@ -41,7 +41,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\barnes_noble\\.build"
-            },
+            }
         },
         {
             "label": "Barnes Noble -> Generate .pot",
@@ -49,7 +49,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\barnes_noble\\.build"
-            },
+            }
         },
         {
             "label": "Barnes Noble -> Transifex Pull",
@@ -57,7 +57,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\barnes_noble\\.build"
-            },
+            }
         },
         {
             "label": "Barnes Noble -> Release",
@@ -65,7 +65,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\barnes_noble\\.build"
-            },
+            }
         },
         {
             "label": "Clipboard Search -> Build",
@@ -73,7 +73,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\clipboard_search\\.build"
-            },
+            }
         },
         {
             "label": "Clipboard Search -> Debug",
@@ -81,7 +81,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\clipboard_search\\.build"
-            },
+            }
         },
         {
             "label": "Clipboard Search -> Generate .pot",
@@ -89,7 +89,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\clipboard_search\\.build"
-            },
+            }
         },
         {
             "label": "Clipboard Search -> Transifex Pull",
@@ -97,7 +97,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\clipboard_search\\.build"
-            },
+            }
         },
         {
             "label": "Clipboard Search -> Release",
@@ -105,7 +105,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\clipboard_search\\.build"
-            },
+            }
         },
         {
             "label": "Count Pages -> Build",
@@ -113,7 +113,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\count_pages\\.build"
-            },
+            }
         },
         {
             "label": "Count Pages -> Debug",
@@ -121,7 +121,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\count_pages\\.build"
-            },
+            }
         },
         {
             "label": "Count Pages -> Generate .pot",
@@ -129,7 +129,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\count_pages\\.build"
-            },
+            }
         },
         {
             "label": "Count Pages -> Transifex Pull",
@@ -137,7 +137,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\count_pages\\.build"
-            },
+            }
         },
         {
             "label": "Count Pages -> Release",
@@ -145,7 +145,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\count_pages\\.build"
-            },
+            }
         },
         {
             "label": "Cover Url -> Build",
@@ -153,7 +153,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\cover_url\\.build"
-            },
+            }
         },
         {
             "label": "Cover Url -> Debug",
@@ -161,7 +161,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\cover_url\\.build"
-            },
+            }
         },
         {
             "label": "Cover Url -> Release",
@@ -169,7 +169,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\cover_url\\.build"
-            },
+            }
         },
         {
             "label": "Extract ISBN -> Build",
@@ -177,7 +177,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\extract_isbn\\.build"
-            },
+            }
         },
         {
             "label": "Extract ISBN -> Debug",
@@ -185,7 +185,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\extract_isbn\\.build"
-            },
+            }
         },
         {
             "label": "Extract ISBN -> Generate .pot",
@@ -193,7 +193,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\extract_isbn\\.build"
-            },
+            }
         },
         {
             "label": "Extract ISBN -> Transifex Pull",
@@ -201,7 +201,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\extract_isbn\\.build"
-            },
+            }
         },
         {
             "label": "Extract ISBN -> Release",
@@ -209,7 +209,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\extract_isbn\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction -> Build",
@@ -217,7 +217,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction -> Debug",
@@ -225,7 +225,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction -> Generate .pot",
@@ -233,7 +233,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction -> Transifex Pull",
@@ -241,7 +241,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction -> Release",
@@ -249,7 +249,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction Adults -> Build",
@@ -257,7 +257,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction Adults -> Debug",
@@ -265,7 +265,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction Adults -> Generate .pot",
@@ -273,7 +273,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction Adults -> Transifex Pull",
@@ -281,7 +281,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
-            },
+            }
         },
         {
             "label": "Fantastic Fiction Adults -> Release",
@@ -289,7 +289,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fantastic_fiction_adults\\.build"
-            },
+            }
         },
         {
             "label": "Favourites Menu -> Build",
@@ -297,7 +297,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\favourites_menu\\.build"
-            },
+            }
         },
         {
             "label": "Favourites Menu -> Debug",
@@ -305,7 +305,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\favourites_menu\\.build"
-            },
+            }
         },
         {
             "label": "Favourites Menu -> Generate .pot",
@@ -313,7 +313,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\favourites_menu\\.build"
-            },
+            }
         },
         {
             "label": "Favourites Menu -> Transifex Pull",
@@ -321,7 +321,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\favourites_menu\\.build"
-            },
+            }
         },
         {
             "label": "Favourites Menu -> Release",
@@ -329,7 +329,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\favourites_menu\\.build"
-            },
+            }
         },
         {
             "label": "FictionDb -> Build",
@@ -337,7 +337,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fictiondb\\.build"
-            },
+            }
         },
         {
             "label": "FictionDb -> Debug",
@@ -345,7 +345,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fictiondb\\.build"
-            },
+            }
         },
         {
             "label": "FictionDb -> Generate .pot",
@@ -353,7 +353,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fictiondb\\.build"
-            },
+            }
         },
         {
             "label": "FictionDb -> Transifex Pull",
@@ -361,7 +361,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fictiondb\\.build"
-            },
+            }
         },
         {
             "label": "FictionDb -> Release",
@@ -369,7 +369,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\fictiondb\\.build"
-            },
+            }
         },
         {
             "label": "Find Duplicates -> Build",
@@ -377,7 +377,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\find_duplicates\\.build"
-            },
+            }
         },
         {
             "label": "Find Duplicates -> Debug",
@@ -385,7 +385,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\find_duplicates\\.build"
-            },
+            }
         },
         {
             "label": "Find Duplicates -> Generate .pot",
@@ -393,7 +393,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\find_duplicates\\.build"
-            },
+            }
         },
         {
             "label": "Find Duplicates -> Transifex Pull",
@@ -401,7 +401,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\find_duplicates\\.build"
-            },
+            }
         },
         {
             "label": "Find Duplicates -> Release",
@@ -409,7 +409,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\find_duplicates\\.build"
-            },
+            }
         },
         {
             "label": "Generate Cover -> Build",
@@ -417,7 +417,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\generate_cover\\.build"
-            },
+            }
         },
         {
             "label": "Generate Cover -> Debug",
@@ -425,7 +425,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\generate_cover\\.build"
-            },
+            }
         },
         {
             "label": "Generate Cover -> Generate .pot",
@@ -433,7 +433,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\generate_cover\\.build"
-            },
+            }
         },
         {
             "label": "Generate Cover -> Transifex Pull",
@@ -442,6 +442,7 @@
             "options": {
                 "cwd": "${workspaceFolder}\\generate_cover\\.build"
             },
+            "problemMatcher": []
         },
         {
             "label": "Generate Cover -> Release",
@@ -449,7 +450,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\generate_cover\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads -> Build",
@@ -457,7 +458,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads -> Debug",
@@ -465,7 +466,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads -> Generate .pot",
@@ -473,7 +474,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads -> Transifex Pull",
@@ -481,7 +482,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads -> Release",
@@ -489,7 +490,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads Sync -> Build",
@@ -497,7 +498,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads Sync -> Debug",
@@ -505,7 +506,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads Sync -> Generate .pot",
@@ -513,7 +514,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads Sync -> Transifex Pull",
@@ -521,7 +522,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
-            },
+            }
         },
         {
             "label": "Goodreads Sync -> Release",
@@ -529,7 +530,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\goodreads_sync\\.build"
-            },
+            }
         },
         {
             "label": "Import List -> Build",
@@ -537,7 +538,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\import_list\\.build"
-            },
+            }
         },
         {
             "label": "Import List -> Debug",
@@ -545,7 +546,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\import_list\\.build"
-            },
+            }
         },
         {
             "label": "Import List -> Generate .pot",
@@ -553,7 +554,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\import_list\\.build"
-            },
+            }
         },
         {
             "label": "Import List -> Transifex Pull",
@@ -561,7 +562,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\import_list\\.build"
-            },
+            }
         },
         {
             "label": "Import List -> Release",
@@ -569,7 +570,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\import_list\\.build"
-            },
+            }
         },
         {
             "label": "Manage Series -> Build",
@@ -577,7 +578,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\manage_series\\.build"
-            },
+            }
         },
         {
             "label": "Manage Series -> Debug",
@@ -585,7 +586,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\manage_series\\.build"
-            },
+            }
         },
         {
             "label": "Manage Series -> Generate .pot",
@@ -593,7 +594,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\manage_series\\.build"
-            },
+            }
         },
         {
             "label": "Manage Series -> Transifex Pull",
@@ -601,7 +602,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\manage_series\\.build"
-            },
+            }
         },
         {
             "label": "Manage Series -> Release",
@@ -609,7 +610,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\manage_series\\.build"
-            },
+            }
         },
         {
             "label": "Modify ePub -> Build",
@@ -617,7 +618,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\modify_epub\\.build"
-            },
+            }
         },
         {
             "label": "Modify ePub -> Debug",
@@ -625,7 +626,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\modify_epub\\.build"
-            },
+            }
         },
         {
             "label": "Modify ePub -> Generate .pot",
@@ -633,7 +634,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\modify_epub\\.build"
-            },
+            }
         },
         {
             "label": "Modify ePub -> Transifex Pull",
@@ -641,7 +642,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\modify_epub\\.build"
-            },
+            }
         },
         {
             "label": "Modify ePub -> Release",
@@ -649,7 +650,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\modify_epub\\.build"
-            },
+            }
         },
         {
             "label": "Open With -> Build",
@@ -657,7 +658,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\open_with\\.build"
-            },
+            }
         },
         {
             "label": "Open With -> Debug",
@@ -665,7 +666,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\open_with\\.build"
-            },
+            }
         },
         {
             "label": "Open With -> Generate .pot",
@@ -673,7 +674,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\open_with\\.build"
-            },
+            }
         },
         {
             "label": "Open With -> Transifex Pull",
@@ -681,7 +682,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\open_with\\.build"
-            },
+            }
         },
         {
             "label": "Open With -> Release",
@@ -689,7 +690,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\open_with\\.build"
-            },
+            }
         },
         {
             "label": "Quality Check -> Build",
@@ -697,7 +698,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quality_check\\.build"
-            },
+            }
         },
         {
             "label": "Quality Check -> Debug",
@@ -705,7 +706,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quality_check\\.build"
-            },
+            }
         },
         {
             "label": "Quality Check -> Generate .pot",
@@ -713,7 +714,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quality_check\\.build"
-            },
+            }
         },
         {
             "label": "Quality Check -> Transifex Pull",
@@ -721,7 +722,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quality_check\\.build"
-            },
+            }
         },
         {
             "label": "Quality Check -> Release",
@@ -729,7 +730,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quality_check\\.build"
-            },
+            }
         },
         {
             "label": "Quick Preferences -> Build",
@@ -737,7 +738,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quick_preferences\\.build"
-            },
+            }
         },
         {
             "label": "Quick Preferences -> Debug",
@@ -745,7 +746,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quick_preferences\\.build"
-            },
+            }
         },
         {
             "label": "Quick Preferences -> Generate .pot",
@@ -753,7 +754,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quick_preferences\\.build"
-            },
+            }
         },
         {
             "label": "Quick Preferences -> Transifex Pull",
@@ -761,7 +762,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quick_preferences\\.build"
-            },
+            }
         },
         {
             "label": "Quick Preferences -> Release",
@@ -769,7 +770,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\quick_preferences\\.build"
-            },
+            }
         },
         {
             "label": "Ratings -> Build",
@@ -777,7 +778,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\ratings\\.build"
-            },
+            }
         },
         {
             "label": "Ratings -> Debug",
@@ -785,7 +786,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\ratings\\.build"
-            },
+            }
         },
         {
             "label": "Ratings -> Generate .pot",
@@ -793,7 +794,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\ratings\\.build"
-            },
+            }
         },
         {
             "label": "Ratings -> Transifex Pull",
@@ -801,7 +802,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\ratings\\.build"
-            },
+            }
         },
         {
             "label": "Ratings -> Release",
@@ -809,7 +810,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\ratings\\.build"
-            },
+            }
         },
         {
             "label": "Reading List -> Build",
@@ -817,7 +818,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\reading_list\\.build"
-            },
+            }
         },
         {
             "label": "Reading List -> Debug",
@@ -825,7 +826,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\reading_list\\.build"
-            },
+            }
         },
         {
             "label": "Reading List -> Generate .pot",
@@ -833,7 +834,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\reading_list\\.build"
-            },
+            }
         },
         {
             "label": "Reading List -> Transifex Pull",
@@ -841,7 +842,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\reading_list\\.build"
-            },
+            }
         },
         {
             "label": "Reading List -> Release",
@@ -849,15 +850,15 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\reading_list\\.build"
-            },
+            }
         },
-       {
+        {
             "label": "Resize Cover -> Build",
             "type": "shell",
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\resize_cover\\.build"
-            },
+            }
         },
         {
             "label": "Resize Cover -> Debug",
@@ -865,7 +866,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\resize_cover\\.build"
-            },
+            }
         },
         {
             "label": "Resize Cover -> Generate .pot",
@@ -873,7 +874,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\resize_cover\\.build"
-            },
+            }
         },
         {
             "label": "Resize Cover -> Transifex Pull",
@@ -881,7 +882,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\resize_cover\\.build"
-            },
+            }
         },
         {
             "label": "Resize Cover -> Release",
@@ -889,7 +890,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\resize_cover\\.build"
-            },
+            }
         },
         {
             "label": "Search the Internet -> Build",
@@ -897,7 +898,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\search_the_internet\\.build"
-            },
+            }
         },
         {
             "label": "Search the Internet -> Debug",
@@ -905,7 +906,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\search_the_internet\\.build"
-            },
+            }
         },
         {
             "label": "Search the Internet -> Generate .pot",
@@ -913,7 +914,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\search_the_internet\\.build"
-            },
+            }
         },
         {
             "label": "Search the Internet -> Transifex Pull",
@@ -921,7 +922,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\search_the_internet\\.build"
-            },
+            }
         },
         {
             "label": "Search the Internet -> Release",
@@ -929,7 +930,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\search_the_internet\\.build"
-            },
+            }
         },
         {
             "label": "User Category -> Build",
@@ -937,7 +938,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\user_category\\.build"
-            },
+            }
         },
         {
             "label": "User Category -> Debug",
@@ -945,7 +946,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\user_category\\.build"
-            },
+            }
         },
         {
             "label": "User Category -> Generate .pot",
@@ -953,7 +954,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\user_category\\.build"
-            },
+            }
         },
         {
             "label": "User Category -> Transifex Pull",
@@ -961,7 +962,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\user_category\\.build"
-            },
+            }
         },
         {
             "label": "User Category -> Release",
@@ -969,7 +970,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\user_category\\.build"
-            },
+            }
         },
         {
             "label": "View Manager -> Build",
@@ -977,7 +978,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\view_manager\\.build"
-            },
+            }
         },
         {
             "label": "View Manager -> Debug",
@@ -985,7 +986,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\view_manager\\.build"
-            },
+            }
         },
         {
             "label": "View Manager -> Generate .pot",
@@ -993,7 +994,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\view_manager\\.build"
-            },
+            }
         },
         {
             "label": "View Manager -> Transifex Pull",
@@ -1001,7 +1002,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\view_manager\\.build"
-            },
+            }
         },
         {
             "label": "View Manager -> Release",
@@ -1009,7 +1010,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\view_manager\\.build"
-            },
+            }
         },
         {
             "label": "Walk Search History -> Build",
@@ -1017,7 +1018,7 @@
             "command": ".\\build.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\walk_search_history\\.build"
-            },
+            }
         },
         {
             "label": "Walk Search History -> Debug",
@@ -1025,7 +1026,7 @@
             "command": ".\\debug.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\walk_search_history\\.build"
-            },
+            }
         },
         {
             "label": "Walk Search History -> Generate .pot",
@@ -1033,7 +1034,7 @@
             "command": ".\\generate-pot.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\walk_search_history\\.build"
-            },
+            }
         },
         {
             "label": "Walk Search History -> Transifex Pull",
@@ -1041,7 +1042,7 @@
             "command": ".\\transifex-pull.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\walk_search_history\\.build"
-            },
+            }
         },
         {
             "label": "Walk Search History -> Release",
@@ -1049,7 +1050,7 @@
             "command": ".\\release.cmd",
             "options": {
                 "cwd": "${workspaceFolder}\\walk_search_history\\.build"
-            },
-        },
+            }
+        }
     ]
 }

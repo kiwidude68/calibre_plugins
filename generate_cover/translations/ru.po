@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-08 11:12+0000\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: ashed <craysy@gmail.com>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -316,7 +316,7 @@ msgstr "Невозможно добавить"
 msgid "The name you specified is not unique"
 msgstr "Указанное вами имя не уникально"
 
-#: dialogs.py:594 dialogs.py:838
+#: dialogs.py:594 dialogs.py:837
 msgid "Cannot remove"
 msgstr "Невозможно убрать"
 
@@ -324,7 +324,7 @@ msgstr "Невозможно убрать"
 msgid "You cannot remove the default setting"
 msgstr "Вы не можете убрать умолчальную настройку"
 
-#: dialogs.py:596 dialogs.py:841 dialogs.py:1495 dialogs.py:1514
+#: dialogs.py:596 dialogs.py:840 dialogs.py:1495 dialogs.py:1514
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
@@ -332,7 +332,7 @@ msgstr "Вы уверены?"
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "Вы уверены, что хотите удалить настройку '%s'?"
 
-#: dialogs.py:610 dialogs.py:788 dialogs.py:814
+#: dialogs.py:610 dialogs.py:787 dialogs.py:813
 msgid "Cannot rename"
 msgstr "Невозможно переименовать"
 
@@ -364,141 +364,141 @@ msgstr "Это недопустимый экспортный архив Generate
 msgid "Cannot import"
 msgstr "Импорт не удался"
 
-#: dialogs.py:687 dialogs.py:880
+#: dialogs.py:687 dialogs.py:879
 msgid "Failed to copy image"
 msgstr "Не удалось скопировать изображение"
 
-#: dialogs.py:746
+#: dialogs.py:745
 msgid "Export completed"
 msgstr "Экспорт завершен"
 
-#: dialogs.py:747
+#: dialogs.py:746
 msgid "Cover setting exported to<br>%s"
 msgstr "Настройка обложки экспортирована в<br>%s"
 
-#: dialogs.py:755
+#: dialogs.py:754
 msgid "Select setting file(s) to import"
 msgstr "Выберите файл(ы) настроек для импорта"
 
-#: dialogs.py:756 dialogs.py:762
+#: dialogs.py:755 dialogs.py:761
 msgid "GC Files"
 msgstr "GC файлы"
 
-#: dialogs.py:762
+#: dialogs.py:761
 msgid "Save setting as"
 msgstr "Сохранить настройку как"
 
-#: dialogs.py:789
+#: dialogs.py:788
 msgid "You cannot rename this image"
 msgstr "Вы не можете переименовать это изображение"
 
-#: dialogs.py:791 dialogs.py:792
+#: dialogs.py:790 dialogs.py:791
 msgid "New image name:"
 msgstr "Имя нового изображения:"
 
-#: dialogs.py:809
+#: dialogs.py:808
 msgid "File exists"
 msgstr "Файл существует"
 
-#: dialogs.py:810
+#: dialogs.py:809
 msgid "An image already exists with this name."
 msgstr "Изображение с таким названием уже существует."
 
-#: dialogs.py:815
+#: dialogs.py:814
 msgid "Failed to rename image"
 msgstr "Не удалось переименовать изображение"
 
-#: dialogs.py:824
+#: dialogs.py:823
 msgid "Add cover images"
 msgstr "Добавить изображения обложек"
 
-#: dialogs.py:839
+#: dialogs.py:838
 msgid "You cannot remove this image"
 msgstr "Вы не можете удалить это изображение"
 
-#: dialogs.py:842
+#: dialogs.py:841
 msgid "Are you sure you want to delete the image: %s"
 msgstr "Вы действительно хотите удалить это изображение: %s"
 
-#: dialogs.py:853 dialogs.py:911
+#: dialogs.py:852 dialogs.py:910
 msgid "Cannot write"
 msgstr "Невозможно записать"
 
-#: dialogs.py:854
+#: dialogs.py:853
 msgid "You do not have permission to delete the file"
 msgstr "У вас нет разрешения на удаление файла"
 
-#: dialogs.py:867
+#: dialogs.py:866
 msgid "Cannot read"
 msgstr "Невозможно прочитать"
 
-#: dialogs.py:868
+#: dialogs.py:867
 msgid "You do not have permission to read the file."
 msgstr "У вас нет разрешения на чтение файла."
 
-#: dialogs.py:879
+#: dialogs.py:878
 msgid "Cannot copy"
 msgstr "Невозможно скопировать"
 
-#: dialogs.py:893
+#: dialogs.py:892
 msgid "Overwrite existing"
 msgstr "Перезаписываемое существует"
 
-#: dialogs.py:894
+#: dialogs.py:893
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr ""
 "Файл изображения с таким именем уже существует. Вы хотите перезаписать его?"
 
-#: dialogs.py:897
+#: dialogs.py:896
 msgid "Enter image name"
 msgstr "Введите название изображения"
 
-#: dialogs.py:898
+#: dialogs.py:897
 msgid "Enter a unique name for this image:"
 msgstr "Введите уникальное имя для этого изображения:"
 
-#: dialogs.py:912
+#: dialogs.py:911
 msgid "You do not have permission to overwrite the file"
 msgstr "У вас нет разрешения на перезапись файла"
 
-#: dialogs.py:948
+#: dialogs.py:947
 msgid "Title"
 msgstr "Название"
 
-#: dialogs.py:949
+#: dialogs.py:948
 msgid "Author"
 msgstr "Автор"
 
-#: dialogs.py:950
+#: dialogs.py:949
 msgid "Series"
 msgstr "Серии"
 
-#: dialogs.py:951
+#: dialogs.py:950
 msgid "Custom"
 msgstr "Настраиваемое"
 
-#: dialogs.py:954
+#: dialogs.py:953
 msgid "Background"
 msgstr "Фон"
 
-#: dialogs.py:955
+#: dialogs.py:954
 msgid "Border"
 msgstr "Граница"
 
-#: dialogs.py:956
+#: dialogs.py:955
 msgid "Fill"
 msgstr "Заливка"
 
-#: dialogs.py:957
+#: dialogs.py:956
 msgid "Stroke"
 msgstr "Обводка"
 
-#: dialogs.py:970
+#: dialogs.py:969
 msgid "Fonts:"
 msgstr "Шрифты:"
 
-#: dialogs.py:979
+#: dialogs.py:978
 msgid ""
 "Select a font and specify a size in pixels.\n"
 "If font set to 'Default', uses the tweak value from\n"
@@ -508,22 +508,22 @@ msgstr ""
 "Если для шрифта установлено значение «По умолчанию», используется значение настройки из\n"
 "'generate_cover_title_font', если она присутствует."
 
-#: dialogs.py:997
+#: dialogs.py:996
 msgid "Use the same font family for all text"
 msgstr "Использовать одно и то же семейство шрифтов для всего текста"
 
-#: dialogs.py:998
+#: dialogs.py:997
 msgid ""
 "When checked, the same font family is used for all text content on the cover"
 msgstr ""
 "Когда этот флажок установлен, для всего текстового содержимого на обложке "
 "используется одно и то же семейство шрифтов."
 
-#: dialogs.py:1005
+#: dialogs.py:1004
 msgid "Auto-reduce font size to fit on one line"
 msgstr "Автоуменьшение размера шрифта до умещения в одну строку"
 
-#: dialogs.py:1006
+#: dialogs.py:1005
 msgid ""
 "When checked, the font size will be used as a maximum size.\n"
 "A reduced size will be used where needed to fit text on one line."
@@ -531,63 +531,63 @@ msgstr ""
 "Если флажок установлен, размер шрифта будет использоваться как максимальный размер.\n"
 "Уменьшенный размер будет использоваться там, где это необходимо для размещения текста на одной строке."
 
-#: dialogs.py:1012
+#: dialogs.py:1011
 msgid "Colors:"
 msgstr "Цвета:"
 
-#: dialogs.py:1028
+#: dialogs.py:1027
 msgid "Reset %s color"
 msgstr "Сбросить %s цвет"
 
-#: dialogs.py:1033
+#: dialogs.py:1032
 msgid "Select a %s color"
 msgstr "Выбрать %s цвет"
 
-#: dialogs.py:1041
+#: dialogs.py:1040
 msgid "Apply"
 msgstr "Применить"
 
-#: dialogs.py:1042
+#: dialogs.py:1041
 msgid "When checked, stroke color is drawn around text"
 msgstr "Когда флажок установлен, цвет обводки рисуется вокруг текста"
 
-#: dialogs.py:1054
+#: dialogs.py:1053
 msgid "Left aligned"
 msgstr "Выровнено по левому краю"
 
-#: dialogs.py:1056
+#: dialogs.py:1055
 msgid "Centered"
 msgstr "Выровнено по центру"
 
-#: dialogs.py:1058
+#: dialogs.py:1057
 msgid "Right aligned"
 msgstr "Выровнено по правому краю"
 
-#: dialogs.py:1129
+#: dialogs.py:1128
 msgid "Size:"
 msgstr "Размер:"
 
-#: dialogs.py:1133
+#: dialogs.py:1132
 msgid "Cover width:"
 msgstr "Ширина обложки:"
 
-#: dialogs.py:1134
+#: dialogs.py:1133
 msgid "The width in pixels of the output .jpg file"
 msgstr "Ширина выходного файла .jpg в пикселях"
 
-#: dialogs.py:1140
+#: dialogs.py:1139
 msgid "Cover height:"
 msgstr "Высота обложки:"
 
-#: dialogs.py:1141
+#: dialogs.py:1140
 msgid "The height in pixels of the output .jpg file"
 msgstr "Высота выходного файла .jpg в пикселях"
 
-#: dialogs.py:1147
+#: dialogs.py:1146
 msgid "Stretch image to use as cover background"
 msgstr "Растянуть изображение для использования в качестве фона обложки"
 
-#: dialogs.py:1148
+#: dialogs.py:1147
 msgid ""
 "Check this to overlay text on the image background.\n"
 "Uncheck this to place text around the image."
@@ -595,12 +595,12 @@ msgstr ""
 "Отметьте, чтобы наложить текст на фон изображения.\n"
 "Снимите флажок, чтобы разместить текст вокруг изображения."
 
-#: dialogs.py:1152
+#: dialogs.py:1151
 msgid "Resize cover dimensions to match background image"
 msgstr ""
 "Изменить размер обложки, чтобы она соответствовала фоновому изображению."
 
-#: dialogs.py:1153
+#: dialogs.py:1152
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -608,13 +608,13 @@ msgstr ""
 "Отметьте, чтобы автоизменять размер обложки \n"
 "по размерам текущего выбранного фонового изображения"
 
-#: dialogs.py:1157
+#: dialogs.py:1156
 msgid "Resize image to scale up if smaller than available area"
 msgstr ""
 "Изменить размер изображения, чтобы увеличить его, если оно меньше доступной "
 "области"
 
-#: dialogs.py:1158
+#: dialogs.py:1157
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -622,15 +622,15 @@ msgstr ""
 "Отметьте чтобы авторастягивать размер изображения обложки \n"
 "по максимально доступной области, если она слишком мала"
 
-#: dialogs.py:1164
+#: dialogs.py:1163
 msgid "Margins:"
 msgstr "Границы:"
 
-#: dialogs.py:1169
+#: dialogs.py:1168
 msgid "Top margin:"
 msgstr "Верхняя граница:"
 
-#: dialogs.py:1170
+#: dialogs.py:1169
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
@@ -638,11 +638,11 @@ msgstr ""
 "Отступ в пикселях от верхнего края обложки\n"
 "до первого содержания"
 
-#: dialogs.py:1178
+#: dialogs.py:1177
 msgid "Bottom margin:"
 msgstr "Нижняя граница:"
 
-#: dialogs.py:1179
+#: dialogs.py:1178
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -650,11 +650,11 @@ msgstr ""
 "Отступ в пикселях от нижнего края обложки\n"
 "до последнего содержания"
 
-#: dialogs.py:1187
+#: dialogs.py:1186
 msgid "Left margin:"
 msgstr "Левая граница:"
 
-#: dialogs.py:1188
+#: dialogs.py:1187
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -662,11 +662,11 @@ msgstr ""
 "Минимальный отступ в пикселях слева от обложки\n"
 "до текста"
 
-#: dialogs.py:1196
+#: dialogs.py:1195
 msgid "Right margin:"
 msgstr "Правая граница:"
 
-#: dialogs.py:1197
+#: dialogs.py:1196
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -674,19 +674,19 @@ msgstr ""
 "Минимальный отступ в пикселях справа от обложки\n"
 "до текста"
 
-#: dialogs.py:1205
+#: dialogs.py:1204
 msgid "Text padding:"
 msgstr "Заполнение текста:"
 
-#: dialogs.py:1206
+#: dialogs.py:1205
 msgid "The spacing in pixels between successive lines of text"
 msgstr "Расстояние в пикселях между последовательными строками текста"
 
-#: dialogs.py:1213
+#: dialogs.py:1212
 msgid "Image padding:"
 msgstr "Заполнение изображения:"
 
-#: dialogs.py:1214
+#: dialogs.py:1213
 msgid ""
 "The spacing in pixels between the image and text\n"
 "placed above and below it"
@@ -694,15 +694,15 @@ msgstr ""
 "Расстояние в пикселях между изображением и текстом,\n"
 "размещённым над и под изображением"
 
-#: dialogs.py:1224
+#: dialogs.py:1223
 msgid "Border Widths:"
 msgstr "Ширина границы:"
 
-#: dialogs.py:1228
+#: dialogs.py:1227
 msgid "Cover border:"
 msgstr "Граница обложки:"
 
-#: dialogs.py:1229
+#: dialogs.py:1228
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -710,11 +710,11 @@ msgstr ""
 "Ширина в пикселях границы по краю\n"
 "обложки. Укажите 0 для отсутствия границы"
 
-#: dialogs.py:1236
+#: dialogs.py:1235
 msgid "Image border:"
 msgstr "Граница изображения:"
 
-#: dialogs.py:1237
+#: dialogs.py:1236
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the image. Specify 0 for no border"
@@ -722,11 +722,11 @@ msgstr ""
 "Ширина в пикселях границы по краю\n"
 "изображения. Укажите 0 для отсутствия границы"
 
-#: dialogs.py:1276
+#: dialogs.py:1275
 msgid "Field Order:"
 msgstr "Порядок полей:"
 
-#: dialogs.py:1277
+#: dialogs.py:1276
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
@@ -734,21 +734,21 @@ msgstr ""
 "Изменить порядок элементов на обложке \n"
 "и их отображение с помощью флажка"
 
-#: dialogs.py:1291
+#: dialogs.py:1290
 msgid "Move field up"
 msgstr "Переместить поле вверх"
 
-#: dialogs.py:1298
+#: dialogs.py:1297
 msgid "Move field down"
 msgstr "Переместить поле вниз"
 
-#: dialogs.py:1304
-msgid "Custom Text:"
-msgstr "Пользовательский текст:"
-
-#: dialogs.py:1313
+#: dialogs.py:1303
 msgid "Other Options:"
 msgstr "Прочие параметры:"
+
+#: dialogs.py:1307
+msgid "Custom text:"
+msgstr ""
 
 #: dialogs.py:1317
 msgid "Swap author LN,FN to FN LN"
