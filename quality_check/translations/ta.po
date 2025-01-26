@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-08-05 20:03+1000\n"
+"POT-Creation-Date: 2024-11-09 11:36+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2024\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
@@ -109,7 +109,7 @@ msgstr ""
 msgid "Create new column"
 msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
 
-#: action.py:38 check_base.py:62 check_covers.py:112 check_fix.py:374
+#: action.py:38 check_base.py:62 check_covers.py:98 check_fix.py:374
 msgid "Quality Check"
 msgstr "தரமான சோதனை"
 
@@ -209,46 +209,47 @@ msgstr "தரமான சோதனை தோல்வியடைந்தத�
 msgid "Unknown menu key for %s of '%s'"
 msgstr "' %S' இன் %s க்கு அறியப்படாத மெனு விசை"
 
-#: check_covers.py:63 check_covers.py:74 dialogs.py:79
+#: check_covers.py:70 check_covers.py:105 check_covers.py:135 dialogs.py:79
+#: dialogs.py:109 dialogs.py:114
 msgid "less than"
 msgstr "குறைவாக"
 
-#: check_covers.py:65 check_covers.py:79 dialogs.py:79
+#: check_covers.py:72 check_covers.py:110 check_covers.py:138 dialogs.py:79
 msgid "greater than"
 msgstr "விட பெரியது"
 
-#: check_covers.py:71
+#: check_covers.py:78
 msgid "Failed to identify cover:"
 msgstr "அட்டையை அடையாளம் காணத் தவறிவிட்டது:"
 
-#: check_covers.py:84 dialogs.py:81
-msgid "equal to"
-msgstr "சமமாக"
-
-#: check_covers.py:93 dialogs.py:81
-msgid "not equal to"
-msgstr "சமமாக இல்லை"
-
-#: check_covers.py:104
+#: check_covers.py:90
 msgid "books for covers"
 msgstr "அட்டைகளுக்கான புத்தகங்கள்"
 
-#: check_covers.py:106
+#: check_covers.py:92
 msgid "Checked %d books, found %d cover matches%s"
 msgstr "சரிபார்க்கப்பட்ட %d புத்தகங்கள், %d கவர் பொருத்தங்கள் %s"
 
-#: check_covers.py:109
+#: check_covers.py:95
 msgid "No matches found"
 msgstr "போட்டிகள் எதுவும் கிடைக்கவில்லை"
 
-#: check_covers.py:109 check_metadata.py:172 check_metadata.py:205
+#: check_covers.py:95 check_metadata.py:172 check_metadata.py:205
 #: check_metadata.py:267 check_metadata.py:330
 msgid "No Matches%s"
 msgstr "போட்டிகள் இல்லை%கள்"
 
-#: check_covers.py:113
+#: check_covers.py:99
 msgid "%d matches found, see log for errors%s"
 msgstr "%d போட்டிகள் காணப்படுகின்றன, பிழைகள்%s பதிவைப் பார்க்கவும்"
+
+#: check_covers.py:115 check_covers.py:141 dialogs.py:81
+msgid "equal to"
+msgstr "சமமாக"
+
+#: check_covers.py:124 check_covers.py:144 dialogs.py:81 dialogs.py:121
+msgid "not equal to"
+msgstr "சமமாக இல்லை"
 
 #: check_epub.py:113
 msgid "iTunes files"
@@ -1866,7 +1867,7 @@ msgstr ""
 "உங்கள் சொந்த வழக்கமான வெளிப்பாட்டுடன் உரையுடன் எபப் புத்தகங்களைக் "
 "கண்டறியவும்"
 
-#: config.py:153 dialogs.py:499
+#: config.py:153 dialogs.py:556
 msgid "Search ePubs"
 msgstr "எபப்களைத் தேடுங்கள்"
 
@@ -2018,96 +2019,104 @@ msgstr "ரத்துசெய்"
 msgid "%s %d %s  (%d matches)..."
 msgstr "%s %d %s ( %d போட்டிகள்) ..."
 
-#: dialogs.py:124
+#: dialogs.py:137
 msgid "Cover Search Options"
 msgstr "தேடல் விருப்பங்களை மறைக்கவும்"
 
-#: dialogs.py:127
+#: dialogs.py:140
 msgid "Search library for books where"
 msgstr "புத்தகங்களுக்கான நூலகத்தைத் தேடுங்கள்"
 
-#: dialogs.py:131
+#: dialogs.py:144
 msgid "Cover file size is"
 msgstr "கோப்பு அளவு"
 
-#: dialogs.py:141
+#: dialogs.py:154
 msgid "Cover dimensions are"
 msgstr "கவர் பரிமாணங்கள்"
 
-#: dialogs.py:149
+#: dialogs.py:162 dialogs.py:177
 msgid "width"
 msgstr "அகலம்"
 
-#: dialogs.py:154
+#: dialogs.py:167 dialogs.py:182
 msgid "height"
 msgstr "உயரம்"
 
-#: dialogs.py:156
+#: dialogs.py:169
+msgid "Cover aspect ratio is"
+msgstr ""
+
+#: dialogs.py:187
+msgid "tolerance"
+msgstr ""
+
+#: dialogs.py:189
 msgid "No cover"
 msgstr "கவர் இல்லை"
 
-#: dialogs.py:217
+#: dialogs.py:274
 msgid "View log"
 msgstr "பதிவைக் காண்க"
 
-#: dialogs.py:224
+#: dialogs.py:281
 msgid "Quality Check log"
 msgstr "தரமான சோதனை பதிவு"
 
-#: dialogs.py:266
+#: dialogs.py:323
 msgid "quality check plugin:exclude add dialog"
 msgstr "தரமான காசோலை சொருகி: உரையாடலைச் சேர் விலக்கு"
 
-#: dialogs.py:275
+#: dialogs.py:332
 msgid "Quality Check Add Exclusions"
 msgstr "தரமான சோதனை விலக்குகளைச் சேர்க்கவும்"
 
-#: dialogs.py:278
+#: dialogs.py:335
 msgid "Exclude Books"
 msgstr "புத்தகங்களை விலக்கு"
 
-#: dialogs.py:282
+#: dialogs.py:339
 msgid "Exclude selected books(s) from the following Quality Check:"
 msgstr ""
 "தேர்ந்தெடுக்கப்பட்ட புத்தகங்களை (களை) பின்வரும் தர காசோலையிலிருந்து விலக்கு:"
 
-#: dialogs.py:386
+#: dialogs.py:443
 msgid "quality check plugin:exclude view dialog"
 msgstr "தரமான சோதனை சொருகி: பார்வை உரையாடலை விலக்கு"
 
-#: dialogs.py:389
+#: dialogs.py:446
 msgid "Quality Check View Exclusions"
 msgstr "தரமான சோதனை பார்வை விலக்குகள்"
 
-#: dialogs.py:393
+#: dialogs.py:450
 msgid "View Excluded Books"
 msgstr "விலக்கப்பட்ட புத்தகங்களைக் காண்க"
 
-#: dialogs.py:412
+#: dialogs.py:469
 msgid "Remove selected books from the exclusions"
 msgstr "தேர்ந்தெடுக்கப்பட்ட புத்தகங்களை விலக்குகளிலிருந்து அகற்றவும்"
 
-#: dialogs.py:471
+#: dialogs.py:528
 msgid "quality check plugin:search epub dialog"
 msgstr "தரமான சோதனை சொருகி: எபப் உரையாடலைத் தேடுங்கள்"
 
-#: dialogs.py:503
+#: dialogs.py:560
 msgid "Find expression"
 msgstr "வெளிப்பாட்டைக் கண்டறியவும்"
 
-#: dialogs.py:517
+#: dialogs.py:574
 msgid "Clear search history"
 msgstr "தேடல் வரலாற்றை அழிக்கவும்"
 
-#: dialogs.py:522
+#: dialogs.py:579
 msgid "&Ignore case"
 msgstr "வழக்கை புறக்கணிக்கவும்"
 
-#: dialogs.py:524
+#: dialogs.py:581
 msgid "&Show all occurrences"
 msgstr "& அனைத்து நிகழ்வுகளையும் காட்டு"
 
-#: dialogs.py:525
+#: dialogs.py:582
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
@@ -2115,15 +2124,15 @@ msgstr ""
 "தேர்வு செய்யப்படாவிட்டால், முதல் போட்டி கண்டுபிடிக்கப்பட்டவுடன் ஒவ்வொரு எபப் தேடலும் நிறுத்தப்படும். \n"
 " சரிபார்க்கப்பட்டால், அனைத்து நிகழ்வுகளும் பதிவில் காண்பிக்கப்படும், ஆனால் அது மிகவும் மெதுவாக இயங்கும்."
 
-#: dialogs.py:530
+#: dialogs.py:587
 msgid "Scope"
 msgstr "வாய்ப்பு"
 
-#: dialogs.py:535
+#: dialogs.py:592
 msgid "&HTML content"
 msgstr "& HTML உள்ளடக்கம்"
 
-#: dialogs.py:536
+#: dialogs.py:593
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
@@ -2131,19 +2140,19 @@ msgstr ""
 "எந்த HTML குறிச்சொற்களும் உட்பட அனைத்து HTML உள்ளடக்கக் கோப்புகளையும் தேடுங்கள். \n"
 " நீங்கள் எளிய உரை உள்ளடக்க விருப்பத்தையும் தேர்வுசெய்தால், இந்த விருப்பம் புறக்கணிக்கப்படுகிறது."
 
-#: dialogs.py:538
+#: dialogs.py:595
 msgid "&CSS/xpgt stylesheets"
 msgstr "& CSS/XPGT ஸ்டைல்ஷீட்கள்"
 
-#: dialogs.py:539
+#: dialogs.py:596
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr "அனைத்து CSS அல்லது ADOBE .XPGT ஸ்டைல்ஷீட்களையும் தேடுங்கள்"
 
-#: dialogs.py:540
+#: dialogs.py:597
 msgid "&Plain text content"
 msgstr "& எளிய உரை உள்ளடக்கம்"
 
-#: dialogs.py:541
+#: dialogs.py:598
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
@@ -2151,51 +2160,51 @@ msgstr ""
 "அனைத்து HTML குறிச்சொற்களுடன் HTML கோப்புகளின் உடல் உரையைத் தேடுங்கள். \n"
 " நீங்கள் HTML உள்ளடக்க விருப்பத்தையும் தேர்வுசெய்தால், அதற்கு ஆதரவாக அது புறக்கணிக்கப்படுகிறது."
 
-#: dialogs.py:543
+#: dialogs.py:600
 msgid "&OPF manifest"
 msgstr "& OPF மேனிஃபெஸ்ட்"
 
-#: dialogs.py:544
+#: dialogs.py:601
 msgid "Search the .opf manifest file"
 msgstr ".Opf மேனிஃபெஸ்ட் கோப்பைத் தேடுங்கள்"
 
-#: dialogs.py:545
+#: dialogs.py:602
 msgid "&NCX TOC"
 msgstr "& NCX TOC"
 
-#: dialogs.py:546
+#: dialogs.py:603
 msgid "Search the NCX table of contents file"
 msgstr "உள்ளடக்கக் கோப்பின் NCX அட்டவணையைத் தேடுங்கள்"
 
-#: dialogs.py:547
+#: dialogs.py:604
 msgid "&Zip filenames"
 msgstr "& ஜிப் கோப்பு பெயர்கள்"
 
-#: dialogs.py:548
+#: dialogs.py:605
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr "எபப் (ஜிப்) கோப்பின் உள்ளே கோப்பு பெயர்களைத் தேடுங்கள்"
 
-#: dialogs.py:565
+#: dialogs.py:622
 msgid "No find text"
 msgstr "உரையைக் கண்டுபிடிக்க வேண்டாம்"
 
-#: dialogs.py:566
+#: dialogs.py:623
 msgid "You must specify a regular expression to search for."
 msgstr "தேட ஒரு வழக்கமான வெளிப்பாட்டை நீங்கள் குறிப்பிட வேண்டும்."
 
-#: dialogs.py:575
+#: dialogs.py:632
 msgid "No search scope"
 msgstr "தேடல் நோக்கம் இல்லை"
 
-#: dialogs.py:576
+#: dialogs.py:633
 msgid "You must specify a scope for the ePub search."
 msgstr "எபப் தேடலுக்கான நோக்கத்தை நீங்கள் குறிப்பிட வேண்டும்."
 
-#: dialogs.py:633
+#: dialogs.py:690
 msgid "Fixing"
 msgstr "சரிசெய்தல்"
 
-#: dialogs.py:646
+#: dialogs.py:703
 msgid "Fix completed"
 msgstr "சரிசெய்யப்பட்டது"
 

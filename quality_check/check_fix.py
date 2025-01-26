@@ -10,6 +10,7 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+from calibre.ebooks.metadata import title_sort
 from calibre.gui2 import info_dialog, choose_dir, error_dialog
 from calibre.ptempfile import TemporaryDirectory
 from calibre.utils.config import prefs
@@ -34,6 +35,8 @@ class FixCheck(BaseCheck):
             self.fix_author_initials()
         elif menu_key == 'fix_author_ascii':
             self.fix_author_names_to_ascii()
+        elif menu_key == 'fix_title_sort':
+            self.fix_title_sort()
         elif menu_key == 'check_fix_book_size':
             self.check_and_update_file_sizes()
         elif menu_key == 'check_fix_book_paths':
@@ -88,7 +91,7 @@ class FixCheck(BaseCheck):
         This operation works only on selected ids, it does not change all author
         occurrences across the library!
         '''
-        def rename_book(book_id, db):
+        def rename_book_author(book_id, db):
             authors = db.authors(book_id, index_is_id=True)
             if authors:
                 authors = [a.strip().replace('|', ',') for a in authors.split(',')]
@@ -104,7 +107,7 @@ class FixCheck(BaseCheck):
         previous = self.gui.library_view.currentIndex()
         book_ids = self.gui.library_view.get_selected_ids()
         if book_ids:
-            d = QualityProgressDialog(self.gui, book_ids, rename_book, self.gui.current_db,
+            d = QualityProgressDialog(self.gui, book_ids, rename_book_author, self.gui.current_db,
                               action_type=_('Reformatting author initials for'))
             self.gui.library_view.model().refresh_ids(book_ids)
             current = self.gui.library_view.currentIndex()
@@ -121,7 +124,7 @@ class FixCheck(BaseCheck):
         '''
         handler = get_udc()
 
-        def rename_book(book_id, db):
+        def rename_book_author(book_id, db):
             authors = db.authors(book_id, index_is_id=True)
             if authors:
                 authors = [a.strip().replace('|', ',') for a in authors.split(',')]
@@ -134,7 +137,7 @@ class FixCheck(BaseCheck):
         previous = self.gui.library_view.currentIndex()
         book_ids = self.gui.library_view.get_selected_ids()
         if book_ids:
-            d = QualityProgressDialog(self.gui, book_ids, rename_book, self.gui.current_db,
+            d = QualityProgressDialog(self.gui, book_ids, rename_book_author, self.gui.current_db,
                               action_type=_('Renaming authors to ascii for'))
             self.gui.library_view.model().refresh_ids(book_ids)
             current = self.gui.library_view.currentIndex()
@@ -142,6 +145,32 @@ class FixCheck(BaseCheck):
             self.gui.tags_view.recount()
             msg = _('Renamed to ascii %d of %d book authors') %(len(d.result_ids), d.total_count)
             self.gui.status_bar.showMessage(msg)
+
+
+    def fix_title_sort(self):
+
+        def adjust_book_title_sort(book_id, db):
+            current_title_sort = db.title_sort(book_id, index_is_id=True)
+            current_languages = db.languages(book_id, index_is_id=True)
+            book_lang = None
+            if current_languages:
+                book_lang = current_languages.split(',')[0]
+            title = db.title(book_id, index_is_id=True)
+            new_sort = title_sort(title, lang=book_lang)
+            if current_title_sort != new_sort:
+                db.set_title_sort(book_id, new_sort, notify=False)
+                return True
+            return False
+
+        total_count, result_ids, cancelled_msg = self.check_all_files(adjust_book_title_sort, show_matches=False,
+                                                                  status_msg_type=_('books with incorrect title sort'))
+        msg = _('Checked %d books, updated %d title sorts%s') % \
+                    (total_count, len(result_ids), cancelled_msg)
+        self.gui.status_bar.showMessage(msg)
+        if len(result_ids) == 0:
+            self.gui.status_bar.showMessage(_('All title sorts are correct'))
+            return
+        self.gui.library_view.model().refresh_ids(list(result_ids))
 
 
     def check_and_update_file_sizes(self):

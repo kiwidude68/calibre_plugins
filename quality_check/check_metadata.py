@@ -71,13 +71,6 @@ class MetadataCheck(BaseCheck):
 
     def check_title_sort_valid(self):
 
-        def book_lang(self):
-            try:
-                book_lang = self.languages_edit.lang_codes[0]
-            except:
-                book_lang = None
-            return book_lang
-
         def evaluate_book(book_id, db):
             current_title_sort = db.title_sort(book_id, index_is_id=True)
             current_languages = db.languages(book_id, index_is_id=True)

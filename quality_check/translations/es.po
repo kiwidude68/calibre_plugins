@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-08-05 20:03+1000\n"
+"POT-Creation-Date: 2024-11-09 11:36+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
-#: action.py:38 check_base.py:62 check_covers.py:112 check_fix.py:374
+#: action.py:38 check_base.py:62 check_covers.py:98 check_fix.py:374
 msgid "Quality Check"
 msgstr "Quality Check"
 
@@ -213,46 +213,47 @@ msgstr "Quality Check a fallado"
 msgid "Unknown menu key for %s of '%s'"
 msgstr "Tecla de menú desconocida para %s de '%s'"
 
-#: check_covers.py:63 check_covers.py:74 dialogs.py:79
+#: check_covers.py:70 check_covers.py:105 check_covers.py:135 dialogs.py:79
+#: dialogs.py:109 dialogs.py:114
 msgid "less than"
 msgstr "menos que"
 
-#: check_covers.py:65 check_covers.py:79 dialogs.py:79
+#: check_covers.py:72 check_covers.py:110 check_covers.py:138 dialogs.py:79
 msgid "greater than"
 msgstr "más grande"
 
-#: check_covers.py:71
+#: check_covers.py:78
 msgid "Failed to identify cover:"
 msgstr "No se pudo identificar la portada:"
 
-#: check_covers.py:84 dialogs.py:81
-msgid "equal to"
-msgstr "igual a"
-
-#: check_covers.py:93 dialogs.py:81
-msgid "not equal to"
-msgstr "no igual a"
-
-#: check_covers.py:104
+#: check_covers.py:90
 msgid "books for covers"
 msgstr "libros para portadas"
 
-#: check_covers.py:106
+#: check_covers.py:92
 msgid "Checked %d books, found %d cover matches%s"
 msgstr "Libros %drevisados, coincidencias de%d portada encontradas%s"
 
-#: check_covers.py:109
+#: check_covers.py:95
 msgid "No matches found"
 msgstr "No se encontraron coincidencias"
 
-#: check_covers.py:109 check_metadata.py:172 check_metadata.py:205
+#: check_covers.py:95 check_metadata.py:172 check_metadata.py:205
 #: check_metadata.py:267 check_metadata.py:330
 msgid "No Matches%s"
 msgstr "Sin coincidencias%s"
 
-#: check_covers.py:113
+#: check_covers.py:99
 msgid "%d matches found, see log for errors%s"
 msgstr "%d coincidencias encontradas, ver el registro de errores%s"
+
+#: check_covers.py:115 check_covers.py:141 dialogs.py:81
+msgid "equal to"
+msgstr "igual a"
+
+#: check_covers.py:124 check_covers.py:144 dialogs.py:81 dialogs.py:121
+msgid "not equal to"
+msgstr "no igual a"
 
 #: check_epub.py:113
 msgid "iTunes files"
@@ -1830,7 +1831,7 @@ msgid "Find ePub books with text matching your own regular expression"
 msgstr ""
 "Encuentre libros ePub con texto que coincida con su propia expresión regular"
 
-#: config.py:153 dialogs.py:499
+#: config.py:153 dialogs.py:556
 msgid "Search ePubs"
 msgstr "Buscar ePubs"
 
@@ -1983,95 +1984,103 @@ msgstr "Cancelar"
 msgid "%s %d %s  (%d matches)..."
 msgstr "%s %d %s ( %dcoincidencias)..."
 
-#: dialogs.py:124
+#: dialogs.py:137
 msgid "Cover Search Options"
 msgstr "Opciones de búsqueda de portada"
 
-#: dialogs.py:127
+#: dialogs.py:140
 msgid "Search library for books where"
 msgstr "Buscar libros en la biblioteca donde"
 
-#: dialogs.py:131
+#: dialogs.py:144
 msgid "Cover file size is"
 msgstr "El tamaño del archivo de portada es"
 
-#: dialogs.py:141
+#: dialogs.py:154
 msgid "Cover dimensions are"
 msgstr "Las dimensiones de la portada es"
 
-#: dialogs.py:149
+#: dialogs.py:162 dialogs.py:177
 msgid "width"
 msgstr "ancho"
 
-#: dialogs.py:154
+#: dialogs.py:167 dialogs.py:182
 msgid "height"
 msgstr "altura"
 
-#: dialogs.py:156
+#: dialogs.py:169
+msgid "Cover aspect ratio is"
+msgstr "La proporción de la portada es"
+
+#: dialogs.py:187
+msgid "tolerance"
+msgstr "tolerancia"
+
+#: dialogs.py:189
 msgid "No cover"
 msgstr "Sin portada"
 
-#: dialogs.py:217
+#: dialogs.py:274
 msgid "View log"
 msgstr "Ver registro"
 
-#: dialogs.py:224
+#: dialogs.py:281
 msgid "Quality Check log"
 msgstr "Quality Check registro"
 
-#: dialogs.py:266
+#: dialogs.py:323
 msgid "quality check plugin:exclude add dialog"
 msgstr "complemento quality check: excluir diálogo de adición"
 
-#: dialogs.py:275
+#: dialogs.py:332
 msgid "Quality Check Add Exclusions"
 msgstr "Añadir exclusiones de control de calidad"
 
-#: dialogs.py:278
+#: dialogs.py:335
 msgid "Exclude Books"
 msgstr "Excluir libros"
 
-#: dialogs.py:282
+#: dialogs.py:339
 msgid "Exclude selected books(s) from the following Quality Check:"
 msgstr "Excluir los libros seleccionados del siguiente control de calidad:"
 
-#: dialogs.py:386
+#: dialogs.py:443
 msgid "quality check plugin:exclude view dialog"
 msgstr "complemento de control de calidad: excluir vista de diálogo"
 
-#: dialogs.py:389
+#: dialogs.py:446
 msgid "Quality Check View Exclusions"
 msgstr "Exclusiones de vista de control de calidad"
 
-#: dialogs.py:393
+#: dialogs.py:450
 msgid "View Excluded Books"
 msgstr "Ver libros excluidos"
 
-#: dialogs.py:412
+#: dialogs.py:469
 msgid "Remove selected books from the exclusions"
 msgstr "Eliminar los libros seleccionados de las exclusiones"
 
-#: dialogs.py:471
+#: dialogs.py:528
 msgid "quality check plugin:search epub dialog"
 msgstr "complemento quality check: cuadro de diálogo de búsqueda de epub"
 
-#: dialogs.py:503
+#: dialogs.py:560
 msgid "Find expression"
 msgstr "Encontrar expresión"
 
-#: dialogs.py:517
+#: dialogs.py:574
 msgid "Clear search history"
 msgstr "Limpiar historial de búsqueda"
 
-#: dialogs.py:522
+#: dialogs.py:579
 msgid "&Ignore case"
 msgstr "&Ignorar mayúsculas"
 
-#: dialogs.py:524
+#: dialogs.py:581
 msgid "&Show all occurrences"
 msgstr "Mostrar toda&s las ocurrencias"
 
-#: dialogs.py:525
+#: dialogs.py:582
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
@@ -2079,15 +2088,15 @@ msgstr ""
 "Si no se marca, la búsqueda de cada ePub se detiene tan pronto como se encuentra la primera coincidencia.\n"
 "Si está marcado, todas las ocurrencias se mostrarán en el registro, pero se ejecutará mucho más lento."
 
-#: dialogs.py:530
+#: dialogs.py:587
 msgid "Scope"
 msgstr "Alcance"
 
-#: dialogs.py:535
+#: dialogs.py:592
 msgid "&HTML content"
 msgstr "Contenido &HTML"
 
-#: dialogs.py:536
+#: dialogs.py:593
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
@@ -2095,19 +2104,19 @@ msgstr ""
 "Busque todos los archivos de contenido html, incluidas las etiquetas html.\n"
 "Si también marcó la opción Contenido de texto sin formato, esta opción se ignora."
 
-#: dialogs.py:538
+#: dialogs.py:595
 msgid "&CSS/xpgt stylesheets"
 msgstr "Hojas de estilo &CSS/xpgt"
 
-#: dialogs.py:539
+#: dialogs.py:596
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr "Buscar todas las hojas de estilo CSS o Adobe .xpgt"
 
-#: dialogs.py:540
+#: dialogs.py:597
 msgid "&Plain text content"
 msgstr "&Contenido de texto sin formato"
 
-#: dialogs.py:541
+#: dialogs.py:598
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
@@ -2115,51 +2124,51 @@ msgstr ""
 "Busque el texto del cuerpo de los archivos html con todas las etiquetas html eliminadas.\n"
 "Si también marcó la opción de contenido HTML, se ignora a favor de esto."
 
-#: dialogs.py:543
+#: dialogs.py:600
 msgid "&OPF manifest"
 msgstr "&OPF manifiesto"
 
-#: dialogs.py:544
+#: dialogs.py:601
 msgid "Search the .opf manifest file"
 msgstr "Busque el archivo de manifiesto .opf"
 
-#: dialogs.py:545
+#: dialogs.py:602
 msgid "&NCX TOC"
 msgstr "&NCX TOC"
 
-#: dialogs.py:546
+#: dialogs.py:603
 msgid "Search the NCX table of contents file"
 msgstr "Buscar en el archivo de tabla de contenido de NCX"
 
-#: dialogs.py:547
+#: dialogs.py:604
 msgid "&Zip filenames"
 msgstr "Nombres de archivo &Zip"
 
-#: dialogs.py:548
+#: dialogs.py:605
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr "Busque los nombres de archivo dentro del archivo ePub (zip)"
 
-#: dialogs.py:565
+#: dialogs.py:622
 msgid "No find text"
 msgstr "No encontrar texto"
 
-#: dialogs.py:566
+#: dialogs.py:623
 msgid "You must specify a regular expression to search for."
 msgstr "Debe especificar una expresión regular para buscar."
 
-#: dialogs.py:575
+#: dialogs.py:632
 msgid "No search scope"
 msgstr "Sin alcance de búsqueda"
 
-#: dialogs.py:576
+#: dialogs.py:633
 msgid "You must specify a scope for the ePub search."
 msgstr "Debe especificar un alcance para la búsqueda ePub."
 
-#: dialogs.py:633
+#: dialogs.py:690
 msgid "Fixing"
 msgstr "Arreglando"
 
-#: dialogs.py:646
+#: dialogs.py:703
 msgid "Fix completed"
 msgstr "Arreglo completado"
 

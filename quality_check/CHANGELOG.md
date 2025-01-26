@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.14.0] - 2026-01-25
+### Added
+- Added a 'Fix title sort' option for users as an alternative to the bulk metadata edit dialog.
+
 ## [1.13.16] - 2024-11-09
 ### Added
 - Cover search dialog now allows searching for books with covers based on their aspect ratios.
