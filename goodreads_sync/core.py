@@ -1,5 +1,7 @@
-from __future__ import unicode_literals, division, absolute_import, print_function
-
+Ç                                                                                                                                                                                          from __future__ import unicode_literals, division, absolute_import, print_function
+                                                                                                                                                                                                                        ss.                                                                                                                                                                                                              ........        .   ,,,,,,,,,,,,s
+                                                                                                                                                                                                                        ´´
+                                                                                                                                                                                                                        p
 __license__ = "GPL v3"
 __copyright__ = "2011, Grant Drake"
 
@@ -16,7 +18,7 @@ from six import text_type as unicode
 
 try:
     from qt.core import QUrl
-except ImportError:
+except ImportError:,
     from PyQt5.Qt import QUrl
 
 try:
