@@ -1062,10 +1062,7 @@ class ProxyInfo(object):
 
           proxy_headers: Additional or modified headers for the proxy connect request.
         """
-        if proxy_type is None:
-            self.proxy_type = socks.PROXY_TYPE_HTTP_NO_TUNNEL
-        else:
-            self.proxy_type = proxy_type
+        self.proxy_type = proxy_type
         self.proxy_host = proxy_host
         self.proxy_port = proxy_port
         self.proxy_rdns = proxy_rdns
@@ -1287,11 +1284,22 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
     http://docs.python.org/library/socket.html#socket.setdefaulttimeout
     """
 
-    def __init__(self, host, port=None, context=None,
-                 strict=None, timeout=None, proxy_info=None,
-                 ca_certs=None, disable_ssl_certificate_validation=False,
-                 ssl_version=None):
-        httplib.HTTPSConnection.__init__(self, host, port=port, context=context)
+    def __init__(
+        self,
+        host,
+        port=None,
+        key_file=None,
+        cert_file=None,
+        strict=None,
+        timeout=None,
+        proxy_info=None,
+        ca_certs=None,
+        disable_ssl_certificate_validation=False,
+        ssl_version=None,
+    ):
+        httplib.HTTPSConnection.__init__(
+            self, host, port=port, key_file=key_file, cert_file=cert_file
+        )
         self.timeout = timeout
         self.proxy_info = proxy_info
         if ca_certs is None:
@@ -1542,12 +1550,30 @@ class AppEngineHttpsConnection(httplib.HTTPSConnection):
     The parameters proxy_info, ca_certs, disable_ssl_certificate_validation,
     and ssl_version are all dropped on the ground.
     """
-    def __init__(self, host, port=None, context=None,
-                 strict=None, timeout=None, proxy_info=None, ca_certs=None,
-                 disable_ssl_certificate_validation=False,
-                 ssl_version=None):
-        httplib.HTTPSConnection.__init__(self, host, port=port, context=context, timeout=timeout)
+
+    def __init__(
+        self,
+        host,
+        port=None,
+        key_file=None,
+        cert_file=None,
+        strict=None,
+        timeout=None,
+        proxy_info=None,
+        ca_certs=None,
+        disable_ssl_certificate_validation=False,
+        ssl_version=None,
+    ):
+        httplib.HTTPSConnection.__init__(
+            self,
+            host,
+            port=port,
+            key_file=key_file,
+            cert_file=cert_file,
+            timeout=timeout,
+        )
         self._fetch = _new_fixed_fetch(not disable_ssl_certificate_validation)
+
 
 # Use a different connection object for Google App Engine
 try:
@@ -1861,7 +1887,7 @@ class Http(object):
                     if "location" in response:
                         location = response["location"]
                         (scheme, authority, path, query, fragment) = parse_uri(location)
-                        if authority == None:
+                        if authority is None:
                             response["location"] = urljoin(absolute_uri, location)
                     if response.status == 301 and method in ["GET", "HEAD"]:
                         response["-x-permanent-redirect-url"] = response["location"]
@@ -1973,29 +1999,25 @@ class Http(object):
                 certs = list(self.certificates.iter(authority))
                 if scheme == "https":
                     if certs:
-                        context = ssl.create_default_context()
-                        context.load_cert_chain(
-                            keyfile=certs[0][0], certfile=certs[0][1])
                         conn = self.connections[conn_key] = connection_type(
-                                authority, context=context,
-                                timeout=self.timeout,
-                                proxy_info=proxy_info,
-                                ca_certs=self.ca_certs,
-                                disable_ssl_certificate_validation=
-                                        self.disable_ssl_certificate_validation,
-                                        ssl_version=self.ssl_version)
-                        conn.key_file = certs[0][0]
-                        conn.cert_file = certs[0][1]
+                            authority,
+                            key_file=certs[0][0],
+                            cert_file=certs[0][1],
+                            timeout=self.timeout,
+                            proxy_info=proxy_info,
+                            ca_certs=self.ca_certs,
+                            disable_ssl_certificate_validation=self.disable_ssl_certificate_validation,
+                            ssl_version=self.ssl_version,
+                        )
                     else:
                         conn = self.connections[conn_key] = connection_type(
-                                authority, timeout=self.timeout,
-                                proxy_info=proxy_info,
-                                ca_certs=self.ca_certs,
-                                disable_ssl_certificate_validation=
-                                        self.disable_ssl_certificate_validation,
-                                ssl_version=self.ssl_version)
-                        conn.key_file = None
-                        conn.cert_file = None
+                            authority,
+                            timeout=self.timeout,
+                            proxy_info=proxy_info,
+                            ca_certs=self.ca_certs,
+                            disable_ssl_certificate_validation=self.disable_ssl_certificate_validation,
+                            ssl_version=self.ssl_version,
+                        )
                 else:
                     conn = self.connections[conn_key] = connection_type(
                         authority, timeout=self.timeout, proxy_info=proxy_info
@@ -2101,10 +2123,10 @@ class Http(object):
                         if (
                             "etag" in info
                             and not self.ignore_etag
-                            and not "if-none-match" in headers
+                            and "if-none-match" not in headers
                         ):
                             headers["if-none-match"] = info["etag"]
-                        if "last-modified" in info and not "last-modified" in headers:
+                        if "last-modified" in info and "last-modified" not in headers:
                             headers["if-modified-since"] = info["last-modified"]
                     elif entry_disposition == "TRANSPARENT":
                         pass
