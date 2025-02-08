@@ -1352,7 +1352,7 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
         """
         hosts = self._GetValidHostsForCert(cert)
         for host in hosts:
-            host_re = host.replace(".", "\.").replace("*", "[^.]*")
+            host_re = host.replace(".", "\\.").replace("*", "[^.]*")
             if re.search("^%s$" % (host_re,), hostname, re.I):
                 return True
         return False
@@ -1591,7 +1591,7 @@ try:
     if apiproxy_stub_map.apiproxy.GetStub("urlfetch") is None:
         raise ImportError  # Bail out; we're not actually running on App Engine.
     from google.appengine.api.urlfetch import fetch
-    from google.appengine.api.urlfetch import InvalidURLError
+    # from google.appengine.api.urlfetch import InvalidURLError
 
     # Update the connection classes to use the Googel App Engine specific ones.
     SCHEME_TO_CONNECTION = {

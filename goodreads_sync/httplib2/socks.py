@@ -245,7 +245,7 @@ class socksocket(socket.socket):
         Negotiates a connection through a SOCKS5 server.
         """
         # First we'll send the authentication packages we support.
-        if (self.__proxy[4] != None) and (self.__proxy[5] != None):
+        if (self.__proxy[4] is not None) and (self.__proxy[5] is not None):
             # The username/password details were supplied to the
             # setproxy method so we support the USERNAME/PASSWORD
             # authentication (in addition to the standard none).
@@ -504,7 +504,7 @@ class socksocket(socket.socket):
                 self.__negotiatehttp(destpair[0], destpair[1])
             else:
                 self.__httptunnel = False
-        elif self.__proxy[0] == None:
+        elif self.__proxy[0] is None:
             _orgsocket.connect(self, (destpair[0], destpair[1]))
         else:
             raise GeneralProxyError((4, _generalerrors[4]))

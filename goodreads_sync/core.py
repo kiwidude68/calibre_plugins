@@ -16,7 +16,7 @@ try:
 except ImportError:
     from urlparse import parse_qsl
     from urllib import urlencode, quote_plus
-from six import text_type as unicode
+# from six import text_type as unicode
 
 try:
     from qt.core import QUrl
@@ -1170,7 +1170,7 @@ class CalibreSearcher(object):
             book["calibre_series"] = "%s [%s]" % (mi.series, seridx)
         self.get_uploadable_columns(db, mi, book)
 
-        if not "goodreads_id" in book:
+        if "goodreads_id" not in book:
             goodreads_id = self.id_caches.calibre_to_goodreads_ids().get(calibre_id, "")
             book["goodreads_id"] = goodreads_id
         return True
