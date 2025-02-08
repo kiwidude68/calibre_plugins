@@ -39,6 +39,7 @@ import calendar
 import time
 import random
 import errno
+import six
 
 # calibre Python 3 compatibility.
 from io import BytesIO
@@ -100,38 +101,6 @@ if ssl is not None:
     ssl_CertificateError = getattr(ssl, "CertificateError", None)
 
 
-def _ssl_wrap_socket(
-    sock, key_file, cert_file, disable_validation, ca_certs, ssl_version, hostname
-):
-    if disable_validation:
-        cert_reqs = ssl.CERT_NONE
-    else:
-        cert_reqs = ssl.CERT_REQUIRED
-    if ssl_version is None:
-        ssl_version = ssl.PROTOCOL_SSLv23
-
-    if hasattr(ssl, "SSLContext"):  # Python 2.7.9
-        context = ssl.SSLContext(ssl_version)
-        context.verify_mode = cert_reqs
-        context.check_hostname = cert_reqs != ssl.CERT_NONE
-        if cert_file:
-            context.load_cert_chain(cert_file, key_file)
-        if ca_certs:
-            context.load_verify_locations(ca_certs)
-        else:
-            context.load_default_certs()
-        return context.wrap_socket(sock, server_hostname=hostname)
-    else:
-        return ssl.wrap_socket(
-            sock,
-            keyfile=key_file,
-            certfile=cert_file,
-            cert_reqs=cert_reqs,
-            ca_certs=ca_certs,
-            ssl_version=ssl_version,
-        )
-
-
 def _ssl_wrap_socket_unsupported(
     sock, key_file, cert_file, disable_validation, ca_certs, ssl_version, hostname
 ):
@@ -147,6 +116,38 @@ def _ssl_wrap_socket_unsupported(
 
 if ssl is None:
     _ssl_wrap_socket = _ssl_wrap_socket_unsupported
+else:
+
+    def _ssl_wrap_socket(
+        sock, key_file, cert_file, disable_validation, ca_certs, ssl_version, hostname
+    ):
+        if disable_validation:
+            cert_reqs = ssl.CERT_NONE
+        else:
+            cert_reqs = ssl.CERT_REQUIRED
+        if ssl_version is None:
+            ssl_version = ssl.PROTOCOL_SSLv23
+
+        if hasattr(ssl, "SSLContext"):  # Python 2.7.9
+            context = ssl.SSLContext(ssl_version)
+            context.verify_mode = cert_reqs
+            context.check_hostname = cert_reqs != ssl.CERT_NONE
+            if cert_file:
+                context.load_cert_chain(cert_file, key_file)
+            if ca_certs:
+                context.load_verify_locations(ca_certs)
+            else:
+                context.load_default_certs()
+            return context.wrap_socket(sock, server_hostname=hostname)
+        else:
+            return ssl.wrap_socket(
+                sock,
+                keyfile=key_file,
+                certfile=cert_file,
+                cert_reqs=cert_reqs,
+                ca_certs=ca_certs,
+                ssl_version=ssl_version,
+            )
 
 
 if sys.version_info >= (2, 3):
@@ -378,7 +379,7 @@ def safename(filename):
                 filename = filename.encode("idna")
     except UnicodeError:
         pass
-    if isinstance(filename, unicode):
+    if isinstance(filename, six.unicode):
         filename = filename.encode("utf-8")
     filemd5 = _md5(filename).hexdigest()
     filename = re_url_scheme.sub("", filename)
@@ -529,7 +530,7 @@ def _entry_disposition(response_headers, request_headers):
                 freshness_lifetime = 0
         elif "expires" in response_headers:
             expires = email_utils.parsedate_tz(response_headers["expires"])
-            if None == expires:
+            if expires is None:
                 freshness_lifetime = 0
             else:
                 freshness_lifetime = max(0, calendar.timegm(expires) - date)
@@ -978,7 +979,7 @@ class FileCache(object):
         retval = None
         cacheFullPath = os.path.join(self.cache, self.safe(key))
         try:
-            f = file(cacheFullPath, "rb")
+            f = open(cacheFullPath, "rb")
             retval = f.read()
             f.close()
         except IOError:
@@ -987,7 +988,7 @@ class FileCache(object):
 
     def set(self, key, value):
         cacheFullPath = os.path.join(self.cache, self.safe(key))
-        f = file(cacheFullPath, "wb")
+        f = open(cacheFullPath, "wb")
         f.write(value)
         f.close()
 
@@ -1661,7 +1662,7 @@ class Http(object):
         self.connections = {}
         # The location of the cache, for now a directory
         # where cached responses are held.
-        if cache and isinstance(cache, basestring):
+        if cache and isinstance(cache, six.basestring):
             self.cache = FileCache(cache)
         else:
             self.cache = cache

@@ -23,14 +23,14 @@ class ActionGoodreadsSync(InterfaceActionBase):
     The reason for having two classes is that it allows the command line
     calibre utilities to run without needing to load the GUI libraries.
 
-    '''
-    name                    = 'Goodreads Sync'
-    description             = 'Sync from Calibre with the shelves of your goodreads.com account'
-    supported_platforms     = ['windows', 'osx', 'linux']
-    author                  = 'Grant Drake'
-    version                 = (1, 16, 12)
-    minimum_calibre_version = (5, 0, 0)
     """
+
+    name = "Goodreads Sync"
+    description = "Sync from Calibre with the shelves of your goodreads.com account"
+    supported_platforms = ["windows", "osx", "linux"]
+    author = "Grant Drake"
+    version = (1, 16, 12)
+    minimum_calibre_version = (5, 0, 0)
 
     #: This field defines the GUI plugin class that contains all the code
     #: that actually does something. Its format is module_path:class_name
