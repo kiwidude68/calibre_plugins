@@ -1,7 +1,13 @@
 from __future__ import unicode_literals, division, absolute_import, print_function
 
-__license__ = "GPL v3"
+__author__ = "Grant Drake"
 __copyright__ = "2011, Grant Drake"
+__contributors__ = [
+    "Gwyneth Llewelyn",
+]
+__license__ = "GPL v3"
+__version__ = "1.16.12"
+
 
 # The class that all Interface Action plugin wrappers must inherit from
 from calibre.customize import InterfaceActionBase
@@ -22,7 +28,7 @@ class ActionGoodreadsSync(InterfaceActionBase):
     description             = 'Sync from Calibre with the shelves of your goodreads.com account'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
-    version                 = (1, 16, 11)
+    version                 = (1, 16, 12)
     minimum_calibre_version = (5, 0, 0)
     """
 
