@@ -1156,7 +1156,8 @@ def proxy_info_from_url(url, method="http", noproxy=None):
         noproxy = os.environ.get("no_proxy", os.environ.get("NO_PROXY", ""))
     # Special case: A single '*' character means all hosts should be bypassed.
     if noproxy == "*":
-        bypass_hosts = httplib2.AllHosts
+        # bypass_hosts = httplib2.AllHosts
+        bypass_hosts = AllHosts
     elif noproxy.strip():
         bypass_hosts = noproxy.split(",")
 
