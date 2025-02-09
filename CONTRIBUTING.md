@@ -47,7 +47,7 @@ Generally I try to keep the [semantic version](https://semver.org/) standard.
 ## PyQt / Python Compatibility
 
 In setting up this repo I have decided to:
-- **Drop PyQt4 support** 
+- **Drop PyQt4 support**
     - All these plugins now require a minimum of at least **calibre v2.0** (released in 2014)
     - Supporting PyQt4 involves too many edge cases and changes to Qt API syntax.
     - Users with 8+ year old calibre versions are a small % of the userbase!
@@ -112,7 +112,7 @@ All these batch files can be run from within VS Code using tasks - see below.
 
 ### Changelogs
 
-Originally my plugins had a simple `changelog.txt`, which was copy/pasted into the relevant forum thread. Many years later all the cool kids are using [markdown language](https://www.markdownguide.org/cheat-sheet/). 
+Originally my plugins had a simple `changelog.txt`, which was copy/pasted into the relevant forum thread. Many years later all the cool kids are using [markdown language](https://www.markdownguide.org/cheat-sheet/).
 
 There are guidelines out there for how you should format your CHANGELOG.md files which can then be supported by build automation tools. Initially I stumbled across [Keep a Changelog](https://keepachangelog.com/) and then ended up following the [Common Changelog][common-changelog-url] approach.
 
@@ -132,14 +132,14 @@ The management of this repo will be kept simple where possible:
 
 The zip files for these plugins are published via the [MobileRead calibre plugin forum](https://www.mobileread.com/forums/forumdisplay.php?f=237) threads.
 - The official plugin zip that all users can download via calibre itself is attached to the first post in each plugins thread.
-- Only the plugin thread owner or a MobileRead admin can modify that post.
-- Plugin authors or contributors may choose to submit other versions (betas etc.) within the thread. 
+- Only the plugin thread owner or a MobileRead admin can<<<<<<<<<<<<modify that post.
+- Plugin authors or contributors may choose to submit other versions (betas etc.) within the thread.
 
 ### GitHub Release Automation
 
 A few notes regarding this automation added via the `release.cmd` and `common/release.py` scripts...
 - The goal is to be able to have an archive of plugin zips available for people trawling for previous versions of a plugin.
-- GitHub Release pages will meet that need. 
+- GitHub Release pages will meet that need.
 - The Releases page includes a search capability which is useful given the range of plugin releases in the same repo.
 - We cannot use a simple `vA.B.C` tag, instead it must be prefixed with the plugin name e.g. `extract_isbn-v1.2.3`
 - Using the GitHub API to automate creating of the release and uploading of the zip file from your machine
@@ -189,9 +189,9 @@ Almost all of kiwidude's plugins will now support translations via the [Transife
 If you want to publish the latest translations for a plugin you will need to:
 - Create an account (free!) at https://www.transifex.com/
 - Join the [calibre-plugins](https://www.transifex.com/calibre/calibre-plugins/) project.
-- Download the [Transifex CLI client](https://github.com/transifex/cli/releases). 
+- Download the [Transifex CLI client](https://github.com/transifex/cli/releases).
 - Unzip the CLI client and place the `tx.exe` somewhere in your path.
-- Generate an [API token](https://www.transifex.com/user/settings/api/) to your clipboard. 
+- Generate an [API token](https://www.transifex.com/user/settings/api/) to your clipboard.
 - Run the `transifex-pull.cmd` for a plugin, which will prompt you the very first time for your API token above.
 
 ### Testing Translations
@@ -235,7 +235,7 @@ Entirely optional but you might find it useful to have the calibre source code e
 To start you should clone the [calibre source code](https://github.com/kovidgoyal/calibre.git) repository to your machine to a `calibre` folder.
 
 ### Option A: To search calibre source code and this code repo together in VS Code explorer
-- After cloning, move this repo `calibre_plugins` folder to sit within the `calibre\src` repo subfolder above. 
+- After cloning, move this repo `calibre_plugins` folder to sit within the `calibre\src` repo subfolder above.
 - Your local folder should look like this:
 ```
 calibre
@@ -255,13 +255,13 @@ calibre
 ```
 PYTHONPATH=<path_to_calibre_src>
 ```
-- Create/modify your `.vscode\settings.json` to point to this file with at least this: 
+- Create/modify your `.vscode\settings.json` to point to this file with at least this:
 ```
 {
     "python.envFile": "${workspaceFolder}/.env"
 }
 ```
-- Now when browsing plugin code, all linting warnings for calibre python functions should be resolved. 
+- Now when browsing plugin code, all linting warnings for calibre python functions should be resolved.
 - You can ctrl+click to navigate into calibre source code, yay!.
 - This option is useful if you are focused on some quick plugin changes and want a more lightweight VS Code workspace.
 

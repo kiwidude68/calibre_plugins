@@ -1,5 +1,11 @@
 # Goodreads Sync Change Log
 
+## [1.16.12] - 2025-02-08
+### Fixed
+- Deal with HTTP proxy issues, on systems that have them active
+### Updated
+- Cleaning up of unPythonesque code as flagged by a Python linter
+
 ## [1.16.11] - 2024-11-11
 ### Fixed
 - Display the user friendly Goodreads message when attempting an action like Add to shelf if the book is invalidly linked.
@@ -92,11 +98,11 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Added
 - Added the option "Put books on currently-reading shelf" to the "Update reading progress" dialog.  (@davidfor)
 ### Fixed
-- Progress bar when syncing shelves and updating the library should have been "Books". 
-- Errors handling books when updating calibre after a "Sync from shelf". This gave terrible performance and some books would not have been updated correctly. 
-- Python 3 incompatibility when opening help. 
-- Python 3 incompatibility when opening Goodreads page from dialogs. 
-- Python 3 incompatibility when handling from Goodreads. 
+- Progress bar when syncing shelves and updating the library should have been "Books".
+- Errors handling books when updating calibre after a "Sync from shelf". This gave terrible performance and some books would not have been updated correctly.
+- Python 3 incompatibility when opening help.
+- Python 3 incompatibility when opening Goodreads page from dialogs.
+- Python 3 incompatibility when handling from Goodreads.
 
 ## [1.14.3] - 2020-06-30
 ### Fixed
@@ -110,7 +116,7 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 ### Changed
 - Missed some strings for translations. (@davidfor)
 - Spanish translation (@dunhill)
- 
+
 ## [1.14.0] - 2020-01-28
 ### Added
 - Make translatable. (@davidfor)
