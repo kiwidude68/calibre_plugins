@@ -126,6 +126,9 @@ common_*.py
 # Except those in our common folder where they should be.
 !common/common_*.py
 
+# These plugins are not part of the standard KiwiDude distribution
+savetoformat/
+
 ~*
 # Stupid macOS temporary files
 
