@@ -5,6 +5,7 @@
 - Deal with HTTP proxy issues, on systems that have them active
 ### Updated
 - Cleaning up of unPythonesque code as flagged by a Python linter
+- Reviewed the logic for using `debug_print()`
 
 ## [1.16.11] - 2024-11-11
 ### Fixed

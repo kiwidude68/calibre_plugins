@@ -71,7 +71,7 @@ from calibre.gui2 import error_dialog, question_dialog, info_dialog, open_url
 from calibre.gui2.complete2 import EditWithComplete
 from calibre.utils.config import JSONConfig
 from calibre.utils.icu import sort_key
-from calibre.devices.usbms.driver import debug_print
+# from calibre.devices.usbms.driver import debug_print  # Unnecessary, it comes from prints (gwyneth 20250211)
 
 from calibre_plugins.goodreads_sync.common_compatibility import (
     qSizePolicy_Expanding,

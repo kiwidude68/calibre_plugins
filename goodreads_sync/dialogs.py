@@ -33,7 +33,8 @@ from calibre.ebooks.metadata import MetaInformation
 from calibre.gui2 import error_dialog, question_dialog, gprefs, open_url
 from calibre.gui2.library.delegates import RatingDelegate, TextDelegate
 from calibre.utils.date import qt_to_dt, UNDEFINED_DATE
-from calibre.devices.usbms.driver import debug_print
+# from calibre.devices.usbms.driver import debug_print
+from calibre.prints import debug_print
 
 import calibre_plugins.goodreads_sync.config as cfg
 from calibre_plugins.goodreads_sync.common_compatibility import qSizePolicy_Minimum, qtDropActionCopyAction, qtDropActionMoveAction
@@ -415,7 +416,7 @@ class ChooseShelvesToSyncDialog(SizePersistedDialog):
         for shelf in self.shelves:
             if shelf['name'] in self.selected_shelf_names:
                 self.selected_shelves.append(shelf)
-        
+
         self.plugin_action.progressbar_show(1)
         self.goodreads_shelf_books = self.grhttp.get_goodreads_books_on_shelves(self.user_name, self.selected_shelves)
         self.plugin_action.progressbar_hide()
@@ -478,7 +479,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
 
         self.setMinimumColumnWidth(4, 40)
         self.setMinimumColumnWidth(5, 220)
-        delegate = TextWithLengthDelegate(self, 420) # The status comment is limited to 420 characters. 
+        delegate = TextWithLengthDelegate(self, 420) # The status comment is limited to 420 characters.
         self.setItemDelegateForColumn(5, delegate)
         delegate = RatingDelegate(self, is_half_star=True) if self.allow_half_star_rating else RatingDelegate(self)
         self.setItemDelegateForColumn(6, delegate)
@@ -519,7 +520,7 @@ class UpdateReadingProgressTableWidget(QTableWidget):
             self.setItem(row, 7, DateTableWidgetItem(None, is_read_only=True, fmt=self.format))
             self.setItem(row, 8, NumericTableWidgetItem(''))
         self.allow_half_star_rating = calibre_book.get('calibre_rating_allow_half_stars', False)
-        
+
         self.setSortingEnabled(True)
         self.blockSignals(False)
 
@@ -622,9 +623,9 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
             self.update_book_status(calibre_book)
 
         self.summary_table.populate_table(calibre_books)
-        self.update_error_counts()        
+        self.update_error_counts()
         self.put_finished_on_read_shelf_clicked(self.put_finished_on_read_shelf_checked)
-        
+
         # Cause our dialog size to be restored from prefs or created on first usage
         self.resize_dialog()
 
@@ -648,7 +649,7 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         self.error_label = QLabel('', self)
         grid_layout.addWidget(self.error_label, 0, 1, Qt.AlignRight)
 
-        self.summary_table = UpdateReadingProgressTableWidget(self, self.reading_progress_column, 
+        self.summary_table = UpdateReadingProgressTableWidget(self, self.reading_progress_column,
                                                               self.rating_column, self.date_read_column,
                                                               self.review_text_column)
         self.summary_table.view_book.connect(self.grhttp.view_book_on_goodreads)
@@ -744,7 +745,7 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
         self.is_review_text_visible = self.shelves_map[READ_SHELF].get(cfg.KEY_ADD_REVIEW_TEXT, False) and checked
 
         self.summary_table.show_columns(self.is_rating_visible, self.is_dateread_visible, self.is_review_text_visible)
-        
+
     def action_button_clicked(self):
         self.save_preferences()
         self.action_button.setEnabled(False)
@@ -769,7 +770,7 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
                 progress = int(calibre_book['calibre_reading_progress']) if calibre_book['calibre_reading_progress'] else None
                 progress = progress if progress >=0 else None
                 review_text = None
-                calibre_book['status_comment_text'] if len(calibre_book.get('status_comment_text','')) > 0 else None 
+                calibre_book['status_comment_text'] if len(calibre_book.get('status_comment_text','')) > 0 else None
                 self.grhttp.update_status(client, goodreads_id, progress, self.progress_is_percent, review_text)
                 if (upload_progress and progress):
                     calibre_book['goodreads_reading_progress'] = progress
@@ -808,7 +809,7 @@ class UpdateReadingProgressDialog(SizePersistedDialog):
 
         self.accept()
         self.plugin_action.progressbar_hide()
-    
+
     def _apply_add_actions_for_books(self, added_books, shelf_name, upload_progress, upload_rating=None, upload_date_read=None, upload_review_text=None):
         add_actions = []
         # Include some actions for setting our rating/date read/review text if appropriate
@@ -1952,7 +1953,7 @@ class DoShelfSyncTableWidget(QTableWidget):
         delegate = DateDelegate(self)
         self.setItemDelegateForColumn(5, delegate)
         self.setItemDelegateForColumn(12, delegate)
-        
+
         self.resizeColumnsToContents()
         self.setRangeColumnWidth(1, 120, 200) # GR Title
         self.setRangeColumnWidth(2, 120, 200) # GR Author
@@ -1965,7 +1966,7 @@ class DoShelfSyncTableWidget(QTableWidget):
         self.setSelectionBehavior(QAbstractItemView.SelectRows)
         if len(goodreads_books) > 0:
             self.selectRow(0)
-            
+
         self.setColumnHidden(14, True)
 
     def setMinimumColumnWidth(self, col, minimum):
@@ -2153,7 +2154,7 @@ class DoShelfSyncDialog(SizePersistedDialog):
         auto_match_result = gprefs.get(self.unique_pref_name+':auto match', False)
         self.auto_match_checkbox.setChecked(auto_match_result)
         self.auto_match_checkbox.stateChanged.connect(self.auto_match_state_changed)
-        
+
         button_box = QDialogButtonBox()
         self.sync_button = button_box.addButton(_('Sync Now'), QDialogButtonBox.AcceptRole)
         self.sync_button.setDefault(True)

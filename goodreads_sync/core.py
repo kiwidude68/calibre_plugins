@@ -28,7 +28,7 @@ try:
 except NameError:
     pass  # load_translations() added in calibre 1.9
 
-from calibre.constants import DEBUG
+from calibre.constants import is_debugging
 from calibre.ebooks.metadata import fmt_sidx, authors_to_string, check_isbn
 from calibre.ebooks.oeb.parse_utils import RECOVER_PARSER
 from calibre.gui2 import error_dialog, open_url
@@ -37,7 +37,8 @@ from calibre.utils.cleantext import clean_ascii_chars
 from calibre.utils.date import parse_date, now, UNDEFINED_DATE
 from calibre import get_parsed_proxy
 from calibre import browser
-from calibre.devices.usbms.driver import debug_print
+# from calibre.devices.usbms.driver import debug_print
+from calibre.prints import debug_print
 
 import calibre_plugins.goodreads_sync.oauth2 as oauth
 import calibre_plugins.goodreads_sync.httplib2 as httplib2
@@ -114,11 +115,12 @@ class HttpHelper(object):
             # crash-dumps the module!
             # Also note we do an extra check on the ancient httplib2 library provided.
             # (gwyneth 20230324)
+            proxy_type = 0
             if httplib2.socks is not None:
                 proxy_type = httplib2.socks.PROXY_TYPE_HTTP_NO_TUNNEL
             else:
                 proxy_type = 4  # Ugly hack (gwyneth 20230324)
-
+            debug_print("Proxy detected; proxy type is now: %d" % proxy_type)
             self.proxy_info = httplib2.ProxyInfo(
                 proxy_type,
                 proxy["host"],
@@ -231,11 +233,10 @@ class HttpHelper(object):
                 self.gui.status_bar.clearMessage()
 
     def _handle_failure(self, response, content, url):
-        if DEBUG:
-            debug_print("Goodreads failure calling: %s" % url)
-            debug_print("Response: %s" % response)
-            debug_print("Content: %s" % content)
-            # traceback.print_stack()
+        debug_print("Goodreads failure calling: %s" % url)
+        debug_print("Response: %s" % response)
+        debug_print("Content: %s" % content)
+        # traceback.print_stack()
         detail = "URL: {0}\nResponse Code: {1}\n{2}".format(
             url, response["status"], content
         )
@@ -419,8 +420,7 @@ class HttpHelper(object):
         # Return Review id if book was added.
         url = "%s/shelf/add_to_shelf.xml" % cfg.URL_HTTPS
         body_info = {"name": shelf_name, "book_id": goodreads_id}
-        if DEBUG:
-            debug_print("Add/remove book action: %s book: %s" % (action, body_info))
+        debug_print("Add/remove book action: %s book: %s" % (action, body_info))
         success_status = "201"
         if action == "remove":
             body_info["a"] = "remove"
@@ -633,11 +633,10 @@ class HttpHelper(object):
         if not response:
             return
         if response["status"] == "404":
-            if DEBUG:
-                debug_print(
-                    "User '%s' does not have a review for book: %s"
-                    % (user_name, goodreads_id)
-                )
+            debug_print(
+                "User '%s' does not have a review for book: %s"
+                % (user_name, goodreads_id)
+            )
             return
         # open('D:\\test_review.xml','w').write(content)
         root = self.get_xml_tree(content)
@@ -763,11 +762,10 @@ class HttpHelper(object):
         if book_node.find("authors") is None:
             # We have an error situation where the returned xml is being corrupted due to the
             # Goodreads bug for encodings. We will skip this book
-            if DEBUG:
-                debug_print(
-                    "Goodreads shelf error due to corruption bug. Skipping book: %s"
-                    % book
-                )
+            debug_print(
+                "Goodreads shelf error due to corruption bug. Skipping book: %s"
+                % book
+            )
             return None
         author_nodes = book_node.findall("authors/author")
         authors = [author_node.findtext("name").strip() for author_node in author_nodes]
