@@ -86,6 +86,7 @@ except ImportError:
     try:
         import socks
     except (ImportError, AttributeError):
+        print("Could not import `socks` library!")
         socks = None
 
 # Build the appropriate socket wrapper for ssl
@@ -635,8 +636,6 @@ def _wsse_username_token(cnonce, iso_now, password):
 # auth scheme may change as you descend the tree.
 # So we also need each Auth instance to be able to tell us
 # how close to the 'top' it is.
-
-
 class Authentication(object):
     def __init__(
         self, credentials, host, request_uri, headers, response, content, http
@@ -649,7 +648,7 @@ class Authentication(object):
 
     def depth(self, request_uri):
         (scheme, authority, path, query, fragment) = parse_uri(request_uri)
-        return request_uri[len(self.path) :].count("/")
+        return request_uri[len(self.path):].count("/")
 
     def inscope(self, host, request_uri):
         # XXX Should we normalize the request_uri?
@@ -1384,7 +1383,16 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
             port = self.port
 
         address_info = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
+
+        if self.debuglevel > 0:
+            print("connect: host:", host, " port:", port, " use_proxy: ", use_proxy, " address info: ",
+                  address_info)
+
         for family, socktype, proto, canonname, sockaddr in address_info:
+            if self.debuglevel > 0:
+                print("connect: family:", family, " socktype: ", socktype, " proto: ", proto, " canonname: ",
+                      canonname, " sockaddr: ", sockaddr)
+
             try:
                 if use_proxy:
                     sock = socks.socksocket(family, socktype, proto)
