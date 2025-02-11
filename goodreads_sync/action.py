@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__ = "GPL v3"
 __copyright__ = "2011, Grant Drake"
 
-import os
+# import os
 from functools import partial
 
 try:
