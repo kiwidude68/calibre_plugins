@@ -916,13 +916,13 @@ class GoodreadsTitleWidgetItem(ReadOnlyTableWidgetItem):
 
 
 class StatusDataWidgetItem(ReadOnlyTableWidgetItem):
-    ICON_MAP = { ActionStatus.NO_LINK: 'images/link_add.png',
-                 ActionStatus.WARNING: 'dialog_warning.png',
-                 ActionStatus.VALID: 'ok.png' }
+    ICON_MAP = {ActionStatus.NO_LINK: 'images/link_add.png',
+                ActionStatus.WARNING: 'dialog_warning.png',
+                ActionStatus.VALID: 'ok.png'}
 
-    TOOLTIP_MAP = { ActionStatus.NO_LINK: _('You must link this calibre book to a matching book in Goodreads'),
-                    ActionStatus.WARNING: _('No changes will be made to your shelf in Goodreads for this book'),
-                    ActionStatus.VALID: '' }
+    TOOLTIP_MAP = {ActionStatus.NO_LINK: _('You must link this calibre book to a matching book in Goodreads'),
+                   ActionStatus.WARNING: _('No changes will be made to your shelf in Goodreads for this book'),
+                   ActionStatus.VALID: ''}
 
     def __init__(self, status_msg, status):
         ReadOnlyTableWidgetItem.__init__(self, status_msg)
