@@ -37,8 +37,7 @@ from calibre.utils.cleantext import clean_ascii_chars
 from calibre.utils.date import parse_date, now, UNDEFINED_DATE
 from calibre import get_parsed_proxy
 from calibre import browser
-# from calibre.devices.usbms.driver import debug_print
-from .common_utils import debug_print
+from calibre.devices.usbms.driver import debug_print
 
 import calibre_plugins.goodreads_sync.oauth2 as oauth
 import calibre_plugins.goodreads_sync.httplib2 as httplib2

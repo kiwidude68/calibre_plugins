@@ -33,9 +33,7 @@ from calibre.ebooks.metadata import MetaInformation
 from calibre.gui2 import error_dialog, question_dialog, gprefs, open_url
 from calibre.gui2.library.delegates import RatingDelegate, TextDelegate
 from calibre.utils.date import qt_to_dt, UNDEFINED_DATE
-# from calibre.devices.usbms.driver import debug_print
-# from calibre.prints import debug_print
-from .common_utils import debug_print
+from calibre.devices.usbms.driver import debug_print
 
 
 import calibre_plugins.goodreads_sync.config as cfg
