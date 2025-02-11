@@ -119,7 +119,7 @@ class HttpHelper(object):
                 proxy_type = httplib2.socks.PROXY_TYPE_HTTP_NO_TUNNEL
             else:
                 proxy_type = 4  # Ugly hack (gwyneth 20230324)
-            debug_print("Proxy detected; proxy type is now: %d" % proxy_type)
+            debug_print("__init__: Proxy detected; proxy type is now: %d" % proxy_type)
             if is_debugging():
                 httplib2.debug = 1
             self.proxy_info = httplib2.ProxyInfo(
@@ -259,8 +259,8 @@ class HttpHelper(object):
                     )
                 return (None, None)
 
-        except:
-            debug_print("Failed to parse content into an error tree: %s" % content)
+        except ValueError as err:
+            debug_print("_handle_failure: Failed to parse content into an error tree: %s, error was: %s", content, err)
             pass
 
         if response["status"] == "404":
@@ -388,7 +388,7 @@ class HttpHelper(object):
             response, content = self._request_get(url)
             if not response:
                 return None
-            #             debug_print("get_shelf_list: content=", content)
+            # debug_print("get_shelf_list: content=", content)
             # Get the latest list of shelf names, order same as they are set on Goodreads
             root = et.fromstring(content)
             shelves_node = root.find("shelves")
@@ -635,7 +635,7 @@ class HttpHelper(object):
             return
         if response["status"] == "404":
             debug_print(
-                "User '%s' does not have a review for book: %s"
+                "get_review_book: User '%s' does not have a review for book: %s"
                 % (user_name, goodreads_id)
             )
             return
@@ -801,7 +801,7 @@ class HttpHelper(object):
                     "_convert_review_xml_node_to_book: length of review_text=",
                     len(book["goodreads_review_text"]),
                 )
-        #                 debug_print("_convert_review_xml_node_to_book: review_text=", book['goodreads_review_text'])
+        #       debug_print("_convert_review_xml_node_to_book: review_text=", book['goodreads_review_text'])
         else:
             book["goodreads_shelves"] = ""
             book["goodreads_shelves_list"] = []
