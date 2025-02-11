@@ -121,6 +121,8 @@ class HttpHelper(object):
             else:
                 proxy_type = 4  # Ugly hack (gwyneth 20230324)
             debug_print("Proxy detected; proxy type is now: %d" % proxy_type)
+            if is_debugging():
+                httplib2.debug = 1
             self.proxy_info = httplib2.ProxyInfo(
                 proxy_type,
                 proxy["host"],
