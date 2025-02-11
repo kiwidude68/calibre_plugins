@@ -59,7 +59,7 @@ try:
     import email.message as email_message
     import email.feedparser as email_feedparser
 except ImportError as e:
-    print("Import error for an email library: ", e)
+    print("[ERROR] httplib2 - init: Import error for an email library: ", e)
     #     import email
     import email.Utils as email_utils
     import email.Message as email_message
@@ -82,11 +82,13 @@ import socket
 
 try:
     from httplib2 import socks
-except ImportError:
+except ImportError as err:
+    print("[ERROR] httplib2 - init: Could not import `httplib2.socks`, error was: %s, trying `socks` next",
+          err)
     try:
         import socks
-    except (ImportError, AttributeError):
-        print("Could not import `socks` library!")
+    except (ImportError, AttributeError) as e:
+        print("[ERROR] httplib2 - init: Could not import `socks` library! Error was: ", e)
         socks = None
 
 # Build the appropriate socket wrapper for ssl
@@ -1181,7 +1183,9 @@ class HTTPConnectionWithTimeout(httplib.HTTPConnection):
         self.proxy_info = proxy_info
 
     def connect(self):
-        """Connect to the host and port specified in __init__."""
+        """
+        Connect to the host and port specified in __init__.
+        """
         # Mostly verbatim from httplib.py.
         if self.proxy_info and socks is None:
             raise ProxiesUnavailableError(
@@ -1210,67 +1214,71 @@ class HTTPConnectionWithTimeout(httplib.HTTPConnection):
 
         for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
             af, socktype, proto, canonname, sa = res
-            try:
-                if use_proxy:
-                    self.sock = socks.socksocket(af, socktype, proto)
-                    self.sock.setproxy(
-                        proxy_type,
-                        proxy_host,
-                        proxy_port,
-                        proxy_rdns,
-                        proxy_user,
-                        proxy_pass,
-                        proxy_headers,
-                    )
-                else:
-                    self.sock = socket.socket(af, socktype, proto)
-                    self.sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
-                # Different from httplib: support timeouts.
-                if has_timeout(self.timeout):
-                    self.sock.settimeout(self.timeout)
-                    # End of difference from httplib.
-                if self.debuglevel > 0:
-                    print("connect: (%s, %s) ************" % (self.host, self.port))
+            if socks is None:
+                print("[ERROR] httplib2: `socks` still unset in HTTPConnectionWithTimeout.connect()! — skipping")
+            else:
+                try:
                     if use_proxy:
-                        print(
-                            "proxy: %s ************"
-                            % str(
-                                (
-                                    proxy_host,
-                                    proxy_port,
-                                    proxy_rdns,
-                                    proxy_user,
-                                    proxy_pass,
-                                    proxy_headers,
+                        self.sock = socks.socksocket(af, socktype, proto)
+                        self.sock.setproxy(
+                            proxy_type,
+                            proxy_host,
+                            proxy_port,
+                            proxy_rdns,
+                            proxy_user,
+                            proxy_pass,
+                            proxy_headers,
+                        )
+                    else:
+                        self.sock = socket.socket(af, socktype, proto)
+                        self.sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+                    # Different from httplib: support timeouts.
+                    if has_timeout(self.timeout):
+                        self.sock.settimeout(self.timeout)
+                        # End of difference from httplib.
+                    if self.debuglevel > 0:
+                        print("[DEBUG] httplib2: connect: (%s, %s) ************" % (self.host, self.port))
+                        if use_proxy:
+                            print(
+                                "[DEBUG] httplib2: proxy: %s ************"
+                                % str(
+                                    (
+                                        proxy_host,
+                                        proxy_port,
+                                        proxy_rdns,
+                                        proxy_user,
+                                        proxy_pass,
+                                        proxy_headers,
+                                    )
                                 )
                             )
-                        )
-                if use_proxy:
-                    self.sock.connect((self.host, self.port) + sa[2:])
-                else:
-                    self.sock.connect(sa)
-            except socket.error as msg:
-                if self.debuglevel > 0:
-                    print("connect fail: (%s, %s)" % (self.host, self.port))
                     if use_proxy:
-                        print(
-                            "proxy: %s"
-                            % str(
-                                (
-                                    proxy_host,
-                                    proxy_port,
-                                    proxy_rdns,
-                                    proxy_user,
-                                    proxy_pass,
-                                    proxy_headers,
+                        self.sock.connect((self.host, self.port) + sa[2:])
+                    else:
+                        self.sock.connect(sa)
+                except socket.error as msg:
+                    if self.debuglevel > 0:
+                        print("[ERROR] httplib2: connect fail: (%s, %s) err: %s" % (self.host, self.port, msg))
+                        if use_proxy:
+                            print(
+                                "[DEBUG] httplib2: proxy: %s"
+                                % str(
+                                    (
+                                        proxy_host,
+                                        proxy_port,
+                                        proxy_rdns,
+                                        proxy_user,
+                                        proxy_pass,
+                                        proxy_headers,
+                                    )
                                 )
                             )
-                        )
-                if self.sock:
-                    self.sock.close()
-                self.sock = None
-                continue
-            break
+                    if self.sock:
+                        self.sock.close()
+                    self.sock = None
+                    continue
+                break
+
         if not self.sock:
             raise socket.error(msg)
 
@@ -1385,115 +1393,119 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
         address_info = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
 
         if self.debuglevel > 0:
-            print("connect: host:", host, " port:", port, " use_proxy: ", use_proxy, " address info: ",
+            print("[DEBUG] httplib2: connect: host:", host, " port:", port, " use_proxy: ", use_proxy, " address info: ",
                   address_info)
 
         for family, socktype, proto, canonname, sockaddr in address_info:
             if self.debuglevel > 0:
-                print("connect: family:", family, " socktype: ", socktype, " proto: ", proto, " canonname: ",
+                print("[DEBUG] httplib2: connect: family:", family, " socktype: ",
+                      socktype, " proto: ", proto, " canonname: ",
                       canonname, " sockaddr: ", sockaddr)
 
-            try:
-                if use_proxy:
-                    sock = socks.socksocket(family, socktype, proto)
+            if socks is None:
+                print("[ERROR] httplib2: `socks` still unset in HTTPSConnectionWithTimeout.connect()! — skipping")
+            else:
+                try:
+                    if use_proxy:
+                        sock = socks.socksocket(family, socktype, proto)
 
-                    sock.setproxy(
-                        proxy_type,
-                        proxy_host,
-                        proxy_port,
-                        proxy_rdns,
-                        proxy_user,
-                        proxy_pass,
-                        proxy_headers,
+                        sock.setproxy(
+                            proxy_type,
+                            proxy_host,
+                            proxy_port,
+                            proxy_rdns,
+                            proxy_user,
+                            proxy_pass,
+                            proxy_headers,
+                        )
+                    else:
+                        sock = socket.socket(family, socktype, proto)
+                        sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+
+                    if has_timeout(self.timeout):
+                        sock.settimeout(self.timeout)
+
+                    if use_proxy:
+                        sock.connect((self.host, self.port) + sockaddr[:2])
+                    else:
+                        sock.connect(sockaddr)
+                    self.sock = _ssl_wrap_socket(
+                        sock,
+                        self.key_file,
+                        self.cert_file,
+                        self.disable_ssl_certificate_validation,
+                        self.ca_certs,
+                        self.ssl_version,
+                        self.host,
                     )
-                else:
-                    sock = socket.socket(family, socktype, proto)
-                    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
-
-                if has_timeout(self.timeout):
-                    sock.settimeout(self.timeout)
-
-                if use_proxy:
-                    sock.connect((self.host, self.port) + sockaddr[:2])
-                else:
-                    sock.connect(sockaddr)
-                self.sock = _ssl_wrap_socket(
-                    sock,
-                    self.key_file,
-                    self.cert_file,
-                    self.disable_ssl_certificate_validation,
-                    self.ca_certs,
-                    self.ssl_version,
-                    self.host,
-                )
-                if self.debuglevel > 0:
-                    print("connect: (%s, %s)" % (self.host, self.port))
-                    if use_proxy:
-                        print(
-                            "proxy: %s"
-                            % str(
-                                (
-                                    proxy_host,
-                                    proxy_port,
-                                    proxy_rdns,
-                                    proxy_user,
-                                    proxy_pass,
-                                    proxy_headers,
+                    if self.debuglevel > 0:
+                        print("[DEBUG] httplib2: connect: (%s, %s)" % (self.host, self.port))
+                        if use_proxy:
+                            print(
+                                "[DEBUG] httplib2: proxy: %s"
+                                % str(
+                                    (
+                                        proxy_host,
+                                        proxy_port,
+                                        proxy_rdns,
+                                        proxy_user,
+                                        proxy_pass,
+                                        proxy_headers,
+                                    )
                                 )
                             )
-                        )
-                if not self.disable_ssl_certificate_validation:
-                    cert = self.sock.getpeercert()
-                    hostname = self.host.split(":", 0)[0]
-                    if not self._ValidateCertificateHostname(cert, hostname):
-                        raise CertificateHostnameMismatch(
-                            "Server presented certificate that does not match "
-                            "host %s: %s" % (hostname, cert),
-                            hostname,
-                            cert,
-                        )
-            except (
-                ssl_SSLError,
-                ssl_CertificateError,
-                CertificateHostnameMismatch,
-            ) as e:
-                if sock:
-                    sock.close()
-                if self.sock:
-                    self.sock.close()
-                self.sock = None
-                # Unfortunately the ssl module doesn't seem to provide any way
-                # to get at more detailed error information, in particular
-                # whether the error is due to certificate validation or
-                # something else (such as SSL protocol mismatch).
-                if getattr(e, "errno", None) == ssl.SSL_ERROR_SSL:
-                    raise SSLHandshakeError(e)
-                else:
+                    if not self.disable_ssl_certificate_validation:
+                        cert = self.sock.getpeercert()
+                        hostname = self.host.split(":", 0)[0]
+                        if not self._ValidateCertificateHostname(cert, hostname):
+                            raise CertificateHostnameMismatch(
+                                "Server presented certificate that does not match "
+                                "host %s: %s" % (hostname, cert),
+                                hostname,
+                                cert,
+                            )
+                except (
+                    ssl_SSLError,
+                    ssl_CertificateError,
+                    CertificateHostnameMismatch,
+                ) as e:
+                    if sock:
+                        sock.close()
+                    if self.sock:
+                        self.sock.close()
+                    self.sock = None
+                    # Unfortunately the ssl module doesn't seem to provide any way
+                    # to get at more detailed error information, in particular
+                    # whether the error is due to certificate validation or
+                    # something else (such as SSL protocol mismatch).
+                    if getattr(e, "errno", None) == ssl.SSL_ERROR_SSL:
+                        raise SSLHandshakeError(e)
+                    else:
+                        raise
+                except (socket.timeout, socket.gaierror):
                     raise
-            except (socket.timeout, socket.gaierror):
-                raise
-            except socket.error as msg:
-                if self.debuglevel > 0:
-                    print("connect fail: (%s, %s)" % (self.host, self.port))
-                    if use_proxy:
-                        print(
-                            "proxy: %s"
-                            % str(
-                                (
-                                    proxy_host,
-                                    proxy_port,
-                                    proxy_rdns,
-                                    proxy_user,
-                                    proxy_pass,
-                                    proxy_headers,
+                except socket.error as msg:
+                    if self.debuglevel > 0:
+                        print("[ERROR] httplib2: connect fail: (%s, %s) err: %s" % (self.host, self.port, msg))
+                        if use_proxy:
+                            print(
+                                "[DEBUG] httplib2: proxy: %s"
+                                % str(
+                                    (
+                                        proxy_host,
+                                        proxy_port,
+                                        proxy_rdns,
+                                        proxy_user,
+                                        proxy_pass,
+                                        proxy_headers,
+                                    )
                                 )
                             )
-                        )
-                if self.sock:
-                    self.sock.close()
-                self.sock = None
-                continue
-            break
+                    if self.sock:
+                        self.sock.close()
+                    self.sock = None
+                    continue
+                break
         if not self.sock:
             raise socket.error(msg)
 
