@@ -1,11 +1,14 @@
-# Goodreads Sync Change Log
+# Changelog
 
-## [1.16.12] - 2025-02-08
+## [1.16.12] - 2025-02-12
 ### Fixed
-- Deal with HTTP proxy issues, on systems that have them active
+- Deal with HTTP proxy issues ([#104](https://github.com/kiwidude68/calibre_plugins/issues/104)), on systems that have them active:
+  - In the included copy of the `httplib2` library, deal with the import of `socks`
+    according to Python 3+ rules (as an additional choice).
+  - Add more error checking & debugging messages to catch edge cases earlier.
 ### Updated
-- Cleaning up of unPythonesque code as flagged by a Python linter
-- Reviewed the logic for using `debug_print()`
+- Clean up unPythonesque code as flagged by a Python linter.
+- Reviewed logic for using `debug_print()`.
 
 ## [1.16.11] - 2024-11-11
 ### Fixed
@@ -401,3 +404,5 @@ _All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre
 
 ## [1.0.0] - 2011-02-27
 _Initial release of Goodreads Sync plugin_
+
+[1.16.12]: https://github.com/kiwidude68/calibre_plugins/releases/tag/goodreads_sync-v1.16.12

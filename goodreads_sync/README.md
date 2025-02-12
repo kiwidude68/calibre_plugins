@@ -1,9 +1,9 @@
 # Goodreads Sync Plugin
 [![MobileRead][mobileread-image]][mobileread-url]
-[![History][changelog-image]][changelog-url] 
+[![History][changelog-image]][changelog-url]&nbsp;[![Common Changelog][common-changelog-image]][common-changelog-url]
 [![License][license-image]][license-url]
 [![calibre Version][calibre-image]][calibre-url]
-[![Status][status-image]][status-image] 
+[![Status][status-image]][status-image]
 
 ## Overview
 
@@ -33,6 +33,9 @@ Please see the README.md and CONTRIBUTING.md at the above site for more informat
 
 [changelog-image]: https://img.shields.io/badge/History-CHANGELOG-blue.svg
 [changelog-url]: CHANGELOG.md
+
+[common-changelog-image]: https://common-changelog.org/badge.svg
+[common-changelog-url]: https://common-changelog.org
 
 [license-image]: https://img.shields.io/badge/License-GPL-yellow.svg
 [license-url]: ../LICENSE.md
