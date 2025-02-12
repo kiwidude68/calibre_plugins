@@ -470,7 +470,7 @@ class socksocket(socket.socket):
         if (
             (not type(destpair) in (list, tuple))
             or (len(destpair) < 2)
-            or (not isinstance(destpair[0], six.basestring))
+            or (not isinstance(destpair[0], six.string_types))
             or (type(destpair[1]) != int)
         ):
             raise GeneralProxyError((5, _generalerrors[5]))

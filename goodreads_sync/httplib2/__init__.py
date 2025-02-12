@@ -83,13 +83,23 @@ import socket
 try:
     from httplib2 import socks
 except ImportError as err:
-    print("[ERROR] httplib2 - init: Could not import `httplib2.socks`, error was: %s, trying `socks` next",
+    print("[ERROR] httplib2 - init: Could not import `httplib2.socks`, error was: %s, trying `socks` next" %
           err)
     try:
         import socks
     except (ImportError, AttributeError) as e:
         print("[ERROR] httplib2 - init: Could not import `socks` library! Error was: ", e)
-        socks = None
+        try:
+            from . import socks
+        except (ImportError, AttributeError) as e:
+            print("[ERROR] httplib2 - init: Could not import `socks` in `.`, error was: ", e)
+            socks = None
+
+    if socks is None:
+        print('[ERROR] httplib2: no `socks`, so nothing will work!')
+    else:
+        print("[INFO] `socks` correctly initialised.")
+
 
 # Build the appropriate socket wrapper for ssl
 ssl = None
@@ -1393,7 +1403,8 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
         address_info = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
 
         if self.debuglevel > 0:
-            print("[DEBUG] httplib2: connect: host:", host, " port:", port, " use_proxy: ", use_proxy, " address info: ",
+            print("[DEBUG] httplib2: connect: host:", host, " port:", port,
+                  " use_proxy: ", use_proxy, " address info: ",
                   address_info)
 
         for family, socktype, proto, canonname, sockaddr in address_info:
@@ -1682,7 +1693,7 @@ class Http(object):
         self.connections = {}
         # The location of the cache, for now a directory
         # where cached responses are held.
-        if cache and isinstance(cache, six.basestring):
+        if cache and isinstance(cache, six.string_types):
             self.cache = FileCache(cache)
         else:
             self.cache = cache
