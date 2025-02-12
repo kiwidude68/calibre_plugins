@@ -752,7 +752,7 @@ class GoodreadsSyncAction(InterfaceAction):
         db = self.gui.library_view.model().db
         calibre_books = []
         self.progressbar("_convert_selection_to_books")
-        self.progressbar_label("testing")
+        self.progressbar_label(_("Working..."))
         self.progressbar_show(len(rows))
         for row in rows:
             self.progressbar_increment()
