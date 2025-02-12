@@ -4,11 +4,11 @@
 ### Fixed
 - Deal with HTTP proxy issues ([#104](https://github.com/kiwidude68/calibre_plugins/issues/104)), on systems that have them active:
   - In the included copy of the `httplib2` library, deal with the import of `socks`
-    according to Python 3+ rules (as an additional choice).
-  - Add more error checking & debugging messages to catch edge cases earlier.
+    according to Python 3+ rules (as an additional choice). (Gwyneth Llewelyn)
+  - Add more error checking & debugging messages to catch edge cases earlier. (Gwyneth Llewelyn)
 ### Updated
-- Clean up unPythonesque code as flagged by a Python linter.
-- Reviewed logic for using `debug_print()`.
+- Clean up unPythonesque code as flagged by a Python linter. (Gwyneth Llewelyn)
+- Reviewed logic for using `debug_print()`. (Gwyneth Llewelyn)
 
 ## [1.16.11] - 2024-11-11
 ### Fixed
