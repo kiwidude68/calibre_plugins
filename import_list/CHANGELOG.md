@@ -1,5 +1,9 @@
 # Import List Change Log
 
+## [1.9.6] - 2025-02-15
+### Fixed
+- Cailbre 7.26 removed the `set_auto_complete_function` delegate as no longer necessary. (cbhaley)
+
 ## [1.9.5] - 2025-02-15
 ### Fixed
 - Cailbre 7.26 removed the `set_database` delegate as no longer necessary. (cbhaley)
