@@ -72,11 +72,19 @@ class MatchedBookView(QTableView):
 
         self.title_delegate = TextDelegate(self)
         self.authors_delegate = CompleteDelegate(self, '&', 'all_author_names', True)
-        self.authors_delegate.set_database(self.db)
+        try:
+            # Delegate was removed in calibre 7.26, see issue #109
+            self.authors_delegate.set_database(self.db)
+        except:
+            pass
         self.series_delegate = TextDelegate(self)
         self.series_delegate.set_auto_complete_function(self.db.all_series)
         self.tags_delegate = CompleteDelegate(self, '&', 'all_tags', True)
-        self.tags_delegate.set_database(self.db)
+        try:
+            # Delegate was removed in calibre 7.26, see issue #109
+            self.tags_delegate.set_database(self.db)
+        except:
+            pass
 
         self._set_delegates_for_columns()
         # Specify a minimum width for title, author and series
