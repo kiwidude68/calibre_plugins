@@ -210,11 +210,11 @@ PREDEFINED_WEB_CONFIGS = {
    'Goodreads': {
             KEY_WEB_XPATH_DATA: [
                 { KEY_WEB_FIELD: 'rows',         KEY_WEB_XPATH: '//table' + tbody_in_xpath + '/tr/td[3]' },
-                { KEY_WEB_FIELD: 'title',        KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: r'\\([^\\)]+\\)' },
+                { KEY_WEB_FIELD: 'title',        KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: r'\([^\)]+\)' },
                 { KEY_WEB_FIELD: 'authors',      KEY_WEB_XPATH: 'span/div/a[@class="authorName"]/span/text()',KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: '' },
-                { KEY_WEB_FIELD: 'series',       KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'\\(([^,\\.]+)' },
-                { KEY_WEB_FIELD: 'series_index', KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'#([\\d\\.]+)' },
-                { KEY_WEB_FIELD: 'identifier:goodreads',   KEY_WEB_XPATH: 'a[@class="bookTitle"]/@href',      KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'/book/show/(\\d+)' } ],
+                { KEY_WEB_FIELD: 'series',       KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'\(([^,\.]+)' },
+                { KEY_WEB_FIELD: 'series_index', KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'#([\d\.]+)' },
+                { KEY_WEB_FIELD: 'identifier:goodreads',   KEY_WEB_XPATH: 'a[@class="bookTitle"]/@href',      KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'/book/show/(\d+)' } ],
             KEY_WEB_REVERSE_LIST: False,
             KEY_WEB_JAVASCRIPT: False,
             KEY_WEB_ENCODING: 'utf-8',
@@ -223,11 +223,11 @@ PREDEFINED_WEB_CONFIGS = {
    'Goodreads Award': {
             KEY_WEB_XPATH_DATA: [
                 { KEY_WEB_FIELD: 'rows',         KEY_WEB_XPATH: '//table[@class="tableList"]' + tbody_in_xpath + '/tr/td[2]' },
-                { KEY_WEB_FIELD: 'title',        KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',       KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: r'\\([^\\)]+\\)' },
+                { KEY_WEB_FIELD: 'title',        KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',       KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: r'\([^\)]+\)' },
                 { KEY_WEB_FIELD: 'authors',      KEY_WEB_XPATH: 'span/div/a[@class="authorName"]/span/text()', KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: '' },
-                { KEY_WEB_FIELD: 'series',       KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',       KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'\\(([^,\\.]+)' },
-                { KEY_WEB_FIELD: 'series_index', KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',       KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'#([\\d\\.]+)' },
-                { KEY_WEB_FIELD: 'identifier:goodreads',   KEY_WEB_XPATH: 'a[@class="bookTitle"]/@href',   KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'/book/show/(\\d+)' } ],
+                { KEY_WEB_FIELD: 'series',       KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',       KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'\(([^,\.]+)' },
+                { KEY_WEB_FIELD: 'series_index', KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',       KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'#([\d\.]+)' },
+                { KEY_WEB_FIELD: 'identifier:goodreads',   KEY_WEB_XPATH: 'a[@class="bookTitle"]/@href',   KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'/book/show/(\d+)' } ],
             KEY_WEB_REVERSE_LIST: False,
             KEY_WEB_JAVASCRIPT: False,
             KEY_WEB_ENCODING: 'utf-8',
@@ -236,11 +236,11 @@ PREDEFINED_WEB_CONFIGS = {
    'Goodreads Search': {
             KEY_WEB_XPATH_DATA: [
                 { KEY_WEB_FIELD: 'rows',         KEY_WEB_XPATH: '//table[@class="tableList"]' + tbody_in_xpath + '/tr/td[2]' },
-                { KEY_WEB_FIELD: 'title',        KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: r'\\([^\\)]+\\)' },
+                { KEY_WEB_FIELD: 'title',        KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: r'\([^\)]+\\)' },
                 { KEY_WEB_FIELD: 'authors',      KEY_WEB_XPATH: 'span/div/a[@class="authorName"]/span/text()',KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: '' },
-                { KEY_WEB_FIELD: 'series',       KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'\\(([^,\\.]+)' },
-                { KEY_WEB_FIELD: 'series_index', KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'#([\\d\\.]+)' },
-                { KEY_WEB_FIELD: 'identifier:goodreads',   KEY_WEB_XPATH: 'a[@class="bookTitle"]/@href',      KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'/book/show/(\\d+)' } ],
+                { KEY_WEB_FIELD: 'series',       KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'\(([^,\.]+)' },
+                { KEY_WEB_FIELD: 'series_index', KEY_WEB_XPATH: 'a[@class="bookTitle"]/span/text()',          KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'#([\d\.]+)' },
+                { KEY_WEB_FIELD: 'identifier:goodreads',   KEY_WEB_XPATH: 'a[@class="bookTitle"]/@href',      KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'/book/show/(\d+)' } ],
             KEY_WEB_REVERSE_LIST: False,
             KEY_WEB_JAVASCRIPT: False,
             KEY_WEB_ENCODING: 'utf-8',
@@ -249,11 +249,11 @@ PREDEFINED_WEB_CONFIGS = {
    'Goodreads Shelf': {
             KEY_WEB_XPATH_DATA: [
                 { KEY_WEB_FIELD: 'rows',                KEY_WEB_XPATH: '//div[@class="left"]' },
-                { KEY_WEB_FIELD: 'title',               KEY_WEB_XPATH: 'a[@class="bookTitle"]/text()',            KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: r'\\([^\\)]+\\)' },
+                { KEY_WEB_FIELD: 'title',               KEY_WEB_XPATH: 'a[@class="bookTitle"]/text()',            KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: r'\([^\)]+\)' },
                 { KEY_WEB_FIELD: 'authors',             KEY_WEB_XPATH: 'span/div/a[@class="authorName"]/span/text()', KEY_WEB_REGEX_IS_STRIP: True,  KEY_WEB_REGEX: '' },
-                { KEY_WEB_FIELD: 'series',              KEY_WEB_XPATH: 'a[@class="bookTitle"]/text()',            KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'\\(([^,\\.]+)' },
-                { KEY_WEB_FIELD: 'series_index',        KEY_WEB_XPATH: 'a[@class="bookTitle"]/text()',            KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'#([\\d\\.]+)' },
-                { KEY_WEB_FIELD: 'identifier:goodreads',KEY_WEB_XPATH: 'a[@class="bookTitle"]/@href',             KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'/book/show/(\\d+)' } ],
+                { KEY_WEB_FIELD: 'series',              KEY_WEB_XPATH: 'a[@class="bookTitle"]/text()',            KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'\(([^,\.]+)' },
+                { KEY_WEB_FIELD: 'series_index',        KEY_WEB_XPATH: 'a[@class="bookTitle"]/text()',            KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'#([\d\.]+)' },
+                { KEY_WEB_FIELD: 'identifier:goodreads',KEY_WEB_XPATH: 'a[@class="bookTitle"]/@href',             KEY_WEB_REGEX_IS_STRIP: False, KEY_WEB_REGEX: r'/book/show/(\d+)' } ],
             KEY_WEB_REVERSE_LIST: False,
             KEY_WEB_JAVASCRIPT: False,
             KEY_WEB_ENCODING: 'utf-8',
