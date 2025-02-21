@@ -20,7 +20,7 @@ class ActionOpenWith(InterfaceActionBase):
     description             = 'Open format or cover of book in a specified external application'
     supported_platforms     = ['windows', 'osx', 'linux'] # Platforms this plugin will run on
     author                  = 'Grant Drake'
-    version                 = (1, 8, 3)
+    version                 = (1, 8, 4)
     minimum_calibre_version = (2, 0, 0)
 
     #: This field defines the GUI plugin class that contains all the code

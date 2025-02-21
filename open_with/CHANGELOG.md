@@ -1,5 +1,9 @@
 # Open With Change Log
 
+## [1.8.4] - 2025-02-21
+### Fixed
+- Fix for out of memory errors with Adobe Acrobat.
+
 ## [1.8.3] - 2024-04-01
 ### Fixed
 - Fix for calibre 7 for QFileDialog errors.

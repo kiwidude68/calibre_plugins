@@ -17,7 +17,7 @@ except NameError:
     pass # load_translations() added in calibre 1.9
 
 from calibre.constants import iswindows, isosx, DEBUG
-from calibre.gui2 import error_dialog
+from calibre.gui2 import error_dialog, sanitize_env_vars
 from calibre.gui2.actions import InterfaceAction
 
 import calibre_plugins.open_with.config as cfg
@@ -215,7 +215,7 @@ class OpenWithAction(InterfaceAction):
                 # https://www.mobileread.com/forums/showpost.php?p=4048886&postcount=355
                 from calibre.constants import numeric_version as calibre_version
                 if calibre_version >= (5,4,0):
-                    self.launch_windows_5_4_plus(external_app_path, app_args_list, path_to_file)
+                    self.launch_windows_5_4_plus(external_app_path, app_args_list, path_to_file, wrap_args)
                 else:
                     self.launch_windows_pre_5_4(external_app_path, app_args_list, path_to_file, wrap_args)
             else: #Linux
@@ -242,16 +242,23 @@ class OpenWithAction(InterfaceAction):
             app_args_list.append(path_to_file)
         return app_args_list
 
-    def launch_windows_5_4_plus(self, external_app_path, app_args_list, path_to_file):
+    def launch_windows_5_4_plus(self, external_app_path, app_args_list, path_to_file, wrap_args=True):
         # Add to the recently opened files list to support windows jump lists etc.
         from calibre.gui2 import add_to_recent_docs
         add_to_recent_docs(path_to_file)
 
-        DETACHED_PROCESS = 0x00000008
-        print('About to run a command:', app_args_list)
-        clean_env = dict(os.environ)
-        del clean_env['PATH']
-        subprocess.Popen(app_args_list, creationflags=DETACHED_PROCESS, env=clean_env)
+        # Returning to the "old" way of launching processes, where the arguments are passed as a single
+        # string to the shell. This is because passing as a list gave out of memory errors for Adobe Acrobat.
+        cmd_line = '"%s"'%app_args_list[0]
+        for app_arg in app_args_list[1:-1]:
+            cmd_line += ' "%s"'%app_arg if wrap_args else ' %s'%app_arg
+        if path_to_file and len(path_to_file) > 0:
+            cmd_line += ' "%s"'%path_to_file
+        with sanitize_env_vars():
+            print('cmd_line:', cmd_line)
+            DETACHED_PROCESS = 0x00000008
+            subprocess.Popen(cmd_line, creationflags=DETACHED_PROCESS)
+
 
     def launch_windows_pre_5_4(self, external_app_path, app_args_list, path_to_file, wrap_args=True):
         # Add to the recently opened files list to support windows jump lists etc.
