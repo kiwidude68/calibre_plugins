@@ -293,8 +293,13 @@ class BookModifier(object):
         for child in metadata:
             try:
                 if not child.tag.startswith('{http://purl.org/dc/'):
-                    to_remove.append(child)
-                    self.log('\t  Removing child:', child.tag)
+                    # Check that it isn't the 'dcterms:modified' property which is mandatory for epub3.
+                    if child.attrib.get('property') == 'dcterms:modified':
+                        self.log('\t  Skipping mandatory epub3 dcterms:modified meta element')
+                        continue
+                    else:
+                        to_remove.append(child)
+                        self.log('\t  Removing child:', child.tag)
             except:
                 # Dunno how to elegantly handle in lxml parsing
                 # text like <!-- stuff --> which blows up when
