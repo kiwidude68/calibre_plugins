@@ -3,6 +3,7 @@
 ## [1.7.2] - 2025-03-24
 ### Added
 - Set metadata language to always be `eng` rather than calibre user default (feuille)
+- Galician translation
 
 ## [1.7.1] - 2024-08-20
 ### Added
