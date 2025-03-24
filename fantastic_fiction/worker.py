@@ -98,6 +98,7 @@ class Worker(Thread): # Get details
 
         mi = Metadata(title, authors)
         mi.set_identifier('ff', ff_id)
+        mi.language = 'eng'
         self.ff_id = ff_id
 
         try:
