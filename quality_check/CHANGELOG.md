@@ -1,6 +1,10 @@
 # Quality Check Change Log
 
-## [1.14.0] - 2026-01-25
+## [1.14.1] - 2025-03-24
+### Changed
+- The non DC: metadata check now ignores the mandatory epub3 `dcterms:modified` meta element.
+
+## [1.14.0] - 2025-01-25
 ### Added
 - Added a 'Fix title sort' option for users as an alternative to the bulk metadata edit dialog.
 

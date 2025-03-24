@@ -1148,8 +1148,12 @@ class EpubCheck(BaseCheck):
                         if len(metadata):
                             for child in metadata[0]:
                                 try:
-                                    if not child.tag.startswith('{http://purl.org/dc/'):
-                                        return True
+                                    if child.tag.startswith('{http://purl.org/dc/'):
+                                        continue
+                                    # Make sure we exclude the mandatory dcterms:modified meta element for epub3
+                                    if child.attrib.get('property') == 'dcterms:modified':
+                                        continue
+                                    return True
                                 except:
                                     # Dunno how to elegantly handle in lxml parsing
                                     # text like <!-- stuff --> which blows up when
