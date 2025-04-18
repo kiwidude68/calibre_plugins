@@ -1,5 +1,9 @@
 # Goodreads Change Log
 
+## [1.8.3] - 2025-04-18
+### Fixed
+- Fix Get ASIN option so turning it off will no longer retrieve the Amazon identifier.
+
 ## [1.8.2] - 2024-06-13
 ### Fixed
 - Fix casing of goodreads identifier in code so right-click remove in calibre feature will work (Terisa).

@@ -234,11 +234,11 @@ class Worker(Thread): # Get details
             self.log.exception('Error parsing ISBN for url: %r'%self.url)
 
         try:
-            get_asin = cfg.plugin_prefs[cfg.STORE_NAME][cfg.KEY_GET_ASIN]
-            if get_asin is not None:
+            get_asin = cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_GET_ASIN, False)
+            if get_asin:
                 if book_json:
                     asin = self.parse_asin(book_json)
-                if asin is not None:
+                if asin:
                     mi.set_identifier('amazon', asin)
         except:
             self.log.exception('Error parsing ASIN for url: %r'%self.url)
