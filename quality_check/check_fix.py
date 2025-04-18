@@ -56,19 +56,20 @@ class FixCheck(BaseCheck):
         This operation works only on selected ids, it does not change all author
         occurrences across the library!
         '''
-        def swap_names(a):
-            if ',' in a:
+        def swap_names(a, target_with_comma):
+            if not target_with_comma and ',' in a:
                 parts = a.split(',')
                 if len(parts) <= 1:
                     return a
                 surname = parts[0]
                 return '%s %s' % (' '.join(parts[1:]), surname)
-            else:
+            if target_with_comma and ',' not in a:
                 parts = a.split(None)
                 if len(parts) <= 1:
                     return a
                 surname = parts[-1]
                 return '%s, %s' % (surname, ' '.join(parts[:-1]))
+            return a    # Don't need to change
 
         db = self.gui.current_db
         previous = self.gui.library_view.currentIndex()
@@ -78,7 +79,8 @@ class FixCheck(BaseCheck):
                 authors = db.authors(book_id, index_is_id=True)
                 if authors:
                     authors = [a.strip().replace('|', ',') for a in authors.split(',')]
-                    new_authors = [swap_names(a) for a in authors]
+                    has_comma = ',' in authors[0]
+                    new_authors = [swap_names(a, not has_comma) for a in authors]
                     db.set_authors(book_id, new_authors, notify=False)
 
             self.gui.library_view.model().refresh_ids(book_ids)

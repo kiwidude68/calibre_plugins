@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.14.2] - 2025-04-18
+### Changed
+- The 'Swap author names' fix now applies a consistent swap when multiple author names.
+
 ## [1.14.1] - 2025-03-24
 ### Changed
 - The non DC: metadata check now ignores the mandatory epub3 `dcterms:modified` meta element.
