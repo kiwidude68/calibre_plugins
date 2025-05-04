@@ -256,6 +256,7 @@ class PreviewBookTableWidget(QTableWidget):
         if column_widths is not None:
             for c,w in enumerate(column_widths):
                 self.setColumnWidth(c, w)
+        self.setHorizontalScrollMode(QAbstractItemView.ScrollPerPixel)
                 
     def create_headers(self, columns):
         # Remove any columns which won't be valid as composite munging into field

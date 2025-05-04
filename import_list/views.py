@@ -23,6 +23,7 @@ class ListBookView(QTableView):
         self.setSelectionMode(QAbstractItemView.ExtendedSelection)
         self.verticalHeader().setDefaultSectionSize(24)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.setHorizontalScrollMode(QAbstractItemView.ScrollPerPixel)
 
     def set_model(self, books_model, import_cols_map, headers):
         self.setModel(books_model)
@@ -31,16 +32,19 @@ class ListBookView(QTableView):
             self.setColumnHidden(i, True)
         self.resizeColumnsToContents()
         # Specify a minimum width for title and author
-        self._set_minimum_column_width(0, 150)
-        self._set_minimum_column_width(1, 100)
+        self.set_minimum_column_width(0, 150)
+        self.set_minimum_column_width(1, 100)
         # Make sure every other column has a minimum width
         for i in range(2, len(import_cols_map)):
             self.setColumnHidden(i, False)
-            self._set_minimum_column_width(i, 50)
+            self.set_minimum_column_width(i, 50)
 
-    def _set_minimum_column_width(self, col, minimum):
+    def set_minimum_column_width(self, col, minimum, maximum = 300):
         if self.columnWidth(col) < minimum:
             self.setColumnWidth(col, minimum)
+        # Ensure that the columns are not too wide - a hack by guessing an acceptable width
+        if self.columnWidth(col) > maximum:
+            self.setColumnWidth(col, maximum)
 
 
 class MatchedBookView(QTableView):

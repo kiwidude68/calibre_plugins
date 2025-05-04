@@ -3,7 +3,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme-Barrientos, 2022
+# Adolfo Jayme Barrientos, 2022
 # Darío Hereñú, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022

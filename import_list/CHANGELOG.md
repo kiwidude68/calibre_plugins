@@ -1,5 +1,10 @@
 # Import List Change Log
 
+## [1.9.8] - 2025-05-04
+### Fixed
+- If autosizing columns to contents, do not let them exceed a particular width to prevent overlong column scroll issues.
+- Set horizontal scroll mode to per pixel to prevent edge case where cannot resize oversize column.
+
 ## [1.9.7] - 2025-02-17
 ### Fixed
 - Fix incorrect regex expressions for the Goodreads predefined parsing.

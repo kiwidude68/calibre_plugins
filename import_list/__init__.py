@@ -20,7 +20,7 @@ class ActionImportList(InterfaceActionBase):
     description             = 'Import lists of books from clipboard, CSV or web'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake'
-    version                 = (1, 9, 7)
+    version                 = (1, 9, 8)
     minimum_calibre_version = (3, 41, 0)
 
     #: This field defines the GUI plugin class that contains all the code

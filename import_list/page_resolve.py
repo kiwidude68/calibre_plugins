@@ -159,6 +159,7 @@ class SearchMatchesTableWidget(QTableWidget):
         self.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.setSelectionMode(QAbstractItemView.SingleSelection)
         self.verticalHeader().setDefaultSectionSize(24)
+        self.setHorizontalScrollMode(QAbstractItemView.ScrollPerPixel)
 
     def initialise(self, column_widths, display_cols_map):
         self.display_cols_map = display_cols_map

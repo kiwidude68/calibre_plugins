@@ -61,6 +61,7 @@ class CSVRowsTableWidget(QTableWidget):
         self.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.setSelectionMode(QAbstractItemView.SingleSelection)
         self.verticalHeader().setDefaultSectionSize(self.verticalHeader().minimumSectionSize())
+        self.setHorizontalScrollMode(QAbstractItemView.ScrollPerPixel)
 
     def populate_table(self, csv_rows):
         self.clear()
@@ -74,6 +75,11 @@ class CSVRowsTableWidget(QTableWidget):
             self.populate_table_row(row, csv_row)
 
         self.resizeColumnsToContents()
+        # Make sure the columns are not too wide
+        maxColWidth = 300
+        for i in range(0, self.columnCount()):
+            if self.columnWidth(i) > maxColWidth:
+                self.setColumnWidth(i, maxColWidth)
 
     def populate_table_row(self, row, csv_row):
         for col, col_data in enumerate(csv_row):
