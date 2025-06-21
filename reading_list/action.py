@@ -891,8 +891,9 @@ class ReadingListAction(InterfaceAction):
         db = self.gui.current_db
         book_ids = cfg.get_book_list(db, list_name)
         books = self._convert_calibre_ids_to_books(db, book_ids)
+        selected_book_ids = self.gui.library_view.get_selected_ids()
 
-        d = EditListDialog(self.gui, books, list_name)
+        d = EditListDialog(self.gui, books, list_name, selected_book_ids)
         d.exec_()
         if d.result() != d.Accepted:
             return

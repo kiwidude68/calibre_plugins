@@ -5,14 +5,14 @@
 # Translators:
 # Arun Sundaram <arunistheking@gmail.com>, 2022
 # அனிச் பிரபு தி, 2022
-# தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023
+# தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-04-11 14:28+1000\n"
+"POT-Creation-Date: 2024-06-06 20:21+1000\n"
 "PO-Revision-Date: 2022-09-19 14:51+0000\n"
-"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>, 2023\n"
+"Last-Translator: தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2023\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -110,430 +110,462 @@ msgstr ""
 msgid "Create new column"
 msgstr "புதிய நெடுவரிசையை உருவாக்கவும்"
 
-#: action.py:48
+#: action.py:49
 msgid "Reading List"
 msgstr "படித்தல் பட்டியல்"
 
-#: action.py:48
+#: action.py:49
 msgid "View or edit lists of books"
 msgstr "புத்தகங்களின் பட்டியல்களைக் காண்க அல்லது திருத்தவும்"
 
-#: action.py:171
+#: action.py:166
 msgid "Add to default list"
 msgstr "இயல்புநிலை பட்டியலில் சேர்க்கவும்"
 
-#: action.py:174
+#: action.py:169
 msgid "Add to %s list"
 msgstr "%S பட்டியலில் சேர்க்கவும்"
 
-#: action.py:179
+#: action.py:174
 msgid "Add to list"
 msgstr "பட்டியலில் சேர்க்கவும்"
 
-#: action.py:180
+#: action.py:175
 msgid "Add to the specified list"
 msgstr "குறிப்பிட்ட பட்டியலில் சேர்க்கவும்"
 
-#: action.py:182
+#: action.py:177
 msgid "Add to the \"%s\" list"
 msgstr "\"%S\" பட்டியலில் சேர்க்கவும்"
 
-#: action.py:186
+#: action.py:181
 msgid "Add to list: %s"
 msgstr "பட்டியலில் சேர்க்கவும்: %கள்"
 
-#: action.py:188
+#: action.py:183
 msgid "Add to all lists"
 msgstr "எல்லா பட்டியல்களிலும் சேர்க்கவும்"
 
-#: action.py:194
+#: action.py:189
 msgid "Add series to default list"
 msgstr "இயல்புநிலை பட்டியலில் தொடரைச் சேர்க்கவும்"
 
-#: action.py:197
+#: action.py:192
 msgid "Add series to %s list"
 msgstr "%S பட்டியலில் தொடரைச் சேர்க்கவும்"
 
-#: action.py:202
+#: action.py:197
 msgid "Add series to list"
 msgstr "பட்டியலுக்கு தொடரைச் சேர்க்கவும்"
 
-#: action.py:203
+#: action.py:198
 msgid "Add all books in series to the specified list"
 msgstr "குறிப்பிட்ட பட்டியலில் அனைத்து புத்தகங்களையும் தொடரில் சேர்க்கவும்"
 
-#: action.py:205
+#: action.py:200
 msgid "Add series to the \"%s\" list"
 msgstr "\"%S\" பட்டியலில் தொடரைச் சேர்க்கவும்"
 
-#: action.py:209
+#: action.py:204
 msgid "Add series to list: %s"
 msgstr "பட்டியலில் தொடரைச் சேர்க்கவும்: %கள்"
 
-#: action.py:211
+#: action.py:206
 msgid "Add series to all lists"
 msgstr "எல்லா பட்டியல்களுக்கும் தொடரைச் சேர்க்கவும்"
 
-#: action.py:217 action.py:219
+#: action.py:212 action.py:214
 msgid "Move to list"
 msgstr "பட்டியலுக்கு நகர்த்தவும்"
 
-#: action.py:223
+#: action.py:218
 msgid "Remove from default list"
 msgstr "இயல்புநிலை பட்டியலிலிருந்து அகற்று"
 
-#: action.py:231
+#: action.py:221
+msgid "Remove from %s list"
+msgstr ""
+
+#: action.py:226
 msgid "Remove from list"
 msgstr "பட்டியியல் இருந்து நீக்கு"
 
-#: action.py:232
+#: action.py:227
 msgid "Remove from the specified list"
 msgstr "குறிப்பிட்ட பட்டியலிலிருந்து அகற்று"
 
-#: action.py:234
+#: action.py:229
 msgid "Remove from the \"%s\" list"
 msgstr "\"%S\" பட்டியலிலிருந்து அகற்று"
 
-#: action.py:238
+#: action.py:233
 msgid "Remove from list: %s"
 msgstr "பட்டியலிலிருந்து அகற்று: %கள்"
 
-#: action.py:240
+#: action.py:235
 msgid "Remove from all lists"
 msgstr "எல்லா பட்டியல்களிலிருந்தும் அகற்று"
 
-#: action.py:247
+#: action.py:241
+msgid "Toggle on default list"
+msgstr ""
+
+#: action.py:249
+msgid "Toggle on list"
+msgstr ""
+
+#: action.py:250
+msgid "Toggle on the specified list"
+msgstr ""
+
+#: action.py:252
+msgid "Toggle on the \"%s\" list"
+msgstr ""
+
+#: action.py:256
+msgid "Toggle on list: %s"
+msgstr ""
+
+#: action.py:261
 msgid "View default list"
 msgstr "இயல்புநிலை பட்டியலைக் காண்க"
 
-#: action.py:249 action.py:258
+#: action.py:263 action.py:272
 msgid "View %s list (%d)"
 msgstr "%S பட்டியலைக் காண்க ( %d)"
 
-#: action.py:256 action.py:272 action.py:283
+#: action.py:270 action.py:286 action.py:297
 msgid "View books on the \"%s\" list"
 msgstr "\"%கள்\" பட்டியலில் உள்ள புத்தகங்களைக் காண்க"
 
-#: action.py:261 action.py:276 action.py:287
+#: action.py:275 action.py:290 action.py:301
 msgid "View list: %s"
 msgstr "பட்டியல் பட்டியல்: %கள்"
 
-#: action.py:264 action.py:267
+#: action.py:278 action.py:281
 msgid "View list"
 msgstr "பட்டியலைக் காண்க"
 
-#: action.py:265
+#: action.py:279
 msgid "View books on the specified list"
 msgstr "குறிப்பிட்ட பட்டியலில் உள்ள புத்தகங்களைக் காண்க"
 
-#: action.py:292
+#: action.py:306
 msgid "Edit default list"
 msgstr "இயல்புநிலை பட்டியலைத் திருத்தவும்"
 
-#: action.py:295
+#: action.py:309
 msgid "Edit %s list"
 msgstr "%S பட்டியலைத் திருத்து"
 
-#: action.py:300
+#: action.py:314
 msgid "Edit list"
 msgstr "பட்டியலைத் திருத்து"
 
-#: action.py:301
+#: action.py:315
 msgid "Edit books on the specified list"
 msgstr "குறிப்பிட்ட பட்டியலில் புத்தகங்களைத் திருத்தவும்"
 
-#: action.py:303
+#: action.py:317
 msgid "Edit books on the \"%s\" list"
 msgstr "\"%கள்\" பட்டியலில் புத்தகங்களைத் திருத்தவும்"
 
-#: action.py:307
+#: action.py:321
 msgid "Edit list: %s"
 msgstr "பட்டியலைத் திருத்து: %கள்"
 
-#: action.py:311
+#: action.py:325
 msgid "Clear default list"
 msgstr "இயல்புநிலை பட்டியலை அழிக்கவும்"
 
-#: action.py:314
+#: action.py:328
 msgid "Clear %s list"
 msgstr "தெளிவான %s பட்டியல்"
 
-#: action.py:319 action.py:322
+#: action.py:333 action.py:336
 msgid "Clear list"
 msgstr "பட்டியலை அழிக்க"
 
-#: action.py:320
+#: action.py:334
 msgid "Clear all from the specified list"
 msgstr "குறிப்பிட்ட பட்டியலிலிருந்து அனைத்தையும் அழிக்கவும்"
 
-#: action.py:327
+#: action.py:341
 msgid "Clear the \"%s\" list"
 msgstr "\"%S\" பட்டியலை அழிக்கவும்"
 
-#: action.py:331
+#: action.py:345
 msgid "Clear list: %s"
 msgstr "தெளிவான பட்டியல்: %கள்"
 
-#: action.py:333
+#: action.py:347
 msgid "Clear list (%d)"
 msgstr "தெளிவான பட்டியல் (%டி)"
 
-#: action.py:337
+#: action.py:351
 msgid "Set default list"
 msgstr "இயல்புநிலை பட்டியலை அமைக்கவும்"
 
-#: action.py:338
+#: action.py:352
 msgid "Switch the list to use as the current default"
 msgstr "தற்போதைய இயல்புநிலையாக பயன்படுத்த பட்டியலை மாற்றவும்"
 
-#: action.py:341 action.py:351
+#: action.py:355 action.py:365
 msgid "Set your default list to \"%s\""
 msgstr "உங்கள் இயல்புநிலை பட்டியலை \"%s\" ஆக அமைக்கவும்"
 
-#: action.py:345 action.py:355
+#: action.py:359 action.py:369
 msgid "Set default list: %s"
 msgstr "இயல்புநிலை பட்டியலை அமைக்கவும்: %கள்"
 
-#: action.py:358 action.py:359
+#: action.py:372 action.py:373
 msgid "Sync Now"
 msgstr "இப்போது ஒத்திசைக்கவும்"
 
-#: action.py:363
+#: action.py:377
 msgid "&Customize plugin"
 msgstr "& சொருகி தனிப்பயனாக்கு"
 
-#: action.py:366 config.py:1180
+#: action.py:380 config.py:1180
 msgid "&Help"
 msgstr "&உதவி"
 
-#: action.py:374
+#: action.py:388
 msgid "Sync Now (%d)"
 msgstr "இப்போது ஒத்திசைக்கவும் (%டி)"
 
-#: action.py:383 action.py:401
+#: action.py:397 action.py:415
 msgid "Cannot add to list"
 msgstr "பட்டியலில் சேர்க்க முடியாது"
 
-#: action.py:384 action.py:402 action.py:611 action.py:728 action.py:772
-#: action.py:816 action.py:856 action.py:894
+#: action.py:398 action.py:416 action.py:471 action.py:682 action.py:799
+#: action.py:843 action.py:887 action.py:927 action.py:965
 msgid "No list name specified"
 msgstr "பட்டியல் பெயர் குறிப்பிடப்படவில்லை"
 
-#: action.py:482 config.py:1109
+#: action.py:470
+msgid "Cannot toggle on list"
+msgstr ""
+
+#: action.py:507 config.py:1109
 msgid "Are you sure?"
 msgstr "நீ சொல்வது உறுதியா?"
 
-#: action.py:483
+#: action.py:508
 msgid "Are you sure you want to clear the '%s' reading list?"
 msgstr "'%S' வாசிப்பு பட்டியலை அழிக்க விரும்புகிறீர்களா?"
 
-#: action.py:536
+#: action.py:574
+msgid "Added %d books, removed %d books on your %s list"
+msgstr ""
+
+#: action.py:607
 msgid "The selected book(s) already exist on this list: <b>%s</b>"
 msgstr ""
 "தேர்ந்தெடுக்கப்பட்ட புத்தகம் (கள்) ஏற்கனவே இந்த பட்டியலில் உள்ளன: <b>%கள் "
 "</b>"
 
-#: action.py:538
+#: action.py:609
 msgid "Failed to add to list"
 msgstr "பட்டியலில் சேர்க்கத் தவறிவிட்டது"
 
-#: action.py:547
+#: action.py:618
 msgid "Added %d books to your %s list"
 msgstr "உங்கள் %s பட்டியலில் %d புத்தகங்கள் சேர்க்கப்பட்டன"
 
-#: action.py:589
+#: action.py:660
 msgid "Added to %d reading lists"
 msgstr "%D வாசிப்பு பட்டியல்களில் சேர்க்கப்பட்டது"
 
-#: action.py:610
+#: action.py:681
 msgid "Cannot remove from list"
 msgstr "பட்டியலிலிருந்து அகற்ற முடியாது"
 
-#: action.py:629
+#: action.py:700
 msgid "The selected book(s) do not exist on this list"
 msgstr "தேர்ந்தெடுக்கப்பட்ட புத்தகம் (கள்) இந்த பட்டியலில் இல்லை"
 
-#: action.py:639 action.py:793 action.py:837
+#: action.py:710 action.py:864 action.py:908
 msgid "Removed %d books from your %s list"
 msgstr "உங்கள் %s பட்டியலிலிருந்து %d புத்தகங்களை அகற்றியது"
 
-#: action.py:686
+#: action.py:757
 msgid "Removed from %d reading lists"
 msgstr "%D வாசிப்பு பட்டியல்களிலிருந்து அகற்றப்பட்டது"
 
-#: action.py:722 action.py:727
+#: action.py:793 action.py:798
 msgid "Cannot move to list"
 msgstr "பட்டியலுக்கு செல்ல முடியாது"
 
-#: action.py:723
+#: action.py:794
 msgid "No source list names specified"
 msgstr "மூல பட்டியல் பெயர்கள் எதுவும் குறிப்பிடப்படவில்லை"
 
-#: action.py:748
+#: action.py:819
 msgid "Moved %d books to your list(s)"
 msgstr "உங்கள் பட்டியலில் (கள்) %d புத்தகங்கள் நகர்த்தப்பட்டன"
 
-#: action.py:771
+#: action.py:842
 msgid "Cannot clear list"
 msgstr "பட்டியலை அழிக்க முடியாது"
 
-#: action.py:783
+#: action.py:854
 msgid "No books exist on this list"
 msgstr "இந்த பட்டியலில் புத்தகங்கள் எதுவும் இல்லை"
 
-#: action.py:815
+#: action.py:886
 msgid "Cannot edit list"
 msgstr "பட்டியலைத் திருத்த முடியாது"
 
-#: action.py:855
+#: action.py:926
 msgid "Cannot view list"
 msgstr "பட்டியலைக் காண முடியாது"
 
-#: action.py:893 action.py:902
+#: action.py:964 action.py:973
 msgid "Cannot create list"
 msgstr "பட்டியலை உருவாக்க முடியாது"
 
-#: action.py:896
+#: action.py:967
 msgid "Reading List: Cannot create list as list_name not specified"
 msgstr ""
 "படித்தல் பட்டியல்: பட்டியல்_பெயராக குறிப்பிடப்படாத பட்டியலை உருவாக்க "
 "முடியாது"
 
-#: action.py:903
+#: action.py:974
 msgid "A list already exists with this name"
 msgstr "இந்த பெயருடன் ஏற்கனவே ஒரு பட்டியல் உள்ளது"
 
-#: action.py:905
+#: action.py:976
 msgid "Reading List: Cannot create list as list_name is duplicate:"
 msgstr ""
 "படித்தல் பட்டியல்: பட்டியல்_பெயர் நகல் என்பதால் பட்டியலை உருவாக்க முடியாது:"
 
-#: action.py:1045
+#: action.py:1116
 msgid "READING LIST: Device disconnected"
 msgstr "படித்தல் பட்டியல்: சாதனம் துண்டிக்கப்பட்டது"
 
-#: action.py:1054
+#: action.py:1125
 msgid "READING LIST: Metadata available:"
 msgstr "படித்தல் பட்டியல்: மெட்டாடேட்டா கிடைக்கிறது:"
 
-#: action.py:1099
+#: action.py:1170
 msgid "READING LIST: Device found to sync to:"
 msgstr "படித்தல் பட்டியல்: ஒத்திசைக்க சாதனம்:"
 
-#: action.py:1102
+#: action.py:1173
 msgid "READING LIST: Not syncing to device as not active"
 msgstr "படித்தல் பட்டியல்: செயலில் இல்லாத சாதனத்துடன் ஒத்திசைக்கவில்லை"
 
-#: action.py:1107
+#: action.py:1178
 msgid "READING LIST: Sync Now - force_sync="
 msgstr "படித்தல் பட்டியல்: இப்போது ஒத்திசைக்கவும் - force_sync ="
 
-#: action.py:1122
+#: action.py:1193
 msgid "Cannot sync to device"
 msgstr "சாதனத்துடன் ஒத்திசைக்க முடியாது"
 
-#: action.py:1123
+#: action.py:1194
 msgid "No device found for UUID: %s"
 msgstr "UUID க்கு எந்த சாதனமும் கிடைக்கவில்லை: %s"
 
-#: action.py:1137
+#: action.py:1208
 msgid "READING LIST: Updating automatic column list(s) "
 msgstr "படித்தல் பட்டியல்: தானியங்கி நெடுவரிசை பட்டியல் (கள்) புதுப்பித்தல்"
 
-#: action.py:1162
+#: action.py:1233
 msgid "READING LIST: Not syncing '%s' to device as autosync is false"
 msgstr ""
 "படித்தல் பட்டியல்: '%கள்' சாதனத்துடன் ஆட்டோசின்க் என ஒத்திசைக்காதது தவறானது"
 
-#: action.py:1170
+#: action.py:1241
 msgid "READING LIST: Updating automatic device list(s) "
 msgstr "படித்தல் பட்டியல்: தானியங்கி சாதன பட்டியல் (கள்) புதுப்பித்தல்"
 
-#: action.py:1224
+#: action.py:1295
 msgid "READING LIST: Skipping %d books in '%s' list with no formats"
 msgstr ""
 "படித்தல் பட்டியல்: வடிவங்கள் இல்லாத ' %எஸ்' பட்டியலில் %டி புத்தகங்களைத் "
 "தவிர்ப்பது"
 
-#: action.py:1228
+#: action.py:1299
 msgid "READING LIST: Syncing %d books in '%s' to: %s (location:%s)"
 msgstr ""
 "படித்தல் பட்டியல்: %டி புத்தகங்களை ' %கள்' இல் ஒத்திசைத்தல்: %கள் (இடம்: "
 "%கள்)"
 
-#: action.py:1237
+#: action.py:1308
 msgid "READING LIST: No books on '%s' list need to be synced"
 msgstr ""
 "படித்தல் பட்டியல்: '%s' பட்டியலில் எந்த புத்தகங்களும் ஒத்திசைக்கப்பட "
 "வேண்டியதில்லை"
 
-#: action.py:1262
+#: action.py:1333
 msgid "Main memory"
 msgstr "முதன்மை நினைவகம்"
 
-#: action.py:1265
+#: action.py:1336
 msgid "Storage Card A"
 msgstr "சேமிப்பக அட்டை a"
 
-#: action.py:1268
+#: action.py:1339
 msgid "Storage Card B"
 msgstr "சேமிப்பக அட்டை ஆ"
 
-#: action.py:1273
+#: action.py:1344
 msgid "READING LIST: No books on '%s' list found on device to remove"
 msgstr ""
 "படித்தல் பட்டியல்: நீக்குவதற்கு சாதனத்தில் '%எஸ்' பட்டியலில் புத்தகங்கள் "
 "எதுவும் இல்லை"
 
-#: action.py:1284
+#: action.py:1355
 msgid "Reading List error"
 msgstr "பட்டியல் பிழை"
 
-#: action.py:1285
+#: action.py:1356
 msgid "Unable to find the Remove Books plugin"
 msgstr "அகற்றும் புத்தக சொருகி கண்டுபிடிக்க முடியவில்லை"
 
-#: action.py:1312
+#: action.py:1383
 msgid "Deleting books from device."
 msgstr "சாதனத்திலிருந்து புத்தகங்களை நீக்குகிறது."
 
-#: action.py:1351
+#: action.py:1422
 msgid "READING LIST: Auto-populating device list: "
 msgstr "படித்தல் பட்டியல்: தானாக மக்கள்தொகை சாதன பட்டியல்:"
 
-#: action.py:1356
+#: action.py:1427
 msgid "READING LIST: Removing %d ids from automatic list: %s"
 msgstr ""
 "படித்தல் பட்டியல்: தானியங்கி பட்டியலிலிருந்து %d ஐடிகளை நீக்குதல்: %கள்"
 
-#: action.py:1359
+#: action.py:1430
 msgid "READING LIST: Adding %d ids to automatic list: %s"
 msgstr "படித்தல் பட்டியல்: தானியங்கி பட்டியலில் %d ஐடிகளைச் சேர்ப்பது: %கள்"
 
-#: action.py:1369
+#: action.py:1440
 msgid "READING LIST: Auto-populating search list: "
 msgstr "படித்தல் பட்டியல்: தானாக மக்கள்தொகை தேடல் பட்டியல்:"
 
-#: action.py:1374
+#: action.py:1445
 msgid ""
 "READING LIST: Aborting updating auto-search list as has no expression: "
 msgstr ""
 "படித்தல் பட்டியல்: வெளிப்பாடு இல்லாதபடி ஆட்டோ-தேடல் பட்டியலை புதுப்பித்தல்:"
 
-#: action.py:1378
+#: action.py:1449
 msgid "READING LIST: Now %d ids on automatic list: %s"
 msgstr "படித்தல் பட்டியல்: இப்போது தானியங்கி பட்டியலில் %d ஐடிகள்: %கள்"
 
-#: action.py:1384
+#: action.py:1455
 msgid "READING LIST: Attempting to recreate Kindle collections"
 msgstr ""
 "படித்தல் பட்டியல்: கின்டெல் சேகரிப்புகளை மீண்டும் உருவாக்க முயற்சிக்கிறது"
 
-#: action.py:1387
+#: action.py:1458
 msgid "Kindle Collections Failed"
 msgstr "கின்டெல் சேகரிப்புகள் தோல்வியடைந்தன"
 
-#: action.py:1388
+#: action.py:1459
 msgid ""
 "You must have the Kindle Collections plugin installed in order to recreate "
 "collections after a sync."
@@ -966,7 +998,7 @@ msgid ""
 msgstr ""
 
 #: config.py:1202
-msgid "List name:"
+msgid "List to view:"
 msgstr ""
 
 #: config.py:1211

@@ -1,0 +1,1015 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Usama Salama, 2022
+# Usama Khalil, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-06-06 20:21+1000\n"
+"PO-Revision-Date: 2022-09-19 14:51+0000\n"
+"Last-Translator: Usama Khalil, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:1165
+msgid "Keyboard shortcuts"
+msgstr "مختصرات لوحة المفاتيح"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "أعد تشغيل calibre الآن"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "تفضيلات لـ:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "مسح"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "مسح جميع إعدادات هذه الإضافة"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "هل أنت متأكد أنك تريد تغيير إعداداتك في هذه المكتبة لهذه الإضافة؟"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"لن يتم المساس بأي إعدادات في مكتبات أخرى أو مخزنة في ملف JSON في مجلد إضافات"
+" calibre الخاص بك."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "يجب عليك إعادة تشغيل calibre بعد ذلك."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "الإعدادات تغيرت"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "تم تغيير إعدادات هذه الإضافة في هذه المكتبة."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "من فضلك أعد تشغيل calibre الآن."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "هل أنت متأكد أنك تريد مسح إعداداتك في هذه المكتبة لهذه الإضافة؟"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "تم حذف الإعدادات"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "تم مسح جميع إعدادات هذه الإضافة في هذه المكتبة."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "نسخ إلى الحافظة"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "غير معرف"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "إعادة التشغيل مطلوبة"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"صورة العنوان غير موجودة - يجب عليك إعادة تشغيل Calibre قبل استخدام هذه "
+"الإضافة!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "إنشاء عمود جديد"
+
+#: action.py:49
+msgid "Reading List"
+msgstr "قائمة القراءة"
+
+#: action.py:49
+msgid "View or edit lists of books"
+msgstr "عرض أو تعديل قوائم الكتب"
+
+#: action.py:166
+msgid "Add to default list"
+msgstr "إضافة إلى القائمة الافتراضية"
+
+#: action.py:169
+msgid "Add to %s list"
+msgstr "إضافة إلى قائمة %s"
+
+#: action.py:174
+msgid "Add to list"
+msgstr "إضافة إلى القائمة"
+
+#: action.py:175
+msgid "Add to the specified list"
+msgstr "إضافة إلى القائمة المحددة"
+
+#: action.py:177
+msgid "Add to the \"%s\" list"
+msgstr "إضافة إلى قائمة \"%s\""
+
+#: action.py:181
+msgid "Add to list: %s"
+msgstr "إضافة إلى القائمة: %s"
+
+#: action.py:183
+msgid "Add to all lists"
+msgstr "إضافة إلى جميع القوائم"
+
+#: action.py:189
+msgid "Add series to default list"
+msgstr "إضافة سلسلة إلى القائمة الافتراضية"
+
+#: action.py:192
+msgid "Add series to %s list"
+msgstr "إضافة سلسلة إلى قائمة %s"
+
+#: action.py:197
+msgid "Add series to list"
+msgstr "إضافة سلسلة إلى القائمة"
+
+#: action.py:198
+msgid "Add all books in series to the specified list"
+msgstr "إضافة جميع الكتب في السلسلة إلى القائمة المحددة"
+
+#: action.py:200
+msgid "Add series to the \"%s\" list"
+msgstr "إضافة سلسلة إلى قائمة \"%s\""
+
+#: action.py:204
+msgid "Add series to list: %s"
+msgstr "إضافة سلسلة إلى القائمة: %s"
+
+#: action.py:206
+msgid "Add series to all lists"
+msgstr "إضافة سلسلة إلى جميع القوائم"
+
+#: action.py:212 action.py:214
+msgid "Move to list"
+msgstr "نقل إلى القائمة"
+
+#: action.py:218
+msgid "Remove from default list"
+msgstr "إزالة من القائمة الافتراضية"
+
+#: action.py:221
+msgid "Remove from %s list"
+msgstr "إزالة من قائمة %s"
+
+#: action.py:226
+msgid "Remove from list"
+msgstr "إزالة من القائمة"
+
+#: action.py:227
+msgid "Remove from the specified list"
+msgstr "إزالة من القائمة المحددة"
+
+#: action.py:229
+msgid "Remove from the \"%s\" list"
+msgstr "إزالة من قائمة \"%s\""
+
+#: action.py:233
+msgid "Remove from list: %s"
+msgstr "إزالة من القائمة: %s"
+
+#: action.py:235
+msgid "Remove from all lists"
+msgstr "إزالة من جميع القوائم"
+
+#: action.py:241
+msgid "Toggle on default list"
+msgstr "تبديل على القائمة الافتراضية"
+
+#: action.py:249
+msgid "Toggle on list"
+msgstr "تبديل على القائمة"
+
+#: action.py:250
+msgid "Toggle on the specified list"
+msgstr "تبديل على القائمة المحددة"
+
+#: action.py:252
+msgid "Toggle on the \"%s\" list"
+msgstr "تبديل على قائمة \"%s\""
+
+#: action.py:256
+msgid "Toggle on list: %s"
+msgstr "تبديل على القائمة: %s"
+
+#: action.py:261
+msgid "View default list"
+msgstr "عرض القائمة الافتراضية"
+
+#: action.py:263 action.py:272
+msgid "View %s list (%d)"
+msgstr "عرض قائمة %s (%d)"
+
+#: action.py:270 action.py:286 action.py:297
+msgid "View books on the \"%s\" list"
+msgstr "عرض الكتب في قائمة \"%s\""
+
+#: action.py:275 action.py:290 action.py:301
+msgid "View list: %s"
+msgstr "عرض القائمة: %s"
+
+#: action.py:278 action.py:281
+msgid "View list"
+msgstr "عرض القائمة"
+
+#: action.py:279
+msgid "View books on the specified list"
+msgstr "عرض الكتب في القائمة المحددة"
+
+#: action.py:306
+msgid "Edit default list"
+msgstr "تعديل القائمة الافتراضية"
+
+#: action.py:309
+msgid "Edit %s list"
+msgstr "تعديل قائمة %s"
+
+#: action.py:314
+msgid "Edit list"
+msgstr "تعديل القائمة"
+
+#: action.py:315
+msgid "Edit books on the specified list"
+msgstr "تعديل الكتب في القائمة المحددة"
+
+#: action.py:317
+msgid "Edit books on the \"%s\" list"
+msgstr "تعديل الكتب في قائمة \"%s\""
+
+#: action.py:321
+msgid "Edit list: %s"
+msgstr "تعديل القائمة: %s"
+
+#: action.py:325
+msgid "Clear default list"
+msgstr "مسح القائمة الافتراضية"
+
+#: action.py:328
+msgid "Clear %s list"
+msgstr "مسح قائمة %s"
+
+#: action.py:333 action.py:336
+msgid "Clear list"
+msgstr "مسح القائمة"
+
+#: action.py:334
+msgid "Clear all from the specified list"
+msgstr "مسح الكل من القائمة المحددة"
+
+#: action.py:341
+msgid "Clear the \"%s\" list"
+msgstr "مسح قائمة \"%s\""
+
+#: action.py:345
+msgid "Clear list: %s"
+msgstr "مسح القائمة: %s"
+
+#: action.py:347
+msgid "Clear list (%d)"
+msgstr "مسح القائمة (%d)"
+
+#: action.py:351
+msgid "Set default list"
+msgstr "تعيين قائمة افتراضية"
+
+#: action.py:352
+msgid "Switch the list to use as the current default"
+msgstr "تبديل القائمة لاستخدامها كافتراضية حالية"
+
+#: action.py:355 action.py:365
+msgid "Set your default list to \"%s\""
+msgstr "تعيين قائمتك الافتراضية إلى \"%s\""
+
+#: action.py:359 action.py:369
+msgid "Set default list: %s"
+msgstr "تعيين قائمة افتراضية: %s"
+
+#: action.py:372 action.py:373
+msgid "Sync Now"
+msgstr "مزامنة الآن"
+
+#: action.py:377
+msgid "&Customize plugin"
+msgstr "&تخصيص الإضافة"
+
+#: action.py:380 config.py:1180
+msgid "&Help"
+msgstr "&مساعدة"
+
+#: action.py:388
+msgid "Sync Now (%d)"
+msgstr "مزامنة الآن (%d)"
+
+#: action.py:397 action.py:415
+msgid "Cannot add to list"
+msgstr "لا يمكن الإضافة إلى القائمة"
+
+#: action.py:398 action.py:416 action.py:471 action.py:682 action.py:799
+#: action.py:843 action.py:887 action.py:927 action.py:965
+msgid "No list name specified"
+msgstr "لم يتم تحديد اسم قائمة"
+
+#: action.py:470
+msgid "Cannot toggle on list"
+msgstr "لا يمكن التبديل على القائمة"
+
+#: action.py:507 config.py:1109
+msgid "Are you sure?"
+msgstr "هل أنت متأكد؟"
+
+#: action.py:508
+msgid "Are you sure you want to clear the '%s' reading list?"
+msgstr "هل أنت متأكد أنك تريد مسح قائمة القراءة '%s'؟"
+
+#: action.py:574
+msgid "Added %d books, removed %d books on your %s list"
+msgstr "تمت إضافة %d كتاب، وإزالة %d كتاب من قائمة %s الخاصة بك"
+
+#: action.py:607
+msgid "The selected book(s) already exist on this list: <b>%s</b>"
+msgstr ""
+"الكتاب (الكتب) المحدد (المحددة) موجود بالفعل في هذه القائمة: <b>%s</b>"
+
+#: action.py:609
+msgid "Failed to add to list"
+msgstr "فشل الإضافة إلى القائمة"
+
+#: action.py:618
+msgid "Added %d books to your %s list"
+msgstr "تمت إضافة %d كتاب إلى قائمة %s الخاصة بك"
+
+#: action.py:660
+msgid "Added to %d reading lists"
+msgstr "تمت الإضافة إلى %d قائمة قراءة"
+
+#: action.py:681
+msgid "Cannot remove from list"
+msgstr "لا يمكن الإزالة من القائمة"
+
+#: action.py:700
+msgid "The selected book(s) do not exist on this list"
+msgstr "الكتاب (الكتب) المحدد (المحددة) غير موجود في هذه القائمة"
+
+#: action.py:710 action.py:864 action.py:908
+msgid "Removed %d books from your %s list"
+msgstr "تمت إزالة %d كتاب من قائمة %s الخاصة بك"
+
+#: action.py:757
+msgid "Removed from %d reading lists"
+msgstr "تمت الإزالة من %d قائمة قراءة"
+
+#: action.py:793 action.py:798
+msgid "Cannot move to list"
+msgstr "لا يمكن النقل إلى القائمة"
+
+#: action.py:794
+msgid "No source list names specified"
+msgstr "لم يتم تحديد أسماء قائمة مصدر"
+
+#: action.py:819
+msgid "Moved %d books to your list(s)"
+msgstr "تم نقل %d كتاب إلى قائمتك (قوائمك)"
+
+#: action.py:842
+msgid "Cannot clear list"
+msgstr "لا يمكن مسح القائمة"
+
+#: action.py:854
+msgid "No books exist on this list"
+msgstr "لا توجد كتب في هذه القائمة"
+
+#: action.py:886
+msgid "Cannot edit list"
+msgstr "لا يمكن تعديل القائمة"
+
+#: action.py:926
+msgid "Cannot view list"
+msgstr "لا يمكن عرض القائمة"
+
+#: action.py:964 action.py:973
+msgid "Cannot create list"
+msgstr "لا يمكن إنشاء قائمة"
+
+#: action.py:967
+msgid "Reading List: Cannot create list as list_name not specified"
+msgstr "قائمة القراءة: لا يمكن إنشاء قائمة لأن اسم القائمة غير محدد"
+
+#: action.py:974
+msgid "A list already exists with this name"
+msgstr "توجد قائمة بهذا الاسم بالفعل"
+
+#: action.py:976
+msgid "Reading List: Cannot create list as list_name is duplicate:"
+msgstr "قائمة القراءة: لا يمكن إنشاء قائمة لأن اسم القائمة مكرر:"
+
+#: action.py:1116
+msgid "READING LIST: Device disconnected"
+msgstr "قائمة القراءة: تم فصل الجهاز"
+
+#: action.py:1125
+msgid "READING LIST: Metadata available:"
+msgstr "قائمة القراءة: البيانات الوصفية المتاحة:"
+
+#: action.py:1170
+msgid "READING LIST: Device found to sync to:"
+msgstr "قائمة القراءة: تم العثور على جهاز للمزامنة معه:"
+
+#: action.py:1173
+msgid "READING LIST: Not syncing to device as not active"
+msgstr "قائمة القراءة: لا تتم المزامنة مع الجهاز لأنه غير نشط"
+
+#: action.py:1178
+msgid "READING LIST: Sync Now - force_sync="
+msgstr "قائمة القراءة: مزامنة الآن - force_sync="
+
+#: action.py:1193
+msgid "Cannot sync to device"
+msgstr "لا يمكن المزامنة مع الجهاز"
+
+#: action.py:1194
+msgid "No device found for UUID: %s"
+msgstr "لم يتم العثور على جهاز لـ UUID: %s"
+
+#: action.py:1208
+msgid "READING LIST: Updating automatic column list(s) "
+msgstr "قائمة القراءة: تحديث قائمة الأعمدة التلقائية "
+
+#: action.py:1233
+msgid "READING LIST: Not syncing '%s' to device as autosync is false"
+msgstr ""
+"قائمة القراءة: لا تتم مزامنة '%s' مع الجهاز لأن المزامنة التلقائية خاطئة"
+
+#: action.py:1241
+msgid "READING LIST: Updating automatic device list(s) "
+msgstr "قائمة القراءة: تحديث قائمة (قوائم) الجهاز التلقائية "
+
+#: action.py:1295
+msgid "READING LIST: Skipping %d books in '%s' list with no formats"
+msgstr "قائمة القراءة: تخطي %d كتاب في قائمة '%s' بدون تنسيقات"
+
+#: action.py:1299
+msgid "READING LIST: Syncing %d books in '%s' to: %s (location:%s)"
+msgstr "قائمة القراءة: مزامنة %d كتاب في '%s' إلى: %s (الموقع:%s)"
+
+#: action.py:1308
+msgid "READING LIST: No books on '%s' list need to be synced"
+msgstr "قائمة القراءة: لا توجد كتب في قائمة '%s' تحتاج إلى المزامنة"
+
+#: action.py:1333
+msgid "Main memory"
+msgstr "الذاكرة الرئيسية"
+
+#: action.py:1336
+msgid "Storage Card A"
+msgstr "بطاقة التخزين A"
+
+#: action.py:1339
+msgid "Storage Card B"
+msgstr "بطاقة التخزين B"
+
+#: action.py:1344
+msgid "READING LIST: No books on '%s' list found on device to remove"
+msgstr ""
+"قائمة القراءة: لم يتم العثور على كتب في قائمة '%s' على الجهاز لإزالتها"
+
+#: action.py:1355
+msgid "Reading List error"
+msgstr "خطأ في قائمة القراءة"
+
+#: action.py:1356
+msgid "Unable to find the Remove Books plugin"
+msgstr "تعذر العثور على إضافة إزالة الكتب"
+
+#: action.py:1383
+msgid "Deleting books from device."
+msgstr "حذف الكتب من الجهاز."
+
+#: action.py:1422
+msgid "READING LIST: Auto-populating device list: "
+msgstr "قائمة القراءة: ملء قائمة الجهاز تلقائيًا: "
+
+#: action.py:1427
+msgid "READING LIST: Removing %d ids from automatic list: %s"
+msgstr "قائمة القراءة: إزالة %d معرف من القائمة التلقائية: %s"
+
+#: action.py:1430
+msgid "READING LIST: Adding %d ids to automatic list: %s"
+msgstr "قائمة القراءة: إضافة %d معرف إلى القائمة التلقائية: %s"
+
+#: action.py:1440
+msgid "READING LIST: Auto-populating search list: "
+msgstr "قائمة القراءة: ملء قائمة البحث تلقائيًا: "
+
+#: action.py:1445
+msgid ""
+"READING LIST: Aborting updating auto-search list as has no expression: "
+msgstr ""
+"قائمة القراءة: إجهاض تحديث قائمة البحث التلقائي لأنه لا يحتوي على تعبير: "
+
+#: action.py:1449
+msgid "READING LIST: Now %d ids on automatic list: %s"
+msgstr "قائمة القراءة: الآن %d معرف في القائمة التلقائية: %s"
+
+#: action.py:1455
+msgid "READING LIST: Attempting to recreate Kindle collections"
+msgstr "قائمة القراءة: محاولة إعادة إنشاء مجموعات Kindle"
+
+#: action.py:1458
+msgid "Kindle Collections Failed"
+msgstr "فشلت مجموعات Kindle"
+
+#: action.py:1459
+msgid ""
+"You must have the Kindle Collections plugin installed in order to recreate "
+"collections after a sync."
+msgstr ""
+"يجب أن تكون لديك إضافة Kindle Collections مثبتة لإعادة إنشاء المجموعات بعد "
+"المزامنة."
+
+#: config.py:79
+msgid "*Any Device"
+msgstr "*أي جهاز"
+
+#: config.py:81
+msgid "Manually add/remove items"
+msgstr "إضافة/إزالة عناصر يدويًا"
+
+#: config.py:82
+msgid "Auto populated from books on device"
+msgstr "ملء تلقائي من الكتب على الجهاز"
+
+#: config.py:83
+msgid "Auto populated from search"
+msgstr "ملء تلقائي من البحث"
+
+#: config.py:85
+msgid "Add new list items to device"
+msgstr "إضافة عناصر قائمة جديدة إلى الجهاز"
+
+#: config.py:86
+msgid "Add/overwrite all list items to device"
+msgstr "إضافة/الكتابة فوق جميع عناصر القائمة إلى الجهاز"
+
+#: config.py:87
+msgid "Remove list items from device"
+msgstr "إزالة عناصر القائمة من الجهاز"
+
+#: config.py:88
+msgid "Replace device with list, add new items only"
+msgstr "استبدال الجهاز بالقائمة، إضافة عناصر جديدة فقط"
+
+#: config.py:89
+msgid "Replace device with list, add/overwrite all"
+msgstr "استبدال الجهاز بالقائمة، إضافة/الكتابة فوق الكل"
+
+#: config.py:91
+msgid "Auto populate list from books on device"
+msgstr "ملء القائمة تلقائيًا من الكتب على الجهاز"
+
+#: config.py:93
+msgid "Do not update calibre column"
+msgstr "لا تحدث عمود calibre"
+
+#: config.py:94
+msgid "Update column for add or remove"
+msgstr "تحديث العمود للإضافة أو الإزالة"
+
+#: config.py:95
+msgid "Update column for add to list only"
+msgstr "تحديث العمود للإضافة إلى القائمة فقط"
+
+#: config.py:96
+msgid "Update column for remove from list only"
+msgstr "تحديث العمود للإزالة من القائمة فقط"
+
+#: config.py:442
+msgid "Kindle Collections"
+msgstr "مجموعات Kindle"
+
+#: config.py:442
+msgid "Location"
+msgstr "الموقع"
+
+#: config.py:442
+msgid "Menu"
+msgstr "القائمة"
+
+#: config.py:442
+msgid "Name"
+msgstr "الاسم"
+
+#: config.py:442
+msgid "Status"
+msgstr "الحالة"
+
+#: config.py:546
+msgid "Lists:"
+msgstr "القوائم:"
+
+#: config.py:553
+msgid "Add list"
+msgstr "إضافة قائمة"
+
+#: config.py:558
+msgid "Delete list"
+msgstr "حذف القائمة"
+
+#: config.py:563 config.py:937
+msgid "Rename list"
+msgstr "إعادة تسمية القائمة"
+
+#: config.py:571
+msgid "Population Options:"
+msgstr "خيارات التعبئة:"
+
+#: config.py:579
+msgid "&List type:"
+msgstr "&نوع القائمة:"
+
+#: config.py:580
+msgid "Choose how this list will be populated"
+msgstr "اختر كيفية تعبئة هذه القائمة"
+
+#: config.py:587
+msgid "&Auto populate from search:"
+msgstr "&ملء تلقائي من البحث:"
+
+#: config.py:588
+msgid ""
+"If list is populated from a search, specify the calibre search expression"
+msgstr "إذا تم تعبئة القائمة من بحث، حدد تعبير بحث calibre"
+
+#: config.py:596
+msgid "Sync Options:"
+msgstr "خيارات المزامنة:"
+
+#: config.py:604
+msgid "&Device to sync this list to:"
+msgstr "&الجهاز لمزامنة هذه القائمة معه:"
+
+#: config.py:605
+msgid ""
+"By specifying a device you can sync either manually or\n"
+"automatically the contents of a list to that device.\n"
+"This replaces the Book Sync plugin functionality"
+msgstr ""
+"عن طريق تحديد جهاز، يمكنك مزامنة محتويات القائمة يدويًا أو\n"
+"تلقائيًا مع ذلك الجهاز.\n"
+"هذا يحل محل وظيفة إضافة مزامنة الكتب"
+
+#: config.py:613
+msgid "&When syncing this list:"
+msgstr "&عند مزامنة هذه القائمة:"
+
+#: config.py:614
+msgid ""
+"Control how your items are synced to the device.\n"
+"Sync only new items, sync all items overwriting existing\n"
+"or use this list to just remove items from your device."
+msgstr ""
+"تحكم في كيفية مزامنة عناصرك مع الجهاز.\n"
+"مزامنة العناصر الجديدة فقط، مزامنة جميع العناصر مع الكتابة فوق الموجودة\n"
+"أو استخدام هذه القائمة لإزالة العناصر من جهازك فقط."
+
+#: config.py:622
+msgid "Sync to this device as soon as it is connected"
+msgstr "مزامنة مع هذا الجهاز بمجرد توصيله"
+
+#: config.py:623
+msgid ""
+"Uncheck this option if you prefer to manually sync to your device.\n"
+"If no device is specified this checkbox has no effect"
+msgstr ""
+"ألغِ تحديد هذا الخيار إذا كنت تفضل المزامنة يدويًا مع جهازك.\n"
+"إذا لم يتم تحديد جهاز، فلن يكون لهذا المربع أي تأثير"
+
+#: config.py:627
+msgid "Clear this list after a sync to this device"
+msgstr "مسح هذه القائمة بعد المزامنة مع هذا الجهاز"
+
+#: config.py:628
+msgid ""
+"If unchecked, only items not on the device already will be synced.\n"
+"If no device is specified this checkbox has no effect.\n"
+"This option can only be used with manual type lists."
+msgstr ""
+"إذا لم يتم التحديد، فسيتم مزامنة العناصر غير الموجودة على الجهاز فقط.\n"
+"إذا لم يتم تحديد جهاز، فلن يكون لهذا المربع أي تأثير.\n"
+"يمكن استخدام هذا الخيار فقط مع قوائم النوع اليدوي."
+
+#: config.py:636
+msgid "Column Update Options:"
+msgstr "خيارات تحديث العمود:"
+
+#: config.py:644
+msgid "When &changing this list:"
+msgstr "عند &تغيير هذه القائمة:"
+
+#: config.py:645
+msgid ""
+"Optionally modify tags or a custom column when you\n"
+"add and/or remove items from this list."
+msgstr ""
+"يمكنك اختياريًا تعديل العلامات أو عمود مخصص عندما تقوم\n"
+"بإضافة و/أو إزالة عناصر من هذه القائمة."
+
+#: config.py:652
+msgid "&Column to update:"
+msgstr "&العمود المراد تحديثه:"
+
+#: config.py:653
+msgid ""
+"Optionally specify a column to add/remove a value from\n"
+"when adding or removing items from this list"
+msgstr ""
+"يمكنك اختياريًا تحديد عمود لإضافة/إزالة قيمة منه\n"
+"عند إضافة أو إزالة عناصر من هذه القائمة"
+
+#: config.py:661
+msgid "&Value in column to add/remove:"
+msgstr "&القيمة في العمود للإضافة/الإزالة:"
+
+#: config.py:662
+msgid ""
+"Specify the tag or custom column value to be added when adding\n"
+"to this list or removed when the book is taken off the list"
+msgstr ""
+"حدد العلامة أو قيمة العمود المخصص التي سيتم إضافتها عند الإضافة\n"
+"إلى هذه القائمة أو إزالتها عند إزالة الكتاب من القائمة"
+
+#: config.py:672
+msgid "Reading Order Options:"
+msgstr "خيارات ترتيب القراءة:"
+
+#: config.py:680
+msgid "&Store in series column:"
+msgstr "&تخزين في عمود السلسلة:"
+
+#: config.py:681
+msgid ""
+"You can optionally display the current reading list order\n"
+"in a custom series column. You should not edit this column directly!\n"
+"Only usable with Manually managed lists that are not Cleared on Sync."
+msgstr ""
+"يمكنك اختياريًا عرض ترتيب قائمة القراءة الحالي\n"
+"في عمود سلسلة مخصص. يجب ألا تعدل هذا العمود مباشرة!\n"
+"قابل للاستخدام فقط مع القوائم المدارة يدويًا والتي لا يتم مسحها عند المزامنة."
+
+#: config.py:689
+msgid "&Series name:"
+msgstr "&اسم السلسلة:"
+
+#: config.py:690
+msgid ""
+"Specify the name for this reading order series\n"
+"If left blank, will use the name of the list this book is on."
+msgstr ""
+"حدد اسم سلسلة ترتيب القراءة هذه\n"
+"إذا تركت فارغًا، فسيتم استخدام اسم القائمة التي يوجد بها هذا الكتاب."
+
+#: config.py:699
+msgid "Display Options:"
+msgstr "خيارات العرض:"
+
+#: config.py:707
+msgid "Move \"View list\" to the top level of the plugin menu for this list"
+msgstr "نقل \"عرض القائمة\" إلى المستوى الأعلى من قائمة الإضافة لهذه القائمة"
+
+#: config.py:708
+msgid ""
+"By default Reading List creates a View List submenu for all your lists when you have multiple.\n"
+"If checked, this list will be moved to the top level menu for ease of access.\n"
+"NOTE: Your \"default\" list will always appear on the top menu, regardless of this checkbox"
+msgstr ""
+"بشكل افتراضي، تنشئ قائمة القراءة قائمة فرعية \"عرض القائمة\" لجميع قوائمك عندما يكون لديك قوائم متعددة.\n"
+"إذا تم التحديد، فسيتم نقل هذه القائمة إلى قائمة المستوى الأعلى لسهولة الوصول.\n"
+"ملاحظة: ستظهر قائمتك \"الافتراضية\" دائمًا في القائمة العلوية، بغض النظر عن مربع الاختيار هذا"
+
+#: config.py:713
+msgid "Apply reading list order when viewing list"
+msgstr "تطبيق ترتيب قائمة القراءة عند عرض القائمة"
+
+#: config.py:714
+msgid ""
+"If checked, viewing a reading list will also change your Calibre sort order.\n"
+"Lists can be manually reordered using this plugin, defaulting to order added to list.\n"
+"If unchecked, current calibre sort will be left unchanged when you view the list."
+msgstr ""
+"إذا تم التحديد، فإن عرض قائمة القراءة سيغير أيضًا ترتيب فرز Calibre الخاص بك.\n"
+"يمكن إعادة ترتيب القوائم يدويًا باستخدام هذه الإضافة، مع الافتراض بترتيب الإضافة إلى القائمة.\n"
+"إذا لم يتم التحديد، فسيظل فرز calibre الحالي دون تغيير عند عرض القائمة."
+
+#: config.py:720
+msgid "Restore sort after viewing list"
+msgstr "استعادة الفرز بعد عرض القائمة"
+
+#: config.py:721
+msgid ""
+"If checked, calibre sort will be restored to its original state after\n"
+"the user quits the reading list view by changing or clearing calibre's\n"
+"search, switching libraries, or quitting calibre."
+msgstr ""
+"إذا تم التحديد، فسيتم استعادة فرز calibre إلى حالته الأصلية بعد\n"
+"خروج المستخدم من عرض قائمة القراءة عن طريق تغيير أو مسح بحث calibre،\n"
+"تبديل المكتبات، أو إغلاق calibre."
+
+#: config.py:911
+msgid "Add new list"
+msgstr "إضافة قائمة جديدة"
+
+#: config.py:912
+msgid "Default"
+msgstr "افتراضي"
+
+#: config.py:912
+msgid "Enter a unique display name for this list:"
+msgstr "أدخل اسم عرض فريد لهذه القائمة:"
+
+#: config.py:920 config.py:950
+msgid "Add failed"
+msgstr "فشلت الإضافة"
+
+#: config.py:921 config.py:951
+msgid "A list with the same name already exists"
+msgstr "توجد قائمة بنفس الاسم بالفعل"
+
+#: config.py:938
+msgid "Enter a new display name for this list:"
+msgstr "أدخل اسم عرض جديد لهذه القائمة:"
+
+#: config.py:969
+msgid "Cannot delete"
+msgstr "لا يمكن الحذف"
+
+#: config.py:970
+msgid "You must have at least one list"
+msgstr "يجب أن يكون لديك قائمة واحدة على الأقل"
+
+#: config.py:972
+msgid "Do you want to delete the list named '%s'"
+msgstr "هل تريد حذف القائمة المسماة '%s'"
+
+#: config.py:1004
+msgid "Devices:"
+msgstr "الأجهزة:"
+
+#: config.py:1015
+msgid "Add connected device"
+msgstr "إضافة جهاز متصل"
+
+#: config.py:1017
+msgid ""
+"If you do not have a device connected currently, either plug one\n"
+"in now or exit the dialog and connect to folder/iTunes first"
+msgstr ""
+"إذا لم يكن لديك جهاز متصل حاليًا، فإما أن تقوم بتوصيل واحد\n"
+"الآن أو الخروج من مربع الحوار والاتصال بالمجلد/iTunes أولاً"
+
+#: config.py:1024
+msgid "Rename the currently connected device"
+msgstr "إعادة تسمية الجهاز المتصل حاليًا"
+
+#: config.py:1029
+msgid "Delete this device from the device list"
+msgstr "حذف هذا الجهاز من قائمة الأجهزة"
+
+#: config.py:1075 config.py:1079 config.py:1098
+msgid "Rename failed"
+msgstr "فشلت إعادة التسمية"
+
+#: config.py:1076 config.py:1106
+msgid "You must select a device first"
+msgstr "يجب عليك تحديد جهاز أولاً"
+
+#: config.py:1080
+msgid "You can only rename a device that is currently connected"
+msgstr "يمكنك فقط إعادة تسمية جهاز متصل حاليًا"
+
+#: config.py:1084
+msgid "Rename device"
+msgstr "إعادة تسمية الجهاز"
+
+#: config.py:1085
+msgid "Enter a new display name for this device:"
+msgstr "أدخل اسم عرض جديد لهذا الجهاز:"
+
+#: config.py:1099
+msgid "An error occured while renaming."
+msgstr "حدث خطأ أثناء إعادة التسمية."
+
+#: config.py:1105
+msgid "Delete failed"
+msgstr "فشل الحذف"
+
+#: config.py:1110
+msgid "You are about to remove the <b>%s</b> device from this list. "
+msgstr "أنت على وشك إزالة الجهاز <b>%s</b> من هذه القائمة. "
+
+#: config.py:1111
+msgid "Are you sure you want to continue?"
+msgstr "هل أنت متأكد أنك تريد المتابعة؟"
+
+#: config.py:1166
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "تحرير اختصارات لوحة المفاتيح المرتبطة بهذه الإضافة"
+
+#: config.py:1170
+msgid "Reset &confirmation dialogs"
+msgstr "إعادة تعيين مربعات حوار &التأكيد"
+
+#: config.py:1171
+msgid "Reset all show me again dialogs for the Reading List plugin"
+msgstr "إعادة تعيين جميع مربعات حوار \"أظهر لي مرة أخرى\" لإضافة قائمة القراءة"
+
+#: config.py:1175
+msgid "&View library preferences"
+msgstr "&عرض تفضيلات المكتبة"
+
+#: config.py:1176
+msgid "View data stored in the library database for this plugin"
+msgstr "عرض البيانات المخزنة في قاعدة بيانات المكتبة لهذه الإضافة"
+
+#: config.py:1187
+msgid "Quick Access Options:"
+msgstr "خيارات الوصول السريع:"
+
+#: config.py:1194
+msgid "Allow toolbar button click to view list"
+msgstr "السماح بالنقر على زر شريط الأدوات لعرض القائمة"
+
+#: config.py:1195
+msgid ""
+"By default the toolbar button shows the plugin menu.\n"
+"Check this option to instead display a reading list."
+msgstr ""
+"بشكل افتراضي، يعرض زر شريط الأدوات قائمة الإضافة.\n"
+"حدد هذا الخيار لعرض قائمة قراءة بدلاً من ذلك."
+
+#: config.py:1202
+msgid "List to view:"
+msgstr "القائمة المراد عرضها:"
+
+#: config.py:1211
+msgid "Show dialog when removing books from device"
+msgstr "إظهار مربع حوار عند إزالة الكتب من الجهاز"
+
+#: config.py:1212
+msgid ""
+"If syncing your list means books are removed from your device, then\n"
+"a dialog will be displayed allowing you to confirm first.\n"
+"Uncheck this option to allow unattended syncing to your device."
+msgstr ""
+"إذا كانت مزامنة قائمتك تعني إزالة الكتب من جهازك، فسيتم\n"
+"عرض مربع حوار يسمح لك بالتأكيد أولاً.\n"
+"ألغِ تحديد هذا الخيار للسماح بالمزامنة التلقائية مع جهازك."
+
+#: config.py:1224
+msgid "Done"
+msgstr "تم"
+
+#: config.py:1225
+msgid "Confirmation dialogs have all been reset"
+msgstr "تمت إعادة تعيين جميع مربعات حوار التأكيد"
+
+#: config.py:1247
+msgid "Lists"
+msgstr "القوائم"
+
+#: config.py:1248
+msgid "Devices"
+msgstr "الأجهزة"
+
+#: config.py:1249
+msgid "Other"
+msgstr "أخرى"

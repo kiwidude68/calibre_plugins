@@ -1,5 +1,10 @@
 # Reading List Change Log
 
+## [1.15.6] - 2025-06-21
+### Added
+- If selected book in calibre is on a reading list when opening to edit then select it in the dialog.
+- - Arabic translation (Usama Khalil)
+
 ## [1.15.5] - 2024-06-02
 ### Added
 - Add `Toggle on list` menu actions assignable via keyboard shortcuts.
