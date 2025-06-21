@@ -1,5 +1,11 @@
 # Generate Cover Change Log
 
+## [2.3.6] - 2025-06-21
+### Added
+- Arabic translation (Usama Khalil)
+### Fixed
+- Ensure drawing text rounds to integers for QRect constructors
+
 ## [2.3.5] - 2025-01-06
 ### Fixed
 - Custom text now replaces newlines after template formatter evaluation rather than before (@cbhaley)
