@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Grant Drake, 2022
+# seeder seeder, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:57+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
-"Last-Translator: Grant Drake, 2022\n"
+"Last-Translator: seeder seeder, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,86 +26,90 @@ msgstr "Klávesové zkratky"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr ""
+msgstr "Restartovat calibre nyní"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr ""
+msgstr "Předvolby pro:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr ""
+msgstr "Vymazat"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr ""
+msgstr "Vymazat všechna nastavení modulu"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
+msgstr "Opravdu chcete změnit nastavení v této knihovně pro tento modul?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
+"Jakékoliv nastavení v jiných knihovnách nebo nastavení uložená v JSON "
+"souboru ve složce s calibre  moduly nebudou dotčena."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr ""
+msgstr "Poté musíte calibre restartovat."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "Nastavení změněno"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "Nastavení modulu v této knihovně bylo změněno."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr ""
+msgstr "Nyní prosím restartujte calibre."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
+msgstr "Opravdu chcete vymazat vaše nastavení pluginu v této knihovně?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "Nastavení vymazáno"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
+msgstr "Všechna nastavení tohoto modulu v této knihovně byla vymazána."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopírovat do schránky"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr ""
+msgstr "Nedefinovaný"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr ""
+msgstr "Vyžadován restart"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
+"Titulní obrázek nenalezen - musíte restartovat Calibre před použitím tohoto "
+"modulu!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr ""
+msgstr "Vytvořit nový sloupec"
 
 #: action.py:35
 msgid "Count Pages"
-msgstr ""
+msgstr "Počítej strany"
 
 #: action.py:35
 msgid ""
@@ -127,7 +132,7 @@ msgstr "&Přizpůsobit modul"
 
 #: action.py:101 config.py:462
 msgid "&Help"
-msgstr ""
+msgstr "&Pomoc"
 
 #: action.py:136 action.py:195
 msgid "Configure plugin"
@@ -268,6 +273,9 @@ msgid ""
 "tried until a page count is successfully\n"
 "fetched.\n"
 msgstr ""
+"Pokud je zvolena tato možnost, každý zdroj stahování je\n"
+"vyzkoušen, dokud modul úspěšně nezíská\n"
+"počet stran.\n"
 
 #: config.py:398
 msgid "Other options:"
@@ -353,7 +361,7 @@ msgstr "Upravit klávesové zkratky spojené s tímto modulem"
 
 #: config.py:456
 msgid "&Library preferences"
-msgstr ""
+msgstr "&Předvolby knihovny"
 
 #: config.py:457
 msgid "View data stored in the library database for this plugin"
@@ -448,6 +456,11 @@ msgid ""
 "href=\"https://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog "
 "Index</a>."
 msgstr ""
+"Dostupné statistiky čtenosti: <a "
+"href=\"https://en.wikipedia.org/wiki/Flesch-"
+"Kincaid_readability_test\">Flesch-Kincaid</a> nebo <a "
+"href=\"https://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog "
+"Index</a>., "
 
 #: config.py:671
 msgid "&Flesch Reading Ease:"
@@ -517,6 +530,7 @@ msgstr "Ve frontě"
 msgid ""
 "No format found for word count, but page count download will be attempted"
 msgstr ""
+"Nenalezen žádný formát pro počítání slov, pokusí se stáhnout počet stránek"
 
 #: dialogs.py:181
 msgid "No convertible format found"

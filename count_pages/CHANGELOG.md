@@ -1,5 +1,12 @@
 # Count Pages Change Log
 
+## [1.13.7] - 2025-08-03
+### Added
+- Arabic translation
+- Portuguese translation
+### Changed
+- Add custom column requirement types to tooltips on dialog.
+
 ## [1.13.6] - 2024-04-07
 ### Changed
 - Use podofo rather than pdfinfo to retrieve pdf page count. Shoudl fix issues for some users having problems with pdfinfo.exe

@@ -605,7 +605,7 @@ class StatisticsTab(QWidget):
         page_group_box.setLayout(page_group_box_layout)
 
         page_column_label = QLabel(_('&Custom column:'), self)
-        toolTip = _('Leave this blank if you do not want to count pages')
+        toolTip = _('Column must be of type float or int. Leave this blank if you do not want to count pages')
         page_column_label.setToolTip(toolTip)
         page_col = library_config.get(KEY_PAGES_CUSTOM_COLUMN, '')
         self.page_column_combo = CustomColumnComboBox(self, avail_columns, page_col)
@@ -640,7 +640,7 @@ class StatisticsTab(QWidget):
         word_group_box_layout = QGridLayout()
         word_group_box.setLayout(word_group_box_layout)
         word_column_label = QLabel(_('C&ustom column:'), self)
-        toolTip = _('Leave this blank if you do not want to count words')
+        toolTip = _('Column must be of type float or int. Leave this blank if you do not want to count words')
         word_column_label.setToolTip(toolTip)
         word_col = library_config.get(KEY_WORDS_CUSTOM_COLUMN, '')
         self.word_column_combo = CustomColumnComboBox(self, avail_columns, word_col)

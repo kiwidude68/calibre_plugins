@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:57+1000\n"
+"POT-Creation-Date: 2025-08-03 12:39+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,11 +174,7 @@ msgid "Updating"
 msgstr ""
 
 #: config.py:59
-msgid "Adobe Digital Editions (ADE)"
-msgstr ""
-
-#: config.py:59
-msgid "Custom (Chars Per Page)"
+msgid "Paragraphs (APNX accurate)"
 msgstr ""
 
 #: config.py:59
@@ -186,7 +182,11 @@ msgid "E-book Viewer (calibre)"
 msgstr ""
 
 #: config.py:59
-msgid "Paragraphs (APNX accurate)"
+msgid "Adobe Digital Editions (ADE)"
+msgstr ""
+
+#: config.py:59
+msgid "Custom (Chars Per Page)"
 msgstr ""
 
 #: config.py:122
@@ -336,15 +336,15 @@ msgid "Confirmation dialogs have all been reset"
 msgstr ""
 
 #: config.py:537
+msgid "Source"
+msgstr ""
+
+#: config.py:537
 msgid "Identifier"
 msgstr ""
 
 #: config.py:537
 msgid "On Menu"
-msgstr ""
-
-#: config.py:537
-msgid "Source"
 msgstr ""
 
 #: config.py:602
@@ -356,7 +356,7 @@ msgid "&Custom column:"
 msgstr ""
 
 #: config.py:608
-msgid "Leave this blank if you do not want to count pages"
+msgid "Column must be of type float or int. Leave this blank if you do not want to count pages"
 msgstr ""
 
 #: config.py:617
@@ -384,7 +384,7 @@ msgid "C&ustom column:"
 msgstr ""
 
 #: config.py:643
-msgid "Leave this blank if you do not want to count words"
+msgid "Column must be of type float or int. Leave this blank if you do not want to count words"
 msgstr ""
 
 #: config.py:652
@@ -436,11 +436,11 @@ msgid ""
 msgstr ""
 
 #: dialogs.py:39
-msgid "Cancel"
+msgid "Working"
 msgstr ""
 
 #: dialogs.py:39
-msgid "Working"
+msgid "Cancel"
 msgstr ""
 
 #: dialogs.py:40
