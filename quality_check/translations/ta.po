@@ -4,14 +4,14 @@
 # 
 # Translators:
 # அனிச் பிரபு தி, 2022
-# தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2024
+# தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-01-25 13:30+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
-"Last-Translator: தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2024\n"
+"Last-Translator: தமிழ்நேரம் ஐ <anishprabu.t@gmail.com>, 2025\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -376,7 +376,7 @@ msgstr "பட பெயருடன் பிரச்சினை:"
 
 #: check_epub.py:716
 msgid "\tUNUSED image file: %s"
-msgstr ""
+msgstr "\tபயன்படுத்தப்படாத படக் கோப்பு: %s"
 
 #: check_epub.py:729
 msgid "No searched ePub books have unused image files"
@@ -775,15 +775,15 @@ msgstr "%D புத்தக ஆசிரியர்களின் ASCII %d �
 
 #: check_fix.py:166
 msgid "books with incorrect title sort"
-msgstr ""
+msgstr "தவறான தலைப்பு வரிசைப்படுத்தப்பட்ட புத்தகங்கள்"
 
 #: check_fix.py:167
 msgid "Checked %d books, updated %d title sorts%s"
-msgstr ""
+msgstr "சரிபார்க்கப்பட்ட %dபுத்தகங்கள், புதுப்பிக்கப்பட்ட %dதலைப்பு வகைகள்%s"
 
 #: check_fix.py:171
 msgid "All title sorts are correct"
-msgstr ""
+msgstr "எல்லா தலைப்பு வகைகளும் சரியானவை."
 
 #: check_fix.py:201
 msgid "\"Check and repair book sizes\" requires calibre version 5.9 or higher."
@@ -881,7 +881,7 @@ msgstr "%D புத்தகங்களுக்கு ASIN ஐ சரிச�
 
 #: check_fix.py:401
 msgid "Fix ASIN completed"
-msgstr ""
+msgstr "ASIN சரிசெய்தல் முடிந்தது"
 
 #: check_fix.py:404
 msgid "%d books updated, see log for details"
@@ -1915,16 +1915,20 @@ msgid ""
 "For the selected book(s) rename the author to remove any accents and "
 "diacritics characters"
 msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட புத்தகங்களுக்கு, ஏதேனும் உச்சரிப்புகள் மற்றும் "
+"எழுத்துக்குறிகளை நீக்க ஆசிரியரின் பெயரை மாற்று"
 
 #: config.py:161
 msgid "Set title sort"
-msgstr ""
+msgstr "தலைப்பு வரிசையை அமை"
 
 #: config.py:161
 msgid ""
 "For the selected book(s) replace the title sort with a value based on your "
 "tweak preference"
 msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட புத்தகங்களுக்கு, உங்கள் விருப்பத்தேர்வின் அடிப்படையில் "
+"தலைப்பு வரிசையாக்கத்தை ஒரு மதிப்புடன் மாற்றவும்"
 
 #: config.py:162
 msgid "Check and repair book sizes"
@@ -2003,13 +2007,15 @@ msgstr ""
 
 #: config.py:323
 msgid "Suppress Fix summary dialogs"
-msgstr ""
+msgstr "சரிசெய்தல் சுருக்க உரையாடல்களை அடக்கவும்"
 
 #: config.py:324
 msgid ""
 "Uncheck this option if you do not want interactive dialogs to appear "
 "summarising the operation"
 msgstr ""
+"செயல்பாட்டைச் சுருக்கமாகக் கூறும் ஊடாடும் உரையாடல்கள் தோன்றுவதை நீங்கள் "
+"விரும்பவில்லை என்றால், இந்த விருப்பத்தைத் தேர்வுநீக்கவும்."
 
 #: config.py:330
 msgid "Visible menus"
@@ -2065,11 +2071,11 @@ msgstr "உயரம்"
 
 #: dialogs.py:169
 msgid "Cover aspect ratio is"
-msgstr ""
+msgstr "கவர் தோற்ற விகிதம்"
 
 #: dialogs.py:187
 msgid "tolerance"
-msgstr ""
+msgstr "பொறுத்தல்"
 
 #: dialogs.py:189
 msgid "No cover"
