@@ -3,6 +3,8 @@
 ## [1.14.3] - 2025-08-24
 ### Added
 - Added 'Normalize the fields' and 'Normalize the notes' options for merge and reorder diatrics. (#un-pogaz)
+- Added Actions Chains support. (#un-pogaz)
+- Added 'Fix Author Sort' action. (#un-pogaz)
 
 ## [1.14.2] - 2025-04-18
 ### Changed

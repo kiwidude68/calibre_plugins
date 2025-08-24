@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-24 11:40+1000\n"
+"POT-Creation-Date: 2025-08-24 20:53+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:340
+#: ..\common\common_dialogs.py:84 config.py:341
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr ""
 msgid "Create new column"
 msgstr ""
 
-#: action.py:38 check_base.py:62 check_covers.py:98 check_fix.py:414
+#: action.py:38 check_base.py:62 check_covers.py:98 check_fix.py:436
 msgid "Quality Check"
 msgstr ""
 
@@ -155,7 +155,7 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:156 config.py:350
+#: action.py:156 config.py:351
 msgid "&Help"
 msgstr ""
 
@@ -175,12 +175,12 @@ msgstr ""
 msgid "No Matches"
 msgstr ""
 
-#: check_covers.py:27 check_epub.py:185 check_fix.py:58 check_fix.py:211
-#: check_fix.py:486 check_metadata.py:67 check_mobi.py:38
+#: check_covers.py:27 check_epub.py:185 check_fix.py:60 check_fix.py:233
+#: check_fix.py:508 check_metadata.py:67 check_mobi.py:38
 msgid "Quality Check failed"
 msgstr ""
 
-#: check_covers.py:28 check_epub.py:186 check_fix.py:59 check_metadata.py:68
+#: check_covers.py:28 check_epub.py:186 check_fix.py:61 check_metadata.py:68
 #: check_mobi.py:39
 msgid "Unknown menu key for %s of '%s'"
 msgstr ""
@@ -696,143 +696,155 @@ msgstr ""
 msgid "OPF file in container.xml not found in:%s"
 msgstr ""
 
-#: check_fix.py:122
+#: check_fix.py:124
 msgid "Reformatting author initials for"
 msgstr ""
 
-#: check_fix.py:127
+#: check_fix.py:129
 msgid "Reformatted initials for %d of %d book authors"
 msgstr ""
 
-#: check_fix.py:152
+#: check_fix.py:154
 msgid "Renaming authors to ascii for"
 msgstr ""
 
-#: check_fix.py:157
+#: check_fix.py:159
 msgid "Renamed to ascii %d of %d book authors"
 msgstr ""
 
-#: check_fix.py:177
+#: check_fix.py:174
+msgid "books with incorrect author sort"
+msgstr ""
+
+#: check_fix.py:175
+msgid "Checked %d books, updated %d author sorts%s"
+msgstr ""
+
+#: check_fix.py:179
+msgid "All author sorts are correct"
+msgstr ""
+
+#: check_fix.py:199
 msgid "books with incorrect title sort"
 msgstr ""
 
-#: check_fix.py:178
+#: check_fix.py:200
 msgid "Checked %d books, updated %d title sorts%s"
 msgstr ""
 
-#: check_fix.py:182
+#: check_fix.py:204
 msgid "All title sorts are correct"
 msgstr ""
 
-#: check_fix.py:212
+#: check_fix.py:234
 msgid "\"Check and repair book sizes\" requires calibre version 5.9 or higher."
 msgstr ""
 
-#: check_fix.py:217
+#: check_fix.py:239
 msgid "books for invalid file sizes"
 msgstr ""
 
-#: check_fix.py:218
+#: check_fix.py:240
 msgid "Checked %d books, updated %d format sizes in %d books%s"
 msgstr ""
 
-#: check_fix.py:222
+#: check_fix.py:244
 msgid "All book format sizes are correct"
 msgstr ""
 
-#: check_fix.py:242
+#: check_fix.py:264
 msgid "books with paths missing commas"
 msgstr ""
 
-#: check_fix.py:243
+#: check_fix.py:265
 msgid "Checked %d books, updated %d paths%s"
 msgstr ""
 
-#: check_fix.py:247
+#: check_fix.py:269
 msgid "All books have up to date paths"
 msgstr ""
 
-#: check_fix.py:259
+#: check_fix.py:281
 msgid "Choose directory to cleanup"
 msgstr ""
 
-#: check_fix.py:264
+#: check_fix.py:286
 msgid "Invalid Folder"
 msgstr ""
 
-#: check_fix.py:265
+#: check_fix.py:287
 msgid "You should not run this feature against a Calibre library folder."
 msgstr ""
 
-#: check_fix.py:266
+#: check_fix.py:288
 msgid "If you do you will remove \"Empty book\" entries and corrupt your database."
 msgstr ""
 
-#: check_fix.py:275
+#: check_fix.py:297
 msgid "No files/folders were found to be deleted"
 msgstr ""
 
-#: check_fix.py:281 check_fix.py:288
+#: check_fix.py:303 check_fix.py:310
 msgid "Cleanup completed"
 msgstr ""
 
-#: check_fix.py:284
+#: check_fix.py:306
 msgid "Deleted %d files/folders with %d errors. See details for more info."
 msgstr ""
 
-#: check_fix.py:312
+#: check_fix.py:334
 msgid "Removed folder: %s"
 msgstr ""
 
-#: check_fix.py:316
+#: check_fix.py:338
 msgid "ERROR removing folder: %s"
 msgstr ""
 
-#: check_fix.py:350
+#: check_fix.py:372
 msgid "Removed file: %s"
 msgstr ""
 
-#: check_fix.py:354
+#: check_fix.py:376
 msgid "ERROR removing file: %s"
 msgstr ""
 
-#: check_fix.py:363 check_fix.py:366 check_fix.py:369
+#: check_fix.py:385 check_fix.py:388 check_fix.py:391
 msgid "identifier found"
 msgstr ""
 
-#: check_fix.py:372
+#: check_fix.py:394
 msgid "No ASIN found, using uuid"
 msgstr ""
 
-#: check_fix.py:406
+#: check_fix.py:428
 msgid "Fixing ASIN for %d books"
 msgstr ""
 
-#: check_fix.py:412
+#: check_fix.py:434
 msgid "Fix ASIN completed"
 msgstr ""
 
-#: check_fix.py:415
+#: check_fix.py:437
 msgid "%d books updated, see log for details"
 msgstr ""
 
-#: check_fix.py:458
+#: check_fix.py:480
 msgid "books for normalize text fields"
 msgstr ""
 
-#: check_fix.py:475
+#: check_fix.py:497
 msgid "Checked %d books, normalize fields %d in %d books, and %d author sort key%s"
 msgstr ""
 
-#: check_fix.py:479
+#: check_fix.py:501
 msgid "All text fields are normalize"
 msgstr ""
 
-#: check_fix.py:487
+#: check_fix.py:509
 msgid "\"Normalize the notes\" requires calibre version 7.0 or higher."
 msgstr ""
 
-#: check_fix.py:524
+#: check_fix.py:546
 msgid "All category notes are normalize"
 msgstr ""
 
@@ -1701,114 +1713,122 @@ msgid "For the selected book(s) rename the author to remove any accents and diac
 msgstr ""
 
 #: config.py:161
-msgid "Set title sort"
+msgid "Set author sort"
 msgstr ""
 
 #: config.py:161
+msgid "For the selected book(s) replace the author sort with a value based on the Manage Authors data"
+msgstr ""
+
+#: config.py:162
+msgid "Set title sort"
+msgstr ""
+
+#: config.py:162
 msgid "For the selected book(s) replace the title sort with a value based on your tweak preference"
 msgstr ""
 
-#: config.py:162
+#: config.py:163
 msgid "Check and repair book sizes"
 msgstr ""
 
-#: config.py:162
+#: config.py:163
 msgid "Check and update file sizes for your books"
 msgstr ""
 
-#: config.py:163
+#: config.py:164
 msgid "Check and rename book paths"
 msgstr ""
 
-#: config.py:163
+#: config.py:164
 msgid "Ensure book paths include commas if appropriate"
 msgstr ""
 
-#: config.py:164
+#: config.py:165
 msgid "Cleanup .opf files/folders"
 msgstr ""
 
-#: config.py:164
+#: config.py:165
 msgid "Delete orphaned opf/jpg files and remove empty folders"
 msgstr ""
 
-#: config.py:165
+#: config.py:166
 msgid "Fix ASIN for Kindle Fire"
 msgstr ""
 
-#: config.py:165
+#: config.py:166
 msgid "For MOBI/AZW/AZW3 formats, assign the current amazon identifier (uuid if not present) as an ASIN to EXTH 113 and 504 fields"
 msgstr ""
 
-#: config.py:166
+#: config.py:167
 msgid "Normalize the fields"
 msgstr ""
 
-#: config.py:166
+#: config.py:167
 msgid "Normalize the text fields by using their canonical form defined by the Unicode Standard, aka merge and reorders diacritics. Can result to unduplicate some values."
 msgstr ""
 
-#: config.py:167
+#: config.py:168
 msgid "Normalize the notes"
 msgstr ""
 
-#: config.py:167
+#: config.py:168
 msgid "Normalize the category notes by using their canonical form defined by the Unicode Standard, aka merge and reorders diacritics."
 msgstr ""
 
-#: config.py:288
+#: config.py:289
 msgid "Check excess tags options"
 msgstr ""
 
-#: config.py:293
+#: config.py:294
 msgid "Maximum tags:"
 msgstr ""
 
-#: config.py:294
+#: config.py:295
 msgid "Books with more than this value will be displayed"
 msgstr ""
 
-#: config.py:302
+#: config.py:303
 msgid "Exclude tags:"
 msgstr ""
 
-#: config.py:303
+#: config.py:304
 msgid "Exclude these tags from when counting the tags for each book"
 msgstr ""
 
-#: config.py:312
+#: config.py:313
 msgid "Other options"
 msgstr ""
 
-#: config.py:317
+#: config.py:318
 msgid "Author initials format:"
 msgstr ""
 
-#: config.py:318
+#: config.py:319
 msgid "For use with the \"Check Author initials\" option, set your preferred format"
 msgstr ""
 
-#: config.py:325
+#: config.py:326
 msgid "Suppress Fix summary dialogs"
 msgstr ""
 
-#: config.py:326
+#: config.py:327
 msgid "Uncheck this option if you do not want interactive dialogs to appear summarising the operation"
 msgstr ""
 
-#: config.py:332
+#: config.py:333
 msgid "Visible menus"
 msgstr ""
 
-#: config.py:341
+#: config.py:342
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:345
+#: config.py:346
 msgid "&View library preferences"
 msgstr ""
 
-#: config.py:346
+#: config.py:347
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
