@@ -40,6 +40,8 @@ class FixCheck(BaseCheck):
             self.fix_author_initials()
         elif menu_key == 'fix_author_ascii':
             self.fix_author_names_to_ascii()
+        elif menu_key == 'fix_author_sort':
+            self.fix_author_sort()
         elif menu_key == 'fix_title_sort':
             self.fix_title_sort()
         elif menu_key == 'check_fix_book_size':
@@ -157,6 +159,26 @@ class FixCheck(BaseCheck):
             msg = _('Renamed to ascii %d of %d book authors') %(len(d.result_ids), d.total_count)
             self.gui.status_bar.showMessage(msg)
 
+
+    def fix_author_sort(self):
+
+        def adjust_book_author_sort(book_id, db):
+            val_old = db.new_api.field_for('author_sort', book_id)
+            val_new = ' & '.join(db.new_api.author_sort_strings_for_books((book_id,))[book_id])
+            if val_new != val_old:
+                db.new_api.set_field('author_sort', {book_id: val_new})
+                return True
+            return False
+
+        total_count, result_ids, cancelled_msg = self.check_all_files(adjust_book_author_sort, show_matches=False,
+                                                                  status_msg_type=_('books with incorrect author sort'))
+        msg = _('Checked %d books, updated %d author sorts%s') % \
+                    (total_count, len(result_ids), cancelled_msg)
+        self.gui.status_bar.showMessage(msg)
+        if len(result_ids) == 0:
+            self.gui.status_bar.showMessage(_('All author sorts are correct'))
+            return
+        self.gui.library_view.model().refresh_ids(list(result_ids))
 
     def fix_title_sort(self):
 
