@@ -3,13 +3,18 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import os, shutil, traceback
+from collections import defaultdict
+import os
+import shutil
+import traceback
+import unicodedata
 
 try:
     load_translations()
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+from calibre.db.fields import CompositeField
 from calibre.ebooks.metadata import title_sort
 from calibre.gui2 import info_dialog, choose_dir, error_dialog
 from calibre.ptempfile import TemporaryDirectory
@@ -45,6 +50,10 @@ class FixCheck(BaseCheck):
             self.cleanup_opf_folders()
         elif menu_key == 'fix_mobi_asin':
             self.fix_mobi_asin()
+        elif menu_key == 'fix_normalize_fields':
+            self.fix_normalize_fields()
+        elif menu_key == 'fix_normalize_notes':
+            self.fix_normalize_notes()
         else:
             return error_dialog(self.gui, _('Quality Check failed'),
                                 _('Unknown menu key for %s of \'%s\'')%('FixCheck', menu_key),
@@ -406,3 +415,111 @@ class FixCheck(BaseCheck):
                                      _('%d books updated, see log for details')%len(d.updated_ids),
                                      self.log)
             sd.exec_()
+
+
+    def fix_normalize_fields(self):
+        db = self.gui.current_db.new_api
+
+        # retrive text fields
+        fields = set()
+        for k,v in db.fields.items():
+            if v.metadata['datatype'] != 'text' or isinstance(v, CompositeField):
+                continue
+            fields.add(k)
+        for f in ['languages', 'identifiers', 'ondevice', 'formats', 'path', 'uuid']:
+            if f in fields:
+                fields.remove(f)
+
+        update_map = defaultdict(dict)
+
+        def normalize(val):
+            if isinstance(val, str):
+                return unicodedata.normalize('NFC', val)
+            else:
+                return tuple(normalize(v) for v in val)
+
+        # retrive new values
+        def evaluate_book(book_id, db):
+            mark_book = False
+
+            for field in fields:
+                val = db.new_api.field_for(field, book_id)
+                if not val:
+                    continue
+                val_norm = normalize(val)
+                if val != val_norm:
+                    mark_book = True
+                    update_map[field][book_id] = val_norm
+
+            return mark_book
+
+        total_count, result_ids, cancelled_msg = self.check_all_files(evaluate_book,
+                                                                  marked_text='fix_normalize_fields',
+                                                                  status_msg_type=_('books for normalize text fields'))
+
+        # update the fields
+        total_field_count = 0
+        for field, val_map in update_map.items():
+            total_field_count += len(val_map)
+            db.set_field(field, val_map)
+
+        # the default author sort are stored separatly
+        sort_map = {}
+        for author_id, val in db.fields['authors'].table.asort_map.items():
+            val_norm = normalize(val)
+            if val != val_norm:
+                sort_map[author_id] = val_norm
+        if sort_map:
+            db.set_sort_for_authors(sort_map, update_books=False)
+
+        msg = _('Checked %d books, normalize fields %d in %d books, and %d author sort key%s') % \
+                    (total_count, total_field_count, len(result_ids), len(sort_map), cancelled_msg)
+        self.gui.status_bar.showMessage(msg)
+        if len(result_ids) == 0 and len(sort_map) == 0:
+            self.gui.status_bar.showMessage(_('All text fields are normalize'))
+            return
+        self.gui.library_view.model().refresh_ids(list(result_ids))
+
+    def fix_normalize_notes(self):
+        db = self.gui.current_db.new_api
+        if not hasattr(db, 'get_all_items_that_have_notes'):
+            return error_dialog(self.gui, _('Quality Check failed'),
+                            _('"Normalize the notes" requires calibre version 7.0 or higher.'),
+                            show=True, show_copy_button=False)
+
+        def normalize(val):
+            return unicodedata.normalize('NFC', val)
+
+        field_id_notes = defaultdict(dict)
+        total_count = 0
+        total_update_count = 0
+        all_notes = db.get_all_items_that_have_notes()
+
+        for field, notes in all_notes:
+            for item_id in notes:
+                note_data = db.notes_data_for(field, item_id)
+                note = note_data.get('doc')
+                if not note:
+                    continue
+                note_norm = normalize(note)
+                if note != note_norm:
+                    note_data['doc'] = note_norm
+                    field_id_notes[field][item_id] = note_data
+
+        with db.backend.conn:
+            for field, values in field_id_notes.items():
+                total_update_count += len(values)
+                for item_id, note_data in values.items():
+                    db.set_notes_for(
+                        field, item_id,
+                        note_data['doc'],
+                        searchable_text=note_data['searchable_text'],
+                        resource_hashes=note_data['resource_hashes'],
+                    )
+
+        msg = ('\nChecked %d notes, normalize %d in %d fields') % \
+                    (total_count, total_update_count, len(field_id_notes))
+        self.gui.status_bar.showMessage(msg)
+        if len(field_id_notes) == 0:
+            self.gui.status_bar.showMessage(_('All category notes are normalize'))
+            return
