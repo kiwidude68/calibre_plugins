@@ -41,7 +41,7 @@ class RunQualityCheckAction(ChainAction):
     def validate(self, settings):
         if not settings or not settings['menu_key']:
             return _('No action selected'), _('No Quality Check fix action has been selected.')
-        if not settings['menu_key'] not in PLUGIN_FIX_MENUS:
+        if settings['menu_key'] not in PLUGIN_FIX_MENUS:
             return _('Invalid action selected'), _('The Quality Check fix action is unknown and not supported.')
         return True
 
