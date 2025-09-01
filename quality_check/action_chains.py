@@ -35,6 +35,7 @@ class RunQualityCheckAction(ChainAction):
             return
         check = FixCheck(gui)
         check.set_search_scope(SCOPE_SELECTION, book_ids)
+        check.set_show_matches_override(False)
         check.menu_key = settings['menu_key']
         check.perform_check(check.menu_key)
 
