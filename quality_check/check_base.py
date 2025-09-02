@@ -23,6 +23,7 @@ class BaseCheck(object):
         self.menu_key = None
         self.book_ids = []
         self.initial_search = initial_search
+        self.show_matches_override = None
 
     def perform_check(self, menu_key):
         '''
@@ -33,6 +34,9 @@ class BaseCheck(object):
     def set_search_scope(self, scope, book_ids=[]):
         self.scope = scope
         self.book_ids = book_ids
+
+    def set_show_matches_override(self, show_matches_override):
+        self.show_matches_override = show_matches_override
 
     def check_all_files(self, callback_fn, status_msg_type='books',
                         no_match_msg=None, show_matches=True, marked_text='true'):
@@ -49,6 +53,9 @@ class BaseCheck(object):
             if excluded_ids:
                 excluded_map = dict((i, True) for i in excluded_ids)
                 self.book_ids = [i for i in self.book_ids if i not in excluded_map]
+        # Override the show matches behavior if so
+        if self.show_matches_override is not None:
+            show_matches = self.show_matches_override
 
         d = QualityProgressDialog(self.gui, self.book_ids, callback_fn, self.gui.current_db,
                                   status_msg_type)
