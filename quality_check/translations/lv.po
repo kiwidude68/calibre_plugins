@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-25 13:30+1000\n"
+"POT-Creation-Date: 2025-08-24 20:53+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: ciepina <ciepina@balticom.lv>, 2023\n"
 "Language-Team: Latvian (https://app.transifex.com/calibre/teams/19337/lv/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: lv\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:338
+#: ..\common\common_dialogs.py:84 config.py:341
 msgid "Keyboard shortcuts"
 msgstr "Īsinājumtaustiņi"
 
@@ -108,7 +108,7 @@ msgstr ""
 msgid "Create new column"
 msgstr "Izveidot jaunu kolonnu"
 
-#: action.py:38 check_base.py:62 check_covers.py:98 check_fix.py:403
+#: action.py:38 check_base.py:62 check_covers.py:98 check_fix.py:436
 msgid "Quality Check"
 msgstr "Kvalitātes pārbaude"
 
@@ -174,7 +174,7 @@ msgstr "Skatīt izņēmumus, ko pievienojāt katrai Kvalitātes pārbaudei"
 msgid "&Customize plugin"
 msgstr "&Pielāgot spraudni"
 
-#: action.py:156 config.py:348
+#: action.py:156 config.py:351
 msgid "&Help"
 msgstr "&Palīdzība"
 
@@ -194,12 +194,12 @@ msgstr "Pārbaudītas %d grāmatas, atrastas %d atbilstības%s"
 msgid "No Matches"
 msgstr "Nav atbilstību"
 
-#: check_covers.py:27 check_epub.py:185 check_fix.py:49 check_fix.py:200
-#: check_metadata.py:67 check_mobi.py:38
+#: check_covers.py:27 check_epub.py:185 check_fix.py:60 check_fix.py:233
+#: check_fix.py:508 check_metadata.py:67 check_mobi.py:38
 msgid "Quality Check failed"
 msgstr "Kvalitātes pārbaude neizdevās"
 
-#: check_covers.py:28 check_epub.py:186 check_fix.py:50 check_metadata.py:68
+#: check_covers.py:28 check_epub.py:186 check_fix.py:61 check_metadata.py:68
 #: check_mobi.py:39
 msgid "Unknown menu key for %s of '%s'"
 msgstr "Nezināms izvēlnes taustiņš %s no '%s'"
@@ -503,343 +503,376 @@ msgstr "Visām meklētajām ePub grāmatām ir derīgi nosaukumi"
 msgid "ePub books for namespaces check"
 msgstr "ePub grāmatas nosaukumu pārbaude"
 
-#: check_epub.py:1169
+#: check_epub.py:1173
 msgid "All searched ePub books have only dc: elements in manifest"
 msgstr "Visām meklētajām ePub grāmatām ir tikai dc: elementi manifestā"
 
-#: check_epub.py:1171
+#: check_epub.py:1175
 msgid "ePub books for non dc: metadata check"
 msgstr "ePub grāmatas, kas nav dc: metadatu pārbaude"
 
-#: check_epub.py:1193
+#: check_epub.py:1197
 msgid "Manifest file missing from: <b>%s</b>"
 msgstr "Trūkst manifesta fails: <b>%s</b>"
 
-#: check_epub.py:1207
+#: check_epub.py:1211
 msgid "All searched ePub books have a valid opf manifest"
 msgstr "Visām meklētajām ePub grāmatām ir derīgs .opf manifests"
 
-#: check_epub.py:1209
+#: check_epub.py:1213
 msgid "ePub books for missing files in opf"
 msgstr "ePub grāmatas ar trūkstošiem .opf failiem"
 
-#: check_epub.py:1234 check_epub.py:1273
+#: check_epub.py:1238 check_epub.py:1277
 msgid "Ignoring DRM protected ePub: "
 msgstr "Ignorējot ar DRM aizsargātu ePub: "
 
-#: check_epub.py:1247
+#: check_epub.py:1251
 msgid "All searched ePub books have a flattened NCX TOC"
 msgstr "Visām meklētajām ePub grāmatām ir saplacināts NCX TOC"
 
-#: check_epub.py:1249
+#: check_epub.py:1253
 msgid "ePub books for NCX TOC hierarchy"
 msgstr "ePub grāmatas NCX TOC hierarhija"
 
-#: check_epub.py:1293
+#: check_epub.py:1297
 msgid "All searched ePub books have a NCX TOC with at least 3 items"
 msgstr "Visām meklētajām ePub grāmatām ir NCX TOC ar vismaz 3 vienumiem"
 
-#: check_epub.py:1295
+#: check_epub.py:1299
 msgid "ePub books for NCX TOC count"
 msgstr "ePub grāmatas NCX TOC skaitam"
 
-#: check_epub.py:1350
+#: check_epub.py:1354
 msgid "All searched ePub books have a NCX TOC with valid links"
 msgstr "Visām meklētajām ePub grāmatām ir NCX TOC ar derīgām saitēm"
 
-#: check_epub.py:1352
+#: check_epub.py:1356
 msgid "ePub books for broken NCX TOC links"
 msgstr "ePub grāmatas ar bojātām NCX TOC saitēm"
 
-#: check_epub.py:1395
+#: check_epub.py:1399
 msgid "All searched ePub books have valid guide entries"
 msgstr "Visās meklētajās ePub grāmatās ir derīgi ceļveža ieraksti"
 
-#: check_epub.py:1397
+#: check_epub.py:1401
 msgid "ePub books for broken guide links"
 msgstr "ePub grāmatas ar bojātām ceļvežu saitēm"
 
-#: check_epub.py:1431
+#: check_epub.py:1435
 msgid "No searched ePub books have oversize html files"
 msgstr "Nevienā meklētajā ePub grāmatā nav pārāk lieli HTML faili"
 
-#: check_epub.py:1433
+#: check_epub.py:1437
 msgid "ePub books for oversize html files"
 msgstr "ePub grāmatas ar liela izmēra html failiem"
 
-#: check_epub.py:1458
+#: check_epub.py:1462
 msgid "No searched ePub books have DRM"
 msgstr "Nevienai meklētajai ePub grāmatai nav DRM"
 
-#: check_epub.py:1460
+#: check_epub.py:1464
 msgid "ePub books for DRM"
 msgstr "ePub grāmatas ar DRM"
 
-#: check_epub.py:1492
+#: check_epub.py:1496
 msgid "No searched ePub books have Adobe DRM meta tags"
 msgstr "Nevienai meklētajai ePub grāmatai nav Adobe DRM meta birku"
 
-#: check_epub.py:1494
+#: check_epub.py:1498
 msgid "ePub books for Adobe DRM meta tags"
 msgstr "ePub grāmatas ar Adobe DRM meta birkām"
 
-#: check_epub.py:1526
+#: check_epub.py:1530
 msgid "No searched ePub books have \\<address\\> smart tags"
 msgstr "Nevienai meklētajai ePub grāmatai nav \\<adreses\\> viedās birkas"
 
-#: check_epub.py:1528
+#: check_epub.py:1532
 msgid "ePub books for <address> smart tags"
 msgstr "ePub grāmatas ar <address> viedajām birkām"
 
-#: check_epub.py:1547
+#: check_epub.py:1551
 msgid "Font found in: <b>%s</b>"
 msgstr "Atrasts fonts: <b>%s</b>"
 
-#: check_epub.py:1561
+#: check_epub.py:1565
 msgid "No searched ePub books have embedded fonts"
 msgstr "Nevienā meklētajā ePub grāmatā nav iegultu fontu"
 
-#: check_epub.py:1563
+#: check_epub.py:1567
 msgid "ePub books for embedded fonts"
 msgstr "ePub grāmatas ar iegultiem fontiem"
 
-#: check_epub.py:1581
+#: check_epub.py:1585
 msgid "CSS file contains @font-face: <b>%s</b>"
 msgstr "CSS failā ir @font-face: <b>%s</b>"
 
-#: check_epub.py:1587
+#: check_epub.py:1591
 msgid "At least one html file contains @font-face: <b>%s</b>"
 msgstr "Vismaz viens html fails satur @font-face: <b>%s</b>"
 
-#: check_epub.py:1601
+#: check_epub.py:1605
 msgid "No searched ePub books have @font-face declarations"
 msgstr "Nevienai meklētajai ePub grāmatai nav @font-face deklarācijas"
 
-#: check_epub.py:1603
+#: check_epub.py:1607
 msgid "ePub books for @font-face declarations"
 msgstr "ePub grāmatas ar @font-face deklarācijām"
 
-#: check_epub.py:1632
+#: check_epub.py:1636
 msgid "All searched ePub books have text-align:justify"
 msgstr "Visām meklētajām ePub grāmatām ir text-align:justify"
 
-#: check_epub.py:1634
+#: check_epub.py:1638
 msgid "ePub books for text-align:justify"
 msgstr "ePub grāmatas ar text-align:justify"
 
-#: check_epub.py:1660
+#: check_epub.py:1664
 msgid "\t\t'margin' property found, so does not match calibre preferences"
 msgstr "\t\t'margin' atrastais rekvizīts neatbilst calibre izvēlnei"
 
-#: check_epub.py:1663
+#: check_epub.py:1667
 msgid "\t\tNegative margin found, so does not match calibre preferences"
 msgstr "\t\tAtrasta negatīva piemale kas neatbilst calibre izvēlnei"
 
-#: check_epub.py:1672
+#: check_epub.py:1676
 msgid "\t\tMargins is not defined in pts so does not match calibre preferences"
 msgstr "\t\tPiemales nav definētas punktos kas neatbilst calibre izvēlnei"
 
-#: check_epub.py:1680 check_epub.py:1683 check_epub.py:1689
+#: check_epub.py:1684 check_epub.py:1687 check_epub.py:1693
 msgid "\t\tMargins are defined in pts but don't match calibre preferences"
 msgstr "\t\tPiemales ir noteiktas pts, taču tās neatbilst calibre izvēlei"
 
-#: check_epub.py:1692
+#: check_epub.py:1696
 msgid "\t\tMargins match calibre preferences"
 msgstr "\t\tPiemales atbilst calibre izvēlei"
 
-#: check_epub.py:1718
+#: check_epub.py:1722
 msgid "\tAnalyzing margins in "
 msgstr "\tAnalizē piemales "
 
-#: check_epub.py:1748
+#: check_epub.py:1752
 msgid "All searched ePub books match the calibre page setup preferences"
 msgstr ""
 "Visas meklētās ePub grāmatas atbilst calibre lapas iestatīšanas izvēlei"
 
-#: check_epub.py:1750
+#: check_epub.py:1754
 msgid "ePub books for body or @page css margins"
 msgstr "ePub grāmatas ar pamattekstu vai @page css piemalēm"
 
-#: check_epub.py:1788
+#: check_epub.py:1792
 msgid "All searched ePub books have book level margins defined"
 msgstr "Visām meklētajām ePub grāmatām ir noteiktas grāmatu līmeņa piemales"
 
-#: check_epub.py:1790
+#: check_epub.py:1794
 msgid "ePub books lacking body or @page css margins"
 msgstr "ePub grāmatām trūkst pamatteksta vai @page css piemales"
 
-#: check_epub.py:1826
+#: check_epub.py:1830
 msgid "No searched ePub books inline @page margins"
 msgstr "Nav meklētu ePub grāmatu kur iekļautas @page piemales"
 
-#: check_epub.py:1828
+#: check_epub.py:1832
 msgid "ePub books using inline @page or body css margins"
 msgstr "ePub grāmatas kur iekļautas @page vai pamatteksta css piemales"
 
-#: check_epub.py:1849
+#: check_epub.py:1853
 msgid "\tContains .js file: %s"
 msgstr "\tSatur .js failu: %s"
 
-#: check_epub.py:1855
+#: check_epub.py:1859
 msgid "\tContains inline javascript: %s"
 msgstr "\tSatur iekļautu javascript: %s"
 
-#: check_epub.py:1857
+#: check_epub.py:1861
 msgid "ePub with Javascript: %s"
 msgstr "ePub ar Javascript: %s"
 
-#: check_epub.py:1872
+#: check_epub.py:1876
 msgid "No searched ePub books have javascript"
 msgstr "Nevienai meklētajai ePub grāmatai nav javascript"
 
-#: check_epub.py:1874
+#: check_epub.py:1878
 msgid "ePub books for javascript"
 msgstr "ePub grāmatas ar javascript"
 
-#: check_epub.py:1902
+#: check_epub.py:1906
 msgid "Unsmartened punctuation in: <b>%s</b>"
 msgstr "Nepareizas pieturzīmes: <b>%s</b>"
 
-#: check_epub.py:1916
+#: check_epub.py:1920
 msgid "No searched ePub books need punctuation smartened"
 msgstr "Nevienai meklētajai ePub grāmatai nepiemērot viedās pieturzīmes"
 
-#: check_epub.py:1918
+#: check_epub.py:1922
 msgid "ePub books for smarten punctuation"
 msgstr "ePub grāmatas ar pareizām pieturzīmēm"
 
-#: check_epub.py:1936
+#: check_epub.py:1940
 msgid "Could not find OPF in:%s"
 msgstr "Nevar atrast OPF:%s"
 
-#: check_epub.py:1939
+#: check_epub.py:1943
 msgid "OPF file in container.xml not found in:%s"
 msgstr "OPF fails .xml konteinerā nav atrasts:%s"
 
-#: check_fix.py:111
+#: check_fix.py:124
 msgid "Reformatting author initials for"
 msgstr "Autora iniciāļu pārformatēšana"
 
-#: check_fix.py:116
+#: check_fix.py:129
 msgid "Reformatted initials for %d of %d book authors"
 msgstr "Pārformatēti iniciāļi %d no %d grāmatu autoriem"
 
-#: check_fix.py:141
+#: check_fix.py:154
 msgid "Renaming authors to ascii for"
 msgstr "Autoru pārdēvēšana no ascii par"
 
-#: check_fix.py:146
+#: check_fix.py:159
 msgid "Renamed to ascii %d of %d book authors"
 msgstr "Pārdēvēts uz ascii %d no %d grāmatu autoriem"
 
-#: check_fix.py:166
+#: check_fix.py:174
+msgid "books with incorrect author sort"
+msgstr ""
+
+#: check_fix.py:175
+msgid "Checked %d books, updated %d author sorts%s"
+msgstr ""
+
+#: check_fix.py:179
+msgid "All author sorts are correct"
+msgstr ""
+
+#: check_fix.py:199
 msgid "books with incorrect title sort"
 msgstr ""
 
-#: check_fix.py:167
+#: check_fix.py:200
 msgid "Checked %d books, updated %d title sorts%s"
 msgstr ""
 
-#: check_fix.py:171
+#: check_fix.py:204
 msgid "All title sorts are correct"
 msgstr ""
 
-#: check_fix.py:201
+#: check_fix.py:234
 msgid "\"Check and repair book sizes\" requires calibre version 5.9 or higher."
 msgstr ""
 "“Pārbaudīt un labot grāmatu izmērus” ir nepieciešama calibre versija 5.9 vai"
 " jaunāka."
 
-#: check_fix.py:206
+#: check_fix.py:239
 msgid "books for invalid file sizes"
 msgstr "grāmatas ar nederīgiem failu izmēriem"
 
-#: check_fix.py:207
+#: check_fix.py:240
 msgid "Checked %d books, updated %d format sizes in %d books%s"
 msgstr "Pārbaudītas %d grāmatas, atjaunināti %d formāta izmēri %d grāmatās%s"
 
-#: check_fix.py:211
+#: check_fix.py:244
 msgid "All book format sizes are correct"
 msgstr "Visi grāmatu formāta izmēri ir pareizi"
 
-#: check_fix.py:231
+#: check_fix.py:264
 msgid "books with paths missing commas"
 msgstr "grāmatas ar ceļiem bez komata"
 
-#: check_fix.py:232
+#: check_fix.py:265
 msgid "Checked %d books, updated %d paths%s"
 msgstr "Pārbaudītas %d grāmatas, atjaunināti %d ceļi%s"
 
-#: check_fix.py:236
+#: check_fix.py:269
 msgid "All books have up to date paths"
 msgstr "Visām grāmatām ir atjaunināti ceļi"
 
-#: check_fix.py:248
+#: check_fix.py:281
 msgid "Choose directory to cleanup"
 msgstr "Izvēlieties tīrāmo direktoriju"
 
-#: check_fix.py:253
+#: check_fix.py:286
 msgid "Invalid Folder"
 msgstr "Nederīga mape"
 
-#: check_fix.py:254
+#: check_fix.py:287
 msgid "You should not run this feature against a Calibre library folder."
 msgstr "Šo līdzekli nevajag palaist Calibre bibliotēkas mapē."
 
-#: check_fix.py:255
+#: check_fix.py:288
 msgid ""
 "If you do you will remove \"Empty book\" entries and corrupt your database."
 msgstr ""
 "Tādā gadījumā jūs noņemsit ierakstus “Tukša grāmata” un sabojāsit datu bāzi."
 
-#: check_fix.py:264
+#: check_fix.py:297
 msgid "No files/folders were found to be deleted"
 msgstr "Netika atrasts neviens fails/mape, ko dzēst"
 
-#: check_fix.py:270 check_fix.py:277
+#: check_fix.py:303 check_fix.py:310
 msgid "Cleanup completed"
 msgstr "Tīrīšana pabeigta"
 
-#: check_fix.py:273
+#: check_fix.py:306
 msgid "Deleted %d files/folders with %d errors. See details for more info."
 msgstr ""
 "Izdzēsti %d faili/mapes ar %d kļūdām. Plašāku informāciju skatiet sīkāk."
 
-#: check_fix.py:301
+#: check_fix.py:334
 msgid "Removed folder: %s"
 msgstr "Noņemta mape: %s"
 
-#: check_fix.py:305
+#: check_fix.py:338
 msgid "ERROR removing folder: %s"
 msgstr "KĻŪDA, noņemot mapi: %s"
 
-#: check_fix.py:339
+#: check_fix.py:372
 msgid "Removed file: %s"
 msgstr "Noņemts fails: %s"
 
-#: check_fix.py:343
+#: check_fix.py:376
 msgid "ERROR removing file: %s"
 msgstr "KĻŪDA, noņemot failu: %s"
 
-#: check_fix.py:352 check_fix.py:355 check_fix.py:358
+#: check_fix.py:385 check_fix.py:388 check_fix.py:391
 msgid "identifier found"
 msgstr "atrasts identifikators"
 
-#: check_fix.py:361
+#: check_fix.py:394
 msgid "No ASIN found, using uuid"
 msgstr "ASIN nav atrasts, izmanto uuid"
 
-#: check_fix.py:395
+#: check_fix.py:428
 msgid "Fixing ASIN for %d books"
 msgstr "Labot ASIN %d grāmatām"
 
-#: check_fix.py:401
+#: check_fix.py:434
 msgid "Fix ASIN completed"
 msgstr ""
 
-#: check_fix.py:404
+#: check_fix.py:437
 msgid "%d books updated, see log for details"
 msgstr "Atjauninātas %d grāmatas. Detalizētu informāciju skatiet žurnālā"
+
+#: check_fix.py:480
+msgid "books for normalize text fields"
+msgstr ""
+
+#: check_fix.py:497
+msgid ""
+"Checked %d books, normalize fields %d in %d books, and %d author sort key%s"
+msgstr ""
+
+#: check_fix.py:501
+msgid "All text fields are normalize"
+msgstr ""
+
+#: check_fix.py:509
+msgid "\"Normalize the notes\" requires calibre version 7.0 or higher."
+msgstr ""
+
+#: check_fix.py:546
+msgid "All category notes are normalize"
+msgstr ""
 
 #: check_metadata.py:86
 msgid "All searched books have a valid Title Sort"
@@ -1780,106 +1813,137 @@ msgid ""
 msgstr ""
 
 #: config.py:161
-msgid "Set title sort"
+msgid "Set author sort"
 msgstr ""
 
 #: config.py:161
+msgid ""
+"For the selected book(s) replace the author sort with a value based on the "
+"Manage Authors data"
+msgstr ""
+
+#: config.py:162
+msgid "Set title sort"
+msgstr ""
+
+#: config.py:162
 msgid ""
 "For the selected book(s) replace the title sort with a value based on your "
 "tweak preference"
 msgstr ""
 
-#: config.py:162
+#: config.py:163
 msgid "Check and repair book sizes"
 msgstr "Pārbaudīt un labot grāmatu izmērus"
 
-#: config.py:162
+#: config.py:163
 msgid "Check and update file sizes for your books"
 msgstr "Pārbaudīt un atjaunināt grāmatu failu izmērus"
 
-#: config.py:163
+#: config.py:164
 msgid "Check and rename book paths"
 msgstr "Pārbaudīt un pārdēvēt grāmatu ceļus"
 
-#: config.py:163
+#: config.py:164
 msgid "Ensure book paths include commas if appropriate"
 msgstr "Ja nepieciešams, nodrošiniet, lai grāmatu ceļos būtu komats"
 
-#: config.py:164
+#: config.py:165
 msgid "Cleanup .opf files/folders"
 msgstr "Notīrīt .opf failus/mapes"
 
-#: config.py:164
+#: config.py:165
 msgid "Delete orphaned opf/jpg files and remove empty folders"
 msgstr "Izdzēst savrupos opf/jpg failus un noņemt tukšās mapes"
 
-#: config.py:165
+#: config.py:166
 msgid "Fix ASIN for Kindle Fire"
 msgstr ""
 
-#: config.py:165
+#: config.py:166
 msgid ""
 "For MOBI/AZW/AZW3 formats, assign the current amazon identifier (uuid if not"
 " present) as an ASIN to EXTH 113 and 504 fields"
 msgstr ""
 
-#: config.py:286
+#: config.py:167
+msgid "Normalize the fields"
+msgstr ""
+
+#: config.py:167
+msgid ""
+"Normalize the text fields by using their canonical form defined by the "
+"Unicode Standard, aka merge and reorders diacritics. Can result to "
+"unduplicate some values."
+msgstr ""
+
+#: config.py:168
+msgid "Normalize the notes"
+msgstr ""
+
+#: config.py:168
+msgid ""
+"Normalize the category notes by using their canonical form defined by the "
+"Unicode Standard, aka merge and reorders diacritics."
+msgstr ""
+
+#: config.py:289
 msgid "Check excess tags options"
 msgstr "Pārbaudīt lieko birku opcijas"
 
-#: config.py:291
+#: config.py:294
 msgid "Maximum tags:"
 msgstr "Maksimālais birku skaits:"
 
-#: config.py:292
+#: config.py:295
 msgid "Books with more than this value will be displayed"
 msgstr "Tiks rādītas grāmatas, kuru vērtība pārsniedz šo vērtību"
 
-#: config.py:300
+#: config.py:303
 msgid "Exclude tags:"
 msgstr "Izslēgt birkas:"
 
-#: config.py:301
+#: config.py:304
 msgid "Exclude these tags from when counting the tags for each book"
 msgstr "Izslēgt šīs atzīmes, skaitot katras grāmatas birkas"
 
-#: config.py:310
+#: config.py:313
 msgid "Other options"
 msgstr "Citas iespējas"
 
-#: config.py:315
+#: config.py:318
 msgid "Author initials format:"
 msgstr "Autora iniciāļu formāts:"
 
-#: config.py:316
+#: config.py:319
 msgid ""
 "For use with the \"Check Author initials\" option, set your preferred format"
 msgstr ""
 "Izmantojot opciju \"Pārbaudīt autora iniciāļus\", iestatiet vēlamo formātu"
 
-#: config.py:323
+#: config.py:326
 msgid "Suppress Fix summary dialogs"
 msgstr ""
 
-#: config.py:324
+#: config.py:327
 msgid ""
 "Uncheck this option if you do not want interactive dialogs to appear "
 "summarising the operation"
 msgstr ""
 
-#: config.py:330
+#: config.py:333
 msgid "Visible menus"
 msgstr "Redzamās izvēlnes"
 
-#: config.py:339
+#: config.py:342
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Rediģēt ar šo spraudni saistītos īsinājumtaustiņus"
 
-#: config.py:343
+#: config.py:346
 msgid "&View library preferences"
 msgstr "&Skatīt bibliotēkas uzstādījumus"
 
-#: config.py:344
+#: config.py:347
 msgid "View data stored in the library database for this plugin"
 msgstr "Skatīt šī spraudņa bibliotēkas datubāzē saglabātos datus"
 
