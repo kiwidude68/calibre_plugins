@@ -32,7 +32,6 @@ class DownloadPagesWorker():
     def __init__(self, sources, timeout=20):
         self.timeout = timeout
         self.page_count = None
-        self.page_count = None
         self.sources = sources
         self.run()
 
@@ -97,7 +96,6 @@ class DownloadPagesWorker():
                 print(msg)
             return
 
-#         raw = raw.decode('utf-8-sig', errors='replace')
         #open('E:\\countpages-gr.html', 'wb').write(raw)
         raw = raw.decode('utf-8', errors='replace')
         #print("_get_details: len(raw)=", len(raw))

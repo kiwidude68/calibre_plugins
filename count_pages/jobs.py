@@ -194,7 +194,7 @@ def do_statistics_for_book(book_path, pages_algorithm, page_count_mode,
                 if is_comic:
                     if not (len(stats) == 1 and cfg.STATISTIC_PAGE_COUNT in stats):
                         print('Skipping non page count statistics for CBR/CBZ')
-                else:
+                elif book_path:
                     if cfg.STATISTIC_WORD_COUNT in stats:
                         stats.remove(cfg.STATISTIC_WORD_COUNT)
                         iterator, words = get_word_count(iterator, book_path, icu_wordcount)
