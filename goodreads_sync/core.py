@@ -24,9 +24,10 @@ try:
 except NameError:
     pass # load_translations() added in calibre 1.9
 
+from lxml import etree
+
 from calibre.constants import DEBUG
 from calibre.ebooks.metadata import fmt_sidx, authors_to_string, check_isbn
-from calibre.ebooks.oeb.parse_utils import RECOVER_PARSER
 from calibre.gui2 import error_dialog, open_url
 from calibre.utils.config import tweaks
 from calibre.utils.cleantext import clean_ascii_chars
@@ -38,6 +39,8 @@ from calibre.devices.usbms.driver import debug_print
 import calibre_plugins.goodreads_sync.oauth2 as oauth
 import calibre_plugins.goodreads_sync.httplib2 as httplib2
 import calibre_plugins.goodreads_sync.config as cfg
+
+RECOVER_PARSER = etree.XMLParser(recover=True, no_network=True, resolve_entities=False)
 
 def get_searchable_author(authors):
     # Take the authors displayed and convert it into a search string we can
