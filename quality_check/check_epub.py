@@ -25,12 +25,14 @@ from calibre.ebooks.chardet import xml_to_unicode
 from calibre.ebooks.conversion.preprocess import HTMLPreProcessor
 from calibre.ebooks.metadata.epub import Encryption
 from calibre.ebooks.oeb.base import XPath
-from calibre.ebooks.oeb.parse_utils import RECOVER_PARSER, NotHTML, parse_html
+from calibre.ebooks.oeb.parse_utils import NotHTML, parse_html
 from calibre.utils.zipfile import ZipFile, BadZipfile
 
 from calibre_plugins.quality_check.check_base import BaseCheck
 from calibre_plugins.quality_check.dialogs import SearchEpubDialog
 from calibre_plugins.quality_check.helpers import get_title_authors_text
+
+RECOVER_PARSER = etree.XMLParser(recover=True, no_network=True, resolve_entities=False)
 
 META_INF = {
         'container.xml' : True,

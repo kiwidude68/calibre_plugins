@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.14.4] - 2025-10-04
+### Changed
+- RECOVER_PARSER removed from Calibre, see https://github.com/kiwidude68/calibre_plugins/issues/131
+
 ## [1.14.3] - 2025-08-24
 ### Added
 - Added 'Normalize the fields' and 'Normalize the notes' options for merge and reorder diatrics. (#un-pogaz)
