@@ -22,8 +22,10 @@ from calibre.ebooks.conversion.plugins.epub_input import (
     ADOBE_OBFUSCATION, IDPF_OBFUSCATION, decrypt_font)
 from calibre.ebooks.conversion.preprocess import HTMLPreProcessor
 from calibre.ebooks.oeb.base import urlnormalize, OEB_DOCS, XPath, SVG, XLINK
-from calibre.ebooks.oeb.parse_utils import RECOVER_PARSER, NotHTML, parse_html
+from calibre.ebooks.oeb.parse_utils import NotHTML, parse_html
 from calibre.utils.zipfile import ZipFile, ZIP_DEFLATED, ZIP_STORED
+
+RECOVER_PARSER = etree.XMLParser(recover=True, no_network=True, resolve_entities=False)
 
 exists, join = os.path.exists, os.path.join
 
