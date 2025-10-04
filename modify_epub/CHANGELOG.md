@@ -1,5 +1,9 @@
 # Modify ePub Change Log
 
+## [1.8.7] - 2025-10-04
+### Changed
+- RECOVER_PARSER removed from Calibre, see https://github.com/kiwidude68/calibre_plugins/issues/131
+
 ## [1.8.6] - 2025-03-24
 ### Changed
 - Change the Remove non-DC metadata to exclude the `dcterms:modified` meta tag property which is mandatory for ePub3.
