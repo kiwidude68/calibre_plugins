@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:57+1000\n"
+"POT-Creation-Date: 2025-08-03 12:39+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: seeder seeder, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
@@ -194,20 +194,20 @@ msgid "Updating"
 msgstr "Aktualizuji"
 
 #: config.py:59
-msgid "Adobe Digital Editions (ADE)"
-msgstr "Adobe Digital Editions (ADE)"
-
-#: config.py:59
-msgid "Custom (Chars Per Page)"
-msgstr "Vlastní (Znaky na stránku)"
+msgid "Paragraphs (APNX accurate)"
+msgstr "Odstavce (APNX přesnost)"
 
 #: config.py:59
 msgid "E-book Viewer (calibre)"
 msgstr "E-book Viewer (calibre)"
 
 #: config.py:59
-msgid "Paragraphs (APNX accurate)"
-msgstr "Odstavce (APNX přesnost)"
+msgid "Adobe Digital Editions (ADE)"
+msgstr "Adobe Digital Editions (ADE)"
+
+#: config.py:59
+msgid "Custom (Chars Per Page)"
+msgstr "Vlastní (Znaky na stránku)"
 
 #: config.py:122
 msgid "Download page/word counts"
@@ -376,16 +376,16 @@ msgid "Confirmation dialogs have all been reset"
 msgstr "Potvrzovací okna byla restartována"
 
 #: config.py:537
+msgid "Source"
+msgstr "Zdroj"
+
+#: config.py:537
 msgid "Identifier"
 msgstr "Identifikátor"
 
 #: config.py:537
 msgid "On Menu"
 msgstr "V rozbalovací nabídce"
-
-#: config.py:537
-msgid "Source"
-msgstr "Zdroj"
 
 #: config.py:602
 msgid "Page count options:"
@@ -396,8 +396,10 @@ msgid "&Custom column:"
 msgstr "&Vlastní sloupec:"
 
 #: config.py:608
-msgid "Leave this blank if you do not want to count pages"
-msgstr "Nechte prázdné, pokud nechcete počítat stránky"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count pages"
+msgstr ""
 
 #: config.py:617
 msgid "&Algorithm:"
@@ -429,8 +431,10 @@ msgid "C&ustom column:"
 msgstr "V&lastní sloupec:"
 
 #: config.py:643
-msgid "Leave this blank if you do not want to count words"
-msgstr "Nechte prázdné, pokud nechcete počítat slova"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count words"
+msgstr ""
 
 #: config.py:652
 msgid "Use ICU algorithm"
@@ -499,12 +503,12 @@ msgstr ""
 "Nechte prázdné, pokud toto nechcete počítat"
 
 #: dialogs.py:39
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: dialogs.py:39
 msgid "Working"
 msgstr "Pracuji"
+
+#: dialogs.py:39
+msgid "Cancel"
+msgstr "Zrušit"
 
 #: dialogs.py:40
 msgid "Queueing books for counting statistics"

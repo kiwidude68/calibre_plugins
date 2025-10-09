@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:57+1000\n"
+"POT-Creation-Date: 2025-08-03 12:39+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: Paulo Pereira <pauloizidoro@gmail.com>, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/calibre/teams/19337/pt/)\n"
@@ -204,20 +204,20 @@ msgid "Updating"
 msgstr "A atualizar"
 
 #: config.py:59
-msgid "Adobe Digital Editions (ADE)"
-msgstr "Adobe Digital Editions (ADE)"
-
-#: config.py:59
-msgid "Custom (Chars Per Page)"
-msgstr "Personalizado (Caracteres por página)"
+msgid "Paragraphs (APNX accurate)"
+msgstr "Parágrafos (precisão APNX)"
 
 #: config.py:59
 msgid "E-book Viewer (calibre)"
 msgstr "Visualizador de ebooks (Calibre)"
 
 #: config.py:59
-msgid "Paragraphs (APNX accurate)"
-msgstr "Parágrafos (precisão APNX)"
+msgid "Adobe Digital Editions (ADE)"
+msgstr "Adobe Digital Editions (ADE)"
+
+#: config.py:59
+msgid "Custom (Chars Per Page)"
+msgstr "Personalizado (Caracteres por página)"
 
 #: config.py:122
 msgid "Download page/word counts"
@@ -400,16 +400,16 @@ msgstr ""
 "Os dálogos de confirmação foram todos repostos para o seu estado inicial"
 
 #: config.py:537
+msgid "Source"
+msgstr "Fonte"
+
+#: config.py:537
 msgid "Identifier"
 msgstr "Identificador"
 
 #: config.py:537
 msgid "On Menu"
 msgstr "No menu"
-
-#: config.py:537
-msgid "Source"
-msgstr "Fonte"
 
 #: config.py:602
 msgid "Page count options:"
@@ -420,8 +420,10 @@ msgid "&Custom column:"
 msgstr "&Coluna personalizada:"
 
 #: config.py:608
-msgid "Leave this blank if you do not want to count pages"
-msgstr "Deixar em branco se não pretende contar páginas"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count pages"
+msgstr ""
 
 #: config.py:617
 msgid "&Algorithm:"
@@ -455,8 +457,10 @@ msgid "C&ustom column:"
 msgstr "Col&una personalizada:"
 
 #: config.py:643
-msgid "Leave this blank if you do not want to count words"
-msgstr "Deixar em branco se não pretende contar palavras"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count words"
+msgstr ""
 
 #: config.py:652
 msgid "Use ICU algorithm"
@@ -529,12 +533,12 @@ msgstr ""
 "calcular"
 
 #: dialogs.py:39
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: dialogs.py:39
 msgid "Working"
 msgstr "Em execução"
+
+#: dialogs.py:39
+msgid "Cancel"
+msgstr "Cancelar"
 
 #: dialogs.py:40
 msgid "Queueing books for counting statistics"
