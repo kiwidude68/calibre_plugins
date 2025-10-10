@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:57+1000\n"
+"POT-Creation-Date: 2025-08-03 12:39+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: ashed <craysy@gmail.com>, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -197,20 +197,20 @@ msgid "Updating"
 msgstr "Обновление"
 
 #: config.py:59
-msgid "Adobe Digital Editions (ADE)"
-msgstr "Adobe Digital Editions (ADE)"
-
-#: config.py:59
-msgid "Custom (Chars Per Page)"
-msgstr "Пользовательский (знаков/стр.)"
+msgid "Paragraphs (APNX accurate)"
+msgstr "Абзацы (согласно APNX)"
 
 #: config.py:59
 msgid "E-book Viewer (calibre)"
 msgstr "Программа чтения книг (calibre)"
 
 #: config.py:59
-msgid "Paragraphs (APNX accurate)"
-msgstr "Абзацы (согласно APNX)"
+msgid "Adobe Digital Editions (ADE)"
+msgstr "Adobe Digital Editions (ADE)"
+
+#: config.py:59
+msgid "Custom (Chars Per Page)"
+msgstr "Пользовательский (знаков/стр.)"
 
 #: config.py:122
 msgid "Download page/word counts"
@@ -390,16 +390,16 @@ msgid "Confirmation dialogs have all been reset"
 msgstr "Все диалоги подтверждения были сброшены"
 
 #: config.py:537
+msgid "Source"
+msgstr "Источник"
+
+#: config.py:537
 msgid "Identifier"
 msgstr "Идентификатор"
 
 #: config.py:537
 msgid "On Menu"
 msgstr "В меню"
-
-#: config.py:537
-msgid "Source"
-msgstr "Источник"
 
 #: config.py:602
 msgid "Page count options:"
@@ -410,8 +410,10 @@ msgid "&Custom column:"
 msgstr "&Пользовательский столбец:"
 
 #: config.py:608
-msgid "Leave this blank if you do not want to count pages"
-msgstr "Оставьте пустым чтобы не подсчитывать страницы"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count pages"
+msgstr ""
 
 #: config.py:617
 msgid "&Algorithm:"
@@ -445,8 +447,10 @@ msgid "C&ustom column:"
 msgstr "П&ользовательский столбец:"
 
 #: config.py:643
-msgid "Leave this blank if you do not want to count words"
-msgstr "Оставьте пустым чтобы не подсчитывать слова"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count words"
+msgstr ""
 
 #: config.py:652
 msgid "Use ICU algorithm"
@@ -510,12 +514,12 @@ msgstr ""
 "Оставьте это поле пустым, если вы не хотите его вычислять."
 
 #: dialogs.py:39
-msgid "Cancel"
-msgstr "Отмена"
-
-#: dialogs.py:39
 msgid "Working"
 msgstr "Обработка"
+
+#: dialogs.py:39
+msgid "Cancel"
+msgstr "Отмена"
 
 #: dialogs.py:40
 msgid "Queueing books for counting statistics"

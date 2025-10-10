@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:57+1000\n"
+"POT-Creation-Date: 2025-08-03 12:39+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: Usama Khalil, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
@@ -193,20 +193,20 @@ msgid "Updating"
 msgstr "تحديث"
 
 #: config.py:59
-msgid "Adobe Digital Editions (ADE)"
-msgstr "Adobe Digital Editions (ADE)"
-
-#: config.py:59
-msgid "Custom (Chars Per Page)"
-msgstr "مخصص (أحرف لكل صفحة)"
+msgid "Paragraphs (APNX accurate)"
+msgstr "فقرات (APNX دقيقة)"
 
 #: config.py:59
 msgid "E-book Viewer (calibre)"
 msgstr "عارض الكتب الإلكترونية (calibre)"
 
 #: config.py:59
-msgid "Paragraphs (APNX accurate)"
-msgstr "فقرات (APNX دقيقة)"
+msgid "Adobe Digital Editions (ADE)"
+msgstr "Adobe Digital Editions (ADE)"
+
+#: config.py:59
+msgid "Custom (Chars Per Page)"
+msgstr "مخصص (أحرف لكل صفحة)"
 
 #: config.py:122
 msgid "Download page/word counts"
@@ -382,16 +382,16 @@ msgid "Confirmation dialogs have all been reset"
 msgstr "تمت إعادة تعيين جميع مربعات حوار التأكيد"
 
 #: config.py:537
+msgid "Source"
+msgstr "المصدر"
+
+#: config.py:537
 msgid "Identifier"
 msgstr "المعرف"
 
 #: config.py:537
 msgid "On Menu"
 msgstr "في القائمة"
-
-#: config.py:537
-msgid "Source"
-msgstr "المصدر"
 
 #: config.py:602
 msgid "Page count options:"
@@ -402,8 +402,10 @@ msgid "&Custom column:"
 msgstr "&عمود مخصص:"
 
 #: config.py:608
-msgid "Leave this blank if you do not want to count pages"
-msgstr "اترك هذا فارغًا إذا كنت لا تريد عد الصفحات"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count pages"
+msgstr ""
 
 #: config.py:617
 msgid "&Algorithm:"
@@ -436,8 +438,10 @@ msgid "C&ustom column:"
 msgstr "&عمود مخصص:"
 
 #: config.py:643
-msgid "Leave this blank if you do not want to count words"
-msgstr "اترك هذا فارغًا إذا كنت لا تريد عد الكلمات"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count words"
+msgstr ""
 
 #: config.py:652
 msgid "Use ICU algorithm"
@@ -506,12 +510,12 @@ msgstr ""
 "اترك هذا فارغًا إذا كنت لا تريد حسابه"
 
 #: dialogs.py:39
-msgid "Cancel"
-msgstr "إلغاء"
-
-#: dialogs.py:39
 msgid "Working"
 msgstr "يعمل"
+
+#: dialogs.py:39
+msgid "Cancel"
+msgstr "إلغاء"
 
 #: dialogs.py:40
 msgid "Queueing books for counting statistics"

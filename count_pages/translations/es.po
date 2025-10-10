@@ -5,15 +5,15 @@
 # Translators:
 # Darío Hereñú, 2022
 # Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2024
 # Walter Paterno <walter.paterno@gmail.com>, 2024
+# Jellby <jellby@yahoo.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:57+1000\n"
+"POT-Creation-Date: 2025-08-03 12:39+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
-"Last-Translator: Walter Paterno <walter.paterno@gmail.com>, 2024\n"
+"Last-Translator: Jellby <jellby@yahoo.com>, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -201,20 +201,20 @@ msgid "Updating"
 msgstr "Actualizando"
 
 #: config.py:59
-msgid "Adobe Digital Editions (ADE)"
-msgstr "Adobe Digital Editions (ADE)"
-
-#: config.py:59
-msgid "Custom (Chars Per Page)"
-msgstr "Personalizada (caracteres por página)"
+msgid "Paragraphs (APNX accurate)"
+msgstr "Párrafos (precisión de APNX)"
 
 #: config.py:59
 msgid "E-book Viewer (calibre)"
 msgstr "Visor de libros electrónicos (calibre)"
 
 #: config.py:59
-msgid "Paragraphs (APNX accurate)"
-msgstr "Párrafos (precisión de APNX)"
+msgid "Adobe Digital Editions (ADE)"
+msgstr "Adobe Digital Editions (ADE)"
+
+#: config.py:59
+msgid "Custom (Chars Per Page)"
+msgstr "Personalizada (caracteres por página)"
 
 #: config.py:122
 msgid "Download page/word counts"
@@ -397,16 +397,16 @@ msgid "Confirmation dialogs have all been reset"
 msgstr "Se han restablecido todos los diálogos de confirmación"
 
 #: config.py:537
+msgid "Source"
+msgstr "Origen"
+
+#: config.py:537
 msgid "Identifier"
 msgstr "Identificador"
 
 #: config.py:537
 msgid "On Menu"
 msgstr "En el menú"
-
-#: config.py:537
-msgid "Source"
-msgstr "Origen"
 
 #: config.py:602
 msgid "Page count options:"
@@ -417,8 +417,12 @@ msgid "&Custom column:"
 msgstr "&Columna personalizada:"
 
 #: config.py:608
-msgid "Leave this blank if you do not want to count pages"
-msgstr "Dejar en blanco si no quiere contar páginas"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count pages"
+msgstr ""
+"La columna debe ser de tipo decimal o entero. Déjelo en blanco si no quiere "
+"contar páginas"
 
 #: config.py:617
 msgid "&Algorithm:"
@@ -452,8 +456,12 @@ msgid "C&ustom column:"
 msgstr "C&olumna personalizada:"
 
 #: config.py:643
-msgid "Leave this blank if you do not want to count words"
-msgstr "Dejar en blanco si no quiere contar palabras"
+msgid ""
+"Column must be of type float or int. Leave this blank if you do not want to "
+"count words"
+msgstr ""
+"La columna debe ser de tipo decimal o entero. Déjelo en blanco si no quiere "
+"contar palabras"
 
 #: config.py:652
 msgid "Use ICU algorithm"
@@ -522,12 +530,12 @@ msgstr ""
 "índice de niebla de Gunning. Dejar en blanco si no quiere calcularla."
 
 #: dialogs.py:39
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: dialogs.py:39
 msgid "Working"
 msgstr "Trabajando"
+
+#: dialogs.py:39
+msgid "Cancel"
+msgstr "Cancelar"
 
 #: dialogs.py:40
 msgid "Queueing books for counting statistics"
