@@ -1,7 +1,9 @@
 # Count Pages Change Log
-## [1.14.0] - 2025-10-09
+## [1.14.0] - 2025-10-10
 ### Fixed
 - Goodreads page count web scraping broken from website changes.
+### Changed
+- Updated translations
 
 ## [1.13.7] - 2025-08-03
 ### Added
