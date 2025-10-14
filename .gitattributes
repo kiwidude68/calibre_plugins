@@ -9,6 +9,7 @@ text eol=crlf
 *.xcf binary
 *.zip binary
 #*.po binary
+*.pickle binary
 
 # Custom for Visual Studio
 *.cs     diff=csharp
