@@ -1,4 +1,13 @@
 # Count Pages Change Log
+
+## [1.14.2] - 2025-11-16
+### Added
+- New 'Statistic totals for selected' feature to show a dialog with total statistics for the selected books.
+
+## [1.14.1] - 2025-10-15
+### Fixed
+- nltk_lite/english.pickle needs to be binary, windows eol treatment broke it.
+
 ## [1.14.0] - 2025-10-10
 ### Fixed
 - Goodreads page count web scraping broken from website changes.

@@ -6,9 +6,11 @@ __copyright__ = '2011, Grant Drake'
 import os, traceback
 from collections import OrderedDict
 try:
-    from qt.core import QProgressDialog, QTimer
+    from qt.core import (Qt, QProgressDialog, QTimer, QVBoxLayout, QTableWidget, 
+                         QHeaderView, QDialogButtonBox, QTableWidgetItem)
 except ImportError:
-    from PyQt5.Qt import QProgressDialog, QTimer
+    from PyQt5.Qt import (Qt, QProgressDialog, QTimer, QVBoxLayout, QTableWidget, 
+                          QHeaderView, QDialogButtonBox, QTableWidgetItem)
 
 from calibre.gui2 import warning_dialog
 try: # Needed as part of calibre conversion changes in 3.27.0.
@@ -16,10 +18,11 @@ try: # Needed as part of calibre conversion changes in 3.27.0.
 except ImportError:
     from calibre.gui2.convert.single import get_available_formats_for_book
         
+from calibre.gui2.dialogs.message_box import MessageBox
 from calibre.utils.config import prefs
 
 import calibre_plugins.count_pages.config as cfg
-
+from calibre_plugins.count_pages.common_dialogs import SizePersistedDialog
 try:
     load_translations()
 except NameError:
@@ -205,3 +208,66 @@ class QueueProgressDialog(QProgressDialog):
         # Queue a job to process these books
         self.queue(self.tdir, self.books_to_scan, self.statistics_cols_map,
                    self.pages_algorithm, self.custom_chars_per_page, self.icu_wordcount, self.page_count_mode, self.download_source)
+
+class TotalSummaryDialog(MessageBox): # {{{
+
+    def __init__(self, parent, title, msg):
+        '''
+        A modal popup that shows the totals of statistics.
+
+        :param log: An HTML or plain text log
+        :param title: The title for this popup
+        :param msg: The msg to display
+        :param det_msg: Detailed message
+        '''
+        MessageBox.__init__(self, MessageBox.INFO, title, msg,
+                show_copy_button=False, parent=parent)
+
+class TotalStatisticsDialog(SizePersistedDialog):
+
+    def __init__(self, parent, totals, averages):
+        SizePersistedDialog.__init__(self, parent, 'count pages plugin:total statistics dialog')
+        self.initialize_controls()
+        self.populate_table(totals, averages)
+
+    def initialize_controls(self):
+        self.setWindowTitle(_('Statistic Totals'))
+        layout = QVBoxLayout(self)
+        self.setMinimumSize(400, 120)
+
+        # Add a table with 3 columns - Statistic, Total, Average
+        self.table = QTableWidget(self)
+        self.table.setColumnCount(3)
+        self.table.setHorizontalHeaderLabels([_('Statistic'), _('Total'), _('Average')])
+        self.table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+        self.table.verticalHeader().setVisible(False)
+        layout.addWidget(self.table)
+        
+        # Add a close button
+        btns = QDialogButtonBox(QDialogButtonBox.Close)
+        btns.rejected.connect(self.reject)
+        layout.addWidget(btns)
+
+    def populate_table(self, totals, averages):
+        self.table.setRowCount(len(totals))
+        row = 0
+        for statistic, total in totals.items():
+            # Statistic column
+            self.table.setItem(row, 0, QTableWidgetItem(cfg.DISPLAY_STATISTIC_NAMES[statistic]))
+            
+            # Total column
+            total_item = QTableWidgetItem(f"{total:,.0f}" if total >= 0 else "-")
+            total_item.setTextAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+            self.table.setItem(row, 1, total_item)
+            
+            # Average column
+            if statistic in averages:
+                avg = averages[statistic]
+                avg_item = QTableWidgetItem(f"{avg:,.0f}")
+            else:
+                avg_item = QTableWidgetItem("-")
+            avg_item.setTextAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
+            self.table.setItem(row, 2, avg_item)
+            
+            row += 1
+        self.table.resizeColumnsToContents()

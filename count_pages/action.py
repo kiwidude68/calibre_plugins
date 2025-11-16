@@ -25,7 +25,7 @@ from calibre_plugins.count_pages.common_icons import set_plugin_icon_resources, 
 from calibre_plugins.count_pages.common_menus import unregister_menu_actions, create_menu_action_unique
 from calibre_plugins.count_pages.common_dialogs import ProgressBarDialog
 from calibre_plugins.count_pages.jobs import call_plugin_callback
-from calibre_plugins.count_pages.dialogs import QueueProgressDialog
+from calibre_plugins.count_pages.dialogs import QueueProgressDialog, TotalStatisticsDialog
 
 
 class CountPagesAction(InterfaceAction):
@@ -80,7 +80,7 @@ class CountPagesAction(InterfaceAction):
         if len(download_sources[0]) < 3:
             download_sources = cfg.DEFAULT_STORE_VALUES[cfg.KEY_DOWNLOAD_SOURCES]
         
-        create_menu_action_unique(self, m, _('&Estimate page/word counts'), 'images/estimate.png',
+        create_menu_action_unique(self, m, _('&Estimate page/word counts'), 'images/count.png',
                                   triggered=partial(self._count_pages_on_selected, 'Estimate'))
         m.addSeparator()
         if show_try_all_sources:
@@ -96,6 +96,9 @@ class CountPagesAction(InterfaceAction):
 
         if show_download_separator:
             m.addSeparator()
+        create_menu_action_unique(self, m, _('&Statistic totals for selected books'), 'images/estimate.png',
+                                  triggered=self._show_totals_for_selected)
+        m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin')+'...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
         create_menu_action_unique(self, m, _('&Help'), 'help.png',
@@ -141,6 +144,27 @@ class CountPagesAction(InterfaceAction):
             return
 
         self._do_count_pages(book_ids, statistics_cols_map, page_count_mode=mode, download_source=download_source)
+
+    def _show_totals_for_selected(self):
+        if not self.is_library_selected:
+            return
+        rows = self.gui.library_view.selectionModel().selectedRows()
+        if not rows or len(rows) == 0 :
+            return
+        book_ids = self.gui.library_view.get_selected_ids()
+        
+        statistics_to_run = [k for k in ALL_STATISTICS.keys()]
+        any_valid, statistics_cols_map = self._get_column_validity(statistics_to_run)
+        if not any_valid:
+            if not question_dialog(self.gui, _('Configure plugin'), '<p>'+
+                _('You must specify custom column(s) first. Do you want to configure this now?'),
+                show_copy_button=False):
+                return
+            self.show_configuration()
+            return
+
+        # Iterate over all the selected books and sum up the statistics
+        self._do_show_totals(book_ids, statistics_cols_map)
 
     def _get_column_validity(self, statistics_to_run):
         '''
@@ -320,9 +344,46 @@ class CountPagesAction(InterfaceAction):
             self.gui.library_view.model().refresh_ids(book_ids_to_update)
             self.gui.library_view.model().refresh_ids(book_ids_to_update,
                                       current_row=self.gui.library_view.currentIndex().row())
-#             db.refresh_ids(book_ids_to_update, current_row=self.gui.current_view().selectionModel().selectedRows())
 
         self.hide_progressbar()
+
+    def _do_show_totals(self, book_ids, statistics_cols_map):
+        totals = {}
+        totals[_('Selected')] = len(book_ids)
+        labels_map = dict((col_name, self.gui.current_db.field_metadata.key_to_label(col_name))
+                               for col_name in statistics_cols_map.values() if col_name)
+        for book_id in book_ids:
+            if not self.gui.current_db.has_id(book_id):
+                print("Book with id %d is no longer in the library." % book_id)
+                continue
+            for statistic, col_name in statistics_cols_map.items():
+                if col_name:
+                    value = self.gui.current_db.get_custom(book_id, label=labels_map[col_name], index_is_id=True)
+                    book_stat_total = 0
+                    if value is not None and value != '':
+                        try:
+                            book_stat_total = float(value)
+                        except ValueError:
+                            book_stat_total = 0
+                    if statistic in totals:
+                        totals[statistic] += book_stat_total
+                    else:
+                        totals[statistic] = book_stat_total
+
+        # Calculate averages for all the gatehred statistics except the Selected count
+        averages = {}
+        for statistic in statistics_cols_map.keys():
+            if statistic in totals and totals[_('Selected')] > 0:
+                averages[statistic] = totals[statistic] / len(book_ids)
+        print("Totals:", totals)
+        print("Averages:", averages)    
+        # Some fudgery where for the Flesch statistics we show averages only
+        for stat in [cfg.STATISTIC_FLESCH_READING, cfg.STATISTIC_FLESCH_GRADE, cfg.STATISTIC_GUNNING_FOG]:
+            if stat in totals:
+                totals[stat] = -1  # Indicate no total available
+        
+        d = TotalStatisticsDialog(self.gui, totals, averages)
+        d.exec_()
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)

@@ -139,6 +139,14 @@ ALL_STATISTICS = {
                   STATISTIC_FLESCH_GRADE: KEY_FLESCH_GRADE_CUSTOM_COLUMN,
                   STATISTIC_GUNNING_FOG: KEY_GUNNING_FOG_CUSTOM_COLUMN
                   }
+DISPLAY_STATISTIC_NAMES = {
+                        'Selected': _('Selected Books'),
+                        STATISTIC_PAGE_COUNT: _('Page Count'),
+                        STATISTIC_WORD_COUNT: _('Word Count'),
+                        STATISTIC_FLESCH_READING: _('Flesch Reading Ease'),
+                        STATISTIC_FLESCH_GRADE: _('Flesch-Kincaid Grade Level'),
+                        STATISTIC_GUNNING_FOG: _('Gunning Fog Index')
+                        }
 
 DEFAULT_STORE_VALUES = {
                         KEY_BUTTON_DEFAULT: 'Estimate',
@@ -670,7 +678,7 @@ class StatisticsTab(QWidget):
         readability_layout.addWidget(readability_label, 0, 0, 1, 3)
         readability_label.linkActivated.connect(self.parent_dialog._link_activated)
 
-        flesch_reading_column_label = QLabel(_('&Flesch Reading Ease:'), self)
+        flesch_reading_column_label = QLabel(_('Flesch Reading Ease') + ':', self)
         toolTip = _('Specify the custom column to store a computed Flesch Reading Ease score.\n'
                     'Leave this blank if you do not want to calculate it')
         flesch_reading_column_label.setToolTip(toolTip)
@@ -681,7 +689,7 @@ class StatisticsTab(QWidget):
         readability_layout.addWidget(flesch_reading_column_label, 1, 0, 1, 1)
         readability_layout.addWidget(self.flesch_reading_column_combo, 1, 1, 1, 2)
 
-        flesch_grade_column_label = QLabel(_('Flesch-&Kincaid Grade:'), self)
+        flesch_grade_column_label = QLabel(_('Flesch-Kincaid Grade Level') + ':', self)
         toolTip = _('Specify the custom column to store a computed Flesch-Kincaid Grade Level score.\n'
                     'Leave this blank if you do not want to calculate it')
         flesch_grade_column_label.setToolTip(toolTip)
@@ -692,7 +700,7 @@ class StatisticsTab(QWidget):
         readability_layout.addWidget(flesch_grade_column_label, 2, 0, 1, 1)
         readability_layout.addWidget(self.flesch_grade_column_combo, 2, 1, 1, 2)
 
-        gunning_fog_column_label = QLabel(_('&Gunning Fog Index:'), self)
+        gunning_fog_column_label = QLabel(_('Gunning Fog Index') + ':', self)
         toolTip = _('Specify the custom column to store a computed Gunning Fog Index score.\n'
                     'Leave this blank if you do not want to calculate it')
         gunning_fog_column_label.setToolTip(toolTip)
