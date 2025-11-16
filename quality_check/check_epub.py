@@ -1610,7 +1610,7 @@ class EpubCheck(BaseCheck):
 
 
     def check_epub_css_justify(self):
-        RE_TEXT_ALIGN = re.compile(r'text\-align:\s*justify', re.UNICODE)
+        RE_TEXT_ALIGN = re.compile(r'text\-align\s*:\s*justify', re.UNICODE)
 
         def evaluate_book(book_id, db):
             path_to_book = db.format_abspath(book_id, 'EPUB', index_is_id=True)

@@ -1,5 +1,11 @@
 # Quality Check Change Log
 
+## [1.14.5] - 2025-11-16
+### Changed
+- The 'Check CSS non-justified' check now allows for spaces between `text-align` and `:` for (poorly) formatted CSS.
+- The 'Search ePubs' feature now allows dialog to be user resized
+- The 'Search ePubs' history items list length can now be changed (from default of 10) in the Cusomtize plugin dialog.
+
 ## [1.14.4] - 2025-10-04
 ### Changed
 - RECOVER_PARSER removed from Calibre, see https://github.com/kiwidude68/calibre_plugins/issues/131

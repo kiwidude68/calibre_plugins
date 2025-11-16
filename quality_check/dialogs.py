@@ -15,12 +15,12 @@ except NameError:
 try:
     from qt.core import (QVBoxLayout, QLabel, QRadioButton, QDialogButtonBox,
                           QGroupBox, QGridLayout, QComboBox, QProgressDialog,
-                          QTimer, QIcon, QTableWidget, QHBoxLayout, QLayout,
+                          QTimer, QIcon, QTableWidget, QHBoxLayout, QSpacerItem, QSizePolicy,
                           QAbstractItemView, Qt, QCheckBox, QSpinBox, QToolButton)
 except:
     from PyQt5.Qt import (QVBoxLayout, QLabel, QRadioButton, QDialogButtonBox,
                           QGroupBox, QGridLayout, QComboBox, QProgressDialog,
-                          QTimer, QIcon, QTableWidget, QHBoxLayout, QLayout,
+                          QTimer, QIcon, QTableWidget, QHBoxLayout, QSpacerItem, QSizePolicy,
                           QAbstractItemView, Qt, QCheckBox, QSpinBox, QToolButton)
 
 from calibre.ebooks.metadata import authors_to_string, fmt_sidx
@@ -555,7 +555,7 @@ class SearchEpubDialog(SizePersistedDialog):
         self.setLayout(layout)
         title_layout = ImageTitleLayout(self, 'search.png', _('Search ePubs'))
         layout.addLayout(title_layout)
-        layout.setSizeConstraint(QLayout.SetFixedSize)
+        self.setMinimumSize(300, 350)
 
         find_group = QGroupBox(_('Find expression'), self)
         layout.addWidget(find_group)
@@ -567,7 +567,7 @@ class SearchEpubDialog(SizePersistedDialog):
         self.search_combo = QComboBox(self)
         self.search_combo.setEditable(True)
         self.search_combo.setCompleter(None)
-        self.search_combo.setMaximumWidth(230)
+        self.search_combo.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
         search_layout.addWidget(self.search_combo)
 
         self.clear_history_button = QToolButton(self)
@@ -610,6 +610,9 @@ class SearchEpubDialog(SizePersistedDialog):
         scope_layout.addWidget(self.scope_ncx_checkbox, 5, 1, 1, 1)
         scope_layout.addWidget(self.scope_zip_checkbox, 5, 0, 1, 1)
 
+        spacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        layout.addItem(spacer)
+
         # Dialog buttons
         button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
         button_box.accepted.connect(self.ok_clicked)
@@ -638,8 +641,10 @@ class SearchEpubDialog(SizePersistedDialog):
         search_text = unicode(self.search_combo.currentText()).strip()
         if search_text:
             self.previous_finds.insert(0, search_text)
-        # Keep last 10 items
-        search_opts['previous_finds'] = self.previous_finds[:10]
+        # Keep last X items
+        c = cfg.plugin_prefs[cfg.STORE_OPTIONS]
+        max_search_items = c.get(cfg.KEY_SEARCH_HISTORY_LENGTH, 10)
+        search_opts['previous_finds'] = self.previous_finds[:max_search_items]
         search_opts['ignore_case'] = self.ignore_case_checkbox.isChecked()
         search_opts['show_all_matches'] = self.show_all_matches_checkbox.isChecked()
         search_opts['scope_html'] = self.scope_html_checkbox.isChecked()
