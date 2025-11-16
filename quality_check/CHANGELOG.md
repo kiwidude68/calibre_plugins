@@ -5,6 +5,7 @@
 - The 'Check CSS non-justified' check now allows for spaces between `text-align` and `:` for (poorly) formatted CSS.
 - The 'Search ePubs' feature now allows dialog to be user resized
 - The 'Search ePubs' history items list length can now be changed (from default of 10) in the Cusomtize plugin dialog.
+- THe "Check Author Sort' has been rewritten to be more performant (12 x faster on my test library) (#cbhaley)
 
 ## [1.14.4] - 2025-10-04
 ### Changed

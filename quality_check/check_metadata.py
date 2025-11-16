@@ -91,15 +91,21 @@ class MetadataCheck(BaseCheck):
     def check_author_sort_valid(self):
 
         def evaluate_book(book_id, db):
-            current_author_sort = db.author_sort(book_id, index_is_id=True)
-            authors = db.authors(book_id, index_is_id=True)
-            if not authors:
+            current_author_sort = ' & '.join(self.computed_sort_string_for_books[book_id])
+            if not current_author_sort:
                 return True
-            authors = [a.strip().replace('|', ',') for a in authors.split(',')]
-            if current_author_sort != db.author_sort_from_authors(authors):
+            if current_author_sort != self.author_sort_string_for_books[book_id]:
                 return True
             return False
 
+        # Use the "new" calibre db api
+        new_db = self.gui.current_db.new_api
+        # Get all the book ids in the database
+        all_book_ids = new_db.all_book_ids()
+        # Get the computed author sort string for all books 
+        self.computed_sort_string_for_books = new_db.author_sort_strings_for_books(all_book_ids)
+        # Get the actual author sort string for all books
+        self.author_sort_string_for_books = new_db.all_field_for('author_sort', all_book_ids)
         self.check_all_files(evaluate_book,
                              no_match_msg=_('All searched books have a valid Author Sort'),
                              marked_text='invalid_author_sort',
