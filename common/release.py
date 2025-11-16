@@ -152,7 +152,7 @@ if __name__=="__main__":
         raise RuntimeError('No GitHub API token found. Please set it in CALIBRE_GITHUB_TOKEN variable.')
 
     (shortName, pluginName, version) = readPluginDetails()
-    tagName = shortName + '-v' + version
+    tagName = shortName + '-' + version
     checkIfReleaseExists(apiToken, tagName)
 
     zipFile = getPluginZipPath(pluginName)
