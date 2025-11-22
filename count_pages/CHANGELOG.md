@@ -2,7 +2,7 @@
 
 ## [1.14.2] - 2025-11-16
 ### Added
-- New 'Statistic totals for selected' feature to show a dialog with total statistics for the selected books.
+- New 'Statistic totals for selected books' feature to show a dialog with total statistics for the selected books.
 
 ## [1.14.1] - 2025-10-15
 ### Fixed

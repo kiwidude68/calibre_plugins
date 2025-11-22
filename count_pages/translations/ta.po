@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-08-03 12:39+1000\n"
+"POT-Creation-Date: 2025-11-16 20:40+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: தமிழ் நேரம் <tamilneram247@gmail.com>, 2023\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: ta\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:453
+#: ..\common\common_dialogs.py:84 config.py:463
 msgid "Keyboard shortcuts"
 msgstr "விசைப்பலகை குறுக்குவழிகள்"
 
@@ -130,74 +130,82 @@ msgid "&Download page/word counts - all sources"
 msgstr "பக்கம்/சொல் எண்ணிக்கையைப் பதிவிறக்குக - அனைத்து ஆதாரங்களும்"
 
 #: action.py:99
+msgid "&Statistic totals for selected books"
+msgstr ""
+
+#: action.py:102
 msgid "&Customize plugin"
 msgstr "& சொருகி தனிப்பயனாக்கு"
 
-#: action.py:101 config.py:462
+#: action.py:104 config.py:472
 msgid "&Help"
 msgstr "&உதவி"
 
-#: action.py:136 action.py:195
+#: action.py:139 action.py:159 action.py:219
 msgid "Configure plugin"
 msgstr "சொருகி உள்ளமைக்கவும்"
 
-#: action.py:137 action.py:196
+#: action.py:140 action.py:160 action.py:220
 msgid ""
 "You must specify custom column(s) first. Do you want to configure this now?"
 msgstr ""
 "நீங்கள் முதலில் தனிப்பயன் நெடுவரிசை (களை) குறிப்பிட வேண்டும். இதை இப்போது "
 "உள்ளமைக்க விரும்புகிறீர்களா?"
 
-#: action.py:241
+#: action.py:265
 msgid "Count Page/Word Statistics"
 msgstr "பக்கம்/சொல் புள்ளிவிவரங்களை எண்ணுங்கள்"
 
-#: action.py:250
+#: action.py:274
 msgid "Counting statistics in %d books"
 msgstr "%D புத்தகங்களில் புள்ளிவிவரங்களை எண்ணுதல்"
 
-#: action.py:257
+#: action.py:281
 msgid "Failed to count statistics"
 msgstr "புள்ளிவிவரங்களை எண்ணுவதில் தோல்வி"
 
-#: action.py:258
+#: action.py:282
 msgid "Counting statistics completed"
 msgstr "புள்ளிவிவரங்களை எண்ணுதல் முடிந்தது"
 
-#: action.py:263
+#: action.py:287
 msgid "Failed to generate any statistics. <b>View Log</b> for details"
 msgstr ""
 "எந்த புள்ளிவிவரங்களையும் உருவாக்கத் தவறிவிட்டது. <b> பதிவைக் காண்க </b> "
 "விவரங்களுக்கு"
 
-#: action.py:264
+#: action.py:288
 msgid "Count Pages failed"
 msgstr "எண்ணிக்கை பக்கங்கள் தோல்வியடைந்தன"
 
-#: action.py:264 action.py:277
+#: action.py:288 action.py:301
 msgid "Count log"
 msgstr "பதிவுகளை எண்ணுங்கள்"
 
-#: action.py:273
+#: action.py:297
 msgid "<p>Count Pages plugin found <b>%d statistics(s)</b>. "
 msgstr ""
 "<p> கவுண்ட் பக்கங்கள் சொருகி காணப்படுகிறது <b>%d புள்ளிவிவரங்கள் (கள்) </b>."
 
-#: action.py:274
+#: action.py:298
 msgid "Proceed with updating columns in your library?"
 msgstr "உங்கள் நூலகத்தில் நெடுவரிசைகளைப் புதுப்பிப்பதன் மூலம் தொடரவா?"
 
-#: action.py:277
+#: action.py:301
 msgid "Count complete"
 msgstr "எண்ணிக்கை முழுமையானது"
 
-#: action.py:289
+#: action.py:313
 msgid "Updating statistics"
 msgstr "புள்ளிவிவரங்களை புதுப்பித்தல்"
 
-#: action.py:292 action.py:304
+#: action.py:316 action.py:328
 msgid "Updating"
 msgstr "புதுப்பித்தல்"
+
+#: action.py:352 action.py:376
+msgid "Selected"
+msgstr ""
 
 #: config.py:59
 msgid "Paragraphs (APNX accurate)"
@@ -215,51 +223,75 @@ msgstr "அடோப் டிஜிட்டல் பதிப்புகள�
 msgid "Custom (Chars Per Page)"
 msgstr "தனிப்பயன் (ஒரு பக்கத்திற்கு எழுத்துக்கள்)"
 
-#: config.py:122
+#: config.py:124
 msgid "Download page/word counts"
 msgstr "பக்கம்/சொல் எண்ணிக்கையைப் பதிவிறக்குக"
 
-#: config.py:124
+#: config.py:126
 msgid "Estimate page/word counts"
 msgstr "பக்கம்/சொல் எண்ணிக்கையை மதிப்பிடுங்கள்"
 
-#: config.py:125
+#: config.py:127
 msgid " - all sources"
 msgstr "- அனைத்து ஆதாரங்களும்"
 
-#: config.py:264
+#: config.py:143
+msgid "Selected Books"
+msgstr ""
+
+#: config.py:144
+msgid "Page Count"
+msgstr ""
+
+#: config.py:145
+msgid "Word Count"
+msgstr ""
+
+#: config.py:146 config.py:681
+msgid "Flesch Reading Ease"
+msgstr ""
+
+#: config.py:147 config.py:692
+msgid "Flesch-Kincaid Grade Level"
+msgstr ""
+
+#: config.py:148 config.py:703
+msgid "Gunning Fog Index"
+msgstr ""
+
+#: config.py:274
 msgid "Statistics"
 msgstr "புள்ளிவிவரங்கள்"
 
-#: config.py:265
+#: config.py:275
 msgid "Other"
 msgstr "மற்றொன்று"
 
-#: config.py:353
+#: config.py:363
 msgid "Download options:"
 msgstr "பதிவிறக்க விருப்பங்கள்:"
 
-#: config.py:368
+#: config.py:378
 msgid "Move source up (Alt+Up)"
 msgstr "மூலத்தை நகர்த்தவும் (Alt+UP)"
 
-#: config.py:370
+#: config.py:380
 msgid "Alt+Up"
 msgstr "Alt+up"
 
-#: config.py:374
+#: config.py:384
 msgid "Move source down (Alt+Down)"
 msgstr "மூலத்தை கீழே நகர்த்தவும் (alt+down)"
 
-#: config.py:376
+#: config.py:386
 msgid "Alt+Down"
 msgstr "Alt+down"
 
-#: config.py:380
+#: config.py:390
 msgid "Show download from all sources menu item"
 msgstr "எல்லா மூலங்கள் மெனு உருப்படியிலிருந்தும் பதிவிறக்கத்தைக் காட்டு"
 
-#: config.py:382
+#: config.py:392
 msgid ""
 "Show a menu item to attempt to download the page\n"
 "count from all active sources. Only sources for which\n"
@@ -269,11 +301,11 @@ msgstr ""
 " அனைத்து செயலில் உள்ள மூலங்களிலிருந்தும் எண்ணுங்கள். அதற்கான ஆதாரங்கள் மட்டுமே \n"
 " புத்தகத்தில் ஒரு ஐடி முயற்சிக்கப்படும்."
 
-#: config.py:389
+#: config.py:399
 msgid "Try to download page count from each source"
 msgstr "ஒவ்வொரு மூலத்திலிருந்தும் பக்க எண்ணிக்கையைப் பதிவிறக்க முயற்சிக்கவும்"
 
-#: config.py:390
+#: config.py:400
 msgid ""
 "If this option is checked, each download source is\n"
 "tried until a page count is successfully\n"
@@ -283,15 +315,15 @@ msgstr ""
 " ஒரு பக்க எண்ணிக்கை வெற்றிகரமாக இருக்கும் வரை முயற்சித்தேன் \n"
 " பெறப்பட்டது."
 
-#: config.py:398
+#: config.py:408
 msgid "Other options:"
 msgstr "பிற விருப்பங்கள்:"
 
-#: config.py:404
+#: config.py:414
 msgid "&Button default:"
 msgstr "& பொத்தான் இயல்புநிலை:"
 
-#: config.py:405
+#: config.py:415
 msgid ""
 "If plugin is placed as a toolbar button, choose a default action when "
 "clicked on"
@@ -299,11 +331,11 @@ msgstr ""
 "சொருகி கருவிப்பட்டி பொத்தானாக வைக்கப்பட்டால், கிளிக் செய்யும் போது "
 "இயல்புநிலை செயலைத் தேர்வுசெய்க"
 
-#: config.py:416
+#: config.py:426
 msgid "Always overwrite an existing word/page count"
 msgstr "ஏற்கனவே இருக்கும் சொல்/பக்க எண்ணிக்கையை எப்போதும் மேலெழுதவும்"
 
-#: config.py:417
+#: config.py:427
 msgid ""
 "Uncheck this option if you have manually populated values in\n"
 "either of your page/word custom columns, and never want the\n"
@@ -319,11 +351,11 @@ msgstr ""
 " மற்றும் சொல் எண்ணிக்கை, ஆனால் சில புத்தகங்களுக்கு ஏற்கனவே மதிப்புகளை ஒதுக்கியுள்ளது \n"
 " ஒரு நெடுவரிசையில் மற்றும் பூஜ்ஜிய/வெற்று நெடுவரிசையை விரும்புகிறேன்."
 
-#: config.py:426
+#: config.py:436
 msgid "Update the statistics even if they have not changed"
 msgstr "புள்ளிவிவரங்கள் மாறாவிட்டாலும் அவை மாறவில்லை"
 
-#: config.py:427
+#: config.py:437
 msgid ""
 "Check this option if you want the statistics to be updated in\n"
 "the books metadata even if they have not changed. Using this\n"
@@ -335,11 +367,11 @@ msgstr ""
 " விருப்பம் எப்போதும் புத்தகத்திற்கான மாற்றியமைக்கப்பட்ட நேர முத்திரையை புதுப்பிக்கும் \n"
 " புள்ளிவிவரங்கள் மாறாதபோது கூட."
 
-#: config.py:434
+#: config.py:444
 msgid "Use Preferred Output Format if available"
 msgstr "கிடைத்தால் விருப்பமான வெளியீட்டு வடிவமைப்பைப் பயன்படுத்தவும்"
 
-#: config.py:435
+#: config.py:445
 msgid ""
 "Check this option to calculate the statistics using the format selected\n"
 "as the Preferred Output Format. If this format is not found, or the\n"
@@ -355,11 +387,11 @@ msgstr ""
 " காலிபர் விருப்பங்களின் நடத்தை பக்கத்தில் குறிப்பிடப்பட்டுள்ளது. \n"
 " குறிப்பு: ADE பக்க எண்ணிக்கை வழிமுறை தேர்ந்தெடுக்கப்பட்டால் EPUB எப்போதும் பயன்படுத்தப்படும்."
 
-#: config.py:444
+#: config.py:454
 msgid "Prompt to save counts"
 msgstr "எண்ணிக்கையை சேமிக்க தூண்டுதல்"
 
-#: config.py:445
+#: config.py:455
 msgid ""
 "Uncheck this option if you want changes applied without\n"
 "a confirmation dialog. There is a small risk with this\n"
@@ -371,68 +403,68 @@ msgstr ""
 " நீங்கள் மற்ற மாற்றங்களைச் செய்கிறீர்கள் என்றால் தேர்வு செய்யப்படாது \n"
 " இந்த புத்தக பதிவு அதே நேரத்தில் அவை இழக்கப்படும்."
 
-#: config.py:454
+#: config.py:464
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
 
-#: config.py:456
+#: config.py:466
 msgid "&Library preferences"
 msgstr "& நூலக விருப்பத்தேர்வுகள்"
 
-#: config.py:457
+#: config.py:467
 msgid "View data stored in the library database for this plugin"
 msgstr "இந்த சொருகி நூலக தரவுத்தளத்தில் சேமிக்கப்பட்ட தரவைக் காண்க"
 
-#: config.py:473
+#: config.py:483
 msgid "Done"
 msgstr "முடிந்தது"
 
-#: config.py:474
+#: config.py:484
 msgid "Confirmation dialogs have all been reset"
 msgstr "உறுதிப்படுத்தல் உரையாடல்கள் அனைத்தும் மீட்டமைக்கப்பட்டுள்ளன"
 
-#: config.py:537
+#: config.py:547
 msgid "Source"
 msgstr "ஆதாரம்"
 
-#: config.py:537
+#: config.py:547
 msgid "Identifier"
 msgstr "அடையாளங்காட்டி"
 
-#: config.py:537
+#: config.py:547
 msgid "On Menu"
 msgstr "மெனுவில்"
 
-#: config.py:602
+#: config.py:612
 msgid "Page count options:"
 msgstr "பக்க எண்ணிக்கை விருப்பங்கள்:"
 
-#: config.py:607
+#: config.py:617
 msgid "&Custom column:"
 msgstr "& தனிப்பயன் நெடுவரிசை:"
 
-#: config.py:608
+#: config.py:618
 msgid ""
 "Column must be of type float or int. Leave this blank if you do not want to "
 "count pages"
 msgstr ""
 
-#: config.py:617
+#: config.py:627
 msgid "&Algorithm:"
 msgstr "& அல்காரிதம்:"
 
-#: config.py:618
+#: config.py:628
 msgid ""
 "Choose which algorithm to use if you have specified a page count column"
 msgstr ""
 "நீங்கள் ஒரு பக்க எண்ணிக்கை நெடுவரிசையைக் குறிப்பிட்டிருந்தால் எந்த "
 "வழிமுறையைப் பயன்படுத்த வேண்டும் என்பதைத் தேர்வுசெய்க"
 
-#: config.py:627
+#: config.py:637
 msgid "C&hars per page:"
 msgstr "ஒரு பக்கத்திற்கு சி & ஹார்ஸ்:"
 
-#: config.py:628
+#: config.py:638
 msgid ""
 "If using the Custom algorithm, specify how many characters per page "
 "including spaces."
@@ -440,25 +472,25 @@ msgstr ""
 "தனிப்பயன் வழிமுறையைப் பயன்படுத்தினால், இடைவெளிகள் உட்பட ஒரு பக்கத்திற்கு "
 "எத்தனை எழுத்துக்கள் குறிப்பிடவும்."
 
-#: config.py:638
+#: config.py:648
 msgid "Word count options:"
 msgstr "சொல் எண்ணிக்கை விருப்பங்கள்:"
 
-#: config.py:642
+#: config.py:652
 msgid "C&ustom column:"
 msgstr "சி & யுஸ்டோம் நெடுவரிசை:"
 
-#: config.py:643
+#: config.py:653
 msgid ""
 "Column must be of type float or int. Leave this blank if you do not want to "
 "count words"
 msgstr ""
 
-#: config.py:652
+#: config.py:662
 msgid "Use ICU algorithm"
 msgstr "ICU வழிமுறையைப் பயன்படுத்தவும்"
 
-#: config.py:653
+#: config.py:663
 msgid ""
 "The ICU algorithm is a more complete word count and supports multiple locales.\n"
 "Uncheck this to use the original word count algorithm."
@@ -466,11 +498,11 @@ msgstr ""
 "ஐ.சி.யு வழிமுறை மிகவும் முழுமையான சொல் எண்ணிக்கை மற்றும் பல இடங்களை ஆதரிக்கிறது. \n"
 " அசல் சொல் எண்ணிக்கை வழிமுறையைப் பயன்படுத்த இதைத் தேர்வுசெய்யவும்."
 
-#: config.py:661
+#: config.py:671
 msgid "Readability options:"
 msgstr "வாசிப்பு விருப்பங்கள்:"
 
-#: config.py:666
+#: config.py:676
 msgid ""
 "Readability statistics available are <a "
 "href=\"https://en.wikipedia.org/wiki/Flesch-"
@@ -479,11 +511,7 @@ msgid ""
 "Index</a>."
 msgstr ""
 
-#: config.py:671
-msgid "&Flesch Reading Ease:"
-msgstr "ஃபிளெஷ் வாசிப்பு எளிதானது:"
-
-#: config.py:672
+#: config.py:682
 msgid ""
 "Specify the custom column to store a computed Flesch Reading Ease score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -491,11 +519,7 @@ msgstr ""
 "கணக்கிடப்பட்ட ஃப்ளெஷ் வாசிப்பு ஈஸி மதிப்பெண்ணை சேமிக்க தனிப்பயன் நெடுவரிசையைக் குறிப்பிடவும். \n"
 " நீங்கள் கணக்கிட விரும்பவில்லை என்றால் இந்த காலியாக விடவும்"
 
-#: config.py:682
-msgid "Flesch-&Kincaid Grade:"
-msgstr "ஃப்ளெச்-கின்கெய்ட் தரம்:"
-
-#: config.py:683
+#: config.py:693
 msgid ""
 "Specify the custom column to store a computed Flesch-Kincaid Grade Level score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -503,11 +527,7 @@ msgstr ""
 "கணக்கிடப்பட்ட ஃப்ளெஷ்-கின்கெய்ட் தர நிலை மதிப்பெண்ணை சேமிக்க தனிப்பயன் நெடுவரிசையைக் குறிப்பிடவும். \n"
 " நீங்கள் கணக்கிட விரும்பவில்லை என்றால் இந்த காலியாக விடவும்"
 
-#: config.py:693
-msgid "&Gunning Fog Index:"
-msgstr "மூடுபனி குறியீட்டை துப்பாக்கிச் சூடு:"
-
-#: config.py:694
+#: config.py:704
 msgid ""
 "Specify the custom column to store a computed Gunning Fog Index score.\n"
 "Leave this blank if you do not want to calculate it"
@@ -515,46 +535,46 @@ msgstr ""
 "கணக்கிடப்பட்ட துப்பாக்கி மூடு மூடுபனி குறியீட்டு மதிப்பெண்ணை சேமிக்க தனிப்பயன் நெடுவரிசையைக் குறிப்பிடவும். \n"
 " நீங்கள் கணக்கிட விரும்பவில்லை என்றால் இந்த காலியாக விடவும்"
 
-#: dialogs.py:39
+#: dialogs.py:42
 msgid "Working"
 msgstr "வேலை"
 
-#: dialogs.py:39
+#: dialogs.py:42
 msgid "Cancel"
 msgstr "ரத்துசெய்"
 
-#: dialogs.py:40
+#: dialogs.py:43
 msgid "Queueing books for counting statistics"
 msgstr "புள்ளிவிவரங்களை எண்ணுவதற்கான புத்தகங்களை வரிசைப்படுத்துதல்"
 
-#: dialogs.py:104
+#: dialogs.py:107
 msgid "ADOBE page count requires EPUB format"
 msgstr "அடோப் பக்க எண்ணிக்கையில் EPUB வடிவம் தேவை"
 
-#: dialogs.py:116
+#: dialogs.py:119
 msgid "Book already has all statistics and overwrite is turned off"
 msgstr ""
 "புத்தகத்தில் ஏற்கனவே அனைத்து புள்ளிவிவரங்களும் உள்ளன, மேலும் மேலெழுதும் "
 "அணைக்கப்படுகிறது"
 
-#: dialogs.py:142
+#: dialogs.py:145
 msgid "No identifiers for selected download sources"
 msgstr "தேர்ந்தெடுக்கப்பட்ட பதிவிறக்க ஆதாரங்களுக்கான அடையாளங்காட்டிகள் இல்லை"
 
-#: dialogs.py:157
+#: dialogs.py:160
 msgid "Queueing "
 msgstr "வரிசை"
 
-#: dialogs.py:177
+#: dialogs.py:180
 msgid ""
 "No format found for word count, but page count download will be attempted"
 msgstr ""
 
-#: dialogs.py:181
+#: dialogs.py:184
 msgid "No convertible format found"
 msgstr "மாற்றத்தக்க வடிவம் எதுவும் கிடைக்கவில்லை"
 
-#: dialogs.py:201
+#: dialogs.py:204
 msgid ""
 "Could not analyse some statistics in %d of %d books, for reasons shown in "
 "details below."
@@ -562,6 +582,22 @@ msgstr ""
 "கீழே உள்ள விவரங்களில் காட்டப்பட்டுள்ள காரணங்களுக்காக, %d புத்தகங்களின் %d "
 "இல் சில புள்ளிவிவரங்களை பகுப்பாய்வு செய்ய முடியவில்லை."
 
-#: dialogs.py:202
+#: dialogs.py:205
 msgid "Page/word/statistics warnings"
 msgstr "பக்கம்/சொல்/புள்ளிவிவர எச்சரிக்கைகள்"
+
+#: dialogs.py:234
+msgid "Statistic Totals"
+msgstr ""
+
+#: dialogs.py:241
+msgid "Statistic"
+msgstr ""
+
+#: dialogs.py:241
+msgid "Total"
+msgstr ""
+
+#: dialogs.py:241
+msgid "Average"
+msgstr ""
