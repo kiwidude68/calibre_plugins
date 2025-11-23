@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.14.6] - 2025-11-23
+### Changed
+- Bumped minimum calibre version up to 3.48 as incompatibility with polyglot.builtins code, see <https://github.com/kiwidude68/calibre_plugins/issues/133>
+
 ## [1.14.5] - 2025-11-16
 ### Changed
 - The 'Check CSS non-justified' check now allows for spaces between `text-align` and `:` for (poorly) formatted CSS.

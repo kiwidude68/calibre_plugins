@@ -20,8 +20,8 @@ class ActionQualityCheck(InterfaceActionBase):
     description             = 'Query your library for poor quality covers or invalid metadata'
     supported_platforms     = ['windows', 'osx', 'linux']
     author                  = 'Grant Drake with updates by others'
-    version                 = (1, 14, 5)
-    minimum_calibre_version = (3, 41, 0)
+    version                 = (1, 14, 6)
+    minimum_calibre_version = (3, 48, 0)
 
     #: This field defines the GUI plugin class that contains all the code
     #: that actually does something. Its format is module_path:class_name
