@@ -1,5 +1,9 @@
 # Count Pages Change Log
 
+## [1.14.3] - 2025-11-23
+### Changed
+- In 'Statistic totals for selected books' skip books with missing statistics (and warn user) so as to not impact averages.
+
 ## [1.14.2] - 2025-11-16
 ### Added
 - New 'Statistic totals for selected books' feature to show a dialog with total statistics for the selected books.

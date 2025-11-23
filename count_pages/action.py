@@ -349,9 +349,11 @@ class CountPagesAction(InterfaceAction):
 
     def _do_show_totals(self, book_ids, statistics_cols_map):
         totals = {}
+        counts = {}
         totals[_('Selected')] = len(book_ids)
         labels_map = dict((col_name, self.gui.current_db.field_metadata.key_to_label(col_name))
                                for col_name in statistics_cols_map.values() if col_name)
+        missing_statistic = False
         for book_id in book_ids:
             if not self.gui.current_db.has_id(book_id):
                 print("Book with id %d is no longer in the library." % book_id)
@@ -364,25 +366,29 @@ class CountPagesAction(InterfaceAction):
                         try:
                             book_stat_total = float(value)
                         except ValueError:
-                            book_stat_total = 0
+                            missing_statistic = True
+                            continue
+                    else:
+                        missing_statistic = True
+                        continue
                     if statistic in totals:
                         totals[statistic] += book_stat_total
+                        counts[statistic] += 1
                     else:
                         totals[statistic] = book_stat_total
+                        counts[statistic] = 1
 
-        # Calculate averages for all the gatehred statistics except the Selected count
+        # Calculate averages for all the gathered statistics except the Selected count
         averages = {}
         for statistic in statistics_cols_map.keys():
-            if statistic in totals and totals[_('Selected')] > 0:
-                averages[statistic] = totals[statistic] / len(book_ids)
-        print("Totals:", totals)
-        print("Averages:", averages)    
+            if statistic in totals and statistic in counts and counts[statistic] > 0:
+                averages[statistic] = totals[statistic] / counts[statistic]
         # Some fudgery where for the Flesch statistics we show averages only
         for stat in [cfg.STATISTIC_FLESCH_READING, cfg.STATISTIC_FLESCH_GRADE, cfg.STATISTIC_GUNNING_FOG]:
             if stat in totals:
                 totals[stat] = -1  # Indicate no total available
         
-        d = TotalStatisticsDialog(self.gui, totals, averages)
+        d = TotalStatisticsDialog(self.gui, totals, averages, missing_statistic)
         d.exec_()
 
     def show_configuration(self):

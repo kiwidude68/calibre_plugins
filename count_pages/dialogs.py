@@ -7,10 +7,10 @@ import os, traceback
 from collections import OrderedDict
 try:
     from qt.core import (Qt, QProgressDialog, QTimer, QVBoxLayout, QTableWidget, 
-                         QHeaderView, QDialogButtonBox, QTableWidgetItem)
+                         QHeaderView, QDialogButtonBox, QTableWidgetItem, QLabel)
 except ImportError:
     from PyQt5.Qt import (Qt, QProgressDialog, QTimer, QVBoxLayout, QTableWidget, 
-                          QHeaderView, QDialogButtonBox, QTableWidgetItem)
+                          QHeaderView, QDialogButtonBox, QTableWidgetItem, QLabel)
 
 from calibre.gui2 import warning_dialog
 try: # Needed as part of calibre conversion changes in 3.27.0.
@@ -225,12 +225,12 @@ class TotalSummaryDialog(MessageBox): # {{{
 
 class TotalStatisticsDialog(SizePersistedDialog):
 
-    def __init__(self, parent, totals, averages):
+    def __init__(self, parent, totals, averages, missing_statistic):
         SizePersistedDialog.__init__(self, parent, 'count pages plugin:total statistics dialog')
-        self.initialize_controls()
+        self.initialize_controls(missing_statistic)
         self.populate_table(totals, averages)
 
-    def initialize_controls(self):
+    def initialize_controls(self, missing_statistic):
         self.setWindowTitle(_('Statistic Totals'))
         layout = QVBoxLayout(self)
         self.setMinimumSize(400, 120)
@@ -242,6 +242,12 @@ class TotalStatisticsDialog(SizePersistedDialog):
         self.table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         self.table.verticalHeader().setVisible(False)
         layout.addWidget(self.table)
+
+        if missing_statistic:
+            warning_label = QLabel(_('Some books were skipped due to missing statistic values.'))
+            # Make the label stand out as a warning
+            warning_label.setStyleSheet('font-weight: bold;')
+            layout.addWidget(warning_label)
         
         # Add a close button
         btns = QDialogButtonBox(QDialogButtonBox.Close)
