@@ -6,9 +6,18 @@ __copyright__ = '2011, Grant Drake'
 import socket
 from threading import Thread
 
-from lxml.html import fromstring, tostring
+from lxml.html import tostring
 from calibre import browser, random_user_agent
-from calibre.utils.cleantext import clean_ascii_chars
+
+def parse_html(raw):
+    try:
+        from html5_parser import parse
+    except ImportError:
+        # Old versions of calibre
+        import html5lib
+        return html5lib.parse(raw, treebuilder='lxml', namespaceHTMLElements=False)
+    else:
+        return parse(raw)
 
 class GoodreadsCoverWorker(Thread):
     '''
@@ -69,11 +78,11 @@ class GoodreadsCoverWorker(Thread):
             return
 
         try:
-            root = fromstring(clean_ascii_chars(raw))
+            root = parse_html(raw)
         except:
             msg = 'Failed to parse goodreads details page: %r'%self.url
             self.log.exception(msg)
-            return
+            return False
 
         errmsg = root.xpath('//*[@id="errorMessage"]')
         if errmsg:

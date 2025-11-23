@@ -1,5 +1,9 @@
 # Cover Url Change Log
 
+## [1.0.1] - 2025-11-23
+### Fixed
+- Parsing of Goodreads pages was failing, switch to same approach as Goodreads metadata plugin.
+
 ## [1.0.1] - 2023-04-30
 ### Changed
 - No longer display dialog for no cover url found as too annoying.
