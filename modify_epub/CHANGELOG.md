@@ -1,8 +1,14 @@
 # Modify ePub Change Log
 
+## [1.8.8] - 2025-11-23
+### Added
+- Arabic translations
+### Changed
+- Bumped minimum calibre version up to 3.48 as incompatibility with polyglot.builtins code, see <https://github.com/kiwidude68/calibre_plugins/issues/133>
+
 ## [1.8.7] - 2025-10-04
 ### Changed
-- RECOVER_PARSER removed from Calibre, see https://github.com/kiwidude68/calibre_plugins/issues/131
+- RECOVER_PARSER removed from Calibre, see <https://github.com/kiwidude68/calibre_plugins/issues/131>
 
 ## [1.8.6] - 2025-03-24
 ### Changed
@@ -32,7 +38,7 @@
 - Inserting jacket at front of book always skips 1 or sometimes 2 pages trying to detect cover/titlepage.
 
 ## [1.8.0] - 2022-10-16
-_All kiwidude plugins updated/migrated to: https://github.com/kiwidude68/calibre_plugins_
+_All kiwidude plugins updated/migrated to: <https://github.com/kiwidude68/calibre_plugins>
 ### Added
 - Add keyboard shortcuts access and help to configuration dialog.
 - Spanish translation (Jellby)
