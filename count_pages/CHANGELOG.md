@@ -1,5 +1,10 @@
 # Count Pages Change Log
 
+## [1.14.4] - 2025-12-01
+### Fixed
+- Bump min version up to 3.48.0
+- Ensure older versions of calibre (python) will work with the new dialog introduced for statistics.
+
 ## [1.14.3] - 2025-11-23
 ### Changed
 - In 'Statistic totals for selected books' skip books with missing statistics (and warn user) so as to not impact averages.

@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-16 20:40+1000\n"
+"POT-Creation-Date: 2025-11-23 11:30+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: Silatiw Witalis, 2022\n"
 "Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
@@ -209,7 +209,7 @@ msgstr "Aktualizowanie statystyk"
 msgid "Updating"
 msgstr "Aktualizowanie"
 
-#: action.py:352 action.py:376
+#: action.py:353
 msgid "Selected"
 msgstr ""
 
@@ -604,4 +604,8 @@ msgstr ""
 
 #: dialogs.py:241
 msgid "Average"
+msgstr ""
+
+#: dialogs.py:247
+msgid "Some books were skipped due to missing statistic values."
 msgstr ""

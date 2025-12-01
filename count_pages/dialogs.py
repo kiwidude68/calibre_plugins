@@ -262,14 +262,14 @@ class TotalStatisticsDialog(SizePersistedDialog):
             self.table.setItem(row, 0, QTableWidgetItem(cfg.DISPLAY_STATISTIC_NAMES[statistic]))
             
             # Total column
-            total_item = QTableWidgetItem(f"{total:,.0f}" if total >= 0 else "-")
+            total_item = QTableWidgetItem("{:,.0f}".format(total) if total >= 0 else "-")
             total_item.setTextAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
             self.table.setItem(row, 1, total_item)
             
             # Average column
             if statistic in averages:
                 avg = averages[statistic]
-                avg_item = QTableWidgetItem(f"{avg:,.0f}")
+                avg_item = QTableWidgetItem("{:,.0f}".format(avg))
             else:
                 avg_item = QTableWidgetItem("-")
             avg_item.setTextAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)

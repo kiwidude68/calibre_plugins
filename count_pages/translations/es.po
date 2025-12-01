@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-16 20:40+1000\n"
+"POT-Creation-Date: 2025-11-23 11:30+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -135,7 +135,7 @@ msgstr "&Descargar número de páginas o palabras - todos los orígenes"
 
 #: action.py:99
 msgid "&Statistic totals for selected books"
-msgstr ""
+msgstr "&Estadísticas totales para los libros seleccionados"
 
 #: action.py:102
 msgid "&Customize plugin"
@@ -204,9 +204,9 @@ msgstr "Actualizando estadísticas"
 msgid "Updating"
 msgstr "Actualizando"
 
-#: action.py:352 action.py:376
+#: action.py:353
 msgid "Selected"
-msgstr ""
+msgstr "Seleccionados"
 
 #: config.py:59
 msgid "Paragraphs (APNX accurate)"
@@ -238,27 +238,27 @@ msgstr "- todos los orígenes"
 
 #: config.py:143
 msgid "Selected Books"
-msgstr ""
+msgstr "Libros seleccionados"
 
 #: config.py:144
 msgid "Page Count"
-msgstr ""
+msgstr "Número de páginas"
 
 #: config.py:145
 msgid "Word Count"
-msgstr ""
+msgstr "Número de palabras"
 
 #: config.py:146 config.py:681
 msgid "Flesch Reading Ease"
-msgstr ""
+msgstr "Facilidad de legibilidad de Flesch"
 
 #: config.py:147 config.py:692
 msgid "Flesch-Kincaid Grade Level"
-msgstr ""
+msgstr "Nivel Flesch-Kincaid"
 
 #: config.py:148 config.py:703
 msgid "Gunning Fog Index"
-msgstr ""
+msgstr "Índice de niebla de Gunning"
 
 #: config.py:274
 msgid "Statistics"
@@ -602,16 +602,20 @@ msgstr "Avisos de páginas, palabras o estadísticas"
 
 #: dialogs.py:234
 msgid "Statistic Totals"
-msgstr ""
+msgstr "Estadísticas totales"
 
 #: dialogs.py:241
 msgid "Statistic"
-msgstr ""
+msgstr "Estadística"
 
 #: dialogs.py:241
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: dialogs.py:241
 msgid "Average"
-msgstr ""
+msgstr "Promedio"
+
+#: dialogs.py:247
+msgid "Some books were skipped due to missing statistic values."
+msgstr "Algunos libros se omitieron porque carecen de valores de estadística"

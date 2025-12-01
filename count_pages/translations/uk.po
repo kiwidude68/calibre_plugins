@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-16 20:40+1000\n"
+"POT-Creation-Date: 2025-11-23 11:30+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2025\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
@@ -203,7 +203,7 @@ msgstr "Оновлення даних"
 msgid "Updating"
 msgstr "Оновлення"
 
-#: action.py:352 action.py:376
+#: action.py:353
 msgid "Selected"
 msgstr "Позначені"
 
@@ -607,3 +607,7 @@ msgstr "Загалом"
 #: dialogs.py:241
 msgid "Average"
 msgstr "У середньому"
+
+#: dialogs.py:247
+msgid "Some books were skipped due to missing statistic values."
+msgstr "Деякі книги пропущено через брак статистичних даних."
