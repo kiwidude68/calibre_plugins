@@ -32,25 +32,34 @@ from calibre.utils.localization import get_udc
 '''
 json = {
   "status": {
-    "rid": "+NWS9NEvttP/AwrUQfM=",
-    "time-ms": 4
+    "rid": "l4uHja8zm+OBAQrUR7k=",
+    "time-ms": 0
   },
   "hits": {
-    "found": 44,
+    "found": 1,
     "start": 0,
     "hit": [
       {
-        "id": "w93307",
+        "id": "w253217",
         "fields": {
-          "year": "1970",
           "booktype": "1",
-          "authorsinfo": "o/patrick-obrian|Patrick O'Brian|16090|FF",
+          "title": "61 Hours",
+          "pfn": "c/lee-child/61-hours.htm",
+          "year": "2010",
+          "authorsinfo": "c/lee-child|Lee Child|15807|FF",
+          "genrepage": [
+            "T"
+          ],
+          "series_links": [
+            "/c/lee-child/jack-reacher/"
+          ],
+          "seriesinfo": "Jack Reacher|14",
+          "imageurl_amazon": "https://m.media-amazon.com/images/I/51PdZTNGZ5L._SL500_.jpg",
+          "imageurl_amazonuk": "https://m.media-amazon.com/images/I/41UR4mMa8CS._SL500_.jpg",
+          "imageurl_amazonca": "https://m.media-amazon.com/images/I/51PdZTNGZ5L._SL500_.jpg",
           "db": [
             "FF"
-          ],
-          "pfn": "o/patrick-obrian/master-and-commander.htm",
-          "seriesinfo": "Aubrey / Maturin|1",
-          "title": "Master and Commander"
+          ]
         }
       }
     ]
@@ -63,7 +72,7 @@ class FantasticFiction(Source):
     name = 'Fantastic Fiction'
     description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
-    version = (1, 7, 2)
+    version = (1, 7, 3)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ff'
@@ -160,11 +169,11 @@ class FantasticFiction(Source):
             return None
         querystring = urlencode({
                 'q.parser': 'structured',
-                'q': "(and db:'FF' '%s')" % q,
-                'size': 20,
+                'q': "(and db:'FF' searchstr:'%s')" % q,
                 'start': 0,
+                'size': 20,
                 'sort': "%s desc" % rank,
-                'return': 'booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo,db,imageloc',
+                'return': 'booktype,title,atitle,vtitle,year,pfn,hasimage,authorsinfo,seriesinfo,db,imageloc,imageurl_amazon,imageurl_amazonuk,imageurl_amazonca,genrepage,series_links,vtitlecountry,hidevtitle',
             })
         return FantasticFiction.BASE_URL + "/dbs/books2?" + querystring
 
@@ -176,6 +185,7 @@ class FantasticFiction(Source):
         '''
         matches = []
         br = self.browser
+        br.set_current_header('Referer', 'https://www.fantasticfiction.com/search/?searchfor=book')
 
         # If we have a Fantastic Fiction id then we do not need to fire a "search"
         # at fantasticfiction.co.uk. Instead we will go straight to the URL for that book.
@@ -199,6 +209,9 @@ class FantasticFiction(Source):
                 return as_unicode(e)
 
             # Our response contains a json dictionary 
+            if not raw:
+                log.error('No JSON data received from query - FF are being mean to us')
+                return
             json_result = json.loads(raw)
             if json_result['hits']['found'] > 0:
                 for hit in json_result['hits']['hit']:
