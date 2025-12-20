@@ -13,13 +13,15 @@ try:
                         QGroupBox, QComboBox, QGridLayout, QListWidget,
                         QListWidgetItem, QIcon, QInputDialog, Qt,
                         QAction, QCheckBox, QPushButton, QScrollArea,
-                        QAbstractItemView, QToolButton, QUrl)
+                        QAbstractItemView, QToolButton, QUrl,
+                        QDialogButtonBox, QFormLayout, QSpinBox)
 except ImportError:
     from PyQt5.Qt import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,
                         QGroupBox, QComboBox, QGridLayout, QListWidget,
                         QListWidgetItem, QIcon, QInputDialog, Qt,
                         QAction, QCheckBox, QPushButton, QScrollArea,
-                        QAbstractItemView, QToolButton, QUrl)
+                        QAbstractItemView, QToolButton, QUrl,
+                        QDialogButtonBox, QFormLayout, QSpinBox)
 
 # Pull in translation files for _() strings
 try:
@@ -32,7 +34,7 @@ from calibre.utils.config import JSONConfig
 from calibre.utils.icu import sort_key
 
 from calibre_plugins.view_manager.common_icons import get_icon
-from calibre_plugins.view_manager.common_dialogs import KeyboardConfigDialog, PrefsViewerDialog
+from calibre_plugins.view_manager.common_dialogs import KeyboardConfigDialog, PrefsViewerDialog, SizePersistedDialog
 
 HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/View-Manager'
 
@@ -280,6 +282,17 @@ class ColumnListWidget(QListWidget):
             self.insertItem(idx+1, self.takeItem(idx))
             self.setCurrentRow(idx+1)
 
+    def edit_columns_width(self):
+        column_widths = self.get_data()
+        item = None
+        for item in column_widths:
+            if item[0] == 'ondevice':
+                column_widths.remove(item)
+                break
+        d = EditColumnsWidthDialog(self.gui, column_widths)
+        d.exec_()
+        self.saved_column_widths.update(dict(d.get_data()))
+
 
 class SortColumnListWidget(ColumnListWidget):
 
@@ -363,6 +376,53 @@ class SortColumnListWidget(ColumnListWidget):
         return cols
 
 
+class EditColumnsWidthDialog(SizePersistedDialog):
+    def __init__(self, gui, column_widths) -> None:
+        SizePersistedDialog.__init__(self, gui, 'Columns Widths dialog')
+        self.setWindowTitle(_('Edit Columns Widths'))
+        self.gui = gui
+        self.column_widths = column_widths
+        self.column_widgets = []
+        self._init_controls()
+        self.resize_dialog()
+
+    def _init_controls(self):
+        toplayout = QVBoxLayout(self)
+        self.setLayout(toplayout)
+        scrollable = QScrollArea()
+        scrollcontent = QWidget()
+        scrollable.setWidget(scrollcontent)
+        scrollable.setWidgetResizable(True)
+        toplayout.addWidget(scrollable)
+        button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        button_box.accepted.connect(self.accept)
+        button_box.rejected.connect(self.reject)
+        toplayout.addWidget(button_box)
+
+        minimum_size = self.gui.library_view.horizontalHeader().minimumSectionSize()
+        sw = self.gui.library_view.verticalScrollBar().width() if self.gui.library_view.verticalScrollBar().isVisible() else 0
+        hw = self.gui.library_view.verticalHeader().width() if self.gui.library_view.verticalHeader().isVisible() else 0
+        maximum_size = max(200, self.gui.library_view.width() - (sw + hw + 10))
+
+        scrolllayout = QFormLayout()
+        scrollcontent.setLayout(scrolllayout)
+        for colname, width in self.column_widths:
+            spin = QSpinBox()
+            spin.setRange(minimum_size, maximum_size)
+            spin.setValue(width)
+            scrolllayout.addRow(self.gui.library_view.model().headers[colname], spin)
+            self.column_widgets.append((colname, spin))  
+
+    def accept(self):
+        self.column_widths = []
+        for colname, widget in self.column_widgets:
+            self.column_widths.append((colname, widget.value()))
+        SizePersistedDialog.accept(self)
+
+    def get_data(self):
+        return self.column_widths
+
+
 class ConfigWidget(QWidget):
 
     def __init__(self, plugin_action):
@@ -435,6 +495,8 @@ class ConfigWidget(QWidget):
         self.move_column_down_button.setIcon(QIcon(I('arrow-down.png')))
         self.move_column_up_button.clicked.connect(self.columns_list.move_column_up)
         self.move_column_down_button.clicked.connect(self.columns_list.move_column_down)
+        self.edit_column_size_button = QPushButton(QIcon(I('width.png')), _('Adjust width of columns'), self)
+        self.edit_column_size_button.clicked.connect(self.columns_list.edit_columns_width)
 
         if self.has_pin_view:
 
@@ -449,6 +511,8 @@ class ConfigWidget(QWidget):
             self.move_pin_column_down_button.setIcon(QIcon(I('arrow-down.png')))
             self.move_pin_column_up_button.clicked.connect(self.pin_columns_list.move_column_up)
             self.move_pin_column_down_button.clicked.connect(self.pin_columns_list.move_column_down)
+            self.edit_pin_column_size_button = QPushButton(QIcon(I('width.png')), _('Adjust width of columns'), self)
+            self.edit_pin_column_size_button.clicked.connect(self.pin_columns_list.edit_columns_width)
 
             def group_abled(elems,cb):
                 for el in elems:
@@ -476,6 +540,7 @@ class ConfigWidget(QWidget):
         layout_col = 0 # calculate layout because pin column only shown if available.
         customise_layout.addWidget(self.columns_label, 0, layout_col, 1, 1)
         customise_layout.addWidget(self.columns_list, 1, layout_col, 3, 1)
+        customise_layout.addWidget(self.edit_column_size_button, 4, layout_col, 1, 1)
         layout_col = layout_col + 1
         customise_layout.addWidget(self.move_column_up_button, 1, layout_col, 1, 1)
         customise_layout.addWidget(self.move_column_down_button, 3, layout_col, 1, 1)
@@ -484,6 +549,7 @@ class ConfigWidget(QWidget):
         if self.has_pin_view:
             customise_layout.addWidget(self.apply_pin_columns_checkbox, 0, layout_col, 1, 1)
             customise_layout.addWidget(self.pin_columns_list, 1, layout_col, 3, 1)
+            customise_layout.addWidget(self.edit_pin_column_size_button, 4, layout_col, 1, 1)
             layout_col = layout_col + 1
             customise_layout.addWidget(self.move_pin_column_up_button, 1, layout_col, 1, 1)
             customise_layout.addWidget(self.move_pin_column_down_button, 3, layout_col, 1, 1)
