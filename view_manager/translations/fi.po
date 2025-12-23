@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 21:11+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
 "Last-Translator: Veikko Muurikainen, 2024\n"
 "Language-Team: Finnish (https://app.transifex.com/calibre/teams/19337/fi/)\n"
@@ -89,22 +89,22 @@ msgstr "Kaikki tämän laajennuksen asetukset tässä kirjastossa on tyhjennetty
 msgid "Copy to clipboard"
 msgstr "Kopioi leikepöydälle"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Määrittelemätön"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Tarvitaan uudelleenkäynnistys"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Otsikkokuvaa ei löydy - Calibre on käynnistettävä uudelleen ennen tämän "
 "laajennuksen käyttöä!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Luo uusi sarake"
 

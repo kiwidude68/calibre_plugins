@@ -1,5 +1,10 @@
 # View Manager Change Log
 
+## [1.10.4] - 2025-12-23
+### Added
+- Add a button to edit the columns width directly from the config dialog (@un-pogaz)
+- Arabic translation
+
 ## [1.10.3] - 2024-03-17
 ### Added
 - Finnish translation
