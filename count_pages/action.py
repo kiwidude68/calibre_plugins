@@ -40,7 +40,7 @@ class CountPagesAction(InterfaceAction):
 
     def genesis(self):
         self.is_library_selected = True
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
         # Read the plugin icons and store for potential sharing with the config widget
         icon_resources = self.load_resources(cfg.PLUGIN_ICONS)
         set_plugin_icon_resources(self.name, icon_resources)

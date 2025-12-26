@@ -71,7 +71,7 @@ class FavouritesMenuAction(InterfaceAction):
     action_type = 'current'
 
     def genesis(self):
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
         self.menu.aboutToShow.connect(self._about_to_show_menu)
 
         # Read the plugin icons and store for potential sharing with the config widget

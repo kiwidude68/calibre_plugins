@@ -63,7 +63,7 @@ class ReadingListAction(InterfaceAction):
     def genesis(self):
         self.menus_lock = threading.RLock()
         self.sync_lock = threading.RLock()
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
 
         # Read the plugin icons and store for potential sharing with the config widget
         icon_resources = self.load_resources(PLUGIN_ICONS)

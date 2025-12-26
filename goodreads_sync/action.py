@@ -56,7 +56,7 @@ class GoodreadsSyncAction(InterfaceAction):
     pb = None
 
     def genesis(self):
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
 
         # Read the plugin icons and store for potential sharing with the config widget
         icon_resources = self.load_resources(PLUGIN_ICONS)

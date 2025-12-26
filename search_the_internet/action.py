@@ -48,7 +48,7 @@ class SearchTheInternetAction(InterfaceAction):
     action_type = 'current'
 
     def genesis(self):
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
 
         # Read the plugin icons and store for potential sharing with the config widget
         icon_names = ['images/'+i for i in cfg.get_default_icon_names()]

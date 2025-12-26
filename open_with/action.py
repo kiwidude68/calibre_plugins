@@ -38,7 +38,7 @@ class OpenWithAction(InterfaceAction):
     def genesis(self):
         self.is_library_selected = True
         self.menus_by_format = {}
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
 
         # Read the plugin icons and store for potential sharing with the config widget
         icon_names = ['images/'+i for i in cfg.get_default_icon_names()]
