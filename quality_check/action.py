@@ -40,7 +40,7 @@ class QualityCheckAction(InterfaceAction):
     action_type = 'current'
 
     def genesis(self):
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
         self.last_menu_key = None
         self.last_menu_cat = None
 

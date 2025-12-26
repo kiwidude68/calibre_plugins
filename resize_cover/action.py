@@ -32,7 +32,7 @@ class ResizeCoverAction(InterfaceAction):
     action_type = 'current'
 
     def genesis(self):
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
         self.old_actions_unique_map = {}
         self.default_size_data = None
 

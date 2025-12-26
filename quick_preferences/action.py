@@ -39,7 +39,7 @@ class QuickPreferencesAction(InterfaceAction):
                 (_('Create new record for each duplicate format'), 'new record')]
 
     def genesis(self):
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
 
         # Read the plugin icons and store for potential sharing with the config widget
         icon_resources = self.load_resources(PLUGIN_ICONS)
@@ -102,7 +102,7 @@ class QuickPreferencesAction(InterfaceAction):
                         is_checked=False, shortcut_name='Toggle Add Option: Automerge added books if exist',
                         triggered=partial(self.switch_checkbox_preference, 'add_formats_to_existing'))
         self.add_formats_to_existing.setVisible(cos[cfg.OPT_ADD_FORMAT_EXISTING][0])
-        self.automerge_sub_menu = QMenu(_('Automerge type'), self.gui)
+        self.automerge_sub_menu = QMenu(_('Automerge type'), m)
         if cos[cfg.OPT_ADD_FORMAT_EXISTING][0]:
             m.addMenu(self.automerge_sub_menu)
         self.automerge_menus = []
