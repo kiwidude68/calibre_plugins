@@ -5,9 +5,9 @@ __copyright__ = '2011, Grant Drake'
 
 from collections import OrderedDict
 try:
-    from qt.core import QLabel, QVBoxLayout, Qt, QGroupBox, QHBoxLayout, QCheckBox
+    from qt.core import QLabel, QVBoxLayout, Qt, QGroupBox, QHBoxLayout, QCheckBox, QLineEdit
 except ImportError:
-    from PyQt5.Qt import QLabel, QVBoxLayout, Qt, QGroupBox, QHBoxLayout, QCheckBox
+    from PyQt5.Qt import QLabel, QVBoxLayout, Qt, QGroupBox, QHBoxLayout, QCheckBox, QLineEdit
 
 try:
     load_translations()
@@ -22,10 +22,12 @@ from calibre_plugins.fantastic_fiction.common_widgets import KeyValueComboBox
 STORE_NAME = 'Options'
 KEY_GENRE_ACTION = 'genreAction'
 KEY_REDUCE_HEADINGS = 'reduceHeadings'
+KEY_AWS_COOKIE = 'awsCookie'
 
 DEFAULT_STORE_VALUES = {
     KEY_GENRE_ACTION: 'DISCARD',
-    KEY_REDUCE_HEADINGS: False
+    KEY_REDUCE_HEADINGS: False,
+    KEY_AWS_COOKIE: ''
 }
 
 GENRE_TYPES = OrderedDict([
@@ -69,7 +71,22 @@ class ConfigWidget(DefaultConfigWidget):
         options_group_box_layout.addWidget(self.headings_checkbox)
         reduce_headings = c.get(KEY_REDUCE_HEADINGS, False)
         self.headings_checkbox.setChecked(reduce_headings)
-        
+
+        # Add a text input for the cookie value
+        cookie_layout = QHBoxLayout()
+        options_group_box_layout.addLayout(cookie_layout)
+
+        cookie_label = QLabel(_('AWS WAF Cookie Value:'), self)
+        cookie_label.setToolTip(_('Paste the aws-waf-token cookie value here.\n'
+                                  'This is required to access Fantastic Fiction content.\n'
+                                  'In your web browser visit fantasticfiction.com then\n' \
+                                  'press F12 -> Storage -> Cookies and copy the Value.'))
+        cookie_layout.addWidget(cookie_label)
+
+        self.cookie_input = QLineEdit(self)
+        self.cookie_input.setText(c.get(KEY_AWS_COOKIE, ''))
+        cookie_layout.addWidget(self.cookie_input)
+
         options_group_box_layout.addStretch(1)
 
     def commit(self):
@@ -77,4 +94,5 @@ class ConfigWidget(DefaultConfigWidget):
         new_prefs = {}
         new_prefs[KEY_GENRE_ACTION] = self.genreCombo.selected_key()
         new_prefs[KEY_REDUCE_HEADINGS] = self.headings_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_AWS_COOKIE] = self.cookie_input.text() 
         plugin_prefs[STORE_NAME] = new_prefs

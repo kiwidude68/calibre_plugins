@@ -72,7 +72,7 @@ class FantasticFiction(Source):
     name = 'Fantastic Fiction'
     description = 'Downloads metadata and covers from FantasticFiction.com'
     author = 'Grant Drake'
-    version = (1, 7, 3)
+    version = (1, 7, 4)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'ff'
@@ -186,6 +186,13 @@ class FantasticFiction(Source):
         matches = []
         br = self.browser
         br.set_current_header('Referer', 'https://www.fantasticfiction.com/search/?searchfor=book')
+        from calibre_plugins.fantastic_fiction.config import plugin_prefs, STORE_NAME, KEY_AWS_COOKIE
+        c = plugin_prefs[STORE_NAME]
+        cookie_value = c.get(KEY_AWS_COOKIE, '')
+        if cookie_value:
+            br.set_current_header('Cookie', cookie_value)
+        else:
+            log.error(_('No AWS WAF cookie value configured in options for this plugin, requests will fail'))
 
         # If we have a Fantastic Fiction id then we do not need to fire a "search"
         # at fantasticfiction.co.uk. Instead we will go straight to the URL for that book.

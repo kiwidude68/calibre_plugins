@@ -1,5 +1,12 @@
 # Fantastic Fiction Change Log
 
+## [1.7.4] - 2026-01-10
+### Added
+- Temp workaround to allow the user to paste in the aws-waf-token value from web browser into the configuration.
+  Users can get this by visiting fantasticfiction.com in browser, F12 -> Storage -> Cookies, copy value or
+  from F12 -> Network -> click on a document request -> Headers -> Request Headers -> Cookie, copy value.
+- Arabic, Japanese, Romanian translations
+
 ## [1.7.2] - 2025-03-24
 ### Added
 - Set metadata language to always be `eng` rather than calibre user default (feuille)
