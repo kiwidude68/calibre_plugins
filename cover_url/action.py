@@ -41,7 +41,7 @@ class CoverUrlAction(InterfaceAction):
         set_plugin_icon_resources(self.name, icon_resources)
 
         # Assign our menu to this action and an icon
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
         self.qaction.setMenu(self.menu)
         self.qaction.setIcon(get_icon(PLUGIN_ICONS[0]))
         self.qaction.triggered.connect(self.get_covers)

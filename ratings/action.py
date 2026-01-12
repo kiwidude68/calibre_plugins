@@ -39,7 +39,7 @@ class RatingsAction(InterfaceAction):
         # Read the plugin icons and store for potential sharing with the config widget
         icon_resources = self.load_resources(PLUGIN_ICONS)
         set_plugin_icon_resources(self.name, icon_resources)
-        self.menu = QMenu(self.gui)
+        self.menu = QMenu()
 
         # Assign our menu to this action and an icon
         self.qaction.setMenu(self.menu)
