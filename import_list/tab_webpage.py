@@ -574,9 +574,9 @@ class ImportWebPageTab(QWidget):
                     msg = _('Failed to download page')+':\n' + unicode(sys.exc_info()[1])
                     error_dialog(self.parent_page, _('Failed to download page'), msg, show=True)
                     #return None
+            return self.raw_list
         finally:
             QApplication.restoreOverrideCursor()
-            return self.raw_list
 
     def _get_matching_elements(self, root, row_xpath, field_name, xpath):
         elements = []

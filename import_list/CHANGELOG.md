@@ -1,5 +1,11 @@
 # Import List Change Log
 
+## [1.9.9] - 2026-02-09
+### Added
+- Arabic translation
+### Fixed
+- Debug output warning from Python
+- 
 ## [1.9.8] - 2025-05-04
 ### Fixed
 - If autosizing columns to contents, do not let them exceed a particular width to prevent overlong column scroll issues.
