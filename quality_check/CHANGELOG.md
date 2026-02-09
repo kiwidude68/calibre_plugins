@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.14.7] - 2026-02-09
+### Added
+- Updated translations
+
 ## [1.14.6] - 2025-11-23
 ### Changed
 - Bumped minimum calibre version up to 3.48 as incompatibility with polyglot.builtins code, see <https://github.com/kiwidude68/calibre_plugins/issues/133>

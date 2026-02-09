@@ -2053,12 +2053,13 @@ msgstr ""
 
 #: config.py:334
 msgid "Search history count:"
-msgstr ""
+msgstr "Número de búsquedas en el historial:"
 
 #: config.py:335
 msgid ""
 "How many previous search expressions to remember on Search sPubs dialog"
 msgstr ""
+"Cuántas expresiones de búsqueda previas recordar en el diálogo de búsqueda"
 
 #: config.py:344
 msgid "Visible menus"
