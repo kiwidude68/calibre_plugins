@@ -26,7 +26,7 @@ class Baen(Source):
     name                    = 'Baen'
     description             = 'Downloads metadata and covers from Baen'
     author                  = 'Grant Drake'
-    version                 = (1, 1, 0)
+    version                 = (1, 2, 0)
     minimum_calibre_version = (2, 0, 0)
 
     ID_NAME = 'baen'
