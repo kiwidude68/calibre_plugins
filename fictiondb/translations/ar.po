@@ -3,163 +3,158 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# C138, 2022
-# Ptit Prince <leporello1791@gmail.com>, 2022
-# Grant Drake, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# lentrad <lentrad@gmail.com>, 2022
-# Paul Muraille <paul.muraille@tictips.net>, 2023
+# Usama Salama, 2022
+# Usama Khalil, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
-"Last-Translator: Paul Muraille <paul.muraille@tictips.net>, 2023\n"
-"Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
+"Last-Translator: Usama Khalil, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Raccourcis clavier"
+msgstr "مختصرات لوحة المفاتيح"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Redémarrer Calibre maintenant"
+msgstr "أعد تشغيل calibre الآن"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Préférences pour:"
+msgstr "تفضيلات لـ:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Effacer"
+msgstr "مسح"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Effacer tous les paramètres de cette extension"
+msgstr "مسح جميع إعدادات هذه الإضافة"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"Êtes-vous certain de vouloir modifier vos paramètres dans cette bibliothèque"
-" pour ce plugin ?"
+msgstr "هل أنت متأكد أنك تريد تغيير إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Tous les paramètres dans d'autres librairies ou stockés dans un fichier JSON"
-" dans votre répertoire d'extensions calibre ne seront pas modifiés."
+"لن يتم المساس بأي إعدادات في مكتبات أخرى أو مخزنة في ملف JSON في مجلد إضافات"
+" calibre الخاص بك."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Vous devez redémarrer calibre ensuite."
+msgstr "يجب عليك إعادة تشغيل calibre بعد ذلك."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Paramètres modifiés"
+msgstr "الإعدادات تغيرت"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Les paramètres pour ce plugin dans cette bibliothèque ont été modifiés."
+msgstr "تم تغيير إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Merci de redémarrer calibre maintenant."
+msgstr "من فضلك أعد تشغيل calibre الآن"
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"Êtes-vous sûr de vouloir réinitialiser vos paramètres dans cette "
-"bibliothèque pour cette extension ?"
+msgstr "هل أنت متأكد أنك تريد مسح إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Paramètres supprimés"
+msgstr "تم حذف الإعدادات"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Tous les paramètres pour cette extension dans cette librairie ont été "
-"réinitialisés."
+msgstr "تم مسح جميع إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copier dans le presse-papier"
+msgstr "نسخ إلى الحافظة"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Non définie"
+msgstr "غير معرف"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Redémarrage nécessaire"
+msgstr "إعادة التشغيل مطلوبة"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"L'image du titre n'a pas été trouvée - vous devez redémarrer Calibre avant "
-"d'utiliser cette extension !"
+"صورة العنوان غير موجودة - يجب عليك إعادة تشغيل Calibre قبل استخدام هذه "
+"الإضافة!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Créer une nouvelle colonne"
+msgstr "إنشاء عمود جديد"
 
 #: config.py:47
 msgid "Other options"
-msgstr "Autres options"
+msgstr "خيارات أخرى"
 
 #: config.py:52
 msgid "Include 'Genres' in the Tags column"
-msgstr "Inclure 'Genres' dans la colonne Étiquettes"
+msgstr "قم بتضمين \"الأنواع\" في عمود العلامات"
 
 #: config.py:53
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Coché : tout livre dont le genre est défini apparaîtra dans la colonne "
-"Étiquettes de cette extension"
+"عند تحديد هذا المربع، سيتم إرجاع أي أنواع محددة للكتاب إلى عمود العلامات من "
+"هذا المكون الإضافي."
 
 #: config.py:58
 msgid "Include 'Sub-Genres' in the Tags column"
-msgstr ""
+msgstr "قم بتضمين \"الأنواع الفرعية\" في عمود العلامات"
 
 #: config.py:59
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"عند تحديد ما إذا كان الكتاب يحتوي على أي أنواع فرعية محددة، فسيتم إرجاعها "
+"إلى عمود العلامات من هذا المكون الإضافي."
 
 #: config.py:64
 msgid "Include 'Themes' in the Tags column"
-msgstr ""
+msgstr "تضمين \"الموضوعات\" في عمود العلامات"
 
 #: config.py:65
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"عند تحديد ما إذا كان الكتاب يحتوي على أي سمات محددة، فسيتم إرجاعها في عمود "
+"العلامات من هذا المكون الإضافي."
 
 #: config.py:70
 msgid "Include 'Age Level' in the Tags column"
-msgstr ""
+msgstr "قم بتضمين \"مستوى العمر\" في عمود العلامات"
 
 #: config.py:71
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"عند تحديد هذا الخيار، إذا كان للكتاب \"مستوى عمر\" محدد، فسيتم إرجاعه في "
+"عمود العلامات من هذا المكون الإضافي."

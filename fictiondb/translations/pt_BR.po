@@ -6,13 +6,14 @@
 # Paulo_Neto <layoutbr@lexxa.com.br>, 2022
 # Wagner Marques <wagnermarques00@hotmail.com>, 2022
 # Cm Fy, 2022
+# Alice Ribeiro, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-09-01 18:27+1000\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
-"Last-Translator: Cm Fy, 2022\n"
+"Last-Translator: Alice Ribeiro, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/calibre/teams/19337/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -112,36 +113,54 @@ msgstr ""
 msgid "Create new column"
 msgstr "Criar nova coluna"
 
-#: config.py:45
+#: config.py:47
 msgid "Other options"
 msgstr "Outras opções"
 
-#: config.py:50
+#: config.py:52
 msgid "Include 'Genres' in the Tags column"
-msgstr ""
+msgstr "Incluir \"Gêneros\" na coluna Tags"
 
-#: config.py:51
+#: config.py:53
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"Quando for verificado que um livro tem gêneros definidos, eles serão "
+"retornados na coluna Tags por esse plugin."
 
-#: config.py:56
+#: config.py:58
 msgid "Include 'Sub-Genres' in the Tags column"
-msgstr ""
+msgstr "Incluir 'Subgêneros\" na coluna Tags"
 
-#: config.py:57
+#: config.py:59
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"Quando for verificado que um livro tem Subgêneros definidos, eles serão "
+"retornados na coluna Tags por esse plugin."
 
-#: config.py:62
+#: config.py:64
 msgid "Include 'Themes' in the Tags column"
-msgstr ""
+msgstr "Incluir \"Temas\" na coluna Tags"
 
-#: config.py:63
+#: config.py:65
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
+"Quando for verificado que um livro tem Temas definidos, eles serão "
+"retornados na coluna Tags por esse plugin."
+
+#: config.py:70
+msgid "Include 'Age Level' in the Tags column"
+msgstr "Incluir \"Faixa Etária\" na coluna Tags"
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Quando for verificado que um livro tem Faixa Etária definida, ela será "
+"retornada na coluna Tags por esse plugin."

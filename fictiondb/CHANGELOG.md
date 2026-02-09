@@ -1,5 +1,12 @@
 # FictionDB Change Log
 
+## [1.4.3] - 2026-02-09
+### Added
+- Arabic translation
+- Chinese translation
+### Fixed
+- Debug output warning from Python
+
 ## [1.4.2] - 2024-03-17
 ### Added
 - Tamil translation 

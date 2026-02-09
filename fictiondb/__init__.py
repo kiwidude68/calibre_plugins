@@ -26,7 +26,7 @@ class FictionDB(Source):
     name                    = 'FictionDB'
     description             = 'Downloads metadata and covers from fictiondb.com'
     author                  = 'Grant Drake'
-    version                 = (1, 4, 2)
+    version                 = (1, 4, 3)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'fictiondb'
