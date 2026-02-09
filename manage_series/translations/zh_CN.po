@@ -3,262 +3,263 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Victor, 2022
-# Caarmi, 2022
-# ashed <craysy@gmail.com>, 2023
+# 朱仁杰 <johnson19960308@gmail.com>, 2022
+# Julien G. <julien.gong@gmail.com>, 2022
+# Fan Xu <xlivevil@aliyun.com>, 2022
+# 白夜咲雪, 2022
+# 高垚鑫, 2022
+# RERBIN MA, 2022
+# Ander_Index <Ander_Index@outlook.com>, 2023
+# tony shen <anthanny@hotmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 18:02+1000\n"
 "PO-Revision-Date: 2022-09-19 15:02+0000\n"
-"Last-Translator: ashed <craysy@gmail.com>, 2023\n"
-"Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
+"Last-Translator: tony shen <anthanny@hotmail.com>, 2024\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ..\common\common_dialogs.py:84 config.py:42
 msgid "Keyboard shortcuts"
-msgstr "Сочетания клавиш..."
+msgstr "键盘快捷键"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Перезагрузите calibre сейчас"
+msgstr "现在重启 calibre"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Предпочтения для:"
+msgstr "首选项用于："
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Очистить"
+msgstr "清除"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Очистить все настройки для плагина"
+msgstr "清除此插件的所有设置"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr "Импорт списка"
+msgstr "是否确实要更改此书库中插件的设置？"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
-msgstr ""
-"Любые настройки в других библиотеках или сохраненные в файле JSON в папке "
-"плагинов calibre не будут затронуты."
+msgstr "其他库中的任何设置或存储在calibre plugins文件夹中的JSON文件中的任何设置都不会被触动。"
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Вы должны перезагрузить calibre впоследствии."
+msgstr "您需要稍后重启 calibre"
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Настройки изменены"
+msgstr "设置已修改"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Настройки этого плагина в этой библиотеке были изменены."
+msgstr "此书库中此插件的设置已更改。"
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Пожалуйста, перезагрузите calibre сейчас."
+msgstr "现在请重启 calibre"
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr "Вы действительно хотите очистить настройки плагина в библиотеке?"
+msgstr "是否确实要清除此插件库中的设置？"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Настройки удалены"
+msgstr "设置已删除"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Все настройки для этого плагина в этой библиотеке были очищены."
+msgstr "此插件库中的所有设置都已清除。"
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Копировать в Буфер обмена"
+msgstr "复制到剪贴板"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Не определено"
+msgstr "未定义的"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Требуется перезапуск"
+msgstr "需要重启"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
-msgstr ""
-"Изображение обложки не найдено - перед использованием нужно перезапустить "
-"calibre!"
+msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre！"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Создать новый столбец"
+msgstr "创建新列"
 
 #: action.py:31
 msgid "Manage Series"
-msgstr "Управление сериями"
+msgstr "管理系列"
 
 #: action.py:51
 msgid "Cannot manage series"
-msgstr "Невозможно управлять сериями"
+msgstr "无法管理系列"
 
 #: action.py:52
 msgid "No books selected"
-msgstr "Нет выбранных книг"
+msgstr "没有已选中的书籍"
 
 #: config.py:43
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Редактирование сочетаний клавиш, связанных с этим плагином"
+msgstr "编辑与此插件关联的键盘快捷键"
 
 #: config.py:47 dialogs.py:476
 msgid "&Help"
-msgstr "Спр&авка"
+msgstr "帮助 (&H)"
 
 #: dialogs.py:57 dialogs.py:60
 msgid "Lock Series Index"
-msgstr "Заблокировать индекс серий"
+msgstr "锁定系列索引"
 
 #: dialogs.py:64
 msgid "Series index for book:"
-msgstr "Индекс серии для книги:"
+msgstr "书籍系列索引："
 
 #: dialogs.py:79
 msgid "&Assign this index value to all remaining books"
-msgstr "&Присвоить это значение индекса всем оставшимся книгам"
+msgstr "将此索引值分配给所有剩余书籍(&A)"
 
 #: dialogs.py:101
 msgid "You have conflicting or out of sequence series indexes"
-msgstr "У вас есть конфликтующие или непоследовательные индексы серий"
+msgstr "您的序列索引冲突或无序"
 
 #: dialogs.py:104
 msgid "Empty book added to series"
-msgstr "В серию добавлена ​​пустая книга"
+msgstr "空书已添加到系列中"
 
 #: dialogs.py:107
 msgid "The book data has been changed"
-msgstr "Данные книги были изменены"
+msgstr "图书数据已更改"
 
 #: dialogs.py:110
 msgid "The series data is unchanged"
-msgstr "Данные серии не изменились"
+msgstr "系列数据不变"
 
 #: dialogs.py:131
 msgid "Value assigned by user"
-msgstr "Значение, назначенное пользователем"
+msgstr "用户指定的值"
 
 #: dialogs.py:178
 msgid "Lock old series index"
-msgstr "Заблокировать индекс старых серий"
+msgstr "锁定旧系列索引"
 
 #: dialogs.py:182
 msgid "Lock series index"
-msgstr "Заблокировать индекс серий"
+msgstr "锁定系列索引"
 
 #: dialogs.py:186 dialogs.py:437
 msgid "Unlock series index"
-msgstr "Разблокировать индекс серий"
+msgstr "解锁系列索引"
 
 #: dialogs.py:190
 msgid "Unlock all series index"
-msgstr "Разблокировать индекс всех серий"
+msgstr "解锁全系列索引"
 
 #: dialogs.py:197
 msgid "Add empty books"
-msgstr "Добавить пустые книги"
+msgstr "添加空书"
 
 #: dialogs.py:204
 msgid "Original Series Index"
-msgstr "Индекс оригинальных серий"
+msgstr "原系列索引"
 
 #: dialogs.py:204
 msgid "Original Series Name"
-msgstr " Название оригинальных серий"
+msgstr "原系列名称"
 
 #: dialogs.py:204 dialogs.py:225
 msgid "PubDate"
-msgstr "PubDate"
+msgstr "发布日期"
 
 #: dialogs.py:205
 msgid "Sort by"
-msgstr "Сортировка по"
+msgstr "排序方式"
 
 #: dialogs.py:225
 msgid "Author(s)"
-msgstr "Автор(ы)"
+msgstr "作者"
 
 #: dialogs.py:225
 msgid "New Series"
-msgstr "Новые серии"
+msgstr "新系列"
 
 #: dialogs.py:225
 msgid "Series"
-msgstr "Серии"
+msgstr "丛书"
 
 #: dialogs.py:225
 msgid "Title"
-msgstr "Название"
+msgstr "标题"
 
 #: dialogs.py:325
 msgid "Old"
-msgstr "Старая"
+msgstr "旧的"
 
 #: dialogs.py:328
 msgid "New"
-msgstr "Новая"
+msgstr "新建"
 
 #: dialogs.py:369
 msgid "Create or Modify Series"
-msgstr "Создать или изменить серии"
+msgstr "创建或修改系列"
 
 #: dialogs.py:376
 msgid "Series &Column:"
-msgstr "&Столбец серии:"
+msgstr "系列和列(&C)："
 
 #: dialogs.py:384
 msgid "Series &Name:"
-msgstr "&Название серии:"
+msgstr "系列名称(&N)："
 
 #: dialogs.py:397
 msgid "&Start At:"
-msgstr "&Начать с:"
+msgstr "起始位置(&S)："
 
 #: dialogs.py:418
 msgid "Move book up in series (Alt+Up)"
-msgstr "Переместить книгу вверх по серии (Alt+Up)"
+msgstr "将书按系列向上移动 (Alt+↑)"
 
 #: dialogs.py:420
 msgid "Alt+Up"
-msgstr "Alt+Up"
+msgstr "Alt+↑"
 
 #: dialogs.py:424
 msgid "Move book down in series (Alt+Down)"
-msgstr "Переместить книгу вниз по серии (Alt+Down)"
+msgstr "将书按系列向下移动 (Alt+↓)"
 
 #: dialogs.py:426
 msgid "Alt+Down"
-msgstr "Alt+Down"
+msgstr "Alt+↓"
 
 #: dialogs.py:432
 msgid "Lock to index value"
-msgstr "Заблокировать значение индекса"
+msgstr "锁定索引值"
 
 #: dialogs.py:444
 msgid "Add empty book to the series list"
-msgstr "Добавить пустую книгу в список серий"
+msgstr "将空书添加到系列列表"
 
 #: dialogs.py:446
 msgid "Ctrl+Shift+E"
@@ -266,36 +267,36 @@ msgstr "Ctrl+Shift+E"
 
 #: dialogs.py:450
 msgid "Remove book from the series list"
-msgstr "Удалить книгу из списка серий"
+msgstr "从系列列表中删除书籍"
 
 #: dialogs.py:457
 msgid "Move series index to left of decimal point (Alt+Left)"
-msgstr "Переместить индекс серии влево от десятичной точки (Alt+Left)"
+msgstr "将系列索引移至小数点左侧 (Alt+←)"
 
 #: dialogs.py:459
 msgid "Alt+Left"
-msgstr "Alt+Left"
+msgstr "Alt+←"
 
 #: dialogs.py:463
 msgid "Move series index to right of decimal point (Alt+Right)"
-msgstr "Переместить индекс серии вправо от десятичной точки (Alt+Right)"
+msgstr "将系列索引移至小数点右侧(Alt+→t)"
 
 #: dialogs.py:465
 msgid "Alt+Right"
-msgstr "Alt+Right"
+msgstr "Alt+→"
 
 #: dialogs.py:474
 msgid "&Restore Original Series"
-msgstr "&Восстановить исходную серию"
+msgstr "恢复原版系列(&R)"
 
 #: dialogs.py:633
 msgid "Unknown"
-msgstr "Неизвестный"
+msgstr "未知"
 
 #: dialogs.py:658
 msgid "Are you sure?"
-msgstr "Вы уверены?"
+msgstr "你确认吗？"
 
 #: dialogs.py:659
 msgid "Remove the selected book(s) from the series list?"
-msgstr "Удалить выбранные книги из списка серий?"
+msgstr "从系列列表中删除选定的书籍(s)？"

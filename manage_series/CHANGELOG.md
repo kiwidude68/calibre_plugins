@@ -1,5 +1,9 @@
 # Manage Series Change Log
 
+## [1.5.3] - 2026-02-09
+### Added
+- Arabic translation
+- 
 ## [1.5.2] - 2024-02-14
 ### Added
 - Finnish translation
