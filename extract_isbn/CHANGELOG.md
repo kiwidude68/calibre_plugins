@@ -1,5 +1,11 @@
 # Extract ISBN Change Log
 
+## [1.6.6] - 2026-02-09
+### Added
+- Arabic translation
+### Fixed
+- Debug output warning from Python
+
 ## [1.6.5] - 2024-09-09
 ### Changed
 - Implement an alternative approach to updating the ISBN metadata for books.
