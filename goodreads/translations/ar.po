@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Usama Salama, 2022
+# Usama Khalil, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-07 15:49+0000\n"
+"Last-Translator: Usama Khalil, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "مختصرات لوحة المفاتيح"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "أعد تشغيل calibre الآن"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "تفضيلات لـ:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "مسح"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "مسح جميع إعدادات هذه الإضافة"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "هل أنت متأكد أنك تريد تغيير إعداداتك في هذه المكتبة لهذه الإضافة؟"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"لن يتم المساس بأي إعدادات في مكتبات أخرى أو مخزنة في ملف JSON في مجلد إضافات"
+" calibre الخاص بك."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "يجب عليك إعادة تشغيل calibre بعد ذلك."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "الإعدادات تغيرت"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "تم تغيير إعدادات هذه الإضافة في هذه المكتبة."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "من فضلك أعد تشغيل calibre الآن"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "هل أنت متأكد أنك تريد مسح إعداداتك في هذه المكتبة لهذه الإضافة؟"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "تم حذف الإعدادات"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "تم مسح جميع إعدادات هذه الإضافة في هذه المكتبة."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "نسخ إلى الحافظة"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "غير معرف"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "إعادة التشغيل مطلوبة"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"صورة العنوان غير موجودة - يجب عليك إعادة تشغيل Calibre قبل استخدام هذه "
+"الإضافة!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "إنشاء عمود جديد"
+
+#: config.py:154
+msgid "Goodreads Genre"
+msgstr "تصنيف جودريدز"
+
+#: config.py:154
+msgid "Maps to Calibre Tag"
+msgstr "ربط التصنيفات حسب تصنيف كاليبر"
+
+#: config.py:223
+msgid "Goodreads genre to calibre tag mappings"
+msgstr "ربط تصنيفات جودريدز حسب النوع مع تصنيف كاليبر"
+
+#: config.py:228
+msgid "Filter and map genres to calibre tags"
+msgstr "تصفية وتصنيف الأنواع حسب علامات العيار"
+
+#: config.py:229
+msgid ""
+"When checked, only specific calibre tags will be used as per below.\n"
+"When unchecked, all Goodreads genres will be added as tags."
+msgstr ""
+"عند تحديد هذا الخيار، سيتم استخدام علامات تصنيف محددة فقط كما هو موضح أدناه."
+" عند إلغاء تحديده، ستتم إضافة جميع أنواع الكتب على Goodreads كعلامات."
+
+#: config.py:242
+msgid "Add genre mapping"
+msgstr "إضافة تعيين النوع"
+
+#: config.py:249
+msgid "Delete genre mapping"
+msgstr "حذف تعيين النوع"
+
+#: config.py:256
+msgid "Rename Goodreads genre"
+msgstr "إعادة تسمية نوع Goodreads"
+
+#: config.py:263
+msgid "Reset to plugin default mappings"
+msgstr "إعادة التعيين إلى تعيينات المكونات الإضافية الافتراضية"
+
+#: config.py:269
+msgid "Other options"
+msgstr "خيارات أخرى"
+
+#: config.py:274
+msgid "Scan multiple editions for title/author searches (slower)"
+msgstr "مسح إصدارات متعددة للبحث عن العنوان/المؤلف (أبطأ)"
+
+#: config.py:275
+msgid ""
+"When checked will perform an additional search to scan the top ranked\n"
+"Goodreads editions (if available) to exclude audiobook editions.\n"
+"When unchecked you will get a faster search but the edition is indeterminate."
+msgstr ""
+"عند تحديد هذا الخيار، سيتم إجراء بحث إضافي لمسح إصدارات Goodreads الأعلى تصنيفًا (إن وجدت) لاستبعاد إصدارات الكتب الصوتية.\n"
+"\n"
+"عند إلغاء تحديد هذا الخيار، ستحصل على بحث أسرع، لكن الإصدار غير محدد."
+
+#: config.py:281
+msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
+msgstr ""
+"احصل على جميع المؤلفين المساهمين (على سبيل المثال الرسامين ومحرري السلسلة "
+"وما إلى ذلك)"
+
+#: config.py:282
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"عند تفعيل هذا الخيار، يتم استرجاع جميع المؤلفين.\n"
+"\n"
+"عند إلغاء تفعيله (افتراضيًا)، يتم استرجاع المؤلفين الرئيسيين فقط."
+
+#: config.py:287
+msgid "Get ASIN for kindle editions"
+msgstr "احصل على ASIN لإصدارات Kindle"
+
+#: config.py:288
+msgid ""
+"When this option is checked, in cases where Goodreads has an ASIN listed\n"
+"instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
+"already have the specific Goodreads identifier of a Kindle editon."
+msgstr ""
+"عند تفعيل هذا الخيار، في الحالات التي يُدرج فيها Goodreads رقم ASIN بدلاً من"
+" ISBN، يتم استرداد رقم ASIN. يُعد هذا مفيدًا للكتب التي تحتوي بالفعل على "
+"مُعرّف Goodreads الخاص بإصدار Kindle."
+
+#: config.py:294
+msgid "Use first published date"
+msgstr "استخدم تاريخ النشر الأول"
+
+#: config.py:295
+msgid ""
+"If checked, the first published date for this book is used rather than\n"
+"that of the actual book edition."
+msgstr ""
+"في حالة تحديد هذا المربع، سيتم استخدام تاريخ النشر الأول لهذا الكتاب بدلاً "
+"من تاريخ طبعة الكتاب الفعلية."
+
+#: config.py:300
+msgid "Get precise rating into 'grrating' identifier"
+msgstr "احصل على تصنيف دقيق في معرف \"grrating\""
+
+#: config.py:301
+msgid ""
+"If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+"إذا تم تحديد هذا المربع، فسيتم سحب التقييم الدقيق (على سبيل المثال 3.78) إلى"
+" معرف يمكنك عرضه كعمود مخصص."
+
+#: config.py:306
+msgid "Get #votes for rating into 'grvotes' identifier"
+msgstr "احصل على #votes للتقييم في معرف 'grvotes'"
+
+#: config.py:307
+msgid ""
+"If checked, pulls number of votes producing this rating into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+"إذا تم تحديد هذا المربع، فسيتم سحب عدد الأصوات التي تنتج هذا التقييم إلى "
+"معرف يمكنك عرضه كعمود مخصص."
+
+#: config.py:328 config.py:359
+msgid "Add new mapping"
+msgstr "إضافة تعيين جديد"
+
+#: config.py:329 config.py:360
+msgid "Enter a Goodreads genre name to create a mapping for:"
+msgstr "أدخل اسم نوع Goodreads لإنشاء تعيين لـ:"
+
+#: config.py:340
+msgid "Add Failed"
+msgstr "فشلت الإضافة"
+
+#: config.py:340 config.py:372
+msgid "A genre with the same name already exists"
+msgstr "يوجد نوع كتاب بنفس الاسم."
+
+#: config.py:348 config.py:379
+msgid "Are you sure?"
+msgstr "هل أنت متأكد؟"
+
+#: config.py:349
+msgid "Are you sure you want to delete the selected genre mappings?"
+msgstr "هل أنت متأكد من حذف روابط الأنواع المحددة؟"
+
+#: config.py:372
+msgid "Rename Failed"
+msgstr "فشلت إعادة التسمية"
+
+#: config.py:380
+msgid "Are you sure you want to reset to the plugin default genre mappings?"
+msgstr "هل أنت متأكد من إعادة تعيين روابط الأنواع الافتراضية للمكون الإضافي؟"

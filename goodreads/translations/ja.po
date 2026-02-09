@@ -4,14 +4,15 @@
 # 
 # Translators:
 # Pk11 <epicpkmn11@outlook.com>, 2022
+# akihiko tanae (tanaeakihiko), 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-19 16:05+0100\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
-"Last-Translator: Pk11 <epicpkmn11@outlook.com>, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/calibre/teams/19337/ja/)\n"
+"Last-Translator: akihiko tanae (tanaeakihiko), 2025\n"
+"Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +30,7 @@ msgstr "今すぐcalibreを再起動します"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr ""
+msgstr "環境設定:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
@@ -43,7 +44,7 @@ msgstr "プラグインの全ての設定をクリアします"
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
+msgstr "本プラグインによりこのライブラリ内の設定を変更して良いですか？"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -57,11 +58,11 @@ msgstr "あとでcalibreを再起動が必要です。"
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "設定が変更されました。"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "本プラグインの設定が変更されました。"
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -75,7 +76,7 @@ msgstr "このライブラリにのこのプラグインの設定をクリアし
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "設定は削除されました。"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
@@ -83,62 +84,72 @@ msgstr "このライブラリにこのプラグインの全ての設定はクリ
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "クリップボードにコピー"
 
-#: ..\common\common_widgets.py:94
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "未定義"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr ""
+msgstr "再起動が必要です。"
 
-#: ..\common\common_widgets.py:150
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
-msgstr ""
+msgstr "タイトル画像が見つかりません。本プラグインを使用する前にcalibreを再起動してください。"
 
-#: ..\common\common_widgets.py:193
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr ""
+msgstr "新しい列を作成"
 
-#: config.py:149
+#: config.py:154
 msgid "Goodreads Genre"
 msgstr "Goodreadsジャンル"
 
-#: config.py:149
+#: config.py:154
 msgid "Maps to Calibre Tag"
 msgstr "calibreタグにマッピング"
 
-#: config.py:218
+#: config.py:223
 msgid "Goodreads genre to calibre tag mappings"
 msgstr "Goodreadsジャンルからcalibreタグにマッピング"
 
-#: config.py:231
+#: config.py:228
+msgid "Filter and map genres to calibre tags"
+msgstr ""
+
+#: config.py:229
+msgid ""
+"When checked, only specific calibre tags will be used as per below.\n"
+"When unchecked, all Goodreads genres will be added as tags."
+msgstr ""
+
+#: config.py:242
 msgid "Add genre mapping"
 msgstr "ジャンルのマッピングを追加します"
 
-#: config.py:238
+#: config.py:249
 msgid "Delete genre mapping"
 msgstr "ジャンルのマッピングを削除します"
 
-#: config.py:245
+#: config.py:256
 msgid "Rename Goodreads genre"
 msgstr "Goodreadsジャンルの名前を変更します"
 
-#: config.py:252
+#: config.py:263
 msgid "Reset to plugin default mappings"
 msgstr "プラグインのデフォルトマッピングにリセットします"
 
-#: config.py:258
+#: config.py:269
 msgid "Other options"
 msgstr "他の設定"
 
-#: config.py:263
+#: config.py:274
 msgid "Scan multiple editions for title/author searches (slower)"
 msgstr "タイトル・著者の検索で複数のエディションをスキャンします（遅い）"
 
-#: config.py:264
+#: config.py:275
 msgid ""
 "When checked will perform an additional search to scan the top ranked\n"
 "Goodreads editions (if available) to exclude audiobook editions.\n"
@@ -148,11 +159,11 @@ msgstr ""
 "Goodreadsエディション(あり場合)でオーディオブックを除きます。\n"
 "チェック解除すると、検索がもっと早いが、エディションが不明です。"
 
-#: config.py:270
+#: config.py:281
 msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
 msgstr "全ての貢献する著者を取得します（例：イラストレーター、シリーズのエディターなど）"
 
-#: config.py:271
+#: config.py:282
 msgid ""
 "When this option is checked, all authors are retrieved.\n"
 "\n"
@@ -162,11 +173,11 @@ msgstr ""
 "\n"
 "チェック解除する(デフォルト)と、主な著者のみが取得されます。"
 
-#: config.py:276
+#: config.py:287
 msgid "Get ASIN for kindle editions"
 msgstr "KindleエディションでASINを取得します"
 
-#: config.py:277
+#: config.py:288
 msgid ""
 "When this option is checked, in cases where Goodreads has an ASIN listed\n"
 "instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
@@ -176,11 +187,11 @@ msgstr ""
 "あります場合にASINが取得されます。\n"
 "KindleエディションのGoodreads識別子が既にあります場合に便利です。"
 
-#: config.py:283
+#: config.py:294
 msgid "Use first published date"
 msgstr "最初の発行日を使用します"
 
-#: config.py:284
+#: config.py:295
 msgid ""
 "If checked, the first published date for this book is used rather than\n"
 "that of the actual book edition."
@@ -188,34 +199,54 @@ msgstr ""
 "チェックすると、本の実際のエディションの発行日の代わりに\n"
 "最初の発行日を使用されます。"
 
-#: config.py:302 config.py:333
+#: config.py:300
+msgid "Get precise rating into 'grrating' identifier"
+msgstr ""
+
+#: config.py:301
+msgid ""
+"If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+
+#: config.py:306
+msgid "Get #votes for rating into 'grvotes' identifier"
+msgstr ""
+
+#: config.py:307
+msgid ""
+"If checked, pulls number of votes producing this rating into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+
+#: config.py:328 config.py:359
 msgid "Add new mapping"
 msgstr "新しいマッピングを追加します"
 
-#: config.py:303 config.py:334
+#: config.py:329 config.py:360
 msgid "Enter a Goodreads genre name to create a mapping for:"
 msgstr "Goodreadsジャンルでマッピングを作成する名前を入力してください。"
 
-#: config.py:314
+#: config.py:340
 msgid "Add Failed"
 msgstr "追加に失敗しました"
 
-#: config.py:314 config.py:346
+#: config.py:340 config.py:372
 msgid "A genre with the same name already exists"
 msgstr "同名のジャンルが既にあります"
 
-#: config.py:322 config.py:353
+#: config.py:348 config.py:379
 msgid "Are you sure?"
 msgstr "本当によろしいですか？"
 
-#: config.py:323
+#: config.py:349
 msgid "Are you sure you want to delete the selected genre mappings?"
 msgstr "選択されたジャンルマッピングを削除するもよろしいですか？"
 
-#: config.py:346
+#: config.py:372
 msgid "Rename Failed"
 msgstr "名前を変更に失敗しました"
 
-#: config.py:354
+#: config.py:380
 msgid "Are you sure you want to reset to the plugin default genre mappings?"
 msgstr "プラグインのデフォルトマッピングにリセットするもよろしいですか？"

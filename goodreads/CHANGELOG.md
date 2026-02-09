@@ -1,5 +1,9 @@
 # Goodreads Change Log
 
+## [1.8.4] - 2026-02-09
+### Added
+- Arabic translation
+- 
 ## [1.8.3] - 2025-04-18
 ### Fixed
 - Fix Get ASIN option so turning it off will no longer retrieve the Amazon identifier.
