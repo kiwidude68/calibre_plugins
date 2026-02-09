@@ -1,5 +1,9 @@
 # Open With Change Log
 
+## [1.8.5] - 2026-02-09
+### Added
+- Arabic translation
+
 ## [1.8.4] - 2025-02-21
 ### Fixed
 - Fix for out of memory errors with Adobe Acrobat.

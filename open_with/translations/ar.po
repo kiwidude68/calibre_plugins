@@ -3,363 +3,351 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme Barrientos, 2022
-# Darío Hereñú, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# Usama Salama, 2022
+# Usama Khalil, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 18:04+1000\n"
 "PO-Revision-Date: 2022-09-19 14:59+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Usama Khalil, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: ..\common\common_dialogs.py:84 config.py:689
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "مختصرات لوحة المفاتيح"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "أعد تشغيل calibre الآن"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "تفضيلات لـ:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "مسح"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "مسح جميع إعدادات هذه الإضافة"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+msgstr "هل أنت متأكد أنك تريد تغيير إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"لن يتم المساس بأي إعدادات في مكتبات أخرى أو مخزنة في ملف JSON في مجلد إضافات"
+" calibre الخاص بك."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "يجب عليك إعادة تشغيل calibre بعد ذلك."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "الإعدادات تغيرت"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr "تم تغيير إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "من فضلك أعد تشغيل calibre الآن."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+msgstr "هل أنت متأكد أنك تريد مسح إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "تم حذف الإعدادات"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr "تم مسح جميع إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "نسخ إلى الحافظة"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "غير معرف"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "إعادة التشغيل مطلوبة"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"صورة العنوان غير موجودة - يجب عليك إعادة تشغيل Calibre قبل استخدام هذه "
+"الإضافة!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "إنشاء عمود جديد"
 
 #: action.py:33
 msgid "Open With"
-msgstr "Open With"
+msgstr "فتح باستخدام"
 
 #: action.py:83
 msgid "&Customize plugin"
-msgstr "&Personalizar complemento"
+msgstr "&تخصيص الإضافة"
 
 #: action.py:85 config.py:694
 msgid "&Help"
-msgstr "&Ayuda"
+msgstr "&مساعدة"
 
 #: action.py:159
 msgid "No book selected"
-msgstr "Ningún libro seleccionado"
+msgstr "لم يتم تحديد كتاب"
 
 #: action.py:159 action.py:166 action.py:185 action.py:191
 msgid "Cannot open with"
-msgstr "No se puede abrir con"
+msgstr "لا يمكن الفتح باستخدام"
 
 #: action.py:166
 msgid "Book has no cover."
-msgstr "El libro no tiene portada."
+msgstr "الكتاب ليس له غلاف."
 
 #: action.py:174
 msgid "Open With template error"
-msgstr "Error de plantilla Open With"
+msgstr "خطأ في قالب الفتح باستخدام"
 
 #: action.py:186
 msgid "No %s format available. First convert the book to %s."
-msgstr "No hay formato %s disponible. Primero convierta el libro a %s."
+msgstr "لا يوجد تنسيق %s متاح. قم بتحويل الكتاب أولاً إلى %s."
 
 #: action.py:192
 msgid "Path not specified for this format in your configuration."
-msgstr "Ruta no especificada para este formato en la configuración."
+msgstr "المسار غير محدد لهذا التنسيق في تهيئتك."
 
 #: config.py:205
 msgid "Format"
-msgstr "Formato"
+msgstr "تنسيق"
 
 #: config.py:205
 msgid "Image"
-msgstr "Imagen"
+msgstr "صورة"
 
 #: config.py:205
 msgid "Submenu"
-msgstr "Submenú"
+msgstr "قائمة فرعية"
 
 #: config.py:205
 msgid "Title"
-msgstr "Título"
+msgstr "العنوان"
 
 #: config.py:206
 msgid "Application Path"
-msgstr "Ruta de aplicación"
+msgstr "مسار التطبيق"
 
 #: config.py:206
 msgid "Args"
-msgstr "Argumentos"
+msgstr "الوسائط"
 
 #: config.py:294 config.py:299
 msgid "Select the application to execute for this format"
-msgstr "Seleccionar la aplicación a ejecutar para este formato"
+msgstr "حدد التطبيق المراد تنفيذه لهذا التنسيق"
 
 #: config.py:354
 msgid "Edit Path"
-msgstr "Modificar ruta"
+msgstr "تحرير المسار"
 
 #: config.py:355
 msgid "Choose a new path for this application:"
-msgstr "Elegir una nueva ruta para esta aplicación:"
+msgstr "اختر مسارًا جديدًا لهذا التطبيق:"
 
 #: config.py:402
 msgid "Are you sure you want to delete this menu item?"
-msgstr "¿Está seguro de querer eliminar este elemento del menú?"
+msgstr "هل أنت متأكد أنك تريد حذف عنصر القائمة هذا؟"
 
 #: config.py:404
 msgid "Are you sure you want to delete the selected {0} menu items?"
-msgstr ""
-"¿Está seguro de querer eliminar los {0} elementos de menú seleccionados?"
+msgstr "هل أنت متأكد أنك تريد حذف {0} عناصر القائمة المحددة؟"
 
 #: config.py:405 config.py:590 config.py:763 config.py:772
 msgid "Are you sure?"
-msgstr "¿Está seguro?"
+msgstr "هل أنت متأكد؟"
 
 #: config.py:515
 msgid "Add New Image"
-msgstr "Añadir nueva imagen"
+msgstr "إضافة صورة جديدة"
 
 #: config.py:518
 msgid "&Select image source"
-msgstr "&Seleccionar origen de imagen"
+msgstr "&تحديد مصدر الصورة"
 
 #: config.py:521
 msgid "From &web domain favicon"
-msgstr "A partir del favicon del dominio web"
+msgstr "من أيقونة موقع الويب"
 
 #: config.py:528
 msgid "From .png &file"
-msgstr "A partir de un &archivo .png"
+msgstr "من ملف .png"
 
 #: config.py:541
 msgid "&Save as filename:"
-msgstr "&Nombre de archivo para guardar:"
+msgstr "&حفظ باسم الملف:"
 
 #: config.py:565
 msgid "Select a .png file for the menu icon"
-msgstr "Seleccionar un archivo .png para el icono de menú"
+msgstr "حدد ملف .png لأيقونة القائمة"
 
 #: config.py:571
 msgid "Cannot select image"
-msgstr "No se puede seleccionar la imagen"
+msgstr "لا يمكن تحديد الصورة"
 
 #: config.py:572 config.py:610
 msgid "Source image must be a .png file."
-msgstr "La imagen de origen debe ser un archivo .png."
+msgstr "يجب أن تكون الصورة المصدر ملف .png."
 
 #: config.py:580 config.py:584 config.py:598 config.py:606 config.py:609
 #: config.py:612
 msgid "Cannot import image"
-msgstr "No se puede importar la imagen"
+msgstr "لا يمكن استيراد الصورة"
 
 #: config.py:581
 msgid "You must specify a filename to save as."
-msgstr "Debe especificar un nombre de archivo para guardar."
+msgstr "يجب عليك تحديد اسم ملف للحفظ به."
 
 #: config.py:585
 msgid "The save as filename should consist of a filename only."
-msgstr ""
-"El nombre de archivo para guardar debe contener sólo un nombre de archivo."
+msgstr "يجب أن يتكون اسم الملف المحفوظ من اسم ملف فقط."
 
 #: config.py:591
 msgid "An image with this name already exists - overwrite it?"
-msgstr "Ya existe una imagen con este nombre, ¿remplazarla?"
+msgstr "صورة بهذا الاسم موجودة بالفعل - هل تريد الكتابة فوقها؟"
 
 #: config.py:599
 msgid "You must specify a web domain url"
-msgstr "Debe especificar un URL de dominio web"
+msgstr "يجب عليك تحديد عنوان URL لمجال الويب"
 
 #: config.py:607
 msgid "You must specify a source file."
-msgstr "Debe especificar un archivo de origen."
+msgstr "يجب عليك تحديد ملف مصدر."
 
 #: config.py:613
 msgid "Source image does not exist!"
-msgstr "¡La imagen de origen no existe!"
+msgstr "الصورة المصدر غير موجودة!"
 
 #: config.py:633
 msgid "&Select and configure the menu items to display:"
-msgstr "&Seleccionar y configurar los elementos del menú para mostrar:"
+msgstr "&تحديد وتهيئة عناصر القائمة للعرض:"
 
 #: config.py:649
 msgid "Move row up"
-msgstr "Mover fila hacia arriba"
+msgstr "نقل الصف لأعلى"
 
 #: config.py:656
 msgid "Add menu item row"
-msgstr "Añadir fila de elementos de menú"
+msgstr "إضافة صف عنصر قائمة"
 
 #: config.py:663
 msgid "Delete menu item row"
-msgstr "Eliminar fila de elementos de menú"
+msgstr "حذف صف عنصر قائمة"
 
 #: config.py:670
 msgid "Reset to defaults"
-msgstr "Restablecer los valores predeterminados"
+msgstr "إعادة تعيين إلى الافتراضيات"
 
 #: config.py:677
 msgid "Move row down"
-msgstr "Mover fila hacia abajo"
+msgstr "نقل الصف لأسفل"
 
 #: config.py:690
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Modificar los atajos de teclado asociados con este complemento"
+msgstr "تحرير اختصارات لوحة المفاتيح المرتبطة بهذه الإضافة"
 
 #: config.py:737
 msgid "&Edit Path"
-msgstr "&Modificar ruta"
+msgstr "&تحرير المسار"
 
 #: config.py:743
 msgid "&Add image"
-msgstr "&Añadir imagen"
+msgstr "&إضافة صورة"
 
 #: config.py:746
 msgid "&Open images folder"
-msgstr "&Abrir carpeta de imágenes"
+msgstr "&فتح مجلد الصور"
 
 #: config.py:752
 msgid "&Import"
-msgstr "&Importar"
+msgstr "&استيراد"
 
 #: config.py:755
 msgid "&Export"
-msgstr "&Exportar"
+msgstr "&تصدير"
 
 #: config.py:764
 msgid "Are you sure you want to reset to the plugin default menu?"
-msgstr ""
-"¿Está seguro de querer restablecer el menú predeterminado del complemento?"
+msgstr "هل أنت متأكد أنك تريد إعادة التعيين إلى قائمة الإضافة الافتراضية؟"
 
 #: config.py:765
 msgid "Any modified configuration and custom menu items will be discarded."
-msgstr ""
-"Todas las configuraciones y elementos de menú personalizados modificados se "
-"perderán."
+msgstr "سيتم تجاهل أي تهيئة معدلة وعناصر قائمة مخصصة."
 
 #: config.py:773
 msgid "Folder does not yet exist. Do you want to create it?"
-msgstr "La carpeta no existe aún. ¿Quiere crearla?"
+msgstr "المجلد غير موجود بعد. هل تريد إنشاءه؟"
 
 #: config.py:790
 msgid "Import Failed"
-msgstr "Fallo al importar"
+msgstr "فشل الاستيراد"
 
 #: config.py:791
 msgid "This is not a valid OWIP export archive"
-msgstr "Éste no es un archivo de exportación OWIP válido"
+msgstr "هذا ليس أرشيف تصدير OWIP صالحًا"
 
 #: config.py:803
 msgid "%d menu items added"
-msgstr "%delementos de menú añadidos"
+msgstr "تمت إضافة %d عنصر قائمة"
 
 #: config.py:803
 msgid "Import completed"
-msgstr "Importación completada"
+msgstr "اكتمل الاستيراد"
 
 #: config.py:813
 msgid "Cannot export"
-msgstr "No se puede exportar"
+msgstr "لا يمكن التصدير"
 
 #: config.py:814
 msgid "No menu items selected to export."
-msgstr "No hay elementos de menú seleccionados para exportar."
+msgstr "لم يتم تحديد عناصر قائمة للتصدير."
 
 #: config.py:842
 msgid "%d menu items exported to<br>%s"
-msgstr "%d elementos de menú exportados a <br>%s"
+msgstr "تم تصدير %d عنصر قائمة إلى<br>%s"
 
 #: config.py:842
 msgid "Export completed"
-msgstr "Exportación completada"
+msgstr "اكتمل التصدير"
 
 #: config.py:849
 msgid "Select a menu file archive to import"
-msgstr "Seleccionar un archivo de menú para importar"
+msgstr "حدد أرشيف ملف قائمة للاستيراد"
 
 #: config.py:857
 msgid "Save archive as"
-msgstr "Guardar archivo como"
+msgstr "حفظ الأرشيف باسم"
