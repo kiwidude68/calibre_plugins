@@ -57,7 +57,7 @@ class FictionDB(Source):
                     '%s/title/%s.htm'%(self.BASE_URL, fictiondb_id))
 
     def id_from_url(self, url):
-        match = re.match(self.BASE_URL + "/title/(.*)\.htm.*", url)
+        match = re.match(self.BASE_URL + "/title/(.*)\\.htm.*", url)
         if match:
             return (self.ID_NAME, match.groups(0)[0])
         return None

@@ -1,4 +1,11 @@
 # Goodreads Sync Change Log
+
+## [1.16.13] - 2026-02-09
+### Added
+- Arabic translation
+### Fixed
+- Debug output warning from Python
+- 
 ## [1.16.12] - 2025-10-04
 ### Changed
 - RECOVER_PARSER removed from Calibre, see https://github.com/kiwidude68/calibre_plugins/issues/131

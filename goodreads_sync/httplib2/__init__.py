@@ -1052,7 +1052,7 @@ class HTTPSConnectionWithTimeout(httplib.HTTPSConnection):
         """
         hosts = self._GetValidHostsForCert(cert)
         for host in hosts:
-            host_re = host.replace('.', '\.').replace('*', '[^.]*')
+            host_re = host.replace('.', '\\.').replace('*', '[^.]*')
             if re.search('^%s$' % (host_re,), hostname, re.I):
                 return True
         return False

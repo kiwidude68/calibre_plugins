@@ -412,5 +412,5 @@ if __name__ == '__main__':
         it.__exit__()
 
     #test_ntlk('''C:\Dev\Tools\eclipse\workspace\_Misc\Test\TestDoc.rtf''')
-    get_cbz_page_count('''C:\Dev\Tools\eclipse\workspace\_Misc\misery-depot.zip''')
-    get_cbr_page_count('''C:\Dev\Tools\eclipse\workspace\_Misc\misery-depot.cbr''')
+    #get_cbz_page_count('''C:/Dev/Tools/eclipse/workspace/_Misc/misery-depot.zip''')
+    #get_cbr_page_count('''C:/Dev/Tools/eclipse/workspace/_Misc/misery-depot.cbr''')

@@ -125,7 +125,7 @@ class FantasticFictionAdults(Source):
                     '%s/%s.htm'%(FantasticFictionAdults.BASE_URL, ff_id))
 
     def id_from_url(self, url):
-        match = re.match(self.BASE_URL + "/(.*)\.htm.*", url)
+        match = re.match(self.BASE_URL + r"/(.*)\.htm.*", url)
         if match:
             return (self.ID_NAME, match.groups(0)[0])
         return None

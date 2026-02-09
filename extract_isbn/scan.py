@@ -14,7 +14,7 @@ import calibre_plugins.extract_isbn.config as cfg
 
 # This used to look for up to 18 digits, had to bump this to 22 to account for "-10 " and "-13 "
 # prefixes when matching against text like "ISBN-10 xxx"
-RE_ISBN = re.compile(u'\s*([0-9\-\.–­―—\^ ]{9,22}[0-9xX])', re.UNICODE)
+RE_ISBN = re.compile(u'\\s*([0-9\\-\\.–­―—\\^ ]{9,22}[0-9xX])', re.UNICODE)
 
 RE_STRIP_STYLE = re.compile(u'<style[^<]+</style>', re.MULTILINE | re.UNICODE)
 RE_STRIP_MARKUP = re.compile(u'<[^>]+>', re.UNICODE)
