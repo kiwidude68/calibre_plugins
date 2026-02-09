@@ -1,5 +1,9 @@
 # Reading List Change Log
 
+## [1.15.7] - 2026-02-09
+### Added
+- Updated translations
+
 ## [1.15.6] - 2025-06-21
 ### Added
 - If selected book in calibre is on a reading list when opening to edit then select it in the dialog.
