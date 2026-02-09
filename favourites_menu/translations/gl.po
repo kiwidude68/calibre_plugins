@@ -3,115 +3,114 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Mario Moens <marimo.it4u@gmail.com>, 2022
-# peter <klm@ditbenik.be>, 2022
-# W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2022
-# M. de Boer <de.boer.melle@gmail.com>, 2023
+# Víctor Estévez <victor.esbu@gmail.com>, 2022
+# nin hum <ninhum@gmx.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
-"Last-Translator: M. de Boer <de.boer.melle@gmail.com>, 2023\n"
-"Language-Team: Dutch (https://app.transifex.com/calibre/teams/19337/nl/)\n"
+"Last-Translator: nin hum <ninhum@gmx.com>, 2024\n"
+"Language-Team: Galician (https://app.transifex.com/calibre/teams/19337/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: nl\n"
+"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Sneltoetsen"
+msgstr "Ataxos de teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Calibre nu herstarten"
+msgstr "Reinicia calibre agora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Voorkeuren voor: "
+msgstr "Preferencias para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Wis"
+msgstr "Limpar"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Wis alle instellingen van deze plugin"
+msgstr "Limpar todas as configuracións para este plugin"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Weet u zeker dat u uw instellingen in deze bibliotheek voor deze plug-in "
-"wilt wijzigen?"
+"Estás certo de que queres cambiar a túa configuración nesta biblioteca para "
+"este complemento?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Instellingen in andere bibliotheken of opgeslagen in een JSON-bestand in uw "
-"Calibre plugins-folder worden niet aangeroerd."
+"Calquera configuración noutras bibliotecas ou almacenada nun ficheiro JSON "
+"na carpeta de complementos de calibre non será modificada."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "U dient calibre achteraf te herstarten."
+msgstr "Debes reiniciar calibre despois."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Instellingen gewijzigd"
+msgstr "Cambiouse a configuración"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Instellingen voor deze plug-in in deze bibliotheek zijn gewijzigd."
+msgstr "Modificouse a configuración deste complemento nesta biblioteca."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Herstart calibre nu alstublieft."
+msgstr "Reinicia calibre agora."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Bent u zeker dat u uw instellingen in deze bibliotheek voor deze "
-"invoegtoepassing/plugin wilt wissen?"
+"Estás certo de que queres borrar a configuración desta biblioteca para este "
+"complemento?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Instellingen verwijderd"
+msgstr "Configuración eliminada"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Alle instellingen voor de plugin in deze bibliotheek zijn gewist."
+msgstr ""
+"Borráronse todas as configuracións deste complemento nesta biblioteca."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Kopieer naar klembord"
+msgstr "Copiar no portapapeis"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Niet gedefinieerd"
+msgstr "Indefinido"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Opnieuw opstarten vereist"
+msgstr "É preciso reiniciar"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Titelafbeelding niet gevonden - u moet Calibre opnieuw opstarten voordat u "
-"deze plug-in gebruikt!"
+"Non se atopou a imaxe do título - Debes reiniciar Calibre antes de usar este"
+" complemento!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Nieuwe kolom maken"
+msgstr "Crear unha nova columna"
 
 #: action.py:68
 msgid "Favourites"
@@ -119,11 +118,11 @@ msgstr ""
 
 #: action.py:155
 msgid "&Customize plugin"
-msgstr "&Plug-in aanpassen"
+msgstr "&Personalizar o complemento"
 
 #: action.py:157 config.py:213
 msgid "&Help"
-msgstr "&Help"
+msgstr "&Axuda"
 
 #: config.py:64
 msgid "Separator"

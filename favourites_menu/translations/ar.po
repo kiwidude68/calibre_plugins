@@ -3,148 +3,142 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Mario Moens <marimo.it4u@gmail.com>, 2022
-# peter <klm@ditbenik.be>, 2022
-# W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2022
-# M. de Boer <de.boer.melle@gmail.com>, 2023
+# Usama Salama, 2022
+# Usama Khalil, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
-"Last-Translator: M. de Boer <de.boer.melle@gmail.com>, 2023\n"
-"Language-Team: Dutch (https://app.transifex.com/calibre/teams/19337/nl/)\n"
+"Last-Translator: Usama Khalil, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Sneltoetsen"
+msgstr "مختصرات لوحة المفاتيح"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Calibre nu herstarten"
+msgstr "أعد تشغيل calibre الآن"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Voorkeuren voor: "
+msgstr "تفضيلات لـ:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Wis"
+msgstr "مسح"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Wis alle instellingen van deze plugin"
+msgstr "مسح جميع إعدادات هذه الإضافة"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"Weet u zeker dat u uw instellingen in deze bibliotheek voor deze plug-in "
-"wilt wijzigen?"
+msgstr "هل أنت متأكد أنك تريد تغيير إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Instellingen in andere bibliotheken of opgeslagen in een JSON-bestand in uw "
-"Calibre plugins-folder worden niet aangeroerd."
+"لن يتم المساس بأي إعدادات في مكتبات أخرى أو مخزنة في ملف JSON في مجلد إضافات"
+" calibre الخاص بك."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "U dient calibre achteraf te herstarten."
+msgstr "يجب عليك إعادة تشغيل calibre بعد ذلك."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Instellingen gewijzigd"
+msgstr "الإعدادات تغيرت"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Instellingen voor deze plug-in in deze bibliotheek zijn gewijzigd."
+msgstr "تم تغيير إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Herstart calibre nu alstublieft."
+msgstr "من فضلك أعد تشغيل calibre الآن"
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"Bent u zeker dat u uw instellingen in deze bibliotheek voor deze "
-"invoegtoepassing/plugin wilt wissen?"
+msgstr "هل أنت متأكد أنك تريد مسح إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Instellingen verwijderd"
+msgstr "تم حذف الإعدادات"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Alle instellingen voor de plugin in deze bibliotheek zijn gewist."
+msgstr "تم مسح جميع إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Kopieer naar klembord"
+msgstr "نسخ إلى الحافظة"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Niet gedefinieerd"
+msgstr "غير معرف"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Opnieuw opstarten vereist"
+msgstr "إعادة التشغيل مطلوبة"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Titelafbeelding niet gevonden - u moet Calibre opnieuw opstarten voordat u "
-"deze plug-in gebruikt!"
+"صورة العنوان غير موجودة - يجب عليك إعادة تشغيل Calibre قبل استخدام هذه "
+"الإضافة!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Nieuwe kolom maken"
+msgstr "إنشاء عمود جديد"
 
 #: action.py:68
 msgid "Favourites"
-msgstr ""
+msgstr "المفضلة"
 
 #: action.py:155
 msgid "&Customize plugin"
-msgstr "&Plug-in aanpassen"
+msgstr "&تخصيص الإضافة"
 
 #: action.py:157 config.py:213
 msgid "&Help"
-msgstr "&Help"
+msgstr "&مساعدة"
 
 #: config.py:64
 msgid "Separator"
-msgstr ""
+msgstr "فاصل"
 
 #: config.py:184
 msgid "Move the selected menu item up"
-msgstr ""
+msgstr "نقل عنصر القائمة المحدد لأعلى"
 
 #: config.py:188
 msgid "Move the selected menu item down"
-msgstr ""
+msgstr "نقل عنصر القائمة المحدد إلى الأسفل"
 
 #: config.py:192
 msgid "Remove the selected item from the menu"
-msgstr ""
+msgstr "إزالة العنصر المحدد من القائمة"
 
 #: config.py:196
 msgid "Add a separator to the menu following the selected item"
-msgstr ""
+msgstr "أضف فاصلًا إلى القائمة التالية للعنصر المحدد"
 
 #: config.py:200
 msgid "Rename the menu item for when it appears on your Favourites menu"
-msgstr ""
+msgstr "إعادة تسمية عنصر القائمة عندما يظهر في قائمة المفضلة لديك"

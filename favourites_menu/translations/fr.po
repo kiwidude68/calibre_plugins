@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:50+0100\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: Ptit Prince <leporello1791@gmail.com>, 2022\n"
 "Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
@@ -98,22 +98,22 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Copier dans le presse-papier"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Non-définie"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Redémarrage nécessaire"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "L'image d'icone n'a pas était trouvée - vous devez redémarrer Calibre avant "
 "d'utiliser ce plugin !"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Créer une nouvelle colonne"
 

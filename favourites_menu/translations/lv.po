@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-09 11:50+0100\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: ciepina <ciepina@balticom.lv>, 2023\n"
 "Language-Team: Latvian (https://app.transifex.com/calibre/teams/19337/lv/)\n"
@@ -88,22 +88,22 @@ msgstr "Visi šī spraudņa iestatījumi bibliotēkā ir notīrīti."
 msgid "Copy to clipboard"
 msgstr "Kopēt starpliktuvē"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Nenoteikts"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Nepieciešams restarts"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Vāka attēls nav atrasts - pirms šī spraudņa izmantošanas ir jārestartē "
 "Calibre!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Izveidot jaunu kolonnu"
 
