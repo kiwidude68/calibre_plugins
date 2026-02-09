@@ -1,5 +1,9 @@
 # View Manager Change Log
 
+## [1.10.5] - 2026-02-09
+### Fixed
+- Debug output warning from Python
+
 ## [1.10.4] - 2025-12-23
 ### Added
 - Add a button to edit the columns width directly from the config dialog (@un-pogaz)

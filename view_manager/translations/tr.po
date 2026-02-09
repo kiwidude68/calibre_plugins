@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"POT-Creation-Date: 2025-12-23 17:36+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
 "Last-Translator: Bora Atıcı, 2023\n"
 "Language-Team: Turkish (https://app.transifex.com/calibre/teams/19337/tr/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:570
+#: ..\common\common_dialogs.py:84 config.py:636
 msgid "Keyboard shortcuts"
 msgstr "Klavye kısayolları"
 
@@ -143,7 +143,7 @@ msgstr "Sonraki Görünüm"
 msgid "&Customize plugin"
 msgstr "&Eklentiyi özelleştir"
 
-#: action.py:110 config.py:579
+#: action.py:110 config.py:645
 msgid "&Help"
 msgstr "&Yardım"
 
@@ -155,63 +155,71 @@ msgstr "Yeni görünüm ekle"
 msgid "Enter a unique display name for this view:"
 msgstr ""
 
-#: action.py:167 config.py:696 config.py:744
-msgid "A view with the same name already exists"
-msgstr ""
-
-#: action.py:167 config.py:696 config.py:744
+#: action.py:167 config.py:762 config.py:810
 msgid "Add Failed"
 msgstr "Ekleme Başarısız"
 
-#: config.py:294
+#: action.py:167 config.py:762 config.py:810
+msgid "A view with the same name already exists"
+msgstr ""
+
+#: config.py:307
 msgid "Sort ascending"
 msgstr "Artan şekilde sırala"
 
-#: config.py:298
+#: config.py:311
 msgid "Sort descending"
 msgstr "Azalan şekilde sırala"
 
-#: config.py:394
+#: config.py:382
+msgid "Edit Columns Widths"
+msgstr ""
+
+#: config.py:454
 msgid "Select view to customize:"
 msgstr ""
 
-#: config.py:400
+#: config.py:460
 msgid "Add view"
 msgstr "Görünüm ekle"
 
-#: config.py:405
+#: config.py:465
 msgid "Delete view"
 msgstr "Görünüm sil"
 
-#: config.py:410 config.py:731
+#: config.py:470 config.py:797
 msgid "Rename view"
 msgstr "Görünümü yeniden adlandır"
 
-#: config.py:416
+#: config.py:476
 msgid "Column Options"
 msgstr "Sütun Seçenekleri"
 
-#: config.py:425
+#: config.py:485
 msgid "Columns in Default (Left) pane"
 msgstr "Varsayılan (Sol) bölmedeki sütunlar"
 
-#: config.py:427
+#: config.py:487
 msgid "Columns in view"
 msgstr "Görünümdeki sütunlar"
 
-#: config.py:431 config.py:445
+#: config.py:491 config.py:507
 msgid "Move column up"
 msgstr "Sütunu yukarı taşı"
 
-#: config.py:434 config.py:448
+#: config.py:494 config.py:510
 msgid "Move column down"
 msgstr "Sütunu aşağı taşı"
 
-#: config.py:441
+#: config.py:498 config.py:514
+msgid "Adjust width of columns"
+msgstr ""
+
+#: config.py:503
 msgid "Columns in Split (Right) Pane"
 msgstr "Bölünmüş (Sağ) Bölmedeki Sütunlar"
 
-#: config.py:442
+#: config.py:504
 msgid ""
 "Split Book List will only be shown if this is checked. This will be checked "
 "if you save a Split View."
@@ -219,47 +227,47 @@ msgstr ""
 "Bölünmüş Kitap Listesi yalnızca bu işaretlendiğinde gösterilecektir. Bir "
 "Bölünmüş Görünüm kaydederseniz bu kontrol edilecektir."
 
-#: config.py:465
+#: config.py:529
 msgid "Sort order"
 msgstr "Sıralama düzeni"
 
-#: config.py:468
+#: config.py:532
 msgid "Move sort column up"
 msgstr "Sıralama sütununu yukarı taşı"
 
-#: config.py:471
+#: config.py:535
 msgid "Move sort down"
 msgstr "Sıralamayı aşağı taşı"
 
-#: config.py:500
+#: config.py:566
 msgid "Search and Virtual Library Options"
 msgstr "Arama ve Sanal Kitaplık Seçenekleri"
 
-#: config.py:508
+#: config.py:574
 msgid "Apply saved search"
 msgstr "Kayıtlı aramayı uygula"
 
-#: config.py:509
+#: config.py:575
 msgid "Apply the selected saved search when the View is activated."
 msgstr "Görünüm etkinleştirildiğinde seçilen kayıtlı aramayı uygulayın."
 
-#: config.py:517
+#: config.py:583
 msgid "Switch to Virtual library"
 msgstr "Sanal kitaplığa geç"
 
-#: config.py:518
+#: config.py:584
 msgid "Switch to the selected Virtual library when the View is activated."
 msgstr "Görünüm etkinleştirildiğinde seçilen Sanal kitaplığa geçin."
 
-#: config.py:520
+#: config.py:586
 msgid "Virtual library to switch to."
 msgstr "Geçiş yapılacak sanal kitaplık."
 
-#: config.py:525
+#: config.py:591
 msgid "Apply VL additional search restriction"
 msgstr ""
 
-#: config.py:526
+#: config.py:592
 msgid ""
 "Apply the selected saved search as a Virtual library additional restriction "
 "when the View is activated."
@@ -267,56 +275,56 @@ msgstr ""
 "Görünüm etkinleştirildiğinde seçilen kayıtlı aramayı Sanal kitaplık ek "
 "kısıtlaması olarak uygulayın."
 
-#: config.py:527
+#: config.py:593
 msgid "Clear VL restriction search"
 msgstr ""
 
-#: config.py:528
+#: config.py:594
 msgid "Saved search to apply as VL additional search restriction."
 msgstr ""
 
-#: config.py:542
+#: config.py:608
 msgid "General Options"
 msgstr "Genel seçenekler"
 
-#: config.py:547
+#: config.py:613
 msgid "Jump to the top when applying this View"
 msgstr "Bu Görünümü uygularken en üste git"
 
-#: config.py:551
+#: config.py:617
 msgid "When restarting Calibre or switching to this library"
 msgstr "Calibre'yi yeniden başlatırken veya bu kitaplığa geçiş yaparken"
 
-#: config.py:552
+#: config.py:618
 msgid "Automatically apply view:"
 msgstr "Görünümü otomatik olarak uygula:"
 
-#: config.py:558
+#: config.py:624
 msgid ""
 "Enabling this option may override any startup search restriction or title "
 "sort set in Preferences -> Behaviour/Tweaks."
 msgstr ""
 
-#: config.py:571
+#: config.py:637
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Bu eklenti ile ilişkilendirilen klavye kısayollarını düzenle"
 
-#: config.py:573
+#: config.py:639
 msgid "&View library preferences"
 msgstr "Kitaplık tercihlerini görüntüle"
 
-#: config.py:574
+#: config.py:640
 msgid "View data stored in the library database for this plugin"
 msgstr "Bu eklenti için kitaplık veri tabanına kayıtlı verileri görüntüle"
 
-#: config.py:732
+#: config.py:798
 msgid "Enter a new display name for this view:"
 msgstr "Bu görünüm için yeni bir görünen ad girin:"
 
-#: config.py:763
+#: config.py:829
 msgid "Are you sure?"
 msgstr "Emin misin?"
 
-#: config.py:764
+#: config.py:830
 msgid "Do you want to delete the view named"
 msgstr ""

@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"POT-Creation-Date: 2025-12-23 17:36+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
 "Last-Translator: Silatiw Witalis, 2022\n"
 "Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:570
+#: ..\common\common_dialogs.py:84 config.py:636
 msgid "Keyboard shortcuts"
 msgstr "Skróty klawiszowe"
 
@@ -151,7 +151,7 @@ msgstr "Następny widok"
 msgid "&Customize plugin"
 msgstr "Konfiguruj wtyczkę"
 
-#: action.py:110 config.py:579
+#: action.py:110 config.py:645
 msgid "&Help"
 msgstr "&Help"
 
@@ -163,63 +163,71 @@ msgstr "Dodaj nowy widok"
 msgid "Enter a unique display name for this view:"
 msgstr "Wprowadź unikalną nazwę do wyświetlania dla tego widoku:"
 
-#: action.py:167 config.py:696 config.py:744
-msgid "A view with the same name already exists"
-msgstr "Widok z taką samą nazwą już istnieje"
-
-#: action.py:167 config.py:696 config.py:744
+#: action.py:167 config.py:762 config.py:810
 msgid "Add Failed"
 msgstr "Dodanie nie powiodło się"
 
-#: config.py:294
+#: action.py:167 config.py:762 config.py:810
+msgid "A view with the same name already exists"
+msgstr "Widok z taką samą nazwą już istnieje"
+
+#: config.py:307
 msgid "Sort ascending"
 msgstr "Sortuj rosnąco"
 
-#: config.py:298
+#: config.py:311
 msgid "Sort descending"
 msgstr "Sortuj malejąco"
 
-#: config.py:394
+#: config.py:382
+msgid "Edit Columns Widths"
+msgstr ""
+
+#: config.py:454
 msgid "Select view to customize:"
 msgstr "Wybierz widok do dostosowania:"
 
-#: config.py:400
+#: config.py:460
 msgid "Add view"
 msgstr "Dodaj widok"
 
-#: config.py:405
+#: config.py:465
 msgid "Delete view"
 msgstr "Usuń widok"
 
-#: config.py:410 config.py:731
+#: config.py:470 config.py:797
 msgid "Rename view"
 msgstr "Zmień nazwę widoku"
 
-#: config.py:416
+#: config.py:476
 msgid "Column Options"
 msgstr "Opcje Kolumny"
 
-#: config.py:425
+#: config.py:485
 msgid "Columns in Default (Left) pane"
 msgstr "Kolumny w Domyślnym (Lewym) Panelu"
 
-#: config.py:427
+#: config.py:487
 msgid "Columns in view"
 msgstr "Kolumny w widoku"
 
-#: config.py:431 config.py:445
+#: config.py:491 config.py:507
 msgid "Move column up"
 msgstr "Przesuń kolumnę w górę"
 
-#: config.py:434 config.py:448
+#: config.py:494 config.py:510
 msgid "Move column down"
 msgstr "Przesuń kolumnę w dół"
 
-#: config.py:441
+#: config.py:498 config.py:514
+msgid "Adjust width of columns"
+msgstr ""
+
+#: config.py:503
 msgid "Columns in Split (Right) Pane"
 msgstr "Kolumny w Wydzielonym (Prawym) Panelu"
 
-#: config.py:442
+#: config.py:504
 msgid ""
 "Split Book List will only be shown if this is checked. This will be checked "
 "if you save a Split View."
@@ -227,47 +235,47 @@ msgstr ""
 "Lista książek  będzie pokazywana w dwóch panelach (lewy i prawy) tylko "
 "wtedy, gdy to jest zaznaczone."
 
-#: config.py:465
+#: config.py:529
 msgid "Sort order"
 msgstr "Porządek sortowania"
 
-#: config.py:468
+#: config.py:532
 msgid "Move sort column up"
 msgstr "Przesuń kolumnę sortowania w górę"
 
-#: config.py:471
+#: config.py:535
 msgid "Move sort down"
 msgstr "Przesuń kolumnę sortowania w dół"
 
-#: config.py:500
+#: config.py:566
 msgid "Search and Virtual Library Options"
 msgstr "Opcje Wyszukiwania i Biblioteki Wirtualnej"
 
-#: config.py:508
+#: config.py:574
 msgid "Apply saved search"
 msgstr "Zastosuj 'Zapisane wyszukiwanie'"
 
-#: config.py:509
+#: config.py:575
 msgid "Apply the selected saved search when the View is activated."
 msgstr "Zastosuj wybrane zapisane wyszukiwanie, gdy widok jest aktywny."
 
-#: config.py:517
+#: config.py:583
 msgid "Switch to Virtual library"
 msgstr "Włącz 'Wirtualną bibliotekę'"
 
-#: config.py:518
+#: config.py:584
 msgid "Switch to the selected Virtual library when the View is activated."
 msgstr "Przełączenie do wybranej biblioteki wirtualnej po włączeniu widoku."
 
-#: config.py:520
+#: config.py:586
 msgid "Virtual library to switch to."
 msgstr "Włącz 'Wirtualną bibliotekę' po wybraniu tego widoku."
 
-#: config.py:525
+#: config.py:591
 msgid "Apply VL additional search restriction"
 msgstr "Zastosuj  'Dodatkowe ograniczenie' w wirtualnej bibliotece"
 
-#: config.py:526
+#: config.py:592
 msgid ""
 "Apply the selected saved search as a Virtual library additional restriction "
 "when the View is activated."
@@ -275,33 +283,33 @@ msgstr ""
 "Zastosuj wybrane zapisane wyszukiwanie jako dodatkowe\n"
 "ograniczenie włączonej biblioteki wirtualnej."
 
-#: config.py:527
+#: config.py:593
 msgid "Clear VL restriction search"
 msgstr "Bez dodatkowych ograniczeń"
 
-#: config.py:528
+#: config.py:594
 msgid "Saved search to apply as VL additional search restriction."
 msgstr ""
 "Wybierz zapisane wyszukiwanie jako\n"
 "dodatkowe ograniczenie wirtualnej biblioteki."
 
-#: config.py:542
+#: config.py:608
 msgid "General Options"
 msgstr "Główne opcje"
 
-#: config.py:547
+#: config.py:613
 msgid "Jump to the top when applying this View"
 msgstr "Idź na górę podczas stosowania tego widoku"
 
-#: config.py:551
+#: config.py:617
 msgid "When restarting Calibre or switching to this library"
 msgstr "Po restarcie calibre lub przełączeniu na tę bibliotekę"
 
-#: config.py:552
+#: config.py:618
 msgid "Automatically apply view:"
 msgstr "… automatycznie zastosuj widok:"
 
-#: config.py:558
+#: config.py:624
 msgid ""
 "Enabling this option may override any startup search restriction or title "
 "sort set in Preferences -> Behaviour/Tweaks."
@@ -310,26 +318,26 @@ msgstr ""
 "startowego lub sortowania tytułów ustawione w Preferencjach -> 'Zachowanie' "
 "i/lub 'Parametry'."
 
-#: config.py:571
+#: config.py:637
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Edytuj skróty klawiszowe związane z tą wtyczką"
 
-#: config.py:573
+#: config.py:639
 msgid "&View library preferences"
 msgstr "Podgląd preferencji biblioteki"
 
-#: config.py:574
+#: config.py:640
 msgid "View data stored in the library database for this plugin"
 msgstr "Zobacz dane tej wtyczki przechowywane w bazie danych biblioteki"
 
-#: config.py:732
+#: config.py:798
 msgid "Enter a new display name for this view:"
 msgstr "Wprowadź nową nazwę do wyświetlania dla tego widoku:"
 
-#: config.py:763
+#: config.py:829
 msgid "Are you sure?"
 msgstr "Jesteś pewien?"
 
-#: config.py:764
+#: config.py:830
 msgid "Do you want to delete the view named"
 msgstr "Czy chcesz skasować widok o nazwie"

@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"POT-Creation-Date: 2025-12-23 17:36+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
 "Last-Translator: Caarmi, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:570
+#: ..\common\common_dialogs.py:84 config.py:636
 msgid "Keyboard shortcuts"
 msgstr "Сочетания клавиш..."
 
@@ -140,7 +140,7 @@ msgstr "Следущее представление"
 msgid "&Customize plugin"
 msgstr "&Настроить плагин"
 
-#: action.py:110 config.py:579
+#: action.py:110 config.py:645
 msgid "&Help"
 msgstr "Спр&авка"
 
@@ -152,63 +152,71 @@ msgstr "Добавить новое представление"
 msgid "Enter a unique display name for this view:"
 msgstr "Введите уникальное отображаемое имя для этого представления:"
 
-#: action.py:167 config.py:696 config.py:744
-msgid "A view with the same name already exists"
-msgstr "Представление с таким названием уже существует"
-
-#: action.py:167 config.py:696 config.py:744
+#: action.py:167 config.py:762 config.py:810
 msgid "Add Failed"
 msgstr "Добавление не удалось"
 
-#: config.py:294
+#: action.py:167 config.py:762 config.py:810
+msgid "A view with the same name already exists"
+msgstr "Представление с таким названием уже существует"
+
+#: config.py:307
 msgid "Sort ascending"
 msgstr "Сортировать по возрастанию"
 
-#: config.py:298
+#: config.py:311
 msgid "Sort descending"
 msgstr "Сортировать по убыванию"
 
-#: config.py:394
+#: config.py:382
+msgid "Edit Columns Widths"
+msgstr ""
+
+#: config.py:454
 msgid "Select view to customize:"
 msgstr "Выберите представление для настройки:"
 
-#: config.py:400
+#: config.py:460
 msgid "Add view"
 msgstr "Добавить представление"
 
-#: config.py:405
+#: config.py:465
 msgid "Delete view"
 msgstr "Удалить представление"
 
-#: config.py:410 config.py:731
+#: config.py:470 config.py:797
 msgid "Rename view"
 msgstr "Переименовать представление"
 
-#: config.py:416
+#: config.py:476
 msgid "Column Options"
 msgstr "Параметры столбца"
 
-#: config.py:425
+#: config.py:485
 msgid "Columns in Default (Left) pane"
 msgstr "Столбцы на панели по умолчанию (слева)"
 
-#: config.py:427
+#: config.py:487
 msgid "Columns in view"
 msgstr "Столбцы в представлении"
 
-#: config.py:431 config.py:445
+#: config.py:491 config.py:507
 msgid "Move column up"
 msgstr "Переместить столбец вверх"
 
-#: config.py:434 config.py:448
+#: config.py:494 config.py:510
 msgid "Move column down"
 msgstr "Переместить столбец вниз"
 
-#: config.py:441
+#: config.py:498 config.py:514
+msgid "Adjust width of columns"
+msgstr ""
+
+#: config.py:503
 msgid "Columns in Split (Right) Pane"
 msgstr "Столбцы в разделенной (справа) области"
 
-#: config.py:442
+#: config.py:504
 msgid ""
 "Split Book List will only be shown if this is checked. This will be checked "
 "if you save a Split View."
@@ -216,49 +224,49 @@ msgstr ""
 "Разделенный список книг будет отображаться только если этот флажок "
 "установлен. Будет отмечено, если вы сохраните разделенное представление."
 
-#: config.py:465
+#: config.py:529
 msgid "Sort order"
 msgstr "Порядок сортировки"
 
-#: config.py:468
+#: config.py:532
 msgid "Move sort column up"
 msgstr "Переместить столбец сортировки вверх"
 
-#: config.py:471
+#: config.py:535
 msgid "Move sort down"
 msgstr "Переместить сортировку вниз"
 
-#: config.py:500
+#: config.py:566
 msgid "Search and Virtual Library Options"
 msgstr "Параметры поиска и виртуальной библиотеки"
 
-#: config.py:508
+#: config.py:574
 msgid "Apply saved search"
 msgstr "Применить сохраненный поиск"
 
-#: config.py:509
+#: config.py:575
 msgid "Apply the selected saved search when the View is activated."
 msgstr "Применить выбранный сохраненный поиск, когда просмотр активирован."
 
-#: config.py:517
+#: config.py:583
 msgid "Switch to Virtual library"
 msgstr "Переключиться на виртуальную библиотеку"
 
-#: config.py:518
+#: config.py:584
 msgid "Switch to the selected Virtual library when the View is activated."
 msgstr ""
 "Переключиться на выбранную виртуальную библиотеку, когда представление "
 "активировано."
 
-#: config.py:520
+#: config.py:586
 msgid "Virtual library to switch to."
 msgstr "Виртуальная библиотека для переключения."
 
-#: config.py:525
+#: config.py:591
 msgid "Apply VL additional search restriction"
 msgstr "Применить дополнительное ограничение поиска VL"
 
-#: config.py:526
+#: config.py:592
 msgid ""
 "Apply the selected saved search as a Virtual library additional restriction "
 "when the View is activated."
@@ -266,32 +274,32 @@ msgstr ""
 "Применить выбранный сохраненный поиск в качестве доп. ограничения "
 "Виртуальной библиотеки при активации представления."
 
-#: config.py:527
+#: config.py:593
 msgid "Clear VL restriction search"
 msgstr "Очистить ограничение поиска VL"
 
-#: config.py:528
+#: config.py:594
 msgid "Saved search to apply as VL additional search restriction."
 msgstr ""
 "Сохраненный поиск для применения в качестве доп. ограничения поиска VL."
 
-#: config.py:542
+#: config.py:608
 msgid "General Options"
 msgstr "Общие настройки"
 
-#: config.py:547
+#: config.py:613
 msgid "Jump to the top when applying this View"
 msgstr "Переход к верху при применении этого представления"
 
-#: config.py:551
+#: config.py:617
 msgid "When restarting Calibre or switching to this library"
 msgstr "При перезапуске Calibre или переключении на эту библиотеку"
 
-#: config.py:552
+#: config.py:618
 msgid "Automatically apply view:"
 msgstr "Автоматически применять представление"
 
-#: config.py:558
+#: config.py:624
 msgid ""
 "Enabling this option may override any startup search restriction or title "
 "sort set in Preferences -> Behaviour/Tweaks."
@@ -300,27 +308,27 @@ msgstr ""
 "запуске или сортировку заголовков, установленные в «Настройки» -> "
 "«Поведение/Настройки»."
 
-#: config.py:571
+#: config.py:637
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Редактирование сочетаний клавиш, связанных с этим плагином"
 
-#: config.py:573
+#: config.py:639
 msgid "&View library preferences"
 msgstr "&Просмотр настроек библиотеки"
 
-#: config.py:574
+#: config.py:640
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 "Просмотр данных, хранящихся в базе данных библиотеки для этого плагина"
 
-#: config.py:732
+#: config.py:798
 msgid "Enter a new display name for this view:"
 msgstr "Введите новое отображаемое имя для этого представления:"
 
-#: config.py:763
+#: config.py:829
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: config.py:764
+#: config.py:830
 msgid "Do you want to delete the view named"
 msgstr "Вы хотите удалить представление с именем"

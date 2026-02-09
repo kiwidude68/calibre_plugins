@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"POT-Creation-Date: 2025-12-23 17:36+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
 "Last-Translator: Usama Khalil, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:570
+#: ..\common\common_dialogs.py:84 config.py:636
 msgid "Keyboard shortcuts"
 msgstr "مختصرات لوحة المفاتيح"
 
@@ -139,7 +139,7 @@ msgstr "العرض التالي"
 msgid "&Customize plugin"
 msgstr "&تخصيص الإضافة"
 
-#: action.py:110 config.py:579
+#: action.py:110 config.py:645
 msgid "&Help"
 msgstr "&مساعدة"
 
@@ -151,63 +151,71 @@ msgstr "إضافة عرض جديد"
 msgid "Enter a unique display name for this view:"
 msgstr "أدخل اسم عرض فريد لهذا العرض:"
 
-#: action.py:167 config.py:696 config.py:744
-msgid "A view with the same name already exists"
-msgstr "يوجد عرض بنفس الاسم بالفعل"
-
-#: action.py:167 config.py:696 config.py:744
+#: action.py:167 config.py:762 config.py:810
 msgid "Add Failed"
 msgstr "فشلت الإضافة"
 
-#: config.py:294
+#: action.py:167 config.py:762 config.py:810
+msgid "A view with the same name already exists"
+msgstr "يوجد عرض بنفس الاسم بالفعل"
+
+#: config.py:307
 msgid "Sort ascending"
 msgstr "فرز تصاعدي"
 
-#: config.py:298
+#: config.py:311
 msgid "Sort descending"
 msgstr "فرز تنازلي"
 
-#: config.py:394
+#: config.py:382
+msgid "Edit Columns Widths"
+msgstr ""
+
+#: config.py:454
 msgid "Select view to customize:"
 msgstr "تحديد العرض للتخصيص:"
 
-#: config.py:400
+#: config.py:460
 msgid "Add view"
 msgstr "إضافة عرض"
 
-#: config.py:405
+#: config.py:465
 msgid "Delete view"
 msgstr "حذف العرض"
 
-#: config.py:410 config.py:731
+#: config.py:470 config.py:797
 msgid "Rename view"
 msgstr "إعادة تسمية العرض"
 
-#: config.py:416
+#: config.py:476
 msgid "Column Options"
 msgstr "خيارات الأعمدة"
 
-#: config.py:425
+#: config.py:485
 msgid "Columns in Default (Left) pane"
 msgstr "الأعمدة في الجزء الافتراضي (الأيسر)"
 
-#: config.py:427
+#: config.py:487
 msgid "Columns in view"
 msgstr "الأعمدة في العرض"
 
-#: config.py:431 config.py:445
+#: config.py:491 config.py:507
 msgid "Move column up"
 msgstr "نقل العمود لأعلى"
 
-#: config.py:434 config.py:448
+#: config.py:494 config.py:510
 msgid "Move column down"
 msgstr "نقل العمود لأسفل"
 
-#: config.py:441
+#: config.py:498 config.py:514
+msgid "Adjust width of columns"
+msgstr ""
+
+#: config.py:503
 msgid "Columns in Split (Right) Pane"
 msgstr "الأعمدة في الجزء المنقسم (الأيمن)"
 
-#: config.py:442
+#: config.py:504
 msgid ""
 "Split Book List will only be shown if this is checked. This will be checked "
 "if you save a Split View."
@@ -215,78 +223,78 @@ msgstr ""
 "سيتم عرض قائمة الكتب المنقسمة فقط إذا تم تحديد هذا الخيار. سيتم تحديد هذا "
 "إذا قمت بحفظ عرض منقسم."
 
-#: config.py:465
+#: config.py:529
 msgid "Sort order"
 msgstr "ترتيب الفرز"
 
-#: config.py:468
+#: config.py:532
 msgid "Move sort column up"
 msgstr "نقل عمود الفرز لأعلى"
 
-#: config.py:471
+#: config.py:535
 msgid "Move sort down"
 msgstr "نقل عمود الفرز لأسفل"
 
-#: config.py:500
+#: config.py:566
 msgid "Search and Virtual Library Options"
 msgstr "خيارات البحث والمكتبة الافتراضية"
 
-#: config.py:508
+#: config.py:574
 msgid "Apply saved search"
 msgstr "تطبيق البحث المحفوظ"
 
-#: config.py:509
+#: config.py:575
 msgid "Apply the selected saved search when the View is activated."
 msgstr "تطبيق البحث المحفوظ المحدد عند تنشيط العرض."
 
-#: config.py:517
+#: config.py:583
 msgid "Switch to Virtual library"
 msgstr "التبديل إلى المكتبة الافتراضية"
 
-#: config.py:518
+#: config.py:584
 msgid "Switch to the selected Virtual library when the View is activated."
 msgstr "التبديل إلى المكتبة الافتراضية المحددة عند تنشيط العرض."
 
-#: config.py:520
+#: config.py:586
 msgid "Virtual library to switch to."
 msgstr "المكتبة الافتراضية للتبديل إليها."
 
-#: config.py:525
+#: config.py:591
 msgid "Apply VL additional search restriction"
 msgstr "تطبيق قيد بحث إضافي للمكتبة الافتراضية"
 
-#: config.py:526
+#: config.py:592
 msgid ""
 "Apply the selected saved search as a Virtual library additional restriction "
 "when the View is activated."
 msgstr ""
 "تطبيق البحث المحفوظ المحدد كقيد إضافي للمكتبة الافتراضية عند تنشيط العرض."
 
-#: config.py:527
+#: config.py:593
 msgid "Clear VL restriction search"
 msgstr "مسح بحث قيد المكتبة الافتراضية"
 
-#: config.py:528
+#: config.py:594
 msgid "Saved search to apply as VL additional search restriction."
 msgstr "بحث محفوظ للتطبيق كقيد بحث إضافي للمكتبة الافتراضية."
 
-#: config.py:542
+#: config.py:608
 msgid "General Options"
 msgstr "خيارات عامة"
 
-#: config.py:547
+#: config.py:613
 msgid "Jump to the top when applying this View"
 msgstr "القفز إلى الأعلى عند تطبيق هذا العرض"
 
-#: config.py:551
+#: config.py:617
 msgid "When restarting Calibre or switching to this library"
 msgstr "عند إعادة تشغيل Calibre أو التبديل إلى هذه المكتبة"
 
-#: config.py:552
+#: config.py:618
 msgid "Automatically apply view:"
 msgstr "تطبيق العرض تلقائيًا:"
 
-#: config.py:558
+#: config.py:624
 msgid ""
 "Enabling this option may override any startup search restriction or title "
 "sort set in Preferences -> Behaviour/Tweaks."
@@ -294,26 +302,26 @@ msgstr ""
 "قد يؤدي تمكين هذا الخيار إلى تجاوز أي قيد بحث عند بدء التشغيل أو فرز عنوان "
 "محدد في التفضيلات -> السلوك/التعديلات."
 
-#: config.py:571
+#: config.py:637
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "تحرير اختصارات لوحة المفاتيح المرتبطة بهذه الإضافة"
 
-#: config.py:573
+#: config.py:639
 msgid "&View library preferences"
 msgstr "&عرض تفضيلات المكتبة"
 
-#: config.py:574
+#: config.py:640
 msgid "View data stored in the library database for this plugin"
 msgstr "عرض البيانات المخزنة في قاعدة بيانات المكتبة لهذه الإضافة"
 
-#: config.py:732
+#: config.py:798
 msgid "Enter a new display name for this view:"
 msgstr "أدخل اسم عرض جديد لهذا العرض:"
 
-#: config.py:763
+#: config.py:829
 msgid "Are you sure?"
 msgstr "هل أنت متأكد؟"
 
-#: config.py:764
+#: config.py:830
 msgid "Do you want to delete the view named"
 msgstr "هل تريد حذف العرض المسمى"

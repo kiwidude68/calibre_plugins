@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"POT-Creation-Date: 2025-12-23 17:36+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
 "Last-Translator: தமிழ் நேரம் <tamilneram247@gmail.com>, 2023\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: ta\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:570
+#: ..\common\common_dialogs.py:84 config.py:636
 msgid "Keyboard shortcuts"
 msgstr "விசைப்பலகை குறுக்குவழிகள்"
 
@@ -141,7 +141,7 @@ msgstr "அடுத்த பார்வை"
 msgid "&Customize plugin"
 msgstr "& சொருகி தனிப்பயனாக்கு"
 
-#: action.py:110 config.py:579
+#: action.py:110 config.py:645
 msgid "&Help"
 msgstr "&உதவி"
 
@@ -153,63 +153,71 @@ msgstr "புதிய பார்வையைச் சேர்க்கவ�
 msgid "Enter a unique display name for this view:"
 msgstr "இந்த பார்வைக்கு தனித்துவமான காட்சி பெயரை உள்ளிடவும்:"
 
-#: action.py:167 config.py:696 config.py:744
-msgid "A view with the same name already exists"
-msgstr "அதே பெயருடன் ஒரு பார்வை ஏற்கனவே உள்ளது"
-
-#: action.py:167 config.py:696 config.py:744
+#: action.py:167 config.py:762 config.py:810
 msgid "Add Failed"
 msgstr "சேர்க்க முடியவில்லை"
 
-#: config.py:294
+#: action.py:167 config.py:762 config.py:810
+msgid "A view with the same name already exists"
+msgstr "அதே பெயருடன் ஒரு பார்வை ஏற்கனவே உள்ளது"
+
+#: config.py:307
 msgid "Sort ascending"
 msgstr "ஏறும் வரிசைப்படுத்துதல்"
 
-#: config.py:298
+#: config.py:311
 msgid "Sort descending"
 msgstr "இறங்கு வரிசைப்படுத்துதல்"
 
-#: config.py:394
+#: config.py:382
+msgid "Edit Columns Widths"
+msgstr ""
+
+#: config.py:454
 msgid "Select view to customize:"
 msgstr "தனிப்பயனாக்க பார்வையைத் தேர்ந்தெடுக்கவும்:"
 
-#: config.py:400
+#: config.py:460
 msgid "Add view"
 msgstr "பார்வையைச் சேர்க்கவும்"
 
-#: config.py:405
+#: config.py:465
 msgid "Delete view"
 msgstr "பார்வையை நீக்கு"
 
-#: config.py:410 config.py:731
+#: config.py:470 config.py:797
 msgid "Rename view"
 msgstr "பார்வையை மறுபெயரிடுங்கள்"
 
-#: config.py:416
+#: config.py:476
 msgid "Column Options"
 msgstr "நெடுவரிசை விருப்பங்கள்"
 
-#: config.py:425
+#: config.py:485
 msgid "Columns in Default (Left) pane"
 msgstr "இயல்புநிலை (இடது) பலகத்தில் நெடுவரிசைகள்"
 
-#: config.py:427
+#: config.py:487
 msgid "Columns in view"
 msgstr "பார்வையில் நெடுவரிசைகள்"
 
-#: config.py:431 config.py:445
+#: config.py:491 config.py:507
 msgid "Move column up"
 msgstr "நெடுவரிசையை நகர்த்தவும்"
 
-#: config.py:434 config.py:448
+#: config.py:494 config.py:510
 msgid "Move column down"
 msgstr "நெடுவரிசையை கீழே நகர்த்தவும்"
 
-#: config.py:441
+#: config.py:498 config.py:514
+msgid "Adjust width of columns"
+msgstr ""
+
+#: config.py:503
 msgid "Columns in Split (Right) Pane"
 msgstr "பிளவு (வலது) பலகத்தில் நெடுவரிசைகள்"
 
-#: config.py:442
+#: config.py:504
 msgid ""
 "Split Book List will only be shown if this is checked. This will be checked "
 "if you save a Split View."
@@ -217,51 +225,51 @@ msgstr ""
 "இது சரிபார்க்கப்பட்டால் மட்டுமே பிளவு புத்தக பட்டியல் காண்பிக்கப்படும். "
 "நீங்கள் ஒரு பிளவு காட்சியைச் சேமித்தால் இது சரிபார்க்கப்படும்."
 
-#: config.py:465
+#: config.py:529
 msgid "Sort order"
 msgstr "வரிசையை வரிசைப்படுத்துங்கள்"
 
-#: config.py:468
+#: config.py:532
 msgid "Move sort column up"
 msgstr "வரிசை நெடுவரிசையை மேலே நகர்த்தவும்"
 
-#: config.py:471
+#: config.py:535
 msgid "Move sort down"
 msgstr "வரிசைப்படுத்த வரிசைப்படுத்தவும்"
 
-#: config.py:500
+#: config.py:566
 msgid "Search and Virtual Library Options"
 msgstr "தேடல் மற்றும் மெய்நிகர் நூலக விருப்பங்கள்"
 
-#: config.py:508
+#: config.py:574
 msgid "Apply saved search"
 msgstr "சேமித்த தேடலைப் பயன்படுத்துங்கள்"
 
-#: config.py:509
+#: config.py:575
 msgid "Apply the selected saved search when the View is activated."
 msgstr ""
 "பார்வை செயல்படுத்தப்படும் போது தேர்ந்தெடுக்கப்பட்ட சேமிக்கப்பட்ட தேடலைப் "
 "பயன்படுத்துங்கள்."
 
-#: config.py:517
+#: config.py:583
 msgid "Switch to Virtual library"
 msgstr "மெய்நிகர் நூலகத்திற்கு மாறவும்"
 
-#: config.py:518
+#: config.py:584
 msgid "Switch to the selected Virtual library when the View is activated."
 msgstr ""
 "பார்வை செயல்படுத்தப்படும் போது தேர்ந்தெடுக்கப்பட்ட மெய்நிகர் நூலகத்திற்கு "
 "மாறவும்."
 
-#: config.py:520
+#: config.py:586
 msgid "Virtual library to switch to."
 msgstr "மாறுவதற்கு மெய்நிகர் நூலகம்."
 
-#: config.py:525
+#: config.py:591
 msgid "Apply VL additional search restriction"
 msgstr "வி.எல் கூடுதல் தேடல் கட்டுப்பாட்டைப் பயன்படுத்துங்கள்"
 
-#: config.py:526
+#: config.py:592
 msgid ""
 "Apply the selected saved search as a Virtual library additional restriction "
 "when the View is activated."
@@ -269,31 +277,31 @@ msgstr ""
 "தேர்ந்தெடுக்கப்பட்ட சேமிக்கப்பட்ட தேடலை மெய்நிகர் நூலகமாகப் "
 "பயன்படுத்தும்போது கூடுதல் கட்டுப்பாடு."
 
-#: config.py:527
+#: config.py:593
 msgid "Clear VL restriction search"
 msgstr "VL கட்டுப்பாட்டு தேடலை அழிக்கவும்"
 
-#: config.py:528
+#: config.py:594
 msgid "Saved search to apply as VL additional search restriction."
 msgstr "வி.எல் கூடுதல் தேடல் கட்டுப்பாடாக விண்ணப்பிக்க தேடலை சேமித்தது."
 
-#: config.py:542
+#: config.py:608
 msgid "General Options"
 msgstr "பொது விருப்பங்கள்"
 
-#: config.py:547
+#: config.py:613
 msgid "Jump to the top when applying this View"
 msgstr "இந்த பார்வையைப் பயன்படுத்தும்போது மேலே செல்லவும்"
 
-#: config.py:551
+#: config.py:617
 msgid "When restarting Calibre or switching to this library"
 msgstr "காலிபரை மறுதொடக்கம் செய்யும்போது அல்லது இந்த நூலகத்திற்கு மாறும்போது"
 
-#: config.py:552
+#: config.py:618
 msgid "Automatically apply view:"
 msgstr "தானாகவே பார்வையைப் பயன்படுத்துங்கள்:"
 
-#: config.py:558
+#: config.py:624
 msgid ""
 "Enabling this option may override any startup search restriction or title "
 "sort set in Preferences -> Behaviour/Tweaks."
@@ -301,26 +309,26 @@ msgstr ""
 "இந்த விருப்பத்தை இயக்குவது எந்தவொரு தொடக்க தேடல் கட்டுப்பாடு அல்லது தலைப்பு "
 "வரிசையை விருப்பத்தேர்வுகளில் அமைக்கலாம் -> நடத்தை/மாற்றங்கள்."
 
-#: config.py:571
+#: config.py:637
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "இந்த சொருகியுடன் தொடர்புடைய விசைப்பலகை குறுக்குவழிகளைத் திருத்தவும்"
 
-#: config.py:573
+#: config.py:639
 msgid "&View library preferences"
 msgstr "& நூலக விருப்பங்களைக் காண்க"
 
-#: config.py:574
+#: config.py:640
 msgid "View data stored in the library database for this plugin"
 msgstr "இந்த சொருகி நூலக தரவுத்தளத்தில் சேமிக்கப்பட்ட தரவைக் காண்க"
 
-#: config.py:732
+#: config.py:798
 msgid "Enter a new display name for this view:"
 msgstr "இந்த பார்வைக்கு புதிய காட்சி பெயரை உள்ளிடவும்:"
 
-#: config.py:763
+#: config.py:829
 msgid "Are you sure?"
 msgstr "நீ சொல்வது உறுதியா?"
 
-#: config.py:764
+#: config.py:830
 msgid "Do you want to delete the view named"
 msgstr "பெயரிடப்பட்ட பார்வையை நீக்க விரும்புகிறீர்களா?"
