@@ -1,5 +1,9 @@
 # Search The Internet Change Log
 
+## [1.11.4] - 2026-02-09
+### Added
+- Arabic translation
+
 ## [1.11.3] - 2024-09-30
 ### Changed
 - Change approach to invoking template engine to use proxy_metadata instead of deepcopy to avoid calibre bug.

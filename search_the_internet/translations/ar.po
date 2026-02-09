@@ -3,320 +3,310 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme Barrientos, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# Darío Hereñú, 2022
-# Grant Drake, 2022
-# Jellby <jellby@yahoo.com>, 2024
+# Usama Salama, 2022
+# Usama Khalil, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 19:01+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
+"Last-Translator: Usama Khalil, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: ..\common\common_dialogs.py:84 config.py:892
 msgid "Keyboard shortcuts"
-msgstr "Atajos de teclado"
+msgstr "مختصرات لوحة المفاتيح"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reiniciar calibre ahora"
+msgstr "أعد تشغيل calibre الآن"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencias para:"
+msgstr "تفضيلات لـ:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "مسح"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Borrar todas las configuraciones para este complemento"
+msgstr "مسح جميع إعدادات هذه الإضافة"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"¿Está seguro de querer cambiar la configuración del complemento en esta "
-"biblioteca?"
+msgstr "هل أنت متأكد أنك تريد تغيير إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Las configuraciones en otras bibliotecas o almacenada en un archivo JSON en "
-"la carpeta de complementos de calibre no se modificarán."
+"لن يتم المساس بأي إعدادات في مكتبات أخرى أو مخزنة في ملف JSON في مجلد إضافات"
+" calibre الخاص بك."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Debe reiniciar calibre después."
+msgstr "يجب عليك إعادة تشغيل calibre بعد ذلك."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Configuración modificada"
+msgstr "الإعدادات تغيرت"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Se ha modificado la configuración del complemento en esta biblioteca."
+msgstr "تم تغيير إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Reinicie calibre ahora."
+msgstr "من فضلك أعد تشغيل calibre الآن."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"¿Está seguro de querer borrar la configuración del complemento en esta "
-"biblioteca?"
+msgstr "هل أنت متأكد أنك تريد مسح إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Configuración eliminada"
+msgstr "تم حذف الإعدادات"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
+msgstr "تم مسح جميع إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar al portapapeles"
+msgstr "نسخ إلى الحافظة"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Indefinido"
+msgstr "غير معرف"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Reinicio requerido"
+msgstr "إعادة التشغيل مطلوبة"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
-"este complemento!"
+"صورة العنوان غير موجودة - يجب عليك إعادة تشغيل Calibre قبل استخدام هذه "
+"الإضافة!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Crear nueva columna"
+msgstr "إنشاء عمود جديد"
 
 #: action.py:46
 msgid "Search Internet"
-msgstr "Search Internet"
+msgstr "البحث في الإنترنت"
 
 #: action.py:92 config.py:544 config.py:930
 msgid "Open Group"
-msgstr "Abrir grupo"
+msgstr "فتح المجموعة"
 
 #: action.py:94
 msgid "&Customize plugin"
-msgstr "&Personalizar complemento"
+msgstr "&تخصيص الإضافة"
 
 #: action.py:96 config.py:897
 msgid "&Help"
-msgstr "&Ayuda"
+msgstr "&مساعدة"
 
 #: action.py:144
 msgid "Cannot open link"
-msgstr "No se puede abrir el enlace"
+msgstr "لا يمكن فتح الرابط"
 
 #: action.py:145
 msgid "This menu item has not been configured with a url."
-msgstr "Este elemento de menú no ha sido configurado con un URL."
+msgstr "لم يتم تهيئة عنصر القائمة هذا بعنوان URL."
 
 #: action.py:185 action.py:197
 msgid "Invalid URL"
-msgstr "URL no válido"
+msgstr "عنوان URL غير صالح"
 
 #: action.py:186
 msgid ""
 "You cannot use POST for this url as you have not specified any arguments "
 "after a ?"
 msgstr ""
-"No se puede usar POST para este URL porque no se ha especificado ningún "
-"argumento tras ?"
+"لا يمكنك استخدام POST لهذا العنوان لأنك لم تحدد أي وسائط بعد علامة الاستفهام"
+" ؟"
 
 #: action.py:198
 msgid "You cannot use POST for this url as it does not have name=value for "
-msgstr ""
-"No se puede usar POST para este URL porque no tiene ningún nombre=valor"
+msgstr "لا يمكنك استخدام POST لهذا العنوان لأنه لا يحتوي على اسم=قيمة لـ "
 
 #: config.py:289
 msgid "Select test data"
-msgstr "Seleccionar datos de prueba"
+msgstr "تحديد بيانات الاختبار"
 
 #: config.py:298
 msgid "&Select test book:"
-msgstr "&Seleccionar libro de prueba:"
+msgstr "&تحديد كتاب الاختبار:"
 
 #: config.py:311
 msgid "Title:"
-msgstr "Título:"
+msgstr "العنوان:"
 
 #: config.py:313
 msgid "Author:"
-msgstr "Autor:"
+msgstr "المؤلف:"
 
 #: config.py:315
 msgid "Publisher:"
-msgstr "Editorial:"
+msgstr "الناشر:"
 
 #: config.py:359 config.py:502
 msgid "Add New Image"
-msgstr "Añadir nueva imagen"
+msgstr "إضافة صورة جديدة"
 
 #: config.py:362
 msgid "&Select image source"
-msgstr "&Seleccionar origen de imagen"
+msgstr "&تحديد مصدر الصورة"
 
 #: config.py:365
 msgid "From &web domain favicon"
-msgstr "A partir del favicon del dominio web"
+msgstr "من أيقونة موقع الويب"
 
 #: config.py:372
 msgid "From .png &file"
-msgstr "A partir de un &archivo .png"
+msgstr "من ملف .png"
 
 #: config.py:385
 msgid "&Save as filename:"
-msgstr "&Nombre de archivo para guardar:"
+msgstr "&حفظ باسم الملف:"
 
 #: config.py:409
 msgid "Select a .png file for the menu icon"
-msgstr "Seleccionar un archivo .png para el icono de menú"
+msgstr "حدد ملف .png لأيقونة القائمة"
 
 #: config.py:415
 msgid "Cannot select image"
-msgstr "No se puede seleccionar la imagen"
+msgstr "لا يمكن تحديد الصورة"
 
 #: config.py:416 config.py:454
 msgid "Source image must be a .png file."
-msgstr "La imagen de origen debe ser un archivo .png."
+msgstr "يجب أن تكون الصورة المصدر ملف .png."
 
 #: config.py:424 config.py:428 config.py:442 config.py:450 config.py:453
 #: config.py:456
 msgid "Cannot import image"
-msgstr "No se puede importar la imagen"
+msgstr "لا يمكن استيراد الصورة"
 
 #: config.py:425
 msgid "You must specify a filename to save as."
-msgstr "Debe especificar un nombre de archivo para guardar."
+msgstr "يجب عليك تحديد اسم ملف للحفظ به."
 
 #: config.py:429
 msgid "The save as filename should consist of a filename only."
-msgstr ""
-"El nombre de archivo para guardar debe contener sólo un nombre de archivo."
+msgstr "يجب أن يتكون اسم الملف المحفوظ من اسم ملف فقط."
 
 #: config.py:434 config.py:716 config.py:988 config.py:997
 msgid "Are you sure?"
-msgstr "¿Está seguro?"
+msgstr "هل أنت متأكد؟"
 
 #: config.py:435
 msgid "An image with this name already exists - overwrite it?"
-msgstr "Ya existe una imagen con este nombre, ¿remplazarla?"
+msgstr "صورة بهذا الاسم موجودة بالفعل - هل تريد الكتابة فوقها؟"
 
 #: config.py:443
 msgid "You must specify a web domain url"
-msgstr "Debe especificar un URL de dominio web"
+msgstr "يجب عليك تحديد عنوان URL لمجال الويب"
 
 #: config.py:451
 msgid "You must specify a source file."
-msgstr "Debe especificar un archivo de origen."
+msgstr "يجب عليك تحديد ملف مصدر."
 
 #: config.py:457
 msgid "Source image does not exist!"
-msgstr "¡La imagen de origen no existe!"
+msgstr "الصورة المصدر غير موجودة!"
 
 #: config.py:544
 msgid "Submenu"
-msgstr "Submenú"
+msgstr "قائمة فرعية"
 
 #: config.py:544
 msgid "Title"
-msgstr "Título"
+msgstr "العنوان"
 
 #: config.py:545
 msgid "Encoding"
-msgstr "Codificación"
+msgstr "الترميز"
 
 #: config.py:545
 msgid "Image"
-msgstr "Imagen"
+msgstr "صورة"
 
 #: config.py:545
 msgid "Method"
-msgstr "Método"
+msgstr "الطريقة"
 
 #: config.py:545
 msgid "Url"
-msgstr "URL"
+msgstr "عنوان URL"
 
 #: config.py:713
 msgid "Are you sure you want to delete this menu item?"
-msgstr "¿Está seguro de querer eliminar este elemento del menú?"
+msgstr "هل أنت متأكد أنك تريد حذف عنصر القائمة هذا؟"
 
 #: config.py:715
 msgid "Are you sure you want to delete the selected {0} menu items?"
-msgstr ""
-"¿Está seguro de querer eliminar los {0} elementos de menú seleccionados?"
+msgstr "هل أنت متأكد أنك تريد حذف {0} عناصر القائمة المحددة؟"
 
 #: config.py:836
 msgid "Select and configure the menu items to display:"
-msgstr "Seleccionar y configurar los elementos de menú a mostrar:"
+msgstr "حدد وقم بتهيئة عناصر القائمة للعرض:"
 
 #: config.py:852
 msgid "Move row up"
-msgstr "Mover fila hacia arriba"
+msgstr "نقل الصف لأعلى"
 
 #: config.py:859
 msgid "Add menu item row"
-msgstr "Añadir fila de elementos de menú"
+msgstr "إضافة صف عنصر قائمة"
 
 #: config.py:866
 msgid "Delete menu item row"
-msgstr "Eliminar fila de elementos de menú"
+msgstr "حذف صف عنصر قائمة"
 
 #: config.py:873
 msgid "Reset to defaults"
-msgstr "Restablecer los valores predeterminados"
+msgstr "إعادة تعيين إلى الافتراضيات"
 
 #: config.py:880
 msgid "Move row down"
-msgstr "Mover fila hacia abajo"
+msgstr "نقل الصف لأسفل"
 
 #: config.py:893
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Modificar los atajos de teclado asociados con este complemento"
+msgstr "تحرير اختصارات لوحة المفاتيح المرتبطة بهذه الإضافة"
 
 #: config.py:954
 msgid "Add image"
-msgstr "Añadir imagen"
+msgstr "إضافة صورة"
 
 #: config.py:957
 msgid "Open images folder"
-msgstr "Abrir carpeta de imágenes"
+msgstr "فتح مجلد الصور"
 
 #: config.py:963
 msgid "Move active to top"
-msgstr "Mover activo hacia arriba"
+msgstr "نقل النشط إلى الأعلى"
 
 #: config.py:969
 msgid "Test url"
-msgstr "Probar URL"
+msgstr "اختبار عنوان URL"
 
 #: config.py:970
 msgid "Ctrl+T"
@@ -324,71 +314,68 @@ msgstr "Ctrl+T"
 
 #: config.py:973
 msgid "Test url using"
-msgstr "Probar URL usando"
+msgstr "اختبار عنوان URL باستخدام"
 
 #: config.py:974
 msgid "Ctrl+Shift+T"
-msgstr "Ctrl+Mayús+T"
+msgstr "Ctrl+Shift+T"
 
 #: config.py:980
 msgid "Import"
-msgstr "Importar"
+msgstr "استيراد"
 
 #: config.py:983
 msgid "Export"
-msgstr "Exportar"
+msgstr "تصدير"
 
 #: config.py:989
 msgid "Are you sure you want to reset to the plugin default menu?"
-msgstr ""
-"¿Está seguro de querer restablecer el menú predeterminado del complemento?"
+msgstr "هل أنت متأكد أنك تريد إعادة التعيين إلى قائمة الإضافة الافتراضية؟"
 
 #: config.py:990
 msgid "Any modified configuration and custom menu items will be discarded."
-msgstr ""
-"Todas las configuraciones y elementos de menú personalizados modificados se "
-"perderán."
+msgstr "سيتم تجاهل أي تهيئة معدلة وعناصر قائمة مخصصة."
 
 #: config.py:998
 msgid "Folder does not yet exist. Do you want to create it?"
-msgstr "La carpeta no existe aún. ¿Quiere crearla?"
+msgstr "المجلد غير موجود بعد. هل تريد إنشاءه؟"
 
 #: config.py:1017
 msgid "Cannot test"
-msgstr "No se puede probar"
+msgstr "لا يمكن الاختبار"
 
 #: config.py:1018
 msgid "You must select a menu item with a url to test it."
-msgstr "Debe seleccionar un elemento de menú con un URL para probarlo."
+msgstr "يجب عليك تحديد عنصر قائمة يحتوي على عنوان URL لاختباره."
 
 #: config.py:1040
 msgid "Import Failed"
-msgstr "Fallo al importar"
+msgstr "فشل الاستيراد"
 
 #: config.py:1041
 msgid "This is not a valid STIP export archive"
-msgstr "No es un archivo STIP exportado válido"
+msgstr "هذا ليس أرشيف تصدير STIP صالحًا"
 
 #: config.py:1053
 msgid "Import completed"
-msgstr "Importación completada"
+msgstr "اكتمل الاستيراد"
 
 #: config.py:1053
 msgid "{0} menu items added"
-msgstr "{0} elementos de menú añadidos"
+msgstr "تمت إضافة {0} عنصر قائمة"
 
 #: config.py:1063
 msgid "Cannot export"
-msgstr "No se puede exportar"
+msgstr "لا يمكن التصدير"
 
 #: config.py:1064
 msgid "No menu items selected to export."
-msgstr "No hay elementos de menú seleccionados para exportar."
+msgstr "لم يتم تحديد عناصر قائمة للتصدير."
 
 #: config.py:1092
 msgid "Export completed"
-msgstr "Exportación completada"
+msgstr "اكتمل التصدير"
 
 #: config.py:1101
 msgid "Select a menu file archive to import"
-msgstr "Seleccionar un archivo de menú para importar"
+msgstr "حدد أرشيف ملف قائمة للاستيراد"

@@ -8,7 +8,7 @@
 # Adam Humienny <adam.humienny@gmail.com>, 2022
 # Marcin Kozioł <koziol.martin@gmail.com>, 2022
 # Ola Kleniewska <anyzeklove@gmail.com>, 2022
-# Piotr Strębski <strebski@gmail.com>, 2022
+# Piotr Strebski <strebski@gmail.com>, 2022
 # Grant Drake, 2022
 # The Name <moje.konto+transifex@posteo.org>, 2022
 # Silatiw Witalis, 2022
