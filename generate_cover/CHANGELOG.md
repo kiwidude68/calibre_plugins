@@ -1,5 +1,11 @@
 # Generate Cover Change Log
 
+## [2.3.7] - 2026-02-09
+### Added
+- Chinese translation
+### Fixed
+- Debug output warning from Python
+- 
 ## [2.3.6] - 2025-06-21
 ### Added
 - Arabic translation (Usama Khalil)
