@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 21:01+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
 "Last-Translator: Bora Atıcı, 2023\n"
 "Language-Team: Turkish (https://app.transifex.com/calibre/teams/19337/tr/)\n"
@@ -94,22 +94,22 @@ msgstr "Bu eklenti için ayarlarınız sıfırlandı."
 msgid "Copy to clipboard"
 msgstr "Panoya kopyala"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Tanımlanmamış"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Yeniden başlatma gerekiyor"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Başlık görüntüsü bulunamadı - bu eklentiyi kullanmadan önce Calibre'yi "
 "yeniden başlatmalısınız!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Yeni sütun oluştur"
 

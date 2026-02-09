@@ -1,5 +1,12 @@
 # User Category Change Log
 
+## [1.6.2] - 2026-02-09
+### Added
+- Arabic translation
+- Chinese translation
+### Fixed
+- Debug output warning from Python
+
 ## [1.6.1] - 2024-03-17
 ### Added
 - Tamil translation

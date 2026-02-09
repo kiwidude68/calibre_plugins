@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Pk11 <epicpkmn11@outlook.com>, 2022
+# akihiko tanae (tanaeakihiko), 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 21:01+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
-"Last-Translator: Pk11 <epicpkmn11@outlook.com>, 2022\n"
+"Last-Translator: akihiko tanae (tanaeakihiko), 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +30,7 @@ msgstr "今すぐcalibreを再起動します"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr ""
+msgstr "環境設定:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
@@ -43,7 +44,7 @@ msgstr "プラグインの全ての設定をクリアします"
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
+msgstr "本プラグインによりこのライブラリ内の設定を変更して良いですか？"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -57,11 +58,11 @@ msgstr "あとでcalibreを再起動が必要です。"
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr ""
+msgstr "設定が変更されました。"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "本プラグインの設定が変更されました。"
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -75,7 +76,7 @@ msgstr "このライブラリにのこのプラグインの設定をクリアし
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr ""
+msgstr "設定は削除されました。"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
@@ -83,24 +84,24 @@ msgstr "このライブラリにこのプラグインの全ての設定はクリ
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "クリップボードにコピー"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "未定義"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr ""
+msgstr "再起動が必要です。"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
-msgstr ""
+msgstr "タイトル画像が見つかりません。本プラグインを使用する前にcalibreを再起動してください。"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr ""
+msgstr "新しい列を作成"
 
 #: action.py:35
 msgid "User category"
@@ -116,7 +117,7 @@ msgstr "シリーズ"
 
 #: action.py:43
 msgid "publishers"
-msgstr "出版社"
+msgstr "発行者"
 
 #: action.py:43
 msgid "tags"
@@ -212,7 +213,7 @@ msgstr "シリーズ"
 
 #: config.py:59
 msgid "Publishers"
-msgstr "出版社"
+msgstr "発行者"
 
 #: config.py:60
 msgid "Tags"
