@@ -108,6 +108,15 @@ PAGE_DOWNLOADS = {
                      'id': 'cbdb',
                      'icon': 'images/cbdb.png',
                      'active': False
+                    },
+                  'babelio.com':
+                    {
+                     'URL': 'https://www.babelio.com/livres/%s',
+                     'pages_xpath': '//div[contains(@class,"livre_refs")]/text()[contains(., "pages")]',
+                     'name': 'Babelio.com',
+                     'id': 'babelio_id',
+                     'icon': 'images/babelio.png',
+                     'active': False
                     }
                   }
 
@@ -120,6 +129,7 @@ DOWNLOAD_SOURCES_DEFAULTS = ( # This is an orderer list of tuples
                               ('skoob', False, False),
                               ('databazeknih.cz', False, False),
                               ('cbdb.cz', False, False),
+                              ('babelio.com', False, False),
                              )
 DOWNLOAD_SOURCE_OPTION_STRING = _('Download page/word counts')
 BUTTON_DEFAULTS = {

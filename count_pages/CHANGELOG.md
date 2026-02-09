@@ -1,5 +1,15 @@
 # Count Pages Change Log
 
+## [1.14.6] - 2026-02-09
+### Added
+- Support for download page counts from babelio.com (French website)
+### Fixed
+- Debug output warning from Python
+
+## [1.14.5] - 2026-02-09
+### Fixed
+- Debug output warning from Python
+
 ## [1.14.4] - 2025-12-01
 ### Fixed
 - Bump min version up to 3.48.0
