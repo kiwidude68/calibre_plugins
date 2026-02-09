@@ -1,5 +1,11 @@
 # Quick Preferences Change Log
 
+## [1.7.2] - 2026-02-09
+### Added
+- Arabic translation
+### Fixed
+- Debug output warning from Python
+- 
 ## [1.7.1] - 2024-03-17
 ### Added
 - Latvian translation

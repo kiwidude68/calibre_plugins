@@ -57,7 +57,7 @@ DEFAULT_MENUS = [
     {
         KEY_ACTIVE: True,
         KEY_TITLE: 'Author [- Series #]- Title',
-        KEY_REGEX: r'^(?P<author>((?!\s-\s).)+)\s-\s(?:(?:\[\s*)?(?P<series>.+)\s(?P<series_index>[\d\.]+)(?:\s*\])?\s-\s)?(?P<title>[^(]+)(?:\(.*\))?',
+        KEY_REGEX: r"^(?P<author>((?!\s-\s).)+)\s-\s(?:(?:\[\s*)?(?P<series>.+)\s(?P<series_index>[\d\.]+)(?:\s*\])?\s-\s)?(?P<title>[^(]+)(?:\(.*\))?",
         KEY_SWAP_NAMES: None
     }
 ]
