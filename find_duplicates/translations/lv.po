@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-18 19:16+0100\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:11+0000\n"
 "Last-Translator: ciepina <ciepina@balticom.lv>, 2023\n"
 "Language-Team: Latvian (https://app.transifex.com/calibre/teams/19337/lv/)\n"
@@ -88,22 +88,22 @@ msgstr "Visi šī spraudņa iestatījumi bibliotēkā ir notīrīti."
 msgid "Copy to clipboard"
 msgstr "Kopēt starpliktuvē"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Nenoteikts"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Nepieciešams restarts"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Vāka attēls nav atrasts - pirms šī spraudņa izmantošanas ir jārestartē "
 "Calibre!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Izveidot jaunu kolonnu"
 
@@ -299,19 +299,19 @@ msgstr "Eksportēts uz: {}"
 msgid "Analysing {0} books for duplicates"
 msgstr "Notiek dublikātu analīze {0} grāmatās"
 
-#: book_algorithms.py:422
+#: book_algorithms.py:423
 msgid "matching '{0}' identifier"
 msgstr "atbilst '{0}' identifikatoram"
 
-#: book_algorithms.py:425
+#: book_algorithms.py:426
 msgid "binary compare"
 msgstr "binārais salīdzinājums"
 
-#: book_algorithms.py:430
+#: book_algorithms.py:431
 msgid "ignore title, {0} author"
 msgstr "ignorēt nosaukumu, {0} autors"
 
-#: book_algorithms.py:434
+#: book_algorithms.py:435
 msgid "{0} title, {1} author"
 msgstr "{0} nosaukums, {1} autors"
 
@@ -937,19 +937,19 @@ msgstr ""
 "\n"
 "{3}"
 
-#: duplicates.py:899
+#: duplicates.py:907
 msgid "Click 'Show details' to see the results."
 msgstr "Klikšķiniet \"Rādīt informāciju\", lai redzētu rezultātus."
 
-#: duplicates.py:911 duplicates.py:1037
+#: duplicates.py:919 duplicates.py:1045
 msgid "Analysing duplicates in target database"
 msgstr "Dublikātu analīze mērķa datu bāzē"
 
-#: duplicates.py:913 duplicates.py:1046
+#: duplicates.py:921 duplicates.py:1054
 msgid "Analysing duplicates in current database"
 msgstr "Dublikātu analīze tekošajā datu bāzē"
 
-#: duplicates.py:944
+#: duplicates.py:952
 msgid ""
 "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
@@ -957,12 +957,12 @@ msgstr ""
 "Atrasti <b>{0} autori</b> ar iespējamiem dublikātiem, izmantojot <b>{1}</b> "
 "bibliotēku: {2}"
 
-#: duplicates.py:1033
+#: duplicates.py:1041
 msgid ""
 "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
 msgstr "Atrastas <b>{0} grāmatas</b> ar bināriem dublikātiem bibliotēkā: {1}"
 
-#: duplicates.py:1070
+#: duplicates.py:1078
 msgid ""
 "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"

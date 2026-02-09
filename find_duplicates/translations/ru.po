@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-18 19:16+0100\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-19 15:11+0000\n"
 "Last-Translator: ashed <craysy@gmail.com>, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -90,22 +90,22 @@ msgstr "Все настройки для этого плагина в этой �
 msgid "Copy to clipboard"
 msgstr "Копировать в Буфер обмена"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Не определено"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Требуется перезапуск"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Изображение обложки не найдено - перед использованием нужно перезапустить "
 "calibre!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
@@ -305,19 +305,19 @@ msgstr "Экспортировано в: {}"
 msgid "Analysing {0} books for duplicates"
 msgstr "Анализ {0} книг на наличие дубликатов"
 
-#: book_algorithms.py:422
+#: book_algorithms.py:423
 msgid "matching '{0}' identifier"
 msgstr "совпадение '{0}' идентификатор "
 
-#: book_algorithms.py:425
+#: book_algorithms.py:426
 msgid "binary compare"
 msgstr "бинарное сравнение"
 
-#: book_algorithms.py:430
+#: book_algorithms.py:431
 msgid "ignore title, {0} author"
 msgstr "игнорировать название, {0} автор"
 
-#: book_algorithms.py:434
+#: book_algorithms.py:435
 msgid "{0} title, {1} author"
 msgstr "{0} название, {1} автор"
 
@@ -951,19 +951,19 @@ msgstr ""
 "\n"
 "{3}"
 
-#: duplicates.py:899
+#: duplicates.py:907
 msgid "Click 'Show details' to see the results."
 msgstr "Нажмите «Подробнее», чтобы увидеть результаты."
 
-#: duplicates.py:911 duplicates.py:1037
+#: duplicates.py:919 duplicates.py:1045
 msgid "Analysing duplicates in target database"
 msgstr "Анализ дубликатов в целевой базе данных"
 
-#: duplicates.py:913 duplicates.py:1046
+#: duplicates.py:921 duplicates.py:1054
 msgid "Analysing duplicates in current database"
 msgstr "Анализ дубликатов в текущей базе данных"
 
-#: duplicates.py:944
+#: duplicates.py:952
 msgid ""
 "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
@@ -971,13 +971,13 @@ msgstr ""
 "Найдено <b>{0} авторов</b> с потенциальными дубликатами, использующими "
 "<b>{1}</b> в библиотеке по адресу: {2}"
 
-#: duplicates.py:1033
+#: duplicates.py:1041
 msgid ""
 "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
 msgstr ""
 "Найдено <b>{0} книг</b> с двоичными дубликатами в библиотеке по адресу: {1}"
 
-#: duplicates.py:1070
+#: duplicates.py:1078
 msgid ""
 "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
