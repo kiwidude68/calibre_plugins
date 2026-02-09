@@ -20,7 +20,7 @@ class ActionWalkSearchHistory(InterfaceActionBase):
     description             = 'Enables a goto previous/next shortcut for your search history'
     supported_platforms     = ['windows', 'osx', 'linux'] # Platforms this plugin will run on
     author                  = 'Grant Drake'
-    version                 = (1, 5, 4)
+    version                 = (1, 5, 5)
     minimum_calibre_version = (2, 0, 0)
 
     #: This field defines the GUI plugin class that contains all the code

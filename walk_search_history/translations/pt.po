@@ -4,7 +4,6 @@
 # 
 # Translators:
 # Cm Fy, 2022
-# 68aa2b710696597d2c15b3d803993bee_52a723c <d707001f82511d8467de1cfc369e967e_419818>, 2022
 # Eusébia Rodrigues <catarinarodrigues432@gmail.com>, 2022
 # Manuela Silva <mmsrs@sky.com>, 2022
 # Paulo Pereira <pauloizidoro@gmail.com>, 2024
@@ -12,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 21:20+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
 "Last-Translator: Paulo Pereira <pauloizidoro@gmail.com>, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/calibre/teams/19337/pt/)\n"
@@ -29,7 +28,7 @@ msgstr "Atalhos de teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reinicie o Calibre agora"
+msgstr "Reiniciar o Calibre agora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
@@ -48,14 +47,16 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
+"Tem a certeza que pretende alterar as suas configurações do plugin para esta"
+" biblioteca?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Quaisquer definições noutras bibliotecas ou armazenadas num ficheiro JSON no"
-" seu directório de extensões do calibre não serão tocados."
+"Quaisquer definições noutras bibliotecas, ou armazenadas num ficheiro JSON "
+"na sua pasta de plugins do Calibre, não serão tocadas."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -67,19 +68,19 @@ msgstr "Definições alteradas"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
+msgstr "As definições deste plugin, para esta biblioteca, foram alteradas."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Por favor reinicie o calibre agora."
+msgstr "Por favor, reinicie o Calibre agora."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Tem a certeza que pretende limpar todas as configurações da extensão para "
-"esta biblioteca?"
+"Tem a certeza que pretende limpar todas as suas definições, nesta "
+"biblioteca, para este plugin?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -87,27 +88,28 @@ msgstr "Definições eliminadas"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Todas as definições para esta extensão foram removidos desta biblioteca."
+msgstr "Todas as definições deste plugin foram removidas desta biblioteca."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
 msgstr "Copiar para a área de transferência"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Não definido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Necessário reiniciar"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
+"Imagem do título não encontrada. Deve reiniciar o Calibre antes de utilizar "
+"este plugin!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Criar nova coluna"
 
@@ -123,23 +125,23 @@ msgstr "Anterior"
 msgid "Goto next"
 msgstr "Seguinte"
 
-#: action.py:109
+#: action.py:111
 msgid "Clear search history"
 msgstr "Limpar histórico da pesquisa"
 
-#: action.py:112
+#: action.py:114
 msgid "&Customize plugin"
-msgstr "Personalizar plugin"
+msgstr "&Personalizar plugin"
 
-#: action.py:114 config.py:93
+#: action.py:116 config.py:93
 msgid "&Help"
 msgstr "&Ajuda"
 
-#: action.py:191
+#: action.py:196
 msgid "Are you sure?"
 msgstr "Tem a certeza?"
 
-#: action.py:192
+#: action.py:197
 msgid "Are you sure you want to clear the search history?"
 msgstr "Tem a certeza que deseja limpar o histórico de pesquisas?"
 
@@ -157,7 +159,7 @@ msgstr "Menu suspenso"
 
 #: config.py:74
 msgid "Display last x searches in menu (0=Unlimited)"
-msgstr "Exibir últimas x buscas no menu (0=sem limite)"
+msgstr "Exibir últimas x pesquisas no menu (0=sem limite)"
 
 #: config.py:82
 msgid "Keep separate history per library"
@@ -168,8 +170,8 @@ msgid ""
 "When checked will maintain a separate history per library\n"
 "when you switch between them."
 msgstr ""
-"Quando marcada essa opção, serão mantidos históricos separados para cada biblioteca\n"
-"quando alternando entre bibliotecas disponíveis"
+"Quando marcada esta opção, serão mantidos históricos separados para cada "
+"biblioteca quando alterna entre as bibliotecas disponíveis"
 
 #: config.py:89
 msgid "Edit the keyboard shortcuts associated with this plugin"

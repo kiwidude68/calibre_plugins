@@ -3,182 +3,178 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# konrad … <konrad.krulikowski@gmail.com>, 2022
-# Marek Mazurowski <marek.mazurowski@gmail.com>, 2022
-# Piotr Strebski <strebski@gmail.com>, 2022
-# Marcin Kozioł <koziol.martin@gmail.com>, 2022
-# Adam Humienny <adam.humienny@gmail.com>, 2022
-# Ola Kleniewska <anyzeklove@gmail.com>, 2022
-# Grant Drake, 2022
-# The Name <moje.konto+transifex@posteo.org>, 2022
-# Silatiw Witalis, 2022
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Merarom <merarom@yahoo.es>, 2022
+# Daniel, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
-"Last-Translator: Silatiw Witalis, 2022\n"
-"Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
+"Last-Translator: Daniel, 2024\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:88
 msgid "Keyboard shortcuts"
-msgstr "Skróty klawiszowe"
+msgstr "Tangentbordsgenvägar"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Uruchom calibre ponownie."
+msgstr "Starta om calibre nu."
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencje dla:"
+msgstr "Inställningar för:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Wyczyść"
+msgstr "Rensa"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Wyczyść wszystkie ustawienia dla tej wtyczki"
+msgstr "Rensa alla inställningar för detta tillägg"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Czy na pewno chcesz zmienić swoje ustawienia w tej bibliotece dla tej "
-"wtyczki?"
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Żadne ustawienia w innych bibliotekach lub przechowywane w pliku JSON w "
-"folderze wtyczek Calibre nie zostaną zmienione."
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Musisz potem ponownie uruchomić calibre."
+msgstr "Du måste starta om calibre efteråt."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Ustawienia zostały zmienione"
+msgstr "Inställningar ändrade"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Ustawienia dla tej wtyczki w tej bibliotece zostały zmienione."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Proszę ponownie uruchom calibre teraz."
+msgstr "Var god starta om calibre nu."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Czy jesteś pewny, że chcesz wyczyścić wszystkie ustawienia w tej bibliotece "
-"dla tej wtyczki?"
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Ustawienia zostały usunięte"
+msgstr "Inställningar borttagna"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Wszystkie ustawienia dla tej wtyczki w tej bibliotece zostały wyczyszczone."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Kopiuj do schowka"
+msgstr "Kopiera till urklipp"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Nieokreślony"
+msgstr "Odefinerad"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Wymagane ponowne uruchomienie"
+msgstr "Kräver omstart"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
-"uruchomić Calibre!"
+"Titelbilden hittades inte - du måste starta om caliber innan du använder "
+"denna insticksmodul!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Utwórz nową kolumnę"
+msgstr "Skapa ny kolumn"
 
 #: action.py:34
 msgid "History"
-msgstr "Historia"
+msgstr "Historik"
 
 #: action.py:88
 msgid "Goto previous"
-msgstr "Idź do poprzedniego"
+msgstr "Gå till föregående"
 
 #: action.py:90
 msgid "Goto next"
-msgstr "Idź do następnego"
+msgstr "Gå till nästa"
 
 #: action.py:111
 msgid "Clear search history"
-msgstr "Wyczyść historię wyszukiwania"
+msgstr "Rensa sökhistorik"
 
 #: action.py:114
 msgid "&Customize plugin"
-msgstr "&Konfiguruj wtyczkę"
+msgstr "&Anpassa insticksmodul"
 
 #: action.py:116 config.py:93
 msgid "&Help"
-msgstr "&Help"
+msgstr "&Hjälp"
 
 #: action.py:196
 msgid "Are you sure?"
-msgstr "Jesteś pewien?"
+msgstr "Är du säker?"
 
 #: action.py:197
 msgid "Are you sure you want to clear the search history?"
-msgstr "Czy na pewno chcesz usunąć historię wyszukiwania?"
+msgstr "Är du säker på att du vill rensa sökhistoriken?"
 
 #: config.py:58
 msgid "Default action for toolbar button click"
-msgstr "Domyślna akcja dla kliknięcia w przycisk paska narzędzi"
+msgstr "Standardåtgärd för klick på verktygsfältsknapp"
 
 #: config.py:63
 msgid "Previous search"
-msgstr "Poprzednie wyszukiwanie"
+msgstr "Föregående sökning"
 
 #: config.py:64
 msgid "Dropdown menu"
-msgstr "Menu rozwijane"
+msgstr ""
 
 #: config.py:74
 msgid "Display last x searches in menu (0=Unlimited)"
-msgstr "Wyświetl x ostatnich wyszukiwań w menu (0=Bez limitu)"
+msgstr "Visa de senaste x sökningarna i menyn (0=Obegränsat)"
 
 #: config.py:82
 msgid "Keep separate history per library"
-msgstr "Utrzymuj odrębną historię per biblioteka"
+msgstr "Behåll separat historik per bibliotek"
 
 #: config.py:83
 msgid ""
 "When checked will maintain a separate history per library\n"
 "when you switch between them."
 msgstr ""
-"Jeśli zaznaczone zachowa odrębną historię per biblioteka\n"
-"gdy przełączasz się pomiędzy nimi."
+"När markerad kommer det att upprätthållas en separat historik per bibliotek "
+"när du växlar mellan dem. "
 
 #: config.py:89
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Edytuj skróty klawiszowe związane z tą wtyczką"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"

@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 21:20+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
@@ -94,22 +94,22 @@ msgstr "Se ha borrado la configuración del complemento en esta biblioteca."
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicio requerido"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "No se encontró la imagen del título. ¡Debe reiniciar calibre antes de usar "
 "este complemento!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Crear nueva columna"
 
@@ -125,23 +125,23 @@ msgstr "Ir al anterior"
 msgid "Goto next"
 msgstr "Ir al siguiente"
 
-#: action.py:109
+#: action.py:111
 msgid "Clear search history"
 msgstr "Limpiar historial de búsqueda"
 
-#: action.py:112
+#: action.py:114
 msgid "&Customize plugin"
 msgstr "&Personalizar complemento"
 
-#: action.py:114 config.py:93
+#: action.py:116 config.py:93
 msgid "&Help"
 msgstr "&Ayuda"
 
-#: action.py:191
+#: action.py:196
 msgid "Are you sure?"
 msgstr "¿Está seguro?"
 
-#: action.py:192
+#: action.py:197
 msgid "Are you sure you want to clear the search history?"
 msgstr "¿Está seguro de querer borrar el historial de búsqueda?"
 

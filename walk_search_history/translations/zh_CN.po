@@ -3,182 +3,170 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# konrad … <konrad.krulikowski@gmail.com>, 2022
-# Marek Mazurowski <marek.mazurowski@gmail.com>, 2022
-# Piotr Strebski <strebski@gmail.com>, 2022
-# Marcin Kozioł <koziol.martin@gmail.com>, 2022
-# Adam Humienny <adam.humienny@gmail.com>, 2022
-# Ola Kleniewska <anyzeklove@gmail.com>, 2022
-# Grant Drake, 2022
-# The Name <moje.konto+transifex@posteo.org>, 2022
-# Silatiw Witalis, 2022
+# Julien G. <julien.gong@gmail.com>, 2022
+# Fan Xu <xlivevil@aliyun.com>, 2022
+# 高垚鑫, 2022
+# RERBIN MA, 2022
+# Ander_Index <Ander_Index@outlook.com>, 2023
+# tony shen <anthanny@hotmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
-"Last-Translator: Silatiw Witalis, 2022\n"
-"Language-Team: Polish (https://app.transifex.com/calibre/teams/19337/pl/)\n"
+"Last-Translator: tony shen <anthanny@hotmail.com>, 2024\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ..\common\common_dialogs.py:84 config.py:88
 msgid "Keyboard shortcuts"
-msgstr "Skróty klawiszowe"
+msgstr "键盘快捷键"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Uruchom calibre ponownie."
+msgstr "现在重启 calibre"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferencje dla:"
+msgstr "首选项用于："
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Wyczyść"
+msgstr "清除"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Wyczyść wszystkie ustawienia dla tej wtyczki"
+msgstr "清除此插件的所有设置"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"Czy na pewno chcesz zmienić swoje ustawienia w tej bibliotece dla tej "
-"wtyczki?"
+msgstr "是否确实要更改此书库中插件的设置？"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
-msgstr ""
-"Żadne ustawienia w innych bibliotekach lub przechowywane w pliku JSON w "
-"folderze wtyczek Calibre nie zostaną zmienione."
+msgstr "其他库中的任何设置或存储在calibre plugins文件夹中的JSON文件中的任何设置都不会被触动。"
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Musisz potem ponownie uruchomić calibre."
+msgstr "您需要稍后重启 calibre"
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Ustawienia zostały zmienione"
+msgstr "设置已修改"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "Ustawienia dla tej wtyczki w tej bibliotece zostały zmienione."
+msgstr "此书库中此插件的设置已更改。"
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Proszę ponownie uruchom calibre teraz."
+msgstr "现在请重启 calibre"
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"Czy jesteś pewny, że chcesz wyczyścić wszystkie ustawienia w tej bibliotece "
-"dla tej wtyczki?"
+msgstr "是否确实要清除此插件库中的设置？"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Ustawienia zostały usunięte"
+msgstr "设置已删除"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Wszystkie ustawienia dla tej wtyczki w tej bibliotece zostały wyczyszczone."
+msgstr "此插件库中的所有设置都已清除。"
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Kopiuj do schowka"
+msgstr "复制到剪贴板"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Nieokreślony"
+msgstr "未定义的"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Wymagane ponowne uruchomienie"
+msgstr "需要重启"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
-msgstr ""
-"Nie znaleziono obrazu okładki - przed użyciem tej wtyczki musisz ponownie "
-"uruchomić Calibre!"
+msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre！"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Utwórz nową kolumnę"
+msgstr "创建新列"
 
 #: action.py:34
 msgid "History"
-msgstr "Historia"
+msgstr "历史"
 
 #: action.py:88
 msgid "Goto previous"
-msgstr "Idź do poprzedniego"
+msgstr "转到上一个"
 
 #: action.py:90
 msgid "Goto next"
-msgstr "Idź do następnego"
+msgstr "转到下一个"
 
 #: action.py:111
 msgid "Clear search history"
-msgstr "Wyczyść historię wyszukiwania"
+msgstr "清除搜索历史"
 
 #: action.py:114
 msgid "&Customize plugin"
-msgstr "&Konfiguruj wtyczkę"
+msgstr "&个性化插件"
 
 #: action.py:116 config.py:93
 msgid "&Help"
-msgstr "&Help"
+msgstr "帮助 (&H)"
 
 #: action.py:196
 msgid "Are you sure?"
-msgstr "Jesteś pewien?"
+msgstr "你确认吗？"
 
 #: action.py:197
 msgid "Are you sure you want to clear the search history?"
-msgstr "Czy na pewno chcesz usunąć historię wyszukiwania?"
+msgstr "您确定要清除搜索历史记录吗？"
 
 #: config.py:58
 msgid "Default action for toolbar button click"
-msgstr "Domyślna akcja dla kliknięcia w przycisk paska narzędzi"
+msgstr "单击工具栏按钮的默认操作"
 
 #: config.py:63
 msgid "Previous search"
-msgstr "Poprzednie wyszukiwanie"
+msgstr "以前的搜索"
 
 #: config.py:64
 msgid "Dropdown menu"
-msgstr "Menu rozwijane"
+msgstr "下拉式菜单"
 
 #: config.py:74
 msgid "Display last x searches in menu (0=Unlimited)"
-msgstr "Wyświetl x ostatnich wyszukiwań w menu (0=Bez limitu)"
+msgstr "显示菜单中最后的 x 搜索（0=无限制）"
 
 #: config.py:82
 msgid "Keep separate history per library"
-msgstr "Utrzymuj odrębną historię per biblioteka"
+msgstr "每个库保留单独的历史记录"
 
 #: config.py:83
 msgid ""
 "When checked will maintain a separate history per library\n"
 "when you switch between them."
 msgstr ""
-"Jeśli zaznaczone zachowa odrębną historię per biblioteka\n"
-"gdy przełączasz się pomiędzy nimi."
+"选中后将为每个库维护单独的历史记录\n"
+"当你在它们之间切换时。"
 
 #: config.py:89
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Edytuj skróty klawiszowe związane z tą wtyczką"
+msgstr "编辑与此插件关联的键盘快捷键"

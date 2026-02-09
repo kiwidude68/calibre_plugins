@@ -1,5 +1,14 @@
 # Walk Search History Change Log
 
+## [1.5.5] - 2026-02-09
+### Added
+- Arabic translation
+- Chinese translation
+- Japanese translation
+- Swedish translation
+### Fixed
+- Debug output warning from Python
+
 ## [1.5.4] - 2024-03-17
 ### Added
 - Dutch translation
