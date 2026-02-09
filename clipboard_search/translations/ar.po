@@ -3,145 +3,138 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 68aa2b710696597d2c15b3d803993bee_52a723c <d707001f82511d8467de1cfc369e967e_419818>, 2022
-# Eusébia Rodrigues <catarinarodrigues432@gmail.com>, 2022
-# Manuela Silva <mmsrs@sky.com>, 2022
-# Paulo Pereira <pauloizidoro@gmail.com>, 2024
+# Usama Salama, 2022
+# Usama Khalil, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:37+1000\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
-"Last-Translator: Paulo Pereira <pauloizidoro@gmail.com>, 2024\n"
-"Language-Team: Portuguese (https://app.transifex.com/calibre/teams/19337/pt/)\n"
+"Last-Translator: Usama Khalil, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/calibre/teams/19337/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: pt\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: ..\common\common_dialogs.py:84 config.py:69
 msgid "Keyboard shortcuts"
-msgstr "Atalhos de teclado"
+msgstr "مختصرات لوحة المفاتيح"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reinicie o Calibre agora"
+msgstr "أعد تشغيل calibre الآن"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferências para:"
+msgstr "تفضيلات لـ:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Limpar"
+msgstr "مسح"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Limpar todas as definições deste plugin"
+msgstr "مسح جميع إعدادات هذه الإضافة"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"Tem a certeza que pretende alterar as suas configurações do plugin para esta"
-" biblioteca?"
+msgstr "هل أنت متأكد أنك تريد تغيير إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Quaisquer definições noutras bibliotecas, ou armazenadas num ficheiro JSON "
-"na sua pasta de plugins do Calibre, não serão tocadas."
+"لن يتم المساس بأي إعدادات في مكتبات أخرى أو مخزنة في ملف JSON في مجلد إضافات"
+" calibre الخاص بك."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "É necessário reiniciar o Calibre posteriormente."
+msgstr "يجب عليك إعادة تشغيل calibre بعد ذلك."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Definições alteradas"
+msgstr "الإعدادات تغيرت"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "As definições deste plugin, para esta biblioteca, foram alteradas."
+msgstr "تم تغيير إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Por favor, reinicie o Calibre agora."
+msgstr "من فضلك أعد تشغيل calibre الآن"
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"Tem a certeza que pretende limpar todas as suas definições, nesta "
-"biblioteca, para este plugin?"
+msgstr "هل أنت متأكد أنك تريد مسح إعداداتك في هذه المكتبة لهذه الإضافة؟"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Definições eliminadas"
+msgstr "تم حذف الإعدادات"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Todas as definições deste plugin, para esta biblioteca, foram removidas"
+msgstr "تم مسح جميع إعدادات هذه الإضافة في هذه المكتبة."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar para a área de transferência"
+msgstr "نسخ إلى الحافظة"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Não definido"
+msgstr "غير معرف"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Necessário reiniciar"
+msgstr "إعادة التشغيل مطلوبة"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Imagem do título não encontrada. Deve reiniciar o Calibre antes de utilizar "
-"este plugin!"
+"صورة العنوان غير موجودة - يجب عليك إعادة تشغيل Calibre قبل استخدام هذه "
+"الإضافة!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Criar nova coluna"
+msgstr "إنشاء عمود جديد"
 
 #: action.py:34
 msgid "Clipboard Search"
-msgstr "Pesquisa de área de transferência"
+msgstr "بحث الحافظة"
 
 #: action.py:60 config.py:58
 msgid "Text search"
-msgstr "Pesquia de texto"
+msgstr "البحث النصي"
 
 #: action.py:62 config.py:59
 msgid "Exact text search"
-msgstr "Pesquisa de texto exato"
+msgstr "البحث عن النص الدقيق"
 
 #: action.py:64
 msgid "Author search"
-msgstr ""
+msgstr "البحث عن المؤلف"
 
 #: action.py:67
 msgid "&Customize plugin"
-msgstr "&Personalizar plugin"
+msgstr "&تخصيص الإضافة"
 
 #: action.py:69 config.py:74
 msgid "&Help"
-msgstr "&Ajuda"
+msgstr "&مساعدة"
 
 #: config.py:53
 msgid "Default action for toolbar button click"
-msgstr "Ação padrão para o clique no botão da barra de ferramentas"
+msgstr "الإجراء الافتراضي عند النقر على زر شريط الأدوات"
 
 #: config.py:70
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Editar os atalhos de teclado associados a este plugin"
+msgstr "تحرير اختصارات لوحة المفاتيح المرتبطة بهذه الإضافة"

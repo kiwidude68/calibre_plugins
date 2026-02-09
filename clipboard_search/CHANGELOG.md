@@ -1,5 +1,15 @@
 # Clipboard Search Change Log
 
+## [1.5.2] - 2026-02-09
+### Added
+- Arabic translation
+- Czech translation
+- Galacian translation
+- Japanese translation
+- Romanian translation
+### Fixed
+- Debug output warning from Python
+
 ## [1.5.1] - 2024-04-03
 ### Fixed
 - Default click action had typo from author search refactoring.

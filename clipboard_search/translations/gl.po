@@ -3,36 +3,34 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 68aa2b710696597d2c15b3d803993bee_52a723c <d707001f82511d8467de1cfc369e967e_419818>, 2022
-# Eusébia Rodrigues <catarinarodrigues432@gmail.com>, 2022
-# Manuela Silva <mmsrs@sky.com>, 2022
-# Paulo Pereira <pauloizidoro@gmail.com>, 2024
+# Víctor Estévez <victor.esbu@gmail.com>, 2022
+# nin hum <ninhum@gmx.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:37+1000\n"
 "PO-Revision-Date: 2022-09-09 18:02+0000\n"
-"Last-Translator: Paulo Pereira <pauloizidoro@gmail.com>, 2024\n"
-"Language-Team: Portuguese (https://app.transifex.com/calibre/teams/19337/pt/)\n"
+"Last-Translator: nin hum <ninhum@gmx.com>, 2024\n"
+"Language-Team: Galician (https://app.transifex.com/calibre/teams/19337/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: pt\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: gl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:69
 msgid "Keyboard shortcuts"
-msgstr "Atalhos de teclado"
+msgstr "Ataxos de teclado"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Reinicie o Calibre agora"
+msgstr "Reinicia calibre agora"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Preferências para:"
+msgstr "Preferencias para:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
@@ -40,108 +38,109 @@ msgstr "Limpar"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Limpar todas as definições deste plugin"
+msgstr "Limpar todas as configuracións para este plugin"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Tem a certeza que pretende alterar as suas configurações do plugin para esta"
-" biblioteca?"
+"Estás certo de que queres cambiar a túa configuración nesta biblioteca para "
+"este complemento?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Quaisquer definições noutras bibliotecas, ou armazenadas num ficheiro JSON "
-"na sua pasta de plugins do Calibre, não serão tocadas."
+"Calquera configuración noutras bibliotecas ou almacenada nun ficheiro JSON "
+"na carpeta de complementos de calibre non será modificada."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "É necessário reiniciar o Calibre posteriormente."
+msgstr "Debes reiniciar calibre despois."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Definições alteradas"
+msgstr "Cambiouse a configuración"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr "As definições deste plugin, para esta biblioteca, foram alteradas."
+msgstr "Modificouse a configuración deste complemento nesta biblioteca."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Por favor, reinicie o Calibre agora."
+msgstr "Reinicia calibre agora."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Tem a certeza que pretende limpar todas as suas definições, nesta "
-"biblioteca, para este plugin?"
+"Estás certo de que queres borrar a configuración desta biblioteca para este "
+"complemento?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Definições eliminadas"
+msgstr "Configuración eliminada"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
 msgstr ""
-"Todas as definições deste plugin, para esta biblioteca, foram removidas"
+"Borráronse todas as configuracións deste complemento nesta biblioteca."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copiar para a área de transferência"
+msgstr "Copiar no portapapeis"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Não definido"
+msgstr "Indefinido"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Necessário reiniciar"
+msgstr "É preciso reiniciar"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Imagem do título não encontrada. Deve reiniciar o Calibre antes de utilizar "
-"este plugin!"
+"Non se atopou a imaxe do título - Debes reiniciar Calibre antes de usar este"
+" complemento!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Criar nova coluna"
+msgstr "Crear unha nova columna"
 
 #: action.py:34
 msgid "Clipboard Search"
-msgstr "Pesquisa de área de transferência"
+msgstr "Busca portapapeis"
 
 #: action.py:60 config.py:58
 msgid "Text search"
-msgstr "Pesquia de texto"
+msgstr "Busca de texto"
 
 #: action.py:62 config.py:59
 msgid "Exact text search"
-msgstr "Pesquisa de texto exato"
+msgstr "Busca de texto exacto"
 
 #: action.py:64
 msgid "Author search"
-msgstr ""
+msgstr "Busca de autores"
 
 #: action.py:67
 msgid "&Customize plugin"
-msgstr "&Personalizar plugin"
+msgstr "&Personalizar o complemento"
 
 #: action.py:69 config.py:74
 msgid "&Help"
-msgstr "&Ajuda"
+msgstr "&Axuda"
 
 #: config.py:53
 msgid "Default action for toolbar button click"
-msgstr "Ação padrão para o clique no botão da barra de ferramentas"
+msgstr ""
+"Acción predeterminada para facer clic no botón da barra de ferramentas"
 
 #: config.py:70
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Editar os atalhos de teclado associados a este plugin"
+msgstr "Editar os atallos de teclado asociados a este complemento"

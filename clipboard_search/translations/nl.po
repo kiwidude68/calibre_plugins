@@ -3,7 +3,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# peter <luc@ditbenik.be>, 2022
+# peter <klm@ditbenik.be>, 2022
 # Mario Moens <marimo.it4u@gmail.com>, 2022
 # W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2022
 # M. de Boer <de.boer.melle@gmail.com>, 2023
