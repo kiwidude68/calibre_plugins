@@ -27,7 +27,7 @@ class BarnesNoble(Source):
     name = 'Barnes & Noble'
     description = 'Downloads metadata and covers from Barnes & Noble'
     author = 'Grant Drake'
-    version = (1, 5, 7)
+    version = (1, 5, 8)
     minimum_calibre_version = (2, 0, 0)
 
     ID_NAME = 'barnesnoble'
