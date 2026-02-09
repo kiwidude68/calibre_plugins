@@ -1,0 +1,596 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# 高垚鑫, 2022
+# 朱仁杰 <johnson19960308@gmail.com>, 2022
+# MewX <xiayuanzhong@gmail.com>, 2022
+# Fan Xu <xlivevil@aliyun.com>, 2022
+# Ander_Index <Ander_Index@outlook.com>, 2023
+# tony shen <anthanny@hotmail.com>, 2024
+# zzz p, 2024
+# RERBIN MA, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:02+1000\n"
+"PO-Revision-Date: 2022-09-19 15:00+0000\n"
+"Last-Translator: RERBIN MA, 2026\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:63
+msgid "Keyboard shortcuts"
+msgstr "键盘快捷键"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "现在重启 calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "首选项用于："
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "清除"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "清除此插件的所有设置"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "是否确实要更改此书库中插件的设置？"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "其他库中的任何设置或存储在calibre plugins文件夹中的JSON文件中的任何设置都不会被触动。"
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "您需要稍后重启 calibre"
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "设置已修改"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "此书库中此插件的设置已更改。"
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "现在请重启 calibre"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "是否确实要清除此插件库中的设置？"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "设置已删除"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "此插件库中的所有设置都已清除。"
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "未定义的"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "需要重启"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre！"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "创建新列"
+
+#: action.py:35
+msgid "Modify the contents of an ePub without a conversion"
+msgstr "无需转换格式，直接修改 ePub 内容"
+
+#: action.py:35 dialogs.py:100
+msgid "Modify ePub"
+msgstr "修改ePub"
+
+#: action.py:47 action.py:58
+msgid "Cannot modify ePub"
+msgstr "无法修改 ePub"
+
+#: action.py:48
+msgid "You must select one or more books to perform this action."
+msgstr "你必须选择一本或多本图书才能执行此操作。"
+
+#: action.py:59
+msgid "No ePub available. First convert the book to ePub."
+msgstr "没有可用的ePub文件。请先将书籍转换为ePub格式。"
+
+#: action.py:88
+msgid "Failed to modify ePubs"
+msgstr "ePub文件修改失败"
+
+#: action.py:91
+msgid "Modify ePub completed"
+msgstr "ePub文件修改完成"
+
+#: action.py:95
+msgid ""
+"No ePub files were updated. If this isn't what you expected then press the "
+"Show details button to check for errors in the log."
+msgstr "没有ePub文件被更新。如果这不是您预期的结果，请点击\"显示详情\"按钮查看日志中的错误信息。"
+
+#: action.py:97
+msgid "Modify ePub changed no files"
+msgstr "ePub文件修改操作未更改任何文件"
+
+#: action.py:105
+msgid ""
+"Modify ePub modified <b>%d ePub files(s)</b> into a temporary location. "
+"Proceed with replacing the versions in your library?"
+msgstr "“修改ePub”功能已将 <b>%d 个 ePub 文件</b>修改并存至临时位置。是否继续替换库中的原始版本？"
+
+#: action.py:110
+msgid "Modify ePub complete"
+msgstr "ePub 修改完成"
+
+#: action.py:110
+msgid "Modify log"
+msgstr "修改日志"
+
+#: config.py:52
+msgid "Other options:"
+msgstr "其他选项："
+
+#: config.py:57
+msgid "Prompt to save epubs"
+msgstr "保存 ePub 前提示"
+
+#: config.py:58
+msgid ""
+"Uncheck this option if you want changes applied without a confirmation "
+"dialog."
+msgstr "若希望在不显示确认对话框的情况下直接应用更改，请取消勾选此选项。"
+
+#: config.py:64
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "编辑与此插件关联的键盘快捷键"
+
+#: config.py:68
+msgid "&Help"
+msgstr "帮助 (&H)"
+
+#: dialogs.py:36
+msgid "Remove iTunes files"
+msgstr "移除 iTunes 文件"
+
+#: dialogs.py:36
+msgid ""
+"Removes any iTunesMetadata.plist or artwork files\n"
+"added by viewing the ePub in iTunes"
+msgstr "移除因在 iTunes 中查看该 ePub 而添加的任何 iTunesMetadata.plist 或封面艺术（artwork）文件。"
+
+#: dialogs.py:37
+msgid "Remove any bookmark files added by the calibre ebook viewer"
+msgstr "移除由 Calibre 电子书阅读器添加的所有书签文件"
+
+#: dialogs.py:37
+msgid "Remove calibre bookmark files"
+msgstr "移除 Calibre 书签文件"
+
+#: dialogs.py:38
+msgid "Remove OS artifact files"
+msgstr "移除操作系统缓存文件"
+
+#: dialogs.py:38
+msgid ""
+"Removes any OS artifacts like thumbs.db or .DS_Store\n"
+"that are not needed by the ePub"
+msgstr "移除任何 ePub 并不需要的操作系统残留文件，例如 thumbs.db 或 .DS_Store。"
+
+#: dialogs.py:39
+msgid ""
+"Remove any unused jpg, png or gif image files that are not referenced\n"
+"from the html pages. This can occur as the result of careless ePub editing."
+msgstr "移除所有未在 HTML 页面中引用的 JPG、PNG 或 GIF 图片。这种情况通常是由于不细致的 ePub 编辑操作导致的。"
+
+#: dialogs.py:39
+msgid "Remove unused image files"
+msgstr "移除未使用的图片文件"
+
+#: dialogs.py:40
+msgid "De-indent (aka unpretty)"
+msgstr "取消缩进（即：取消美化）"
+
+#: dialogs.py:40
+msgid "Remove indentation from HTML files"
+msgstr "移除 HTML 文件中的缩进"
+
+#: dialogs.py:41
+msgid "Remove remnants of Kobo DRM"
+msgstr "移除 Kobo DRM 残留"
+
+#: dialogs.py:41
+msgid "Strip Kobo DRM remnants"
+msgstr "清除Kobo DRM 残留"
+
+#: dialogs.py:42
+msgid "Remove spans without attributes"
+msgstr "移除无属性的 span 标签"
+
+#: dialogs.py:42
+msgid "Strip spans"
+msgstr "清除span 标签"
+
+#: dialogs.py:46
+msgid ""
+"Remove entries in the manifest for files listed that do not exist in the "
+"ePub"
+msgstr "移除清单（Manifest）中已列出但实际并不存在于 ePub 中的文件条目"
+
+#: dialogs.py:46
+msgid "Remove missing file entries from manifest"
+msgstr "从清单中移除缺失的文件条目"
+
+#: dialogs.py:47
+msgid ""
+"Add files to manifest that are in the ePub but do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks)"
+msgstr "将存在于 ePub 中但未在 .opf 清单中列出的文件添加到清单 (不包括 iTunes/calibre 书签文件)"
+
+#: dialogs.py:47
+msgid "Add unmanifested files to manifest"
+msgstr "将未列入清单的文件添加至清单"
+
+#: dialogs.py:48
+msgid ""
+"Remove files from the ePub that do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks). Will not be applied if the add option is also checked"
+msgstr ""
+"从 ePub 中删除未在 .opf 清单中列出的文件 (不包括 iTunes/calibre 书签文件)。如果同时勾选了“添加”选项，则此操作不会生效。"
+
+#: dialogs.py:48
+msgid "Remove unmanifested files from ePub"
+msgstr "从 ePub 中删除未列入清单的文件"
+
+#: dialogs.py:52
+msgid ""
+"Remove any Adobe .xpgt file margins to prevent them\n"
+"interfering with viewing"
+msgstr "移除 Adobe .xpgt 文件边距以防止干扰阅读显示"
+
+#: dialogs.py:52
+msgid "Remove margins from Adobe .xpgt files"
+msgstr "移除 Adobe .xpgt 文件的边距"
+
+#: dialogs.py:53
+msgid ""
+"Delete the .xpgt file completely from the epub\n"
+"as well as removing any links from the xhtml files"
+msgstr "从 ePub 中彻底删除 .xpgt 文件，并移除 xhtml 文件中的所有相关链接"
+
+#: dialogs.py:53
+msgid "Remove Adobe .xpgt files and links"
+msgstr "移除 Adobe .xpgt 文件及链接"
+
+#: dialogs.py:54
+msgid "Remove Adobe resource DRM meta tags"
+msgstr "移除 Adobe 资源 DRM 元数据标签"
+
+#: dialogs.py:54
+msgid ""
+"Remove any meta tags from the xhtml files that\n"
+"contain DRM urn identifiers."
+msgstr "从 xhtml 文件中移除所有包含 DRM URN 标识符的元标记"
+
+#: dialogs.py:55
+msgid "Remove page maps"
+msgstr "移除页码映射"
+
+#: dialogs.py:55
+msgid "Removes all types of page map files"
+msgstr "移除所有类型的页码映射文件"
+
+#: dialogs.py:56
+msgid "Remove ONLY Google Play page maps"
+msgstr "仅移除 Google Play 页码映射"
+
+#: dialogs.py:56
+msgid "Removes only Google Play page map files"
+msgstr "仅移除 Google Play 页码映射文件"
+
+#: dialogs.py:60
+msgid "Flatten TOC hierarchy in NCX file"
+msgstr "展平 NCX 文件中的目录层级"
+
+#: dialogs.py:60
+msgid ""
+"Restructure the NCX to contain no nesting of navPoint items.\n"
+"For users whose devices do not support a hierarchical TOC."
+msgstr "重构 NCX 以消除 navPoint 项目的嵌套。 适用于那些不支持层级目录的阅读设备。"
+
+#: dialogs.py:61
+msgid ""
+"Any NCX entries that point to missing html pages will be removed.\n"
+"Orphaned NCX links can happen as a result of a calibre conversion for covers."
+msgstr "移除所有指向不存在 HTML 页面的 NCX 条目。 Calibre 在转换封面时，可能会导致 NCX 链接失效（产生孤立链接）。"
+
+#: dialogs.py:61
+msgid "Remove broken TOC entries in NCX file"
+msgstr "移除 NCX 文件中的无效目录条目"
+
+#: dialogs.py:65
+msgid "Remove all calibre jackets, both legacy and current"
+msgstr "移除所有 Calibre 书籍扉页（包括旧版和当前版本）"
+
+#: dialogs.py:65
+msgid "Remove all metadata jackets"
+msgstr "移除所有元数据扉页"
+
+#: dialogs.py:66
+msgid "Remove jackets generated using versions of calibre prior to 0.6.50"
+msgstr "移除使用 0.6.50 以前版本的 Calibre 生成的扉页"
+
+#: dialogs.py:66
+msgid "Remove legacy metadata jackets"
+msgstr "移除旧版元数据扉页"
+
+#: dialogs.py:67
+msgid "Add a jacket if not existing, or replace a non-legacy jacket"
+msgstr "添加缺失的扉页，或替换现有的非旧版扉页"
+
+#: dialogs.py:67
+msgid "Add/replace metadata jacket"
+msgstr "添加/替换元数据扉页"
+
+#: dialogs.py:68
+msgid ""
+"If a jacket is added/replaced, it is placed at the end of the book instead "
+"of the beginning"
+msgstr "添加或替换扉页时，将其放在书的末尾而非开头"
+
+#: dialogs.py:68
+msgid "Jacket at the end of the book"
+msgstr "将扉页置于书末"
+
+#: dialogs.py:72
+msgid "Remove broken image pages"
+msgstr "移除无效图片页"
+
+#: dialogs.py:72
+msgid ""
+"Remove html page(s) that contain only an image tag for which\n"
+"the linked image does not exist in the epub"
+msgstr "移除仅包含一个image标签，且其链接的图片在 ePub 中不存在的 HTML 页面"
+
+#: dialogs.py:73
+msgid ""
+"If a cover page is identifiable in the epub then it is completely removed"
+msgstr "如果 ePub 中存在可识别的封面页，则将其彻底移除"
+
+#: dialogs.py:73
+msgid "Remove existing cover"
+msgstr "移除现有封面"
+
+#: dialogs.py:74
+msgid ""
+"If a cover page is identifiable in the epub then it is replaced\n"
+"otherwise a new cover page is inserted"
+msgstr "如果 ePub 中存在可识别的封面页，则将其替换；否则将插入一个新封面页。"
+
+#: dialogs.py:74
+msgid "Insert or replace cover"
+msgstr "插入或替换封面"
+
+#: dialogs.py:78
+msgid "Update metadata"
+msgstr "更新元数据"
+
+#: dialogs.py:78
+msgid ""
+"Update the manifest with the latest calibre metadata\n"
+"and replace an existing identifiable cover if possible."
+msgstr "使用最新的 Calibre 元数据更新清单（Manifest），并尽可能替换现有的可识别封面。"
+
+#: dialogs.py:79
+msgid ""
+"Remove any metadata from the .opf manifest that is not in the dc: namespace.\n"
+"Such entries are created by editing in Sigil or calibre updating metadata.\n"
+"Use this option if publishing your ePubs externally."
+msgstr ""
+"从 .opf 清单中移除所有不在 dc: 命名空间下的元数据。这些条目通常是在使用 Sigil 编辑或 Calibre "
+"更新元数据时生成的。如果您需要对外发布 ePub 电子书，请启用此选项。"
+
+#: dialogs.py:79
+msgid "Remove non dc: metadata elements"
+msgstr "移除所有非 dc: 元数据元素"
+
+#: dialogs.py:83
+msgid "Encode HTML in UTF-8"
+msgstr "将 HTML 编码设为 UTF-8"
+
+#: dialogs.py:83
+msgid ""
+"Removes any existing <meta> charset tags on html pages and encodes in UTF-8.\n"
+"For use where ebook does not display quotes in calibre viewer correctly."
+msgstr ""
+"移除 HTML 页面中现有的所有 <meta> 字符集标签，并统一使用 UTF-8 编码。适用于 Calibre 阅读器无法正确显示引号的情况。"
+
+#: dialogs.py:84
+msgid "Remove embedded fonts"
+msgstr "移除嵌入的字体文件"
+
+#: dialogs.py:84
+msgid ""
+"Remove embedded fonts from the manifest and their files to reduce ePub size.\n"
+"Also removes @font-face declarations."
+msgstr "从清单中移除嵌入字体及其文件以减小 ePub 体积，同时移除 CSS 中的 @font-face 声明。"
+
+#: dialogs.py:85
+msgid "Modify @page and body margin styles"
+msgstr "修改 @page 和 body 边距样式"
+
+#: dialogs.py:85
+msgid ""
+"Replace margin styles for @page or body with your calibre defaults in a new @page style.\n"
+"If your calibre defaults are negative, removes the margin attributes and if necessary the CSS file."
+msgstr ""
+"将 @page 或 body 的边距样式替换为 Calibre 默认值，并写入新的 @page 样式中。如果 Calibre "
+"默认值为负数，则会移除边距属性，并在必要时删除相关的 CSS 文件。"
+
+#: dialogs.py:86
+msgid "Append extra CSS"
+msgstr "追加额外的CSS"
+
+#: dialogs.py:86
+msgid ""
+"Appends any Extra CSS you have defined in your calibre defaults to every .CSS file.\n"
+"If you have no extra CSS defined or text already contained then it does nothing."
+msgstr ""
+"将你在 Calibre 默认设置中定义的“额外的CSS”追加到每一个 .CSS "
+"文件中。如果你没有定义任何额外的CSS，或者文件中已包含该文本，则不执行任何操作。"
+
+#: dialogs.py:87
+msgid "Convert html to use smart quotes and emdash characters"
+msgstr "将 HTML 中的引号转换为智能引号，并将连字符转换为破折号 (Em-Dash)"
+
+#: dialogs.py:87
+msgid "Smarten punctuation"
+msgstr "智能标点"
+
+#: dialogs.py:88
+msgid "Remove any .js files and inline javascript blocks"
+msgstr "移除所有 .js 文件及内联 JavaScript 代码块"
+
+#: dialogs.py:88
+msgid "Remove inline javascript and files"
+msgstr "移除内联 JavaScript 及脚本文件"
+
+#: dialogs.py:103
+msgid "Modify ePub Options"
+msgstr "修改ePub——选项"
+
+#: dialogs.py:128
+msgid "Known Artifacts"
+msgstr "常见残留"
+
+#: dialogs.py:129
+msgid "Manifest"
+msgstr "文件清单"
+
+#: dialogs.py:130
+msgid "Adobe"
+msgstr "Adobe"
+
+#: dialogs.py:131
+msgid "Table of Contents"
+msgstr "目录"
+
+#: dialogs.py:133
+msgid "HTML && Styles"
+msgstr "HTML与样式"
+
+#: dialogs.py:134
+msgid "Metadata Jackets"
+msgstr "元数据扉页"
+
+#: dialogs.py:135
+msgid "Covers"
+msgstr "封面"
+
+#: dialogs.py:136
+msgid "Metadata"
+msgstr "元数据"
+
+#: dialogs.py:142
+msgid "Clear all"
+msgstr "全部清除"
+
+#: dialogs.py:143
+msgid "Clear all selections"
+msgstr "清除全部所选项"
+
+#: dialogs.py:145
+msgid "Save"
+msgstr "保存"
+
+#: dialogs.py:146
+msgid ""
+"Save the current selected settings for future recall with the Restore button"
+msgstr "保存当前选定的设置，以便日后通过“恢复”按钮重新调用。"
+
+#: dialogs.py:148
+msgid "Restore"
+msgstr "恢复"
+
+#: dialogs.py:149
+msgid "Restore your settings set when the Save button was last clicked"
+msgstr "恢复上次点击“保存”按钮时保存的设置"
+
+#: dialogs.py:179
+msgid "No options selected"
+msgstr "未选择任何选项"
+
+#: dialogs.py:180
+msgid "You must select at least one option to continue"
+msgstr "请至少选择一项以继续"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Cancel"
+msgstr "取消"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Working"
+msgstr "运行中"
+
+#: dialogs.py:207
+msgid "Queueing books for modifying ePubs"
+msgstr "正在将书籍加入修改ePub的队列"
+
+#: dialogs.py:223
+msgid "Queueing"
+msgstr "排队中"
+
+#: dialogs.py:255
+msgid "Could not modify ePub for some books"
+msgstr "部分书籍 ePub修改失败"
+
+#: dialogs.py:256
+msgid ""
+"Could not modify %d of %d books, because no ePub source format was found."
+msgstr "由于找不到 ePub 源格式， %d 本书籍（共 %d 本）修改失败。"
+
+#: dialogs.py:276
+msgid "Adding %d modified ePubs"
+msgstr "正在添加 %d 个修改后的 ePub 文件"
+
+#: dialogs.py:297
+msgid "Adding"
+msgstr "正在添加"
+
+#: dialogs.py:312
+msgid "ePub files updated"
+msgstr "ePub 文件已更新"

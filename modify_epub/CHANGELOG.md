@@ -1,5 +1,9 @@
 # Modify ePub Change Log
 
+## [1.8.9] - 2026-02-09
+### Added
+- Arabic translation
+
 ## [1.8.8] - 2025-11-23
 ### Added
 - Arabic translations
