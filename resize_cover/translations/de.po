@@ -9,13 +9,13 @@
 # Ettore Atalan <atalanttore@googlemail.com>, 2022
 # ILB, 2022
 # Grant Drake, 2022
-# Dustin Steiner, 2022
+# 28e3d688a3c077b887921cea3fb1dbc7_0242455, 2022
 # e13493b2a936f499f30a988e8a2df4be_22a66bf <faf36a540214319109e3a8bf5cbd8af8_453360>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 20:32+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 20:23+0000\n"
 "Last-Translator: e13493b2a936f499f30a988e8a2df4be_22a66bf <faf36a540214319109e3a8bf5cbd8af8_453360>, 2023\n"
 "Language-Team: German (https://app.transifex.com/calibre/teams/19337/de/)\n"
@@ -101,22 +101,22 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "In Zwischenablage kopieren"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Unbestimmt"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Neustart erforderlich"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Titelbild nicht gefunden - Sie müssen Calibre neu starten, bevor Sie dieses "
 "Plugin verwenden können!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Neue Spalte erstellen"
 

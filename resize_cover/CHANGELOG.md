@@ -1,5 +1,10 @@
 # Resize Cover Change Log
 
+## [1.2.2] - 2026-02-09
+### Added
+- Arabic translation
+- Czech translation
+
 ## [1.2.1] - 2024-03-17
 ### Added
 - Chinese (China) translation

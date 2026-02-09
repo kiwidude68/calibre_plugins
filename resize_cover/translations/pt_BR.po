@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-10-10 20:32+0100\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 20:23+0000\n"
 "Last-Translator: Cm Fy, 2022\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/calibre/teams/19337/pt_BR/)\n"
@@ -94,22 +94,22 @@ msgstr "Todas as configurações deste plugin nesta biblioteca foram limpas."
 msgid "Copy to clipboard"
 msgstr "Copiar para a área de transferência"
 
-#: ..\common\common_widgets.py:93
+#: ..\common\common_widgets.py:105
 msgid "Undefined"
 msgstr "Não definido"
 
-#: ..\common\common_widgets.py:148
+#: ..\common\common_widgets.py:160
 msgid "Restart required"
 msgstr "Reinicialização requerida"
 
-#: ..\common\common_widgets.py:149
+#: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
 "Imagem do título não encontrada - você deve reiniciar o Calbre antes de "
 "utilizar este plugin!"
 
-#: ..\common\common_widgets.py:222
+#: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Criar nova coluna"
 
