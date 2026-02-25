@@ -51,6 +51,7 @@ KEY_CHECK_ALL_SOURCES = 'checkAllSources'
 KEY_DOWNLOAD_SOURCES = 'downloadSources'
 KEY_SHOW_TRY_ALL_SOURCES = 'showTryAllSources'
 KEY_USE_ICU_WORDCOUNT = 'useIcuWordcount'
+KEY_BATCH_SIZE = 'batchSize'
 
 STORE_NAME = 'Options'
 KEY_PAGES_ALGORITHM = 'algorithmPages'
@@ -167,7 +168,8 @@ DEFAULT_STORE_VALUES = {
                         KEY_USE_ICU_WORDCOUNT: True,
                         KEY_CHECK_ALL_SOURCES: True,
                         KEY_SHOW_TRY_ALL_SOURCES: True,
-                        KEY_DOWNLOAD_SOURCES: DOWNLOAD_SOURCES_DEFAULTS
+                        KEY_DOWNLOAD_SOURCES: DOWNLOAD_SOURCES_DEFAULTS,
+                        KEY_BATCH_SIZE: 50
                         }
 DEFAULT_LIBRARY_VALUES = {
                           KEY_PAGES_ALGORITHM: 0,
@@ -296,6 +298,10 @@ class ConfigWidget(QWidget):
         new_prefs[KEY_DOWNLOAD_SOURCES] = self.get_source_list()
         new_prefs[KEY_ASK_FOR_CONFIRMATION] = self.other_tab.ask_for_confirmation_checkbox.isChecked()
         new_prefs[KEY_USE_ICU_WORDCOUNT] = self.statistics_tab.icu_wordcount_checkbox.isChecked()
+        batch_size = unicode(self.other_tab.batch_size_ledit.text()).strip()
+        if not batch_size:
+            batch_size = '50'
+        new_prefs[KEY_BATCH_SIZE] = int(batch_size)
         plugin_prefs[STORE_NAME] = new_prefs
 
         db = self.plugin_action.gui.current_db
@@ -359,6 +365,7 @@ class OtherTab(QWidget):
                 if default_download_source[0] not in download_sources_names:
                     download_sources.append(default_download_source)
         show_try_all_sources = c.get(KEY_SHOW_TRY_ALL_SOURCES, DEFAULT_STORE_VALUES[KEY_SHOW_TRY_ALL_SOURCES])
+        batch_size = c.get(KEY_BATCH_SIZE, DEFAULT_STORE_VALUES[KEY_BATCH_SIZE])
 
         # Fudge the button default to cater for the options no longer supported by plugin as of 1.5
         if button_default in ['Estimate', 'EstimatePage', 'EstimateWord']:
@@ -433,6 +440,16 @@ class OtherTab(QWidget):
         other_group_box_layout.addWidget(button_default_label, 0, 0, 1, 1)
         other_group_box_layout.addWidget(self.button_default_combo, 0, 1, 1, 2)
 
+        self.batch_size_label = QLabel(_('Batch size:'), self)
+        toolTip = _('When calculating statistics for a large number of books,\n'
+                    'the plugin will process the books in batches per calibre job.')
+        self.batch_size_label.setToolTip(toolTip)
+        self.batch_size_ledit = QLineEdit(str(batch_size), self)
+        self.batch_size_ledit.setToolTip(toolTip)
+        self.batch_size_label.setBuddy(self.batch_size_ledit)
+        other_group_box_layout.addWidget(self.batch_size_label, 1, 0, 1, 1)
+        other_group_box_layout.addWidget(self.batch_size_ledit, 1, 1, 1, 2)
+
         self.overwrite_checkbox = QCheckBox(_('Always overwrite an existing word/page count'), self)
         self.overwrite_checkbox.setToolTip(_('Uncheck this option if you have manually populated values in\n'
                                              'either of your page/word custom columns, and never want the\n'
@@ -441,7 +458,7 @@ class OtherTab(QWidget):
                                              'and word count, but for some books have already assigned values\n'
                                              'into a column and just want the zero/blank column populated.'))
         self.overwrite_checkbox.setChecked(overwrite_existing)
-        other_group_box_layout.addWidget(self.overwrite_checkbox, 1, 0, 1, 3)
+        other_group_box_layout.addWidget(self.overwrite_checkbox, 2, 0, 1, 3)
 
         self.update_if_unchanged_checkbox = QCheckBox(_('Update the statistics even if they have not changed'), self)
         self.update_if_unchanged_checkbox.setToolTip(_('Check this option if you want the statistics to be updated in\n'
@@ -449,7 +466,7 @@ class OtherTab(QWidget):
                                                        'option will always update the modified timestamp for the book\n'
                                                        'even when the statistics have not changed.'))
         self.update_if_unchanged_checkbox.setChecked(update_if_unchanged)
-        other_group_box_layout.addWidget(self.update_if_unchanged_checkbox, 2, 0, 1, 3)
+        other_group_box_layout.addWidget(self.update_if_unchanged_checkbox, 3, 0, 1, 3)
 
         self.use_preferred_output_checkbox = QCheckBox(_('Use Preferred Output Format if available'), self)
         self.use_preferred_output_checkbox.setToolTip(_('Check this option to calculate the statistics using the format selected\n'
@@ -459,7 +476,7 @@ class OtherTab(QWidget):
                                                         'are specified in Behavior page of the calibre Preferences.\n'
                                                         'Note: ePub will always be used if the ADE page count algorithm is selected.'))
         self.use_preferred_output_checkbox.setChecked(use_preferred_output)
-        other_group_box_layout.addWidget(self.use_preferred_output_checkbox, 3, 0, 1, 3)
+        other_group_box_layout.addWidget(self.use_preferred_output_checkbox, 4, 0, 1, 3)
 
         self.ask_for_confirmation_checkbox = QCheckBox(_('Prompt to save counts'), self)
         self.ask_for_confirmation_checkbox.setToolTip(_('Uncheck this option if you want changes applied without\n'
@@ -467,7 +484,7 @@ class OtherTab(QWidget):
                                                         'option unchecked that if you are making other changes to\n'
                                                         'this book record at the same time they will be lost.'))
         self.ask_for_confirmation_checkbox.setChecked(ask_for_confirmation)
-        other_group_box_layout.addWidget(self.ask_for_confirmation_checkbox, 4, 0, 1, 3)
+        other_group_box_layout.addWidget(self.ask_for_confirmation_checkbox, 5, 0, 1, 3)
 
         button_layout = QHBoxLayout()
         keyboard_shortcuts_button = QPushButton(' '+_('Keyboard shortcuts')+'... ', self)

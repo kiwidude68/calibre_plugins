@@ -1,5 +1,9 @@
 # Count Pages Change Log
 
+## [1.15.0] - 2026-02-25
+### Added
+- When counting larger numbers of books, break into batches of 50 (configurable)
+
 ## [1.14.6] - 2026-02-09
 ### Added
 - Support for download page counts from babelio.com (French website)

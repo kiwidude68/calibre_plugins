@@ -240,7 +240,6 @@ class ProgressBarDialog(QDialog):
         self.setLayout(self.l)
 
         self.label = QLabel(label)
-#         self.label.setAlignment(Qt.AlignHCenter)
         self.l.addWidget(self.label)
 
         self.progressBar = QProgressBar(self)

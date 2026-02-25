@@ -257,29 +257,42 @@ class CountPagesAction(InterfaceAction):
                 remove_dir(tdir)
             return
 
-        func = 'arbitrary_n'
-        cpus = self.gui.job_manager.server.pool_size
-        args = ['calibre_plugins.count_pages.jobs', 'do_count_statistics',
-                (books_to_scan, pages_algorithm, self.nltk_pickle, custom_chars_per_page,
-                 icu_wordcount, page_count_mode, download_source, cpus)]
-        desc = _('Count Page/Word Statistics')
-        job = self.gui.job_manager.run_job(
-                self.Dispatcher(self._get_statistics_completed), func, args=args,
-                    description=desc)
-        job.tdir = tdir
-        job.statistics_cols_map = statistics_cols_map
-        job.page_count_mode = page_count_mode
-        job.download_source = download_source
-        job.plugin_callback = self.plugin_callback
+        c = cfg.plugin_prefs[cfg.STORE_NAME]
+        batch_size = c.get(cfg.KEY_BATCH_SIZE, cfg.DEFAULT_STORE_VALUES[cfg.KEY_BATCH_SIZE])
+        batches = self._split_jobs(books_to_scan, batch_size)
+        for i, batch_ids in enumerate(batches):
+            func = 'arbitrary_n'
+            cpus = self.gui.job_manager.server.pool_size
+            args = ['calibre_plugins.count_pages.jobs', 'do_count_statistics',
+                    (batch_ids, pages_algorithm, self.nltk_pickle, custom_chars_per_page,
+                    icu_wordcount, page_count_mode, download_source, cpus)]
+            desc = _('Count Page/Word Statistics')
+            job = self.gui.job_manager.run_job(
+                    self.Dispatcher(self._get_statistics_completed), func, args=args,
+                        description=desc)
+            job.tdir = tdir
+            job.statistics_cols_map = statistics_cols_map
+            job.page_count_mode = page_count_mode
+            job.download_source = download_source
+            job.plugin_callback = self.plugin_callback
         self.gui.status_bar.show_message(_('Counting statistics in %d books') % len(books_to_scan))
         self.plugin_callback = None
+
+    def _split_jobs(self, ids, batch_size):
+        ans = []
+        ids = list(ids)
+        while ids:
+            jids = ids[:batch_size]
+            ans.append(jids)
+            ids = ids[batch_size:]
+        return ans
 
     def _get_statistics_completed(self, job):
         if job.tdir:
             remove_dir(job.tdir)
         if job.failed:
             return self.gui.job_exception(job, dialog_title=_('Failed to count statistics'))
-        self.gui.status_bar.show_message(_('Counting statistics completed'), 3000)
+        self.gui.status_bar.show_message(_('Counting statistics batch completed'), 3000)
         book_statistics_map = job.result
 
         if len(book_statistics_map) == 0:
@@ -310,10 +323,14 @@ class CountPagesAction(InterfaceAction):
     def _update_database_columns(self, payload):
         (statistics_cols_map, book_statistics_map) = payload
  
-        self.progressbar(_("Updating statistics"), on_top=True)
         total_books = len(book_statistics_map)
-        self.show_progressbar(total_books)
-        self.set_progressbar_label(_("Updating"))
+        # It is possible the progress dialog is currently visible from another thread running another batch
+        # So we won't display for this batch if that is the case
+        was_progress_visible = hasattr(self, 'pb') and self.pb and self.pb.isVisible()
+        if not was_progress_visible:
+            self.progressbar(_('Updating statistics'), on_top=True)
+            self.show_progressbar(total_books)
+            self.set_progressbar_label(_('Updating'))
         update_if_unchanged = cfg.plugin_prefs[cfg.STORE_NAME].get(cfg.KEY_UPDATE_IF_UNCHANGED, 
                                                     cfg.DEFAULT_STORE_VALUES[cfg.KEY_UPDATE_IF_UNCHANGED])
  
@@ -325,8 +342,9 @@ class CountPagesAction(InterfaceAction):
                                for col_name in statistics_cols_map.values() if col_name)
         for book_id, statistics in book_statistics_map.items():
             if db_ref.has_id(book_id):
-                self.set_progressbar_label(_("Updating") + " " + db_ref.field_for("title", book_id))
-                self.increment_progressbar()
+                if not was_progress_visible:
+                    self.set_progressbar_label(_('Updating') + ' ' + db_ref.field_for("title", book_id))
+                    self.increment_progressbar()
                 for statistic, value in statistics.items():
                     col_name = statistics_cols_map[statistic]
                     
@@ -336,8 +354,8 @@ class CountPagesAction(InterfaceAction):
             else:
                 print("Book with id %d is no longer in the library." % book_id)
 
-        for col_name, book_statistcs_map in col_name_books_map.items():
-            db_ref.set_field(col_name, book_statistcs_map)
+        for col_name, book_statistics_map in col_name_books_map.items():
+            db_ref.set_field(col_name, book_statistics_map)
 
         if book_ids_to_update:
             print("About to refresh GUI - book_ids_to_update=", book_ids_to_update)
