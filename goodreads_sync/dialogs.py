@@ -20,14 +20,14 @@ try:
                           QIcon, QTableWidget, QPushButton, QCheckBox,
                           QAbstractItemView, QDialogButtonBox, QAction,
                           QGridLayout, pyqtSignal, QUrl, QListWidget, QListWidgetItem,
-                          QTextEdit, QSplitter, QWidget)
+                          QTextEdit, QSplitter, QWidget, QColor)
 except ImportError:
     from PyQt5.Qt import (Qt, QVBoxLayout, QLabel, QLineEdit, QApplication,
                           QGroupBox, QHBoxLayout, QToolButton, QTableWidgetItem,
                           QIcon, QTableWidget, QPushButton, QCheckBox,
                           QAbstractItemView, QDialogButtonBox, QAction,
                           QGridLayout, pyqtSignal, QUrl, QListWidget, QListWidgetItem,
-                          QTextEdit, QSplitter, QWidget)
+                          QTextEdit, QSplitter, QWidget, QColor)
 
 from calibre.ebooks.metadata import MetaInformation
 from calibre.gui2 import error_dialog, question_dialog, gprefs, open_url
@@ -1964,7 +1964,7 @@ class DoShelfSyncTableWidget(QTableWidget):
         self.setItemDelegateForColumn(3, delegate)  # Date Read
         
         self.resizeColumnsToContents()
-        self.setColumnWidth(0, 50) # Include checkbox
+        self.setColumnWidth(0, 70) # Include checkbox
         self.setMinimumColumnWidth(2, 90)  # GR Date Read
         self.setMinimumColumnWidth(3, 90)  # Date Read
         self.setRangeColumnWidth(6, 120, 200)  # GR Title
@@ -2001,21 +2001,60 @@ class DoShelfSyncTableWidget(QTableWidget):
             include_item.setCheckState(Qt.Checked)
         self.setItem(row,  0, include_item)
         self.setItem(row,  1, SyncStatusDataWidgetItem(goodreads_book['status_msg'], goodreads_book['status']))
-        self.setItem(row,  2, DateTableWidgetItem(goodreads_book['goodreads_read_at'], is_read_only=True, fmt=self.format))
-        self.setItem(row,  3, DateTableWidgetItem(goodreads_book['calibre_date_read'], is_read_only=True, fmt=self.format))
-        self.setItem(row,  4, RatingTableWidgetItem(goodreads_book['goodreads_rating'] * 2, is_read_only=True))
-        self.setItem(row,  5, RatingTableWidgetItem(goodreads_book['calibre_rating'], is_read_only=True))
-        item = ReadOnlyTableWidgetItem(goodreads_book['goodreads_title'])
+        gr_date_item  = DateTableWidgetItem(goodreads_book['goodreads_read_at'], is_read_only=True, fmt=self.format)
+        cal_date_item = DateTableWidgetItem(goodreads_book['calibre_date_read'], is_read_only=True, fmt=self.format)
+        # Highlight both date cells red when the date portions differ
+        gr_date  = goodreads_book['goodreads_read_at']
+        cal_date = goodreads_book['calibre_date_read']
+        gr_is_undefined  = gr_date  is None or gr_date  == UNDEFINED_DATE
+        cal_is_undefined = cal_date is None or cal_date == UNDEFINED_DATE
+        dates_differ = (gr_is_undefined != cal_is_undefined) or \
+                       (not gr_is_undefined and not cal_is_undefined and gr_date.date() != cal_date.date())
+        if dates_differ:
+            red = QColor('red')
+            gr_date_item.setForeground(red)
+            cal_date_item.setForeground(red)
+        self.setItem(row,  2, gr_date_item)
+        self.setItem(row,  3, cal_date_item)
+        gr_rating_item  = RatingTableWidgetItem(goodreads_book['goodreads_rating'] * 2, is_read_only=True)
+        cal_rating_item = RatingTableWidgetItem(goodreads_book['calibre_rating'], is_read_only=True)
+        if goodreads_book['goodreads_rating'] * 2 != goodreads_book['calibre_rating']:
+            red = QColor('red')
+            gr_rating_item.setForeground(red)
+            cal_rating_item.setForeground(red)
+        self.setItem(row,  4, gr_rating_item)
+        self.setItem(row,  5, cal_rating_item)
+        red = QColor('red')
+        gr_title_item  = ReadOnlyTableWidgetItem(goodreads_book['goodreads_title'])
+        cal_title_item = SortableReadOnlyTableWidgetItem(goodreads_book['calibre_title'], sort_key=goodreads_book['calibre_title_sort'])
         if book_index >= 0:
-            item.setData(Qt.UserRole, book_index)
-        self.setItem(row,  6, item)
-        self.setItem(row,  7, SortableReadOnlyTableWidgetItem(goodreads_book['calibre_title'], sort_key=goodreads_book['calibre_title_sort']))
-        self.setItem(row,  8, ReadOnlyTableWidgetItem(goodreads_book['goodreads_author']))
-        self.setItem(row,  9, SortableReadOnlyTableWidgetItem(goodreads_book['calibre_author'], sort_key=goodreads_book['calibre_author_sort']))
-        self.setItem(row, 10, ReadOnlyTableWidgetItem(goodreads_book['goodreads_series']))
-        self.setItem(row, 11, ReadOnlyTableWidgetItem(goodreads_book['calibre_series']))
-        self.setItem(row, 12, ReadOnlyTableWidgetItem(goodreads_book['goodreads_isbn']))
-        self.setItem(row, 13, ReadOnlyTableWidgetItem(goodreads_book['calibre_isbn']))
+            gr_title_item.setData(Qt.UserRole, book_index)
+        if goodreads_book['goodreads_title'] != goodreads_book['calibre_title']:
+            gr_title_item.setForeground(red)
+            cal_title_item.setForeground(red)
+        self.setItem(row,  6, gr_title_item)
+        self.setItem(row,  7, cal_title_item)
+        gr_author_item  = ReadOnlyTableWidgetItem(goodreads_book['goodreads_author'])
+        cal_author_item = SortableReadOnlyTableWidgetItem(goodreads_book['calibre_author'], sort_key=goodreads_book['calibre_author_sort'])
+        if goodreads_book['goodreads_author'] != goodreads_book['calibre_author']:
+            gr_author_item.setForeground(red)
+            cal_author_item.setForeground(red)
+        self.setItem(row,  8, gr_author_item)
+        self.setItem(row,  9, cal_author_item)
+        gr_series_item  = ReadOnlyTableWidgetItem(goodreads_book['goodreads_series'])
+        cal_series_item = ReadOnlyTableWidgetItem(goodreads_book['calibre_series'])
+        if goodreads_book['goodreads_series'] != goodreads_book['calibre_series']:
+            gr_series_item.setForeground(red)
+            cal_series_item.setForeground(red)
+        self.setItem(row, 10, gr_series_item)
+        self.setItem(row, 11, cal_series_item)
+        gr_isbn_item  = ReadOnlyTableWidgetItem(goodreads_book['goodreads_isbn'])
+        cal_isbn_item = ReadOnlyTableWidgetItem(goodreads_book['calibre_isbn'])
+        if goodreads_book['goodreads_isbn'] != goodreads_book['calibre_isbn']:
+            gr_isbn_item.setForeground(red)
+            cal_isbn_item.setForeground(red)
+        self.setItem(row, 12, gr_isbn_item)
+        self.setItem(row, 13, cal_isbn_item)
         self.setItem(row, 14, ReadOnlyTableWidgetItem(goodreads_book['goodreads_shelves']))
         if book_index >= 0:
             self.setItem(row, 15, NumericTableWidgetItem(book_index, is_read_only=True))
@@ -2097,6 +2136,13 @@ class DoShelfSyncTableWidget(QTableWidget):
             return
         self.search_for_goodreads_books.emit(rows, books)
 
+    def set_all_included(self, checked):
+        state = Qt.Checked if checked else Qt.Unchecked
+        for row in range(self.rowCount()):
+            item = self.item(row, 0)
+            if item:
+                item.setCheckState(state)
+
     def add_empty_book_click(self):
         (rows, books) = self.get_selected_books(status=[ActionStatus.NO_LINK, ActionStatus.ADD_EMPTY])
         if len(rows) == 0:
@@ -2156,6 +2202,14 @@ class DoShelfSyncDialog(SizePersistedDialog):
         self.error_label = QLabel('', self)
         self.error_label.setAlignment(Qt.AlignRight)
         heading_layout.addWidget(self.error_label)
+
+        select_all_layout = QHBoxLayout()
+        self.select_all_checkbox = QCheckBox(_('Select All / Select None'), self)
+        self.select_all_checkbox.setChecked(True)
+        self.select_all_checkbox.stateChanged.connect(self._select_all_changed)
+        select_all_layout.addWidget(self.select_all_checkbox)
+        select_all_layout.addStretch()
+        top_layout.addLayout(select_all_layout)
 
         self.summary_table = DoShelfSyncTableWidget(self)
         self.summary_table.view_book.connect(self.grhttp.view_book_on_goodreads)
@@ -2246,6 +2300,9 @@ class DoShelfSyncDialog(SizePersistedDialog):
             self.update_date_read = False
         if self.update_review_text and not self.review_text_column:
             self.update_review_text = False
+
+    def _select_all_changed(self, state):
+        self.summary_table.set_all_included(self.select_all_checkbox.isChecked())
 
     def auto_match_state_changed(self):
         auto_match_result = self.auto_match_checkbox.isChecked()
