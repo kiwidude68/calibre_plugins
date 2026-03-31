@@ -62,6 +62,7 @@ KEY_FONTS_AUTOREDUCED = 'fontsAutoReduced'
 KEY_FIELD_ORDER = 'fieldOrder'
 KEY_CUSTOM_TEXT = 'customText'
 KEY_SERIES_TEXT = 'seriesText'
+KEY_TEXT_PADDING = 'textPadding'
 
 DEFAULT_SERIES_TEXT = 'Book {series_index} of {series}'
 
@@ -98,6 +99,7 @@ DEFAULT_CURRENT = {
                          {'name': 'Series', 'display': True},
                          {'name': 'Image',  'display': True},
                          {'name': 'Custom Text', 'display': False}],
+    KEY_TEXT_PADDING: {'Title': 30, 'Author': 30, 'Series': 30, 'Custom Text': 30},
     KEY_CUSTOM_TEXT: '',
     KEY_SERIES_TEXT: DEFAULT_SERIES_TEXT
 }

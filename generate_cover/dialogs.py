@@ -1201,23 +1201,24 @@ class DimensionsTab(QWidget):
         self.right_margin_spin.valueChanged[int].connect(self.changed)
         margins_layout.addWidget(self.right_margin_spin, 2, 3, 1, 1)
 
-        text_padding_label = QLabel(_('Text padding:'), self)
-        text_padding_label.setToolTip(_('The spacing in pixels between successive lines of text'))
-        margins_layout.addWidget(text_padding_label, 3, 0, 1, 1)
-        self.text_margin_spin = QSpinBox(self)
-        self.text_margin_spin.setRange(0, 5000)
-        self.text_margin_spin.valueChanged[int].connect(self.changed)
-        margins_layout.addWidget(self.text_margin_spin, 3, 1, 1, 1)
-
         image_padding_label = QLabel(_('Image padding:'), self)
         image_padding_label.setToolTip(_('The spacing in pixels between the image and text\n'
                                          'placed above and below it'))
-        margins_layout.addWidget(image_padding_label, 3, 2, 1, 1)
+        margins_layout.addWidget(image_padding_label, 3, 0, 1, 1)
 
         self.image_margin_spin = QSpinBox(self)
         self.image_margin_spin.setRange(0, 5000)
         self.image_margin_spin.valueChanged[int].connect(self.changed)
-        margins_layout.addWidget(self.image_margin_spin, 3, 3, 1, 1)
+        margins_layout.addWidget(self.image_margin_spin, 3, 1, 1, 1)
+
+        main_layout.addSpacing(10)
+        self.text_padding_groupbox = QGroupBox(_('Text Padding:'), self)
+        self.text_padding_groupbox.setToolTip(_('The spacing in pixels after each text field and before the next.\n'
+                                                'The last visible field has no following content, so its value is not used.'))
+        main_layout.addWidget(self.text_padding_groupbox)
+        self.text_padding_layout = QGridLayout()
+        self.text_padding_groupbox.setLayout(self.text_padding_layout)
+        self._text_padding_spins = {}
 
         main_layout.addSpacing(10)
         borders_groupbox = QGroupBox(_('Border Widths:'), self)
@@ -1242,6 +1243,29 @@ class DimensionsTab(QWidget):
         borders_layout.addWidget(self.image_border_width_spin, 4, 3, 1, 1)
         main_layout.insertStretch(-1)
         self.image_resize_changed()
+
+    def rebuild_text_padding(self, field_order, initial_values=None, default_value=30):
+        while self.text_padding_layout.count():
+            item = self.text_padding_layout.takeAt(0)
+            if item.widget():
+                item.widget().deleteLater()
+        self._text_padding_spins = {}
+        visible_fields = [f for f in field_order if f['display'] and f['name'] != 'Image']
+        for i, field in enumerate(visible_fields):
+            name = field['name']
+            is_last = (i == len(visible_fields) - 1)
+            label = QLabel(name + ':', self.text_padding_groupbox)
+            self.text_padding_layout.addWidget(label, i, 0)
+            spin = QSpinBox(self.text_padding_groupbox)
+            spin.setRange(0, 5000)
+            if initial_values is not None:
+                spin.setValue(initial_values.get(name, default_value))
+            if is_last:
+                spin.setEnabled(False)
+            else:
+                spin.valueChanged[int].connect(self.changed)
+            self.text_padding_layout.addWidget(spin, i, 1)
+            self._text_padding_spins[name] = spin
 
     def image_resize_changed(self):
         self.background_image_checkbox.setEnabled(not self.resize_image_to_fit_checkbox.isChecked())
@@ -1395,6 +1419,8 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.dimensions_tab.changed.connect(self.options_changed)
         self.contents_tab = ContentsTab(self)
         self.contents_tab.changed.connect(self.options_changed)
+        self.contents_tab.field_order_list.itemChecked.connect(self.field_order_changed)
+        self.contents_tab.field_order_list.itemMoved.connect(self.field_order_changed)
         tab_widget.addTab(self.saved_settings_tab, _('Settings'))
         tab_widget.addTab(self.fonts_tab, _('Fonts'))
         tab_widget.addTab(self.dimensions_tab, _('Dimensions'))
@@ -1592,7 +1618,11 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.dimensions_tab.left_margin_spin.setValue(margins['left'])
         self.dimensions_tab.right_margin_spin.setValue(margins['right'])
         self.dimensions_tab.image_margin_spin.setValue(margins['image'])
-        self.dimensions_tab.text_margin_spin.setValue(margins['text'])
+
+        text_padding = self.current.get(cfg.KEY_TEXT_PADDING, {})
+        default_margin = margins.get('text', 30)
+        self.dimensions_tab.rebuild_text_padding(
+            self.current[cfg.KEY_FIELD_ORDER], text_padding, default_margin)
 
         borders = self.current[cfg.KEY_BORDERS]
         self.dimensions_tab.cover_border_width_spin.setValue(borders['coverBorder'])
@@ -1665,14 +1695,20 @@ class CoverOptionsDialog(SizePersistedDialog):
         left_mgn = int(unicode(self.dimensions_tab.left_margin_spin.value()).strip())
         right_mgn = int(unicode(self.dimensions_tab.right_margin_spin.value()).strip())
         image_mgn = int(unicode(self.dimensions_tab.image_margin_spin.value()).strip())
-        text_mgn = int(unicode(self.dimensions_tab.text_margin_spin.value()).strip())
         self.current[cfg.KEY_MARGINS] = (top_mgn, bottom_mgn, left_mgn)
         self.current[cfg.KEY_MARGINS] = {'top':    top_mgn,
                                          'bottom': bottom_mgn,
                                          'left':   left_mgn,
                                          'right':  right_mgn,
-                                         'image':  image_mgn,
-                                         'text':   text_mgn}
+                                         'image':  image_mgn}
+
+        text_padding = dict(self.current.get(cfg.KEY_TEXT_PADDING, {}))
+        for field_name, spin in self.dimensions_tab._text_padding_spins.items():
+            if spin.isEnabled():
+                text_padding[field_name] = int(spin.value())
+            else:
+                text_padding[field_name] = 0
+        self.current[cfg.KEY_TEXT_PADDING] = text_padding
 
         cover_border_width = int(unicode(self.dimensions_tab.cover_border_width_spin.value()).strip())
         image_border_width = int(unicode(self.dimensions_tab.image_border_width_spin.value()).strip())
@@ -1723,6 +1759,15 @@ class CoverOptionsDialog(SizePersistedDialog):
         if self._preview_timer.isActive():
             self._preview_timer.stop()
         self._preview_timer.start()
+
+    def field_order_changed(self):
+        if self.block_updates:
+            return
+        field_order = self.current[cfg.KEY_FIELD_ORDER]
+        text_padding = self.current.get(cfg.KEY_TEXT_PADDING, {})
+        self.block_updates = True
+        self.dimensions_tab.rebuild_text_padding(field_order, text_padding)
+        self.block_updates = False
 
     def display_preview(self):
         if self.saved_settings_tab.pick_image_list.selected_image_name():
