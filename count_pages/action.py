@@ -3,6 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
+import os
 from functools import partial
 try:
     from qt.core import QToolButton, QMenu
@@ -228,9 +229,6 @@ class CountPagesAction(InterfaceAction):
         self._do_count_pages(book_ids, statistics_cols_map, page_count_mode=page_count_mode, download_source=download_source)
 
     def _do_count_pages(self, book_ids, statistics_cols_map, page_count_mode='Estimate', download_source=None):
-        # Create a temporary directory to copy all the ePubs to while scanning
-        tdir = PersistentTemporaryDirectory('_count_pages', prefix='')
-
         # Queue all the books and kick off the job
         c = cfg.plugin_prefs[cfg.STORE_NAME]
         db = self.gui.current_db
@@ -245,38 +243,76 @@ class CountPagesAction(InterfaceAction):
                                    cfg.DEFAULT_LIBRARY_VALUES[cfg.KEY_CUSTOM_CHARS_PER_PAGE])
         icu_wordcount = c.get(cfg.KEY_USE_ICU_WORDCOUNT,
                               cfg.DEFAULT_STORE_VALUES[cfg.KEY_USE_ICU_WORDCOUNT])
-        QueueProgressDialog(self.gui, book_ids, tdir, statistics_cols_map,
+        QueueProgressDialog(self.gui, book_ids, statistics_cols_map,
                             pages_algorithm, custom_chars_per_page, overwrite_existing, use_preferred_output, 
                             icu_wordcount, self._queue_job, db, page_count_mode=page_count_mode, download_source=download_source)
 
-    def _queue_job(self, tdir, books_to_scan, statistics_cols_map, pages_algorithm, 
+    def _queue_job(self, books_to_scan, statistics_cols_map, pages_algorithm, 
                    custom_chars_per_page, icu_wordcount, page_count_mode='Estimate', download_source=None):
         if not books_to_scan:
-            if tdir:
-                # All failed so cleanup our temp directory
-                remove_dir(tdir)
             return
 
         c = cfg.plugin_prefs[cfg.STORE_NAME]
         batch_size = c.get(cfg.KEY_BATCH_SIZE, cfg.DEFAULT_STORE_VALUES[cfg.KEY_BATCH_SIZE])
-        batches = self._split_jobs(books_to_scan, batch_size)
+        batches = self._split_jobs([b[0] for b in books_to_scan], batch_size)
+        db = self.gui.current_db
+        
         for i, batch_ids in enumerate(batches):
-            func = 'arbitrary_n'
-            cpus = self.gui.job_manager.server.pool_size
-            args = ['calibre_plugins.count_pages.jobs', 'do_count_statistics',
-                    (batch_ids, pages_algorithm, self.nltk_pickle, custom_chars_per_page,
-                    icu_wordcount, page_count_mode, download_source, cpus)]
-            desc = _('Count Page/Word Statistics')
-            job = self.gui.job_manager.run_job(
-                    self.Dispatcher(self._get_statistics_completed), func, args=args,
-                        description=desc)
-            job.tdir = tdir
-            job.statistics_cols_map = statistics_cols_map
-            job.page_count_mode = page_count_mode
-            job.download_source = download_source
-            job.plugin_callback = self.plugin_callback
+            batch_tdir = PersistentTemporaryDirectory(f'_count_pages_batch_{i}', prefix='')
+            try:
+                # Copy only this batch's books to the batch temp directory
+                batch_books = self._copy_batch_files(books_to_scan, batch_ids, batch_tdir, db)
+                
+                # Create and queue the job
+                self._create_batch_job(batch_books, batch_tdir, statistics_cols_map, 
+                                      pages_algorithm, custom_chars_per_page, icu_wordcount,
+                                      page_count_mode, download_source, i + 1, len(batches))
+            except Exception as e:
+                print(f"Error processing batch {i}: {e}")
+                remove_dir(batch_tdir)
+        
         self.gui.status_bar.show_message(_('Counting statistics in %d books') % len(books_to_scan))
         self.plugin_callback = None
+
+    def _copy_batch_files(self, books_to_scan, batch_ids, batch_tdir, db):
+        '''Copy only this batch's books to the batch temp directory'''
+        batch_books = []
+        for book_id, title_author, format_code, download_sources, statistics_to_run in books_to_scan:
+            if book_id in batch_ids:
+                # Copy the book file if a format was specified (not download-only)
+                dest_file = None
+                if format_code:
+                    dest_file = os.path.join(batch_tdir, f'{book_id}.{format_code}')
+                    try:
+                        with open(dest_file, 'w+b') as f:
+                            db.copy_format_to(book_id, format_code.upper(), f, index_is_id=True)
+                    except Exception as e:
+                        print(f"Error copying format {format_code} for book {book_id}: {e}")
+                        continue
+                batch_books.append((book_id, title_author, dest_file, download_sources, statistics_to_run))
+        return batch_books
+
+    def _create_batch_job(self, batch_books, batch_tdir, statistics_cols_map, 
+                         pages_algorithm, custom_chars_per_page, icu_wordcount,
+                         page_count_mode, download_source, batch_num, total_batches):
+        '''Create and queue a batch job with the appropriate parameters'''
+        func = 'arbitrary_n'
+        cpus = self.gui.job_manager.server.pool_size
+        args = ['calibre_plugins.count_pages.jobs', 'do_count_statistics',
+                (batch_books, pages_algorithm, self.nltk_pickle, custom_chars_per_page,
+                icu_wordcount, page_count_mode, download_source, cpus)]
+        
+        desc = _('Count Page/Word Statistics') + (' (%d of %d)' % (batch_num, total_batches))
+        job = self.gui.job_manager.run_job(
+                self.Dispatcher(self._get_statistics_completed), func, args=args,
+                    description=desc)
+        
+        # Attach metadata to job
+        job.tdir = batch_tdir
+        job.statistics_cols_map = statistics_cols_map
+        job.page_count_mode = page_count_mode
+        job.download_source = download_source
+        job.plugin_callback = self.plugin_callback
 
     def _split_jobs(self, ids, batch_size):
         ans = []
@@ -288,8 +324,10 @@ class CountPagesAction(InterfaceAction):
         return ans
 
     def _get_statistics_completed(self, job):
+        # Clean up the batch temp directory
         if job.tdir:
             remove_dir(job.tdir)
+        
         if job.failed:
             return self.gui.job_exception(job, dialog_title=_('Failed to count statistics'))
         self.gui.status_bar.show_message(_('Counting statistics batch completed'), 3000)
