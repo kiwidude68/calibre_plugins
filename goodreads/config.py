@@ -42,6 +42,11 @@ KEY_GET_VOTES = 'getVotes'
 KEY_FIRST_PUBLISHED = 'firstPublished'
 KEY_GENRE_MAPPINGS = 'genreMappings'
 KEY_MAP_GENRES = 'mapGenres'
+KEY_GET_SHELVES_TAGS = 'getShelvesAsTags'
+KEY_SHELF_THRESHOLD_ABSOLUTE = 'shelfThresholdAbsolute'
+KEY_SHELF_THRESHOLD_PERCENTAGE = 'shelfThresholdPercentage'
+KEY_SHELF_THRESHOLD_PERCENTAGE_OF = 'shelfThresholdPercentageOf'
+KEY_SHELF_MAPPINGS = 'shelfMappings'
 
 DEFAULT_GENRE_MAPPINGS = {
                 'Anthologies': ['Anthologies'],
@@ -102,6 +107,76 @@ DEFAULT_GENRE_MAPPINGS = {
                 'Young Adult': ['Young Adult'],
                 }
 
+# Mapping from Goodreads community shelf names (lowercase-hyphenated) to calibre tags.
+# Used when KEY_GET_SHELVES_TAGS is enabled.
+DEFAULT_SHELF_MAPPINGS = {
+    'adult': ['Adult'],
+    'adult-fiction': ['Adult'],
+    'adventure': ['Adventure'],
+    'anthologies': ['Anthologies'],
+    'art': ['Art'],
+    'biography': ['Biography'],
+    'business': ['Business'],
+    'chick-lit': ['Chick-lit'],
+    'childrens': ['Childrens'],
+    'classics': ['Classics'],
+    'comedy': ['Humour'],
+    'comics': ['Comics'],
+    'comics-manga': ['Comics'],
+    'contemporary': ['Contemporary'],
+    'cookbooks': ['Cookbooks'],
+    'crime': ['Crime'],
+    'essays': ['Writing'],
+    'fantasy': ['Fantasy'],
+    'feminism': ['Feminism'],
+    'gardening': ['Gardening'],
+    'gay': ['Gay'],
+    'graphic-novels': ['Comics'],
+    'graphic-novels-comics': ['Comics'],
+    'graphic-novels-comics-manga': ['Comics'],
+    'health': ['Health'],
+    'historical': ['Historical'],
+    'historical-fiction': ['Historical', 'Fiction'],
+    'history': ['History'],
+    'horror': ['Horror'],
+    'humor': ['Humour'],
+    'inspirational': ['Inspirational'],
+    'lgbt': ['Gay'],
+    'manga': ['Comics'],
+    'memoir': ['Biography'],
+    'modern': ['Modern'],
+    'music': ['Music'],
+    'mystery': ['Mystery'],
+    'non-fiction': ['Non-Fiction'],
+    'paranormal': ['Paranormal'],
+    'philosophy': ['Philosophy'],
+    'poetry': ['Poetry'],
+    'politics': ['Politics'],
+    'psychology': ['Psychology'],
+    'reference': ['Reference'],
+    'religion': ['Religion'],
+    'romance': ['Romance'],
+    'sci-fi': ['Science Fiction'],
+    'sci-fi-and-fantasy': ['Science Fiction', 'Fantasy'],
+    'sci-fi-fantasy': ['Science Fiction', 'Fantasy'],
+    'science': ['Science'],
+    'science-fiction': ['Science Fiction'],
+    'science-fiction-fantasy': ['Science Fiction', 'Fantasy'],
+    'self-help': ['Self Help'],
+    'sf-fantasy': ['Science Fiction', 'Fantasy'],
+    'sociology': ['Sociology'],
+    'spirituality': ['Spirituality'],
+    'suspense': ['Suspense'],
+    'thriller': ['Thriller'],
+    'travel': ['Travel'],
+    'vampires': ['Vampires'],
+    'war': ['War'],
+    'western': ['Western'],
+    'writing': ['Writing'],
+    'ya': ['Young Adult'],
+    'young-adult': ['Young Adult'],
+}
+
 DEFAULT_STORE_VALUES = {
     KEY_GET_EDITIONS: False,
     KEY_GET_ALL_AUTHORS: False,
@@ -110,7 +185,12 @@ DEFAULT_STORE_VALUES = {
     KEY_GET_VOTES: False,
     KEY_FIRST_PUBLISHED: True,
     KEY_MAP_GENRES: True,
-    KEY_GENRE_MAPPINGS: copy.deepcopy(DEFAULT_GENRE_MAPPINGS)
+    KEY_GENRE_MAPPINGS: copy.deepcopy(DEFAULT_GENRE_MAPPINGS),
+    KEY_GET_SHELVES_TAGS: False,
+    KEY_SHELF_THRESHOLD_ABSOLUTE: 10,
+    KEY_SHELF_THRESHOLD_PERCENTAGE: 30,
+    KEY_SHELF_THRESHOLD_PERCENTAGE_OF: [3, 4],
+    KEY_SHELF_MAPPINGS: copy.deepcopy(DEFAULT_SHELF_MAPPINGS),
 }
 
 # This is where all preferences for this plugin will be stored
@@ -309,6 +389,14 @@ class ConfigWidget(DefaultConfigWidget):
         self.get_votes_checkbox.setChecked(c.get(KEY_GET_VOTES, DEFAULT_STORE_VALUES[KEY_GET_VOTES]))
         other_group_box_layout.addWidget(self.get_votes_checkbox)
 
+        self.get_shelves_tags_checkbox = QCheckBox(_('Get additional community shelf tags (makes 1 extra HTTP request)'), self)
+        self.get_shelves_tags_checkbox.setToolTip(_(
+            'When checked, fetches the Goodreads shelves page to obtain community-voted shelf tags.\n'
+            'These supplement the curated genre tags with broader community categorisations.\n'
+            'Threshold and mapping defaults can be adjusted in the plugin JSON config file.'))
+        self.get_shelves_tags_checkbox.setChecked(c.get(KEY_GET_SHELVES_TAGS, DEFAULT_STORE_VALUES[KEY_GET_SHELVES_TAGS]))
+        other_group_box_layout.addWidget(self.get_shelves_tags_checkbox)
+
         self.edit_table.populate_table(c[KEY_GENRE_MAPPINGS])
 
     def commit(self):
@@ -320,6 +408,7 @@ class ConfigWidget(DefaultConfigWidget):
         new_prefs[KEY_FIRST_PUBLISHED] = self.first_published_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GET_RATING] = self.get_rating_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GET_VOTES] = self.get_votes_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_SHELVES_TAGS] = self.get_shelves_tags_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_MAP_GENRES] = self.map_genres_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GENRE_MAPPINGS] = self.edit_table.get_data()
         plugin_prefs[STORE_NAME] = new_prefs

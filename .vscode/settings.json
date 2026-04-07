@@ -1,3 +1,6 @@
 {
-    "python.envFile": "${workspaceFolder}/.env"
+    "python.envFile": "${workspaceFolder}/.env",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }
