@@ -411,6 +411,13 @@ class ConfigWidget(DefaultConfigWidget):
         new_prefs[KEY_GET_SHELVES_TAGS] = self.get_shelves_tags_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_MAP_GENRES] = self.map_genres_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GENRE_MAPPINGS] = self.edit_table.get_data()
+        # Preserve shelf-specific settings that have no UI controls — read from
+        # existing prefs so a Save does not wipe user-edited JSON values.
+        existing = plugin_prefs.get(STORE_NAME, {})
+        new_prefs[KEY_SHELF_MAPPINGS] = existing.get(KEY_SHELF_MAPPINGS, DEFAULT_STORE_VALUES[KEY_SHELF_MAPPINGS])
+        new_prefs[KEY_SHELF_THRESHOLD_ABSOLUTE] = existing.get(KEY_SHELF_THRESHOLD_ABSOLUTE, DEFAULT_STORE_VALUES[KEY_SHELF_THRESHOLD_ABSOLUTE])
+        new_prefs[KEY_SHELF_THRESHOLD_PERCENTAGE] = existing.get(KEY_SHELF_THRESHOLD_PERCENTAGE, DEFAULT_STORE_VALUES[KEY_SHELF_THRESHOLD_PERCENTAGE])
+        new_prefs[KEY_SHELF_THRESHOLD_PERCENTAGE_OF] = existing.get(KEY_SHELF_THRESHOLD_PERCENTAGE_OF, DEFAULT_STORE_VALUES[KEY_SHELF_THRESHOLD_PERCENTAGE_OF])
         plugin_prefs[STORE_NAME] = new_prefs
 
     def add_mapping(self):

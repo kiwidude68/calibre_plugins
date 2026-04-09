@@ -138,7 +138,7 @@ class Worker(Thread): # Get details
         self.result_queue.put(mi)
 
     def parse_fantastic_fiction_id(self, url):
-        return re.search(self.plugin.BASE_URL + '/(.*)\.htm', url).groups(0)[0]
+        return re.search(self.plugin.BASE_URL + r'/(.*)\.htm', url).groups(0)[0]
 
     def parse_title(self, root):
 #        title_node = root.xpath('//div[@class="ff"]/table[2]/tr/td[2]/font[@size="+3"]')
@@ -211,7 +211,7 @@ class Worker(Thread): # Get details
         edition_nodes = root.xpath('//div[@id="content"]/div/table/tr/td[2]/text()')
         edition_nodes = root.xpath('//div/div[@class="e"]/div/text()')
 #         self.log('parse_isbn_and_publisher: edition_nodes=', edition_nodes)
-        RE_ISBN = re.compile(u'([0-9\-])+', re.UNICODE)
+        RE_ISBN = re.compile(r'([0-9\-])+', re.UNICODE)
         for i, edition_text in enumerate(edition_nodes):
 #             self.log('parse_isbn_and_publisher: edition_text=', edition_text)
             if edition_text[:5] == 'ISBN:':

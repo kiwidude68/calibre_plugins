@@ -531,14 +531,47 @@ class Worker(Thread): # Get details
         if len(calibre_tags) > 0:
             return calibre_tags
 
+    def _search_json_for_shelves(self, obj, out, _depth=0):
+        '''
+        Recursively walk a JSON structure and collect shelf-name / vote-count pairs.
+
+        A value is treated as a shelf entry when it is a dict containing:
+          - a name-like key ('shelfName' or 'name') whose value is a
+            lowercase, hyphen-separated slug (e.g. "science-fiction")
+          - a count-like key ('count', 'userCount', or 'shelvesCount') whose
+            value is a positive integer
+
+        Using 'name' as a fallback is intentional but filtered strictly via the
+        slug pattern so that author names, book titles, etc. are never matched.
+        '''
+        if _depth > 12 or not isinstance(obj, (dict, list)):
+            return
+        if isinstance(obj, list):
+            for item in obj:
+                if isinstance(item, dict):
+                    name = item.get('shelfName') or item.get('name')
+                    count = (item.get('count') or item.get('userCount') or
+                             item.get('shelvesCount'))
+                    if (isinstance(name, str) and isinstance(count, (int, float))
+                            and count >= 1
+                            and re.match(r'^[a-z][a-z0-9\-]+$', name)):
+                        out[name] = max(out.get(name, 0), int(count))
+                self._search_json_for_shelves(item, out, _depth + 1)
+        elif isinstance(obj, dict):
+            for v in obj.values():
+                self._search_json_for_shelves(v, out, _depth + 1)
+
     def parse_shelves_tags(self, goodreads_id):
         '''
         Fetch the Goodreads community shelves page for a book and convert popular
         user shelves to calibre tags using the configured shelf-to-tag mappings and
         vote-count thresholds.
 
-        Tries to parse shelf data from the Next.js __NEXT_DATA__ JSON first (post-2022
-        Goodreads format), then falls back to legacy HTML parsing.
+        Shelf data is extracted by recursively searching the embedded Next.js
+        __NEXT_DATA__ JSON for any object that looks like a shelf entry (lowercase-
+        hyphenated name + integer count), then merged with whatever the legacy HTML
+        parser finds.  Both paths are always attempted so that a partial JSON result
+        does not suppress the HTML results.
         '''
         shelves_url = 'https://www.goodreads.com/book/shelves/' + goodreads_id
         self.log.info('parse_shelves_tags: fetching %s' % shelves_url)
@@ -554,45 +587,39 @@ class Worker(Thread): # Get details
         shelves = {}
 
         # Try to extract shelf data from the Next.js JSON embedded in the page (post-2022 format).
+        # Use a recursive search rather than looking for specific key names, because the
+        # shelves data can appear under many different keys depending on page version.
         script_match = re.search(r'<script[^>]+id="__NEXT_DATA__"[^>]*>(.*?)</script>', raw_utf8, re.DOTALL)
         if script_match:
             try:
                 page_data = json.loads(script_match.group(1))
-                apollo = page_data.get('props', {}).get('pageProps', {}).get('apolloState', {})
-                for obj in apollo.values():
-                    if not isinstance(obj, dict):
-                        continue
-                    for key in ('shelves', 'userShelves', 'communityShelvesCount', 'shelvesCount'):
-                        shelf_list = obj.get(key)
-                        if isinstance(shelf_list, list):
-                            for s in shelf_list:
-                                name = s.get('shelfName') or s.get('name')
-                                count = s.get('count') or s.get('userCount')
-                                if name and count:
-                                    shelves[name] = int(count)
+                self._search_json_for_shelves(page_data, shelves)
                 if shelves:
                     self.log.info('parse_shelves_tags: found %d shelves in JSON data' % len(shelves))
             except Exception as e:
                 self.log.warning('parse_shelves_tags: failed to parse JSON shelf data: %s' % str(e))
 
-        # Fall back to legacy HTML parsing if JSON did not supply shelf data.
-        if not shelves:
-            try:
-                root = fromstring(clean_html(raw_utf8))
-                for shelf in root.xpath('//div[contains(@class, "shelfStat")]'):
-                    name_nodes = shelf.xpath('.//a[contains(@class, "actionLinkLite")]')
-                    count_nodes = shelf.xpath('.//div[contains(@class, "smallText")]')
-                    if name_nodes and count_nodes:
-                        name = name_nodes[0].text_content().strip()
-                        count_text = count_nodes[0].text_content().strip().split()[0].replace(',', '')
-                        try:
-                            shelves[name] = int(count_text)
-                        except ValueError:
-                            pass
-                if shelves:
-                    self.log.info('parse_shelves_tags: found %d shelves in HTML' % len(shelves))
-            except Exception as e:
-                self.log.warning('parse_shelves_tags: failed to parse HTML shelf data: %s' % str(e))
+        # Always also try the legacy HTML parsing and merge results.
+        # This is not a fallback — both paths run so that shelves missed by the JSON
+        # search (e.g. community shelves only present in rendered HTML) are captured.
+        try:
+            root = fromstring(clean_html(raw_utf8))
+            html_count = 0
+            for shelf in root.xpath('//div[contains(@class, "shelfStat")]'):
+                name_nodes = shelf.xpath('.//a[contains(@class, "actionLinkLite")]')
+                count_nodes = shelf.xpath('.//div[contains(@class, "smallText")]')
+                if name_nodes and count_nodes:
+                    name = name_nodes[0].text_content().strip()
+                    count_text = count_nodes[0].text_content().strip().split()[0].replace(',', '')
+                    try:
+                        shelves[name] = max(shelves.get(name, 0), int(count_text))
+                        html_count += 1
+                    except ValueError:
+                        pass
+            if html_count:
+                self.log.info('parse_shelves_tags: found %d shelves in HTML' % html_count)
+        except Exception as e:
+            self.log.warning('parse_shelves_tags: failed to parse HTML shelf data: %s' % str(e))
 
         if not shelves:
             self.log.warning('parse_shelves_tags: no shelf data found on page')

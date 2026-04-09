@@ -273,18 +273,21 @@ class Goodreads(Source):
         log.info('--- identify start: title=%s, authors=%s' % (title, authors))
         log.info('identify: identifiers=%s, timeout=%ds' % (identifiers, timeout))
         matches = []
-        goodreads_id = None
-        # Unlike the other metadata sources, if we have a goodreads id then we
-        # do not need to fire a "search" at Goodreads.com. Instead we will be
-        # able to go straight to the URL for that book. We can use some identifiers 
-        # to get the Goodreads ID via an API if we don't already have it.
-        try:
-            if identifiers:
-                goodreads_id = self.get_goodreads_id_from_identifiers(log, abort, timeout=timeout, identifiers=identifiers)
-        except Exception as e:
-            err = 'Failed to trying to get Goodreads id using auto_complete API'
-            log.exception(err)
-            return as_unicode(e)
+        # Give explicit priority to any goodreads identifier already on the book.
+        # This check must happen before any API calls so that network errors in
+        # the ISBN/ASIN autocomplete path cannot interfere with it.
+        goodreads_id = identifiers.get(self.ID_NAME, None) if identifiers else None
+        if goodreads_id:
+            log.info('identify: using existing goodreads identifier: %s' % goodreads_id)
+        else:
+            # No goodreads id present directly - try to find one via other identifier
+            # lookups (ISBN, ASIN).  If the API call fails, fall through to the
+            # title/author search below rather than aborting.
+            try:
+                if identifiers:
+                    goodreads_id = self.get_goodreads_id_from_identifiers(log, abort, timeout=timeout, identifiers=identifiers)
+            except Exception as e:
+                log.exception('Failed to get Goodreads id using auto_complete API; will fall back to title/author search')
 
         br = self.browser
 
