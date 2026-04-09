@@ -1,5 +1,9 @@
 # Count Pages Change Log
 
+## [1.15.1] - 2026-04-02
+### Fixed
+- Errors could occur with using batches (temp folder being removed after first batch completes). Each batch now has truly independent disk use. (#162)
+
 ## [1.15.0] - 2026-02-25
 ### Added
 - When counting larger numbers of books, break into batches of 50 (configurable)

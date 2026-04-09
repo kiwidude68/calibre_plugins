@@ -36,13 +36,13 @@ def authors_to_string(authors):
 
 class QueueProgressDialog(QProgressDialog):
 
-    def __init__(self, gui, book_ids, tdir, statistics_cols_map,
+    def __init__(self, gui, book_ids, statistics_cols_map,
                  pages_algorithm, custom_chars_per_page, overwrite_existing, use_preferred_output,
                  icu_wordcount, queue, db, page_count_mode='Estimate', download_source=None):
         QProgressDialog.__init__(self, _('Working')+'...', _('Cancel'), 0, len(book_ids), gui)
         self.setWindowTitle(_('Queueing books for counting statistics'))
         self.setMinimumWidth(500)
-        self.book_ids, self.tdir, self.queue, self.db = book_ids, tdir, queue, db
+        self.book_ids, self.queue, self.db = book_ids, queue, db
         self.statistics_cols_map = statistics_cols_map
         self.pages_algorithm = pages_algorithm
         self.page_count_mode = page_count_mode
@@ -147,7 +147,7 @@ class QueueProgressDialog(QProgressDialog):
             if len(statistics_to_run) == 1:
                 # Since not counting anything else, we have all we need at this point to continue
                 self.books_to_scan.append((book_id, title_author, None,
-                                            download_sources, statistics_to_run))
+                                            download_sources, list(statistics_to_run)))
                 return
 
         found_format = False
@@ -158,18 +158,11 @@ class QueueProgressDialog(QProgressDialog):
                 continue
             if self.db.has_format(book_id, bf, index_is_id=True):
                 self.setLabelText(_('Queueing ')+title_author)
-                try:
-                    # Copy the book to the temp directory, using book id as filename
-                    dest_file = os.path.join(self.tdir, '%d.%s'%(book_id, bf.lower()))
-                    with open(dest_file, 'w+b') as f:
-                        self.db.copy_format_to(book_id, bf, f, index_is_id=True)
-                    self.books_to_scan.append((book_id, title_author, dest_file,
-                                                download_sources, statistics_to_run))
-                    found_format = True
-                    print("For book '%s', using format %s" % (title_author, bf))
-                except:
-                    traceback.print_exc()
-                    self.bad[book_id] = traceback.format_exc()
+                # Store the format code instead of copying the file
+                self.books_to_scan.append((book_id, title_author, bf.lower(),
+                                            download_sources, list(statistics_to_run)))
+                found_format = True
+                print("For book '%s', using format %s" % (title_author, bf))
                 # Either found a format or book is bad - stop looking through formats
                 break
 
@@ -179,7 +172,7 @@ class QueueProgressDialog(QProgressDialog):
             if len(download_sources) > 0:
                 self.warnings.append((book_id, _('No format found for word count, but page count download will be attempted')))
                 self.books_to_scan.append((book_id, title_author, None,
-                                            download_sources, statistics_to_run))
+                                            download_sources, list(statistics_to_run)))
             else:
                 self.bad[book_id] = _('No convertible format found')
 
@@ -206,7 +199,7 @@ class QueueProgressDialog(QProgressDialog):
                 summary_msg % (len(distinct_problem_ids), len(self.book_ids)), msg).exec_()
         self.gui = None
         # Queue a job to process these books
-        self.queue(self.tdir, self.books_to_scan, self.statistics_cols_map,
+        self.queue(self.books_to_scan, self.statistics_cols_map,
                    self.pages_algorithm, self.custom_chars_per_page, self.icu_wordcount, self.page_count_mode, self.download_source)
 
 class TotalSummaryDialog(MessageBox): # {{{
