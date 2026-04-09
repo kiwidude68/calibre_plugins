@@ -1,5 +1,11 @@
 # Goodreads Sync Change Log
 
+## [1.16.14] - 2026-03-29
+### Added
+- Added checkboxes to `Sync From Goodreads Shelf` dialog to allow for selective syncing.
+- Reordered columns so that like columns are next to each for easier comparison.
+- Added color highlighting so you can tell at a glance when Goodreads data and Calibre data don't match.
+
 ## [1.16.13] - 2026-02-09
 ### Added
 - Arabic translation
