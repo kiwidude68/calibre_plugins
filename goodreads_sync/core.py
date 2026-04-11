@@ -459,8 +459,8 @@ class HttpHelper(object):
                 reviews_node = root.find('reviews')
                 if reviews_node is None:
                     break
-                total = int(reviews_node.attrib.get('total'))
-                end = int(reviews_node.attrib.get('end'))
+                total = int(reviews_node.attrib.get('total', 0))
+                end = int(reviews_node.attrib.get('end', 0))
                 review_nodes = reviews_node.findall('review')
                 for review_node in review_nodes:
                     book = self._convert_review_xml_node_to_book(review_node)
@@ -590,12 +590,14 @@ class HttpHelper(object):
     def _convert_review_xml_node_to_book(self, review_node, include_work=False):
 #         debug_print("HttpHelper::_convert_review_xml_node_to_book - review_node=", tostring(review_node))
         book_node = review_node.find('book')
+        if book_node is None:
+            return None
         book = {}
         goodreads_id = book_node.findtext('id')
         book['goodreads_id'] = goodreads_id
         isbn = book_node.findtext('isbn13')
         book['goodreads_isbn'] = isbn
-        (title, series) = self._convert_goodreads_title_with_series(book_node.findtext('title').strip())
+        (title, series) = self._convert_goodreads_title_with_series((book_node.findtext('title') or '').strip())
         book['goodreads_title'] = title
         book['goodreads_series'] = series
         if book_node.find('authors') is None:
@@ -621,7 +623,7 @@ class HttpHelper(object):
             book['goodreads_date_added'] = self._parse_goodreads_date(review_node.findtext('date_added'))
             book['goodreads_date_updated'] = self._parse_goodreads_date(review_node.findtext('date_updated'))
             #review_text = review_node.findtext('body')
-            book['goodreads_review_text'] = review_node.findtext('body').strip()
+            book['goodreads_review_text'] = (review_node.findtext('body') or '').strip()
             if len(book['goodreads_review_text']) > 0:
                 debug_print("_convert_review_xml_node_to_book: length of review_text=", len(book['goodreads_review_text']))
 #                 debug_print("_convert_review_xml_node_to_book: review_text=", book['goodreads_review_text'])
@@ -691,7 +693,7 @@ class HttpHelper(object):
             root = et.fromstring(content, parser=RECOVER_PARSER)
         if root is None:
             import tempfile
-            cpath = os.path.join(tempfile.tempdir, 'xml_fail.xml')
+            cpath = os.path.join(tempfile.gettempdir(), 'xml_fail.xml')
             f = open(cpath, 'w')
             f.write(content)
             f.close()

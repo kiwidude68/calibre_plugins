@@ -357,11 +357,12 @@ class GoodreadsSyncAction(InterfaceAction):
 
 
     def _get_shelves_valid_for_sync(self, user_name):
-        # We will only allow syncing to shelves that have either actions or sync of rating/date read
+        # We will only allow syncing to shelves that have either actions or sync of rating/date read/review text
         user_info = self.users[user_name]
         user_shelves = user_info.get(cfg.KEY_SHELVES, [])
         rating_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_RATING_COLUMN, None)
         date_read_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_DATE_READ_COLUMN, None)
+        review_text_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_REVIEW_TEXT_COLUMN, None)
         sync_shelves = []
         for shelf in user_shelves:
             if len(shelf.get(cfg.KEY_SYNC_ACTIONS, [])) > 0:
@@ -369,6 +370,8 @@ class GoodreadsSyncAction(InterfaceAction):
             elif rating_column and shelf.get(cfg.KEY_SYNC_RATING, False):
                 sync_shelves.append(shelf)
             elif date_read_column and shelf.get(cfg.KEY_SYNC_DATE_READ, False):
+                sync_shelves.append(shelf)
+            elif review_text_column and shelf.get(cfg.KEY_SYNC_REVIEW_TEXT, False):
                 sync_shelves.append(shelf)
         return sync_shelves
 
@@ -413,11 +416,12 @@ class GoodreadsSyncAction(InterfaceAction):
                 # a different Goodreads id for a Calibre book.
                 db.set_identifier(orig_calibre_id, 'goodreads', '', commit=False)
                 # Be careful when updating caches as may have already overwritten data
-                if cb_cache[orig_calibre_id] == goodreads_id:
+                if cb_cache.get(orig_calibre_id) == goodreads_id:
                     del cb_cache[orig_calibre_id]
                 # We need to maintain our in-memory cache of mapped ids.
                 calibre_ids_mapped = gr_cache.get(goodreads_id, [])
-                calibre_ids_mapped.remove(orig_calibre_id)
+                if orig_calibre_id in calibre_ids_mapped:
+                    calibre_ids_mapped.remove(orig_calibre_id)
                 if len(calibre_ids_mapped) == 0:
                     del gr_cache[goodreads_id]
                 else:
