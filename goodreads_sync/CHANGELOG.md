@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.17.1] - 2026-04-15
+### Added
+- When editing sync actions it will now support numeric columns e.g. set reading progress column to 100
+
 ## [1.17.0] - 2026-04-11
 ### Added
 - Added checkboxes to `Sync From Goodreads Shelf` dialog to allow for selective syncing. [@albyofdoom]

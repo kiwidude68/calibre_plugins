@@ -15,13 +15,13 @@ try:
                           QGroupBox, QHBoxLayout, QComboBox, QCheckBox, QFormLayout,
                           QIcon, QTableWidget, QTableWidgetItem, QPushButton, QInputDialog,
                           QAbstractItemView, QDialog, QDialogButtonBox, QAction, QToolButton, 
-                          QSpacerItem, QModelIndex)
+                          QSpacerItem, QModelIndex, QSpinBox, QDoubleSpinBox)
 except ImportError:
     from PyQt5.Qt import (Qt, QWidget, QVBoxLayout, QLabel, QLineEdit, QGridLayout, QUrl,
                           QGroupBox, QHBoxLayout, QComboBox, QCheckBox, QFormLayout,
                           QIcon, QTableWidget, QTableWidgetItem, QPushButton, QInputDialog,
                           QAbstractItemView, QDialog, QDialogButtonBox, QAction, QToolButton,
-                          QSpacerItem, QModelIndex)
+                          QSpacerItem, QModelIndex, QSpinBox, QDoubleSpinBox)
 
 from calibre import prints
 from calibre.constants import DEBUG
@@ -477,6 +477,8 @@ class MaintainActionsTableWidget(QTableWidget):
         elif self.is_enumeration_custom_column(column_key):
             values = self.custom_columns[column_key]['display']['enum_values']
             self.setCellWidget(row, 2, EnumColumnComboBox(self, sync_action['value'], values))
+        elif self.is_numeric_custom_column(column_key):
+            self.setCellWidget(row, 2, self.create_numeric_spinbox(column_key, sync_action['value']))
         elif column_key == 'tags':
             self.setCellWidget(row, 2, self.create_tags_edit(sync_action['value'], self.all_tags))
         elif self.custom_columns[column_key]['is_multiple'] is not None:
@@ -494,6 +496,8 @@ class MaintainActionsTableWidget(QTableWidget):
         elif self.is_enumeration_custom_column(column_key):
             values = self.custom_columns[column_key]['display']['enum_values']
             self.setCellWidget(row, 2, EnumColumnComboBox(self, '', values))
+        elif self.is_numeric_custom_column(column_key):
+            self.setCellWidget(row, 2, self.create_numeric_spinbox(column_key, ''))
         elif column_key == 'tags':
             self.setCellWidget(row, 2, self.create_tags_edit('', self.all_tags))
         elif self.custom_columns[column_key]['is_multiple'] is not None:
@@ -510,6 +514,27 @@ class MaintainActionsTableWidget(QTableWidget):
         tags.setText(value)
         return tags
 
+    def create_numeric_spinbox(self, column_key, value):
+        is_float = self.custom_columns[column_key]['datatype'] == 'float'
+        if is_float:
+            spinbox = QDoubleSpinBox(self)
+            spinbox.setMinimum(0.0)
+            spinbox.setMaximum(999999.99)  # Supports large values with decimals
+            spinbox.setDecimals(2)
+            try:
+                spinbox.setValue(float(value) if value else 0.0)
+            except (ValueError, TypeError):
+                spinbox.setValue(0.0)
+        else:
+            spinbox = QSpinBox(self)
+            spinbox.setMinimum(0)
+            spinbox.setMaximum(999999)  # Supports large page counts
+            try:
+                spinbox.setValue(int(value) if value else 0)
+            except (ValueError, TypeError):
+                spinbox.setValue(0)
+        return spinbox
+
     def get_taglike_column_values(self, column_key):
         label = self.db.field_metadata.key_to_label(column_key)
         values = list(self.db.all_custom(label=label))
@@ -523,6 +548,9 @@ class MaintainActionsTableWidget(QTableWidget):
 
     def is_enumeration_custom_column(self, column_key):
         return column_key.startswith('#') and self.custom_columns[column_key]['datatype'] == 'enumeration'
+
+    def is_numeric_custom_column(self, column_key):
+        return column_key.startswith('#') and self.custom_columns[column_key]['datatype'] in ('int', 'float')
 
     def add_row(self):
         self.setFocus()
@@ -574,6 +602,13 @@ class MaintainActionsTableWidget(QTableWidget):
                 value = unicode(self.cellWidget(row, 2).currentText()).strip()
             elif self.is_datetime_custom_column(column_key):
                 value = self.cellWidget(row, 2).selected_key()
+            elif self.is_numeric_custom_column(column_key):
+                numeric_value = self.cellWidget(row, 2).value()
+                # For float columns, preserve decimal places; for int, convert to int string
+                if self.custom_columns[column_key]['datatype'] == 'float':
+                    value = str(numeric_value)
+                else:
+                    value = str(int(numeric_value))
             elif column_key == 'tags' or self.custom_columns[column_key]['is_multiple'] is not None:
                 value = unicode(self.cellWidget(row, 2).text()).strip()
             else:
@@ -937,7 +972,7 @@ class ConfigWidget(QWidget):
         user_group_box_layout = QVBoxLayout()
         user_group_box.setLayout(user_group_box_layout)
 
-        action_custom_columns = self.get_custom_columns(['bool', 'text', 'comments', 'datetime', 'enumeration'])
+        action_custom_columns = self.get_custom_columns(['bool', 'text', 'comments', 'datetime', 'enumeration', 'int', 'float'])
         self.all_tags = self.plugin_action.gui.library_view.model().db.all_tags()
         self._shelves_table = ShelvesTableWidget(self, action_custom_columns, self.all_tags)
         user_group_box_layout.addWidget(self._shelves_table)
