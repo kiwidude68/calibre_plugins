@@ -138,7 +138,7 @@ class Worker(Thread): # Get details
         self.result_queue.put(mi)
 
     def parse_fantastic_fiction_id(self, url):
-        return re.search(self.plugin.BASE_URL + '/(.*)\.htm', url).groups(0)[0]
+        return re.search(self.plugin.BASE_URL + r'/(.*)\.htm', url).groups(0)[0]
 
     def parse_title(self, root):
 #        title_node = root.xpath('//div[@class="ff"]/table[2]/tr/td[2]/font[@size="+3"]')
@@ -185,15 +185,6 @@ class Worker(Thread): # Get details
             year = int(year_node[0].text.strip(' ()'))
             from calibre.utils.date import utc_tz
             return datetime.datetime(year, 1, 1, tzinfo=utc_tz)
-#         year_node = root.xpath('//div[@id="content"]/span[@class="year"]')
-#         if year_node:
-#             year = year_node[0].text.strip()
-#             year = re.search('(\d+)', year)
-#             if year is not None:
-#                 year = year.groups(0)[0]
-#                 year = int(year)
-#                 from calibre.utils.date import utc_tz
-#                 return datetime.datetime(year, 1, 1, tzinfo=utc_tz)
 
     def parse_comments_and_tags(self, root):
         description_node = root.xpath('//div[@class="blurb"]')
@@ -211,7 +202,7 @@ class Worker(Thread): # Get details
         edition_nodes = root.xpath('//div[@id="content"]/div/table/tr/td[2]/text()')
         edition_nodes = root.xpath('//div/div[@class="e"]/div/text()')
 #         self.log('parse_isbn_and_publisher: edition_nodes=', edition_nodes)
-        RE_ISBN = re.compile(u'([0-9\-])+', re.UNICODE)
+        RE_ISBN = re.compile(r'([0-9\-])+', re.UNICODE)
         for i, edition_text in enumerate(edition_nodes):
 #             self.log('parse_isbn_and_publisher: edition_text=', edition_text)
             if edition_text[:5] == 'ISBN:':

@@ -135,7 +135,7 @@ class Worker(Thread): # Get details
         self.result_queue.put(mi)
 
     def parse_fantastic_fiction_id(self, url):
-        return re.search(self.plugin.BASE_URL + '/(.*)\.htm', url).groups(0)[0]
+        return re.search(self.plugin.BASE_URL + r'/(.*)\.htm', url).groups(0)[0]
 
     def parse_title(self, root):
         title_node = root.xpath('//h1[@itemprop="name"]')

@@ -1,5 +1,9 @@
 # Fantastic Fiction Change Log
 
+## [1.7.5] - 2026-04-22
+### Fixed
+- Debug output warning from Python
+
 ## [1.7.4] - 2026-01-10
 ### Added
 - Temp workaround to allow the user to paste in the aws-waf-token value from web browser into the configuration.
