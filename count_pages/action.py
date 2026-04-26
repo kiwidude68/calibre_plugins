@@ -258,7 +258,7 @@ class CountPagesAction(InterfaceAction):
         db = self.gui.current_db
         
         for i, batch_ids in enumerate(batches):
-            batch_tdir = PersistentTemporaryDirectory(f'_count_pages_batch_{i}', prefix='')
+            batch_tdir = PersistentTemporaryDirectory('_count_pages_batch_{0}'.format(i), prefix='')
             try:
                 # Copy only this batch's books to the batch temp directory
                 batch_books = self._copy_batch_files(books_to_scan, batch_ids, batch_tdir, db)
@@ -268,7 +268,7 @@ class CountPagesAction(InterfaceAction):
                                       pages_algorithm, custom_chars_per_page, icu_wordcount,
                                       page_count_mode, download_source, i + 1, len(batches))
             except Exception as e:
-                print(f"Error processing batch {i}: {e}")
+                print("Error processing batch {0}: {1}".format(i, e))
                 remove_dir(batch_tdir)
         
         self.gui.status_bar.show_message(_('Counting statistics in %d books') % len(books_to_scan))
@@ -282,12 +282,12 @@ class CountPagesAction(InterfaceAction):
                 # Copy the book file if a format was specified (not download-only)
                 dest_file = None
                 if format_code:
-                    dest_file = os.path.join(batch_tdir, f'{book_id}.{format_code}')
+                    dest_file = os.path.join(batch_tdir, '{0}.{1}'.format(book_id, format_code))
                     try:
                         with open(dest_file, 'w+b') as f:
                             db.copy_format_to(book_id, format_code.upper(), f, index_is_id=True)
                     except Exception as e:
-                        print(f"Error copying format {format_code} for book {book_id}: {e}")
+                        print("Error copying format {0} for book {1}: {2}".format(format_code, book_id, e))
                         continue
                 batch_books.append((book_id, title_author, dest_file, download_sources, statistics_to_run))
         return batch_books

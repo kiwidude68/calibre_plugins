@@ -1,5 +1,9 @@
 # Count Pages Change Log
 
+## [1.15.2] - 2026-04-26
+### Fixed
+- Support calibre 3.48 with fix for format strings not supported in older versions.
+
 ## [1.15.1] - 2026-04-02
 ### Fixed
 - Errors could occur with using batches (temp folder being removed after first batch completes). Each batch now has truly independent disk use. (#162)
