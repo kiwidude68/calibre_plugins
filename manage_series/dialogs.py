@@ -201,7 +201,7 @@ class SeriesTableWidget(QTableWidget):
         sep2 = QAction(self)
         sep2.setSeparator(True)
         self.addAction(sep2)
-        for name in [_('PubDate'), _('Original Series Index'), _('Original Series Name')]:
+        for name in [_('PubDate'), _('Original Series Index'), _('Original Series Name'), _('Title')]:
             sort_action = QAction(_('Sort by')+' '+name, self)
             sort_action.setIcon(get_icon('images/sort.png'))
             sort_action.triggered.connect(partial(self.parent().sort_by, name))
@@ -741,6 +741,8 @@ class SeriesDialog(SizePersistedDialog):
             self.books = sorted(self.books, key=lambda k: k.sort_key(sort_by_pubdate=True))
         elif name == 'Original Series Name':
             self.books = sorted(self.books, key=lambda k: k.sort_key(sort_by_name=True))
+        elif name == _('Title'):
+            self.books = sorted(self.books, key=lambda k: k.sort_key(sort_by_title=True))
         else:
             self.books = sorted(self.books, key=lambda k: k.sort_key())
         self.renumber_series()
