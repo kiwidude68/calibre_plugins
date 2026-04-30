@@ -5,6 +5,7 @@ __copyright__ = '2011, Grant Drake'
 
 from calibre.ebooks.metadata.book.base import Metadata
 from calibre.utils.date import format_date
+from calibre.utils.icu import sort_key
 
 def get_indent_for_index(series_index):
     if not series_index:
@@ -159,11 +160,13 @@ class SeriesBook(object):
     def set_is_valid(self, is_valid_index):
         self._is_valid_index = is_valid_index
 
-    def sort_key(self, sort_by_pubdate=False, sort_by_name=False):
+    def sort_key(self, sort_by_pubdate=False, sort_by_name=False, sort_by_title=False):
         if sort_by_pubdate:
             pub_date = self.pubdate()
             if pub_date is not None and pub_date.year > 101:
                 return format_date(pub_date, 'yyyyMMdd')
+        elif sort_by_title:
+            return sort_key(self.title())
         else:
             series = self.orig_series_name()
             if series:
