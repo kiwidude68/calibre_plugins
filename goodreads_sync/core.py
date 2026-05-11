@@ -1215,6 +1215,9 @@ class CalibreDbHelper(object):
                     if value == 'none':
                         new_value = 0.
                     else:
+                        if isinstance(value, str):
+                            # value is not a fixed value from a rule but instead a column in the book map to get value from.
+                            value = book[value]
                         new_value = float(value)
                 elif action == 'REMOVE':
                     new_value = 0 # Value for any REMOVE action

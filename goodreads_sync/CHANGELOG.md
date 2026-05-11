@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.17.3] - 2026-05-11
+### Fixed
+- Sync actions for numeric columns needing to handle both retrieval from Goodreads and fixed static values.
+
 ## [1.17.2] - 2026-05-07
 ### Fixed
 - Sync actions for numeric columns having a key error
