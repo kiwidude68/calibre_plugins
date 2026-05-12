@@ -1212,11 +1212,13 @@ class CalibreDbHelper(object):
                 calibre_id = book['calibre_id']
                 existing_value = self.db.get_custom(calibre_id, label=label, index_is_id=True)
                 if action == 'ADD':
+                    debug_print("_apply_custom_column_changes_to_books: %s - value=%s, existing_value=%s" % (typ, value, existing_value) )
                     if value == 'none':
                         new_value = 0.
                     else:
-                        if isinstance(value, str):
-                            # value is not a fixed value from a rule but instead a column in the book map to get value from.
+                        # This function can get called in one of two ways. Either value is a key in the book map to get the value from 
+                        # or it is a fixed value from the rule. Attempt to see if it is in the book map, if not then treat it as a fixed value.
+                        if value in book:
                             value = book[value]
                         new_value = float(value)
                 elif action == 'REMOVE':
