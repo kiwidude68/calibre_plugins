@@ -1,5 +1,9 @@
 # Goodreads Change Log
 
+## [1.9.0] - 2026-05-17
+### Fixed
+- Bypass AWS WAF protection preventing search results from being returned (not publicly released)
+
 ## [1.8.5] - 2026-05-07
 ### Added
 - Korean translation

@@ -3,7 +3,9 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__ = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import time, json, re, random
+import time, json, os, re, random, traceback
+import xml.etree.ElementTree as et
+
 try:
     from urllib.parse import quote
 except ImportError:
@@ -15,6 +17,7 @@ except ImportError:
 
 from six import text_type as unicode
 
+from lxml import etree
 from lxml.html import fromstring
 
 from calibre import as_unicode
@@ -25,12 +28,15 @@ from calibre.utils.icu import lower
 from calibre.utils.cleantext import clean_ascii_chars
 from calibre.constants import numeric_version as calibre_version
 
+
+RECOVER_PARSER = etree.XMLParser(recover=True, no_network=True, resolve_entities=False)
+
 class Goodreads(Source):
 
     name = 'Goodreads'
     description = 'Downloads metadata and covers from Goodreads'
     author = 'Grant Drake'
-    version = (1, 8, 5)
+    version = (1, 9, 0)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])
@@ -44,6 +50,7 @@ class Goodreads(Source):
     ID_NAME = 'goodreads'
     BASE_URL = 'https://www.goodreads.com'
     MAX_EDITIONS = 5
+    API_KEY = 'UxvtOM3ogQWjfgiCnMleA'
 
     @property
     def user_agent(self):
@@ -82,29 +89,23 @@ class Goodreads(Source):
             return (self.ID_NAME, match.groups(0)[0])
         return None
         
-    def create_query(self, log, title=None, authors=None, identifiers={}, asin=None):
-
-        isbn = check_isbn(identifiers.get('isbn', None))
-        q = ''
-        if isbn:
-            q = 'search_type=books&search[query]=' + isbn
-        elif asin:
-            q = 'search_type=books&search[query]=' + asin
-        elif title or authors:
-            tokens = []
-            title_tokens = list(self.get_title_tokens(title,
-                                strip_joiners=False, strip_subtitle=True))
+    def create_query(self, title=None, authors=None):
+        tokens = []
+        scope = ''
+        if title or authors:
+            title_tokens = list(self.get_title_tokens(title, strip_joiners=False, strip_subtitle=True))
             tokens += title_tokens
-            author_tokens = self.get_author_tokens(authors,
-                    only_first_author=True)
+            author_tokens = self.get_author_tokens(authors, only_first_author=True)
             tokens += author_tokens
             tokens = [quote(t.encode('utf-8') if isinstance(t, unicode) else t) for t in tokens]
-            q = '+'.join(tokens)
-            q = 'search_type=books&search[query]=' + q
-
-        if not q:
+            if authors and not title:
+                scope = 'search=author&'
+            elif title and not authors:
+                scope = 'search=title&'
+        else:
             return None
-        return Goodreads.BASE_URL + '/search?' + q
+        query = '+'.join(tokens)
+        return '%s/search/search.xml?%spage=1&q=%s&key=%s' % (Goodreads.BASE_URL, scope, query, self.API_KEY)
 
     def get_cached_cover_url(self, identifiers):
         url = None
@@ -222,8 +223,9 @@ class Goodreads(Source):
             matches.append('%s/book/show/%s' % (Goodreads.BASE_URL, goodreads_id))
         else:
             # Can't find a valid id, so search using the title and authors.
+            log.info('No identifiers, searching for title/author')
             title = normalize(title)
-            query = self.create_query(log, title=title, authors=authors)
+            query = self.create_query(title=title, authors=authors)
             if query is None:
                 log.error('Insufficient metadata to construct query')
                 return
@@ -235,15 +237,14 @@ class Goodreads(Source):
                 log.exception(err)
                 return as_unicode(e)
 
-            log.info('No goodreads id via ISBN')
             try:
                 raw = response.read().strip()
-                #open('E:\\t.html', 'wb').write(raw)
                 raw = raw.decode('utf-8', errors='replace')
+                #open('E:\\goodreads_search.xml', 'wb').write(raw)
                 if not raw:
                     log.error('Failed to get raw result for query: %r' % query)
                     return
-                root = fromstring(clean_ascii_chars(raw))
+                root = self.get_xml_tree(raw)
             except:
                 msg = 'Failed to parse goodreads page for query: %r' % query
                 log.exception(msg)
@@ -277,10 +278,66 @@ class Goodreads(Source):
 
         return None
 
+    def get_xml_tree(self, content):
+        content = clean_ascii_chars(content)
+        try:
+            root = et.fromstring(content)
+        except:
+            traceback.format_exc()
+            root = et.fromstring(content, parser=RECOVER_PARSER)
+        if root is None:
+            import tempfile
+            cpath = os.path.join(tempfile.gettempdir(), 'xml_fail.xml')
+            f = open(cpath, 'w')
+            f.write(content)
+            f.close()
+            raise ValueError('The shelf contains a corrupting response from Goodreads. ' +
+                             'This can occur for certain books or may be a temporary issue with the website. ' +
+                             'See the Help file for this plugin for more details or try again later.<br><br>' +
+                             'The failed xml can be found at:<br>' + cpath)
+        return root
+
+    def _convert_goodreads_title_with_series(self, text):
+        # This function attempts to convert a myriad of Goodreads title
+        # combinations to strip out the series information as it is not
+        # available separately in the API
+        if text.find('(') == -1:
+            return (text, '')
+        text_split = text.rpartition('(')
+        title = text_split[0]
+        series_info = text_split[2]
+        series_info = series_info.rpartition(')')
+        series_info = series_info[0]
+        hash_pos = series_info.find('#')
+        if hash_pos <= 0:
+            # Cannot find the series # in expression or at start like (#1-7)
+            # so consider whole thing just as title
+            title = text
+            series_info = ''
+        else:
+            # Check to make sure we have got all of the series information
+            while series_info.count(')') != series_info.count('('):
+                title_split = title.rpartition('(')
+                title = title_split[0].strip()
+                series_info = title_split[2] + '(' + series_info
+        if series_info:
+            series_partition = series_info.rpartition('#')
+            series_name = series_partition[0].strip().replace(',', '')
+            series_index = series_partition[2].strip()
+            if series_index.find('-'):
+                # The series is specified as 1-3, 1-7 etc.
+                # In future we may offer config options to decide what to do,
+                # such as "Use start number", "Use value xxx" like 0 etc.
+                # For now will just take the start number and use that
+                series_index = series_index.partition('-')[0].strip()
+            series_info = '%s [%s]' % (series_name, series_index)
+        return (title.strip(), series_info)
+
     def _parse_search_results(self, log, orig_title, orig_authors, root, matches, timeout):
-        first_result = root.xpath('//table[@class="tableList"]/tr/td[2]')
-        if not first_result:
+        work_nodes = root.findall('search/results/work')
+        if not work_nodes:
             return
+        
         title_tokens = list(self.get_title_tokens(orig_title))
         author_tokens = list(self.get_author_tokens(orig_authors))
 
@@ -299,100 +356,20 @@ class Goodreads(Source):
                     break
             if not author_tokens: amatch = True
             return match and amatch
-
-        i = 0
-        for result in first_result:
-            title = result.xpath('./a')[0].text_content().strip()
-            authors = result.xpath('./span[@itemprop="author"]/div/a/span')[0].text_content().strip().split(',')
-            # Ugly hack in here but not sure of a more elegant way to exclude large print editions
-            # because the calibre base logic is preferring them over non large print
-            if 'Large Print Edition' not in title or len(matches) == 0:
-                if ismatch(title, authors):
-                    log.info('Found match: %d %s %s' % (i, title, authors))                
-                    book_details_node = first_result[i].xpath('./div')
-                    book_details_node = result.xpath('./div')
-                    if book_details_node:
-                        import calibre_plugins.goodreads.config as cfg
-                        c = cfg.plugin_prefs[cfg.STORE_NAME]
-                        if c[cfg.KEY_GET_EDITIONS]:
-                            # We need to read the editions for this book and get the matches from those
-                            log.debug("_parse_search_results: trying to get editions...")
-                            for editions_text in book_details_node[0].xpath('./span/a[@href]/text()'):
-                                log.debug("_parse_search_results: looping on editions_text=%s" % (editions_text,))
-                                if editions_text == '1 edition':
-                                    # There is no point in doing the extra hop
-                                    log.info('Not scanning editions as only one edition found')
-                                    break
-                                editions_url = Goodreads.BASE_URL + editions_text.getparent().get('href')
-                                log.debug("_parse_search_results: editions_url= %s" % (editions_url, ))
-                                if '/work/editions/' in editions_url:
-                                    log.info('Examining up to %s: %s' % (editions_text, editions_url))
-                                    self._parse_editions_for_book(log, editions_url, matches, timeout, title_tokens)
-                                    return
-                        main_book_link = first_result[i].xpath('./a/@href')
-                        log.debug("_parse_search_results: not using editions -'./a/@href': %s" % (main_book_link[0], ))
-                        result_url = Goodreads.BASE_URL + first_result[i].xpath('./a/@href')[0]
-                        matches.append(result_url)
-            i += 1
-
-    def _parse_editions_for_book(self, log, editions_url, matches, timeout, title_tokens):
-        log.debug("_parse_editions_for_book: Start")
-
-        def ismatch(title):
-            title = lower(title)
-            match = not title_tokens
-            for t in title_tokens:
-                if lower(t) in title:
-                    match = True
-                    break
-            return match
-
-        br = self.browser
-        try:
-            raw = br.open_novisit(editions_url, timeout=timeout).read().strip()
-        except Exception as e:
-            err = 'Failed identify editions query: %r' % editions_url
-            log.exception(err)
-            return as_unicode(e)
-        try:
-            raw = raw.decode('utf-8', errors='replace')
-            if not raw:
-                log.error('Failed to get raw result for query: %r' % editions_url)
-                return
-            #open('C:\\editions.html', 'wb').write(raw)
-            root = fromstring(clean_ascii_chars(raw))
-        except:
-            msg = 'Failed to parse goodreads page for query: %r' % editions_url
-            log.exception(msg)
-            return msg
-
-        first_non_valid = None
-        for div_link in root.xpath('//div[@class="editionData"]/div[1]/a[@class="bookTitle"]'):
-            title = div_link.text.strip().lower()
-            log.debug('title: %r' % title)
-            if title:
-                # Verify it is not an audio edition
-                valid_title = True
-                for exclusion in ['(audio cd)', '(compact disc)', '(audio cassette)']:
-                    if exclusion in title:
-                        log.info('Skipping audio edition: %s' % title)
-                        valid_title = False
-                        if first_non_valid is None:
-                            first_non_valid = Goodreads.BASE_URL + div_link.get('href')
-                        break
-                if valid_title:
-                    # Verify it is not a foreign language edition
-                    if not ismatch(title):
-                        log.info('Skipping alternate title:', title)
-                        continue
-                    matches.append(Goodreads.BASE_URL + div_link.get('href'))
-                    if len(matches) >= Goodreads.MAX_EDITIONS:
-                        return
-        if len(matches) == 0 and first_non_valid:
-            # We have found only audio editions. In which case return the first match
-            # rather than tell the user there are no matches.
-            log.info('Choosing the first audio edition as no others found.')
-            matches.append(first_non_valid)
+        
+        for work_node in work_nodes:
+            (title, series) = self._convert_goodreads_title_with_series(work_node.findtext('best_book/title').strip())
+            author = work_node.findtext('best_book/author/name')
+            if author == 'NOT A BOOK':
+                # Goodreads use this author to categorise ISBNs in their databases that
+                # are not actually books
+                continue
+            authors = [a.strip() for a in author.split(',')]
+            if ismatch(title, authors):
+                goodreads_id = work_node.findtext('best_book/id')
+                result_url = Goodreads.BASE_URL + '/book/show/%s' % goodreads_id
+                log.debug("_parse_search_results: Title: %s, Author: %s, URL: %s" % (title, author, result_url))
+                matches.append(result_url)
 
     def download_cover(self, log, result_queue, abort,
             title=None, authors=None, identifiers={}, timeout=30):

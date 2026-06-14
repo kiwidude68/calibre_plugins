@@ -35,7 +35,6 @@ from calibre_plugins.goodreads.common_widgets import ReadOnlyTableWidgetItem
 
 STORE_NAME = 'Options'
 KEY_GET_ALL_AUTHORS = 'getAllAuthors'
-KEY_GET_EDITIONS = 'getEditions'
 KEY_GET_ASIN = 'getAsin'
 KEY_GET_RATING = 'getRating'
 KEY_GET_VOTES = 'getVotes'
@@ -103,7 +102,6 @@ DEFAULT_GENRE_MAPPINGS = {
                 }
 
 DEFAULT_STORE_VALUES = {
-    KEY_GET_EDITIONS: False,
     KEY_GET_ALL_AUTHORS: False,
     KEY_GET_ASIN: False,
     KEY_GET_RATING: False,
@@ -271,13 +269,6 @@ class ConfigWidget(DefaultConfigWidget):
         other_group_box_layout = QVBoxLayout()
         other_group_box.setLayout(other_group_box_layout)
 
-        self.get_editions_checkbox = QCheckBox(_('Scan multiple editions for title/author searches (slower)'), self)
-        self.get_editions_checkbox.setToolTip(_('When checked will perform an additional search to scan the top ranked\n'
-                                              'Goodreads editions (if available) to exclude audiobook editions.\n'
-                                              'When unchecked you will get a faster search but the edition is indeterminate.'))
-        self.get_editions_checkbox.setChecked(c.get(KEY_GET_EDITIONS, DEFAULT_STORE_VALUES[KEY_GET_EDITIONS]))
-        other_group_box_layout.addWidget(self.get_editions_checkbox)
-
         self.all_authors_checkbox = QCheckBox(_('Get all contributing authors (e.g. illustrators, series editors etc)'), self)
         self.all_authors_checkbox.setToolTip(_('When this option is checked, all authors are retrieved.\n\n'
                                               'When unchecked (default) only the primary author(s) are returned.'))
@@ -314,7 +305,6 @@ class ConfigWidget(DefaultConfigWidget):
     def commit(self):
         DefaultConfigWidget.commit(self)
         new_prefs = {}
-        new_prefs[KEY_GET_EDITIONS] = self.get_editions_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GET_ALL_AUTHORS] = self.all_authors_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_GET_ASIN] = self.get_asin_checkbox.checkState() == Qt.Checked
         new_prefs[KEY_FIRST_PUBLISHED] = self.first_published_checkbox.checkState() == Qt.Checked
