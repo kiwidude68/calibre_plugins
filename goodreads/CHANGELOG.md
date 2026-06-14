@@ -1,5 +1,10 @@
 # Goodreads Change Log
 
+## [1.9.1] - 2026-06-14
+### Fixed
+- Retrieve book detail pages through the `.xml` URL variant, which returns the
+  full metadata page while the extensionless URL is blocked by AWS WAF.
+
 ## [1.9.0] - 2026-05-17
 ### Fixed
 - Bypass AWS WAF protection preventing search results from being returned (not publicly released)

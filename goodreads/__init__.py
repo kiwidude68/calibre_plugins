@@ -36,7 +36,7 @@ class Goodreads(Source):
     name = 'Goodreads'
     description = 'Downloads metadata and covers from Goodreads'
     author = 'Grant Drake'
-    version = (1, 9, 0)
+    version = (1, 9, 1)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])
@@ -88,6 +88,11 @@ class Goodreads(Source):
         if match:
             return (self.ID_NAME, match.groups(0)[0])
         return None
+
+    def get_details_url(self, goodreads_id):
+        # The extensionless book page is protected by AWS WAF. Goodreads still
+        # serves the same Next.js page, including __NEXT_DATA__, at this URL.
+        return '%s/book/show/%s.xml' % (self.BASE_URL, goodreads_id)
         
     def create_query(self, title=None, authors=None):
         tokens = []
@@ -220,7 +225,7 @@ class Goodreads(Source):
         br = self.browser
 
         if goodreads_id:
-            matches.append('%s/book/show/%s' % (Goodreads.BASE_URL, goodreads_id))
+            matches.append(self.get_details_url(goodreads_id))
         else:
             # Can't find a valid id, so search using the title and authors.
             log.info('No identifiers, searching for title/author')
@@ -367,7 +372,7 @@ class Goodreads(Source):
             authors = [a.strip() for a in author.split(',')]
             if ismatch(title, authors):
                 goodreads_id = work_node.findtext('best_book/id')
-                result_url = Goodreads.BASE_URL + '/book/show/%s' % goodreads_id
+                result_url = self.get_details_url(goodreads_id)
                 log.debug("_parse_search_results: Title: %s, Author: %s, URL: %s" % (title, author, result_url))
                 matches.append(result_url)
 
