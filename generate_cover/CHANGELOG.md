@@ -1,5 +1,9 @@
 # Generate Cover Change Log
 
+## [2.4.1] - 2026-07-08
+### Added
+- Czech translation
+
 ## [2.4.0] - 2026-05-05
 ### Added
 - Ability to change colors for each text element, rather than all sharing same color

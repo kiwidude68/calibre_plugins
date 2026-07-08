@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-05-05 21:31+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: RERBIN MA, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:334
+#: ..\common\common_dialogs.py:84 config.py:353
 msgid "Keyboard shortcuts"
 msgstr "键盘快捷键"
 
@@ -88,7 +88,7 @@ msgstr "设置已删除"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "此插件库中的所有设置都已清除。"
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "复制到剪贴板"
 
@@ -155,31 +155,31 @@ msgstr "缺少生成封面所需的书籍元数据"
 msgid "No cover settings exist named: \"%s\""
 msgstr "不存在名为\"%s\"的封面设置配置"
 
-#: config.py:320
+#: config.py:339
 msgid "After generating cover:"
 msgstr "封面生成后："
 
-#: config.py:329
+#: config.py:348
 msgid "Update column:"
 msgstr "更新列："
 
-#: config.py:330
+#: config.py:349
 msgid "Update value:"
 msgstr "更新值："
 
-#: config.py:335
+#: config.py:354
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "编辑与此插件关联的键盘快捷键"
 
-#: config.py:339
+#: config.py:358
 msgid "View library preferences"
 msgstr "查看书库首选项"
 
-#: config.py:340
+#: config.py:359
 msgid "View data stored in the library database for this plugin"
 msgstr "查看存储在书库数据库中的此插件的数据"
 
-#: config.py:344 dialogs.py:1420
+#: config.py:363 dialogs.py:1499
 msgid "&Help"
 msgstr "帮助 (&H)"
 
@@ -317,7 +317,7 @@ msgstr "无法移除"
 msgid "You cannot remove the default setting"
 msgstr "无法移除默认设置"
 
-#: dialogs.py:596 dialogs.py:840 dialogs.py:1495 dialogs.py:1514
+#: dialogs.py:596 dialogs.py:840 dialogs.py:1574 dialogs.py:1593
 msgid "Are you sure?"
 msgstr "你确认吗？"
 
@@ -454,19 +454,19 @@ msgstr "请为此图片输入唯一名称："
 msgid "You do not have permission to overwrite the file"
 msgstr "您没有覆盖该文件的权限"
 
-#: dialogs.py:947
+#: dialogs.py:947 dialogs.py:958
 msgid "Title"
 msgstr "书名"
 
-#: dialogs.py:948
+#: dialogs.py:948 dialogs.py:959
 msgid "Author"
 msgstr "作者"
 
-#: dialogs.py:949
+#: dialogs.py:949 dialogs.py:960
 msgid "Series"
 msgstr "丛书"
 
-#: dialogs.py:950
+#: dialogs.py:950 dialogs.py:961
 msgid "Custom"
 msgstr "自定义"
 
@@ -478,19 +478,11 @@ msgstr "背景"
 msgid "Border"
 msgstr "边框"
 
-#: dialogs.py:955
-msgid "Fill"
-msgstr "填充"
-
-#: dialogs.py:956
-msgid "Stroke"
-msgstr "描边"
-
-#: dialogs.py:969
+#: dialogs.py:974
 msgid "Fonts:"
 msgstr "字体："
 
-#: dialogs.py:978
+#: dialogs.py:983
 msgid ""
 "Select a font and specify a size in pixels.\n"
 "If font set to 'Default', uses the tweak value from\n"
@@ -500,20 +492,20 @@ msgstr ""
 "如果字体设置为“默认”，\n"
 "将优先使用微调参数“generate_cover_title_font”（如果存在）。"
 
-#: dialogs.py:996
+#: dialogs.py:1002
 msgid "Use the same font family for all text"
 msgstr "对所有文本使用相同字体族"
 
-#: dialogs.py:997
+#: dialogs.py:1003
 msgid ""
 "When checked, the same font family is used for all text content on the cover"
 msgstr "勾选此项后，封面上的所有文本内容将使用相同的字体族"
 
-#: dialogs.py:1004
+#: dialogs.py:1010
 msgid "Auto-reduce font size to fit on one line"
 msgstr "自动缩小字号以适应单行显示"
 
-#: dialogs.py:1005
+#: dialogs.py:1011
 msgid ""
 "When checked, the font size will be used as a maximum size.\n"
 "A reduced size will be used where needed to fit text on one line."
@@ -521,215 +513,225 @@ msgstr ""
 "选后，所选字号将作为最大字号限制。 \n"
 "程序会在必要时缩小字号，以确保文字能在一行内显示。"
 
-#: dialogs.py:1011
+#: dialogs.py:1017
 msgid "Colors:"
 msgstr "颜色："
 
-#: dialogs.py:1027
+#: dialogs.py:1035
 msgid "Reset %s color"
 msgstr "重置 %s 颜色"
 
-#: dialogs.py:1032
+#: dialogs.py:1041
 msgid "Select a %s color"
 msgstr "选择 %s 颜色"
 
-#: dialogs.py:1040
-msgid "Apply"
-msgstr "应用"
+#: dialogs.py:1063
+msgid "Reset %s fill color"
+msgstr ""
 
-#: dialogs.py:1041
-msgid "When checked, stroke color is drawn around text"
-msgstr "勾选后，将在文本周围绘制描边颜色"
+#: dialogs.py:1069
+msgid "Select %s fill color"
+msgstr ""
 
-#: dialogs.py:1053
+#: dialogs.py:1080
+msgid "Use the same fill color for all text"
+msgstr ""
+
+#: dialogs.py:1081
+msgid ""
+"When checked, the fill color is used for all text.\n"
+"When unchecked, you can set different fill colors for each text type."
+msgstr ""
+
+#: dialogs.py:1092
 msgid "Left aligned"
 msgstr "左对齐"
 
-#: dialogs.py:1055
+#: dialogs.py:1094
 msgid "Centered"
 msgstr "居中对齐"
 
-#: dialogs.py:1057
+#: dialogs.py:1096
 msgid "Right aligned"
 msgstr "右对齐"
 
-#: dialogs.py:1128
+#: dialogs.py:1207
 msgid "Size:"
 msgstr "尺寸："
 
-#: dialogs.py:1132
+#: dialogs.py:1211
 msgid "Cover width:"
 msgstr "封面宽度："
 
-#: dialogs.py:1133
+#: dialogs.py:1212
 msgid "The width in pixels of the output .jpg file"
 msgstr "输出的.jpg文件的像素宽度"
 
-#: dialogs.py:1139
+#: dialogs.py:1218
 msgid "Cover height:"
 msgstr "封面高度："
 
-#: dialogs.py:1140
+#: dialogs.py:1219
 msgid "The height in pixels of the output .jpg file"
 msgstr "输出的.jpg文件的像素高度"
 
-#: dialogs.py:1146
+#: dialogs.py:1225
 msgid "Stretch image to use as cover background"
 msgstr "拉伸图片以用作封面背景"
 
-#: dialogs.py:1147
+#: dialogs.py:1226
 msgid ""
 "Check this to overlay text on the image background.\n"
 "Uncheck this to place text around the image."
 msgstr "勾选此项将文字覆盖在背景图片之上。 取消勾选则将文字排列在图片周围。"
 
-#: dialogs.py:1151
+#: dialogs.py:1230
 msgid "Resize cover dimensions to match background image"
 msgstr "调整封面尺寸以匹配背景图片"
 
-#: dialogs.py:1152
+#: dialogs.py:1231
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
 msgstr "勾选此项将根据当前选择的背景图片尺寸自动调整封面大小"
 
-#: dialogs.py:1156
+#: dialogs.py:1235
 msgid "Resize image to scale up if smaller than available area"
 msgstr "若图片尺寸小于可用区域，则自动放大图片以填满该区域"
 
-#: dialogs.py:1157
+#: dialogs.py:1236
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
 msgstr "勾选此项后，若封面图片尺寸过小，将自动调整其大小以填满最大可用区域"
 
-#: dialogs.py:1163
+#: dialogs.py:1242
 msgid "Margins:"
 msgstr "边距："
 
-#: dialogs.py:1168
+#: dialogs.py:1247
 msgid "Top margin:"
 msgstr "上边距："
 
-#: dialogs.py:1169
+#: dialogs.py:1248
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
 msgstr "从封面顶部到第一个内容的边距（像素）"
 
-#: dialogs.py:1177
+#: dialogs.py:1256
 msgid "Bottom margin:"
 msgstr "下边距："
 
-#: dialogs.py:1178
+#: dialogs.py:1257
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
 msgstr "从封面底部到最后一个内容的边距（像素）"
 
-#: dialogs.py:1186
+#: dialogs.py:1265
 msgid "Left margin:"
 msgstr "左边距："
 
-#: dialogs.py:1187
+#: dialogs.py:1266
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
 msgstr "从封面左侧到文本内容的最小边距（像素）"
 
-#: dialogs.py:1195
+#: dialogs.py:1274
 msgid "Right margin:"
 msgstr "右边距："
 
-#: dialogs.py:1196
+#: dialogs.py:1275
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
 msgstr "从封面右侧到文本内容的最小边距（像素）"
 
-#: dialogs.py:1204
+#: dialogs.py:1283
 msgid "Text padding:"
 msgstr "文字边距："
 
-#: dialogs.py:1205
+#: dialogs.py:1284
 msgid "The spacing in pixels between successive lines of text"
 msgstr "文本行间距（像素）"
 
-#: dialogs.py:1212
+#: dialogs.py:1291
 msgid "Image padding:"
 msgstr "图片边距："
 
-#: dialogs.py:1213
+#: dialogs.py:1292
 msgid ""
 "The spacing in pixels between the image and text\n"
 "placed above and below it"
 msgstr "图片与上下文本之间的间距（像素）"
 
-#: dialogs.py:1223
+#: dialogs.py:1302
 msgid "Border Widths:"
 msgstr "边框宽度："
 
-#: dialogs.py:1227
+#: dialogs.py:1306
 msgid "Cover border:"
 msgstr "封面边框："
 
-#: dialogs.py:1228
+#: dialogs.py:1307
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
 msgstr "封面边框的像素宽度。设置为 0 则不显示边框。"
 
-#: dialogs.py:1235
+#: dialogs.py:1314
 msgid "Image border:"
 msgstr "图片边框："
 
-#: dialogs.py:1236
+#: dialogs.py:1315
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the image. Specify 0 for no border"
 msgstr "图片边框的像素宽度。设置为 0 则无边框。"
 
-#: dialogs.py:1275
+#: dialogs.py:1354
 msgid "Field Order:"
 msgstr "字段顺序："
 
-#: dialogs.py:1276
+#: dialogs.py:1355
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
 msgstr "通过复选框调整封面项目的排列顺序，并设置其是否显示。"
 
-#: dialogs.py:1290
+#: dialogs.py:1369
 msgid "Move field up"
 msgstr "上移字段"
 
-#: dialogs.py:1297
+#: dialogs.py:1376
 msgid "Move field down"
 msgstr "下移字段"
 
-#: dialogs.py:1303
+#: dialogs.py:1382
 msgid "Other Options:"
 msgstr "其他选项："
 
-#: dialogs.py:1307
+#: dialogs.py:1386
 msgid "Custom text:"
 msgstr "自定义文字："
 
-#: dialogs.py:1317
+#: dialogs.py:1396
 msgid "Swap author LN,FN to FN LN"
 msgstr "将作者姓名从“姓, 名”转换为“名 姓”"
 
-#: dialogs.py:1318
+#: dialogs.py:1397
 msgid ""
 "Use this option if your authors are stored as LN, FN\n"
 "but you prefer to see FN LN on the book cover"
 msgstr "如果您的作者姓名按“姓, 名”格式存储，但您希望在封面上显示为“名 姓”，请勾选此选项。"
 
-#: dialogs.py:1322
+#: dialogs.py:1401
 msgid "Series text:"
 msgstr "丛书文字："
 
-#: dialogs.py:1323
+#: dialogs.py:1402
 msgid ""
 "Change the way series information is displayed.\n"
 "Useful for non-English languages!"
@@ -737,11 +739,11 @@ msgstr ""
 "更改丛书信息的显示方式。\n"
 "对非英语非常有用！"
 
-#: dialogs.py:1331
+#: dialogs.py:1410
 msgid "Metadata: (*not saved)"
 msgstr "元数据：(*未保存)"
 
-#: dialogs.py:1332
+#: dialogs.py:1411
 msgid ""
 "Optionally override the text in these fields for this book.\n"
 "These are not saved as part of the settings profile.\n"
@@ -751,70 +753,70 @@ msgstr ""
 "这些更改不会保存到设置配置（Profile）中。\n"
 "若同时选择了多本书，此功能将被禁用。"
 
-#: dialogs.py:1338
+#: dialogs.py:1417
 msgid "Title:"
 msgstr "书名:"
 
-#: dialogs.py:1341
+#: dialogs.py:1420
 msgid "Author:"
 msgstr "作者："
 
-#: dialogs.py:1344
+#: dialogs.py:1423
 msgid "Series:"
 msgstr "丛书:"
 
-#: dialogs.py:1374
+#: dialogs.py:1453
 msgid "Cover Options"
 msgstr "封面选项"
 
-#: dialogs.py:1377
+#: dialogs.py:1456
 msgid "Generate Custom Cover"
 msgstr "生成自定义封面"
 
-#: dialogs.py:1398
+#: dialogs.py:1477
 msgid "Settings"
 msgstr "设置"
 
-#: dialogs.py:1399
+#: dialogs.py:1478
 msgid "Fonts"
 msgstr "字体"
 
-#: dialogs.py:1400
+#: dialogs.py:1479
 msgid "Dimensions"
 msgstr "尺寸"
 
-#: dialogs.py:1401
+#: dialogs.py:1480
 msgid "Contents"
 msgstr "内容"
 
-#: dialogs.py:1411
+#: dialogs.py:1490
 msgid " Revert "
 msgstr "还原"
 
-#: dialogs.py:1412
+#: dialogs.py:1491
 msgid "Revert to your previous saved setting values"
 msgstr "还原为您此前保存的设置值"
 
-#: dialogs.py:1414
+#: dialogs.py:1493
 msgid " Save "
 msgstr "保存"
 
-#: dialogs.py:1415
+#: dialogs.py:1494
 msgid "Overwrite your current saved setting"
 msgstr "覆盖当前已保存的设置"
 
-#: dialogs.py:1417
+#: dialogs.py:1496
 msgid " Customize... "
 msgstr "自定义..."
 
-#: dialogs.py:1418
+#: dialogs.py:1497
 msgid "Set general options for this plugin"
 msgstr "设置此插件的常规选项"
 
-#: dialogs.py:1496
+#: dialogs.py:1575
 msgid "Revert to your previously saved values for '%s'?"
 msgstr "是否将“%s”还原为您此前保存的数值？"
 
-#: dialogs.py:1515
+#: dialogs.py:1594
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr "是否使用当前数值覆盖“%s”设置？"
