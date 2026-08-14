@@ -98,6 +98,20 @@ class DownloadPagesWorker():
 
         #open('E:\\countpages-gr.html', 'wb').write(raw)
         raw = raw.decode('utf-8', errors='replace')
+        # Goodreads: extract numPages directly from the raw HTML.
+        # The HTML parser does not reliably expose the contents of
+        # the __NEXT_DATA__ script tag.
+        if self.pages_xpath == '//script[@id="__NEXT_DATA__"]/text()':
+            print("Goodreads: trying direct numPages extraction")
+            goodreads_pages_regex = r'"numPages"\s*:\s*(\d+)'
+            matches = re.findall(goodreads_pages_regex, raw)
+        
+            if matches:
+                self.page_count = int(matches[0])
+                print("Goodreads: found numPages=%d" % self.page_count)
+                return
+        
+            print("Goodreads: numPages not found in raw HTML")
         #print("_get_details: len(raw)=", len(raw))
 
         if '<title>404 - ' in raw:
