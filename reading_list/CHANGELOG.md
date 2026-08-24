@@ -1,5 +1,9 @@
 # Reading List Change Log
 
+## [1.15.8] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.15.7] - 2026-02-09
 ### Added
 - Updated translations

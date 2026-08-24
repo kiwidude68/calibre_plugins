@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.14.8] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.14.7] - 2026-02-09
 ### Added
 - Updated translations

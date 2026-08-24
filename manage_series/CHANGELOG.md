@@ -1,5 +1,9 @@
 # Manage Series Change Log
 
+## [1.5.5] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.5.4] - 2026-05-05
 ### Added
 - Ability to sort by title to context menu in dialog (@un-pogaz)

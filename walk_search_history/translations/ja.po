@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Pk11 <epicpkmn11@outlook.com>, 2022
-# akihiko tanae (tanaeakihiko), 2025
+# akihiko tanae (tanaeakihiko), 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-09 23:27+0000\n"
-"Last-Translator: akihiko tanae (tanaeakihiko), 2025\n"
+"Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -125,7 +125,7 @@ msgstr "プラグインをカスタマイズ (&C)"
 
 #: action.py:116 config.py:93
 msgid "&Help"
-msgstr ""
+msgstr "ヘルプ(&H)"
 
 #: action.py:196
 msgid "Are you sure?"

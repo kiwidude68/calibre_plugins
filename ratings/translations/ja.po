@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:37+1000\n"
-"PO-Revision-Date: 2022-09-09 18:02+0000\n"
+"POT-Creation-Date: 2024-03-24 18:08+1000\n"
+"PO-Revision-Date: 2022-09-19 14:48+0000\n"
 "Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:69
+#: ..\common\common_dialogs.py:84 config.py:97
 msgid "Keyboard shortcuts"
 msgstr "キーボードショートカット"
 
@@ -103,34 +103,143 @@ msgstr "タイトル画像が見つかりません。本プラグインを使用
 msgid "Create new column"
 msgstr "新しい列を作成"
 
-#: action.py:34
-msgid "Clipboard Search"
-msgstr "クリップボード検索"
+#: action.py:35
+msgid "Get the rating and counts from Amazon/Goodreads.com"
+msgstr "レーティングと件数をAmazon/Goodreads.comから取得"
 
-#: action.py:60 config.py:58
-msgid "Text search"
-msgstr "テキスト検索"
-
-#: action.py:62 config.py:59
-msgid "Exact text search"
-msgstr "正確なテキスト検索"
-
-#: action.py:64
-msgid "Author search"
-msgstr "著者検索"
+#: action.py:35
+msgid "Ratings"
+msgstr "レーティング"
 
 #: action.py:67
+msgid "&Get all ratings"
+msgstr "すべてのレーティングを取得(&G)"
+
+#: action.py:68
+msgid "Download ratings for all configured sources"
+msgstr "すべての設定済ソースからレーティングをダウンロード"
+
+#: action.py:72
+msgid "&Get Amazon ratings"
+msgstr "Amazonのレーティングを取得(&G)"
+
+#: action.py:73
+msgid "Download ratings for Amazon only"
+msgstr "Amazonのレーティングのみ取得"
+
+#: action.py:76
+msgid "&Get Goodreads ratings"
+msgstr "Goodreadsのレーティングを取得"
+
+#: action.py:77
+msgid "Download ratings for Goodreads only"
+msgstr "Goodreadsのレーティングのみ取得"
+
+#: action.py:81
 msgid "&Customize plugin"
 msgstr "プラグインをカスタマイズ (&C)"
 
-#: action.py:69 config.py:74
+#: action.py:83 config.py:107
 msgid "&Help"
 msgstr "ヘルプ(&H)"
 
-#: config.py:53
-msgid "Default action for toolbar button click"
-msgstr "ツールバーボタンをクリックのデフォルトアクション"
+#: action.py:105
+msgid "Configure plugin"
+msgstr "プラグイン設定"
 
-#: config.py:70
+#: action.py:106
+msgid ""
+"You must specify a custom column first. Do you want to configure this now?"
+msgstr "まず、カスタム列を指定する必要があります。今すぐ設定しますか？"
+
+#: action.py:130
+msgid "Failed to download ratings"
+msgstr "レーティングのダウンロードに失敗しました"
+
+#: action.py:133
+msgid "Download ratings completed"
+msgstr "レーティングのダウンロードが完了しました"
+
+#: action.py:138
+msgid "Downloaded ratings for <b>%d book(s)</b>."
+msgstr "<b>%d冊の本</b>のレーティングをダウンロードしました"
+
+#: action.py:139
+msgid "Proceed with updating your library?"
+msgstr "ライブラリの更新を進めます？"
+
+#: action.py:145
+msgid "Could not find ratings for %d book(s)."
+msgstr "%d冊の本のレーティングを見つけられません"
+
+#: action.py:148
+msgid "Download ratings failed"
+msgstr "レーティングのダウンロードに失敗しました"
+
+#: action.py:153
+msgid "Download log"
+msgstr "ダウンロードログ"
+
+#: action.py:153
+msgid "Download ratings complete"
+msgstr "レーティングのダウンロードが完了"
+
+#: action.py:186
+msgid "Unknown"
+msgstr "不明"
+
+#: config.py:73
+msgid "Amazon Rating:"
+msgstr "Amazon レーティング:"
+
+#: config.py:79
+msgid "Amazon Rating Count:"
+msgstr "Amazon レーティング件数:"
+
+#: config.py:85
+msgid "Goodreads Rating:"
+msgstr "Goodreads レーティング:"
+
+#: config.py:91
+msgid "Goodreads Rating Count:"
+msgstr "Goodreads レーティング件数:"
+
+#: config.py:98
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "このプラグインに関連付けていますキーボードショートカットを編集します。"
+
+#: config.py:102
+msgid "&View library preferences"
+msgstr "ライブラリ設定を表示(&V)"
+
+#: config.py:103
+msgid "View data stored in the library database for this plugin"
+msgstr "このプラグインのライブラリデータベースに保存されたデータを表示します"
+
+#: jobs.py:24
+msgid "Download ratings for %d books"
+msgstr "%d冊の本のレーティングをダウンロード"
+
+#: jobs.py:27
+msgid "Download Ratings started"
+msgstr "レーティングのダウンロードを開始しました"
+
+#: jobs.py:67
+msgid "Aborting"
+msgstr "中止"
+
+#: jobs.py:76
+msgid "No Amazon or Goodreads id for this book"
+msgstr "この本のAmazon か Goodreads のIDがありません"
+
+#: jobs.py:120
+msgid "No rating found for book"
+msgstr "本のレーティングが見つかりません"
+
+#: jobs.py:123
+msgid "Exception occurred"
+msgstr "例外発生"
+
+#: jobs.py:126
+msgid "Processed %d of %d"
+msgstr "%d ／ %d処理しました"
