@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:37+1000\n"
-"PO-Revision-Date: 2022-09-09 18:02+0000\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:16+0000\n"
 "Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:69
+#: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
 msgstr "キーボードショートカット"
 
@@ -50,7 +50,7 @@ msgstr "本プラグインによりこのライブラリ内の設定を変更し
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
-msgstr "他のライブラリにどれかまたはcalibreプラグインのフォルダにJSONファイルに保存された設定は変更されていません。"
+msgstr "他のライブラリのどれかまたはcalibreプラグインのフォルダにJSONファイルとして保存された設定は変更されていません。"
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -103,34 +103,25 @@ msgstr "タイトル画像が見つかりません。本プラグインを使用
 msgid "Create new column"
 msgstr "新しい列を作成"
 
-#: action.py:34
-msgid "Clipboard Search"
-msgstr "クリップボード検索"
+#: config.py:29
+msgid "Discard genre from comments"
+msgstr "コメントからジャンルを削除"
 
-#: action.py:60 config.py:58
-msgid "Text search"
-msgstr "テキスト検索"
+#: config.py:30
+msgid "Move genre into Tags column"
+msgstr "ジャンルをタグ列に移動"
 
-#: action.py:62 config.py:59
-msgid "Exact text search"
-msgstr "正確なテキスト検索"
-
-#: action.py:64
-msgid "Author search"
-msgstr "著者検索"
-
-#: action.py:67
-msgid "&Customize plugin"
-msgstr "プラグインをカスタマイズ (&C)"
-
-#: action.py:69 config.py:74
-msgid "&Help"
-msgstr "ヘルプ(&H)"
+#: config.py:45
+msgid "Other Options"
+msgstr "他のオプション"
 
 #: config.py:53
-msgid "Default action for toolbar button click"
-msgstr "ツールバーボタンをクリックのデフォルトアクション"
+msgid "If genre found in comments:"
+msgstr "コメントにジャンルが見つかれば"
 
-#: config.py:70
-msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "このプラグインに関連付けていますキーボードショートカットを編集します。"
+#: config.py:54
+msgid ""
+"A subset (at this time) of the books in Fantastic Fiction\n"
+"contain a hyperlinked Genre at the bottom of the comments."
+msgstr ""
+"現時点では、Fantastic Fiction に掲載されている本の一部には、コメントの下部にハイパーリンク付きのジャンルが記載されています。"

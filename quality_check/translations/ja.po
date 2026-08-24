@@ -1,0 +1,2153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Pk11 <epicpkmn11@outlook.com>, 2024
+# akihiko tanae (tanaeakihiko), 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-16 17:29+1000\n"
+"PO-Revision-Date: 2022-09-19 14:57+0000\n"
+"Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
+"Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:352
+msgid "Keyboard shortcuts"
+msgstr "キーボードショートカット"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "今すぐcalibreを再起動します"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "環境設定:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "クリア"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "プラグインの全ての設定をクリアします"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "本プラグインによりこのライブラリ内の設定を変更して良いですか？"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "他のライブラリにどれかまたはcalibreプラグインのフォルダにJSONファイルに保存された設定は変更されていません。"
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "あとでcalibreを再起動が必要です。"
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "設定が変更されました。"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "本プラグインの設定が変更されました。"
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "今すぐcalibreを再起動してください。"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "このライブラリにのこのプラグインの設定をクリアしてもよろしいですか？"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "設定は削除されました。"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "このライブラリにこのプラグインの全ての設定はクリアされました。"
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "クリップボードにコピー"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "未定義"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "再起動が必要です。"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "タイトル画像が見つかりません。本プラグインを使用する前にcalibreを再起動してください。"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "新しい列を作成"
+
+#: action.py:38 check_base.py:69 check_covers.py:98 check_fix.py:436
+msgid "Quality Check"
+msgstr "品質チェック"
+
+#: action.py:108
+msgid "Fix"
+msgstr "修正"
+
+#: action.py:114
+msgid "Fix -> "
+msgstr "修正 -> "
+
+#: action.py:120
+msgid "Repeat last check"
+msgstr "最後のチェックをもう一度"
+
+#: action.py:127
+msgid "Search scope"
+msgstr "検索範囲"
+
+#: action.py:132
+msgid "Library"
+msgstr "ライブラリ"
+
+#: action.py:133
+msgid ""
+"Run check against entire library, unless a search restriction is applied"
+msgstr "検索制限が適用されていない限り、ライブラリ全体に対してチェックします。"
+
+#: action.py:134
+msgid "Search Scope -> Library"
+msgstr "検索範囲 -> ライブラリ"
+
+#: action.py:137
+msgid "Selected book(s)"
+msgstr "選択した本"
+
+#: action.py:138
+msgid "Run check against selected book(s) only"
+msgstr "選択した本のみチェック"
+
+#: action.py:139
+msgid "Search Scope -> Selection"
+msgstr "検索範囲 -> 選択"
+
+#: action.py:144
+msgid "Exclude from check"
+msgstr "チェックから除外"
+
+#: action.py:145
+msgid "Exclude selected book(s) from a particular Quality Check"
+msgstr "特別な品質チェックで選択した本を除外"
+
+#: action.py:148
+msgid "View exclusions"
+msgstr "除外項目を表示"
+
+#: action.py:149
+msgid "View exclusions you have added for each Quality Check"
+msgstr "各品質チェックに追加した除外項目を表示"
+
+#: action.py:154
+msgid "&Customize plugin"
+msgstr "プラグインをカスタマイズ (&C)"
+
+#: action.py:156 config.py:362
+msgid "&Help"
+msgstr "ヘルプ(&H)"
+
+#: check_base.py:64
+msgid " (cancelled)"
+msgstr " (取り消し)"
+
+#: check_base.py:70
+msgid "%d matches found%s, see log for details"
+msgstr "%d 件一致%s、詳細はログ参照のこと"
+
+#: check_base.py:74
+msgid "Checked %d books, found %d matches%s"
+msgstr "%d 冊チェック、%d 件一致%s"
+
+#: check_base.py:77
+msgid "No Matches"
+msgstr "一致なし"
+
+#: check_covers.py:27 check_epub.py:187 check_fix.py:60 check_fix.py:233
+#: check_fix.py:508 check_metadata.py:67 check_mobi.py:38
+msgid "Quality Check failed"
+msgstr "品質チェックに失敗しました"
+
+#: check_covers.py:28 check_epub.py:188 check_fix.py:61 check_metadata.py:68
+#: check_mobi.py:39
+msgid "Unknown menu key for %s of '%s'"
+msgstr "%s の不明なメニューキー: '%s'"
+
+#: check_covers.py:70 check_covers.py:105 check_covers.py:135 dialogs.py:79
+#: dialogs.py:109 dialogs.py:114
+msgid "less than"
+msgstr "未満"
+
+#: check_covers.py:72 check_covers.py:110 check_covers.py:138 dialogs.py:79
+msgid "greater than"
+msgstr "以上"
+
+#: check_covers.py:78
+msgid "Failed to identify cover:"
+msgstr "表紙の特定に失敗:"
+
+#: check_covers.py:90
+msgid "books for covers"
+msgstr "表紙チェックの本"
+
+#: check_covers.py:92
+msgid "Checked %d books, found %d cover matches%s"
+msgstr "%d 冊チェック、表紙の一致 %d 件%s"
+
+#: check_covers.py:95
+msgid "No matches found"
+msgstr "一致なし"
+
+#: check_covers.py:95 check_metadata.py:165 check_metadata.py:198
+#: check_metadata.py:260 check_metadata.py:323
+msgid "No Matches%s"
+msgstr "一致なし%s"
+
+#: check_covers.py:99
+msgid "%d matches found, see log for errors%s"
+msgstr "%d 件発見、エラーはログ参照のこと%s"
+
+#: check_covers.py:115 check_covers.py:141 dialogs.py:81
+msgid "equal to"
+msgstr "等しい"
+
+#: check_covers.py:124 check_covers.py:144 dialogs.py:81 dialogs.py:121
+msgid "not equal to"
+msgstr "等しくない"
+
+#: check_epub.py:115
+msgid "iTunes files"
+msgstr "iTunes ファイル"
+
+#: check_epub.py:117
+msgid "calibre bookmarks"
+msgstr "calibre ブックマーク"
+
+#: check_epub.py:119
+msgid "OS artifacts"
+msgstr "OSアーティファクト"
+
+#: check_epub.py:277
+msgid "Matches in book: <b>%s</b>"
+msgstr "本の中で一致: <b>%s</b>"
+
+#: check_epub.py:279
+msgid "First match in book: <b>%s</b>"
+msgstr "本の中で最初に一致: <b>%s</b>"
+
+#: check_epub.py:286 check_epub.py:318 check_epub.py:358
+msgid "Invalid epub:"
+msgstr "不正な電子書籍:"
+
+#: check_epub.py:289 check_epub.py:321 check_epub.py:361 check_epub.py:561
+msgid "ERROR parsing book: "
+msgstr "本のパースエラー:"
+
+#: check_epub.py:294
+msgid "No searched ePub books have your search text"
+msgstr "検索したePub本に検索テキストなし"
+
+#: check_epub.py:296
+msgid "ePub books for search text"
+msgstr "検索テキストのePub本"
+
+#: check_epub.py:304 check_epub.py:344 check_epub.py:392 check_epub.py:669
+#: check_epub.py:743
+msgid "ERROR: EPUB format is missing: "
+msgstr "エラー: EPUBフォーマットがありません: "
+
+#: check_epub.py:326
+msgid "No searched ePub books have legacy jackets"
+msgstr "検索したePub本に旧形式ジャケットなし"
+
+#: check_epub.py:329
+msgid "No searched ePub books have jackets"
+msgstr "検索したePub本にジャケットなし"
+
+#: check_epub.py:332
+msgid "All searched ePub books have jackets"
+msgstr "検索したePub本はすべてジャケットあり"
+
+#: check_epub.py:335
+msgid "ePub books for jackets"
+msgstr "ジャケットのePub本"
+
+#: check_epub.py:366
+msgid "No searched ePub books have multiple jackets"
+msgstr "検索したePub本に複数ジャケットなし"
+
+#: check_epub.py:368
+msgid "ePub books for multiple jackets"
+msgstr "複数ジャケットのePub本"
+
+#: check_epub.py:424
+msgid "No searched ePub books have non-zero .xpgt margins"
+msgstr "検索したePub本に非ゼロの.xpgtマージンなし"
+
+#: check_epub.py:426
+msgid "ePub books for .xpgt margins"
+msgstr ".xpgtマージンのePub本"
+
+#: check_epub.py:456
+msgid "Checking css import"
+msgstr "CSSインポートをチェック中"
+
+#: check_epub.py:465
+msgid "Checking html import"
+msgstr "HTMLインポートをチェック中"
+
+#: check_epub.py:479
+msgid "No searched ePub books have inline xpgt links"
+msgstr "検索したePub本にインラインxpgtリンクなし"
+
+#: check_epub.py:481
+msgid "ePub books for inline xpgt links"
+msgstr "インラインxpgtリンクのePub本"
+
+#: check_epub.py:532
+msgid "No searched ePub books have unmanifested files"
+msgstr "検索したePub本にマニフェスト未記載ファイルなし"
+
+#: check_epub.py:534
+msgid "ePub books for unmanifested files"
+msgstr "マニフェスト未記載ファイルのePub本"
+
+#: check_epub.py:549 check_epub.py:675 check_epub.py:749
+msgid "SKIPPING BOOK (DRM Encrypted): "
+msgstr "本をスキップ (DRM暗号化): "
+
+#: check_epub.py:562
+msgid "\tIssue with CSS name: "
+msgstr "\tCSS名に問題: "
+
+#: check_epub.py:586
+msgid "\tUnused CSS file: %s"
+msgstr "\t未使用のCSSファイル: %s"
+
+#: check_epub.py:599
+msgid "No searched ePub books have unused CSS files"
+msgstr "検索したePub本に未使用CSSファイルなし"
+
+#: check_epub.py:601
+msgid "ePub books for unused CSS files"
+msgstr "未使用CSSファイルのePub本"
+
+#: check_epub.py:693
+msgid "\tIssue with image name: "
+msgstr "\t画像名に問題: "
+
+#: check_epub.py:718
+msgid "\tUNUSED image file: %s"
+msgstr "\t未使用の画像ファイル: %s"
+
+#: check_epub.py:731
+msgid "No searched ePub books have unused image files"
+msgstr "検索したePub本に未使用画像ファイルなし"
+
+#: check_epub.py:733
+msgid "ePub books for unused image files"
+msgstr "未使用画像ファイルのePub本"
+
+#: check_epub.py:788
+msgid "\tBroken image link in:"
+msgstr "\t壊れた画像リンク:"
+
+#: check_epub.py:788
+msgid " of "
+msgstr " の "
+
+#: check_epub.py:800
+msgid "No searched ePub books have broken image links"
+msgstr "検索したePub本に壊れた画像リンクなし"
+
+#: check_epub.py:802
+msgid "ePub books for broken image links"
+msgstr "壊れた画像リンクのePub本"
+
+#: check_epub.py:845
+msgid "No searched ePub books have "
+msgstr "検索したePub本に次はなし: "
+
+#: check_epub.py:847
+msgid "ePub books for "
+msgstr "次のePub本: "
+
+#: check_epub.py:879
+msgid "No OPF file in:"
+msgstr "OPFファイルなし:"
+
+#: check_epub.py:884
+msgid "No supported meta tag or non-xml cover in:"
+msgstr "サポートされるmetaタグまたは非XML表紙なし:"
+
+#: check_epub.py:889
+msgid "DRM Encrypted cover in:"
+msgstr "DRM暗号化された表紙:"
+
+#: check_epub.py:894
+msgid "Invalid cover image extension (%s) in:"
+msgstr "不正な表紙画像の拡張子 (%s):"
+
+#: check_epub.py:907
+msgid "No searched ePub books have replaceable covers"
+msgstr "検索したePub本に置換可能な表紙なし"
+
+#: check_epub.py:910
+msgid "All searched ePub books have replaceable covers"
+msgstr "検索したePub本はすべて置換可能な表紙あり"
+
+#: check_epub.py:914
+msgid "ePub books for replaceable covers"
+msgstr "置換可能な表紙のePub本"
+
+#: check_epub.py:950
+msgid "No searched ePub books have calibre SVG covers embedded"
+msgstr "検索したePub本にcalibre SVG表紙の埋め込みなし"
+
+#: check_epub.py:953
+msgid "All searched ePub books have calibre SVG covers embedded"
+msgstr "検索したePub本はすべてcalibre SVG表紙を埋め込み済み"
+
+#: check_epub.py:957
+msgid "ePub books for calibre SVG covers"
+msgstr "calibre SVG表紙のePub本"
+
+#: check_epub.py:994
+msgid "No searched ePub books have calibre covers embedded"
+msgstr "検索したePub本にcalibre表紙の埋め込みなし"
+
+#: check_epub.py:997
+msgid "All searched ePub books have calibre covers embedded"
+msgstr "検索したePub本はすべてcalibre表紙を埋め込み済み"
+
+#: check_epub.py:1001
+msgid "ePub books for calibre covers"
+msgstr "calibre表紙のePub本"
+
+#: check_epub.py:1030
+msgid "No searched ePub books have been converted by calibre"
+msgstr "検索したePub本にcalibreで変換されたものなし"
+
+#: check_epub.py:1033
+msgid "All searched ePub books have been converted by calibre"
+msgstr "検索したePub本はすべてcalibreで変換済み"
+
+#: check_epub.py:1037
+msgid "ePub books for calibre conversions"
+msgstr "calibre変換のePub本"
+
+#: check_epub.py:1065
+msgid "All searched ePub books have a valid zip format"
+msgstr "検索したePub本はすべてzip形式が正当"
+
+#: check_epub.py:1067
+msgid "ePub books for corrupted zip format"
+msgstr "zip形式が壊れたePub本"
+
+#: check_epub.py:1092
+msgid "All searched ePub books have a valid container.xml file"
+msgstr "検索したePub本はすべてcontainer.xmlが正当"
+
+#: check_epub.py:1094
+msgid "ePub books for missing container.xml"
+msgstr "container.xmlがないePub本"
+
+#: check_epub.py:1110
+msgid "\tMissing container.xml file in"
+msgstr "\tcontainer.xmlファイルなし:"
+
+#: check_epub.py:1115
+msgid "\tIncorrect container.xml namespace in"
+msgstr "\tcontainer.xmlの名前空間が不正:"
+
+#: check_epub.py:1122
+msgid "\tIncorrect .opf manifest namespace in"
+msgstr "\t.opfマニフェストの名前空間が不正:"
+
+#: check_epub.py:1132
+msgid "All searched ePub books have valid namespaces"
+msgstr "検索したePub本はすべて名前空間が正当"
+
+#: check_epub.py:1134
+msgid "ePub books for namespaces check"
+msgstr "名前空間チェックのePub本"
+
+#: check_epub.py:1175
+msgid "All searched ePub books have only dc: elements in manifest"
+msgstr "検索したePub本のマニフェストはすべてdc:要素のみ"
+
+#: check_epub.py:1177
+msgid "ePub books for non dc: metadata check"
+msgstr "非dc: 書誌データチェックのePub本"
+
+#: check_epub.py:1199
+msgid "Manifest file missing from: <b>%s</b>"
+msgstr "マニフェストのファイルがありません: <b>%s</b>"
+
+#: check_epub.py:1213
+msgid "All searched ePub books have a valid opf manifest"
+msgstr "検索したePub本はすべてopfマニフェストが正当"
+
+#: check_epub.py:1215
+msgid "ePub books for missing files in opf"
+msgstr "opfに記載のファイルがないePub本"
+
+#: check_epub.py:1240 check_epub.py:1279
+msgid "Ignoring DRM protected ePub: "
+msgstr "DRM保護されたePubを無視: "
+
+#: check_epub.py:1253
+msgid "All searched ePub books have a flattened NCX TOC"
+msgstr "検索したePub本のNCX TOCはすべてフラット"
+
+#: check_epub.py:1255
+msgid "ePub books for NCX TOC hierarchy"
+msgstr "NCX TOC階層のePub本"
+
+#: check_epub.py:1299
+msgid "All searched ePub books have a NCX TOC with at least 3 items"
+msgstr "検索したePub本のNCX TOCはすべて3件以上"
+
+#: check_epub.py:1301
+msgid "ePub books for NCX TOC count"
+msgstr "NCX TOC件数のePub本"
+
+#: check_epub.py:1356
+msgid "All searched ePub books have a NCX TOC with valid links"
+msgstr "検索したePub本のNCX TOCリンクはすべて正当"
+
+#: check_epub.py:1358
+msgid "ePub books for broken NCX TOC links"
+msgstr "NCX TOCのリンクが壊れたePub本"
+
+#: check_epub.py:1401
+msgid "All searched ePub books have valid guide entries"
+msgstr "検索したePub本のguideエントリはすべて正当"
+
+#: check_epub.py:1403
+msgid "ePub books for broken guide links"
+msgstr "guideリンクが壊れたePub本"
+
+#: check_epub.py:1437
+msgid "No searched ePub books have oversize html files"
+msgstr "検索したePub本にサイズ超過のhtmlファイルなし"
+
+#: check_epub.py:1439
+msgid "ePub books for oversize html files"
+msgstr "サイズ超過のhtmlファイルのePub本"
+
+#: check_epub.py:1464
+msgid "No searched ePub books have DRM"
+msgstr "検索したePub本にDRMなし"
+
+#: check_epub.py:1466
+msgid "ePub books for DRM"
+msgstr "DRMのePub本"
+
+#: check_epub.py:1498
+msgid "No searched ePub books have Adobe DRM meta tags"
+msgstr "検索したePub本にAdobe DRMメタタグなし"
+
+#: check_epub.py:1500
+msgid "ePub books for Adobe DRM meta tags"
+msgstr "Adobe DRMメタタグのePub本"
+
+#: check_epub.py:1532
+msgid "No searched ePub books have \\<address\\> smart tags"
+msgstr "検索したePub本に\\<address\\>  スマートタグなし"
+
+#: check_epub.py:1534
+msgid "ePub books for <address> smart tags"
+msgstr "<address> スマートタグのePub本"
+
+#: check_epub.py:1553
+msgid "Font found in: <b>%s</b>"
+msgstr "フォントを検出: <b>%s</b>"
+
+#: check_epub.py:1567
+msgid "No searched ePub books have embedded fonts"
+msgstr "検索したePub本に埋め込みフォントなし"
+
+#: check_epub.py:1569
+msgid "ePub books for embedded fonts"
+msgstr "埋め込みフォントのePub本"
+
+#: check_epub.py:1587
+msgid "CSS file contains @font-face: <b>%s</b>"
+msgstr "CSSファイルに@font-faceあり: <b>%s</b>"
+
+#: check_epub.py:1593
+msgid "At least one html file contains @font-face: <b>%s</b>"
+msgstr "少なくとも1つのhtmlファイルに@font-faceあり: <b>%s</b>"
+
+#: check_epub.py:1607
+msgid "No searched ePub books have @font-face declarations"
+msgstr "検索したePub本に@font-face宣言なし"
+
+#: check_epub.py:1609
+msgid "ePub books for @font-face declarations"
+msgstr "@font-face宣言のePub本"
+
+#: check_epub.py:1638
+msgid "All searched ePub books have text-align:justify"
+msgstr "検索したePub本はすべてtext-align:justifyあり"
+
+#: check_epub.py:1640
+msgid "ePub books for text-align:justify"
+msgstr "text-align:justifyのePub本"
+
+#: check_epub.py:1666
+msgid "\t\t'margin' property found, so does not match calibre preferences"
+msgstr "\t\t'margin'プロパティを検出。calibreの設定と不一致"
+
+#: check_epub.py:1669
+msgid "\t\tNegative margin found, so does not match calibre preferences"
+msgstr "\t\t負のマージンを検出。calibreの設定と不一致"
+
+#: check_epub.py:1678
+msgid "\t\tMargins is not defined in pts so does not match calibre preferences"
+msgstr "\t\tマージンがpt指定でないため、calibreの設定と不一致"
+
+#: check_epub.py:1686 check_epub.py:1689 check_epub.py:1695
+msgid "\t\tMargins are defined in pts but don't match calibre preferences"
+msgstr "\t\tマージンはpt指定だが、calibreの設定と不一致"
+
+#: check_epub.py:1698
+msgid "\t\tMargins match calibre preferences"
+msgstr "\t\tマージンはcalibreの設定と一致"
+
+#: check_epub.py:1724
+msgid "\tAnalyzing margins in "
+msgstr "\tマージンを解析中 "
+
+#: check_epub.py:1754
+msgid "All searched ePub books match the calibre page setup preferences"
+msgstr "検索したePub本はすべてcalibreのページ設定と一致"
+
+#: check_epub.py:1756
+msgid "ePub books for body or @page css margins"
+msgstr "bodyまたは@page cssマージンのePub本"
+
+#: check_epub.py:1794
+msgid "All searched ePub books have book level margins defined"
+msgstr "検索したePub本はすべてbookレベルのマージンを定義済み"
+
+#: check_epub.py:1796
+msgid "ePub books lacking body or @page css margins"
+msgstr "bodyまたは@page cssマージンがないePub本"
+
+#: check_epub.py:1832
+msgid "No searched ePub books inline @page margins"
+msgstr "検索したePub本にインライン@pageマージンなし"
+
+#: check_epub.py:1834
+msgid "ePub books using inline @page or body css margins"
+msgstr "インライン@pageまたはbody cssマージンを使うePub本"
+
+#: check_epub.py:1855
+msgid "\tContains .js file: %s"
+msgstr "\t.jsファイルを含む: %s"
+
+#: check_epub.py:1861
+msgid "\tContains inline javascript: %s"
+msgstr "\tインラインJavaScriptを含む: %s"
+
+#: check_epub.py:1863
+msgid "ePub with Javascript: %s"
+msgstr "JavaScriptを含むePub: %s"
+
+#: check_epub.py:1878
+msgid "No searched ePub books have javascript"
+msgstr "検索したePub本にJavaScriptなし"
+
+#: check_epub.py:1880
+msgid "ePub books for javascript"
+msgstr "JavaScriptのePub本"
+
+#: check_epub.py:1908
+msgid "Unsmartened punctuation in: <b>%s</b>"
+msgstr "未整形の約物: <b>%s</b>"
+
+#: check_epub.py:1922
+msgid "No searched ePub books need punctuation smartened"
+msgstr "検索したePub本に約物の整形が必要なものなし"
+
+#: check_epub.py:1924
+msgid "ePub books for smarten punctuation"
+msgstr "約物整形のePub本"
+
+#: check_epub.py:1942
+msgid "Could not find OPF in:%s"
+msgstr "OPFが見つかりません:%s"
+
+#: check_epub.py:1945
+msgid "OPF file in container.xml not found in:%s"
+msgstr "container.xmlに記載のOPFファイルが見つかりません:%s"
+
+#: check_fix.py:124
+msgid "Reformatting author initials for"
+msgstr "著者のイニシャルを整形中:"
+
+#: check_fix.py:129
+msgid "Reformatted initials for %d of %d book authors"
+msgstr "%d/%d 件の著者のイニシャルを整形しました"
+
+#: check_fix.py:154
+msgid "Renaming authors to ascii for"
+msgstr "著者名をASCIIに変換中:"
+
+#: check_fix.py:159
+msgid "Renamed to ascii %d of %d book authors"
+msgstr "%d/%d 件の著者名をASCIIに変換しました"
+
+#: check_fix.py:174
+msgid "books with incorrect author sort"
+msgstr "著者ソートが不正な本"
+
+#: check_fix.py:175
+msgid "Checked %d books, updated %d author sorts%s"
+msgstr "%d 冊チェック、著者ソートを %d 件更新%s"
+
+#: check_fix.py:179
+msgid "All author sorts are correct"
+msgstr "著者ソートはすべて正当"
+
+#: check_fix.py:199
+msgid "books with incorrect title sort"
+msgstr "タイトルソートが不正な本"
+
+#: check_fix.py:200
+msgid "Checked %d books, updated %d title sorts%s"
+msgstr "%d 冊チェック、タイトルソートを %d 件更新%s"
+
+#: check_fix.py:204
+msgid "All title sorts are correct"
+msgstr "タイトルソートはすべて正当"
+
+#: check_fix.py:234
+msgid "\"Check and repair book sizes\" requires calibre version 5.9 or higher."
+msgstr "「本のサイズをチェックして修復」には calibre 5.9 以上が必要です。"
+
+#: check_fix.py:239
+msgid "books for invalid file sizes"
+msgstr "ファイルサイズが不正な本"
+
+#: check_fix.py:240
+msgid "Checked %d books, updated %d format sizes in %d books%s"
+msgstr "%d 冊チェック、%d 件のフォーマットサイズを %d 冊の本で更新%s"
+
+#: check_fix.py:244
+msgid "All book format sizes are correct"
+msgstr "本のフォーマットサイズはすべて正当"
+
+#: check_fix.py:264
+msgid "books with paths missing commas"
+msgstr "パスにカンマがない本"
+
+#: check_fix.py:265
+msgid "Checked %d books, updated %d paths%s"
+msgstr "%d 冊チェック、パスを %d 件更新%s"
+
+#: check_fix.py:269
+msgid "All books have up to date paths"
+msgstr "すべての本のパスは最新"
+
+#: check_fix.py:281
+msgid "Choose directory to cleanup"
+msgstr "クリーンアップするディレクトリを選択"
+
+#: check_fix.py:286
+msgid "Invalid Folder"
+msgstr "不正なフォルダ"
+
+#: check_fix.py:287
+msgid "You should not run this feature against a Calibre library folder."
+msgstr "この機能を calibre ライブラリのフォルダに対して実行しないでください。"
+
+#: check_fix.py:288
+msgid ""
+"If you do you will remove \"Empty book\" entries and corrupt your database."
+msgstr "実行すると「空の本」のエントリが削除され、データベースが壊れます。"
+
+#: check_fix.py:297
+msgid "No files/folders were found to be deleted"
+msgstr "削除対象のファイル/フォルダは見つかりませんでした"
+
+#: check_fix.py:303 check_fix.py:310
+msgid "Cleanup completed"
+msgstr "クリーンアップ完了"
+
+#: check_fix.py:306
+msgid "Deleted %d files/folders with %d errors. See details for more info."
+msgstr "%d 件のファイル/フォルダを削除、エラー %d 件。詳しくは詳細を参照してください。"
+
+#: check_fix.py:334
+msgid "Removed folder: %s"
+msgstr "フォルダを削除: %s"
+
+#: check_fix.py:338
+msgid "ERROR removing folder: %s"
+msgstr "エラー: フォルダを削除できません: %s"
+
+#: check_fix.py:372
+msgid "Removed file: %s"
+msgstr "ファイルを削除: %s"
+
+#: check_fix.py:376
+msgid "ERROR removing file: %s"
+msgstr "エラー: ファイルを削除できません: %s"
+
+#: check_fix.py:385 check_fix.py:388 check_fix.py:391
+msgid "identifier found"
+msgstr "識別子を検出"
+
+#: check_fix.py:394
+msgid "No ASIN found, using uuid"
+msgstr "ASINが見つからないため uuid を使用"
+
+#: check_fix.py:428
+msgid "Fixing ASIN for %d books"
+msgstr "%d 冊の本のASINを修正中"
+
+#: check_fix.py:434
+msgid "Fix ASIN completed"
+msgstr "ASINの修正が完了"
+
+#: check_fix.py:437
+msgid "%d books updated, see log for details"
+msgstr "%d 冊を更新、詳細はログ参照のこと"
+
+#: check_fix.py:480
+msgid "books for normalize text fields"
+msgstr "テキスト項目の正規化の本"
+
+#: check_fix.py:497
+msgid ""
+"Checked %d books, normalize fields %d in %d books, and %d author sort key%s"
+msgstr "%d 冊チェック、項目 %d 件を %d 冊の本で正規化、著者ソートキー %d 件%s"
+
+#: check_fix.py:501
+msgid "All text fields are normalize"
+msgstr "テキスト項目はすべて正規化済み"
+
+#: check_fix.py:509
+msgid "\"Normalize the notes\" requires calibre version 7.0 or higher."
+msgstr "「ノートを正規化」には calibre 7.0 以上が必要です。"
+
+#: check_fix.py:546
+msgid "All category notes are normalize"
+msgstr "カテゴリのノートはすべて正規化済み"
+
+#: check_metadata.py:86
+msgid "All searched books have a valid Title Sort"
+msgstr "検索した本のタイトルソートはすべて正当"
+
+#: check_metadata.py:88
+msgid "books for invalid title sort"
+msgstr "不正なタイトルソートの本"
+
+#: check_metadata.py:104
+msgid "All searched books have a valid Author Sort"
+msgstr "検索した本の著者ソートはすべて正当"
+
+#: check_metadata.py:106
+msgid "books for invalid author sort"
+msgstr "不正な著者ソートの本"
+
+#: check_metadata.py:119
+msgid "All searched books have a valid ISBN"
+msgstr "検索した本のISBNはすべて正当"
+
+#: check_metadata.py:121
+msgid "books for invalid ISBN"
+msgstr "不正なISBNの本"
+
+#: check_metadata.py:134
+msgid "All searched books have a valid pubdate"
+msgstr "検索した本の発行日はすべて正当"
+
+#: check_metadata.py:136
+msgid "books for invalid pubdate"
+msgstr "不正な発行日の本"
+
+#: check_metadata.py:153
+msgid "books for duplicate ISBN"
+msgstr "ISBNが重複した本"
+
+#: check_metadata.py:166
+msgid "All searched books have unique ISBNs"
+msgstr "検索した本のISBNはすべて重複なし"
+
+#: check_metadata.py:185
+msgid "books for duplicate series"
+msgstr "重複したシリーズの本"
+
+#: check_metadata.py:199
+msgid "All searched books have unique series indexes"
+msgstr "検索した本のシリーズインデックスに重複なし"
+
+#: check_metadata.py:257
+msgid "Checked %d books, found %d gaps in %d series"
+msgstr "%d 冊チェック、%d 件の欠番を %d 件のシリーズで検出"
+
+#: check_metadata.py:261
+msgid "No series gaps exist in the books searched"
+msgstr "検索した本にシリーズの欠番なし"
+
+#: check_metadata.py:263
+msgid "Series Gaps Found%s"
+msgstr "シリーズの欠番を検出%s"
+
+#: check_metadata.py:287
+msgid "books for series pubdate order"
+msgstr "シリーズの発行日順の本"
+
+#: check_metadata.py:320
+msgid "Checked %d books, found %d disordered in %d series"
+msgstr "%d 冊チェック、%d 件の順序不正を %d 件のシリーズで検出"
+
+#: check_metadata.py:324
+msgid "No series pubdate disorders exist in the books searched"
+msgstr "検索した本にシリーズ発行日の順序不正なし"
+
+#: check_metadata.py:326
+msgid "Series Pubdate Issues Found"
+msgstr "シリーズ発行日の問題を検出"
+
+#: check_metadata.py:344
+msgid "All searched books have a valid tag count"
+msgstr "検索した本のタグ数はすべて正当"
+
+#: check_metadata.py:346
+msgid "books for invalid tag count"
+msgstr "タグ数が不正な本"
+
+#: check_metadata.py:379
+msgid "All searched books have no HTML in comments"
+msgstr "検索した本のコメントにHTMLなし"
+
+#: check_metadata.py:381
+msgid "books for no HTML in comments"
+msgstr "コメントにHTMLがない本"
+
+#: check_metadata.py:416
+msgid "All searched books have HTML in comments"
+msgstr "検索した本のコメントはすべてHTMLあり"
+
+#: check_metadata.py:418
+msgid "books for HTML in comments"
+msgstr "コメントにHTMLがある本"
+
+#: check_metadata.py:433
+msgid "All searched book authors have no commas"
+msgstr "検索した本の著者にカンマなし"
+
+#: check_metadata.py:435
+msgid "books with authors having commas"
+msgstr "カンマのある著者の本"
+
+#: check_metadata.py:450
+msgid "All searched book authors have commas"
+msgstr "検索した本の著者はすべてカンマあり"
+
+#: check_metadata.py:452
+msgid "books with authors not having commas"
+msgstr "カンマのない著者の本"
+
+#: check_metadata.py:467
+msgid "All searched authors have a valid casing"
+msgstr "検索した著者の大文字小文字はすべて正当"
+
+#: check_metadata.py:469
+msgid "books for invalid author casing"
+msgstr "著者の大文字小文字が不正な本"
+
+#: check_metadata.py:487
+msgid "All searched book authors have alphabetic names"
+msgstr "検索した本の著者名はすべてアルファベット"
+
+#: check_metadata.py:489
+msgid "books with authors having non-alphabetic names"
+msgstr "アルファベット以外の著者名の本"
+
+#: check_metadata.py:506
+msgid "All searched book authors have ascii names"
+msgstr "検索した本の著者名はすべてASCII"
+
+#: check_metadata.py:508
+msgid "books with authors having non-ascii names"
+msgstr "非ASCIIの著者名の本"
+
+#: check_metadata.py:526
+msgid "All searched book authors have correct initials"
+msgstr "検索した本の著者のイニシャルはすべて正当"
+
+#: check_metadata.py:528
+msgid "books with authors having incorrect initials"
+msgstr "イニシャルが不正な著者の本"
+
+#: check_metadata.py:541
+msgid "All searched books do not have titles with series names"
+msgstr "検索した本のタイトルにシリーズ名なし"
+
+#: check_metadata.py:543
+msgid "book titles with possible series names"
+msgstr "シリーズ名の可能性があるタイトルの本"
+
+#: check_metadata.py:555
+msgid "All searched titles have a valid title casing"
+msgstr "検索したタイトルの大文字小文字はすべて正当"
+
+#: check_metadata.py:557
+msgid "books for invalid title casing"
+msgstr "タイトルの大文字小文字が不正な本"
+
+#: check_mobi.py:80
+msgid "All searched MOBI books have EBOK cdetag values"
+msgstr "検索したMOBI本はすべてEBOK cdetag値あり"
+
+#: check_mobi.py:82
+msgid "MOBI books missing EBOK cdetag"
+msgstr "EBOK cdetagがないMOBI本"
+
+#: check_mobi.py:121
+msgid "All searched MOBI books have ASIN values"
+msgstr "検索したMOBI本はすべてASIN値あり"
+
+#: check_mobi.py:123
+msgid "MOBI books missing ASIN"
+msgstr "ASINがないMOBI本"
+
+#: check_mobi.py:166
+msgid "All searched MOBI books have Twitter/Facebook sharing enabled"
+msgstr "検索したMOBI本はすべてTwitter/Facebook共有が有効"
+
+#: check_mobi.py:168
+msgid "MOBI books unable to share on Twitter/Facebook"
+msgstr "Twitter/Facebookで共有できないMOBI本"
+
+#: check_mobi.py:197
+msgid "All searched MOBI books have no clipping limits"
+msgstr "検索したMOBI本にクリッピング制限なし"
+
+#: check_mobi.py:199
+msgid "MOBI books for clipping limits"
+msgstr "クリッピング制限のMOBI本"
+
+#: config.py:73
+msgid "Check covers"
+msgstr "チェック: 表紙"
+
+#: config.py:73
+msgid "Find books with book covers matching your criteria"
+msgstr "検索: 条件に一致する表紙の本を検索"
+
+#: config.py:75
+msgid "Check having any jacket"
+msgstr "チェック: ジャケットあり"
+
+#: config.py:75
+msgid "Check for ePub formats which have any calibre jacket"
+msgstr "チェック: calibreジャケットのあるEPUBフォーマット"
+
+#: config.py:75 config.py:76 config.py:77 config.py:78 config.py:79
+#: config.py:80 config.py:81 config.py:82 config.py:83 config.py:84
+#: config.py:85 config.py:86 config.py:87 config.py:88 config.py:89
+#: config.py:90 config.py:91 config.py:92 config.py:93 config.py:94
+#: config.py:95 config.py:96 config.py:97 config.py:98 config.py:99
+#: config.py:100 config.py:101 config.py:102 config.py:103 config.py:104
+msgid "Check ePub Structure"
+msgstr "チェック: ePub構造"
+
+#: config.py:76
+msgid "Check having legacy jacket"
+msgstr "チェック: 旧形式ジャケットあり"
+
+#: config.py:76
+msgid ""
+"Check for ePub formats which have a calibre jacket from versions prior to "
+"0.6.51"
+msgstr "チェック: 0.6.51より前のバージョンのcalibreジャケットがあるEPUBフォーマット"
+
+#: config.py:77
+msgid "Check having multiple jackets"
+msgstr "チェック: 複数ジャケットあり"
+
+#: config.py:77
+msgid "Check for ePub formats which have multiple jackets"
+msgstr "チェック: 複数のジャケットがあるEPUBフォーマット"
+
+#: config.py:78
+msgid "Check missing jacket"
+msgstr "チェック: ジャケットなし"
+
+#: config.py:78
+msgid "Check for ePub formats which do not have a jacket"
+msgstr "チェック: ジャケットのないEPUBフォーマット"
+
+#: config.py:79
+msgid "Check missing container.xml"
+msgstr "チェック: container.xmlなし"
+
+#: config.py:79
+msgid ""
+"Check for ePub formats with a missing container.xml indicating an invalid "
+"ePub"
+msgstr "チェック: container.xmlがなく不正なePubであることを示すEPUBフォーマット"
+
+#: config.py:80
+msgid "Check invalid namespaces"
+msgstr "チェック: 不正な名前空間"
+
+#: config.py:80
+msgid ""
+"Check for ePub formats with invalid namespaces in the container xml or opf "
+"manifest"
+msgstr "チェック: container xmlまたはopfマニフェストの名前空間が不正なEPUBフォーマット"
+
+#: config.py:81
+msgid "Check non-dc: metadata"
+msgstr "チェック: 非dc: 書誌データ"
+
+#: config.py:81
+msgid ""
+"Check for ePub formats with metadata elements in the opf manifest that are "
+"not in the dc: namespace"
+msgstr "チェック: opfマニフェストにdc:名前空間でないメタデータ要素があるEPUBフォーマット"
+
+#: config.py:82
+msgid "Check manifest files missing"
+msgstr "チェック: マニフェスト記載ファイルなし"
+
+#: config.py:82
+msgid ""
+"Check for ePub formats with files missing that are listed in their opf "
+"manifest"
+msgstr "チェック: opfマニフェストに記載されたファイルがないEPUBフォーマット"
+
+#: config.py:83
+msgid "Check unmanifested files"
+msgstr "チェック: マニフェスト未記載ファイル"
+
+#: config.py:83
+msgid ""
+"Check for ePub formats with files that are not listed in their opf manifest "
+"excluding iTunes/bookmarks"
+msgstr "チェック: iTunes/ブックマークを除き、opfマニフェストに記載のないファイルがあるEPUBフォーマット"
+
+#: config.py:84
+msgid "Check unused CSS files"
+msgstr "チェック: 未使用CSSファイル"
+
+#: config.py:84
+msgid ""
+"Check for ePub formats with CSS files that are not referenced from any html "
+"pages"
+msgstr "チェック: どのhtmlページからも参照されていないCSSファイルがあるEPUBフォーマット"
+
+#: config.py:85
+msgid "Check unused image files"
+msgstr "チェック: 未使用画像ファイル"
+
+#: config.py:85
+msgid ""
+"Check for ePub formats with image files that are not referenced from the "
+"xhtml pages"
+msgstr "チェック: xhtmlページから参照されていない画像ファイルがあるEPUBフォーマット"
+
+#: config.py:86
+msgid "Check broken image links"
+msgstr "チェック: 壊れた画像リンク"
+
+#: config.py:86
+msgid ""
+"Check for ePub formats with html pages that contain broken links to images"
+msgstr "チェック: 画像への壊れたリンクを含むhtmlページがあるEPUBフォーマット"
+
+#: config.py:87
+msgid "Check iTunes files"
+msgstr "チェック: iTunesファイル"
+
+#: config.py:87
+msgid ""
+"Check for ePub formats with an iTunesMetadata.plist or iTunesArtwork file"
+msgstr "チェック: iTunesMetadata.plistまたはiTunesArtworkファイルがあるEPUBフォーマット"
+
+#: config.py:88
+msgid "Check calibre bookmark files"
+msgstr "チェック: calibreブックマークファイル"
+
+#: config.py:88
+msgid "Check for ePub formats with a calibre bookmarks file"
+msgstr "チェック: calibreブックマークファイルがあるEPUBフォーマット"
+
+#: config.py:89
+msgid "Check OS artifacts"
+msgstr "チェック: OSアーティファクト"
+
+#: config.py:89
+msgid "Check for ePub formats with OS artifacts of .DS_Store or Thumbs.db"
+msgstr "チェック: .DS_StoreやThumbs.dbなどのOSアーティファクトがあるEPUBフォーマット"
+
+#: config.py:90
+msgid "Check ePub inside ePub"
+msgstr "チェック: ePub中のePub"
+
+#: config.py:90
+msgid "Check for ePub formats containing a ePub inside"
+msgstr "チェック: ePub中にEPUBフォーマット"
+
+#: config.py:91
+msgid "Check NCX TOC hierarchical"
+msgstr "チェック: NXC TOC階層"
+
+#: config.py:91
+msgid ""
+"Check for ePub formats with a NCX file TOC which is not flat (i.e. "
+"hierarchical)"
+msgstr "チェック: NCXファイルのTOCがフラットでない (階層的な) EPUBフォーマット"
+
+#: config.py:92
+msgid "Check NCX TOC with < 3 entries"
+msgstr "チェック: NCX TOC エントリ3件未満"
+
+#: config.py:92
+msgid "Check for ePub formats with a NCX file TOC with less than 3 entries"
+msgstr "チェック: NCXファイルのTOCのエントリが3件未満のEPUBフォーマット"
+
+#: config.py:93
+msgid "Check NCX TOC with broken links"
+msgstr "チェック: NCX TOCのリンク切れ"
+
+#: config.py:93
+msgid ""
+"Check for ePub formats with a NCX file TOC that contains broken html links"
+msgstr "チェック: NCXファイルのTOCに壊れたhtmlリンクを含むEPUBフォーマット"
+
+#: config.py:94
+msgid "Check <guide> broken links"
+msgstr "チェック: <guide> のリンク切れ"
+
+#: config.py:94
+msgid ""
+"Check for ePub formats with broken links in the <guide> section of the "
+"manifest"
+msgstr "チェック: マニフェストの <guide> セクションに壊れたリンクがあるEPUBフォーマット"
+
+#: config.py:95
+msgid "Check oversize html files"
+msgstr "チェック: サイズ超過のhtmlファイル"
+
+#: config.py:95
+msgid ""
+"Check for ePub formats with an individual html file size that requires "
+"splitting on some devices"
+msgstr "チェック: 一部のデバイスで分割が必要なサイズのhtmlファイルがあるEPUBフォーマット"
+
+#: config.py:96
+msgid "Check DRM"
+msgstr "チェック: DRM"
+
+#: config.py:96
+msgid "Check for ePub formats with DRM encryption xml files"
+msgstr "チェック: DRM暗号化のxmlファイルがあるEPUBフォーマット"
+
+#: config.py:97
+msgid "Check Adobe DRM meta tag"
+msgstr "チェック: Adobe DRMメタタグ"
+
+#: config.py:97
+msgid ""
+"Check for ePub formats that contain html pages with an Adobe DRM meta "
+"identifier tag"
+msgstr "チェック: Adobe DRMのmeta識別子タグを含むhtmlページがあるEPUBフォーマット"
+
+#: config.py:98
+msgid "Check replaceable cover"
+msgstr "チェック: 置換可能な表紙"
+
+#: config.py:98
+msgid ""
+"Check for ePub formats with a cover that can be replaced when exporting or "
+"updating metadata with Modify ePub"
+msgstr "チェック: Modify ePubでのエクスポートやメタデータ更新時に表紙を置換できるEPUBフォーマット"
+
+#: config.py:99
+msgid "Check non-replaceable cover"
+msgstr "チェック: 置換不可の表紙"
+
+#: config.py:99
+msgid ""
+"Check for ePub formats with no cover or a cover that cannot be replaced "
+"without a calibre conversion"
+msgstr "チェック: 表紙がない、またはcalibre変換なしでは表紙を置換できないEPUBフォーマット"
+
+#: config.py:100
+msgid "Check calibre SVG cover"
+msgstr "チェック: calibre SVG表紙"
+
+#: config.py:100
+msgid ""
+"Check for ePub formats with a cover that has been inserted by a calibre "
+"conversion or Modify ePub and that is SVG"
+msgstr "チェック: calibre変換またはModify ePubで挿入されたSVG表紙があるEPUBフォーマット"
+
+#: config.py:101
+msgid "Check no calibre SVG cover"
+msgstr "チェック: calibre SVG表紙なし"
+
+#: config.py:101
+msgid ""
+"Check for ePub formats that have no calibre cover inserted by a calibre "
+"conversion or Modify ePub that is SVG"
+msgstr "チェック: calibre変換またはModify ePubで挿入されたSVG表紙がないEPUBフォーマット"
+
+#: config.py:102
+msgid "Check calibre conversion"
+msgstr "チェック: calibre変換"
+
+#: config.py:102
+msgid "Check for ePub formats that have been converted by calibre"
+msgstr "チェック: calibreで変換されたEPUBフォーマット"
+
+#: config.py:103
+msgid "Check not calibre conversion"
+msgstr "チェック: calibre変換でない"
+
+#: config.py:103
+msgid "Check for ePub formats that have not been converted by calibre"
+msgstr "チェック: calibreで変換されていないEPUBフォーマット"
+
+#: config.py:104
+msgid "Check corrupt zip"
+msgstr "チェック: zip破損"
+
+#: config.py:104
+msgid "Check for ePub zip that is corrupted, may need conversion to fix"
+msgstr "チェック: zipが破損したePub。修復には変換が必要な場合があります"
+
+#: config.py:106
+msgid "Check <address> smart-tags"
+msgstr "チェック: <address> SMARTタグ"
+
+#: config.py:106
+msgid ""
+"Check for ePub formats that have <address> elements from a poor conversion "
+"with Word smart tags"
+msgstr "チェック: Wordのスマートタグによる不十分な変換で <address> 要素があるEPUBフォーマット"
+
+#: config.py:106 config.py:107 config.py:108 config.py:109 config.py:110
+#: config.py:111 config.py:112 config.py:113 config.py:114 config.py:115
+#: config.py:116
+msgid "Check ePub Style"
+msgstr "ePubスタイルのチェック"
+
+#: config.py:107
+msgid "Check embedded fonts"
+msgstr "チェック: 埋め込みフォント"
+
+#: config.py:107
+msgid "Check for ePub formats with embedded fonts"
+msgstr "チェック: 埋め込みフォントがあるEPUBフォーマット"
+
+#: config.py:108
+msgid "Check @font-face"
+msgstr "チェック: @font-face"
+
+#: config.py:108
+msgid ""
+"Check for ePub formats with CSS or html files that contain @font-face "
+"declarations"
+msgstr "チェック: @font-face宣言を含むCSSまたはhtmlファイルがあるEPUBフォーマット"
+
+#: config.py:109
+msgid "Check Adobe .xpgt margins"
+msgstr "チェック: Adobe .xpgtマージン"
+
+#: config.py:109
+msgid "Check for ePub formats with an xpgt file with non-zero margins"
+msgstr "チェック: マージンが非ゼロのxpgtファイルがあるEPUBフォーマット"
+
+#: config.py:110
+msgid "Check Adobe inline .xpgt links"
+msgstr "チェック: Adobeインライン.xpgtリンク"
+
+#: config.py:110
+msgid ""
+"Check for ePub formats that contain html pages with links to an xpgt file"
+msgstr "チェック: xpgtファイルへのリンクを含むhtmlページがあるEPUBフォーマット"
+
+#: config.py:111
+msgid "Check CSS non-justified"
+msgstr "チェック: CSS両端揃えなし"
+
+#: config.py:111
+msgid ""
+"Check for ePub formats with CSS files that do not contain a text-align: "
+"justify style"
+msgstr "チェック: text-align: justifyスタイルを含まないCSSファイルがあるEPUBフォーマット"
+
+#: config.py:112
+msgid "Check CSS book margins"
+msgstr "チェック: CSSのbookマージン"
+
+#: config.py:112
+msgid ""
+"Check for ePub formats with book level CSS margins conflicting with calibre "
+"Preferences"
+msgstr "チェック: bookレベルのCSSマージンがcalibreの設定と競合するEPUBフォーマット"
+
+#: config.py:113
+msgid "Check CSS no book margins"
+msgstr "チェック: CSSのbookマージンなし"
+
+#: config.py:113
+msgid "Check for ePub formats that do not contain CSS book level margins"
+msgstr "チェック: bookレベルのCSSマージンを含まないEPUBフォーマット"
+
+#: config.py:114
+msgid "Check inline @page margins"
+msgstr "チェック: インライン@pageマージン"
+
+#: config.py:114
+msgid "Check for ePub formats that contain @page CSS margins in each flow"
+msgstr "チェック: 各フローに@page CSSマージンを含むEPUBフォーマット"
+
+#: config.py:115
+msgid "Check javascript <script>"
+msgstr "チェック: JavaScript <script>"
+
+#: config.py:115
+msgid "Check for ePub formats that contain inline javascript <script> blocks"
+msgstr "チェック: インラインJavaScriptの <script> ブロックを含むEPUBフォーマット"
+
+#: config.py:116
+msgid "Check smarten punctuation"
+msgstr "チェック: 約物の整形"
+
+#: config.py:116
+msgid "Check for ePub formats that contain unsmartened punctuation"
+msgstr "チェック: 未整形の約物を含むEPUBフォーマット"
+
+#: config.py:118
+msgid "Check missing EBOK cdetype"
+msgstr "チェック: EBOK cdetypeなし"
+
+#: config.py:118
+msgid ""
+"Check for MOBI/AZW/AZW3 formats missing the cdetype of EBOK required for a "
+"Kindle Fire"
+msgstr "チェック: Kindle Fireに必要なcdetype EBOKがないMOBI/AZW/AZW3フォーマット"
+
+#: config.py:118 config.py:119 config.py:120 config.py:121
+msgid "Check Mobi"
+msgstr "チェック: Mobi"
+
+#: config.py:119
+msgid "Check missing ASIN identifier"
+msgstr "チェック: ASIN識別子なし"
+
+#: config.py:119
+msgid ""
+"Check for MOBI/AZW/AZW3 formats missing an ASIN in EXTH 113 required for "
+"reading on a Kindle Fire"
+msgstr "チェック: Kindle Fireでの読書に必要なEXTH 113のASINがないMOBI/AZW/AZW3フォーマット"
+
+#: config.py:120
+msgid "Check Twitter/Facebook disabled"
+msgstr "チェック: Twitter/Facebook無効"
+
+#: config.py:120
+msgid ""
+"Check for MOBI/AZW/AZW3 formats missing an ASIN in both EXTH 113 and EXTH "
+"504 to enable \"share\" features on Facebook or Twitter"
+msgstr ""
+"チェック: FacebookやTwitterの \"共有\" 機能を有効にするASINが、EXTH 113とEXTH "
+"504のどちらにもないMOBI/AZW/AZW3フォーマット"
+
+#: config.py:121
+msgid "Check clipping limit"
+msgstr "チェック: クリッピング制限"
+
+#: config.py:121
+msgid ""
+"Check for MOBI/AZW/AZW3 formats that have a clipping limit specified by the "
+"publisher in EXTH header 401"
+msgstr "チェック: EXTHヘッダー401で出版社がクリッピング制限を指定しているMOBI/AZW/AZW3フォーマット"
+
+#: config.py:123
+msgid "Check title sort"
+msgstr "チェック: タイトルソート"
+
+#: config.py:123
+msgid "Find books with an invalid title sort value"
+msgstr "検索: タイトルソート値が不正な本"
+
+#: config.py:123 config.py:124 config.py:125 config.py:126 config.py:127
+#: config.py:128 config.py:129 config.py:130 config.py:131 config.py:132
+#: config.py:133 config.py:134 config.py:135 config.py:136 config.py:137
+#: config.py:138 config.py:139 config.py:140 config.py:141
+msgid "Check metadata"
+msgstr "チェック: 書誌データ"
+
+#: config.py:124
+msgid "Check author sort"
+msgstr "チェック: 著者ソート"
+
+#: config.py:124
+msgid "Find books with an invalid author sort value"
+msgstr "検索: 著者ソート値が不正な本"
+
+#: config.py:125
+msgid "Check ISBN"
+msgstr "チェック: ISBN"
+
+#: config.py:125
+msgid "Find books with an invalid ISBN"
+msgstr "検索: ISBNが不正な本"
+
+#: config.py:126
+msgid "Check pubdate"
+msgstr "チェック: 発行日"
+
+#: config.py:126
+msgid ""
+"Find books with an invalid pubdate where it is set to the timestamp date"
+msgstr "検索: 発行日がタイムスタンプの日付になっている不正な本"
+
+#: config.py:127
+msgid "Check duplicate ISBN"
+msgstr "チェック: ISBN重複"
+
+#: config.py:127
+msgid "Find books that have duplicate ISBN values"
+msgstr "検索: ISBN値が重複している本"
+
+#: config.py:128
+msgid "Check duplicate series"
+msgstr "チェック: シリーズ重複"
+
+#: config.py:128
+msgid "Find books that have duplicate series values"
+msgstr "検索: シリーズ値が重複している本"
+
+#: config.py:129
+msgid "Check series gaps"
+msgstr "チェック: シリーズの欠番"
+
+#: config.py:129 config.py:130
+msgid "Find books that have gaps in their series index values"
+msgstr "検索: シリーズインデックスに欠番がある本"
+
+#: config.py:130
+msgid "Check series pubdate order"
+msgstr "チェック: シリーズの発行日順"
+
+#: config.py:131
+msgid "Check excess tags"
+msgstr "チェック: タグ数超過"
+
+#: config.py:131
+msgid "Find books with an excess number of tags"
+msgstr "検索: タグ数が多すぎる本"
+
+#: config.py:132
+msgid "Check html comments"
+msgstr "チェック: HTMLコメント"
+
+#: config.py:132
+msgid "Find books which have comments html with style formatting embedded"
+msgstr "検索: スタイル書式が埋め込まれたHTMLコメントがある本"
+
+#: config.py:133
+msgid "Check no html comments"
+msgstr "チェック: HTMLコメントなし"
+
+#: config.py:133
+msgid "Find books which have comments with no html tags at all"
+msgstr "検索: HTMLタグがまったくないコメントの本"
+
+#: config.py:134
+msgid "Check authors with commas"
+msgstr "チェック: カンマのある著者"
+
+#: config.py:134
+msgid "Find authors with commas in their name"
+msgstr "検索: カンマのある著者名"
+
+#: config.py:135
+msgid "Check authors missing commas"
+msgstr "チェック: カンマのない著者"
+
+#: config.py:135
+msgid "Find authors with no commas in their name"
+msgstr "検索: 名前にカンマがない著者"
+
+#: config.py:136
+msgid "Check authors for case"
+msgstr "チェック: 著者の大文字小文字"
+
+#: config.py:136
+msgid "Find authors which are all uppercase or all lowercase"
+msgstr "検索: すべて大文字またはすべて小文字の著者"
+
+#: config.py:137
+msgid "Check authors non alphabetic"
+msgstr "チェック: 非アルファベットの著者"
+
+#: config.py:137
+msgid ""
+"Find authors with non-alphabetic characters such as semi-colons indicating "
+"cruft or incorrect separators"
+msgstr "検索: セミコロンなど、不要な文字や誤った区切り文字を示す非アルファベット文字を含む著者"
+
+#: config.py:138
+msgid "Check authors non ascii"
+msgstr "チェック: 非ASCIIの著者"
+
+#: config.py:138
+msgid "Find authors with non-ascii names (e.g. with diacritics)"
+msgstr "検索: 非ASCIIの名前 (発音区別符号など) の著者"
+
+#: config.py:139
+msgid "Check authors initials"
+msgstr "チェック: 著者のイニシャル"
+
+#: config.py:139
+msgid ""
+"Find authors with initials that do not meet your preferred configuration"
+msgstr "検索: 設定した形式に合わないイニシャルの著者"
+
+#: config.py:140
+msgid "Check titles with series"
+msgstr "チェック: シリーズ名を含むタイトル"
+
+#: config.py:140
+msgid "Find titles with possible series info in their name"
+msgstr "検索: シリーズ情報を含む可能性があるタイトル"
+
+#: config.py:141
+msgid "Check titles for title case"
+msgstr "チェック: タイトルの大文字小文字"
+
+#: config.py:141
+msgid "Find titles which are candidates to apply the titlecase function to"
+msgstr "検索: titlecase関数の適用候補となるタイトル"
+
+#: config.py:143
+msgid "Check missing title"
+msgstr "チェック: タイトルなし"
+
+#: config.py:143
+msgid "Find books missing a title"
+msgstr "検索: タイトルがない本"
+
+#: config.py:143 config.py:144 config.py:145 config.py:146 config.py:147
+#: config.py:148 config.py:149 config.py:150 config.py:151 config.py:152
+#: config.py:153
+msgid "Check missing"
+msgstr "チェック: 欠落"
+
+#: config.py:144
+msgid "Check missing author"
+msgstr "チェック: 著者なし"
+
+#: config.py:144
+msgid "Find books missing authors"
+msgstr "検索: 著者がない本"
+
+#: config.py:145
+msgid "Check missing ISBN"
+msgstr "チェック: ISBNなし"
+
+#: config.py:145
+msgid "Find books missing an ISBN identifier"
+msgstr "検索: ISBN識別子がない本"
+
+#: config.py:146
+msgid "Check missing pubdate"
+msgstr "チェック: 発行日なし"
+
+#: config.py:146
+msgid "Find books missing published date"
+msgstr "検索: 発行日がない本"
+
+#: config.py:147
+msgid "Check missing publisher"
+msgstr "チェック: 発行者なし"
+
+#: config.py:147
+msgid "Find books missing publisher"
+msgstr "検索: 発行者がない本"
+
+#: config.py:148
+msgid "Check missing tags"
+msgstr "チェック: タグ漏れ"
+
+#: config.py:148
+msgid "Find books missing tags"
+msgstr "検索: タグがない本"
+
+#: config.py:149
+msgid "Check missing rating"
+msgstr "チェック: 評価なし"
+
+#: config.py:149
+msgid "Find books missing rating"
+msgstr "検索: 評価がない本"
+
+#: config.py:150
+msgid "Check missing comments"
+msgstr "チェック: コメントなし"
+
+#: config.py:150
+msgid "Find books missing comments"
+msgstr "検索: コメントがない本"
+
+#: config.py:151
+msgid "Check missing languages"
+msgstr "チェック: 言語なし"
+
+#: config.py:151
+msgid "Find books missing languages"
+msgstr "検索: 言語がない本"
+
+#: config.py:152
+msgid "Check missing cover"
+msgstr "チェック: 表紙なし"
+
+#: config.py:152
+msgid "Find books missing a cover"
+msgstr "検索: 表紙がない本"
+
+#: config.py:153
+msgid "Check missing formats"
+msgstr "チェック: フォーマットなし"
+
+#: config.py:153
+msgid "Find books missing formats"
+msgstr "検索: フォーマットがない本"
+
+#: config.py:155
+msgid "Find ePub books with text matching your own regular expression"
+msgstr "検索: 独自の正規表現に一致するテキストを含むePub本"
+
+#: config.py:155 dialogs.py:556
+msgid "Search ePubs"
+msgstr "検索: ePub"
+
+#: config.py:160
+msgid "Swap author FN LN <-> LN,FN"
+msgstr "著者を「名-姓」<->「姓-名」で入れ替え"
+
+#: config.py:160
+msgid ""
+"For the selected book(s) swap author names between FN LN and LN, FN formats"
+msgstr "選択した本の著者名を「名-姓」と「姓-名」の形式で入れ替えます"
+
+#: config.py:161
+msgid "Reformat author initials"
+msgstr "著者のイニシャルを整形"
+
+#: config.py:161
+msgid ""
+"For the selected book(s) reformat the author initials to your configured "
+"preference"
+msgstr "選択した本の著者のイニシャルを設定した形式に整形します"
+
+#: config.py:162
+msgid "Rename author to ascii"
+msgstr "著者名をASCIIに変換"
+
+#: config.py:162
+msgid ""
+"For the selected book(s) rename the author to remove any accents and "
+"diacritics characters"
+msgstr "選択した本の著者名からアクセントや発音区別符号を取り除きます"
+
+#: config.py:163
+msgid "Set author sort"
+msgstr "著者ソートを設定"
+
+#: config.py:163
+msgid ""
+"For the selected book(s) replace the author sort with a value based on the "
+"Manage Authors data"
+msgstr "選択した本の著者ソートを「著者の管理」のデータに基づく値に置き換えます"
+
+#: config.py:164
+msgid "Set title sort"
+msgstr "タイトルソートを設定"
+
+#: config.py:164
+msgid ""
+"For the selected book(s) replace the title sort with a value based on your "
+"tweak preference"
+msgstr "選択した本のタイトルソートを tweak の設定に基づく値に置き換えます"
+
+#: config.py:165
+msgid "Check and repair book sizes"
+msgstr "本のサイズをチェックして修復"
+
+#: config.py:165
+msgid "Check and update file sizes for your books"
+msgstr "本のファイルサイズをチェックして更新します"
+
+#: config.py:166
+msgid "Check and rename book paths"
+msgstr "本のパスをチェックして変更"
+
+#: config.py:166
+msgid "Ensure book paths include commas if appropriate"
+msgstr "必要に応じて本のパスにカンマが含まれるようにします"
+
+#: config.py:167
+msgid "Cleanup .opf files/folders"
+msgstr ".opfファイル/フォルダをクリーンアップ"
+
+#: config.py:167
+msgid "Delete orphaned opf/jpg files and remove empty folders"
+msgstr "孤立したopf/jpgファイルを削除し、空のフォルダを取り除きます"
+
+#: config.py:168
+msgid "Fix ASIN for Kindle Fire"
+msgstr "Kindle Fire向けにASINを修正"
+
+#: config.py:168
+msgid ""
+"For MOBI/AZW/AZW3 formats, assign the current amazon identifier (uuid if not"
+" present) as an ASIN to EXTH 113 and 504 fields"
+msgstr ""
+"MOBI/AZW/AZW3フォーマットについて、現在のamazon識別子 (なければuuid) をASINとしてEXTH "
+"113と504のフィールドに設定します"
+
+#: config.py:169
+msgid "Normalize the fields"
+msgstr "項目を正規化"
+
+#: config.py:169
+msgid ""
+"Normalize the text fields by using their canonical form defined by the "
+"Unicode Standard, aka merge and reorders diacritics. Can result to "
+"unduplicate some values."
+msgstr ""
+"Unicode標準で定義された正規形を使ってテキスト項目を正規化します (発音区別符号の結合と並べ替え)。一部の値の重複を解消できる場合があります。"
+
+#: config.py:170
+msgid "Normalize the notes"
+msgstr "ノートを正規化"
+
+#: config.py:170
+msgid ""
+"Normalize the category notes by using their canonical form defined by the "
+"Unicode Standard, aka merge and reorders diacritics."
+msgstr "Unicode標準で定義された正規形を使ってカテゴリのノートを正規化します (発音区別符号の結合と並べ替え)。"
+
+#: config.py:291
+msgid "Check excess tags options"
+msgstr "タグ数超過のチェック設定"
+
+#: config.py:296
+msgid "Maximum tags:"
+msgstr "最大タグ数:"
+
+#: config.py:297
+msgid "Books with more than this value will be displayed"
+msgstr "この値より多い本が表示されます"
+
+#: config.py:305
+msgid "Exclude tags:"
+msgstr "除外するタグ:"
+
+#: config.py:306
+msgid "Exclude these tags from when counting the tags for each book"
+msgstr "各本のタグ数を数えるときに、これらのタグを除外します"
+
+#: config.py:315
+msgid "Other options"
+msgstr "他の設定"
+
+#: config.py:320
+msgid "Author initials format:"
+msgstr "著者のイニシャルの形式:"
+
+#: config.py:321
+msgid ""
+"For use with the \"Check Author initials\" option, set your preferred format"
+msgstr "\"チェック: 著者のイニシャル\" オプション用に、希望する形式を設定します"
+
+#: config.py:328
+msgid "Suppress Fix summary dialogs"
+msgstr "修正の要約ダイアログを表示しない"
+
+#: config.py:329
+msgid ""
+"Uncheck this option if you do not want interactive dialogs to appear "
+"summarising the operation"
+msgstr "操作結果を要約する対話ダイアログを表示したくない場合は、このオプションのチェックを外してください"
+
+#: config.py:334
+msgid "Search history count:"
+msgstr "検索履歴の件数:"
+
+#: config.py:335
+msgid ""
+"How many previous search expressions to remember on Search sPubs dialog"
+msgstr "「検索: ePub　」ダイアログで記憶する過去の検索式の数"
+
+#: config.py:344
+msgid "Visible menus"
+msgstr "表示メニュー"
+
+#: config.py:353
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "本プラグインに関連付けているキーボードショートカットを編集"
+
+#: config.py:357
+msgid "&View library preferences"
+msgstr "ライブラリ設定を表示(&V)"
+
+#: config.py:358
+msgid "View data stored in the library database for this plugin"
+msgstr "本プラグインのライブラリデータベースに保存されたデータを表示します"
+
+#: dialogs.py:40
+msgid "Checking"
+msgstr "チェック中"
+
+#: dialogs.py:42
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: dialogs.py:62
+msgid "%s %d %s  (%d matches)..."
+msgstr "%s %d %s  (%d 一致)..."
+
+#: dialogs.py:137
+msgid "Cover Search Options"
+msgstr "表紙検索の設定"
+
+#: dialogs.py:140
+msgid "Search library for books where"
+msgstr "以下の条件でライブラリを検索"
+
+#: dialogs.py:144
+msgid "Cover file size is"
+msgstr "表紙ファイルのサイズは"
+
+#: dialogs.py:154
+msgid "Cover dimensions are"
+msgstr "表紙の寸法が"
+
+#: dialogs.py:162 dialogs.py:177
+msgid "width"
+msgstr "幅"
+
+#: dialogs.py:167 dialogs.py:182
+msgid "height"
+msgstr "高さ"
+
+#: dialogs.py:169
+msgid "Cover aspect ratio is"
+msgstr "表紙の縦横比が"
+
+#: dialogs.py:187
+msgid "tolerance"
+msgstr "許容量"
+
+#: dialogs.py:189
+msgid "No cover"
+msgstr "表紙なし"
+
+#: dialogs.py:274
+msgid "View log"
+msgstr "ログ表示"
+
+#: dialogs.py:281
+msgid "Quality Check log"
+msgstr "品質チェックログ"
+
+#: dialogs.py:323
+msgid "quality check plugin:exclude add dialog"
+msgstr "品質チェック: 除外項目追加ダイアログ"
+
+#: dialogs.py:332
+msgid "Quality Check Add Exclusions"
+msgstr "品質チェック: 除外項目を追加"
+
+#: dialogs.py:335
+msgid "Exclude Books"
+msgstr "本を除外"
+
+#: dialogs.py:339
+msgid "Exclude selected books(s) from the following Quality Check:"
+msgstr "以下の品質チェックから選択した本を除外"
+
+#: dialogs.py:443
+msgid "quality check plugin:exclude view dialog"
+msgstr "品質チェック: 除外項目表示ダイアログ"
+
+#: dialogs.py:446
+msgid "Quality Check View Exclusions"
+msgstr "品質チェック: 除外項目を表示"
+
+#: dialogs.py:450
+msgid "View Excluded Books"
+msgstr "除外した本を表示"
+
+#: dialogs.py:469
+msgid "Remove selected books from the exclusions"
+msgstr "除外項目から選択した本を削除"
+
+#: dialogs.py:528
+msgid "quality check plugin:search epub dialog"
+msgstr "品質チェック: ePub検索ダイアログ"
+
+#: dialogs.py:560
+msgid "Find expression"
+msgstr "検索式"
+
+#: dialogs.py:574
+msgid "Clear search history"
+msgstr "検索履歴をクリアします"
+
+#: dialogs.py:579
+msgid "&Ignore case"
+msgstr "大文字小文字を無視(&I)"
+
+#: dialogs.py:581
+msgid "&Show all occurrences"
+msgstr "すべての出現箇所を表示(&S)"
+
+#: dialogs.py:582
+msgid ""
+"If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
+"If checked, all occurrences will be displayed in the log but it will run much slower."
+msgstr ""
+"チェックを外すと、各ePubの検索は最初の一致が見つかった時点で停止します。\n"
+"チェックすると、すべての出現箇所がログに表示されますが、処理はかなり遅くなります。"
+
+#: dialogs.py:587
+msgid "Scope"
+msgstr "範囲"
+
+#: dialogs.py:592
+msgid "&HTML content"
+msgstr "HTML本文(&H)"
+
+#: dialogs.py:593
+msgid ""
+"Search all html content files, including any html tags.\n"
+"If you also ticked the Plain text content option, this option is ignored."
+msgstr ""
+"htmlタグも含めて、すべてのhtmlコンテンツファイルを検索します。\n"
+"プレーンテキスト本文のオプションもチェックしている場合、このオプションは無視されます。"
+
+#: dialogs.py:595
+msgid "&CSS/xpgt stylesheets"
+msgstr "CSS/xpgt スタイルシート(&C)"
+
+#: dialogs.py:596
+msgid "Search all css or Adobe .xpgt stylesheets"
+msgstr "すべてのCSSまたはAdobe .xpgtスタイルシートを検索します"
+
+#: dialogs.py:597
+msgid "&Plain text content"
+msgstr "プレーンテキスト本文(&P)"
+
+#: dialogs.py:598
+msgid ""
+"Search body text of html files with all html tags stripped.\n"
+"If you also ticked the HTML content option, that is ignored in favour of this."
+msgstr ""
+"htmlタグをすべて取り除いた状態で、htmlファイルの本文テキストを検索します。\n"
+"HTML本文のオプションもチェックしている場合、そちらは無視されます。"
+
+#: dialogs.py:600
+msgid "&OPF manifest"
+msgstr "OPFマニフェスト(&O)"
+
+#: dialogs.py:601
+msgid "Search the .opf manifest file"
+msgstr "検索: .opfマニファストファイル"
+
+#: dialogs.py:602
+msgid "&NCX TOC"
+msgstr "NCX TOC(&N)"
+
+#: dialogs.py:603
+msgid "Search the NCX table of contents file"
+msgstr "検索: 本文ファイルのNCXテーブル"
+
+#: dialogs.py:604
+msgid "&Zip filenames"
+msgstr "ZIPファイル名(&Z)"
+
+#: dialogs.py:605
+msgid "Search the filenames inside the ePub (zip) file"
+msgstr "ePub (zip) ファイル内のファイル名を検索します"
+
+#: dialogs.py:625
+msgid "No find text"
+msgstr "検索テキストなし"
+
+#: dialogs.py:626
+msgid "You must specify a regular expression to search for."
+msgstr "検索する正規表現を指定しなければなりません。"
+
+#: dialogs.py:635
+msgid "No search scope"
+msgstr "検索範囲なし"
+
+#: dialogs.py:636
+msgid "You must specify a scope for the ePub search."
+msgstr "ePub検索範囲を指定しなければなりません。"
+
+#: dialogs.py:695
+msgid "Fixing"
+msgstr "修正中"
+
+#: dialogs.py:708
+msgid "Fix completed"
+msgstr "修正完了"
+
+#: mobi6.py:86
+msgid "This is an Amazon Topaz book. It cannot be processed."
+msgstr "これはAmazon Topaz形式の本です。処理できません。"
+
+#: mobi6.py:94
+msgid "Unknown book type: %s"
+msgstr "不明な本の種類: %s"
+
+#: mobi6.py:134
+msgid "Setting ASIN only supported for MOBI files of type 'BOOK'."
+msgstr "ASINの設定は種類が 'BOOK' のMOBIファイルのみサポートされます。"
+
+#: mobi6.py:159
+msgid "No existing EXTH record. Cannot update ASIN."
+msgstr "既存のEXTHレコードがありません。ASINを更新できません。"

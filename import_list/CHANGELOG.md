@@ -1,5 +1,9 @@
 # Import List Change Log
 
+## [1.9.10] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.9.9] - 2026-02-09
 ### Added
 - Arabic translation

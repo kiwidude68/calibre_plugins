@@ -1,5 +1,9 @@
 # Count Pages Change Log
 
+## [1.15.3] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.15.2] - 2026-04-26
 ### Fixed
 - Support calibre 3.48 with fix for format strings not supported in older versions.

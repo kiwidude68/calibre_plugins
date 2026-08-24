@@ -1,5 +1,9 @@
 # Find Duplicates Change Log
 
+## [1.10.11] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.10.10] - 2026-02-09
 ### Added
 - Arabic translation

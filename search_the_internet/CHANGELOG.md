@@ -1,5 +1,9 @@
 # Search The Internet Change Log
 
+## [1.11.5] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.11.4] - 2026-02-09
 ### Added
 - Arabic translation

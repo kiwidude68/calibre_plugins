@@ -1,5 +1,9 @@
 # Extract ISBN Change Log
 
+## [1.6.7] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.6.6] - 2026-02-09
 ### Added
 - Arabic translation

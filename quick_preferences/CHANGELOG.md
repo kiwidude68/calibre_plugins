@@ -1,5 +1,9 @@
 # Quick Preferences Change Log
 
+## [1.7.3] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.7.2] - 2026-02-09
 ### Added
 - Arabic translation

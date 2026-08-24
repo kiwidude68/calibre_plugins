@@ -1,5 +1,9 @@
 # Generate Cover Change Log
 
+## [2.4.2] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [2.4.1] - 2026-07-08
 ### Added
 - Czech translation

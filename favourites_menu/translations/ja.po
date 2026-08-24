@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:37+1000\n"
-"PO-Revision-Date: 2022-09-09 18:02+0000\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:69
+#: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
 msgstr "キーボードショートカット"
 
@@ -103,34 +103,38 @@ msgstr "タイトル画像が見つかりません。本プラグインを使用
 msgid "Create new column"
 msgstr "新しい列を作成"
 
-#: action.py:34
-msgid "Clipboard Search"
-msgstr "クリップボード検索"
+#: action.py:68
+msgid "Favourites"
+msgstr "お気に入り"
 
-#: action.py:60 config.py:58
-msgid "Text search"
-msgstr "テキスト検索"
-
-#: action.py:62 config.py:59
-msgid "Exact text search"
-msgstr "正確なテキスト検索"
-
-#: action.py:64
-msgid "Author search"
-msgstr "著者検索"
-
-#: action.py:67
+#: action.py:155
 msgid "&Customize plugin"
 msgstr "プラグインをカスタマイズ (&C)"
 
-#: action.py:69 config.py:74
+#: action.py:157 config.py:213
 msgid "&Help"
 msgstr "ヘルプ(&H)"
 
-#: config.py:53
-msgid "Default action for toolbar button click"
-msgstr "ツールバーボタンをクリックのデフォルトアクション"
+#: config.py:64
+msgid "Separator"
+msgstr "区切り線"
 
-#: config.py:70
-msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "このプラグインに関連付けていますキーボードショートカットを編集します。"
+#: config.py:184
+msgid "Move the selected menu item up"
+msgstr "選択したメニュー項目を上に移動"
+
+#: config.py:188
+msgid "Move the selected menu item down"
+msgstr "選択したメニュー項目を下に移動"
+
+#: config.py:192
+msgid "Remove the selected item from the menu"
+msgstr "選択したメニュー項目を削除"
+
+#: config.py:196
+msgid "Add a separator to the menu following the selected item"
+msgstr "選択したメニュー項目の下に区切り線を追加"
+
+#: config.py:200
+msgid "Rename the menu item for when it appears on your Favourites menu"
+msgstr "お気に入りメニューに表示する時のメニュー項目の名称を変更"

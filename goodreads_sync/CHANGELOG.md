@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.17.5] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.17.4] - 2026-05-12
 ### Fixed
 - Yet another attempt at getting sync actions to work for both static and column values.

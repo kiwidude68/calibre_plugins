@@ -1,5 +1,9 @@
 # Open With Change Log
 
+## [1.8.6] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.8.5] - 2026-02-09
 ### Added
 - Arabic translation

@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:37+1000\n"
-"PO-Revision-Date: 2022-09-09 18:02+0000\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:69
+#: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
 msgstr "キーボードショートカット"
 
@@ -103,34 +103,46 @@ msgstr "タイトル画像が見つかりません。本プラグインを使用
 msgid "Create new column"
 msgstr "新しい列を作成"
 
-#: action.py:34
-msgid "Clipboard Search"
-msgstr "クリップボード検索"
+#: config.py:47
+msgid "Other options"
+msgstr "他の設定"
 
-#: action.py:60 config.py:58
-msgid "Text search"
-msgstr "テキスト検索"
-
-#: action.py:62 config.py:59
-msgid "Exact text search"
-msgstr "正確なテキスト検索"
-
-#: action.py:64
-msgid "Author search"
-msgstr "著者検索"
-
-#: action.py:67
-msgid "&Customize plugin"
-msgstr "プラグインをカスタマイズ (&C)"
-
-#: action.py:69 config.py:74
-msgid "&Help"
-msgstr "ヘルプ(&H)"
+#: config.py:52
+msgid "Include 'Genres' in the Tags column"
+msgstr "タグ列に 'ジャンル' を含める"
 
 #: config.py:53
-msgid "Default action for toolbar button click"
-msgstr "ツールバーボタンをクリックのデフォルトアクション"
+msgid ""
+"When checked if a book has any genres defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr "チェックすると、本に 'ジャンル' が設定されている場合は、このプラグインのタグ列にその旨表示されます。"
+
+#: config.py:58
+msgid "Include 'Sub-Genres' in the Tags column"
+msgstr "タグ列に 'サブジャンル' を含める"
+
+#: config.py:59
+msgid ""
+"When checked if a book has any Sub-Genres defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr "チェックすると、本に 'サブジャンル が設定されている場合は、このプラグインのタグ列にその旨表示されます。"
+
+#: config.py:64
+msgid "Include 'Themes' in the Tags column"
+msgstr "タグ列に 'テーマ' を含める"
+
+#: config.py:65
+msgid ""
+"When checked if a book has any Themes defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr "チェックすると、本に 'テーマ' が設定されている場合は、このプラグインのタグ列にその旨表示されます。"
 
 #: config.py:70
-msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "このプラグインに関連付けていますキーボードショートカットを編集します。"
+msgid "Include 'Age Level' in the Tags column"
+msgstr "タグ列に '対象年齢' を含める"
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr "チェックすると、本に '対象年齢' が設定されている場合は、このプラグインのタグ列にその旨表示されます。"

@@ -1,5 +1,9 @@
 # FictionDB Change Log
 
+## [1.4.4] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.4.3] - 2026-02-09
 ### Added
 - Arabic translation

@@ -1,5 +1,9 @@
 # Modify ePub Change Log
 
+## [1.8.10] - 2026-08-25
+### Added
+- Japanese translation
+
 ## [1.8.9] - 2026-02-09
 ### Added
 - Arabic translation
