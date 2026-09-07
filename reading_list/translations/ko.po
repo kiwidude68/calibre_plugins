@@ -1,0 +1,1003 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Junghee Lee <daemul72@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-06-06 20:21+1000\n"
+"PO-Revision-Date: 2022-09-19 14:51+0000\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
+"Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:1165
+msgid "Keyboard shortcuts"
+msgstr "키보드 단축키"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "지금 calibre를 다시 시작"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "다음 플러그인 환경 설정:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "지우기"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "이 플러그인에 대한 모든 설정 지우기"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 변경하시겠습니까?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "다른 서재의 설정이나 calibre 플러그인 폴더의 JSON 파일에 저장된 설정은 변경되지 않습니다."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "이후 calibre를 다시 시작해야 합니다."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "설정 변경됨"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "이 서재에서 이 플러그인의 설정이 변경되었습니다."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "지금 calibre를 다시 시작하세요."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 지우시겠습니까?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "설정 삭제됨"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "정의되지 않음"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "다시 시작 필요"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용하기 전에 calibre를 다시 시작해야 합니다!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "새 열 만들기"
+
+#: action.py:49
+msgid "Reading List"
+msgstr "읽기 목록"
+
+#: action.py:49
+msgid "View or edit lists of books"
+msgstr "책 목록을 보거나 편집합니다"
+
+#: action.py:166
+msgid "Add to default list"
+msgstr "기본 목록에 추가"
+
+#: action.py:169
+msgid "Add to %s list"
+msgstr "%s 목록에 추가"
+
+#: action.py:174
+msgid "Add to list"
+msgstr "목록에 추가"
+
+#: action.py:175
+msgid "Add to the specified list"
+msgstr "지정한 목록에 추가"
+
+#: action.py:177
+msgid "Add to the \"%s\" list"
+msgstr "\"%s\" 목록에 추가"
+
+#: action.py:181
+msgid "Add to list: %s"
+msgstr "목록에 추가: %s"
+
+#: action.py:183
+msgid "Add to all lists"
+msgstr "모든 목록에 추가"
+
+#: action.py:189
+msgid "Add series to default list"
+msgstr "시리즈를 기본 목록에 추가"
+
+#: action.py:192
+msgid "Add series to %s list"
+msgstr "시리즈를 %s 목록에 추가"
+
+#: action.py:197
+msgid "Add series to list"
+msgstr "시리즈를 목록에 추가"
+
+#: action.py:198
+msgid "Add all books in series to the specified list"
+msgstr "시리즈의 모든 책을 지정한 목록에 추가"
+
+#: action.py:200
+msgid "Add series to the \"%s\" list"
+msgstr "시리즈를 \"%s\" 목록에 추가"
+
+#: action.py:204
+msgid "Add series to list: %s"
+msgstr "시리즈를 목록에 추가: %s"
+
+#: action.py:206
+msgid "Add series to all lists"
+msgstr "시리즈를 모든 목록에 추가"
+
+#: action.py:212 action.py:214
+msgid "Move to list"
+msgstr "목록으로 이동"
+
+#: action.py:218
+msgid "Remove from default list"
+msgstr "기본 목록에서 제거"
+
+#: action.py:221
+msgid "Remove from %s list"
+msgstr "%s 목록에서 제거"
+
+#: action.py:226
+msgid "Remove from list"
+msgstr "목록에서 제거"
+
+#: action.py:227
+msgid "Remove from the specified list"
+msgstr "지정한 목록에서 제거"
+
+#: action.py:229
+msgid "Remove from the \"%s\" list"
+msgstr "\"%s\" 목록에서 제거"
+
+#: action.py:233
+msgid "Remove from list: %s"
+msgstr "목록에서 제거: %s"
+
+#: action.py:235
+msgid "Remove from all lists"
+msgstr "모든 목록에서 제거"
+
+#: action.py:241
+msgid "Toggle on default list"
+msgstr "기본 목록에서 전환"
+
+#: action.py:249
+msgid "Toggle on list"
+msgstr "목록에서 전환"
+
+#: action.py:250
+msgid "Toggle on the specified list"
+msgstr "지정한 목록에서 전환"
+
+#: action.py:252
+msgid "Toggle on the \"%s\" list"
+msgstr "\"%s\" 목록에서 전환"
+
+#: action.py:256
+msgid "Toggle on list: %s"
+msgstr "목록에서 전환: %s"
+
+#: action.py:261
+msgid "View default list"
+msgstr "기본 목록 보기"
+
+#: action.py:263 action.py:272
+msgid "View %s list (%d)"
+msgstr "%s 목록 보기 (%d)"
+
+#: action.py:270 action.py:286 action.py:297
+msgid "View books on the \"%s\" list"
+msgstr "\"%s\" 목록의 책 보기"
+
+#: action.py:275 action.py:290 action.py:301
+msgid "View list: %s"
+msgstr "목록 보기: %s"
+
+#: action.py:278 action.py:281
+msgid "View list"
+msgstr "목록 보기"
+
+#: action.py:279
+msgid "View books on the specified list"
+msgstr "지정한 목록의 책 보기"
+
+#: action.py:306
+msgid "Edit default list"
+msgstr "기본 목록 편집"
+
+#: action.py:309
+msgid "Edit %s list"
+msgstr "%s 목록 편집"
+
+#: action.py:314
+msgid "Edit list"
+msgstr "목록 편집"
+
+#: action.py:315
+msgid "Edit books on the specified list"
+msgstr "지정한 목록의 책 편집"
+
+#: action.py:317
+msgid "Edit books on the \"%s\" list"
+msgstr "\"%s\" 목록의 책 편집"
+
+#: action.py:321
+msgid "Edit list: %s"
+msgstr "목록 편집: %s"
+
+#: action.py:325
+msgid "Clear default list"
+msgstr "기본 목록 지우기"
+
+#: action.py:328
+msgid "Clear %s list"
+msgstr "%s 목록 지우기"
+
+#: action.py:333 action.py:336
+msgid "Clear list"
+msgstr "목록 지우기"
+
+#: action.py:334
+msgid "Clear all from the specified list"
+msgstr "지정한 목록에서 모두 지우기"
+
+#: action.py:341
+msgid "Clear the \"%s\" list"
+msgstr "\"%s\" 목록 지우기"
+
+#: action.py:345
+msgid "Clear list: %s"
+msgstr "목록 지우기: %s"
+
+#: action.py:347
+msgid "Clear list (%d)"
+msgstr "목록 지우기 (%d)"
+
+#: action.py:351
+msgid "Set default list"
+msgstr "기본 목록 설정"
+
+#: action.py:352
+msgid "Switch the list to use as the current default"
+msgstr "현재 기본값으로 사용할 목록으로 전환합니다"
+
+#: action.py:355 action.py:365
+msgid "Set your default list to \"%s\""
+msgstr "기본 목록을 \"%s\"(으)로 설정"
+
+#: action.py:359 action.py:369
+msgid "Set default list: %s"
+msgstr "기본 목록 설정: %s"
+
+#: action.py:372 action.py:373
+msgid "Sync Now"
+msgstr "지금 동기화"
+
+#: action.py:377
+msgid "&Customize plugin"
+msgstr "플러그인 설정(&C)"
+
+#: action.py:380 config.py:1180
+msgid "&Help"
+msgstr "도움말(&H)"
+
+#: action.py:388
+msgid "Sync Now (%d)"
+msgstr "지금 동기화 (%d)"
+
+#: action.py:397 action.py:415
+msgid "Cannot add to list"
+msgstr "목록에 추가할 수 없음"
+
+#: action.py:398 action.py:416 action.py:471 action.py:682 action.py:799
+#: action.py:843 action.py:887 action.py:927 action.py:965
+msgid "No list name specified"
+msgstr "목록 이름이 지정되지 않았습니다"
+
+#: action.py:470
+msgid "Cannot toggle on list"
+msgstr "목록에서 전환할 수 없음"
+
+#: action.py:507 config.py:1109
+msgid "Are you sure?"
+msgstr "계속하시겠습니까?"
+
+#: action.py:508
+msgid "Are you sure you want to clear the '%s' reading list?"
+msgstr "'%s' 읽기 목록을 지우시겠습니까?"
+
+#: action.py:574
+msgid "Added %d books, removed %d books on your %s list"
+msgstr "%d권의 책을 추가하고 %d권의 책을 %s 목록에서 제거했습니다"
+
+#: action.py:607
+msgid "The selected book(s) already exist on this list: <b>%s</b>"
+msgstr "선택한 책이 이미 이 목록에 있습니다: <b>%s</b>"
+
+#: action.py:609
+msgid "Failed to add to list"
+msgstr "목록에 추가하지 못함"
+
+#: action.py:618
+msgid "Added %d books to your %s list"
+msgstr "%d권의 책을 %s 목록에 추가했습니다"
+
+#: action.py:660
+msgid "Added to %d reading lists"
+msgstr "%d개 읽기 목록에 추가됨"
+
+#: action.py:681
+msgid "Cannot remove from list"
+msgstr "목록에서 제거할 수 없음"
+
+#: action.py:700
+msgid "The selected book(s) do not exist on this list"
+msgstr "선택한 책이 이 목록에 없습니다"
+
+#: action.py:710 action.py:864 action.py:908
+msgid "Removed %d books from your %s list"
+msgstr "%d권의 책을 %s 목록에서 제거했습니다"
+
+#: action.py:757
+msgid "Removed from %d reading lists"
+msgstr "%d개 읽기 목록에서 제거됨"
+
+#: action.py:793 action.py:798
+msgid "Cannot move to list"
+msgstr "목록으로 이동할 수 없음"
+
+#: action.py:794
+msgid "No source list names specified"
+msgstr "원본 목록 이름이 지정되지 않았습니다"
+
+#: action.py:819
+msgid "Moved %d books to your list(s)"
+msgstr "%d권의 책을 목록으로 이동함"
+
+#: action.py:842
+msgid "Cannot clear list"
+msgstr "목록을 지울 수 없음"
+
+#: action.py:854
+msgid "No books exist on this list"
+msgstr "이 목록에 책이 없습니다"
+
+#: action.py:886
+msgid "Cannot edit list"
+msgstr "목록을 편집할 수 없음"
+
+#: action.py:926
+msgid "Cannot view list"
+msgstr "목록을 볼 수 없음"
+
+#: action.py:964 action.py:973
+msgid "Cannot create list"
+msgstr "목록을 만들 수 없음"
+
+#: action.py:967
+msgid "Reading List: Cannot create list as list_name not specified"
+msgstr "읽기 목록: 목록 이름이 지정되지 않아 목록을 만들 수 없습니다"
+
+#: action.py:974
+msgid "A list already exists with this name"
+msgstr "같은 이름의 목록이 이미 있습니다"
+
+#: action.py:976
+msgid "Reading List: Cannot create list as list_name is duplicate:"
+msgstr "읽기 목록: 목록 이름이 중복되어 목록을 만들 수 없습니다:"
+
+#: action.py:1116
+msgid "READING LIST: Device disconnected"
+msgstr "읽기 목록: 장치 연결 끊김"
+
+#: action.py:1125
+msgid "READING LIST: Metadata available:"
+msgstr "읽기 목록: 사용 가능한 메타데이터:"
+
+#: action.py:1170
+msgid "READING LIST: Device found to sync to:"
+msgstr "읽기 목록: 동기화할 장치를 찾음:"
+
+#: action.py:1173
+msgid "READING LIST: Not syncing to device as not active"
+msgstr "읽기 목록: 활성 상태가 아니므로 장치에 동기화하지 않음"
+
+#: action.py:1178
+msgid "READING LIST: Sync Now - force_sync="
+msgstr "읽기 목록: 지금 동기화 - force_sync="
+
+#: action.py:1193
+msgid "Cannot sync to device"
+msgstr "장치에 동기화할 수 없음"
+
+#: action.py:1194
+msgid "No device found for UUID: %s"
+msgstr "UUID %s에 해당하는 장치를 찾을 수 없습니다"
+
+#: action.py:1208
+msgid "READING LIST: Updating automatic column list(s) "
+msgstr "읽기 목록: 자동 열 목록 업데이트 중 "
+
+#: action.py:1233
+msgid "READING LIST: Not syncing '%s' to device as autosync is false"
+msgstr "읽기 목록: autosync가 false여서 '%s' 항목을 장치에 동기화하지 않습니다"
+
+#: action.py:1241
+msgid "READING LIST: Updating automatic device list(s) "
+msgstr "읽기 목록: 자동 장치 목록 업데이트 중 "
+
+#: action.py:1295
+msgid "READING LIST: Skipping %d books in '%s' list with no formats"
+msgstr "읽기 목록: 형식이 없는 책 %d권을 '%s' 목록에서 건너뜁니다"
+
+#: action.py:1299
+msgid "READING LIST: Syncing %d books in '%s' to: %s (location:%s)"
+msgstr "읽기 목록: %d권의 책을 '%s' 목록에서 %s에 동기화 중 (위치:%s)"
+
+#: action.py:1308
+msgid "READING LIST: No books on '%s' list need to be synced"
+msgstr "읽기 목록: '%s' 목록에서 동기화할 책이 없습니다"
+
+#: action.py:1333
+msgid "Main memory"
+msgstr "주 메모리"
+
+#: action.py:1336
+msgid "Storage Card A"
+msgstr "저장소 카드 A"
+
+#: action.py:1339
+msgid "Storage Card B"
+msgstr "저장소 카드 B"
+
+#: action.py:1344
+msgid "READING LIST: No books on '%s' list found on device to remove"
+msgstr "읽기 목록: 장치에서 제거할 '%s' 목록의 책을 찾지 못함"
+
+#: action.py:1355
+msgid "Reading List error"
+msgstr "읽기 목록 오류"
+
+#: action.py:1356
+msgid "Unable to find the Remove Books plugin"
+msgstr "Remove Books 플러그인을 찾을 수 없습니다"
+
+#: action.py:1383
+msgid "Deleting books from device."
+msgstr "장치에서 책을 삭제하는 중입니다."
+
+#: action.py:1422
+msgid "READING LIST: Auto-populating device list: "
+msgstr "읽기 목록: 장치 목록 자동 채우기: "
+
+#: action.py:1427
+msgid "READING LIST: Removing %d ids from automatic list: %s"
+msgstr "읽기 목록: 자동 목록에서 ID %d개 제거: %s"
+
+#: action.py:1430
+msgid "READING LIST: Adding %d ids to automatic list: %s"
+msgstr "읽기 목록: 자동 목록에 ID %d개 추가: %s"
+
+#: action.py:1440
+msgid "READING LIST: Auto-populating search list: "
+msgstr "읽기 목록: 검색 목록 자동 채우기: "
+
+#: action.py:1445
+msgid ""
+"READING LIST: Aborting updating auto-search list as has no expression: "
+msgstr "읽기 목록: 식이 없어 자동 검색 목록 업데이트 중단: "
+
+#: action.py:1449
+msgid "READING LIST: Now %d ids on automatic list: %s"
+msgstr "읽기 목록: 현재 자동 목록의 ID %d개: %s"
+
+#: action.py:1455
+msgid "READING LIST: Attempting to recreate Kindle collections"
+msgstr "읽기 목록: Kindle 컬렉션 다시 만들기 시도 중"
+
+#: action.py:1458
+msgid "Kindle Collections Failed"
+msgstr "Kindle 컬렉션 실패"
+
+#: action.py:1459
+msgid ""
+"You must have the Kindle Collections plugin installed in order to recreate "
+"collections after a sync."
+msgstr "동기화 후 컬렉션을 다시 만들려면 Kindle Collections 플러그인이 설치되어 있어야 합니다."
+
+#: config.py:79
+msgid "*Any Device"
+msgstr "*모든 장치"
+
+#: config.py:81
+msgid "Manually add/remove items"
+msgstr "항목 수동 추가/제거"
+
+#: config.py:82
+msgid "Auto populated from books on device"
+msgstr "장치의 책에서 자동 채움"
+
+#: config.py:83
+msgid "Auto populated from search"
+msgstr "검색에서 자동 채움"
+
+#: config.py:85
+msgid "Add new list items to device"
+msgstr "새 목록 항목을 장치에 추가"
+
+#: config.py:86
+msgid "Add/overwrite all list items to device"
+msgstr "모든 목록 항목을 장치에 추가/덮어쓰기"
+
+#: config.py:87
+msgid "Remove list items from device"
+msgstr "장치에서 목록 항목 제거"
+
+#: config.py:88
+msgid "Replace device with list, add new items only"
+msgstr "장치를 목록으로 대체, 새 항목만 추가"
+
+#: config.py:89
+msgid "Replace device with list, add/overwrite all"
+msgstr "장치를 목록으로 대체, 모두 추가/덮어쓰기"
+
+#: config.py:91
+msgid "Auto populate list from books on device"
+msgstr "장치의 책에서 목록 자동 채우기"
+
+#: config.py:93
+msgid "Do not update calibre column"
+msgstr "calibre 열 업데이트 안 함"
+
+#: config.py:94
+msgid "Update column for add or remove"
+msgstr "추가 또는 제거 시 열 업데이트"
+
+#: config.py:95
+msgid "Update column for add to list only"
+msgstr "목록에 추가할 때만 열 업데이트"
+
+#: config.py:96
+msgid "Update column for remove from list only"
+msgstr "목록에서 제거할 때만 열 업데이트"
+
+#: config.py:442
+msgid "Kindle Collections"
+msgstr "Kindle 컬렉션"
+
+#: config.py:442
+msgid "Location"
+msgstr "위치"
+
+#: config.py:442
+msgid "Menu"
+msgstr "메뉴"
+
+#: config.py:442
+msgid "Name"
+msgstr "이름"
+
+#: config.py:442
+msgid "Status"
+msgstr "상태"
+
+#: config.py:546
+msgid "Lists:"
+msgstr "목록:"
+
+#: config.py:553
+msgid "Add list"
+msgstr "목록 추가"
+
+#: config.py:558
+msgid "Delete list"
+msgstr "목록 삭제"
+
+#: config.py:563 config.py:937
+msgid "Rename list"
+msgstr "목록 이름 바꾸기"
+
+#: config.py:571
+msgid "Population Options:"
+msgstr "채우기 옵션:"
+
+#: config.py:579
+msgid "&List type:"
+msgstr "목록 유형(&L):"
+
+#: config.py:580
+msgid "Choose how this list will be populated"
+msgstr "이 목록을 채우는 방식을 선택합니다"
+
+#: config.py:587
+msgid "&Auto populate from search:"
+msgstr "검색에서 자동 채우기(&A):"
+
+#: config.py:588
+msgid ""
+"If list is populated from a search, specify the calibre search expression"
+msgstr "목록을 검색으로 채우는 경우 calibre 검색식을 지정합니다"
+
+#: config.py:596
+msgid "Sync Options:"
+msgstr "동기화 옵션:"
+
+#: config.py:604
+msgid "&Device to sync this list to:"
+msgstr "이 목록을 동기화할 장치(&D):"
+
+#: config.py:605
+msgid ""
+"By specifying a device you can sync either manually or\n"
+"automatically the contents of a list to that device.\n"
+"This replaces the Book Sync plugin functionality"
+msgstr ""
+"장치를 지정하면 목록 내용을 해당 장치에 수동 또는\n"
+"자동으로 동기화할 수 있습니다.\n"
+"이 기능은 Book Sync 플러그인의 기능을 대체합니다."
+
+#: config.py:613
+msgid "&When syncing this list:"
+msgstr "이 목록을 동기화할 때(&W):"
+
+#: config.py:614
+msgid ""
+"Control how your items are synced to the device.\n"
+"Sync only new items, sync all items overwriting existing\n"
+"or use this list to just remove items from your device."
+msgstr ""
+"항목을 장치에 동기화하는 방식을 제어합니다.\n"
+"새 항목만 동기화하거나, 기존 항목을 덮어쓰며 모두 동기화하거나,\n"
+"이 목록을 사용해 장치에서 항목만 제거할 수 있습니다."
+
+#: config.py:622
+msgid "Sync to this device as soon as it is connected"
+msgstr "이 장치가 연결되면 즉시 동기화"
+
+#: config.py:623
+msgid ""
+"Uncheck this option if you prefer to manually sync to your device.\n"
+"If no device is specified this checkbox has no effect"
+msgstr ""
+"장치에 수동으로 동기화하려면 이 옵션을 선택 해제하세요.\n"
+"장치가 지정되지 않으면 이 확인란은 효과가 없습니다."
+
+#: config.py:627
+msgid "Clear this list after a sync to this device"
+msgstr "이 장치에 동기화한 뒤 이 목록 지우기"
+
+#: config.py:628
+msgid ""
+"If unchecked, only items not on the device already will be synced.\n"
+"If no device is specified this checkbox has no effect.\n"
+"This option can only be used with manual type lists."
+msgstr ""
+"선택 해제하면 장치에 아직 없는 항목만 동기화됩니다.\n"
+"장치가 지정되지 않으면 이 확인란은 효과가 없습니다.\n"
+"이 옵션은 수동형 목록에서만 사용할 수 있습니다."
+
+#: config.py:636
+msgid "Column Update Options:"
+msgstr "열 업데이트 옵션:"
+
+#: config.py:644
+msgid "When &changing this list:"
+msgstr "이 목록을 변경할 때(&C):"
+
+#: config.py:645
+msgid ""
+"Optionally modify tags or a custom column when you\n"
+"add and/or remove items from this list."
+msgstr ""
+"이 목록에 항목을 추가하거나 제거할 때\n"
+"선택적으로 태그 또는 사용자 지정 열을 수정합니다."
+
+#: config.py:652
+msgid "&Column to update:"
+msgstr "업데이트할 열(&C):"
+
+#: config.py:653
+msgid ""
+"Optionally specify a column to add/remove a value from\n"
+"when adding or removing items from this list"
+msgstr ""
+"이 목록에 항목을 추가하거나 제거할 때\n"
+"값을 추가/제거할 열을 선택적으로 지정합니다."
+
+#: config.py:661
+msgid "&Value in column to add/remove:"
+msgstr "열에 추가/제거할 값(&V):"
+
+#: config.py:662
+msgid ""
+"Specify the tag or custom column value to be added when adding\n"
+"to this list or removed when the book is taken off the list"
+msgstr ""
+"이 목록에 추가할 때 더할 값 또는\n"
+"책이 목록에서 제거될 때 뺄 태그/사용자 지정 열 값을 지정합니다."
+
+#: config.py:672
+msgid "Reading Order Options:"
+msgstr "읽기 순서 옵션:"
+
+#: config.py:680
+msgid "&Store in series column:"
+msgstr "시리즈 열에 저장(&S):"
+
+#: config.py:681
+msgid ""
+"You can optionally display the current reading list order\n"
+"in a custom series column. You should not edit this column directly!\n"
+"Only usable with Manually managed lists that are not Cleared on Sync."
+msgstr ""
+"현재 읽기 목록 순서를 사용자 지정 시리즈 열에\n"
+"선택적으로 표시할 수 있습니다. 이 열은 직접 편집하지 마세요!\n"
+"동기화 시 지워지지 않는 수동 관리 목록에서만 사용할 수 있습니다."
+
+#: config.py:689
+msgid "&Series name:"
+msgstr "시리즈 이름(&S):"
+
+#: config.py:690
+msgid ""
+"Specify the name for this reading order series\n"
+"If left blank, will use the name of the list this book is on."
+msgstr ""
+"이 읽기 순서 시리즈의 이름을 지정합니다.\n"
+"비워 두면 이 책이 있는 목록 이름을 사용합니다."
+
+#: config.py:699
+msgid "Display Options:"
+msgstr "표시 옵션:"
+
+#: config.py:707
+msgid "Move \"View list\" to the top level of the plugin menu for this list"
+msgstr "이 목록의 플러그인 메뉴 최상위로 \"목록 보기\" 이동"
+
+#: config.py:708
+msgid ""
+"By default Reading List creates a View List submenu for all your lists when you have multiple.\n"
+"If checked, this list will be moved to the top level menu for ease of access.\n"
+"NOTE: Your \"default\" list will always appear on the top menu, regardless of this checkbox"
+msgstr ""
+"기본적으로 Reading List는 목록이 여러 개일 때 모든 목록에 대한 하위 메뉴를 만듭니다.\n"
+"선택하면 이 목록은 빠른 접근을 위해 최상위 메뉴로 이동합니다.\n"
+"참고: \"기본\" 목록은 이 확인란과 관계없이 항상 상단 메뉴에 표시됩니다."
+
+#: config.py:713
+msgid "Apply reading list order when viewing list"
+msgstr "목록을 볼 때 읽기 목록 순서 적용"
+
+#: config.py:714
+msgid ""
+"If checked, viewing a reading list will also change your Calibre sort order.\n"
+"Lists can be manually reordered using this plugin, defaulting to order added to list.\n"
+"If unchecked, current calibre sort will be left unchanged when you view the list."
+msgstr ""
+"선택하면 읽기 목록을 볼 때 calibre 정렬 순서도 변경됩니다.\n"
+"목록은 이 플러그인으로 수동 재정렬할 수 있으며 기본값은 목록에 추가된 순서입니다.\n"
+"선택 해제하면 목록을 볼 때 현재 calibre 정렬이 유지됩니다."
+
+#: config.py:720
+msgid "Restore sort after viewing list"
+msgstr "목록 보기 후 정렬 복원"
+
+#: config.py:721
+msgid ""
+"If checked, calibre sort will be restored to its original state after\n"
+"the user quits the reading list view by changing or clearing calibre's\n"
+"search, switching libraries, or quitting calibre."
+msgstr ""
+"선택하면 calibre 검색 변경/지우기, 서재 전환, calibre 종료로\n"
+"사용자가 읽기 목록 보기를 끝낸 뒤 calibre 정렬이 원래 상태로 복원됩니다."
+
+#: config.py:911
+msgid "Add new list"
+msgstr "새 목록 추가"
+
+#: config.py:912
+msgid "Default"
+msgstr "기본값"
+
+#: config.py:912
+msgid "Enter a unique display name for this list:"
+msgstr "이 목록의 고유한 표시 이름을 입력하세요:"
+
+#: config.py:920 config.py:950
+msgid "Add failed"
+msgstr "추가 실패"
+
+#: config.py:921 config.py:951
+msgid "A list with the same name already exists"
+msgstr "같은 이름의 목록이 이미 있습니다"
+
+#: config.py:938
+msgid "Enter a new display name for this list:"
+msgstr "이 목록의 새 표시 이름을 입력하세요:"
+
+#: config.py:969
+msgid "Cannot delete"
+msgstr "삭제할 수 없음"
+
+#: config.py:970
+msgid "You must have at least one list"
+msgstr "목록이 하나 이상 있어야 합니다"
+
+#: config.py:972
+msgid "Do you want to delete the list named '%s'"
+msgstr "'%s' 이름의 목록을 삭제하시겠습니까?"
+
+#: config.py:1004
+msgid "Devices:"
+msgstr "장치:"
+
+#: config.py:1015
+msgid "Add connected device"
+msgstr "연결된 장치 추가"
+
+#: config.py:1017
+msgid ""
+"If you do not have a device connected currently, either plug one\n"
+"in now or exit the dialog and connect to folder/iTunes first"
+msgstr ""
+"현재 연결된 장치가 없다면 지금 연결하거나\n"
+"대화상자를 닫고 먼저 폴더/iTunes에 연결하세요."
+
+#: config.py:1024
+msgid "Rename the currently connected device"
+msgstr "현재 연결된 장치 이름 바꾸기"
+
+#: config.py:1029
+msgid "Delete this device from the device list"
+msgstr "장치 목록에서 이 장치 삭제"
+
+#: config.py:1075 config.py:1079 config.py:1098
+msgid "Rename failed"
+msgstr "이름 변경 실패"
+
+#: config.py:1076 config.py:1106
+msgid "You must select a device first"
+msgstr "먼저 장치를 선택해야 합니다"
+
+#: config.py:1080
+msgid "You can only rename a device that is currently connected"
+msgstr "현재 연결된 장치만 이름을 바꿀 수 있습니다"
+
+#: config.py:1084
+msgid "Rename device"
+msgstr "장치 이름 바꾸기"
+
+#: config.py:1085
+msgid "Enter a new display name for this device:"
+msgstr "이 장치의 새 표시 이름을 입력하세요:"
+
+#: config.py:1099
+msgid "An error occured while renaming."
+msgstr "이름을 바꾸는 중 오류가 발생했습니다."
+
+#: config.py:1105
+msgid "Delete failed"
+msgstr "삭제 실패"
+
+#: config.py:1110
+msgid "You are about to remove the <b>%s</b> device from this list. "
+msgstr "이 목록에서 <b>%s</b> 장치를 제거하려고 합니다. "
+
+#: config.py:1111
+msgid "Are you sure you want to continue?"
+msgstr "계속하시겠습니까?"
+
+#: config.py:1166
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
+
+#: config.py:1170
+msgid "Reset &confirmation dialogs"
+msgstr "확인 대화상자 초기화(&C)"
+
+#: config.py:1171
+msgid "Reset all show me again dialogs for the Reading List plugin"
+msgstr "Reading List 플러그인의 다시 보지 않기 대화상자를 모두 재설정"
+
+#: config.py:1175
+msgid "&View library preferences"
+msgstr "서재 환경 설정 보기(&V)"
+
+#: config.py:1176
+msgid "View data stored in the library database for this plugin"
+msgstr "이 플러그인에 대해 서재 데이터베이스에 저장된 데이터를 봅니다"
+
+#: config.py:1187
+msgid "Quick Access Options:"
+msgstr "빠른 접근 옵션:"
+
+#: config.py:1194
+msgid "Allow toolbar button click to view list"
+msgstr "도구 모음 버튼 클릭으로 목록 보기 허용"
+
+#: config.py:1195
+msgid ""
+"By default the toolbar button shows the plugin menu.\n"
+"Check this option to instead display a reading list."
+msgstr ""
+"기본적으로 도구 모음 버튼은 플러그인 메뉴를 표시합니다.\n"
+"이 옵션을 선택하면 대신 읽기 목록을 표시합니다."
+
+#: config.py:1202
+msgid "List to view:"
+msgstr "표시할 목록:"
+
+#: config.py:1211
+msgid "Show dialog when removing books from device"
+msgstr "장치에서 책을 제거할 때 대화상자 표시"
+
+#: config.py:1212
+msgid ""
+"If syncing your list means books are removed from your device, then\n"
+"a dialog will be displayed allowing you to confirm first.\n"
+"Uncheck this option to allow unattended syncing to your device."
+msgstr ""
+"목록 동기화로 인해 장치에서 책이 제거되는 경우\n"
+"먼저 확인할 수 있도록 대화상자가 표시됩니다.\n"
+"무인 동기화를 허용하려면 이 옵션을 선택 해제하세요."
+
+#: config.py:1224
+msgid "Done"
+msgstr "완료"
+
+#: config.py:1225
+msgid "Confirmation dialogs have all been reset"
+msgstr "확인 대화상자가 모두 초기화되었습니다"
+
+#: config.py:1247
+msgid "Lists"
+msgstr "목록"
+
+#: config.py:1248
+msgid "Devices"
+msgstr "장치"
+
+#: config.py:1249
+msgid "Other"
+msgstr "기타"

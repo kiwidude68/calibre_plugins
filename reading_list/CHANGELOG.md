@@ -1,5 +1,15 @@
 # Reading List Change Log
 
+## [1.15.8] - 2026-09-07
+### Added
+- Czech translation
+- French translation
+- Japanese translation
+- Korean translation
+- Swedish translation
+### Fixed
+- Fix calibre 9.12+ breaking device sync, thanks to @edhaswell
+
 ## [1.15.7] - 2026-02-09
 ### Added
 - Updated translations
@@ -7,7 +17,7 @@
 ## [1.15.6] - 2025-06-21
 ### Added
 - If selected book in calibre is on a reading list when opening to edit then select it in the dialog.
-- - Arabic translation (Usama Khalil)
+- Arabic translation (Usama Khalil)
 
 ## [1.15.5] - 2024-06-02
 ### Added

@@ -7,14 +7,15 @@
 # 3f8f9c00d81c4c6472ea90c31062787f_3a6a5f8 <579c3b116bb0c0395bb3df6f1ae34246_210356>, 2022
 # Victor, 2022
 # Caarmi, 2022
-# ashed <craysy@gmail.com>, 2023
+# ashed <craysy@gmail.com>, 2026
+# Andrei Stepanov, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-06-06 20:21+1000\n"
 "PO-Revision-Date: 2022-09-19 14:51+0000\n"
-"Last-Translator: ashed <craysy@gmail.com>, 2023\n"
+"Last-Translator: Andrei Stepanov, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -184,7 +185,7 @@ msgstr "Удалить из списка по умолчанию"
 
 #: action.py:221
 msgid "Remove from %s list"
-msgstr ""
+msgstr "Удалить из %s списка"
 
 #: action.py:226
 msgid "Remove from list"
@@ -208,23 +209,23 @@ msgstr "Удалить из всех списков"
 
 #: action.py:241
 msgid "Toggle on default list"
-msgstr ""
+msgstr "Переключить список по умолчанию"
 
 #: action.py:249
 msgid "Toggle on list"
-msgstr ""
+msgstr "Переключить список"
 
 #: action.py:250
 msgid "Toggle on the specified list"
-msgstr ""
+msgstr "Переключить указанный список"
 
 #: action.py:252
 msgid "Toggle on the \"%s\" list"
-msgstr ""
+msgstr "Включить \"%s\" список"
 
 #: action.py:256
 msgid "Toggle on list: %s"
-msgstr ""
+msgstr "Включить список: %s"
 
 #: action.py:261
 msgid "View default list"
@@ -345,11 +346,11 @@ msgstr "Не указано имя списка"
 
 #: action.py:470
 msgid "Cannot toggle on list"
-msgstr ""
+msgstr "Невозможно включить список"
 
 #: action.py:507 config.py:1109
 msgid "Are you sure?"
-msgstr "Вы уверены?"
+msgstr "Уверены?"
 
 #: action.py:508
 msgid "Are you sure you want to clear the '%s' reading list?"
@@ -357,7 +358,7 @@ msgstr "Вы хотите очистить список для чтения '%s'
 
 #: action.py:574
 msgid "Added %d books, removed %d books on your %s list"
-msgstr ""
+msgstr "Добавлено %d книг, удалено %d книг из вашего %s списка"
 
 #: action.py:607
 msgid "The selected book(s) already exist on this list: <b>%s</b>"
@@ -974,21 +975,23 @@ msgstr ""
 
 #: config.py:1187
 msgid "Quick Access Options:"
-msgstr ""
+msgstr "Параметры быстрого доступа:"
 
 #: config.py:1194
 msgid "Allow toolbar button click to view list"
-msgstr ""
+msgstr "Разрешить нажатие кнопки панели инструментов для просмотра списка"
 
 #: config.py:1195
 msgid ""
 "By default the toolbar button shows the plugin menu.\n"
 "Check this option to instead display a reading list."
 msgstr ""
+"По умолчанию кнопка на панели инструментов отображает меню плагина.\n"
+"Установите этот флажок, чтобы вместо этого отображался список чтения."
 
 #: config.py:1202
 msgid "List to view:"
-msgstr ""
+msgstr "Список для просмотра:"
 
 #: config.py:1211
 msgid "Show dialog when removing books from device"
