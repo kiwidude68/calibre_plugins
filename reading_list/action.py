@@ -21,7 +21,7 @@ except NameError:
     pass # load_translations() added in calibre 1.9
 
 from calibre import prints
-from calibre.constants import DEBUG
+from calibre.constants import DEBUG, __version__ as calibre_version
 from calibre.ebooks.metadata import authors_to_string
 from calibre.gui2 import error_dialog, question_dialog, info_dialog
 from calibre.gui2.actions import InterfaceAction
@@ -1406,7 +1406,7 @@ class ReadingListAction(InterfaceAction):
     def _get_confirmed_delete_paths(self, to_delete):
         d = DeleteMatchingFromDeviceDialog(self.gui, to_delete)
         if d.exec_():
-            return True, d.result
+            return True, d.result if calibre_version < "9.12" else d.result_val
         return False, None
 
     def _get_unattended_delete_paths(self, to_delete):
