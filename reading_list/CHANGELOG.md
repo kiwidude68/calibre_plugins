@@ -1,5 +1,12 @@
 # Reading List Change Log
 
+## [1.15.9] - 2026-09-25
+### Added
+- Slovak translation
+- Serbian (Latin) translation
+### Changed
+- Add series to list now adds the books to the list in series index order
+
 ## [1.15.8] - 2026-09-07
 ### Added
 - Czech translation

@@ -3,716 +3,694 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Nicolas F. <fernetn@gmail.com>, 2022
-# JimmXinu, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# Grant Drake, 2022
-# lentrad <lentrad@gmail.com>, 2022
-# Ptit Prince <leporello1791@gmail.com>, 2022
-# Paul Muraille <paul.muraille@tictips.net>, 2024
-# Jean Pierre, 2026
+# Biljana Vukovic <biljana.vukovic1@yahoo.com>, 2022
+# Branislav Kapetanović, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-06-06 20:21+1000\n"
 "PO-Revision-Date: 2022-09-19 14:51+0000\n"
-"Last-Translator: Jean Pierre, 2026\n"
-"Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
+"Last-Translator: Branislav Kapetanović, 2026\n"
+"Language-Team: Serbian (Latin) (https://app.transifex.com/calibre/teams/19337/sr@latin/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: sr@latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:1165
 msgid "Keyboard shortcuts"
-msgstr "Raccourcis clavier"
+msgstr "Prečice"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Redémarre Calibre maintenant"
+msgstr "Ponovo pokreni calibre sada"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Préférences pour:"
+msgstr "Podešavanja za:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Réinitialiser"
+msgstr "Obriši"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Réinitialiser tous les paramètres pour cette extension"
+msgstr "Obriši sva podešavanja ovog dodatka"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Voulez-vous vraiment modifier vos paramètres dans cette bibliothèque pour ce"
-" plugin ?"
+"Da li ste sigurni da želite da promenite podešavanja ovog dodatka u ovoj "
+"biblioteci?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Aucun des paramètres d'autres bibliothèques ou stockés dans un fichier JSON "
-"dans votre répertoire d'extensions calibre ne sera modifié."
+"Podešavanja u drugim bibliotekama, kao ni ona sačuvana u JSON datoteci u "
+"fascikli dodataka za calibre, neće biti promenjena."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Vous devez redémarrer Calibre ensuite."
+msgstr "Nakon toga morate ponovo pokrenuti calibre."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Paramètres modifiés"
+msgstr "Podešavanja su promenjena"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Les paramètres pour ce plugin dans cette bibliothèque ont été modifiés."
+msgstr "Podešavanja ovog dodatka u ovoj biblioteci su promenjena."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Merci de redémarrer Calibre maintenant."
+msgstr "Ponovo pokrenite calibre sada."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Voulez-vous vraiment réinitialiser vos paramètres dans cette bibliothèque "
-"pour cette extension ?"
+"Da li ste sigurni da želite da obrišete podešavanja ovog dodatka u ovoj "
+"biblioteci?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Paramètres supprimés"
+msgstr "Podešavanja su obrisana"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr ""
-"Tous les paramètres pour cette extension dans cette bibliothèque ont été "
-"réinitialisés."
+msgstr "Sva podešavanja ovog dodatka u ovoj biblioteci su obrisana."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copier dans le presse-papier"
+msgstr "Kopiraj u privremenu memoriju"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Indéfini"
+msgstr "Nedefinisano"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Redémarrage nécessaire"
+msgstr "Potrebno je ponovno pokretanje"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"L'image d'icône n'a pas été trouvée - vous devez redémarrer Calibre avant "
-"d'utiliser ce plugin !"
+"Slika naslova nije pronađena — morate ponovo pokrenuti calibre pre "
+"korišćenja ovog dodatka!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Créer une nouvelle colonne"
+msgstr "Napravi novu kolonu"
 
 #: action.py:49
 msgid "Reading List"
-msgstr "Liste de lecture"
+msgstr "Lista za čitanje"
 
 #: action.py:49
 msgid "View or edit lists of books"
-msgstr "Afficher ou modifier des listes de livres"
+msgstr "Prikaži ili uredi liste knjiga"
 
 #: action.py:166
 msgid "Add to default list"
-msgstr "Ajouter à la liste par défaut"
+msgstr "Dodaj na podrazumevanu listu"
 
 #: action.py:169
 msgid "Add to %s list"
-msgstr "Ajouter à la liste %s"
+msgstr "Dodaj na listu %s"
 
 #: action.py:174
 msgid "Add to list"
-msgstr "Ajouter à la liste"
+msgstr "Dodaj na listu"
 
 #: action.py:175
 msgid "Add to the specified list"
-msgstr "Ajouter à la liste spécifiée"
+msgstr "Dodaj na izabranu listu"
 
 #: action.py:177
 msgid "Add to the \"%s\" list"
-msgstr "Ajouter à la liste \"%s\""
+msgstr "Dodaj na listu „%s“"
 
 #: action.py:181
 msgid "Add to list: %s"
-msgstr "Ajouter à la liste: %s"
+msgstr "Dodaj na listu: %s"
 
 #: action.py:183
 msgid "Add to all lists"
-msgstr "Ajouter à toutes les listes"
+msgstr "Dodaj na sve liste"
 
 #: action.py:189
 msgid "Add series to default list"
-msgstr "Ajouter la série à la liste par défaut"
+msgstr "Dodaj serijal na podrazumevanu listu"
 
 #: action.py:192
 msgid "Add series to %s list"
-msgstr "Ajouter la série à la liste %s"
+msgstr "Dodaj serijal na listu %s"
 
 #: action.py:197
 msgid "Add series to list"
-msgstr "Ajouter la série à la liste"
+msgstr "Dodaj serijal na listu"
 
 #: action.py:198
 msgid "Add all books in series to the specified list"
-msgstr "Ajouter tous les livres de la série à la liste spécifiée"
+msgstr "Dodaj sve knjige iz serijala na izabranu listu"
 
 #: action.py:200
 msgid "Add series to the \"%s\" list"
-msgstr "Ajouter la série à la liste \"%s\""
+msgstr "Dodaj serijal na listu „%s“"
 
 #: action.py:204
 msgid "Add series to list: %s"
-msgstr "Ajouter la série à la liste: %s"
+msgstr "Dodaj serijal na listu: %s"
 
 #: action.py:206
 msgid "Add series to all lists"
-msgstr "Ajouter la série à toutes les listes"
+msgstr "Dodaj serijal na sve liste"
 
 #: action.py:212 action.py:214
 msgid "Move to list"
-msgstr "Déplacer vers la liste"
+msgstr "Premesti na listu"
 
 #: action.py:218
 msgid "Remove from default list"
-msgstr "Supprimer de la liste par défaut"
+msgstr "Ukloni sa podrazumevane liste"
 
 #: action.py:221
 msgid "Remove from %s list"
-msgstr "Supprimer de la liste %s"
+msgstr "Ukloni sa liste %s"
 
 #: action.py:226
 msgid "Remove from list"
-msgstr "Supprimer de la liste"
+msgstr "Ukloni sa liste"
 
 #: action.py:227
 msgid "Remove from the specified list"
-msgstr "Supprimer de la liste spécifiée"
+msgstr "Ukloni sa izabrane liste"
 
 #: action.py:229
 msgid "Remove from the \"%s\" list"
-msgstr "Supprimer de la liste \"%s\""
+msgstr "Ukloni sa liste „%s“"
 
 #: action.py:233
 msgid "Remove from list: %s"
-msgstr "Supprimer de la liste: %s"
+msgstr "Ukloni sa liste: %s"
 
 #: action.py:235
 msgid "Remove from all lists"
-msgstr "Supprimer de toutes les listes"
+msgstr "Ukloni sa svih lista"
 
 #: action.py:241
 msgid "Toggle on default list"
-msgstr "Afficher la liste par défaut"
+msgstr "Dodaj na podrazumevanu listu ili ukloni sa nje"
 
 #: action.py:249
 msgid "Toggle on list"
-msgstr "Afficher/masquer la liste"
+msgstr "Dodaj na listu ili ukloni sa nje"
 
 #: action.py:250
 msgid "Toggle on the specified list"
-msgstr "Afficher/masquer la liste indiquée"
+msgstr "Dodaj na izabranu listu ili ukloni sa nje"
 
 #: action.py:252
 msgid "Toggle on the \"%s\" list"
-msgstr "Activer la liste \"%s\""
+msgstr "Dodaj na listu „%s“ ili ukloni sa nje"
 
 #: action.py:256
 msgid "Toggle on list: %s"
-msgstr "Afficher/masquer la liste : %s"
+msgstr "Dodaj na listu ili ukloni sa nje: %s"
 
 #: action.py:261
 msgid "View default list"
-msgstr "Afficher la liste par défaut"
+msgstr "Prikaži podrazumevanu listu"
 
 #: action.py:263 action.py:272
 msgid "View %s list (%d)"
-msgstr "Afficher la liste %s (%d)"
+msgstr "Prikaži listu %s (%d)"
 
 #: action.py:270 action.py:286 action.py:297
 msgid "View books on the \"%s\" list"
-msgstr "Afficher les livres de la liste \"%s\""
+msgstr "Prikaži knjige na listi „%s“"
 
 #: action.py:275 action.py:290 action.py:301
 msgid "View list: %s"
-msgstr "Afficher la liste : %s"
+msgstr "Prikaži listu: %s"
 
 #: action.py:278 action.py:281
 msgid "View list"
-msgstr "Afficher la liste"
+msgstr "Prikaži listu"
 
 #: action.py:279
 msgid "View books on the specified list"
-msgstr "Afficher les livres figurant dans la liste indiquée"
+msgstr "Prikaži knjige na izabranoj listi"
 
 #: action.py:306
 msgid "Edit default list"
-msgstr "Modifier la liste par défaut"
+msgstr "Uredi podrazumevanu listu"
 
 #: action.py:309
 msgid "Edit %s list"
-msgstr "Modifier la liste %s"
+msgstr "Uredi listu %s"
 
 #: action.py:314
 msgid "Edit list"
-msgstr "Modifier la liste"
+msgstr "Uredi listu"
 
 #: action.py:315
 msgid "Edit books on the specified list"
-msgstr "Modifier les livres figurant dans la liste indiquée"
+msgstr "Uredi knjige na izabranoj listi"
 
 #: action.py:317
 msgid "Edit books on the \"%s\" list"
-msgstr "Modifier les livres de la liste \"%s\""
+msgstr "Uredi knjige na listi „%s“"
 
 #: action.py:321
 msgid "Edit list: %s"
-msgstr "Modifier la liste: %s"
+msgstr "Uredi listu: %s"
 
 #: action.py:325
 msgid "Clear default list"
-msgstr "Vider la liste par défaut"
+msgstr "Isprazni podrazumevanu listu"
 
 #: action.py:328
 msgid "Clear %s list"
-msgstr "Vider la liste %s"
+msgstr "Isprazni listu %s"
 
 #: action.py:333 action.py:336
 msgid "Clear list"
-msgstr "Vider la liste"
+msgstr "Isprazni listu"
 
 #: action.py:334
 msgid "Clear all from the specified list"
-msgstr "Tout effacer de la liste indiquée"
+msgstr "Ukloni sve sa izabrane liste"
 
 #: action.py:341
 msgid "Clear the \"%s\" list"
-msgstr "Vider la liste \"%s\""
+msgstr "Isprazni listu „%s“"
 
 #: action.py:345
 msgid "Clear list: %s"
-msgstr "Vider la liste: %s"
+msgstr "Isprazni listu: %s"
 
 #: action.py:347
 msgid "Clear list (%d)"
-msgstr "Vider la liste (%d)"
+msgstr "Isprazni listu (%d)"
 
 #: action.py:351
 msgid "Set default list"
-msgstr "Définir la liste par défaut"
+msgstr "Postavi podrazumevanu listu"
 
 #: action.py:352
 msgid "Switch the list to use as the current default"
-msgstr "Définir cette liste comme liste par défaut actuelle"
+msgstr "Izaberi listu koja će ubuduće biti podrazumevana"
 
 #: action.py:355 action.py:365
 msgid "Set your default list to \"%s\""
-msgstr "Définissez votre liste par défaut sur \"%s\""
+msgstr "Postavi „%s“ kao podrazumevanu listu"
 
 #: action.py:359 action.py:369
 msgid "Set default list: %s"
-msgstr "Définir la liste par défaut : %s"
+msgstr "Postavi podrazumevanu listu: %s"
 
 #: action.py:372 action.py:373
 msgid "Sync Now"
-msgstr "Synchroniser maintenant"
+msgstr "Sinhronizuj sada"
 
 #: action.py:377
 msgid "&Customize plugin"
-msgstr "&Personnaliser l'extension"
+msgstr "&Prilagodi dodatak"
 
 #: action.py:380 config.py:1180
 msgid "&Help"
-msgstr "&Aide"
+msgstr "&Pomoć"
 
 #: action.py:388
 msgid "Sync Now (%d)"
-msgstr "Synchroniser maintenant (%d)"
+msgstr "Sinhronizuj sada (%d)"
 
 #: action.py:397 action.py:415
 msgid "Cannot add to list"
-msgstr "Impossible d'ajouter à la liste"
+msgstr "Nije moguće dodati na listu"
 
 #: action.py:398 action.py:416 action.py:471 action.py:682 action.py:799
 #: action.py:843 action.py:887 action.py:927 action.py:965
 msgid "No list name specified"
-msgstr "Aucun nom de liste n'a été spécifié"
+msgstr "Naziv liste nije naveden"
 
 #: action.py:470
 msgid "Cannot toggle on list"
-msgstr "Impossible d'activer/désactiver dans la liste"
+msgstr "Nije moguće dodati na listu ili ukloniti sa nje"
 
 #: action.py:507 config.py:1109
 msgid "Are you sure?"
-msgstr "Êtes-vous certain·e ?"
+msgstr "Da li ste sigurni?"
 
 #: action.py:508
 msgid "Are you sure you want to clear the '%s' reading list?"
-msgstr "Voulez-vous vraiment vider la liste de lecture '%s'?"
+msgstr "Da li ste sigurni da želite da ispraznite listu za čitanje „%s“?"
 
 #: action.py:574
 msgid "Added %d books, removed %d books on your %s list"
-msgstr "%d livres ajoutés, %d supprimés dans votre liste %s"
+msgstr "Dodato je %d knjiga, a uklonjeno %d knjiga sa vaše liste %s"
 
 #: action.py:607
 msgid "The selected book(s) already exist on this list: <b>%s</b>"
-msgstr ""
-"Le ou les livres sélectionnés sont déjà présents dans cette liste: <b>%s</b>"
+msgstr "Izabrane knjige već se nalaze na ovoj listi: <b>%s</b>"
 
 #: action.py:609
 msgid "Failed to add to list"
-msgstr "Échec de l'ajout à la liste"
+msgstr "Dodavanje na listu nije uspelo"
 
 #: action.py:618
 msgid "Added %d books to your %s list"
-msgstr "%d livres ajoutés à votre liste %s"
+msgstr "Dodato je %d knjiga na vašu listu %s"
 
 #: action.py:660
 msgid "Added to %d reading lists"
-msgstr "Ajouté à %d listes de lecture"
+msgstr "Dodato na %d lista za čitanje"
 
 #: action.py:681
 msgid "Cannot remove from list"
-msgstr "Impossible à supprimer de la liste"
+msgstr "Nije moguće ukloniti sa liste"
 
 #: action.py:700
 msgid "The selected book(s) do not exist on this list"
-msgstr "Le ou les livres sélectionnés sont absents de cette liste."
+msgstr "Izabrane knjige nisu na ovoj listi"
 
 #: action.py:710 action.py:864 action.py:908
 msgid "Removed %d books from your %s list"
-msgstr "%d livres retirés de votre liste%s"
+msgstr "Uklonjeno je %d knjiga sa vaše liste %s"
 
 #: action.py:757
 msgid "Removed from %d reading lists"
-msgstr "Retiré de %d listes de lecture"
+msgstr "Uklonjeno sa %d lista za čitanje"
 
 #: action.py:793 action.py:798
 msgid "Cannot move to list"
-msgstr "Impossible de passer à la liste"
+msgstr "Nije moguće premestiti na listu"
 
 #: action.py:794
 msgid "No source list names specified"
-msgstr "Aucun nom de liste source spécifié"
+msgstr "Nisu navedeni nazivi izvornih lista"
 
 #: action.py:819
 msgid "Moved %d books to your list(s)"
-msgstr "%d livres déplacé vers votre ou vos listes"
+msgstr "Na vaše liste premešteno je %d knjiga"
 
 #: action.py:842
 msgid "Cannot clear list"
-msgstr "Impossible de vider la liste"
+msgstr "Nije moguće isprazniti listu"
 
 #: action.py:854
 msgid "No books exist on this list"
-msgstr "Il n'y a aucun livre dans cette liste"
+msgstr "Na ovoj listi nema knjiga"
 
 #: action.py:886
 msgid "Cannot edit list"
-msgstr "Impossible d'éditer la liste"
+msgstr "Nije moguće urediti listu"
 
 #: action.py:926
 msgid "Cannot view list"
-msgstr "Impossible d'afficher la liste"
+msgstr "Nije moguće prikazati listu"
 
 #: action.py:964 action.py:973
 msgid "Cannot create list"
-msgstr "Impossible de créer la liste"
+msgstr "Nije moguće napraviti listu"
 
 #: action.py:967
 msgid "Reading List: Cannot create list as list_name not specified"
 msgstr ""
-"Liste de lecture : impossible de créer la liste car le nom de la liste n'a "
-"pas été spécifié"
+"LISTA ZA ČITANJE: Nije moguće napraviti listu jer nije naveden list_name"
 
 #: action.py:974
 msgid "A list already exists with this name"
-msgstr "Une liste de même nom existe déjà."
+msgstr "Lista sa ovim nazivom već postoji"
 
 #: action.py:976
 msgid "Reading List: Cannot create list as list_name is duplicate:"
 msgstr ""
-"Liste de lecture : impossible de créer la liste car le nom existe déjà :"
+"LISTA ZA ČITANJE: Nije moguće napraviti listu jer se list_name već koristi:"
 
 #: action.py:1116
 msgid "READING LIST: Device disconnected"
-msgstr "READING LIST: périphérique déconnecté"
+msgstr "LISTA ZA ČITANJE: Uređaj je isključen"
 
 #: action.py:1125
 msgid "READING LIST: Metadata available:"
-msgstr "READING LIST : Métadonnées disponibles :"
+msgstr "LISTA ZA ČITANJE: Metapodaci su dostupni:"
 
 #: action.py:1170
 msgid "READING LIST: Device found to sync to:"
-msgstr "READING LIST : Appareil pouvant se synchroniser avec :"
+msgstr "LISTA ZA ČITANJE: Pronađen uređaj za sinhronizaciju:"
 
 #: action.py:1173
 msgid "READING LIST: Not syncing to device as not active"
-msgstr ""
-"READING LIST : La synchronisation avec l'appareil ne s'effectue pas car "
-"celui-ci n'est pas actif"
+msgstr "LISTA ZA ČITANJE: Nema sinhronizacije sa uređajem jer nije aktivan"
 
 #: action.py:1178
 msgid "READING LIST: Sync Now - force_sync="
-msgstr "READING LIST : Sync Now - force_sync="
+msgstr "LISTA ZA ČITANJE: Sinhronizuj sada – force_sync="
 
 #: action.py:1193
 msgid "Cannot sync to device"
-msgstr "Impossible de synchroniser avec l'appareil"
+msgstr "Nije moguće sinhronizovati sa uređajem"
 
 #: action.py:1194
 msgid "No device found for UUID: %s"
-msgstr "Aucun périphérique n'a été trouvé pour l'UUID : %s"
+msgstr "Nije pronađen uređaj za UUID: %s"
 
 #: action.py:1208
 msgid "READING LIST: Updating automatic column list(s) "
-msgstr ""
-"READING LIST : Mise à jour automatique de la ou des listes de colonnes"
+msgstr "LISTA ZA ČITANJE: Ažuriranje automatskih lista kolona "
 
 #: action.py:1233
 msgid "READING LIST: Not syncing '%s' to device as autosync is false"
 msgstr ""
-"READING LIST : La synchronisation ne s'effectue pas sur '%s' l'appareil car "
-"l'option autosync est désactivée"
+"LISTA ZA ČITANJE: Lista „%s“ se ne sinhronizuje sa uređajem jer je autosync "
+"isključen"
 
 #: action.py:1241
 msgid "READING LIST: Updating automatic device list(s) "
-msgstr ""
-"READING LIST : Mise à jour automatique de la ou des listes d'appareils"
+msgstr "LISTA ZA ČITANJE: Ažuriranje automatskih lista uređaja "
 
 #: action.py:1295
 msgid "READING LIST: Skipping %d books in '%s' list with no formats"
 msgstr ""
-"READING LIST : Ignorer %d des livres de la liste '%s' qui n'ont pas de "
+"LISTA ZA ČITANJE: Preskače se %d knjiga sa liste „%s“ jer nemaju nijedan "
 "format"
 
 #: action.py:1299
 msgid "READING LIST: Syncing %d books in '%s' to: %s (location:%s)"
 msgstr ""
-"READING LIST : Synchronisation %d des livres de '%s' vers %s (emplacement : "
-"%s)"
+"LISTA ZA ČITANJE: Sinhronizacija %d knjiga sa liste „%s“ na: %s "
+"(lokacija:%s)"
 
 #: action.py:1308
 msgid "READING LIST: No books on '%s' list need to be synced"
-msgstr "READING LIST : Aucun livre de la liste '%s' ne doit être synchronisé"
+msgstr ""
+"LISTA ZA ČITANJE: Nijednu knjigu sa liste „%s“ nije potrebno sinhronizovati"
 
 #: action.py:1333
 msgid "Main memory"
-msgstr "Mémoire principale"
+msgstr "Glavna memorija"
 
 #: action.py:1336
 msgid "Storage Card A"
-msgstr "Carte mémoire A"
+msgstr "Memorijska kartica A"
 
 #: action.py:1339
 msgid "Storage Card B"
-msgstr "Carte mémoire B"
+msgstr "Memorijska kartica B"
 
 #: action.py:1344
 msgid "READING LIST: No books on '%s' list found on device to remove"
-msgstr ""
-"READING LIST : Aucun livre figurant sur la liste '%s' n'a été trouvé sur "
-"l'appareil à supprimer"
+msgstr "LISTA ZA ČITANJE: Na uređaju nema knjiga sa liste „%s“ za uklanjanje"
 
 #: action.py:1355
 msgid "Reading List error"
-msgstr "Erreur dans la liste de lecture"
+msgstr "Greška liste za čitanje"
 
 #: action.py:1356
 msgid "Unable to find the Remove Books plugin"
-msgstr "Impossible de trouver le plugin Remove Books"
+msgstr "Nije pronađen dodatak za uklanjanje knjiga"
 
 #: action.py:1383
 msgid "Deleting books from device."
-msgstr "Suppression de livres de l'appareil."
+msgstr "Brisanje knjiga sa uređaja."
 
 #: action.py:1422
 msgid "READING LIST: Auto-populating device list: "
-msgstr "READING LIST : Liste des appareils à remplissage automatique :"
+msgstr "LISTA ZA ČITANJE: Automatsko popunjavanje liste uređaja: "
 
 #: action.py:1427
 msgid "READING LIST: Removing %d ids from automatic list: %s"
 msgstr ""
-"READING LIST : Suppression de %d identifiants de la liste automatique : %s"
+"LISTA ZA ČITANJE: Uklanjanje %d identifikatora sa automatske liste: %s"
 
 #: action.py:1430
 msgid "READING LIST: Adding %d ids to automatic list: %s"
-msgstr "READING LIST  : Ajouter %d identifiants à la liste automatique : %s"
+msgstr "LISTA ZA ČITANJE: Dodavanje %d identifikatora na automatsku listu: %s"
 
 #: action.py:1440
 msgid "READING LIST: Auto-populating search list: "
-msgstr "READING LIST : Remplissage automatique de la liste de recherche : "
+msgstr "LISTA ZA ČITANJE: Automatsko popunjavanje liste iz pretrage: "
 
 #: action.py:1445
 msgid ""
 "READING LIST: Aborting updating auto-search list as has no expression: "
 msgstr ""
-"READING LIST : Interruption de la mise à jour automatique de la liste de "
-"recherche, car aucune expression n'est présente :"
+"LISTA ZA ČITANJE: Ažuriranje automatske liste iz pretrage se prekida jer "
+"nije naveden izraz: "
 
 #: action.py:1449
 msgid "READING LIST: Now %d ids on automatic list: %s"
-msgstr ""
-"READING LIST : Voici les %d identifiants figurant sur la liste automatique :"
-" %s"
+msgstr "LISTA ZA ČITANJE: Na automatskoj listi sada ima %d identifikatora: %s"
 
 #: action.py:1455
 msgid "READING LIST: Attempting to recreate Kindle collections"
-msgstr "READING LIST : Tentative de recréation des collections Kindle"
+msgstr "LISTA ZA ČITANJE: Pokušaj ponovnog pravljenja Kindle kolekcija"
 
 #: action.py:1458
 msgid "Kindle Collections Failed"
-msgstr "Échec des collections Kindle"
+msgstr "Pravljenje Kindle kolekcija nije uspelo"
 
 #: action.py:1459
 msgid ""
 "You must have the Kindle Collections plugin installed in order to recreate "
 "collections after a sync."
 msgstr ""
-"Vous devez avoir installé le plugin Kindle Collections pour pouvoir recréer "
-"vos collections après une synchronisation."
+"Da biste posle sinhronizacije ponovo napravili kolekcije, morate instalirati"
+" dodatak Kindle Collections."
 
 #: config.py:79
 msgid "*Any Device"
-msgstr "*Tout périphérique"
+msgstr "*Bilo koji uređaj"
 
 #: config.py:81
 msgid "Manually add/remove items"
-msgstr "Ajouter/Supprimer des éléments manuellement"
+msgstr "Ručno dodaj ili ukloni stavke"
 
 #: config.py:82
 msgid "Auto populated from books on device"
-msgstr "Rempli automatiquement à partir des livres présents sur l'appareil"
+msgstr "Automatski popuni knjigama sa uređaja"
 
 #: config.py:83
 msgid "Auto populated from search"
-msgstr "Rempli automatiquement à partir de la recherche"
+msgstr "Automatski popuni iz pretrage"
 
 #: config.py:85
 msgid "Add new list items to device"
-msgstr "Ajouter de nouveaux éléments à la liste de l'appareil"
+msgstr "Dodaj nove stavke liste na uređaj"
 
 #: config.py:86
 msgid "Add/overwrite all list items to device"
-msgstr "Ajouter/remplacer tous les éléments de la liste sur l'appareil"
+msgstr "Dodaj ili zameni sve stavke liste na uređaju"
 
 #: config.py:87
 msgid "Remove list items from device"
-msgstr "Supprimer les éléments de la liste de l'appareil"
+msgstr "Ukloni stavke liste sa uređaja"
 
 #: config.py:88
 msgid "Replace device with list, add new items only"
-msgstr ""
-"Remplacer les élément par la liste, en n'ajoutant que les nouveaux éléments"
+msgstr "Zameni sadržaj uređaja listom, uz dodavanje samo novih stavki"
 
 #: config.py:89
 msgid "Replace device with list, add/overwrite all"
-msgstr "Remplacer l'élément par la liste, tout ajouter/écraser"
+msgstr "Zameni sadržaj uređaja listom, uz dodavanje ili zamenu svih stavki"
 
 #: config.py:91
 msgid "Auto populate list from books on device"
-msgstr ""
-"Remplir automatiquement la liste à partir des livres présents sur l'appareil"
+msgstr "Automatski popuni listu knjigama sa uređaja"
 
 #: config.py:93
 msgid "Do not update calibre column"
-msgstr "Ne pas mettre à jour la colonne Calibre"
+msgstr "Ne ažuriraj kolonu u programu calibre"
 
 #: config.py:94
 msgid "Update column for add or remove"
-msgstr "Mettre à jour la colonne Ajouter ou supprimer"
+msgstr "Ažuriraj kolonu pri dodavanju ili uklanjanju"
 
 #: config.py:95
 msgid "Update column for add to list only"
-msgstr "Mettre à jour la colonne uniquement pour les ajouts à la liste"
+msgstr "Ažuriraj kolonu samo pri dodavanju na listu"
 
 #: config.py:96
 msgid "Update column for remove from list only"
-msgstr ""
-"Mettre à jour la colonne uniquement pour les éléments à supprimer de la "
-"liste"
+msgstr "Ažuriraj kolonu samo pri uklanjanju sa liste"
 
 #: config.py:442
 msgid "Kindle Collections"
-msgstr "Collections Kindle"
+msgstr "Kindle kolekcije"
 
 #: config.py:442
 msgid "Location"
-msgstr "Emplacement"
+msgstr "Lokacija"
 
 #: config.py:442
 msgid "Menu"
-msgstr "Menu"
+msgstr "Meni"
 
 #: config.py:442
 msgid "Name"
-msgstr "Nom"
+msgstr "Naziv"
 
 #: config.py:442
 msgid "Status"
-msgstr "Statut"
+msgstr "Status"
 
 #: config.py:546
 msgid "Lists:"
-msgstr "Listes:"
+msgstr "Liste:"
 
 #: config.py:553
 msgid "Add list"
-msgstr "Ajouter une liste"
+msgstr "Dodaj listu"
 
 #: config.py:558
 msgid "Delete list"
-msgstr "Supprimer la liste"
+msgstr "Obriši listu"
 
 #: config.py:563 config.py:937
 msgid "Rename list"
-msgstr "Renommer la liste"
+msgstr "Preimenuj listu"
 
 #: config.py:571
 msgid "Population Options:"
-msgstr "Options relatives au remplissage :"
+msgstr "Opcije popunjavanja:"
 
 #: config.py:579
 msgid "&List type:"
-msgstr "&Type de liste :"
+msgstr "&Tip liste:"
 
 #: config.py:580
 msgid "Choose how this list will be populated"
-msgstr "Choisissez comment cette liste sera remplie"
+msgstr "Izaberite kako će se ova lista popunjavati"
 
 #: config.py:587
 msgid "&Auto populate from search:"
-msgstr "&Remplissage automatique à partir de la recherche :"
+msgstr "&Automatski popuni iz pretrage:"
 
 #: config.py:588
 msgid ""
 "If list is populated from a search, specify the calibre search expression"
 msgstr ""
-"Si la liste est générée à partir d'une recherche, indiquez l'expression de "
-"recherche Calibre"
+"Ako se lista popunjava iz pretrage, navedite izraz za pretragu u programu "
+"calibre"
 
 #: config.py:596
 msgid "Sync Options:"
-msgstr "Options de synchronisation :"
+msgstr "Opcije sinhronizacije:"
 
 #: config.py:604
 msgid "&Device to sync this list to:"
-msgstr "&Appareil sur lequel synchroniser cette liste :"
+msgstr "&Uređaj sa kojim se sinhronizuje ova lista:"
 
 #: config.py:605
 msgid ""
@@ -720,13 +698,13 @@ msgid ""
 "automatically the contents of a list to that device.\n"
 "This replaces the Book Sync plugin functionality"
 msgstr ""
-"En sélectionnant un appareil, vous pouvez synchroniser, manuellement ou\n"
-"automatiquement, le contenu d'une liste avec cet appareil.\n"
-"Cette fonctionnalité remplace celle du plugin Book Sync."
+"Navođenjem uređaja možete ručno ili\n"
+" automatski sinhronizovati sadržaj liste sa njim.\n"
+" Time se zamenjuje funkcija dodatka Book Sync"
 
 #: config.py:613
 msgid "&When syncing this list:"
-msgstr "&Lors de la synchronisation de cette liste :"
+msgstr "&Pri sinhronizaciji ove liste:"
 
 #: config.py:614
 msgid ""
@@ -734,25 +712,25 @@ msgid ""
 "Sync only new items, sync all items overwriting existing\n"
 "or use this list to just remove items from your device."
 msgstr ""
-"Gérez la manière dont vos éléments sont synchronisés sur l'appareil.\n"
-"Synchronisez uniquement les nouveaux éléments, synchronisez tous les éléments en écrasant ceux qui existent déjà,\n"
-"ou utilisez cette liste pour simplement supprimer des éléments de votre appareil."
+"Odredite kako se stavke sinhronizuju sa uređajem.\n"
+" Sinhronizujte samo nove stavke ili sve stavke uz zamenu postojećih,\n"
+" odnosno koristite ovu listu samo za uklanjanje stavki sa uređaja."
 
 #: config.py:622
 msgid "Sync to this device as soon as it is connected"
-msgstr "Synchroniser avec cet appareil dès qu'il est connecté"
+msgstr "Sinhronizuj sa ovim uređajem čim se poveže"
 
 #: config.py:623
 msgid ""
 "Uncheck this option if you prefer to manually sync to your device.\n"
 "If no device is specified this checkbox has no effect"
 msgstr ""
-"Décochez cette case si vous préférez effectuer la synchronisation manuellement avec votre appareil.\n"
-"Si aucun appareil n'est spécifié, cette case à cocher n'a aucun effet."
+"Isključite ovu opciju ako želite da sinhronizujete uređaj ručno.\n"
+" Ako uređaj nije naveden, ova opcija nema dejstva."
 
 #: config.py:627
 msgid "Clear this list after a sync to this device"
-msgstr "Effacer cette liste après une synchronisation avec cet appareil"
+msgstr "Isprazni ovu listu posle sinhronizacije sa uređajem"
 
 #: config.py:628
 msgid ""
@@ -760,57 +738,57 @@ msgid ""
 "If no device is specified this checkbox has no effect.\n"
 "This option can only be used with manual type lists."
 msgstr ""
-"Si cette case n'est pas cochée, seuls les éléments qui ne se trouvent pas encore sur l'appareil seront synchronisés.\n"
-"Si aucun appareil n'est spécifié, cette case à cocher n'a aucun effet.\n"
-"Cette option ne peut être utilisée qu'avec des listes de type manuel."
+"Ako ova opcija nije izabrana, sinhronizovaće se samo stavke koje još nisu na uređaju.\n"
+" Ako uređaj nije naveden, ova opcija nema dejstva.\n"
+" Ova opcija može da se koristi samo sa listama koje se uređuju ručno."
 
 #: config.py:636
 msgid "Column Update Options:"
-msgstr "Options de mise à jour des colonnes :"
+msgstr "Opcije ažuriranja kolone:"
 
 #: config.py:644
 msgid "When &changing this list:"
-msgstr "Quand &modifier cette liste :"
+msgstr "Pri &izmeni ove liste:"
 
 #: config.py:645
 msgid ""
 "Optionally modify tags or a custom column when you\n"
 "add and/or remove items from this list."
 msgstr ""
-"Vous pouvez, si vous le souhaitez, modifier les balises ou une colonne personnalisée lorsque vous\n"
-"ajoutez et/ou supprimez des éléments de cette liste."
+"Po želji izmenite oznake ili prilagođenu kolonu pri\n"
+" dodavanju stavki na ovu listu ili njihovom uklanjanju."
 
 #: config.py:652
 msgid "&Column to update:"
-msgstr "&Colonne à mettre à jour :"
+msgstr "&Kolona za ažuriranje:"
 
 #: config.py:653
 msgid ""
 "Optionally specify a column to add/remove a value from\n"
 "when adding or removing items from this list"
 msgstr ""
-"Vous pouvez, si vous le souhaitez, indiquer une colonne dans laquelle ajouter ou supprimer une valeur\n"
-"lorsque vous ajoutez ou supprimez des éléments de cette liste"
+"Po želji navedite kolonu u kojoj će se dodavati ili uklanjati vrednost\n"
+" pri dodavanju stavki na ovu listu ili njihovom uklanjanju"
 
 #: config.py:661
 msgid "&Value in column to add/remove:"
-msgstr "&Valeur de la colonne à ajouter/supprimer :"
+msgstr "&Vrednost u koloni koja se dodaje ili uklanja:"
 
 #: config.py:662
 msgid ""
 "Specify the tag or custom column value to be added when adding\n"
 "to this list or removed when the book is taken off the list"
 msgstr ""
-"Indiquez la valeur de la balise ou de la colonne personnalisée à ajouter lors de l'ajout\n"
-"à cette liste ou à supprimer lorsque le livre est retiré de la liste"
+"Navedite oznaku ili vrednost prilagođene kolone koja se dodaje\n"
+" kada knjigu stavite na listu ili uklanja kada je skinete sa liste"
 
 #: config.py:672
 msgid "Reading Order Options:"
-msgstr "Lecture des options d'ordre :"
+msgstr "Opcije redosleda čitanja:"
 
 #: config.py:680
 msgid "&Store in series column:"
-msgstr "&Stocker dans la colonne des séries :"
+msgstr "&Sačuvaj u koloni serijala:"
 
 #: config.py:681
 msgid ""
@@ -818,31 +796,29 @@ msgid ""
 "in a custom series column. You should not edit this column directly!\n"
 "Only usable with Manually managed lists that are not Cleared on Sync."
 msgstr ""
-"Vous pouvez, si vous le souhaitez, afficher l'ordre actuel de la liste de lecture\n"
-"dans une colonne de série personnalisée. Ne modifiez surtout pas cette colonne directement !\n"
-"Cette fonctionnalité n'est disponible qu'avec les listes gérées manuellement qui ne sont pas effacées lors de la synchronisation."
+"Redosled knjiga na listi za čitanje možete prikazati\n"
+" u prilagođenoj koloni serijala. Nemojte direktno uređivati tu kolonu!\n"
+" Dostupno samo za ručno uređivane liste koje se ne prazne pri sinhronizaciji."
 
 #: config.py:689
 msgid "&Series name:"
-msgstr "&Nom de la série :"
+msgstr "&Naziv serijala:"
 
 #: config.py:690
 msgid ""
 "Specify the name for this reading order series\n"
 "If left blank, will use the name of the list this book is on."
 msgstr ""
-"Indiquez le nom de cette série d'ordre de lecture.\n"
-"Si ce champ est laissé vide, le nom de la liste dans laquelle figure ce livre sera utilisé."
+"Navedite naziv serijala za ovaj redosled čitanja.\n"
+" Ako polje ostane prazno, koristiće se naziv liste na kojoj je knjiga."
 
 #: config.py:699
 msgid "Display Options:"
-msgstr "Options d'affichage :"
+msgstr "Opcije prikaza:"
 
 #: config.py:707
 msgid "Move \"View list\" to the top level of the plugin menu for this list"
-msgstr ""
-"Déplacer « Afficher la liste » au premier niveau du menu du plugin pour "
-"cette liste"
+msgstr "Premesti „Prikaži listu“ u glavni meni dodatka za ovu listu"
 
 #: config.py:708
 msgid ""
@@ -850,14 +826,13 @@ msgid ""
 "If checked, this list will be moved to the top level menu for ease of access.\n"
 "NOTE: Your \"default\" list will always appear on the top menu, regardless of this checkbox"
 msgstr ""
-"Par défaut, Reading List crée un sous-menu Afficher les listes pour toutes vos listes lorsque vous en avez plusieurs.\n"
-"Si cette case est cochée, cette liste sera déplacée dans le menu de premier niveau pour faciliter l'accès.\n"
-"REMARQUE : votre liste par défaut apparaîtra toujours dans le menu de premier niveau, quel que soit le choix de cette case à cocher."
+"Kada imate više lista, dodatak Lista za čitanje podrazumevano pravi podmeni „Prikaži listu“.\n"
+" Ako označite ovu opciju, lista će radi lakšeg pristupa biti u glavnom meniju.\n"
+" NAPOMENA: Podrazumevana lista se uvek prikazuje u glavnom meniju, bez obzira na ovu opciju."
 
 #: config.py:713
 msgid "Apply reading list order when viewing list"
-msgstr ""
-"Appliquer l'ordre de la liste de lecture lors de l'affichage de la liste"
+msgstr "Primeni redosled liste za čitanje pri prikazu liste"
 
 #: config.py:714
 msgid ""
@@ -865,13 +840,13 @@ msgid ""
 "Lists can be manually reordered using this plugin, defaulting to order added to list.\n"
 "If unchecked, current calibre sort will be left unchanged when you view the list."
 msgstr ""
-"Si cette option est cochée, l'affichage d'une liste de lecture modifiera également l'ordre de tri dans Calibre.\n"
-"Les listes peuvent être réorganisées manuellement à l'aide de ce plugin ; par défaut, elles sont classées dans l'ordre où elles ont été ajoutées à la liste.\n"
-"Si cette option n'est pas cochée, l'ordre de tri actuel dans Calibre restera inchangé lorsque vous afficherez la liste."
+"Ako označite ovu opciju, prikaz liste za čitanje promeniće i redosled knjiga u programu calibre.\n"
+" Redosled na listama može se ručno menjati u ovom dodatku; podrazumevan je redosled dodavanja.\n"
+" Ako je ne označite, trenutni redosled u programu calibre ostaće nepromenjen."
 
 #: config.py:720
 msgid "Restore sort after viewing list"
-msgstr "Rétablir l'ordre de tri après avoir consulté la liste"
+msgstr "Vrati prethodni redosled posle prikaza liste"
 
 #: config.py:721
 msgid ""
@@ -879,157 +854,151 @@ msgid ""
 "the user quits the reading list view by changing or clearing calibre's\n"
 "search, switching libraries, or quitting calibre."
 msgstr ""
-"Si cette case est cochée, le tri de Calibre reviendra à son état d'origine dès que\n"
-"l'utilisateur quittera la vue de la liste de lecture, que ce soit en modifiant ou en effaçant la\n"
-"recherche dans Calibre, en changeant de bibliothèque ou en quittant Calibre."
+"Ako označite ovu opciju, prethodni redosled u programu calibre biće vraćen\n"
+" kada korisnik napusti prikaz liste za čitanje promenom ili brisanjem pretrage,\n"
+" promenom biblioteke ili zatvaranjem programa calibre."
 
 #: config.py:911
 msgid "Add new list"
-msgstr "Ajouter une nouvelle liste"
+msgstr "Dodaj novu listu"
 
 #: config.py:912
 msgid "Default"
-msgstr "Par défaut"
+msgstr "Podrazumevano"
 
 #: config.py:912
 msgid "Enter a unique display name for this list:"
-msgstr "Saisissez un nom d'affichage unique pour cette liste :"
+msgstr "Unesite jedinstven naziv ove liste za prikaz:"
 
 #: config.py:920 config.py:950
 msgid "Add failed"
-msgstr "Échec de l'ajout"
+msgstr "Dodavanje nije uspelo"
 
 #: config.py:921 config.py:951
 msgid "A list with the same name already exists"
-msgstr "Une liste portant le même nom existe déjà"
+msgstr "Lista sa istim nazivom već postoji"
 
 #: config.py:938
 msgid "Enter a new display name for this list:"
-msgstr "Saisissez un nouveau nom d'affichage pour cette liste :"
+msgstr "Unesite novi naziv ove liste za prikaz:"
 
 #: config.py:969
 msgid "Cannot delete"
-msgstr "Impossible de supprimer"
+msgstr "Nije moguće obrisati"
 
 #: config.py:970
 msgid "You must have at least one list"
-msgstr "Vous devez disposer d'au moins une liste"
+msgstr "Mora postojati bar jedna lista"
 
 #: config.py:972
 msgid "Do you want to delete the list named '%s'"
-msgstr "Souhaitez-vous supprimer la liste intitulée '%s' ?"
+msgstr "Da li želite da obrišete listu „%s“?"
 
 #: config.py:1004
 msgid "Devices:"
-msgstr "Appareils :"
+msgstr "Uređaji:"
 
 #: config.py:1015
 msgid "Add connected device"
-msgstr "Ajouter l'appareil connecté"
+msgstr "Dodaj povezani uređaj"
 
 #: config.py:1017
 msgid ""
 "If you do not have a device connected currently, either plug one\n"
 "in now or exit the dialog and connect to folder/iTunes first"
 msgstr ""
-"Si aucun appareil n'est actuellement connecté, branchez-en un\n"
-"maintenant ou fermez la boîte de dialogue et connectez-vous d'abord au dossier ou à iTunes."
+"Ako trenutno nije povezan nijedan uređaj, povežite ga sada\n"
+" ili izađite iz dijaloga pa se najpre povežite sa fasciklom ili iTunes-om"
 
 #: config.py:1024
 msgid "Rename the currently connected device"
-msgstr "Renommer l'appareil actuellement connecté"
+msgstr "Preimenuj trenutno povezani uređaj"
 
 #: config.py:1029
 msgid "Delete this device from the device list"
-msgstr "Supprimer cet appareil de la liste des appareils"
+msgstr "Ukloni ovaj uređaj sa liste uređaja"
 
 #: config.py:1075 config.py:1079 config.py:1098
 msgid "Rename failed"
-msgstr "Échec du changement de nom"
+msgstr "Preimenovanje nije uspelo"
 
 #: config.py:1076 config.py:1106
 msgid "You must select a device first"
-msgstr "Vous devez d'abord sélectionner un appareil"
+msgstr "Najpre morate izabrati uređaj"
 
 #: config.py:1080
 msgid "You can only rename a device that is currently connected"
-msgstr "Vous ne pouvez renommer qu'un appareil actuellement connecté."
+msgstr "Možete preimenovati samo trenutno povezani uređaj"
 
 #: config.py:1084
 msgid "Rename device"
-msgstr "Renommer le périphérique"
+msgstr "Preimenuj uređaj"
 
 #: config.py:1085
 msgid "Enter a new display name for this device:"
-msgstr "Saisissez un nouveau nom d'affichage pour cet appareil :"
+msgstr "Unesite novi naziv ovog uređaja za prikaz:"
 
 #: config.py:1099
 msgid "An error occured while renaming."
-msgstr "Une erreur s'est produite lors du changement de nom."
+msgstr "Došlo je do greške pri preimenovanju."
 
 #: config.py:1105
 msgid "Delete failed"
-msgstr "Échec de la suppression"
+msgstr "Brisanje nije uspelo"
 
 #: config.py:1110
 msgid "You are about to remove the <b>%s</b> device from this list. "
-msgstr "Vous êtes sur le point de supprimer <b>%s</b>appareil de cette liste."
+msgstr "Upravo ćete ukloniti uređaj <b>%s</b> sa ove liste. "
 
 #: config.py:1111
 msgid "Are you sure you want to continue?"
-msgstr "Êtes-vous sûr de vouloir continuer ?"
+msgstr "Da li ste sigurni da želite da nastavite?"
 
 #: config.py:1166
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Editer les raccourcis clavier associés avec cette extension"
+msgstr "Izmeni prečice na tastaturi za ovaj dodatak"
 
 #: config.py:1170
 msgid "Reset &confirmation dialogs"
-msgstr "Boîtes de dialogue de réinitialisation  &confirmation"
+msgstr "Resetuj &dijaloge za potvrdu"
 
 #: config.py:1171
 msgid "Reset all show me again dialogs for the Reading List plugin"
 msgstr ""
-"Réinitialiser toutes les boîtes de dialogue Me le montrer à nouveau pour "
-"l'extension Reading List"
+"Vrati sve dijaloge za potvrdu dodatka Lista za čitanje na početna "
+"podešavanja"
 
 #: config.py:1175
 msgid "&View library preferences"
-msgstr "&Voir les préférences de la bibliothèque"
+msgstr "&Prikaži postavke biblioteke"
 
 #: config.py:1176
 msgid "View data stored in the library database for this plugin"
-msgstr ""
-"Voir les données stockées dans la base de donnée de la bibliothèque pour "
-"cette extension"
+msgstr "Prikaži podatke sačuvane u bazi podataka biblioteke za ovaj dodatak"
 
 #: config.py:1187
 msgid "Quick Access Options:"
-msgstr "Options d'accès rapide :"
+msgstr "Opcije brzog pristupa:"
 
 #: config.py:1194
 msgid "Allow toolbar button click to view list"
-msgstr ""
-"Permettre l'affichage de la liste en cliquant sur le bouton de la barre "
-"d'outils"
+msgstr "Dozvoli prikaz liste klikom na dugme trake sa alatkama"
 
 #: config.py:1195
 msgid ""
 "By default the toolbar button shows the plugin menu.\n"
 "Check this option to instead display a reading list."
 msgstr ""
-"Par défaut, le bouton de la barre d'outils affiche le menu du plugin.\n"
-"Cochez cette option pour afficher à la place une liste de lecture."
+"Dugme na traci sa alatkama podrazumevano otvara meni dodatka.\n"
+" Izaberite ovu opciju da se umesto toga prikaže lista za čitanje."
 
 #: config.py:1202
 msgid "List to view:"
-msgstr "Liste à afficher :"
+msgstr "Lista za prikaz:"
 
 #: config.py:1211
 msgid "Show dialog when removing books from device"
-msgstr ""
-"Afficher une boîte de dialogue lors de la suppression de livres de "
-"l'appareil"
+msgstr "Prikaži dijalog pri uklanjanju knjiga sa uređaja"
 
 #: config.py:1212
 msgid ""
@@ -1037,26 +1006,26 @@ msgid ""
 "a dialog will be displayed allowing you to confirm first.\n"
 "Uncheck this option to allow unattended syncing to your device."
 msgstr ""
-"Si la synchronisation de votre liste entraîne la suppression de livres de votre appareil,\n"
-"une boîte de dialogue s'affichera pour vous demander de confirmer au préalable.\n"
-"Décochez cette option pour autoriser la synchronisation automatique sur votre appareil."
+"Ako sinhronizacija liste podrazumeva uklanjanje knjiga sa uređaja,\n"
+" pojaviće se dijalog za prethodnu potvrdu.\n"
+" Isključite ovu opciju da biste omogućili sinhronizaciju bez nadzora."
 
 #: config.py:1224
 msgid "Done"
-msgstr "Terminé"
+msgstr "Gotovo"
 
 #: config.py:1225
 msgid "Confirmation dialogs have all been reset"
-msgstr "Les dialogues de confirmations ont tous été réinitialisés"
+msgstr "Svi dijalozi za potvrdu su vraćeni na početna podešavanja"
 
 #: config.py:1247
 msgid "Lists"
-msgstr "Listes"
+msgstr "Liste"
 
 #: config.py:1248
 msgid "Devices"
-msgstr "Appareils"
+msgstr "Uređaji"
 
 #: config.py:1249
 msgid "Other"
-msgstr "Autre"
+msgstr "Ostalo"

@@ -3,716 +3,698 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Nicolas F. <fernetn@gmail.com>, 2022
-# JimmXinu, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
-# Grant Drake, 2022
-# lentrad <lentrad@gmail.com>, 2022
-# Ptit Prince <leporello1791@gmail.com>, 2022
-# Paul Muraille <paul.muraille@tictips.net>, 2024
-# Jean Pierre, 2026
+# Vlado Jendroľ, 2022
+# Martin Sowa, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-06-06 20:21+1000\n"
 "PO-Revision-Date: 2022-09-19 14:51+0000\n"
-"Last-Translator: Jean Pierre, 2026\n"
-"Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
+"Last-Translator: Martin Sowa, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #: ..\common\common_dialogs.py:84 config.py:1165
 msgid "Keyboard shortcuts"
-msgstr "Raccourcis clavier"
+msgstr "Klávesové skratky"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Redémarre Calibre maintenant"
+msgstr "Reštartovať calibre teraz"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
-msgstr "Préférences pour:"
+msgstr "Nastavenia pre:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "Réinitialiser"
+msgstr "Vymazať"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Réinitialiser tous les paramètres pour cette extension"
+msgstr "Vymazať všetky nastavenia tohto zásuvného modulu"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Voulez-vous vraiment modifier vos paramètres dans cette bibliothèque pour ce"
-" plugin ?"
+"Naozaj chcete zmeniť nastavenia tohto zásuvného modulu v tejto knižnici?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Aucun des paramètres d'autres bibliothèques ou stockés dans un fichier JSON "
-"dans votre répertoire d'extensions calibre ne sera modifié."
+"Nastavenia v iných knižniciach ani nastavenia uložené v súbore JSON v "
+"priečinku zásuvných modulov calibre nebudú zmenené."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
-msgstr "Vous devez redémarrer Calibre ensuite."
+msgstr "Potom musíte reštartovať calibre."
 
 #: ..\common\common_dialogs.py:200
 msgid "Settings changed"
-msgstr "Paramètres modifiés"
+msgstr "Nastavenia zmenené"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Les paramètres pour ce plugin dans cette bibliothèque ont été modifiés."
+msgstr "Nastavenia tohto zásuvného modulu v tejto knižnici boli zmenené."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
-msgstr "Merci de redémarrer Calibre maintenant."
+msgstr "Teraz prosím reštartujte calibre."
 
 #: ..\common\common_dialogs.py:209
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Voulez-vous vraiment réinitialiser vos paramètres dans cette bibliothèque "
-"pour cette extension ?"
+"Naozaj chcete vymazať nastavenia tohto zásuvného modulu v tejto knižnici?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
-msgstr "Paramètres supprimés"
+msgstr "Nastavenia vymazané"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
 msgstr ""
-"Tous les paramètres pour cette extension dans cette bibliothèque ont été "
-"réinitialisés."
+"Všetky nastavenia tohto zásuvného modulu v tejto knižnici boli vymazané."
 
 #: ..\common\common_dialogs.py:297
 msgid "Copy to clipboard"
-msgstr "Copier dans le presse-papier"
+msgstr "Kopírovať do schránky"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Indéfini"
+msgstr "Nedefinované"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "Redémarrage nécessaire"
+msgstr "Vyžaduje sa reštart"
 
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"L'image d'icône n'a pas été trouvée - vous devez redémarrer Calibre avant "
-"d'utiliser ce plugin !"
+"Obrázok titulu sa nenašiel – pred použitím tohto zásuvného modulu musíte "
+"reštartovať calibre!"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
-msgstr "Créer une nouvelle colonne"
+msgstr "Vytvoriť nový stĺpec"
 
 #: action.py:49
 msgid "Reading List"
-msgstr "Liste de lecture"
+msgstr "Zoznam na čítanie"
 
 #: action.py:49
 msgid "View or edit lists of books"
-msgstr "Afficher ou modifier des listes de livres"
+msgstr "Zobraziť alebo upraviť zoznamy kníh"
 
 #: action.py:166
 msgid "Add to default list"
-msgstr "Ajouter à la liste par défaut"
+msgstr "Pridať do predvoleného zoznamu"
 
 #: action.py:169
 msgid "Add to %s list"
-msgstr "Ajouter à la liste %s"
+msgstr "Pridať do zoznamu %s"
 
 #: action.py:174
 msgid "Add to list"
-msgstr "Ajouter à la liste"
+msgstr "Pridať do zoznamu"
 
 #: action.py:175
 msgid "Add to the specified list"
-msgstr "Ajouter à la liste spécifiée"
+msgstr "Pridať do určeného zoznamu"
 
 #: action.py:177
 msgid "Add to the \"%s\" list"
-msgstr "Ajouter à la liste \"%s\""
+msgstr "Pridať do zoznamu \"%s\""
 
 #: action.py:181
 msgid "Add to list: %s"
-msgstr "Ajouter à la liste: %s"
+msgstr "Pridať do zoznamu: %s"
 
 #: action.py:183
 msgid "Add to all lists"
-msgstr "Ajouter à toutes les listes"
+msgstr "Pridať do všetkých zoznamov"
 
 #: action.py:189
 msgid "Add series to default list"
-msgstr "Ajouter la série à la liste par défaut"
+msgstr "Pridať sériu do predvoleného zoznamu"
 
 #: action.py:192
 msgid "Add series to %s list"
-msgstr "Ajouter la série à la liste %s"
+msgstr "Pridať sériu do zoznamu %s"
 
 #: action.py:197
 msgid "Add series to list"
-msgstr "Ajouter la série à la liste"
+msgstr "Pridať sériu do zoznamu"
 
 #: action.py:198
 msgid "Add all books in series to the specified list"
-msgstr "Ajouter tous les livres de la série à la liste spécifiée"
+msgstr "Pridať všetky knihy v sérii do určeného zoznamu"
 
 #: action.py:200
 msgid "Add series to the \"%s\" list"
-msgstr "Ajouter la série à la liste \"%s\""
+msgstr "Pridať sériu do zoznamu \"%s\""
 
 #: action.py:204
 msgid "Add series to list: %s"
-msgstr "Ajouter la série à la liste: %s"
+msgstr "Pridať sériu do zoznamu: %s"
 
 #: action.py:206
 msgid "Add series to all lists"
-msgstr "Ajouter la série à toutes les listes"
+msgstr "Pridať sériu do všetkých zoznamov"
 
 #: action.py:212 action.py:214
 msgid "Move to list"
-msgstr "Déplacer vers la liste"
+msgstr "Presunúť do zoznamu"
 
 #: action.py:218
 msgid "Remove from default list"
-msgstr "Supprimer de la liste par défaut"
+msgstr "Odstrániť z predvoleného zoznamu"
 
 #: action.py:221
 msgid "Remove from %s list"
-msgstr "Supprimer de la liste %s"
+msgstr "Odstrániť zo zoznamu %s"
 
 #: action.py:226
 msgid "Remove from list"
-msgstr "Supprimer de la liste"
+msgstr "Odstrániť zo zoznamu"
 
 #: action.py:227
 msgid "Remove from the specified list"
-msgstr "Supprimer de la liste spécifiée"
+msgstr "Odstrániť z určeného zoznamu"
 
 #: action.py:229
 msgid "Remove from the \"%s\" list"
-msgstr "Supprimer de la liste \"%s\""
+msgstr "Odstrániť zo zoznamu \"%s\""
 
 #: action.py:233
 msgid "Remove from list: %s"
-msgstr "Supprimer de la liste: %s"
+msgstr "Odstrániť zo zoznamu: %s"
 
 #: action.py:235
 msgid "Remove from all lists"
-msgstr "Supprimer de toutes les listes"
+msgstr "Odstrániť zo všetkých zoznamov"
 
 #: action.py:241
 msgid "Toggle on default list"
-msgstr "Afficher la liste par défaut"
+msgstr "Prepnúť v predvolenom zozname"
 
 #: action.py:249
 msgid "Toggle on list"
-msgstr "Afficher/masquer la liste"
+msgstr "Prepnúť v zozname"
 
 #: action.py:250
 msgid "Toggle on the specified list"
-msgstr "Afficher/masquer la liste indiquée"
+msgstr "Prepnúť v určenom zozname"
 
 #: action.py:252
 msgid "Toggle on the \"%s\" list"
-msgstr "Activer la liste \"%s\""
+msgstr "Prepnúť v zozname \"%s\""
 
 #: action.py:256
 msgid "Toggle on list: %s"
-msgstr "Afficher/masquer la liste : %s"
+msgstr "Prepnúť v zozname: %s"
 
 #: action.py:261
 msgid "View default list"
-msgstr "Afficher la liste par défaut"
+msgstr "Zobraziť predvolený zoznam"
 
 #: action.py:263 action.py:272
 msgid "View %s list (%d)"
-msgstr "Afficher la liste %s (%d)"
+msgstr "Zobraziť zoznam %s (%d)"
 
 #: action.py:270 action.py:286 action.py:297
 msgid "View books on the \"%s\" list"
-msgstr "Afficher les livres de la liste \"%s\""
+msgstr "Zobraziť knihy v zozname \"%s\""
 
 #: action.py:275 action.py:290 action.py:301
 msgid "View list: %s"
-msgstr "Afficher la liste : %s"
+msgstr "Zobraziť zoznam: %s"
 
 #: action.py:278 action.py:281
 msgid "View list"
-msgstr "Afficher la liste"
+msgstr "Zobraziť zoznam"
 
 #: action.py:279
 msgid "View books on the specified list"
-msgstr "Afficher les livres figurant dans la liste indiquée"
+msgstr "Zobraziť knihy v určenom zozname"
 
 #: action.py:306
 msgid "Edit default list"
-msgstr "Modifier la liste par défaut"
+msgstr "Upraviť predvolený zoznam"
 
 #: action.py:309
 msgid "Edit %s list"
-msgstr "Modifier la liste %s"
+msgstr "Upraviť zoznam %s"
 
 #: action.py:314
 msgid "Edit list"
-msgstr "Modifier la liste"
+msgstr "Upraviť zoznam"
 
 #: action.py:315
 msgid "Edit books on the specified list"
-msgstr "Modifier les livres figurant dans la liste indiquée"
+msgstr "Upraviť knihy v určenom zozname"
 
 #: action.py:317
 msgid "Edit books on the \"%s\" list"
-msgstr "Modifier les livres de la liste \"%s\""
+msgstr "Upraviť knihy v zozname \"%s\""
 
 #: action.py:321
 msgid "Edit list: %s"
-msgstr "Modifier la liste: %s"
+msgstr "Upraviť zoznam: %s"
 
 #: action.py:325
 msgid "Clear default list"
-msgstr "Vider la liste par défaut"
+msgstr "Vymazať predvolený zoznam"
 
 #: action.py:328
 msgid "Clear %s list"
-msgstr "Vider la liste %s"
+msgstr "Vymazať zoznam %s"
 
 #: action.py:333 action.py:336
 msgid "Clear list"
-msgstr "Vider la liste"
+msgstr "Vymazať zoznam"
 
 #: action.py:334
 msgid "Clear all from the specified list"
-msgstr "Tout effacer de la liste indiquée"
+msgstr "Vymazať všetko z určeného zoznamu"
 
 #: action.py:341
 msgid "Clear the \"%s\" list"
-msgstr "Vider la liste \"%s\""
+msgstr "Vymazať zoznam \"%s\""
 
 #: action.py:345
 msgid "Clear list: %s"
-msgstr "Vider la liste: %s"
+msgstr "Vymazať zoznam: %s"
 
 #: action.py:347
 msgid "Clear list (%d)"
-msgstr "Vider la liste (%d)"
+msgstr "Vymazať zoznam (%d)"
 
 #: action.py:351
 msgid "Set default list"
-msgstr "Définir la liste par défaut"
+msgstr "Nastaviť predvolený zoznam"
 
 #: action.py:352
 msgid "Switch the list to use as the current default"
-msgstr "Définir cette liste comme liste par défaut actuelle"
+msgstr "Prepne zoznam, ktorý sa má použiť ako aktuálny predvolený"
 
 #: action.py:355 action.py:365
 msgid "Set your default list to \"%s\""
-msgstr "Définissez votre liste par défaut sur \"%s\""
+msgstr "Nastaviť predvolený zoznam na \"%s\""
 
 #: action.py:359 action.py:369
 msgid "Set default list: %s"
-msgstr "Définir la liste par défaut : %s"
+msgstr "Nastaviť predvolený zoznam: %s"
 
 #: action.py:372 action.py:373
 msgid "Sync Now"
-msgstr "Synchroniser maintenant"
+msgstr "Synchronizovať teraz"
 
 #: action.py:377
 msgid "&Customize plugin"
-msgstr "&Personnaliser l'extension"
+msgstr "&Prispôsobiť zásuvný modul"
 
 #: action.py:380 config.py:1180
 msgid "&Help"
-msgstr "&Aide"
+msgstr "&Pomocník"
 
 #: action.py:388
 msgid "Sync Now (%d)"
-msgstr "Synchroniser maintenant (%d)"
+msgstr "Synchronizovať teraz (%d)"
 
 #: action.py:397 action.py:415
 msgid "Cannot add to list"
-msgstr "Impossible d'ajouter à la liste"
+msgstr "Nemožno pridať do zoznamu"
 
 #: action.py:398 action.py:416 action.py:471 action.py:682 action.py:799
 #: action.py:843 action.py:887 action.py:927 action.py:965
 msgid "No list name specified"
-msgstr "Aucun nom de liste n'a été spécifié"
+msgstr "Nie je určený žiadny názov zoznamu"
 
 #: action.py:470
 msgid "Cannot toggle on list"
-msgstr "Impossible d'activer/désactiver dans la liste"
+msgstr "Nemožno prepnúť v zozname"
 
 #: action.py:507 config.py:1109
 msgid "Are you sure?"
-msgstr "Êtes-vous certain·e ?"
+msgstr "Naozaj?"
 
 #: action.py:508
 msgid "Are you sure you want to clear the '%s' reading list?"
-msgstr "Voulez-vous vraiment vider la liste de lecture '%s'?"
+msgstr "Naozaj chcete vymazať zoznam na čítanie '%s'?"
 
 #: action.py:574
 msgid "Added %d books, removed %d books on your %s list"
-msgstr "%d livres ajoutés, %d supprimés dans votre liste %s"
+msgstr "Pridaných %d kníh, odstránených %d kníh v zozname %s"
 
 #: action.py:607
 msgid "The selected book(s) already exist on this list: <b>%s</b>"
-msgstr ""
-"Le ou les livres sélectionnés sont déjà présents dans cette liste: <b>%s</b>"
+msgstr "Vybrané knihy už existujú v tomto zozname: <b>%s</b>"
 
 #: action.py:609
 msgid "Failed to add to list"
-msgstr "Échec de l'ajout à la liste"
+msgstr "Nepodarilo sa pridať do zoznamu"
 
 #: action.py:618
 msgid "Added %d books to your %s list"
-msgstr "%d livres ajoutés à votre liste %s"
+msgstr "Pridaných %d kníh do zoznamu %s"
 
 #: action.py:660
 msgid "Added to %d reading lists"
-msgstr "Ajouté à %d listes de lecture"
+msgstr "Pridané do %d zoznamov na čítanie"
 
 #: action.py:681
 msgid "Cannot remove from list"
-msgstr "Impossible à supprimer de la liste"
+msgstr "Nemožno odstrániť zo zoznamu"
 
 #: action.py:700
 msgid "The selected book(s) do not exist on this list"
-msgstr "Le ou les livres sélectionnés sont absents de cette liste."
+msgstr "Vybrané knihy neexistujú v tomto zozname"
 
 #: action.py:710 action.py:864 action.py:908
 msgid "Removed %d books from your %s list"
-msgstr "%d livres retirés de votre liste%s"
+msgstr "Odstránených %d kníh zo zoznamu %s"
 
 #: action.py:757
 msgid "Removed from %d reading lists"
-msgstr "Retiré de %d listes de lecture"
+msgstr "Odstránené z %d zoznamov na čítanie"
 
 #: action.py:793 action.py:798
 msgid "Cannot move to list"
-msgstr "Impossible de passer à la liste"
+msgstr "Nemožno presunúť do zoznamu"
 
 #: action.py:794
 msgid "No source list names specified"
-msgstr "Aucun nom de liste source spécifié"
+msgstr "Nie sú určené žiadne názvy zdrojových zoznamov"
 
 #: action.py:819
 msgid "Moved %d books to your list(s)"
-msgstr "%d livres déplacé vers votre ou vos listes"
+msgstr "Presunutých %d kníh do vášho zoznamu (zoznamov)"
 
 #: action.py:842
 msgid "Cannot clear list"
-msgstr "Impossible de vider la liste"
+msgstr "Nemožno vymazať zoznam"
 
 #: action.py:854
 msgid "No books exist on this list"
-msgstr "Il n'y a aucun livre dans cette liste"
+msgstr "V tomto zozname neexistujú žiadne knihy"
 
 #: action.py:886
 msgid "Cannot edit list"
-msgstr "Impossible d'éditer la liste"
+msgstr "Nemožno upraviť zoznam"
 
 #: action.py:926
 msgid "Cannot view list"
-msgstr "Impossible d'afficher la liste"
+msgstr "Nemožno zobraziť zoznam"
 
 #: action.py:964 action.py:973
 msgid "Cannot create list"
-msgstr "Impossible de créer la liste"
+msgstr "Nemožno vytvoriť zoznam"
 
 #: action.py:967
 msgid "Reading List: Cannot create list as list_name not specified"
 msgstr ""
-"Liste de lecture : impossible de créer la liste car le nom de la liste n'a "
-"pas été spécifié"
+"Zoznam na čítanie: Nemožno vytvoriť zoznam, pretože nie je určený názov "
+"zoznamu"
 
 #: action.py:974
 msgid "A list already exists with this name"
-msgstr "Une liste de même nom existe déjà."
+msgstr "Zoznam s týmto názvom už existuje"
 
 #: action.py:976
 msgid "Reading List: Cannot create list as list_name is duplicate:"
 msgstr ""
-"Liste de lecture : impossible de créer la liste car le nom existe déjà :"
+"Zoznam na čítanie: Nemožno vytvoriť zoznam, pretože názov zoznamu je "
+"duplicitný:"
 
 #: action.py:1116
 msgid "READING LIST: Device disconnected"
-msgstr "READING LIST: périphérique déconnecté"
+msgstr "ZOZNAM NA ČÍTANIE: Zariadenie odpojené"
 
 #: action.py:1125
 msgid "READING LIST: Metadata available:"
-msgstr "READING LIST : Métadonnées disponibles :"
+msgstr "ZOZNAM NA ČÍTANIE: Metadáta k dispozícii:"
 
 #: action.py:1170
 msgid "READING LIST: Device found to sync to:"
-msgstr "READING LIST : Appareil pouvant se synchroniser avec :"
+msgstr "ZOZNAM NA ČÍTANIE: Nájdené zariadenie na synchronizáciu:"
 
 #: action.py:1173
 msgid "READING LIST: Not syncing to device as not active"
 msgstr ""
-"READING LIST : La synchronisation avec l'appareil ne s'effectue pas car "
-"celui-ci n'est pas actif"
+"ZOZNAM NA ČÍTANIE: Nesynchronizuje sa so zariadením, pretože nie je aktívne"
 
 #: action.py:1178
 msgid "READING LIST: Sync Now - force_sync="
-msgstr "READING LIST : Sync Now - force_sync="
+msgstr "ZOZNAM NA ČÍTANIE: Synchronizovať teraz – force_sync="
 
 #: action.py:1193
 msgid "Cannot sync to device"
-msgstr "Impossible de synchroniser avec l'appareil"
+msgstr "Nemožno synchronizovať so zariadením"
 
 #: action.py:1194
 msgid "No device found for UUID: %s"
-msgstr "Aucun périphérique n'a été trouvé pour l'UUID : %s"
+msgstr "Pre UUID sa nenašlo žiadne zariadenie: %s"
 
 #: action.py:1208
 msgid "READING LIST: Updating automatic column list(s) "
-msgstr ""
-"READING LIST : Mise à jour automatique de la ou des listes de colonnes"
+msgstr "ZOZNAM NA ČÍTANIE: Aktualizujú sa automatické zoznamy stĺpcov "
 
 #: action.py:1233
 msgid "READING LIST: Not syncing '%s' to device as autosync is false"
 msgstr ""
-"READING LIST : La synchronisation ne s'effectue pas sur '%s' l'appareil car "
-"l'option autosync est désactivée"
+"ZOZNAM NA ČÍTANIE: Nesynchronizuje sa '%s' so zariadením, pretože "
+"automatická synchronizácia je vypnutá"
 
 #: action.py:1241
 msgid "READING LIST: Updating automatic device list(s) "
-msgstr ""
-"READING LIST : Mise à jour automatique de la ou des listes d'appareils"
+msgstr "ZOZNAM NA ČÍTANIE: Aktualizujú sa automatické zoznamy zariadení "
 
 #: action.py:1295
 msgid "READING LIST: Skipping %d books in '%s' list with no formats"
-msgstr ""
-"READING LIST : Ignorer %d des livres de la liste '%s' qui n'ont pas de "
-"format"
+msgstr "ZOZNAM NA ČÍTANIE: Preskakuje sa %d kníh v zozname '%s' bez formátov"
 
 #: action.py:1299
 msgid "READING LIST: Syncing %d books in '%s' to: %s (location:%s)"
 msgstr ""
-"READING LIST : Synchronisation %d des livres de '%s' vers %s (emplacement : "
-"%s)"
+"ZOZNAM NA ČÍTANIE: Synchronizuje sa %d kníh v '%s' do: %s (umiestnenie:%s)"
 
 #: action.py:1308
 msgid "READING LIST: No books on '%s' list need to be synced"
-msgstr "READING LIST : Aucun livre de la liste '%s' ne doit être synchronisé"
+msgstr ""
+"ZOZNAM NA ČÍTANIE: Žiadne knihy v zozname '%s' nie je potrebné "
+"synchronizovať"
 
 #: action.py:1333
 msgid "Main memory"
-msgstr "Mémoire principale"
+msgstr "Hlavná pamäť"
 
 #: action.py:1336
 msgid "Storage Card A"
-msgstr "Carte mémoire A"
+msgstr "Úložná karta A"
 
 #: action.py:1339
 msgid "Storage Card B"
-msgstr "Carte mémoire B"
+msgstr "Úložná karta B"
 
 #: action.py:1344
 msgid "READING LIST: No books on '%s' list found on device to remove"
 msgstr ""
-"READING LIST : Aucun livre figurant sur la liste '%s' n'a été trouvé sur "
-"l'appareil à supprimer"
+"ZOZNAM NA ČÍTANIE: V zariadení sa nenašli žiadne knihy zo zoznamu '%s' na "
+"odstránenie"
 
 #: action.py:1355
 msgid "Reading List error"
-msgstr "Erreur dans la liste de lecture"
+msgstr "Chyba zoznamu na čítanie"
 
 #: action.py:1356
 msgid "Unable to find the Remove Books plugin"
-msgstr "Impossible de trouver le plugin Remove Books"
+msgstr "Nepodarilo sa nájsť zásuvný modul Odstrániť knihy"
 
 #: action.py:1383
 msgid "Deleting books from device."
-msgstr "Suppression de livres de l'appareil."
+msgstr "Odstraňujú sa knihy zo zariadenia."
 
 #: action.py:1422
 msgid "READING LIST: Auto-populating device list: "
-msgstr "READING LIST : Liste des appareils à remplissage automatique :"
+msgstr "ZOZNAM NA ČÍTANIE: Automaticky sa plní zoznam zariadení: "
 
 #: action.py:1427
 msgid "READING LIST: Removing %d ids from automatic list: %s"
 msgstr ""
-"READING LIST : Suppression de %d identifiants de la liste automatique : %s"
+"ZOZNAM NA ČÍTANIE: Odstraňuje sa %d identifikátorov z automatického zoznamu:"
+" %s"
 
 #: action.py:1430
 msgid "READING LIST: Adding %d ids to automatic list: %s"
-msgstr "READING LIST  : Ajouter %d identifiants à la liste automatique : %s"
+msgstr ""
+"ZOZNAM NA ČÍTANIE: Pridáva sa %d identifikátorov do automatického zoznamu: "
+"%s"
 
 #: action.py:1440
 msgid "READING LIST: Auto-populating search list: "
-msgstr "READING LIST : Remplissage automatique de la liste de recherche : "
+msgstr "ZOZNAM NA ČÍTANIE: Automaticky sa plní zoznam vyhľadávania: "
 
 #: action.py:1445
 msgid ""
 "READING LIST: Aborting updating auto-search list as has no expression: "
 msgstr ""
-"READING LIST : Interruption de la mise à jour automatique de la liste de "
-"recherche, car aucune expression n'est présente :"
+"ZOZNAM NA ČÍTANIE: Prerušuje sa aktualizácia zoznamu automatického "
+"vyhľadávania, pretože nemá výraz: "
 
 #: action.py:1449
 msgid "READING LIST: Now %d ids on automatic list: %s"
 msgstr ""
-"READING LIST : Voici les %d identifiants figurant sur la liste automatique :"
-" %s"
+"ZOZNAM NA ČÍTANIE: Teraz %d identifikátorov v automatickom zozname: %s"
 
 #: action.py:1455
 msgid "READING LIST: Attempting to recreate Kindle collections"
-msgstr "READING LIST : Tentative de recréation des collections Kindle"
+msgstr "ZOZNAM NA ČÍTANIE: Pokus o opätovné vytvorenie kolekcií Kindle"
 
 #: action.py:1458
 msgid "Kindle Collections Failed"
-msgstr "Échec des collections Kindle"
+msgstr "Kolekcie Kindle zlyhali"
 
 #: action.py:1459
 msgid ""
 "You must have the Kindle Collections plugin installed in order to recreate "
 "collections after a sync."
 msgstr ""
-"Vous devez avoir installé le plugin Kindle Collections pour pouvoir recréer "
-"vos collections après une synchronisation."
+"Ak chcete po synchronizácii opätovne vytvoriť kolekcie, musíte mať "
+"nainštalovaný zásuvný modul Kolekcie Kindle."
 
 #: config.py:79
 msgid "*Any Device"
-msgstr "*Tout périphérique"
+msgstr "*Akékoľvek zariadenie"
 
 #: config.py:81
 msgid "Manually add/remove items"
-msgstr "Ajouter/Supprimer des éléments manuellement"
+msgstr "Ručne pridávať/odstraňovať položky"
 
 #: config.py:82
 msgid "Auto populated from books on device"
-msgstr "Rempli automatiquement à partir des livres présents sur l'appareil"
+msgstr "Automaticky vyplnené z kníh v zariadení"
 
 #: config.py:83
 msgid "Auto populated from search"
-msgstr "Rempli automatiquement à partir de la recherche"
+msgstr "Automaticky vyplnené z vyhľadávania"
 
 #: config.py:85
 msgid "Add new list items to device"
-msgstr "Ajouter de nouveaux éléments à la liste de l'appareil"
+msgstr "Pridať nové položky zoznamu do zariadenia"
 
 #: config.py:86
 msgid "Add/overwrite all list items to device"
-msgstr "Ajouter/remplacer tous les éléments de la liste sur l'appareil"
+msgstr "Pridať/prepísať všetky položky zoznamu do zariadenia"
 
 #: config.py:87
 msgid "Remove list items from device"
-msgstr "Supprimer les éléments de la liste de l'appareil"
+msgstr "Odstrániť položky zoznamu zo zariadenia"
 
 #: config.py:88
 msgid "Replace device with list, add new items only"
-msgstr ""
-"Remplacer les élément par la liste, en n'ajoutant que les nouveaux éléments"
+msgstr "Nahradiť zariadenie zoznamom, pridať len nové položky"
 
 #: config.py:89
 msgid "Replace device with list, add/overwrite all"
-msgstr "Remplacer l'élément par la liste, tout ajouter/écraser"
+msgstr "Nahradiť zariadenie zoznamom, pridať/prepísať všetko"
 
 #: config.py:91
 msgid "Auto populate list from books on device"
-msgstr ""
-"Remplir automatiquement la liste à partir des livres présents sur l'appareil"
+msgstr "Automaticky vyplniť zoznam z kníh v zariadení"
 
 #: config.py:93
 msgid "Do not update calibre column"
-msgstr "Ne pas mettre à jour la colonne Calibre"
+msgstr "Neaktualizovať stĺpec calibre"
 
 #: config.py:94
 msgid "Update column for add or remove"
-msgstr "Mettre à jour la colonne Ajouter ou supprimer"
+msgstr "Aktualizovať stĺpec pri pridaní alebo odstránení"
 
 #: config.py:95
 msgid "Update column for add to list only"
-msgstr "Mettre à jour la colonne uniquement pour les ajouts à la liste"
+msgstr "Aktualizovať stĺpec len pri pridaní do zoznamu"
 
 #: config.py:96
 msgid "Update column for remove from list only"
-msgstr ""
-"Mettre à jour la colonne uniquement pour les éléments à supprimer de la "
-"liste"
+msgstr "Aktualizovať stĺpec len pri odstránení zo zoznamu"
 
 #: config.py:442
 msgid "Kindle Collections"
-msgstr "Collections Kindle"
+msgstr "Kolekcie Kindle"
 
 #: config.py:442
 msgid "Location"
-msgstr "Emplacement"
+msgstr "Umiestnenie"
 
 #: config.py:442
 msgid "Menu"
-msgstr "Menu"
+msgstr "Ponuka"
 
 #: config.py:442
 msgid "Name"
-msgstr "Nom"
+msgstr "Názov"
 
 #: config.py:442
 msgid "Status"
-msgstr "Statut"
+msgstr "Stav"
 
 #: config.py:546
 msgid "Lists:"
-msgstr "Listes:"
+msgstr "Zoznamy:"
 
 #: config.py:553
 msgid "Add list"
-msgstr "Ajouter une liste"
+msgstr "Pridať zoznam"
 
 #: config.py:558
 msgid "Delete list"
-msgstr "Supprimer la liste"
+msgstr "Odstrániť zoznam"
 
 #: config.py:563 config.py:937
 msgid "Rename list"
-msgstr "Renommer la liste"
+msgstr "Premenovať zoznam"
 
 #: config.py:571
 msgid "Population Options:"
-msgstr "Options relatives au remplissage :"
+msgstr "Možnosti plnenia:"
 
 #: config.py:579
 msgid "&List type:"
-msgstr "&Type de liste :"
+msgstr "&Typ zoznamu:"
 
 #: config.py:580
 msgid "Choose how this list will be populated"
-msgstr "Choisissez comment cette liste sera remplie"
+msgstr "Vyberte, ako sa tento zoznam bude plniť"
 
 #: config.py:587
 msgid "&Auto populate from search:"
-msgstr "&Remplissage automatique à partir de la recherche :"
+msgstr "&Automaticky vyplniť z vyhľadávania:"
 
 #: config.py:588
 msgid ""
 "If list is populated from a search, specify the calibre search expression"
-msgstr ""
-"Si la liste est générée à partir d'une recherche, indiquez l'expression de "
-"recherche Calibre"
+msgstr "Ak sa zoznam plní z vyhľadávania, zadajte vyhľadávací výraz calibre"
 
 #: config.py:596
 msgid "Sync Options:"
-msgstr "Options de synchronisation :"
+msgstr "Možnosti synchronizácie:"
 
 #: config.py:604
 msgid "&Device to sync this list to:"
-msgstr "&Appareil sur lequel synchroniser cette liste :"
+msgstr "&Zariadenie na synchronizáciu tohto zoznamu:"
 
 #: config.py:605
 msgid ""
@@ -720,13 +702,13 @@ msgid ""
 "automatically the contents of a list to that device.\n"
 "This replaces the Book Sync plugin functionality"
 msgstr ""
-"En sélectionnant un appareil, vous pouvez synchroniser, manuellement ou\n"
-"automatiquement, le contenu d'une liste avec cet appareil.\n"
-"Cette fonctionnalité remplace celle du plugin Book Sync."
+"Určením zariadenia môžete synchronizovať obsah zoznamu s týmto zariadením\n"
+"buď manuálne, alebo automaticky.\n"
+"Nahrádza funkčnosť zásuvného modulu Synchronizácia kníh"
 
 #: config.py:613
 msgid "&When syncing this list:"
-msgstr "&Lors de la synchronisation de cette liste :"
+msgstr "&Pri synchronizácii tohto zoznamu:"
 
 #: config.py:614
 msgid ""
@@ -734,25 +716,25 @@ msgid ""
 "Sync only new items, sync all items overwriting existing\n"
 "or use this list to just remove items from your device."
 msgstr ""
-"Gérez la manière dont vos éléments sont synchronisés sur l'appareil.\n"
-"Synchronisez uniquement les nouveaux éléments, synchronisez tous les éléments en écrasant ceux qui existent déjà,\n"
-"ou utilisez cette liste pour simplement supprimer des éléments de votre appareil."
+"Ovládajte, ako sa vaše položky synchronizujú so zariadením.\n"
+"Synchronizovať len nové položky, synchronizovať všetky položky s prepísaním existujúcich\n"
+"alebo použiť tento zoznam len na odstránenie položiek zo zariadenia."
 
 #: config.py:622
 msgid "Sync to this device as soon as it is connected"
-msgstr "Synchroniser avec cet appareil dès qu'il est connecté"
+msgstr "Synchronizovať s týmto zariadením hneď po pripojení"
 
 #: config.py:623
 msgid ""
 "Uncheck this option if you prefer to manually sync to your device.\n"
 "If no device is specified this checkbox has no effect"
 msgstr ""
-"Décochez cette case si vous préférez effectuer la synchronisation manuellement avec votre appareil.\n"
-"Si aucun appareil n'est spécifié, cette case à cocher n'a aucun effet."
+"Odčiarknite túto možnosť, ak uprednostňujete manuálnu synchronizáciu so zariadením.\n"
+"Ak nie je určené žiadne zariadenie, toto začiarkavacie políčko nemá žiadny účinok"
 
 #: config.py:627
 msgid "Clear this list after a sync to this device"
-msgstr "Effacer cette liste après une synchronisation avec cet appareil"
+msgstr "Vymazať tento zoznam po synchronizácii s týmto zariadením"
 
 #: config.py:628
 msgid ""
@@ -760,57 +742,57 @@ msgid ""
 "If no device is specified this checkbox has no effect.\n"
 "This option can only be used with manual type lists."
 msgstr ""
-"Si cette case n'est pas cochée, seuls les éléments qui ne se trouvent pas encore sur l'appareil seront synchronisés.\n"
-"Si aucun appareil n'est spécifié, cette case à cocher n'a aucun effet.\n"
-"Cette option ne peut être utilisée qu'avec des listes de type manuel."
+"Ak je odčiarknuté, synchronizujú sa len položky, ktoré ešte nie sú v zariadení.\n"
+"Ak nie je určené žiadne zariadenie, toto začiarkavacie políčko nemá žiadny účinok.\n"
+"Túto možnosť možno použiť len s manuálnymi typmi zoznamov."
 
 #: config.py:636
 msgid "Column Update Options:"
-msgstr "Options de mise à jour des colonnes :"
+msgstr "Možnosti aktualizácie stĺpcov:"
 
 #: config.py:644
 msgid "When &changing this list:"
-msgstr "Quand &modifier cette liste :"
+msgstr "Pri &zmene tohto zoznamu:"
 
 #: config.py:645
 msgid ""
 "Optionally modify tags or a custom column when you\n"
 "add and/or remove items from this list."
 msgstr ""
-"Vous pouvez, si vous le souhaitez, modifier les balises ou une colonne personnalisée lorsque vous\n"
-"ajoutez et/ou supprimez des éléments de cette liste."
+"Voliteľne upravte značky alebo vlastný stĺpec, keď\n"
+"pridávate a/alebo odstraňujete položky z tohto zoznamu."
 
 #: config.py:652
 msgid "&Column to update:"
-msgstr "&Colonne à mettre à jour :"
+msgstr "&Stĺpec na aktualizáciu:"
 
 #: config.py:653
 msgid ""
 "Optionally specify a column to add/remove a value from\n"
 "when adding or removing items from this list"
 msgstr ""
-"Vous pouvez, si vous le souhaitez, indiquer une colonne dans laquelle ajouter ou supprimer une valeur\n"
-"lorsque vous ajoutez ou supprimez des éléments de cette liste"
+"Voliteľne určte stĺpec, z ktorého sa má pridať/odstrániť hodnota\n"
+"pri pridávaní alebo odstraňovaní položiek z tohto zoznamu"
 
 #: config.py:661
 msgid "&Value in column to add/remove:"
-msgstr "&Valeur de la colonne à ajouter/supprimer :"
+msgstr "&Hodnota v stĺpci na pridanie/odstránenie:"
 
 #: config.py:662
 msgid ""
 "Specify the tag or custom column value to be added when adding\n"
 "to this list or removed when the book is taken off the list"
 msgstr ""
-"Indiquez la valeur de la balise ou de la colonne personnalisée à ajouter lors de l'ajout\n"
-"à cette liste ou à supprimer lorsque le livre est retiré de la liste"
+"Určte značku alebo hodnotu vlastného stĺpca, ktorá sa má pridať pri\n"
+"pridaní do tohto zoznamu alebo odstrániť, keď sa kniha vyberie zo zoznamu"
 
 #: config.py:672
 msgid "Reading Order Options:"
-msgstr "Lecture des options d'ordre :"
+msgstr "Možnosti poradia čítania:"
 
 #: config.py:680
 msgid "&Store in series column:"
-msgstr "&Stocker dans la colonne des séries :"
+msgstr "&Uložiť do stĺpca série:"
 
 #: config.py:681
 msgid ""
@@ -818,31 +800,31 @@ msgid ""
 "in a custom series column. You should not edit this column directly!\n"
 "Only usable with Manually managed lists that are not Cleared on Sync."
 msgstr ""
-"Vous pouvez, si vous le souhaitez, afficher l'ordre actuel de la liste de lecture\n"
-"dans une colonne de série personnalisée. Ne modifiez surtout pas cette colonne directement !\n"
-"Cette fonctionnalité n'est disponible qu'avec les listes gérées manuellement qui ne sont pas effacées lors de la synchronisation."
+"Voliteľne môžete zobraziť aktuálne poradie zoznamu na čítanie\n"
+"vo vlastnom stĺpci série. Tento stĺpec by ste nemali upravovať priamo!\n"
+"Použiteľné len s manuálne spravovanými zoznamami, ktoré sa nevymazávajú pri synchronizácii."
 
 #: config.py:689
 msgid "&Series name:"
-msgstr "&Nom de la série :"
+msgstr "&Názov série:"
 
 #: config.py:690
 msgid ""
 "Specify the name for this reading order series\n"
 "If left blank, will use the name of the list this book is on."
 msgstr ""
-"Indiquez le nom de cette série d'ordre de lecture.\n"
-"Si ce champ est laissé vide, le nom de la liste dans laquelle figure ce livre sera utilisé."
+"Určte názov pre túto sériu poradia čítania\n"
+"Ak necháte prázdne, použije sa názov zoznamu, v ktorom sa kniha nachádza."
 
 #: config.py:699
 msgid "Display Options:"
-msgstr "Options d'affichage :"
+msgstr "Možnosti zobrazenia:"
 
 #: config.py:707
 msgid "Move \"View list\" to the top level of the plugin menu for this list"
 msgstr ""
-"Déplacer « Afficher la liste » au premier niveau du menu du plugin pour "
-"cette liste"
+"Presunúť \"Zobraziť zoznam\" na najvyššiu úroveň ponuky zásuvného modulu pre"
+" tento zoznam"
 
 #: config.py:708
 msgid ""
@@ -850,14 +832,13 @@ msgid ""
 "If checked, this list will be moved to the top level menu for ease of access.\n"
 "NOTE: Your \"default\" list will always appear on the top menu, regardless of this checkbox"
 msgstr ""
-"Par défaut, Reading List crée un sous-menu Afficher les listes pour toutes vos listes lorsque vous en avez plusieurs.\n"
-"Si cette case est cochée, cette liste sera déplacée dans le menu de premier niveau pour faciliter l'accès.\n"
-"REMARQUE : votre liste par défaut apparaîtra toujours dans le menu de premier niveau, quel que soit le choix de cette case à cocher."
+"Zoznam na čítanie predvolene vytvára podponuku Zobraziť zoznam pre všetky vaše zoznamy, keď ich máte viac.\n"
+"Ak je začiarknuté, tento zoznam sa presunie do ponuky najvyššej úrovne pre jednoduchší prístup.\n"
+"POZNÁMKA: Váš \"predvolený\" zoznam sa vždy zobrazí v hornej ponuke bez ohľadu na toto začiarkavacie políčko"
 
 #: config.py:713
 msgid "Apply reading list order when viewing list"
-msgstr ""
-"Appliquer l'ordre de la liste de lecture lors de l'affichage de la liste"
+msgstr "Použiť poradie zoznamu na čítanie pri zobrazení zoznamu"
 
 #: config.py:714
 msgid ""
@@ -865,13 +846,13 @@ msgid ""
 "Lists can be manually reordered using this plugin, defaulting to order added to list.\n"
 "If unchecked, current calibre sort will be left unchanged when you view the list."
 msgstr ""
-"Si cette option est cochée, l'affichage d'une liste de lecture modifiera également l'ordre de tri dans Calibre.\n"
-"Les listes peuvent être réorganisées manuellement à l'aide de ce plugin ; par défaut, elles sont classées dans l'ordre où elles ont été ajoutées à la liste.\n"
-"Si cette option n'est pas cochée, l'ordre de tri actuel dans Calibre restera inchangé lorsque vous afficherez la liste."
+"Ak je začiarknuté, zobrazenie zoznamu na čítanie tiež zmení vaše poradie triedenia calibre.\n"
+"Zoznamy možno manuálne preusporiadať pomocou tohto zásuvného modulu, predvolene podľa poradia pridania do zoznamu.\n"
+"Ak je odčiarknuté, aktuálne triedenie calibre zostane pri zobrazení zoznamu nezmenené."
 
 #: config.py:720
 msgid "Restore sort after viewing list"
-msgstr "Rétablir l'ordre de tri après avoir consulté la liste"
+msgstr "Obnoviť triedenie po zobrazení zoznamu"
 
 #: config.py:721
 msgid ""
@@ -879,157 +860,150 @@ msgid ""
 "the user quits the reading list view by changing or clearing calibre's\n"
 "search, switching libraries, or quitting calibre."
 msgstr ""
-"Si cette case est cochée, le tri de Calibre reviendra à son état d'origine dès que\n"
-"l'utilisateur quittera la vue de la liste de lecture, que ce soit en modifiant ou en effaçant la\n"
-"recherche dans Calibre, en changeant de bibliothèque ou en quittant Calibre."
+"Ak je začiarknuté, triedenie calibre sa obnoví do pôvodného stavu po\n"
+"ukončení zobrazenia zoznamu na čítanie používateľom zmenou alebo\n"
+"vymazaním vyhľadávania calibre, prepnutím knižníc alebo ukončením calibre."
 
 #: config.py:911
 msgid "Add new list"
-msgstr "Ajouter une nouvelle liste"
+msgstr "Pridať nový zoznam"
 
 #: config.py:912
 msgid "Default"
-msgstr "Par défaut"
+msgstr "Predvolené"
 
 #: config.py:912
 msgid "Enter a unique display name for this list:"
-msgstr "Saisissez un nom d'affichage unique pour cette liste :"
+msgstr "Zadajte jedinečný zobrazovaný názov pre tento zoznam:"
 
 #: config.py:920 config.py:950
 msgid "Add failed"
-msgstr "Échec de l'ajout"
+msgstr "Pridanie zlyhalo"
 
 #: config.py:921 config.py:951
 msgid "A list with the same name already exists"
-msgstr "Une liste portant le même nom existe déjà"
+msgstr "Zoznam s rovnakým názvom už existuje"
 
 #: config.py:938
 msgid "Enter a new display name for this list:"
-msgstr "Saisissez un nouveau nom d'affichage pour cette liste :"
+msgstr "Zadajte nový zobrazovaný názov pre tento zoznam:"
 
 #: config.py:969
 msgid "Cannot delete"
-msgstr "Impossible de supprimer"
+msgstr "Nemožno odstrániť"
 
 #: config.py:970
 msgid "You must have at least one list"
-msgstr "Vous devez disposer d'au moins une liste"
+msgstr "Musíte mať aspoň jeden zoznam"
 
 #: config.py:972
 msgid "Do you want to delete the list named '%s'"
-msgstr "Souhaitez-vous supprimer la liste intitulée '%s' ?"
+msgstr "Chcete odstrániť zoznam s názvom '%s'"
 
 #: config.py:1004
 msgid "Devices:"
-msgstr "Appareils :"
+msgstr "Zariadenia:"
 
 #: config.py:1015
 msgid "Add connected device"
-msgstr "Ajouter l'appareil connecté"
+msgstr "Pridať pripojené zariadenie"
 
 #: config.py:1017
 msgid ""
 "If you do not have a device connected currently, either plug one\n"
 "in now or exit the dialog and connect to folder/iTunes first"
 msgstr ""
-"Si aucun appareil n'est actuellement connecté, branchez-en un\n"
-"maintenant ou fermez la boîte de dialogue et connectez-vous d'abord au dossier ou à iTunes."
+"Ak momentálne nemáte pripojené žiadne zariadenie, buď ho teraz pripojte,\n"
+"alebo zatvorte dialóg a najprv sa pripojte k priečinku/iTunes"
 
 #: config.py:1024
 msgid "Rename the currently connected device"
-msgstr "Renommer l'appareil actuellement connecté"
+msgstr "Premenovať aktuálne pripojené zariadenie"
 
 #: config.py:1029
 msgid "Delete this device from the device list"
-msgstr "Supprimer cet appareil de la liste des appareils"
+msgstr "Odstrániť toto zariadenie zo zoznamu zariadení"
 
 #: config.py:1075 config.py:1079 config.py:1098
 msgid "Rename failed"
-msgstr "Échec du changement de nom"
+msgstr "Premenovanie zlyhalo"
 
 #: config.py:1076 config.py:1106
 msgid "You must select a device first"
-msgstr "Vous devez d'abord sélectionner un appareil"
+msgstr "Najprv musíte vybrať zariadenie"
 
 #: config.py:1080
 msgid "You can only rename a device that is currently connected"
-msgstr "Vous ne pouvez renommer qu'un appareil actuellement connecté."
+msgstr "Premenovať možno len aktuálne pripojené zariadenie"
 
 #: config.py:1084
 msgid "Rename device"
-msgstr "Renommer le périphérique"
+msgstr "Premenovať zariadenie"
 
 #: config.py:1085
 msgid "Enter a new display name for this device:"
-msgstr "Saisissez un nouveau nom d'affichage pour cet appareil :"
+msgstr "Zadajte nový zobrazovaný názov pre toto zariadenie:"
 
 #: config.py:1099
 msgid "An error occured while renaming."
-msgstr "Une erreur s'est produite lors du changement de nom."
+msgstr "Pri premenovávaní sa vyskytla chyba."
 
 #: config.py:1105
 msgid "Delete failed"
-msgstr "Échec de la suppression"
+msgstr "Odstránenie zlyhalo"
 
 #: config.py:1110
 msgid "You are about to remove the <b>%s</b> device from this list. "
-msgstr "Vous êtes sur le point de supprimer <b>%s</b>appareil de cette liste."
+msgstr "Chystáte sa odstrániť zariadenie <b>%s</b> z tohto zoznamu. "
 
 #: config.py:1111
 msgid "Are you sure you want to continue?"
-msgstr "Êtes-vous sûr de vouloir continuer ?"
+msgstr "Naozaj chcete pokračovať?"
 
 #: config.py:1166
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Editer les raccourcis clavier associés avec cette extension"
+msgstr "Upraviť klávesové skratky priradené tomuto zásuvnému modulu"
 
 #: config.py:1170
 msgid "Reset &confirmation dialogs"
-msgstr "Boîtes de dialogue de réinitialisation  &confirmation"
+msgstr "Obnoviť &potvrdzovacie dialógy"
 
 #: config.py:1171
 msgid "Reset all show me again dialogs for the Reading List plugin"
 msgstr ""
-"Réinitialiser toutes les boîtes de dialogue Me le montrer à nouveau pour "
-"l'extension Reading List"
+"Obnoviť všetky dialógy „zobraziť znova“ pre zásuvný modul Zoznam na čítanie"
 
 #: config.py:1175
 msgid "&View library preferences"
-msgstr "&Voir les préférences de la bibliothèque"
+msgstr "&Zobraziť nastavenia knižnice"
 
 #: config.py:1176
 msgid "View data stored in the library database for this plugin"
-msgstr ""
-"Voir les données stockées dans la base de donnée de la bibliothèque pour "
-"cette extension"
+msgstr "Zobraziť údaje uložené v databáze knižnice pre tento zásuvný modul"
 
 #: config.py:1187
 msgid "Quick Access Options:"
-msgstr "Options d'accès rapide :"
+msgstr "Možnosti rýchleho prístupu:"
 
 #: config.py:1194
 msgid "Allow toolbar button click to view list"
-msgstr ""
-"Permettre l'affichage de la liste en cliquant sur le bouton de la barre "
-"d'outils"
+msgstr "Povoliť kliknutie na tlačidlo panela nástrojov na zobrazenie zoznamu"
 
 #: config.py:1195
 msgid ""
 "By default the toolbar button shows the plugin menu.\n"
 "Check this option to instead display a reading list."
 msgstr ""
-"Par défaut, le bouton de la barre d'outils affiche le menu du plugin.\n"
-"Cochez cette option pour afficher à la place une liste de lecture."
+"Tlačidlo panela nástrojov predvolene zobrazuje ponuku zásuvného modulu.\n"
+"Začiarknutím tejto možnosti sa namiesto toho zobrazí zoznam na čítanie."
 
 #: config.py:1202
 msgid "List to view:"
-msgstr "Liste à afficher :"
+msgstr "Zoznam na zobrazenie:"
 
 #: config.py:1211
 msgid "Show dialog when removing books from device"
-msgstr ""
-"Afficher une boîte de dialogue lors de la suppression de livres de "
-"l'appareil"
+msgstr "Zobraziť dialóg pri odstraňovaní kníh zo zariadenia"
 
 #: config.py:1212
 msgid ""
@@ -1037,26 +1011,26 @@ msgid ""
 "a dialog will be displayed allowing you to confirm first.\n"
 "Uncheck this option to allow unattended syncing to your device."
 msgstr ""
-"Si la synchronisation de votre liste entraîne la suppression de livres de votre appareil,\n"
-"une boîte de dialogue s'affichera pour vous demander de confirmer au préalable.\n"
-"Décochez cette option pour autoriser la synchronisation automatique sur votre appareil."
+"Ak synchronizácia vášho zoznamu znamená odstránenie kníh zo zariadenia,\n"
+"zobrazí sa dialóg, ktorý vám umožní najprv potvrdenie.\n"
+"Odčiarknutím tejto možnosti povolíte synchronizáciu so zariadením bez dozoru."
 
 #: config.py:1224
 msgid "Done"
-msgstr "Terminé"
+msgstr "Hotovo"
 
 #: config.py:1225
 msgid "Confirmation dialogs have all been reset"
-msgstr "Les dialogues de confirmations ont tous été réinitialisés"
+msgstr "Všetky potvrdzovacie dialógy boli obnovené"
 
 #: config.py:1247
 msgid "Lists"
-msgstr "Listes"
+msgstr "Zoznamy"
 
 #: config.py:1248
 msgid "Devices"
-msgstr "Appareils"
+msgstr "Zariadenia"
 
 #: config.py:1249
 msgid "Other"
-msgstr "Autre"
+msgstr "Iné"
