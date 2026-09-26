@@ -1,0 +1,1248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Merarom <merarom@yahoo.es>, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:48+1000\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:929
+msgid "Keyboard shortcuts"
+msgstr "Kortkommandon"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för detta tillägg"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinerad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:30
+msgid "Import List"
+msgstr "Importera lista"
+
+#: action.py:30
+msgid "Import a list from the clipboard, CSV File or web page"
+msgstr "Importera en lista från urklipp, en CSV-fil eller en webbsida"
+
+#: cmdline.py:129
+msgid "Choose library location to compare against"
+msgstr "Välj biblioteksplats att jämföra med"
+
+#: cmdline.py:133
+msgid "No existing library found"
+msgstr "Inget befintligt bibliotek hittades"
+
+#: cmdline.py:134
+msgid "There is no existing calibre library at {0}"
+msgstr "Det finns inget befintligt calibre-bibliotek i {0}"
+
+#: cmdline.py:149
+msgid "Choose database"
+msgstr "Välj databas"
+
+#: cmdline.py:150
+msgid "Calibre db"
+msgstr "calibre-databas"
+
+#: cmdline.py:154
+msgid "Not a valid database file"
+msgstr "Inte en giltig databasfil"
+
+#: cmdline.py:155
+msgid "File ({}) is not a valid database file"
+msgstr "Filen ({}) är inte en giltig databasfil"
+
+#: cmdline.py:204
+msgid "Choose Library"
+msgstr "Välj bibliotek"
+
+#: cmdline.py:208
+msgid "Choose library"
+msgstr "Välj bibliotek"
+
+#: cmdline.py:211
+msgid "Options"
+msgstr "Alternativ"
+
+#: cmdline.py:218
+msgid "Override Database Path"
+msgstr "Åsidosätt databassökväg"
+
+#: cmdline.py:221
+msgid ""
+"Allows you to specify the full path to metadata.db. Using this variable you "
+"can have metadata.db be in a location other than the library folder."
+msgstr ""
+"Gör det möjligt att ange den fullständiga sökvägen till metadata.db. Med den"
+" här variabeln kan metadata.db ligga på en annan plats än biblioteksmappen."
+
+#: cmdline.py:225
+msgid "Choose database path"
+msgstr "Välj databassökväg"
+
+#: cmdline.py:230
+msgid "Re-initialize db every nth book (Experimental):"
+msgstr "Initiera om databasen efter var n:e bok (experimentellt):"
+
+#: cmdline.py:232
+msgid ""
+"Prevent gradual speed deterioration when importing large number of books"
+msgstr ""
+"Förhindra att hastigheten gradvis försämras vid import av många böcker"
+
+#: cmdline.py:260
+msgid "Error"
+msgstr "Fel"
+
+#: cmdline.py:260
+msgid "You must choose a library"
+msgstr "Du måste välja ett bibliotek"
+
+#: config.py:930
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"
+
+#: config.py:934
+msgid "Reset &confirmation dialogs"
+msgstr "Återställ &bekräftelsedialogrutor"
+
+#: config.py:935
+msgid "Reset all show me again dialogs for the Import list plugin"
+msgstr ""
+"Återställ alla ”visa igen”-dialogrutor för insticksmodulen Importera lista"
+
+#: config.py:939
+msgid "&View library preferences"
+msgstr "&Visa biblioteksinställningar"
+
+#: config.py:940
+msgid "View data stored in the library database for this plugin"
+msgstr "Visa data lagrat i biblioteksdatabasen för detta tilläggsprogram"
+
+#: config.py:944
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: config.py:954
+msgid "Done"
+msgstr "Klar"
+
+#: config.py:955
+msgid "Confirmation dialogs have all been reset"
+msgstr "Alla bekräftelsedialogrutor har återställts."
+
+#: encodings.py:98
+msgid "Add or Remove"
+msgstr "Lägg till eller ta bort"
+
+#: encodings.py:99
+msgid "detect encoding"
+msgstr "identifiera kodning"
+
+#: encodings.py:236
+msgid "Description"
+msgstr "Beskrivning"
+
+#: encodings.py:236
+msgid "Encoding"
+msgstr "Kodning"
+
+#: encodings.py:241
+msgid "Choose Encodings"
+msgstr "Välj kodningar"
+
+#: encodings.py:245
+msgid "Available Encodings:"
+msgstr "Tillgängliga kodningar:"
+
+#: encodings.py:249
+msgid "Chosen Encodings:"
+msgstr "Valda kodningar:"
+
+#: encodings.py:261
+msgid "Add the selected encoding"
+msgstr "Lägg till den valda kodningen"
+
+#: encodings.py:264
+msgid "Remove the selected encoding"
+msgstr "Ta bort den valda kodningen"
+
+#: encodings.py:282
+msgid "Move the selected item up"
+msgstr "Flytta det valda objektet uppåt"
+
+#: encodings.py:286
+msgid "Move the selected item down"
+msgstr "Flytta det valda objektet nedåt"
+
+#: encodings.py:290
+msgid "Reset to defaults"
+msgstr "Återställ till standard"
+
+#: encodings.py:356
+msgid "No encodings selected"
+msgstr "Inga kodningar valda"
+
+#: encodings.py:356 page_resolve.py:128 tab_common.py:360
+msgid "You must select one or more fields first."
+msgstr "Du måste först välja ett eller flera fält."
+
+#: models.py:101
+msgid "A matching book was found in your calibre library"
+msgstr "En matchande bok hittades i ditt calibre-bibliotek"
+
+#: models.py:103
+msgid ""
+"Multiple matches found for this title/author.\n"
+"Resolve this by selecting your match below."
+msgstr ""
+"Flera träffar hittades för den här titeln/författaren.\n"
+"Lös detta genom att välja rätt träff nedan."
+
+#: models.py:106
+msgid ""
+"No matching book found in your library.\n"
+"Add an empty book or search for a match below."
+msgstr ""
+"Ingen matchande bok hittades i biblioteket.\n"
+"Lägg till en tom bok eller sök efter en träff nedan."
+
+#: models.py:109
+msgid "An empty book will be added if you save this list"
+msgstr "En tom bok läggs till om du sparar listan"
+
+#: models.py:111
+msgid "This book was added to your list manually"
+msgstr "Den här boken lades till manuellt i listan"
+
+#: models.py:147 page_resolve.py:631
+msgid "Unknown"
+msgstr "Okänd"
+
+#: page_import.py:101
+msgid "Show only rows with errors"
+msgstr "Visa endast rader med fel"
+
+#: page_import.py:103
+msgid ""
+"<p style=\"font-style:italic;margin-left:30px;\">(errors highlighted in "
+"<span style=\"color:red;\">red</span>)</p>"
+msgstr ""
+"<p style=\"font-style:italic;margin-left:30px;\">(fel markeras med <span "
+"style=\"color:red;\">rött</span>)</p>"
+
+#: page_import.py:127
+msgid ""
+"Some cells contain data that does not match calibre datatypes.\n"
+"\t\tErrors are detailed below:\n"
+msgstr ""
+"Vissa celler innehåller data som inte motsvarar calibres datatyper.\n"
+"\t\tFelen beskrivs nedan:\n"
+
+#: page_import.py:135
+msgid ""
+"\n"
+"Title field is mandatory. The following rows contain empty titles:\n"
+"{}\n"
+msgstr ""
+"\n"
+"Titelfältet är obligatoriskt. Följande rader har tomma titlar:\n"
+"{}\n"
+
+#: page_import.py:142
+msgid ""
+"\n"
+"Column \"{colname}\" must contain only data of type \"{datatype}\".\n"
+"\t\tThe following rows have invalid type for column {colname}:\n"
+msgstr ""
+"\n"
+"Kolumnen ”{colname}” får endast innehålla data av typen ”{datatype}”.\n"
+"\t\tFöljande rader har en ogiltig typ för kolumnen {colname}:\n"
+
+#: page_import.py:147
+msgid "Validation errors details"
+msgstr "Information om valideringsfel"
+
+#: page_import.py:197
+msgid "Title field is mandatory and cannot be empty"
+msgstr "Titelfältet är obligatoriskt och får inte vara tomt"
+
+#: page_import.py:208
+msgid "Data must be of type: {}"
+msgstr "Data måste vara av typen: {}"
+
+#: page_import.py:310
+msgid "Step 1: Configure a list source"
+msgstr "Steg 1: Konfigurera en listkälla"
+
+#: page_import.py:324
+msgid "User Settings"
+msgstr "Användarinställningar"
+
+#: page_import.py:325
+msgid "Predefined"
+msgstr "Fördefinierad"
+
+#: page_import.py:326
+msgid "Clipboard"
+msgstr "Urklipp"
+
+#: page_import.py:327
+msgid "CSV File"
+msgstr "CSV-fil"
+
+#: page_import.py:328
+msgid "Web Page"
+msgstr "Webbsida"
+
+#: page_import.py:375 page_resolve.py:436
+msgid "&Remove book"
+msgstr "&Ta bort bok"
+
+#: page_import.py:376
+msgid "Remove selected books from the list"
+msgstr "Ta bort valda böcker från listan"
+
+#: page_import.py:380
+msgid "&Export to csv"
+msgstr "&Exportera till csv"
+
+#: page_import.py:381
+msgid "Export selected books to csv file"
+msgstr "Exportera valda böcker till en CSV-fil"
+
+#: page_import.py:393 page_resolve.py:590
+msgid "Are you sure you want to remove the selected books from the list?"
+msgstr "Är du säker på att du vill ta bort de valda böckerna från listan?"
+
+#: page_import.py:413
+msgid "Choose file for exported csv"
+msgstr "Välj fil för exporterad CSV"
+
+#: page_persist.py:80
+msgid "Current step progress:"
+msgstr "Förlopp för aktuellt steg:"
+
+#: page_persist.py:86
+msgid "Step"
+msgstr "Steg"
+
+#: page_persist.py:101
+msgid "Importing"
+msgstr "Importerar"
+
+#: page_persist.py:111
+msgid "Aborting"
+msgstr "Avbryter"
+
+#: page_persist.py:171
+msgid "Step 3: Save your imported list / configuration"
+msgstr "Steg 3: Spara den importerade listan/konfigurationen"
+
+#: page_persist.py:175
+msgid "Reading List plugin:"
+msgstr "Insticksmodulen Läslista:"
+
+#: page_persist.py:180
+msgid ""
+"If you have the <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Reading "
+"list</a> plugin installed, you can store the imported books into a list for "
+"use by that plugin."
+msgstr ""
+"Om insticksmodulen <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Läslista</a>"
+" är installerad kan du spara de importerade böckerna i en lista som används "
+"av den insticksmodulen."
+
+#: page_persist.py:184
+msgid "&Do not use the Reading List plugin"
+msgstr "&Använd inte insticksmodulen Läslista"
+
+#: page_persist.py:186
+msgid "Create a &new list:"
+msgstr "Skapa en &ny lista:"
+
+#: page_persist.py:188
+msgid "&Update an existing list:"
+msgstr "&Uppdatera en befintlig lista:"
+
+#: page_persist.py:190
+msgid "&Clear list first replacing with the imported books"
+msgstr "&Rensa först listan och ersätt den med de importerade böckerna"
+
+#: page_persist.py:210
+msgid "Save configuration:"
+msgstr "Spara konfiguration:"
+
+#: page_persist.py:215
+msgid ""
+"You can choose to store the current import settings, if you intend to import"
+" from this source again in future."
+msgstr ""
+"Du kan spara de aktuella importinställningarna om du tänker importera från "
+"den här källan igen."
+
+#: page_persist.py:217
+msgid "&Do not save the current settings"
+msgstr "&Spara inte de aktuella inställningarna"
+
+#: page_persist.py:219
+msgid "&Save settings as:"
+msgstr "&Spara inställningar som:"
+
+#: page_persist.py:380
+msgid "Custom Column Missing"
+msgstr "Anpassad kolumn saknas"
+
+#: page_persist.py:381
+msgid ""
+"You are importing to a custom column '%s' which does not exist in this "
+"library.<p>"
+msgstr ""
+"Du importerar till den anpassade kolumnen ”%s”, som inte finns i det här "
+"biblioteket.<p>"
+
+#: page_persist.py:382
+msgid ""
+"This column will be ignored. Either add a matching custom column or edit "
+"your import statement."
+msgstr ""
+"Kolumnen ignoreras. Lägg antingen till en motsvarande anpassad kolumn eller "
+"redigera importsatsen."
+
+#: page_persist.py:389
+msgid "ImportList plugin: no metadata found for column:"
+msgstr "Insticksmodulen Importera lista: inga metadata hittades för kolumnen:"
+
+#: page_persist.py:448
+msgid "Adding books (%(idx)d of %(count)d): %(title)s"
+msgstr "Lägger till böcker (%(idx)d av %(count)d): %(title)s"
+
+#: page_persist.py:460
+msgid "Updating books (%(idx)d of %(count)d): %(title)s"
+msgstr "Uppdaterar böcker (%(idx)d av %(count)d): %(title)s"
+
+#: page_persist.py:482
+msgid "You have not specified a reading list name"
+msgstr "Du har inte angett något namn på läslistan"
+
+#: page_persist.py:482 page_persist.py:488
+msgid "Invalid List Name"
+msgstr "Ogiltigt listnamn"
+
+#: page_persist.py:488
+msgid "Another list exists with this name"
+msgstr "Det finns redan en annan lista med det här namnet"
+
+#: page_persist.py:502
+msgid "Invalid Setting Name"
+msgstr "Ogiltigt inställningsnamn"
+
+#: page_persist.py:502
+msgid "You have not specified a setting name"
+msgstr "Du har inte angett något inställningsnamn"
+
+#: page_persist.py:545
+msgid "Failed"
+msgstr "Misslyckades"
+
+#: page_resolve.py:56
+msgid "Update metadata fields"
+msgstr "Uppdatera metadata-fält"
+
+#: page_resolve.py:70
+msgid "Select all"
+msgstr "Markera alla"
+
+#: page_resolve.py:72
+msgid "Clear all"
+msgstr "Rensa alla"
+
+#: page_resolve.py:128 tab_common.py:360
+msgid "No fields selected"
+msgstr "Inga fält valda"
+
+#: page_resolve.py:202
+msgid "Step 2: Match list of books against your library"
+msgstr "Steg 2: Matcha boklistan mot biblioteket"
+
+#: page_resolve.py:226
+msgid "Books in list:"
+msgstr "Böcker i lista:"
+
+#: page_resolve.py:242
+msgid "Show All"
+msgstr "Visa alla"
+
+#: page_resolve.py:244
+msgid "Matched"
+msgstr "Matchade"
+
+#: page_resolve.py:245
+msgid "Unmatched"
+msgstr "Omatchade"
+
+#: page_resolve.py:257 page_resolve.py:1045 page_resolve.py:1049
+msgid "Matches in library:"
+msgstr "Träffar i biblioteket:"
+
+#: page_resolve.py:271
+msgid "Clear the match associated with the selected books in the list"
+msgstr "Rensa träffen som är kopplad till de valda böckerna i listan"
+
+#: page_resolve.py:275
+msgid "Remove the selected books from the list"
+msgstr "Ta bort de valda böckerna från listan"
+
+#: page_resolve.py:279
+msgid "Create an empty book for the selected books in the list"
+msgstr "Skapa en tom bok för de valda böckerna i listan"
+
+#: page_resolve.py:283
+msgid "Update metadata for the selected books in the list"
+msgstr "Uppdatera metadata för de valda böckerna i listan"
+
+#: page_resolve.py:287
+msgid "Revert metadata for the selected books back to existing values"
+msgstr "Återställ metadata för de valda böckerna till de befintliga värdena"
+
+#: page_resolve.py:296
+msgid "Possible matches for selected book:"
+msgstr "Möjliga träffar för vald bok:"
+
+#: page_resolve.py:304
+msgid "Search:"
+msgstr "Sök:"
+
+#: page_resolve.py:306
+msgid "&Go!"
+msgstr "&Sök!"
+
+#: page_resolve.py:326
+msgid "Select this book as the match for this list title"
+msgstr "Välj den här boken som träff för listans titel"
+
+#: page_resolve.py:330
+msgid "Append this book as a new item on the list"
+msgstr "Lägg till den här boken som ett nytt objekt i listan"
+
+#: page_resolve.py:433
+msgid "&Clear match"
+msgstr "&Rensa träff"
+
+#: page_resolve.py:441
+msgid "Match &empty book"
+msgstr "Matcha &tom bok"
+
+#: page_resolve.py:444
+msgid "&Update metadata"
+msgstr "&Uppdatera metadata"
+
+#: page_resolve.py:447
+msgid "&Revert metadata"
+msgstr "&Återställ metadata"
+
+#: page_resolve.py:450
+msgid "S&wap Author Names"
+msgstr "B&yt plats på författarnamn"
+
+#: page_resolve.py:451
+msgid "Swap selected author names between FN LN and LN,FN"
+msgstr "Växla de valda författarnamnen mellan FN EN och EN,FN"
+
+#: page_resolve.py:455
+msgid "&Search for title/author"
+msgstr "&Sök efter titel/författare"
+
+#: page_resolve.py:456
+msgid "&Search your library using a simplified title/author of this book"
+msgstr "&Sök i biblioteket med en förenklad titel/författare för boken"
+
+#: page_resolve.py:458
+msgid "Search for &title"
+msgstr "Sök efter &titel"
+
+#: page_resolve.py:459
+msgid "&Search your library using a simplified title of this book"
+msgstr "&Sök i biblioteket med en förenklad titel för boken"
+
+#: page_resolve.py:461
+msgid "Search for &author"
+msgstr "Sök efter &författare"
+
+#: page_resolve.py:462
+msgid "&Search your library using a simplified author of this book"
+msgstr "&Sök i biblioteket med ett förenklat författarnamn för boken"
+
+#: page_resolve.py:482
+msgid "&Select Book"
+msgstr "&Välj bok"
+
+#: page_resolve.py:487
+msgid "&Append to list"
+msgstr "&Lägg till i lista"
+
+#: page_resolve.py:578
+msgid "*** No Match ***"
+msgstr "*** Ingen träff ***"
+
+#: page_resolve.py:742
+msgid "Are you sure you want to add the selected book to the list?"
+msgstr "Är du säker på att du vill lägga till den valda boken i listan?"
+
+#: page_resolve.py:773
+msgid "No Match"
+msgstr "Ingen träff"
+
+#: page_resolve.py:857
+msgid "*** Multiple Matches ***"
+msgstr "*** Flera träffar ***"
+
+#: page_resolve.py:882
+msgid "Multiple Matches"
+msgstr "Flera träffar"
+
+#: page_resolve.py:941
+msgid "Displaying all similar matches for this book"
+msgstr "Visar alla liknande träffar för den här boken"
+
+#: page_resolve.py:959
+msgid "Search for a book in your library"
+msgstr "Sök efter en bok i biblioteket"
+
+#: page_resolve.py:1047
+msgid "Matches in library:(1 match)"
+msgstr "Träffar i biblioteket: (1 träff)"
+
+#: tab_clipboard.py:50
+msgid "&Paste your book list here:"
+msgstr "&Klistra in boklistan här:"
+
+#: tab_clipboard.py:56
+msgid "&Paste"
+msgstr "&Klistra in"
+
+#: tab_clipboard.py:57
+msgid "Replace all text above with the contents of your clipboard"
+msgstr "Ersätt all text ovan med innehållet i urklipp"
+
+#: tab_clipboard.py:68
+msgid "Conversion expression:"
+msgstr "Konverteringsuttryck:"
+
+#: tab_clipboard.py:73
+msgid ""
+"Set a <a href=\"http://manual.calibre-ebook.com/regexp.html\">regular "
+"expression</a> to use for titles and other metadata. The group names you can"
+" use include"
+msgstr ""
+"Ange ett <a href=\"http://manual.calibre-ebook.com/regexp.html\">reguljärt "
+"uttryck</a> som ska användas för titlar och andra metadata. Gruppnamn som "
+"kan användas är bland annat"
+
+#: tab_clipboard.py:87
+msgid "Choose a predefined named pattern"
+msgstr "Välj ett namngivet fördefinierat mönster"
+
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:306
+msgid "&Clear"
+msgstr "&Rensa"
+
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:307
+msgid "Clear all settings back to the defaults on this tab"
+msgstr "Återställ alla inställningar på den här fliken till standardvärdena"
+
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:309
+msgid "&Fields"
+msgstr "&Fält"
+
+#: tab_clipboard.py:100
+msgid "Add expression for field to import"
+msgstr "Lägg till uttryck för fältet som ska importeras"
+
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:312
+msgid "Reverse order"
+msgstr "Omvänd ordning"
+
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:313
+msgid "Display the books in the opposite order to the source"
+msgstr "Visa böckerna i omvänd ordning jämfört med källan"
+
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:314
+msgid "&Preview"
+msgstr "&Förhandsgranska"
+
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:315
+msgid "Preview the results in the books grid"
+msgstr "Förhandsgranska resultaten i bokrutnätet"
+
+#: tab_clipboard.py:173
+msgid "Failed to parse page:\n"
+msgstr "Det gick inte att tolka sidan:\n"
+
+#: tab_clipboard.py:174
+msgid "Invalid regular expression"
+msgstr "Ogiltigt reguljärt uttryck"
+
+#: tab_common.py:140
+msgid "Title"
+msgstr "Titel"
+
+#: tab_common.py:141
+msgid "Authors"
+msgstr "Författare"
+
+#: tab_common.py:142
+msgid "Series"
+msgstr "Serier"
+
+#: tab_common.py:143
+msgid "Series Index"
+msgstr "Serienummer"
+
+#: tab_common.py:144
+msgid "Published"
+msgstr "Publicerad"
+
+#: tab_common.py:145
+msgid "Publisher"
+msgstr "Förlag"
+
+#: tab_common.py:146
+msgid "Rating"
+msgstr "Betyg"
+
+#: tab_common.py:147
+msgid "Tags"
+msgstr "Taggar"
+
+#: tab_common.py:148
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: tab_common.py:149
+msgid "Languages"
+msgstr "Språk"
+
+#: tab_common.py:317
+msgid "Select field(s) to add:"
+msgstr "Välj fält att lägga till:"
+
+#: tab_common.py:369
+msgid "Select fields to import:"
+msgstr "Välj fält att importera:"
+
+#: tab_common.py:436
+msgid "&Match Method:"
+msgstr "&Matchningsmetod:"
+
+#: tab_common.py:439
+msgid "&Title/Author"
+msgstr "&Titel/författare"
+
+#: tab_common.py:443
+msgid "&Identifier:"
+msgstr "&Identifierare:"
+
+#: tab_csv.py:102
+msgid "&Import from file:"
+msgstr "&Importera från fil:"
+
+#: tab_csv.py:114
+msgid "Choose the file to import"
+msgstr "Välj filen som ska importeras"
+
+#: tab_csv.py:121
+msgid "&Contents:"
+msgstr "&Innehåll:"
+
+#: tab_csv.py:126 tab_webpage.py:210
+msgid "&Encoding:"
+msgstr "&Kodning:"
+
+#: tab_csv.py:142
+msgid "&Delimiter:"
+msgstr "&Avgränsare:"
+
+#: tab_csv.py:146
+msgid "&Tab"
+msgstr "&Tabb"
+
+#: tab_csv.py:147
+msgid "&Other:"
+msgstr "&Annan:"
+
+#: tab_csv.py:156
+msgid "Processing:"
+msgstr "Bearbetar:"
+
+#: tab_csv.py:160
+msgid "S&kip first row"
+msgstr "&Hoppa över första raden"
+
+#: tab_csv.py:161
+msgid "Select this option to ignore the first row of column headings"
+msgstr ""
+"Välj alternativet för att ignorera den första raden med kolumnrubriker"
+
+#: tab_csv.py:162
+msgid "&Unquote"
+msgstr "&Ta bort citattecken"
+
+#: tab_csv.py:163
+msgid "Remove any quotes around columns of data"
+msgstr "Ta bort eventuella citattecken runt datakolumner"
+
+#: tab_csv.py:165
+msgid "Tidy"
+msgstr "Rensa upp"
+
+#: tab_csv.py:166
+msgid ""
+"Clean title and authors before importing. This is intended for web imports but is optional for csv\n"
+"It includes removing leading and trailing periods and commas, removing some special characters\n"
+"and removing numbers indicating a position at the begining of the string."
+msgstr ""
+"Rensa titel och författare före import. Detta är avsett för webbimport men är valfritt för CSV.\n"
+"Det omfattar att ta bort inledande och avslutande punkter och kommatecken, vissa specialtecken\n"
+"samt tal i början av strängen som anger en placering."
+
+#: tab_csv.py:184
+msgid " &Columns To Import: "
+msgstr " &Kolumner att importera: "
+
+#: tab_csv.py:210 tab_webpage.py:310
+msgid "Select field(s) to import"
+msgstr "Välj fält att importera"
+
+#: tab_csv.py:213
+msgid "&From headers"
+msgstr "&Från rubriker"
+
+#: tab_csv.py:214
+msgid "Guess field(s) from csv headers"
+msgstr "Identifiera fält utifrån CSV-rubriker"
+
+#: tab_csv.py:318
+msgid "Select a CSV file to import"
+msgstr "Välj en CSV-fil att importera"
+
+#: tab_csv.py:318
+msgid "import CSV file dialog"
+msgstr "dialogruta för import av CSV-fil"
+
+#: tab_csv.py:344
+msgid "File not specified"
+msgstr "Ingen fil har angetts"
+
+#: tab_csv.py:344
+msgid "You have not specified a path to a CSV file"
+msgstr "Du har inte angett någon sökväg till en CSV-fil"
+
+#: tab_csv.py:349
+msgid "File not found"
+msgstr "Filen hittades inte"
+
+#: tab_csv.py:349
+msgid "No file found at this location"
+msgstr "Ingen fil hittades på den här platsen"
+
+#: tab_csv.py:366
+msgid "Invalid options"
+msgstr "Ogiltiga alternativ"
+
+#: tab_csv.py:366
+msgid "You have not specified a delimiter"
+msgstr "Du har inte angett någon avgränsare"
+
+#: tab_settings.py:47
+msgid "Browser"
+msgstr "Webbläsare"
+
+#: tab_settings.py:48
+msgid "View related website page in your web browser"
+msgstr "Visa den tillhörande webbsidan i webbläsaren"
+
+#: tab_settings.py:50
+msgid "Edit"
+msgstr "Redigera"
+
+#: tab_settings.py:51
+msgid "Edit this saved setting"
+msgstr "Redigera den sparade inställningen"
+
+#: tab_settings.py:105
+msgid "Delete"
+msgstr "Ta bort"
+
+#: tab_settings.py:107
+msgid "Rename"
+msgstr "Döp om"
+
+#: tab_settings.py:109
+msgid "Export"
+msgstr "Exportera"
+
+#: tab_settings.py:111
+msgid "Import."
+msgstr "Importera."
+
+#: tab_settings.py:126
+msgid "Are you sure you want to remove the setting \"%s\"?"
+msgstr "Är du säker på att du vill ta bort inställningen ”%s”?"
+
+#: tab_settings.py:127
+msgid "import_list_delete_setting"
+msgstr "import_list_delete_setting"
+
+#: tab_settings.py:140 tab_settings.py:141
+msgid "New setting name:"
+msgstr "Nytt inställningsnamn:"
+
+#: tab_settings.py:148
+msgid "Setting exists"
+msgstr "Inställning existerar"
+
+#: tab_settings.py:149
+msgid "A saved setting already exists with this name."
+msgstr "Det finns redan en sparad inställning med det här namnet."
+
+#: tab_settings.py:168
+msgid "Import Failed"
+msgstr "Importen misslyckades"
+
+#: tab_settings.py:169
+msgid "This is not a valid Import List export archive"
+msgstr "Det här är inte ett giltigt exportarkiv från Importera lista"
+
+#: tab_settings.py:176
+msgid "Import setting"
+msgstr "Importera inställning"
+
+#: tab_settings.py:217
+msgid "Export completed"
+msgstr "Exporten slutförd"
+
+#: tab_settings.py:218
+msgid "Cover setting exported to"
+msgstr "Omslagsinställningen exporterades till"
+
+#: tab_settings.py:226
+msgid "Enter a unique name for this saved setting:"
+msgstr "Ange ett unikt namn för den sparade inställningen:"
+
+#: tab_settings.py:235
+msgid "Cannot add"
+msgstr "Kan inte lägga till"
+
+#: tab_settings.py:236
+msgid "The name you specified is not unique"
+msgstr "Namnet du angav är inte unikt"
+
+#: tab_settings.py:242
+msgid "Select setting file(s) to import"
+msgstr "Välj inställningsfiler att importera"
+
+#: tab_settings.py:249
+msgid "Save setting as"
+msgstr "Spara inställning som"
+
+#: tab_settings.py:334
+msgid "View as List"
+msgstr "Visa som lista"
+
+#: tab_settings.py:336
+msgid "View by Category"
+msgstr "Visa efter kategori"
+
+#: tab_webpage.py:83
+msgid "Strip matching text"
+msgstr "Ta bort matchande text"
+
+#: tab_webpage.py:84
+msgid "Include matching text"
+msgstr "Inkludera matchande text"
+
+#: tab_webpage.py:99
+msgid "Choose a predefined pattern"
+msgstr "Välj ett fördefinierat mönster"
+
+#: tab_webpage.py:104
+msgid "Clear the regular expression"
+msgstr "Rensa det reguljära uttrycket"
+
+#: tab_webpage.py:184
+msgid "&Download from url:"
+msgstr "&Hämta från URL:"
+
+#: tab_webpage.py:197
+msgid "Paste a URL from your clipboard"
+msgstr "Klistra in en URL från urklipp"
+
+#: tab_webpage.py:202
+msgid "Open this url in your web browser"
+msgstr "Öppna den här URL:en i webbläsaren"
+
+#: tab_webpage.py:209
+msgid "&Source html:"
+msgstr "&HTML-källa:"
+
+#: tab_webpage.py:211
+msgid "Specify the web page encoding if not utf-8"
+msgstr "Ange webbsidans kodning om den inte är UTF-8"
+
+#: tab_webpage.py:214
+msgid "Load javascript"
+msgstr "Ladda javascript"
+
+#: tab_webpage.py:215
+msgid ""
+"Enable this option if the web page renders its content using javascript"
+msgstr ""
+"Aktivera alternativet om webbsidan renderar sitt innehåll med JavaScript"
+
+#: tab_webpage.py:216
+msgid "&Delay:"
+msgstr "&Fördröjning:"
+
+#: tab_webpage.py:217
+msgid "Additional delay in seconds to wait for web page javascript to execute"
+msgstr ""
+"Ytterligare fördröjning i sekunder för att vänta på att webbsidans "
+"JavaScript ska köras"
+
+#: tab_webpage.py:238
+msgid "Find:"
+msgstr "Hitta:"
+
+#: tab_webpage.py:243
+msgid "&Text:"
+msgstr "&Text:"
+
+#: tab_webpage.py:244
+msgid ""
+"Search for text to help locate the region of interest such as\n"
+"a book name when designing your xpath expressions"
+msgstr ""
+"Sök efter text som hjälper dig att hitta det relevanta området, till exempel\n"
+"ett boknamn, när du utformar XPath-uttrycken"
+
+#: tab_webpage.py:247
+msgid "Search for specific text"
+msgstr "Sök efter en viss text"
+
+#: tab_webpage.py:249
+msgid "&Find"
+msgstr "&Sök"
+
+#: tab_webpage.py:260
+msgid "XPath:"
+msgstr "XPath:"
+
+#: tab_webpage.py:265
+msgid ""
+"Specify XPath expressions to identify the parent rows and title / authors "
+"within each row in the source html."
+msgstr ""
+"Ange XPath-uttryck för att identifiera överordnade rader samt "
+"titel/författare i varje rad i HTML-källan."
+
+#: tab_webpage.py:286
+msgid "0 occurrences"
+msgstr "0 förekomster"
+
+#: tab_webpage.py:287
+msgid "Number of matches using Test"
+msgstr "Antal träffar med Testa"
+
+#: tab_webpage.py:289
+msgid "Previous test result"
+msgstr "Föregående testresultat"
+
+#: tab_webpage.py:294
+msgid "Next test result"
+msgstr "Nästa testresultat"
+
+#: tab_webpage.py:358
+msgid "No matches"
+msgstr "Inga träffar"
+
+#: tab_webpage.py:358
+msgid "No matches for:"
+msgstr "Inga träffar för:"
+
+#: tab_webpage.py:410
+msgid ""
+"Identify the parent node in the html source that contains a single book"
+msgstr ""
+"Identifiera den överordnade nod i HTML-källan som innehåller en enskild bok"
+
+#: tab_webpage.py:453
+msgid "Strip: %s"
+msgstr "Ta bort: %s"
+
+#: tab_webpage.py:455
+msgid "Include: %s"
+msgstr "Inkludera: %s"
+
+#: tab_webpage.py:458
+msgid "No expression"
+msgstr "Inget uttryck"
+
+#: tab_webpage.py:574 tab_webpage.py:575
+msgid "Failed to download page"
+msgstr "Det gick inte att hämta sidan"
+
+#: tab_webpage.py:618
+msgid "You must specify an xpath"
+msgstr "Du måste ange ett XPath-uttryck"
+
+#: tab_webpage.py:618 tab_webpage.py:625
+msgid "Test failed"
+msgstr "Testet misslyckades"
+
+#: tab_webpage.py:625
+msgid "No html source available to match against"
+msgstr "Ingen HTML-källa är tillgänglig att matcha mot"
+
+#: tab_webpage.py:641 tab_webpage.py:787 tab_webpage.py:789 tab_webpage.py:791
+#: tab_webpage.py:793
+msgid "Invalid xpath"
+msgstr "Ogiltig xpath"
+
+#: tab_webpage.py:642
+msgid "Your xpath expression is invalid"
+msgstr "Ditt XPath-uttryck är ogiltigt"
+
+#: tab_webpage.py:650
+msgid "occurrences"
+msgstr "förekomster"
+
+#: tab_webpage.py:787
+msgid "You have not specified any xpath expressions"
+msgstr "Du har inte angett några XPath-uttryck"
+
+#: tab_webpage.py:789
+msgid "You have not specified a title xpath expression"
+msgstr "Du har inte angett något XPath-uttryck för titel"
+
+#: tab_webpage.py:791
+msgid "You must add a series_index xpath field if using series"
+msgstr "Du måste lägga till ett XPath-fält för series_index om serie används"
+
+#: tab_webpage.py:793
+msgid "You must add a series xpath field if using series index"
+msgstr "Du måste lägga till ett XPath-fält för series om serienummer används"
+
+#: tab_webpage.py:916 tab_webpage.py:917
+msgid "Failed to process page"
+msgstr "Det gick inte att bearbeta sidan"
+
+#: wizards.py:44
+msgid "Import Book List"
+msgstr "Importera boklista"
+
+#: wizards.py:51
+msgid "&Options"
+msgstr "&Alternativ"

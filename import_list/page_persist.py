@@ -347,7 +347,9 @@ class PersistPage(WizardPage):
                     mi.rating = 2 * float(val)
             elif k == '!calibre_tags':
                 tags = [t.strip() for t in val.split(',')]
-                if tags:
+                if book.get('!replace_tags'):
+                    mi.tags = tags
+                elif tags:
                     mi.tags = list(set(mi.tags).union(set(tags)))
             elif k == '!calibre_comments':
                 mi.comments = val

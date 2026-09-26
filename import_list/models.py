@@ -5,10 +5,10 @@ __copyright__ = '2011, Grant Drake'
 
 try:
     from qt.core import (Qt, QAbstractTableModel, QIcon, QBrush, QSortFilterProxyModel,
-                        QModelIndex)
+                        QModelIndex, QFont)
 except ImportError:
     from PyQt5.Qt import (Qt, QAbstractTableModel, QIcon, QBrush, QSortFilterProxyModel,
-                        QModelIndex)
+                        QModelIndex, QFont)
 
 from calibre.ebooks.metadata import fmt_sidx
 
@@ -129,6 +129,22 @@ class BookModel(QAbstractTableModel):
                         color = Qt.blue
             if color is not None:
                 return QBrush(color)
+
+        elif role == Qt.FontRole:
+            font = None
+            if column_name.startswith('!calibre_'):
+                #print('Getting font for:',column_name, book)
+                # Detect whether this column has a value changed from original
+                # We also have stored in the book dictionary the original values
+                # stored as $ + column name - .e.g !calibre_tags and $!calibre_tags
+                orig_column_name = '$' + column_name
+                if orig_column_name in book:
+                    #print('Orig value:',book[orig_column_name], 'current value:',value)
+                    if value != book[orig_column_name]:
+                        font = QFont()
+                        font.setBold(True)
+            if font is not None:
+                return font
         return None
 
     def setData(self, index, value, role):

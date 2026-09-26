@@ -11,13 +11,13 @@ try:
     from qt.core import (QApplication, Qt, QGridLayout, QLabel, QGroupBox, QWidget,
                         QVBoxLayout, QPushButton, QTableWidget, QDialogButtonBox,
                         QHBoxLayout, QAbstractItemView, QLineEdit, QToolButton,
-                        QAction, QSplitter, QListWidget, QComboBox,
+                        QAction, QSplitter, QListWidget, QComboBox, QCheckBox,
                         QListWidgetItem, QRadioButton, QModelIndex)
 except ImportError:                        
     from PyQt5.Qt import (QApplication, Qt, QGridLayout, QLabel, QGroupBox, QWidget,
                         QVBoxLayout, QPushButton, QTableWidget, QDialogButtonBox,
                         QHBoxLayout, QAbstractItemView, QLineEdit, QToolButton,
-                        QAction, QSplitter, QListWidget, QComboBox,
+                        QAction, QSplitter, QListWidget, QComboBox, QCheckBox,
                         QListWidgetItem, QRadioButton, QModelIndex)
 
 from calibre.ebooks.metadata import fmt_sidx, string_to_authors
@@ -75,6 +75,14 @@ class MetadataColumnsDialog(SizePersistedDialog):
         hl.addWidget(self.clear_all_button)
 
         layout.addSpacing(10)
+        self.replace_multiple_checkbox = QCheckBox(_('Replace existing values in tags-like fields'), self)
+        self.replace_multiple_checkbox.setToolTip(_('When checked, selected tags/custom fields are replaced with imported values. Otherwise, imported values are added to existing values.'))
+        self.replace_multiple_checkbox.setChecked(
+            self.load_custom_pref('replace_multiple', self.load_custom_pref('replace_tags', False))
+        )
+        self.layout().addWidget(self.replace_multiple_checkbox)
+
+        layout.addSpacing(10)
 
         self.button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
         self.button_box.accepted.connect(self._accept_clicked)
@@ -124,6 +132,7 @@ class MetadataColumnsDialog(SizePersistedDialog):
 
     def _accept_clicked(self):
         self.selected_names = self._get_checked_field_names()
+        self.replace_multiple = self.replace_multiple_checkbox.isChecked()
         if len(self.selected_names) == 0:
             error_dialog(self, _('No fields selected'), _('You must select one or more fields first.'), show=True)
             return
@@ -137,6 +146,7 @@ class MetadataColumnsDialog(SizePersistedDialog):
         '''
         if len(self.selected_names) > 0:
             self.save_custom_pref('last_selected', self.selected_names)
+            self.save_custom_pref('replace_multiple', self.replace_multiple)
 
 
 def get_user_available_columns_map(db, cols):
@@ -365,16 +375,17 @@ class ResolvePage(WizardPage):
             except Exception as e:
                 pass
         #}
-        # The display columns (used in search and the right-hand grid) must
-        # always include series and tags, which will be placed after our two
-        # other mandatory columns of title and author.
+        # The display columns (used in search and the right-hand grid) always
+        # include series, while tags are shown only when being imported.
+        include_tags = 'tags' in import_columns
         display_columns = list(import_columns)
         if 'series' in display_columns:
             display_columns.remove('series')
         if 'tags' in display_columns:
             display_columns.remove('tags')
         display_columns.insert(2,'series')
-        display_columns.insert(3,'tags')
+        if include_tags:
+            display_columns.insert(3,'tags')
         self.import_cols_map = get_user_available_columns_map(self.db, import_columns)
         self.display_cols_map = get_user_available_columns_map(self.db, display_columns)
         #print('Import columns map:', self.import_cols_map)
@@ -421,7 +432,7 @@ class ResolvePage(WizardPage):
         # Make sure the buttons are set correctly for the opening state
         self._update_book_list_buttons_state()
         self._update_match_buttons_state()
-        self._on_book_list_current_changed(self.list_book_view.model().index(0,0,QModelIndex()), None)
+        self._on_book_list_current_changed(self.list_book_view.model().index(0,0,QModelIndex()))
 
         match_tiers = self.get_match_tiers()
         # clear combo in case the user presses previous and then next
@@ -653,7 +664,7 @@ class ResolvePage(WizardPage):
         finally:
             QApplication.restoreOverrideCursor()
 
-    def update_metadata(self, fields_to_update):
+    def update_metadata(self, fields_to_update, replace_multiple=False):
         rows = self.list_book_view.selectionModel().selectedRows()
         for selrow in rows:
             actual_idx = self.proxy_model.mapToSource(selrow)
@@ -662,14 +673,19 @@ class ResolvePage(WizardPage):
             for field in fields_to_update:
                 # Handle special cases where we do not want to overwrite
                 val = book[field]
+                if field == 'tags':
+                    book['!replace_tags'] = replace_multiple
                 # use get method as 'identifier:idtype' has no cmeta
                 cmeta = self.db.field_metadata.all_metadata().get(field, {})
                 ism = cmeta.get('is_multiple', {}) and field not in ['authors','languages']
                 if ism:
-                    new = [t.strip() for t in val.split(',') if len(t.strip()) > 0]
-                    existing = [t.strip() for t in book['!calibre_'+field].split(cmeta['is_multiple']['ui_to_list']) if len(t.strip()) > 0]
-                    combined = sorted(list(set(new).union(set(existing))))
-                    book['!calibre_'+field] = cmeta['is_multiple']['list_to_ui'].join(combined)
+                    new = [t.strip() for t in val.split(cmeta['is_multiple']['ui_to_list']) if len(t.strip()) > 0]
+                    if replace_multiple:
+                        book['!calibre_'+field] = cmeta['is_multiple']['list_to_ui'].join(new)
+                    else:
+                        existing = [t.strip() for t in book['!calibre_'+field].split(cmeta['is_multiple']['ui_to_list']) if len(t.strip()) > 0]
+                        combined = sorted(list(set(new).union(set(existing))))
+                        book['!calibre_'+field] = cmeta['is_multiple']['list_to_ui'].join(combined)
                 else:
                     book['!calibre_'+field] = val
 
@@ -684,7 +700,7 @@ class ResolvePage(WizardPage):
 
         QApplication.setOverrideCursor(Qt.WaitCursor)
         try:
-            self.update_metadata(d.selected_names)
+            self.update_metadata(d.selected_names, d.replace_multiple)
         finally:
             QApplication.restoreOverrideCursor()
 
@@ -696,10 +712,12 @@ class ResolvePage(WizardPage):
                 actual_idx = self.proxy_model.mapToSource(selrow)
                 book = self.book_model.books[actual_idx.row()]
                 book['!overwrite_metadata'] = False
+                book['!replace_tags'] = False
                 for col in self.import_cols_map.keys():
                     book['!calibre_'+col] = book['$!calibre_'+col]
-                idx = self.book_model.index(actual_idx.row(), actual_idx.row())
-                self.book_model.dataChanged.emit(idx, idx)
+                first_idx = self.book_model.index(actual_idx.row(), 0)
+                last_idx = self.book_model.index(actual_idx.row(), len(self.book_model.headers) - 1)
+                self.book_model.dataChanged.emit(first_idx, last_idx)
             self._update_book_list_buttons_state()
         finally:
             QApplication.restoreOverrideCursor()
@@ -917,15 +935,22 @@ class ResolvePage(WizardPage):
         if languages is not None:
             book['!calibre_languages'] = ', '.join(languages)
 
+        identifiers = None
         for col in self.display_cols_map.keys():
             if col in ('title', 'authors', 'series', 'tags', 'languages'):
                 continue
-            book['!calibre_'+col] = mi.format_field(col, series_with_index=True)[1]
+            if col.lower().startswith('identifier:'):
+                identifier_type = col.split(':', 1)[1]
+                if identifiers is None:
+                    identifiers = self.db.get_identifiers(book_id, index_is_id=True)
+                book['!calibre_'+col] = identifiers.get(identifier_type, '')
+            else:
+                book['!calibre_'+col] = mi.format_field(col, series_with_index=True)[1]
         # Show every column as being unchanged
         for col in self.import_cols_map.keys():
             book['$!calibre_'+col] = book['!calibre_'+col]
 
-    def _on_book_list_current_changed(self, row, old_row):
+    def _on_book_list_current_changed(self, row):
         if self.block_events:
             return
         actual_idx = self.proxy_model.mapToSource(row)

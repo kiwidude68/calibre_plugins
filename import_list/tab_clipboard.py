@@ -32,7 +32,8 @@ except NameError:
 DEFAULT_CLIP_PATTERNS = [('Title - Author', r'(?P<title>.*?) \- (?P<authors>.*)'),
                          ('Title by Author', r'(?P<title>.*?) by (?P<authors>.*)'),
                          ('Title / Author', r'(?P<title>.*?) / (?P<authors>.*)'),
-                         ('Title (Author)', r'(?P<title>.*?) \((?P<authors>.*)\)')]
+                         ('Title (Author)', r'(?P<title>.*?) \((?P<authors>.*)\)'),
+                         ('Title<tab>Author', r'(?P<title>.*?)\t(?P<authors>.*)')]
     
 class ImportClipboardTab(QWidget):
 

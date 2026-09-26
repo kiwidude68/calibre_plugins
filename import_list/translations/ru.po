@@ -7,13 +7,14 @@
 # Victor, 2022
 # Caarmi, 2022
 # ashed <craysy@gmail.com>, 2023
+# Andrei Stepanov, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:48+1000\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
-"Last-Translator: ashed <craysy@gmail.com>, 2023\n"
+"Last-Translator: Andrei Stepanov, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,8 +48,7 @@ msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
 msgstr ""
-"Вы уверены, что хотите изменить настройки в этой библиотеке для этого "
-"плагина?"
+"Уверены, что хотите изменить настройки в этой библиотеке для этого плагина?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -410,7 +410,7 @@ msgstr "Экспортировать выбранные книги в файл c
 
 #: page_import.py:393 page_resolve.py:590
 msgid "Are you sure you want to remove the selected books from the list?"
-msgstr "Вы уверены, что хотите удалить выбранные книги из списка?"
+msgstr "Уверены, что хотите удалить выбранные книги из списка?"
 
 #: page_import.py:413
 msgid "Choose file for exported csv"
@@ -687,7 +687,7 @@ msgstr "*** Нет совпадений ***"
 
 #: page_resolve.py:742
 msgid "Are you sure you want to add the selected book to the list?"
-msgstr "Вы уверены, что хотите добавить выбранную книгу в список?"
+msgstr "Уверены, что хотите добавить выбранную книгу в список?"
 
 #: page_resolve.py:773
 msgid "No Match"
@@ -988,7 +988,7 @@ msgstr "Импорт."
 
 #: tab_settings.py:126
 msgid "Are you sure you want to remove the setting \"%s\"?"
-msgstr "Вы уверены, что хотите удалить настройку \"%s\"?"
+msgstr "Уверены, что хотите удалить настройку «%s»?"
 
 #: tab_settings.py:127
 msgid "import_list_delete_setting"

@@ -1,0 +1,1239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Grant Drake, 2022
+# seeder seeder, 2024
+# Michal Várady <miko.vaji@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:48+1000\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2026\n"
+"Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:929
+msgid "Keyboard shortcuts"
+msgstr "Klávesové zkratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Restartovat calibre nyní"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Předvolby pro:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazat"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazat všechna nastavení tohoto modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "Opravdu chcete změnit nastavení tohoto modulu v této knihovně?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavení v jiných knihovnách ani nastavení uložená v souboru JSON ve složce"
+" modulů calibre se nezmění."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Poté bude nutné calibre restartovat."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavení změněno"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavení tohoto modulu v této knihovně bylo změněno."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Restartujte prosím calibre nyní."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "Opravdu chcete vymazat nastavení tohoto modulu v této knihovně?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavení vymazáno"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Všechna nastavení tohoto modulu v této knihovně byla vymazána."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovat do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinováno"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžadován restart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Ikona titulku nebyla nalezena. Před použitím tohoto modulu musíte "
+"restartovat calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvořit nový sloupec"
+
+#: action.py:30
+msgid "Import List"
+msgstr "Import List"
+
+#: action.py:30
+msgid "Import a list from the clipboard, CSV File or web page"
+msgstr "Importovat seznam ze schránky, souboru CSV nebo webové stránky"
+
+#: cmdline.py:129
+msgid "Choose library location to compare against"
+msgstr "Vyberte umístění knihovny, se kterou se má porovnávat"
+
+#: cmdline.py:133
+msgid "No existing library found"
+msgstr "Nebyla nalezena žádná existující knihovna"
+
+#: cmdline.py:134
+msgid "There is no existing calibre library at {0}"
+msgstr "V umístění {0} není žádná existující knihovna calibre"
+
+#: cmdline.py:149
+msgid "Choose database"
+msgstr "Vybrat databázi"
+
+#: cmdline.py:150
+msgid "Calibre db"
+msgstr "Databáze calibre"
+
+#: cmdline.py:154
+msgid "Not a valid database file"
+msgstr "Neplatný databázový soubor"
+
+#: cmdline.py:155
+msgid "File ({}) is not a valid database file"
+msgstr "Soubor ({}) není platný databázový soubor"
+
+#: cmdline.py:204
+msgid "Choose Library"
+msgstr "Vybrat knihovnu"
+
+#: cmdline.py:208
+msgid "Choose library"
+msgstr "Vybrat knihovnu"
+
+#: cmdline.py:211
+msgid "Options"
+msgstr "Volby"
+
+#: cmdline.py:218
+msgid "Override Database Path"
+msgstr "Přepsat cestu k databázi"
+
+#: cmdline.py:221
+msgid ""
+"Allows you to specify the full path to metadata.db. Using this variable you "
+"can have metadata.db be in a location other than the library folder."
+msgstr ""
+"Umožňuje zadat úplnou cestu k metadata.db. Díky této proměnné může být "
+"metadata.db jinde než ve složce knihovny."
+
+#: cmdline.py:225
+msgid "Choose database path"
+msgstr "Vybrat cestu k databázi"
+
+#: cmdline.py:230
+msgid "Re-initialize db every nth book (Experimental):"
+msgstr "Znovu inicializovat databázi po každé n-té knize (experimentální):"
+
+#: cmdline.py:232
+msgid ""
+"Prevent gradual speed deterioration when importing large number of books"
+msgstr "Zabránit postupnému zpomalování při importu velkého počtu knih"
+
+#: cmdline.py:260
+msgid "Error"
+msgstr "Chyba"
+
+#: cmdline.py:260
+msgid "You must choose a library"
+msgstr "Musíte vybrat knihovnu"
+
+#: config.py:930
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Upravit klávesové zkratky přiřazené tomuto modulu"
+
+#: config.py:934
+msgid "Reset &confirmation dialogs"
+msgstr "Resetovat &potvrzovací dialogy"
+
+#: config.py:935
+msgid "Reset all show me again dialogs for the Import list plugin"
+msgstr "Resetovat všechny potvrzovací dialogy modulu Import List"
+
+#: config.py:939
+msgid "&View library preferences"
+msgstr "Zobrazit &předvolby knihovny"
+
+#: config.py:940
+msgid "View data stored in the library database for this plugin"
+msgstr "Zobrazit data tohoto modulu uložená v databázi knihovny"
+
+#: config.py:944
+msgid "&Help"
+msgstr "&Nápověda"
+
+#: config.py:954
+msgid "Done"
+msgstr "Hotovo"
+
+#: config.py:955
+msgid "Confirmation dialogs have all been reset"
+msgstr "Všechny potvrzovací dialogy byly resetovány"
+
+#: encodings.py:98
+msgid "Add or Remove"
+msgstr "Přidat nebo odebrat"
+
+#: encodings.py:99
+msgid "detect encoding"
+msgstr "rozpoznat kódování"
+
+#: encodings.py:236
+msgid "Description"
+msgstr "Popis"
+
+#: encodings.py:236
+msgid "Encoding"
+msgstr "Kódování"
+
+#: encodings.py:241
+msgid "Choose Encodings"
+msgstr "Vybrat kódování"
+
+#: encodings.py:245
+msgid "Available Encodings:"
+msgstr "Dostupná kódování:"
+
+#: encodings.py:249
+msgid "Chosen Encodings:"
+msgstr "Vybraná kódování:"
+
+#: encodings.py:261
+msgid "Add the selected encoding"
+msgstr "Přidat vybrané kódování"
+
+#: encodings.py:264
+msgid "Remove the selected encoding"
+msgstr "Odebrat vybrané kódování"
+
+#: encodings.py:282
+msgid "Move the selected item up"
+msgstr "Přesunout vybranou položku nahoru"
+
+#: encodings.py:286
+msgid "Move the selected item down"
+msgstr "Přesunout vybranou položku dolů"
+
+#: encodings.py:290
+msgid "Reset to defaults"
+msgstr "Obnovit výchozí nastavení"
+
+#: encodings.py:356
+msgid "No encodings selected"
+msgstr "Nebyla vybrána žádná kódování"
+
+#: encodings.py:356 page_resolve.py:128 tab_common.py:360
+msgid "You must select one or more fields first."
+msgstr "Nejprve musíte vybrat jednu nebo více položek."
+
+#: models.py:101
+msgid "A matching book was found in your calibre library"
+msgstr "Ve vaší knihovně calibre byla nalezena odpovídající kniha"
+
+#: models.py:103
+msgid ""
+"Multiple matches found for this title/author.\n"
+"Resolve this by selecting your match below."
+msgstr ""
+"Pro tento název/autora bylo nalezeno více shod.\n"
+"Vyřešte to výběrem odpovídající knihy níže."
+
+#: models.py:106
+msgid ""
+"No matching book found in your library.\n"
+"Add an empty book or search for a match below."
+msgstr ""
+"Ve vaší knihovně nebyla nalezena žádná odpovídající kniha.\n"
+"Přidejte prázdnou knihu nebo níže vyhledejte shodu."
+
+#: models.py:109
+msgid "An empty book will be added if you save this list"
+msgstr "Pokud tento seznam uložíte, bude přidána prázdná kniha"
+
+#: models.py:111
+msgid "This book was added to your list manually"
+msgstr "Tato kniha byla do seznamu přidána ručně"
+
+#: models.py:147 page_resolve.py:631
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: page_import.py:101
+msgid "Show only rows with errors"
+msgstr "Zobrazit pouze řádky s chybami"
+
+#: page_import.py:103
+msgid ""
+"<p style=\"font-style:italic;margin-left:30px;\">(errors highlighted in "
+"<span style=\"color:red;\">red</span>)</p>"
+msgstr ""
+"<p style=\"font-style:italic;margin-left:30px;\">(chyby zvýrazněné <span "
+"style=\"color:red;\">červeně</span>)</p>"
+
+#: page_import.py:127
+msgid ""
+"Some cells contain data that does not match calibre datatypes.\n"
+"\t\tErrors are detailed below:\n"
+msgstr ""
+"Některé buňky obsahují data, která neodpovídají datovým typům calibre.\n"
+"\t\tChyby jsou podrobně popsány níže:\n"
+
+#: page_import.py:135
+msgid ""
+"\n"
+"Title field is mandatory. The following rows contain empty titles:\n"
+"{}\n"
+msgstr ""
+"\n"
+"Pole Název je povinné. Následující řádky obsahují prázdné názvy:\n"
+"{}\n"
+
+#: page_import.py:142
+msgid ""
+"\n"
+"Column \"{colname}\" must contain only data of type \"{datatype}\".\n"
+"\t\tThe following rows have invalid type for column {colname}:\n"
+msgstr ""
+"\n"
+"Sloupec „{colname}“ smí obsahovat pouze data typu „{datatype}“.\n"
+"Následující řádky mají neplatný typ pro sloupec {colname}:\n"
+
+#: page_import.py:147
+msgid "Validation errors details"
+msgstr "Podrobnosti validačních chyb"
+
+#: page_import.py:197
+msgid "Title field is mandatory and cannot be empty"
+msgstr "Pole Název je povinné a nemůže být prázdné"
+
+#: page_import.py:208
+msgid "Data must be of type: {}"
+msgstr "Data musí být typu: {}"
+
+#: page_import.py:310
+msgid "Step 1: Configure a list source"
+msgstr "Krok 1: Nastavení zdroje seznamu"
+
+#: page_import.py:324
+msgid "User Settings"
+msgstr "Uživatelská nastavení"
+
+#: page_import.py:325
+msgid "Predefined"
+msgstr "Předdefinované"
+
+#: page_import.py:326
+msgid "Clipboard"
+msgstr "Schránka"
+
+#: page_import.py:327
+msgid "CSV File"
+msgstr "Soubor CSV"
+
+#: page_import.py:328
+msgid "Web Page"
+msgstr "Webová stránka"
+
+#: page_import.py:375 page_resolve.py:436
+msgid "&Remove book"
+msgstr "Ode&brat knihu"
+
+#: page_import.py:376
+msgid "Remove selected books from the list"
+msgstr "Odebrat vybrané knihy ze seznamu"
+
+#: page_import.py:380
+msgid "&Export to csv"
+msgstr "&Exportovat do CSV"
+
+#: page_import.py:381
+msgid "Export selected books to csv file"
+msgstr "Exportovat vybrané knihy do souboru CSV"
+
+#: page_import.py:393 page_resolve.py:590
+msgid "Are you sure you want to remove the selected books from the list?"
+msgstr "Opravdu chcete odebrat vybrané knihy ze seznamu?"
+
+#: page_import.py:413
+msgid "Choose file for exported csv"
+msgstr "Vyberte soubor pro export do CSV"
+
+#: page_persist.py:80
+msgid "Current step progress:"
+msgstr "Průběh aktuálního kroku:"
+
+#: page_persist.py:86
+msgid "Step"
+msgstr "Krok"
+
+#: page_persist.py:101
+msgid "Importing"
+msgstr "Probíhá import"
+
+#: page_persist.py:111
+msgid "Aborting"
+msgstr "Přerušení"
+
+#: page_persist.py:171
+msgid "Step 3: Save your imported list / configuration"
+msgstr "Krok 3: Uložení importovaného seznamu / konfigurace"
+
+#: page_persist.py:175
+msgid "Reading List plugin:"
+msgstr "Modul Reading List:"
+
+#: page_persist.py:180
+msgid ""
+"If you have the <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Reading "
+"list</a> plugin installed, you can store the imported books into a list for "
+"use by that plugin."
+msgstr ""
+"Pokud máte nainstalovaný modul <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Reading "
+"List</a>, můžete importované knihy uložit do seznamu pro použití tímto "
+"modulem."
+
+#: page_persist.py:184
+msgid "&Do not use the Reading List plugin"
+msgstr "&Nepoužívat modul Reading List"
+
+#: page_persist.py:186
+msgid "Create a &new list:"
+msgstr "Vytvořit &nový seznam:"
+
+#: page_persist.py:188
+msgid "&Update an existing list:"
+msgstr "Aktualizovat existující &seznam:"
+
+#: page_persist.py:190
+msgid "&Clear list first replacing with the imported books"
+msgstr "Nejprve vy&mazat seznam a nahradit ho importovanými knihami"
+
+#: page_persist.py:210
+msgid "Save configuration:"
+msgstr "Uložení konfigurace:"
+
+#: page_persist.py:215
+msgid ""
+"You can choose to store the current import settings, if you intend to import"
+" from this source again in future."
+msgstr ""
+"Můžete zvolit uložení aktuálních nastavení importu, pokud v budoucnu chcete "
+"z tohoto zdroje importovat znovu."
+
+#: page_persist.py:217
+msgid "&Do not save the current settings"
+msgstr "&Neukládat aktuální nastavení"
+
+#: page_persist.py:219
+msgid "&Save settings as:"
+msgstr "Uložit nastavení &jako:"
+
+#: page_persist.py:380
+msgid "Custom Column Missing"
+msgstr "Chybí vlastní sloupec"
+
+#: page_persist.py:381
+msgid ""
+"You are importing to a custom column '%s' which does not exist in this "
+"library.<p>"
+msgstr ""
+"Importujete do vlastního sloupce „%s“, který v této knihovně neexistuje.<p>"
+
+#: page_persist.py:382
+msgid ""
+"This column will be ignored. Either add a matching custom column or edit "
+"your import statement."
+msgstr ""
+"Tento sloupec bude ignorován. Buď přidejte odpovídající vlastní sloupec, "
+"nebo upravte nastavení importu."
+
+#: page_persist.py:389
+msgid "ImportList plugin: no metadata found for column:"
+msgstr "Modul Import List: pro sloupec nebyla nalezena žádná metadata:"
+
+#: page_persist.py:448
+msgid "Adding books (%(idx)d of %(count)d): %(title)s"
+msgstr "Přidávání knih (%(idx)d z %(count)d): %(title)s"
+
+#: page_persist.py:460
+msgid "Updating books (%(idx)d of %(count)d): %(title)s"
+msgstr "Aktualizace knih (%(idx)d z %(count)d): %(title)s"
+
+#: page_persist.py:482
+msgid "You have not specified a reading list name"
+msgstr "Nezadali jste název seznamu ke čtení"
+
+#: page_persist.py:482 page_persist.py:488
+msgid "Invalid List Name"
+msgstr "Neplatný název seznamu"
+
+#: page_persist.py:488
+msgid "Another list exists with this name"
+msgstr "Seznam s tímto názvem už existuje"
+
+#: page_persist.py:502
+msgid "Invalid Setting Name"
+msgstr "Neplatný název nastavení"
+
+#: page_persist.py:502
+msgid "You have not specified a setting name"
+msgstr "Nezadali jste název nastavení"
+
+#: page_persist.py:545
+msgid "Failed"
+msgstr "Neúspěšné"
+
+#: page_resolve.py:56
+msgid "Update metadata fields"
+msgstr "Aktualizovat pole metadat"
+
+#: page_resolve.py:70
+msgid "Select all"
+msgstr "Vybrat vše"
+
+#: page_resolve.py:72
+msgid "Clear all"
+msgstr "Zrušit výběr všeho"
+
+#: page_resolve.py:128 tab_common.py:360
+msgid "No fields selected"
+msgstr "Nejsou vybrána žádná pole"
+
+#: page_resolve.py:202
+msgid "Step 2: Match list of books against your library"
+msgstr "Krok 2: Spárování seznamu knih s vaší knihovnou"
+
+#: page_resolve.py:226
+msgid "Books in list:"
+msgstr "Knihy v seznamu:"
+
+#: page_resolve.py:242
+msgid "Show All"
+msgstr "Zobrazit vše"
+
+#: page_resolve.py:244
+msgid "Matched"
+msgstr "Spárované"
+
+#: page_resolve.py:245
+msgid "Unmatched"
+msgstr "Nespárované"
+
+#: page_resolve.py:257 page_resolve.py:1045 page_resolve.py:1049
+msgid "Matches in library:"
+msgstr "Shody v knihovně:"
+
+#: page_resolve.py:271
+msgid "Clear the match associated with the selected books in the list"
+msgstr "Zrušit shodu přiřazenou k vybraným knihám v seznamu"
+
+#: page_resolve.py:275
+msgid "Remove the selected books from the list"
+msgstr "Odebrat vybrané knihy ze seznamu"
+
+#: page_resolve.py:279
+msgid "Create an empty book for the selected books in the list"
+msgstr "Vytvořit prázdnou knihu pro vybrané knihy v seznamu"
+
+#: page_resolve.py:283
+msgid "Update metadata for the selected books in the list"
+msgstr "Aktualizovat metadata vybraných knih v seznamu"
+
+#: page_resolve.py:287
+msgid "Revert metadata for the selected books back to existing values"
+msgstr "Vrátit metadata vybraných knih na existující hodnoty"
+
+#: page_resolve.py:296
+msgid "Possible matches for selected book:"
+msgstr "Možné shody pro vybranou knihu:"
+
+#: page_resolve.py:304
+msgid "Search:"
+msgstr "Hledat:"
+
+#: page_resolve.py:306
+msgid "&Go!"
+msgstr "&Hledat!"
+
+#: page_resolve.py:326
+msgid "Select this book as the match for this list title"
+msgstr "Vybrat tuto knihu jako shodu pro tento název v seznamu"
+
+#: page_resolve.py:330
+msgid "Append this book as a new item on the list"
+msgstr "Připojit tuto knihu jako novou položku seznamu"
+
+#: page_resolve.py:433
+msgid "&Clear match"
+msgstr "Zrušit &shodu"
+
+#: page_resolve.py:441
+msgid "Match &empty book"
+msgstr "Spárovat s &prázdnou knihou"
+
+#: page_resolve.py:444
+msgid "&Update metadata"
+msgstr "Aktualizovat &metadata"
+
+#: page_resolve.py:447
+msgid "&Revert metadata"
+msgstr "&Vrátit metadata"
+
+#: page_resolve.py:450
+msgid "S&wap Author Names"
+msgstr "Prohodit jména &autorů"
+
+#: page_resolve.py:451
+msgid "Swap selected author names between FN LN and LN,FN"
+msgstr ""
+"Prohodit vybraná jména autorů mezi formáty Jméno Příjmení a Příjmení, Jméno"
+
+#: page_resolve.py:455
+msgid "&Search for title/author"
+msgstr "&Hledat podle názvu/autora"
+
+#: page_resolve.py:456
+msgid "&Search your library using a simplified title/author of this book"
+msgstr ""
+"&Hledat ve vaší knihovně pomocí zjednodušeného názvu/autora této knihy"
+
+#: page_resolve.py:458
+msgid "Search for &title"
+msgstr "Hledat podle &názvu"
+
+#: page_resolve.py:459
+msgid "&Search your library using a simplified title of this book"
+msgstr "&Hledat ve vaší knihovně pomocí zjednodušeného názvu této knihy"
+
+#: page_resolve.py:461
+msgid "Search for &author"
+msgstr "Hledat podle &autora"
+
+#: page_resolve.py:462
+msgid "&Search your library using a simplified author of this book"
+msgstr "&Hledat ve vaší knihovně pomocí zjednodušeného autora této knihy"
+
+#: page_resolve.py:482
+msgid "&Select Book"
+msgstr "&Vybrat knihu"
+
+#: page_resolve.py:487
+msgid "&Append to list"
+msgstr "Přidat do &seznamu"
+
+#: page_resolve.py:578
+msgid "*** No Match ***"
+msgstr "*** Žádná shoda ***"
+
+#: page_resolve.py:742
+msgid "Are you sure you want to add the selected book to the list?"
+msgstr "Opravdu chcete přidat vybranou knihu do seznamu?"
+
+#: page_resolve.py:773
+msgid "No Match"
+msgstr "Žádná shoda"
+
+#: page_resolve.py:857
+msgid "*** Multiple Matches ***"
+msgstr "*** Více shod ***"
+
+#: page_resolve.py:882
+msgid "Multiple Matches"
+msgstr "Více shod"
+
+#: page_resolve.py:941
+msgid "Displaying all similar matches for this book"
+msgstr "Zobrazují se všechny podobné shody pro tuto knihu"
+
+#: page_resolve.py:959
+msgid "Search for a book in your library"
+msgstr "Hledat knihu ve vaší knihovně"
+
+#: page_resolve.py:1047
+msgid "Matches in library:(1 match)"
+msgstr "Shody v knihovně: (1 shoda)"
+
+#: tab_clipboard.py:50
+msgid "&Paste your book list here:"
+msgstr "&Sem vložte seznam knih:"
+
+#: tab_clipboard.py:56
+msgid "&Paste"
+msgstr "&Vložit"
+
+#: tab_clipboard.py:57
+msgid "Replace all text above with the contents of your clipboard"
+msgstr "Nahradit celý text v poli obsahem schránky"
+
+#: tab_clipboard.py:68
+msgid "Conversion expression:"
+msgstr "Výraz pro převod:"
+
+#: tab_clipboard.py:73
+msgid ""
+"Set a <a href=\"http://manual.calibre-ebook.com/regexp.html\">regular "
+"expression</a> to use for titles and other metadata. The group names you can"
+" use include"
+msgstr ""
+"Nastavte <a href=\"http://manual.calibre-ebook.com/regexp.html\">regulární "
+"výraz</a>, který se použije pro názvy a další metadata. Názvy skupin, které "
+"můžete použít, zahrnují"
+
+#: tab_clipboard.py:87
+msgid "Choose a predefined named pattern"
+msgstr "Vybrat předdefinovaný pojmenovaný vzor"
+
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:306
+msgid "&Clear"
+msgstr "&Vymazat"
+
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:307
+msgid "Clear all settings back to the defaults on this tab"
+msgstr "Vrátit všechna nastavení na této kartě na výchozí hodnoty"
+
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:309
+msgid "&Fields"
+msgstr "&Pole"
+
+#: tab_clipboard.py:100
+msgid "Add expression for field to import"
+msgstr "Přidat výraz pro importované pole"
+
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:312
+msgid "Reverse order"
+msgstr "Obrátit pořadí"
+
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:313
+msgid "Display the books in the opposite order to the source"
+msgstr "Zobrazit knihy v opačném pořadí než ve zdroji"
+
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:314
+msgid "&Preview"
+msgstr "&Náhled"
+
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:315
+msgid "Preview the results in the books grid"
+msgstr "Zobrazit náhled výsledků v mřížce knih"
+
+#: tab_clipboard.py:173
+msgid "Failed to parse page:\n"
+msgstr "Nepodařilo se zpracovat výraz:\n"
+
+#: tab_clipboard.py:174
+msgid "Invalid regular expression"
+msgstr "Neplatný regulární výraz"
+
+#: tab_common.py:140
+msgid "Title"
+msgstr "Název"
+
+#: tab_common.py:141
+msgid "Authors"
+msgstr "Autoři"
+
+#: tab_common.py:142
+msgid "Series"
+msgstr "Série"
+
+#: tab_common.py:143
+msgid "Series Index"
+msgstr "Pořadí v sérii"
+
+#: tab_common.py:144
+msgid "Published"
+msgstr "Publikováno"
+
+#: tab_common.py:145
+msgid "Publisher"
+msgstr "Vydavatel"
+
+#: tab_common.py:146
+msgid "Rating"
+msgstr "Hodnocení"
+
+#: tab_common.py:147
+msgid "Tags"
+msgstr "Štítky"
+
+#: tab_common.py:148
+msgid "Comments"
+msgstr "Komentáře"
+
+#: tab_common.py:149
+msgid "Languages"
+msgstr "Jazyky"
+
+#: tab_common.py:317
+msgid "Select field(s) to add:"
+msgstr "Vyberte pole k přidání:"
+
+#: tab_common.py:369
+msgid "Select fields to import:"
+msgstr "Vyberte pole k importu:"
+
+#: tab_common.py:436
+msgid "&Match Method:"
+msgstr "&Metoda párování:"
+
+#: tab_common.py:439
+msgid "&Title/Author"
+msgstr "&Název/autor"
+
+#: tab_common.py:443
+msgid "&Identifier:"
+msgstr "&Identifikátor:"
+
+#: tab_csv.py:102
+msgid "&Import from file:"
+msgstr "Importovat ze &souboru:"
+
+#: tab_csv.py:114
+msgid "Choose the file to import"
+msgstr "Vybrat soubor k importu"
+
+#: tab_csv.py:121
+msgid "&Contents:"
+msgstr "&Obsah:"
+
+#: tab_csv.py:126 tab_webpage.py:210
+msgid "&Encoding:"
+msgstr "&Kódování:"
+
+#: tab_csv.py:142
+msgid "&Delimiter:"
+msgstr "O&ddělovač:"
+
+#: tab_csv.py:146
+msgid "&Tab"
+msgstr "&Tabulátor"
+
+#: tab_csv.py:147
+msgid "&Other:"
+msgstr "&Jiný:"
+
+#: tab_csv.py:156
+msgid "Processing:"
+msgstr "Zpracování:"
+
+#: tab_csv.py:160
+msgid "S&kip first row"
+msgstr "Přeskočit první řá&dek"
+
+#: tab_csv.py:161
+msgid "Select this option to ignore the first row of column headings"
+msgstr ""
+"Tuto volbu vyberte, pokud chcete ignorovat první řádek se záhlavími sloupců"
+
+#: tab_csv.py:162
+msgid "&Unquote"
+msgstr "Odebrat &uvozovky"
+
+#: tab_csv.py:163
+msgid "Remove any quotes around columns of data"
+msgstr "Odebrat případné uvozovky kolem dat ve sloupcích"
+
+#: tab_csv.py:165
+msgid "Tidy"
+msgstr "Vyčistit"
+
+#: tab_csv.py:166
+msgid ""
+"Clean title and authors before importing. This is intended for web imports but is optional for csv\n"
+"It includes removing leading and trailing periods and commas, removing some special characters\n"
+"and removing numbers indicating a position at the begining of the string."
+msgstr ""
+"Vyčistit název a autory před importem. Toto je určeno pro webové importy, ale u CSV je volitelné\n"
+"Zahrnuje odebrání teček a čárek na začátku a konci, odebrání některých speciálních znaků\n"
+"a odebrání čísel označujících pořadí na začátku řetězce."
+
+#: tab_csv.py:184
+msgid " &Columns To Import: "
+msgstr "&Sloupce k importu:"
+
+#: tab_csv.py:210 tab_webpage.py:310
+msgid "Select field(s) to import"
+msgstr "Vybrat pole k importu"
+
+#: tab_csv.py:213
+msgid "&From headers"
+msgstr "Z &hlaviček"
+
+#: tab_csv.py:214
+msgid "Guess field(s) from csv headers"
+msgstr "Odhadnout pole z hlaviček CSV"
+
+#: tab_csv.py:318
+msgid "Select a CSV file to import"
+msgstr "Vyberte soubor CSV k importu"
+
+#: tab_csv.py:318
+msgid "import CSV file dialog"
+msgstr "import CSV file dialog"
+
+#: tab_csv.py:344
+msgid "File not specified"
+msgstr "Soubor není zadán"
+
+#: tab_csv.py:344
+msgid "You have not specified a path to a CSV file"
+msgstr "Nezadali jste cestu k souboru CSV"
+
+#: tab_csv.py:349
+msgid "File not found"
+msgstr "Soubor nebyl nalezen"
+
+#: tab_csv.py:349
+msgid "No file found at this location"
+msgstr "V tomto umístění nebyl nalezen žádný soubor"
+
+#: tab_csv.py:366
+msgid "Invalid options"
+msgstr "Neplatné volby"
+
+#: tab_csv.py:366
+msgid "You have not specified a delimiter"
+msgstr "Nezadali jste oddělovač"
+
+#: tab_settings.py:47
+msgid "Browser"
+msgstr "Prohlížeč"
+
+#: tab_settings.py:48
+msgid "View related website page in your web browser"
+msgstr "Zobrazit související webovou stránku ve webovém prohlížeči"
+
+#: tab_settings.py:50
+msgid "Edit"
+msgstr "Upravit"
+
+#: tab_settings.py:51
+msgid "Edit this saved setting"
+msgstr "Upravit toto uložené nastavení"
+
+#: tab_settings.py:105
+msgid "Delete"
+msgstr "Odstranit"
+
+#: tab_settings.py:107
+msgid "Rename"
+msgstr "Přejmenovat"
+
+#: tab_settings.py:109
+msgid "Export"
+msgstr "Exportovat"
+
+#: tab_settings.py:111
+msgid "Import."
+msgstr "Importovat"
+
+#: tab_settings.py:126
+msgid "Are you sure you want to remove the setting \"%s\"?"
+msgstr "Opravdu chcete odstranit nastavení „%s“?"
+
+#: tab_settings.py:127
+msgid "import_list_delete_setting"
+msgstr "import_list_delete_setting"
+
+#: tab_settings.py:140 tab_settings.py:141
+msgid "New setting name:"
+msgstr "Nový název nastavení:"
+
+#: tab_settings.py:148
+msgid "Setting exists"
+msgstr "Nastavení existuje"
+
+#: tab_settings.py:149
+msgid "A saved setting already exists with this name."
+msgstr "Uložené nastavení s tímto názvem už existuje."
+
+#: tab_settings.py:168
+msgid "Import Failed"
+msgstr "Import se nezdařil"
+
+#: tab_settings.py:169
+msgid "This is not a valid Import List export archive"
+msgstr "Toto není platný exportní archiv Import List"
+
+#: tab_settings.py:176
+msgid "Import setting"
+msgstr "Importovat nastavení"
+
+#: tab_settings.py:217
+msgid "Export completed"
+msgstr "Export dokončen"
+
+#: tab_settings.py:218
+msgid "Cover setting exported to"
+msgstr "Nastavení bylo exportováno do"
+
+#: tab_settings.py:226
+msgid "Enter a unique name for this saved setting:"
+msgstr "Zadejte jedinečný název tohoto uloženého nastavení:"
+
+#: tab_settings.py:235
+msgid "Cannot add"
+msgstr "Nelze přidat"
+
+#: tab_settings.py:236
+msgid "The name you specified is not unique"
+msgstr "Zadaný název není jedinečný"
+
+#: tab_settings.py:242
+msgid "Select setting file(s) to import"
+msgstr "Vyberte soubory nastavení k importu"
+
+#: tab_settings.py:249
+msgid "Save setting as"
+msgstr "Uložit nastavení jako"
+
+#: tab_settings.py:334
+msgid "View as List"
+msgstr "Zobrazit jako seznam"
+
+#: tab_settings.py:336
+msgid "View by Category"
+msgstr "Zobrazit podle kategorie"
+
+#: tab_webpage.py:83
+msgid "Strip matching text"
+msgstr "Odebrat odpovídající text"
+
+#: tab_webpage.py:84
+msgid "Include matching text"
+msgstr "Zahrnout odpovídající text"
+
+#: tab_webpage.py:99
+msgid "Choose a predefined pattern"
+msgstr "Vybrat předdefinovaný vzor"
+
+#: tab_webpage.py:104
+msgid "Clear the regular expression"
+msgstr "Vymazat regulární výraz"
+
+#: tab_webpage.py:184
+msgid "&Download from url:"
+msgstr "Stáhnout z &URL:"
+
+#: tab_webpage.py:197
+msgid "Paste a URL from your clipboard"
+msgstr "Vložit URL ze schránky"
+
+#: tab_webpage.py:202
+msgid "Open this url in your web browser"
+msgstr "Otevřít tuto URL ve webovém prohlížeči"
+
+#: tab_webpage.py:209
+msgid "&Source html:"
+msgstr "Zdrojové &HTML:"
+
+#: tab_webpage.py:211
+msgid "Specify the web page encoding if not utf-8"
+msgstr "Zadat kódování webové stránky, pokud není utf-8"
+
+#: tab_webpage.py:214
+msgid "Load javascript"
+msgstr "Načíst JavaScript"
+
+#: tab_webpage.py:215
+msgid ""
+"Enable this option if the web page renders its content using javascript"
+msgstr ""
+"Tuto volbu povolte, pokud webová stránka vykresluje svůj obsah pomocí "
+"JavaScriptu"
+
+#: tab_webpage.py:216
+msgid "&Delay:"
+msgstr "Pro&dleva:"
+
+#: tab_webpage.py:217
+msgid "Additional delay in seconds to wait for web page javascript to execute"
+msgstr ""
+"Dodatečná prodleva v sekundách, po kterou se čeká na spuštění JavaScriptu "
+"webové stránky"
+
+#: tab_webpage.py:238
+msgid "Find:"
+msgstr "Najít:"
+
+#: tab_webpage.py:243
+msgid "&Text:"
+msgstr "&Text:"
+
+#: tab_webpage.py:244
+msgid ""
+"Search for text to help locate the region of interest such as\n"
+"a book name when designing your xpath expressions"
+msgstr ""
+"Vyhledat text, který pomůže najít oblast zájmu, například\n"
+"název knihy, při vytváření výrazů XPath"
+
+#: tab_webpage.py:247
+msgid "Search for specific text"
+msgstr "Hledat konkrétní text"
+
+#: tab_webpage.py:249
+msgid "&Find"
+msgstr "&Najít"
+
+#: tab_webpage.py:260
+msgid "XPath:"
+msgstr "XPath:"
+
+#: tab_webpage.py:265
+msgid ""
+"Specify XPath expressions to identify the parent rows and title / authors "
+"within each row in the source html."
+msgstr ""
+"Zadejte výrazy XPath, které ve zdrojovém HTML určí nadřazené řádky a název /"
+" autory v každém řádku."
+
+#: tab_webpage.py:286
+msgid "0 occurrences"
+msgstr "0 výskytů"
+
+#: tab_webpage.py:287
+msgid "Number of matches using Test"
+msgstr "Počet shod nalezených testem"
+
+#: tab_webpage.py:289
+msgid "Previous test result"
+msgstr "Předchozí výsledek testu"
+
+#: tab_webpage.py:294
+msgid "Next test result"
+msgstr "Další výsledek testu"
+
+#: tab_webpage.py:358
+msgid "No matches"
+msgstr "Žádné shody"
+
+#: tab_webpage.py:358
+msgid "No matches for:"
+msgstr "Žádné shody pro:"
+
+#: tab_webpage.py:410
+msgid ""
+"Identify the parent node in the html source that contains a single book"
+msgstr "Určit nadřazený uzel ve zdrojovém HTML, který obsahuje jednu knihu"
+
+#: tab_webpage.py:453
+msgid "Strip: %s"
+msgstr "Odebrat: %s"
+
+#: tab_webpage.py:455
+msgid "Include: %s"
+msgstr "Zahrnout: %s"
+
+#: tab_webpage.py:458
+msgid "No expression"
+msgstr "Žádný výraz"
+
+#: tab_webpage.py:574 tab_webpage.py:575
+msgid "Failed to download page"
+msgstr "Nepodařilo se stáhnout stránku"
+
+#: tab_webpage.py:618
+msgid "You must specify an xpath"
+msgstr "Musíte zadat výraz XPath"
+
+#: tab_webpage.py:618 tab_webpage.py:625
+msgid "Test failed"
+msgstr "Test se nezdařil"
+
+#: tab_webpage.py:625
+msgid "No html source available to match against"
+msgstr "Není k dispozici žádné zdrojové HTML pro hledání shod"
+
+#: tab_webpage.py:641 tab_webpage.py:787 tab_webpage.py:789 tab_webpage.py:791
+#: tab_webpage.py:793
+msgid "Invalid xpath"
+msgstr "Neplatný výraz XPath"
+
+#: tab_webpage.py:642
+msgid "Your xpath expression is invalid"
+msgstr "Výraz XPath je neplatný"
+
+#: tab_webpage.py:650
+msgid "occurrences"
+msgstr "výskytů"
+
+#: tab_webpage.py:787
+msgid "You have not specified any xpath expressions"
+msgstr "Nezadali jste žádné výrazy XPath"
+
+#: tab_webpage.py:789
+msgid "You have not specified a title xpath expression"
+msgstr "Nezadali jste výraz XPath pro název"
+
+#: tab_webpage.py:791
+msgid "You must add a series_index xpath field if using series"
+msgstr "Pokud používáte sérii, musíte přidat pole XPath series_index"
+
+#: tab_webpage.py:793
+msgid "You must add a series xpath field if using series index"
+msgstr "Pokud používáte pořadí v sérii, musíte přidat pole XPath series"
+
+#: tab_webpage.py:916 tab_webpage.py:917
+msgid "Failed to process page"
+msgstr "Nepodařilo se zpracovat stránku"
+
+#: wizards.py:44
+msgid "Import Book List"
+msgstr "Import seznamu knih"
+
+#: wizards.py:51
+msgid "&Options"
+msgstr "&Možnosti"

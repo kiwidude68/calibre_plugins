@@ -1,0 +1,1238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Biljana Vukovic <biljana.vukovic1@yahoo.com>, 2022
+# Branislav Kapetanović, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:48+1000\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: Branislav Kapetanović, 2026\n"
+"Language-Team: Serbian (Latin) (https://app.transifex.com/calibre/teams/19337/sr@latin/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sr@latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:929
+msgid "Keyboard shortcuts"
+msgstr "Prečice na tastaturi"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Ponovo pokreni calibre sada"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Podešavanja za:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Obriši"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Obriši sva podešavanja ovog dodatka"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Da li ste sigurni da želite da promenite podešavanja ovog dodatka u ovoj "
+"biblioteci?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Podešavanja u drugim bibliotekama, kao ni ona sačuvana u JSON datoteci u "
+"fascikli dodataka za calibre, neće biti promenjena."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Nakon toga morate ponovo pokrenuti calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Podešavanja su promenjena"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Podešavanja ovog dodatka u ovoj biblioteci su promenjena."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Ponovo pokrenite calibre sada."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Da li ste sigurni da želite da obrišete podešavanja ovog dodatka u ovoj "
+"biblioteci?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Podešavanja su obrisana"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Sva podešavanja ovog dodatka u ovoj biblioteci su obrisana."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiraj u privremenu memoriju"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinisano"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Potrebno je ponovno pokretanje"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Slika naslova nije pronađena — morate ponovo pokrenuti calibre pre "
+"korišćenja ovog dodatka!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Napravi novu kolonu"
+
+#: action.py:30
+msgid "Import List"
+msgstr "Uvezi listu"
+
+#: action.py:30
+msgid "Import a list from the clipboard, CSV File or web page"
+msgstr "Uvezi listu iz privremene memorije, CSV datoteke ili veb-stranice"
+
+#: cmdline.py:129
+msgid "Choose library location to compare against"
+msgstr "Izaberi lokaciju biblioteke za poređenje"
+
+#: cmdline.py:133
+msgid "No existing library found"
+msgstr "Nije pronađena postojeća biblioteka"
+
+#: cmdline.py:134
+msgid "There is no existing calibre library at {0}"
+msgstr "Ne postoji postojeća calibre biblioteka na {0}"
+
+#: cmdline.py:149
+msgid "Choose database"
+msgstr "Izaberi bazu podataka"
+
+#: cmdline.py:150
+msgid "Calibre db"
+msgstr "Baza podataka programa calibre"
+
+#: cmdline.py:154
+msgid "Not a valid database file"
+msgstr "Neispravna datoteka baze podataka"
+
+#: cmdline.py:155
+msgid "File ({}) is not a valid database file"
+msgstr "Datoteka ({}) nije ispravna datoteka baze podataka"
+
+#: cmdline.py:204
+msgid "Choose Library"
+msgstr "Izaberi biblioteku"
+
+#: cmdline.py:208
+msgid "Choose library"
+msgstr "Izaberi biblioteku"
+
+#: cmdline.py:211
+msgid "Options"
+msgstr "Opcije"
+
+#: cmdline.py:218
+msgid "Override Database Path"
+msgstr "Zameni putanju baze podataka"
+
+#: cmdline.py:221
+msgid ""
+"Allows you to specify the full path to metadata.db. Using this variable you "
+"can have metadata.db be in a location other than the library folder."
+msgstr ""
+"Omogućava da navedete punu putanju do datoteke metadata.db. Tako metadata.db"
+" može biti smeštena izvan fascikle biblioteke."
+
+#: cmdline.py:225
+msgid "Choose database path"
+msgstr "Izaberi putanju baze podataka"
+
+#: cmdline.py:230
+msgid "Re-initialize db every nth book (Experimental):"
+msgstr "Ponovo inicijalizuj bazu posle svakih n knjiga (eksperimentalno):"
+
+#: cmdline.py:232
+msgid ""
+"Prevent gradual speed deterioration when importing large number of books"
+msgstr "Sprečava postepeno usporavanje pri uvozu velikog broja knjiga"
+
+#: cmdline.py:260
+msgid "Error"
+msgstr "Greška"
+
+#: cmdline.py:260
+msgid "You must choose a library"
+msgstr "Morate izabrati biblioteku"
+
+#: config.py:930
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Izmeni prečice na tastaturi za ovaj dodatak"
+
+#: config.py:934
+msgid "Reset &confirmation dialogs"
+msgstr "Resetuj &dijaloge za potvrdu"
+
+#: config.py:935
+msgid "Reset all show me again dialogs for the Import list plugin"
+msgstr "Ponovo uključi sve dijaloge za potvrdu dodatka Import List"
+
+#: config.py:939
+msgid "&View library preferences"
+msgstr "&Prikaži postavke biblioteke"
+
+#: config.py:940
+msgid "View data stored in the library database for this plugin"
+msgstr "Prikaži podatke sačuvane u bazi podataka biblioteke za ovaj dodatak"
+
+#: config.py:944
+msgid "&Help"
+msgstr "&Pomoć"
+
+#: config.py:954
+msgid "Done"
+msgstr "Gotovo"
+
+#: config.py:955
+msgid "Confirmation dialogs have all been reset"
+msgstr "Svi dijalozi za potvrdu su vraćeni na početna podešavanja"
+
+#: encodings.py:98
+msgid "Add or Remove"
+msgstr "Dodaj ili ukloni"
+
+#: encodings.py:99
+msgid "detect encoding"
+msgstr "otkrij kodiranje"
+
+#: encodings.py:236
+msgid "Description"
+msgstr "Opis"
+
+#: encodings.py:236
+msgid "Encoding"
+msgstr "Kodiranje"
+
+#: encodings.py:241
+msgid "Choose Encodings"
+msgstr "Izaberi kodiranja"
+
+#: encodings.py:245
+msgid "Available Encodings:"
+msgstr "Dostupna kodiranja:"
+
+#: encodings.py:249
+msgid "Chosen Encodings:"
+msgstr "Izabrana kodiranja:"
+
+#: encodings.py:261
+msgid "Add the selected encoding"
+msgstr "Dodaj izabrano kodiranje"
+
+#: encodings.py:264
+msgid "Remove the selected encoding"
+msgstr "Ukloni izabrano kodiranje"
+
+#: encodings.py:282
+msgid "Move the selected item up"
+msgstr "Pomeri izabranu stavku nagore"
+
+#: encodings.py:286
+msgid "Move the selected item down"
+msgstr "Pomeri izabranu stavku nadole"
+
+#: encodings.py:290
+msgid "Reset to defaults"
+msgstr "Vrati podrazumevana podešavanja"
+
+#: encodings.py:356
+msgid "No encodings selected"
+msgstr "Nijedno kodiranje nije izabrano"
+
+#: encodings.py:356 page_resolve.py:128 tab_common.py:360
+msgid "You must select one or more fields first."
+msgstr "Najpre morate izabrati jedno ili više polja."
+
+#: models.py:101
+msgid "A matching book was found in your calibre library"
+msgstr "U vašoj biblioteci programa calibre pronađena je odgovarajuća knjiga"
+
+#: models.py:103
+msgid ""
+"Multiple matches found for this title/author.\n"
+"Resolve this by selecting your match below."
+msgstr ""
+"Za ovaj naslov i autora pronađeno je više podudaranja.\n"
+"Izaberite odgovarajuću knjigu ispod."
+
+#: models.py:106
+msgid ""
+"No matching book found in your library.\n"
+"Add an empty book or search for a match below."
+msgstr ""
+"U vašoj biblioteci nije pronađena odgovarajuća knjiga.\n"
+"Dodajte prazan zapis knjige ili potražite podudaranje ispod."
+
+#: models.py:109
+msgid "An empty book will be added if you save this list"
+msgstr "Ako sačuvate ovu listu, biće dodat prazan zapis knjige"
+
+#: models.py:111
+msgid "This book was added to your list manually"
+msgstr "Ovu knjigu ste ručno dodali na listu"
+
+#: models.py:147 page_resolve.py:631
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: page_import.py:101
+msgid "Show only rows with errors"
+msgstr "Prikaži samo redove sa greškama"
+
+#: page_import.py:103
+msgid ""
+"<p style=\"font-style:italic;margin-left:30px;\">(errors highlighted in "
+"<span style=\"color:red;\">red</span>)</p>"
+msgstr ""
+"<p style=\"font-style:italic;margin-left:30px;\">(greške su označene <span "
+"style=\"color:red;\">crvenom</span> bojom)</p>"
+
+#: page_import.py:127
+msgid ""
+"Some cells contain data that does not match calibre datatypes.\n"
+"\t\tErrors are detailed below:\n"
+msgstr ""
+"Neke ćelije sadrže podatke koji ne odgovaraju tipovima podataka u calibre-u.\n"
+"\t\tDetalji grešaka su navedeni ispod:\n"
+
+#: page_import.py:135
+msgid ""
+"\n"
+"Title field is mandatory. The following rows contain empty titles:\n"
+"{}\n"
+msgstr ""
+"\n"
+"Polje naslova je obavezno. U sledećim redovima naslov je prazan:\n"
+"{}\n"
+
+#: page_import.py:142
+msgid ""
+"\n"
+"Column \"{colname}\" must contain only data of type \"{datatype}\".\n"
+"\t\tThe following rows have invalid type for column {colname}:\n"
+msgstr ""
+"\n"
+"Kolona „{colname}“ sme da sadrži samo podatke tipa „{datatype}“.\n"
+"\t\tU sledećim redovima tip podataka za kolonu {colname} nije ispravan:\n"
+
+#: page_import.py:147
+msgid "Validation errors details"
+msgstr "Detalji grešaka pri proveri"
+
+#: page_import.py:197
+msgid "Title field is mandatory and cannot be empty"
+msgstr "Polje naslova je obavezno i ne sme biti prazno"
+
+#: page_import.py:208
+msgid "Data must be of type: {}"
+msgstr "Podaci moraju biti tipa: {}"
+
+#: page_import.py:310
+msgid "Step 1: Configure a list source"
+msgstr "Korak 1: Podesite izvor liste"
+
+#: page_import.py:324
+msgid "User Settings"
+msgstr "Korisnička podešavanja"
+
+#: page_import.py:325
+msgid "Predefined"
+msgstr "Unapred definisano"
+
+#: page_import.py:326
+msgid "Clipboard"
+msgstr "Privremena memorija"
+
+#: page_import.py:327
+msgid "CSV File"
+msgstr "CSV datoteka"
+
+#: page_import.py:328
+msgid "Web Page"
+msgstr "Veb-stranica"
+
+#: page_import.py:375 page_resolve.py:436
+msgid "&Remove book"
+msgstr "&Ukloni knjigu"
+
+#: page_import.py:376
+msgid "Remove selected books from the list"
+msgstr "Ukloni izabrane knjige sa liste"
+
+#: page_import.py:380
+msgid "&Export to csv"
+msgstr "&Izvezi u CSV"
+
+#: page_import.py:381
+msgid "Export selected books to csv file"
+msgstr "Izvezi izabrane knjige u CSV datoteku"
+
+#: page_import.py:393 page_resolve.py:590
+msgid "Are you sure you want to remove the selected books from the list?"
+msgstr "Da li ste sigurni da želite da uklonite izabrane knjige sa liste?"
+
+#: page_import.py:413
+msgid "Choose file for exported csv"
+msgstr "Izaberite datoteku za izvoz CSV podataka"
+
+#: page_persist.py:80
+msgid "Current step progress:"
+msgstr "Napredak trenutnog koraka:"
+
+#: page_persist.py:86
+msgid "Step"
+msgstr "Korak"
+
+#: page_persist.py:101
+msgid "Importing"
+msgstr "Uvoz"
+
+#: page_persist.py:111
+msgid "Aborting"
+msgstr "Prekidanje"
+
+#: page_persist.py:171
+msgid "Step 3: Save your imported list / configuration"
+msgstr "Korak 3: Sačuvajte uvezenu listu i podešavanja"
+
+#: page_persist.py:175
+msgid "Reading List plugin:"
+msgstr "Dodatak Reading List:"
+
+#: page_persist.py:180
+msgid ""
+"If you have the <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Reading "
+"list</a> plugin installed, you can store the imported books into a list for "
+"use by that plugin."
+msgstr ""
+"Ako je instaliran dodatak <a "
+"href=\"http://www.mobileread.com/forums/showthread.php?t=134856\">Reading "
+"List</a>, uvezene knjige možete sačuvati na listi koju taj dodatak koristi."
+
+#: page_persist.py:184
+msgid "&Do not use the Reading List plugin"
+msgstr "&Ne koristi dodatak Reading List"
+
+#: page_persist.py:186
+msgid "Create a &new list:"
+msgstr "Napravi &novu listu:"
+
+#: page_persist.py:188
+msgid "&Update an existing list:"
+msgstr "&Ažuriraj postojeću listu:"
+
+#: page_persist.py:190
+msgid "&Clear list first replacing with the imported books"
+msgstr "&Najpre isprazni listu, pa je zameni uvezenim knjigama"
+
+#: page_persist.py:210
+msgid "Save configuration:"
+msgstr "Sačuvaj podešavanja:"
+
+#: page_persist.py:215
+msgid ""
+"You can choose to store the current import settings, if you intend to import"
+" from this source again in future."
+msgstr ""
+"Trenutna podešavanja uvoza možete sačuvati ako nameravate da ubuduće ponovo "
+"uvozite iz ovog izvora."
+
+#: page_persist.py:217
+msgid "&Do not save the current settings"
+msgstr "&Ne čuvaj trenutna podešavanja"
+
+#: page_persist.py:219
+msgid "&Save settings as:"
+msgstr "&Sačuvaj podešavanja kao:"
+
+#: page_persist.py:380
+msgid "Custom Column Missing"
+msgstr "Nedostaje prilagođena kolona"
+
+#: page_persist.py:381
+msgid ""
+"You are importing to a custom column '%s' which does not exist in this "
+"library.<p>"
+msgstr ""
+"Uvozite podatke u prilagođenu kolonu „%s“ koja ne postoji u ovoj "
+"biblioteci.<p>"
+
+#: page_persist.py:382
+msgid ""
+"This column will be ignored. Either add a matching custom column or edit "
+"your import statement."
+msgstr ""
+"Ova kolona će biti zanemarena. Dodajte odgovarajuću prilagođenu kolonu ili "
+"izmenite postavke uvoza."
+
+#: page_persist.py:389
+msgid "ImportList plugin: no metadata found for column:"
+msgstr "Dodatak Import List: nisu pronađeni metapodaci za kolonu:"
+
+#: page_persist.py:448
+msgid "Adding books (%(idx)d of %(count)d): %(title)s"
+msgstr "Dodavanje knjiga (%(idx)d od %(count)d): %(title)s"
+
+#: page_persist.py:460
+msgid "Updating books (%(idx)d of %(count)d): %(title)s"
+msgstr "Ažuriranje knjiga (%(idx)d od %(count)d): %(title)s"
+
+#: page_persist.py:482
+msgid "You have not specified a reading list name"
+msgstr "Niste naveli naziv liste za čitanje"
+
+#: page_persist.py:482 page_persist.py:488
+msgid "Invalid List Name"
+msgstr "Nevažeći naziv liste"
+
+#: page_persist.py:488
+msgid "Another list exists with this name"
+msgstr "Lista sa ovim nazivom već postoji"
+
+#: page_persist.py:502
+msgid "Invalid Setting Name"
+msgstr "Nevažeći naziv podešavanja"
+
+#: page_persist.py:502
+msgid "You have not specified a setting name"
+msgstr "Niste naveli naziv podešavanja"
+
+#: page_persist.py:545
+msgid "Failed"
+msgstr "Neuspešno"
+
+#: page_resolve.py:56
+msgid "Update metadata fields"
+msgstr "Ažuriraj polja metapodataka"
+
+#: page_resolve.py:70
+msgid "Select all"
+msgstr "Izaberi sve"
+
+#: page_resolve.py:72
+msgid "Clear all"
+msgstr "Poništi izbor svega"
+
+#: page_resolve.py:128 tab_common.py:360
+msgid "No fields selected"
+msgstr "Nijedno polje nije izabrano"
+
+#: page_resolve.py:202
+msgid "Step 2: Match list of books against your library"
+msgstr "Korak 2: Pronađite odgovarajuće knjige u biblioteci"
+
+#: page_resolve.py:226
+msgid "Books in list:"
+msgstr "Knjige na listi:"
+
+#: page_resolve.py:242
+msgid "Show All"
+msgstr "Prikaži sve"
+
+#: page_resolve.py:244
+msgid "Matched"
+msgstr "Pronađene"
+
+#: page_resolve.py:245
+msgid "Unmatched"
+msgstr "Nepronađene"
+
+#: page_resolve.py:257 page_resolve.py:1045 page_resolve.py:1049
+msgid "Matches in library:"
+msgstr "Podudaranja u biblioteci:"
+
+#: page_resolve.py:271
+msgid "Clear the match associated with the selected books in the list"
+msgstr "Ukloni vezu sa odgovarajućom knjigom za izabrane stavke liste"
+
+#: page_resolve.py:275
+msgid "Remove the selected books from the list"
+msgstr "Ukloni izabrane knjige sa liste"
+
+#: page_resolve.py:279
+msgid "Create an empty book for the selected books in the list"
+msgstr "Napravi prazne zapise za izabrane knjige sa liste"
+
+#: page_resolve.py:283
+msgid "Update metadata for the selected books in the list"
+msgstr "Ažuriraj metapodatke izabranih knjiga sa liste"
+
+#: page_resolve.py:287
+msgid "Revert metadata for the selected books back to existing values"
+msgstr "Vrati postojeće vrednosti metapodataka izabranih knjiga sa liste"
+
+#: page_resolve.py:296
+msgid "Possible matches for selected book:"
+msgstr "Moguća podudaranja za izabranu knjigu:"
+
+#: page_resolve.py:304
+msgid "Search:"
+msgstr "Pretraga:"
+
+#: page_resolve.py:306
+msgid "&Go!"
+msgstr "&Kreni!"
+
+#: page_resolve.py:326
+msgid "Select this book as the match for this list title"
+msgstr "Izaberi ovu knjigu kao odgovarajuću za naslov sa liste"
+
+#: page_resolve.py:330
+msgid "Append this book as a new item on the list"
+msgstr "Dodaj ovu knjigu kao novu stavku liste"
+
+#: page_resolve.py:433
+msgid "&Clear match"
+msgstr "&Ukloni podudaranje"
+
+#: page_resolve.py:441
+msgid "Match &empty book"
+msgstr "Poveži sa &praznim zapisom knjige"
+
+#: page_resolve.py:444
+msgid "&Update metadata"
+msgstr "&Ažuriraj metapodatke"
+
+#: page_resolve.py:447
+msgid "&Revert metadata"
+msgstr "&Vrati metapodatke"
+
+#: page_resolve.py:450
+msgid "S&wap Author Names"
+msgstr "&Zameni redosled imena autora"
+
+#: page_resolve.py:451
+msgid "Swap selected author names between FN LN and LN,FN"
+msgstr ""
+"Zameni redosled imena izabranih autora između Ime Prezime i Prezime, Ime"
+
+#: page_resolve.py:455
+msgid "&Search for title/author"
+msgstr "&Pretraži po naslovu i autoru"
+
+#: page_resolve.py:456
+msgid "&Search your library using a simplified title/author of this book"
+msgstr ""
+"&Pretraži biblioteku koristeći pojednostavljeni naslov i ime autora ove "
+"knjige"
+
+#: page_resolve.py:458
+msgid "Search for &title"
+msgstr "Pretraži po &naslovu"
+
+#: page_resolve.py:459
+msgid "&Search your library using a simplified title of this book"
+msgstr "&Pretraži biblioteku koristeći pojednostavljeni naslov ove knjige"
+
+#: page_resolve.py:461
+msgid "Search for &author"
+msgstr "Pretraži po &autoru"
+
+#: page_resolve.py:462
+msgid "&Search your library using a simplified author of this book"
+msgstr "&Pretraži biblioteku koristeći pojednostavljeno ime autora ove knjige"
+
+#: page_resolve.py:482
+msgid "&Select Book"
+msgstr "&Izaberi knjigu"
+
+#: page_resolve.py:487
+msgid "&Append to list"
+msgstr "&Dodaj na listu"
+
+#: page_resolve.py:578
+msgid "*** No Match ***"
+msgstr "*** Nema podudaranja ***"
+
+#: page_resolve.py:742
+msgid "Are you sure you want to add the selected book to the list?"
+msgstr "Da li ste sigurni da želite da dodate izabranu knjigu na listu?"
+
+#: page_resolve.py:773
+msgid "No Match"
+msgstr "Nema podudaranja"
+
+#: page_resolve.py:857
+msgid "*** Multiple Matches ***"
+msgstr "*** Više podudaranja ***"
+
+#: page_resolve.py:882
+msgid "Multiple Matches"
+msgstr "Više podudaranja"
+
+#: page_resolve.py:941
+msgid "Displaying all similar matches for this book"
+msgstr "Prikaz svih sličnih podudaranja za ovu knjigu"
+
+#: page_resolve.py:959
+msgid "Search for a book in your library"
+msgstr "Potražite knjigu u svojoj biblioteci"
+
+#: page_resolve.py:1047
+msgid "Matches in library:(1 match)"
+msgstr "Podudaranja u biblioteci: (1 podudaranje)"
+
+#: tab_clipboard.py:50
+msgid "&Paste your book list here:"
+msgstr "&Nalepite svoju listu knjiga ovde:"
+
+#: tab_clipboard.py:56
+msgid "&Paste"
+msgstr "&Nalepi"
+
+#: tab_clipboard.py:57
+msgid "Replace all text above with the contents of your clipboard"
+msgstr "Zameni sav tekst iznad sadržajem privremene memorije"
+
+#: tab_clipboard.py:68
+msgid "Conversion expression:"
+msgstr "Izraz za izdvajanje podataka:"
+
+#: tab_clipboard.py:73
+msgid ""
+"Set a <a href=\"http://manual.calibre-ebook.com/regexp.html\">regular "
+"expression</a> to use for titles and other metadata. The group names you can"
+" use include"
+msgstr ""
+"Unesite <a href=\"http://manual.calibre-ebook.com/regexp.html\">regularni "
+"izraz</a> za naslove i druge metapodatke. Možete koristiti nazive grupa"
+
+#: tab_clipboard.py:87
+msgid "Choose a predefined named pattern"
+msgstr "Izaberi unapred definisani obrazac sa nazivom"
+
+#: tab_clipboard.py:96 tab_csv.py:206 tab_webpage.py:306
+msgid "&Clear"
+msgstr "&Obriši"
+
+#: tab_clipboard.py:97 tab_csv.py:207 tab_webpage.py:307
+msgid "Clear all settings back to the defaults on this tab"
+msgstr "Vrati sva podešavanja na ovoj kartici na podrazumevane vrednosti"
+
+#: tab_clipboard.py:99 tab_csv.py:209 tab_webpage.py:309
+msgid "&Fields"
+msgstr "&Polja"
+
+#: tab_clipboard.py:100
+msgid "Add expression for field to import"
+msgstr "Dodaj izraz za polje koje se uvozi"
+
+#: tab_clipboard.py:102 tab_csv.py:217 tab_webpage.py:312
+msgid "Reverse order"
+msgstr "Obrni redosled"
+
+#: tab_clipboard.py:103 tab_csv.py:218 tab_webpage.py:313
+msgid "Display the books in the opposite order to the source"
+msgstr "Prikaži knjige obrnutim redosledom u odnosu na izvor"
+
+#: tab_clipboard.py:104 tab_csv.py:219 tab_settings.py:53 tab_webpage.py:314
+msgid "&Preview"
+msgstr "&Pregled"
+
+#: tab_clipboard.py:105 tab_csv.py:220 tab_settings.py:54 tab_webpage.py:315
+msgid "Preview the results in the books grid"
+msgstr "Prikaži rezultate u tabeli knjiga pre uvoza"
+
+#: tab_clipboard.py:173
+msgid "Failed to parse page:\n"
+msgstr "Neuspešna obrada stranice:\n"
+
+#: tab_clipboard.py:174
+msgid "Invalid regular expression"
+msgstr "Nevažeći regularni izraz"
+
+#: tab_common.py:140
+msgid "Title"
+msgstr "Naslov"
+
+#: tab_common.py:141
+msgid "Authors"
+msgstr "Autori"
+
+#: tab_common.py:142
+msgid "Series"
+msgstr "Serija"
+
+#: tab_common.py:143
+msgid "Series Index"
+msgstr "Redni broj u serijalu"
+
+#: tab_common.py:144
+msgid "Published"
+msgstr "Objavljeno"
+
+#: tab_common.py:145
+msgid "Publisher"
+msgstr "Izdavač"
+
+#: tab_common.py:146
+msgid "Rating"
+msgstr "Ocena"
+
+#: tab_common.py:147
+msgid "Tags"
+msgstr "Oznake"
+
+#: tab_common.py:148
+msgid "Comments"
+msgstr "Komentari"
+
+#: tab_common.py:149
+msgid "Languages"
+msgstr "Jezici"
+
+#: tab_common.py:317
+msgid "Select field(s) to add:"
+msgstr "Izaberite polja koja želite da dodate:"
+
+#: tab_common.py:369
+msgid "Select fields to import:"
+msgstr "Izaberite polja koja želite da uvezete:"
+
+#: tab_common.py:436
+msgid "&Match Method:"
+msgstr "&Način podudaranja:"
+
+#: tab_common.py:439
+msgid "&Title/Author"
+msgstr "&Naslov/autor"
+
+#: tab_common.py:443
+msgid "&Identifier:"
+msgstr "&Identifikator:"
+
+#: tab_csv.py:102
+msgid "&Import from file:"
+msgstr "&Uvezi iz datoteke:"
+
+#: tab_csv.py:114
+msgid "Choose the file to import"
+msgstr "Izaberite datoteku za uvoz"
+
+#: tab_csv.py:121
+msgid "&Contents:"
+msgstr "&Sadržaj:"
+
+#: tab_csv.py:126 tab_webpage.py:210
+msgid "&Encoding:"
+msgstr "&Kodiranje:"
+
+#: tab_csv.py:142
+msgid "&Delimiter:"
+msgstr "&Razdvajač:"
+
+#: tab_csv.py:146
+msgid "&Tab"
+msgstr "&Tabulator"
+
+#: tab_csv.py:147
+msgid "&Other:"
+msgstr "&Drugo:"
+
+#: tab_csv.py:156
+msgid "Processing:"
+msgstr "Obrada:"
+
+#: tab_csv.py:160
+msgid "S&kip first row"
+msgstr "&Preskoči prvi red"
+
+#: tab_csv.py:161
+msgid "Select this option to ignore the first row of column headings"
+msgstr "Izaberite ovu opciju da zanemarite prvi red sa zaglavljima kolona"
+
+#: tab_csv.py:162
+msgid "&Unquote"
+msgstr "&Ukloni navodnike"
+
+#: tab_csv.py:163
+msgid "Remove any quotes around columns of data"
+msgstr "Ukloni navodnike oko kolona podataka"
+
+#: tab_csv.py:165
+msgid "Tidy"
+msgstr "Sredi"
+
+#: tab_csv.py:166
+msgid ""
+"Clean title and authors before importing. This is intended for web imports but is optional for csv\n"
+"It includes removing leading and trailing periods and commas, removing some special characters\n"
+"and removing numbers indicating a position at the begining of the string."
+msgstr ""
+"Pre uvoza sredi naslove i imena autora. Namenjeno je uvozu sa veba, ali može se koristiti i za CSV.\n"
+"Uklanja početne i završne tačke i zareze, neke posebne znakove,\n"
+"kao i brojeve koji označavaju poziciju na početku teksta."
+
+#: tab_csv.py:184
+msgid " &Columns To Import: "
+msgstr " &Kolone za uvoz: "
+
+#: tab_csv.py:210 tab_webpage.py:310
+msgid "Select field(s) to import"
+msgstr "Izaberite polja za uvoz"
+
+#: tab_csv.py:213
+msgid "&From headers"
+msgstr "&Iz zaglavlja"
+
+#: tab_csv.py:214
+msgid "Guess field(s) from csv headers"
+msgstr "Odredi polja na osnovu zaglavlja CSV datoteke"
+
+#: tab_csv.py:318
+msgid "Select a CSV file to import"
+msgstr "Izaberite CSV datoteku za uvoz"
+
+#: tab_csv.py:318
+msgid "import CSV file dialog"
+msgstr "Dijalog za uvoz CSV datoteke"
+
+#: tab_csv.py:344
+msgid "File not specified"
+msgstr "Datoteka nije navedena"
+
+#: tab_csv.py:344
+msgid "You have not specified a path to a CSV file"
+msgstr "Niste naveli putanju do CSV datoteke"
+
+#: tab_csv.py:349
+msgid "File not found"
+msgstr "Datoteka nije pronađena"
+
+#: tab_csv.py:349
+msgid "No file found at this location"
+msgstr "Na ovoj lokaciji nije pronađena datoteka"
+
+#: tab_csv.py:366
+msgid "Invalid options"
+msgstr "Nevažeće opcije"
+
+#: tab_csv.py:366
+msgid "You have not specified a delimiter"
+msgstr "Niste naveli razdvajač"
+
+#: tab_settings.py:47
+msgid "Browser"
+msgstr "Pregledač"
+
+#: tab_settings.py:48
+msgid "View related website page in your web browser"
+msgstr "Prikaži odgovarajuću veb-stranicu u pregledaču"
+
+#: tab_settings.py:50
+msgid "Edit"
+msgstr "Uredi"
+
+#: tab_settings.py:51
+msgid "Edit this saved setting"
+msgstr "Uredi ovo sačuvano podešavanje"
+
+#: tab_settings.py:105
+msgid "Delete"
+msgstr "Obriši"
+
+#: tab_settings.py:107
+msgid "Rename"
+msgstr "Preimenuj"
+
+#: tab_settings.py:109
+msgid "Export"
+msgstr "Izvezi"
+
+#: tab_settings.py:111
+msgid "Import."
+msgstr "Uvezi."
+
+#: tab_settings.py:126
+msgid "Are you sure you want to remove the setting \"%s\"?"
+msgstr "Da li ste sigurni da želite da uklonite podešavanje „%s“?"
+
+#: tab_settings.py:127
+msgid "import_list_delete_setting"
+msgstr "import_list_delete_setting"
+
+#: tab_settings.py:140 tab_settings.py:141
+msgid "New setting name:"
+msgstr "Novo ime podešavanja:"
+
+#: tab_settings.py:148
+msgid "Setting exists"
+msgstr "Podešavanje postoji"
+
+#: tab_settings.py:149
+msgid "A saved setting already exists with this name."
+msgstr "Sačuvano podešavanje sa ovim imenom već postoji."
+
+#: tab_settings.py:168
+msgid "Import Failed"
+msgstr "Uvoz nije uspeo"
+
+#: tab_settings.py:169
+msgid "This is not a valid Import List export archive"
+msgstr "Ovo nije ispravna izvozna arhiva dodatka Import List"
+
+#: tab_settings.py:176
+msgid "Import setting"
+msgstr "Uvezi podešavanje"
+
+#: tab_settings.py:217
+msgid "Export completed"
+msgstr "Izvoz završen"
+
+#: tab_settings.py:218
+msgid "Cover setting exported to"
+msgstr "Podešavanje korica izvezeno u"
+
+#: tab_settings.py:226
+msgid "Enter a unique name for this saved setting:"
+msgstr "Unesite jedinstven naziv za ovo sačuvano podešavanje:"
+
+#: tab_settings.py:235
+msgid "Cannot add"
+msgstr "Nije moguće dodati"
+
+#: tab_settings.py:236
+msgid "The name you specified is not unique"
+msgstr "Ime koje ste naveli nije jedinstveno"
+
+#: tab_settings.py:242
+msgid "Select setting file(s) to import"
+msgstr "Izaberite datoteku(e) podešavanja za uvoz"
+
+#: tab_settings.py:249
+msgid "Save setting as"
+msgstr "Sačuvaj podešavanje kao"
+
+#: tab_settings.py:334
+msgid "View as List"
+msgstr "Prikaži kao listu"
+
+#: tab_settings.py:336
+msgid "View by Category"
+msgstr "Prikaži po kategorijama"
+
+#: tab_webpage.py:83
+msgid "Strip matching text"
+msgstr "Ukloni tekst koji se podudara"
+
+#: tab_webpage.py:84
+msgid "Include matching text"
+msgstr "Uključi tekst koji se podudara"
+
+#: tab_webpage.py:99
+msgid "Choose a predefined pattern"
+msgstr "Izaberi unapred definisani obrazac"
+
+#: tab_webpage.py:104
+msgid "Clear the regular expression"
+msgstr "Obriši regularni izraz"
+
+#: tab_webpage.py:184
+msgid "&Download from url:"
+msgstr "&Preuzmi sa URL adrese:"
+
+#: tab_webpage.py:197
+msgid "Paste a URL from your clipboard"
+msgstr "Nalepi URL adresu iz privremene memorije"
+
+#: tab_webpage.py:202
+msgid "Open this url in your web browser"
+msgstr "Otvori ovu URL adresu u pregledaču"
+
+#: tab_webpage.py:209
+msgid "&Source html:"
+msgstr "&Izvorni HTML:"
+
+#: tab_webpage.py:211
+msgid "Specify the web page encoding if not utf-8"
+msgstr "Navedite kodiranje veb-stranice ako nije UTF-8"
+
+#: tab_webpage.py:214
+msgid "Load javascript"
+msgstr "Učitaj JavaScript"
+
+#: tab_webpage.py:215
+msgid ""
+"Enable this option if the web page renders its content using javascript"
+msgstr ""
+"Uključite ovo ako se sadržaj veb-stranice prikazuje pomoću JavaScripta"
+
+#: tab_webpage.py:216
+msgid "&Delay:"
+msgstr "&Kašnjenje:"
+
+#: tab_webpage.py:217
+msgid "Additional delay in seconds to wait for web page javascript to execute"
+msgstr "Dodatno čekanje u sekundama da se izvrši JavaScript na veb-stranici"
+
+#: tab_webpage.py:238
+msgid "Find:"
+msgstr "Pronađi:"
+
+#: tab_webpage.py:243
+msgid "&Text:"
+msgstr "&Tekst:"
+
+#: tab_webpage.py:244
+msgid ""
+"Search for text to help locate the region of interest such as\n"
+"a book name when designing your xpath expressions"
+msgstr ""
+"Potražite tekst koji pomaže da pronađete željeni deo stranice,\n"
+"na primer naziv knjige, pri izradi XPath izraza"
+
+#: tab_webpage.py:247
+msgid "Search for specific text"
+msgstr "Potraži određeni tekst"
+
+#: tab_webpage.py:249
+msgid "&Find"
+msgstr "&Pronađi"
+
+#: tab_webpage.py:260
+msgid "XPath:"
+msgstr "XPath:"
+
+#: tab_webpage.py:265
+msgid ""
+"Specify XPath expressions to identify the parent rows and title / authors "
+"within each row in the source html."
+msgstr ""
+"Navedite XPath izraze koji u izvornom HTML-u prepoznaju nadređene redove i "
+"naslov/autore u svakom redu."
+
+#: tab_webpage.py:286
+msgid "0 occurrences"
+msgstr "0 pojavljivanja"
+
+#: tab_webpage.py:287
+msgid "Number of matches using Test"
+msgstr "Broj podudaranja pri testiranju"
+
+#: tab_webpage.py:289
+msgid "Previous test result"
+msgstr "Prethodni rezultat testa"
+
+#: tab_webpage.py:294
+msgid "Next test result"
+msgstr "Sledeći rezultat testa"
+
+#: tab_webpage.py:358
+msgid "No matches"
+msgstr "Nema podudaranja"
+
+#: tab_webpage.py:358
+msgid "No matches for:"
+msgstr "Nema podudaranja za:"
+
+#: tab_webpage.py:410
+msgid ""
+"Identify the parent node in the html source that contains a single book"
+msgstr "Pronađi nadređeni čvor u izvornom HTML-u koji sadrži jednu knjigu"
+
+#: tab_webpage.py:453
+msgid "Strip: %s"
+msgstr "Ukloni: %s"
+
+#: tab_webpage.py:455
+msgid "Include: %s"
+msgstr "Uključi: %s"
+
+#: tab_webpage.py:458
+msgid "No expression"
+msgstr "Nema izraza"
+
+#: tab_webpage.py:574 tab_webpage.py:575
+msgid "Failed to download page"
+msgstr "Preuzimanje stranice nije uspelo"
+
+#: tab_webpage.py:618
+msgid "You must specify an xpath"
+msgstr "Morate navesti XPath izraz"
+
+#: tab_webpage.py:618 tab_webpage.py:625
+msgid "Test failed"
+msgstr "Testiranje nije uspelo"
+
+#: tab_webpage.py:625
+msgid "No html source available to match against"
+msgstr "Nema izvornog HTML-a za poređenje"
+
+#: tab_webpage.py:641 tab_webpage.py:787 tab_webpage.py:789 tab_webpage.py:791
+#: tab_webpage.py:793
+msgid "Invalid xpath"
+msgstr "Nevažeći XPath izraz"
+
+#: tab_webpage.py:642
+msgid "Your xpath expression is invalid"
+msgstr "Vaš XPath izraz nije ispravan"
+
+#: tab_webpage.py:650
+msgid "occurrences"
+msgstr "pojavljivanja"
+
+#: tab_webpage.py:787
+msgid "You have not specified any xpath expressions"
+msgstr "Niste naveli nijedan XPath izraz"
+
+#: tab_webpage.py:789
+msgid "You have not specified a title xpath expression"
+msgstr "Niste naveli XPath izraz za naslov"
+
+#: tab_webpage.py:791
+msgid "You must add a series_index xpath field if using series"
+msgstr "Ako koristite serijal, morate dodati XPath polje series_index"
+
+#: tab_webpage.py:793
+msgid "You must add a series xpath field if using series index"
+msgstr "Ako koristite redni broj u serijalu, morate dodati XPath polje series"
+
+#: tab_webpage.py:916 tab_webpage.py:917
+msgid "Failed to process page"
+msgstr "Obrada stranice nije uspela"
+
+#: wizards.py:44
+msgid "Import Book List"
+msgstr "Uvezi listu knjiga"
+
+#: wizards.py:51
+msgid "&Options"
+msgstr "&Opcije"

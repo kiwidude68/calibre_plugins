@@ -1,11 +1,30 @@
 # Import List Change Log
 
+## [1.9.10] - 2026-09-26
+### Added
+- Czech translation
+- French translation
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+- Option to replace tags rather than just append tags for a book added to Update Metadata Fields dialog
+- Additional preset for clipboard import of `Title<tab>Author` for someone importing from Excel
+### Changed
+- Updated metadata preview showed changes in blue, now it adds a bold font to assist highlighting
+- Tags column only included on the matches in library dialog if it is a column selected for import
+### Fixed
+- Import of series index did not overwrite existing index value if book existed
+- Revert to previous book metadata value in dialog did not immediately update all rows in the grid
+- Fix Matches in library dialog not showing the current value of identifier columns
+
 ## [1.9.9] - 2026-02-09
 ### Added
 - Arabic translation
 ### Fixed
 - Debug output warning from Python
-- 
+
 ## [1.9.8] - 2025-05-04
 ### Fixed
 - If autosizing columns to contents, do not let them exceed a particular width to prevent overlong column scroll issues.
