@@ -1,0 +1,297 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Nicolas F. <fernetn@gmail.com>, 2022
+# C138, 2022
+# Walter Paterno <walter.paterno@gmail.com>, 2022
+# Grant Drake, 2022
+# lentrad <lentrad@gmail.com>, 2022
+# Ptit Prince <leporello1791@gmail.com>, 2022
+# Jean Pierre, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:08+1000\n"
+"PO-Revision-Date: 2022-09-11 10:14+0000\n"
+"Last-Translator: Jean Pierre, 2026\n"
+"Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:600
+msgid "Keyboard shortcuts"
+msgstr "Raccourcis clavier"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Redémarre calibre maintenant"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Préférences pour:"
+
+#: ..\common\common_dialogs.py:160 config.py:712
+msgid "Clear"
+msgstr "Réinitialiser"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Réinitialiser tous les paramètres pour cette extension"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Êtes-vous certain de vouloir modifier vos paramètres dans cette bibliothèque"
+" pour ce plugin ?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Tous les paramètres dans d'autres librairies ou stockés dans un fichier JSON"
+" dans votre répertoire d'extensions calibre ne seront pas modifiés."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Vous devez redémarrer calibre ensuite."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Paramètres modifiés"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Les paramètres pour ce plugin dans cette bibliothèque ont été modifiés."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Merci de redémarrer calibre maintenant."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Êtes-vous sûr de vouloir réinitialiser vos paramètres dans cette "
+"bibliothèque pour cette extension ?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Paramètres supprimés"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Tous les paramètres pour cette extension dans cette librairie ont été "
+"réinitialisés."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Copier dans le presse-papier"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Indéfini"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Redémarrage nécessaire"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"L'image d'icone n'a pas était trouvée - vous devez redémarrer Calibre avant "
+"d'utiliser ce plugin !"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Créer une nouvelle colonne"
+
+#: action.py:32
+msgid "Quick Preferences"
+msgstr "Préférences rapides"
+
+#: action.py:37
+msgid "Ignore duplicate incoming formats"
+msgstr "Ignorer les formats entrants en double"
+
+#: action.py:38
+msgid "Overwrite existing duplicate formats"
+msgstr "Remplacer les formats en double existants"
+
+#: action.py:39
+msgid "Create new record for each duplicate format"
+msgstr "Créer un nouvel enregistrement pour chaque format en double"
+
+#: action.py:93 config.py:588
+msgid "Swap author names"
+msgstr "Échanger les noms des auteurs"
+
+#: action.py:97
+msgid "Read metadata from file contents"
+msgstr "Lire les métadonnées à partir du contenu du fichier"
+
+#: action.py:101
+msgid "Automerge added books if exist"
+msgstr "Fusion automatique des livres s'ils existent"
+
+#: action.py:105
+msgid "Automerge type"
+msgstr "Type d'Automerge"
+
+#: action.py:117
+msgid "Preferences"
+msgstr "Préférences"
+
+#: action.py:120
+msgid "&Customize plugin"
+msgstr "&Personnaliser le plug-in"
+
+#: action.py:122 config.py:605
+msgid "&Help"
+msgstr "&Aide"
+
+#: action.py:156
+msgid "Cannot switch regular expression"
+msgstr "Impossible de changer d'expression régulière"
+
+#: action.py:157
+msgid "No regular expression specified in this menu item."
+msgstr "Aucune expression régulière n'est spécifiée dans cet élément de menu."
+
+#: action.py:166
+msgid "Cannot change enabled metadata sources"
+msgstr "Impossible de modifier les sources de métadonnées activées"
+
+#: action.py:167
+msgid "List of metadata sources is empty"
+msgstr "La liste des sources de métadonnées est vide"
+
+#: config.py:143
+msgid "Regex File Pattern"
+msgstr "Modèle de fichier Regex"
+
+#: config.py:143
+msgid "Swap Names"
+msgstr "Échanger les noms"
+
+#: config.py:143 config.py:306
+msgid "Menu Title"
+msgstr "Titre du menu"
+
+#: config.py:217 config.py:383
+msgid "Are you sure you want to delete this menu item?"
+msgstr "Êtes-vous sûr de vouloir supprimer cet élément de menu ?"
+
+#: config.py:219 config.py:385
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr ""
+"Êtes-vous sûr de vouloir supprimer les {0} éléments de menu sélectionnés ?"
+
+#: config.py:220 config.py:386 config.py:655 config.py:663
+msgid "Are you sure?"
+msgstr "Êtes-vous sûrs ?"
+
+#: config.py:306
+msgid "Enabled Sources"
+msgstr "Sources activées"
+
+#: config.py:463
+msgid "Configure the file pattern menu items to display:"
+msgstr "Configurez les éléments du menu « Modèles de fichiers » à afficher :"
+
+#: config.py:484 config.py:541
+msgid "Move row up"
+msgstr "Déplacer la ligne vers le haut"
+
+#: config.py:491 config.py:548
+msgid "Add menu item row"
+msgstr "Ajouter une ligne d'élément de menu"
+
+#: config.py:498 config.py:555
+msgid "Delete menu item row"
+msgstr "Supprimer la ligne d'un élément de menu"
+
+#: config.py:505 config.py:562
+msgid "Reset to defaults"
+msgstr "Rétablir les paramètres par défaut"
+
+#: config.py:512 config.py:569
+msgid "Move row down"
+msgstr "Déplacer la ligne vers le bas"
+
+#: config.py:524
+msgid "Configure the Enabled metadata sources menu items to display"
+msgstr ""
+"Configurer les éléments du menu « Sources de métadonnées activées » à "
+"afficher"
+
+#: config.py:583
+msgid "Include in menu:"
+msgstr "Inclure dans le menu :"
+
+#: config.py:589
+msgid "Read metadata from file"
+msgstr "Lire les métadonnées du fichier"
+
+#: config.py:590
+msgid "Automerge added books"
+msgstr "Ajout de livres via la fonction « Automerge »"
+
+#: config.py:601
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Editer les raccourcis clavier associés avec cette extension"
+
+#: config.py:656
+msgid ""
+"Are you sure you want to reset to the plugin default menu?<br>Any "
+"modifications to file pattern menu items will be discarded."
+msgstr ""
+"Êtes-vous sûr de vouloir rétablir le menu par défaut du plugin ?<br> Toute "
+"modification apportée aux éléments du menu « Modèles de fichiers » sera "
+"perdue."
+
+#: config.py:664
+msgid ""
+"Are you sure you want to reset to the plugin default menu?<br>Any "
+"modifications to metadata source menu items will be discarded."
+msgstr ""
+"Êtes-vous sûr de vouloir rétablir le menu par défaut du plugin ? <br>Toute "
+"modification apportée aux éléments du menu « Source des métadonnées » sera "
+"perdue."
+
+#: config.py:692
+msgid "Metadata Source Plugins"
+msgstr "Plug-ins de source de métadonnées"
+
+#: config.py:696
+msgid "Select the Metadata sources to be enabled"
+msgstr "Sélectionnez les sources de métadonnées à activer"
+
+#: config.py:709
+msgid "Get Current"
+msgstr "Récupérer"
+
+#: config.py:710
+msgid "Get the currently enabled Metadata sources"
+msgstr "Récupérer les sources de métadonnées actuellement activées"
+
+#: config.py:713
+msgid "Clear all selected sources"
+msgstr "Effacer toutes les sources sélectionnées"
+
+#: config.py:766
+msgid "Source"
+msgstr "Source"

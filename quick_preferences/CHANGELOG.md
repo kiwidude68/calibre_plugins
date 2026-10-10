@@ -1,5 +1,15 @@
 # Quick Preferences Change Log
 
+## [1.7.3] - 2026-10-10
+### Added
+- Czech translation
+- French translation
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+
 ## [1.7.2] - 2026-02-09
 ### Added
 - Arabic translation

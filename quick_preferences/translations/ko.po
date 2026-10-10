@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Junghee Lee <daemul72@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:08+1000\n"
+"PO-Revision-Date: 2022-09-11 10:14+0000\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
+"Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:600
+msgid "Keyboard shortcuts"
+msgstr "키보드 단축키"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "지금 calibre 재시작"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "다음 플러그인 환경 설정:"
+
+#: ..\common\common_dialogs.py:160 config.py:712
+msgid "Clear"
+msgstr "지우기"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "이 플러그인에 대한 모든 설정 지우기"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 변경하시겠습니까?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "다른 서재의 설정이나 calibre 플러그인 폴더의 JSON 파일에 저장된 설정은 변경되지 않습니다."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "이후 calibre를 다시 시작해야 합니다."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "설정 변경됨"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "이 서재에서 이 플러그인의 설정이 변경되었습니다."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "지금 calibre를 다시 시작하세요."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 지우시겠습니까?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "설정 삭제됨"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "정의되지 않음"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "다시 시작 필요"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용하려면 calibre를 다시 시작해야 합니다!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "새 열 만들기"
+
+#: action.py:32
+msgid "Quick Preferences"
+msgstr "빠른 환경 설정"
+
+#: action.py:37
+msgid "Ignore duplicate incoming formats"
+msgstr "중복된 가져오기 형식 무시"
+
+#: action.py:38
+msgid "Overwrite existing duplicate formats"
+msgstr "기존 중복 형식 덮어쓰기"
+
+#: action.py:39
+msgid "Create new record for each duplicate format"
+msgstr "중복 형식마다 새 항목 만들기"
+
+#: action.py:93 config.py:588
+msgid "Swap author names"
+msgstr "저자 이름 순서 바꾸기"
+
+#: action.py:97
+msgid "Read metadata from file contents"
+msgstr "파일 내용에서 메타데이터 읽기"
+
+#: action.py:101
+msgid "Automerge added books if exist"
+msgstr "이미 있으면 추가한 책 자동 병합"
+
+#: action.py:105
+msgid "Automerge type"
+msgstr "자동 병합 유형"
+
+#: action.py:117
+msgid "Preferences"
+msgstr "환경 설정"
+
+#: action.py:120
+msgid "&Customize plugin"
+msgstr "플러그인 설정(&C)"
+
+#: action.py:122 config.py:605
+msgid "&Help"
+msgstr "도움말(&H)"
+
+#: action.py:156
+msgid "Cannot switch regular expression"
+msgstr "정규식을 전환할 수 없음"
+
+#: action.py:157
+msgid "No regular expression specified in this menu item."
+msgstr "이 메뉴 항목에는 정규식이 지정되어 있지 않습니다."
+
+#: action.py:166
+msgid "Cannot change enabled metadata sources"
+msgstr "활성화된 메타데이터 소스를 변경할 수 없음"
+
+#: action.py:167
+msgid "List of metadata sources is empty"
+msgstr "메타데이터 소스 목록이 비어 있습니다"
+
+#: config.py:143
+msgid "Regex File Pattern"
+msgstr "정규식 파일 패턴"
+
+#: config.py:143
+msgid "Swap Names"
+msgstr "이름 순서 바꾸기"
+
+#: config.py:143 config.py:306
+msgid "Menu Title"
+msgstr "메뉴 제목"
+
+#: config.py:217 config.py:383
+msgid "Are you sure you want to delete this menu item?"
+msgstr "이 메뉴 항목을 삭제하시겠습니까?"
+
+#: config.py:219 config.py:385
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "선택한 {0}개 메뉴 항목을 삭제하시겠습니까?"
+
+#: config.py:220 config.py:386 config.py:655 config.py:663
+msgid "Are you sure?"
+msgstr "계속하시겠습니까?"
+
+#: config.py:306
+msgid "Enabled Sources"
+msgstr "활성화된 소스"
+
+#: config.py:463
+msgid "Configure the file pattern menu items to display:"
+msgstr "표시할 파일 패턴 메뉴 항목 구성:"
+
+#: config.py:484 config.py:541
+msgid "Move row up"
+msgstr "행 위로 이동"
+
+#: config.py:491 config.py:548
+msgid "Add menu item row"
+msgstr "메뉴 항목 행 추가"
+
+#: config.py:498 config.py:555
+msgid "Delete menu item row"
+msgstr "메뉴 항목 행 삭제"
+
+#: config.py:505 config.py:562
+msgid "Reset to defaults"
+msgstr "기본값으로 재설정"
+
+#: config.py:512 config.py:569
+msgid "Move row down"
+msgstr "행 아래로 이동"
+
+#: config.py:524
+msgid "Configure the Enabled metadata sources menu items to display"
+msgstr "표시할 활성화된 메타데이터 소스 메뉴 항목 구성"
+
+#: config.py:583
+msgid "Include in menu:"
+msgstr "메뉴에 포함:"
+
+#: config.py:589
+msgid "Read metadata from file"
+msgstr "파일에서 메타데이터 읽기"
+
+#: config.py:590
+msgid "Automerge added books"
+msgstr "추가한 책 자동 병합"
+
+#: config.py:601
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
+
+#: config.py:656
+msgid ""
+"Are you sure you want to reset to the plugin default menu?<br>Any "
+"modifications to file pattern menu items will be discarded."
+msgstr "플러그인 기본 메뉴로 재설정하시겠습니까?<br>파일 패턴 메뉴 항목에 대한 모든 변경 사항은 버려집니다."
+
+#: config.py:664
+msgid ""
+"Are you sure you want to reset to the plugin default menu?<br>Any "
+"modifications to metadata source menu items will be discarded."
+msgstr "플러그인 기본 메뉴로 재설정하시겠습니까?<br>메타데이터 소스 메뉴 항목에 대한 모든 변경 사항은 버려집니다."
+
+#: config.py:692
+msgid "Metadata Source Plugins"
+msgstr "메타데이터 소스 플러그인"
+
+#: config.py:696
+msgid "Select the Metadata sources to be enabled"
+msgstr "활성화할 메타데이터 소스를 선택"
+
+#: config.py:709
+msgid "Get Current"
+msgstr "현재 설정 가져오기"
+
+#: config.py:710
+msgid "Get the currently enabled Metadata sources"
+msgstr "현재 활성화된 메타데이터 소스를 가져옵니다"
+
+#: config.py:713
+msgid "Clear all selected sources"
+msgstr "선택한 소스 모두 지우기"
+
+#: config.py:766
+msgid "Source"
+msgstr "소스"
