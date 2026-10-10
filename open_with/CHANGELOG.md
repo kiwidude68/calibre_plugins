@@ -1,9 +1,7 @@
 # Open With Change Log
 
-## [1.8.6] - 2026-10-10
+## [1.9.0] - 2026-10-10
 ### Added
-- Now supports passing multiple selected rows, such as for use with diffing tools like `diff-pdf`.
-- You can also use `%FILENAME%` and `%FILENAME2%` if your application requires named arguments
 - Chinese (China) translation
 - Czech translation
 - French translation
@@ -11,8 +9,10 @@
 - Slovak translation
 - Serbian (Latin) translation
 - Swedish translation
+- Now supports passing multiple selected rows, such as for use with diffing tools like `diff-pdf`.
+- You can also use `%FILENAME%` and `%FILENAME2%` if your application requires named arguments
 ### Fixed
-- Arguments are no longer required to be comma separated, so you can use either format e.g. `--view "%FILENAME%" "%FILENAME2%"` or `--view,%FILENAME%,%FILENAME2%`
+- Arguments are no longer required to be comma separated, so you can use either format e.g. `--view "%FILENAME%" "%FILENAME2%"` or `--view,%FILENAME%,%FILENAME2%`. In this example you could use the default behaviour of this plugin and shorten to just `--view` because filenames are inserted after any arguments.
 
 ## [1.8.5] - 2026-02-09
 ### Added
