@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Merarom <merarom@yahoo.es>, 2022
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"PO-Revision-Date: 2022-09-13 20:23+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:219
+msgid "Keyboard shortcuts"
+msgstr "Kortkommandon"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för detta tillägg"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinerad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:30
+msgid "Resize Cover"
+msgstr "Ändra omslagsstorlek"
+
+#: action.py:66
+msgid "Size: {0}(w) x {1}(h)"
+msgstr "Storlek: {0} (b) × {1} (h)"
+
+#: action.py:69 config.py:73
+msgid "Keep aspect ratio"
+msgstr "Behåll proportioner"
+
+#: action.py:71
+msgid "Only shrink"
+msgstr "Förminska endast"
+
+#: action.py:81
+msgid "&Customize plugin"
+msgstr "&Anpassa insticksmodul"
+
+#: action.py:83 config.py:224
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: action.py:114
+msgid "No covers resized"
+msgstr "Inga omslag storleksändrades"
+
+#: action.py:114
+msgid "None of the selected book(s) have covers"
+msgstr "Ingen av de markerade böckerna har omslag"
+
+#: config.py:73
+msgid "Height"
+msgstr "Höjd"
+
+#: config.py:73
+msgid "Only shrink larger images"
+msgstr "Krymp endast större bilder"
+
+#: config.py:73
+msgid "Width"
+msgstr "Bredd"
+
+#: config.py:73 config.py:94 config.py:109 config.py:165 config.py:167
+msgid "Default"
+msgstr "Standard"
+
+#: config.py:146
+msgid "Cannot delete"
+msgstr "Kan inte ta bort"
+
+#: config.py:146
+msgid "You must have at least one resize menu item"
+msgstr "Du måste ha minst ett menyalternativ för storleksändring"
+
+#: config.py:148
+msgid "Are you sure you want to delete this resize menu item?"
+msgstr "Vill du verkligen ta bort detta menyalternativ för storleksändring?"
+
+#: config.py:150
+msgid "Are you sure you want to delete the selected {0} resize menu items?"
+msgstr ""
+"Vill du verkligen ta bort de {0} markerade menyalternativen för "
+"storleksändring?"
+
+#: config.py:151
+msgid "Are you sure?"
+msgstr "Är du säker?"
+
+#: config.py:180
+msgid "Cover resize options:"
+msgstr "Alternativ för ändring av omslagsstorlek:"
+
+#: config.py:196
+msgid "Add resize menu item row"
+msgstr "Lägg till rad med menyalternativ för storleksändring"
+
+#: config.py:203
+msgid "Delete resize menu item row"
+msgstr "Ta bort rad med menyalternativ för storleksändring"
+
+#: config.py:213
+msgid "Set as Toolbar Button Default"
+msgstr "Ange som standard för verktygsfältsknappen"
+
+#: config.py:214
+msgid "Set this size as the default on the menu button"
+msgstr "Ange denna storlek som standard för menyknappen"
+
+#: config.py:220
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"

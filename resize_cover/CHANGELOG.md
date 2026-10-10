@@ -1,5 +1,13 @@
 # Resize Cover Change Log
 
+## [1.2.3] - 2026-10-10
+### Added
+- French translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+
 ## [1.2.2] - 2026-02-09
 ### Added
 - Arabic translation
