@@ -1,5 +1,17 @@
 # FictionDB Change Log
 
+## [1.4.4] - 2026-10-10
+### Added
+- Czech translation
+- Galician translation
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+### Fixed
+- Updates for site changes
+
 ## [1.4.3] - 2026-02-09
 ### Added
 - Arabic translation

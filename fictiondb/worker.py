@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import socket, re, datetime
+import socket, re, datetime, json
 from threading import Thread
 import six
 from six import text_type as unicode
@@ -66,6 +66,10 @@ class Worker(Thread): # Get details
 
         if '<title>404 - ' in raw:
             self.log.error('URL malformed: %r'%self.url)
+            return
+
+        if '/book/' in self.url:
+            self.parse_structured_book(raw)
             return
 
         try:
@@ -184,7 +188,62 @@ class Worker(Thread): # Get details
         self.result_queue.put(mi)
 
     def parse_fictiondb_id(self, url):
-        return re.search('/title/(.*)\.htm', url).groups(0)[0]
+        match = re.search(r'/(?:title|book)/([^?#]+)\.htm', url)
+        return match.group(1) if match else None
+
+    def parse_structured_book(self, raw):
+        script = re.search(
+            r'<script\b[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+            raw, re.IGNORECASE | re.DOTALL)
+        if not script:
+            self.log.error('No structured book metadata found for %r'%self.url)
+            return
+
+        try:
+            data = json.loads(script.group(1))
+            if isinstance(data, list):
+                data = next(item for item in data if item.get('@type') == 'Book')
+            if data.get('@type') != 'Book':
+                data = next(item for item in data.get('@graph', []) if item.get('@type') == 'Book')
+        except Exception:
+            self.log.exception('Failed to read structured book metadata for %r'%self.url)
+            return
+
+        title = data.get('name')
+        author_data = data.get('author', [])
+        if isinstance(author_data, dict):
+            author_data = [author_data]
+        authors = [author.get('name') if isinstance(author, dict) else author
+                   for author in author_data]
+        authors = [author for author in authors if author]
+        fictiondb_id = self.parse_fictiondb_id(self.url)
+        if not title or not authors or not fictiondb_id:
+            self.log.error('Missing title, author, or FictionDB id for %r'%self.url)
+            return
+
+        mi = Metadata(title, authors)
+        mi.set_identifier('fictiondb', fictiondb_id)
+        mi.comments = data.get('description')
+        mi.isbn = data.get('isbn')
+        published = data.get('datePublished')
+        if published:
+            try:
+                mi.pubdate = datetime.datetime.strptime(published[:10], '%Y-%m-%d')
+            except ValueError:
+                self.log.exception('Failed to parse publication date for %r'%self.url)
+        cover = data.get('image')
+        if isinstance(cover, list):
+            cover = cover[0] if cover else None
+        self.fictiondb_id, self.isbn, self.cover_url = fictiondb_id, mi.isbn, cover
+        mi.has_cover = bool(cover)
+        mi.source_relevance = self.relevance
+
+        if self.isbn:
+            self.plugin.cache_isbn_to_identifier(self.isbn, fictiondb_id)
+        if cover:
+            self.plugin.cache_identifier_to_cover_url(fictiondb_id, cover)
+        self.plugin.clean_downloaded_metadata(mi)
+        self.result_queue.put(mi)
 
     def parse_title(self, root):
         title_node = ''.join(root.xpath('//h1[@class="white"]/text()'))

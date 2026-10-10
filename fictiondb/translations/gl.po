@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Víctor Estévez <victor.esbu@gmail.com>, 2022
+# nin hum <ninhum@gmx.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:14+0000\n"
+"Last-Translator: nin hum <ninhum@gmx.com>, 2026\n"
+"Language-Team: Galician (https://app.transifex.com/calibre/teams/19337/gl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: gl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "Ataxos de teclado"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reinicia calibre agora"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Preferencias para:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Limpar"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Limpar todas as configuracións para este plugin"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Estás certo de que queres cambiar a túa configuración nesta biblioteca para "
+"este complemento?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Calquera configuración noutras bibliotecas ou almacenada nun ficheiro JSON "
+"na carpeta de complementos de calibre non será modificada."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Debes reiniciar calibre despois."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Cambiouse a configuración"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Modificouse a configuración deste complemento nesta biblioteca."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Reinicia calibre agora."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Estás certo de que queres borrar a configuración desta biblioteca para este "
+"complemento?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Configuración eliminada"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Borráronse todas as configuracións deste complemento nesta biblioteca."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Copiar no portapapeis"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Indefinido"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "É preciso reiniciar"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Non se atopou a imaxe do título - Debes reiniciar Calibre antes de usar este"
+" complemento!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Crear unha nova columna"
+
+#: config.py:47
+msgid "Other options"
+msgstr "Outras opcións"
+
+#: config.py:52
+msgid "Include 'Genres' in the Tags column"
+msgstr "Inclúe \"Xéneros\" na columna de etiquetas."
+
+#: config.py:53
+msgid ""
+"When checked if a book has any genres defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Ao comprobar se un libro ten algún xénero definido, estes aparecerán na "
+"columna de etiquetas deste complemento."
+
+#: config.py:58
+msgid "Include 'Sub-Genres' in the Tags column"
+msgstr "Inclúe \"Subxéneros\" na columna de etiquetas."
+
+#: config.py:59
+msgid ""
+"When checked if a book has any Sub-Genres defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Ao comprobar se un libro ten subxéneros definidos, estes aparecerán na "
+"columna de etiquetas deste complemento."
+
+#: config.py:64
+msgid "Include 'Themes' in the Tags column"
+msgstr "Inclúe \"Temas\" na columna de etiquetas."
+
+#: config.py:65
+msgid ""
+"When checked if a book has any Themes defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Ao comprobar se un libro ten algún tema definido, este aparecerá na columna "
+"de etiquetas deste complemento."
+
+#: config.py:70
+msgid "Include 'Age Level' in the Tags column"
+msgstr "Inclúe \"Nivel de idade\" na columna de etiquetas."
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Se se selecciona esta opción, no caso de que un libro teña definido un "
+"\"Nivel de idade\", este aparecerá na columna de etiquetas proporcionada "
+"polo complemento."

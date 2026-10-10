@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Pk11 <epicpkmn11@outlook.com>, 2022
+# akihiko tanae (tanaeakihiko), 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:14+0000\n"
+"Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
+"Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "キーボードショートカット"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "今すぐcalibreを再起動します"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "環境設定:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "クリア"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "プラグインの全ての設定をクリアします"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "本プラグインによりこのライブラリ内の設定を変更して良いですか？"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "他のライブラリにどれかまたはcalibreプラグインのフォルダにJSONファイルに保存された設定は変更されていません。"
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "あとでcalibreを再起動が必要です。"
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "設定が変更されました。"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "本プラグインの設定が変更されました。"
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "今すぐcalibreを再起動してください。"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "このライブラリにのこのプラグインの設定をクリアしてもよろしいですか？"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "設定は削除されました。"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "このライブラリにこのプラグインの全ての設定はクリアされました。"
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "クリップボードにコピー"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "未定義"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "再起動が必要です。"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "タイトル画像が見つかりません。本プラグインを使用する前にcalibreを再起動してください。"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "新しい列を作成"
+
+#: config.py:47
+msgid "Other options"
+msgstr "他の設定"
+
+#: config.py:52
+msgid "Include 'Genres' in the Tags column"
+msgstr "タグ列に 'ジャンル' を含める"
+
+#: config.py:53
+msgid ""
+"When checked if a book has any genres defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr "チェックすると、本に 'ジャンル' が設定されている場合は、このプラグインのタグ列にその旨表示されます。"
+
+#: config.py:58
+msgid "Include 'Sub-Genres' in the Tags column"
+msgstr "タグ列に 'サブジャンル' を含める"
+
+#: config.py:59
+msgid ""
+"When checked if a book has any Sub-Genres defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr "チェックすると、本に 'サブジャンル が設定されている場合は、このプラグインのタグ列にその旨表示されます。"
+
+#: config.py:64
+msgid "Include 'Themes' in the Tags column"
+msgstr "タグ列に 'テーマ' を含める"
+
+#: config.py:65
+msgid ""
+"When checked if a book has any Themes defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr "チェックすると、本に 'テーマ' が設定されている場合は、このプラグインのタグ列にその旨表示されます。"
+
+#: config.py:70
+msgid "Include 'Age Level' in the Tags column"
+msgstr "タグ列に '対象年齢' を含める"
+
+#: config.py:71
+msgid ""
+"When checked, if a book has an 'Age Level' defined it will be\n"
+"returned in the Tags column from this plugin."
+msgstr "チェックすると、本に '対象年齢' が設定されている場合は、このプラグインのタグ列にその旨表示されます。"

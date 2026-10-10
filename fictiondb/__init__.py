@@ -26,7 +26,7 @@ class FictionDB(Source):
     name                    = 'FictionDB'
     description             = 'Downloads metadata and covers from fictiondb.com'
     author                  = 'Grant Drake'
-    version                 = (1, 4, 3)
+    version                 = (1, 4, 4)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'fictiondb'
@@ -50,16 +50,17 @@ class FictionDB(Source):
         fictiondb_id = identifiers.get(self.ID_NAME, None)
         if fictiondb_id:
             # Older ids end with a tilde and a letter. Strip this if it exists.
-            if fictiondb_id[len(fictiondb_id) - 2] == '~':
+            if len(fictiondb_id) > 1 and fictiondb_id[-2] == '~':
                 fictiondb_id = fictiondb_id[0: len(fictiondb_id) - 2]
 
+            path = '/book/' if '~' in fictiondb_id else '/title/'
             return (self.ID_NAME, fictiondb_id,
-                    '%s/title/%s.htm'%(self.BASE_URL, fictiondb_id))
+                    '%s%s%s.htm'%(self.BASE_URL, path, fictiondb_id))
 
     def id_from_url(self, url):
-        match = re.match(self.BASE_URL + "/title/(.*)\\.htm.*", url)
+        match = re.match(re.escape(self.BASE_URL) + r"/(?:title|book)/([^?#]+)\.htm", url)
         if match:
-            return (self.ID_NAME, match.groups(0)[0])
+            return (self.ID_NAME, match.group(1))
         return None
         
     def create_query(self, log, title=None, authors=None, identifiers={}):
@@ -136,7 +137,7 @@ class FictionDB(Source):
                 # Check whether we got redirected to the book page.
                 # If we did, will use the url.
                 location = response.geturl()
-                if '/title/' in location:
+                if '/title/' in location or '/book/' in location:
                     log.info('Initial search including ISBN found something: %r'%location)
                     matches.append(location)
             except Exception as e:
@@ -144,9 +145,8 @@ class FictionDB(Source):
                 log.exception(err)
                 return as_unicode(e)
 
-            # For ISBN based searches we have already done everything we need to
-            # So anything from this point below is for title/author based searches.
-            if not isbn or len(matches) == 0:
+            # Parse the result table only when the query did not redirect to a book.
+            if not matches:
                 try:
                     raw = response.read().strip()
 #                     open('E:\\fictiondb_search.html', 'wb').write(raw)
