@@ -1,0 +1,357 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Martin Sowa, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:04+1000\n"
+"PO-Revision-Date: 2022-09-19 14:59+0000\n"
+"Last-Translator: Martin Sowa, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:689
+msgid "Keyboard shortcuts"
+msgstr "Klávesové skratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reštartovať calibre teraz"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Nastavenia pre:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazať"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazať všetky nastavenia tohto zásuvného modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete zmeniť nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavenia v iných knižniciach ani nastavenia uložené v súbore JSON v "
+"priečinku zásuvných modulov calibre nebudú zmenené."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Potom musíte reštartovať calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavenia zmenené"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavenia tohto zásuvného modulu v tejto knižnici boli zmenené."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Teraz prosím reštartujte calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete vymazať nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavenia vymazané"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Všetky nastavenia tohto zásuvného modulu v tejto knižnici boli vymazané."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovať do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinované"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžaduje sa reštart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Obrázok titulu sa nenašiel – pred použitím tohto zásuvného modulu musíte "
+"reštartovať calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvoriť nový stĺpec"
+
+#: action.py:33
+msgid "Open With"
+msgstr "Otvoriť pomocou"
+
+#: action.py:83
+msgid "&Customize plugin"
+msgstr "&Prispôsobiť zásuvný modul"
+
+#: action.py:85 config.py:694
+msgid "&Help"
+msgstr "&Pomocník"
+
+#: action.py:159
+msgid "No book selected"
+msgstr "Nie je vybraná žiadna kniha"
+
+#: action.py:159 action.py:166 action.py:185 action.py:191
+msgid "Cannot open with"
+msgstr "Nemožno otvoriť pomocou"
+
+#: action.py:166
+msgid "Book has no cover."
+msgstr "Kniha nemá obálku."
+
+#: action.py:174
+msgid "Open With template error"
+msgstr "Chyba šablóny Open With"
+
+#: action.py:186
+msgid "No %s format available. First convert the book to %s."
+msgstr ""
+"Nie je k dispozícii formát %s. Najprv skonvertujte knihu do formátu %s."
+
+#: action.py:192
+msgid "Path not specified for this format in your configuration."
+msgstr "Pre tento formát nie je vo vašej konfigurácii zadaná cesta."
+
+#: config.py:205
+msgid "Format"
+msgstr "Formát"
+
+#: config.py:205
+msgid "Image"
+msgstr "Obrázok"
+
+#: config.py:205
+msgid "Submenu"
+msgstr "Podponuka"
+
+#: config.py:205
+msgid "Title"
+msgstr "Názov"
+
+#: config.py:206
+msgid "Application Path"
+msgstr "Cesta k aplikácii"
+
+#: config.py:206
+msgid "Args"
+msgstr "Argumenty"
+
+#: config.py:294 config.py:299
+msgid "Select the application to execute for this format"
+msgstr "Vyberte aplikáciu, ktorá sa má spustiť pre tento formát"
+
+#: config.py:354
+msgid "Edit Path"
+msgstr "Upraviť cestu"
+
+#: config.py:355
+msgid "Choose a new path for this application:"
+msgstr "Vyberte novú cestu pre túto aplikáciu:"
+
+#: config.py:402
+msgid "Are you sure you want to delete this menu item?"
+msgstr "Naozaj chcete odstrániť túto položku ponuky?"
+
+#: config.py:404
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "Naozaj chcete odstrániť vybrané položky ponuky ({0})?"
+
+#: config.py:405 config.py:590 config.py:763 config.py:772
+msgid "Are you sure?"
+msgstr "Naozaj?"
+
+#: config.py:515
+msgid "Add New Image"
+msgstr "Pridať nový obrázok"
+
+#: config.py:518
+msgid "&Select image source"
+msgstr "&Vyberte zdroj obrázka"
+
+#: config.py:521
+msgid "From &web domain favicon"
+msgstr "Z &favikony webovej domény"
+
+#: config.py:528
+msgid "From .png &file"
+msgstr "Zo súboru .png"
+
+#: config.py:541
+msgid "&Save as filename:"
+msgstr "&Uložiť ako názov súboru:"
+
+#: config.py:565
+msgid "Select a .png file for the menu icon"
+msgstr "Vyberte súbor .png pre ikonu ponuky"
+
+#: config.py:571
+msgid "Cannot select image"
+msgstr "Obrázok sa nepodarilo vybrať"
+
+#: config.py:572 config.py:610
+msgid "Source image must be a .png file."
+msgstr "Zdrojový obrázok musí byť súbor .png."
+
+#: config.py:580 config.py:584 config.py:598 config.py:606 config.py:609
+#: config.py:612
+msgid "Cannot import image"
+msgstr "Obrázok sa nepodarilo importovať"
+
+#: config.py:581
+msgid "You must specify a filename to save as."
+msgstr "Musíte zadať názov súboru, pod ktorým sa má uložiť."
+
+#: config.py:585
+msgid "The save as filename should consist of a filename only."
+msgstr "Názov súboru na uloženie by mal obsahovať iba názov súboru."
+
+#: config.py:591
+msgid "An image with this name already exists - overwrite it?"
+msgstr "Obrázok s týmto názvom už existuje – prepísať ho?"
+
+#: config.py:599
+msgid "You must specify a web domain url"
+msgstr "Musíte zadať adresu URL webovej domény"
+
+#: config.py:607
+msgid "You must specify a source file."
+msgstr "Musíte zadať zdrojový súbor."
+
+#: config.py:613
+msgid "Source image does not exist!"
+msgstr "Zdrojový obrázok neexistuje!"
+
+#: config.py:633
+msgid "&Select and configure the menu items to display:"
+msgstr "&Vyberte a nastavte položky ponuky, ktoré sa majú zobraziť:"
+
+#: config.py:649
+msgid "Move row up"
+msgstr "Posunúť riadok nahor"
+
+#: config.py:656
+msgid "Add menu item row"
+msgstr "Pridať riadok položky ponuky"
+
+#: config.py:663
+msgid "Delete menu item row"
+msgstr "Odstrániť riadok položky ponuky"
+
+#: config.py:670
+msgid "Reset to defaults"
+msgstr "Obnoviť predvolené hodnoty"
+
+#: config.py:677
+msgid "Move row down"
+msgstr "Posunúť riadok nadol"
+
+#: config.py:690
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Upraviť klávesové skratky priradené tomuto zásuvnému modulu"
+
+#: config.py:737
+msgid "&Edit Path"
+msgstr "&Upraviť cestu"
+
+#: config.py:743
+msgid "&Add image"
+msgstr "&Pridať obrázok"
+
+#: config.py:746
+msgid "&Open images folder"
+msgstr "&Otvoriť priečinok s obrázkami"
+
+#: config.py:752
+msgid "&Import"
+msgstr "&Importovať"
+
+#: config.py:755
+msgid "&Export"
+msgstr "&Exportovať"
+
+#: config.py:764
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr "Naozaj chcete obnoviť predvolenú ponuku zásuvného modulu?"
+
+#: config.py:765
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr ""
+"Akákoľvek upravená konfigurácia a vlastné položky ponuky budú zahodené."
+
+#: config.py:773
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr "Priečinok zatiaľ neexistuje. Chcete ho vytvoriť?"
+
+#: config.py:790
+msgid "Import Failed"
+msgstr "Import zlyhal"
+
+#: config.py:791
+msgid "This is not a valid OWIP export archive"
+msgstr "Toto nie je platný archív exportu OWIP"
+
+#: config.py:803
+msgid "%d menu items added"
+msgstr "Pridané položky ponuky: %d"
+
+#: config.py:803
+msgid "Import completed"
+msgstr "Import dokončený"
+
+#: config.py:813
+msgid "Cannot export"
+msgstr "Nemožno exportovať"
+
+#: config.py:814
+msgid "No menu items selected to export."
+msgstr "Nie sú vybrané žiadne položky ponuky na export."
+
+#: config.py:842
+msgid "%d menu items exported to<br>%s"
+msgstr "%d položiek ponuky exportovaných do<br>%s"
+
+#: config.py:842
+msgid "Export completed"
+msgstr "Export dokončený"
+
+#: config.py:849
+msgid "Select a menu file archive to import"
+msgstr "Vyberte archív s ponukou, ktorý chcete importovať"
+
+#: config.py:857
+msgid "Save archive as"
+msgstr "Uložiť archív ako"

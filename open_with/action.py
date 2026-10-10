@@ -4,7 +4,7 @@ __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
 from functools import partial
-import os, subprocess
+import os, re, shlex, subprocess
 
 try:
     from qt.core import QMenu, QToolButton
@@ -25,7 +25,7 @@ from calibre_plugins.open_with.common_icons import set_plugin_icon_resources, ge
 from calibre_plugins.open_with.common_menus import (unregister_menu_actions, create_menu_action_unique,
                                                     create_menu_item)
 
-FILENAME_TOKEN = "%FILENAME%"
+FILENAME_TOKEN_PATTERN = re.compile(r'%FILENAME([0-9]*)%')
 
 class OpenWithAction(InterfaceAction):
 
@@ -115,28 +115,38 @@ class OpenWithAction(InterfaceAction):
         return ac
 
     def about_to_show_menu(self):
-        # Look at the currently selected row and enable/disable menu items based on it.
+        # Enable each format if at least one selected book can be opened with it.
         db = self.gui.current_db
-        row = self.gui.library_view.currentIndex()
-        if not row.isValid() or not self.is_library_selected:
+        book_ids = self.get_selected_book_ids()
+        if not book_ids or not self.is_library_selected:
             # Right-clicking with no valid row should disable ALL menu options
             self.set_enabled_for_all_menu_formats(False)
             return
-        # Go through each format configured in the menu and see whether it should be enabled
-        book_id = self.gui.library_view.model().id(row)
-        book_formats = db.formats(book_id, index_is_id=True, verify_formats=False)
-        if not book_formats:
-            book_formats = ''
-        book_formats = book_formats.split(',')
+
         for book_format in self.menus_by_format:
             is_enabled = False
-            if book_format == 'COVER':
-                is_enabled = db.has_cover(book_id)
-            elif book_format == 'TEMPLATE':
-                is_enabled = True
-            else:
-                is_enabled = book_format in book_formats
+            for book_id in book_ids:
+                if book_format == 'COVER':
+                    is_enabled = db.has_cover(book_id)
+                elif book_format == 'TEMPLATE':
+                    is_enabled = True
+                else:
+                    book_formats = db.formats(book_id, index_is_id=True, verify_formats=False)
+                    if not book_formats:
+                        book_formats = ''
+                    is_enabled = book_format in book_formats.split(',')
+                if is_enabled:
+                    break
             self.set_enabled_for_menus_in_format(book_format, is_enabled)
+
+    def get_selected_book_ids(self):
+        book_ids = self.gui.library_view.get_selected_ids()
+        if book_ids:
+            return book_ids
+        row = self.gui.library_view.currentIndex()
+        if row.isValid():
+            return [self.gui.library_view.model().id(row)]
+        return []
 
     def about_to_hide_menu(self):
         # When hiding menus we must re-enable all selections in case a shortcut key for the
@@ -154,116 +164,159 @@ class OpenWithAction(InterfaceAction):
     def open_with(self, book_format, external_app_path, app_args):
         if not self.is_library_selected:
             return
-        row = self.gui.library_view.currentIndex()
-        if not row.isValid():
+        book_ids = self.get_selected_book_ids()
+        if not book_ids:
             return error_dialog(self.gui, _('Cannot open with'), _('No book selected'), show=True)
         db = self.gui.library_view.model().db
-        book_id = self.gui.library_view.model().id(row)
+        paths_to_books = []
 
         # Check our special case of a format set as "cover" to edit the cover
         if book_format.lower() == 'cover':
-            if not db.has_cover(book_id):
-                return error_dialog(self.gui, _('Cannot open with'), _('Book has no cover.'),
-                        show=True)
-            path_to_cover = os.path.join(db.library_path, db.path(book_id, index_is_id=True), 'cover.jpg')
-            self.launch_app(external_app_path, app_args, path_to_cover)
-            return
+            for book_id in book_ids:
+                if db.has_cover(book_id):
+                    paths_to_books.append(os.path.join(db.library_path,
+                            db.path(book_id, index_is_id=True), 'cover.jpg'))
+            if not paths_to_books:
+                return error_dialog(self.gui, _('Cannot open with'), _('Book has no cover.'), show=True)
         elif book_format.lower() == 'template':
-            mi = db.get_metadata(row.row())
             from calibre.ebooks.metadata.book.formatter import SafeFormat
-            path_to_file = SafeFormat().safe_format(app_args, mi, _('Open With template error'), mi)
-            self.launch_app(external_app_path, '', path_to_file, wrap_args=False)
-            return
+            safe_format = SafeFormat()
+            for book_id in book_ids:
+                mi = db.get_metadata(book_id, index_is_id=True)
+                paths_to_books.append(safe_format.safe_format(
+                        app_args, mi, _('Open With template error'), mi))
+        else:
+            for book_id in book_ids:
+                try:
+                    path_to_book = db.format_abspath(book_id, book_format, index_is_id=True)
+                except Exception:
+                    path_to_book = None
+                if path_to_book:
+                    paths_to_books.append(path_to_book)
 
-        # Confirm format selected in formats
-        try:
-            path_to_book = db.format_abspath(book_id, book_format, index_is_id=True)
-        except:
-            path_to_book = None
-
-        if not path_to_book:
-            return error_dialog(self.gui, _('Cannot open with'),
-                    _('No %s format available. First convert the book to %s.')%(book_format,book_format),
-                    show=True)
+            if not paths_to_books:
+                return error_dialog(self.gui, _('Cannot open with'),
+                        _('No %s format available. First convert the book to %s.') %
+                        (book_format, book_format), show=True)
 
         # Confirm we have defined an application for that format in tweaks
         if external_app_path is None:
             return error_dialog(self.gui, _('Cannot open with'),
                     _('Path not specified for this format in your configuration.'),
                     show=True)
-        self.launch_app(external_app_path, app_args, path_to_book)
+        is_template = book_format.lower() == 'template'
+        self.launch_app(external_app_path, '' if is_template else app_args,
+                        paths_to_books, wrap_args=not is_template)
 
     def launch_app(self, external_app_path, app_args, path_to_file, wrap_args=True):
+        if isinstance(path_to_file, (list, tuple)):
+            paths_to_files = list(path_to_file)
+        else:
+            paths_to_files = [path_to_file]
         external_app_path = os.path.expandvars(external_app_path)
         if DEBUG:
-            print('Open: ', external_app_path, '(file): ', path_to_file, ' (args): ', app_args)
+            print('Open: ', external_app_path, '(files): ', paths_to_files, ' (args): ', app_args)
 
         if isosx:
             # For OSX we will not support optional command line arguments currently
             if external_app_path.lower().endswith(".app"):
-                args = 'open -a "%s" "%s"' % (external_app_path, path_to_file)
+                args = ['open', '-a', external_app_path] + paths_to_files
             else:
-                args = '"%s" "%s"' % (external_app_path, path_to_file)
-            subprocess.Popen(args, shell=True)
+                args = [external_app_path] + paths_to_files
+            subprocess.Popen(args)
 
         else:
             # For Windows/Linux merge any optional command line args with the app/file paths
-            app_args_list = self.get_args_list(external_app_path, app_args, path_to_file)
+            app_args_list, has_filename_token, missing_token = self.get_args_list(
+                    external_app_path, app_args, paths_to_files)
+            if missing_token:
+                return error_dialog(self.gui, _('Cannot open with'),
+                    _('Not enough selected books have a file for %s.') % missing_token,
+                    show=True)
             
             if iswindows:
                 # Different behavior required for pre calibre 5.4.0
                 # https://www.mobileread.com/forums/showpost.php?p=4048886&postcount=355
                 from calibre.constants import numeric_version as calibre_version
                 if calibre_version >= (5,4,0):
-                    self.launch_windows_5_4_plus(external_app_path, app_args_list, path_to_file, wrap_args)
+                    self.launch_windows_5_4_plus(external_app_path, app_args_list, paths_to_files,
+                            has_filename_token, wrap_args)
                 else:
-                    self.launch_windows_pre_5_4(external_app_path, app_args_list, path_to_file, wrap_args)
+                    self.launch_windows_pre_5_4(external_app_path, app_args_list, paths_to_files,
+                            has_filename_token, wrap_args)
             else: #Linux
                 clean_env = dict(os.environ)
                 clean_env['LD_LIBRARY_PATH'] = ''
                 subprocess.Popen(app_args_list, env=clean_env)
 
-    def get_args_list(self, external_app_path, app_args, path_to_file):
-        # Optionally allow our %FILENAME% token be substituted to a specific argument position
-        # Otherwise the filename will be appended as the last argument.
-        app_args_list = []
+    def get_args_list(self, external_app_path, app_args, paths_to_files):
+        # Allow indexed filename tokens in specific argument positions. Without tokens,
+        # append every eligible book path as a separate argument.
         if app_args:
-            # The user might not have comma separated their command line args though!
-            app_args_list = app_args.split(',')
+            lexer = shlex.shlex(app_args, posix=False)
+            lexer.whitespace += ','
+            lexer.whitespace_split = True
+            raw_args = []
+            for arg in lexer:
+                if len(arg) > 1 and arg[0] == arg[-1] and arg[0] in ('"', "'"):
+                    arg = arg[1:-1]
+                raw_args.append(arg)
+        else:
+            raw_args = []
 
+        app_args_list = []
         has_filename_token = False
-        for i in range(len(app_args_list)):
-            if FILENAME_TOKEN in app_args_list[i]:
-                has_filename_token = True
-                app_args_list[i] = app_args_list[i].replace(FILENAME_TOKEN, path_to_file)
+        missing_tokens = []
+        for arg in raw_args:
+            if not FILENAME_TOKEN_PATTERN.search(arg):
+                app_args_list.append(arg)
+                continue
 
-        app_args_list.insert(0, external_app_path)
+            has_filename_token = True
+
+            def replace_filename_token(match):
+                filename_index = int(match.group(1) or '1') - 1
+                if filename_index < 0 or filename_index >= len(paths_to_files):
+                    missing_tokens.append(match.group(0))
+                    return match.group(0)
+                return paths_to_files[filename_index]
+
+            app_args_list.append(FILENAME_TOKEN_PATTERN.sub(replace_filename_token, arg))
+
+        if missing_tokens:
+            return None, has_filename_token, missing_tokens[0]
+
         if not has_filename_token:
-            app_args_list.append(path_to_file)
-        return app_args_list
+            app_args_list.extend(paths_to_files)
+        app_args_list.insert(0, external_app_path)
+        return app_args_list, has_filename_token, None
 
-    def launch_windows_5_4_plus(self, external_app_path, app_args_list, path_to_file, wrap_args=True):
-        # Add to the recently opened files list to support windows jump lists etc.
+    def launch_windows_5_4_plus(self, external_app_path, app_args_list, paths_to_files,
+                                has_filename_token, wrap_args=True):
+        # Add the files to the recently opened list to support Windows jump lists etc.
         from calibre.gui2 import add_to_recent_docs
-        add_to_recent_docs(path_to_file)
+        for path_to_file in paths_to_files:
+            add_to_recent_docs(path_to_file)
 
         # Returning to the "old" way of launching processes, where the arguments are passed as a single
         # string to the shell. This is because passing as a list gave out of memory errors for Adobe Acrobat.
         cmd_line = '"%s"'%app_args_list[0]
-        for app_arg in app_args_list[1:-1]:
-            cmd_line += ' "%s"'%app_arg if wrap_args else ' %s'%app_arg
-        if path_to_file and len(path_to_file) > 0:
-            cmd_line += ' "%s"'%path_to_file
+        file_args_start = len(app_args_list) - len(paths_to_files)
+        for i, app_arg in enumerate(app_args_list[1:], start=1):
+            is_file_arg = not has_filename_token and i >= file_args_start
+            cmd_line += ' "%s"'%app_arg if is_file_arg or wrap_args else ' %s'%app_arg
         with sanitize_env_vars():
             print('cmd_line:', cmd_line)
             DETACHED_PROCESS = 0x00000008
             subprocess.Popen(cmd_line, creationflags=DETACHED_PROCESS)
 
 
-    def launch_windows_pre_5_4(self, external_app_path, app_args_list, path_to_file, wrap_args=True):
-        # Add to the recently opened files list to support windows jump lists etc.
+    def launch_windows_pre_5_4(self, external_app_path, app_args_list, paths_to_files,
+                               has_filename_token, wrap_args=True):
+        # Add the files to the recently opened list to support Windows jump lists etc.
         from win32com.shell import shell, shellcon
-        shell.SHAddToRecentDocs(shellcon.SHARD_PATHA, path_to_file)
+        for path_to_file in paths_to_files:
+            shell.SHAddToRecentDocs(shellcon.SHARD_PATHA, path_to_file)
         # As of v1.5.3 will no longer use subprocess because it does not work
         # for users who have non-ascii library paths
         # However we need a special case for Sigil which has issues with C runtime paths
@@ -276,10 +329,10 @@ class OpenWithAction(InterfaceAction):
         else:
             from win32process import CreateProcess, STARTUPINFO
             cmd_line = '"%s"'%app_args_list[0]
-            for app_arg in app_args_list[1:-1]:
-                cmd_line += ' "%s"'%app_arg if wrap_args else ' %s'%app_arg
-            if path_to_file and len(path_to_file) > 0:
-                cmd_line += ' "%s"'%path_to_file
+            file_args_start = len(app_args_list) - len(paths_to_files)
+            for i, app_arg in enumerate(app_args_list[1:], start=1):
+                is_file_arg = not has_filename_token and i >= file_args_start
+                cmd_line += ' "%s"'%app_arg if is_file_arg or wrap_args else ' %s'%app_arg
             si = STARTUPINFO()
             si.dwFlags |= subprocess.STARTF_USESTDHANDLES
             if DEBUG:

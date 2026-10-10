@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Junghee Lee <daemul72@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:04+1000\n"
+"PO-Revision-Date: 2022-09-19 14:59+0000\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
+"Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:689
+msgid "Keyboard shortcuts"
+msgstr "키보드 단축키"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "지금 calibre 재시작"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "다음 플러그인 환경 설정:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "지우기"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "이 플러그인에 대한 모든 설정 지우기"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 변경하시겠습니까?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "다른 서재의 설정이나 calibre 플러그인 폴더의 JSON 파일에 저장된 설정은 변경되지 않습니다."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "이후 calibre를 다시 시작해야 합니다."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "설정 변경됨"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "이 서재에서 이 플러그인의 설정이 변경되었습니다."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "지금 calibre를 다시 시작하세요."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 지우시겠습니까?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "설정 삭제됨"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "정의되지 않음"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "다시 시작 필요"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용하려면 calibre를 다시 시작해야 합니다!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "새 열 만들기"
+
+#: action.py:33
+msgid "Open With"
+msgstr "다음으로 열기"
+
+#: action.py:83
+msgid "&Customize plugin"
+msgstr "플러그인 설정(&C)"
+
+#: action.py:85 config.py:694
+msgid "&Help"
+msgstr "도움말(&H)"
+
+#: action.py:159
+msgid "No book selected"
+msgstr "선택한 책이 없습니다"
+
+#: action.py:159 action.py:166 action.py:185 action.py:191
+msgid "Cannot open with"
+msgstr "열 수 없음"
+
+#: action.py:166
+msgid "Book has no cover."
+msgstr "책에 표지가 없습니다."
+
+#: action.py:174
+msgid "Open With template error"
+msgstr "Open With 템플릿 오류"
+
+#: action.py:186
+msgid "No %s format available. First convert the book to %s."
+msgstr "사용 가능한 %s 형식이 없습니다. 먼저 책을 %s 형식으로 변환하십시오."
+
+#: action.py:192
+msgid "Path not specified for this format in your configuration."
+msgstr "설정에서 이 형식에 대한 경로가 지정되지 않았습니다."
+
+#: config.py:205
+msgid "Format"
+msgstr "형식"
+
+#: config.py:205
+msgid "Image"
+msgstr "이미지"
+
+#: config.py:205
+msgid "Submenu"
+msgstr "하위 메뉴"
+
+#: config.py:205
+msgid "Title"
+msgstr "제목"
+
+#: config.py:206
+msgid "Application Path"
+msgstr "응용 프로그램 경로"
+
+#: config.py:206
+msgid "Args"
+msgstr "인수"
+
+#: config.py:294 config.py:299
+msgid "Select the application to execute for this format"
+msgstr "이 형식에 대해 실행할 응용 프로그램 선택"
+
+#: config.py:354
+msgid "Edit Path"
+msgstr "경로 편집"
+
+#: config.py:355
+msgid "Choose a new path for this application:"
+msgstr "이 응용 프로그램의 새 경로 선택:"
+
+#: config.py:402
+msgid "Are you sure you want to delete this menu item?"
+msgstr "이 메뉴 항목을 삭제하시겠습니까?"
+
+#: config.py:404
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "선택한 {0}개 메뉴 항목을 삭제하시겠습니까?"
+
+#: config.py:405 config.py:590 config.py:763 config.py:772
+msgid "Are you sure?"
+msgstr "계속하시겠습니까?"
+
+#: config.py:515
+msgid "Add New Image"
+msgstr "새 이미지 추가"
+
+#: config.py:518
+msgid "&Select image source"
+msgstr "이미지 소스 선택(&S)"
+
+#: config.py:521
+msgid "From &web domain favicon"
+msgstr "웹 도메인 파비콘에서(&W)"
+
+#: config.py:528
+msgid "From .png &file"
+msgstr ".png 파일에서(&F)"
+
+#: config.py:541
+msgid "&Save as filename:"
+msgstr "다른 이름으로 저장할 파일 이름(&S):"
+
+#: config.py:565
+msgid "Select a .png file for the menu icon"
+msgstr "메뉴 아이콘으로 사용할 .png 파일 선택"
+
+#: config.py:571
+msgid "Cannot select image"
+msgstr "이미지를 선택할 수 없음"
+
+#: config.py:572 config.py:610
+msgid "Source image must be a .png file."
+msgstr "원본 이미지는 .png 파일이어야 합니다."
+
+#: config.py:580 config.py:584 config.py:598 config.py:606 config.py:609
+#: config.py:612
+msgid "Cannot import image"
+msgstr "이미지를 가져올 수 없음"
+
+#: config.py:581
+msgid "You must specify a filename to save as."
+msgstr "저장할 파일 이름을 지정해야 합니다."
+
+#: config.py:585
+msgid "The save as filename should consist of a filename only."
+msgstr "저장할 파일 이름은 파일 이름만 포함해야 합니다."
+
+#: config.py:591
+msgid "An image with this name already exists - overwrite it?"
+msgstr "같은 이름의 이미지가 이미 있습니다. 덮어쓰시겠습니까?"
+
+#: config.py:599
+msgid "You must specify a web domain url"
+msgstr "웹 도메인 URL을 지정해야 합니다"
+
+#: config.py:607
+msgid "You must specify a source file."
+msgstr "원본 파일을 지정해야 합니다."
+
+#: config.py:613
+msgid "Source image does not exist!"
+msgstr "원본 이미지가 없습니다!"
+
+#: config.py:633
+msgid "&Select and configure the menu items to display:"
+msgstr "표시할 메뉴 항목 선택 및 구성(&S):"
+
+#: config.py:649
+msgid "Move row up"
+msgstr "행 위로 이동"
+
+#: config.py:656
+msgid "Add menu item row"
+msgstr "메뉴 항목 행 추가"
+
+#: config.py:663
+msgid "Delete menu item row"
+msgstr "메뉴 항목 행 삭제"
+
+#: config.py:670
+msgid "Reset to defaults"
+msgstr "기본값으로 재설정"
+
+#: config.py:677
+msgid "Move row down"
+msgstr "행 아래로 이동"
+
+#: config.py:690
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
+
+#: config.py:737
+msgid "&Edit Path"
+msgstr "경로 편집(&E)"
+
+#: config.py:743
+msgid "&Add image"
+msgstr "이미지 추가(&A)"
+
+#: config.py:746
+msgid "&Open images folder"
+msgstr "이미지 폴더 열기(&O)"
+
+#: config.py:752
+msgid "&Import"
+msgstr "가져오기(&I)"
+
+#: config.py:755
+msgid "&Export"
+msgstr "내보내기(&E)"
+
+#: config.py:764
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr "플러그인 기본 메뉴로 재설정하시겠습니까?"
+
+#: config.py:765
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr "수정된 구성과 사용자 지정 메뉴 항목은 모두 버려집니다."
+
+#: config.py:773
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr "폴더가 아직 없습니다. 만들겠습니까?"
+
+#: config.py:790
+msgid "Import Failed"
+msgstr "가져오기 실패"
+
+#: config.py:791
+msgid "This is not a valid OWIP export archive"
+msgstr "올바른 OWIP 내보내기 아카이브가 아닙니다"
+
+#: config.py:803
+msgid "%d menu items added"
+msgstr "%d개 메뉴 항목 추가됨"
+
+#: config.py:803
+msgid "Import completed"
+msgstr "가져오기 완료"
+
+#: config.py:813
+msgid "Cannot export"
+msgstr "내보낼 수 없음"
+
+#: config.py:814
+msgid "No menu items selected to export."
+msgstr "내보낼 메뉴 항목이 선택되지 않았습니다."
+
+#: config.py:842
+msgid "%d menu items exported to<br>%s"
+msgstr "%d개 메뉴 항목을 다음 위치로 내보냈습니다<br>%s"
+
+#: config.py:842
+msgid "Export completed"
+msgstr "내보내기 완료"
+
+#: config.py:849
+msgid "Select a menu file archive to import"
+msgstr "가져올 메뉴 파일 아카이브 선택"
+
+#: config.py:857
+msgid "Save archive as"
+msgstr "아카이브 다른 이름으로 저장"

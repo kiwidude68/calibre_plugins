@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:04+1000\n"
+"POT-Creation-Date: 2026-10-10 14:39+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:689
+#: ..\common\common_dialogs.py:84 config.py:694
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgstr ""
 msgid "All settings for this plugin in this library have been cleared."
 msgstr ""
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr ""
 
@@ -99,240 +99,244 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:85 config.py:694
+#: action.py:85 config.py:699
 msgid "&Help"
 msgstr ""
 
-#: action.py:159
+#: action.py:169
 msgid "No book selected"
 msgstr ""
 
-#: action.py:159 action.py:166 action.py:185 action.py:191
+#: action.py:169 action.py:180 action.py:198 action.py:204 action.py:233
 msgid "Cannot open with"
 msgstr ""
 
-#: action.py:166
+#: action.py:180
 msgid "Book has no cover."
 msgstr ""
 
-#: action.py:174
+#: action.py:187
 msgid "Open With template error"
 msgstr ""
 
-#: action.py:186
+#: action.py:199
 msgid "No %s format available. First convert the book to %s."
 msgstr ""
 
-#: action.py:192
+#: action.py:205
 msgid "Path not specified for this format in your configuration."
 msgstr ""
 
-#: config.py:205
-msgid "Format"
+#: action.py:234
+msgid "Not enough selected books have a file for %s."
 msgstr ""
 
-#: config.py:205
-msgid "Image"
-msgstr ""
-
-#: config.py:205
-msgid "Submenu"
-msgstr ""
-
-#: config.py:205
+#: config.py:210
 msgid "Title"
 msgstr ""
 
-#: config.py:206
+#: config.py:210
+msgid "Submenu"
+msgstr ""
+
+#: config.py:210
+msgid "Format"
+msgstr ""
+
+#: config.py:210
+msgid "Image"
+msgstr ""
+
+#: config.py:211
 msgid "Application Path"
 msgstr ""
 
-#: config.py:206
+#: config.py:211
 msgid "Args"
 msgstr ""
 
-#: config.py:294 config.py:299
+#: config.py:299 config.py:304
 msgid "Select the application to execute for this format"
 msgstr ""
 
-#: config.py:354
+#: config.py:359
 msgid "Edit Path"
 msgstr ""
 
-#: config.py:355
+#: config.py:360
 msgid "Choose a new path for this application:"
 msgstr ""
 
-#: config.py:402
+#: config.py:407
 msgid "Are you sure you want to delete this menu item?"
 msgstr ""
 
-#: config.py:404
+#: config.py:409
 msgid "Are you sure you want to delete the selected {0} menu items?"
 msgstr ""
 
-#: config.py:405 config.py:590 config.py:763 config.py:772
+#: config.py:410 config.py:595 config.py:768 config.py:777
 msgid "Are you sure?"
 msgstr ""
 
-#: config.py:515
+#: config.py:520
 msgid "Add New Image"
 msgstr ""
 
-#: config.py:518
+#: config.py:523
 msgid "&Select image source"
 msgstr ""
 
-#: config.py:521
+#: config.py:526
 msgid "From &web domain favicon"
 msgstr ""
 
-#: config.py:528
+#: config.py:533
 msgid "From .png &file"
 msgstr ""
 
-#: config.py:541
+#: config.py:546
 msgid "&Save as filename:"
 msgstr ""
 
-#: config.py:565
+#: config.py:570
 msgid "Select a .png file for the menu icon"
 msgstr ""
 
-#: config.py:571
+#: config.py:576
 msgid "Cannot select image"
 msgstr ""
 
-#: config.py:572 config.py:610
+#: config.py:577 config.py:615
 msgid "Source image must be a .png file."
 msgstr ""
 
-#: config.py:580 config.py:584 config.py:598 config.py:606 config.py:609
-#: config.py:612
+#: config.py:585 config.py:589 config.py:603 config.py:611 config.py:614
+#: config.py:617
 msgid "Cannot import image"
 msgstr ""
 
-#: config.py:581
+#: config.py:586
 msgid "You must specify a filename to save as."
 msgstr ""
 
-#: config.py:585
+#: config.py:590
 msgid "The save as filename should consist of a filename only."
 msgstr ""
 
-#: config.py:591
+#: config.py:596
 msgid "An image with this name already exists - overwrite it?"
 msgstr ""
 
-#: config.py:599
+#: config.py:604
 msgid "You must specify a web domain url"
 msgstr ""
 
-#: config.py:607
+#: config.py:612
 msgid "You must specify a source file."
 msgstr ""
 
-#: config.py:613
+#: config.py:618
 msgid "Source image does not exist!"
 msgstr ""
 
-#: config.py:633
+#: config.py:638
 msgid "&Select and configure the menu items to display:"
 msgstr ""
 
-#: config.py:649
+#: config.py:654
 msgid "Move row up"
 msgstr ""
 
-#: config.py:656
+#: config.py:661
 msgid "Add menu item row"
 msgstr ""
 
-#: config.py:663
+#: config.py:668
 msgid "Delete menu item row"
 msgstr ""
 
-#: config.py:670
+#: config.py:675
 msgid "Reset to defaults"
 msgstr ""
 
-#: config.py:677
+#: config.py:682
 msgid "Move row down"
 msgstr ""
 
-#: config.py:690
+#: config.py:695
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:737
+#: config.py:742
 msgid "&Edit Path"
 msgstr ""
 
-#: config.py:743
+#: config.py:748
 msgid "&Add image"
 msgstr ""
 
-#: config.py:746
+#: config.py:751
 msgid "&Open images folder"
 msgstr ""
 
-#: config.py:752
+#: config.py:757
 msgid "&Import"
 msgstr ""
 
-#: config.py:755
+#: config.py:760
 msgid "&Export"
 msgstr ""
 
-#: config.py:764
+#: config.py:769
 msgid "Are you sure you want to reset to the plugin default menu?"
 msgstr ""
 
-#: config.py:765
+#: config.py:770
 msgid "Any modified configuration and custom menu items will be discarded."
 msgstr ""
 
-#: config.py:773
+#: config.py:778
 msgid "Folder does not yet exist. Do you want to create it?"
 msgstr ""
 
-#: config.py:790
+#: config.py:795
 msgid "Import Failed"
 msgstr ""
 
-#: config.py:791
+#: config.py:796
 msgid "This is not a valid OWIP export archive"
 msgstr ""
 
-#: config.py:803
-msgid "%d menu items added"
-msgstr ""
-
-#: config.py:803
+#: config.py:808
 msgid "Import completed"
 msgstr ""
 
-#: config.py:813
+#: config.py:808
+msgid "%d menu items added"
+msgstr ""
+
+#: config.py:818
 msgid "Cannot export"
 msgstr ""
 
-#: config.py:814
+#: config.py:819
 msgid "No menu items selected to export."
 msgstr ""
 
-#: config.py:842
-msgid "%d menu items exported to<br>%s"
-msgstr ""
-
-#: config.py:842
+#: config.py:847
 msgid "Export completed"
 msgstr ""
 
-#: config.py:849
+#: config.py:847
+msgid "%d menu items exported to<br>%s"
+msgstr ""
+
+#: config.py:854
 msgid "Select a menu file archive to import"
 msgstr ""
 
-#: config.py:857
+#: config.py:862
 msgid "Save archive as"
 msgstr ""
 

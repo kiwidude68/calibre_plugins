@@ -1,0 +1,354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Fan Xu <xlivevil@aliyun.com>, 2022
+# 高垚鑫, 2022
+# Julien G. <julien.gong@gmail.com>, 2022
+# Ander_Index <Ander_Index@outlook.com>, 2023
+# tony shen <anthanny@hotmail.com>, 2024
+# a b, 2024
+# RERBIN MA, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:04+1000\n"
+"PO-Revision-Date: 2022-09-19 14:59+0000\n"
+"Last-Translator: RERBIN MA, 2026\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:689
+msgid "Keyboard shortcuts"
+msgstr "键盘快捷键"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "现在重启 calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "首选项用于："
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "清除"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "清除此插件的所有设置"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "是否确实要更改此书库中插件的设置？"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "其他库中的任何设置或存储在calibre plugins文件夹中的JSON文件中的任何设置都不会被触动。"
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "您需要稍后重启 calibre"
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "设置已修改"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "此书库中此插件的设置已更改。"
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "现在请重启 calibre"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "是否确实要清除此插件库中的设置？"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "设置已删除"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "此插件库中的所有设置都已清除。"
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "未定义的"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "需要重启"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "未找到名称图标 - 使用此插件之前必须重新启动 Calibre！"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "创建新列"
+
+#: action.py:33
+msgid "Open With"
+msgstr "打开方式"
+
+#: action.py:83
+msgid "&Customize plugin"
+msgstr "个性化插件(&C)"
+
+#: action.py:85 config.py:694
+msgid "&Help"
+msgstr "帮助 (&H)"
+
+#: action.py:159
+msgid "No book selected"
+msgstr "未选择书籍"
+
+#: action.py:159 action.py:166 action.py:185 action.py:191
+msgid "Cannot open with"
+msgstr "失败的打开方式——"
+
+#: action.py:166
+msgid "Book has no cover."
+msgstr "书籍没有封面。"
+
+#: action.py:174
+msgid "Open With template error"
+msgstr "“打开方式”模板错误"
+
+#: action.py:186
+msgid "No %s format available. First convert the book to %s."
+msgstr "无可用的 %s 格式。请先将书籍转换为 %s。"
+
+#: action.py:192
+msgid "Path not specified for this format in your configuration."
+msgstr "配置中未指定此格式的路径。"
+
+#: config.py:205
+msgid "Format"
+msgstr "格式"
+
+#: config.py:205
+msgid "Image"
+msgstr "图标"
+
+#: config.py:205
+msgid "Submenu"
+msgstr "子菜单"
+
+#: config.py:205
+msgid "Title"
+msgstr "名称"
+
+#: config.py:206
+msgid "Application Path"
+msgstr "应用程序路径"
+
+#: config.py:206
+msgid "Args"
+msgstr "参数"
+
+#: config.py:294 config.py:299
+msgid "Select the application to execute for this format"
+msgstr "选择打开此格式的应用程序"
+
+#: config.py:354
+msgid "Edit Path"
+msgstr "编辑路径"
+
+#: config.py:355
+msgid "Choose a new path for this application:"
+msgstr "为此应用程序选择新路径："
+
+#: config.py:402
+msgid "Are you sure you want to delete this menu item?"
+msgstr "确定要删除此菜单项吗？"
+
+#: config.py:404
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "确定要删除所选的 {0} 个菜单项吗？"
+
+#: config.py:405 config.py:590 config.py:763 config.py:772
+msgid "Are you sure?"
+msgstr "你确认吗？"
+
+#: config.py:515
+msgid "Add New Image"
+msgstr "添加新图片"
+
+#: config.py:518
+msgid "&Select image source"
+msgstr "选择图片来源(&S)"
+
+#: config.py:521
+msgid "From &web domain favicon"
+msgstr "来自网站域名图标(&W)"
+
+#: config.py:528
+msgid "From .png &file"
+msgstr "从 .png 文件(&F)"
+
+#: config.py:541
+msgid "&Save as filename:"
+msgstr "另存为文件名(&S):"
+
+#: config.py:565
+msgid "Select a .png file for the menu icon"
+msgstr "为菜单图标选择一个.png文件"
+
+#: config.py:571
+msgid "Cannot select image"
+msgstr "无法选择图片"
+
+#: config.py:572 config.py:610
+msgid "Source image must be a .png file."
+msgstr "源图片必须是 .png 文件。"
+
+#: config.py:580 config.py:584 config.py:598 config.py:606 config.py:609
+#: config.py:612
+msgid "Cannot import image"
+msgstr "无法导入图片"
+
+#: config.py:581
+msgid "You must specify a filename to save as."
+msgstr "您必须指定要另存为的文件名"
+
+#: config.py:585
+msgid "The save as filename should consist of a filename only."
+msgstr "另存为的文件名应仅包含文件名"
+
+#: config.py:591
+msgid "An image with this name already exists - overwrite it?"
+msgstr "已存在同名图片 - 是否覆盖？"
+
+#: config.py:599
+msgid "You must specify a web domain url"
+msgstr "您必须提供一个网站域名 URL"
+
+#: config.py:607
+msgid "You must specify a source file."
+msgstr "您必须指定一个源文件"
+
+#: config.py:613
+msgid "Source image does not exist!"
+msgstr "源图片不存在！"
+
+#: config.py:633
+msgid "&Select and configure the menu items to display:"
+msgstr "选择并配置要显示的菜单项(&S)："
+
+#: config.py:649
+msgid "Move row up"
+msgstr "向上移动行"
+
+#: config.py:656
+msgid "Add menu item row"
+msgstr "添加菜单项行"
+
+#: config.py:663
+msgid "Delete menu item row"
+msgstr "删除菜单项行"
+
+#: config.py:670
+msgid "Reset to defaults"
+msgstr "恢复默认设置"
+
+#: config.py:677
+msgid "Move row down"
+msgstr "向下移动行"
+
+#: config.py:690
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "编辑与此插件关联的键盘快捷键"
+
+#: config.py:737
+msgid "&Edit Path"
+msgstr "编辑路径(&E)"
+
+#: config.py:743
+msgid "&Add image"
+msgstr "添加图片(&A)"
+
+#: config.py:746
+msgid "&Open images folder"
+msgstr "打开图片文件夹(&O)"
+
+#: config.py:752
+msgid "&Import"
+msgstr "导入(&I)"
+
+#: config.py:755
+msgid "&Export"
+msgstr "导出(&E)"
+
+#: config.py:764
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr "确定要恢复为插件的默认菜单吗？"
+
+#: config.py:765
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr "所有已修改的配置和自定义菜单项都将被丢弃。"
+
+#: config.py:773
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr "文件夹尚不存在。是否要创建？"
+
+#: config.py:790
+msgid "Import Failed"
+msgstr "导入失败"
+
+#: config.py:791
+msgid "This is not a valid OWIP export archive"
+msgstr "这不是一个有效的 OWIP 导出存档。"
+
+#: config.py:803
+msgid "%d menu items added"
+msgstr "已添加 %d 个菜单项"
+
+#: config.py:803
+msgid "Import completed"
+msgstr "导入完成"
+
+#: config.py:813
+msgid "Cannot export"
+msgstr "无法导出"
+
+#: config.py:814
+msgid "No menu items selected to export."
+msgstr "未选择要导出的菜单项。"
+
+#: config.py:842
+msgid "%d menu items exported to<br>%s"
+msgstr "已将%d个菜单项导出至<br>%s"
+
+#: config.py:842
+msgid "Export completed"
+msgstr "导出完成"
+
+#: config.py:849
+msgid "Select a menu file archive to import"
+msgstr "选择要导入的菜单文件存档"
+
+#: config.py:857
+msgid "Save archive as"
+msgstr "存档保存为"

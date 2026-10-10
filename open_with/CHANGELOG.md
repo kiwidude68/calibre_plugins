@@ -1,5 +1,19 @@
 # Open With Change Log
 
+## [1.8.6] - 2026-10-10
+### Added
+- Now supports passing multiple selected rows, such as for use with diffing tools like `diff-pdf`.
+- You can also use `%FILENAME%` and `%FILENAME2%` if your application requires named arguments
+- Chinese (China) translation
+- Czech translation
+- French translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+### Fixed
+- Arguments are no longer required to be comma separated, so you can use either format e.g. `--view "%FILENAME%" "%FILENAME2%"` or `--view,%FILENAME%,%FILENAME2%`
+
 ## [1.8.5] - 2026-02-09
 ### Added
 - Arabic translation
