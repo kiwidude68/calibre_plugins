@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Grant Drake, 2022
+# seeder seeder, 2024
+# Michal Várady <miko.vaji@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"PO-Revision-Date: 2022-09-09 23:27+0000\n"
+"Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2026\n"
+"Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:88
+msgid "Keyboard shortcuts"
+msgstr "Klávesové zkratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Restartovat calibre nyní"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Předvolby pro:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazat"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazat všechna nastavení tohoto modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "Opravdu chcete změnit nastavení tohoto modulu v této knihovně?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavení v jiných knihovnách ani nastavení uložená v souboru JSON ve složce"
+" modulů calibre se nezmění."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Poté bude nutné calibre restartovat."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavení změněno"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavení tohoto modulu v této knihovně bylo změněno."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Restartujte prosím calibre nyní."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "Opravdu chcete vymazat nastavení tohoto modulu v této knihovně?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavení vymazáno"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Všechna nastavení tohoto modulu v této knihovně byla vymazána."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovat do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinováno"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžadován restart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Ikona titulku nebyla nalezena. Před použitím tohoto modulu musíte "
+"restartovat calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvořit nový sloupec"
+
+#: action.py:34
+msgid "History"
+msgstr "Historie hledání"
+
+#: action.py:88
+msgid "Goto previous"
+msgstr "Přejít zpět v historii hledání"
+
+#: action.py:90
+msgid "Goto next"
+msgstr "Přejít vpřed v historii hledání"
+
+#: action.py:111
+msgid "Clear search history"
+msgstr "Vymazat historii hledání"
+
+#: action.py:114
+msgid "&Customize plugin"
+msgstr "&Přizpůsobit modul"
+
+#: action.py:116 config.py:93
+msgid "&Help"
+msgstr "&Nápověda"
+
+#: action.py:196
+msgid "Are you sure?"
+msgstr "Opravdu?"
+
+#: action.py:197
+msgid "Are you sure you want to clear the search history?"
+msgstr "Opravdu chcete vymazat historii hledání?"
+
+#: config.py:58
+msgid "Default action for toolbar button click"
+msgstr "Výchozí akce při kliknutí na tlačítko na panelu nástrojů"
+
+#: config.py:63
+msgid "Previous search"
+msgstr "Zpět v historii hledání"
+
+#: config.py:64
+msgid "Dropdown menu"
+msgstr "Rozbalovací nabídka"
+
+#: config.py:74
+msgid "Display last x searches in menu (0=Unlimited)"
+msgstr "Zobrazit v nabídce posledních x hledání (0 = bez omezení)"
+
+#: config.py:82
+msgid "Keep separate history per library"
+msgstr "Udržovat samostatnou historii pro každou knihovnu"
+
+#: config.py:83
+msgid ""
+"When checked will maintain a separate history per library\n"
+"when you switch between them."
+msgstr ""
+"Pokud je zaškrtnuto, bude při přepínání mezi knihovnami\n"
+"udržována samostatná historie pro každou knihovnu."
+
+#: config.py:89
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Upravit klávesové zkratky přiřazené tomuto modulu"

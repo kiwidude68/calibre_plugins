@@ -1,5 +1,12 @@
 # Walk Search History Change Log
 
+## [1.5.6] - 2026-10-10
+### Added
+- Czech translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+
 ## [1.5.5] - 2026-02-09
 ### Added
 - Arabic translation
