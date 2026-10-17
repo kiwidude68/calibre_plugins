@@ -9,13 +9,14 @@
 # un_pogaz, 2022
 # Ptit Prince <leporello1791@gmail.com>, 2022
 # Walter Paterno <walter.paterno@gmail.com>, 2024
+# Jean Pierre, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2026-02-25 21:04+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
-"Last-Translator: Walter Paterno <walter.paterno@gmail.com>, 2024\n"
+"Last-Translator: Jean Pierre, 2026\n"
 "Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -140,7 +141,7 @@ msgstr "&Télécharger le nombre de pages/mots - Toutes les sources"
 
 #: action.py:99
 msgid "&Statistic totals for selected books"
-msgstr ""
+msgstr "&Statistiques globales pour les livres sélectionnés"
 
 #: action.py:102
 msgid "&Customize plugin"
@@ -175,7 +176,7 @@ msgstr "Impossible d'obtenir les statistiques"
 
 #: action.py:295
 msgid "Counting statistics batch completed"
-msgstr ""
+msgstr "Traitement par lots des statistiques de comptage terminé"
 
 #: action.py:300
 msgid "Failed to generate any statistics. <b>View Log</b> for details"
@@ -213,7 +214,7 @@ msgstr "Mise à jour"
 
 #: action.py:371
 msgid "Selected"
-msgstr ""
+msgstr "Sélectionné"
 
 #: config.py:60
 msgid "Paragraphs (APNX accurate)"
@@ -245,27 +246,27 @@ msgstr " - toutes les sources"
 
 #: config.py:154
 msgid "Selected Books"
-msgstr ""
+msgstr "Livres sélectionnés"
 
 #: config.py:155
 msgid "Page Count"
-msgstr ""
+msgstr "Nombre de pages"
 
 #: config.py:156
 msgid "Word Count"
-msgstr ""
+msgstr "Nombre de mots"
 
 #: config.py:157 config.py:708
 msgid "Flesch Reading Ease"
-msgstr ""
+msgstr "Indice de lisibilité Flesch"
 
 #: config.py:158 config.py:719
 msgid "Flesch-Kincaid Grade Level"
-msgstr ""
+msgstr "Niveau de qualité selon l'échelle Flesch-Kincaid"
 
 #: config.py:159 config.py:730
 msgid "Gunning Fog Index"
-msgstr ""
+msgstr "Indice Gunning Fog"
 
 #: config.py:286
 msgid "Statistics"
@@ -339,13 +340,15 @@ msgstr "Action par défaut du bouton de l'extension dans la barre d'outil"
 
 #: config.py:443
 msgid "Batch size:"
-msgstr ""
+msgstr "Taille du lot :"
 
 #: config.py:444
 msgid ""
 "When calculating statistics for a large number of books,\n"
 "the plugin will process the books in batches per calibre job."
 msgstr ""
+"Lors du calcul des statistiques pour un grand nombre de livres,\n"
+"le plugin traitera les livres par lots, dans le cadre de chaque tâche Calibre."
 
 #: config.py:453
 msgid "Always overwrite an existing word/page count"
@@ -466,6 +469,8 @@ msgid ""
 "Column must be of type float or int. Leave this blank if you do not want to "
 "count pages"
 msgstr ""
+"La colonne doit être de type float ou int. Laissez ce champ vide si vous ne "
+"souhaitez pas compter les pages"
 
 #: config.py:654
 msgid "&Algorithm:"
@@ -503,6 +508,8 @@ msgid ""
 "Column must be of type float or int. Leave this blank if you do not want to "
 "count words"
 msgstr ""
+"La colonne doit être de type float ou int. Laissez ce champ vide si vous ne "
+"souhaitez pas compter les mots"
 
 #: config.py:689
 msgid "Use ICU algorithm"
@@ -611,20 +618,22 @@ msgstr "Page/Mot/Statistiques"
 
 #: dialogs.py:234
 msgid "Statistic Totals"
-msgstr ""
+msgstr "Totaux statistiques"
 
 #: dialogs.py:241
 msgid "Statistic"
-msgstr ""
+msgstr "Statistique"
 
 #: dialogs.py:241
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: dialogs.py:241
 msgid "Average"
-msgstr ""
+msgstr "Moyenne"
 
 #: dialogs.py:247
 msgid "Some books were skipped due to missing statistic values."
 msgstr ""
+"Certains ouvrages ont été écartés en raison de l'absence de certaines "
+"données statistiques."

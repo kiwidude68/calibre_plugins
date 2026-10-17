@@ -5,7 +5,7 @@
 # Translators:
 # Cm Fy, 2022
 # Eusébia Rodrigues <catarinarodrigues432@gmail.com>, 2022
-# Manuela Silva <mmsrs@sky.com>, 2022
+# Manuela Silva, 2022
 # Paulo Pereira <pauloizidoro@gmail.com>, 2024
 # 
 msgid ""

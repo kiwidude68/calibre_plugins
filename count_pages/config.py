@@ -62,7 +62,7 @@ PAGE_ALGORITHMS = [_('Paragraphs (APNX accurate)'), _('E-book Viewer (calibre)')
 PAGE_DOWNLOADS = {
                   'goodreads':
                     {
-                     'URL': 'https://www.goodreads.com/book/show/%s',
+                     'URL': 'https://www.goodreads.com/book/show/%s.xml',
                      ## goodreads page is now a huge javascript data
                      ## struct that then constructs the page.
                      'pages_xpath': '//script[@id="__NEXT_DATA__"]/text()',

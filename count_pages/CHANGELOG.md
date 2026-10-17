@@ -1,5 +1,15 @@
 # Count Pages Change Log
 
+## [1.15.3] - 2026-10-17
+### Added
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+### Fixed
+- Change Goodreads page count to use the .xml response to avoid WAF (@ChrisBaker97)
+
 ## [1.15.2] - 2026-04-26
 ### Fixed
 - Support calibre 3.48 with fix for format strings not supported in older versions.

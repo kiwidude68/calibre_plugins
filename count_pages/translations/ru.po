@@ -7,14 +7,14 @@
 # Anna Evdokimova <anna.evdokimova@yahoo.com>, 2022
 # Victor, 2022
 # Caarmi, 2022
-# ashed <craysy@gmail.com>, 2022
+# ashed <craysy@gmail.com>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2026-02-25 21:04+1000\n"
 "PO-Revision-Date: 2022-09-19 15:22+0000\n"
-"Last-Translator: ashed <craysy@gmail.com>, 2022\n"
+"Last-Translator: ashed <craysy@gmail.com>, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -132,7 +132,7 @@ msgstr "&Загрузить число слов и страниц - все ис�
 
 #: action.py:99
 msgid "&Statistic totals for selected books"
-msgstr ""
+msgstr "&Статистические итоги по выбранным книгам"
 
 #: action.py:102
 msgid "&Customize plugin"
@@ -165,7 +165,7 @@ msgstr "Не удалось подсчитать статистику"
 
 #: action.py:295
 msgid "Counting statistics batch completed"
-msgstr ""
+msgstr "Подсчёт статистики завершён"
 
 #: action.py:300
 msgid "Failed to generate any statistics. <b>View Log</b> for details"
@@ -202,7 +202,7 @@ msgstr "Обновление"
 
 #: action.py:371
 msgid "Selected"
-msgstr ""
+msgstr "Выбранное"
 
 #: config.py:60
 msgid "Paragraphs (APNX accurate)"
@@ -234,27 +234,27 @@ msgstr " - все источники"
 
 #: config.py:154
 msgid "Selected Books"
-msgstr ""
+msgstr "Выбранные книги"
 
 #: config.py:155
 msgid "Page Count"
-msgstr ""
+msgstr "Количество страниц"
 
 #: config.py:156
 msgid "Word Count"
-msgstr ""
+msgstr "Количество слов"
 
 #: config.py:157 config.py:708
 msgid "Flesch Reading Ease"
-msgstr ""
+msgstr "Легкость чтения Flesch"
 
 #: config.py:158 config.py:719
 msgid "Flesch-Kincaid Grade Level"
-msgstr ""
+msgstr "Уровень классов Flesch-Kincaid"
 
 #: config.py:159 config.py:730
 msgid "Gunning Fog Index"
-msgstr ""
+msgstr "Gunning Fog индекс"
 
 #: config.py:286
 msgid "Statistics"
@@ -329,13 +329,15 @@ msgstr ""
 
 #: config.py:443
 msgid "Batch size:"
-msgstr ""
+msgstr "Размер партии:"
 
 #: config.py:444
 msgid ""
 "When calculating statistics for a large number of books,\n"
 "the plugin will process the books in batches per calibre job."
 msgstr ""
+"При расчёте статистики для большого количества книг,\n"
+"плагин будет обрабатывать книги пакетами по заданиям calibre."
 
 #: config.py:453
 msgid "Always overwrite an existing word/page count"
@@ -456,6 +458,8 @@ msgid ""
 "Column must be of type float or int. Leave this blank if you do not want to "
 "count pages"
 msgstr ""
+"Столбец должен быть типа float или int. Оставьте пустым, если не хотите "
+"считать страницы"
 
 #: config.py:654
 msgid "&Algorithm:"
@@ -493,6 +497,8 @@ msgid ""
 "Column must be of type float or int. Leave this blank if you do not want to "
 "count words"
 msgstr ""
+"Столбец должен быть типа float или int. Оставьте пустым, если не хотите "
+"считать слова"
 
 #: config.py:689
 msgid "Use ICU algorithm"
@@ -518,6 +524,10 @@ msgid ""
 "href=\"https://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog "
 "Index</a>."
 msgstr ""
+"Доступна статистика читабельности: индексы <a "
+"href=\"https://en.wikipedia.org/wiki/Flesch-"
+"Kincaid_readability_test\">Flesch-Kincaid</a> или <a "
+"href=\"https://en.wikipedia.org/wiki/Gunning_fog_index\">Gunning Fog</a>."
 
 #: config.py:709
 msgid ""
@@ -575,6 +585,8 @@ msgstr "Постановка в очередь"
 msgid ""
 "No format found for word count, but page count download will be attempted"
 msgstr ""
+"Формат для количества слов не найден, но попытка загрузить количество "
+"страниц будет"
 
 #: dialogs.py:184
 msgid "No convertible format found"
@@ -594,20 +606,21 @@ msgstr "Предупреждения о странице/словах/стати
 
 #: dialogs.py:234
 msgid "Statistic Totals"
-msgstr ""
+msgstr "Статистические итоги"
 
 #: dialogs.py:241
 msgid "Statistic"
-msgstr ""
+msgstr "Статистика"
 
 #: dialogs.py:241
 msgid "Total"
-msgstr ""
+msgstr "Итог"
 
 #: dialogs.py:241
 msgid "Average"
-msgstr ""
+msgstr "Среднее"
 
 #: dialogs.py:247
 msgid "Some books were skipped due to missing statistic values."
 msgstr ""
+"Некоторые книги были пропущены из-за отсутствия статистических значений."
