@@ -6,13 +6,14 @@
 # Victor, 2022
 # ashed <craysy@gmail.com>, 2022
 # Caarmi, 2022
+# Andrei Stepanov, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 18:09+1000\n"
 "PO-Revision-Date: 2022-09-13 19:01+0000\n"
-"Last-Translator: Caarmi, 2022\n"
+"Last-Translator: Andrei Stepanov, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -217,7 +218,7 @@ msgstr "Нужно указать только имя файла."
 
 #: config.py:434 config.py:716 config.py:988 config.py:997
 msgid "Are you sure?"
-msgstr "Вы уверены?"
+msgstr "Уверены?"
 
 #: config.py:435
 msgid "An image with this name already exists - overwrite it?"
@@ -265,7 +266,7 @@ msgstr "Вы действительно хотите удалить этот э�
 
 #: config.py:715
 msgid "Are you sure you want to delete the selected {0} menu items?"
-msgstr "Вы уверены, что хотите удалить выбранные пункты меню {0}?"
+msgstr "Уверены, что хотите удалить выбранные пункты меню {0}?"
 
 #: config.py:836
 msgid "Select and configure the menu items to display:"
@@ -333,7 +334,7 @@ msgstr "Экспорт"
 
 #: config.py:989
 msgid "Are you sure you want to reset to the plugin default menu?"
-msgstr "Вы уверены, что хотите вернуться к умолчальному меню плагина?"
+msgstr "Уверены, что хотите вернуться к умолчальному меню плагина?"
 
 #: config.py:990
 msgid "Any modified configuration and custom menu items will be discarded."

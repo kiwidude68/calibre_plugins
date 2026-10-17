@@ -1,5 +1,16 @@
 # Search The Internet Change Log
 
+## [1.11.5] - 2026-10-17
+### Added
+- Chinese (China) translation
+- Czech translation
+- French translation
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+
 ## [1.11.4] - 2026-02-09
 ### Added
 - Arabic translation

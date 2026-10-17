@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Julien G. <julien.gong@gmail.com>, 2022
+# 高垚鑫, 2022
+# Fan Xu <xlivevil@aliyun.com>, 2022
+# Ander_Index <Ander_Index@outlook.com>, 2023
+# tony shen <anthanny@hotmail.com>, 2024
+# a b, 2024
+# RERBIN MA, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"PO-Revision-Date: 2022-09-13 19:01+0000\n"
+"Last-Translator: RERBIN MA, 2026\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:892
+msgid "Keyboard shortcuts"
+msgstr "键盘快捷键"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "现在重启 calibre"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "首选项用于："
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "清除"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "清除此插件的所有设置"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "是否确实要更改此书库中插件的设置？"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "其他库中的任何设置或存储在calibre plugins文件夹中的JSON文件中的任何设置都不会被触动。"
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "您需要稍后重启 calibre"
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "设置已修改"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "此书库中此插件的设置已更改。"
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "现在请重启 calibre"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "是否确实要清除此插件库中的设置？"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "设置已删除"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "此插件库中的所有设置都已清除。"
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "未定义的"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "需要重启"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "未找到名称图片 - 使用此插件之前必须重新启动 Calibre！"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "创建新列"
+
+#: action.py:46
+msgid "Search Internet"
+msgstr "网络搜索"
+
+#: action.py:92 config.py:544 config.py:930
+msgid "Open Group"
+msgstr "打开组"
+
+#: action.py:94
+msgid "&Customize plugin"
+msgstr "个性化插件(&C)"
+
+#: action.py:96 config.py:897
+msgid "&Help"
+msgstr "帮助 (&H)"
+
+#: action.py:144
+msgid "Cannot open link"
+msgstr "无法打开链接"
+
+#: action.py:145
+msgid "This menu item has not been configured with a url."
+msgstr "此菜单项尚未配置网址"
+
+#: action.py:185 action.py:197
+msgid "Invalid URL"
+msgstr "网址无效"
+
+#: action.py:186
+msgid ""
+"You cannot use POST for this url as you have not specified any arguments "
+"after a ?"
+msgstr "由于您未在 URL 后添加任何参数（?），无法对该地址使用 POST 请求"
+
+#: action.py:198
+msgid "You cannot use POST for this url as it does not have name=value for "
+msgstr "由于该 URL 没有提供 name=value 的参数，无法使用 POST"
+
+#: config.py:289
+msgid "Select test data"
+msgstr "选择测试数据"
+
+#: config.py:298
+msgid "&Select test book:"
+msgstr "选择测试书籍(&S) :"
+
+#: config.py:311
+msgid "Title:"
+msgstr "标题："
+
+#: config.py:313
+msgid "Author:"
+msgstr "作者："
+
+#: config.py:315
+msgid "Publisher:"
+msgstr "出版方:"
+
+#: config.py:359 config.py:502
+msgid "Add New Image"
+msgstr "添加新图片"
+
+#: config.py:362
+msgid "&Select image source"
+msgstr "选择图片来源(&S)"
+
+#: config.py:365
+msgid "From &web domain favicon"
+msgstr "来自网站域名图标(&W)"
+
+#: config.py:372
+msgid "From .png &file"
+msgstr "从 .png 文件(&F)"
+
+#: config.py:385
+msgid "&Save as filename:"
+msgstr "另存为文件名(&S):"
+
+#: config.py:409
+msgid "Select a .png file for the menu icon"
+msgstr "为菜单图标选择一个.png文件"
+
+#: config.py:415
+msgid "Cannot select image"
+msgstr "无法选择图片"
+
+#: config.py:416 config.py:454
+msgid "Source image must be a .png file."
+msgstr "源图片必须是 .png 文件。"
+
+#: config.py:424 config.py:428 config.py:442 config.py:450 config.py:453
+#: config.py:456
+msgid "Cannot import image"
+msgstr "无法导入图片"
+
+#: config.py:425
+msgid "You must specify a filename to save as."
+msgstr "您必须指定要另存为的文件名"
+
+#: config.py:429
+msgid "The save as filename should consist of a filename only."
+msgstr "另存为的文件名应仅包含文件名"
+
+#: config.py:434 config.py:716 config.py:988 config.py:997
+msgid "Are you sure?"
+msgstr "你确认吗？"
+
+#: config.py:435
+msgid "An image with this name already exists - overwrite it?"
+msgstr "已存在同名图片 - 是否覆盖？"
+
+#: config.py:443
+msgid "You must specify a web domain url"
+msgstr "您必须提供一个网站域名 URL"
+
+#: config.py:451
+msgid "You must specify a source file."
+msgstr "您必须指定一个源文件"
+
+#: config.py:457
+msgid "Source image does not exist!"
+msgstr "源图片不存在！"
+
+#: config.py:544
+msgid "Submenu"
+msgstr "子菜单"
+
+#: config.py:544
+msgid "Title"
+msgstr "名称"
+
+#: config.py:545
+msgid "Encoding"
+msgstr "编码"
+
+#: config.py:545
+msgid "Image"
+msgstr "图标"
+
+#: config.py:545
+msgid "Method"
+msgstr "方法"
+
+#: config.py:545
+msgid "Url"
+msgstr "Url"
+
+#: config.py:713
+msgid "Are you sure you want to delete this menu item?"
+msgstr "确定要删除此菜单项吗？"
+
+#: config.py:715
+msgid "Are you sure you want to delete the selected {0} menu items?"
+msgstr "确定要删除所选的 {0} 个菜单项吗？"
+
+#: config.py:836
+msgid "Select and configure the menu items to display:"
+msgstr "选择并配置要显示的菜单项："
+
+#: config.py:852
+msgid "Move row up"
+msgstr "向上移动行"
+
+#: config.py:859
+msgid "Add menu item row"
+msgstr "添加菜单项行"
+
+#: config.py:866
+msgid "Delete menu item row"
+msgstr "删除菜单项行"
+
+#: config.py:873
+msgid "Reset to defaults"
+msgstr "恢复默认设置"
+
+#: config.py:880
+msgid "Move row down"
+msgstr "向下移动行"
+
+#: config.py:893
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "编辑与此插件关联的键盘快捷键"
+
+#: config.py:954
+msgid "Add image"
+msgstr "添加图片"
+
+#: config.py:957
+msgid "Open images folder"
+msgstr "打开图片文件夹"
+
+#: config.py:963
+msgid "Move active to top"
+msgstr "将活动项移至顶部"
+
+#: config.py:969
+msgid "Test url"
+msgstr "测试url"
+
+#: config.py:970
+msgid "Ctrl+T"
+msgstr "Ctrl+T"
+
+#: config.py:973
+msgid "Test url using"
+msgstr "测试URL的数据"
+
+#: config.py:974
+msgid "Ctrl+Shift+T"
+msgstr "Ctrl+Shift+T"
+
+#: config.py:980
+msgid "Import"
+msgstr "导入"
+
+#: config.py:983
+msgid "Export"
+msgstr "导出"
+
+#: config.py:989
+msgid "Are you sure you want to reset to the plugin default menu?"
+msgstr "确定要恢复为插件的默认菜单吗？"
+
+#: config.py:990
+msgid "Any modified configuration and custom menu items will be discarded."
+msgstr "所有已修改的配置和自定义菜单项都将被丢弃。"
+
+#: config.py:998
+msgid "Folder does not yet exist. Do you want to create it?"
+msgstr "文件夹尚不存在。是否要创建？"
+
+#: config.py:1017
+msgid "Cannot test"
+msgstr "无法测试"
+
+#: config.py:1018
+msgid "You must select a menu item with a url to test it."
+msgstr "您必须选择一个带有 URL 的菜单项才能进行测试。"
+
+#: config.py:1040
+msgid "Import Failed"
+msgstr "导入失败"
+
+#: config.py:1041
+msgid "This is not a valid STIP export archive"
+msgstr "这不是一个有效的 STIP 导出存档。"
+
+#: config.py:1053
+msgid "Import completed"
+msgstr "导入完成"
+
+#: config.py:1053
+msgid "{0} menu items added"
+msgstr "已添加 {0} 个菜单项"
+
+#: config.py:1063
+msgid "Cannot export"
+msgstr "无法导出"
+
+#: config.py:1064
+msgid "No menu items selected to export."
+msgstr "未选择要导出的菜单项。"
+
+#: config.py:1092
+msgid "Export completed"
+msgstr "导出完成"
+
+#: config.py:1101
+msgid "Select a menu file archive to import"
+msgstr "选择要导入的菜单文件存档"
