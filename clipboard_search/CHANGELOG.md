@@ -1,5 +1,12 @@
 # Clipboard Search Change Log
 
+## [1.5.3] - 2026-10-17
+### Added
+- Czech translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+
 ## [1.5.2] - 2026-02-09
 ### Added
 - Arabic translation
