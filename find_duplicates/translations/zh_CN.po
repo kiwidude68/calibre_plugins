@@ -4,7 +4,6 @@
 # 
 # Translators:
 # Ajiujiu, 2022
-# Julien G. <julien.gong@gmail.com>, 2022
 # 高垚鑫, 2022
 # Fan Xu <xlivevil@aliyun.com>, 2022
 # Ander_Index <Ander_Index@outlook.com>, 2023
@@ -50,7 +49,7 @@ msgstr "清除此插件的所有设置"
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr "是否确实要更改此书库中插件的设置？"
+msgstr "您确定要更改此书库中该插件的设置吗？"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
@@ -115,25 +114,25 @@ msgstr "查重"
 
 #: action.py:87
 msgid "&Find book duplicates"
-msgstr "查找书籍重复"
+msgstr "查找重复书籍(&F)"
 
 #: action.py:89
 msgid "Find library duplicates"
-msgstr "查找图书馆重复项"
+msgstr "查找书库中的重复项"
 
 #: action.py:90
 msgid "Find books that are duplicated in another library compared to this one"
-msgstr "在另一个图书馆找到与这个图书馆中重复的书籍"
+msgstr "查找另一个书库与这个书库重复的书籍"
 
 #: action.py:93
 msgid "Find metadata &variations"
-msgstr "查找元数据和变化"
+msgstr "查找元数据和变体"
 
 #: action.py:94
 msgid ""
 "Find & rename variations in author, publisher, series or tags names that may"
 " indicate duplicates"
-msgstr "查找并重新命名作者、出版商、系列或标签名称中可能存在的重复内容"
+msgstr "查找并重命名作者、出版方、丛书或标签名称中的变体，这些变体可能表明存在重复书籍"
 
 #: action.py:97
 msgid "&Next result"
@@ -168,31 +167,31 @@ msgstr "将所有组别标记为豁免组别"
 #: action.py:109
 msgid ""
 "Mark all remaining duplicate groups as exempt from future consideration"
-msgstr "将所有剩余的重复组别标记为免于今后审议的组别"
+msgstr "将所有剩余的重复组标记为豁免，不再纳入未来的考虑范围"
 
 #: action.py:113
 msgid "&Show all book duplicate exemptions"
-msgstr "显示所有图书重复豁免"
+msgstr "显示所有豁免的重复书籍(&S)"
 
 #: action.py:114
 msgid "Show all books that have book duplicate exemption pairings"
-msgstr "显示所有具有图书重复豁免配对的图书"
+msgstr "显示所有被豁免的重复书籍"
 
 #: action.py:117
 msgid "&Show all author duplicate exemptions"
-msgstr "显示所有作者重复豁免"
+msgstr "显示所有重复作者的豁免(&S)"
 
 #: action.py:118
 msgid "Show all books that have author duplicate exemption pairings"
-msgstr "显示所有作者与豁免配对重复的书籍"
+msgstr "显示所有被豁免的作者重复的书籍"
 
 #: action.py:121
 msgid "&Manage exemptions for this book"
-msgstr "管理本书的豁免权"
+msgstr "管理本书的豁免(&M)"
 
 #: action.py:122
 msgid "Show duplicate exemptions for this book to enable removal"
-msgstr "显示本书的重复，以便删除"
+msgstr "显示此书的重复豁免项以进行移除"
 
 #: action.py:125
 msgid "&Remove selected exemptions"
@@ -200,19 +199,19 @@ msgstr "删除选定的"
 
 #: action.py:126
 msgid "Remove any duplicate book/author exemptions for the selected books"
-msgstr "删除所选图书的任何重复图书/作者豁免"
+msgstr "移除选定书籍的任何重复书籍/作者豁免项"
 
 #: action.py:130
 msgid "&Clear duplicate results"
-msgstr "清除重复结果"
+msgstr "清除重复结果(&C)"
 
 #: action.py:131
 msgid "Exit duplicate search mode"
-msgstr "退出重复搜索模式"
+msgstr "退出重复项搜索模式"
 
 #: action.py:135
 msgid "&Export duplicate groups"
-msgstr "&导出重复组"
+msgstr "导出重复组(&E)"
 
 #: action.py:136
 msgid "Export duplicates groups to a json file"
@@ -220,7 +219,7 @@ msgstr "将重复群组导出到 json 文件"
 
 #: action.py:140
 msgid "&Customize plugin"
-msgstr "&个性化插件"
+msgstr "个性化插件(&C)"
 
 #: action.py:142
 msgid "&Help"
@@ -230,7 +229,7 @@ msgstr "帮助 (&H)"
 msgid ""
 "This action will ensure that each of the {0} in the group are exempt from "
 "appearing together again in future."
-msgstr "这一操作将确保该组中的每个 {0} 以后都不会再出现在一起。"
+msgstr "此操作将确保该组中的每个 {0} 在未来都不会再一起出现在重复结果中"
 
 #: action.py:251 action.py:304
 msgid "Are you <b>sure</b> you want to proceed?"
@@ -246,7 +245,7 @@ msgstr "该组中没有重复的内容。"
 
 #: action.py:271 action.py:276
 msgid "Cannot manage exemptions"
-msgstr "无法管理豁免"
+msgstr "无法管理豁免项"
 
 #: action.py:272
 msgid "No book selected"
@@ -254,7 +253,7 @@ msgstr "未选择书籍"
 
 #: action.py:277
 msgid "This book has no duplicate exemptions"
-msgstr "本书没有重复豁免"
+msgstr "本书没有重复豁免项"
 
 #: action.py:298
 msgid "Invalid selection"
@@ -269,7 +268,7 @@ msgid ""
 "This action will remove any duplicate exemptions for your selection. This "
 "will allow them to potentially appear as duplicates together in a future "
 "duplicate search."
-msgstr "此操作将删除您选择的任何重复豁免。这将使它们有可能在未来的重复搜索中一起作为重复出现。"
+msgstr "此操作将移除您所选内容的任何重复豁免项。这将使它们有可能在未来的重复查找中再次被列为重复书籍。"
 
 #: action.py:338
 msgid "Choose file"
@@ -285,11 +284,11 @@ msgstr "导出完成"
 
 #: action.py:366
 msgid "Exported to: {}"
-msgstr "导出到 {}"
+msgstr "导出到: {}"
 
 #: book_algorithms.py:53
 msgid "Analysing {0} books for duplicates"
-msgstr "分析 {0} 本图书是否有重复内容"
+msgstr "分析 {0} 本书是否有重复内容"
 
 #: book_algorithms.py:423
 msgid "matching '{0}' identifier"
@@ -301,11 +300,11 @@ msgstr "二进制比较"
 
 #: book_algorithms.py:431
 msgid "ignore title, {0} author"
-msgstr "忽略标题，{0}作者"
+msgstr "忽略书名，{0}作者"
 
 #: book_algorithms.py:435
 msgid "{0} title, {1} author"
-msgstr "{0}标题，{1}作者"
+msgstr "{0}书名，{1}作者"
 
 #: config.py:143
 msgid "Edit the keyboard shortcuts associated with this plugin"
@@ -313,11 +312,11 @@ msgstr "编辑与此插件关联的键盘快捷键"
 
 #: config.py:147
 msgid "Reset &confirmation dialogs"
-msgstr "重置和确认对话框"
+msgstr "重置确认对话框"
 
 #: config.py:148
 msgid "Reset all show me again dialogs for the Find Duplicates plugin"
-msgstr "重置查找重复内容插件的所有 “再次显示我 ”对话框"
+msgstr "重置“查重”插件的所有“不再提示”对话框"
 
 #: config.py:152
 msgid "&View library preferences"
@@ -342,8 +341,8 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
-"<b>图书重复搜寻</b><br/>- 寻找具有相同识别符号的书籍群组，例如 ISBN、亚马逊ID、Goodreads、URI 等。<br/>- "
-"将一个群组标记为豁免将阻止这些特定书籍在未来的重复书籍搜寻中一起出现。"
+"<b>搜索重复的书籍</b><br/>- 寻找具有相同识别符号的书籍群组，例如 ISBN、亚马逊ID、Goodreads、URI 等。<br/>- "
+"将一个群组标记为豁免将阻止这些特定书籍在未来的重复书籍搜寻中再次被列为重复书籍。"
 
 #: dialogs.py:57
 msgid ""
@@ -354,9 +353,9 @@ msgid ""
 " duplicates.<br/>- Marking a group as exempt will prevent those specific "
 "books from appearing together in future duplicate book searches."
 msgstr ""
-"<b>图书重复搜寻</b><br/>- 寻找具有二进位相同的书籍格式的书籍群组。<br/>- 比较您图书馆中每本书籍格式的实际文件大小，计算 SHA "
+"<b>搜索重复的书籍</b><br/>- 寻找具有二进位相同的书籍格式的书籍群组。<br/>- 比较您书库中每本书籍格式的实际文件大小，计算 SHA "
 "杂凑值以比较匹配大小的内容。<br/>- 使用此搜寻找到的书籍保证是重复的。<br/>- "
-"将一个群组标记为豁免将阻止这些特定书籍在未来的重复书籍搜寻中一起出现。"
+"将一个群组标记为豁免将阻止这些特定书籍在未来的重复书籍搜寻中再次被列为重复书籍。"
 
 #: dialogs.py:66
 msgid ""
@@ -365,8 +364,8 @@ msgid ""
 "case.<br/>- Marking a group as exempt will prevent those specific books from"
 " appearing together in future duplicate book searches."
 msgstr ""
-"<b>标题重复搜寻</b><br/>- 寻找具有<b>相同标题</b>且 {0} 的书籍群组。<br/>- 标题必须完全匹配，不区分大小写。<br/>-"
-" 将一个群组标记为豁免将阻止这些特定书籍在未来的重复书籍搜寻中一起出现。"
+"<b>搜寻重复的书名</b><br/>- 寻找具有<b>相同书名</b>且 {0} 的书籍群组。<br/>- "
+"书名必须完全匹配，不区分大小写。<br/>- 将一个群组标记为豁免将阻止这些特定书籍在未来的重复书籍搜寻中再次被列为重复书籍。"
 
 #: dialogs.py:71
 msgid ""
@@ -376,8 +375,8 @@ msgid ""
 "Automerge.<br/>- Marking a group as exempt will prevent those specific books"
 " from appearing together in future duplicate book searches."
 msgstr ""
-"<b>书名重复搜索</b><br/>-查找具有<b>相似书名</b>且符合 {0} "
-"的书籍分组。<br/>-“相似书名”匹配逻辑会移除常见的标点符号和前缀，并采用与“自动合并（Automerge）”相同的书名匹配算法。<br/>将某个分组标记为“排除”可以防止这些特定的书籍在未来的重复书籍搜索中再次同时出现。"
+"<b>搜索重复的书名</b><br/>-查找具有<b>相似书名</b>且符合 {0} "
+"的书籍分组。<br/>-“相似书名”匹配逻辑会移除常见的标点符号和前缀，并采用与“自动合并（Automerge）”相同的书名匹配算法。<br/>将某个分组标记为“排除”可以防止这些特定的书籍在未来的重复书籍搜索中再次被列为重复书籍。"
 
 #: dialogs.py:77
 msgid ""
@@ -387,9 +386,9 @@ msgid ""
 "a group as exempt will prevent those specific books from appearing together "
 "in future duplicate book searches."
 msgstr ""
-"<b>书名重复搜索（Soundex 语音算法）</b><br/>-查找具有 <b>Soundex 相似书名</b>且符合 {0} "
+"<b>搜索重复的书名（Soundex 语音算法）</b><br/>-查找具有 <b>Soundex 相似书名</b>且符合 {0} "
 "的书籍分组。<br/>-Soundex "
-"书名匹配同样会先移除标点符号和常用前缀（处理逻辑与“相似书名”搜索一致）。<br/>-将某个分组标记为“排除”可以防止这些特定的书籍在未来的重复书籍搜索中再次同时出现。"
+"书名匹配同样会先移除标点符号和常用前缀（处理逻辑与“相似书名”搜索一致）。<br/>-将某个分组标记为“排除”可以防止这些特定的书籍在未来的重复书籍搜索中再次被列为重复书籍。"
 
 #: dialogs.py:83
 msgid ""
@@ -399,9 +398,9 @@ msgid ""
 "Marking a group as exempt will prevent those specific books from appearing "
 "together in future duplicate book searches."
 msgstr ""
-"<b>按书名搜索重复项</b><br/>- 查找具有<b>模糊匹配书名</b>及 {0} 的书籍分组<br/>- "
+"<b>搜索重复的书名</b><br/>- 查找具有<b>模糊匹配书名</b>及 {0} 的书籍分组<br/>- "
 "“模糊匹配书名”会移除书名中的所有标点符号、副标题，以及“and”、“or”或“aka”之后的任何词汇。<br/>- "
-"将某个分组标记为“排除”后，这些特定的书籍将不会在未来的重复项搜索中同时出现。"
+"将某个分组标记为“排除”后，这些特定的书籍将不会在未来的重复项搜索中再次被列为重复书籍。"
 
 #: dialogs.py:89
 msgid ""
@@ -411,14 +410,14 @@ msgid ""
 "group as exempt will prevent any books by those authors from appearing "
 "together in future duplicate author searches."
 msgstr ""
-"<b>按作者搜索重复项</b><br/>- 在<b>忽略书名</b>的情况下，查找符合 {0} 的书籍分组<br/>- "
+"<b>搜索重复的作者</b><br/>- 在<b>忽略书名</b>的情况下，查找符合 {0} 的书籍分组<br/>- "
 "“忽略书名”搜索最适合用于查找作者姓名的不同写法，而无需考虑您拥有该作者的哪些书籍。<br/>- "
-"将某个分组标记为“排除”后，这些作者名下的任何书籍都将不会在未来的重复作者搜索中同时出现。"
+"将某个分组标记为“排除”后，这些作者名下的任何书籍都将不会在未来的重复作者搜索中再次被列为重复书籍。"
 
 #: dialogs.py:98
 msgid ""
 "an <b>identical author</b>.<br/>- Authors must match exactly excluding case."
-msgstr "<b>完全相同的作者</b>。<br/>- 作者姓名必须完全一致（不区分大小写）。"
+msgstr "<b>相同的作者</b>。<br/>- 作者姓名必须完全一致（不区分大小写）。"
 
 #: dialogs.py:100
 msgid ""
@@ -431,7 +430,7 @@ msgid ""
 "a <b>soundex author</b>.<br/>- Soundex author matches start with the same "
 "removal of punctuation and ordering as a similar author search."
 msgstr ""
-"<b>Soundex 读音相似的作者</b>。<br/>- Soundex "
+"<b>Soundex读音相似的作者</b>。<br/>- Soundex "
 "读音相似作者匹配首先会像“相似作者”搜索一样移除标点并统一姓名顺序，随后按读音进行匹配。"
 
 #: dialogs.py:106
@@ -450,7 +449,7 @@ msgstr "重复搜索选项"
 
 #: dialogs.py:182
 msgid "Duplicate Search Type"
-msgstr "重复搜索类型："
+msgstr "重复项类型："
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Binary Compare"
@@ -462,11 +461,11 @@ msgstr "标识符"
 
 #: dialogs.py:188 dialogs.py:1104
 msgid "Title/Author"
-msgstr "标题/作者"
+msgstr "书名/作者"
 
 #: dialogs.py:203
 msgid "Title Matching"
-msgstr "书名匹配"
+msgstr "书名匹配方式"
 
 #: dialogs.py:215 dialogs.py:236 dialogs.py:686 dialogs.py:1131
 #: dialogs.py:1152
@@ -477,11 +476,11 @@ msgstr "长度:"
 msgid ""
 "The shorter the soundex length, the greater likelihood of false positives.\n"
 "Large soundex values reduce your chances of matches"
-msgstr "Soundex 长度越短，出现误报（误判为重复）的可能性就越大。 Soundex 数值越大，匹配成功的几率就越低。"
+msgstr "Soundex长度越短，出现误报（误判为重复）的可能性就越大。 Soundex 数值越大，匹配成功的几率就越低。"
 
 #: dialogs.py:224
 msgid "Author Matching"
-msgstr "作者符合"
+msgstr "作者匹配方式"
 
 #: dialogs.py:249
 msgid "Result Options"
@@ -497,7 +496,7 @@ msgstr "一次只显示一组"
 
 #: dialogs.py:257
 msgid "Highlight authors in the tag browser for ignore title searches"
-msgstr "在标签浏览器中突出显示作者，以便忽略标题搜索"
+msgstr "在标签浏览器中突出显示作者，用于忽略书名的搜索"
 
 #: dialogs.py:258
 msgid ""
@@ -505,19 +504,19 @@ msgid ""
 "are shown in the tag browser and highlighted if multiple groups shown.\n"
 "Only applies for author duplicate searches."
 msgstr ""
-"选中时，将确保当前组的作者\n"
-"会显示在标签浏览器中，如果显示了多个组，还会高亮显示。\n"
-"仅适用于作者重复搜索。"
+"选中时，将确保当前组的作者会显示在标签浏览器中，\n"
+"如果显示了多个组，还会高亮显示。\n"
+"仅适用于搜索重复的作者。"
 
 #: dialogs.py:262
 msgid "Sort groups by number of duplicates"
-msgstr "按重复次数对组进行排序"
+msgstr "按重复项数量对组进行排序"
 
 #: dialogs.py:263
 msgid ""
 "When unchecked, will sort by an approximation of the title\n"
 "or by author if title is being ignored"
-msgstr "当取消勾选时，将按标题的近似排序，如果忽略标题则按作者排序。"
+msgstr "如果不勾选此项，将按书名的近似值排序，或者如果忽略书名，则按作者排序"
 
 #: dialogs.py:266 dialogs.py:1169
 msgid "Include languages metadata when comparing titles"
@@ -527,11 +526,11 @@ msgstr "比较标题时包含语言元数据"
 msgid ""
 "When checked, books with identical titles but different\n"
 "languages metadata field values will not show as duplicates"
-msgstr "勾选此项时，标题相同但语言元资料字段值不同的书籍将不会被认定为重复项。"
+msgstr "勾选此项时，书名相同但语言元资料字段值不同的书籍将不会被认定为重复项"
 
 #: dialogs.py:270
 msgid "When doing a Binary Compare, automatically remove duplicate formats"
-msgstr "进行二进制比较时，自动删除重复格式"
+msgstr "进行二进制比较时，自动移除重复的格式"
 
 #: dialogs.py:272
 msgid ""
@@ -542,12 +541,10 @@ msgid ""
 "Note that the book records themselves are not deleted, and will still appear in the\n"
 "results for merging even if they now have no formats."
 msgstr ""
-"选中并运行二进制重复搜索时，如果发现重复格式\n"
-"则除一种格式外，其他格式都会被删除。最旧账簿记录上的格式将被保留。\n"
-"这是一个方便的功能，适用于每本账簿有多个相关格式的情况。\n"
-"如果每本账簿有多个相关格式，而哪个格式是重复的并不明显，则可以使用此功能。\n"
-"请注意，账簿记录本身不会被删除，即使它们现在被合并，它们仍会出现在\n"
-"合并结果中。"
+"勾选此项后，运行二进制重复项搜索时，若检测到重复格式，将仅保留一种格式（其余均删除）。\n"
+"被保留的将是最旧书籍记录中的格式。\n"
+"本功能旨在方便处理每本书籍具有多种格式、难以直观判断何者为重复的场景。\n"
+"请注意：书籍记录本身不会被删除，即使其已无任何格式文件，仍会出现在合并结果中。"
 
 #: dialogs.py:370
 msgid "Invalid Criteria"
@@ -555,41 +552,41 @@ msgstr "无效的条件"
 
 #: dialogs.py:371
 msgid "You must select an identifier type to search by Identifier."
-msgstr "要按标识符搜索，必须选择标识符类型。"
+msgstr "按标识符搜索时，必须选择标识符类型。"
 
 #: dialogs.py:504
 msgid "Manage Duplicate Exemptions"
-msgstr "管理重复"
+msgstr "管理重复项豁免"
 
 #: dialogs.py:507
 msgid "Manage Exemptions"
-msgstr "无法管理"
+msgstr "管理豁免"
 
 #: dialogs.py:513
 msgid ""
 "The first book below will never appear as a duplicate with the following "
 "books.<br/>To allow future duplicate consideration, tick the remove checkbox"
 " and click ok."
-msgstr "要允许将来考虑重复，<br/>请勾选删除复选框并单击确定。"
+msgstr "下方的第一本书将不再与随后的书籍显示为重复项。<br/>若要允许未来纳入重复项考虑，请勾选“移除”复选框并点击确定。"
 
 #: dialogs.py:528
 msgid ""
 "The authors below will never appear as a duplicate with the following "
 "authors.<br/>To allow future duplicate consideration, tick the remove "
 "checkbox and click ok."
-msgstr "若要今后考虑重复，<br/>请勾选删除复选框，然后单击确定。"
+msgstr "下方的作者将不再与随后的作者显示为重复项。<br/>若要允许未来纳入重复项考虑，请勾选“移除”复选框并点击确定。"
 
 #: dialogs.py:645
 msgid "Find Duplicates Plugin"
-msgstr "重置查找重复内容插件的所有 “再次显示我 ”对话框"
+msgstr "查重插件"
 
 #: dialogs.py:649
 msgid "Find Metadata Variations"
-msgstr "查找元数据和变化"
+msgstr "查找元数据和变体"
 
 #: dialogs.py:653
 msgid "Choose metadata column:"
-msgstr "选择元数据栏:"
+msgstr "选择元数据列:"
 
 #: dialogs.py:657
 msgid "Authors"
@@ -601,7 +598,7 @@ msgstr "丛书"
 
 #: dialogs.py:663
 msgid "Publisher"
-msgstr "出版商"
+msgstr "出版方"
 
 #: dialogs.py:666
 msgid "Tags"
@@ -617,7 +614,7 @@ msgstr "类似"
 
 #: dialogs.py:682
 msgid "Soundex"
-msgstr "字母索引"
+msgstr "Soundex发音"
 
 #: dialogs.py:684
 msgid "Fuzzy"
@@ -629,7 +626,7 @@ msgstr "搜索"
 
 #: dialogs.py:693
 msgid "Search for results"
-msgstr "查询结果"
+msgstr "搜索结果"
 
 #: dialogs.py:704
 msgid "Search results:"
@@ -641,11 +638,11 @@ msgstr "作者"
 
 #: dialogs.py:711 dialogs.py:910
 msgid "Variations:"
-msgstr "变化"
+msgstr "变体:"
 
 #: dialogs.py:726
 msgid "&Show matching books"
-msgstr "& 显示配套书籍"
+msgstr "显示匹配的书籍(&S)"
 
 #: dialogs.py:727
 msgid "As a group is selected, show the search results in the library view"
@@ -653,11 +650,11 @@ msgstr "选择组后，在库视图中显示搜索结果"
 
 #: dialogs.py:730
 msgid "Rename to:"
-msgstr "更名为"
+msgstr "重命名为:"
 
 #: dialogs.py:747
 msgid "&Rename"
-msgstr "&重命名"
+msgstr "重命名(&R)"
 
 #: dialogs.py:748
 msgid "Rename all of the selected items to this name"
@@ -665,27 +662,27 @@ msgstr "将所有选中的项目重命名为该名称"
 
 #: dialogs.py:751
 msgid "&Ignore"
-msgstr "&忽略"
+msgstr "忽略(&I)"
 
 #: dialogs.py:752
 msgid "Ignore all selected items from consideration at this time"
-msgstr "暂时忽略所有选定的考虑项目"
+msgstr "暂时忽略所有选定的项目"
 
 #: dialogs.py:791
 msgid "No matches"
-msgstr "无匹配"
+msgstr "无匹配项"
 
 #: dialogs.py:791
 msgid "You have no variations of {0} using this criteria"
-msgstr "根据这一标准，您没有{0}的变化"
+msgstr "使用此条件未找到 {0} 的变体"
 
 #: dialogs.py:851
 msgid "Use this variation name"
-msgstr "使用此变化名称"
+msgstr "使用此变体名称"
 
 #: dialogs.py:914
 msgid "Variations of: {0}"
-msgstr "变化: {0}"
+msgstr "{0} 的变体"
 
 #: dialogs.py:950
 msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
@@ -695,7 +692,7 @@ msgstr "你确定要将选定的 {0} 个项目重命名为 \"{1}\" 吗？"
 msgid ""
 "<b>Book duplicate search</b><br/>- Report books in this library which have "
 "an identical identifier for books in the target library.<br/>"
-msgstr "<b>图书重复查找</b><br/>- 报告本库中与目标库中图书具有相同标识符的图书。<br/>"
+msgstr "<b>搜索重复的书籍</b><br/>- 报告本书库中与目标书库中具有相同标识符的书籍。<br/>"
 
 #: dialogs.py:1041
 msgid ""
@@ -705,8 +702,8 @@ msgid ""
 "compare contents where sizes match.<br/>- Books found using this search are "
 "guaranteed to be duplicates."
 msgstr ""
-"<b>书籍重复搜索</b><br/>- 报告此图书馆中与目标图书馆中的书籍完全相同的二进制书籍.<br/>- "
-"比较您图书馆中每种图书格式的实际文件大小，计算SHA哈希以比较大小匹配的内容.<br/>- 使用此搜索找到的书籍被保证是重复的."
+"<b>搜索重复的书籍</b><br/>- 报告此书库中与目标书库中二进制完全相同的书籍.<br/>- "
+"比较您书库中每种书籍格式的实际文件大小、计算SHA哈希以比对内容.<br/>- 使用此搜索找到的书籍被保证是重复的."
 
 #: dialogs.py:1048
 msgid ""
@@ -714,8 +711,8 @@ msgid ""
 " your target library with an <b>identical title</b> and {0}<br/>- Titles "
 "must match exactly excluding case."
 msgstr ""
-"<b>标题重复搜索</b><br/>- 报告此图书馆中与您的目标图书馆具有 <b>相同标题</b> 的图书 {0}<br/>- "
-"标题必须完全匹配，不区分大小写."
+"<b>搜索重复的书名</b><br/>- - "
+"报告当前书库中与目标书库相比，<b>书名完全相同</b>且{0}的书籍。<br/>-书名必须精确匹配，不区分大小写"
 
 #: dialogs.py:1051
 msgid ""
@@ -724,7 +721,7 @@ msgid ""
 " matches apply removal of common punctuation and prefixes and applies the "
 "same title matching logic as Automerge."
 msgstr ""
-"<b>按书名搜索重复项</b><br/>- 将当前书库与目标书库进行对比，报告具有<b>相似书名</b>及 {0} 的书籍<br/>- "
+"<b>搜索重复的书名</b><br/>- 将当前书库与目标书库进行对比，报告具有<b>相似书名</b>且 {0} 的书籍<br/>- "
 "“相似书名”匹配会移除常见的标点符号与前缀，并采用与“自动合并”相同的书名匹配逻辑。"
 
 #: dialogs.py:1055
@@ -734,8 +731,8 @@ msgid ""
 " matches are based on the same removal of punctuation and common prefixes as"
 " a similar title search."
 msgstr ""
-"<b>按书名搜索重复项</b><br/>- 将当前书库与目标书库进行对比，报告具有<b>Soundex 读音相似书名</b>及 {0} "
-"的书籍<br/>- Soundex 书名匹配首先会像“相似书名”搜索一样移除标点符号与常见前缀，随后按读音进行匹配。"
+"<b>搜索重复的书名</b><br/>- 将当前书库与目标书库进行对比，报告具有<b>Soundex读音相似书名</b>及 {0} 的书籍<br/>- "
+"Soundex书名匹配首先会像“相似书名”搜索一样移除标点符号与常见前缀，随后按读音进行匹配。"
 
 #: dialogs.py:1059
 msgid ""
@@ -744,7 +741,7 @@ msgid ""
 "matches remove all punctuation, subtitles and any words after 'and', 'or' or"
 " 'aka' in the title."
 msgstr ""
-"<b>按书名搜索重复项</b><br/>- 将当前书库与目标书库进行对比，报告具有<b>模糊匹配书名</b>及 {0} 的书籍<br/>- "
+"<b>搜索重复的书名</b><br/>- 将当前书库与目标书库进行对比，报告具有<b>模糊匹配书名</b>及 {0} 的书籍<br/>- "
 "“模糊匹配书名”会移除书名中的所有标点符号、副书名，以及书名中“and”、“or”或“aka”之后的任何词汇。"
 
 #: dialogs.py:1063
@@ -754,20 +751,20 @@ msgid ""
 "searches are best to find variations of author names regardless of the books"
 " you have for each."
 msgstr ""
-"<b>按作者搜索重复项</b><br/>- 将当前书库与目标书库进行对比，在<b>忽略书名</b>的情况下报告符合 {0} 的书籍<br/>- "
+"<b>搜索重复的作者</b><br/>- 将当前书库与目标书库进行对比，在<b>忽略书名</b>的情况下报告符合 {0} 的书籍<br/>- "
 "“忽略书名”搜索最适合用于查找作者姓名的不同写法，而无需考虑您在各书库中分别拥有该作者的哪些书。"
 
 #: dialogs.py:1080
 msgid "Cross Library Search Options"
-msgstr "跨图书馆检索选项"
+msgstr "跨书库检索选项"
 
 #: dialogs.py:1084
 msgid "Compare With Library:"
-msgstr "与图书馆比较："
+msgstr "对比书库："
 
 #: dialogs.py:1088
 msgid "Library:"
-msgstr "图书馆:"
+msgstr "书库:"
 
 #: dialogs.py:1098
 msgid "Duplicate Search Type:"
@@ -787,23 +784,23 @@ msgstr "比较选项："
 
 #: dialogs.py:1173
 msgid "Display duplicate books when search completes"
-msgstr "搜索完成后显示重复的图书"
+msgstr "搜索完成后显示重复的书籍"
 
 #: dialogs.py:1174
 msgid "Uncheck this option if you just want the output log"
-msgstr "如果只需要输出日志，请取消选中该选项"
+msgstr "如果只需要输出日志，请取消勾选该选项"
 
 #: dialogs.py:1213
 msgid "Choose library location to compare against"
-msgstr "选择图书馆位置进行比较"
+msgstr "选择书库位置进行比较"
 
 #: dialogs.py:1264
 msgid "No library specified"
-msgstr "未指定图书馆"
+msgstr "未指定书库"
 
 #: dialogs.py:1265
 msgid "You must specify a library path"
-msgstr "必须指定图书馆路径"
+msgstr "必须指定书库路径"
 
 #: dialogs.py:1268
 msgid "Same as current"
@@ -811,15 +808,15 @@ msgstr "与当前相同"
 
 #: dialogs.py:1269
 msgid "The location {0} contains the current calibre library"
-msgstr "位置 {0} 包含当前的校准库"
+msgstr "位置 {0} 包含了当前的calibre书库"
 
 #: dialogs.py:1271
 msgid "No existing library found"
-msgstr "未找到现有图书馆"
+msgstr "未发现存在的书库"
 
 #: dialogs.py:1272
 msgid "There is no existing calibre library at {0}"
-msgstr "处没有现有的 calibre 库。{0}"
+msgstr "在 {0} 处未找到存在的calibre书库"
 
 #: dialogs.py:1295
 msgid "Save log"
@@ -827,19 +824,19 @@ msgstr "保存日志"
 
 #: dialogs.py:1302
 msgid "Save Find Duplicates log"
-msgstr "保存查找重复记录日志"
+msgstr "保存查重日志"
 
 #: dialogs.py:1303
 msgid "Duplicates log file"
-msgstr "重复日志文件"
+msgstr "查重日志文件"
 
 #: duplicates.py:213
 msgid "No duplicate groups were found when searching with: <b>{0}</b>"
-msgstr "搜索时没有发现重复的组别: <b>{0}</b>"
+msgstr "使用<b>{0}</b>搜索时未找到重复项分组"
 
 #: duplicates.py:215 duplicates.py:328 duplicates.py:361 duplicates.py:368
 msgid "No duplicates"
-msgstr "无重复"
+msgstr "无重复项"
 
 #: duplicates.py:217 duplicates.py:224 duplicates.py:330
 msgid "Show this information again"
@@ -847,21 +844,21 @@ msgstr "再次显示此信息"
 
 #: duplicates.py:220
 msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
-msgstr "用以下命令搜索时，发现{0}个重复的组: <b>{1}</b>"
+msgstr "使用<b>{1}</b>搜索时找到了 {0} 个重复项分组"
 
 #: duplicates.py:327 duplicates.py:369
 msgid "No more duplicate groups exist from your search."
-msgstr "搜索结果中不再存在重复的组。"
+msgstr "搜索结果中已无更多重复项分组"
 
 #: duplicates.py:362
 msgid ""
 "The current duplicate group no longer exists. You cannot perform this "
 "action."
-msgstr "当前重复组已不存在。您不能执行此操作。"
+msgstr "当前重复项分组已不存在。无法执行此操作。"
 
 #: duplicates.py:720
 msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
-msgstr "显示#{0}个{0}个剩余重复组，用于{0}。"
+msgstr "正在显示 {0} 中的第# {0} 个重复项分组，条件为 {0}"
 
 #: duplicates.py:827
 msgid ""
@@ -871,9 +868,9 @@ msgid ""
 "\n"
 "{3}"
 msgstr ""
-"{0}比较的结果：\n"
-"    源码库： {1}\n"
-"    目标库： {2}\n"
+"{0}对比结果：\n"
+"    源书库： {1}\n"
+"    目标书库： {2}\n"
 "\n"
 "{3}"
 
@@ -883,25 +880,25 @@ msgstr "点击 “显示详情 ”查看结果。"
 
 #: duplicates.py:919 duplicates.py:1045
 msgid "Analysing duplicates in target database"
-msgstr "分析目标数据库中的重复数据"
+msgstr "正在分析目标数据库中的重复项"
 
 #: duplicates.py:921 duplicates.py:1054
 msgid "Analysing duplicates in current database"
-msgstr "分析当前数据库中的重复数据"
+msgstr "正在分析当前数据库中的重复项"
 
 #: duplicates.py:952
 msgid ""
 "Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
-msgstr "使用<b>{1}</b>在书库中发现了<b>{0}位作者</b>可能存在重复项，目标书库位置为：{2}"
+msgstr "使用 <b>{1}</b>对位于 {2} 的书库进行比对，发现<b>{0} 个作者</b>可能重复"
 
 #: duplicates.py:1041
 msgid ""
 "Found <b>{0} books</b> with binary duplicates against the library at: {1}"
-msgstr "找到<b>{0}本图书</b>与图书馆中的二进制重复项：{1}"
+msgstr "对位于 {1} 的书库进行比对，发现<b>{0} 本书</b>存在相同的副本"
 
 #: duplicates.py:1078
 msgid ""
 "Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
 "the library at: {2}"
-msgstr "使用<b>{1}</b>在书库中发现了<b>{0}本书</b>可能存在重复项，目标书库位置为：{2}"
+msgstr "使用<b>{1}</b>对位于 {2} 的书库进行比对，发现 <b>{0} 本书</b>可能重复"

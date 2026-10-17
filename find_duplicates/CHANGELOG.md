@@ -1,5 +1,15 @@
 # Find Duplicates Change Log
 
+## [1.10.11] - 2026-10-17
+### Added
+- Czech translation
+- French translation
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+
 ## [1.10.10] - 2026-02-09
 ### Added
 - Arabic translation

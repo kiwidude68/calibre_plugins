@@ -1,0 +1,977 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Vlado Jendroľ, 2022
+# Martin Sowa, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:11+0000\n"
+"Last-Translator: Martin Sowa, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:141
+msgid "Keyboard shortcuts"
+msgstr "Klávesové skratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reštartovať calibre teraz"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Nastavenia pre:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazať"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazať všetky nastavenia tohto zásuvného modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete zmeniť nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavenia v iných knižniciach ani nastavenia uložené v súbore JSON v "
+"priečinku zásuvných modulov calibre nebudú zmenené."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Potom musíte reštartovať calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavenia zmenené"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavenia tohto zásuvného modulu v tejto knižnici boli zmenené."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Teraz prosím reštartujte calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete vymazať nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavenia vymazané"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Všetky nastavenia tohto zásuvného modulu v tejto knižnici boli vymazané."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovať do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinované"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžaduje sa reštart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Obrázok titulu sa nenašiel – pred použitím tohto zásuvného modulu musíte "
+"reštartovať calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvoriť nový stĺpec"
+
+#: action.py:45 dialogs.py:175 dialogs.py:1077 duplicates.py:222
+msgid "Find Duplicates"
+msgstr "Nájsť duplikáty"
+
+#: action.py:87
+msgid "&Find book duplicates"
+msgstr "&Nájsť duplikáty kníh"
+
+#: action.py:89
+msgid "Find library duplicates"
+msgstr "Nájsť duplikáty v knižnici"
+
+#: action.py:90
+msgid "Find books that are duplicated in another library compared to this one"
+msgstr "Nájde knihy, ktoré sú duplicitné v inej knižnici v porovnaní s touto"
+
+#: action.py:93
+msgid "Find metadata &variations"
+msgstr "Nájsť &variácie metadát"
+
+#: action.py:94
+msgid ""
+"Find & rename variations in author, publisher, series or tags names that may"
+" indicate duplicates"
+msgstr ""
+"Nájde a premenuje variácie v názvoch autorov, vydavateľov, sérií alebo "
+"značiek, ktoré môžu označovať duplikáty"
+
+#: action.py:97
+msgid "&Next result"
+msgstr "&Ďalší výsledok"
+
+#: action.py:98
+msgid "Display the next duplicate result group"
+msgstr "Zobrazí ďalšiu skupinu výsledkov duplikátov"
+
+#: action.py:100
+msgid "&Previous result"
+msgstr "&Predchádzajúci výsledok"
+
+#: action.py:101
+msgid "Display the previous duplicate result group"
+msgstr "Zobrazí predchádzajúcu skupinu výsledkov duplikátov"
+
+#: action.py:104
+msgid "&Mark current group as exempt"
+msgstr "&Označiť aktuálnu skupinu ako vyňatú"
+
+#: action.py:105
+msgid ""
+"Mark the current group as not duplicates and exempt from future "
+"consideration"
+msgstr ""
+"Označí aktuálnu skupinu ako nie duplicitnú a vyjme ju z budúceho "
+"posudzovania"
+
+#: action.py:108
+msgid "Mark &all groups as exempt"
+msgstr "Označiť &všetky skupiny ako vyňaté"
+
+#: action.py:109
+msgid ""
+"Mark all remaining duplicate groups as exempt from future consideration"
+msgstr ""
+"Označí všetky zostávajúce skupiny duplikátov ako vyňaté z budúceho "
+"posudzovania"
+
+#: action.py:113
+msgid "&Show all book duplicate exemptions"
+msgstr "&Zobraziť všetky výnimky duplikátov kníh"
+
+#: action.py:114
+msgid "Show all books that have book duplicate exemption pairings"
+msgstr "Zobrazí všetky knihy, ktoré majú párové výnimky duplikátov kníh"
+
+#: action.py:117
+msgid "&Show all author duplicate exemptions"
+msgstr "&Zobraziť všetky výnimky duplikátov autorov"
+
+#: action.py:118
+msgid "Show all books that have author duplicate exemption pairings"
+msgstr "Zobrazí všetky knihy, ktoré majú párové výnimky duplikátov autorov"
+
+#: action.py:121
+msgid "&Manage exemptions for this book"
+msgstr "&Spravovať výnimky pre túto knihu"
+
+#: action.py:122
+msgid "Show duplicate exemptions for this book to enable removal"
+msgstr ""
+"Zobrazí výnimky duplikátov pre túto knihu, aby ich bolo možné odstrániť"
+
+#: action.py:125
+msgid "&Remove selected exemptions"
+msgstr "&Odstrániť vybrané výnimky"
+
+#: action.py:126
+msgid "Remove any duplicate book/author exemptions for the selected books"
+msgstr "Odstráni všetky výnimky duplikátov kníh/autorov pre vybrané knihy"
+
+#: action.py:130
+msgid "&Clear duplicate results"
+msgstr "&Vymazať výsledky duplikátov"
+
+#: action.py:131
+msgid "Exit duplicate search mode"
+msgstr "Ukončí režim hľadania duplikátov"
+
+#: action.py:135
+msgid "&Export duplicate groups"
+msgstr "&Exportovať skupiny duplikátov"
+
+#: action.py:136
+msgid "Export duplicates groups to a json file"
+msgstr "Exportuje skupiny duplikátov do súboru JSON"
+
+#: action.py:140
+msgid "&Customize plugin"
+msgstr "&Prispôsobiť zásuvný modul"
+
+#: action.py:142
+msgid "&Help"
+msgstr "&Pomocník"
+
+#: action.py:248
+msgid ""
+"This action will ensure that each of the {0} in the group are exempt from "
+"appearing together again in future."
+msgstr ""
+"Táto akcia zabezpečí, že každý z {0} v skupine bude vyňatý z opätovného "
+"spoločného zobrazenia v budúcnosti."
+
+#: action.py:251 action.py:304
+msgid "Are you <b>sure</b> you want to proceed?"
+msgstr "Naozaj <b>chcete</b> pokračovať?"
+
+#: action.py:259
+msgid "No duplicates in group"
+msgstr "Žiadne duplikáty v skupine"
+
+#: action.py:260
+msgid "There are no duplicates remaining in this group."
+msgstr "V tejto skupine nezostávajú žiadne duplikáty."
+
+#: action.py:271 action.py:276
+msgid "Cannot manage exemptions"
+msgstr "Nemožno spravovať výnimky"
+
+#: action.py:272
+msgid "No book selected"
+msgstr "Nie je vybraná žiadna kniha"
+
+#: action.py:277
+msgid "This book has no duplicate exemptions"
+msgstr "Táto kniha nemá žiadne výnimky duplikátov"
+
+#: action.py:298
+msgid "Invalid selection"
+msgstr "Neplatný výber"
+
+#: action.py:299
+msgid "You must select at least one book."
+msgstr "Musíte vybrať aspoň jednu knihu."
+
+#: action.py:300
+msgid ""
+"This action will remove any duplicate exemptions for your selection. This "
+"will allow them to potentially appear as duplicates together in a future "
+"duplicate search."
+msgstr ""
+"Táto akcia odstráni všetky výnimky duplikátov pre váš výber. To im umožní "
+"potenciálne sa spoločne zobraziť ako duplikáty v budúcom hľadaní duplikátov."
+
+#: action.py:338
+msgid "Choose file"
+msgstr "Vyberte súbor"
+
+#: action.py:339
+msgid "Saved duplicates"
+msgstr "Uložené duplikáty"
+
+#: action.py:365
+msgid "Export completed"
+msgstr "Export dokončený"
+
+#: action.py:366
+msgid "Exported to: {}"
+msgstr "Exportované do: {}"
+
+#: book_algorithms.py:53
+msgid "Analysing {0} books for duplicates"
+msgstr "Analyzuje sa {0} kníh na duplikáty"
+
+#: book_algorithms.py:423
+msgid "matching '{0}' identifier"
+msgstr "zhoda identifikátora '{0}'"
+
+#: book_algorithms.py:426
+msgid "binary compare"
+msgstr "binárne porovnanie"
+
+#: book_algorithms.py:431
+msgid "ignore title, {0} author"
+msgstr "ignorovať názov, {0} autor"
+
+#: book_algorithms.py:435
+msgid "{0} title, {1} author"
+msgstr "{0} názov, {1} autor"
+
+#: config.py:143
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Upraviť klávesové skratky priradené tomuto zásuvnému modulu"
+
+#: config.py:147
+msgid "Reset &confirmation dialogs"
+msgstr "Obnoviť &potvrdzovacie dialógy"
+
+#: config.py:148
+msgid "Reset all show me again dialogs for the Find Duplicates plugin"
+msgstr ""
+"Obnoviť všetky dialógy „zobraziť znova“ pre zásuvný modul Nájsť duplikáty"
+
+#: config.py:152
+msgid "&View library preferences"
+msgstr "&Zobraziť nastavenia knižnice"
+
+#: config.py:153
+msgid "View data stored in the library database for this plugin"
+msgstr "Zobraziť údaje uložené v databáze knižnice pre tento zásuvný modul"
+
+#: config.py:169
+msgid "Done"
+msgstr "Hotovo"
+
+#: config.py:170
+msgid "Confirmation dialogs have all been reset"
+msgstr "Všetky potvrdzovacie dialógy boli obnovené"
+
+#: dialogs.py:51
+msgid ""
+"<b>Book duplicate search</b><br/>- Find groups of books which have an "
+"identical identifier such as an ISBN, amazon id, goodreads, uri etc.<br/>- "
+"Marking a group as exempt will prevent those specific books from appearing "
+"together in future duplicate book searches."
+msgstr ""
+"<b>Hľadanie duplikátov kníh</b><br/>- Nájde skupiny kníh, ktoré majú "
+"identický identifikátor, ako napríklad ISBN, amazon id, goodreads, uri "
+"atď.<br/>- Označenie skupiny ako vyňatej zabráni tomu, aby sa tieto "
+"konkrétne knihy spoločne zobrazili v budúcich hľadaniach duplikátov kníh."
+
+#: dialogs.py:57
+msgid ""
+"<b>Book duplicate search</b><br/>- Find groups of books which have a book "
+"format that is binary identical.<br/>- Compares the actual file size of "
+"every book format in your library, computing an SHA hash to compare contents"
+" where sizes match.<br/>- Books found using this search are guaranteed to be"
+" duplicates.<br/>- Marking a group as exempt will prevent those specific "
+"books from appearing together in future duplicate book searches."
+msgstr ""
+"<b>Hľadanie duplikátov kníh</b><br/>- Nájde skupiny kníh, ktoré majú formát "
+"knihy binárne identický.<br/>- Porovnáva skutočnú veľkosť súboru každého "
+"formátu knihy vo vašej knižnici a pri zhode veľkostí vypočíta SHA hash na "
+"porovnanie obsahu.<br/>- Knihy nájdené týmto hľadaním sú zaručene "
+"duplikáty.<br/>- Označenie skupiny ako vyňatej zabráni tomu, aby sa tieto "
+"konkrétne knihy spoločne zobrazili v budúcich hľadaniach duplikátov kníh."
+
+#: dialogs.py:66
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with an "
+"<b>identical title</b> and {0}<br/>- Titles must match exactly excluding "
+"case.<br/>- Marking a group as exempt will prevent those specific books from"
+" appearing together in future duplicate book searches."
+msgstr ""
+"<b>Hľadanie duplikátov názvov</b><br/>- Nájde skupiny kníh s <b>identickým "
+"názvom</b> a {0}<br/>- Názvy sa musia zhodovať presne okrem veľkosti "
+"písmen.<br/>- Označenie skupiny ako vyňatej zabráni tomu, aby sa tieto "
+"konkrétne knihy spoločne zobrazili v budúcich hľadaniach duplikátov kníh."
+
+#: dialogs.py:71
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>similar "
+"title</b> and {0}<br/>- Similar title matches apply removal of common "
+"punctuation and prefixes and applies the same title matching logic as "
+"Automerge.<br/>- Marking a group as exempt will prevent those specific books"
+" from appearing together in future duplicate book searches."
+msgstr ""
+"<b>Hľadanie duplikátov názvov</b><br/>- Nájde skupiny kníh s <b>podobným "
+"názvom</b> a {0}<br/>- Zhody podobných názvov odstraňujú bežnú interpunkciu "
+"a predpony a používajú rovnakú logiku porovnávania názvov ako "
+"Automerge.<br/>- Označenie skupiny ako vyňatej zabráni tomu, aby sa tieto "
+"konkrétne knihy spoločne zobrazili v budúcich hľadaniach duplikátov kníh."
+
+#: dialogs.py:77
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>soundex "
+"title</b> and {0}<br/>- Soundex title matches are based on the same removal "
+"of punctuation and common prefixes as a similar title search.<br/>- Marking "
+"a group as exempt will prevent those specific books from appearing together "
+"in future duplicate book searches."
+msgstr ""
+"<b>Hľadanie duplikátov názvov</b><br/>- Nájde skupiny kníh s <b>názvom podľa"
+" soundexu</b> a {0}<br/>- Zhody názvov podľa soundexu vychádzajú z rovnakého"
+" odstraňovania interpunkcie a bežných predpôn ako hľadanie podobných "
+"názvov.<br/>- Označenie skupiny ako vyňatej zabráni tomu, aby sa tieto "
+"konkrétne knihy spoločne zobrazili v budúcich hľadaniach duplikátov kníh."
+
+#: dialogs.py:83
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>fuzzy "
+"title</b> and {0}<br/>- Fuzzy title matches remove all punctuation, "
+"subtitles and any words after 'and', 'or' or 'aka' in the title.<br/>- "
+"Marking a group as exempt will prevent those specific books from appearing "
+"together in future duplicate book searches."
+msgstr ""
+"<b>Hľadanie duplikátov názvov</b><br/>- Nájde skupiny kníh s <b>približným "
+"názvom</b> a {0}<br/>- Zhody približných názvov odstraňujú všetku "
+"interpunkciu, podtituly a všetky slová po 'and', 'or' alebo 'aka' v "
+"názve.<br/>- Označenie skupiny ako vyňatej zabráni tomu, aby sa tieto "
+"konkrétne knihy spoločne zobrazili v budúcich hľadaniach duplikátov kníh."
+
+#: dialogs.py:89
+msgid ""
+"<b>Author duplicate search</b><br/>- Find groups of books <b>ignoring "
+"title</b> with {0}<br/>- Ignore title searches are best to find variations "
+"of author names regardless of the books you have for each.<br/>- Marking a "
+"group as exempt will prevent any books by those authors from appearing "
+"together in future duplicate author searches."
+msgstr ""
+"<b>Hľadanie duplikátov autorov</b><br/>- Nájde skupiny kníh <b>ignorujúc "
+"názov</b> s {0}<br/>- Hľadania s ignorovaním názvu sú najlepšie na nájdenie "
+"variácií mien autorov bez ohľadu na knihy, ktoré od nich máte.<br/>- "
+"Označenie skupiny ako vyňatej zabráni tomu, aby sa akékoľvek knihy od týchto"
+" autorov spoločne zobrazili v budúcich hľadaniach duplikátov autorov."
+
+#: dialogs.py:98
+msgid ""
+"an <b>identical author</b>.<br/>- Authors must match exactly excluding case."
+msgstr ""
+"<b>identického autora</b>.<br/>- Autori sa musia zhodovať presne okrem "
+"veľkosti písmen."
+
+#: dialogs.py:100
+msgid ""
+"a <b>similar author</b>.<br/>- Similar authors differ only in punctuation, "
+"initials or order of their names."
+msgstr ""
+"<b>podobného autora</b>.<br/>- Podobní autori sa líšia len interpunkciou, "
+"iniciálami alebo poradím svojich mien."
+
+#: dialogs.py:103
+msgid ""
+"a <b>soundex author</b>.<br/>- Soundex author matches start with the same "
+"removal of punctuation and ordering as a similar author search."
+msgstr ""
+"<b>autora podľa soundexu</b>.<br/>- Zhody autorov podľa soundexu začínajú "
+"rovnakým odstraňovaním interpunkcie a poradia ako hľadanie podobných "
+"autorov."
+
+#: dialogs.py:106
+msgid ""
+"a <b>fuzzy match author</b>.<br/>- Fuzzy author matches compare using their "
+"surnames and only the first initial."
+msgstr ""
+"<b>približne zodpovedajúceho autora</b>.<br/>- Približné zhody autorov "
+"porovnávajú pomocou ich priezvisk a len prvého iniciálu."
+
+#: dialogs.py:109
+msgid "<b>ignoring the author</b>."
+msgstr "<b>ignorujúc autora</b>."
+
+#: dialogs.py:178
+msgid "Duplicate Search Options"
+msgstr "Možnosti hľadania duplikátov"
+
+#: dialogs.py:182
+msgid "Duplicate Search Type"
+msgstr "Typ hľadania duplikátov"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Binary Compare"
+msgstr "Binárne porovnanie"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Identifier"
+msgstr "Identifikátor"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Title/Author"
+msgstr "Názov/Autor"
+
+#: dialogs.py:203
+msgid "Title Matching"
+msgstr "Porovnávanie názvov"
+
+#: dialogs.py:215 dialogs.py:236 dialogs.py:686 dialogs.py:1131
+#: dialogs.py:1152
+msgid "Length:"
+msgstr "Dĺžka:"
+
+#: dialogs.py:216 dialogs.py:687 dialogs.py:1132
+msgid ""
+"The shorter the soundex length, the greater likelihood of false positives.\n"
+"Large soundex values reduce your chances of matches"
+msgstr ""
+"Čím kratšia dĺžka soundexu, tým väčšia pravdepodobnosť falošných zhôd.\n"
+"Veľké hodnoty soundexu znižujú šancu na zhody"
+
+#: dialogs.py:224
+msgid "Author Matching"
+msgstr "Porovnávanie autorov"
+
+#: dialogs.py:249
+msgid "Result Options"
+msgstr "Možnosti výsledkov"
+
+#: dialogs.py:253
+msgid "Show all groups at once with highlighting"
+msgstr "Zobraziť všetky skupiny naraz so zvýraznením"
+
+#: dialogs.py:254
+msgid "Show one group at a time"
+msgstr "Zobraziť jednu skupinu naraz"
+
+#: dialogs.py:257
+msgid "Highlight authors in the tag browser for ignore title searches"
+msgstr ""
+"Zvýrazniť autorov v prehliadači značiek pri hľadaniach s ignorovaním názvu"
+
+#: dialogs.py:258
+msgid ""
+"When checked, will ensure that the authors for the current group\n"
+"are shown in the tag browser and highlighted if multiple groups shown.\n"
+"Only applies for author duplicate searches."
+msgstr ""
+"Ak je začiarknuté, zabezpečí, že autori aktuálnej skupiny\n"
+"sa zobrazia v prehliadači značiek a zvýraznia, ak sa zobrazuje viac skupín.\n"
+"Platí len pre hľadania duplikátov autorov."
+
+#: dialogs.py:262
+msgid "Sort groups by number of duplicates"
+msgstr "Zoradiť skupiny podľa počtu duplikátov"
+
+#: dialogs.py:263
+msgid ""
+"When unchecked, will sort by an approximation of the title\n"
+"or by author if title is being ignored"
+msgstr ""
+"Ak je odčiarknuté, zoradí podľa približného názvu\n"
+"alebo podľa autora, ak sa názov ignoruje"
+
+#: dialogs.py:266 dialogs.py:1169
+msgid "Include languages metadata when comparing titles"
+msgstr "Zahrnúť metadáta jazykov pri porovnávaní názvov"
+
+#: dialogs.py:267 dialogs.py:1170
+msgid ""
+"When checked, books with identical titles but different\n"
+"languages metadata field values will not show as duplicates"
+msgstr ""
+"Ak je začiarknuté, knihy s identickými názvami, ale odlišnými\n"
+"hodnotami poľa metadát jazykov sa nezobrazia ako duplikáty"
+
+#: dialogs.py:270
+msgid "When doing a Binary Compare, automatically remove duplicate formats"
+msgstr "Pri binárnom porovnaní automaticky odstrániť duplicitné formáty"
+
+#: dialogs.py:272
+msgid ""
+"When checked and the Binary duplicate search is run, if duplicate formats are found\n"
+"then all except one are deleted. The format on the oldest book record will be kept.\n"
+"This is a convenience function for where you have multiple formats associated with\n"
+"each book and hence it is not readily obvious which of these is the duplicate.\n"
+"Note that the book records themselves are not deleted, and will still appear in the\n"
+"results for merging even if they now have no formats."
+msgstr ""
+"Ak je začiarknuté a spustí sa binárne hľadanie duplikátov, ak sa nájdu\n"
+"duplicitné formáty, všetky okrem jedného sa odstránia. Zachová sa formát\n"
+"na najstaršom zázname knihy. Toto je praktická funkcia pre prípady, keď\n"
+"máte s každou knihou spojených viacero formátov, a preto nie je ľahko\n"
+"zrejmé, ktorý z nich je duplicitný. Upozorňujeme, že samotné záznamy kníh\n"
+"sa neodstraňujú a stále sa zobrazia vo výsledkoch na zlúčenie, aj keď už\n"
+"nemajú žiadne formáty."
+
+#: dialogs.py:370
+msgid "Invalid Criteria"
+msgstr "Neplatné kritériá"
+
+#: dialogs.py:371
+msgid "You must select an identifier type to search by Identifier."
+msgstr ""
+"Ak chcete hľadať podľa identifikátora, musíte vybrať typ identifikátora."
+
+#: dialogs.py:504
+msgid "Manage Duplicate Exemptions"
+msgstr "Spravovať výnimky duplikátov"
+
+#: dialogs.py:507
+msgid "Manage Exemptions"
+msgstr "Spravovať výnimky"
+
+#: dialogs.py:513
+msgid ""
+"The first book below will never appear as a duplicate with the following "
+"books.<br/>To allow future duplicate consideration, tick the remove checkbox"
+" and click ok."
+msgstr ""
+"Prvá kniha nižšie sa nikdy nezobrazí ako duplikát s nasledujúcimi "
+"knihami.<br/>Ak chcete povoliť budúce posudzovanie duplikátov, začiarknite "
+"políčko odstrániť a kliknite na OK."
+
+#: dialogs.py:528
+msgid ""
+"The authors below will never appear as a duplicate with the following "
+"authors.<br/>To allow future duplicate consideration, tick the remove "
+"checkbox and click ok."
+msgstr ""
+"Autori nižšie sa nikdy nezobrazia ako duplikát s nasledujúcimi "
+"autormi.<br/>Ak chcete povoliť budúce posudzovanie duplikátov, začiarknite "
+"políčko odstrániť a kliknite na OK."
+
+#: dialogs.py:645
+msgid "Find Duplicates Plugin"
+msgstr "Zásuvný modul Nájsť duplikáty"
+
+#: dialogs.py:649
+msgid "Find Metadata Variations"
+msgstr "Nájsť variácie metadát"
+
+#: dialogs.py:653
+msgid "Choose metadata column:"
+msgstr "Vyberte stĺpec metadát:"
+
+#: dialogs.py:657
+msgid "Authors"
+msgstr "Autori"
+
+#: dialogs.py:660
+msgid "Series"
+msgstr "Séria"
+
+#: dialogs.py:663
+msgid "Publisher"
+msgstr "Vydavateľ"
+
+#: dialogs.py:666
+msgid "Tags"
+msgstr "Značky"
+
+#: dialogs.py:675
+msgid "Choose similarity level:"
+msgstr "Vyberte úroveň podobnosti:"
+
+#: dialogs.py:679
+msgid "Similar"
+msgstr "Podobné"
+
+#: dialogs.py:682
+msgid "Soundex"
+msgstr "Soundex"
+
+#: dialogs.py:684
+msgid "Fuzzy"
+msgstr "Približné"
+
+#: dialogs.py:691
+msgid "Search"
+msgstr "Hľadať"
+
+#: dialogs.py:693
+msgid "Search for results"
+msgstr "Hľadať výsledky"
+
+#: dialogs.py:704
+msgid "Search results:"
+msgstr "Výsledky hľadania:"
+
+#: dialogs.py:710
+msgid "Authors:"
+msgstr "Autori:"
+
+#: dialogs.py:711 dialogs.py:910
+msgid "Variations:"
+msgstr "Variácie:"
+
+#: dialogs.py:726
+msgid "&Show matching books"
+msgstr "&Zobraziť zodpovedajúce knihy"
+
+#: dialogs.py:727
+msgid "As a group is selected, show the search results in the library view"
+msgstr "Pri výbere skupiny zobrazí výsledky hľadania v zobrazení knižnice"
+
+#: dialogs.py:730
+msgid "Rename to:"
+msgstr "Premenovať na:"
+
+#: dialogs.py:747
+msgid "&Rename"
+msgstr "&Premenovať"
+
+#: dialogs.py:748
+msgid "Rename all of the selected items to this name"
+msgstr "Premenuje všetky vybrané položky na tento názov"
+
+#: dialogs.py:751
+msgid "&Ignore"
+msgstr "&Ignorovať"
+
+#: dialogs.py:752
+msgid "Ignore all selected items from consideration at this time"
+msgstr "V tomto čase ignoruje všetky vybrané položky z posudzovania"
+
+#: dialogs.py:791
+msgid "No matches"
+msgstr "Žiadne zhody"
+
+#: dialogs.py:791
+msgid "You have no variations of {0} using this criteria"
+msgstr "Pomocou týchto kritérií nemáte žiadne variácie {0}"
+
+#: dialogs.py:851
+msgid "Use this variation name"
+msgstr "Použiť tento názov variácie"
+
+#: dialogs.py:914
+msgid "Variations of: {0}"
+msgstr "Variácie: {0}"
+
+#: dialogs.py:950
+msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
+msgstr "Naozaj chcete premenovať vybrané položky ({0}) na \"{1}\"?"
+
+#: dialogs.py:1037
+msgid ""
+"<b>Book duplicate search</b><br/>- Report books in this library which have "
+"an identical identifier for books in the target library.<br/>"
+msgstr ""
+"<b>Hľadanie duplikátov kníh</b><br/>- Nahlási knihy v tejto knižnici, ktoré "
+"majú identický identifikátor s knihami v cieľovej knižnici.<br/>"
+
+#: dialogs.py:1041
+msgid ""
+"<b>Book duplicate search</b><br/>- Report books in this library which are "
+"binary identical to books in your target library.<br/>- Compares the actual "
+"file size of every book format in your libraries, computing an SHA hash to "
+"compare contents where sizes match.<br/>- Books found using this search are "
+"guaranteed to be duplicates."
+msgstr ""
+"<b>Hľadanie duplikátov kníh</b><br/>- Nahlási knihy v tejto knižnici, ktoré "
+"sú binárne identické s knihami vo vašej cieľovej knižnici.<br/>- Porovnáva "
+"skutočnú veľkosť súboru každého formátu knihy vo vašich knižniciach a pri "
+"zhode veľkostí vypočíta SHA hash na porovnanie obsahu.<br/>- Knihy nájdené "
+"týmto hľadaním sú zaručene duplikáty."
+
+#: dialogs.py:1048
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with an <b>identical title</b> and {0}<br/>- Titles "
+"must match exactly excluding case."
+msgstr ""
+"<b>Hľadanie duplikátov názvov</b><br/>- Nahlási knihy v tejto knižnici v "
+"porovnaní s vašou cieľovou knižnicou s <b>identickým názvom</b> a {0}<br/>- "
+"Názvy sa musia zhodovať presne okrem veľkosti písmen."
+
+#: dialogs.py:1051
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>similar title</b> and {0}<br/>- Similar title"
+" matches apply removal of common punctuation and prefixes and applies the "
+"same title matching logic as Automerge."
+msgstr ""
+"<b>Hľadanie duplikátov názvov</b><br/>- Nahlási knihy v tejto knižnici v "
+"porovnaní s vašou cieľovou knižnicou s <b>podobným názvom</b> a {0}<br/>- "
+"Zhody podobných názvov odstraňujú bežnú interpunkciu a predpony a používajú "
+"rovnakú logiku porovnávania názvov ako Automerge."
+
+#: dialogs.py:1055
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>soundex title</b> and {0}<br/>- Soundex title"
+" matches are based on the same removal of punctuation and common prefixes as"
+" a similar title search."
+msgstr ""
+"<b>Hľadanie duplikátov názvov</b><br/>- Nahlási knihy v tejto knižnici v "
+"porovnaní s vašou cieľovou knižnicou s <b>názvom podľa soundexu</b> a "
+"{0}<br/>- Zhody názvov podľa soundexu vychádzajú z rovnakého odstraňovania "
+"interpunkcie a bežných predpôn ako hľadanie podobných názvov."
+
+#: dialogs.py:1059
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>fuzzy title</b> and {0}<br/>- Fuzzy title "
+"matches remove all punctuation, subtitles and any words after 'and', 'or' or"
+" 'aka' in the title."
+msgstr ""
+"<b>Hľadanie duplikátov názvov</b><br/>- Nahlási knihy v tejto knižnici v "
+"porovnaní s vašou cieľovou knižnicou s <b>približným názvom</b> a {0}<br/>- "
+"Zhody približných názvov odstraňujú všetku interpunkciu, podtituly a všetky "
+"slová po 'and', 'or' alebo 'aka' v názve."
+
+#: dialogs.py:1063
+msgid ""
+"<b>Author duplicate search</b><br/>- Report books in this library compared "
+"to your target library <b>ignoring title</b> with {0}<br/>- Ignore title "
+"searches are best to find variations of author names regardless of the books"
+" you have for each."
+msgstr ""
+"<b>Hľadanie duplikátov autorov</b><br/>- Nahlási knihy v tejto knižnici v "
+"porovnaní s vašou cieľovou knižnicou <b>ignorujúc názov</b> s {0}<br/>- "
+"Hľadania s ignorovaním názvu sú najlepšie na nájdenie variácií mien autorov "
+"bez ohľadu na knihy, ktoré od nich máte."
+
+#: dialogs.py:1080
+msgid "Cross Library Search Options"
+msgstr "Možnosti hľadania medzi knižnicami"
+
+#: dialogs.py:1084
+msgid "Compare With Library:"
+msgstr "Porovnať s knižnicou:"
+
+#: dialogs.py:1088
+msgid "Library:"
+msgstr "Knižnica:"
+
+#: dialogs.py:1098
+msgid "Duplicate Search Type:"
+msgstr "Typ hľadania duplikátov:"
+
+#: dialogs.py:1119
+msgid "Title Matching:"
+msgstr "Porovnávanie názvov:"
+
+#: dialogs.py:1140
+msgid "Author Matching:"
+msgstr "Porovnávanie autorov:"
+
+#: dialogs.py:1165
+msgid "Compare Options:"
+msgstr "Možnosti porovnania:"
+
+#: dialogs.py:1173
+msgid "Display duplicate books when search completes"
+msgstr "Zobraziť duplicitné knihy po dokončení hľadania"
+
+#: dialogs.py:1174
+msgid "Uncheck this option if you just want the output log"
+msgstr "Odčiarknite túto možnosť, ak chcete len výstupný protokol"
+
+#: dialogs.py:1213
+msgid "Choose library location to compare against"
+msgstr "Vyberte umiestnenie knižnice na porovnanie"
+
+#: dialogs.py:1264
+msgid "No library specified"
+msgstr "Nie je určená žiadna knižnica"
+
+#: dialogs.py:1265
+msgid "You must specify a library path"
+msgstr "Musíte určiť cestu ku knižnici"
+
+#: dialogs.py:1268
+msgid "Same as current"
+msgstr "Rovnaká ako aktuálna"
+
+#: dialogs.py:1269
+msgid "The location {0} contains the current calibre library"
+msgstr "Umiestnenie {0} obsahuje aktuálnu knižnicu calibre"
+
+#: dialogs.py:1271
+msgid "No existing library found"
+msgstr "Nenašla sa žiadna existujúca knižnica"
+
+#: dialogs.py:1272
+msgid "There is no existing calibre library at {0}"
+msgstr "V umiestnení {0} sa nenachádza žiadna existujúca knižnica calibre"
+
+#: dialogs.py:1295
+msgid "Save log"
+msgstr "Uložiť protokol"
+
+#: dialogs.py:1302
+msgid "Save Find Duplicates log"
+msgstr "Uložiť protokol Nájsť duplikáty"
+
+#: dialogs.py:1303
+msgid "Duplicates log file"
+msgstr "Súbor protokolu duplikátov"
+
+#: duplicates.py:213
+msgid "No duplicate groups were found when searching with: <b>{0}</b>"
+msgstr "Pri hľadaní s: <b>{0}</b> sa nenašli žiadne skupiny duplikátov"
+
+#: duplicates.py:215 duplicates.py:328 duplicates.py:361 duplicates.py:368
+msgid "No duplicates"
+msgstr "Žiadne duplikáty"
+
+#: duplicates.py:217 duplicates.py:224 duplicates.py:330
+msgid "Show this information again"
+msgstr "Zobraziť tieto informácie znova"
+
+#: duplicates.py:220
+msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
+msgstr "Pri hľadaní s: <b>{1}</b> sa našlo {0} skupín duplikátov"
+
+#: duplicates.py:327 duplicates.py:369
+msgid "No more duplicate groups exist from your search."
+msgstr "Z vášho hľadania už neexistujú žiadne ďalšie skupiny duplikátov."
+
+#: duplicates.py:362
+msgid ""
+"The current duplicate group no longer exists. You cannot perform this "
+"action."
+msgstr ""
+"Aktuálna skupina duplikátov už neexistuje. Túto akciu nemožno vykonať."
+
+#: duplicates.py:720
+msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
+msgstr "Zobrazuje sa #{0} z {0} zostávajúcich skupín duplikátov pre {0}"
+
+#: duplicates.py:827
+msgid ""
+"Results of {0} comparison:\n"
+"    Source library: {1}\n"
+"    Target library: {2}\n"
+"\n"
+"{3}"
+msgstr ""
+"Výsledky porovnania {0}:\n"
+"    Zdrojová knižnica: {1}\n"
+"    Cieľová knižnica: {2}\n"
+"\n"
+"{3}"
+
+#: duplicates.py:907
+msgid "Click 'Show details' to see the results."
+msgstr "Kliknutím na „Zobraziť podrobnosti“ zobrazíte výsledky."
+
+#: duplicates.py:919 duplicates.py:1045
+msgid "Analysing duplicates in target database"
+msgstr "Analyzujú sa duplikáty v cieľovej databáze"
+
+#: duplicates.py:921 duplicates.py:1054
+msgid "Analysing duplicates in current database"
+msgstr "Analyzujú sa duplikáty v aktuálnej databáze"
+
+#: duplicates.py:952
+msgid ""
+"Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
+"the library at: {2}"
+msgstr ""
+"Našlo sa <b>{0} autorov</b> s potenciálnymi duplikátmi pomocou <b>{1}</b> "
+"proti knižnici v: {2}"
+
+#: duplicates.py:1041
+msgid ""
+"Found <b>{0} books</b> with binary duplicates against the library at: {1}"
+msgstr "Našlo sa <b>{0} kníh</b> s binárnymi duplikátmi proti knižnici v: {1}"
+
+#: duplicates.py:1078
+msgid ""
+"Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
+"the library at: {2}"
+msgstr ""
+"Našlo sa <b>{0} kníh</b> s potenciálnymi duplikátmi pomocou <b>{1}</b> proti"
+" knižnici v: {2}"

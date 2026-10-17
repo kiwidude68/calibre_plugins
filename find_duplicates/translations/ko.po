@@ -1,0 +1,939 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Junghee Lee <daemul72@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:11+0000\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
+"Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:141
+msgid "Keyboard shortcuts"
+msgstr "키보드 단축키"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "지금 캘리버 다시 시작"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "다음의 환경 설정:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "지우기"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "이 플러그인에 대한 모든 설정 지우기"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "이 라이브러리에서 이 플러그인의 설정을 변경하시겠습니까?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "다른 라이브러리의 설정이나 calibre 플러그인 폴더의 JSON 파일에 저장된 설정은 변경되지 않습니다."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "이후 calibre를 다시 시작해야 합니다."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "설정이 변경됨"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "이 라이브러리의 이 플러그인 설정이 변경되었습니다."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "지금 캘리버를 다시 시작하십시오."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "이 라이브러리에서 이 플러그인의 설정을 지우시겠습니까?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "설정이 삭제됨"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "이 라이브러리의 이 플러그인에 대한 모든 설정이 지워졌습니다."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "정의되지 않음"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "다시 시작 필요"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용하기 전에 calibre를 다시 시작해야 합니다!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "새 열 만들기"
+
+#: action.py:45 dialogs.py:175 dialogs.py:1077 duplicates.py:222
+msgid "Find Duplicates"
+msgstr "중복 찾기"
+
+#: action.py:87
+msgid "&Find book duplicates"
+msgstr "책 중복 찾기(&F)"
+
+#: action.py:89
+msgid "Find library duplicates"
+msgstr "라이브러리 중복 찾기"
+
+#: action.py:90
+msgid "Find books that are duplicated in another library compared to this one"
+msgstr "이 라이브러리와 비교해 다른 라이브러리에서 중복된 책 찾기"
+
+#: action.py:93
+msgid "Find metadata &variations"
+msgstr "메타데이터 변형 찾기(&V)"
+
+#: action.py:94
+msgid ""
+"Find & rename variations in author, publisher, series or tags names that may"
+" indicate duplicates"
+msgstr "중복을 나타낼 수 있는 저자, 출판사, 시리즈 또는 태그 이름 변형 찾기 및 이름 바꾸기(&R)"
+
+#: action.py:97
+msgid "&Next result"
+msgstr "다음 결과(&N)"
+
+#: action.py:98
+msgid "Display the next duplicate result group"
+msgstr "다음 중복 결과 그룹 표시"
+
+#: action.py:100
+msgid "&Previous result"
+msgstr "이전 결과(&P)"
+
+#: action.py:101
+msgid "Display the previous duplicate result group"
+msgstr "이전 중복 결과 그룹 표시"
+
+#: action.py:104
+msgid "&Mark current group as exempt"
+msgstr "현재 그룹을 예외로 표시(&M)"
+
+#: action.py:105
+msgid ""
+"Mark the current group as not duplicates and exempt from future "
+"consideration"
+msgstr "현재 그룹을 중복 아님으로 표시하고 이후 검사에서 제외"
+
+#: action.py:108
+msgid "Mark &all groups as exempt"
+msgstr "모든 그룹을 예외로 표시(&A)"
+
+#: action.py:109
+msgid ""
+"Mark all remaining duplicate groups as exempt from future consideration"
+msgstr "남아 있는 모든 중복 그룹을 이후 검사에서 예외로 표시"
+
+#: action.py:113
+msgid "&Show all book duplicate exemptions"
+msgstr "모든 책 중복 예외 보기(&S)"
+
+#: action.py:114
+msgid "Show all books that have book duplicate exemption pairings"
+msgstr "책 중복 예외 쌍이 있는 모든 책 표시"
+
+#: action.py:117
+msgid "&Show all author duplicate exemptions"
+msgstr "모든 저자 중복 예외 보기(&S)"
+
+#: action.py:118
+msgid "Show all books that have author duplicate exemption pairings"
+msgstr "저자 중복 예외 쌍이 있는 모든 책 표시"
+
+#: action.py:121
+msgid "&Manage exemptions for this book"
+msgstr "이 책의 예외 관리(&M)"
+
+#: action.py:122
+msgid "Show duplicate exemptions for this book to enable removal"
+msgstr "이 책의 중복 예외를 표시하여 제거할 수 있게 합니다"
+
+#: action.py:125
+msgid "&Remove selected exemptions"
+msgstr "선택한 예외 제거(&R)"
+
+#: action.py:126
+msgid "Remove any duplicate book/author exemptions for the selected books"
+msgstr "선택한 책의 중복 책/저자 예외 제거"
+
+#: action.py:130
+msgid "&Clear duplicate results"
+msgstr "중복 결과 지우기(&C)"
+
+#: action.py:131
+msgid "Exit duplicate search mode"
+msgstr "중복 검색 모드 종료"
+
+#: action.py:135
+msgid "&Export duplicate groups"
+msgstr "중복 그룹 내보내기(&E)"
+
+#: action.py:136
+msgid "Export duplicates groups to a json file"
+msgstr "중복 그룹을 JSON 파일로 내보내기"
+
+#: action.py:140
+msgid "&Customize plugin"
+msgstr "플러그인 설정(&C)"
+
+#: action.py:142
+msgid "&Help"
+msgstr "도움말(&H)"
+
+#: action.py:248
+msgid ""
+"This action will ensure that each of the {0} in the group are exempt from "
+"appearing together again in future."
+msgstr "이 작업을 수행하면 그룹의 {0} 항목이 이후 다시 함께 나타나지 않도록 예외 처리됩니다."
+
+#: action.py:251 action.py:304
+msgid "Are you <b>sure</b> you want to proceed?"
+msgstr "계속 진행하시겠습니까?"
+
+#: action.py:259
+msgid "No duplicates in group"
+msgstr "그룹에 중복 없음"
+
+#: action.py:260
+msgid "There are no duplicates remaining in this group."
+msgstr "이 그룹에는 남아 있는 중복이 없습니다."
+
+#: action.py:271 action.py:276
+msgid "Cannot manage exemptions"
+msgstr "예외를 관리할 수 없음"
+
+#: action.py:272
+msgid "No book selected"
+msgstr "선택한 책이 없습니다"
+
+#: action.py:277
+msgid "This book has no duplicate exemptions"
+msgstr "이 책에는 중복 예외가 없습니다"
+
+#: action.py:298
+msgid "Invalid selection"
+msgstr "잘못된 선택"
+
+#: action.py:299
+msgid "You must select at least one book."
+msgstr "최소 한 권의 책을 선택해야 합니다."
+
+#: action.py:300
+msgid ""
+"This action will remove any duplicate exemptions for your selection. This "
+"will allow them to potentially appear as duplicates together in a future "
+"duplicate search."
+msgstr "이 작업은 선택 항목의 중복 예외를 제거합니다. 이후 중복 검색에서 다시 함께 중복으로 나타날 수 있습니다."
+
+#: action.py:338
+msgid "Choose file"
+msgstr "파일 선택"
+
+#: action.py:339
+msgid "Saved duplicates"
+msgstr "중복 저장됨"
+
+#: action.py:365
+msgid "Export completed"
+msgstr "내보내기 완료"
+
+#: action.py:366
+msgid "Exported to: {}"
+msgstr "내보낸 위치: {}"
+
+#: book_algorithms.py:53
+msgid "Analysing {0} books for duplicates"
+msgstr "{0}권의 책에서 중복 분석 중"
+
+#: book_algorithms.py:423
+msgid "matching '{0}' identifier"
+msgstr "'{0}' 식별자 일치"
+
+#: book_algorithms.py:426
+msgid "binary compare"
+msgstr "바이너리 비교"
+
+#: book_algorithms.py:431
+msgid "ignore title, {0} author"
+msgstr "제목 무시, {0} 저자"
+
+#: book_algorithms.py:435
+msgid "{0} title, {1} author"
+msgstr "{0} 제목, {1} 저자"
+
+#: config.py:143
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
+
+#: config.py:147
+msgid "Reset &confirmation dialogs"
+msgstr "확인 대화상자 재설정(&C)"
+
+#: config.py:148
+msgid "Reset all show me again dialogs for the Find Duplicates plugin"
+msgstr "Find Duplicates 플러그인의 다시 보지 않기 대화상자를 모두 재설정"
+
+#: config.py:152
+msgid "&View library preferences"
+msgstr "라이브러리 환경 설정 보기(&V)"
+
+#: config.py:153
+msgid "View data stored in the library database for this plugin"
+msgstr "이 플러그인에 대해 라이브러리 데이터베이스에 저장된 데이터를 봅니다"
+
+#: config.py:169
+msgid "Done"
+msgstr "완료"
+
+#: config.py:170
+msgid "Confirmation dialogs have all been reset"
+msgstr "모든 확인 대화상자가 재설정되었습니다"
+
+#: dialogs.py:51
+msgid ""
+"<b>Book duplicate search</b><br/>- Find groups of books which have an "
+"identical identifier such as an ISBN, amazon id, goodreads, uri etc.<br/>- "
+"Marking a group as exempt will prevent those specific books from appearing "
+"together in future duplicate book searches."
+msgstr ""
+"__p0__book 중복 search__p1____p2__- 찾기 groups 의 책 which have an identical "
+"identifier such as an isbn, amazon id, Goodreads, uri etc.__p3__- marking a "
+"group as exempt will 방지 those specific 책 에서 appearing together 에서 future 중복 "
+"책 searches."
+
+#: dialogs.py:57
+msgid ""
+"<b>Book duplicate search</b><br/>- Find groups of books which have a book "
+"format that is binary identical.<br/>- Compares the actual file size of "
+"every book format in your library, computing an SHA hash to compare contents"
+" where sizes match.<br/>- Books found using this search are guaranteed to be"
+" duplicates.<br/>- Marking a group as exempt will prevent those specific "
+"books from appearing together in future duplicate book searches."
+msgstr ""
+"__p0__book 중복 search__p1____p2__- 찾기 groups 의 책 which have a 책 형식 that is "
+"바이너리 identical.__p3__- compares the actual 파일 size 의 every 책 형식 에서 your "
+"라이브러리, computing an sha hash 으로 compare contents where sizes match.__p4__- 책"
+" 찾음 사용 this 검색 are guaranteed 으로 be duplicates.__p5__- marking a group as "
+"exempt will 방지 those specific 책 에서 appearing together 에서 future 중복 책 "
+"searches."
+
+#: dialogs.py:66
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with an "
+"<b>identical title</b> and {0}<br/>- Titles must match exactly excluding "
+"case.<br/>- Marking a group as exempt will prevent those specific books from"
+" appearing together in future duplicate book searches."
+msgstr ""
+"__p0__title 중복 search__p1____p2__- 찾기 groups 의 책 함께 an __p3__identical "
+"title__p4__ 및 __p5____p6__- titles must match exactly excluding case.__p7__-"
+" marking a group as exempt will 방지 those specific 책 에서 appearing together 에서"
+" future 중복 책 searches."
+
+#: dialogs.py:71
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>similar "
+"title</b> and {0}<br/>- Similar title matches apply removal of common "
+"punctuation and prefixes and applies the same title matching logic as "
+"Automerge.<br/>- Marking a group as exempt will prevent those specific books"
+" from appearing together in future duplicate book searches."
+msgstr ""
+"__p0__title 중복 search__p1____p2__- 찾기 groups 의 책 함께 a __p3__similar "
+"title__p4__ 및 __p5____p6__- 유사한 제목 matches 적용 removal 의 common punctuation 및"
+" prefixes 및 applies the 같은 제목 matching logic as automerge.__p7__- marking a "
+"group as exempt will 방지 those specific 책 에서 appearing together 에서 future 중복 "
+"책 searches."
+
+#: dialogs.py:77
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>soundex "
+"title</b> and {0}<br/>- Soundex title matches are based on the same removal "
+"of punctuation and common prefixes as a similar title search.<br/>- Marking "
+"a group as exempt will prevent those specific books from appearing together "
+"in future duplicate book searches."
+msgstr ""
+"__p0__title 중복 search__p1____p2__- 찾기 groups 의 책 함께 a __p3__soundex "
+"title__p4__ 및 __p5____p6__- soundex 제목 matches are based 에 the 같은 removal 의 "
+"punctuation 및 common prefixes as a 유사한 제목 검색.__p7__- marking a group as "
+"exempt will 방지 those specific 책 에서 appearing together 에서 future 중복 책 "
+"searches."
+
+#: dialogs.py:83
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>fuzzy "
+"title</b> and {0}<br/>- Fuzzy title matches remove all punctuation, "
+"subtitles and any words after 'and', 'or' or 'aka' in the title.<br/>- "
+"Marking a group as exempt will prevent those specific books from appearing "
+"together in future duplicate book searches."
+msgstr ""
+"__p0__title 중복 search__p1____p2__- 찾기 groups 의 책 함께 a __p3__fuzzy "
+"title__p4__ 및 __p5____p6__- 퍼지 제목 matches 제거 모든 punctuation, subtitles 및 any"
+" words 후 '및', '또는' 또는 'aka' 에서 the 제목.__p7__- marking a group as exempt will"
+" 방지 those specific 책 에서 appearing together 에서 future 중복 책 searches."
+
+#: dialogs.py:89
+msgid ""
+"<b>Author duplicate search</b><br/>- Find groups of books <b>ignoring "
+"title</b> with {0}<br/>- Ignore title searches are best to find variations "
+"of author names regardless of the books you have for each.<br/>- Marking a "
+"group as exempt will prevent any books by those authors from appearing "
+"together in future duplicate author searches."
+msgstr ""
+"__p0__author 중복 search__p1____p2__- 찾기 groups 의 책 __p3__ignoring title__p4__"
+" 함께 __p5____p6__- 무시 제목 searches are best 으로 찾기 variations 의 저자 이름 "
+"regardless 의 the 책 you have 에 대한 each.__p7__- marking a group as exempt will"
+" 방지 any 책 by those 저자 에서 appearing together 에서 future 중복 저자 searches."
+
+#: dialogs.py:98
+msgid ""
+"an <b>identical author</b>.<br/>- Authors must match exactly excluding case."
+msgstr "<b>동일한 저자</b>.<br/>- 대소문자를 제외하고 저자가 정확히 일치해야 합니다."
+
+#: dialogs.py:100
+msgid ""
+"a <b>similar author</b>.<br/>- Similar authors differ only in punctuation, "
+"initials or order of their names."
+msgstr "<b>유사한 저자</b>.<br/>- 유사 저자는 문장 부호, 이니셜, 이름 순서만 다릅니다."
+
+#: dialogs.py:103
+msgid ""
+"a <b>soundex author</b>.<br/>- Soundex author matches start with the same "
+"removal of punctuation and ordering as a similar author search."
+msgstr ""
+"<b>soundex 저자</b>.<br/>- soundex 저자 일치는 유사 저자 검색과 같이 문장 부호와 순서를 제거한 뒤 비교합니다."
+
+#: dialogs.py:106
+msgid ""
+"a <b>fuzzy match author</b>.<br/>- Fuzzy author matches compare using their "
+"surnames and only the first initial."
+msgstr "<b>퍼지 일치 저자</b>.<br/>- 퍼지 저자 일치는 성과 첫 이니셜만 사용해 비교합니다."
+
+#: dialogs.py:109
+msgid "<b>ignoring the author</b>."
+msgstr "<b>저자 무시</b>."
+
+#: dialogs.py:178
+msgid "Duplicate Search Options"
+msgstr "중복 검색 옵션"
+
+#: dialogs.py:182
+msgid "Duplicate Search Type"
+msgstr "중복 검색 type"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Binary Compare"
+msgstr "바이너리 compare"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Identifier"
+msgstr "identifier"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Title/Author"
+msgstr "제목/저자"
+
+#: dialogs.py:203
+msgid "Title Matching"
+msgstr "제목 matching"
+
+#: dialogs.py:215 dialogs.py:236 dialogs.py:686 dialogs.py:1131
+#: dialogs.py:1152
+msgid "Length:"
+msgstr "length:"
+
+#: dialogs.py:216 dialogs.py:687 dialogs.py:1132
+msgid ""
+"The shorter the soundex length, the greater likelihood of false positives.\n"
+"Large soundex values reduce your chances of matches"
+msgstr ""
+"the shorter the soundex length, the greater likelihood 의 false positives.\n"
+"large soundex 값 reduce your chances 의 matches"
+
+#: dialogs.py:224
+msgid "Author Matching"
+msgstr "저자 matching"
+
+#: dialogs.py:249
+msgid "Result Options"
+msgstr "result 옵션"
+
+#: dialogs.py:253
+msgid "Show all groups at once with highlighting"
+msgstr "표시 모든 groups at once 함께 highlighting"
+
+#: dialogs.py:254
+msgid "Show one group at a time"
+msgstr "표시 one group at a time"
+
+#: dialogs.py:257
+msgid "Highlight authors in the tag browser for ignore title searches"
+msgstr "highlight 저자 에서 the 태그 브라우저 에 대한 무시 제목 searches"
+
+#: dialogs.py:258
+msgid ""
+"When checked, will ensure that the authors for the current group\n"
+"are shown in the tag browser and highlighted if multiple groups shown.\n"
+"Only applies for author duplicate searches."
+msgstr ""
+"시 checked, will ensure that the 저자 에 대한 the 현재 group\n"
+"are shown 에서 the 태그 브라우저 및 highlighted 만약 여러 groups shown.\n"
+"만 applies 에 대한 저자 중복 searches."
+
+#: dialogs.py:262
+msgid "Sort groups by number of duplicates"
+msgstr "sort groups by number 의 duplicates"
+
+#: dialogs.py:263
+msgid ""
+"When unchecked, will sort by an approximation of the title\n"
+"or by author if title is being ignored"
+msgstr ""
+"시 unchecked, will sort by an approximation 의 the 제목\n"
+"또는 by 저자 만약 제목 is being ignored"
+
+#: dialogs.py:266 dialogs.py:1169
+msgid "Include languages metadata when comparing titles"
+msgstr "포함 languages 메타데이터 시 comparing titles"
+
+#: dialogs.py:267 dialogs.py:1170
+msgid ""
+"When checked, books with identical titles but different\n"
+"languages metadata field values will not show as duplicates"
+msgstr ""
+"시 checked, 책 함께 identical titles but different\n"
+"languages 메타데이터 field 값 will 않음 표시 as duplicates"
+
+#: dialogs.py:270
+msgid "When doing a Binary Compare, automatically remove duplicate formats"
+msgstr "시 doing a 바이너리 compare, automatically 제거 중복 형식"
+
+#: dialogs.py:272
+msgid ""
+"When checked and the Binary duplicate search is run, if duplicate formats are found\n"
+"then all except one are deleted. The format on the oldest book record will be kept.\n"
+"This is a convenience function for where you have multiple formats associated with\n"
+"each book and hence it is not readily obvious which of these is the duplicate.\n"
+"Note that the book records themselves are not deleted, and will still appear in the\n"
+"results for merging even if they now have no formats."
+msgstr ""
+"시 checked 및 the 바이너리 중복 검색 is run, 만약 중복 형식 are 찾음\n"
+"그러면 모든 except one are 삭제됨. the 형식 에 the oldest 책 record will be kept.\n"
+"this is a convenience function 에 대한 where you have 여러 형식 associated 함께\n"
+"each 책 및 hence it is 않음 readily obvious which 의 these is the 중복.\n"
+"note that the 책 records themselves are 않음 삭제됨, 및 will still appear 에서 the\n"
+"results 에 대한 merging even 만약 they now have 없음 형식."
+
+#: dialogs.py:370
+msgid "Invalid Criteria"
+msgstr "유효하지 않은 criteria"
+
+#: dialogs.py:371
+msgid "You must select an identifier type to search by Identifier."
+msgstr "you must 선택 an identifier type 으로 검색 by identifier."
+
+#: dialogs.py:504
+msgid "Manage Duplicate Exemptions"
+msgstr "manage 중복 예외"
+
+#: dialogs.py:507
+msgid "Manage Exemptions"
+msgstr "manage exemptions"
+
+#: dialogs.py:513
+msgid ""
+"The first book below will never appear as a duplicate with the following "
+"books.<br/>To allow future duplicate consideration, tick the remove checkbox"
+" and click ok."
+msgstr ""
+"the 첫 번째 책 below will never appear as a 중복 함께 the following 책.__p0__to 허용 "
+"future 중복 consideration, tick the 제거 checkbox 및 click ok."
+
+#: dialogs.py:528
+msgid ""
+"The authors below will never appear as a duplicate with the following "
+"authors.<br/>To allow future duplicate consideration, tick the remove "
+"checkbox and click ok."
+msgstr ""
+"the 저자 below will never appear as a 중복 함께 the following 저자.__p0__to 허용 "
+"future 중복 consideration, tick the 제거 checkbox 및 click ok."
+
+#: dialogs.py:645
+msgid "Find Duplicates Plugin"
+msgstr "찾기 duplicates 플러그인"
+
+#: dialogs.py:649
+msgid "Find Metadata Variations"
+msgstr "메타데이터 변형 찾기"
+
+#: dialogs.py:653
+msgid "Choose metadata column:"
+msgstr "메타데이터 열: 선택"
+
+#: dialogs.py:657
+msgid "Authors"
+msgstr "저자"
+
+#: dialogs.py:660
+msgid "Series"
+msgstr "시리즈"
+
+#: dialogs.py:663
+msgid "Publisher"
+msgstr "출판사"
+
+#: dialogs.py:666
+msgid "Tags"
+msgstr "태그"
+
+#: dialogs.py:675
+msgid "Choose similarity level:"
+msgstr "similarity level: 선택"
+
+#: dialogs.py:679
+msgid "Similar"
+msgstr "유사한"
+
+#: dialogs.py:682
+msgid "Soundex"
+msgstr "soundex"
+
+#: dialogs.py:684
+msgid "Fuzzy"
+msgstr "퍼지"
+
+#: dialogs.py:691
+msgid "Search"
+msgstr "검색"
+
+#: dialogs.py:693
+msgid "Search for results"
+msgstr "결과 검색"
+
+#: dialogs.py:704
+msgid "Search results:"
+msgstr "검색 결과:"
+
+#: dialogs.py:710
+msgid "Authors:"
+msgstr "저자:"
+
+#: dialogs.py:711 dialogs.py:910
+msgid "Variations:"
+msgstr "variations:"
+
+#: dialogs.py:726
+msgid "&Show matching books"
+msgstr "__p0__how matching 책"
+
+#: dialogs.py:727
+msgid "As a group is selected, show the search results in the library view"
+msgstr "as a group is 선택한, 표시 the 검색 결과 에서 the 라이브러리 보기"
+
+#: dialogs.py:730
+msgid "Rename to:"
+msgstr "으로: 이름 바꾸기"
+
+#: dialogs.py:747
+msgid "&Rename"
+msgstr "__p0__ename"
+
+#: dialogs.py:748
+msgid "Rename all of the selected items to this name"
+msgstr "모든 의 the 선택한 항목 으로 this 이름 이름 바꾸기"
+
+#: dialogs.py:751
+msgid "&Ignore"
+msgstr "__p0__gnore"
+
+#: dialogs.py:752
+msgid "Ignore all selected items from consideration at this time"
+msgstr "무시 모든 선택한 항목 에서 consideration at this time"
+
+#: dialogs.py:791
+msgid "No matches"
+msgstr "일치 항목 없음"
+
+#: dialogs.py:791
+msgid "You have no variations of {0} using this criteria"
+msgstr "you have 없음 variations 의 __p0__ 사용 this criteria"
+
+#: dialogs.py:851
+msgid "Use this variation name"
+msgstr "사용 this variation 이름"
+
+#: dialogs.py:914
+msgid "Variations of: {0}"
+msgstr "variations 의: __p0__"
+
+#: dialogs.py:950
+msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
+msgstr "are you sure you want 으로 이름 바꾸기 the 선택한 __p0__ 항목 으로 \"__p1__\"?"
+
+#: dialogs.py:1037
+msgid ""
+"<b>Book duplicate search</b><br/>- Report books in this library which have "
+"an identical identifier for books in the target library.<br/>"
+msgstr ""
+"__p0__book 중복 search__p1____p2__- report 책 에서 this 라이브러리 which have an "
+"identical identifier 에 대한 책 에서 the target 라이브러리.__p3__"
+
+#: dialogs.py:1041
+msgid ""
+"<b>Book duplicate search</b><br/>- Report books in this library which are "
+"binary identical to books in your target library.<br/>- Compares the actual "
+"file size of every book format in your libraries, computing an SHA hash to "
+"compare contents where sizes match.<br/>- Books found using this search are "
+"guaranteed to be duplicates."
+msgstr ""
+"__p0__book 중복 search__p1____p2__- report 책 에서 this 라이브러리 which are 바이너리 "
+"identical 으로 책 에서 your target 라이브러리.__p3__- compares the actual 파일 size 의 "
+"every 책 형식 에서 your libraries, computing an sha hash 으로 compare contents "
+"where sizes match.__p4__- 책 찾음 사용 this 검색 are guaranteed 으로 be duplicates."
+
+#: dialogs.py:1048
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with an <b>identical title</b> and {0}<br/>- Titles "
+"must match exactly excluding case."
+msgstr ""
+"__p0__title 중복 search__p1____p2__- report 책 에서 this 라이브러리 compared 으로 your "
+"target 라이브러리 함께 an __p3__identical title__p4__ 및 __p5____p6__- titles must "
+"match exactly excluding case."
+
+#: dialogs.py:1051
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>similar title</b> and {0}<br/>- Similar title"
+" matches apply removal of common punctuation and prefixes and applies the "
+"same title matching logic as Automerge."
+msgstr ""
+"__p0__title 중복 search__p1____p2__- report 책 에서 this 라이브러리 compared 으로 your "
+"target 라이브러리 함께 a __p3__similar title__p4__ 및 __p5____p6__- 유사한 제목 matches "
+"적용 removal 의 common punctuation 및 prefixes 및 applies the 같은 제목 matching "
+"logic as automerge."
+
+#: dialogs.py:1055
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>soundex title</b> and {0}<br/>- Soundex title"
+" matches are based on the same removal of punctuation and common prefixes as"
+" a similar title search."
+msgstr ""
+"__p0__title 중복 search__p1____p2__- report 책 에서 this 라이브러리 compared 으로 your "
+"target 라이브러리 함께 a __p3__soundex title__p4__ 및 __p5____p6__- soundex 제목 "
+"matches are based 에 the 같은 removal 의 punctuation 및 common prefixes as a 유사한 "
+"제목 검색."
+
+#: dialogs.py:1059
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>fuzzy title</b> and {0}<br/>- Fuzzy title "
+"matches remove all punctuation, subtitles and any words after 'and', 'or' or"
+" 'aka' in the title."
+msgstr ""
+"__p0__title 중복 search__p1____p2__- report 책 에서 this 라이브러리 compared 으로 your "
+"target 라이브러리 함께 a __p3__fuzzy title__p4__ 및 __p5____p6__- 퍼지 제목 matches 제거 "
+"모든 punctuation, subtitles 및 any words 후 '및', '또는' 또는 'aka' 에서 the 제목."
+
+#: dialogs.py:1063
+msgid ""
+"<b>Author duplicate search</b><br/>- Report books in this library compared "
+"to your target library <b>ignoring title</b> with {0}<br/>- Ignore title "
+"searches are best to find variations of author names regardless of the books"
+" you have for each."
+msgstr ""
+"__p0__author 중복 search__p1____p2__- report 책 에서 this 라이브러리 compared 으로 your "
+"target 라이브러리 __p3__ignoring title__p4__ 함께 __p5____p6__- 무시 제목 searches are "
+"best 으로 찾기 variations 의 저자 이름 regardless 의 the 책 you have 에 대한 each."
+
+#: dialogs.py:1080
+msgid "Cross Library Search Options"
+msgstr "cross 라이브러리 검색 옵션"
+
+#: dialogs.py:1084
+msgid "Compare With Library:"
+msgstr "compare 함께 라이브러리:"
+
+#: dialogs.py:1088
+msgid "Library:"
+msgstr "라이브러리:"
+
+#: dialogs.py:1098
+msgid "Duplicate Search Type:"
+msgstr "중복 검색 type:"
+
+#: dialogs.py:1119
+msgid "Title Matching:"
+msgstr "제목 matching:"
+
+#: dialogs.py:1140
+msgid "Author Matching:"
+msgstr "저자 matching:"
+
+#: dialogs.py:1165
+msgid "Compare Options:"
+msgstr "compare 옵션:"
+
+#: dialogs.py:1173
+msgid "Display duplicate books when search completes"
+msgstr "표시 중복 책 시 검색 completes"
+
+#: dialogs.py:1174
+msgid "Uncheck this option if you just want the output log"
+msgstr "uncheck this 옵션 만약 you just want the output 로그"
+
+#: dialogs.py:1213
+msgid "Choose library location to compare against"
+msgstr "라이브러리 위치 으로 compare against 선택"
+
+#: dialogs.py:1264
+msgid "No library specified"
+msgstr "라이브러리 specified 없음"
+
+#: dialogs.py:1265
+msgid "You must specify a library path"
+msgstr "you must specify a 라이브러리 path"
+
+#: dialogs.py:1268
+msgid "Same as current"
+msgstr "같은 as 현재"
+
+#: dialogs.py:1269
+msgid "The location {0} contains the current calibre library"
+msgstr "the 위치 __p0__ contains the 현재 calibre 라이브러리"
+
+#: dialogs.py:1271
+msgid "No existing library found"
+msgstr "기존 라이브러리 찾음 없음"
+
+#: dialogs.py:1272
+msgid "There is no existing calibre library at {0}"
+msgstr "there is 없음 기존 calibre 라이브러리 at __p0__"
+
+#: dialogs.py:1295
+msgid "Save log"
+msgstr "로그 저장"
+
+#: dialogs.py:1302
+msgid "Save Find Duplicates log"
+msgstr "찾기 duplicates 로그 저장"
+
+#: dialogs.py:1303
+msgid "Duplicates log file"
+msgstr "duplicates 로그 파일"
+
+#: duplicates.py:213
+msgid "No duplicate groups were found when searching with: <b>{0}</b>"
+msgstr "중복 그룹 were 찾음 시 searching 함께: __p0____p1____p2__ 없음"
+
+#: duplicates.py:215 duplicates.py:328 duplicates.py:361 duplicates.py:368
+msgid "No duplicates"
+msgstr "중복 없음"
+
+#: duplicates.py:217 duplicates.py:224 duplicates.py:330
+msgid "Show this information again"
+msgstr "표시 this information 다시"
+
+#: duplicates.py:220
+msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
+msgstr "찾음 __p0__ 중복 그룹 시 searching 함께: __p1____p2____p3__"
+
+#: duplicates.py:327 duplicates.py:369
+msgid "No more duplicate groups exist from your search."
+msgstr "more 중복 그룹 exist 에서 your 검색. 없음"
+
+#: duplicates.py:362
+msgid ""
+"The current duplicate group no longer exists. You cannot perform this "
+"action."
+msgstr "the 현재 중복 group 없음 longer exists. you 할 수 없음 perform this 동작."
+
+#: duplicates.py:720
+msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
+msgstr "showing #__p0__ 의 __p1__ remaining 중복 그룹 에 대한 __p2__"
+
+#: duplicates.py:827
+msgid ""
+"Results of {0} comparison:\n"
+"    Source library: {1}\n"
+"    Target library: {2}\n"
+"\n"
+"{3}"
+msgstr ""
+"results 의 __p0__ comparison:\n"
+"원본 라이브러리: __p1__\n"
+"target 라이브러리: __p2__\n"
+"\n"
+"__p3__"
+
+#: duplicates.py:907
+msgid "Click 'Show details' to see the results."
+msgstr "click '표시 세부 정보' 으로 see the results."
+
+#: duplicates.py:919 duplicates.py:1045
+msgid "Analysing duplicates in target database"
+msgstr "analysing duplicates 에서 target 데이터베이스"
+
+#: duplicates.py:921 duplicates.py:1054
+msgid "Analysing duplicates in current database"
+msgstr "analysing duplicates 에서 현재 데이터베이스"
+
+#: duplicates.py:952
+msgid ""
+"Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
+"the library at: {2}"
+msgstr ""
+"찾음 __p0____p1__ authors__p2__ 함께 potential duplicates 사용 __p3____p4____p5__ "
+"against the 라이브러리 at: __p6__"
+
+#: duplicates.py:1041
+msgid ""
+"Found <b>{0} books</b> with binary duplicates against the library at: {1}"
+msgstr ""
+"찾음 __p0____p1__ books__p2__ 함께 바이너리 duplicates against the 라이브러리 at: __p3__"
+
+#: duplicates.py:1078
+msgid ""
+"Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
+"the library at: {2}"
+msgstr ""
+"찾음 __p0____p1__ books__p2__ 함께 potential duplicates 사용 __p3____p4____p5__ "
+"against the 라이브러리 at: __p6__"

@@ -1,0 +1,990 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Merarom <merarom@yahoo.es>, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:11+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:141
+msgid "Keyboard shortcuts"
+msgstr "Tangentbordsgenvägar"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för denna insticksmodul"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Eventuella inställningar i andra bibliotek eller lagrade i en JSON-fil i din"
+" calibre-insticksmodulsmapp kommer inte att påverkas."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Alla inställningar för denna insticksmodul i det här biblioteket har "
+"rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinierad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:45 dialogs.py:175 dialogs.py:1077 duplicates.py:222
+msgid "Find Duplicates"
+msgstr "Hitta dubbletter"
+
+#: action.py:87
+msgid "&Find book duplicates"
+msgstr "&Hitta bokdubbletter"
+
+#: action.py:89
+msgid "Find library duplicates"
+msgstr "Hitta bibliotekets dubbletter"
+
+#: action.py:90
+msgid "Find books that are duplicated in another library compared to this one"
+msgstr "Hitta böcker som finns som dubbletter i ett annat bibliotek"
+
+#: action.py:93
+msgid "Find metadata &variations"
+msgstr "Hitta metadata &varianter"
+
+#: action.py:94
+msgid ""
+"Find & rename variations in author, publisher, series or tags names that may"
+" indicate duplicates"
+msgstr ""
+"Hitta och byt namn på varianter av namn på författare, utgivare, serier "
+"eller taggar som kan indikera dubbletter"
+
+#: action.py:97
+msgid "&Next result"
+msgstr "&Nästa resultat"
+
+#: action.py:98
+msgid "Display the next duplicate result group"
+msgstr "Visa nästa dubblettresultatgrupp"
+
+#: action.py:100
+msgid "&Previous result"
+msgstr "&Föregående resultat"
+
+#: action.py:101
+msgid "Display the previous duplicate result group"
+msgstr "Visa föregående dubblettresultatgrupp"
+
+#: action.py:104
+msgid "&Mark current group as exempt"
+msgstr "&Markera aktuell grupp som undantagen"
+
+#: action.py:105
+msgid ""
+"Mark the current group as not duplicates and exempt from future "
+"consideration"
+msgstr ""
+"Markera den aktuella gruppen som inte är dubbletter och undanta den från "
+"framtida överväganden"
+
+#: action.py:108
+msgid "Mark &all groups as exempt"
+msgstr "Markera &alla grupper som undantagna"
+
+#: action.py:109
+msgid ""
+"Mark all remaining duplicate groups as exempt from future consideration"
+msgstr ""
+"Markera alla återstående dubblettgrupper som undantagna från framtida "
+"överväganden"
+
+#: action.py:113
+msgid "&Show all book duplicate exemptions"
+msgstr "&Visa alla undantag för bokdubbletter"
+
+#: action.py:114
+msgid "Show all books that have book duplicate exemption pairings"
+msgstr "Visa alla böcker som har undantagskopplingar för bokdubbletter"
+
+#: action.py:117
+msgid "&Show all author duplicate exemptions"
+msgstr "&Visa alla undantag för författardubbletter"
+
+#: action.py:118
+msgid "Show all books that have author duplicate exemption pairings"
+msgstr "Visa alla böcker som har undantagskopplingar för författardubbletter"
+
+#: action.py:121
+msgid "&Manage exemptions for this book"
+msgstr "&Hantera undantag för den här boken"
+
+#: action.py:122
+msgid "Show duplicate exemptions for this book to enable removal"
+msgstr ""
+"Visa undantag för dubbletter för den här boken för att möjliggöra "
+"borttagning"
+
+#: action.py:125
+msgid "&Remove selected exemptions"
+msgstr "&Ta bort valda undantag"
+
+#: action.py:126
+msgid "Remove any duplicate book/author exemptions for the selected books"
+msgstr ""
+"Ta bort alla undantag för bok-/författardubbletter för de valda böckerna"
+
+#: action.py:130
+msgid "&Clear duplicate results"
+msgstr "&Rensa dubblettresultat"
+
+#: action.py:131
+msgid "Exit duplicate search mode"
+msgstr "Avsluta dubblettsökningsläget"
+
+#: action.py:135
+msgid "&Export duplicate groups"
+msgstr "&Exportera dubblettgrupper"
+
+#: action.py:136
+msgid "Export duplicates groups to a json file"
+msgstr "Exportera dubblettgrupper till en json-fil"
+
+#: action.py:140
+msgid "&Customize plugin"
+msgstr "&Anpassa insticksmodul"
+
+#: action.py:142
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: action.py:248
+msgid ""
+"This action will ensure that each of the {0} in the group are exempt from "
+"appearing together again in future."
+msgstr ""
+"Denna åtgärd säkerställer att var och en av {0} i gruppen är undantagna från"
+" att visas tillsammans igen i framtiden."
+
+#: action.py:251 action.py:304
+msgid "Are you <b>sure</b> you want to proceed?"
+msgstr "Är du <b>säker</b> på att du vill fortsätta?"
+
+#: action.py:259
+msgid "No duplicates in group"
+msgstr "Inga dubbletter i gruppen"
+
+#: action.py:260
+msgid "There are no duplicates remaining in this group."
+msgstr "Det finns inga dubbletter kvar i denna grupp."
+
+#: action.py:271 action.py:276
+msgid "Cannot manage exemptions"
+msgstr "Det går inte att hantera undantag"
+
+#: action.py:272
+msgid "No book selected"
+msgstr "Ingen bok vald"
+
+#: action.py:277
+msgid "This book has no duplicate exemptions"
+msgstr "Den här boken har inga undantag för dubbletter"
+
+#: action.py:298
+msgid "Invalid selection"
+msgstr "Ogiltigt val"
+
+#: action.py:299
+msgid "You must select at least one book."
+msgstr "Du måste välja minst en bok."
+
+#: action.py:300
+msgid ""
+"This action will remove any duplicate exemptions for your selection. This "
+"will allow them to potentially appear as duplicates together in a future "
+"duplicate search."
+msgstr ""
+"Den här åtgärden tar bort alla undantag för dubbletter för ditt val. Detta "
+"gör att de potentiellt kan visas som dubbletter tillsammans i en framtida "
+"dubblettsökning."
+
+#: action.py:338
+msgid "Choose file"
+msgstr "Välj fil"
+
+#: action.py:339
+msgid "Saved duplicates"
+msgstr "Sparade dubbletter"
+
+#: action.py:365
+msgid "Export completed"
+msgstr "Exporten slutförd"
+
+#: action.py:366
+msgid "Exported to: {}"
+msgstr "Exporterat till: {}"
+
+#: book_algorithms.py:53
+msgid "Analysing {0} books for duplicates"
+msgstr "Analyserar {0} böcker för dubbletter"
+
+#: book_algorithms.py:423
+msgid "matching '{0}' identifier"
+msgstr "matchande \"{0}\" identifierare"
+
+#: book_algorithms.py:426
+msgid "binary compare"
+msgstr "binär jämförelse"
+
+#: book_algorithms.py:431
+msgid "ignore title, {0} author"
+msgstr "ignorera titel, {0} författare"
+
+#: book_algorithms.py:435
+msgid "{0} title, {1} author"
+msgstr "{0} titel, {1} författare"
+
+#: config.py:143
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordsgenvägar som är kopplade till denna insticksmodul"
+
+#: config.py:147
+msgid "Reset &confirmation dialogs"
+msgstr "Återställ &bekräftelsedialogrutor"
+
+#: config.py:148
+msgid "Reset all show me again dialogs for the Find Duplicates plugin"
+msgstr ""
+"Återställ alla visa mig igen-dialoger för insticksmodulen Find Duplicates"
+
+#: config.py:152
+msgid "&View library preferences"
+msgstr "&Visa biblioteksinställningar"
+
+#: config.py:153
+msgid "View data stored in the library database for this plugin"
+msgstr "Visa data lagrade i biblioteksdatabasen för denna insticksmodul"
+
+#: config.py:169
+msgid "Done"
+msgstr "Klar"
+
+#: config.py:170
+msgid "Confirmation dialogs have all been reset"
+msgstr "Alla bekräftelsedialogrutor har återställts"
+
+#: dialogs.py:51
+msgid ""
+"<b>Book duplicate search</b><br/>- Find groups of books which have an "
+"identical identifier such as an ISBN, amazon id, goodreads, uri etc.<br/>- "
+"Marking a group as exempt will prevent those specific books from appearing "
+"together in future duplicate book searches."
+msgstr ""
+"<b>Bokdubblettsökning</b><br/>- Hitta grupper av böcker som har en identisk "
+"identifierare såsom ett ISBN, amazon-id, goodreads, uri etc.<br/>- Att "
+"markera en grupp som undantagen förhindrar att dessa specifika böcker visas "
+"tillsammans i framtida sökningar efter bokdubbletter."
+
+#: dialogs.py:57
+msgid ""
+"<b>Book duplicate search</b><br/>- Find groups of books which have a book "
+"format that is binary identical.<br/>- Compares the actual file size of "
+"every book format in your library, computing an SHA hash to compare contents"
+" where sizes match.<br/>- Books found using this search are guaranteed to be"
+" duplicates.<br/>- Marking a group as exempt will prevent those specific "
+"books from appearing together in future duplicate book searches."
+msgstr ""
+"<b>Bokdubblettsökning</b><br/>- Hitta grupper av böcker som har ett binärt "
+"identiskt bokformat.<br/>- Jämför den faktiska filstorleken för varje "
+"bokformat i ditt bibliotek och beräknar en SHA-hash för att jämföra innehåll"
+" där storlekarna matchar.<br/>- Böcker som hittas med den här sökningen "
+"garanteras vara dubbletter.<br/>- Att markera en grupp som undantagen "
+"förhindrar att dessa specifika böcker visas tillsammans i framtida "
+"bokdubblettsökningar."
+
+#: dialogs.py:66
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with an "
+"<b>identical title</b> and {0}<br/>- Titles must match exactly excluding "
+"case.<br/>- Marking a group as exempt will prevent those specific books from"
+" appearing together in future duplicate book searches."
+msgstr ""
+"<b>Titeldubblettsökning</b><br/>- Hitta grupper av böcker med <b>identisk "
+"titel</b> och {0}<br/>- Titlar måste matcha exakt utan att skilja på gemener"
+" och versaler.<br/>- Att markera en grupp som undantagen förhindrar att "
+"dessa specifika böcker visas tillsammans i framtida sökningar efter "
+"bokdubbletter."
+
+#: dialogs.py:71
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>similar "
+"title</b> and {0}<br/>- Similar title matches apply removal of common "
+"punctuation and prefixes and applies the same title matching logic as "
+"Automerge.<br/>- Marking a group as exempt will prevent those specific books"
+" from appearing together in future duplicate book searches."
+msgstr ""
+"<b>Titeldubblettsökning</b><br/>- Hitta grupper av böcker med <b>liknande "
+"titel</b> och {0}<br/>- Liknande titelmatchningar tillämpar borttagning av "
+"vanliga interpunktionstecken och prefix och tillämpar samma "
+"titelmatchningslogik som för automatisk sammanslagning.<br/>- Att markera en"
+" grupp som undantagen förhindrar att dessa specifika böcker visas "
+"tillsammans i framtida bokdubbletter."
+
+#: dialogs.py:77
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>soundex "
+"title</b> and {0}<br/>- Soundex title matches are based on the same removal "
+"of punctuation and common prefixes as a similar title search.<br/>- Marking "
+"a group as exempt will prevent those specific books from appearing together "
+"in future duplicate book searches."
+msgstr ""
+"<b>Titeldubblettsökning</b><br/>- Hitta grupper av böcker med en <b>soundex-"
+"titel</b> och {0}<br/>- Soundex-titelträffar baseras på samma borttagning av"
+" interpunktion och vanliga prefix som en liknande titelsökning.<br/>- Att "
+"markera en grupp som undantagen förhindrar att dessa specifika böcker visas "
+"tillsammans i framtida sökningar efter bokdubbletter."
+
+#: dialogs.py:83
+msgid ""
+"<b>Title duplicate search</b><br/>- Find groups of books with a <b>fuzzy "
+"title</b> and {0}<br/>- Fuzzy title matches remove all punctuation, "
+"subtitles and any words after 'and', 'or' or 'aka' in the title.<br/>- "
+"Marking a group as exempt will prevent those specific books from appearing "
+"together in future duplicate book searches."
+msgstr ""
+"<b>Titeldubblettsökning</b><br/>- Hitta grupper av böcker med en "
+"<b>ungefärlig titel</b> och {0}<br/>- Matchningar med ungefärlig titel tar "
+"bort all interpunktion, undertitlar och alla ord efter 'and', 'or' eller "
+"'aka' i titeln.<br/>- Att markera en grupp som undantagen förhindrar att "
+"dessa specifika böcker visas tillsammans i framtida bokdubbletter."
+
+#: dialogs.py:89
+msgid ""
+"<b>Author duplicate search</b><br/>- Find groups of books <b>ignoring "
+"title</b> with {0}<br/>- Ignore title searches are best to find variations "
+"of author names regardless of the books you have for each.<br/>- Marking a "
+"group as exempt will prevent any books by those authors from appearing "
+"together in future duplicate author searches."
+msgstr ""
+"<b>Sökning efter författardubbletter</b><br/>- Hitta grupper av böcker <b>utan hänsyn till titel\n"
+"</b> med {0}<br/>- Sökningar där titeln ignoreras är bäst för att hitta varianter av författarnamn oavsett vilka böcker du har för varje grupp.<br/>- Att markera en grupp som undantagen förhindrar att böcker av dessa författare visas tillsammans i framtida sökningar efter författardubbletter."
+
+#: dialogs.py:98
+msgid ""
+"an <b>identical author</b>.<br/>- Authors must match exactly excluding case."
+msgstr ""
+"en <b>identisk författare</b>.<br/>- Författare måste matcha exakt utan att "
+"skilja på gemener och versaler."
+
+#: dialogs.py:100
+msgid ""
+"a <b>similar author</b>.<br/>- Similar authors differ only in punctuation, "
+"initials or order of their names."
+msgstr ""
+"en <b>liknande författare</b>.<br/>- Liknande författare skiljer sig endast "
+"åt i interpunktion, initialer eller namnordning."
+
+#: dialogs.py:103
+msgid ""
+"a <b>soundex author</b>.<br/>- Soundex author matches start with the same "
+"removal of punctuation and ordering as a similar author search."
+msgstr ""
+"en <b>soundex-författare</b>.<br/>- Soundex-författarträffar börjar med "
+"samma borttagning av interpunktion och ordning som en liknande "
+"författarsökning."
+
+#: dialogs.py:106
+msgid ""
+"a <b>fuzzy match author</b>.<br/>- Fuzzy author matches compare using their "
+"surnames and only the first initial."
+msgstr ""
+"en <b>ungefärlig författarmatchning</b>.<br/>- Ungefärliga "
+"författarmatchningar jämför med hjälp av efternamn och endast den första "
+"initialen."
+
+#: dialogs.py:109
+msgid "<b>ignoring the author</b>."
+msgstr "<b>ignorerar författaren</b>."
+
+#: dialogs.py:178
+msgid "Duplicate Search Options"
+msgstr "Dubblettsökalternativ"
+
+#: dialogs.py:182
+msgid "Duplicate Search Type"
+msgstr "Dubblettsöktyp"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Binary Compare"
+msgstr "Binär jämförelse"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Identifier"
+msgstr "Identifierare"
+
+#: dialogs.py:188 dialogs.py:1104
+msgid "Title/Author"
+msgstr "Titel/författare"
+
+#: dialogs.py:203
+msgid "Title Matching"
+msgstr "Titelmatchning"
+
+#: dialogs.py:215 dialogs.py:236 dialogs.py:686 dialogs.py:1131
+#: dialogs.py:1152
+msgid "Length:"
+msgstr "Längd:"
+
+#: dialogs.py:216 dialogs.py:687 dialogs.py:1132
+msgid ""
+"The shorter the soundex length, the greater likelihood of false positives.\n"
+"Large soundex values reduce your chances of matches"
+msgstr ""
+"Ju kortare soundex-längden är, desto större är sannolikheten för falska positiva träffar.\n"
+"Större soundex-värden minskar dina chanser till träffar"
+
+#: dialogs.py:224
+msgid "Author Matching"
+msgstr "Författarmatchning"
+
+#: dialogs.py:249
+msgid "Result Options"
+msgstr "Resultatalternativ"
+
+#: dialogs.py:253
+msgid "Show all groups at once with highlighting"
+msgstr "Visa alla grupper samtidigt med markering"
+
+#: dialogs.py:254
+msgid "Show one group at a time"
+msgstr "Visa en grupp åt gången"
+
+#: dialogs.py:257
+msgid "Highlight authors in the tag browser for ignore title searches"
+msgstr "Markera författare i taggbläddraren för att ignorera titelsökningar"
+
+#: dialogs.py:258
+msgid ""
+"When checked, will ensure that the authors for the current group\n"
+"are shown in the tag browser and highlighted if multiple groups shown.\n"
+"Only applies for author duplicate searches."
+msgstr ""
+"När detta alternativ är markerat säkerställs att författarna för den aktuella gruppen\n"
+"visas i taggbläddraren och markeras om flera grupper visas.\n"
+"Gäller endast för sökningar efter författardubbletter."
+
+#: dialogs.py:262
+msgid "Sort groups by number of duplicates"
+msgstr "Sortera grupper efter antal dubbletter"
+
+#: dialogs.py:263
+msgid ""
+"When unchecked, will sort by an approximation of the title\n"
+"or by author if title is being ignored"
+msgstr ""
+"När detta inte är markerat sorteras resultaten efter en uppskattning av titeln\n"
+"eller efter författare om titel ignoreras"
+
+#: dialogs.py:266 dialogs.py:1169
+msgid "Include languages metadata when comparing titles"
+msgstr "Inkludera språkmetadata när titlar jämförs"
+
+#: dialogs.py:267 dialogs.py:1170
+msgid ""
+"When checked, books with identical titles but different\n"
+"languages metadata field values will not show as duplicates"
+msgstr ""
+"När det är markerat visas inte böcker med identiska titlar men\n"
+"metadatafältvärden på olika språk som dubbletter"
+
+#: dialogs.py:270
+msgid "When doing a Binary Compare, automatically remove duplicate formats"
+msgstr "Ta bort formatdubbletter automatiskt när du gör en binär jämförelse"
+
+#: dialogs.py:272
+msgid ""
+"When checked and the Binary duplicate search is run, if duplicate formats are found\n"
+"then all except one are deleted. The format on the oldest book record will be kept.\n"
+"This is a convenience function for where you have multiple formats associated with\n"
+"each book and hence it is not readily obvious which of these is the duplicate.\n"
+"Note that the book records themselves are not deleted, and will still appear in the\n"
+"results for merging even if they now have no formats."
+msgstr ""
+"När alternativet är markerat och den binära dubblettsökningen körs, tas alla bort utom\n"
+"ett om dubblettformat hittas. Formatet på den äldsta bokposten kommer att behållas.\n"
+"Detta är en praktisk funktion när du har flera format kopplade till\n"
+"varje bok och det därför inte är uppenbart vilket av dessa som är dubbletten.\n"
+"Observera att själva bokposterna inte tas bort och fortfarande kommer att visas i\n"
+"resultaten för sammanslagning även om de nu inte har några format."
+
+#: dialogs.py:370
+msgid "Invalid Criteria"
+msgstr "Ogiltiga kriterier"
+
+#: dialogs.py:371
+msgid "You must select an identifier type to search by Identifier."
+msgstr "Du måste välja en identifierartyp för att söka efter identifierare."
+
+#: dialogs.py:504
+msgid "Manage Duplicate Exemptions"
+msgstr "Hantera undantag för dubbletter"
+
+#: dialogs.py:507
+msgid "Manage Exemptions"
+msgstr "Hantera undantag"
+
+#: dialogs.py:513
+msgid ""
+"The first book below will never appear as a duplicate with the following "
+"books.<br/>To allow future duplicate consideration, tick the remove checkbox"
+" and click ok."
+msgstr ""
+"Den första boken nedan kommer aldrig att visas som en dubblett med följande "
+"böcker.<br/>För att tillåta framtida dubbletter, markera kryssrutan ta bort "
+"och klicka på OK."
+
+#: dialogs.py:528
+msgid ""
+"The authors below will never appear as a duplicate with the following "
+"authors.<br/>To allow future duplicate consideration, tick the remove "
+"checkbox and click ok."
+msgstr ""
+"Författarna nedan kommer aldrig att visas som en dubblett med följande "
+"författare.<br/>För att tillåta framtida dubbletter, markera kryssrutan ta "
+"bort och klicka på OK."
+
+#: dialogs.py:645
+msgid "Find Duplicates Plugin"
+msgstr "Find Duplicates-insticksmodul"
+
+#: dialogs.py:649
+msgid "Find Metadata Variations"
+msgstr "Hitta metadatavarianter"
+
+#: dialogs.py:653
+msgid "Choose metadata column:"
+msgstr "Välj metadatakolumn:"
+
+#: dialogs.py:657
+msgid "Authors"
+msgstr "Författare"
+
+#: dialogs.py:660
+msgid "Series"
+msgstr "Serier"
+
+#: dialogs.py:663
+msgid "Publisher"
+msgstr "Utgivare"
+
+#: dialogs.py:666
+msgid "Tags"
+msgstr "Taggar"
+
+#: dialogs.py:675
+msgid "Choose similarity level:"
+msgstr "Välj likhetsnivå:"
+
+#: dialogs.py:679
+msgid "Similar"
+msgstr "Liknande"
+
+#: dialogs.py:682
+msgid "Soundex"
+msgstr "Soundex"
+
+#: dialogs.py:684
+msgid "Fuzzy"
+msgstr "Ungefärlig"
+
+#: dialogs.py:691
+msgid "Search"
+msgstr "Sök"
+
+#: dialogs.py:693
+msgid "Search for results"
+msgstr "Sök efter träffar"
+
+#: dialogs.py:704
+msgid "Search results:"
+msgstr "Sökresultat:"
+
+#: dialogs.py:710
+msgid "Authors:"
+msgstr "Författare:"
+
+#: dialogs.py:711 dialogs.py:910
+msgid "Variations:"
+msgstr "Variationer:"
+
+#: dialogs.py:726
+msgid "&Show matching books"
+msgstr "&Visa matchande böcker"
+
+#: dialogs.py:727
+msgid "As a group is selected, show the search results in the library view"
+msgstr "När en grupp är vald, visa sökresultaten i biblioteksvyn"
+
+#: dialogs.py:730
+msgid "Rename to:"
+msgstr "Byt namn till:"
+
+#: dialogs.py:747
+msgid "&Rename"
+msgstr "&Byt namn"
+
+#: dialogs.py:748
+msgid "Rename all of the selected items to this name"
+msgstr "Byt namn på alla valda poster till detta namn"
+
+#: dialogs.py:751
+msgid "&Ignore"
+msgstr "&Ignorera"
+
+#: dialogs.py:752
+msgid "Ignore all selected items from consideration at this time"
+msgstr "Ignorera alla valda poster från beaktande just nu"
+
+#: dialogs.py:791
+msgid "No matches"
+msgstr "Inga träffar"
+
+#: dialogs.py:791
+msgid "You have no variations of {0} using this criteria"
+msgstr "Du har inga varianter av {0} enligt detta kriterium"
+
+#: dialogs.py:851
+msgid "Use this variation name"
+msgstr "Använd detta variantnamn"
+
+#: dialogs.py:914
+msgid "Variations of: {0}"
+msgstr "Varianter av: {0}"
+
+#: dialogs.py:950
+msgid "Are you sure you want to rename the selected {0} items to \"{1}\"?"
+msgstr ""
+"Är du säker på att du vill byta namn på de {0} valda posterna till \"{1}\"?"
+
+#: dialogs.py:1037
+msgid ""
+"<b>Book duplicate search</b><br/>- Report books in this library which have "
+"an identical identifier for books in the target library.<br/>"
+msgstr ""
+"<b>Bokdubblettsökning</b><br/>- Rapportera böcker i detta bibliotek som har "
+"en identisk identifierare för böcker i målbiblioteket.<br/>"
+
+#: dialogs.py:1041
+msgid ""
+"<b>Book duplicate search</b><br/>- Report books in this library which are "
+"binary identical to books in your target library.<br/>- Compares the actual "
+"file size of every book format in your libraries, computing an SHA hash to "
+"compare contents where sizes match.<br/>- Books found using this search are "
+"guaranteed to be duplicates."
+msgstr ""
+"<b>Bokdubblettsökning</b><br/>- Rapportera böcker i det här biblioteket som "
+"är binärt identiska med böcker i ditt målbibliotek.<br/>- Jämför den "
+"faktiska filstorleken för varje bokformat i dina bibliotek och beräknar en "
+"SHA-hash för att jämföra innehåll där storlekarna matchar.<br/>- Böcker som "
+"hittas med den här sökningen garanteras vara dubbletter."
+
+#: dialogs.py:1048
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with an <b>identical title</b> and {0}<br/>- Titles "
+"must match exactly excluding case."
+msgstr ""
+"<b>Sökning efter titeldubbletter</b><br/>- Rapportera böcker i detta "
+"bibliotek jämfört med ditt målbibliotek med <b>identisk titel</b> och "
+"{0}<br/>- Titlar måste matcha exakt utan att skilja på gemener och versaler."
+
+#: dialogs.py:1051
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>similar title</b> and {0}<br/>- Similar title"
+" matches apply removal of common punctuation and prefixes and applies the "
+"same title matching logic as Automerge."
+msgstr ""
+"<b>Sökning efter titeldubbletter</b><br/>- Rapportera böcker i detta "
+"bibliotek jämfört med ditt målbibliotek med en <b>liknande titel</b> och "
+"{0}<br/>- Liknande titelmatchningar tillämpar borttagning av vanliga "
+"interpunktionstecken och prefix och tillämpar samma titelmatchningslogik som"
+" för automatisk sammanslagning."
+
+#: dialogs.py:1055
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>soundex title</b> and {0}<br/>- Soundex title"
+" matches are based on the same removal of punctuation and common prefixes as"
+" a similar title search."
+msgstr ""
+"<b>Sökning efter titeldubbletter</b><br/>- Rapportera böcker i detta "
+"bibliotek jämfört med ditt målbibliotek med en <b>soundex-titel</b> och "
+"{0}<br/>- Soundex-titelträffar baseras på samma borttagning av skiljetecken "
+"och vanliga prefix som en liknande titelsökning."
+
+#: dialogs.py:1059
+msgid ""
+"<b>Title duplicate search</b><br/>- Report books in this library compared to"
+" your target library with a <b>fuzzy title</b> and {0}<br/>- Fuzzy title "
+"matches remove all punctuation, subtitles and any words after 'and', 'or' or"
+" 'aka' in the title."
+msgstr ""
+"<b>Sökning efter titeldubbletter</b><br/>- Rapportera böcker i detta "
+"bibliotek jämfört med ditt målbibliotek med en <b>ungefärlig titel</b> och "
+"{0}<br/>- Matchningar med ungefärliga titelmatchningar tar bort all "
+"interpunktion, undertitlar och alla ord efter 'and', 'or' eller 'aka' i "
+"titeln."
+
+#: dialogs.py:1063
+msgid ""
+"<b>Author duplicate search</b><br/>- Report books in this library compared "
+"to your target library <b>ignoring title</b> with {0}<br/>- Ignore title "
+"searches are best to find variations of author names regardless of the books"
+" you have for each."
+msgstr ""
+"<b>Sökning efter författardubbletter</b><br/>- Rapportera böcker i detta "
+"bibliotek jämfört med ditt målbibliotek <b>utan hänsyn till titel</b> med "
+"{0}<br/>- Sökningar som ignorerar titeln är bäst för att hitta varianter av "
+"författarnamn oavsett vilka böcker du har för var och en."
+
+#: dialogs.py:1080
+msgid "Cross Library Search Options"
+msgstr "Sökalternativ över flera bibliotek"
+
+#: dialogs.py:1084
+msgid "Compare With Library:"
+msgstr "Jämför med bibliotek:"
+
+#: dialogs.py:1088
+msgid "Library:"
+msgstr "Bibliotek:"
+
+#: dialogs.py:1098
+msgid "Duplicate Search Type:"
+msgstr "Dubblettsöktyp:"
+
+#: dialogs.py:1119
+msgid "Title Matching:"
+msgstr "Titelmatchning:"
+
+#: dialogs.py:1140
+msgid "Author Matching:"
+msgstr "Författarmatchning:"
+
+#: dialogs.py:1165
+msgid "Compare Options:"
+msgstr "Jämför alternativ:"
+
+#: dialogs.py:1173
+msgid "Display duplicate books when search completes"
+msgstr "Visa dubbletter när sökningen är klar"
+
+#: dialogs.py:1174
+msgid "Uncheck this option if you just want the output log"
+msgstr "Avmarkera det här alternativet om du bara vill ha utmatningsloggen"
+
+#: dialogs.py:1213
+msgid "Choose library location to compare against"
+msgstr "Välj biblioteksplats att jämföra med"
+
+#: dialogs.py:1264
+msgid "No library specified"
+msgstr "Inget bibliotek angivet"
+
+#: dialogs.py:1265
+msgid "You must specify a library path"
+msgstr "Du måste ange en sökväg till biblioteket"
+
+#: dialogs.py:1268
+msgid "Same as current"
+msgstr "Samma som nuvarande"
+
+#: dialogs.py:1269
+msgid "The location {0} contains the current calibre library"
+msgstr "Platsen {0} innehåller det aktuella calibre-biblioteket"
+
+#: dialogs.py:1271
+msgid "No existing library found"
+msgstr "Inget befintligt bibliotek hittades"
+
+#: dialogs.py:1272
+msgid "There is no existing calibre library at {0}"
+msgstr "Det finns inget befintligt calibre-bibliotek i {0}"
+
+#: dialogs.py:1295
+msgid "Save log"
+msgstr "Spara logg"
+
+#: dialogs.py:1302
+msgid "Save Find Duplicates log"
+msgstr "Spara Find Duplicates-logg"
+
+#: dialogs.py:1303
+msgid "Duplicates log file"
+msgstr "Dubblettloggfil"
+
+#: duplicates.py:213
+msgid "No duplicate groups were found when searching with: <b>{0}</b>"
+msgstr "Inga dubblettgrupper hittades vid sökning med: <b>{0}</b>"
+
+#: duplicates.py:215 duplicates.py:328 duplicates.py:361 duplicates.py:368
+msgid "No duplicates"
+msgstr "Inga dubbletter"
+
+#: duplicates.py:217 duplicates.py:224 duplicates.py:330
+msgid "Show this information again"
+msgstr "Visa denna information igen"
+
+#: duplicates.py:220
+msgid "Found {0} duplicate groups when searching with: <b>{1}</b>"
+msgstr "Hittade {0} dubblettgrupper vid sökning med: <b>{1}</b>"
+
+#: duplicates.py:327 duplicates.py:369
+msgid "No more duplicate groups exist from your search."
+msgstr "Inga fler dubblettgrupper finns i din sökning."
+
+#: duplicates.py:362
+msgid ""
+"The current duplicate group no longer exists. You cannot perform this "
+"action."
+msgstr ""
+"Den aktuella dubblettgruppen finns inte längre. Du kan inte utföra den här "
+"åtgärden."
+
+#: duplicates.py:720
+msgid "Showing #{0} of {0} remaining duplicate groups for {0}"
+msgstr "Visar #{0} av {0} återstående dubblettgrupper för {0}"
+
+#: duplicates.py:827
+msgid ""
+"Results of {0} comparison:\n"
+"    Source library: {1}\n"
+"    Target library: {2}\n"
+"\n"
+"{3}"
+msgstr ""
+"Resultat av {0} jämförelse:\n"
+"    Källbibliotek: {1}\n"
+"    Målbibliotek: {2}\n"
+"\n"
+"{3}"
+
+#: duplicates.py:907
+msgid "Click 'Show details' to see the results."
+msgstr "Klicka på \"Visa detaljer\" för att se resultaten."
+
+#: duplicates.py:919 duplicates.py:1045
+msgid "Analysing duplicates in target database"
+msgstr "Analyserar dubbletter i måldatabasen"
+
+#: duplicates.py:921 duplicates.py:1054
+msgid "Analysing duplicates in current database"
+msgstr "Analyserar dubbletter i den aktuella databasen"
+
+#: duplicates.py:952
+msgid ""
+"Found <b>{0} authors</b> with potential duplicates using <b>{1}</b> against "
+"the library at: {2}"
+msgstr ""
+"Hittade <b>{0} författare</b> med potentiella dubbletter med hjälp av "
+"<b>{1}</b> mot biblioteket på: {2}"
+
+#: duplicates.py:1041
+msgid ""
+"Found <b>{0} books</b> with binary duplicates against the library at: {1}"
+msgstr ""
+"Hittade <b>{0} böcker</b> med binära dubbletter mot biblioteket på: {1}"
+
+#: duplicates.py:1078
+msgid ""
+"Found <b>{0} books</b> with potential duplicates using <b>{1}</b> against "
+"the library at: {2}"
+msgstr ""
+"Hittade <b>{0} böcker</b> med potentiella dubbletter med hjälp av <b>{1}</b>"
+" mot biblioteket på: {2}"
