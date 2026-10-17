@@ -1,5 +1,15 @@
 # Manage Series Change Log
 
+## [1.5.5] - 2026-10-17
+### Added
+- Czech translation
+- French translation
+- Japanese translation
+- Russian translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+
 ## [1.5.4] - 2026-05-05
 ### Added
 - Ability to sort by title to context menu in dialog (@un-pogaz)

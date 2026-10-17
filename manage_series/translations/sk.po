@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# vladimirjendrol <vlado@jendrol.sk>, 2022
+# Martin Sowa, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:02+1000\n"
+"PO-Revision-Date: 2022-09-19 15:02+0000\n"
+"Last-Translator: Martin Sowa, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:42
+msgid "Keyboard shortcuts"
+msgstr "Klávesové skratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reštartovať calibre teraz"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Nastavenia pre:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazať"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazať všetky nastavenia tohto zásuvného modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete zmeniť nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavenia v iných knižniciach ani nastavenia uložené v súbore JSON v "
+"priečinku zásuvných modulov calibre nebudú zmenené."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Potom musíte reštartovať calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavenia zmenené"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavenia tohto zásuvného modulu v tejto knižnici boli zmenené."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Teraz prosím reštartujte calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete vymazať nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavenia vymazané"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Všetky nastavenia tohto zásuvného modulu v tejto knižnici boli vymazané."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovať do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinované"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžaduje sa reštart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Obrázok titulu sa nenašiel – pred použitím tohto zásuvného modulu musíte "
+"reštartovať calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvoriť nový stĺpec"
+
+#: action.py:31
+msgid "Manage Series"
+msgstr "Spravovať série"
+
+#: action.py:51
+msgid "Cannot manage series"
+msgstr "Nemožno spravovať série"
+
+#: action.py:52
+msgid "No books selected"
+msgstr "Nie sú vybrané žiadne knihy"
+
+#: config.py:43
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Upraviť klávesové skratky priradené tomuto zásuvnému modulu"
+
+#: config.py:47 dialogs.py:476
+msgid "&Help"
+msgstr "&Pomocník"
+
+#: dialogs.py:57 dialogs.py:60
+msgid "Lock Series Index"
+msgstr "Uzamknúť index série"
+
+#: dialogs.py:64
+msgid "Series index for book:"
+msgstr "Index série pre knihu:"
+
+#: dialogs.py:79
+msgid "&Assign this index value to all remaining books"
+msgstr "&Priradiť túto hodnotu indexu všetkým zostávajúcim knihám"
+
+#: dialogs.py:101
+msgid "You have conflicting or out of sequence series indexes"
+msgstr "Máte konfliktné alebo nesprávne zoradené indexy sérií"
+
+#: dialogs.py:104
+msgid "Empty book added to series"
+msgstr "Prázdna kniha pridaná do série"
+
+#: dialogs.py:107
+msgid "The book data has been changed"
+msgstr "Údaje knihy boli zmenené"
+
+#: dialogs.py:110
+msgid "The series data is unchanged"
+msgstr "Údaje série sú nezmenené"
+
+#: dialogs.py:131
+msgid "Value assigned by user"
+msgstr "Hodnota priradená používateľom"
+
+#: dialogs.py:178
+msgid "Lock old series index"
+msgstr "Uzamknúť starý index série"
+
+#: dialogs.py:182
+msgid "Lock series index"
+msgstr "Uzamknúť index série"
+
+#: dialogs.py:186 dialogs.py:437
+msgid "Unlock series index"
+msgstr "Odomknúť index série"
+
+#: dialogs.py:190
+msgid "Unlock all series index"
+msgstr "Odomknúť všetky indexy sérií"
+
+#: dialogs.py:197
+msgid "Add empty books"
+msgstr "Pridať prázdne knihy"
+
+#: dialogs.py:204
+msgid "Original Series Index"
+msgstr "Pôvodný index série"
+
+#: dialogs.py:204
+msgid "Original Series Name"
+msgstr "Pôvodný názov série"
+
+#: dialogs.py:204 dialogs.py:225
+msgid "PubDate"
+msgstr "Dátum vydania"
+
+#: dialogs.py:205
+msgid "Sort by"
+msgstr "Zoradiť podľa"
+
+#: dialogs.py:225
+msgid "Author(s)"
+msgstr "Autor(i)"
+
+#: dialogs.py:225
+msgid "New Series"
+msgstr "Nová séria"
+
+#: dialogs.py:225
+msgid "Series"
+msgstr "Série"
+
+#: dialogs.py:225
+msgid "Title"
+msgstr "Názov"
+
+#: dialogs.py:325
+msgid "Old"
+msgstr "Staré"
+
+#: dialogs.py:328
+msgid "New"
+msgstr "Nové"
+
+#: dialogs.py:369
+msgid "Create or Modify Series"
+msgstr "Vytvoriť alebo upraviť sériu"
+
+#: dialogs.py:376
+msgid "Series &Column:"
+msgstr "&Stĺpec série:"
+
+#: dialogs.py:384
+msgid "Series &Name:"
+msgstr "&Názov série:"
+
+#: dialogs.py:397
+msgid "&Start At:"
+msgstr "&Začať od:"
+
+#: dialogs.py:418
+msgid "Move book up in series (Alt+Up)"
+msgstr "Posunúť knihu v sérii nahor (Alt+Up)"
+
+#: dialogs.py:420
+msgid "Alt+Up"
+msgstr "Alt+Up"
+
+#: dialogs.py:424
+msgid "Move book down in series (Alt+Down)"
+msgstr "Posunúť knihu v sérii nadol (Alt+Down)"
+
+#: dialogs.py:426
+msgid "Alt+Down"
+msgstr "Alt+Down"
+
+#: dialogs.py:432
+msgid "Lock to index value"
+msgstr "Uzamknúť na hodnotu indexu"
+
+#: dialogs.py:444
+msgid "Add empty book to the series list"
+msgstr "Pridať prázdnu knihu do zoznamu série"
+
+#: dialogs.py:446
+msgid "Ctrl+Shift+E"
+msgstr "Ctrl+Shift+E"
+
+#: dialogs.py:450
+msgid "Remove book from the series list"
+msgstr "Odstrániť knihu zo zoznamu série"
+
+#: dialogs.py:457
+msgid "Move series index to left of decimal point (Alt+Left)"
+msgstr "Posunúť index série vľavo od desatinnej čiarky (Alt+Left)"
+
+#: dialogs.py:459
+msgid "Alt+Left"
+msgstr "Alt+Left"
+
+#: dialogs.py:463
+msgid "Move series index to right of decimal point (Alt+Right)"
+msgstr "Posunúť index série vpravo od desatinnej čiarky (Alt+Right)"
+
+#: dialogs.py:465
+msgid "Alt+Right"
+msgstr "Alt+Right"
+
+#: dialogs.py:474
+msgid "&Restore Original Series"
+msgstr "&Obnoviť pôvodnú sériu"
+
+#: dialogs.py:633
+msgid "Unknown"
+msgstr "Neznáme"
+
+#: dialogs.py:658
+msgid "Are you sure?"
+msgstr "Naozaj?"
+
+#: dialogs.py:659
+msgid "Remove the selected book(s) from the series list?"
+msgstr "Odstrániť vybrané knihy zo zoznamu série?"

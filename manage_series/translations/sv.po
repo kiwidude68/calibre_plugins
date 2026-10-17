@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Merarom <merarom@yahoo.es>, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:02+1000\n"
+"PO-Revision-Date: 2022-09-19 15:02+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:42
+msgid "Keyboard shortcuts"
+msgstr "Kortkommandon"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för detta tillägg"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinerad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:31
+msgid "Manage Series"
+msgstr "Hantera serier"
+
+#: action.py:51
+msgid "Cannot manage series"
+msgstr "Det går inte att hantera serier"
+
+#: action.py:52
+msgid "No books selected"
+msgstr "Inga böcker valda"
+
+#: config.py:43
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"
+
+#: config.py:47 dialogs.py:476
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: dialogs.py:57 dialogs.py:60
+msgid "Lock Series Index"
+msgstr "Lås serienummer"
+
+#: dialogs.py:64
+msgid "Series index for book:"
+msgstr "Serienummer för boken:"
+
+#: dialogs.py:79
+msgid "&Assign this index value to all remaining books"
+msgstr "&Tilldela detta serienummer till alla återstående böcker"
+
+#: dialogs.py:101
+msgid "You have conflicting or out of sequence series indexes"
+msgstr "Det finns motstridiga serienummer eller serienummer i fel ordning"
+
+#: dialogs.py:104
+msgid "Empty book added to series"
+msgstr "Tom bok har lagts till i serien"
+
+#: dialogs.py:107
+msgid "The book data has been changed"
+msgstr "Bokuppgifterna har ändrats"
+
+#: dialogs.py:110
+msgid "The series data is unchanged"
+msgstr "Serieuppgifterna är oförändrade"
+
+#: dialogs.py:131
+msgid "Value assigned by user"
+msgstr "Värde tilldelat av användaren"
+
+#: dialogs.py:178
+msgid "Lock old series index"
+msgstr "Lås det gamla serienumret"
+
+#: dialogs.py:182
+msgid "Lock series index"
+msgstr "Lås serienummer"
+
+#: dialogs.py:186 dialogs.py:437
+msgid "Unlock series index"
+msgstr "Lås upp serienummer"
+
+#: dialogs.py:190
+msgid "Unlock all series index"
+msgstr "Lås upp alla serienummer"
+
+#: dialogs.py:197
+msgid "Add empty books"
+msgstr "Lägg till tomma böcker"
+
+#: dialogs.py:204
+msgid "Original Series Index"
+msgstr "Ursprungligt serienummer"
+
+#: dialogs.py:204
+msgid "Original Series Name"
+msgstr "Ursprungligt serienamn"
+
+#: dialogs.py:204 dialogs.py:225
+msgid "PubDate"
+msgstr "Utgivningsdatum"
+
+#: dialogs.py:205
+msgid "Sort by"
+msgstr "Sortera efter"
+
+#: dialogs.py:225
+msgid "Author(s)"
+msgstr "Författare"
+
+#: dialogs.py:225
+msgid "New Series"
+msgstr "Ny serie"
+
+#: dialogs.py:225
+msgid "Series"
+msgstr "Serier"
+
+#: dialogs.py:225
+msgid "Title"
+msgstr "Titel"
+
+#: dialogs.py:325
+msgid "Old"
+msgstr "Gamla"
+
+#: dialogs.py:328
+msgid "New"
+msgstr "Nya"
+
+#: dialogs.py:369
+msgid "Create or Modify Series"
+msgstr "Skapa eller ändra serie"
+
+#: dialogs.py:376
+msgid "Series &Column:"
+msgstr "Serie&kolumn:"
+
+#: dialogs.py:384
+msgid "Series &Name:"
+msgstr "Serie&namn:"
+
+#: dialogs.py:397
+msgid "&Start At:"
+msgstr "&Börja med:"
+
+#: dialogs.py:418
+msgid "Move book up in series (Alt+Up)"
+msgstr "Flytta boken uppåt i serien (Alt+Upp)"
+
+#: dialogs.py:420
+msgid "Alt+Up"
+msgstr "Alt+Upp"
+
+#: dialogs.py:424
+msgid "Move book down in series (Alt+Down)"
+msgstr "Flytta boken nedåt i serien (Alt+Ned)"
+
+#: dialogs.py:426
+msgid "Alt+Down"
+msgstr "Alt+Ned"
+
+#: dialogs.py:432
+msgid "Lock to index value"
+msgstr "Lås till serienummer"
+
+#: dialogs.py:444
+msgid "Add empty book to the series list"
+msgstr "Lägg till en tom bok i serielistan"
+
+#: dialogs.py:446
+msgid "Ctrl+Shift+E"
+msgstr "Ctrl+Skift+E"
+
+#: dialogs.py:450
+msgid "Remove book from the series list"
+msgstr "Ta bort boken från serielistan"
+
+#: dialogs.py:457
+msgid "Move series index to left of decimal point (Alt+Left)"
+msgstr "Flytta serienumret till vänster om decimaltecknet (Alt+Vänster)"
+
+#: dialogs.py:459
+msgid "Alt+Left"
+msgstr "Alt+Vänster"
+
+#: dialogs.py:463
+msgid "Move series index to right of decimal point (Alt+Right)"
+msgstr "Flytta serienumret till höger om decimaltecknet (Alt+Höger)"
+
+#: dialogs.py:465
+msgid "Alt+Right"
+msgstr "Alt+Höger"
+
+#: dialogs.py:474
+msgid "&Restore Original Series"
+msgstr "Åte&rställ ursprunglig serie"
+
+#: dialogs.py:633
+msgid "Unknown"
+msgstr "Okänd"
+
+#: dialogs.py:658
+msgid "Are you sure?"
+msgstr "Är du säker?"
+
+#: dialogs.py:659
+msgid "Remove the selected book(s) from the series list?"
+msgstr "Ta bort de markerade böckerna från serielistan?"
