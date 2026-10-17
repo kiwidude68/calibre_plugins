@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Merarom <merarom@yahoo.es>, 2022
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"PO-Revision-Date: 2022-09-13 17:16+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:93
+msgid "Keyboard shortcuts"
+msgstr "Kortkommandon"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för detta tillägg"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinerad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:35
+msgid "User category"
+msgstr "Användarkategori"
+
+#: action.py:42
+msgid "authors"
+msgstr "författare"
+
+#: action.py:42
+msgid "series"
+msgstr "serier"
+
+#: action.py:43
+msgid "publishers"
+msgstr "utgivare"
+
+#: action.py:43
+msgid "tags"
+msgstr "taggar"
+
+#: action.py:96
+msgid "Add selected"
+msgstr "Lägg till markerade"
+
+#: action.py:109
+msgid "Move selected"
+msgstr "Flytta markerade"
+
+#: action.py:122
+msgid "Remove selected"
+msgstr "Ta bort markerade"
+
+#: action.py:130
+msgid "Show in tag browser"
+msgstr "Visa i taggbläddraren"
+
+#: action.py:133
+msgid "Manage user categories"
+msgstr "Hantera användarkategorier"
+
+#: action.py:136
+msgid "&Customize plugin"
+msgstr "&Anpassa insticksmodul"
+
+#: action.py:138 config.py:98
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: action.py:158
+msgid "View user category"
+msgstr "Visa användarkategori"
+
+#: action.py:161
+msgid "Manage user category"
+msgstr "Hantera användarkategori"
+
+#: action.py:166
+msgid "Add %s to user category: %s"
+msgstr "Lägg till %s i användarkategorin: %s"
+
+#: action.py:168
+msgid "Move %s to user category: %s"
+msgstr "Flytta %s till användarkategorin: %s"
+
+#: action.py:170
+msgid "Remove %s from user category: %s"
+msgstr "Ta bort %s från användarkategorin: %s"
+
+#: action.py:272 action.py:280
+msgid "Cannot modify user category"
+msgstr "Det går inte att ändra användarkategorin"
+
+#: action.py:273
+msgid "No new values in books selected"
+msgstr "Inga nya värden i de markerade böckerna"
+
+#: action.py:281
+msgid "Selected user category not found. Please restart Calibre."
+msgstr "Den valda användarkategorin hittades inte. Starta om calibre."
+
+#: action.py:340
+msgid "Cannot view user category"
+msgstr "Kan inte visa användarkategori"
+
+#: action.py:341
+msgid "User category not found"
+msgstr "Användarkategorin hittades inte"
+
+#: config.py:52
+msgid "Add to user category"
+msgstr "Lägg till i användarkategori"
+
+#: config.py:53
+msgid "Move to user category"
+msgstr "Flytta till användarkategori"
+
+#: config.py:54
+msgid "Remove from user category"
+msgstr "Ta bort från användarkategori"
+
+#: config.py:57
+msgid "Authors"
+msgstr "Författare"
+
+#: config.py:58
+msgid "Series"
+msgstr "Serier"
+
+#: config.py:59
+msgid "Publishers"
+msgstr "Utgivare"
+
+#: config.py:60
+msgid "Tags"
+msgstr "Taggar"
+
+#: config.py:70
+msgid "Menu actions to display:"
+msgstr "Menyåtgärder att visa:"
+
+#: config.py:81
+msgid "Book metadata types to add/remove:"
+msgstr "Typer av bokmetadata att lägga till/ta bort:"
+
+#: config.py:94
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"

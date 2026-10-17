@@ -10,6 +10,8 @@ except ImportError:
     from PyQt5.Qt import QMenu, QToolButton
 from calibre.gui2 import error_dialog
 from calibre.gui2.actions import InterfaceAction
+from calibre.ebooks.metadata import rating_to_stars
+from calibre.utils.localization import calibre_langcode_to_name
 
 import calibre_plugins.user_category.config as cfg
 from calibre_plugins.user_category.common_icons import set_plugin_icon_resources, get_icon
@@ -25,7 +27,7 @@ except NameError:
 PLUGIN_ICONS = ['images/user_category.png',
                 'images/authors_add.png', 'images/authors_move.png', 'images/authors_remove.png',
                 'images/series_add.png', 'images/series_move.png', 'images/series_remove.png',
-                'images/publishers_add.png', 'images/publishers_move.png', 'images/publishers_remove.png',
+                'images/publisher_add.png', 'images/publisher_move.png', 'images/publisher_remove.png',
                 'images/tags_add.png', 'images/tags_move.png', 'images/tags_remove.png',
                 'images/show_tag_browser.png']
 
@@ -38,15 +40,25 @@ class UserCategoryAction(InterfaceAction):
 
     def genesis(self):
         self.is_library_selected = True
-        self.category_labels = ['authors', 'series', 'publishers', 'tags']
-        self.category_labels_trans = { 'authors':_('authors'), 'series':_('series'), \
-                                       'publishers':_('publishers'),'tags':_('tags') }
+        self.standard_category_labels = ['authors', 'series', 'formats', 'identifiers',
+                                         'languages', 'publisher', 'rating', 'tags']
+        self.standard_category_labels_trans = {
+            'authors': _('authors'), 'series': _('series'),
+            'formats': _('formats'), 'identifiers': _('identifiers'),
+            'languages': _('languages'), 'publisher': _('publisher'),
+            'rating': _('rating'), 'tags': _('tags')
+        }
+        self.category_labels = list(self.standard_category_labels)
+        self.category_labels_trans = dict(self.standard_category_labels_trans)
         self.old_actions_unique_map = {}
         self.sub_menus_evaluated = []
         self.menu = QMenu(self.gui)
 
         # Read the plugin icons and store for potential sharing with the config widget
-        icon_resources = self.load_resources(PLUGIN_ICONS)
+        menu_icons = ['images/%s_%s.png' % (label, operation)
+                  for label in self.category_labels
+                  for operation in ('add', 'move', 'remove')]
+        icon_resources = self.load_resources(PLUGIN_ICONS + menu_icons)
         set_plugin_icon_resources(self.name, icon_resources)
 
         # Assign our menu to this action and an icon
@@ -81,6 +93,16 @@ class UserCategoryAction(InterfaceAction):
         menus_enabled = c[cfg.MENUS_KEY]
         other_menus_enabled = c[cfg.OTHER_MENUS_KEY]
         self.db = self.gui.library_view.model().db
+        self.category_labels = list(self.standard_category_labels)
+        self.category_labels_trans = dict(self.standard_category_labels_trans)
+        enabled_category_labels = {key for key, enabled in menus_enabled.items() if enabled}
+        custom_columns = self.db.field_metadata.custom_field_metadata()
+        for key in c.get(cfg.CUSTOM_COLUMNS_KEY, []):
+            column = custom_columns.get(key)
+            if column is not None and cfg.is_custom_column_category(column):
+                self.category_labels.append(key)
+                self.category_labels_trans[key] = '%s (%s)' % (column['name'], key)
+                enabled_category_labels.add(key)
 
         m = self.menu
         m.clear()
@@ -90,23 +112,24 @@ class UserCategoryAction(InterfaceAction):
         # Create the 'Add...' items
         if other_menus_enabled['add']:
             for label in self.category_labels:
-                if menus_enabled[label]:
+                if label in enabled_category_labels:
                     trans_label = self.category_labels_trans[label]
-                    add_sub_menu = m.addMenu(get_icon('images/%s_add.png' % label),
-                                             _('Add selected')+' '+ trans_label)
+                    add_sub_menu = self.add_menu_with_optional_icon(
+                        m, 'images/%s_add.png' % label,
+                        _('Add selected')+' '+ trans_label)
                     add_sub_menu.aboutToShow.connect(partial(self.about_to_show_action_sub_menu,
                                                              add_sub_menu, label, 'add'))
-                    # Now create the actual menu items for each user category
                     self.create_submenu_for_each_category(add_sub_menu, 'add', label)
             m.addSeparator()
 
         # Create the 'Move...' items
         if other_menus_enabled.get('move', True):
             for label in self.category_labels:
-                if menus_enabled[label]:
+                if label in enabled_category_labels:
                     trans_label = self.category_labels_trans[label]
-                    move_sub_menu = m.addMenu(get_icon('images/%s_move.png' % label),
-                                             _('Move selected')+' '+ trans_label)
+                    move_sub_menu = self.add_menu_with_optional_icon(
+                        m, 'images/%s_move.png' % label,
+                        _('Move selected')+' '+ trans_label)
                     move_sub_menu.aboutToShow.connect(partial(self.about_to_show_action_sub_menu,
                                                               move_sub_menu, label, 'move'))
                     # Now create the actual menu items for each user category
@@ -114,22 +137,23 @@ class UserCategoryAction(InterfaceAction):
             m.addSeparator()
 
         # Create the 'Remove...' items
-        if other_menus_enabled['remove']:
+        if other_menus_enabled.get('remove', True):
             for label in self.category_labels:
-                if menus_enabled[label]:
+                if label in enabled_category_labels:
                     trans_label = self.category_labels_trans[label]
-                    remove_sub_menu = m.addMenu(get_icon('images/%s_remove.png' % label),
-                                                _('Remove selected')+' '+ trans_label)
+                    remove_sub_menu = self.add_menu_with_optional_icon(
+                        m, 'images/%s_remove.png' % label,
+                        _('Remove selected')+' '+ trans_label)
                     remove_sub_menu.aboutToShow.connect(partial(self.about_to_show_action_sub_menu,
                                                                 remove_sub_menu, label, 'remove'))
                     self.create_submenu_for_each_category(remove_sub_menu, 'remove', label)
             m.addSeparator()
 
         # Create the additional configuration menu options
-        if other_menus_enabled['view']:
+        if other_menus_enabled.get('view', True):
             view_sub_menu = m.addMenu(get_icon('images/show_tag_browser.png'), _('Show in tag browser'))
             self.create_submenu_for_each_category(view_sub_menu, 'view')
-        if other_menus_enabled['manage']:
+        if other_menus_enabled.get('manage', True):
             manage_sub_menu = m.addMenu(get_icon('chapters.png'), _('Manage user categories'))
             self.create_submenu_for_each_category(manage_sub_menu, 'manage')
         m.addSeparator()
@@ -144,6 +168,12 @@ class UserCategoryAction(InterfaceAction):
                 self.gui.keyboard.unregister_shortcut(unique_name)
         self.old_actions_unique_map = self.actions_unique_map
         self.gui.keyboard.finalize()
+
+    def add_menu_with_optional_icon(self, parent_menu, icon_name, title):
+        icon = get_icon(icon_name)
+        if not icon.isNull():
+            return parent_menu.addMenu(icon, title)
+        return parent_menu.addMenu(title)
 
     def create_submenu_for_each_category(self, parent_menu, action, label=''):
         for cat_name in self.sorted_cat_names:
@@ -188,50 +218,74 @@ class UserCategoryAction(InterfaceAction):
         if not rows or len(rows) == 0 or not self.is_library_selected:
             return
 
-        # Build our unique set of values based on the sub-menu selected
         values = []
         for row in rows:
             self.append_unique_data_from_row(db, values, row.row(), label)
-        # Now iterate through each of the categories to test membership of values
-        # Any categories that should not have a menu action are disabled
+
         for cat_name in self.sorted_cat_names:
             menu_enabled = False
             for value in values:
                 match_value = value + '|' + label
-                if action in ['add','move']:
-                    if match_value not in self.cat_sets[cat_name]:
-                        menu_enabled = True
-                        break
-                elif action == 'remove':
-                    if match_value in self.cat_sets[cat_name]:
-                        menu_enabled = True
-                        break
-            # Lookup the action from our dictionary built when we rebuilt the menu
+                if action in ['add', 'move'] and match_value not in self.cat_sets[cat_name]:
+                    menu_enabled = True
+                    break
+                if action == 'remove' and match_value in self.cat_sets[cat_name]:
+                    menu_enabled = True
+                    break
             ac = self.actions_map[action+label+cat_name]
             ac.setEnabled(menu_enabled)
 
     def append_unique_data_from_row(self, db, values, row, label):
         if label == 'authors':
             authors = db.authors(row)
-            if authors:
-                for author in authors.split(','):
-                    safe_author = author.replace('|',',')
-                    if author and not safe_author in values:
-                        values.append(safe_author)
+            self.append_unique_values(values, authors.split(',') if authors else ())
         elif label == 'series':
-            series = db.series(row)
-            if series and not series in values:
-                values.append(series)
+            self.append_unique_value(values, db.series(row))
+        elif label == 'formats':
+            formats = db.formats(row, verify_formats=False)
+            self.append_unique_values(values, formats.split(',') if formats else ())
+        elif label == 'identifiers':
+            identifiers = db.get_metadata(row, get_user_categories=False).identifiers or {}
+            for identifier in sorted(identifiers):
+                self.append_unique_value(values, identifier)
+        elif label == 'languages':
+            languages = db.languages(row)
+            if languages:
+                for language in languages.split(','):
+                    self.append_unique_value(values, calibre_langcode_to_name(language.strip()))
         elif label == 'publisher':
             publisher = db.publisher(row)
-            if publisher and not publisher in values:
-                values.append(publisher)
+            if publisher and publisher not in values:
+                self.append_unique_value(values, publisher)
+        elif label == 'rating':
+            rating = db.rating(row)
+            if rating:
+                self.append_unique_value(values, rating_to_stars(rating))
         elif label == 'tags':
             tags = db.tags(row)
-            if tags:
-                for tag in tags.split(','):
-                    if not tag in values:
-                        values.append(tag)
+            self.append_unique_values(values, tags.split(',') if tags else ())
+        elif label.startswith('#'):
+            custom_column = db.field_metadata.custom_field_metadata().get(label)
+            custom_value = db.get_custom(row, label=label[1:])
+            if custom_column and custom_column['datatype'] == 'rating':
+                if custom_value:
+                    allow_half_stars = custom_column.get('display', {}).get('allow_half_stars', False)
+                    custom_value = rating_to_stars(custom_value, allow_half_stars)
+            self.append_unique_values(values, custom_value)
+
+    def append_unique_values(self, values, new_values):
+        if isinstance(new_values, (list, tuple, set)):
+            for value in new_values:
+                self.append_unique_value(values, value)
+        else:
+            self.append_unique_value(values, new_values)
+
+    def append_unique_value(self, values, value):
+        if value is None:
+            return
+        value = str(value).strip().replace('|', ',')
+        if value and value not in values:
+            values.append(value)
 
     def create_category_caches(self):
         # Create a dictionary of sets for performant lookup of membership
@@ -287,7 +341,6 @@ class UserCategoryAction(InterfaceAction):
                 self.selected_cat.append([value, label, 0])
             # Re-sort the collection
             l = []
-#            for n in sorted(self.selected_cat, cmp=lambda x,y: cmp(x[0], y[0])):
             from operator import itemgetter
             for n in sorted(self.selected_cat, key=itemgetter(0)):
                 l.append(n)

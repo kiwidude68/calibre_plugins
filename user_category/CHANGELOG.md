@@ -1,5 +1,17 @@
 # User Category Change Log
 
+## [1.7.0] - 2026-10-17
+### Added
+- Added Languages, Formats, Rating and Identifiers as supported for working with user categories.
+- Czech translation
+- French translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+### Fixed
+- Publisher never worked for add/remove to user categories due to incorrect key being used.
+
 ## [1.6.2] - 2026-02-09
 ### Added
 - Arabic translation
