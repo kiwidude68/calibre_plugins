@@ -1,0 +1,642 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Vlado Jendroľ, 2022
+# Martin Sowa, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:02+1000\n"
+"PO-Revision-Date: 2022-09-19 15:00+0000\n"
+"Last-Translator: Martin Sowa, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:63
+msgid "Keyboard shortcuts"
+msgstr "Klávesové skratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reštartovať calibre teraz"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Nastavenia pre:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazať"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazať všetky nastavenia tohto zásuvného modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete zmeniť nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavenia v iných knižniciach ani nastavenia uložené v súbore JSON v "
+"priečinku zásuvných modulov calibre nebudú zmenené."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Potom musíte reštartovať calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavenia zmenené"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavenia tohto zásuvného modulu v tejto knižnici boli zmenené."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Teraz prosím reštartujte calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete vymazať nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavenia vymazané"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Všetky nastavenia tohto zásuvného modulu v tejto knižnici boli vymazané."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovať do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinované"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžaduje sa reštart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Obrázok titulu sa nenašiel – pred použitím tohto zásuvného modulu musíte "
+"reštartovať calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvoriť nový stĺpec"
+
+#: action.py:35
+msgid "Modify the contents of an ePub without a conversion"
+msgstr "Upraví obsah súboru ePub bez konverzie"
+
+#: action.py:35 dialogs.py:100
+msgid "Modify ePub"
+msgstr "Upraviť ePub"
+
+#: action.py:47 action.py:58
+msgid "Cannot modify ePub"
+msgstr "Nemožno upraviť ePub"
+
+#: action.py:48
+msgid "You must select one or more books to perform this action."
+msgstr "Ak chcete vykonať túto akciu, musíte vybrať jednu alebo viac kníh."
+
+#: action.py:59
+msgid "No ePub available. First convert the book to ePub."
+msgstr ""
+"Nie je k dispozícii žiadny súbor ePub. Najprv knihu skonvertujte na ePub."
+
+#: action.py:88
+msgid "Failed to modify ePubs"
+msgstr "Nepodarilo sa upraviť súbory ePub"
+
+#: action.py:91
+msgid "Modify ePub completed"
+msgstr "Úprava ePub dokončená"
+
+#: action.py:95
+msgid ""
+"No ePub files were updated. If this isn't what you expected then press the "
+"Show details button to check for errors in the log."
+msgstr ""
+"Neboli aktualizované žiadne súbory ePub. Ak to nie je to, čo ste očakávali, "
+"stlačte tlačidlo Zobraziť podrobnosti a skontrolujte chyby v protokole."
+
+#: action.py:97
+msgid "Modify ePub changed no files"
+msgstr "Úprava ePub nezmenila žiadne súbory"
+
+#: action.py:105
+msgid ""
+"Modify ePub modified <b>%d ePub files(s)</b> into a temporary location. "
+"Proceed with replacing the versions in your library?"
+msgstr ""
+"Úprava ePub upravila <b>%d súborov ePub</b> do dočasného umiestnenia. "
+"Pokračovať v nahradení verzií vo vašej knižnici?"
+
+#: action.py:110
+msgid "Modify ePub complete"
+msgstr "Úprava ePub dokončená"
+
+#: action.py:110
+msgid "Modify log"
+msgstr "Protokol úprav"
+
+#: config.py:52
+msgid "Other options:"
+msgstr "Iné možnosti:"
+
+#: config.py:57
+msgid "Prompt to save epubs"
+msgstr "Vyzvať na uloženie súborov ePub"
+
+#: config.py:58
+msgid ""
+"Uncheck this option if you want changes applied without a confirmation "
+"dialog."
+msgstr ""
+"Odčiarknite túto možnosť, ak chcete zmeny použiť bez potvrdzovacieho "
+"dialógu."
+
+#: config.py:64
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Upraviť klávesové skratky priradené tomuto zásuvnému modulu"
+
+#: config.py:68
+msgid "&Help"
+msgstr "&Pomocník"
+
+#: dialogs.py:36
+msgid "Remove iTunes files"
+msgstr "Odstrániť súbory iTunes"
+
+#: dialogs.py:36
+msgid ""
+"Removes any iTunesMetadata.plist or artwork files\n"
+"added by viewing the ePub in iTunes"
+msgstr ""
+"Odstráni všetky súbory iTunesMetadata.plist alebo obrázky\n"
+"pridané zobrazením súboru ePub v iTunes"
+
+#: dialogs.py:37
+msgid "Remove any bookmark files added by the calibre ebook viewer"
+msgstr "Odstrániť všetky súbory záložiek pridané prehliadačom e-kníh calibre"
+
+#: dialogs.py:37
+msgid "Remove calibre bookmark files"
+msgstr "Odstrániť súbory záložiek calibre"
+
+#: dialogs.py:38
+msgid "Remove OS artifact files"
+msgstr "Odstrániť súbory artefaktov operačného systému"
+
+#: dialogs.py:38
+msgid ""
+"Removes any OS artifacts like thumbs.db or .DS_Store\n"
+"that are not needed by the ePub"
+msgstr ""
+"Odstráni všetky artefakty operačného systému, ako napríklad thumbs.db alebo\n"
+".DS_Store, ktoré súbor ePub nepotrebuje"
+
+#: dialogs.py:39
+msgid ""
+"Remove any unused jpg, png or gif image files that are not referenced\n"
+"from the html pages. This can occur as the result of careless ePub editing."
+msgstr ""
+"Odstráni všetky nepoužité obrázkové súbory jpg, png alebo gif, na ktoré sa\n"
+"neodkazujú stránky HTML. Môže k tomu dôjsť v dôsledku neopatrnej úpravy súboru ePub."
+
+#: dialogs.py:39
+msgid "Remove unused image files"
+msgstr "Odstrániť nepoužité obrázkové súbory"
+
+#: dialogs.py:40
+msgid "De-indent (aka unpretty)"
+msgstr "Zrušiť odsadenie (tzv. unpretty)"
+
+#: dialogs.py:40
+msgid "Remove indentation from HTML files"
+msgstr "Odstrániť odsadenie zo súborov HTML"
+
+#: dialogs.py:41
+msgid "Remove remnants of Kobo DRM"
+msgstr "Odstrániť zvyšky Kobo DRM"
+
+#: dialogs.py:41
+msgid "Strip Kobo DRM remnants"
+msgstr "Odstrániť zvyšky Kobo DRM"
+
+#: dialogs.py:42
+msgid "Remove spans without attributes"
+msgstr "Odstrániť značky span bez atribútov"
+
+#: dialogs.py:42
+msgid "Strip spans"
+msgstr "Odstrániť značky span"
+
+#: dialogs.py:46
+msgid ""
+"Remove entries in the manifest for files listed that do not exist in the "
+"ePub"
+msgstr ""
+"Odstráni záznamy v manifeste pre uvedené súbory, ktoré v súbore ePub "
+"neexistujú"
+
+#: dialogs.py:46
+msgid "Remove missing file entries from manifest"
+msgstr "Odstrániť chýbajúce záznamy súborov z manifestu"
+
+#: dialogs.py:47
+msgid ""
+"Add files to manifest that are in the ePub but do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks)"
+msgstr ""
+"Pridá do manifestu súbory, ktoré sú v súbore ePub, ale neexistujú v manifeste .opf\n"
+"(s výnimkou záložiek iTunes/calibre)"
+
+#: dialogs.py:47
+msgid "Add unmanifested files to manifest"
+msgstr "Pridať nezmanifestované súbory do manifestu"
+
+#: dialogs.py:48
+msgid ""
+"Remove files from the ePub that do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks). Will not be applied if the add option is also checked"
+msgstr ""
+"Odstráni zo súboru ePub súbory, ktoré neexistujú v manifeste .opf\n"
+"(s výnimkou záložiek iTunes/calibre). Nepoužije sa, ak je začiarknutá aj možnosť pridania"
+
+#: dialogs.py:48
+msgid "Remove unmanifested files from ePub"
+msgstr "Odstrániť nezmanifestované súbory zo súboru ePub"
+
+#: dialogs.py:52
+msgid ""
+"Remove any Adobe .xpgt file margins to prevent them\n"
+"interfering with viewing"
+msgstr ""
+"Odstráni všetky okraje zo súborov Adobe .xpgt, aby nezasahovali\n"
+"do zobrazovania"
+
+#: dialogs.py:52
+msgid "Remove margins from Adobe .xpgt files"
+msgstr "Odstrániť okraje zo súborov Adobe .xpgt"
+
+#: dialogs.py:53
+msgid ""
+"Delete the .xpgt file completely from the epub\n"
+"as well as removing any links from the xhtml files"
+msgstr ""
+"Úplne odstráni súbor .xpgt zo súboru epub\n"
+"a tiež odstráni všetky odkazy zo súborov xhtml"
+
+#: dialogs.py:53
+msgid "Remove Adobe .xpgt files and links"
+msgstr "Odstrániť súbory a odkazy Adobe .xpgt"
+
+#: dialogs.py:54
+msgid "Remove Adobe resource DRM meta tags"
+msgstr "Odstrániť meta značky DRM zdrojov Adobe"
+
+#: dialogs.py:54
+msgid ""
+"Remove any meta tags from the xhtml files that\n"
+"contain DRM urn identifiers."
+msgstr ""
+"Odstráni všetky meta značky zo súborov xhtml, ktoré\n"
+"obsahujú identifikátory DRM urn."
+
+#: dialogs.py:55
+msgid "Remove page maps"
+msgstr "Odstrániť mapy strán"
+
+#: dialogs.py:55
+msgid "Removes all types of page map files"
+msgstr "Odstráni všetky typy súborov máp strán"
+
+#: dialogs.py:56
+msgid "Remove ONLY Google Play page maps"
+msgstr "Odstrániť LEN mapy strán Google Play"
+
+#: dialogs.py:56
+msgid "Removes only Google Play page map files"
+msgstr "Odstráni len súbory máp strán Google Play"
+
+#: dialogs.py:60
+msgid "Flatten TOC hierarchy in NCX file"
+msgstr "Sploštiť hierarchiu obsahu v súbore NCX"
+
+#: dialogs.py:60
+msgid ""
+"Restructure the NCX to contain no nesting of navPoint items.\n"
+"For users whose devices do not support a hierarchical TOC."
+msgstr ""
+"Reštrukturalizuje NCX tak, aby neobsahoval žiadne vnorenie položiek navPoint.\n"
+"Pre používateľov, ktorých zariadenia nepodporujú hierarchický obsah."
+
+#: dialogs.py:61
+msgid ""
+"Any NCX entries that point to missing html pages will be removed.\n"
+"Orphaned NCX links can happen as a result of a calibre conversion for covers."
+msgstr ""
+"Všetky záznamy NCX, ktoré odkazujú na chýbajúce stránky HTML, budú odstránené.\n"
+"Osirotené odkazy NCX môžu vzniknúť v dôsledku konverzie calibre pre obálky."
+
+#: dialogs.py:61
+msgid "Remove broken TOC entries in NCX file"
+msgstr "Odstrániť nefunkčné záznamy obsahu v súbore NCX"
+
+#: dialogs.py:65
+msgid "Remove all calibre jackets, both legacy and current"
+msgstr "Odstrániť všetky obaly calibre, staršie aj aktuálne"
+
+#: dialogs.py:65
+msgid "Remove all metadata jackets"
+msgstr "Odstrániť všetky obaly metadát"
+
+#: dialogs.py:66
+msgid "Remove jackets generated using versions of calibre prior to 0.6.50"
+msgstr "Odstrániť obaly vygenerované verziami calibre staršími ako 0.6.50"
+
+#: dialogs.py:66
+msgid "Remove legacy metadata jackets"
+msgstr "Odstrániť staršie obaly metadát"
+
+#: dialogs.py:67
+msgid "Add a jacket if not existing, or replace a non-legacy jacket"
+msgstr "Pridať obal, ak neexistuje, alebo nahradiť ne-starší obal"
+
+#: dialogs.py:67
+msgid "Add/replace metadata jacket"
+msgstr "Pridať/nahradiť obal metadát"
+
+#: dialogs.py:68
+msgid ""
+"If a jacket is added/replaced, it is placed at the end of the book instead "
+"of the beginning"
+msgstr ""
+"Ak sa obal pridá/nahradí, umiestni sa na koniec knihy namiesto začiatku"
+
+#: dialogs.py:68
+msgid "Jacket at the end of the book"
+msgstr "Obal na konci knihy"
+
+#: dialogs.py:72
+msgid "Remove broken image pages"
+msgstr "Odstrániť nefunkčné stránky s obrázkami"
+
+#: dialogs.py:72
+msgid ""
+"Remove html page(s) that contain only an image tag for which\n"
+"the linked image does not exist in the epub"
+msgstr ""
+"Odstráni stránky HTML, ktoré obsahujú len značku obrázka, pre ktorú\n"
+"prepojený obrázok v súbore epub neexistuje"
+
+#: dialogs.py:73
+msgid ""
+"If a cover page is identifiable in the epub then it is completely removed"
+msgstr ""
+"Ak je v súbore epub identifikovateľná stránka obálky, úplne sa odstráni"
+
+#: dialogs.py:73
+msgid "Remove existing cover"
+msgstr "Odstrániť existujúcu obálku"
+
+#: dialogs.py:74
+msgid ""
+"If a cover page is identifiable in the epub then it is replaced\n"
+"otherwise a new cover page is inserted"
+msgstr ""
+"Ak je v súbore epub identifikovateľná stránka obálky, nahradí sa,\n"
+"inak sa vloží nová stránka obálky"
+
+#: dialogs.py:74
+msgid "Insert or replace cover"
+msgstr "Vložiť alebo nahradiť obálku"
+
+#: dialogs.py:78
+msgid "Update metadata"
+msgstr "Aktualizovať metadáta"
+
+#: dialogs.py:78
+msgid ""
+"Update the manifest with the latest calibre metadata\n"
+"and replace an existing identifiable cover if possible."
+msgstr ""
+"Aktualizuje manifest najnovšími metadátami calibre\n"
+"a ak je to možné, nahradí existujúcu identifikovateľnú obálku."
+
+#: dialogs.py:79
+msgid ""
+"Remove any metadata from the .opf manifest that is not in the dc: namespace.\n"
+"Such entries are created by editing in Sigil or calibre updating metadata.\n"
+"Use this option if publishing your ePubs externally."
+msgstr ""
+"Odstráni všetky metadáta z manifestu .opf, ktoré nie sú v priestore mien dc:.\n"
+"Takéto záznamy vznikajú úpravou v Sigile alebo aktualizáciou metadát calibre.\n"
+"Túto možnosť použite, ak publikujete svoje súbory ePub externe."
+
+#: dialogs.py:79
+msgid "Remove non dc: metadata elements"
+msgstr "Odstrániť metadátové prvky mimo dc:"
+
+#: dialogs.py:83
+msgid "Encode HTML in UTF-8"
+msgstr "Kódovať HTML v UTF-8"
+
+#: dialogs.py:83
+msgid ""
+"Removes any existing <meta> charset tags on html pages and encodes in UTF-8.\n"
+"For use where ebook does not display quotes in calibre viewer correctly."
+msgstr ""
+"Odstráni všetky existujúce značky <meta> charset na stránkach HTML a zakóduje v UTF-8.\n"
+"Na použitie tam, kde e-kniha nezobrazuje úvodzovky v prehliadači calibre správne."
+
+#: dialogs.py:84
+msgid "Remove embedded fonts"
+msgstr "Odstrániť vložené písma"
+
+#: dialogs.py:84
+msgid ""
+"Remove embedded fonts from the manifest and their files to reduce ePub size.\n"
+"Also removes @font-face declarations."
+msgstr ""
+"Odstráni vložené písma z manifestu a ich súbory na zmenšenie veľkosti súboru ePub.\n"
+"Tiež odstráni deklarácie @font-face."
+
+#: dialogs.py:85
+msgid "Modify @page and body margin styles"
+msgstr "Upraviť štýly okrajov @page a body"
+
+#: dialogs.py:85
+msgid ""
+"Replace margin styles for @page or body with your calibre defaults in a new @page style.\n"
+"If your calibre defaults are negative, removes the margin attributes and if necessary the CSS file."
+msgstr ""
+"Nahradí štýly okrajov pre @page alebo body vašimi predvolenými hodnotami calibre v novom štýle @page.\n"
+"Ak sú vaše predvolené hodnoty calibre záporné, odstráni atribúty okrajov a v prípade potreby aj súbor CSS."
+
+#: dialogs.py:86
+msgid "Append extra CSS"
+msgstr "Pripojiť extra CSS"
+
+#: dialogs.py:86
+msgid ""
+"Appends any Extra CSS you have defined in your calibre defaults to every .CSS file.\n"
+"If you have no extra CSS defined or text already contained then it does nothing."
+msgstr ""
+"Pripojí akékoľvek extra CSS, ktoré ste definovali vo svojich predvolených hodnotách calibre, do každého súboru .CSS.\n"
+"Ak nemáte definované žiadne extra CSS alebo už text obsahuje, nič sa nestane."
+
+#: dialogs.py:87
+msgid "Convert html to use smart quotes and emdash characters"
+msgstr ""
+"Konvertovať HTML na používanie inteligentných úvodzoviek a znakov emdash"
+
+#: dialogs.py:87
+msgid "Smarten punctuation"
+msgstr "Vylepšiť interpunkciu"
+
+#: dialogs.py:88
+msgid "Remove any .js files and inline javascript blocks"
+msgstr "Odstrániť všetky súbory .js a vložené bloky javascriptu"
+
+#: dialogs.py:88
+msgid "Remove inline javascript and files"
+msgstr "Odstrániť vložený javascript a súbory"
+
+#: dialogs.py:103
+msgid "Modify ePub Options"
+msgstr "Možnosti úpravy ePub"
+
+#: dialogs.py:128
+msgid "Known Artifacts"
+msgstr "Známe artefakty"
+
+#: dialogs.py:129
+msgid "Manifest"
+msgstr "Manifest"
+
+#: dialogs.py:130
+msgid "Adobe"
+msgstr "Adobe"
+
+#: dialogs.py:131
+msgid "Table of Contents"
+msgstr "Obsah"
+
+#: dialogs.py:133
+msgid "HTML && Styles"
+msgstr "HTML && štýly"
+
+#: dialogs.py:134
+msgid "Metadata Jackets"
+msgstr "Obaly metadát"
+
+#: dialogs.py:135
+msgid "Covers"
+msgstr "Obálky"
+
+#: dialogs.py:136
+msgid "Metadata"
+msgstr "Metadáta"
+
+#: dialogs.py:142
+msgid "Clear all"
+msgstr "Vymazať všetko"
+
+#: dialogs.py:143
+msgid "Clear all selections"
+msgstr "Vymazať všetky výbery"
+
+#: dialogs.py:145
+msgid "Save"
+msgstr "Uložiť"
+
+#: dialogs.py:146
+msgid ""
+"Save the current selected settings for future recall with the Restore button"
+msgstr ""
+"Uloží aktuálne vybrané nastavenia na budúce vyvolanie tlačidlom Obnoviť"
+
+#: dialogs.py:148
+msgid "Restore"
+msgstr "Obnoviť"
+
+#: dialogs.py:149
+msgid "Restore your settings set when the Save button was last clicked"
+msgstr ""
+"Obnoví vaše nastavenia nastavené pri poslednom kliknutí na tlačidlo Uložiť"
+
+#: dialogs.py:179
+msgid "No options selected"
+msgstr "Nie sú vybrané žiadne možnosti"
+
+#: dialogs.py:180
+msgid "You must select at least one option to continue"
+msgstr "Ak chcete pokračovať, musíte vybrať aspoň jednu možnosť"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Working"
+msgstr "Pracuje sa"
+
+#: dialogs.py:207
+msgid "Queueing books for modifying ePubs"
+msgstr "Zaraďovanie kníh do frontu na úpravu súborov ePub"
+
+#: dialogs.py:223
+msgid "Queueing"
+msgstr "Zaraďovanie do frontu"
+
+#: dialogs.py:255
+msgid "Could not modify ePub for some books"
+msgstr "Nepodarilo sa upraviť ePub pre niektoré knihy"
+
+#: dialogs.py:256
+msgid ""
+"Could not modify %d of %d books, because no ePub source format was found."
+msgstr ""
+"Nepodarilo sa upraviť %d z %d kníh, pretože sa nenašiel žiadny zdrojový "
+"formát ePub."
+
+#: dialogs.py:276
+msgid "Adding %d modified ePubs"
+msgstr "Pridáva sa %d upravených súborov ePub"
+
+#: dialogs.py:297
+msgid "Adding"
+msgstr "Pridáva sa"
+
+#: dialogs.py:312
+msgid "ePub files updated"
+msgstr "Súbory ePub aktualizované"

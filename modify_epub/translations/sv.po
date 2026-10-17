@@ -1,0 +1,648 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Merarom <merarom@yahoo.es>, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:02+1000\n"
+"PO-Revision-Date: 2022-09-19 15:00+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:63
+msgid "Keyboard shortcuts"
+msgstr "Kortkommandon"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för detta tillägg"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinerad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:35
+msgid "Modify the contents of an ePub without a conversion"
+msgstr "Ändra innehållet i en ePub utan konvertering"
+
+#: action.py:35 dialogs.py:100
+msgid "Modify ePub"
+msgstr "Ändra ePub"
+
+#: action.py:47 action.py:58
+msgid "Cannot modify ePub"
+msgstr "Det går inte att ändra ePub"
+
+#: action.py:48
+msgid "You must select one or more books to perform this action."
+msgstr "Du måste markera en eller flera böcker för att utföra åtgärden."
+
+#: action.py:59
+msgid "No ePub available. First convert the book to ePub."
+msgstr "Ingen ePub är tillgänglig. Konvertera först boken till ePub."
+
+#: action.py:88
+msgid "Failed to modify ePubs"
+msgstr "Det gick inte att ändra ePub-filerna"
+
+#: action.py:91
+msgid "Modify ePub completed"
+msgstr "Ändringen av ePub är slutförd"
+
+#: action.py:95
+msgid ""
+"No ePub files were updated. If this isn't what you expected then press the "
+"Show details button to check for errors in the log."
+msgstr ""
+"Inga ePub-filer uppdaterades. Om detta inte var väntat klickar du på knappen"
+" Visa detaljer för att kontrollera om loggen innehåller fel."
+
+#: action.py:97
+msgid "Modify ePub changed no files"
+msgstr "Ändra ePub ändrade inga filer"
+
+#: action.py:105
+msgid ""
+"Modify ePub modified <b>%d ePub files(s)</b> into a temporary location. "
+"Proceed with replacing the versions in your library?"
+msgstr ""
+"Ändra ePub ändrade <b>%d ePub-fil(er)</b> på en tillfällig plats. Vill du "
+"ersätta versionerna i biblioteket?"
+
+#: action.py:110
+msgid "Modify ePub complete"
+msgstr "Ändringen av ePub är klar"
+
+#: action.py:110
+msgid "Modify log"
+msgstr "Ändringslogg"
+
+#: config.py:52
+msgid "Other options:"
+msgstr "Andra alternativ:"
+
+#: config.py:57
+msgid "Prompt to save epubs"
+msgstr "Fråga innan ePub-filer sparas"
+
+#: config.py:58
+msgid ""
+"Uncheck this option if you want changes applied without a confirmation "
+"dialog."
+msgstr ""
+"Avmarkera detta alternativ om ändringarna ska tillämpas utan en "
+"bekräftelsedialogruta."
+
+#: config.py:64
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"
+
+#: config.py:68
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: dialogs.py:36
+msgid "Remove iTunes files"
+msgstr "Ta bort iTunes-filer"
+
+#: dialogs.py:36
+msgid ""
+"Removes any iTunesMetadata.plist or artwork files\n"
+"added by viewing the ePub in iTunes"
+msgstr ""
+"Tar bort alla iTunesMetadata.plist- eller bildfiler\n"
+"som lagts till när ePub-filen visats i iTunes"
+
+#: dialogs.py:37
+msgid "Remove any bookmark files added by the calibre ebook viewer"
+msgstr "Ta bort alla bokmärkesfiler som lagts till av calibres e-boksläsare"
+
+#: dialogs.py:37
+msgid "Remove calibre bookmark files"
+msgstr "Ta bort calibres bokmärkesfiler"
+
+#: dialogs.py:38
+msgid "Remove OS artifact files"
+msgstr "Ta bort operativsystemets restfiler"
+
+#: dialogs.py:38
+msgid ""
+"Removes any OS artifacts like thumbs.db or .DS_Store\n"
+"that are not needed by the ePub"
+msgstr ""
+"Tar bort restfiler från operativsystemet, till exempel thumbs.db eller .DS_Store,\n"
+"som inte behövs i ePub-filen"
+
+#: dialogs.py:39
+msgid ""
+"Remove any unused jpg, png or gif image files that are not referenced\n"
+"from the html pages. This can occur as the result of careless ePub editing."
+msgstr ""
+"Ta bort oanvända jpg-, png- eller gif-bildfiler som inte refereras\n"
+"från HTML-sidorna. Detta kan uppstå efter slarvig ePub-redigering."
+
+#: dialogs.py:39
+msgid "Remove unused image files"
+msgstr "Ta bort oanvända bildfiler"
+
+#: dialogs.py:40
+msgid "De-indent (aka unpretty)"
+msgstr "Ta bort indrag (”unpretty”)"
+
+#: dialogs.py:40
+msgid "Remove indentation from HTML files"
+msgstr "Ta bort indrag från HTML-filer"
+
+#: dialogs.py:41
+msgid "Remove remnants of Kobo DRM"
+msgstr "Ta bort rester av Kobo-DRM"
+
+#: dialogs.py:41
+msgid "Strip Kobo DRM remnants"
+msgstr "Rensa bort rester av Kobo-DRM"
+
+#: dialogs.py:42
+msgid "Remove spans without attributes"
+msgstr "Ta bort span-element utan attribut"
+
+#: dialogs.py:42
+msgid "Strip spans"
+msgstr "Rensa bort span-element"
+
+#: dialogs.py:46
+msgid ""
+"Remove entries in the manifest for files listed that do not exist in the "
+"ePub"
+msgstr ""
+"Ta bort poster i manifestet för angivna filer som inte finns i ePub-filen"
+
+#: dialogs.py:46
+msgid "Remove missing file entries from manifest"
+msgstr "Ta bort poster för saknade filer från manifestet"
+
+#: dialogs.py:47
+msgid ""
+"Add files to manifest that are in the ePub but do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks)"
+msgstr ""
+"Lägg till filer i manifestet som finns i ePub-filen men saknas i .opf-manifestet\n"
+"(iTunes- och calibre-bokmärken undantas)"
+
+#: dialogs.py:47
+msgid "Add unmanifested files to manifest"
+msgstr "Lägg till filer som saknas i manifestet"
+
+#: dialogs.py:48
+msgid ""
+"Remove files from the ePub that do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks). Will not be applied if the add option is also checked"
+msgstr ""
+"Ta bort filer från ePub-filen som inte finns i .opf-manifestet\n"
+"(iTunes- och calibre-bokmärken undantas). Tillämpas inte om även alternativet för att lägga till är markerat"
+
+#: dialogs.py:48
+msgid "Remove unmanifested files from ePub"
+msgstr "Ta bort filer som saknas i manifestet från ePub-filen"
+
+#: dialogs.py:52
+msgid ""
+"Remove any Adobe .xpgt file margins to prevent them\n"
+"interfering with viewing"
+msgstr ""
+"Ta bort alla marginaler i Adobe .xpgt-filer så att de inte\n"
+"stör visningen"
+
+#: dialogs.py:52
+msgid "Remove margins from Adobe .xpgt files"
+msgstr "Ta bort marginaler från Adobe .xpgt-filer"
+
+#: dialogs.py:53
+msgid ""
+"Delete the .xpgt file completely from the epub\n"
+"as well as removing any links from the xhtml files"
+msgstr ""
+"Ta bort .xpgt-filen helt från ePub-filen\n"
+"och ta även bort alla länkar från XHTML-filerna"
+
+#: dialogs.py:53
+msgid "Remove Adobe .xpgt files and links"
+msgstr "Ta bort Adobe .xpgt-filer och länkar"
+
+#: dialogs.py:54
+msgid "Remove Adobe resource DRM meta tags"
+msgstr "Ta bort DRM-metataggar för Adobe-resurser"
+
+#: dialogs.py:54
+msgid ""
+"Remove any meta tags from the xhtml files that\n"
+"contain DRM urn identifiers."
+msgstr ""
+"Ta bort alla metataggar från XHTML-filerna som\n"
+"innehåller DRM-URN-identifierare."
+
+#: dialogs.py:55
+msgid "Remove page maps"
+msgstr "Ta bort sidkartor"
+
+#: dialogs.py:55
+msgid "Removes all types of page map files"
+msgstr "Tar bort alla typer av sidkartfiler"
+
+#: dialogs.py:56
+msgid "Remove ONLY Google Play page maps"
+msgstr "Ta ENDAST bort sidkartor från Google Play"
+
+#: dialogs.py:56
+msgid "Removes only Google Play page map files"
+msgstr "Tar endast bort sidkartfiler från Google Play"
+
+#: dialogs.py:60
+msgid "Flatten TOC hierarchy in NCX file"
+msgstr "Platta ut innehållsförteckningens hierarki i NCX-filen"
+
+#: dialogs.py:60
+msgid ""
+"Restructure the NCX to contain no nesting of navPoint items.\n"
+"For users whose devices do not support a hierarchical TOC."
+msgstr ""
+"Strukturera om NCX-filen så att navPoint-objekt inte är kapslade.\n"
+"För användare vars enheter inte stöder en hierarkisk innehållsförteckning."
+
+#: dialogs.py:61
+msgid ""
+"Any NCX entries that point to missing html pages will be removed.\n"
+"Orphaned NCX links can happen as a result of a calibre conversion for covers."
+msgstr ""
+"Alla NCX-poster som pekar på saknade HTML-sidor tas bort.\n"
+"Föräldralösa NCX-länkar kan uppstå efter en calibre-konvertering av omslag."
+
+#: dialogs.py:61
+msgid "Remove broken TOC entries in NCX file"
+msgstr "Ta bort trasiga poster i innehållsförteckningen i NCX-filen"
+
+#: dialogs.py:65
+msgid "Remove all calibre jackets, both legacy and current"
+msgstr "Ta bort alla calibre-metadatablad, både äldre och aktuella"
+
+#: dialogs.py:65
+msgid "Remove all metadata jackets"
+msgstr "Ta bort alla metadatablad"
+
+#: dialogs.py:66
+msgid "Remove jackets generated using versions of calibre prior to 0.6.50"
+msgstr "Ta bort metadatablad som skapats med calibre-versioner före 0.6.50"
+
+#: dialogs.py:66
+msgid "Remove legacy metadata jackets"
+msgstr "Ta bort äldre metadatablad"
+
+#: dialogs.py:67
+msgid "Add a jacket if not existing, or replace a non-legacy jacket"
+msgstr ""
+"Lägg till ett metadatablad om det saknas eller ersätt ett som inte är äldre"
+
+#: dialogs.py:67
+msgid "Add/replace metadata jacket"
+msgstr "Lägg till/ersätt metadatablad"
+
+#: dialogs.py:68
+msgid ""
+"If a jacket is added/replaced, it is placed at the end of the book instead "
+"of the beginning"
+msgstr ""
+"Om ett metadatablad läggs till eller ersätts placeras det i slutet av boken "
+"i stället för i början"
+
+#: dialogs.py:68
+msgid "Jacket at the end of the book"
+msgstr "Metadatablad i slutet av boken"
+
+#: dialogs.py:72
+msgid "Remove broken image pages"
+msgstr "Ta bort trasiga bildsidor"
+
+#: dialogs.py:72
+msgid ""
+"Remove html page(s) that contain only an image tag for which\n"
+"the linked image does not exist in the epub"
+msgstr ""
+"Ta bort HTML-sidor som endast innehåller en bildtagg där\n"
+"den länkade bilden inte finns i ePub-filen"
+
+#: dialogs.py:73
+msgid ""
+"If a cover page is identifiable in the epub then it is completely removed"
+msgstr "Om en omslagssida kan identifieras i ePub-filen tas den bort helt"
+
+#: dialogs.py:73
+msgid "Remove existing cover"
+msgstr "Ta bort befintligt omslag"
+
+#: dialogs.py:74
+msgid ""
+"If a cover page is identifiable in the epub then it is replaced\n"
+"otherwise a new cover page is inserted"
+msgstr ""
+"Om en omslagssida kan identifieras i ePub-filen ersätts den,\n"
+"annars infogas en ny omslagssida"
+
+#: dialogs.py:74
+msgid "Insert or replace cover"
+msgstr "Infoga eller ersätt omslag"
+
+#: dialogs.py:78
+msgid "Update metadata"
+msgstr "Uppdatera metadata"
+
+#: dialogs.py:78
+msgid ""
+"Update the manifest with the latest calibre metadata\n"
+"and replace an existing identifiable cover if possible."
+msgstr ""
+"Uppdatera manifestet med de senaste metadata från calibre\n"
+"och ersätt om möjligt ett befintligt identifierbart omslag."
+
+#: dialogs.py:79
+msgid ""
+"Remove any metadata from the .opf manifest that is not in the dc: namespace.\n"
+"Such entries are created by editing in Sigil or calibre updating metadata.\n"
+"Use this option if publishing your ePubs externally."
+msgstr ""
+"Ta bort alla metadata från .opf-manifestet som inte finns i namnrymden dc:.\n"
+"Sådana poster skapas vid redigering i Sigil eller när calibre uppdaterar metadata.\n"
+"Använd detta alternativ om du publicerar dina ePub-filer externt."
+
+#: dialogs.py:79
+msgid "Remove non dc: metadata elements"
+msgstr "Ta bort metadataelement utanför dc:"
+
+#: dialogs.py:83
+msgid "Encode HTML in UTF-8"
+msgstr "Koda HTML i UTF-8"
+
+#: dialogs.py:83
+msgid ""
+"Removes any existing <meta> charset tags on html pages and encodes in UTF-8.\n"
+"For use where ebook does not display quotes in calibre viewer correctly."
+msgstr ""
+"Tar bort befintliga <meta>-taggar för teckenuppsättning på HTML-sidor och kodar dem i UTF-8.\n"
+"Använd detta när citattecken i e-boken inte visas korrekt i calibres läsare."
+
+#: dialogs.py:84
+msgid "Remove embedded fonts"
+msgstr "Ta bort inbäddade teckensnitt"
+
+#: dialogs.py:84
+msgid ""
+"Remove embedded fonts from the manifest and their files to reduce ePub size.\n"
+"Also removes @font-face declarations."
+msgstr ""
+"Ta bort inbäddade teckensnitt från manifestet och deras filer för att minska ePub-filens storlek.\n"
+"Tar även bort @font-face-deklarationer."
+
+#: dialogs.py:85
+msgid "Modify @page and body margin styles"
+msgstr "Ändra marginalformat för @page och body"
+
+#: dialogs.py:85
+msgid ""
+"Replace margin styles for @page or body with your calibre defaults in a new @page style.\n"
+"If your calibre defaults are negative, removes the margin attributes and if necessary the CSS file."
+msgstr ""
+"Ersätt marginalformat för @page eller body med calibres standardvärden i ett nytt @page-format.\n"
+"Om calibres standardvärden är negativa tas marginalattributen och vid behov CSS-filen bort."
+
+#: dialogs.py:86
+msgid "Append extra CSS"
+msgstr "Lägg till extra CSS"
+
+#: dialogs.py:86
+msgid ""
+"Appends any Extra CSS you have defined in your calibre defaults to every .CSS file.\n"
+"If you have no extra CSS defined or text already contained then it does nothing."
+msgstr ""
+"Lägger till Extra CSS som du har definierat i calibres standardvärden i varje .css-fil.\n"
+"Om ingen extra CSS har definierats eller om texten redan finns görs ingenting."
+
+#: dialogs.py:87
+msgid "Convert html to use smart quotes and emdash characters"
+msgstr "Konvertera HTML till typografiska citattecken och tankstreck"
+
+#: dialogs.py:87
+msgid "Smarten punctuation"
+msgstr "Förbättra typografin"
+
+#: dialogs.py:88
+msgid "Remove any .js files and inline javascript blocks"
+msgstr "Ta bort alla .js-filer och infogade JavaScript-block"
+
+#: dialogs.py:88
+msgid "Remove inline javascript and files"
+msgstr "Ta bort infogad JavaScript och filer"
+
+#: dialogs.py:103
+msgid "Modify ePub Options"
+msgstr "Alternativ för Ändra ePub"
+
+#: dialogs.py:128
+msgid "Known Artifacts"
+msgstr "Kända restfiler"
+
+#: dialogs.py:129
+msgid "Manifest"
+msgstr "Manifest"
+
+#: dialogs.py:130
+msgid "Adobe"
+msgstr "Adobe"
+
+#: dialogs.py:131
+msgid "Table of Contents"
+msgstr "Innehållsförteckning"
+
+#: dialogs.py:133
+msgid "HTML && Styles"
+msgstr "HTML && format"
+
+#: dialogs.py:134
+msgid "Metadata Jackets"
+msgstr "Metadatablad"
+
+#: dialogs.py:135
+msgid "Covers"
+msgstr "Omslag"
+
+#: dialogs.py:136
+msgid "Metadata"
+msgstr "Metadata"
+
+#: dialogs.py:142
+msgid "Clear all"
+msgstr "Rensa alla"
+
+#: dialogs.py:143
+msgid "Clear all selections"
+msgstr "Rensa alla markeringar"
+
+#: dialogs.py:145
+msgid "Save"
+msgstr "Spara"
+
+#: dialogs.py:146
+msgid ""
+"Save the current selected settings for future recall with the Restore button"
+msgstr ""
+"Spara de aktuella valda inställningarna så att de senare kan hämtas med "
+"knappen Återställ"
+
+#: dialogs.py:148
+msgid "Restore"
+msgstr "Återställ"
+
+#: dialogs.py:149
+msgid "Restore your settings set when the Save button was last clicked"
+msgstr ""
+"Återställ de inställningar som gällde när du senast klickade på knappen "
+"Spara"
+
+#: dialogs.py:179
+msgid "No options selected"
+msgstr "Inga alternativ valda"
+
+#: dialogs.py:180
+msgid "You must select at least one option to continue"
+msgstr "Du måste välja minst ett alternativ för att fortsätta"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Working"
+msgstr "Arbetar"
+
+#: dialogs.py:207
+msgid "Queueing books for modifying ePubs"
+msgstr "Lägger böcker i kö för ändring av ePub-filer"
+
+#: dialogs.py:223
+msgid "Queueing"
+msgstr "Köar"
+
+#: dialogs.py:255
+msgid "Could not modify ePub for some books"
+msgstr "Det gick inte att ändra ePub-filen för vissa böcker"
+
+#: dialogs.py:256
+msgid ""
+"Could not modify %d of %d books, because no ePub source format was found."
+msgstr ""
+"Det gick inte att ändra %d av %d böcker eftersom inget ePub-källformat "
+"hittades."
+
+#: dialogs.py:276
+msgid "Adding %d modified ePubs"
+msgstr "Lägger till %d ändrade ePub-filer"
+
+#: dialogs.py:297
+msgid "Adding"
+msgstr "Lägger till"
+
+#: dialogs.py:312
+msgid "ePub files updated"
+msgstr "ePub-filer uppdaterades"

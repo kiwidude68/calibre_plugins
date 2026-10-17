@@ -1,0 +1,604 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Junghee Lee <daemul72@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:02+1000\n"
+"PO-Revision-Date: 2022-09-19 15:00+0000\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
+"Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:63
+msgid "Keyboard shortcuts"
+msgstr "키보드 단축키"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "지금 calibre 재시작"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "다음 플러그인 환경 설정:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "지우기"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "이 플러그인에 대한 모든 설정 지우기"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 변경하시겠습니까?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "다른 서재의 설정이나 calibre 플러그인 폴더의 JSON 파일에 저장된 설정은 변경되지 않습니다."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "이후 calibre를 다시 시작해야 합니다."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "설정 변경됨"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "이 서재에서 이 플러그인의 설정이 변경되었습니다."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "지금 calibre를 다시 시작하세요."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 지우시겠습니까?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "설정 삭제됨"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "정의되지 않음"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "다시 시작 필요"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용하려면 calibre를 다시 시작해야 합니다!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "새 열 만들기"
+
+#: action.py:35
+msgid "Modify the contents of an ePub without a conversion"
+msgstr "변환 없이 EPUB 내용을 수정"
+
+#: action.py:35 dialogs.py:100
+msgid "Modify ePub"
+msgstr "EPUB 수정"
+
+#: action.py:47 action.py:58
+msgid "Cannot modify ePub"
+msgstr "EPUB를 수정할 수 없음"
+
+#: action.py:48
+msgid "You must select one or more books to perform this action."
+msgstr "이 작업을 수행하려면 책을 하나 이상 선택해야 합니다."
+
+#: action.py:59
+msgid "No ePub available. First convert the book to ePub."
+msgstr "사용 가능한 EPUB가 없습니다. 먼저 책을 EPUB로 변환하세요."
+
+#: action.py:88
+msgid "Failed to modify ePubs"
+msgstr "EPUB 수정 실패"
+
+#: action.py:91
+msgid "Modify ePub completed"
+msgstr "EPUB 수정 완료"
+
+#: action.py:95
+msgid ""
+"No ePub files were updated. If this isn't what you expected then press the "
+"Show details button to check for errors in the log."
+msgstr "업데이트된 EPUB 파일이 없습니다. 예상과 다르다면 '세부 정보 표시' 버튼을 눌러 로그의 오류를 확인하세요."
+
+#: action.py:97
+msgid "Modify ePub changed no files"
+msgstr "EPUB 수정 결과 변경된 파일 없음"
+
+#: action.py:105
+msgid ""
+"Modify ePub modified <b>%d ePub files(s)</b> into a temporary location. "
+"Proceed with replacing the versions in your library?"
+msgstr "EPUB 수정으로 <b>%d개 EPUB 파일</b>을 임시 위치에 수정했습니다. 서재의 버전을 바꾸시겠습니까?"
+
+#: action.py:110
+msgid "Modify ePub complete"
+msgstr "EPUB 수정 완료"
+
+#: action.py:110
+msgid "Modify log"
+msgstr "수정 로그"
+
+#: config.py:52
+msgid "Other options:"
+msgstr "기타 옵션:"
+
+#: config.py:57
+msgid "Prompt to save epubs"
+msgstr "EPUB 저장 여부 묻기"
+
+#: config.py:58
+msgid ""
+"Uncheck this option if you want changes applied without a confirmation "
+"dialog."
+msgstr "확인 대화상자 없이 변경을 적용하려면 이 옵션을 해제하십시오."
+
+#: config.py:64
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
+
+#: config.py:68
+msgid "&Help"
+msgstr "도움말(&H)"
+
+#: dialogs.py:36
+msgid "Remove iTunes files"
+msgstr "iTunes 파일 제거"
+
+#: dialogs.py:36
+msgid ""
+"Removes any iTunesMetadata.plist or artwork files\n"
+"added by viewing the ePub in iTunes"
+msgstr "iTunes에서 ePub를 볼 때 추가된 iTunesMetadata.plist 또는 아트워크 파일을 제거합니다"
+
+#: dialogs.py:37
+msgid "Remove any bookmark files added by the calibre ebook viewer"
+msgstr "calibre 전자책 뷰어가 추가한 북마크 파일 제거"
+
+#: dialogs.py:37
+msgid "Remove calibre bookmark files"
+msgstr "calibre 북마크 파일 제거"
+
+#: dialogs.py:38
+msgid "Remove OS artifact files"
+msgstr "OS 잔여 파일 제거"
+
+#: dialogs.py:38
+msgid ""
+"Removes any OS artifacts like thumbs.db or .DS_Store\n"
+"that are not needed by the ePub"
+msgstr "ePub에 필요하지 않은 thumbs.db, .DS_Store 같은 OS 잔여 파일을 제거합니다"
+
+#: dialogs.py:39
+msgid ""
+"Remove any unused jpg, png or gif image files that are not referenced\n"
+"from the html pages. This can occur as the result of careless ePub editing."
+msgstr ""
+"HTML 페이지에서 참조되지 않는 사용하지 않는 jpg, png, gif 이미지 파일을 제거합니다.\n"
+"부주의한 EPUB 편집으로 이런 일이 생길 수 있습니다."
+
+#: dialogs.py:39
+msgid "Remove unused image files"
+msgstr "사용하지 않는 이미지 파일 제거"
+
+#: dialogs.py:40
+msgid "De-indent (aka unpretty)"
+msgstr "들여쓰기 제거(비정리)"
+
+#: dialogs.py:40
+msgid "Remove indentation from HTML files"
+msgstr "HTML 파일에서 들여쓰기 제거"
+
+#: dialogs.py:41
+msgid "Remove remnants of Kobo DRM"
+msgstr "Kobo DRM 잔재 제거"
+
+#: dialogs.py:41
+msgid "Strip Kobo DRM remnants"
+msgstr "Kobo DRM 잔재 제거"
+
+#: dialogs.py:42
+msgid "Remove spans without attributes"
+msgstr "속성 없는 span 제거"
+
+#: dialogs.py:42
+msgid "Strip spans"
+msgstr "span 제거"
+
+#: dialogs.py:46
+msgid ""
+"Remove entries in the manifest for files listed that do not exist in the "
+"ePub"
+msgstr "ePub에 없는 파일에 대한 manifest 항목 제거"
+
+#: dialogs.py:46
+msgid "Remove missing file entries from manifest"
+msgstr "manifest에서 누락 파일 항목 제거"
+
+#: dialogs.py:47
+msgid ""
+"Add files to manifest that are in the ePub but do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks)"
+msgstr ""
+"ePub에는 있지만 .opf manifest에는 없는 파일을 manifest에 추가합니다\n"
+"(iTunes/calibre 북마크 제외)"
+
+#: dialogs.py:47
+msgid "Add unmanifested files to manifest"
+msgstr "manifest에 없는 파일을 manifest에 추가"
+
+#: dialogs.py:48
+msgid ""
+"Remove files from the ePub that do not exist in the .opf manifest\n"
+"(excluding iTunes/calibre bookmarks). Will not be applied if the add option is also checked"
+msgstr ""
+"ePub에서 .opf manifest에 없는 파일을 제거합니다\n"
+"(iTunes/calibre 북마크 제외). 추가 옵션도 선택된 경우에는 적용되지 않습니다."
+
+#: dialogs.py:48
+msgid "Remove unmanifested files from ePub"
+msgstr "ePub에서 manifest 미등록 파일 제거"
+
+#: dialogs.py:52
+msgid ""
+"Remove any Adobe .xpgt file margins to prevent them\n"
+"interfering with viewing"
+msgstr "표시에 방해되지 않도록 Adobe .xpgt 파일 여백 제거"
+
+#: dialogs.py:52
+msgid "Remove margins from Adobe .xpgt files"
+msgstr "Adobe .xpgt 파일의 여백 제거"
+
+#: dialogs.py:53
+msgid ""
+"Delete the .xpgt file completely from the epub\n"
+"as well as removing any links from the xhtml files"
+msgstr "ePub에서 .xpgt 파일을 완전히 삭제하고 xhtml 파일의 링크도 제거합니다"
+
+#: dialogs.py:53
+msgid "Remove Adobe .xpgt files and links"
+msgstr "Adobe .xpgt 파일 및 링크 제거"
+
+#: dialogs.py:54
+msgid "Remove Adobe resource DRM meta tags"
+msgstr "Adobe 리소스 DRM 메타 태그 제거"
+
+#: dialogs.py:54
+msgid ""
+"Remove any meta tags from the xhtml files that\n"
+"contain DRM urn identifiers."
+msgstr "DRM URN 식별자를 포함하는 xhtml 파일의 메타 태그를 제거합니다."
+
+#: dialogs.py:55
+msgid "Remove page maps"
+msgstr "페이지 맵 제거"
+
+#: dialogs.py:55
+msgid "Removes all types of page map files"
+msgstr "모든 유형의 페이지 맵 파일을 제거합니다"
+
+#: dialogs.py:56
+msgid "Remove ONLY Google Play page maps"
+msgstr "Google Play 페이지 맵만 제거"
+
+#: dialogs.py:56
+msgid "Removes only Google Play page map files"
+msgstr "Google Play 페이지 맵 파일만 제거합니다"
+
+#: dialogs.py:60
+msgid "Flatten TOC hierarchy in NCX file"
+msgstr "NCX 파일의 TOC 계층 평탄화"
+
+#: dialogs.py:60
+msgid ""
+"Restructure the NCX to contain no nesting of navPoint items.\n"
+"For users whose devices do not support a hierarchical TOC."
+msgstr ""
+"NCX를 다시 구성해 navPoint 항목이 중첩되지 않도록 합니다.\n"
+"계층형 TOC를 지원하지 않는 기기용입니다."
+
+#: dialogs.py:61
+msgid ""
+"Any NCX entries that point to missing html pages will be removed.\n"
+"Orphaned NCX links can happen as a result of a calibre conversion for covers."
+msgstr ""
+"없는 HTML 페이지를 가리키는 NCX 항목은 제거됩니다.\n"
+"표지용 calibre 변환 과정에서 고아 NCX 링크가 생길 수 있습니다."
+
+#: dialogs.py:61
+msgid "Remove broken TOC entries in NCX file"
+msgstr "NCX 파일에서 깨진 TOC 항목 제거"
+
+#: dialogs.py:65
+msgid "Remove all calibre jackets, both legacy and current"
+msgstr "기존/현재 calibre 재킷 모두 제거"
+
+#: dialogs.py:65
+msgid "Remove all metadata jackets"
+msgstr "모든 메타데이터 재킷 제거"
+
+#: dialogs.py:66
+msgid "Remove jackets generated using versions of calibre prior to 0.6.50"
+msgstr "calibre 0.6.50 이전 버전에서 생성된 재킷 제거"
+
+#: dialogs.py:66
+msgid "Remove legacy metadata jackets"
+msgstr "구형 메타데이터 재킷 제거"
+
+#: dialogs.py:67
+msgid "Add a jacket if not existing, or replace a non-legacy jacket"
+msgstr "재킷이 없으면 추가하고, 구형이 아닌 재킷은 교체"
+
+#: dialogs.py:67
+msgid "Add/replace metadata jacket"
+msgstr "메타데이터 재킷 추가/교체"
+
+#: dialogs.py:68
+msgid ""
+"If a jacket is added/replaced, it is placed at the end of the book instead "
+"of the beginning"
+msgstr "재킷을 추가/교체하면 책의 앞이 아니라 끝에 배치합니다"
+
+#: dialogs.py:68
+msgid "Jacket at the end of the book"
+msgstr "책 끝에 재킷 배치"
+
+#: dialogs.py:72
+msgid "Remove broken image pages"
+msgstr "깨진 이미지 페이지 제거"
+
+#: dialogs.py:72
+msgid ""
+"Remove html page(s) that contain only an image tag for which\n"
+"the linked image does not exist in the epub"
+msgstr "연결된 이미지가 ePub에 없고 이미지 태그만 포함한 HTML 페이지를 제거합니다"
+
+#: dialogs.py:73
+msgid ""
+"If a cover page is identifiable in the epub then it is completely removed"
+msgstr "ePub에서 표지 페이지를 식별할 수 있으면 완전히 제거합니다"
+
+#: dialogs.py:73
+msgid "Remove existing cover"
+msgstr "기존 표지 제거"
+
+#: dialogs.py:74
+msgid ""
+"If a cover page is identifiable in the epub then it is replaced\n"
+"otherwise a new cover page is inserted"
+msgstr ""
+"ePub에서 표지 페이지를 식별할 수 있으면 교체하고,\n"
+"그렇지 않으면 새 표지 페이지를 삽입합니다"
+
+#: dialogs.py:74
+msgid "Insert or replace cover"
+msgstr "표지 삽입 또는 교체"
+
+#: dialogs.py:78
+msgid "Update metadata"
+msgstr "메타데이터 업데이트"
+
+#: dialogs.py:78
+msgid ""
+"Update the manifest with the latest calibre metadata\n"
+"and replace an existing identifiable cover if possible."
+msgstr "최신 calibre 메타데이터로 manifest를 업데이트하고 가능하면 기존 표지를 교체합니다."
+
+#: dialogs.py:79
+msgid ""
+"Remove any metadata from the .opf manifest that is not in the dc: namespace.\n"
+"Such entries are created by editing in Sigil or calibre updating metadata.\n"
+"Use this option if publishing your ePubs externally."
+msgstr ""
+"dc: 네임스페이스에 속하지 않는 .opf manifest의 메타데이터를 제거합니다.\n"
+"이런 항목은 Sigil 편집 또는 calibre 메타데이터 업데이트로 생길 수 있습니다.\n"
+"ePub를 외부에 배포할 때 이 옵션을 사용하십시오."
+
+#: dialogs.py:79
+msgid "Remove non dc: metadata elements"
+msgstr "dc:가 아닌 메타데이터 요소 제거"
+
+#: dialogs.py:83
+msgid "Encode HTML in UTF-8"
+msgstr "HTML을 UTF-8로 인코딩"
+
+#: dialogs.py:83
+msgid ""
+"Removes any existing <meta> charset tags on html pages and encodes in UTF-8.\n"
+"For use where ebook does not display quotes in calibre viewer correctly."
+msgstr ""
+"HTML 페이지의 기존 <meta> charset 태그를 제거하고 UTF-8로 인코딩합니다.\n"
+"calibre 뷰어에서 따옴표가 올바르게 표시되지 않을 때 사용합니다."
+
+#: dialogs.py:84
+msgid "Remove embedded fonts"
+msgstr "내장 글꼴 제거"
+
+#: dialogs.py:84
+msgid ""
+"Remove embedded fonts from the manifest and their files to reduce ePub size.\n"
+"Also removes @font-face declarations."
+msgstr ""
+"EPUB 크기를 줄이기 위해 manifest와 해당 파일에서 내장 글꼴을 제거합니다.\n"
+"@font-face 선언도 함께 제거합니다."
+
+#: dialogs.py:85
+msgid "Modify @page and body margin styles"
+msgstr "@page 및 body 여백 스타일 수정"
+
+#: dialogs.py:85
+msgid ""
+"Replace margin styles for @page or body with your calibre defaults in a new @page style.\n"
+"If your calibre defaults are negative, removes the margin attributes and if necessary the CSS file."
+msgstr ""
+"@page 또는 body의 여백 스타일을 새 @page 스타일의 calibre 기본값으로 바꿉니다.\n"
+"calibre 기본값이 음수이면 여백 속성과 필요 시 CSS 파일을 제거합니다."
+
+#: dialogs.py:86
+msgid "Append extra CSS"
+msgstr "추가 CSS 덧붙이기"
+
+#: dialogs.py:86
+msgid ""
+"Appends any Extra CSS you have defined in your calibre defaults to every .CSS file.\n"
+"If you have no extra CSS defined or text already contained then it does nothing."
+msgstr ""
+"calibre 기본값에 정의한 추가 CSS를 모든 .CSS 파일 끝에 덧붙입니다.\n"
+"추가 CSS가 없거나 이미 해당 텍스트가 있으면 아무 작업도 하지 않습니다."
+
+#: dialogs.py:87
+msgid "Convert html to use smart quotes and emdash characters"
+msgstr "HTML을 스마트 따옴표와 emdash 문자 사용으로 변환"
+
+#: dialogs.py:87
+msgid "Smarten punctuation"
+msgstr "문장부호 다듬기"
+
+#: dialogs.py:88
+msgid "Remove any .js files and inline javascript blocks"
+msgstr "모든 .js 파일과 인라인 JavaScript 블록 제거"
+
+#: dialogs.py:88
+msgid "Remove inline javascript and files"
+msgstr "인라인 JavaScript 및 파일 제거"
+
+#: dialogs.py:103
+msgid "Modify ePub Options"
+msgstr "EPUB 수정 옵션"
+
+#: dialogs.py:128
+msgid "Known Artifacts"
+msgstr "알려진 잔여물"
+
+#: dialogs.py:129
+msgid "Manifest"
+msgstr "Manifest"
+
+#: dialogs.py:130
+msgid "Adobe"
+msgstr "Adobe"
+
+#: dialogs.py:131
+msgid "Table of Contents"
+msgstr "목차"
+
+#: dialogs.py:133
+msgid "HTML && Styles"
+msgstr "HTML 및 스타일"
+
+#: dialogs.py:134
+msgid "Metadata Jackets"
+msgstr "메타데이터 재킷"
+
+#: dialogs.py:135
+msgid "Covers"
+msgstr "표지"
+
+#: dialogs.py:136
+msgid "Metadata"
+msgstr "메타데이터"
+
+#: dialogs.py:142
+msgid "Clear all"
+msgstr "모두 지우기"
+
+#: dialogs.py:143
+msgid "Clear all selections"
+msgstr "선택 모두 지우기"
+
+#: dialogs.py:145
+msgid "Save"
+msgstr "저장"
+
+#: dialogs.py:146
+msgid ""
+"Save the current selected settings for future recall with the Restore button"
+msgstr "현재 선택된 설정을 저장하여 나중에 복원 버튼으로 불러옵니다"
+
+#: dialogs.py:148
+msgid "Restore"
+msgstr "복원"
+
+#: dialogs.py:149
+msgid "Restore your settings set when the Save button was last clicked"
+msgstr "마지막으로 저장 버튼을 눌렀을 때의 설정을 복원합니다"
+
+#: dialogs.py:179
+msgid "No options selected"
+msgstr "선택한 옵션이 없습니다"
+
+#: dialogs.py:180
+msgid "You must select at least one option to continue"
+msgstr "계속하려면 최소 한 개의 옵션을 선택해야 합니다"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Cancel"
+msgstr "취소"
+
+#: dialogs.py:206 dialogs.py:275
+msgid "Working"
+msgstr "작업 중"
+
+#: dialogs.py:207
+msgid "Queueing books for modifying ePubs"
+msgstr "EPUB 수정을 위해 책을 대기열에 추가 중"
+
+#: dialogs.py:223
+msgid "Queueing"
+msgstr "대기열에 추가 중"
+
+#: dialogs.py:255
+msgid "Could not modify ePub for some books"
+msgstr "일부 책의 ePub를 수정할 수 없음"
+
+#: dialogs.py:256
+msgid ""
+"Could not modify %d of %d books, because no ePub source format was found."
+msgstr "EPUB 원본 형식을 찾지 못해 %d권 중 %d권을 수정할 수 없습니다."
+
+#: dialogs.py:276
+msgid "Adding %d modified ePubs"
+msgstr "수정된 EPUB %d개 추가 중"
+
+#: dialogs.py:297
+msgid "Adding"
+msgstr "추가 중"
+
+#: dialogs.py:312
+msgid "ePub files updated"
+msgstr "EPUB 파일 업데이트됨"

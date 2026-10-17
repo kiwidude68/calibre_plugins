@@ -103,7 +103,7 @@ msgstr "需要重启"
 #: ..\common\common_widgets.py:161
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
-msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre！"
+msgstr "未找到名称图片 - 使用此插件之前必须重新启动 Calibre！"
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"

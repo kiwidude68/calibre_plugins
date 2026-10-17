@@ -1,5 +1,15 @@
 # Modify ePub Change Log
 
+## [1.8.10] - 2026-10-17
+### Added
+- Chinese (China) translation
+- Czech translation
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+
 ## [1.8.9] - 2026-02-09
 ### Added
 - Arabic translation
