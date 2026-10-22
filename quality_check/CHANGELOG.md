@@ -1,5 +1,9 @@
 # Quality Check Change Log
 
+## [1.15.0] - 2026-10-22
+### Added
+- Search epub now has a 'Does not contain' checkbox to be used instead of negative lookahead regexes (which do not work).
+
 ## [1.14.8] - 2026-10-04
 ### Added
 - Czech translation

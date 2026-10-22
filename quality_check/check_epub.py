@@ -207,7 +207,12 @@ class EpubCheck(BaseCheck):
         re_options = re.UNICODE + re.DOTALL
         if self.search_opts['ignore_case']:
             re_options |= re.IGNORECASE
-        self.log('*** Searching for expression: <span style="color:blue"><b>%s</b></span> ***' % esc(self.search_opts['previous_finds'][0]))
+        if self.search_opts['exclude_matches']:
+            search_description = _('Finding ePubs that do not contain the expression in selected scopes')
+        else:
+            search_description = _('Searching for expression')
+        self.log('*** %s: <span style="color:blue"><b>%s</b></span> ***' %
+                 (search_description, esc(self.search_opts['previous_finds'][0])))
         self.search_expression = re.compile(self.search_opts['previous_finds'][0], re_options)
 
         def evaluate_book(book_id, db):
@@ -244,7 +249,8 @@ class EpubCheck(BaseCheck):
                 return bool(matches)
 
             try:
-                show_all_matches = self.search_opts['show_all_matches']
+                exclude_matches = self.search_opts['exclude_matches']
+                show_all_matches = self.search_opts['show_all_matches'] and not exclude_matches
                 with ZipFile(path_to_book, 'r') as zf:
                     contents = zf.namelist()
                     log_lines = []
@@ -273,12 +279,17 @@ class EpubCheck(BaseCheck):
                                 if not show_all_matches:
                                     break
                     if log_lines:
+                        if exclude_matches:
+                            return False
                         if show_all_matches:
                             self.log('%s '%len(log_lines) + _('Matches in book: <b>%s</b>')%get_title_authors_text(db, book_id))
                         else:
                             self.log(_('First match in book: <b>%s</b>')%get_title_authors_text(db, book_id))
                         for log_line in log_lines:
                             self.log(log_line)
+                        return True
+                    if exclude_matches:
+                        self.log(_('Expression not found in selected scopes for book: <b>%s</b>')%get_title_authors_text(db, book_id))
                         return True
                 return False
 

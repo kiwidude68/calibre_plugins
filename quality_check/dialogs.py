@@ -539,6 +539,7 @@ class SearchEpubDialog(SizePersistedDialog):
 
         self.ignore_case_checkbox.setChecked(search_opts.get('ignore_case', True))
         self.show_all_matches_checkbox.setChecked(search_opts.get('show_all_matches', False))
+        self.exclude_matches_checkbox.setChecked(search_opts.get('exclude_matches', False))
         self.scope_html_checkbox.setChecked(search_opts.get('scope_html', True))
         self.scope_css_checkbox.setChecked(search_opts.get('scope_css', False))
         self.scope_plaintext_checkbox.setChecked(search_opts.get('scope_plaintext', False))
@@ -582,6 +583,10 @@ class SearchEpubDialog(SizePersistedDialog):
         self.show_all_matches_checkbox.setToolTip(_('If unchecked, the search of each ePub is stopped as soon as the first match is found.\n'
                                                   'If checked, all occurrences will be displayed in the log but it will run much slower.'))
         find_layout.addWidget(self.show_all_matches_checkbox)
+        self.exclude_matches_checkbox = QCheckBox(_('Does not contain'), self)
+        self.exclude_matches_checkbox.setToolTip(_('Include an ePub only when the expression is not found in any file within the selected scopes.'))
+        find_layout.addWidget(self.exclude_matches_checkbox)
+        self.exclude_matches_checkbox.toggled.connect(self.show_all_matches_checkbox.setDisabled)
 
         layout.addSpacing(5)
         scope_group = QGroupBox(_('Scope'), self)
@@ -647,6 +652,7 @@ class SearchEpubDialog(SizePersistedDialog):
         search_opts['previous_finds'] = self.previous_finds[:max_search_items]
         search_opts['ignore_case'] = self.ignore_case_checkbox.isChecked()
         search_opts['show_all_matches'] = self.show_all_matches_checkbox.isChecked()
+        search_opts['exclude_matches'] = self.exclude_matches_checkbox.isChecked()
         search_opts['scope_html'] = self.scope_html_checkbox.isChecked()
         search_opts['scope_css'] = self.scope_css_checkbox.isChecked()
         search_opts['scope_plaintext'] = self.scope_plaintext_checkbox.isChecked()
