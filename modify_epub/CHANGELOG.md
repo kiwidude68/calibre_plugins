@@ -1,5 +1,9 @@
 # Modify ePub Change Log
 
+## [1.8.11] - 2026-10-22
+### Fixed
+- Avoid errors when CSS margin values are non-numeric such as `auto`.
+
 ## [1.8.10] - 2026-10-17
 ### Added
 - Chinese (China) translation

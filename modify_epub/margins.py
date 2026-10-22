@@ -64,12 +64,18 @@ class MarginsUpdater(object):
         for style in stylelist:
             if not style.strip():
                 continue
-            style = [s.strip() for s in style.split(':')]
+            style = [s.strip() for s in style.split(':', 1)]
+            if len(style) < 2:
+                continue
             property_type = re.sub('-','_', style[0])
-            value = float(re.sub(r'[^\d.]+', '', style[1]))
-
             if property_type == 'margin': # Not a calibre set value, so we will just replace the whole value
                 return True
+            if not property_type.startswith('margin_'):
+                continue
+            numeric_value = re.match(r'^\s*([+-]?(?:\d+(?:\.\d*)?|\.\d+))[a-z%]*\s*$', style[1])
+            if not numeric_value:
+                return True
+            value = float(numeric_value.group(1))
             if value < 0:  # Definitely not going to match, since negative values reserved to omit margins
                 return True
             if property_type.startswith('margin_'):
