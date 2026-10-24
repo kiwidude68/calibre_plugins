@@ -6,13 +6,14 @@
 # Victor, 2022
 # Caarmi, 2022
 # ashed <craysy@gmail.com>, 2024
+# Andrei Stepanov, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 18:01+1000\n"
 "PO-Revision-Date: 2022-09-19 15:03+0000\n"
-"Last-Translator: ashed <craysy@gmail.com>, 2024\n"
+"Last-Translator: Andrei Stepanov, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -252,7 +253,7 @@ msgstr "Сократить свой выбор не более чем до 50 с
 
 #: action.py:565 config.py:544 config.py:1193 dialogs.py:1782 dialogs.py:2470
 msgid "Are you sure?"
-msgstr "Вы уверены?"
+msgstr "Уверены?"
 
 #: action.py:566
 msgid ""
@@ -264,7 +265,7 @@ msgstr ""
 
 #: action.py:568
 msgid "Are you sure you want to remove the link(s)?"
-msgstr "Вы уверены, что хотите удалить ссылки?"
+msgstr "Уверены, что хотите удалить ссылки?"
 
 #: action.py:577
 msgid "Removing Goodreads ids from books"
@@ -476,11 +477,11 @@ msgstr "Удаление действия столбца '{0}', так как с
 
 #: config.py:541
 msgid "Are you sure you want to delete this action?"
-msgstr "Вы уверены, что хотите удалить это действие?"
+msgstr "Уверены, что хотите удалить это действие?"
 
 #: config.py:543
 msgid "Are you sure you want to delete the selected {0} actions?"
-msgstr "Вы уверены, что хотите удалить выбранные {0} действия?"
+msgstr "Уверены, что хотите удалить выбранные {0} действия?"
 
 #: config.py:599
 msgid "Edit Shelf Add Actions"
@@ -1360,4 +1361,4 @@ msgid ""
 "ignored.<p><p>Are you sure you want to continue?"
 msgstr ""
 "В этом списке есть книги, ещё не связанные с calibre, которые будут "
-"проигнорированы.<p><p> Вы уверены, что хотите продолжить?"
+"проигнорированы.<p><p> Уверены, что хотите продолжить?"

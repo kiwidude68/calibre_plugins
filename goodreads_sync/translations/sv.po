@@ -1,0 +1,1373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Merarom <merarom@yahoo.es>, 2022
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:01+1000\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:1049
+msgid "Keyboard shortcuts"
+msgstr "Kortkommandon"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för detta tillägg"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinerad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:53
+msgid "Goodreads"
+msgstr "Goodreads"
+
+#: action.py:94 dialogs.py:1598
+msgid "Add to shelf"
+msgstr "Lägg till på hylla"
+
+#: action.py:96 dialogs.py:1598
+msgid "Remove from shelf"
+msgstr "Ta bort från hylla"
+
+#: action.py:98
+msgid "Update reading progress"
+msgstr "Uppdatera läsförlopp"
+
+#: action.py:101
+msgid "Sync from shelf"
+msgstr "Synkronisera från hylla"
+
+#: action.py:104
+msgid "View shelf"
+msgstr "Visa hylla"
+
+#: action.py:108
+msgid "Link to Goodreads"
+msgstr "Länka till Goodreads"
+
+#: action.py:109
+msgid "Add, replace or clear link to a Goodreads book"
+msgstr "Lägg till, ersätt eller rensa länken till en Goodreads-bok"
+
+#: action.py:111
+msgid "Linked book"
+msgstr "Länkad bok"
+
+#: action.py:113
+msgid "View linked book"
+msgstr "Visa länkad bok"
+
+#: action.py:114
+msgid "Open a web browser page showing the linked Goodreads book"
+msgstr "Öppna en webbsida som visar den länkade Goodreads-boken"
+
+#: action.py:116 dialogs.py:250
+msgid "Switch Goodreads Edition"
+msgstr "Byt Goodreads-utgåva"
+
+#: action.py:117
+msgid "Link to a different edition of a Goodreads book"
+msgstr "Länka till en annan utgåva av en Goodreads-bok"
+
+#: action.py:124
+msgid "Remove link"
+msgstr "Ta bort länk"
+
+#: action.py:125
+msgid "Clear the link with Goodreads"
+msgstr "Rensa länken till Goodreads"
+
+#: action.py:129
+msgid "&Customize plugin"
+msgstr "&Anpassa insticksmodul"
+
+#: action.py:131
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: action.py:147 action.py:179 action.py:208 action.py:214
+msgid "User: {0}"
+msgstr "Användare: {0}"
+
+#: action.py:205 action.py:219
+msgid "Download tags from shelves"
+msgstr "Hämta taggar från hyllor"
+
+#: action.py:206 action.py:209 action.py:220
+msgid "Download shelves your book is on as tags"
+msgstr "Hämta hyllorna som boken finns på som taggar"
+
+#: action.py:211 action.py:221
+msgid "Upload tags as shelves"
+msgstr "Överför taggar som hyllor"
+
+#: action.py:212 action.py:215 action.py:222
+msgid "Add book to shelves represented by your tags"
+msgstr "Lägg till boken på hyllor som motsvaras av dina taggar"
+
+#: action.py:267
+msgid "Added {0} books to shelf"
+msgstr "Lade till {0} böcker på hyllan"
+
+#: action.py:269
+msgid "Removed {0} books from shelf"
+msgstr "Tog bort {0} böcker från hyllan"
+
+#: action.py:293
+msgid "Updated progress for {0} books"
+msgstr "Uppdaterade läsförloppet för {0} böcker"
+
+#: action.py:301 action.py:325
+msgid "Syncing books from shelves"
+msgstr "Synkroniserar böcker från hyllor"
+
+#: action.py:304 action.py:313
+msgid "Unable to Sync"
+msgstr "Det gick inte att synkronisera"
+
+#: action.py:305
+msgid "You must specify sync actions or columns for at least one shelf first."
+msgstr ""
+"Du måste först ange synkroniseringsåtgärder eller kolumner för minst en "
+"hylla."
+
+#: action.py:314
+msgid "Unable to retrieve books for selected shelves."
+msgstr "Det gick inte att hämta böcker för de valda hyllorna."
+
+#: action.py:324
+msgid "Synchronised {0} books from shelf"
+msgstr "Synkroniserade {0} böcker från hyllan"
+
+#: action.py:326
+msgid "Updating books"
+msgstr "Uppdaterar böcker"
+
+#: action.py:327
+msgid "Book: %v"
+msgstr "Bok: %v"
+
+#: action.py:380 action.py:513
+msgid "Updating book"
+msgstr "Uppdaterar bok"
+
+#: action.py:535
+msgid "Too Many Rows"
+msgstr "För många rader"
+
+#: action.py:536
+msgid "Reduce your selection to at most 50 rows."
+msgstr "Minska urvalet till högst 50 rader."
+
+#: action.py:565 config.py:544 config.py:1193 dialogs.py:1782 dialogs.py:2470
+msgid "Are you sure?"
+msgstr "Är du säker?"
+
+#: action.py:566
+msgid ""
+"Removing any linked Goodreads ids may result in you having to manually "
+"select the link again for these book(s)."
+msgstr ""
+"Om länkade Goodreads-ID:n tas bort kan du behöva välja länken manuellt igen "
+"för dessa böcker."
+
+#: action.py:568
+msgid "Are you sure you want to remove the link(s)?"
+msgstr "Är du säker på att du vill ta bort länkarna?"
+
+#: action.py:577
+msgid "Removing Goodreads ids from books"
+msgstr "Tar bort Goodreads-ID:n från böcker"
+
+#: action.py:619
+msgid "No Goodreads Id"
+msgstr "Inget Goodreads-ID"
+
+#: action.py:620
+msgid ""
+"You cannot switch editions for a book that is not already linked to "
+"Goodreads.<br>"
+msgstr ""
+"Du kan inte byta utgåva för en bok som inte redan är länkad till "
+"Goodreads.<br>"
+
+#: action.py:749
+msgid "Updated tags for {0} books"
+msgstr "Uppdaterade taggar för {0} böcker"
+
+#: action.py:751
+msgid "No books required tags updating"
+msgstr "Inga böcker behövde få taggarna uppdaterade"
+
+#: action.py:803
+msgid "Updated {0} shelves for selected books"
+msgstr "Uppdaterade {0} hyllor för de valda böckerna"
+
+#: action.py:805
+msgid "No shelves required updating"
+msgstr "Inga hyllor behövde uppdateras"
+
+#: action.py:834 action.py:849
+msgid "Calibre must be restarted before the plugin can be configured."
+msgstr "calibre måste startas om innan insticksmodulen kan konfigureras."
+
+#: action.py:841
+msgid ""
+"New custom colums have been created.\n"
+"You will need to restart calibre for this change to be applied."
+msgstr ""
+"Nya anpassade kolumner har skapats.\n"
+"Du måste starta om calibre för att ändringen ska börja gälla."
+
+#: action.py:858
+msgid "Goodreads Sync progress"
+msgstr "Förlopp för Goodreads-synkronisering"
+
+#: config.py:130
+msgid "Goodreads Tags"
+msgstr "Goodreads-taggar"
+
+#: config.py:133
+msgid "Goodreads tags used for mapping to calbre."
+msgstr "Goodreads-taggar som används för mappning till calibre."
+
+#: config.py:135
+msgid "Tags column:"
+msgstr "Taggkolumn:"
+
+#: config.py:136
+msgid ""
+"For use with the \"Download tags from shelves\" and \"Upload tags as "
+"shelves\" menu items"
+msgstr ""
+"Används med menyalternativen ”Hämta taggar från hyllor” och ”Överför taggar "
+"som hyllor”"
+
+#: config.py:140
+msgid "Goodreads Rating"
+msgstr "Goodreads-betyg"
+
+#: config.py:142
+msgid "Rating for the book."
+msgstr "Betyg för boken."
+
+#: config.py:144
+msgid "Rating column:"
+msgstr "Betygskolumn:"
+
+#: config.py:145 config.py:154 config.py:163 config.py:172
+msgid ""
+"For use with the \"Add to shelf\" and \"Sync from shelf\" menu items\n"
+"to synchronise with your Goodreads review for a book"
+msgstr ""
+"Används med menyalternativen ”Lägg till på hylla” och ”Synkronisera från hylla”\n"
+"för att synkronisera med din Goodreads-recension av en bok"
+
+#: config.py:149 dialogs.py:441 dialogs.py:1417 dialogs.py:1935
+msgid "Date Read"
+msgstr "Läsdatum"
+
+#: config.py:151
+msgid "Date when the book was last read."
+msgstr "Datum då boken senast lästes."
+
+#: config.py:153
+msgid "Date read column:"
+msgstr "Kolumn för läsdatum:"
+
+#: config.py:158
+msgid "Goodreads Review"
+msgstr "Goodreads-recension"
+
+#: config.py:160
+msgid "Review of book."
+msgstr "Recension av boken."
+
+#: config.py:162
+msgid "Review text column:"
+msgstr "Kolumn för recensionstext:"
+
+#: config.py:167
+msgid "Goodreads Progress"
+msgstr "Goodreads-läsförlopp"
+
+#: config.py:169
+msgid "Reading progress for the book"
+msgstr "Bokens läsförlopp"
+
+#: config.py:171
+msgid "Reading progress column:"
+msgstr "Kolumn för läsförlopp:"
+
+#: config.py:267
+msgid "Never modify the calibre ISBN"
+msgstr "Ändra aldrig ISBN i calibre"
+
+#: config.py:268
+msgid "Replace calibre ISBN only if none present"
+msgstr "Ersätt ISBN i calibre endast om det saknas"
+
+#: config.py:269
+msgid "Always overwrite calibre ISBN value"
+msgstr "Skriv alltid över ISBN-värdet i calibre"
+
+#: config.py:298
+msgid "Add value to column"
+msgstr "Lägg till värde i kolumn"
+
+#: config.py:298
+msgid "Remove value from column"
+msgstr "Ta bort värde från kolumn"
+
+#: config.py:342 config.py:347
+msgid "None"
+msgstr "Ingen"
+
+#: config.py:343 config.py:348
+msgid "Today"
+msgstr "Idag"
+
+#: config.py:349
+msgid "Goodreads Date Read"
+msgstr "Goodreads-läsdatum"
+
+#: config.py:350
+msgid "Goodreads Date Added"
+msgstr "Goodreads-datum då boken lades till"
+
+#: config.py:351
+msgid "Goodreads Date Updated"
+msgstr "Goodreads-uppdateringsdatum"
+
+#: config.py:352
+msgid "Goodreads Date Started"
+msgstr "Goodreads-startdatum"
+
+#: config.py:382
+msgid "Create Goodreads shelf"
+msgstr "Skapa Goodreads-hylla"
+
+#: config.py:388
+msgid "Shelf name:"
+msgstr "Hyllnamn:"
+
+#: config.py:392
+msgid "A book can only be on one of your exclusive shelves"
+msgstr "En bok kan bara finnas på en av dina exklusiva hyllor"
+
+#: config.py:393
+msgid "Allowing customizing the order of books on this shelf"
+msgstr "Tillåt anpassning av böckernas ordning på den här hyllan"
+
+#: config.py:394
+msgid "One shelf only can be featured at the top of your profile"
+msgstr "Endast en hylla kan visas högst upp i din profil"
+
+#: config.py:437
+msgid "Action"
+msgstr "Åtgärd"
+
+#: config.py:437
+msgid "Column"
+msgstr "Kolumn"
+
+#: config.py:437
+msgid "Value"
+msgstr "Värde"
+
+#: config.py:451
+msgid "Invalid column"
+msgstr "Ogiltig kolumn"
+
+#: config.py:452
+msgid "Removing the column '{0}' action as the column cannot be found"
+msgstr ""
+"Tar bort åtgärden för kolumnen ”{0}” eftersom kolumnen inte kan hittas"
+
+#: config.py:541
+msgid "Are you sure you want to delete this action?"
+msgstr "Är du säker på att du vill ta bort den här åtgärden?"
+
+#: config.py:543
+msgid "Are you sure you want to delete the selected {0} actions?"
+msgstr "Är du säker på att du vill ta bort de {0} valda åtgärderna?"
+
+#: config.py:599
+msgid "Edit Shelf Add Actions"
+msgstr "Redigera åtgärder för att lägga till på hylla"
+
+#: config.py:600
+msgid "Edit add to shelf actions for {0} shelves"
+msgstr "Redigera åtgärder för att lägga till på {0} hyllor"
+
+#: config.py:602
+msgid "Edit add to shelf actions for '{0}' shelf"
+msgstr "Redigera åtgärder för att lägga till på hyllan ”{0}”"
+
+#: config.py:603
+msgid ""
+"&What should calibre do with matching linked books when you click 'Add to "
+"shelf'?"
+msgstr ""
+"&Vad ska calibre göra med matchande länkade böcker när du klickar på ”Lägg "
+"till på hylla”?"
+
+#: config.py:606
+msgid "Edit Shelf Sync Actions"
+msgstr "Redigera hyllans synkroniseringsåtgärder"
+
+#: config.py:607
+msgid "Edit sync actions for {0} shelves"
+msgstr "Redigera synkroniseringsåtgärder för {0} hyllor"
+
+#: config.py:609
+msgid "Edit sync actions for '{0}' shelf"
+msgstr "Redigera synkroniseringsåtgärder för hyllan ”{0}”"
+
+#: config.py:610
+msgid ""
+"&What should calibre do with matching linked books when you click 'Sync from"
+" shelf'?"
+msgstr ""
+"&Vad ska calibre göra med matchande länkade böcker när du klickar på "
+"”Synkronisera från hylla”?"
+
+#: config.py:635
+msgid "Add action"
+msgstr "Lägg till åtgärd"
+
+#: config.py:641
+msgid "Delete action"
+msgstr "Ta bort åtgärd"
+
+#: config.py:656
+msgid "Upload rating to Goodreads when adding to this shelf"
+msgstr "Överför betyg till Goodreads när boken läggs till på den här hyllan"
+
+#: config.py:657
+msgid "Upload date read to Goodreads when adding to this shelf"
+msgstr ""
+"Överför läsdatum till Goodreads när boken läggs till på den här hyllan"
+
+#: config.py:658
+msgid "Upload review text to Goodreads when adding to this shelf"
+msgstr ""
+"Överför recensionstext till Goodreads när boken läggs till på den här hyllan"
+
+#: config.py:663
+msgid "Sync rating from Goodreads when syncing from this shelf"
+msgstr ""
+"Synkronisera betyg från Goodreads vid synkronisering från den här hyllan"
+
+#: config.py:664
+msgid "Sync date read from Goodreads when syncing from this shelf"
+msgstr ""
+"Synkronisera läsdatum från Goodreads vid synkronisering från den här hyllan"
+
+#: config.py:665
+msgid "Sync review text from Goodreads when syncing from this shelf"
+msgstr ""
+"Synkronisera recensionstext från Goodreads vid synkronisering från den här "
+"hyllan"
+
+#: config.py:718
+msgid "Active"
+msgstr "Aktiv"
+
+#: config.py:718
+msgid "Count*"
+msgstr "Antal*"
+
+#: config.py:718
+msgid "Shelf Add Actions"
+msgstr "Åtgärder för att lägga till på hylla"
+
+#: config.py:718
+msgid "Shelf Name"
+msgstr "Hyllnamn"
+
+#: config.py:718
+msgid "Sync Actions"
+msgstr "Synkroniseringsåtgärder"
+
+#: config.py:718
+msgid "calibre Tags"
+msgstr "calibre-taggar"
+
+#: config.py:737
+msgid "Edit shelf add actions"
+msgstr "Redigera åtgärder för att lägga till på hylla"
+
+#: config.py:740
+msgid "Edit sync actions"
+msgstr "Redigera synkroniseringsåtgärder"
+
+#: config.py:746
+msgid "Make all Active"
+msgstr "Gör alla aktiva"
+
+#: config.py:749
+msgid "Make none Active"
+msgstr "Gör ingen aktiv"
+
+#: config.py:755
+msgid "Edit Shelves on Goodreads"
+msgstr "Redigera hyllor på Goodreads"
+
+#: config.py:773
+msgid "Shelf marked as exclusive"
+msgstr "Hylla markerad som exklusiv"
+
+#: config.py:776
+msgid "Count as at last shelves list refresh"
+msgstr "Antal vid den senaste uppdateringen av hyllistan"
+
+#: config.py:830
+msgid "Add '{0}' to column '{1}', "
+msgstr "Lägg till ”{0}” i kolumnen ”{1}”, "
+
+#: config.py:832
+msgid "Remove '{0}' from column '{1}', "
+msgstr "Ta bort ”{0}” från kolumnen ”{1}”, "
+
+#: config.py:913
+msgid "Select Goodreads user:"
+msgstr "Välj Goodreads-användare:"
+
+#: config.py:920
+msgid "Add user profile"
+msgstr "Lägg till användarprofil"
+
+#: config.py:925
+msgid "Delete user profile"
+msgstr "Ta bort användarprofil"
+
+#: config.py:929
+msgid "Authorize Plugin with Goodreads"
+msgstr "Auktorisera insticksmodulen hos Goodreads"
+
+#: config.py:935
+msgid "User Shelves:"
+msgstr "Användarhyllor:"
+
+#: config.py:947
+msgid "Refresh Shelves"
+msgstr "Uppdatera hyllor"
+
+#: config.py:948
+msgid "Refresh the list of shelves and book counts from Goodreads"
+msgstr "Uppdatera listan över hyllor och antal böcker från Goodreads"
+
+#: config.py:952
+msgid "Add Shelf"
+msgstr "Lägg till hylla"
+
+#: config.py:953
+msgid "Add a new shelf"
+msgstr "Lägg till en ny hylla"
+
+#: config.py:958
+msgid "Edit 'Shelf Add' Actions"
+msgstr "Redigera åtgärder för ”Lägg till på hylla”"
+
+#: config.py:959
+msgid "Edit actions to apply when using 'Add to shelf'"
+msgstr "Redigera åtgärder som ska utföras när ”Lägg till på hylla” används"
+
+#: config.py:963
+msgid "Edit 'Sync' Actions"
+msgstr "Redigera synkroniseringsåtgärder"
+
+#: config.py:964
+msgid "Edit actions to apply when using 'Sync from shelf'"
+msgstr ""
+"Redigera åtgärder som ska utföras när ”Synkronisera från hylla” används"
+
+#: config.py:973
+msgid "Other Options:"
+msgstr "Andra alternativ:"
+
+#: config.py:978
+msgid "When linking to Goodreads:"
+msgstr "Vid länkning till Goodreads:"
+
+#: config.py:984
+msgid "Display the 'Add to shelf' menu option"
+msgstr "Visa menyalternativet ”Lägg till på hylla”"
+
+#: config.py:985
+msgid "Display the 'Remove from shelf' menu option"
+msgstr "Visa menyalternativet ”Ta bort från hylla”"
+
+#: config.py:986
+msgid "Display the 'Update reading progress' menu option"
+msgstr "Visa menyalternativet ”Uppdatera läsförlopp”"
+
+#: config.py:987
+msgid "Display the 'Sync from shelf' menu option"
+msgstr "Visa menyalternativet ”Synkronisera från hylla”"
+
+#: config.py:988
+msgid "Display the 'View shelf' menu option"
+msgstr "Visa menyalternativet ”Visa hylla”"
+
+#: config.py:989
+msgid ""
+"If the reading progress is the percent read, check this. Otherwise, the "
+"reading progress the page number."
+msgstr ""
+"Markera detta om läsförloppet anges i procent. Annars anges läsförloppet som"
+" sidnummer."
+
+#: config.py:989
+msgid "Reading progress is percent read"
+msgstr "Läsförloppet anges i procent"
+
+#: config.py:990
+msgid "If adding empty books, store author as LN,FN"
+msgstr "Spara författarnamnet som EF,FN när tomma böcker läggs till"
+
+#: config.py:999
+msgid "Synchronisable Custom Columns:"
+msgstr "Synkroniserbara anpassade kolumner:"
+
+#: config.py:1050
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"
+
+#: config.py:1054
+msgid "Help"
+msgstr "Hjälp"
+
+#: config.py:1170
+msgid "Add new user"
+msgstr "Lägg till ny användare"
+
+#: config.py:1171
+msgid ""
+"You must create a profile for each Goodreads user you will connect "
+"to.<br>Enter a unique display name for this user profile:"
+msgstr ""
+"Du måste skapa en profil för varje Goodreads-användare som du ska ansluta "
+"till.<br>Ange ett unikt visningsnamn för användarprofilen:"
+
+#: config.py:1179
+msgid "A user with the same name already exists"
+msgstr "Det finns redan en användare med samma namn"
+
+#: config.py:1179
+msgid "Add Failed"
+msgstr "Lägg till misslyckades"
+
+#: config.py:1194
+msgid "Do you want to delete the user profile for '{0}'"
+msgstr "Vill du ta bort användarprofilen för ”{0}”?"
+
+#: config.py:1211
+msgid "Confirm Authorization"
+msgstr "Bekräfta auktorisering"
+
+#: config.py:1212
+msgid ""
+"Have you clicked 'Allow access' for this plugin on the Goodreads website?"
+msgstr ""
+"Har du klickat på ”Tillåt åtkomst” för den här insticksmodulen på Goodreads "
+"webbplats?"
+
+#: config.py:1227
+msgid "Goodreads failure"
+msgstr "Goodreads-fel"
+
+#: config.py:1227
+msgid "Unable to obtain the user id"
+msgstr "Det gick inte att hämta användar-ID:t"
+
+#: config.py:1273
+msgid "Duplicate shelf name"
+msgstr "Dubblett av hyllnamn"
+
+#: config.py:1274
+msgid "There is already a shelf named:"
+msgstr "Det finns redan en hylla med namnet:"
+
+#: core.py:48 core.py:484 core.py:486 dialogs.py:305 dialogs.py:307
+#: dialogs.py:1148 dialogs.py:1150
+msgid "Unknown"
+msgstr "Okänd"
+
+#: core.py:202 core.py:207
+msgid "Goodreads Failure"
+msgstr "Goodreads-fel"
+
+#: core.py:208
+msgid "The request contacting Goodreads has failed."
+msgstr "Begäran till Goodreads misslyckades."
+
+#: core.py:209
+msgid ""
+"If it reoccurs you may have exceeded a request limit imposed by Goodreads."
+msgstr ""
+"Om felet återkommer kan du ha överskridit en begärandegräns som Goodreads "
+"har infört."
+
+#: core.py:210
+msgid "In which case wait an additional 5-10 minutes before retrying."
+msgstr "Vänta i så fall ytterligare 5–10 minuter innan du försöker igen."
+
+#: core.py:427
+msgid "Page"
+msgstr "Sida"
+
+#: core.py:430
+msgid "Syncing from shelf: {0}"
+msgstr "Synkroniserar från hyllan: {0}"
+
+#: dialogs.py:131 dialogs.py:964
+msgid "View &book on Goodreads.com"
+msgstr "Visa &bok på Goodreads.com"
+
+#: dialogs.py:138 dialogs.py:971
+msgid "Paste Goodreads.com url"
+msgstr "Klistra in URL från Goodreads.com"
+
+#: dialogs.py:139 dialogs.py:972
+msgid "Ctrl+V"
+msgstr "Ctrl+V"
+
+#: dialogs.py:147
+msgid "Cover"
+msgstr "Omslag"
+
+#: dialogs.py:147
+msgid "Edition"
+msgstr "Utgåva"
+
+#: dialogs.py:147 dialogs.py:441 dialogs.py:980 dialogs.py:1214
+#: dialogs.py:1417
+msgid "Title"
+msgstr "Titel"
+
+#: dialogs.py:253
+msgid "Goodreads.com Editions"
+msgstr "Utgåvor på Goodreads.com"
+
+#: dialogs.py:257 dialogs.py:1097
+msgid "Calibre book:"
+msgstr "calibre-bok:"
+
+#: dialogs.py:261 dialogs.py:1101 dialogs.py:1288
+msgid "Title:"
+msgstr "Titel:"
+
+#: dialogs.py:263 dialogs.py:1103 dialogs.py:1290
+msgid "Author:"
+msgstr "Författare:"
+
+#: dialogs.py:265 dialogs.py:1105 dialogs.py:1292
+msgid "Series:"
+msgstr "Serie:"
+
+#: dialogs.py:267 dialogs.py:1107 dialogs.py:1294
+msgid "ISBN:"
+msgstr "ISBN:"
+
+#: dialogs.py:271
+msgid "Select the Goodreads edition to link to this calibre book:"
+msgstr ""
+"Välj vilken Goodreads-utgåva som ska länkas till den här calibre-boken:"
+
+#: dialogs.py:278 dialogs.py:1118
+msgid "You can drag/drop a Goodreads website link to add it to the results."
+msgstr ""
+"Du kan dra och släppa en Goodreads-URL för att lägga till den i resultaten."
+
+#: dialogs.py:287 dialogs.py:1129
+msgid "Search Goodreads.com"
+msgstr "Sök Goodreads.com"
+
+#: dialogs.py:290 dialogs.py:1132 dialogs.py:1352
+msgid "Skip"
+msgstr "Hoppa över"
+
+#: dialogs.py:292 dialogs.py:1134 dialogs.py:1354
+msgid ""
+"Skip this book and move to the next:\n"
+"'{0}'"
+msgstr ""
+"Hoppa över den här boken och gå vidare till nästa:\n"
+"”{0}”"
+
+#: dialogs.py:347
+msgid "Select shelves to sync from:"
+msgstr "Välj hyllor att synkronisera från:"
+
+#: dialogs.py:362 dialogs.py:1617
+msgid "Show Active shelves only"
+msgstr "Visa endast aktiva hyllor"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "No shelves selected"
+msgstr "Inga hyllor valda"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "You must select one or more shelves first."
+msgstr "Du måste först välja en eller flera hyllor."
+
+#: dialogs.py:441
+msgid "Comment"
+msgstr "Kommentar"
+
+#: dialogs.py:441
+msgid "Progress"
+msgstr "Läsförlopp"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Author"
+msgstr "Författare"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Series"
+msgstr "Serier"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Rating"
+msgstr "Betyg"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Review"
+msgstr "Recension"
+
+#: dialogs.py:441 dialogs.py:1417 dialogs.py:1933
+msgid "Status"
+msgstr "Status"
+
+#: dialogs.py:450 dialogs.py:1426
+msgid "Search for book in Goodreads"
+msgstr "Sök efter boken på Goodreads"
+
+#: dialogs.py:456 dialogs.py:1432 dialogs.py:1925
+msgid "&View book on Goodreads.com"
+msgstr "&Visa bok på Goodreads.com"
+
+#: dialogs.py:630 dialogs.py:637
+msgid "Update Reading Progress"
+msgstr "Uppdatera läsförlopp"
+
+#: dialogs.py:644 dialogs.py:1605
+msgid ""
+"To fix missing links, double click to search for a matching book in "
+"Goodreads"
+msgstr ""
+"Dubbelklicka för att söka efter en matchande bok på Goodreads och åtgärda "
+"saknade länkar"
+
+#: dialogs.py:659
+msgid "Put books on currently-reading shelf"
+msgstr "Lägg böcker på hyllan currently-reading"
+
+#: dialogs.py:660
+msgid ""
+"If the reading progress is being updated, but the books are not finished, "
+"put the books onto the 'currently-reading' shelf."
+msgstr ""
+"Om läsförloppet uppdateras men böckerna inte är färdiglästa ska de läggas på"
+" hyllan ”currently-reading”."
+
+#: dialogs.py:664
+msgid "Put finished books on read shelf"
+msgstr "Lägg färdiglästa böcker på hyllan read"
+
+#: dialogs.py:665
+msgid "If the reading progress is 100%, put the books onto the 'read' shelf."
+msgstr "Om läsförloppet är 100 % ska böckerna läggas på hyllan ”read”."
+
+#: dialogs.py:673 dialogs.py:1653
+msgid "Search Goodreads"
+msgstr "Sök Goodreads"
+
+#: dialogs.py:676
+msgid "Update Progress"
+msgstr "Uppdatera läsförlopp"
+
+#: dialogs.py:680 dialogs.py:1660 dialogs.py:2157
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: dialogs.py:691 dialogs.py:701 dialogs.py:1717 dialogs.py:1727
+msgid "No Goodreads book linked!"
+msgstr "Ingen Goodreads-bok är länkad!"
+
+#: dialogs.py:704 dialogs.py:1730 dialogs.py:2293
+msgid "Ready"
+msgstr "Klar"
+
+#: dialogs.py:726 dialogs.py:1752 dialogs.py:2221
+msgid "{0} missing links"
+msgstr "{0} saknade länkar"
+
+#: dialogs.py:728 dialogs.py:1754 dialogs.py:2223
+msgid "{0}, {1} warnings"
+msgstr "{0}, {1} varningar"
+
+#: dialogs.py:760
+msgid "Updating Goodreads progress"
+msgstr "Uppdaterar läsförlopp på Goodreads"
+
+#: dialogs.py:828
+msgid "Updating books in calibre..."
+msgstr "Uppdaterar böcker i calibre …"
+
+#: dialogs.py:896
+msgid "You are already linked to this calibre book"
+msgstr "Du är redan länkad till den här calibre-boken"
+
+#: dialogs.py:899
+msgid "This calibre book is linked to a different Goodreads book."
+msgstr "Den här calibre-boken är länkad till en annan Goodreads-bok."
+
+#: dialogs.py:909
+msgid "You have already linked to this Goodreads book"
+msgstr "Du har redan länkat till den här Goodreads-boken"
+
+#: dialogs.py:912
+msgid "This Goodreads book is linked to a different calibre book."
+msgstr "Den här Goodreads-boken är länkad till en annan calibre-bok."
+
+#: dialogs.py:920
+msgid "You must link this calibre book to a matching book in Goodreads"
+msgstr ""
+"Du måste länka den här calibre-boken till en matchande bok på Goodreads"
+
+#: dialogs.py:921
+msgid "No changes will be made to your shelf in Goodreads for this book"
+msgstr "Inga ändringar görs på din Goodreads-hylla för den här boken"
+
+#: dialogs.py:940
+msgid ""
+"You must link this Goodreads book to a matching book in calibre \n"
+"in order for any sync actions to be applied"
+msgstr ""
+"Du måste länka den här Goodreads-boken till en matchande bok i calibre \n"
+"för att synkroniseringsåtgärder ska kunna utföras"
+
+#: dialogs.py:942
+msgid ""
+"No actions have been set for this shelf.\n"
+"Use 'Customize plugin' to specify the actions"
+msgstr ""
+"Inga åtgärder har angetts för den här hyllan.\n"
+"Använd ”Anpassa insticksmodul” för att ange åtgärderna"
+
+#: dialogs.py:944
+msgid "Actions will be applied when you click Sync Now"
+msgstr "Åtgärderna utförs när du klickar på Synkronisera nu"
+
+#: dialogs.py:945
+msgid ""
+"An empty book will be created in calibre for this book \n"
+"using the Goodreads metadata"
+msgstr ""
+"En tom bok skapas i calibre för den här boken \n"
+"med metadata från Goodreads"
+
+#: dialogs.py:1088
+msgid "Search for Goodreads book"
+msgstr "Sök efter Goodreads-bok"
+
+#: dialogs.py:1091
+msgid "Goodreads.com matches for Title/Author"
+msgstr "Matchningar på Goodreads.com för titel/författare"
+
+#: dialogs.py:1093
+msgid "Goodreads.com matches for ISBN"
+msgstr "Matchningar på Goodreads.com för ISBN"
+
+#: dialogs.py:1111
+msgid "Select the Goodreads book to link to this calibre book:"
+msgstr "Välj vilken Goodreads-bok som ska länkas till den här calibre-boken:"
+
+#: dialogs.py:1126
+msgid "Switch Edition"
+msgstr "Byt utgåva"
+
+#: dialogs.py:1177
+msgid "No book selected"
+msgstr "Ingen bok vald"
+
+#: dialogs.py:1177
+msgid "You must select a book to switch edition"
+msgstr "Du måste välja en bok för att byta utgåva"
+
+#: dialogs.py:1184
+msgid "Invalid book"
+msgstr "Ogiltig bok"
+
+#: dialogs.py:1184
+msgid "No goodreads work id found for this book"
+msgstr "Inget Goodreads-verk-ID hittades för den här boken"
+
+#: dialogs.py:1214
+msgid "ISBN"
+msgstr "ISBN"
+
+#: dialogs.py:1278
+msgid "Search for calibre Book"
+msgstr "Sök efter calibre-bok"
+
+#: dialogs.py:1281
+msgid "calibre Search Results"
+msgstr "Sökresultat i calibre"
+
+#: dialogs.py:1284
+msgid "Goodreads book:"
+msgstr "Goodreads-bok:"
+
+#: dialogs.py:1298
+msgid "Select a calibre book to link to this Goodreads book:"
+msgstr "Välj en calibre-bok att länka till den här Goodreads-boken:"
+
+#: dialogs.py:1304
+msgid "Or, try a different calibre search:"
+msgstr "Eller prova en annan sökning i calibre:"
+
+#: dialogs.py:1309
+msgid "&Title:"
+msgstr "&Titel:"
+
+#: dialogs.py:1317
+msgid "&Author:"
+msgstr "&Författare:"
+
+#: dialogs.py:1326
+msgid "&Go!"
+msgstr "&Sök!"
+
+#: dialogs.py:1329
+msgid "Search again using this title/author"
+msgstr "Sök igen med den här titeln/författaren"
+
+#: dialogs.py:1332
+msgid "Clear the title field"
+msgstr "Rensa titelfältet"
+
+#: dialogs.py:1336
+msgid "Clear the author field"
+msgstr "Rensa författarfältet"
+
+#: dialogs.py:1393
+msgid "Overwrite Goodreads Link"
+msgstr "Skriv över Goodreads-länk"
+
+#: dialogs.py:1394
+msgid "This calibre book is already linked to a different Goodreads book."
+msgstr "Den här calibre-boken är redan länkad till en annan Goodreads-bok."
+
+#: dialogs.py:1395
+msgid "Only one Goodreads book can be linked to a calibre book at a time."
+msgstr ""
+"Endast en Goodreads-bok kan vara länkad till en calibre-bok åt gången."
+
+#: dialogs.py:1396
+msgid "Click Yes to overwrite the link to this book, No to Cancel"
+msgstr ""
+"Klicka på Ja för att skriva över länken till den här boken eller på Nej för "
+"att avbryta"
+
+#: dialogs.py:1610
+msgid "Select shelf:"
+msgstr "Välj hylla:"
+
+#: dialogs.py:1611
+msgid "Select one or more shelves to add or remove from"
+msgstr "Välj en eller flera hyllor att lägga till på eller ta bort från"
+
+#: dialogs.py:1636
+msgid "Add calibre Rating to Goodreads"
+msgstr "Lägg till calibre-betyg på Goodreads"
+
+#: dialogs.py:1642
+msgid "Add calibre Date Read to Goodreads"
+msgstr "Lägg till läsdatum från calibre på Goodreads"
+
+#: dialogs.py:1648
+msgid "Add calibre Review Text to Goodreads"
+msgstr "Lägg till recensionstext från calibre på Goodreads"
+
+#: dialogs.py:1656
+msgid "Add to Shelf"
+msgstr "Lägg till på hylla"
+
+#: dialogs.py:1656
+msgid "Remove from Shelf"
+msgstr "Ta bort från hylla"
+
+#: dialogs.py:1770
+msgid "Too many shelves"
+msgstr "För många hyllor"
+
+#: dialogs.py:1770
+msgid "You cannot add to more than one exclusive shelf."
+msgstr "Du kan inte lägga till på mer än en exklusiv hylla."
+
+#: dialogs.py:1774
+msgid "Exclusive Shelf Warning"
+msgstr "Varning för exklusiv hylla"
+
+#: dialogs.py:1775
+msgid "You are about to remove from a shelf marked as exclusive."
+msgstr ""
+"Du är på väg att ta bort böcker från en hylla som är markerad som exklusiv."
+
+#: dialogs.py:1776
+msgid ""
+"This will result in these books being <b>moved</b> to one of your other "
+"shelves rather than being deleted from all shelves."
+msgstr ""
+"Det innebär att böckerna <b>flyttas</b> till en av dina andra hyllor i "
+"stället för att tas bort från alla hyllor."
+
+#: dialogs.py:1778 dialogs.py:1784
+msgid "Do you want to continue?"
+msgstr "Vill du fortsätta?"
+
+#: dialogs.py:1783
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored."
+msgstr ""
+"Det finns böcker i listan som ännu inte är länkade till calibre och som "
+"därför ignoreras."
+
+#: dialogs.py:1913 dialogs.py:2159
+msgid "Search calibre"
+msgstr "Sök calibre"
+
+#: dialogs.py:1919
+msgid "Add empty book to calibre"
+msgstr "Lägg till en tom bok i calibre"
+
+#: dialogs.py:1933
+msgid "GR Author"
+msgstr "GR-författare"
+
+#: dialogs.py:1933
+msgid "GR Title"
+msgstr "GR-titel"
+
+#: dialogs.py:1934
+msgid "GR Date Read"
+msgstr "GR-läsdatum"
+
+#: dialogs.py:1934
+msgid "GR ISBN"
+msgstr "GR-ISBN"
+
+#: dialogs.py:1934
+msgid "GR Rating"
+msgstr "GR-betyg"
+
+#: dialogs.py:1934
+msgid "GR Series"
+msgstr "GR-serie"
+
+#: dialogs.py:1934
+msgid "Linked to calibre Title"
+msgstr "Länkad till calibre-titel"
+
+#: dialogs.py:1934
+msgid "Shelves"
+msgstr "Hyllor"
+
+#: dialogs.py:1935
+msgid "calibre Author"
+msgstr "calibre-författare"
+
+#: dialogs.py:1935
+msgid "calibre ISBN"
+msgstr "calibre-ISBN"
+
+#: dialogs.py:1935
+msgid "calibre Rating"
+msgstr "calibre-betyg"
+
+#: dialogs.py:1935
+msgid "calibre Series"
+msgstr "calibre-serie"
+
+#: dialogs.py:2085
+msgid "Sync from Goodreads Shelf"
+msgstr "Synkronisera från Goodreads-hylla"
+
+#: dialogs.py:2098
+msgid "Sync from '{0}' shelf"
+msgstr "Synkronisera från hyllan ”{0}”"
+
+#: dialogs.py:2100
+msgid "Sync from {0} shelves"
+msgstr "Synkronisera från {0} hyllor"
+
+#: dialogs.py:2106
+msgid ""
+"To fix missing links, double click to search for a matching book in calibre."
+msgstr ""
+"Dubbelklicka för att söka efter en matchande bok i calibre och åtgärda "
+"saknade länkar."
+
+#: dialogs.py:2126
+msgid "The following actions will be performed for books that are synced:"
+msgstr "Följande åtgärder utförs för böcker som synkroniseras:"
+
+#: dialogs.py:2134
+msgid "Add Goodreads Rating to calibre"
+msgstr "Lägg till Goodreads-betyg i calibre"
+
+#: dialogs.py:2139
+msgid "Add Goodreads Date Read to calibre"
+msgstr "Lägg till Goodreads-läsdatum i calibre"
+
+#: dialogs.py:2144
+msgid "Add Goodreads Review Text to calibre"
+msgstr "Lägg till Goodreads-recensionstext i calibre"
+
+#: dialogs.py:2147
+msgid ""
+"When searching calibre, if only one result is found then automatically link "
+"to it without prompting"
+msgstr ""
+"Länka automatiskt utan bekräftelse om endast ett resultat hittas vid sökning"
+" i calibre"
+
+#: dialogs.py:2154
+msgid "Sync Now"
+msgstr "Synkronisera nu"
+
+#: dialogs.py:2177
+msgid "For books on the <b>{0}</b> shelf:<br>"
+msgstr "För böcker på hyllan <b>{0}</b>:<br>"
+
+#: dialogs.py:2181
+msgid "+ Add '{0}' to column '{1}'<br>"
+msgstr "+ Lägg till ”{0}” i kolumnen ”{1}”<br>"
+
+#: dialogs.py:2183
+msgid "- Remove '{0}' from column '{1}'<br>"
+msgstr "− Ta bort ”{0}” från kolumnen ”{1}”<br>"
+
+#: dialogs.py:2225
+msgid "{0}, {1} books to add"
+msgstr "{0}, {1} böcker att lägga till"
+
+#: dialogs.py:2296
+msgid "No calibre book linked!"
+msgstr "Ingen calibre-bok är länkad!"
+
+#: dialogs.py:2344
+msgid "Add to calibre"
+msgstr "Lägg till i calibre"
+
+#: dialogs.py:2471
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored.<p><p>Are you sure you want to continue?"
+msgstr ""
+"Det finns böcker i listan som ännu inte är länkade till calibre och som "
+"därför ignoreras.<p><p>Är du säker på att du vill fortsätta?"

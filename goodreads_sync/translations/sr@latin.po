@@ -1,0 +1,1371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Biljana Vukovic <biljana.vukovic1@yahoo.com>, 2022
+# Branislav Kapetanovic, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:01+1000\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: Branislav Kapetanovic, 2026\n"
+"Language-Team: Serbian (Latin) (https://app.transifex.com/calibre/teams/19337/sr@latin/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sr@latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:1049
+msgid "Keyboard shortcuts"
+msgstr "Prečice na tastaturi"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Ponovo pokreni calibre sada"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Podešavanja za:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Obriši"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Obriši sva podešavanja ovog dodatka"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Da li ste sigurni da želite da promenite podešavanja ovog dodatka u ovoj "
+"biblioteci?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Podešavanja u drugim bibliotekama, kao ni ona sačuvana u JSON datoteci u "
+"fascikli dodataka za calibre, neće biti promenjena."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Nakon toga morate ponovo pokrenuti calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Podešavanja su promenjena"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Podešavanja ovog dodatka u ovoj biblioteci su promenjena."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Ponovo pokrenite calibre sada."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Da li ste sigurni da želite da obrišete podešavanja ovog dodatka u ovoj "
+"biblioteci?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Podešavanja su obrisana"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Sva podešavanja ovog dodatka u ovoj biblioteci su obrisana."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiraj u privremenu memoriju"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinisano"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Potrebno je ponovno pokretanje"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Slika naslova nije pronađena — morate ponovo pokrenuti calibre pre "
+"korišćenja ovog dodatka!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Napravi novu kolonu"
+
+#: action.py:53
+msgid "Goodreads"
+msgstr "Goodreads"
+
+#: action.py:94 dialogs.py:1598
+msgid "Add to shelf"
+msgstr "Dodaj na policu"
+
+#: action.py:96 dialogs.py:1598
+msgid "Remove from shelf"
+msgstr "Ukloni sa police"
+
+#: action.py:98
+msgid "Update reading progress"
+msgstr "Ažuriraj napredak u čitanju"
+
+#: action.py:101
+msgid "Sync from shelf"
+msgstr "Sinhronizuj sa police"
+
+#: action.py:104
+msgid "View shelf"
+msgstr "Prikaži policu"
+
+#: action.py:108
+msgid "Link to Goodreads"
+msgstr "Poveži sa Goodreads-om"
+
+#: action.py:109
+msgid "Add, replace or clear link to a Goodreads book"
+msgstr "Dodaj, zameni ili ukloni vezu sa knjigom na Goodreads-u"
+
+#: action.py:111
+msgid "Linked book"
+msgstr "Povezana knjiga"
+
+#: action.py:113
+msgid "View linked book"
+msgstr "Prikaži povezanu knjigu"
+
+#: action.py:114
+msgid "Open a web browser page showing the linked Goodreads book"
+msgstr "Otvori stranicu povezane knjige na Goodreads-u u pregledaču"
+
+#: action.py:116 dialogs.py:250
+msgid "Switch Goodreads Edition"
+msgstr "Promeni izdanje na Goodreads-u"
+
+#: action.py:117
+msgid "Link to a different edition of a Goodreads book"
+msgstr "Poveži sa drugim izdanjem knjige na Goodreads-u"
+
+#: action.py:124
+msgid "Remove link"
+msgstr "Ukloni vezu"
+
+#: action.py:125
+msgid "Clear the link with Goodreads"
+msgstr "Ukloni vezu sa Goodreads-om"
+
+#: action.py:129
+msgid "&Customize plugin"
+msgstr "&Prilagodi dodatak"
+
+#: action.py:131
+msgid "&Help"
+msgstr "&Pomoć"
+
+#: action.py:147 action.py:179 action.py:208 action.py:214
+msgid "User: {0}"
+msgstr "Korisnik: {0}"
+
+#: action.py:205 action.py:219
+msgid "Download tags from shelves"
+msgstr "Preuzmi oznake sa polica"
+
+#: action.py:206 action.py:209 action.py:220
+msgid "Download shelves your book is on as tags"
+msgstr "Preuzmi nazive polica na kojima se nalazi knjiga kao oznake"
+
+#: action.py:211 action.py:221
+msgid "Upload tags as shelves"
+msgstr "Otpremi oznake kao police"
+
+#: action.py:212 action.py:215 action.py:222
+msgid "Add book to shelves represented by your tags"
+msgstr "Dodaj knjigu na police predstavljene njenim oznakama"
+
+#: action.py:267
+msgid "Added {0} books to shelf"
+msgstr "Dodato {0} knjiga na policu"
+
+#: action.py:269
+msgid "Removed {0} books from shelf"
+msgstr "Uklonjeno {0} knjiga sa police"
+
+#: action.py:293
+msgid "Updated progress for {0} books"
+msgstr "Ažuriran napredak za {0} knjiga"
+
+#: action.py:301 action.py:325
+msgid "Syncing books from shelves"
+msgstr "Sinhronizovanje knjiga sa polica"
+
+#: action.py:304 action.py:313
+msgid "Unable to Sync"
+msgstr "Sinhronizacija nije moguća"
+
+#: action.py:305
+msgid "You must specify sync actions or columns for at least one shelf first."
+msgstr ""
+"Najpre morate zadati radnje sinhronizacije ili kolone za bar jednu policu."
+
+#: action.py:314
+msgid "Unable to retrieve books for selected shelves."
+msgstr "Nije moguće preuzeti knjige sa izabranih polica."
+
+#: action.py:324
+msgid "Synchronised {0} books from shelf"
+msgstr "Sinhronizovano {0} knjiga sa police"
+
+#: action.py:326
+msgid "Updating books"
+msgstr "Ažuriranje knjiga"
+
+#: action.py:327
+msgid "Book: %v"
+msgstr "Knjiga: %v"
+
+#: action.py:380 action.py:513
+msgid "Updating book"
+msgstr "Ažuriranje knjige"
+
+#: action.py:535
+msgid "Too Many Rows"
+msgstr "Previše redova"
+
+#: action.py:536
+msgid "Reduce your selection to at most 50 rows."
+msgstr "Izaberite najviše 50 redova."
+
+#: action.py:565 config.py:544 config.py:1193 dialogs.py:1782 dialogs.py:2470
+msgid "Are you sure?"
+msgstr "Da li ste sigurni?"
+
+#: action.py:566
+msgid ""
+"Removing any linked Goodreads ids may result in you having to manually "
+"select the link again for these book(s)."
+msgstr ""
+"Ako uklonite povezane Goodreads identifikatore, možda ćete morati ponovo "
+"ručno da povežete ove knjige."
+
+#: action.py:568
+msgid "Are you sure you want to remove the link(s)?"
+msgstr "Da li ste sigurni da želite da uklonite veze?"
+
+#: action.py:577
+msgid "Removing Goodreads ids from books"
+msgstr "Uklanjanje Goodreads identifikatora iz knjiga"
+
+#: action.py:619
+msgid "No Goodreads Id"
+msgstr "Nema Goodreads identifikatora"
+
+#: action.py:620
+msgid ""
+"You cannot switch editions for a book that is not already linked to "
+"Goodreads.<br>"
+msgstr ""
+"Ne možete promeniti izdanje knjige koja još nije povezana sa Goodreads-"
+"om.<br>"
+
+#: action.py:749
+msgid "Updated tags for {0} books"
+msgstr "Ažurirane oznake za {0} knjiga"
+
+#: action.py:751
+msgid "No books required tags updating"
+msgstr "Nijednoj knjizi nije potrebno ažuriranje oznaka"
+
+#: action.py:803
+msgid "Updated {0} shelves for selected books"
+msgstr "Ažurirano {0} polica za izabrane knjige"
+
+#: action.py:805
+msgid "No shelves required updating"
+msgstr "Nijednoj polici nije potrebno ažuriranje"
+
+#: action.py:834 action.py:849
+msgid "Calibre must be restarted before the plugin can be configured."
+msgstr "Morate ponovo pokrenuti calibre pre podešavanja dodatka."
+
+#: action.py:841
+msgid ""
+"New custom colums have been created.\n"
+"You will need to restart calibre for this change to be applied."
+msgstr ""
+"Napravljene su nove prilagođene kolone.\n"
+"Morate ponovo pokrenuti calibre da bi se ova promena primenila."
+
+#: action.py:858
+msgid "Goodreads Sync progress"
+msgstr "Napredak sinhronizacije sa Goodreads-om"
+
+#: config.py:130
+msgid "Goodreads Tags"
+msgstr "Goodreads oznake"
+
+#: config.py:133
+msgid "Goodreads tags used for mapping to calbre."
+msgstr ""
+"Goodreads oznake koje se koriste za povezivanje sa oznakama u calibre-u."
+
+#: config.py:135
+msgid "Tags column:"
+msgstr "Kolona oznaka:"
+
+#: config.py:136
+msgid ""
+"For use with the \"Download tags from shelves\" and \"Upload tags as "
+"shelves\" menu items"
+msgstr ""
+"Koristi se uz stavke menija „Preuzmi oznake sa polica“ i „Otpremi oznake kao"
+" police“"
+
+#: config.py:140
+msgid "Goodreads Rating"
+msgstr "Goodreads ocena"
+
+#: config.py:142
+msgid "Rating for the book."
+msgstr "Ocena knjige."
+
+#: config.py:144
+msgid "Rating column:"
+msgstr "Kolona ocene:"
+
+#: config.py:145 config.py:154 config.py:163 config.py:172
+msgid ""
+"For use with the \"Add to shelf\" and \"Sync from shelf\" menu items\n"
+"to synchronise with your Goodreads review for a book"
+msgstr ""
+"Koristi se uz stavke menija „Dodaj na policu“ i „Sinhronizuj sa police“\n"
+"za sinhronizaciju sa vašom ocenom knjige na Goodreads-u"
+
+#: config.py:149 dialogs.py:441 dialogs.py:1417 dialogs.py:1935
+msgid "Date Read"
+msgstr "Datum čitanja"
+
+#: config.py:151
+msgid "Date when the book was last read."
+msgstr "Datum kada je knjiga poslednji put pročitana."
+
+#: config.py:153
+msgid "Date read column:"
+msgstr "Kolona datuma čitanja:"
+
+#: config.py:158
+msgid "Goodreads Review"
+msgstr "Goodreads recenzija"
+
+#: config.py:160
+msgid "Review of book."
+msgstr "Recenzija knjige."
+
+#: config.py:162
+msgid "Review text column:"
+msgstr "Kolona teksta recenzije:"
+
+#: config.py:167
+msgid "Goodreads Progress"
+msgstr "Napredak čitanja na Goodreads-u"
+
+#: config.py:169
+msgid "Reading progress for the book"
+msgstr "Napredak u čitanju knjige"
+
+#: config.py:171
+msgid "Reading progress column:"
+msgstr "Kolona napretka u čitanju:"
+
+#: config.py:267
+msgid "Never modify the calibre ISBN"
+msgstr "Nikada ne menjaj ISBN u calibre-u"
+
+#: config.py:268
+msgid "Replace calibre ISBN only if none present"
+msgstr "Zameni ISBN u calibre-u samo ako nije unet"
+
+#: config.py:269
+msgid "Always overwrite calibre ISBN value"
+msgstr "Uvek zameni ISBN u calibre-u"
+
+#: config.py:298
+msgid "Add value to column"
+msgstr "Dodaj vrednost u kolonu"
+
+#: config.py:298
+msgid "Remove value from column"
+msgstr "Ukloni vrednost iz kolone"
+
+#: config.py:342 config.py:347
+msgid "None"
+msgstr "Ništa"
+
+#: config.py:343 config.py:348
+msgid "Today"
+msgstr "Danas"
+
+#: config.py:349
+msgid "Goodreads Date Read"
+msgstr "Goodreads datum čitanja"
+
+#: config.py:350
+msgid "Goodreads Date Added"
+msgstr "Goodreads datum dodavanja"
+
+#: config.py:351
+msgid "Goodreads Date Updated"
+msgstr "Goodreads datum ažuriranja"
+
+#: config.py:352
+msgid "Goodreads Date Started"
+msgstr "Goodreads datum početka čitanja"
+
+#: config.py:382
+msgid "Create Goodreads shelf"
+msgstr "Napravi Goodreads policu"
+
+#: config.py:388
+msgid "Shelf name:"
+msgstr "Naziv police:"
+
+#: config.py:392
+msgid "A book can only be on one of your exclusive shelves"
+msgstr "Knjiga može biti samo na jednoj od vaših isključivih polica"
+
+#: config.py:393
+msgid "Allowing customizing the order of books on this shelf"
+msgstr "Omogućava prilagođavanje redosleda knjiga na ovoj polici"
+
+#: config.py:394
+msgid "One shelf only can be featured at the top of your profile"
+msgstr "Samo jedna polica može biti istaknuta na vrhu vašeg profila"
+
+#: config.py:437
+msgid "Action"
+msgstr "Radnja"
+
+#: config.py:437
+msgid "Column"
+msgstr "Kolona"
+
+#: config.py:437
+msgid "Value"
+msgstr "Vrednost"
+
+#: config.py:451
+msgid "Invalid column"
+msgstr "Nevažeća kolona"
+
+#: config.py:452
+msgid "Removing the column '{0}' action as the column cannot be found"
+msgstr "Uklanjanje radnje za kolonu „{0}“ jer kolona nije pronađena"
+
+#: config.py:541
+msgid "Are you sure you want to delete this action?"
+msgstr "Da li ste sigurni da želite da obrišete ovu radnju?"
+
+#: config.py:543
+msgid "Are you sure you want to delete the selected {0} actions?"
+msgstr "Da li ste sigurni da želite da obrišete izabranih {0} radnji?"
+
+#: config.py:599
+msgid "Edit Shelf Add Actions"
+msgstr "Uredi radnje pri dodavanju na policu"
+
+#: config.py:600
+msgid "Edit add to shelf actions for {0} shelves"
+msgstr "Uredi radnje pri dodavanju na {0} polica"
+
+#: config.py:602
+msgid "Edit add to shelf actions for '{0}' shelf"
+msgstr "Uredi radnje pri dodavanju na policu „{0}“"
+
+#: config.py:603
+msgid ""
+"&What should calibre do with matching linked books when you click 'Add to "
+"shelf'?"
+msgstr ""
+"&Šta calibre treba da uradi sa odgovarajućim povezanim knjigama kada "
+"izaberete „Dodaj na policu“?"
+
+#: config.py:606
+msgid "Edit Shelf Sync Actions"
+msgstr "Uredi radnje sinhronizacije sa policom"
+
+#: config.py:607
+msgid "Edit sync actions for {0} shelves"
+msgstr "Uredi radnje sinhronizacije za {0} polica"
+
+#: config.py:609
+msgid "Edit sync actions for '{0}' shelf"
+msgstr "Uredi radnje sinhronizacije za policu „{0}“"
+
+#: config.py:610
+msgid ""
+"&What should calibre do with matching linked books when you click 'Sync from"
+" shelf'?"
+msgstr ""
+"&Šta calibre treba da uradi sa odgovarajućim povezanim knjigama kada "
+"izaberete „Sinhronizuj sa police“?"
+
+#: config.py:635
+msgid "Add action"
+msgstr "Dodaj radnju"
+
+#: config.py:641
+msgid "Delete action"
+msgstr "Obriši radnju"
+
+#: config.py:656
+msgid "Upload rating to Goodreads when adding to this shelf"
+msgstr "Otpremi ocenu na Goodreads pri dodavanju na ovu policu"
+
+#: config.py:657
+msgid "Upload date read to Goodreads when adding to this shelf"
+msgstr "Otpremi datum čitanja na Goodreads pri dodavanju na ovu policu"
+
+#: config.py:658
+msgid "Upload review text to Goodreads when adding to this shelf"
+msgstr "Otpremi tekst recenzije na Goodreads pri dodavanju na ovu policu"
+
+#: config.py:663
+msgid "Sync rating from Goodreads when syncing from this shelf"
+msgstr "Preuzmi ocenu sa Goodreads-a pri sinhronizaciji sa ovom policom"
+
+#: config.py:664
+msgid "Sync date read from Goodreads when syncing from this shelf"
+msgstr ""
+"Preuzmi datum čitanja sa Goodreads-a pri sinhronizaciji sa ovom policom"
+
+#: config.py:665
+msgid "Sync review text from Goodreads when syncing from this shelf"
+msgstr ""
+"Preuzmi tekst recenzije sa Goodreads-a pri sinhronizaciji sa ovom policom"
+
+#: config.py:718
+msgid "Active"
+msgstr "Aktivno"
+
+#: config.py:718
+msgid "Count*"
+msgstr "Broj*"
+
+#: config.py:718
+msgid "Shelf Add Actions"
+msgstr "Radnje pri dodavanju na policu"
+
+#: config.py:718
+msgid "Shelf Name"
+msgstr "Naziv police"
+
+#: config.py:718
+msgid "Sync Actions"
+msgstr "Radnje sinhronizacije"
+
+#: config.py:718
+msgid "calibre Tags"
+msgstr "Oznake u calibre-u"
+
+#: config.py:737
+msgid "Edit shelf add actions"
+msgstr "Uredi radnje pri dodavanju na policu"
+
+#: config.py:740
+msgid "Edit sync actions"
+msgstr "Uredi radnje sinhronizacije"
+
+#: config.py:746
+msgid "Make all Active"
+msgstr "Aktiviraj sve"
+
+#: config.py:749
+msgid "Make none Active"
+msgstr "Deaktiviraj sve"
+
+#: config.py:755
+msgid "Edit Shelves on Goodreads"
+msgstr "Uredi police na Goodreads-u"
+
+#: config.py:773
+msgid "Shelf marked as exclusive"
+msgstr "Polica je označena kao isključiva"
+
+#: config.py:776
+msgid "Count as at last shelves list refresh"
+msgstr "Broj pri poslednjem osvežavanju liste polica"
+
+#: config.py:830
+msgid "Add '{0}' to column '{1}', "
+msgstr "Dodaj „{0}“ u kolonu „{1}“, "
+
+#: config.py:832
+msgid "Remove '{0}' from column '{1}', "
+msgstr "Ukloni „{0}“ iz kolone „{1}“, "
+
+#: config.py:913
+msgid "Select Goodreads user:"
+msgstr "Izaberi Goodreads korisnika:"
+
+#: config.py:920
+msgid "Add user profile"
+msgstr "Dodaj korisnički profil"
+
+#: config.py:925
+msgid "Delete user profile"
+msgstr "Obriši korisnički profil"
+
+#: config.py:929
+msgid "Authorize Plugin with Goodreads"
+msgstr "Ovlasti dodatak za pristup Goodreads-u"
+
+#: config.py:935
+msgid "User Shelves:"
+msgstr "Korisničke police:"
+
+#: config.py:947
+msgid "Refresh Shelves"
+msgstr "Osveži police"
+
+#: config.py:948
+msgid "Refresh the list of shelves and book counts from Goodreads"
+msgstr "Osveži listu polica i broj knjiga na Goodreads-u"
+
+#: config.py:952
+msgid "Add Shelf"
+msgstr "Dodaj policu"
+
+#: config.py:953
+msgid "Add a new shelf"
+msgstr "Dodaj novu policu"
+
+#: config.py:958
+msgid "Edit 'Shelf Add' Actions"
+msgstr "Uredi radnje „Dodaj na policu“"
+
+#: config.py:959
+msgid "Edit actions to apply when using 'Add to shelf'"
+msgstr "Uredi radnje koje se primenjuju pri dodavanju na policu"
+
+#: config.py:963
+msgid "Edit 'Sync' Actions"
+msgstr "Uredi radnje sinhronizacije"
+
+#: config.py:964
+msgid "Edit actions to apply when using 'Sync from shelf'"
+msgstr "Uredi radnje koje se primenjuju pri sinhronizaciji sa police"
+
+#: config.py:973
+msgid "Other Options:"
+msgstr "Ostale opcije:"
+
+#: config.py:978
+msgid "When linking to Goodreads:"
+msgstr "Pri povezivanju sa Goodreads-om:"
+
+#: config.py:984
+msgid "Display the 'Add to shelf' menu option"
+msgstr "Prikaži stavku menija „Dodaj na policu“"
+
+#: config.py:985
+msgid "Display the 'Remove from shelf' menu option"
+msgstr "Prikaži stavku menija „Ukloni sa police“"
+
+#: config.py:986
+msgid "Display the 'Update reading progress' menu option"
+msgstr "Prikaži stavku menija „Ažuriraj napredak u čitanju“"
+
+#: config.py:987
+msgid "Display the 'Sync from shelf' menu option"
+msgstr "Prikaži stavku menija „Sinhronizuj sa police“"
+
+#: config.py:988
+msgid "Display the 'View shelf' menu option"
+msgstr "Prikaži stavku menija „Prikaži policu“"
+
+#: config.py:989
+msgid ""
+"If the reading progress is the percent read, check this. Otherwise, the "
+"reading progress the page number."
+msgstr ""
+"Označite ovo ako se napredak u čitanju izražava procentom. U suprotnom se "
+"izražava brojem stranice."
+
+#: config.py:989
+msgid "Reading progress is percent read"
+msgstr "Napredak u čitanju izražava se procentom"
+
+#: config.py:990
+msgid "If adding empty books, store author as LN,FN"
+msgstr "Pri dodavanju praznih zapisa knjiga, sačuvaj autora kao Prezime, Ime"
+
+#: config.py:999
+msgid "Synchronisable Custom Columns:"
+msgstr "Prilagođene kolone za sinhronizaciju:"
+
+#: config.py:1050
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Izmeni prečice na tastaturi za ovaj dodatak"
+
+#: config.py:1054
+msgid "Help"
+msgstr "Pomoć"
+
+#: config.py:1170
+msgid "Add new user"
+msgstr "Dodaj novog korisnika"
+
+#: config.py:1171
+msgid ""
+"You must create a profile for each Goodreads user you will connect "
+"to.<br>Enter a unique display name for this user profile:"
+msgstr ""
+"Za svakog Goodreads korisnika sa kojim se povezujete morate napraviti "
+"profil.<br>Unesite jedinstven naziv za prikaz ovog korisničkog profila:"
+
+#: config.py:1179
+msgid "A user with the same name already exists"
+msgstr "Korisnik sa istim imenom već postoji"
+
+#: config.py:1179
+msgid "Add Failed"
+msgstr "Dodavanje nije uspelo"
+
+#: config.py:1194
+msgid "Do you want to delete the user profile for '{0}'"
+msgstr "Da li želite da obrišete korisnički profil „{0}“?"
+
+#: config.py:1211
+msgid "Confirm Authorization"
+msgstr "Potvrdi ovlašćenje"
+
+#: config.py:1212
+msgid ""
+"Have you clicked 'Allow access' for this plugin on the Goodreads website?"
+msgstr ""
+"Da li ste na sajtu Goodreads kliknuli na „Dozvoli pristup“ ovom dodatku?"
+
+#: config.py:1227
+msgid "Goodreads failure"
+msgstr "Greška na Goodreads-u"
+
+#: config.py:1227
+msgid "Unable to obtain the user id"
+msgstr "Nije moguće preuzeti identifikator korisnika"
+
+#: config.py:1273
+msgid "Duplicate shelf name"
+msgstr "Naziv police već postoji"
+
+#: config.py:1274
+msgid "There is already a shelf named:"
+msgstr "Već postoji polica sa nazivom:"
+
+#: core.py:48 core.py:484 core.py:486 dialogs.py:305 dialogs.py:307
+#: dialogs.py:1148 dialogs.py:1150
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: core.py:202 core.py:207
+msgid "Goodreads Failure"
+msgstr "Greška na Goodreads-u"
+
+#: core.py:208
+msgid "The request contacting Goodreads has failed."
+msgstr "Zahtev upućen Goodreads-u nije uspeo."
+
+#: core.py:209
+msgid ""
+"If it reoccurs you may have exceeded a request limit imposed by Goodreads."
+msgstr ""
+"Ako se greška ponovi, možda ste prekoračili ograničenje broja zahteva koje "
+"postavlja Goodreads."
+
+#: core.py:210
+msgid "In which case wait an additional 5-10 minutes before retrying."
+msgstr "U tom slučaju sačekajte još 5–10 minuta pre novog pokušaja."
+
+#: core.py:427
+msgid "Page"
+msgstr "Stranica"
+
+#: core.py:430
+msgid "Syncing from shelf: {0}"
+msgstr "Sinhronizacija sa police: {0}"
+
+#: dialogs.py:131 dialogs.py:964
+msgid "View &book on Goodreads.com"
+msgstr "Prikaži &knjigu na Goodreads.com"
+
+#: dialogs.py:138 dialogs.py:971
+msgid "Paste Goodreads.com url"
+msgstr "Nalepi URL adresu sa Goodreads.com"
+
+#: dialogs.py:139 dialogs.py:972
+msgid "Ctrl+V"
+msgstr "Ctrl+V"
+
+#: dialogs.py:147
+msgid "Cover"
+msgstr "Korice"
+
+#: dialogs.py:147
+msgid "Edition"
+msgstr "Izdanje"
+
+#: dialogs.py:147 dialogs.py:441 dialogs.py:980 dialogs.py:1214
+#: dialogs.py:1417
+msgid "Title"
+msgstr "Naslov"
+
+#: dialogs.py:253
+msgid "Goodreads.com Editions"
+msgstr "Izdanja na Goodreads.com"
+
+#: dialogs.py:257 dialogs.py:1097
+msgid "Calibre book:"
+msgstr "Knjiga u calibre-u:"
+
+#: dialogs.py:261 dialogs.py:1101 dialogs.py:1288
+msgid "Title:"
+msgstr "Naslov:"
+
+#: dialogs.py:263 dialogs.py:1103 dialogs.py:1290
+msgid "Author:"
+msgstr "Autor:"
+
+#: dialogs.py:265 dialogs.py:1105 dialogs.py:1292
+msgid "Series:"
+msgstr "Serija:"
+
+#: dialogs.py:267 dialogs.py:1107 dialogs.py:1294
+msgid "ISBN:"
+msgstr "ISBN:"
+
+#: dialogs.py:271
+msgid "Select the Goodreads edition to link to this calibre book:"
+msgstr ""
+"Izaberite izdanje na Goodreads-u koje želite da povežete sa ovom knjigom u "
+"calibre-u:"
+
+#: dialogs.py:278 dialogs.py:1118
+msgid "You can drag/drop a Goodreads website link to add it to the results."
+msgstr ""
+"Možete prevući vezu sa sajta Goodreads i pustiti je ovde da biste je dodali "
+"među rezultate."
+
+#: dialogs.py:287 dialogs.py:1129
+msgid "Search Goodreads.com"
+msgstr "Pretraži Goodreads.com"
+
+#: dialogs.py:290 dialogs.py:1132 dialogs.py:1352
+msgid "Skip"
+msgstr "Preskoči"
+
+#: dialogs.py:292 dialogs.py:1134 dialogs.py:1354
+msgid ""
+"Skip this book and move to the next:\n"
+"'{0}'"
+msgstr ""
+"Preskoči ovu knjigu i pređi na sledeću:\n"
+"„{0}“"
+
+#: dialogs.py:347
+msgid "Select shelves to sync from:"
+msgstr "Izaberite police sa kojih želite da sinhronizujete:"
+
+#: dialogs.py:362 dialogs.py:1617
+msgid "Show Active shelves only"
+msgstr "Prikaži samo aktivne police"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "No shelves selected"
+msgstr "Nijedna polica nije izabrana"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "You must select one or more shelves first."
+msgstr "Najpre morate izabrati bar jednu policu."
+
+#: dialogs.py:441
+msgid "Comment"
+msgstr "Komentar"
+
+#: dialogs.py:441
+msgid "Progress"
+msgstr "Napredak"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Author"
+msgstr "Autor"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Series"
+msgstr "Serija"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Rating"
+msgstr "Ocena"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Review"
+msgstr "Recenzija"
+
+#: dialogs.py:441 dialogs.py:1417 dialogs.py:1933
+msgid "Status"
+msgstr "Status"
+
+#: dialogs.py:450 dialogs.py:1426
+msgid "Search for book in Goodreads"
+msgstr "Potraži knjigu na Goodreads-u"
+
+#: dialogs.py:456 dialogs.py:1432 dialogs.py:1925
+msgid "&View book on Goodreads.com"
+msgstr "&Prikaži knjigu na Goodreads.com"
+
+#: dialogs.py:630 dialogs.py:637
+msgid "Update Reading Progress"
+msgstr "Ažuriraj napredak u čitanju"
+
+#: dialogs.py:644 dialogs.py:1605
+msgid ""
+"To fix missing links, double click to search for a matching book in "
+"Goodreads"
+msgstr ""
+"Da biste ispravili veze koje nedostaju, dvaput kliknite da potražite "
+"odgovarajuću knjigu na Goodreads-u"
+
+#: dialogs.py:659
+msgid "Put books on currently-reading shelf"
+msgstr "Premesti knjige na policu „trenutno čitam“"
+
+#: dialogs.py:660
+msgid ""
+"If the reading progress is being updated, but the books are not finished, "
+"put the books onto the 'currently-reading' shelf."
+msgstr ""
+"Ako se napredak u čitanju ažurira, ali knjige nisu završene, premesti ih na "
+"policu „trenutno čitam“."
+
+#: dialogs.py:664
+msgid "Put finished books on read shelf"
+msgstr "Premesti završene knjige na policu „pročitano“"
+
+#: dialogs.py:665
+msgid "If the reading progress is 100%, put the books onto the 'read' shelf."
+msgstr ""
+"Ako je napredak u čitanju 100%, premesti knjige na policu „pročitano“."
+
+#: dialogs.py:673 dialogs.py:1653
+msgid "Search Goodreads"
+msgstr "Pretraži Goodreads"
+
+#: dialogs.py:676
+msgid "Update Progress"
+msgstr "Ažuriraj napredak"
+
+#: dialogs.py:680 dialogs.py:1660 dialogs.py:2157
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: dialogs.py:691 dialogs.py:701 dialogs.py:1717 dialogs.py:1727
+msgid "No Goodreads book linked!"
+msgstr "Nijedna Goodreads knjiga nije povezana!"
+
+#: dialogs.py:704 dialogs.py:1730 dialogs.py:2293
+msgid "Ready"
+msgstr "Spremno"
+
+#: dialogs.py:726 dialogs.py:1752 dialogs.py:2221
+msgid "{0} missing links"
+msgstr "Nedostaje {0} veza"
+
+#: dialogs.py:728 dialogs.py:1754 dialogs.py:2223
+msgid "{0}, {1} warnings"
+msgstr "{0}, {1} upozorenja"
+
+#: dialogs.py:760
+msgid "Updating Goodreads progress"
+msgstr "Ažuriranje napretka na Goodreads-u"
+
+#: dialogs.py:828
+msgid "Updating books in calibre..."
+msgstr "Ažuriranje knjiga u calibre-u..."
+
+#: dialogs.py:896
+msgid "You are already linked to this calibre book"
+msgstr "Već ste povezani sa ovom knjigom u calibre-u"
+
+#: dialogs.py:899
+msgid "This calibre book is linked to a different Goodreads book."
+msgstr "Ova knjiga u calibre-u povezana je sa drugom knjigom na Goodreads-u."
+
+#: dialogs.py:909
+msgid "You have already linked to this Goodreads book"
+msgstr "Već ste povezani sa ovom knjigom na Goodreads-u"
+
+#: dialogs.py:912
+msgid "This Goodreads book is linked to a different calibre book."
+msgstr "Ova knjiga na Goodreads-u povezana je sa drugom knjigom u calibre-u."
+
+#: dialogs.py:920
+msgid "You must link this calibre book to a matching book in Goodreads"
+msgstr ""
+"Morate povezati ovu knjigu u calibre-u sa odgovarajućom knjigom na "
+"Goodreads-u"
+
+#: dialogs.py:921
+msgid "No changes will be made to your shelf in Goodreads for this book"
+msgstr "Za ovu knjigu neće biti promena na vašoj polici na Goodreads-u"
+
+#: dialogs.py:940
+msgid ""
+"You must link this Goodreads book to a matching book in calibre \n"
+"in order for any sync actions to be applied"
+msgstr ""
+"Morate povezati ovu knjigu na Goodreads-u sa odgovarajućom knjigom u calibre-u\n"
+"da bi se primenile radnje sinhronizacije"
+
+#: dialogs.py:942
+msgid ""
+"No actions have been set for this shelf.\n"
+"Use 'Customize plugin' to specify the actions"
+msgstr ""
+"Za ovu policu nisu zadate radnje.\n"
+"Zadajte ih pomoću opcije „Prilagodi dodatak“."
+
+#: dialogs.py:944
+msgid "Actions will be applied when you click Sync Now"
+msgstr "Radnje će se primeniti kada kliknete na „Sinhronizuj sada“"
+
+#: dialogs.py:945
+msgid ""
+"An empty book will be created in calibre for this book \n"
+"using the Goodreads metadata"
+msgstr ""
+"Za ovu knjigu biće napravljen prazan zapis u calibre-u\n"
+"na osnovu metapodataka sa Goodreads-a"
+
+#: dialogs.py:1088
+msgid "Search for Goodreads book"
+msgstr "Potraži knjigu na Goodreads-u"
+
+#: dialogs.py:1091
+msgid "Goodreads.com matches for Title/Author"
+msgstr "Podudaranja na Goodreads.com za naslov i autora"
+
+#: dialogs.py:1093
+msgid "Goodreads.com matches for ISBN"
+msgstr "Podudaranja na Goodreads.com za ISBN"
+
+#: dialogs.py:1111
+msgid "Select the Goodreads book to link to this calibre book:"
+msgstr ""
+"Izaberite knjigu na Goodreads-u koju želite da povežete sa ovom knjigom u "
+"calibre-u:"
+
+#: dialogs.py:1126
+msgid "Switch Edition"
+msgstr "Promeni izdanje"
+
+#: dialogs.py:1177
+msgid "No book selected"
+msgstr "Nijedna knjiga nije izabrana"
+
+#: dialogs.py:1177
+msgid "You must select a book to switch edition"
+msgstr "Morate izabrati knjigu kojoj želite da promenite izdanje"
+
+#: dialogs.py:1184
+msgid "Invalid book"
+msgstr "Nevažeća knjiga"
+
+#: dialogs.py:1184
+msgid "No goodreads work id found for this book"
+msgstr "Za ovu knjigu nije pronađen Goodreads identifikator dela"
+
+#: dialogs.py:1214
+msgid "ISBN"
+msgstr "ISBN"
+
+#: dialogs.py:1278
+msgid "Search for calibre Book"
+msgstr "Potraži knjigu u calibre-u"
+
+#: dialogs.py:1281
+msgid "calibre Search Results"
+msgstr "Rezultati pretrage u calibre-u"
+
+#: dialogs.py:1284
+msgid "Goodreads book:"
+msgstr "Knjiga na Goodreads-u:"
+
+#: dialogs.py:1298
+msgid "Select a calibre book to link to this Goodreads book:"
+msgstr ""
+"Izaberite knjigu u calibre-u koju želite da povežete sa ovom knjigom na "
+"Goodreads-u:"
+
+#: dialogs.py:1304
+msgid "Or, try a different calibre search:"
+msgstr "Ili pokušajte drugačiju pretragu u calibre-u:"
+
+#: dialogs.py:1309
+msgid "&Title:"
+msgstr "&Naslov:"
+
+#: dialogs.py:1317
+msgid "&Author:"
+msgstr "&Autor:"
+
+#: dialogs.py:1326
+msgid "&Go!"
+msgstr "&Kreni!"
+
+#: dialogs.py:1329
+msgid "Search again using this title/author"
+msgstr "Ponovo pretraži po ovom naslovu i autoru"
+
+#: dialogs.py:1332
+msgid "Clear the title field"
+msgstr "Obriši polje naslova"
+
+#: dialogs.py:1336
+msgid "Clear the author field"
+msgstr "Obriši polje autora"
+
+#: dialogs.py:1393
+msgid "Overwrite Goodreads Link"
+msgstr "Zameni Goodreads vezu"
+
+#: dialogs.py:1394
+msgid "This calibre book is already linked to a different Goodreads book."
+msgstr ""
+"Ova knjiga u calibre-u već je povezana sa drugom knjigom na Goodreads-u."
+
+#: dialogs.py:1395
+msgid "Only one Goodreads book can be linked to a calibre book at a time."
+msgstr ""
+"Sa jednom knjigom u calibre-u može biti povezana samo jedna knjiga na "
+"Goodreads-u."
+
+#: dialogs.py:1396
+msgid "Click Yes to overwrite the link to this book, No to Cancel"
+msgstr ""
+"Kliknite na „Da“ da zamenite vezu sa ovom knjigom ili na „Ne“ da odustanete"
+
+#: dialogs.py:1610
+msgid "Select shelf:"
+msgstr "Izaberite policu:"
+
+#: dialogs.py:1611
+msgid "Select one or more shelves to add or remove from"
+msgstr ""
+"Izaberite jednu ili više polica na koje želite da dodate knjige ili sa kojih"
+" želite da ih uklonite"
+
+#: dialogs.py:1636
+msgid "Add calibre Rating to Goodreads"
+msgstr "Dodaj ocenu iz calibre-a na Goodreads"
+
+#: dialogs.py:1642
+msgid "Add calibre Date Read to Goodreads"
+msgstr "Dodaj datum čitanja iz calibre-a na Goodreads"
+
+#: dialogs.py:1648
+msgid "Add calibre Review Text to Goodreads"
+msgstr "Dodaj tekst recenzije iz calibre-a na Goodreads"
+
+#: dialogs.py:1656
+msgid "Add to Shelf"
+msgstr "Dodaj na policu"
+
+#: dialogs.py:1656
+msgid "Remove from Shelf"
+msgstr "Ukloni sa police"
+
+#: dialogs.py:1770
+msgid "Too many shelves"
+msgstr "Previše polica"
+
+#: dialogs.py:1770
+msgid "You cannot add to more than one exclusive shelf."
+msgstr "Ne možete dodati knjigu na više od jedne isključive police."
+
+#: dialogs.py:1774
+msgid "Exclusive Shelf Warning"
+msgstr "Upozorenje o isključivoj polici"
+
+#: dialogs.py:1775
+msgid "You are about to remove from a shelf marked as exclusive."
+msgstr "Upravo ćete ukloniti knjige sa police označene kao isključiva."
+
+#: dialogs.py:1776
+msgid ""
+"This will result in these books being <b>moved</b> to one of your other "
+"shelves rather than being deleted from all shelves."
+msgstr ""
+"Zbog toga će ove knjige biti <b>premeštene</b> na neku od vaših drugih "
+"polica, umesto da budu uklonjene sa svih polica."
+
+#: dialogs.py:1778 dialogs.py:1784
+msgid "Do you want to continue?"
+msgstr "Da li želite da nastavite?"
+
+#: dialogs.py:1783
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored."
+msgstr ""
+"Knjige sa ove liste koje još nisu povezane sa knjigama u calibre-u biće "
+"zanemarene."
+
+#: dialogs.py:1913 dialogs.py:2159
+msgid "Search calibre"
+msgstr "Pretraži calibre"
+
+#: dialogs.py:1919
+msgid "Add empty book to calibre"
+msgstr "Dodaj prazan zapis knjige u calibre"
+
+#: dialogs.py:1933
+msgid "GR Author"
+msgstr "Autor na Goodreads-u"
+
+#: dialogs.py:1933
+msgid "GR Title"
+msgstr "Naslov na Goodreads-u"
+
+#: dialogs.py:1934
+msgid "GR Date Read"
+msgstr "Datum čitanja na Goodreads-u"
+
+#: dialogs.py:1934
+msgid "GR ISBN"
+msgstr "ISBN na Goodreads-u"
+
+#: dialogs.py:1934
+msgid "GR Rating"
+msgstr "Ocena na Goodreads-u"
+
+#: dialogs.py:1934
+msgid "GR Series"
+msgstr "Serijal na Goodreads-u"
+
+#: dialogs.py:1934
+msgid "Linked to calibre Title"
+msgstr "Naslov povezane knjige u calibre-u"
+
+#: dialogs.py:1934
+msgid "Shelves"
+msgstr "Police"
+
+#: dialogs.py:1935
+msgid "calibre Author"
+msgstr "Autor u calibre-u"
+
+#: dialogs.py:1935
+msgid "calibre ISBN"
+msgstr "ISBN u calibre-u"
+
+#: dialogs.py:1935
+msgid "calibre Rating"
+msgstr "Ocena u calibre-u"
+
+#: dialogs.py:1935
+msgid "calibre Series"
+msgstr "Serijal u calibre-u"
+
+#: dialogs.py:2085
+msgid "Sync from Goodreads Shelf"
+msgstr "Sinhronizuj sa police na Goodreads-u"
+
+#: dialogs.py:2098
+msgid "Sync from '{0}' shelf"
+msgstr "Sinhronizuj sa police „{0}“"
+
+#: dialogs.py:2100
+msgid "Sync from {0} shelves"
+msgstr "Sinhronizuj sa {0} polica"
+
+#: dialogs.py:2106
+msgid ""
+"To fix missing links, double click to search for a matching book in calibre."
+msgstr ""
+"Da biste ispravili veze koje nedostaju, dvaput kliknite da potražite "
+"odgovarajuću knjigu u calibre-u."
+
+#: dialogs.py:2126
+msgid "The following actions will be performed for books that are synced:"
+msgstr "Za knjige koje se sinhronizuju biće izvršene sledeće radnje:"
+
+#: dialogs.py:2134
+msgid "Add Goodreads Rating to calibre"
+msgstr "Dodaj ocenu sa Goodreads-a u calibre"
+
+#: dialogs.py:2139
+msgid "Add Goodreads Date Read to calibre"
+msgstr "Dodaj datum čitanja sa Goodreads-a u calibre"
+
+#: dialogs.py:2144
+msgid "Add Goodreads Review Text to calibre"
+msgstr "Dodaj tekst recenzije sa Goodreads-a u calibre"
+
+#: dialogs.py:2147
+msgid ""
+"When searching calibre, if only one result is found then automatically link "
+"to it without prompting"
+msgstr ""
+"Pri pretrazi u calibre-u automatski poveži knjigu ako se pronađe samo jedan "
+"rezultat, bez dodatnog pitanja"
+
+#: dialogs.py:2154
+msgid "Sync Now"
+msgstr "Sinhronizuj sada"
+
+#: dialogs.py:2177
+msgid "For books on the <b>{0}</b> shelf:<br>"
+msgstr "Za knjige na polici <b>{0}</b>:<br>"
+
+#: dialogs.py:2181
+msgid "+ Add '{0}' to column '{1}'<br>"
+msgstr "+ Dodaj „{0}“ u kolonu „{1}“<br>"
+
+#: dialogs.py:2183
+msgid "- Remove '{0}' from column '{1}'<br>"
+msgstr "- Ukloni „{0}“ iz kolone „{1}“<br>"
+
+#: dialogs.py:2225
+msgid "{0}, {1} books to add"
+msgstr "{0}, {1} knjiga za dodavanje"
+
+#: dialogs.py:2296
+msgid "No calibre book linked!"
+msgstr "Nijedna knjiga u calibre-u nije povezana!"
+
+#: dialogs.py:2344
+msgid "Add to calibre"
+msgstr "Dodaj u calibre"
+
+#: dialogs.py:2471
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored.<p><p>Are you sure you want to continue?"
+msgstr ""
+"Knjige sa ove liste koje još nisu povezane sa knjigama u calibre-u biće "
+"zanemarene.<p><p>Da li ste sigurni da želite da nastavite?"

@@ -1,5 +1,17 @@
 # Goodreads Sync Change Log
 
+## [1.17.5] - 2026-10-24
+### Added
+- Czech translation
+- French translation
+- Japanese translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+### Fixed
+- Now fully supporting sync of Goodreads half star ratings (not quarters as Calibre does not support those). 
+  Requires user to have a custom half start rating column. Will round to nearest available rating for column.
+
 ## [1.17.4] - 2026-05-12
 ### Fixed
 - Yet another attempt at getting sync actions to work for both static and column values.

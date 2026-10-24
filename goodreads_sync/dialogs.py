@@ -41,7 +41,9 @@ from calibre_plugins.goodreads_sync.common_icons import get_icon, get_pixmap
 from calibre_plugins.goodreads_sync.common_dialogs import SizePersistedDialog
 from calibre_plugins.goodreads_sync.common_widgets import (DateDelegate, DateTableWidgetItem,
                             ImageTitleLayout, ReadOnlyTableWidgetItem, ReadOnlyLineEdit, get_date_format)
-from calibre_plugins.goodreads_sync.core import update_calibre_isbn_if_required, get_searchable_author, CalibreDbHelper
+from calibre_plugins.goodreads_sync.core import (update_calibre_isbn_if_required, get_searchable_author,
+                            CalibreDbHelper, calibre_rating_column_allows_half_stars,
+                            goodreads_rating_to_calibre_rating)
 
 try:
     load_translations()
@@ -1970,7 +1972,7 @@ class DoShelfSyncTableWidget(QTableWidget):
         for row, book in enumerate(self.goodreads_books):
             self.populate_table_row(row, book, book_index=row)
 
-        delegate = RatingDelegate(self)
+        delegate = RatingDelegate(self, is_half_star=True)
         self.setItemDelegateForColumn(4, delegate)  # GR Rating
         self.setItemDelegateForColumn(5, delegate)  # calibre Rating
 
@@ -2031,9 +2033,11 @@ class DoShelfSyncTableWidget(QTableWidget):
             cal_date_item.setForeground(red)
         self.setItem(row,  2, gr_date_item)
         self.setItem(row,  3, cal_date_item)
-        gr_rating_item  = RatingTableWidgetItem(goodreads_book['goodreads_rating'] * 2, is_read_only=True)
+        allow_half_stars = calibre_rating_column_allows_half_stars(self.db, self.rating_column)
+        gr_rating = goodreads_rating_to_calibre_rating(goodreads_book['goodreads_rating'], allow_half_stars)
+        gr_rating_item  = RatingTableWidgetItem(gr_rating, is_read_only=True)
         cal_rating_item = RatingTableWidgetItem(goodreads_book['calibre_rating'], is_read_only=True)
-        if goodreads_book['goodreads_rating'] * 2 != goodreads_book['calibre_rating']:
+        if gr_rating != goodreads_book['calibre_rating']:
             red = QColor('red')
             gr_rating_item.setForeground(red)
             cal_rating_item.setForeground(red)
@@ -2228,6 +2232,8 @@ class DoShelfSyncDialog(SizePersistedDialog):
 
         # Create all the controls etc on this dialog
         self.init_gui_layout()
+        self.summary_table.db = self.db
+        self.summary_table.rating_column = self.rating_column
 
         # Display the shelves on the dialog
         self.calibre_searcher = calibre_searcher
@@ -2659,8 +2665,10 @@ class DoShelfSyncDialog(SizePersistedDialog):
                 if self.update_rating and shelf.get(cfg.KEY_SYNC_RATING):
                     added_action = False
                     for book in sync_books:
-                        if book['calibre_rating'] != book['goodreads_rating'] * 2:
-                            book['calibre_rating'] = book['goodreads_rating'] * 2
+                        allow_half_stars = calibre_rating_column_allows_half_stars(self.db, self.rating_column)
+                        goodreads_rating = goodreads_rating_to_calibre_rating(book['goodreads_rating'], allow_half_stars)
+                        if book['calibre_rating'] != goodreads_rating:
+                            book['calibre_rating'] = goodreads_rating
                             book['rating_changed'] = True
                             if not added_action:
                                 added_action = True

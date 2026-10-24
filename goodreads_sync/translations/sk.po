@@ -1,0 +1,1369 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Vlado Jendroľ, 2022
+# vladimirjendrol <vlado@jendrol.sk>, 2022
+# Martin Sowa, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:01+1000\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: Martin Sowa, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:1049
+msgid "Keyboard shortcuts"
+msgstr "Klávesové skratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reštartovať calibre teraz"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Nastavenia pre:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazať"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazať všetky nastavenia tohto zásuvného modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete zmeniť nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavenia v iných knižniciach ani nastavenia uložené v súbore JSON v "
+"priečinku zásuvných modulov calibre nebudú zmenené."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Potom musíte reštartovať calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavenia zmenené"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavenia tohto zásuvného modulu v tejto knižnici boli zmenené."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Teraz prosím reštartujte calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete vymazať nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavenia vymazané"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Všetky nastavenia tohto zásuvného modulu v tejto knižnici boli vymazané."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovať do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinované"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžaduje sa reštart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Obrázok titulu sa nenašiel – pred použitím tohto zásuvného modulu musíte "
+"reštartovať calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvoriť nový stĺpec"
+
+#: action.py:53
+msgid "Goodreads"
+msgstr "Goodreads"
+
+#: action.py:94 dialogs.py:1598
+msgid "Add to shelf"
+msgstr "Pridať do police"
+
+#: action.py:96 dialogs.py:1598
+msgid "Remove from shelf"
+msgstr "Odstrániť z police"
+
+#: action.py:98
+msgid "Update reading progress"
+msgstr "Aktualizovať priebeh čítania"
+
+#: action.py:101
+msgid "Sync from shelf"
+msgstr "Synchronizovať z police"
+
+#: action.py:104
+msgid "View shelf"
+msgstr "Zobraziť policu"
+
+#: action.py:108
+msgid "Link to Goodreads"
+msgstr "Prepojiť s Goodreads"
+
+#: action.py:109
+msgid "Add, replace or clear link to a Goodreads book"
+msgstr "Pridať, nahradiť alebo vymazať prepojenie na knihu v Goodreads"
+
+#: action.py:111
+msgid "Linked book"
+msgstr "Prepojená kniha"
+
+#: action.py:113
+msgid "View linked book"
+msgstr "Zobraziť prepojenú knihu"
+
+#: action.py:114
+msgid "Open a web browser page showing the linked Goodreads book"
+msgstr ""
+"Otvoriť stránku webového prehliadača zobrazujúcu prepojenú knihu v Goodreads"
+
+#: action.py:116 dialogs.py:250
+msgid "Switch Goodreads Edition"
+msgstr "Prepnúť vydanie Goodreads"
+
+#: action.py:117
+msgid "Link to a different edition of a Goodreads book"
+msgstr "Prepojiť s iným vydaním knihy v Goodreads"
+
+#: action.py:124
+msgid "Remove link"
+msgstr "Odstrániť prepojenie"
+
+#: action.py:125
+msgid "Clear the link with Goodreads"
+msgstr "Vymazať prepojenie s Goodreads"
+
+#: action.py:129
+msgid "&Customize plugin"
+msgstr "&Prispôsobiť zásuvný modul"
+
+#: action.py:131
+msgid "&Help"
+msgstr "&Pomocník"
+
+#: action.py:147 action.py:179 action.py:208 action.py:214
+msgid "User: {0}"
+msgstr "Používateľ: {0}"
+
+#: action.py:205 action.py:219
+msgid "Download tags from shelves"
+msgstr "Stiahnuť značky z políc"
+
+#: action.py:206 action.py:209 action.py:220
+msgid "Download shelves your book is on as tags"
+msgstr "Stiahnuť police, na ktorých sa kniha nachádza, ako značky"
+
+#: action.py:211 action.py:221
+msgid "Upload tags as shelves"
+msgstr "Nahrať značky ako police"
+
+#: action.py:212 action.py:215 action.py:222
+msgid "Add book to shelves represented by your tags"
+msgstr "Pridať knihu na police reprezentované vašimi značkami"
+
+#: action.py:267
+msgid "Added {0} books to shelf"
+msgstr "Pridaných {0} kníh do police"
+
+#: action.py:269
+msgid "Removed {0} books from shelf"
+msgstr "Odstránených {0} kníh z police"
+
+#: action.py:293
+msgid "Updated progress for {0} books"
+msgstr "Aktualizovaný priebeh pre {0} kníh"
+
+#: action.py:301 action.py:325
+msgid "Syncing books from shelves"
+msgstr "Synchronizujú sa knihy z políc"
+
+#: action.py:304 action.py:313
+msgid "Unable to Sync"
+msgstr "Nemožno synchronizovať"
+
+#: action.py:305
+msgid "You must specify sync actions or columns for at least one shelf first."
+msgstr ""
+"Najprv musíte zadať akcie synchronizácie alebo stĺpce aspoň pre jednu "
+"policu."
+
+#: action.py:314
+msgid "Unable to retrieve books for selected shelves."
+msgstr "Nepodarilo sa získať knihy pre vybrané police."
+
+#: action.py:324
+msgid "Synchronised {0} books from shelf"
+msgstr "Synchronizovaných {0} kníh z police"
+
+#: action.py:326
+msgid "Updating books"
+msgstr "Aktualizujú sa knihy"
+
+#: action.py:327
+msgid "Book: %v"
+msgstr "Kniha: %v"
+
+#: action.py:380 action.py:513
+msgid "Updating book"
+msgstr "Aktualizuje sa kniha"
+
+#: action.py:535
+msgid "Too Many Rows"
+msgstr "Príliš veľa riadkov"
+
+#: action.py:536
+msgid "Reduce your selection to at most 50 rows."
+msgstr "Znížte výber na maximálne 50 riadkov."
+
+#: action.py:565 config.py:544 config.py:1193 dialogs.py:1782 dialogs.py:2470
+msgid "Are you sure?"
+msgstr "Naozaj?"
+
+#: action.py:566
+msgid ""
+"Removing any linked Goodreads ids may result in you having to manually "
+"select the link again for these book(s)."
+msgstr ""
+"Odstránenie akýchkoľvek prepojených identifikátorov Goodreads môže mať za "
+"následok, že budete musieť pre tieto knihy znova manuálne vybrať prepojenie."
+
+#: action.py:568
+msgid "Are you sure you want to remove the link(s)?"
+msgstr "Naozaj chcete odstrániť prepojenie (prepojenia)?"
+
+#: action.py:577
+msgid "Removing Goodreads ids from books"
+msgstr "Odstraňujú sa identifikátory Goodreads z kníh"
+
+#: action.py:619
+msgid "No Goodreads Id"
+msgstr "Žiadny identifikátor Goodreads"
+
+#: action.py:620
+msgid ""
+"You cannot switch editions for a book that is not already linked to "
+"Goodreads.<br>"
+msgstr ""
+"Nemôžete prepnúť vydanie pre knihu, ktorá ešte nie je prepojená s "
+"Goodreads.<br>"
+
+#: action.py:749
+msgid "Updated tags for {0} books"
+msgstr "Aktualizované značky pre {0} kníh"
+
+#: action.py:751
+msgid "No books required tags updating"
+msgstr "Žiadne knihy nevyžadovali aktualizáciu značiek"
+
+#: action.py:803
+msgid "Updated {0} shelves for selected books"
+msgstr "Aktualizovaných {0} políc pre vybrané knihy"
+
+#: action.py:805
+msgid "No shelves required updating"
+msgstr "Žiadne police nevyžadovali aktualizáciu"
+
+#: action.py:834 action.py:849
+msgid "Calibre must be restarted before the plugin can be configured."
+msgstr "Pred konfiguráciou zásuvného modulu sa musí reštartovať calibre."
+
+#: action.py:841
+msgid ""
+"New custom colums have been created.\n"
+"You will need to restart calibre for this change to be applied."
+msgstr ""
+"Boli vytvorené nové vlastné stĺpce.\n"
+"Na uplatnenie tejto zmeny budete musieť reštartovať calibre."
+
+#: action.py:858
+msgid "Goodreads Sync progress"
+msgstr "Priebeh synchronizácie Goodreads"
+
+#: config.py:130
+msgid "Goodreads Tags"
+msgstr "Značky Goodreads"
+
+#: config.py:133
+msgid "Goodreads tags used for mapping to calbre."
+msgstr "Značky Goodreads použité na mapovanie do calibre."
+
+#: config.py:135
+msgid "Tags column:"
+msgstr "Stĺpec značiek:"
+
+#: config.py:136
+msgid ""
+"For use with the \"Download tags from shelves\" and \"Upload tags as "
+"shelves\" menu items"
+msgstr ""
+"Na použitie s položkami ponuky „Stiahnuť značky z políc“ a „Nahrať značky "
+"ako police“"
+
+#: config.py:140
+msgid "Goodreads Rating"
+msgstr "Hodnotenie Goodreads"
+
+#: config.py:142
+msgid "Rating for the book."
+msgstr "Hodnotenie knihy."
+
+#: config.py:144
+msgid "Rating column:"
+msgstr "Stĺpec hodnotenia:"
+
+#: config.py:145 config.py:154 config.py:163 config.py:172
+msgid ""
+"For use with the \"Add to shelf\" and \"Sync from shelf\" menu items\n"
+"to synchronise with your Goodreads review for a book"
+msgstr ""
+"Na použitie s položkami ponuky „Pridať do police“ a „Synchronizovať z police“\n"
+"na synchronizáciu s vašou recenziou knihy v Goodreads"
+
+#: config.py:149 dialogs.py:441 dialogs.py:1417 dialogs.py:1935
+msgid "Date Read"
+msgstr "Dátum prečítania"
+
+#: config.py:151
+msgid "Date when the book was last read."
+msgstr "Dátum, kedy bola kniha naposledy prečítaná."
+
+#: config.py:153
+msgid "Date read column:"
+msgstr "Stĺpec dátumu prečítania:"
+
+#: config.py:158
+msgid "Goodreads Review"
+msgstr "Recenzia Goodreads"
+
+#: config.py:160
+msgid "Review of book."
+msgstr "Recenzia knihy."
+
+#: config.py:162
+msgid "Review text column:"
+msgstr "Stĺpec textu recenzie:"
+
+#: config.py:167
+msgid "Goodreads Progress"
+msgstr "Priebeh Goodreads"
+
+#: config.py:169
+msgid "Reading progress for the book"
+msgstr "Priebeh čítania knihy"
+
+#: config.py:171
+msgid "Reading progress column:"
+msgstr "Stĺpec priebehu čítania:"
+
+#: config.py:267
+msgid "Never modify the calibre ISBN"
+msgstr "Nikdy nemeniť ISBN v calibre"
+
+#: config.py:268
+msgid "Replace calibre ISBN only if none present"
+msgstr "Nahradiť ISBN v calibre len ak nie je prítomné"
+
+#: config.py:269
+msgid "Always overwrite calibre ISBN value"
+msgstr "Vždy prepísať hodnotu ISBN v calibre"
+
+#: config.py:298
+msgid "Add value to column"
+msgstr "Pridať hodnotu do stĺpca"
+
+#: config.py:298
+msgid "Remove value from column"
+msgstr "Odstrániť hodnotu zo stĺpca"
+
+#: config.py:342 config.py:347
+msgid "None"
+msgstr "Žiadne"
+
+#: config.py:343 config.py:348
+msgid "Today"
+msgstr "Dnes"
+
+#: config.py:349
+msgid "Goodreads Date Read"
+msgstr "Dátum prečítania Goodreads"
+
+#: config.py:350
+msgid "Goodreads Date Added"
+msgstr "Dátum pridania Goodreads"
+
+#: config.py:351
+msgid "Goodreads Date Updated"
+msgstr "Dátum aktualizácie Goodreads"
+
+#: config.py:352
+msgid "Goodreads Date Started"
+msgstr "Dátum začatia Goodreads"
+
+#: config.py:382
+msgid "Create Goodreads shelf"
+msgstr "Vytvoriť policu Goodreads"
+
+#: config.py:388
+msgid "Shelf name:"
+msgstr "Názov police:"
+
+#: config.py:392
+msgid "A book can only be on one of your exclusive shelves"
+msgstr "Kniha môže byť len na jednej z vašich výhradných políc"
+
+#: config.py:393
+msgid "Allowing customizing the order of books on this shelf"
+msgstr "Povolenie prispôsobenia poradia kníh na tejto polici"
+
+#: config.py:394
+msgid "One shelf only can be featured at the top of your profile"
+msgstr "Len jedna police môže byť zvýraznená v hornej časti vášho profilu"
+
+#: config.py:437
+msgid "Action"
+msgstr "Akcia"
+
+#: config.py:437
+msgid "Column"
+msgstr "Stĺpec"
+
+#: config.py:437
+msgid "Value"
+msgstr "Hodnota"
+
+#: config.py:451
+msgid "Invalid column"
+msgstr "Neplatný stĺpec"
+
+#: config.py:452
+msgid "Removing the column '{0}' action as the column cannot be found"
+msgstr "Odstraňuje sa akcia stĺpca '{0}', pretože stĺpec sa nedá nájsť"
+
+#: config.py:541
+msgid "Are you sure you want to delete this action?"
+msgstr "Naozaj chcete odstrániť túto akciu?"
+
+#: config.py:543
+msgid "Are you sure you want to delete the selected {0} actions?"
+msgstr "Naozaj chcete odstrániť vybrané akcie ({0})?"
+
+#: config.py:599
+msgid "Edit Shelf Add Actions"
+msgstr "Upraviť akcie pridania do police"
+
+#: config.py:600
+msgid "Edit add to shelf actions for {0} shelves"
+msgstr "Upraviť akcie pridania do police pre {0} políc"
+
+#: config.py:602
+msgid "Edit add to shelf actions for '{0}' shelf"
+msgstr "Upraviť akcie pridania do police pre policu '{0}'"
+
+#: config.py:603
+msgid ""
+"&What should calibre do with matching linked books when you click 'Add to "
+"shelf'?"
+msgstr ""
+"&Čo má calibre urobiť so zodpovedajúcimi prepojenými knihami, keď kliknete "
+"na „Pridať do police“?"
+
+#: config.py:606
+msgid "Edit Shelf Sync Actions"
+msgstr "Upraviť akcie synchronizácie police"
+
+#: config.py:607
+msgid "Edit sync actions for {0} shelves"
+msgstr "Upraviť akcie synchronizácie pre {0} políc"
+
+#: config.py:609
+msgid "Edit sync actions for '{0}' shelf"
+msgstr "Upraviť akcie synchronizácie pre policu '{0}'"
+
+#: config.py:610
+msgid ""
+"&What should calibre do with matching linked books when you click 'Sync from"
+" shelf'?"
+msgstr ""
+"&Čo má calibre urobiť so zodpovedajúcimi prepojenými knihami, keď kliknete "
+"na „Synchronizovať z police“?"
+
+#: config.py:635
+msgid "Add action"
+msgstr "Pridať akciu"
+
+#: config.py:641
+msgid "Delete action"
+msgstr "Odstrániť akciu"
+
+#: config.py:656
+msgid "Upload rating to Goodreads when adding to this shelf"
+msgstr "Nahrať hodnotenie do Goodreads pri pridávaní do tejto police"
+
+#: config.py:657
+msgid "Upload date read to Goodreads when adding to this shelf"
+msgstr "Nahrať dátum prečítania do Goodreads pri pridávaní do tejto police"
+
+#: config.py:658
+msgid "Upload review text to Goodreads when adding to this shelf"
+msgstr "Nahrať text recenzie do Goodreads pri pridávaní do tejto police"
+
+#: config.py:663
+msgid "Sync rating from Goodreads when syncing from this shelf"
+msgstr ""
+"Synchronizovať hodnotenie z Goodreads pri synchronizácii z tejto police"
+
+#: config.py:664
+msgid "Sync date read from Goodreads when syncing from this shelf"
+msgstr ""
+"Synchronizovať dátum prečítania z Goodreads pri synchronizácii z tejto "
+"police"
+
+#: config.py:665
+msgid "Sync review text from Goodreads when syncing from this shelf"
+msgstr ""
+"Synchronizovať text recenzie z Goodreads pri synchronizácii z tejto police"
+
+#: config.py:718
+msgid "Active"
+msgstr "Aktívne"
+
+#: config.py:718
+msgid "Count*"
+msgstr "Počet*"
+
+#: config.py:718
+msgid "Shelf Add Actions"
+msgstr "Akcie pridania do police"
+
+#: config.py:718
+msgid "Shelf Name"
+msgstr "Názov police"
+
+#: config.py:718
+msgid "Sync Actions"
+msgstr "Akcie synchronizácie"
+
+#: config.py:718
+msgid "calibre Tags"
+msgstr "Značky calibre"
+
+#: config.py:737
+msgid "Edit shelf add actions"
+msgstr "Upraviť akcie pridania do police"
+
+#: config.py:740
+msgid "Edit sync actions"
+msgstr "Upraviť akcie synchronizácie"
+
+#: config.py:746
+msgid "Make all Active"
+msgstr "Nastaviť všetky ako aktívne"
+
+#: config.py:749
+msgid "Make none Active"
+msgstr "Nastaviť žiadne ako aktívne"
+
+#: config.py:755
+msgid "Edit Shelves on Goodreads"
+msgstr "Upraviť police v Goodreads"
+
+#: config.py:773
+msgid "Shelf marked as exclusive"
+msgstr "Police označená ako výhradná"
+
+#: config.py:776
+msgid "Count as at last shelves list refresh"
+msgstr "Počet k poslednej aktualizácii zoznamu políc"
+
+#: config.py:830
+msgid "Add '{0}' to column '{1}', "
+msgstr "Pridať '{0}' do stĺpca '{1}', "
+
+#: config.py:832
+msgid "Remove '{0}' from column '{1}', "
+msgstr "Odstrániť '{0}' zo stĺpca '{1}', "
+
+#: config.py:913
+msgid "Select Goodreads user:"
+msgstr "Vyberte používateľa Goodreads:"
+
+#: config.py:920
+msgid "Add user profile"
+msgstr "Pridať používateľský profil"
+
+#: config.py:925
+msgid "Delete user profile"
+msgstr "Odstrániť používateľský profil"
+
+#: config.py:929
+msgid "Authorize Plugin with Goodreads"
+msgstr "Autorizovať zásuvný modul v Goodreads"
+
+#: config.py:935
+msgid "User Shelves:"
+msgstr "Používateľské police:"
+
+#: config.py:947
+msgid "Refresh Shelves"
+msgstr "Aktualizovať police"
+
+#: config.py:948
+msgid "Refresh the list of shelves and book counts from Goodreads"
+msgstr "Aktualizovať zoznam políc a počty kníh z Goodreads"
+
+#: config.py:952
+msgid "Add Shelf"
+msgstr "Pridať policu"
+
+#: config.py:953
+msgid "Add a new shelf"
+msgstr "Pridať novú policu"
+
+#: config.py:958
+msgid "Edit 'Shelf Add' Actions"
+msgstr "Upraviť akcie „Pridania do police“"
+
+#: config.py:959
+msgid "Edit actions to apply when using 'Add to shelf'"
+msgstr "Upraviť akcie, ktoré sa použijú pri „Pridať do police“"
+
+#: config.py:963
+msgid "Edit 'Sync' Actions"
+msgstr "Upraviť akcie „Synchronizácie“"
+
+#: config.py:964
+msgid "Edit actions to apply when using 'Sync from shelf'"
+msgstr "Upraviť akcie, ktoré sa použijú pri „Synchronizovať z police“"
+
+#: config.py:973
+msgid "Other Options:"
+msgstr "Iné možnosti:"
+
+#: config.py:978
+msgid "When linking to Goodreads:"
+msgstr "Pri prepojení s Goodreads:"
+
+#: config.py:984
+msgid "Display the 'Add to shelf' menu option"
+msgstr "Zobraziť položku ponuky „Pridať do police“"
+
+#: config.py:985
+msgid "Display the 'Remove from shelf' menu option"
+msgstr "Zobraziť položku ponuky „Odstrániť z police“"
+
+#: config.py:986
+msgid "Display the 'Update reading progress' menu option"
+msgstr "Zobraziť položku ponuky „Aktualizovať priebeh čítania“"
+
+#: config.py:987
+msgid "Display the 'Sync from shelf' menu option"
+msgstr "Zobraziť položku ponuky „Synchronizovať z police“"
+
+#: config.py:988
+msgid "Display the 'View shelf' menu option"
+msgstr "Zobraziť položku ponuky „Zobraziť policu“"
+
+#: config.py:989
+msgid ""
+"If the reading progress is the percent read, check this. Otherwise, the "
+"reading progress the page number."
+msgstr ""
+"Ak je priebeh čítania percento prečítania, zaškrtnite toto. V opačnom "
+"prípade je priebehom čítania číslo strany."
+
+#: config.py:989
+msgid "Reading progress is percent read"
+msgstr "Priebeh čítania je percento prečítania"
+
+#: config.py:990
+msgid "If adding empty books, store author as LN,FN"
+msgstr "Pri pridávaní prázdnych kníh ukladať autora ako LN,FN"
+
+#: config.py:999
+msgid "Synchronisable Custom Columns:"
+msgstr "Synchronizovateľné vlastné stĺpce:"
+
+#: config.py:1050
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Upraviť klávesové skratky priradené tomuto zásuvnému modulu"
+
+#: config.py:1054
+msgid "Help"
+msgstr "Pomocník"
+
+#: config.py:1170
+msgid "Add new user"
+msgstr "Pridať nového používateľa"
+
+#: config.py:1171
+msgid ""
+"You must create a profile for each Goodreads user you will connect "
+"to.<br>Enter a unique display name for this user profile:"
+msgstr ""
+"Pre každého používateľa Goodreads, s ktorým sa chcete prepojiť, musíte "
+"vytvoriť profil.<br>Zadajte jedinečný zobrazovaný názov pre tento "
+"používateľský profil:"
+
+#: config.py:1179
+msgid "A user with the same name already exists"
+msgstr "Používateľ s rovnakým názvom už existuje"
+
+#: config.py:1179
+msgid "Add Failed"
+msgstr "Pridanie zlyhalo"
+
+#: config.py:1194
+msgid "Do you want to delete the user profile for '{0}'"
+msgstr "Chcete odstrániť používateľský profil pre '{0}'?"
+
+#: config.py:1211
+msgid "Confirm Authorization"
+msgstr "Potvrdiť autorizáciu"
+
+#: config.py:1212
+msgid ""
+"Have you clicked 'Allow access' for this plugin on the Goodreads website?"
+msgstr ""
+"Klikli ste na „Povoliť prístup“ pre tento zásuvný modul na webovej stránke "
+"Goodreads?"
+
+#: config.py:1227
+msgid "Goodreads failure"
+msgstr "Zlyhanie Goodreads"
+
+#: config.py:1227
+msgid "Unable to obtain the user id"
+msgstr "Nepodarilo sa získať ID používateľa"
+
+#: config.py:1273
+msgid "Duplicate shelf name"
+msgstr "Duplicitný názov police"
+
+#: config.py:1274
+msgid "There is already a shelf named:"
+msgstr "Už existuje police s názvom:"
+
+#: core.py:48 core.py:484 core.py:486 dialogs.py:305 dialogs.py:307
+#: dialogs.py:1148 dialogs.py:1150
+msgid "Unknown"
+msgstr "Neznáme"
+
+#: core.py:202 core.py:207
+msgid "Goodreads Failure"
+msgstr "Zlyhanie Goodreads"
+
+#: core.py:208
+msgid "The request contacting Goodreads has failed."
+msgstr "Požiadavka na kontaktovanie Goodreads zlyhala."
+
+#: core.py:209
+msgid ""
+"If it reoccurs you may have exceeded a request limit imposed by Goodreads."
+msgstr ""
+"Ak sa to zopakuje, možno ste prekročili limit požiadaviek stanovený "
+"Goodreads."
+
+#: core.py:210
+msgid "In which case wait an additional 5-10 minutes before retrying."
+msgstr "V takom prípade pred opakovaním počkajte ďalších 5 – 10 minút."
+
+#: core.py:427
+msgid "Page"
+msgstr "Strana"
+
+#: core.py:430
+msgid "Syncing from shelf: {0}"
+msgstr "Synchronizuje sa z police: {0}"
+
+#: dialogs.py:131 dialogs.py:964
+msgid "View &book on Goodreads.com"
+msgstr "Zobraziť &knihu na Goodreads.com"
+
+#: dialogs.py:138 dialogs.py:971
+msgid "Paste Goodreads.com url"
+msgstr "Vložiť URL z Goodreads.com"
+
+#: dialogs.py:139 dialogs.py:972
+msgid "Ctrl+V"
+msgstr "Ctrl+V"
+
+#: dialogs.py:147
+msgid "Cover"
+msgstr "Obálka"
+
+#: dialogs.py:147
+msgid "Edition"
+msgstr "Vydanie"
+
+#: dialogs.py:147 dialogs.py:441 dialogs.py:980 dialogs.py:1214
+#: dialogs.py:1417
+msgid "Title"
+msgstr "Názov"
+
+#: dialogs.py:253
+msgid "Goodreads.com Editions"
+msgstr "Vydania Goodreads.com"
+
+#: dialogs.py:257 dialogs.py:1097
+msgid "Calibre book:"
+msgstr "Kniha calibre:"
+
+#: dialogs.py:261 dialogs.py:1101 dialogs.py:1288
+msgid "Title:"
+msgstr "Názov:"
+
+#: dialogs.py:263 dialogs.py:1103 dialogs.py:1290
+msgid "Author:"
+msgstr "Autor:"
+
+#: dialogs.py:265 dialogs.py:1105 dialogs.py:1292
+msgid "Series:"
+msgstr "Séria:"
+
+#: dialogs.py:267 dialogs.py:1107 dialogs.py:1294
+msgid "ISBN:"
+msgstr "ISBN:"
+
+#: dialogs.py:271
+msgid "Select the Goodreads edition to link to this calibre book:"
+msgstr ""
+"Vyberte vydanie Goodreads, ktoré sa má prepojiť s touto knihou calibre:"
+
+#: dialogs.py:278 dialogs.py:1118
+msgid "You can drag/drop a Goodreads website link to add it to the results."
+msgstr ""
+"Môžete pretiahnuť odkaz na webovú stránku Goodreads a pridať ho do "
+"výsledkov."
+
+#: dialogs.py:287 dialogs.py:1129
+msgid "Search Goodreads.com"
+msgstr "Hľadať na Goodreads.com"
+
+#: dialogs.py:290 dialogs.py:1132 dialogs.py:1352
+msgid "Skip"
+msgstr "Preskočiť"
+
+#: dialogs.py:292 dialogs.py:1134 dialogs.py:1354
+msgid ""
+"Skip this book and move to the next:\n"
+"'{0}'"
+msgstr ""
+"Preskočiť túto knihu a prejsť na ďalšiu:\n"
+"'{0}'"
+
+#: dialogs.py:347
+msgid "Select shelves to sync from:"
+msgstr "Vyberte police, z ktorých sa má synchronizovať:"
+
+#: dialogs.py:362 dialogs.py:1617
+msgid "Show Active shelves only"
+msgstr "Zobraziť len aktívne police"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "No shelves selected"
+msgstr "Nie sú vybrané žiadne police"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "You must select one or more shelves first."
+msgstr "Najprv musíte vybrať jednu alebo viac políc."
+
+#: dialogs.py:441
+msgid "Comment"
+msgstr "Komentár"
+
+#: dialogs.py:441
+msgid "Progress"
+msgstr "Priebeh"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Author"
+msgstr "Autor"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Series"
+msgstr "Série"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Rating"
+msgstr "Hodnotenie"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Review"
+msgstr "Recenzia"
+
+#: dialogs.py:441 dialogs.py:1417 dialogs.py:1933
+msgid "Status"
+msgstr "Stav"
+
+#: dialogs.py:450 dialogs.py:1426
+msgid "Search for book in Goodreads"
+msgstr "Hľadať knihu v Goodreads"
+
+#: dialogs.py:456 dialogs.py:1432 dialogs.py:1925
+msgid "&View book on Goodreads.com"
+msgstr "&Zobraziť knihu na Goodreads.com"
+
+#: dialogs.py:630 dialogs.py:637
+msgid "Update Reading Progress"
+msgstr "Aktualizovať priebeh čítania"
+
+#: dialogs.py:644 dialogs.py:1605
+msgid ""
+"To fix missing links, double click to search for a matching book in "
+"Goodreads"
+msgstr ""
+"Na opravu chýbajúcich prepojení dvakrát kliknite a vyhľadajte zodpovedajúcu "
+"knihu v Goodreads"
+
+#: dialogs.py:659
+msgid "Put books on currently-reading shelf"
+msgstr "Umiestniť knihy na policu „práve čítam“"
+
+#: dialogs.py:660
+msgid ""
+"If the reading progress is being updated, but the books are not finished, "
+"put the books onto the 'currently-reading' shelf."
+msgstr ""
+"Ak sa aktualizuje priebeh čítania, ale knihy nie sú dokončené, umiestniť "
+"knihy na policu „práve čítam“."
+
+#: dialogs.py:664
+msgid "Put finished books on read shelf"
+msgstr "Umiestniť dokončené knihy na policu prečítaných"
+
+#: dialogs.py:665
+msgid "If the reading progress is 100%, put the books onto the 'read' shelf."
+msgstr "Ak je priebeh čítania 100 %, umiestniť knihy na policu „prečítané“."
+
+#: dialogs.py:673 dialogs.py:1653
+msgid "Search Goodreads"
+msgstr "Hľadať v Goodreads"
+
+#: dialogs.py:676
+msgid "Update Progress"
+msgstr "Aktualizovať priebeh"
+
+#: dialogs.py:680 dialogs.py:1660 dialogs.py:2157
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: dialogs.py:691 dialogs.py:701 dialogs.py:1717 dialogs.py:1727
+msgid "No Goodreads book linked!"
+msgstr "Nie je prepojená žiadna kniha Goodreads!"
+
+#: dialogs.py:704 dialogs.py:1730 dialogs.py:2293
+msgid "Ready"
+msgstr "Pripravené"
+
+#: dialogs.py:726 dialogs.py:1752 dialogs.py:2221
+msgid "{0} missing links"
+msgstr "{0} chýbajúcich prepojení"
+
+#: dialogs.py:728 dialogs.py:1754 dialogs.py:2223
+msgid "{0}, {1} warnings"
+msgstr "{0}, {1} upozornení"
+
+#: dialogs.py:760
+msgid "Updating Goodreads progress"
+msgstr "Aktualizuje sa priebeh Goodreads"
+
+#: dialogs.py:828
+msgid "Updating books in calibre..."
+msgstr "Aktualizujú sa knihy v calibre..."
+
+#: dialogs.py:896
+msgid "You are already linked to this calibre book"
+msgstr "S touto knihou calibre ste už prepojení"
+
+#: dialogs.py:899
+msgid "This calibre book is linked to a different Goodreads book."
+msgstr "Táto kniha calibre je prepojená s inou knihou Goodreads."
+
+#: dialogs.py:909
+msgid "You have already linked to this Goodreads book"
+msgstr "S touto knihou Goodreads ste už prepojení"
+
+#: dialogs.py:912
+msgid "This Goodreads book is linked to a different calibre book."
+msgstr "Táto kniha Goodreads je prepojená s inou knihou calibre."
+
+#: dialogs.py:920
+msgid "You must link this calibre book to a matching book in Goodreads"
+msgstr ""
+"Túto knihu calibre musíte prepojiť so zodpovedajúcou knihou v Goodreads"
+
+#: dialogs.py:921
+msgid "No changes will be made to your shelf in Goodreads for this book"
+msgstr "Pre túto knihu sa vo vašej polici v Goodreads nevykonajú žiadne zmeny"
+
+#: dialogs.py:940
+msgid ""
+"You must link this Goodreads book to a matching book in calibre \n"
+"in order for any sync actions to be applied"
+msgstr ""
+"Túto knihu Goodreads musíte prepojiť so zodpovedajúcou knihou v calibre, \n"
+"aby sa mohli použiť akcie synchronizácie"
+
+#: dialogs.py:942
+msgid ""
+"No actions have been set for this shelf.\n"
+"Use 'Customize plugin' to specify the actions"
+msgstr ""
+"Pre túto policu neboli nastavené žiadne akcie.\n"
+"Na určenie akcií použite „Prispôsobiť zásuvný modul“"
+
+#: dialogs.py:944
+msgid "Actions will be applied when you click Sync Now"
+msgstr "Akcie sa použijú, keď kliknete na Synchronizovať teraz"
+
+#: dialogs.py:945
+msgid ""
+"An empty book will be created in calibre for this book \n"
+"using the Goodreads metadata"
+msgstr ""
+"Pre túto knihu sa v calibre vytvorí prázdna kniha \n"
+"pomocou metadát Goodreads"
+
+#: dialogs.py:1088
+msgid "Search for Goodreads book"
+msgstr "Hľadať knihu Goodreads"
+
+#: dialogs.py:1091
+msgid "Goodreads.com matches for Title/Author"
+msgstr "Zhody na Goodreads.com pre názov/autora"
+
+#: dialogs.py:1093
+msgid "Goodreads.com matches for ISBN"
+msgstr "Zhody na Goodreads.com pre ISBN"
+
+#: dialogs.py:1111
+msgid "Select the Goodreads book to link to this calibre book:"
+msgstr "Vyberte knihu Goodreads, ktorá sa má prepojiť s touto knihou calibre:"
+
+#: dialogs.py:1126
+msgid "Switch Edition"
+msgstr "Prepnúť vydanie"
+
+#: dialogs.py:1177
+msgid "No book selected"
+msgstr "Nie je vybraná žiadna kniha"
+
+#: dialogs.py:1177
+msgid "You must select a book to switch edition"
+msgstr "Na prepnutie vydania musíte vybrať knihu"
+
+#: dialogs.py:1184
+msgid "Invalid book"
+msgstr "Neplatná kniha"
+
+#: dialogs.py:1184
+msgid "No goodreads work id found for this book"
+msgstr "Pre túto knihu sa nenašiel žiadny identifikátor diela Goodreads"
+
+#: dialogs.py:1214
+msgid "ISBN"
+msgstr "ISBN"
+
+#: dialogs.py:1278
+msgid "Search for calibre Book"
+msgstr "Hľadať knihu calibre"
+
+#: dialogs.py:1281
+msgid "calibre Search Results"
+msgstr "Výsledky hľadania v calibre"
+
+#: dialogs.py:1284
+msgid "Goodreads book:"
+msgstr "Kniha Goodreads:"
+
+#: dialogs.py:1298
+msgid "Select a calibre book to link to this Goodreads book:"
+msgstr "Vyberte knihu calibre, ktorá sa má prepojiť s touto knihou Goodreads:"
+
+#: dialogs.py:1304
+msgid "Or, try a different calibre search:"
+msgstr "Alebo skúste iné hľadanie v calibre:"
+
+#: dialogs.py:1309
+msgid "&Title:"
+msgstr "&Názov:"
+
+#: dialogs.py:1317
+msgid "&Author:"
+msgstr "&Autor:"
+
+#: dialogs.py:1326
+msgid "&Go!"
+msgstr "&Hľadať!"
+
+#: dialogs.py:1329
+msgid "Search again using this title/author"
+msgstr "Hľadať znova pomocou tohto názvu/autora"
+
+#: dialogs.py:1332
+msgid "Clear the title field"
+msgstr "Vymazať pole názvu"
+
+#: dialogs.py:1336
+msgid "Clear the author field"
+msgstr "Vymazať pole autora"
+
+#: dialogs.py:1393
+msgid "Overwrite Goodreads Link"
+msgstr "Prepísať prepojenie Goodreads"
+
+#: dialogs.py:1394
+msgid "This calibre book is already linked to a different Goodreads book."
+msgstr "Táto kniha calibre je už prepojená s inou knihou Goodreads."
+
+#: dialogs.py:1395
+msgid "Only one Goodreads book can be linked to a calibre book at a time."
+msgstr ""
+"S knihou calibre môže byť v jednom okamihu prepojená len jedna kniha "
+"Goodreads."
+
+#: dialogs.py:1396
+msgid "Click Yes to overwrite the link to this book, No to Cancel"
+msgstr ""
+"Kliknutím na Áno prepíšete prepojenie na túto knihu, kliknutím na Nie "
+"zrušíte"
+
+#: dialogs.py:1610
+msgid "Select shelf:"
+msgstr "Vyberte policu:"
+
+#: dialogs.py:1611
+msgid "Select one or more shelves to add or remove from"
+msgstr ""
+"Vyberte jednu alebo viac políc, do ktorých sa má pridať alebo z ktorých sa "
+"má odstrániť"
+
+#: dialogs.py:1636
+msgid "Add calibre Rating to Goodreads"
+msgstr "Pridať hodnotenie calibre do Goodreads"
+
+#: dialogs.py:1642
+msgid "Add calibre Date Read to Goodreads"
+msgstr "Pridať dátum prečítania calibre do Goodreads"
+
+#: dialogs.py:1648
+msgid "Add calibre Review Text to Goodreads"
+msgstr "Pridať text recenzie calibre do Goodreads"
+
+#: dialogs.py:1656
+msgid "Add to Shelf"
+msgstr "Pridať do police"
+
+#: dialogs.py:1656
+msgid "Remove from Shelf"
+msgstr "Odstrániť z police"
+
+#: dialogs.py:1770
+msgid "Too many shelves"
+msgstr "Príliš veľa políc"
+
+#: dialogs.py:1770
+msgid "You cannot add to more than one exclusive shelf."
+msgstr "Nemôžete pridať do viac ako jednej výhradnej police."
+
+#: dialogs.py:1774
+msgid "Exclusive Shelf Warning"
+msgstr "Upozornenie na výhradnú policu"
+
+#: dialogs.py:1775
+msgid "You are about to remove from a shelf marked as exclusive."
+msgstr "Chystáte sa odstrániť z police označenej ako výhradná."
+
+#: dialogs.py:1776
+msgid ""
+"This will result in these books being <b>moved</b> to one of your other "
+"shelves rather than being deleted from all shelves."
+msgstr ""
+"Výsledkom bude, že tieto knihy budú <b>presunuté</b> na jednu z vašich "
+"ostatných políc, a nie odstránené zo všetkých políc."
+
+#: dialogs.py:1778 dialogs.py:1784
+msgid "Do you want to continue?"
+msgstr "Chcete pokračovať?"
+
+#: dialogs.py:1783
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored."
+msgstr ""
+"V tomto zozname sú knihy, ktoré ešte nie sú prepojené s calibre a budú "
+"ignorované."
+
+#: dialogs.py:1913 dialogs.py:2159
+msgid "Search calibre"
+msgstr "Hľadať v calibre"
+
+#: dialogs.py:1919
+msgid "Add empty book to calibre"
+msgstr "Pridať prázdnu knihu do calibre"
+
+#: dialogs.py:1933
+msgid "GR Author"
+msgstr "Autor GR"
+
+#: dialogs.py:1933
+msgid "GR Title"
+msgstr "Názov GR"
+
+#: dialogs.py:1934
+msgid "GR Date Read"
+msgstr "Dátum prečítania GR"
+
+#: dialogs.py:1934
+msgid "GR ISBN"
+msgstr "ISBN GR"
+
+#: dialogs.py:1934
+msgid "GR Rating"
+msgstr "Hodnotenie GR"
+
+#: dialogs.py:1934
+msgid "GR Series"
+msgstr "Séria GR"
+
+#: dialogs.py:1934
+msgid "Linked to calibre Title"
+msgstr "Prepojené s názvom calibre"
+
+#: dialogs.py:1934
+msgid "Shelves"
+msgstr "Police"
+
+#: dialogs.py:1935
+msgid "calibre Author"
+msgstr "Autor calibre"
+
+#: dialogs.py:1935
+msgid "calibre ISBN"
+msgstr "ISBN calibre"
+
+#: dialogs.py:1935
+msgid "calibre Rating"
+msgstr "Hodnotenie calibre"
+
+#: dialogs.py:1935
+msgid "calibre Series"
+msgstr "Séria calibre"
+
+#: dialogs.py:2085
+msgid "Sync from Goodreads Shelf"
+msgstr "Synchronizovať z police Goodreads"
+
+#: dialogs.py:2098
+msgid "Sync from '{0}' shelf"
+msgstr "Synchronizovať z police '{0}'"
+
+#: dialogs.py:2100
+msgid "Sync from {0} shelves"
+msgstr "Synchronizovať z {0} políc"
+
+#: dialogs.py:2106
+msgid ""
+"To fix missing links, double click to search for a matching book in calibre."
+msgstr ""
+"Na opravu chýbajúcich prepojení dvakrát kliknite a vyhľadajte zodpovedajúcu "
+"knihu v calibre."
+
+#: dialogs.py:2126
+msgid "The following actions will be performed for books that are synced:"
+msgstr "Pre synchronizované knihy sa vykonajú tieto akcie:"
+
+#: dialogs.py:2134
+msgid "Add Goodreads Rating to calibre"
+msgstr "Pridať hodnotenie Goodreads do calibre"
+
+#: dialogs.py:2139
+msgid "Add Goodreads Date Read to calibre"
+msgstr "Pridať dátum prečítania Goodreads do calibre"
+
+#: dialogs.py:2144
+msgid "Add Goodreads Review Text to calibre"
+msgstr "Pridať text recenzie Goodreads do calibre"
+
+#: dialogs.py:2147
+msgid ""
+"When searching calibre, if only one result is found then automatically link "
+"to it without prompting"
+msgstr ""
+"Pri hľadaní v calibre, ak sa nájde len jeden výsledok, automaticky sa s ním "
+"prepojiť bez výzvy"
+
+#: dialogs.py:2154
+msgid "Sync Now"
+msgstr "Synchronizovať teraz"
+
+#: dialogs.py:2177
+msgid "For books on the <b>{0}</b> shelf:<br>"
+msgstr "Pre knihy na polici <b>{0}</b>:<br>"
+
+#: dialogs.py:2181
+msgid "+ Add '{0}' to column '{1}'<br>"
+msgstr "+ Pridať '{0}' do stĺpca '{1}'<br>"
+
+#: dialogs.py:2183
+msgid "- Remove '{0}' from column '{1}'<br>"
+msgstr "- Odstrániť '{0}' zo stĺpca '{1}'<br>"
+
+#: dialogs.py:2225
+msgid "{0}, {1} books to add"
+msgstr "{0}, {1} kníh na pridanie"
+
+#: dialogs.py:2296
+msgid "No calibre book linked!"
+msgstr "Nie je prepojená žiadna kniha calibre!"
+
+#: dialogs.py:2344
+msgid "Add to calibre"
+msgstr "Pridať do calibre"
+
+#: dialogs.py:2471
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored.<p><p>Are you sure you want to continue?"
+msgstr ""
+"V tomto zozname sú knihy, ktoré ešte nie sú prepojené s calibre a budú "
+"ignorované.<p><p>Naozaj chcete pokračovať?"

@@ -78,6 +78,22 @@ def update_calibre_isbn_if_required(calibre_book, goodreads_isbn, update_isbn=No
         calibre_book['calibre_isbn'] = goodreads_isbn
 
 
+def calibre_rating_column_allows_half_stars(db, rating_column):
+    if not rating_column or not rating_column.startswith('#'):
+        return True
+    custom_column = db.field_metadata.custom_field_metadata().get(rating_column)
+    if custom_column and custom_column.get('datatype') == 'rating':
+        return custom_column['display'].get('allow_half_stars', False)
+    return True
+
+
+def goodreads_rating_to_calibre_rating(rating, allow_half_stars=True):
+    rating = float(rating)
+    if allow_half_stars:
+        return int(rating * 2 + 0.5)
+    return int(rating + 0.5) * 2
+
+
 class HttpHelper(object):
 
     month_dict = {"Jan":1, "Feb":2, "Mar":3, "Apr":4,  "May":5,  "Jun":6,
@@ -350,7 +366,7 @@ class HttpHelper(object):
         url = '%s/review.xml' % (cfg.URL_HTTPS, )
         body_info = { 'book_id': goodreads_id }
         if rating is not None:
-            body_info['review[rating]'] = int(rating)
+            body_info['review[rating]'] = rating
         if date_read:
             body_info['review[read_at]'] = date_read.isoformat()[:10]
         if review_text:
@@ -368,7 +384,7 @@ class HttpHelper(object):
         url = '%s/review/%d.xml' % (cfg.URL_HTTPS, review_id)
         body_info = { 'shelf': shelf_name, 'book_id': book_id }
         if rating is not None:
-            body_info['review[rating]'] = int(rating)
+            body_info['review[rating]'] = rating
         if date_read:
             if date_read == UNDEFINED_DATE:
                 body_info['review[read_at]'] = ''
@@ -588,7 +604,7 @@ class HttpHelper(object):
         return book
 
     def _convert_review_xml_node_to_book(self, review_node, include_work=False):
-#         debug_print("HttpHelper::_convert_review_xml_node_to_book - review_node=", tostring(review_node))
+        #debug_print(et.tostring(review_node, encoding='unicode'))
         book_node = review_node.find('book')
         if book_node is None:
             return None
@@ -616,7 +632,12 @@ class HttpHelper(object):
             book['goodreads_shelves'] = ', '.join(shelves)
             book['goodreads_shelves_list'] = shelves
             book['goodreads_review_id'] = review_node.findtext('id')
-            book['goodreads_rating'] = int(review_node.findtext('rating'))
+            rating = review_node.findtext('rating')
+            precise_rating = review_node.findtext('precise_rating')
+            debug_print('Goodreads API rating: book_id=%s review_id=%s rating=%r precise_rating=%r' %
+                        (goodreads_id, book['goodreads_review_id'], rating, precise_rating))
+            rating = precise_rating or rating
+            book['goodreads_rating'] = float(rating)
             # Get the various date fields in case the user has sync actions for them
             book['goodreads_started_at'] = self._parse_goodreads_date(review_node.findtext('started_at'))
             book['goodreads_read_at'] = self._parse_goodreads_date(review_node.findtext('read_at'))
@@ -972,15 +993,15 @@ class CalibreSearcher(object):
     def get_uploadable_columns(self, db, mi, book):
         custom_columns = db.field_metadata.custom_field_metadata()
         rating_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_RATING_COLUMN, '')
-        book['calibre_rating'] = 0
+        book['calibre_rating'] = 0.
         book['calibre_rating_allow_half_stars'] = False
         if rating_column:
-            rating = mi.get(rating_column)
-            if rating:
-                book['calibre_rating'] = int(rating)
             if rating_column.startswith('#') and rating_column in custom_columns:
                 rating_custom_column = custom_columns[rating_column]
                 book['calibre_rating_allow_half_stars'] = rating_custom_column['display'].get('allow_half_stars', False)
+            rating = mi.get(rating_column)
+            if rating:
+                book['calibre_rating'] = float(rating) if book['calibre_rating_allow_half_stars'] else int(rating)
 
         date_read_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_DATE_READ_COLUMN, '')
         book['calibre_date_read'] = UNDEFINED_DATE
@@ -1110,7 +1131,7 @@ class CalibreDbHelper(object):
                 else:
                     rating_value = book.get('goodreads_rating','0')
                     # Adapt the Goodreads value (0-5) to calibre db value (range 0-10)
-                    new_value = float(rating_value) * 2
+                    new_value = goodreads_rating_to_calibre_rating(rating_value)
             elif action == 'REMOVE':
                 new_value = 0.0 # Value for any REMOVE action
             if new_value != existing_value:
@@ -1200,7 +1221,8 @@ class CalibreDbHelper(object):
                     else:
                         rating_value = book[value]
                         # Adapt the Goodreads value (0-5) to calibre db value (range 0-10)
-                        new_value = float(rating_value) * 2
+                        allow_half_stars = col['display'].get('allow_half_stars', False)
+                        new_value = goodreads_rating_to_calibre_rating(rating_value, allow_half_stars)
                 elif action == 'REMOVE':
                     new_value = 0.0 # Value for any REMOVE action
                 if new_value != existing_value:
@@ -1219,8 +1241,14 @@ class CalibreDbHelper(object):
                         # This function can get called in one of two ways. Either value is a key in the book map to get the value from 
                         # or it is a fixed value from the rule. Attempt to see if it is in the book map, if not then treat it as a fixed value.
                         if value in book:
-                            value = book[value]
-                        new_value = float(value)
+                            rating_column = cfg.plugin_prefs[cfg.STORE_PLUGIN].get(cfg.KEY_RATING_COLUMN, '')
+                            if value == 'goodreads_rating' and column == rating_column:
+                                allow_half_stars = col.get('display', {}).get('allow_half_stars', True)
+                                new_value = goodreads_rating_to_calibre_rating(book[value], allow_half_stars)
+                            else:
+                                new_value = float(book[value])
+                        else:
+                            new_value = float(value)
                 elif action == 'REMOVE':
                     new_value = 0 # Value for any REMOVE action
                 if new_value != existing_value:

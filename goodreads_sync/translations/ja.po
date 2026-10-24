@@ -1,0 +1,1312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Pk11 <epicpkmn11@outlook.com>, 2022
+# akihiko tanae (tanaeakihiko), 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 18:01+1000\n"
+"PO-Revision-Date: 2022-09-19 15:03+0000\n"
+"Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
+"Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:1049
+msgid "Keyboard shortcuts"
+msgstr "キーボードショートカット"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "今すぐcalibreを再起動します"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "環境設定:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "クリア"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "プラグインの全ての設定をクリアします"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "本プラグインによりこのライブラリ内の設定を変更して良いですか？"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "他のライブラリまたはcalibreプラグインフォルダのJSONファイルに保存された設定は変更されていません。"
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "あとでcalibreの再起動が必要です。"
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "設定が変更されました。"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "本プラグインの設定が変更されました。"
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "今すぐcalibreを再起動してください。"
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "このライブラリ用の本プラグインの設定をクリアしてもよろしいですか？"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "設定は削除されました。"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "このライブラリ用の本プラグインの全ての設定はクリアされました。"
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "クリップボードにコピー"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "未定義"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "再起動が必要です。"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "タイトル画像が見つかりません。本プラグインを使用する前にcalibreを再起動してください。"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "新しい列を作成"
+
+#: action.py:53
+msgid "Goodreads"
+msgstr "Goodreads"
+
+#: action.py:94 dialogs.py:1598
+msgid "Add to shelf"
+msgstr "本棚に追加"
+
+#: action.py:96 dialogs.py:1598
+msgid "Remove from shelf"
+msgstr "本棚から削除"
+
+#: action.py:98
+msgid "Update reading progress"
+msgstr "読書の進捗を更新"
+
+#: action.py:101
+msgid "Sync from shelf"
+msgstr "本棚から同期"
+
+#: action.py:104
+msgid "View shelf"
+msgstr "本棚を表示"
+
+#: action.py:108
+msgid "Link to Goodreads"
+msgstr "Goodreads にリンク"
+
+#: action.py:109
+msgid "Add, replace or clear link to a Goodreads book"
+msgstr "Goodreads の本へのリンクを追加/置換/解除します"
+
+#: action.py:111
+msgid "Linked book"
+msgstr "リンク済みの本"
+
+#: action.py:113
+msgid "View linked book"
+msgstr "リンク済みの本を表示"
+
+#: action.py:114
+msgid "Open a web browser page showing the linked Goodreads book"
+msgstr "リンクされている Goodreads の本のページを Web ブラウザで開きます"
+
+#: action.py:116 dialogs.py:250
+msgid "Switch Goodreads Edition"
+msgstr "Goodreads の版を切り替え"
+
+#: action.py:117
+msgid "Link to a different edition of a Goodreads book"
+msgstr "Goodreads の本の別の版にリンクします"
+
+#: action.py:124
+msgid "Remove link"
+msgstr "リンクを解除"
+
+#: action.py:125
+msgid "Clear the link with Goodreads"
+msgstr "Goodreads とのリンクを解除します"
+
+#: action.py:129
+msgid "&Customize plugin"
+msgstr "プラグインをカスタマイズ(&C)"
+
+#: action.py:131
+msgid "&Help"
+msgstr "ヘルプ(&H)"
+
+#: action.py:147 action.py:179 action.py:208 action.py:214
+msgid "User: {0}"
+msgstr "ユーザー: {0}"
+
+#: action.py:205 action.py:219
+msgid "Download tags from shelves"
+msgstr "本棚からタグをダウンロード"
+
+#: action.py:206 action.py:209 action.py:220
+msgid "Download shelves your book is on as tags"
+msgstr "本が置かれている本棚をタグとしてダウンロードします"
+
+#: action.py:211 action.py:221
+msgid "Upload tags as shelves"
+msgstr "タグを本棚としてアップロード"
+
+#: action.py:212 action.py:215 action.py:222
+msgid "Add book to shelves represented by your tags"
+msgstr "タグに対応する本棚に本を追加"
+
+#: action.py:267
+msgid "Added {0} books to shelf"
+msgstr "{0} 冊の本を本棚に追加しました"
+
+#: action.py:269
+msgid "Removed {0} books from shelf"
+msgstr "{0} 冊の本を本棚から削除しました"
+
+#: action.py:293
+msgid "Updated progress for {0} books"
+msgstr "{0} 冊の本の進捗を更新しました"
+
+#: action.py:301 action.py:325
+msgid "Syncing books from shelves"
+msgstr "本棚から本を同期しています"
+
+#: action.py:304 action.py:313
+msgid "Unable to Sync"
+msgstr "同期できません"
+
+#: action.py:305
+msgid "You must specify sync actions or columns for at least one shelf first."
+msgstr "最初に少なくとも 1 つの本棚について同期アクションまたは列を指定する必要があります。"
+
+#: action.py:314
+msgid "Unable to retrieve books for selected shelves."
+msgstr "選択した本棚の本を取得できません。"
+
+#: action.py:324
+msgid "Synchronised {0} books from shelf"
+msgstr "本棚から {0} 冊の本を同期しました"
+
+#: action.py:326
+msgid "Updating books"
+msgstr "本を更新しています"
+
+#: action.py:327
+msgid "Book: %v"
+msgstr "本: %v"
+
+#: action.py:380 action.py:513
+msgid "Updating book"
+msgstr "本を更新しています"
+
+#: action.py:535
+msgid "Too Many Rows"
+msgstr "行数が多すぎます"
+
+#: action.py:536
+msgid "Reduce your selection to at most 50 rows."
+msgstr "選択を 50 行以内に減らしてください。"
+
+#: action.py:565 config.py:544 config.py:1193 dialogs.py:1782 dialogs.py:2470
+msgid "Are you sure?"
+msgstr "本当によろしいですか？"
+
+#: action.py:566
+msgid ""
+"Removing any linked Goodreads ids may result in you having to manually "
+"select the link again for these book(s)."
+msgstr "リンクされている Goodreads ID を削除すると、これらの本については再度手動でリンクを選択する必要が生じる場合があります。"
+
+#: action.py:568
+msgid "Are you sure you want to remove the link(s)?"
+msgstr "リンクを解除してもよろしいですか?"
+
+#: action.py:577
+msgid "Removing Goodreads ids from books"
+msgstr "本から Goodreads ID を削除しています"
+
+#: action.py:619
+msgid "No Goodreads Id"
+msgstr "Goodreads ID がありません"
+
+#: action.py:620
+msgid ""
+"You cannot switch editions for a book that is not already linked to "
+"Goodreads.<br>"
+msgstr "Goodreads にリンクされていない本の版は切り替えられません。<br>"
+
+#: action.py:749
+msgid "Updated tags for {0} books"
+msgstr "{0} 冊の本のタグを更新しました"
+
+#: action.py:751
+msgid "No books required tags updating"
+msgstr "タグの更新が必要な本はありませんでした"
+
+#: action.py:803
+msgid "Updated {0} shelves for selected books"
+msgstr "選択した本について {0} 個の本棚を更新しました"
+
+#: action.py:805
+msgid "No shelves required updating"
+msgstr "更新が必要な本棚はありませんでした"
+
+#: action.py:834 action.py:849
+msgid "Calibre must be restarted before the plugin can be configured."
+msgstr "本プラグインを設定する前に calibre を再起動する必要があります。"
+
+#: action.py:841
+msgid ""
+"New custom colums have been created.\n"
+"You will need to restart calibre for this change to be applied."
+msgstr ""
+"新しいカスタム列が作成されました。\n"
+"この変更を適用するには calibre を再起動する必要があります。"
+
+#: action.py:858
+msgid "Goodreads Sync progress"
+msgstr "Goodreads Sync の進捗"
+
+#: config.py:130
+msgid "Goodreads Tags"
+msgstr "Goodreads のタグ"
+
+#: config.py:133
+msgid "Goodreads tags used for mapping to calbre."
+msgstr "calibre へのマッピングに使用する Goodreads のタグ。"
+
+#: config.py:135
+msgid "Tags column:"
+msgstr "タグの列:"
+
+#: config.py:136
+msgid ""
+"For use with the \"Download tags from shelves\" and \"Upload tags as "
+"shelves\" menu items"
+msgstr "「本棚からタグをダウンロード」および「タグを本棚としてアップロード」メニュー項目で使用します"
+
+#: config.py:140
+msgid "Goodreads Rating"
+msgstr "Goodreads の評価"
+
+#: config.py:142
+msgid "Rating for the book."
+msgstr "本の評価。"
+
+#: config.py:144
+msgid "Rating column:"
+msgstr "評価の列:"
+
+#: config.py:145 config.py:154 config.py:163 config.py:172
+msgid ""
+"For use with the \"Add to shelf\" and \"Sync from shelf\" menu items\n"
+"to synchronise with your Goodreads review for a book"
+msgstr ""
+"「本棚に追加」および「本棚から同期」メニュー項目で、\n"
+"本のGoodreads レビューと同期するために使用します"
+
+#: config.py:149 dialogs.py:441 dialogs.py:1417 dialogs.py:1935
+msgid "Date Read"
+msgstr "読了日"
+
+#: config.py:151
+msgid "Date when the book was last read."
+msgstr "本を最後に読んだ日。"
+
+#: config.py:153
+msgid "Date read column:"
+msgstr "読了日の列:"
+
+#: config.py:158
+msgid "Goodreads Review"
+msgstr "Goodreads のレビュー"
+
+#: config.py:160
+msgid "Review of book."
+msgstr "本のレビュー"
+
+#: config.py:162
+msgid "Review text column:"
+msgstr "レビュー本文の列:"
+
+#: config.py:167
+msgid "Goodreads Progress"
+msgstr "Goodreads の進捗"
+
+#: config.py:169
+msgid "Reading progress for the book"
+msgstr "本の読書の進捗"
+
+#: config.py:171
+msgid "Reading progress column:"
+msgstr "読書の進捗の列:"
+
+#: config.py:267
+msgid "Never modify the calibre ISBN"
+msgstr "calibre の ISBN を変更しない"
+
+#: config.py:268
+msgid "Replace calibre ISBN only if none present"
+msgstr "calibre の ISBN が未設定の場合のみ置換"
+
+#: config.py:269
+msgid "Always overwrite calibre ISBN value"
+msgstr "calibre の ISBN を常に上書き"
+
+#: config.py:298
+msgid "Add value to column"
+msgstr "列に値を追加"
+
+#: config.py:298
+msgid "Remove value from column"
+msgstr "列から値を削除"
+
+#: config.py:342 config.py:347
+msgid "None"
+msgstr "なし"
+
+#: config.py:343 config.py:348
+msgid "Today"
+msgstr "本日"
+
+#: config.py:349
+msgid "Goodreads Date Read"
+msgstr "Goodreads の読了日"
+
+#: config.py:350
+msgid "Goodreads Date Added"
+msgstr "Goodreads の追加日"
+
+#: config.py:351
+msgid "Goodreads Date Updated"
+msgstr "Goodreads の更新日"
+
+#: config.py:352
+msgid "Goodreads Date Started"
+msgstr "Goodreads の読書開始日"
+
+#: config.py:382
+msgid "Create Goodreads shelf"
+msgstr "Goodreads の本棚を作成"
+
+#: config.py:388
+msgid "Shelf name:"
+msgstr "本棚の名前:"
+
+#: config.py:392
+msgid "A book can only be on one of your exclusive shelves"
+msgstr "本は排他的な本棚のいずれか 1 つにしか置けません"
+
+#: config.py:393
+msgid "Allowing customizing the order of books on this shelf"
+msgstr "この本棚の本の並び順をカスタマイズできるようにします"
+
+#: config.py:394
+msgid "One shelf only can be featured at the top of your profile"
+msgstr "プロフィールの先頭に表示できる本棚は 1 つだけです"
+
+#: config.py:437
+msgid "Action"
+msgstr "アクション"
+
+#: config.py:437
+msgid "Column"
+msgstr "列"
+
+#: config.py:437
+msgid "Value"
+msgstr "値"
+
+#: config.py:451
+msgid "Invalid column"
+msgstr "無効な列"
+
+#: config.py:452
+msgid "Removing the column '{0}' action as the column cannot be found"
+msgstr "列 '{0}' が見つからないため、この列のアクションを削除します"
+
+#: config.py:541
+msgid "Are you sure you want to delete this action?"
+msgstr "このアクションを削除してもよろしいですか?"
+
+#: config.py:543
+msgid "Are you sure you want to delete the selected {0} actions?"
+msgstr "選択した {0} 個のアクションを削除してもよろしいですか?"
+
+#: config.py:599
+msgid "Edit Shelf Add Actions"
+msgstr "本棚追加アクションの編集"
+
+#: config.py:600
+msgid "Edit add to shelf actions for {0} shelves"
+msgstr "{0} 個の本棚の「本棚に追加」アクションを編集"
+
+#: config.py:602
+msgid "Edit add to shelf actions for '{0}' shelf"
+msgstr "本棚 '{0}' の「本棚に追加」アクションを編集"
+
+#: config.py:603
+msgid ""
+"&What should calibre do with matching linked books when you click 'Add to "
+"shelf'?"
+msgstr "「本棚に追加」をクリックしたとき、リンク済みの一致する本に対して calibre が行う処理は? (&W)"
+
+#: config.py:606
+msgid "Edit Shelf Sync Actions"
+msgstr "本棚の同期アクションの編集"
+
+#: config.py:607
+msgid "Edit sync actions for {0} shelves"
+msgstr "{0} 個の本棚の同期アクションを編集"
+
+#: config.py:609
+msgid "Edit sync actions for '{0}' shelf"
+msgstr "本棚 '{0}' の同期アクションを編集"
+
+#: config.py:610
+msgid ""
+"&What should calibre do with matching linked books when you click 'Sync from"
+" shelf'?"
+msgstr "「本棚から同期」をクリックしたとき、リンク済みの一致する本に対して calibre が行う処理は? (&W)"
+
+#: config.py:635
+msgid "Add action"
+msgstr "アクションを追加"
+
+#: config.py:641
+msgid "Delete action"
+msgstr "アクションを削除"
+
+#: config.py:656
+msgid "Upload rating to Goodreads when adding to this shelf"
+msgstr "この本棚に追加するときに評価を Goodreads にアップロード"
+
+#: config.py:657
+msgid "Upload date read to Goodreads when adding to this shelf"
+msgstr "この本棚に追加するときに読了日を Goodreads にアップロード"
+
+#: config.py:658
+msgid "Upload review text to Goodreads when adding to this shelf"
+msgstr "この本棚に追加するときにレビュー本文を Goodreads にアップロード"
+
+#: config.py:663
+msgid "Sync rating from Goodreads when syncing from this shelf"
+msgstr "この本棚から同期するときに Goodreads の評価を同期"
+
+#: config.py:664
+msgid "Sync date read from Goodreads when syncing from this shelf"
+msgstr "この本棚から同期するときに Goodreads の読了日を同期"
+
+#: config.py:665
+msgid "Sync review text from Goodreads when syncing from this shelf"
+msgstr "この本棚から同期するときに Goodreads のレビュー本文を同期"
+
+#: config.py:718
+msgid "Active"
+msgstr "有効"
+
+#: config.py:718
+msgid "Count*"
+msgstr "冊数*"
+
+#: config.py:718
+msgid "Shelf Add Actions"
+msgstr "本棚追加アクション"
+
+#: config.py:718
+msgid "Shelf Name"
+msgstr "本棚の名前"
+
+#: config.py:718
+msgid "Sync Actions"
+msgstr "同期アクション"
+
+#: config.py:718
+msgid "calibre Tags"
+msgstr "calibre のタグ"
+
+#: config.py:737
+msgid "Edit shelf add actions"
+msgstr "本棚追加アクションを編集"
+
+#: config.py:740
+msgid "Edit sync actions"
+msgstr "同期アクションを編集"
+
+#: config.py:746
+msgid "Make all Active"
+msgstr "すべて有効にする"
+
+#: config.py:749
+msgid "Make none Active"
+msgstr "すべて無効にする"
+
+#: config.py:755
+msgid "Edit Shelves on Goodreads"
+msgstr "Goodreads で本棚を編集"
+
+#: config.py:773
+msgid "Shelf marked as exclusive"
+msgstr "排他的に設定されている本棚"
+
+#: config.py:776
+msgid "Count as at last shelves list refresh"
+msgstr "最後に本棚一覧を更新した時点の冊数"
+
+#: config.py:830
+msgid "Add '{0}' to column '{1}', "
+msgstr "列 '{1}' に '{0}' を追加、 "
+
+#: config.py:832
+msgid "Remove '{0}' from column '{1}', "
+msgstr "列 '{1}' から '{0}' を削除、 "
+
+#: config.py:913
+msgid "Select Goodreads user:"
+msgstr "Goodreads のユーザーを選択:"
+
+#: config.py:920
+msgid "Add user profile"
+msgstr "ユーザープロファイルを追加"
+
+#: config.py:925
+msgid "Delete user profile"
+msgstr "ユーザープロファイルを削除"
+
+#: config.py:929
+msgid "Authorize Plugin with Goodreads"
+msgstr "プラグインを Goodreads で認証"
+
+#: config.py:935
+msgid "User Shelves:"
+msgstr "ユーザーの本棚:"
+
+#: config.py:947
+msgid "Refresh Shelves"
+msgstr "本棚を更新"
+
+#: config.py:948
+msgid "Refresh the list of shelves and book counts from Goodreads"
+msgstr "Goodreads から本棚の一覧と冊数を再取得"
+
+#: config.py:952
+msgid "Add Shelf"
+msgstr "本棚を追加"
+
+#: config.py:953
+msgid "Add a new shelf"
+msgstr "新しい本棚を追加"
+
+#: config.py:958
+msgid "Edit 'Shelf Add' Actions"
+msgstr "「本棚に追加」アクションを編集"
+
+#: config.py:959
+msgid "Edit actions to apply when using 'Add to shelf'"
+msgstr "「本棚に追加」を使用するときに適用するアクションを編集"
+
+#: config.py:963
+msgid "Edit 'Sync' Actions"
+msgstr "「同期」アクションを編集"
+
+#: config.py:964
+msgid "Edit actions to apply when using 'Sync from shelf'"
+msgstr "「本棚から同期」を使用するときに適用するアクションを編集"
+
+#: config.py:973
+msgid "Other Options:"
+msgstr "その他オプション:"
+
+#: config.py:978
+msgid "When linking to Goodreads:"
+msgstr "Goodreads にリンクするとき:"
+
+#: config.py:984
+msgid "Display the 'Add to shelf' menu option"
+msgstr "「本棚に追加」メニュー項目を表示"
+
+#: config.py:985
+msgid "Display the 'Remove from shelf' menu option"
+msgstr "「本棚から削除」メニュー項目を表示"
+
+#: config.py:986
+msgid "Display the 'Update reading progress' menu option"
+msgstr "「読書の進捗を更新」メニュー項目を表示"
+
+#: config.py:987
+msgid "Display the 'Sync from shelf' menu option"
+msgstr "「本棚から同期」メニュー項目を表示"
+
+#: config.py:988
+msgid "Display the 'View shelf' menu option"
+msgstr "「本棚を表示」メニュー項目を表示"
+
+#: config.py:989
+msgid ""
+"If the reading progress is the percent read, check this. Otherwise, the "
+"reading progress the page number."
+msgstr "読書の進捗を読了率で扱う場合はチェックしてください。チェックしない場合、読書の進捗はページ番号として扱われます。"
+
+#: config.py:989
+msgid "Reading progress is percent read"
+msgstr "読書の進捗は読了率による"
+
+#: config.py:990
+msgid "If adding empty books, store author as LN,FN"
+msgstr "空の本を追加するとき、著者を「姓-名」で保存する"
+
+#: config.py:999
+msgid "Synchronisable Custom Columns:"
+msgstr "同期可能なカスタム列:"
+
+#: config.py:1050
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "本プラグインに関連付けているキーボードショートカットを編集"
+
+#: config.py:1054
+msgid "Help"
+msgstr "ヘルプ"
+
+#: config.py:1170
+msgid "Add new user"
+msgstr "新しいユーザーを追加"
+
+#: config.py:1171
+msgid ""
+"You must create a profile for each Goodreads user you will connect "
+"to.<br>Enter a unique display name for this user profile:"
+msgstr ""
+"接続する Goodreads ユーザーごとにプロファイルを作成する必要があります。<br>このユーザープロファイルの固有の表示名を入力してください:"
+
+#: config.py:1179
+msgid "A user with the same name already exists"
+msgstr "同じ名前のユーザーが既に存在します"
+
+#: config.py:1179
+msgid "Add Failed"
+msgstr "追加に失敗しました"
+
+#: config.py:1194
+msgid "Do you want to delete the user profile for '{0}'"
+msgstr "'{0}' のユーザープロファイルを削除しますか"
+
+#: config.py:1211
+msgid "Confirm Authorization"
+msgstr "認証の確認"
+
+#: config.py:1212
+msgid ""
+"Have you clicked 'Allow access' for this plugin on the Goodreads website?"
+msgstr "Goodreads の Web サイトで、本プラグインに対して 'Allow access' をクリックしましたか?"
+
+#: config.py:1227
+msgid "Goodreads failure"
+msgstr "Goodreads のエラー"
+
+#: config.py:1227
+msgid "Unable to obtain the user id"
+msgstr "ユーザー ID を取得できません"
+
+#: config.py:1273
+msgid "Duplicate shelf name"
+msgstr "本棚の名前が重複しています"
+
+#: config.py:1274
+msgid "There is already a shelf named:"
+msgstr "次の名前の本棚が既に存在します:"
+
+#: core.py:48 core.py:484 core.py:486 dialogs.py:305 dialogs.py:307
+#: dialogs.py:1148 dialogs.py:1150
+msgid "Unknown"
+msgstr "不明"
+
+#: core.py:202 core.py:207
+msgid "Goodreads Failure"
+msgstr "Goodreads のエラー"
+
+#: core.py:208
+msgid "The request contacting Goodreads has failed."
+msgstr "Goodreads への要求が失敗しました。"
+
+#: core.py:209
+msgid ""
+"If it reoccurs you may have exceeded a request limit imposed by Goodreads."
+msgstr "繰り返し発生する場合、Goodreads が課している要求回数の上限を超えている可能性があります。"
+
+#: core.py:210
+msgid "In which case wait an additional 5-10 minutes before retrying."
+msgstr "その場合は、さらに 5〜10 分待ってから再試行してください。"
+
+#: core.py:427
+msgid "Page"
+msgstr "ページ"
+
+#: core.py:430
+msgid "Syncing from shelf: {0}"
+msgstr "本棚から同期しています: {0}"
+
+#: dialogs.py:131 dialogs.py:964
+msgid "View &book on Goodreads.com"
+msgstr "Goodreads.com で本を表示 (&B)"
+
+#: dialogs.py:138 dialogs.py:971
+msgid "Paste Goodreads.com url"
+msgstr "Goodreads.com の URL を貼り付け"
+
+#: dialogs.py:139 dialogs.py:972
+msgid "Ctrl+V"
+msgstr "Ctrl+V"
+
+#: dialogs.py:147
+msgid "Cover"
+msgstr "表紙"
+
+#: dialogs.py:147
+msgid "Edition"
+msgstr "版"
+
+#: dialogs.py:147 dialogs.py:441 dialogs.py:980 dialogs.py:1214
+#: dialogs.py:1417
+msgid "Title"
+msgstr "タイトル"
+
+#: dialogs.py:253
+msgid "Goodreads.com Editions"
+msgstr "Goodreads.com の版"
+
+#: dialogs.py:257 dialogs.py:1097
+msgid "Calibre book:"
+msgstr "calibre の本:"
+
+#: dialogs.py:261 dialogs.py:1101 dialogs.py:1288
+msgid "Title:"
+msgstr "タイトル:"
+
+#: dialogs.py:263 dialogs.py:1103 dialogs.py:1290
+msgid "Author:"
+msgstr "著者:"
+
+#: dialogs.py:265 dialogs.py:1105 dialogs.py:1292
+msgid "Series:"
+msgstr "シリーズ:"
+
+#: dialogs.py:267 dialogs.py:1107 dialogs.py:1294
+msgid "ISBN:"
+msgstr "ISBN:"
+
+#: dialogs.py:271
+msgid "Select the Goodreads edition to link to this calibre book:"
+msgstr "この calibre の本にリンクする Goodreads の版を選択してください:"
+
+#: dialogs.py:278 dialogs.py:1118
+msgid "You can drag/drop a Goodreads website link to add it to the results."
+msgstr "Goodreads の Web サイトのリンクをドラッグ&ドロップして結果に追加できます。"
+
+#: dialogs.py:287 dialogs.py:1129
+msgid "Search Goodreads.com"
+msgstr "Goodreads.com を検索"
+
+#: dialogs.py:290 dialogs.py:1132 dialogs.py:1352
+msgid "Skip"
+msgstr "スキップ"
+
+#: dialogs.py:292 dialogs.py:1134 dialogs.py:1354
+msgid ""
+"Skip this book and move to the next:\n"
+"'{0}'"
+msgstr ""
+"この本をスキップして次に進みます:\n"
+"'{0}'"
+
+#: dialogs.py:347
+msgid "Select shelves to sync from:"
+msgstr "同期元の本棚を選択:"
+
+#: dialogs.py:362 dialogs.py:1617
+msgid "Show Active shelves only"
+msgstr "有効な本棚のみ表示"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "No shelves selected"
+msgstr "本棚が選択されていません"
+
+#: dialogs.py:411 dialogs.py:1760
+msgid "You must select one or more shelves first."
+msgstr "最初に 1 つ以上の本棚を選択する必要があります。"
+
+#: dialogs.py:441
+msgid "Comment"
+msgstr "コメント"
+
+#: dialogs.py:441
+msgid "Progress"
+msgstr "進捗"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Author"
+msgstr "著者"
+
+#: dialogs.py:441 dialogs.py:980 dialogs.py:1214 dialogs.py:1417
+msgid "Series"
+msgstr "シリーズ"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Rating"
+msgstr "評価"
+
+#: dialogs.py:441 dialogs.py:1417
+msgid "Review"
+msgstr "レビュー"
+
+#: dialogs.py:441 dialogs.py:1417 dialogs.py:1933
+msgid "Status"
+msgstr "ステータス"
+
+#: dialogs.py:450 dialogs.py:1426
+msgid "Search for book in Goodreads"
+msgstr "Goodreads で本を検索"
+
+#: dialogs.py:456 dialogs.py:1432 dialogs.py:1925
+msgid "&View book on Goodreads.com"
+msgstr "Goodreads.com で本を表示 (&V)"
+
+#: dialogs.py:630 dialogs.py:637
+msgid "Update Reading Progress"
+msgstr "読書の進捗を更新"
+
+#: dialogs.py:644 dialogs.py:1605
+msgid ""
+"To fix missing links, double click to search for a matching book in "
+"Goodreads"
+msgstr "リンクがない場合は、ダブルクリックして Goodreads で一致する本を検索してください"
+
+#: dialogs.py:659
+msgid "Put books on currently-reading shelf"
+msgstr "本を 'currently-reading' 本棚に追加する"
+
+#: dialogs.py:660
+msgid ""
+"If the reading progress is being updated, but the books are not finished, "
+"put the books onto the 'currently-reading' shelf."
+msgstr "読書の進捗を更新して本が読了していない場合、その本を 'currently-reading' 本棚に追加します。"
+
+#: dialogs.py:664
+msgid "Put finished books on read shelf"
+msgstr "読了した本を 'read' 本棚に追加する"
+
+#: dialogs.py:665
+msgid "If the reading progress is 100%, put the books onto the 'read' shelf."
+msgstr "読書の進捗が 100% の場合、その本を 'read' 本棚に追加します。"
+
+#: dialogs.py:673 dialogs.py:1653
+msgid "Search Goodreads"
+msgstr "Goodreads を検索"
+
+#: dialogs.py:676
+msgid "Update Progress"
+msgstr "進捗を更新"
+
+#: dialogs.py:680 dialogs.py:1660 dialogs.py:2157
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: dialogs.py:691 dialogs.py:701 dialogs.py:1717 dialogs.py:1727
+msgid "No Goodreads book linked!"
+msgstr "Goodreads の本がリンクされていません!"
+
+#: dialogs.py:704 dialogs.py:1730 dialogs.py:2293
+msgid "Ready"
+msgstr "準備"
+
+#: dialogs.py:726 dialogs.py:1752 dialogs.py:2221
+msgid "{0} missing links"
+msgstr "リンクなし {0} 件"
+
+#: dialogs.py:728 dialogs.py:1754 dialogs.py:2223
+msgid "{0}, {1} warnings"
+msgstr "{0}、警告 {1} 件"
+
+#: dialogs.py:760
+msgid "Updating Goodreads progress"
+msgstr "Goodreads の進捗を更新しています"
+
+#: dialogs.py:828
+msgid "Updating books in calibre..."
+msgstr "calibre の本を更新しています..."
+
+#: dialogs.py:896
+msgid "You are already linked to this calibre book"
+msgstr "この calibre の本には既にリンクされています"
+
+#: dialogs.py:899
+msgid "This calibre book is linked to a different Goodreads book."
+msgstr "この calibre の本は別の Goodreads の本にリンクされています。"
+
+#: dialogs.py:909
+msgid "You have already linked to this Goodreads book"
+msgstr "この Goodreads の本には既にリンクしています"
+
+#: dialogs.py:912
+msgid "This Goodreads book is linked to a different calibre book."
+msgstr "この Goodreads の本は別の calibre の本にリンクされています。"
+
+#: dialogs.py:920
+msgid "You must link this calibre book to a matching book in Goodreads"
+msgstr "この calibre の本を Goodreads の一致する本にリンクする必要があります"
+
+#: dialogs.py:921
+msgid "No changes will be made to your shelf in Goodreads for this book"
+msgstr "この本については Goodreads の本棚は変更されません"
+
+#: dialogs.py:940
+msgid ""
+"You must link this Goodreads book to a matching book in calibre \n"
+"in order for any sync actions to be applied"
+msgstr ""
+"同期アクションを適用するには、この Goodreads の本を calibre の \n"
+"一致する本にリンクする必要があります"
+
+#: dialogs.py:942
+msgid ""
+"No actions have been set for this shelf.\n"
+"Use 'Customize plugin' to specify the actions"
+msgstr ""
+"この本棚にはアクションが設定されていません。\n"
+"アクションを指定するには「プラグインをカスタマイズ」を使用してください"
+
+#: dialogs.py:944
+msgid "Actions will be applied when you click Sync Now"
+msgstr "「今すぐ同期」をクリックするとアクションが適用されます"
+
+#: dialogs.py:945
+msgid ""
+"An empty book will be created in calibre for this book \n"
+"using the Goodreads metadata"
+msgstr ""
+"この本については、Goodreads の書誌データを使って calibre に \n"
+"空の本が作成されます"
+
+#: dialogs.py:1088
+msgid "Search for Goodreads book"
+msgstr "Goodreads の本を検索"
+
+#: dialogs.py:1091
+msgid "Goodreads.com matches for Title/Author"
+msgstr "タイトル/著者に一致する Goodreads.com の本"
+
+#: dialogs.py:1093
+msgid "Goodreads.com matches for ISBN"
+msgstr "ISBN に一致する Goodreads.com の本"
+
+#: dialogs.py:1111
+msgid "Select the Goodreads book to link to this calibre book:"
+msgstr "この calibre の本にリンクする Goodreads の本を選択してください:"
+
+#: dialogs.py:1126
+msgid "Switch Edition"
+msgstr "版を切り替え"
+
+#: dialogs.py:1177
+msgid "No book selected"
+msgstr "選択している本なし"
+
+#: dialogs.py:1177
+msgid "You must select a book to switch edition"
+msgstr "版を切り替える本を選択してください"
+
+#: dialogs.py:1184
+msgid "Invalid book"
+msgstr "無効な本"
+
+#: dialogs.py:1184
+msgid "No goodreads work id found for this book"
+msgstr "この本の Goodreads work ID が見つかりません"
+
+#: dialogs.py:1214
+msgid "ISBN"
+msgstr "ISBN"
+
+#: dialogs.py:1278
+msgid "Search for calibre Book"
+msgstr "calibre の本を検索"
+
+#: dialogs.py:1281
+msgid "calibre Search Results"
+msgstr "calibre の検索結果"
+
+#: dialogs.py:1284
+msgid "Goodreads book:"
+msgstr "Goodreads の本:"
+
+#: dialogs.py:1298
+msgid "Select a calibre book to link to this Goodreads book:"
+msgstr "この Goodreads の本にリンクする calibre の本を選択してください:"
+
+#: dialogs.py:1304
+msgid "Or, try a different calibre search:"
+msgstr "または、別の条件で calibre を検索:"
+
+#: dialogs.py:1309
+msgid "&Title:"
+msgstr "タイトル(&T):"
+
+#: dialogs.py:1317
+msgid "&Author:"
+msgstr "著者(&A):"
+
+#: dialogs.py:1326
+msgid "&Go!"
+msgstr "実行!(&G)"
+
+#: dialogs.py:1329
+msgid "Search again using this title/author"
+msgstr "このタイトル/著者で再検索します"
+
+#: dialogs.py:1332
+msgid "Clear the title field"
+msgstr "タイトル欄をクリアします"
+
+#: dialogs.py:1336
+msgid "Clear the author field"
+msgstr "著者欄をクリアします"
+
+#: dialogs.py:1393
+msgid "Overwrite Goodreads Link"
+msgstr "Goodreads のリンクを上書き"
+
+#: dialogs.py:1394
+msgid "This calibre book is already linked to a different Goodreads book."
+msgstr "この calibre の本は既に別の Goodreads の本にリンクされています。"
+
+#: dialogs.py:1395
+msgid "Only one Goodreads book can be linked to a calibre book at a time."
+msgstr "calibre の本にリンクできる Goodreads の本は同時に 1 冊だけです。"
+
+#: dialogs.py:1396
+msgid "Click Yes to overwrite the link to this book, No to Cancel"
+msgstr "この本へのリンクを上書きするには「はい」、キャンセルするには「いいえ」をクリックしてください"
+
+#: dialogs.py:1610
+msgid "Select shelf:"
+msgstr "本棚を選択:"
+
+#: dialogs.py:1611
+msgid "Select one or more shelves to add or remove from"
+msgstr "追加または削除する本棚を 1 つ以上選択してください"
+
+#: dialogs.py:1636
+msgid "Add calibre Rating to Goodreads"
+msgstr "calibre の評価を Goodreads に追加する"
+
+#: dialogs.py:1642
+msgid "Add calibre Date Read to Goodreads"
+msgstr "calibre の読了日を Goodreads に追加"
+
+#: dialogs.py:1648
+msgid "Add calibre Review Text to Goodreads"
+msgstr "calibre のレビュー本文を Goodreads に追加"
+
+#: dialogs.py:1656
+msgid "Add to Shelf"
+msgstr "本棚に追加"
+
+#: dialogs.py:1656
+msgid "Remove from Shelf"
+msgstr "本棚から削除"
+
+#: dialogs.py:1770
+msgid "Too many shelves"
+msgstr "本棚が多すぎます"
+
+#: dialogs.py:1770
+msgid "You cannot add to more than one exclusive shelf."
+msgstr "排他的な本棚に複数追加することはできません。"
+
+#: dialogs.py:1774
+msgid "Exclusive Shelf Warning"
+msgstr "排他的な本棚に関する警告"
+
+#: dialogs.py:1775
+msgid "You are about to remove from a shelf marked as exclusive."
+msgstr "排他的に設定されている本棚から削除しようとしています。"
+
+#: dialogs.py:1776
+msgid ""
+"This will result in these books being <b>moved</b> to one of your other "
+"shelves rather than being deleted from all shelves."
+msgstr "その結果、これらの本はすべての本棚から削除されるのではなく、他のいずれかの本棚に <b>移動</b> されます。"
+
+#: dialogs.py:1778 dialogs.py:1784
+msgid "Do you want to continue?"
+msgstr "続行しますか?"
+
+#: dialogs.py:1783
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored."
+msgstr "この一覧には calibre にまだリンクされていない本があり、それらは無視されます。"
+
+#: dialogs.py:1913 dialogs.py:2159
+msgid "Search calibre"
+msgstr "calibre を検索"
+
+#: dialogs.py:1919
+msgid "Add empty book to calibre"
+msgstr "calibre に空の本を追加"
+
+#: dialogs.py:1933
+msgid "GR Author"
+msgstr "GR 著者"
+
+#: dialogs.py:1933
+msgid "GR Title"
+msgstr "GR タイトル"
+
+#: dialogs.py:1934
+msgid "GR Date Read"
+msgstr "GR 読了日"
+
+#: dialogs.py:1934
+msgid "GR ISBN"
+msgstr "GR ISBN"
+
+#: dialogs.py:1934
+msgid "GR Rating"
+msgstr "GR 評価"
+
+#: dialogs.py:1934
+msgid "GR Series"
+msgstr "GR シリーズ"
+
+#: dialogs.py:1934
+msgid "Linked to calibre Title"
+msgstr "リンク先の calibre タイトル"
+
+#: dialogs.py:1934
+msgid "Shelves"
+msgstr "本棚"
+
+#: dialogs.py:1935
+msgid "calibre Author"
+msgstr "calibre 著者"
+
+#: dialogs.py:1935
+msgid "calibre ISBN"
+msgstr "calibre ISBN"
+
+#: dialogs.py:1935
+msgid "calibre Rating"
+msgstr "calibre 評価"
+
+#: dialogs.py:1935
+msgid "calibre Series"
+msgstr "calibre シリーズ"
+
+#: dialogs.py:2085
+msgid "Sync from Goodreads Shelf"
+msgstr "Goodreads の本棚から同期"
+
+#: dialogs.py:2098
+msgid "Sync from '{0}' shelf"
+msgstr "本棚 '{0}' から同期します"
+
+#: dialogs.py:2100
+msgid "Sync from {0} shelves"
+msgstr "{0} 個の本棚から同期します"
+
+#: dialogs.py:2106
+msgid ""
+"To fix missing links, double click to search for a matching book in calibre."
+msgstr "リンクがない場合は、ダブルクリックして calibre で一致する本を検索してください。"
+
+#: dialogs.py:2126
+msgid "The following actions will be performed for books that are synced:"
+msgstr "同期される本に対して次のアクションが実行されます:"
+
+#: dialogs.py:2134
+msgid "Add Goodreads Rating to calibre"
+msgstr "Goodreads の評価を calibre に追加する"
+
+#: dialogs.py:2139
+msgid "Add Goodreads Date Read to calibre"
+msgstr "Goodreads の読了日を calibre に追加"
+
+#: dialogs.py:2144
+msgid "Add Goodreads Review Text to calibre"
+msgstr "Goodreads のレビュー本文を calibre に追加"
+
+#: dialogs.py:2147
+msgid ""
+"When searching calibre, if only one result is found then automatically link "
+"to it without prompting"
+msgstr "calibre を検索して結果が 1 件だけの場合、確認せずに自動的にリンクする"
+
+#: dialogs.py:2154
+msgid "Sync Now"
+msgstr "すぐに同期"
+
+#: dialogs.py:2177
+msgid "For books on the <b>{0}</b> shelf:<br>"
+msgstr "本棚 <b>{0}</b> にある本について:<br>"
+
+#: dialogs.py:2181
+msgid "+ Add '{0}' to column '{1}'<br>"
+msgstr "+ 列 '{1}' に '{0}' を追加<br>"
+
+#: dialogs.py:2183
+msgid "- Remove '{0}' from column '{1}'<br>"
+msgstr "- 列 '{1}' から '{0}' を削除<br>"
+
+#: dialogs.py:2225
+msgid "{0}, {1} books to add"
+msgstr "{0}、追加する本 {1} 冊"
+
+#: dialogs.py:2296
+msgid "No calibre book linked!"
+msgstr "calibre の本がリンクされていません!"
+
+#: dialogs.py:2344
+msgid "Add to calibre"
+msgstr "calibre に追加"
+
+#: dialogs.py:2471
+msgid ""
+"There are books in this list not yet linked to calibre which will be "
+"ignored.<p><p>Are you sure you want to continue?"
+msgstr "この一覧には calibre にまだリンクされていない本があり、それらは無視されます。<p><p>続行してもよろしいですか?"
