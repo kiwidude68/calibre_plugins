@@ -1,5 +1,10 @@
 # Quick Preferences Change Log
 
+## [1.7.4] - 2026-10-24
+### Fixed
+- In the 'Metadata Source Plugins' dialog items could be unchecked but not checked again.
+- When adding a new metadata menu item default to a blank list rather than all current sources.
+
 ## [1.7.3] - 2026-10-10
 ### Added
 - Czech translation

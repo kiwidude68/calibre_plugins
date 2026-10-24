@@ -678,7 +678,7 @@ class ConfigWidget(QWidget):
 
 class MetadataSourcesDialog(SizePersistedDialog):
 
-    def __init__(self, parent, enabled_sources=[]):
+    def __init__(self, parent, enabled_sources=None):
         super(MetadataSourcesDialog, self).__init__(parent, 'quick preferences:metadata source dialog')
         self.parent = parent
         self.enabled_sources = enabled_sources
@@ -728,7 +728,7 @@ class MetadataSourcesDialog(SizePersistedDialog):
         return
 
     def get_current_clicked(self):
-        self.sources_model.enabled_sources = []
+        self.sources_model.enabled_sources = None
         return
 
     def deselect_all_clicked(self):
@@ -738,7 +738,7 @@ class MetadataSourcesDialog(SizePersistedDialog):
 
 class SourcesModel(QAbstractTableModel):  # {{{
 
-    def __init__(self, parent=None, enabled_sources=[]):
+    def __init__(self, parent=None, enabled_sources=None):
         super(SourcesModel, self).__init__(parent)
         self.gui_parent = parent
 
@@ -748,7 +748,7 @@ class SourcesModel(QAbstractTableModel):  # {{{
     def initialize(self):
         self.beginResetModel()
         self.plugins = [[plugin.name, not is_disabled(plugin), plugin.description] for plugin in list(all_metadata_plugins())]
-        if len(self._enabled_sources) > 0:
+        if self._enabled_sources is not None:
             for plugin in self.plugins:
                 plugin[1] = plugin[0] in self.enabled_sources 
         self.plugins.sort()
@@ -792,7 +792,7 @@ class SourcesModel(QAbstractTableModel):  # {{{
         col = index.column()
         ret = False
         if col == 0 and role == Qt.CheckStateRole:
-            plugin[1] = val == Qt.Checked
+            plugin[1] = bool(val)
             ret = True
         if ret:
             self.dataChanged.emit(index, index)
