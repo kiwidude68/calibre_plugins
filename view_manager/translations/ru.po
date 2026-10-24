@@ -4,15 +4,16 @@
 # 
 # Translators:
 # Victor, 2022
-# ashed <craysy@gmail.com>, 2022
 # Caarmi, 2022
+# ashed <craysy@gmail.com>, 2026
+# Andrei Stepanov, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-12-23 17:36+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
-"Last-Translator: Caarmi, 2022\n"
+"Last-Translator: Andrei Stepanov, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -170,7 +171,7 @@ msgstr "Сортировать по убыванию"
 
 #: config.py:382
 msgid "Edit Columns Widths"
-msgstr ""
+msgstr "Редактировать ширину столбцов"
 
 #: config.py:454
 msgid "Select view to customize:"
@@ -210,7 +211,7 @@ msgstr "Переместить столбец вниз"
 
 #: config.py:498 config.py:514
 msgid "Adjust width of columns"
-msgstr ""
+msgstr "Отрегулировать ширину столбцов"
 
 #: config.py:503
 msgid "Columns in Split (Right) Pane"
@@ -327,7 +328,7 @@ msgstr "Введите новое отображаемое имя для это�
 
 #: config.py:829
 msgid "Are you sure?"
-msgstr "Вы уверены?"
+msgstr "Уверены?"
 
 #: config.py:830
 msgid "Do you want to delete the view named"

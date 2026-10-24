@@ -1,0 +1,340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Merarom <merarom@yahoo.es>, 2022
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-12-23 17:36+1000\n"
+"PO-Revision-Date: 2022-09-13 12:25+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:636
+msgid "Keyboard shortcuts"
+msgstr "Kortkommandon"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för detta tillägg"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinerad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:38
+msgid "View Manager"
+msgstr "Vyhanterare"
+
+#: action.py:87
+msgid "&Save View Columns"
+msgstr "&Spara vykolumner"
+
+#: action.py:89
+msgid "&Save View Sort"
+msgstr "Spara v&ysortering"
+
+#: action.py:92
+msgid "Re-Apply Current View"
+msgstr "Tillämpa aktuell vy igen"
+
+#: action.py:99
+msgid "&Create new View"
+msgstr "S&kapa ny vy"
+
+#: action.py:102
+msgid "Previous View"
+msgstr "Föregående vy"
+
+#: action.py:104
+msgid "Next View"
+msgstr "Nästa vy"
+
+#: action.py:108
+msgid "&Customize plugin"
+msgstr "&Anpassa insticksmodul"
+
+#: action.py:110 config.py:645
+msgid "&Help"
+msgstr "&Hjälp"
+
+#: action.py:158
+msgid "Add new view"
+msgstr "Lägg till ny vy"
+
+#: action.py:159
+msgid "Enter a unique display name for this view:"
+msgstr "Ange ett unikt visningsnamn för denna vy:"
+
+#: action.py:167 config.py:762 config.py:810
+msgid "Add Failed"
+msgstr "Lägg till misslyckades"
+
+#: action.py:167 config.py:762 config.py:810
+msgid "A view with the same name already exists"
+msgstr "Det finns redan en vy med samma namn"
+
+#: config.py:307
+msgid "Sort ascending"
+msgstr "Sortera stigande"
+
+#: config.py:311
+msgid "Sort descending"
+msgstr "Sortera fallande"
+
+#: config.py:382
+msgid "Edit Columns Widths"
+msgstr "Redigera kolumnbredder"
+
+#: config.py:454
+msgid "Select view to customize:"
+msgstr "Välj vy att anpassa:"
+
+#: config.py:460
+msgid "Add view"
+msgstr "Lägg till vy"
+
+#: config.py:465
+msgid "Delete view"
+msgstr "Ta bort vy"
+
+#: config.py:470 config.py:797
+msgid "Rename view"
+msgstr "Döp om vy"
+
+#: config.py:476
+msgid "Column Options"
+msgstr "Kolumnalternativ"
+
+#: config.py:485
+msgid "Columns in Default (Left) pane"
+msgstr "Kolumner i standardpanelen (vänster)"
+
+#: config.py:487
+msgid "Columns in view"
+msgstr "Kolumner i vy"
+
+#: config.py:491 config.py:507
+msgid "Move column up"
+msgstr "Flytta kolumn upp"
+
+#: config.py:494 config.py:510
+msgid "Move column down"
+msgstr "Flytta kolumn ner"
+
+#: config.py:498 config.py:514
+msgid "Adjust width of columns"
+msgstr "Justera kolumnernas bredd"
+
+#: config.py:503
+msgid "Columns in Split (Right) Pane"
+msgstr "Kolumner i den delade panelen (höger)"
+
+#: config.py:504
+msgid ""
+"Split Book List will only be shown if this is checked. This will be checked "
+"if you save a Split View."
+msgstr ""
+"Den delade boklistan visas endast om detta är markerat. Alternativet "
+"markeras om du sparar en delad vy."
+
+#: config.py:529
+msgid "Sort order"
+msgstr "Sorteringsordning"
+
+#: config.py:532
+msgid "Move sort column up"
+msgstr "Flytta sorteringskolumnen uppåt"
+
+#: config.py:535
+msgid "Move sort down"
+msgstr "Flytta sorteringen nedåt"
+
+#: config.py:566
+msgid "Search and Virtual Library Options"
+msgstr "Alternativ för sökning och virtuellt bibliotek"
+
+#: config.py:574
+msgid "Apply saved search"
+msgstr "Tillämpa sparad sökning"
+
+#: config.py:575
+msgid "Apply the selected saved search when the View is activated."
+msgstr "Tillämpa den valda sparade sökningen när vyn aktiveras."
+
+#: config.py:583
+msgid "Switch to Virtual library"
+msgstr "Byt till virtuellt bibliotek"
+
+#: config.py:584
+msgid "Switch to the selected Virtual library when the View is activated."
+msgstr "Byt till det valda virtuella biblioteket när vyn aktiveras."
+
+#: config.py:586
+msgid "Virtual library to switch to."
+msgstr "Virtuellt bibliotek att byta till."
+
+#: config.py:591
+msgid "Apply VL additional search restriction"
+msgstr "Tillämpa ytterligare sökbegränsning för virtuellt bibliotek"
+
+#: config.py:592
+msgid ""
+"Apply the selected saved search as a Virtual library additional restriction "
+"when the View is activated."
+msgstr ""
+"Tillämpa den valda sparade sökningen som en ytterligare begränsning för det "
+"virtuella biblioteket när vyn aktiveras."
+
+#: config.py:593
+msgid "Clear VL restriction search"
+msgstr "Rensa begränsningssökningen för virtuellt bibliotek"
+
+#: config.py:594
+msgid "Saved search to apply as VL additional search restriction."
+msgstr ""
+"Sparad sökning som ska användas som ytterligare sökbegränsning för virtuellt"
+" bibliotek."
+
+#: config.py:608
+msgid "General Options"
+msgstr "Allmänna alternativ"
+
+#: config.py:613
+msgid "Jump to the top when applying this View"
+msgstr "Gå längst upp när denna vy tillämpas"
+
+#: config.py:617
+msgid "When restarting Calibre or switching to this library"
+msgstr "När calibre startas om eller när du byter till detta bibliotek"
+
+#: config.py:618
+msgid "Automatically apply view:"
+msgstr "Tillämpa vy automatiskt:"
+
+#: config.py:624
+msgid ""
+"Enabling this option may override any startup search restriction or title "
+"sort set in Preferences -> Behaviour/Tweaks."
+msgstr ""
+"Om detta alternativ aktiveras kan sökbegränsningar vid start eller "
+"titelsortering som angetts under Inställningar → Beteende/Justeringar "
+"åsidosättas."
+
+#: config.py:637
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"
+
+#: config.py:639
+msgid "&View library preferences"
+msgstr "&Visa biblioteksinställningar"
+
+#: config.py:640
+msgid "View data stored in the library database for this plugin"
+msgstr "Visa data lagrat i biblioteksdatabasen för detta tilläggsprogram"
+
+#: config.py:798
+msgid "Enter a new display name for this view:"
+msgstr "Ange ett nytt visningsnamn för denna vy:"
+
+#: config.py:829
+msgid "Are you sure?"
+msgstr "Är du säker?"
+
+#: config.py:830
+msgid "Do you want to delete the view named"
+msgstr "Vill du ta bort vyn med namnet"

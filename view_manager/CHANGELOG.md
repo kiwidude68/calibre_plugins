@@ -1,5 +1,14 @@
 # View Manager Change Log
 
+## [1.10.6] - 2026-10-24
+### Added
+- Czech translation
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+
 ## [1.10.5] - 2026-02-09
 ### Fixed
 - Debug output warning from Python

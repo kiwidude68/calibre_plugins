@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Biljana Vukovic <biljana.vukovic1@yahoo.com>, 2022
+# Branislav Kapetanovic, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-12-23 17:36+1000\n"
+"PO-Revision-Date: 2022-09-13 12:25+0000\n"
+"Last-Translator: Branislav Kapetanovic, 2026\n"
+"Language-Team: Serbian (Latin) (https://app.transifex.com/calibre/teams/19337/sr@latin/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sr@latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:636
+msgid "Keyboard shortcuts"
+msgstr "Prečice"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Ponovo pokreni calibre sada"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Podešavanja za:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Obriši"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Obriši sva podešavanja ovog dodatka"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Da li ste sigurni da želite da promenite podešavanja ovog dodatka u ovoj "
+"biblioteci?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Podešavanja u drugim bibliotekama, kao ni ona sačuvana u JSON datoteci u "
+"fascikli dodataka za calibre, neće biti promenjena."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Nakon toga morate ponovo pokrenuti calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Podešavanja su promenjena"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Podešavanja ovog dodatka u ovoj biblioteci su promenjena."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Ponovo pokrenite calibre sada."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Da li ste sigurni da želite da obrišete podešavanja ovog dodatka u ovoj "
+"biblioteci?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Podešavanja su obrisana"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Sva podešavanja ovog dodatka u ovoj biblioteci su obrisana."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiraj u privremenu memoriju"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinisano"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Potrebno je ponovno pokretanje"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Slika naslova nije pronađena — morate ponovo pokrenuti calibre pre "
+"korišćenja ovog dodatka!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Napravi novu kolonu"
+
+#: action.py:38
+msgid "View Manager"
+msgstr "Upravljač prikazima"
+
+#: action.py:87
+msgid "&Save View Columns"
+msgstr "&Sačuvaj kolone prikaza"
+
+#: action.py:89
+msgid "&Save View Sort"
+msgstr "Sačuvaj &redosled prikaza"
+
+#: action.py:92
+msgid "Re-Apply Current View"
+msgstr "Ponovo primeni trenutni prikaz"
+
+#: action.py:99
+msgid "&Create new View"
+msgstr "&Napravi novi prikaz"
+
+#: action.py:102
+msgid "Previous View"
+msgstr "Prethodni prikaz"
+
+#: action.py:104
+msgid "Next View"
+msgstr "Sledeći prikaz"
+
+#: action.py:108
+msgid "&Customize plugin"
+msgstr "&Prilagodi dodatak"
+
+#: action.py:110 config.py:645
+msgid "&Help"
+msgstr "&Pomoć"
+
+#: action.py:158
+msgid "Add new view"
+msgstr "Dodaj novi prikaz"
+
+#: action.py:159
+msgid "Enter a unique display name for this view:"
+msgstr "Unesite jedinstven naziv ovog prikaza:"
+
+#: action.py:167 config.py:762 config.py:810
+msgid "Add Failed"
+msgstr "Dodavanje nije uspelo"
+
+#: action.py:167 config.py:762 config.py:810
+msgid "A view with the same name already exists"
+msgstr "Prikaz sa istim nazivom već postoji"
+
+#: config.py:307
+msgid "Sort ascending"
+msgstr "Sortiraj rastuće"
+
+#: config.py:311
+msgid "Sort descending"
+msgstr "Sortiraj opadajuće"
+
+#: config.py:382
+msgid "Edit Columns Widths"
+msgstr "Uredi širine kolona"
+
+#: config.py:454
+msgid "Select view to customize:"
+msgstr "Izaberite prikaz koji želite da prilagodite:"
+
+#: config.py:460
+msgid "Add view"
+msgstr "Dodaj prikaz"
+
+#: config.py:465
+msgid "Delete view"
+msgstr "Obriši prikaz"
+
+#: config.py:470 config.py:797
+msgid "Rename view"
+msgstr "Preimenuj prikaz"
+
+#: config.py:476
+msgid "Column Options"
+msgstr "Opcije kolona"
+
+#: config.py:485
+msgid "Columns in Default (Left) pane"
+msgstr "Kolone u podrazumevanom (levom) oknu"
+
+#: config.py:487
+msgid "Columns in view"
+msgstr "Kolone u prikazu"
+
+#: config.py:491 config.py:507
+msgid "Move column up"
+msgstr "Pomeri kolonu nagore"
+
+#: config.py:494 config.py:510
+msgid "Move column down"
+msgstr "Pomeri kolonu nadole"
+
+#: config.py:498 config.py:514
+msgid "Adjust width of columns"
+msgstr "Podesi širinu kolona"
+
+#: config.py:503
+msgid "Columns in Split (Right) Pane"
+msgstr "Kolone u podeljenom (desnom) oknu"
+
+#: config.py:504
+msgid ""
+"Split Book List will only be shown if this is checked. This will be checked "
+"if you save a Split View."
+msgstr ""
+"Podeljena lista knjiga prikazaće se samo ako je ova opcija izabrana. "
+"Automatski će biti izabrana ako sačuvate podeljeni prikaz."
+
+#: config.py:529
+msgid "Sort order"
+msgstr "Redosled sortiranja"
+
+#: config.py:532
+msgid "Move sort column up"
+msgstr "Pomeri kolonu za sortiranje nagore"
+
+#: config.py:535
+msgid "Move sort down"
+msgstr "Pomeri kolonu za sortiranje nadole"
+
+#: config.py:566
+msgid "Search and Virtual Library Options"
+msgstr "Opcije pretrage i virtuelne biblioteke"
+
+#: config.py:574
+msgid "Apply saved search"
+msgstr "Primeni sačuvanu pretragu"
+
+#: config.py:575
+msgid "Apply the selected saved search when the View is activated."
+msgstr "Primeni izabranu sačuvanu pretragu kada se prikaz aktivira."
+
+#: config.py:583
+msgid "Switch to Virtual library"
+msgstr "Pređi na virtuelnu biblioteku"
+
+#: config.py:584
+msgid "Switch to the selected Virtual library when the View is activated."
+msgstr "Pređi na izabranu virtuelnu biblioteku kada se prikaz aktivira."
+
+#: config.py:586
+msgid "Virtual library to switch to."
+msgstr "Virtuelna biblioteka na koju se prelazi."
+
+#: config.py:591
+msgid "Apply VL additional search restriction"
+msgstr "Primeni dodatno ograničenje pretrage za virtuelnu biblioteku"
+
+#: config.py:592
+msgid ""
+"Apply the selected saved search as a Virtual library additional restriction "
+"when the View is activated."
+msgstr ""
+"Primeni izabranu sačuvanu pretragu kao dodatno ograničenje virtuelne "
+"biblioteke kada se prikaz aktivira."
+
+#: config.py:593
+msgid "Clear VL restriction search"
+msgstr "Ukloni ograničenje pretrage virtuelne biblioteke"
+
+#: config.py:594
+msgid "Saved search to apply as VL additional search restriction."
+msgstr ""
+"Sačuvana pretraga koja se primenjuje kao dodatno ograničenje virtuelne "
+"biblioteke."
+
+#: config.py:608
+msgid "General Options"
+msgstr "Opšte opcije"
+
+#: config.py:613
+msgid "Jump to the top when applying this View"
+msgstr "Pređi na vrh pri primeni ovog prikaza"
+
+#: config.py:617
+msgid "When restarting Calibre or switching to this library"
+msgstr ""
+"Pri ponovnom pokretanju programa calibre ili prelasku na ovu biblioteku"
+
+#: config.py:618
+msgid "Automatically apply view:"
+msgstr "Automatski primeni prikaz:"
+
+#: config.py:624
+msgid ""
+"Enabling this option may override any startup search restriction or title "
+"sort set in Preferences -> Behaviour/Tweaks."
+msgstr ""
+"Uključivanje ove opcije može da potisne početno ograničenje pretrage ili "
+"redosled naslova podešen u Podešavanja -> Ponašanje/Napredna podešavanja."
+
+#: config.py:637
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Izmeni prečice na tastaturi za ovaj dodatak"
+
+#: config.py:639
+msgid "&View library preferences"
+msgstr "&Prikaži postavke biblioteke"
+
+#: config.py:640
+msgid "View data stored in the library database for this plugin"
+msgstr "Prikaži podatke sačuvane u bazi podataka biblioteke za ovaj dodatak"
+
+#: config.py:798
+msgid "Enter a new display name for this view:"
+msgstr "Unesite novi naziv ovog prikaza:"
+
+#: config.py:829
+msgid "Are you sure?"
+msgstr "Da li ste sigurni?"
+
+#: config.py:830
+msgid "Do you want to delete the view named"
+msgstr "Da li želite da obrišete prikaz sa nazivom"
