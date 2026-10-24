@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-16 17:29+1000\n"
+"POT-Creation-Date: 2026-10-22 20:04+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
@@ -81,7 +81,7 @@ msgstr "설정 삭제됨"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "클립보드에 복사"
 
@@ -222,8 +222,8 @@ msgstr "%d권 검사, 표지 일치 %d개 발견%s"
 msgid "No matches found"
 msgstr "일치하는 것이 없습니다"
 
-#: check_covers.py:95 check_metadata.py:165 check_metadata.py:198
-#: check_metadata.py:260 check_metadata.py:323
+#: check_covers.py:95 check_metadata.py:171 check_metadata.py:204
+#: check_metadata.py:266 check_metadata.py:329
 msgid "No Matches%s"
 msgstr "일치 항목 없음%s"
 
@@ -251,460 +251,472 @@ msgstr "calibre 북마크 파일"
 msgid "OS artifacts"
 msgstr "OS 잔재 파일"
 
-#: check_epub.py:277
+#: check_epub.py:211
+msgid "Finding ePubs that do not contain the expression in selected scopes"
+msgstr ""
+
+#: check_epub.py:213
+msgid "Searching for expression"
+msgstr ""
+
+#: check_epub.py:285
 msgid "Matches in book: <b>%s</b>"
 msgstr "책의 일치 항목: <b>%s</b>"
 
-#: check_epub.py:279
+#: check_epub.py:287
 msgid "First match in book: <b>%s</b>"
 msgstr "책의 첫 번째 일치 항목: <b>%s</b>"
 
-#: check_epub.py:286 check_epub.py:318 check_epub.py:358
+#: check_epub.py:292
+msgid "Expression not found in selected scopes for book: <b>%s</b>"
+msgstr ""
+
+#: check_epub.py:297 check_epub.py:329 check_epub.py:369
 msgid "Invalid epub:"
 msgstr "잘못된 EPUB:"
 
-#: check_epub.py:289 check_epub.py:321 check_epub.py:361 check_epub.py:561
+#: check_epub.py:300 check_epub.py:332 check_epub.py:372 check_epub.py:572
 msgid "ERROR parsing book: "
 msgstr "책 파싱 오류: "
 
-#: check_epub.py:294
+#: check_epub.py:305
 msgid "No searched ePub books have your search text"
 msgstr "검색어가 포함된 EPUB 도서를 찾지 못했습니다"
 
-#: check_epub.py:296
+#: check_epub.py:307
 msgid "ePub books for search text"
 msgstr "검색어 포함 EPUB 도서"
 
-#: check_epub.py:304 check_epub.py:344 check_epub.py:392 check_epub.py:669
-#: check_epub.py:743
+#: check_epub.py:315 check_epub.py:355 check_epub.py:403 check_epub.py:680
+#: check_epub.py:754
 msgid "ERROR: EPUB format is missing: "
 msgstr "오류: EPUB 형식이 없음: "
 
-#: check_epub.py:326
+#: check_epub.py:337
 msgid "No searched ePub books have legacy jackets"
 msgstr "구형 재킷이 포함된 EPUB 도서를 찾지 못했습니다"
 
-#: check_epub.py:329
+#: check_epub.py:340
 msgid "No searched ePub books have jackets"
 msgstr "검색한 EPUB 책에는 재킷이 없습니다"
 
-#: check_epub.py:332
+#: check_epub.py:343
 msgid "All searched ePub books have jackets"
 msgstr "검색한 모든 EPUB 책에는 재킷이 있습니다"
 
-#: check_epub.py:335
+#: check_epub.py:346
 msgid "ePub books for jackets"
 msgstr "재킷 대상 EPUB 책"
 
-#: check_epub.py:366
+#: check_epub.py:377
 msgid "No searched ePub books have multiple jackets"
 msgstr "검색한 EPUB 책에는 여러 재킷이 없습니다"
 
-#: check_epub.py:368
+#: check_epub.py:379
 msgid "ePub books for multiple jackets"
 msgstr "여러 재킷 대상 EPUB 책"
 
-#: check_epub.py:424
+#: check_epub.py:435
 msgid "No searched ePub books have non-zero .xpgt margins"
 msgstr "검색한 EPUB 책에는 0이 아닌 .xpgt 여백이 없습니다"
 
-#: check_epub.py:426
+#: check_epub.py:437
 msgid "ePub books for .xpgt margins"
 msgstr ".xpgt 여백 대상 EPUB 책"
 
-#: check_epub.py:456
+#: check_epub.py:467
 msgid "Checking css import"
 msgstr "CSS 가져오기 검사 중"
 
-#: check_epub.py:465
+#: check_epub.py:476
 msgid "Checking html import"
 msgstr "HTML 가져오기 검사 중"
 
-#: check_epub.py:479
+#: check_epub.py:490
 msgid "No searched ePub books have inline xpgt links"
 msgstr "검색한 EPUB 도서에는 인라인 XPGT 링크가 없습니다"
 
-#: check_epub.py:481
+#: check_epub.py:492
 msgid "ePub books for inline xpgt links"
 msgstr "인라인 XPGT 링크가 있는 EPUB 도서"
 
-#: check_epub.py:532
+#: check_epub.py:543
 msgid "No searched ePub books have unmanifested files"
 msgstr "검색한 EPUB 도서에는 미등록 파일이 없습니다"
 
-#: check_epub.py:534
+#: check_epub.py:545
 msgid "ePub books for unmanifested files"
 msgstr "미등록 파일이 있는 EPUB 도서"
 
-#: check_epub.py:549 check_epub.py:675 check_epub.py:749
+#: check_epub.py:560 check_epub.py:686 check_epub.py:760
 msgid "SKIPPING BOOK (DRM Encrypted): "
 msgstr "책 건너뜀(DRM 암호화됨): "
 
-#: check_epub.py:562
+#: check_epub.py:573
 msgid "\tIssue with CSS name: "
 msgstr "\tCSS 이름 문제: "
 
-#: check_epub.py:586
+#: check_epub.py:597
 msgid "\tUnused CSS file: %s"
 msgstr "사용되지 않는 CSS 파일: %s"
 
-#: check_epub.py:599
+#: check_epub.py:610
 msgid "No searched ePub books have unused CSS files"
 msgstr "검색한 EPUB 도서에는 사용되지 않는 CSS 파일이 없습니다"
 
-#: check_epub.py:601
+#: check_epub.py:612
 msgid "ePub books for unused CSS files"
 msgstr "사용되지 않는 CSS 파일이 있는 EPUB 도서"
 
-#: check_epub.py:693
+#: check_epub.py:704
 msgid "\tIssue with image name: "
 msgstr "문제 있음: 이미지 이름:"
 
-#: check_epub.py:718
+#: check_epub.py:729
 msgid "\tUNUSED image file: %s"
 msgstr "사용되지 않는 이미지 파일: %s"
 
-#: check_epub.py:731
+#: check_epub.py:742
 msgid "No searched ePub books have unused image files"
 msgstr "검색한 EPUB 도서에는 사용되지 않는 이미지 파일이 없습니다"
 
-#: check_epub.py:733
+#: check_epub.py:744
 msgid "ePub books for unused image files"
 msgstr "사용되지 않는 이미지 파일이 있는 EPUB 도서"
 
-#: check_epub.py:788
+#: check_epub.py:801
 msgid "\tBroken image link in:"
 msgstr "손상된 이미지 링크 위치:"
 
-#: check_epub.py:788
+#: check_epub.py:801
 msgid " of "
 msgstr "의"
 
-#: check_epub.py:800
+#: check_epub.py:813
 msgid "No searched ePub books have broken image links"
 msgstr "검색한 EPUB 도서에는 손상된 이미지 링크가 없습니다"
 
-#: check_epub.py:802
+#: check_epub.py:815
 msgid "ePub books for broken image links"
 msgstr "손상된 이미지 링크가 있는 EPUB 도서"
 
-#: check_epub.py:845
+#: check_epub.py:858
 msgid "No searched ePub books have "
 msgstr "검색한 EPUB 책에는 해당 항목이 없습니다"
 
-#: check_epub.py:847
+#: check_epub.py:860
 msgid "ePub books for "
 msgstr "EPUB 책 에 대한"
 
-#: check_epub.py:879
+#: check_epub.py:892
 msgid "No OPF file in:"
 msgstr "다음 위치에 OPF 파일이 없음:"
 
-#: check_epub.py:884
+#: check_epub.py:897
 msgid "No supported meta tag or non-xml cover in:"
 msgstr "지원되는 메타 태그 또는 비 XML 표지가 없는 위치:"
 
-#: check_epub.py:889
+#: check_epub.py:902
 msgid "DRM Encrypted cover in:"
 msgstr "DRM 암호화된 표지 위치:"
 
-#: check_epub.py:894
+#: check_epub.py:907
 msgid "Invalid cover image extension (%s) in:"
 msgstr "다음 위치의 표지 이미지 확장자가 올바르지 않음(%s):"
 
-#: check_epub.py:907
+#: check_epub.py:920
 msgid "No searched ePub books have replaceable covers"
 msgstr "검색한 EPUB 도서에는 교체 가능한 표지가 없습니다"
 
-#: check_epub.py:910
+#: check_epub.py:923
 msgid "All searched ePub books have replaceable covers"
 msgstr "검색한 모든 EPUB 도서에는 교체 가능한 표지가 있습니다"
 
-#: check_epub.py:914
+#: check_epub.py:927
 msgid "ePub books for replaceable covers"
 msgstr "교체 가능한 표지가 있는 EPUB 도서"
 
-#: check_epub.py:950
+#: check_epub.py:963
 msgid "No searched ePub books have calibre SVG covers embedded"
 msgstr "검색한 EPUB 책에는 calibre SVG 표지가 삽입되어 있지 않습니다"
 
-#: check_epub.py:953
+#: check_epub.py:966
 msgid "All searched ePub books have calibre SVG covers embedded"
 msgstr "검색한 모든 EPUB 책에는 calibre SVG 표지가 삽입되어 있습니다"
 
-#: check_epub.py:957
+#: check_epub.py:970
 msgid "ePub books for calibre SVG covers"
 msgstr "calibre SVG 표지가 있는 EPUB 책"
 
-#: check_epub.py:994
+#: check_epub.py:1007
 msgid "No searched ePub books have calibre covers embedded"
 msgstr "검색한 EPUB 책에는 calibre 표지가 삽입되어 있지 않습니다"
 
-#: check_epub.py:997
+#: check_epub.py:1010
 msgid "All searched ePub books have calibre covers embedded"
 msgstr "검색한 모든 EPUB 책에는 calibre 표지가 삽입되어 있습니다"
 
-#: check_epub.py:1001
+#: check_epub.py:1014
 msgid "ePub books for calibre covers"
 msgstr "calibre 표지가 있는 EPUB 책"
 
-#: check_epub.py:1030
+#: check_epub.py:1043
 msgid "No searched ePub books have been converted by calibre"
 msgstr "검색한 EPUB 책 중 calibre로 변환되지 않은 책은 없습니다"
 
-#: check_epub.py:1033
+#: check_epub.py:1046
 msgid "All searched ePub books have been converted by calibre"
 msgstr "검색한 모든 EPUB 책은 calibre로 변환되었습니다"
 
-#: check_epub.py:1037
+#: check_epub.py:1050
 msgid "ePub books for calibre conversions"
 msgstr "calibre로 변환된 EPUB 책"
 
-#: check_epub.py:1065
+#: check_epub.py:1078
 msgid "All searched ePub books have a valid zip format"
 msgstr "검색한 모든 EPUB 책은 올바른 ZIP 형식입니다"
 
-#: check_epub.py:1067
+#: check_epub.py:1080
 msgid "ePub books for corrupted zip format"
 msgstr "손상된 ZIP 형식의 EPUB 책"
 
-#: check_epub.py:1092
+#: check_epub.py:1105
 msgid "All searched ePub books have a valid container.xml file"
 msgstr "검색한 모든 EPUB 책에는 올바른 container.xml 파일이 있습니다"
 
-#: check_epub.py:1094
+#: check_epub.py:1107
 msgid "ePub books for missing container.xml"
 msgstr "container.xml 파일이 없는 EPUB 책"
 
-#: check_epub.py:1110
+#: check_epub.py:1123
 msgid "\tMissing container.xml file in"
 msgstr "\tcontainer.xml 파일이 없는 위치:"
 
-#: check_epub.py:1115
+#: check_epub.py:1128
 msgid "\tIncorrect container.xml namespace in"
 msgstr "\tcontainer.xml 네임스페이스가 잘못된 위치:"
 
-#: check_epub.py:1122
+#: check_epub.py:1135
 msgid "\tIncorrect .opf manifest namespace in"
 msgstr "\t.OPF 매니페스트 네임스페이스가 잘못된 위치:"
 
-#: check_epub.py:1132
+#: check_epub.py:1145
 msgid "All searched ePub books have valid namespaces"
 msgstr "검색한 모든 EPUB 책의 네임스페이스가 올바릅니다"
 
-#: check_epub.py:1134
+#: check_epub.py:1147
 msgid "ePub books for namespaces check"
 msgstr "네임스페이스 확인이 필요한 EPUB 책"
 
-#: check_epub.py:1175
+#: check_epub.py:1188
 msgid "All searched ePub books have only dc: elements in manifest"
 msgstr "검색한 모든 EPUB 책의 매니페스트에는 dc: 요소만 있습니다"
 
-#: check_epub.py:1177
+#: check_epub.py:1190
 msgid "ePub books for non dc: metadata check"
 msgstr "dc: 외 메타데이터를 확인할 EPUB 책"
 
-#: check_epub.py:1199
+#: check_epub.py:1212
 msgid "Manifest file missing from: <b>%s</b>"
 msgstr "다음 위치에 매니페스트 파일이 없습니다: <b>%s</b>"
 
-#: check_epub.py:1213
+#: check_epub.py:1226
 msgid "All searched ePub books have a valid opf manifest"
 msgstr "검색한 모든 EPUB 책에는 올바른 OPF 매니페스트가 있습니다"
 
-#: check_epub.py:1215
+#: check_epub.py:1228
 msgid "ePub books for missing files in opf"
 msgstr "OPF에 누락 파일이 있는 EPUB 책"
 
-#: check_epub.py:1240 check_epub.py:1279
+#: check_epub.py:1253 check_epub.py:1292
 msgid "Ignoring DRM protected ePub: "
 msgstr "DRM으로 보호된 EPUB 무시: "
 
-#: check_epub.py:1253
+#: check_epub.py:1266
 msgid "All searched ePub books have a flattened NCX TOC"
 msgstr "검색한 모든 EPUB 책에는 평탄화된 NCX 목차가 있습니다"
 
-#: check_epub.py:1255
+#: check_epub.py:1268
 msgid "ePub books for NCX TOC hierarchy"
 msgstr "계층형 NCX 목차가 있는 EPUB 책"
 
-#: check_epub.py:1299
+#: check_epub.py:1312
 msgid "All searched ePub books have a NCX TOC with at least 3 items"
 msgstr "검색한 모든 EPUB 책에는 항목이 3개 이상인 NCX 목차가 있습니다"
 
-#: check_epub.py:1301
+#: check_epub.py:1314
 msgid "ePub books for NCX TOC count"
 msgstr "NCX 목차 항목 수 문제가 있는 EPUB 도서"
 
-#: check_epub.py:1356
+#: check_epub.py:1369
 msgid "All searched ePub books have a NCX TOC with valid links"
 msgstr "검색한 모든 EPUB 책의 NCX 목차 링크가 올바릅니다"
 
-#: check_epub.py:1358
+#: check_epub.py:1371
 msgid "ePub books for broken NCX TOC links"
 msgstr "깨진 NCX 목차 링크가 있는 EPUB 책"
 
-#: check_epub.py:1401
+#: check_epub.py:1414
 msgid "All searched ePub books have valid guide entries"
 msgstr "검색한 모든 EPUB 책의 guide 항목이 올바릅니다"
 
-#: check_epub.py:1403
+#: check_epub.py:1416
 msgid "ePub books for broken guide links"
 msgstr "깨진 guide 링크가 있는 EPUB 책"
 
-#: check_epub.py:1437
+#: check_epub.py:1450
 msgid "No searched ePub books have oversize html files"
 msgstr "검색한 EPUB 책에는 지나치게 큰 HTML 파일이 없습니다"
 
-#: check_epub.py:1439
+#: check_epub.py:1452
 msgid "ePub books for oversize html files"
 msgstr "지나치게 큰 HTML 파일이 있는 EPUB 책"
 
-#: check_epub.py:1464
+#: check_epub.py:1477
 msgid "No searched ePub books have DRM"
 msgstr "검색한 EPUB 책에는 DRM이 없습니다"
 
-#: check_epub.py:1466
+#: check_epub.py:1479
 msgid "ePub books for DRM"
 msgstr "DRM이 있는 EPUB 책"
 
-#: check_epub.py:1498
+#: check_epub.py:1511
 msgid "No searched ePub books have Adobe DRM meta tags"
 msgstr "검색한 EPUB 책에는 Adobe DRM 메타 태그가 없습니다"
 
-#: check_epub.py:1500
+#: check_epub.py:1513
 msgid "ePub books for Adobe DRM meta tags"
 msgstr "Adobe DRM 메타 태그가 있는 EPUB 책"
 
-#: check_epub.py:1532
+#: check_epub.py:1545
 msgid "No searched ePub books have \\<address\\> smart tags"
 msgstr "검색한 EPUB 책에는 \\<address\\> 스마트 태그가 없습니다"
 
-#: check_epub.py:1534
+#: check_epub.py:1547
 msgid "ePub books for <address> smart tags"
 msgstr "<address> 스마트 태그가 있는 EPUB 책"
 
-#: check_epub.py:1553
+#: check_epub.py:1566
 msgid "Font found in: <b>%s</b>"
 msgstr "글꼴 발견 위치: <b>%s</b>"
 
-#: check_epub.py:1567
+#: check_epub.py:1580
 msgid "No searched ePub books have embedded fonts"
 msgstr "검색한 EPUB 책에는 내장 글꼴 없음"
 
-#: check_epub.py:1569
+#: check_epub.py:1582
 msgid "ePub books for embedded fonts"
 msgstr "EPUB 책 대상: 내장 글꼴"
 
-#: check_epub.py:1587
+#: check_epub.py:1600
 msgid "CSS file contains @font-face: <b>%s</b>"
 msgstr "CSS 파일에 @font-face 포함: <b>%s</b>"
 
-#: check_epub.py:1593
+#: check_epub.py:1606
 msgid "At least one html file contains @font-face: <b>%s</b>"
 msgstr "하나 이상의 HTML 파일에 @font-face 포함: <b>%s</b>"
 
-#: check_epub.py:1607
+#: check_epub.py:1620
 msgid "No searched ePub books have @font-face declarations"
 msgstr "검색한 EPUB 책에는 @font-face 선언 없음"
 
-#: check_epub.py:1609
+#: check_epub.py:1622
 msgid "ePub books for @font-face declarations"
 msgstr "EPUB 책 대상: @font-face 선언"
 
-#: check_epub.py:1638
+#: check_epub.py:1651
 msgid "All searched ePub books have text-align:justify"
 msgstr "검색한 모든 EPUB 책에는 text-align:justify가 있습니다"
 
-#: check_epub.py:1640
+#: check_epub.py:1653
 msgid "ePub books for text-align:justify"
 msgstr "text-align:justify가 있는 EPUB 책"
 
-#: check_epub.py:1666
+#: check_epub.py:1679
 msgid "\t\t'margin' property found, so does not match calibre preferences"
 msgstr "\t\t'margin' 속성이 있어 calibre 환경 설정과 일치하지 않습니다"
 
-#: check_epub.py:1669
+#: check_epub.py:1682
 msgid "\t\tNegative margin found, so does not match calibre preferences"
 msgstr "\t\t음수 여백이 있어 calibre 환경 설정과 일치하지 않습니다"
 
-#: check_epub.py:1678
+#: check_epub.py:1691
 msgid "\t\tMargins is not defined in pts so does not match calibre preferences"
 msgstr "\t\t여백이 pt 단위로 정의되어 있지 않아 calibre 환경 설정과 일치하지 않음"
 
-#: check_epub.py:1686 check_epub.py:1689 check_epub.py:1695
+#: check_epub.py:1699 check_epub.py:1702 check_epub.py:1708
 msgid "\t\tMargins are defined in pts but don't match calibre preferences"
 msgstr "\t\t여백이 pt 단위로 정의되어 있지만 calibre 환경 설정과 일치하지 않음"
 
-#: check_epub.py:1698
+#: check_epub.py:1711
 msgid "\t\tMargins match calibre preferences"
 msgstr "\t\t여백이 calibre 환경 설정과 일치함"
 
-#: check_epub.py:1724
+#: check_epub.py:1737
 msgid "\tAnalyzing margins in "
 msgstr "\t다음 위치의 여백 분석 중: "
 
-#: check_epub.py:1754
+#: check_epub.py:1767
 msgid "All searched ePub books match the calibre page setup preferences"
 msgstr "검색한 모든 EPUB 책이 calibre 페이지 설정과 일치합니다"
 
-#: check_epub.py:1756
+#: check_epub.py:1769
 msgid "ePub books for body or @page css margins"
 msgstr "body 또는 @page CSS 여백이 있는 EPUB 책"
 
-#: check_epub.py:1794
+#: check_epub.py:1807
 msgid "All searched ePub books have book level margins defined"
 msgstr "검색한 모든 EPUB 책에는 책 수준 여백이 정의되어 있습니다"
 
-#: check_epub.py:1796
+#: check_epub.py:1809
 msgid "ePub books lacking body or @page css margins"
 msgstr "body 또는 @page CSS 여백이 없는 EPUB 책"
 
-#: check_epub.py:1832
+#: check_epub.py:1845
 msgid "No searched ePub books inline @page margins"
 msgstr "검색한 EPUB 책에는 인라인 @page 여백이 없습니다"
 
-#: check_epub.py:1834
+#: check_epub.py:1847
 msgid "ePub books using inline @page or body css margins"
 msgstr "인라인 @page 또는 body CSS 여백을 사용하는 EPUB 책"
 
-#: check_epub.py:1855
+#: check_epub.py:1868
 msgid "\tContains .js file: %s"
 msgstr "\t.js 파일 포함: %s"
 
-#: check_epub.py:1861
+#: check_epub.py:1874
 msgid "\tContains inline javascript: %s"
 msgstr "\t인라인 JavaScript 포함: %s"
 
-#: check_epub.py:1863
+#: check_epub.py:1876
 msgid "ePub with Javascript: %s"
 msgstr "JavaScript가 있는 EPUB: %s"
 
-#: check_epub.py:1878
+#: check_epub.py:1891
 msgid "No searched ePub books have javascript"
 msgstr "검색한 EPUB 책에는 JavaScript가 없습니다"
 
-#: check_epub.py:1880
+#: check_epub.py:1893
 msgid "ePub books for javascript"
 msgstr "JavaScript가 있는 EPUB 책"
 
-#: check_epub.py:1908
+#: check_epub.py:1921
 msgid "Unsmartened punctuation in: <b>%s</b>"
 msgstr "스마트 문장부호 보정이 되지 않은 위치: <b>%s</b>"
 
-#: check_epub.py:1922
+#: check_epub.py:1935
 msgid "No searched ePub books need punctuation smartened"
 msgstr "검색한 EPUB 책 중 문장부호 스마트 보정이 필요한 책은 없습니다"
 
-#: check_epub.py:1924
+#: check_epub.py:1937
 msgid "ePub books for smarten punctuation"
 msgstr "문장부호 스마트 보정이 필요한 EPUB 책"
 
-#: check_epub.py:1942
+#: check_epub.py:1955
 msgid "Could not find OPF in:%s"
 msgstr "다음 위치에서 OPF를 찾지 못함:%s"
 
-#: check_epub.py:1945
+#: check_epub.py:1958
 msgid "OPF file in container.xml not found in:%s"
 msgstr "container.xml에 지정된 OPF 파일을 다음 위치에서 찾지 못함:%s"
 
@@ -870,159 +882,159 @@ msgstr "검색한 모든 도서의 제목 정렬 값이 올바릅니다"
 msgid "books for invalid title sort"
 msgstr "제목 정렬 값이 잘못된 도서"
 
-#: check_metadata.py:104
+#: check_metadata.py:110
 msgid "All searched books have a valid Author Sort"
 msgstr "검색한 모든 도서의 저자 정렬 값이 올바릅니다"
 
-#: check_metadata.py:106
+#: check_metadata.py:112
 msgid "books for invalid author sort"
 msgstr "저자 정렬 값이 잘못된 도서"
 
-#: check_metadata.py:119
+#: check_metadata.py:125
 msgid "All searched books have a valid ISBN"
 msgstr "검색한 모든 도서의 ISBN이 올바릅니다"
 
-#: check_metadata.py:121
+#: check_metadata.py:127
 msgid "books for invalid ISBN"
 msgstr "ISBN이 잘못된 도서"
 
-#: check_metadata.py:134
+#: check_metadata.py:140
 msgid "All searched books have a valid pubdate"
 msgstr "검색한 모든 도서의 출간일이 올바릅니다"
 
-#: check_metadata.py:136
+#: check_metadata.py:142
 msgid "books for invalid pubdate"
 msgstr "출간일이 잘못된 도서"
 
-#: check_metadata.py:153
+#: check_metadata.py:159
 msgid "books for duplicate ISBN"
 msgstr "중복 ISBN이 있는 도서"
 
-#: check_metadata.py:166
+#: check_metadata.py:172
 msgid "All searched books have unique ISBNs"
 msgstr "검색한 모든 도서의 ISBN이 고유합니다"
 
-#: check_metadata.py:185
+#: check_metadata.py:191
 msgid "books for duplicate series"
 msgstr "책 에 대한 중복 시리즈"
 
-#: check_metadata.py:199
+#: check_metadata.py:205
 msgid "All searched books have unique series indexes"
 msgstr "검색한 모든 도서의 시리즈 인덱스가 고유합니다"
 
-#: check_metadata.py:257
+#: check_metadata.py:263
 msgid "Checked %d books, found %d gaps in %d series"
 msgstr "%d권의 책을 검사하여 %d개 시리즈에서 누락 %d개를 찾음"
 
-#: check_metadata.py:261
+#: check_metadata.py:267
 msgid "No series gaps exist in the books searched"
 msgstr "검색한 책에는 시리즈 누락 구간이 없습니다"
 
-#: check_metadata.py:263
+#: check_metadata.py:269
 msgid "Series Gaps Found%s"
 msgstr "시리즈 누락 발견%s"
 
-#: check_metadata.py:287
+#: check_metadata.py:293
 msgid "books for series pubdate order"
 msgstr "시리즈 출간일 순서 문제가 있는 도서"
 
-#: check_metadata.py:320
+#: check_metadata.py:326
 msgid "Checked %d books, found %d disordered in %d series"
 msgstr "%d권의 책을 검사하여 %d개 시리즈에서 순서 이상 %d개를 찾음"
 
-#: check_metadata.py:324
+#: check_metadata.py:330
 msgid "No series pubdate disorders exist in the books searched"
 msgstr "검색한 책에는 시리즈 출간일 순서 이상이 없습니다"
 
-#: check_metadata.py:326
+#: check_metadata.py:332
 msgid "Series Pubdate Issues Found"
 msgstr "시리즈 출간일 문제 발견"
 
-#: check_metadata.py:344
+#: check_metadata.py:350
 msgid "All searched books have a valid tag count"
 msgstr "검색한 모든 도서의 태그 수가 올바릅니다"
 
-#: check_metadata.py:346
+#: check_metadata.py:352
 msgid "books for invalid tag count"
 msgstr "태그 수가 잘못된 도서"
 
-#: check_metadata.py:379
+#: check_metadata.py:385
 msgid "All searched books have no HTML in comments"
 msgstr "모든 검색한 책에는 없음 HTML 에서 주석"
 
-#: check_metadata.py:381
+#: check_metadata.py:387
 msgid "books for no HTML in comments"
 msgstr "책 에 대한 없음 HTML 에서 주석"
 
-#: check_metadata.py:416
+#: check_metadata.py:422
 msgid "All searched books have HTML in comments"
 msgstr "모든 검색한 책에는 HTML 에서 주석"
 
-#: check_metadata.py:418
+#: check_metadata.py:424
 msgid "books for HTML in comments"
 msgstr "책 에 대한 HTML 에서 주석"
 
-#: check_metadata.py:433
+#: check_metadata.py:439
 msgid "All searched book authors have no commas"
 msgstr "검색한 모든 도서 저자명에 쉼표가 없습니다"
 
-#: check_metadata.py:435
+#: check_metadata.py:441
 msgid "books with authors having commas"
 msgstr "저자명에 쉼표가 있는 도서"
 
-#: check_metadata.py:450
+#: check_metadata.py:456
 msgid "All searched book authors have commas"
 msgstr "검색한 모든 도서 저자명에 쉼표가 있습니다"
 
-#: check_metadata.py:452
+#: check_metadata.py:458
 msgid "books with authors not having commas"
 msgstr "저자명에 쉼표가 없는 도서"
 
-#: check_metadata.py:467
+#: check_metadata.py:473
 msgid "All searched authors have a valid casing"
 msgstr "검색한 모든 저자명의 대소문자 형식이 올바릅니다"
 
-#: check_metadata.py:469
+#: check_metadata.py:475
 msgid "books for invalid author casing"
 msgstr "저자명 대소문자 형식이 잘못된 도서"
 
-#: check_metadata.py:487
+#: check_metadata.py:493
 msgid "All searched book authors have alphabetic names"
 msgstr "검색한 모든 도서 저자명이 알파벳 문자로만 이루어져 있습니다"
 
-#: check_metadata.py:489
+#: check_metadata.py:495
 msgid "books with authors having non-alphabetic names"
 msgstr "저자명에 알파벳 외 문자가 있는 도서"
 
-#: check_metadata.py:506
+#: check_metadata.py:512
 msgid "All searched book authors have ascii names"
 msgstr "검색한 모든 도서 저자명이 ASCII 문자로만 이루어져 있습니다"
 
-#: check_metadata.py:508
+#: check_metadata.py:514
 msgid "books with authors having non-ascii names"
 msgstr "저자명에 ASCII 외 문자가 있는 도서"
 
-#: check_metadata.py:526
+#: check_metadata.py:532
 msgid "All searched book authors have correct initials"
 msgstr "검색한 모든 책 저자에는 올바른 이니셜"
 
-#: check_metadata.py:528
+#: check_metadata.py:534
 msgid "books with authors having incorrect initials"
 msgstr "저자 머리글자가 올바르지 않은 도서"
 
-#: check_metadata.py:541
+#: check_metadata.py:547
 msgid "All searched books do not have titles with series names"
 msgstr "검색한 모든 책 제목에는 시리즈 이름이 포함되어 있지 않습니다"
 
-#: check_metadata.py:543
+#: check_metadata.py:549
 msgid "book titles with possible series names"
 msgstr "시리즈 이름이 포함된 것으로 보이는 책 제목"
 
-#: check_metadata.py:555
+#: check_metadata.py:561
 msgid "All searched titles have a valid title casing"
 msgstr "검색한 모든 제목의 대소문자 형식이 올바릅니다"
 
-#: check_metadata.py:557
+#: check_metadata.py:563
 msgid "books for invalid title casing"
 msgstr "제목 대소문자 형식이 잘못된 도서"
 
@@ -1756,7 +1768,7 @@ msgstr "형식이 없는 책을 찾습니다"
 msgid "Find ePub books with text matching your own regular expression"
 msgstr "사용자 지정 정규식과 일치하는 텍스트가 있는 EPUB 책 찾기"
 
-#: config.py:155 dialogs.py:556
+#: config.py:155 dialogs.py:557
 msgid "Search ePubs"
 msgstr "EPUB 검색"
 
@@ -2027,23 +2039,23 @@ msgstr "제외 목록에서 선택한 책 제거"
 msgid "quality check plugin:search epub dialog"
 msgstr "품질 검사 플러그인: EPUB 검색 대화상자"
 
-#: dialogs.py:560
+#: dialogs.py:561
 msgid "Find expression"
 msgstr "찾을 식"
 
-#: dialogs.py:574
+#: dialogs.py:575
 msgid "Clear search history"
 msgstr "검색 기록 지우기"
 
-#: dialogs.py:579
+#: dialogs.py:580
 msgid "&Ignore case"
 msgstr "대소문자 무시(&I)"
 
-#: dialogs.py:581
+#: dialogs.py:582
 msgid "&Show all occurrences"
 msgstr "모든 항목 표시(&S)"
 
-#: dialogs.py:582
+#: dialogs.py:583
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
@@ -2051,15 +2063,25 @@ msgstr ""
 "선택 해제하면 각 EPUB 검색은 첫 번째 일치 항목을 찾는 즉시 중지됩니다.\n"
 "선택하면 모든 발생 항목이 로그에 표시되지만 훨씬 느리게 실행됩니다."
 
+#: dialogs.py:586
+msgid "Does not contain"
+msgstr ""
+
 #: dialogs.py:587
+msgid ""
+"Include an ePub only when the expression is not found in any file within the"
+" selected scopes."
+msgstr ""
+
+#: dialogs.py:592
 msgid "Scope"
 msgstr "범위"
 
-#: dialogs.py:592
+#: dialogs.py:597
 msgid "&HTML content"
 msgstr "HTML 내용(&H)"
 
-#: dialogs.py:593
+#: dialogs.py:598
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
@@ -2067,19 +2089,19 @@ msgstr ""
 "모든 HTML 태그를 포함하여 모든 HTML 콘텐츠 파일을 검색합니다.\n"
 "'일반 텍스트 콘텐츠' 옵션도 선택한 경우에는 이 옵션이 무시됩니다."
 
-#: dialogs.py:595
+#: dialogs.py:600
 msgid "&CSS/xpgt stylesheets"
 msgstr "CSS/XPGT 스타일시트(&C)"
 
-#: dialogs.py:596
+#: dialogs.py:601
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr "모든 CSS 또는 Adobe .xpgt 스타일시트를 검색"
 
-#: dialogs.py:597
+#: dialogs.py:602
 msgid "&Plain text content"
 msgstr "일반 텍스트 내용(&P)"
 
-#: dialogs.py:598
+#: dialogs.py:603
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
@@ -2087,51 +2109,51 @@ msgstr ""
 "모든 HTML 태그를 제거한 HTML 파일의 본문 텍스트를 검색합니다.\n"
 "'HTML 콘텐츠' 옵션도 선택한 경우에는 이 옵션이 우선 적용됩니다."
 
-#: dialogs.py:600
+#: dialogs.py:605
 msgid "&OPF manifest"
 msgstr "OPF 매니페스트(&O)"
 
-#: dialogs.py:601
+#: dialogs.py:606
 msgid "Search the .opf manifest file"
 msgstr ".OPF 매니페스트 파일 검색"
 
-#: dialogs.py:602
+#: dialogs.py:607
 msgid "&NCX TOC"
 msgstr "NCX 목차(&N)"
 
-#: dialogs.py:603
+#: dialogs.py:608
 msgid "Search the NCX table of contents file"
 msgstr "NCX 목차 파일 검색"
 
-#: dialogs.py:604
+#: dialogs.py:609
 msgid "&Zip filenames"
 msgstr "ZIP 파일 이름(&Z)"
 
-#: dialogs.py:605
+#: dialogs.py:610
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr "EPUB(ZIP) 파일 내부의 파일 이름 검색"
 
-#: dialogs.py:625
+#: dialogs.py:630
 msgid "No find text"
 msgstr "찾기 텍스트 없음"
 
-#: dialogs.py:626
+#: dialogs.py:631
 msgid "You must specify a regular expression to search for."
 msgstr "검색할 정규식을 지정해야 합니다."
 
-#: dialogs.py:635
+#: dialogs.py:640
 msgid "No search scope"
 msgstr "검색 범위 없음"
 
-#: dialogs.py:636
+#: dialogs.py:641
 msgid "You must specify a scope for the ePub search."
 msgstr "EPUB 검색 범위를 지정해야 합니다."
 
-#: dialogs.py:695
+#: dialogs.py:701
 msgid "Fixing"
 msgstr "수정 중"
 
-#: dialogs.py:708
+#: dialogs.py:714
 msgid "Fix completed"
 msgstr "수정 완료"
 

@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-11-16 17:29+1000\n"
+"POT-Creation-Date: 2026-10-22 20:04+1000\n"
 "PO-Revision-Date: 2022-09-19 14:57+0000\n"
 "Last-Translator: தமிழ் நேரம் <tamilneram247@gmail.com>, 2025\n"
 "Language-Team: Tamil (https://app.transifex.com/calibre/teams/19337/ta/)\n"
@@ -86,7 +86,7 @@ msgstr "அமைப்புகள் நீக்கப்பட்டன"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "இந்த நூலகத்தில் இந்த சொருகி அனைத்து அமைப்புகளும் அழிக்கப்பட்டுள்ளன."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
 
@@ -234,8 +234,8 @@ msgstr "சரிபார்க்கப்பட்ட %d புத்தக�
 msgid "No matches found"
 msgstr "போட்டிகள் எதுவும் கிடைக்கவில்லை"
 
-#: check_covers.py:95 check_metadata.py:165 check_metadata.py:198
-#: check_metadata.py:260 check_metadata.py:323
+#: check_covers.py:95 check_metadata.py:171 check_metadata.py:204
+#: check_metadata.py:266 check_metadata.py:329
 msgid "No Matches%s"
 msgstr "போட்டிகள் இல்லை%கள்"
 
@@ -263,497 +263,509 @@ msgstr "காலிபர் புக்மார்க்குகள்"
 msgid "OS artifacts"
 msgstr "OS கலைப்பொருட்கள்"
 
-#: check_epub.py:277
+#: check_epub.py:211
+msgid "Finding ePubs that do not contain the expression in selected scopes"
+msgstr ""
+
+#: check_epub.py:213
+msgid "Searching for expression"
+msgstr ""
+
+#: check_epub.py:285
 msgid "Matches in book: <b>%s</b>"
 msgstr "புத்தகத்தில் பொருந்துகிறது: <b>%கள் </b>"
 
-#: check_epub.py:279
+#: check_epub.py:287
 msgid "First match in book: <b>%s</b>"
 msgstr "புத்தகத்தில் முதல் போட்டி: <b>%கள் </b>"
 
-#: check_epub.py:286 check_epub.py:318 check_epub.py:358
+#: check_epub.py:292
+msgid "Expression not found in selected scopes for book: <b>%s</b>"
+msgstr ""
+
+#: check_epub.py:297 check_epub.py:329 check_epub.py:369
 msgid "Invalid epub:"
 msgstr "தவறான எபப்:"
 
-#: check_epub.py:289 check_epub.py:321 check_epub.py:361 check_epub.py:561
+#: check_epub.py:300 check_epub.py:332 check_epub.py:372 check_epub.py:572
 msgid "ERROR parsing book: "
 msgstr "பிழை பாகுபடுத்தும் புத்தகம்:"
 
-#: check_epub.py:294
+#: check_epub.py:305
 msgid "No searched ePub books have your search text"
 msgstr "தேடப்பட்ட எபப் புத்தகங்கள் உங்கள் தேடல் உரை இல்லை"
 
-#: check_epub.py:296
+#: check_epub.py:307
 msgid "ePub books for search text"
 msgstr "தேடல் உரைக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:304 check_epub.py:344 check_epub.py:392 check_epub.py:669
-#: check_epub.py:743
+#: check_epub.py:315 check_epub.py:355 check_epub.py:403 check_epub.py:680
+#: check_epub.py:754
 msgid "ERROR: EPUB format is missing: "
 msgstr "பிழை: EPUB வடிவம் இல்லை:"
 
-#: check_epub.py:326
+#: check_epub.py:337
 msgid "No searched ePub books have legacy jackets"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் மரபு ஜாக்கெட்டுகள் இல்லை"
 
-#: check_epub.py:329
+#: check_epub.py:340
 msgid "No searched ePub books have jackets"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் ஜாக்கெட்டுகள் இல்லை"
 
-#: check_epub.py:332
+#: check_epub.py:343
 msgid "All searched ePub books have jackets"
 msgstr "தேடப்பட்ட அனைத்து எபப் புத்தகங்களிலும் ஜாக்கெட்டுகள் உள்ளன"
 
-#: check_epub.py:335
+#: check_epub.py:346
 msgid "ePub books for jackets"
 msgstr "ஜாக்கெட்டுகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:366
+#: check_epub.py:377
 msgid "No searched ePub books have multiple jackets"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் பல ஜாக்கெட்டுகள் இல்லை"
 
-#: check_epub.py:368
+#: check_epub.py:379
 msgid "ePub books for multiple jackets"
 msgstr "பல ஜாக்கெட்டுகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:424
+#: check_epub.py:435
 msgid "No searched ePub books have non-zero .xpgt margins"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் பூஜ்ஜியமற்ற .xpgt விளிம்புகள் இல்லை"
 
-#: check_epub.py:426
+#: check_epub.py:437
 msgid "ePub books for .xpgt margins"
 msgstr ".xpgt விளிம்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:456
+#: check_epub.py:467
 msgid "Checking css import"
 msgstr "CSS இறக்குமதியை சரிபார்க்கிறது"
 
-#: check_epub.py:465
+#: check_epub.py:476
 msgid "Checking html import"
 msgstr "HTML இறக்குமதியை சரிபார்க்கிறது"
 
-#: check_epub.py:479
+#: check_epub.py:490
 msgid "No searched ePub books have inline xpgt links"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் இன்லைன் எக்ஸ்பிஜிடி இணைப்புகள் இல்லை"
 
-#: check_epub.py:481
+#: check_epub.py:492
 msgid "ePub books for inline xpgt links"
 msgstr "இன்லைன் எக்ஸ்பிஜிடி இணைப்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:532
+#: check_epub.py:543
 msgid "No searched ePub books have unmanifested files"
 msgstr ""
 "தேடப்பட்ட எபப் புத்தகங்களில் வெளிப்படுத்தப்படாத கோப்புகள் எதுவும் இல்லை"
 
-#: check_epub.py:534
+#: check_epub.py:545
 msgid "ePub books for unmanifested files"
 msgstr "வெளிப்படுத்தப்படாத கோப்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:549 check_epub.py:675 check_epub.py:749
+#: check_epub.py:560 check_epub.py:686 check_epub.py:760
 msgid "SKIPPING BOOK (DRM Encrypted): "
 msgstr "புத்தகத்தைத் தவிர்ப்பது (டி.ஆர்.எம் மறைகுறியாக்கப்பட்டது):"
 
-#: check_epub.py:562
+#: check_epub.py:573
 msgid "\tIssue with CSS name: "
 msgstr "CSS பெயருடன் பிரச்சினை:"
 
-#: check_epub.py:586
+#: check_epub.py:597
 msgid "\tUnused CSS file: %s"
 msgstr "பயன்படுத்தப்படாத CSS கோப்பு: %s"
 
-#: check_epub.py:599
+#: check_epub.py:610
 msgid "No searched ePub books have unused CSS files"
 msgstr ""
 "தேடப்பட்ட எபப் புத்தகங்களில் பயன்படுத்தப்படாத CSS கோப்புகள் எதுவும் இல்லை"
 
-#: check_epub.py:601
+#: check_epub.py:612
 msgid "ePub books for unused CSS files"
 msgstr "பயன்படுத்தப்படாத CSS கோப்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:693
+#: check_epub.py:704
 msgid "\tIssue with image name: "
 msgstr "பட பெயருடன் பிரச்சினை:"
 
-#: check_epub.py:718
+#: check_epub.py:729
 msgid "\tUNUSED image file: %s"
 msgstr "\tபயன்படுத்தப்படாத படக் கோப்பு: %s"
 
-#: check_epub.py:731
+#: check_epub.py:742
 msgid "No searched ePub books have unused image files"
 msgstr ""
 "தேடப்பட்ட எபப் புத்தகங்கள் பயன்படுத்தப்படாத படக் கோப்புகளைக் "
 "கொண்டிருக்கவில்லை"
 
-#: check_epub.py:733
+#: check_epub.py:744
 msgid "ePub books for unused image files"
 msgstr "பயன்படுத்தப்படாத படக் கோப்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:788
+#: check_epub.py:801
 msgid "\tBroken image link in:"
 msgstr "உடைந்த பட இணைப்பு:"
 
-#: check_epub.py:788
+#: check_epub.py:801
 msgid " of "
 msgstr "of"
 
-#: check_epub.py:800
+#: check_epub.py:813
 msgid "No searched ePub books have broken image links"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் பட இணைப்புகளை உடைத்ததில்லை"
 
-#: check_epub.py:802
+#: check_epub.py:815
 msgid "ePub books for broken image links"
 msgstr "உடைந்த பட இணைப்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:845
+#: check_epub.py:858
 msgid "No searched ePub books have "
 msgstr "தேடப்பட்ட எபப் புத்தகங்கள் எதுவும் இல்லை"
 
-#: check_epub.py:847
+#: check_epub.py:860
 msgid "ePub books for "
 msgstr "எபப் புத்தகங்கள்"
 
-#: check_epub.py:879
+#: check_epub.py:892
 msgid "No OPF file in:"
 msgstr "இல் OPF கோப்பு இல்லை:"
 
-#: check_epub.py:884
+#: check_epub.py:897
 msgid "No supported meta tag or non-xml cover in:"
 msgstr "ஆதரிக்கப்பட்ட மெட்டா குறிச்சொல் அல்லது எக்ஸ்எம்எல் அல்லாத கவர் இல்லை:"
 
-#: check_epub.py:889
+#: check_epub.py:902
 msgid "DRM Encrypted cover in:"
 msgstr "டி.ஆர்.எம் மறைகுறியாக்கப்பட்ட கவர்:"
 
-#: check_epub.py:894
+#: check_epub.py:907
 msgid "Invalid cover image extension (%s) in:"
 msgstr "தவறான கவர் பட நீட்டிப்பு (%கள்) இல்:"
 
-#: check_epub.py:907
+#: check_epub.py:920
 msgid "No searched ePub books have replaceable covers"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் மாற்றக்கூடிய அட்டைகள் எதுவும் இல்லை"
 
-#: check_epub.py:910
+#: check_epub.py:923
 msgid "All searched ePub books have replaceable covers"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் மாற்றக்கூடிய அட்டைகளைக் கொண்டுள்ளன"
 
-#: check_epub.py:914
+#: check_epub.py:927
 msgid "ePub books for replaceable covers"
 msgstr "மாற்றக்கூடிய அட்டைகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:950
+#: check_epub.py:963
 msgid "No searched ePub books have calibre SVG covers embedded"
 msgstr ""
 "தேடப்பட்ட எபப் புத்தகங்களில் காலிபர் எஸ்.வி.ஜி கவர்கள் உட்பொதிக்கப்பட்டுள்ளன"
 
-#: check_epub.py:953
+#: check_epub.py:966
 msgid "All searched ePub books have calibre SVG covers embedded"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் காலிபர் எஸ்.வி.ஜி கவர்கள் "
 "உட்பொதிக்கப்பட்டுள்ளன"
 
-#: check_epub.py:957
+#: check_epub.py:970
 msgid "ePub books for calibre SVG covers"
 msgstr "காலிபர் எஸ்.வி.ஜி அட்டைகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:994
+#: check_epub.py:1007
 msgid "No searched ePub books have calibre covers embedded"
 msgstr ""
 "தேடப்பட்ட எபப் புத்தகங்களில் எந்த காலிபர் கவர்களும் உட்பொதிக்கப்பட்டுள்ளன"
 
-#: check_epub.py:997
+#: check_epub.py:1010
 msgid "All searched ePub books have calibre covers embedded"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் காலிபர் கவர்கள் உட்பொதிக்கப்பட்டுள்ளன"
 
-#: check_epub.py:1001
+#: check_epub.py:1014
 msgid "ePub books for calibre covers"
 msgstr "காலிபர் அட்டைகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1030
+#: check_epub.py:1043
 msgid "No searched ePub books have been converted by calibre"
 msgstr "தேடப்பட்ட எபப் புத்தகங்கள் எதுவும் காலிபர் மூலம் மாற்றப்படவில்லை"
 
-#: check_epub.py:1033
+#: check_epub.py:1046
 msgid "All searched ePub books have been converted by calibre"
 msgstr "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் காலிபர் மூலம் மாற்றப்பட்டுள்ளன"
 
-#: check_epub.py:1037
+#: check_epub.py:1050
 msgid "ePub books for calibre conversions"
 msgstr "காலிபர் மாற்றங்களுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1065
+#: check_epub.py:1078
 msgid "All searched ePub books have a valid zip format"
 msgstr ""
 "தேடப்பட்ட அனைத்து இபப் புத்தகங்களும் சரியான சிப் வடிவத்தைக் கொண்டுள்ளன"
 
-#: check_epub.py:1067
+#: check_epub.py:1080
 msgid "ePub books for corrupted zip format"
 msgstr "சிதைந்த சிப் வடிவமைப்பிற்கான இபப் புத்தகங்கள்"
 
-#: check_epub.py:1092
+#: check_epub.py:1105
 msgid "All searched ePub books have a valid container.xml file"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் செல்லுபடியாகும் கொள்கலன். எக்ஸ்எம்எல் "
 "கோப்பைக் கொண்டுள்ளன"
 
-#: check_epub.py:1094
+#: check_epub.py:1107
 msgid "ePub books for missing container.xml"
 msgstr "காணாமல் போன கொள்கலன் எக்ஸ்எம்எல்"
 
-#: check_epub.py:1110
+#: check_epub.py:1123
 msgid "\tMissing container.xml file in"
 msgstr "காணாமல் போன கொள்கலன். Xml கோப்பு"
 
-#: check_epub.py:1115
+#: check_epub.py:1128
 msgid "\tIncorrect container.xml namespace in"
 msgstr "\tதவறான கொள்கலன். எக்ஸ்எம்எல் பெயர்வெளி"
 
-#: check_epub.py:1122
+#: check_epub.py:1135
 msgid "\tIncorrect .opf manifest namespace in"
 msgstr "தவறான .opf மேனிஃபெஸ்ட் பெயர்வெளி"
 
-#: check_epub.py:1132
+#: check_epub.py:1145
 msgid "All searched ePub books have valid namespaces"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் செல்லுபடியாகும் பெயர்வெளிகளைக் "
 "கொண்டுள்ளன"
 
-#: check_epub.py:1134
+#: check_epub.py:1147
 msgid "ePub books for namespaces check"
 msgstr "பெயர்வெளிகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1175
+#: check_epub.py:1188
 msgid "All searched ePub books have only dc: elements in manifest"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களிலும் டி.சி மட்டுமே உள்ளது: கூறுகள் "
 "வெளிப்படுகின்றன"
 
-#: check_epub.py:1177
+#: check_epub.py:1190
 msgid "ePub books for non dc: metadata check"
 msgstr "டி.சி அல்லாத எபப் புத்தகங்கள்: மெட்டாடேட்டா காசோலை"
 
-#: check_epub.py:1199
+#: check_epub.py:1212
 msgid "Manifest file missing from: <b>%s</b>"
 msgstr "இதிலிருந்து வெளிப்படையான கோப்பு இல்லை: <b>%s </b>"
 
-#: check_epub.py:1213
+#: check_epub.py:1226
 msgid "All searched ePub books have a valid opf manifest"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் சரியான OPF வெளிப்பாட்டைக் கொண்டுள்ளன"
 
-#: check_epub.py:1215
+#: check_epub.py:1228
 msgid "ePub books for missing files in opf"
 msgstr "OPF இல் கோப்புகளைக் காணவில்லை என்பதற்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1240 check_epub.py:1279
+#: check_epub.py:1253 check_epub.py:1292
 msgid "Ignoring DRM protected ePub: "
 msgstr "டி.ஆர்.எம் பாதுகாக்கப்பட்ட எபப் புறக்கணித்தல்:"
 
-#: check_epub.py:1253
+#: check_epub.py:1266
 msgid "All searched ePub books have a flattened NCX TOC"
 msgstr "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் தட்டையான NCX TOC ஐக் கொண்டுள்ளன"
 
-#: check_epub.py:1255
+#: check_epub.py:1268
 msgid "ePub books for NCX TOC hierarchy"
 msgstr "NCX TOC வரிசைக்கு எபப் புத்தகங்கள்"
 
-#: check_epub.py:1299
+#: check_epub.py:1312
 msgid "All searched ePub books have a NCX TOC with at least 3 items"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் குறைந்தது 3 உருப்படிகளுடன் ஒரு NCX TOC "
 "ஐக் கொண்டுள்ளன"
 
-#: check_epub.py:1301
+#: check_epub.py:1314
 msgid "ePub books for NCX TOC count"
 msgstr "NCX TOC எண்ணிக்கைக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1356
+#: check_epub.py:1369
 msgid "All searched ePub books have a NCX TOC with valid links"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் செல்லுபடியாகும் இணைப்புகளுடன் ஒரு NCX "
 "TOC ஐக் கொண்டுள்ளன"
 
-#: check_epub.py:1358
+#: check_epub.py:1371
 msgid "ePub books for broken NCX TOC links"
 msgstr "உடைந்த NCX TOC இணைப்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1401
+#: check_epub.py:1414
 msgid "All searched ePub books have valid guide entries"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் சரியான வழிகாட்டி உள்ளீடுகளைக் "
 "கொண்டுள்ளன"
 
-#: check_epub.py:1403
+#: check_epub.py:1416
 msgid "ePub books for broken guide links"
 msgstr "உடைந்த வழிகாட்டி இணைப்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1437
+#: check_epub.py:1450
 msgid "No searched ePub books have oversize html files"
 msgstr "தேடப்பட்ட எபப் புத்தகங்கள் HTML கோப்புகளை பெரிதாக்கவில்லை"
 
-#: check_epub.py:1439
+#: check_epub.py:1452
 msgid "ePub books for oversize html files"
 msgstr "HTML கோப்புகளை பெரிதாக்குவதற்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1464
+#: check_epub.py:1477
 msgid "No searched ePub books have DRM"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் டி.ஆர்.எம் இல்லை"
 
-#: check_epub.py:1466
+#: check_epub.py:1479
 msgid "ePub books for DRM"
 msgstr "டி.ஆர்.எம்"
 
-#: check_epub.py:1498
+#: check_epub.py:1511
 msgid "No searched ePub books have Adobe DRM meta tags"
 msgstr ""
 "தேடப்பட்ட எபப் புத்தகங்களில் அடோப் டிஆர்எம் மெட்டா குறிச்சொற்கள் இல்லை"
 
-#: check_epub.py:1500
+#: check_epub.py:1513
 msgid "ePub books for Adobe DRM meta tags"
 msgstr "அடோப் டிஆர்எம் மெட்டா குறிச்சொற்களுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1532
+#: check_epub.py:1545
 msgid "No searched ePub books have \\<address\\> smart tags"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் \\ <முகவரி \\> ஸ்மார்ட் குறிச்சொற்கள் இல்லை"
 
-#: check_epub.py:1534
+#: check_epub.py:1547
 msgid "ePub books for <address> smart tags"
 msgstr "<driess> ஸ்மார்ட் குறிச்சொற்களுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1553
+#: check_epub.py:1566
 msgid "Font found in: <b>%s</b>"
 msgstr "எழுத்துரு இதில் காணப்படுகிறது: <b>%கள் </b>"
 
-#: check_epub.py:1567
+#: check_epub.py:1580
 msgid "No searched ePub books have embedded fonts"
 msgstr "தேடப்பட்ட எபப் புத்தகங்கள் எழுத்துருக்களை உட்பொதித்ததில்லை"
 
-#: check_epub.py:1569
+#: check_epub.py:1582
 msgid "ePub books for embedded fonts"
 msgstr "உட்பொதிக்கப்பட்ட எழுத்துருக்களுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1587
+#: check_epub.py:1600
 msgid "CSS file contains @font-face: <b>%s</b>"
 msgstr "CSS கோப்பில் @font-face: <b>%s </b> உள்ளது"
 
-#: check_epub.py:1593
+#: check_epub.py:1606
 msgid "At least one html file contains @font-face: <b>%s</b>"
 msgstr "குறைந்தது ஒரு HTML கோப்பில் @font-face: <b>%s </b>"
 
-#: check_epub.py:1607
+#: check_epub.py:1620
 msgid "No searched ePub books have @font-face declarations"
 msgstr ""
 "தேடப்பட்ட எபப் புத்தகங்களில் @எழுத்துரு-முகம் அறிவிப்புகள் எதுவும் இல்லை"
 
-#: check_epub.py:1609
+#: check_epub.py:1622
 msgid "ePub books for @font-face declarations"
 msgstr "@எழுத்துரு-முகம் அறிவிப்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1638
+#: check_epub.py:1651
 msgid "All searched ePub books have text-align:justify"
 msgstr "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் உரை-சீரமை: நியாயப்படுத்துங்கள்"
 
-#: check_epub.py:1640
+#: check_epub.py:1653
 msgid "ePub books for text-align:justify"
 msgstr "உரைக்கான எபப் புத்தகங்கள்: நியாயப்படுத்துங்கள்"
 
-#: check_epub.py:1666
+#: check_epub.py:1679
 msgid "\t\t'margin' property found, so does not match calibre preferences"
 msgstr "'விளிம்பு' சொத்து, எனவே காலிபர் விருப்பங்களுடன் பொருந்தவில்லை"
 
-#: check_epub.py:1669
+#: check_epub.py:1682
 msgid "\t\tNegative margin found, so does not match calibre preferences"
 msgstr ""
 "எதிர்மறை விளிம்பு கண்டறியப்பட்டது, எனவே காலிபர் விருப்பங்களுடன் "
 "பொருந்தவில்லை"
 
-#: check_epub.py:1678
+#: check_epub.py:1691
 msgid "\t\tMargins is not defined in pts so does not match calibre preferences"
 msgstr ""
 "பி.டி.எஸ்ஸில் விளிம்புகள் வரையறுக்கப்படவில்லை, எனவே காலிபர் விருப்பங்களுடன் "
 "பொருந்தாது"
 
-#: check_epub.py:1686 check_epub.py:1689 check_epub.py:1695
+#: check_epub.py:1699 check_epub.py:1702 check_epub.py:1708
 msgid "\t\tMargins are defined in pts but don't match calibre preferences"
 msgstr ""
 "விளிம்புகள் PTS இல் வரையறுக்கப்படுகின்றன, ஆனால் காலிபர் விருப்பங்களுடன் "
 "பொருந்தவில்லை"
 
-#: check_epub.py:1698
+#: check_epub.py:1711
 msgid "\t\tMargins match calibre preferences"
 msgstr "விளிம்புகள் காலிபர் விருப்பங்களுடன் பொருந்துகின்றன"
 
-#: check_epub.py:1724
+#: check_epub.py:1737
 msgid "\tAnalyzing margins in "
 msgstr "விளிம்புகளை பகுப்பாய்வு செய்தல்"
 
-#: check_epub.py:1754
+#: check_epub.py:1767
 msgid "All searched ePub books match the calibre page setup preferences"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் காலிபர் பக்க அமைவு விருப்பங்களுடன் "
 "பொருந்துகின்றன"
 
-#: check_epub.py:1756
+#: check_epub.py:1769
 msgid "ePub books for body or @page css margins"
 msgstr "உடல் அல்லது @பக்கம் CSS விளிம்புகளுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1794
+#: check_epub.py:1807
 msgid "All searched ePub books have book level margins defined"
 msgstr ""
 "தேடப்பட்ட அனைத்து எபப் புத்தகங்களும் புத்தக நிலை ஓரங்கள் "
 "வரையறுக்கப்பட்டுள்ளன"
 
-#: check_epub.py:1796
+#: check_epub.py:1809
 msgid "ePub books lacking body or @page css margins"
 msgstr "உடல் அல்லது @பக்கம் CSS விளிம்புகள் இல்லாத எபப் புத்தகங்கள்"
 
-#: check_epub.py:1832
+#: check_epub.py:1845
 msgid "No searched ePub books inline @page margins"
 msgstr "தேடப்பட்ட எபப் புத்தகங்கள் இன்லைன் @பக்கம் விளிம்புகள் இல்லை"
 
-#: check_epub.py:1834
+#: check_epub.py:1847
 msgid "ePub books using inline @page or body css margins"
 msgstr ""
 "இன்லைன் @பக்கம் அல்லது உடல் CSS விளிம்புகளைப் பயன்படுத்தும் எபப் புத்தகங்கள்"
 
-#: check_epub.py:1855
+#: check_epub.py:1868
 msgid "\tContains .js file: %s"
 msgstr ".Js கோப்பைக் கொண்டுள்ளது: %s"
 
-#: check_epub.py:1861
+#: check_epub.py:1874
 msgid "\tContains inline javascript: %s"
 msgstr "இன்லைன் ஜாவாஸ்கிரிப்ட்: %கள் உள்ளன"
 
-#: check_epub.py:1863
+#: check_epub.py:1876
 msgid "ePub with Javascript: %s"
 msgstr "ஜாவாஸ்கிரிப்ட் கொண்ட எபப்: %கள்"
 
-#: check_epub.py:1878
+#: check_epub.py:1891
 msgid "No searched ePub books have javascript"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களில் ஜாவாஸ்கிரிப்ட் இல்லை"
 
-#: check_epub.py:1880
+#: check_epub.py:1893
 msgid "ePub books for javascript"
 msgstr "ஜாவாஸ்கிரிப்டுக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1908
+#: check_epub.py:1921
 msgid "Unsmartened punctuation in: <b>%s</b>"
 msgstr "இல் உள்ள நிறுத்தற்குறி: <b>%கள் </b>"
 
-#: check_epub.py:1922
+#: check_epub.py:1935
 msgid "No searched ePub books need punctuation smartened"
 msgstr "தேடப்பட்ட எபப் புத்தகங்களுக்கு எந்த நிறுத்தற்குறிகளும் தேவையில்லை"
 
-#: check_epub.py:1924
+#: check_epub.py:1937
 msgid "ePub books for smarten punctuation"
 msgstr "ஸ்மார்டன் நிறுத்தற்குறிக்கான எபப் புத்தகங்கள்"
 
-#: check_epub.py:1942
+#: check_epub.py:1955
 msgid "Could not find OPF in:%s"
 msgstr "OPF ஐக் கண்டுபிடிக்க முடியவில்லை:%s"
 
-#: check_epub.py:1945
+#: check_epub.py:1958
 msgid "OPF file in container.xml not found in:%s"
 msgstr "Contain.xml இல் OPF கோப்பு இதில் காணப்படவில்லை:%s"
 
@@ -928,165 +940,165 @@ msgstr "தேடப்பட்ட அனைத்து புத்தகங�
 msgid "books for invalid title sort"
 msgstr "தவறான தலைப்பு வரிசைக்கான புத்தகங்கள்"
 
-#: check_metadata.py:104
+#: check_metadata.py:110
 msgid "All searched books have a valid Author Sort"
 msgstr ""
 "தேடப்பட்ட அனைத்து புத்தகங்களும் செல்லுபடியாகும் எழுத்தாளர் வரிசையைக் "
 "கொண்டுள்ளன"
 
-#: check_metadata.py:106
+#: check_metadata.py:112
 msgid "books for invalid author sort"
 msgstr "தவறான எழுத்தாளர் வரிசைக்கான புத்தகங்கள்"
 
-#: check_metadata.py:119
+#: check_metadata.py:125
 msgid "All searched books have a valid ISBN"
 msgstr "தேடப்பட்ட அனைத்து புத்தகங்களும் செல்லுபடியாகும் ஐ.எஸ்.பி.என்"
 
-#: check_metadata.py:121
+#: check_metadata.py:127
 msgid "books for invalid ISBN"
 msgstr "தவறான ISBN க்கான புத்தகங்கள்"
 
-#: check_metadata.py:134
+#: check_metadata.py:140
 msgid "All searched books have a valid pubdate"
 msgstr "தேடப்பட்ட அனைத்து புத்தகங்களும் சரியான வெளியீட்டைக் கொண்டுள்ளன"
 
-#: check_metadata.py:136
+#: check_metadata.py:142
 msgid "books for invalid pubdate"
 msgstr "தவறான வெளியீட்டிற்கான புத்தகங்கள்"
 
-#: check_metadata.py:153
+#: check_metadata.py:159
 msgid "books for duplicate ISBN"
 msgstr "நகல் ISBN க்கான புத்தகங்கள்"
 
-#: check_metadata.py:166
+#: check_metadata.py:172
 msgid "All searched books have unique ISBNs"
 msgstr "தேடப்பட்ட அனைத்து புத்தகங்களிலும் தனித்துவமான ISBN கள் உள்ளன"
 
-#: check_metadata.py:185
+#: check_metadata.py:191
 msgid "books for duplicate series"
 msgstr "நகல் தொடருக்கான புத்தகங்கள்"
 
-#: check_metadata.py:199
+#: check_metadata.py:205
 msgid "All searched books have unique series indexes"
 msgstr ""
 "தேடப்பட்ட அனைத்து புத்தகங்களும் தனித்துவமான தொடர் குறியீடுகளைக் கொண்டுள்ளன"
 
-#: check_metadata.py:257
+#: check_metadata.py:263
 msgid "Checked %d books, found %d gaps in %d series"
 msgstr "சரிபார்க்கப்பட்ட %d புத்தகங்கள், %d தொடரில் இடைவெளிகளைக் கண்டன"
 
-#: check_metadata.py:261
+#: check_metadata.py:267
 msgid "No series gaps exist in the books searched"
 msgstr "தேடப்பட்ட புத்தகங்களில் தொடர் இடைவெளிகள் எதுவும் இல்லை"
 
-#: check_metadata.py:263
+#: check_metadata.py:269
 msgid "Series Gaps Found%s"
 msgstr "தொடர் இடைவெளிகள்%s"
 
-#: check_metadata.py:287
+#: check_metadata.py:293
 msgid "books for series pubdate order"
 msgstr "தொடர் பப் டேட் ஆர்டருக்கான புத்தகங்கள்"
 
-#: check_metadata.py:320
+#: check_metadata.py:326
 msgid "Checked %d books, found %d disordered in %d series"
 msgstr ""
 "சரிபார்க்கப்பட்ட %d புத்தகங்கள், %d தொடரில் %d ஒழுங்கற்றதாகக் காணப்படுகிறது"
 
-#: check_metadata.py:324
+#: check_metadata.py:330
 msgid "No series pubdate disorders exist in the books searched"
 msgstr "தேடப்பட்ட புத்தகங்களில் எந்தவொரு தொடர் வெளியீட்டு கோளாறுகளும் இல்லை"
 
-#: check_metadata.py:326
+#: check_metadata.py:332
 msgid "Series Pubdate Issues Found"
 msgstr "தொடர் வெளியீட்டு சிக்கல்கள் காணப்படுகின்றன"
 
-#: check_metadata.py:344
+#: check_metadata.py:350
 msgid "All searched books have a valid tag count"
 msgstr ""
 "தேடப்பட்ட அனைத்து புத்தகங்களும் சரியான குறிச்சொல் எண்ணிக்கையைக் கொண்டுள்ளன"
 
-#: check_metadata.py:346
+#: check_metadata.py:352
 msgid "books for invalid tag count"
 msgstr "தவறான குறிச்சொல் எண்ணிக்கைக்கான புத்தகங்கள்"
 
-#: check_metadata.py:379
+#: check_metadata.py:385
 msgid "All searched books have no HTML in comments"
 msgstr "தேடப்பட்ட அனைத்து புத்தகங்களுக்கும் கருத்துகளில் HTML இல்லை"
 
-#: check_metadata.py:381
+#: check_metadata.py:387
 msgid "books for no HTML in comments"
 msgstr "கருத்துகளில் HTML இல்லாத புத்தகங்கள்"
 
-#: check_metadata.py:416
+#: check_metadata.py:422
 msgid "All searched books have HTML in comments"
 msgstr "தேடப்பட்ட அனைத்து புத்தகங்களிலும் கருத்துகளில் HTML உள்ளது"
 
-#: check_metadata.py:418
+#: check_metadata.py:424
 msgid "books for HTML in comments"
 msgstr "கருத்துகளில் HTML க்கான புத்தகங்கள்"
 
-#: check_metadata.py:433
+#: check_metadata.py:439
 msgid "All searched book authors have no commas"
 msgstr "தேடப்பட்ட அனைத்து புத்தக ஆசிரியர்களுக்கும் காற்புள்ளிகள் இல்லை"
 
-#: check_metadata.py:435
+#: check_metadata.py:441
 msgid "books with authors having commas"
 msgstr "காற்புள்ளிகளைக் கொண்ட ஆசிரியர்களுடன் புத்தகங்கள்"
 
-#: check_metadata.py:450
+#: check_metadata.py:456
 msgid "All searched book authors have commas"
 msgstr "தேடப்பட்ட அனைத்து புத்தக ஆசிரியர்களுக்கும் காற்புள்ளிகள் உள்ளன"
 
-#: check_metadata.py:452
+#: check_metadata.py:458
 msgid "books with authors not having commas"
 msgstr "ஆசிரியர்களைக் கொண்ட புத்தகங்கள் காற்புள்ளிகள் இல்லை"
 
-#: check_metadata.py:467
+#: check_metadata.py:473
 msgid "All searched authors have a valid casing"
 msgstr "தேடப்பட்ட அனைத்து ஆசிரியர்களுக்கும் சரியான உறை உள்ளது"
 
-#: check_metadata.py:469
+#: check_metadata.py:475
 msgid "books for invalid author casing"
 msgstr "தவறான எழுத்தாளர் உறைக்கான புத்தகங்கள்"
 
-#: check_metadata.py:487
+#: check_metadata.py:493
 msgid "All searched book authors have alphabetic names"
 msgstr "தேடப்பட்ட அனைத்து புத்தக ஆசிரியர்களுக்கும் அகரவரிசை பெயர்கள் உள்ளன"
 
-#: check_metadata.py:489
+#: check_metadata.py:495
 msgid "books with authors having non-alphabetic names"
 msgstr "ஆல்பாபெடிக் அல்லாத பெயர்களைக் கொண்ட ஆசிரியர்களுடனான புத்தகங்கள்"
 
-#: check_metadata.py:506
+#: check_metadata.py:512
 msgid "All searched book authors have ascii names"
 msgstr "தேடப்பட்ட அனைத்து புத்தக ஆசிரியர்களுக்கும் ASCII பெயர்கள் உள்ளன"
 
-#: check_metadata.py:508
+#: check_metadata.py:514
 msgid "books with authors having non-ascii names"
 msgstr "அசி அல்லாத பெயர்களைக் கொண்ட ஆசிரியர்களுடனான புத்தகங்கள்"
 
-#: check_metadata.py:526
+#: check_metadata.py:532
 msgid "All searched book authors have correct initials"
 msgstr ""
 "தேடப்பட்ட அனைத்து புத்தக ஆசிரியர்களும் சரியான முதலெழுத்துகளைக் கொண்டுள்ளனர்"
 
-#: check_metadata.py:528
+#: check_metadata.py:534
 msgid "books with authors having incorrect initials"
 msgstr "தவறான முதலெழுத்துக்களைக் கொண்ட ஆசிரியர்களுடனான புத்தகங்கள்"
 
-#: check_metadata.py:541
+#: check_metadata.py:547
 msgid "All searched books do not have titles with series names"
 msgstr "தேடப்பட்ட அனைத்து புத்தகங்களிலும் தொடர் பெயர்களுடன் தலைப்புகள் இல்லை"
 
-#: check_metadata.py:543
+#: check_metadata.py:549
 msgid "book titles with possible series names"
 msgstr "சாத்தியமான தொடர் பெயர்களுடன் புத்தக தலைப்புகள்"
 
-#: check_metadata.py:555
+#: check_metadata.py:561
 msgid "All searched titles have a valid title casing"
 msgstr "தேடப்பட்ட அனைத்து தலைப்புகளிலும் சரியான தலைப்பு உறை உள்ளது"
 
-#: check_metadata.py:557
+#: check_metadata.py:563
 msgid "books for invalid title casing"
 msgstr "தவறான தலைப்பு உறை புத்தகங்கள்"
 
@@ -1912,7 +1924,7 @@ msgstr ""
 "உங்கள் சொந்த வழக்கமான வெளிப்பாட்டுடன் உரையுடன் எபப் புத்தகங்களைக் "
 "கண்டறியவும்"
 
-#: config.py:155 dialogs.py:556
+#: config.py:155 dialogs.py:557
 msgid "Search ePubs"
 msgstr "எபப்களைத் தேடுங்கள்"
 
@@ -2199,23 +2211,23 @@ msgstr "தேர்ந்தெடுக்கப்பட்ட புத்�
 msgid "quality check plugin:search epub dialog"
 msgstr "தரமான சோதனை சொருகி: எபப் உரையாடலைத் தேடுங்கள்"
 
-#: dialogs.py:560
+#: dialogs.py:561
 msgid "Find expression"
 msgstr "வெளிப்பாட்டைக் கண்டறியவும்"
 
-#: dialogs.py:574
+#: dialogs.py:575
 msgid "Clear search history"
 msgstr "தேடல் வரலாற்றை அழிக்கவும்"
 
-#: dialogs.py:579
+#: dialogs.py:580
 msgid "&Ignore case"
 msgstr "வழக்கை புறக்கணிக்கவும்"
 
-#: dialogs.py:581
+#: dialogs.py:582
 msgid "&Show all occurrences"
 msgstr "& அனைத்து நிகழ்வுகளையும் காட்டு"
 
-#: dialogs.py:582
+#: dialogs.py:583
 msgid ""
 "If unchecked, the search of each ePub is stopped as soon as the first match is found.\n"
 "If checked, all occurrences will be displayed in the log but it will run much slower."
@@ -2223,15 +2235,25 @@ msgstr ""
 "தேர்வு செய்யப்படாவிட்டால், முதல் போட்டி கண்டுபிடிக்கப்பட்டவுடன் ஒவ்வொரு எபப் தேடலும் நிறுத்தப்படும். \n"
 " சரிபார்க்கப்பட்டால், அனைத்து நிகழ்வுகளும் பதிவில் காண்பிக்கப்படும், ஆனால் அது மிகவும் மெதுவாக இயங்கும்."
 
+#: dialogs.py:586
+msgid "Does not contain"
+msgstr ""
+
 #: dialogs.py:587
+msgid ""
+"Include an ePub only when the expression is not found in any file within the"
+" selected scopes."
+msgstr ""
+
+#: dialogs.py:592
 msgid "Scope"
 msgstr "வாய்ப்பு"
 
-#: dialogs.py:592
+#: dialogs.py:597
 msgid "&HTML content"
 msgstr "& HTML உள்ளடக்கம்"
 
-#: dialogs.py:593
+#: dialogs.py:598
 msgid ""
 "Search all html content files, including any html tags.\n"
 "If you also ticked the Plain text content option, this option is ignored."
@@ -2239,19 +2261,19 @@ msgstr ""
 "எந்த HTML குறிச்சொற்களும் உட்பட அனைத்து HTML உள்ளடக்கக் கோப்புகளையும் தேடுங்கள். \n"
 " நீங்கள் எளிய உரை உள்ளடக்க விருப்பத்தையும் தேர்வுசெய்தால், இந்த விருப்பம் புறக்கணிக்கப்படுகிறது."
 
-#: dialogs.py:595
+#: dialogs.py:600
 msgid "&CSS/xpgt stylesheets"
 msgstr "& CSS/XPGT ஸ்டைல்ஷீட்கள்"
 
-#: dialogs.py:596
+#: dialogs.py:601
 msgid "Search all css or Adobe .xpgt stylesheets"
 msgstr "அனைத்து CSS அல்லது ADOBE .XPGT ஸ்டைல்ஷீட்களையும் தேடுங்கள்"
 
-#: dialogs.py:597
+#: dialogs.py:602
 msgid "&Plain text content"
 msgstr "& எளிய உரை உள்ளடக்கம்"
 
-#: dialogs.py:598
+#: dialogs.py:603
 msgid ""
 "Search body text of html files with all html tags stripped.\n"
 "If you also ticked the HTML content option, that is ignored in favour of this."
@@ -2259,51 +2281,51 @@ msgstr ""
 "அனைத்து HTML குறிச்சொற்களுடன் HTML கோப்புகளின் உடல் உரையைத் தேடுங்கள். \n"
 " நீங்கள் HTML உள்ளடக்க விருப்பத்தையும் தேர்வுசெய்தால், அதற்கு ஆதரவாக அது புறக்கணிக்கப்படுகிறது."
 
-#: dialogs.py:600
+#: dialogs.py:605
 msgid "&OPF manifest"
 msgstr "& OPF மேனிஃபெஸ்ட்"
 
-#: dialogs.py:601
+#: dialogs.py:606
 msgid "Search the .opf manifest file"
 msgstr ".Opf மேனிஃபெஸ்ட் கோப்பைத் தேடுங்கள்"
 
-#: dialogs.py:602
+#: dialogs.py:607
 msgid "&NCX TOC"
 msgstr "& NCX TOC"
 
-#: dialogs.py:603
+#: dialogs.py:608
 msgid "Search the NCX table of contents file"
 msgstr "உள்ளடக்கக் கோப்பின் NCX அட்டவணையைத் தேடுங்கள்"
 
-#: dialogs.py:604
+#: dialogs.py:609
 msgid "&Zip filenames"
 msgstr "& ஜிப் கோப்பு பெயர்கள்"
 
-#: dialogs.py:605
+#: dialogs.py:610
 msgid "Search the filenames inside the ePub (zip) file"
 msgstr "எபப் (ஜிப்) கோப்பின் உள்ளே கோப்பு பெயர்களைத் தேடுங்கள்"
 
-#: dialogs.py:625
+#: dialogs.py:630
 msgid "No find text"
 msgstr "உரையைக் கண்டுபிடிக்க வேண்டாம்"
 
-#: dialogs.py:626
+#: dialogs.py:631
 msgid "You must specify a regular expression to search for."
 msgstr "தேட ஒரு வழக்கமான வெளிப்பாட்டை நீங்கள் குறிப்பிட வேண்டும்."
 
-#: dialogs.py:635
+#: dialogs.py:640
 msgid "No search scope"
 msgstr "தேடல் நோக்கம் இல்லை"
 
-#: dialogs.py:636
+#: dialogs.py:641
 msgid "You must specify a scope for the ePub search."
 msgstr "எபப் தேடலுக்கான நோக்கத்தை நீங்கள் குறிப்பிட வேண்டும்."
 
-#: dialogs.py:695
+#: dialogs.py:701
 msgid "Fixing"
 msgstr "சரிசெய்தல்"
 
-#: dialogs.py:708
+#: dialogs.py:714
 msgid "Fix completed"
 msgstr "சரிசெய்யப்பட்டது"
 
