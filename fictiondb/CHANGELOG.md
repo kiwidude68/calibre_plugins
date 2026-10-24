@@ -1,5 +1,12 @@
 # FictionDB Change Log
 
+## [1.5.0] - 2026-10-24
+### Added
+- Characters & Occupations as an available tags source (see plugin options using 'Configure selected source')
+### Fixed
+- More updates for site changes (search results + parsing series, genre tags, age level)
+- Remove publisher as not available
+
 ## [1.4.4] - 2026-10-10
 ### Added
 - Czech translation

@@ -20,12 +20,14 @@ STORE_NAME = 'Options'
 KEY_GET_GENRE_AS_TAGS          = 'getGenreAsTags'
 KEY_GET_SUB_GENRE_AS_TAGS      = 'getSubGenreAsTags'
 KEY_GET_THEMES_AS_TAGS         = 'getThemesAsTags'
+KEY_GET_CHARACTERS_AS_TAGS     = 'getCharactersAsTags'
 KEY_GET_AGE_LEVEL_AS_TAGS      = 'getAgeLevelAsTags'
 
 DEFAULT_STORE_VALUES = {
     KEY_GET_GENRE_AS_TAGS: True,
     KEY_GET_SUB_GENRE_AS_TAGS: False,
     KEY_GET_THEMES_AS_TAGS: False,
+    KEY_GET_CHARACTERS_AS_TAGS: False,
     KEY_GET_AGE_LEVEL_AS_TAGS: False
 }
 
@@ -67,22 +69,29 @@ class ConfigWidget(DefaultConfigWidget):
         self.get_themes_as_tags_checkbox.setChecked(get_option(KEY_GET_THEMES_AS_TAGS))
         other_group_box_layout.addWidget(self.get_themes_as_tags_checkbox)
 
+        self.get_characters_as_tags_checkbox = QCheckBox(_("Include \'Characters && Occupations\' in the Tags column"), self)
+        self.get_characters_as_tags_checkbox.setToolTip(_("When checked, if a book has 'Characters & Occupations' defined they will be\n"
+                                                         "returned in the Tags column from this plugin."))
+        self.get_characters_as_tags_checkbox.setChecked(get_option(KEY_GET_CHARACTERS_AS_TAGS))
+        other_group_box_layout.addWidget(self.get_characters_as_tags_checkbox)
+
         self.get_age_level_as_tags_checkbox = QCheckBox(_("Include 'Age Level' in the Tags column"), self)
         self.get_age_level_as_tags_checkbox.setToolTip(_("When checked, if a book has an 'Age Level' defined it will be\n"
                                                          "returned in the Tags column from this plugin."))
         self.get_age_level_as_tags_checkbox.setChecked(get_option(KEY_GET_AGE_LEVEL_AS_TAGS))
         other_group_box_layout.addWidget(self.get_age_level_as_tags_checkbox)
-        
+
         other_group_box_layout.addStretch(1)
 
     def commit(self):
         DefaultConfigWidget.commit(self)
 
         new_prefs = {}
-        new_prefs[KEY_GET_GENRE_AS_TAGS] = self.get_genre_as_tags_checkbox.checkState() == Qt.Checked
-        new_prefs[KEY_GET_SUB_GENRE_AS_TAGS] = self.get_sub_genres_as_tags_checkbox.checkState() == Qt.Checked
-        new_prefs[KEY_GET_THEMES_AS_TAGS] = self.get_themes_as_tags_checkbox.checkState() == Qt.Checked
-        new_prefs[KEY_GET_AGE_LEVEL_AS_TAGS]      = self.get_age_level_as_tags_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_GENRE_AS_TAGS]      = self.get_genre_as_tags_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_SUB_GENRE_AS_TAGS]  = self.get_sub_genres_as_tags_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_THEMES_AS_TAGS]     = self.get_themes_as_tags_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_CHARACTERS_AS_TAGS] = self.get_characters_as_tags_checkbox.checkState() == Qt.Checked
+        new_prefs[KEY_GET_AGE_LEVEL_AS_TAGS]  = self.get_age_level_as_tags_checkbox.checkState() == Qt.Checked
 
         plugin_prefs[STORE_NAME] = new_prefs
 

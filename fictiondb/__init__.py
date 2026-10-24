@@ -26,14 +26,13 @@ class FictionDB(Source):
     name                    = 'FictionDB'
     description             = 'Downloads metadata and covers from fictiondb.com'
     author                  = 'Grant Drake'
-    version                 = (1, 4, 4)
+    version                 = (1, 5, 0)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'fictiondb'
     capabilities = frozenset(['identify', 'cover'])
     touched_fields = frozenset(['title', 'authors', 'identifier:fictiondb',
-        'identifier:isbn', 'comments', 'publisher', 'pubdate',
-        'tags', 'series'])
+        'identifier:isbn', 'comments', 'pubdate', 'tags', 'series'])
     has_html_comments = True
     supports_gzip_transfer_encoding = True
 
@@ -70,7 +69,7 @@ class FictionDB(Source):
         '''
 
         isbn = check_isbn(identifiers.get('isbn', None))
-        log.error('create_query - isbn: "%s"' % isbn)
+        log.info('create_query - isbn: "%s"' % isbn)
         isbn = isbn if isbn is not None else ''
         post_data = None
         base_search_url = FictionDB.BASE_URL + '/search/searchresults.php'
@@ -112,6 +111,9 @@ class FictionDB(Source):
         Note this method will retry without identifiers automatically if no
         match is found with identifiers.
         '''
+        log.info('-------------------------------------------')
+        log.info('    Identify log information')
+        log.info('-------------------------------------------')
         matches = []
         # Unlike the other metadata sources, if we have a fictiondb id then we
         # do not need to fire a "search" at FictionDB.com. Instead we will be
@@ -123,14 +125,14 @@ class FictionDB(Source):
         if fictiondb_id:
             matches.append(self.get_book_url(identifiers)[2])
         else:
-            isbn = check_isbn(identifiers.get('isbn', ''))
+            check_isbn(identifiers.get('isbn', ''))
             query, post_data = self.create_query(log, title=title, authors=authors,
                                                  identifiers=identifiers)
             if post_data is None:
                 log.error('Insufficient metadata to construct query')
                 return
             try:
-                log.info('Querying: %s - %s'%(query, post_data))
+                log.info('Querying using HTTP POST: %s - %s'%(query, post_data))
                 br.set_handle_redirect(True)
                 br.set_debug_redirects(True)
                 response = br.open_novisit(query + '?' + post_data, timeout=timeout)
@@ -148,13 +150,17 @@ class FictionDB(Source):
             # Parse the result table only when the query did not redirect to a book.
             if not matches:
                 try:
-                    raw = response.read().strip()
-#                     open('E:\\fictiondb_search.html', 'wb').write(raw)
-                    raw = raw.decode('utf-8', errors='replace')
+                    raw_bytes = response.read().strip()
+                    log.info('Could not get a direct match, parsing search results')
+                    #open('E:\\fictiondb_search.html', 'wb').write(raw_bytes)
+                    raw = raw_bytes.decode('utf-8', errors='replace')
                     if not raw:
                         log.error('Failed to get raw result for query: %r - %r'%(query, post_data))
                         return
-                    root = fromstring(clean_ascii_chars(raw))
+                    try:
+                        root = fromstring(clean_ascii_chars(raw))
+                    except Exception:
+                        root = fromstring(raw_bytes)
                 except:
                     msg = 'Failed to parse fictiondb page for query: %r - %r'%(query, post_data)
                     log.exception(msg)
@@ -198,7 +204,10 @@ class FictionDB(Source):
         return None
 
     def _parse_search_results(self, log, orig_title, orig_authors, root, matches, timeout):
-        first_result = root.xpath('//tbody[@id="trows"]/tr')
+        first_result = root.xpath('//div[@class="list-row"]')
+        new_layout = bool(first_result)
+        if not first_result:
+            first_result = root.xpath('//tbody[@id="trows"]/tr')
         if not first_result:
             log.error('_parse_search_results - No first row')
             return
@@ -221,18 +230,30 @@ class FictionDB(Source):
             if not author_tokens: amatch = True
             return match and amatch
 
-        title = first_result[0].xpath('./td[2]')[0].text_content().strip()
-        authors = first_result[0].xpath('./td[1]')[0].text_content().strip().split(';')
-        if not ismatch(title, authors):
-            log.error('Rejecting as not close enough match: %s %s'%(title, authors))
+        if new_layout:
+            title_nodes = first_result[0].xpath('.//a[@class="book-title"]')
+            author_nodes = first_result[0].xpath('./div[@class="col-author"]')
+            url_nodes = first_result[0].xpath('.//a[@class="book-title"]/@href')
+        else:
+            title_nodes = first_result[0].xpath('./td[2]')
+            author_nodes = first_result[0].xpath('./td[1]')
+            url_nodes = root.xpath('//tbody[@id="trows"]/tr[1]/td[2]/a[1]/@href')
+        if not title_nodes or not author_nodes:
+            log.error('_parse_search_results - Missing title or author in first row')
             return
 
-        log.error('_parse_search_results: title="%s", author="%s"'%(title, authors))
-        first_result_url_node = root.xpath('//tbody[@id="trows"]/tr[1]/td[2]/a[1]/@href')
-        if first_result_url_node:
-            log.error('_parse_search_results: have a URL')
-            import calibre_plugins.fictiondb.config as cfg
-            result_url = FictionDB.BASE_URL + first_result_url_node[0][2:]
+        title = title_nodes[0].text_content().strip()
+        authors = author_nodes[0].text_content().strip().split(';')
+        if not ismatch(title, authors):
+            log.info('Rejecting as not close enough match: %s %s'%(title, authors))
+            return
+
+        log.info('_parse_search_results: title="%s", author="%s"'%(title, authors))
+        if url_nodes:
+            result_url = url_nodes[0]
+            if not result_url.startswith('http'):
+                result_url = FictionDB.BASE_URL + '/' + result_url.lstrip('/')
+            log.info('_parse_search_results: found a URL: %s'%result_url)
             matches.append(result_url)
 
     def download_cover(self, log, result_queue, abort,
