@@ -28,8 +28,6 @@ import calibre_plugins.view_manager.config as cfg
 from calibre_plugins.view_manager.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.view_manager.common_menus import unregister_menu_actions, create_menu_action_unique
 
-from calibre.devices.usbms.driver import debug_print
-
 PLUGIN_ICONS = ['images/view_manager.png', 'images/sort_asc.png', 'images/sort_desc.png']
 ALL_BOOKS = '_ALL_BOOKS'
 
@@ -308,7 +306,44 @@ class ViewManagerAction(InterfaceAction):
                 self.gui.library_view.scroll_to_row(0)
                 self.gui.library_view.set_current_row(0)
             self.current_view = key
+            self.apply_gui_layout(view_info)
         self.rebuild_menus()
+
+    def apply_gui_layout(self, view_info):
+        alternate_views = getattr(self.gui.library_view, 'alternate_views', None)
+        button_states = [
+            (button, cfg.get_layout_item_setting(view_info, button.name))
+            for button in getattr(self.gui, 'layout_buttons', ())
+        ]
+        alternate_states = {}
+        if alternate_views is not None:
+            for button, setting in button_states:
+                name = self.alternate_view_name(button.name, alternate_views.views)
+                if name is not None:
+                    alternate_states[name] = setting
+
+        for button, setting in button_states:
+            if setting == cfg.GUI_STATE_HIDE and button.isChecked():
+                button.click()
+        for button, setting in button_states:
+            if setting == cfg.GUI_STATE_SHOW and not button.isChecked():
+                button.click()
+
+        if alternate_views is not None:
+            shown = next((name for name, setting in alternate_states.items()
+                          if setting == cfg.GUI_STATE_SHOW), None)
+            if shown is not None:
+                alternate_views.show_view(shown)
+            elif alternate_states and all(
+                    setting == cfg.GUI_STATE_HIDE for setting in alternate_states.values()):
+                alternate_views.show_view(None)
+
+    def alternate_view_name(self, button_name, available_views):
+        if button_name == 'cover_grid' and 'grid' in available_views:
+            return 'grid'
+        if button_name.endswith('_view') and button_name[:-5] in available_views:
+            return button_name[:-5]
+        return button_name if button_name in available_views else None
 
     def apply_virtlib(self, virtlib_name):
         self.gui.apply_virtual_library(virtlib_name)

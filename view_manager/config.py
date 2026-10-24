@@ -74,6 +74,28 @@ KEY_APPLY_PIN_COLUMNS = 'applyPinColumns'
 KEY_PIN_COLUMNS = 'pin_columns'
 KEY_PIN_SPLITTER_STATE = 'pin_splitter_state' # splitter position
 KEY_JUMP_TO_TOP = 'jump_to_top'
+KEY_SEARCH_BAR_VISIBILITY = 'searchBarVisibility'
+KEY_TAG_BROWSER_VISIBILITY = 'tagBrowserVisibility'
+KEY_COVER_BROWSER_VISIBILITY = 'coverBrowserVisibility'
+KEY_QUICK_VIEW_VISIBILITY = 'quickViewVisibility'
+KEY_BOOK_DETAILS_VISIBILITY = 'bookDetailsVisibility'
+KEY_BOOK_VIEW_MODE = 'bookViewMode'
+KEY_LAYOUT_ITEMS = 'layoutItems'
+
+GUI_STATE_UNCHANGED = 'unchanged'
+GUI_STATE_SHOW = 'show'
+GUI_STATE_HIDE = 'hide'
+BOOK_VIEW_BOOKSHELF = 'bookshelf'
+BOOK_VIEW_COVER_GRID = 'cover_grid'
+BOOK_VIEW_NEITHER = 'neither'
+GUI_LAYOUT_KEYS = (
+    KEY_SEARCH_BAR_VISIBILITY,
+    KEY_TAG_BROWSER_VISIBILITY,
+    KEY_COVER_BROWSER_VISIBILITY,
+    KEY_QUICK_VIEW_VISIBILITY,
+    KEY_BOOK_DETAILS_VISIBILITY,
+    KEY_BOOK_VIEW_MODE,
+)
 
 LAST_VIEW_ITEM = '*Last View Used'
 
@@ -101,7 +123,36 @@ def get_empty_view():
              KEY_PIN_COLUMNS: [],
              KEY_PIN_SPLITTER_STATE: None,
              KEY_JUMP_TO_TOP: False,
+             KEY_SEARCH_BAR_VISIBILITY: GUI_STATE_UNCHANGED,
+             KEY_TAG_BROWSER_VISIBILITY: GUI_STATE_UNCHANGED,
+             KEY_COVER_BROWSER_VISIBILITY: GUI_STATE_UNCHANGED,
+             KEY_QUICK_VIEW_VISIBILITY: GUI_STATE_UNCHANGED,
+             KEY_BOOK_DETAILS_VISIBILITY: GUI_STATE_UNCHANGED,
+             KEY_BOOK_VIEW_MODE: GUI_STATE_UNCHANGED,
+             KEY_LAYOUT_ITEMS: {},
              }
+
+def get_layout_item_setting(view_info, item_name):
+    layout_items = view_info.get(KEY_LAYOUT_ITEMS, {})
+    if item_name in layout_items:
+        return layout_items[item_name]
+
+    legacy_keys = {
+        'search': KEY_SEARCH_BAR_VISIBILITY,
+        'tag_browser': KEY_TAG_BROWSER_VISIBILITY,
+        'cover_browser': KEY_COVER_BROWSER_VISIBILITY,
+        'quick_view': KEY_QUICK_VIEW_VISIBILITY,
+        'book_details': KEY_BOOK_DETAILS_VISIBILITY,
+    }
+    if item_name in legacy_keys:
+        return view_info.get(legacy_keys[item_name], GUI_STATE_UNCHANGED)
+    if item_name == 'cover_grid':
+        mode = view_info.get(KEY_BOOK_VIEW_MODE, GUI_STATE_UNCHANGED)
+        if mode == BOOK_VIEW_COVER_GRID:
+            return GUI_STATE_SHOW
+        if mode in (BOOK_VIEW_BOOKSHELF, BOOK_VIEW_NEITHER):
+            return GUI_STATE_HIDE
+    return GUI_STATE_UNCHANGED
 
 # This is where preferences for this plugin used to be stored prior to 1.3
 plugin_prefs = JSONConfig('plugins/View Manager')
@@ -590,8 +641,8 @@ class ConfigWidget(QWidget):
         self.virtlib_combo.setEnabled(self.apply_virtlib_checkbox.isChecked())
         self.apply_virtlib_checkbox.stateChanged.connect(lambda x : self.virtlib_combo.setEnabled(self.apply_virtlib_checkbox.isChecked()))
 
-        self.apply_on_tab_change_checkbox = QCheckBox(_('Apply on VL tab change'), self)
-        self.apply_on_tab_change_checkbox.setToolTip(_('Apply the selected settings when switching to this VL tab.'))
+        self.apply_on_tab_change_checkbox = QCheckBox(_('Apply this view when changing to a matching VL tab'), self)
+        self.apply_on_tab_change_checkbox.setToolTip(_('Apply the selected settings when switching to a tab for this virtual library (or all books tab if no VL is set).'))
 
         self.apply_restriction_checkbox = QCheckBox(_('Apply VL additional search restriction'), self)
         self.apply_restriction_checkbox.setToolTip(_('Apply the selected saved search as a Virtual library additional restriction when the View is activated.'))
@@ -610,6 +661,38 @@ class ConfigWidget(QWidget):
         other_layout.addWidget(self.search_restriction_combo, 3, 1, 1, 1)
         # other_layout.setRowStretch(4, 1)
 
+        gui_layout_group_box = QGroupBox(_('Main GUI Layout'), self)
+        layout.addWidget(gui_layout_group_box)
+        gui_layout_grid = QGridLayout()
+        gui_layout_group_box.setLayout(gui_layout_grid)
+
+        def make_visibility_combo():
+            combo = QComboBox(self)
+            combo.addItem(_('Unchanged'), GUI_STATE_UNCHANGED)
+            combo.addItem(_('Show'), GUI_STATE_SHOW)
+            combo.addItem(_('Hide'), GUI_STATE_HIDE)
+            return combo
+
+        self.gui_layout_combos = {}
+        gui_layout_fields = []
+        for button in self.gui.layout_buttons:
+            combo = make_visibility_combo()
+            self.gui_layout_combos[button.name] = combo
+            label_widget = QWidget(self)
+            label_layout = QHBoxLayout(label_widget)
+            label_layout.setContentsMargins(0, 0, 0, 0)
+            label_layout.setSpacing(4)
+            icon_label = QLabel(label_widget)
+            icon_label.setPixmap(button.icon().pixmap(16, 16))
+            label_layout.addWidget(icon_label)
+            label_layout.addWidget(QLabel(button.label + ':', label_widget))
+            gui_layout_fields.append((label_widget, combo))
+        for field_index, (label_widget, combo) in enumerate(gui_layout_fields):
+            row = field_index // 3
+            column = (field_index % 3) * 2
+            gui_layout_grid.addWidget(label_widget, row, column, Qt.AlignLeft | Qt.AlignVCenter)
+            gui_layout_grid.addWidget(combo, row, column + 1)
+
         #layout.addSpacing(10)
         other_group_box = QGroupBox(_('General Options'), self)
         layout.addWidget(other_group_box)
@@ -627,7 +710,7 @@ class ConfigWidget(QWidget):
         self.auto_view_combo = ViewComboBox(self, self.views, special=LAST_VIEW_ITEM)
         self.auto_view_combo.select_view(self.library.get(KEY_VIEW_TO_APPLY, LAST_VIEW_ITEM))
         self.auto_view_combo.setMinimumSize(150, 20)
-        info_apply_label = QLabel(_('Enabling this option may override any startup search restriction or '
+        info_apply_label = QLabel(_('Enabling may override any startup search restriction or '
                                   'title sort set in Preferences -> Behaviour/Tweaks.'))
         info_apply_label.setWordWrap(True)
         other_group_box_layout.addWidget(self.jump_to_top_checkbox, 0, 0, 1, 2)
@@ -701,6 +784,9 @@ class ConfigWidget(QWidget):
             view_info[KEY_VIRTLIB] = ''
         view_info[KEY_APPLY_ON_TAB_CHANGE] = self.apply_on_tab_change_checkbox.checkState() == Qt.Checked
         view_info[KEY_JUMP_TO_TOP] = self.jump_to_top_checkbox.checkState() == Qt.Checked
+        view_info[KEY_LAYOUT_ITEMS] = {
+            name: combo.currentData() for name, combo in self.gui_layout_combos.items()
+        }
 
         self.views[self.view_name] = view_info
 
@@ -727,6 +813,7 @@ class ConfigWidget(QWidget):
         apply_virtlib = False
         virtlib_to_apply = ''
         jump_to_top = False
+        view_info = {}
         if self.view_name != None:
             view_info = self.views[self.view_name]
             columns = copy.deepcopy(view_info[KEY_COLUMNS])
@@ -755,6 +842,10 @@ class ConfigWidget(QWidget):
         self.apply_on_tab_change_checkbox.setCheckState(Qt.Checked if view_info.get(KEY_APPLY_ON_TAB_CHANGE, False) else Qt.Unchecked)
         self.virtlib_combo.select_value(virtlib_to_apply)
         self.jump_to_top_checkbox.setCheckState(Qt.Checked if jump_to_top else Qt.Unchecked)
+        for name, combo in self.gui_layout_combos.items():
+            setting = get_layout_item_setting(view_info, name)
+            index = combo.findData(setting)
+            combo.setCurrentIndex(max(index, 0))
         
     def add_view(self):
         # Display a prompt allowing user to specify a new view
@@ -785,7 +876,6 @@ class ConfigWidget(QWidget):
             view_info[KEY_SEARCH] = copy.deepcopy(old_view_info[KEY_SEARCH])
             view_info[KEY_APPLY_VIRTLIB] = copy.deepcopy(old_view_info.get(KEY_APPLY_VIRTLIB,False))
             view_info[KEY_VIRTLIB] = copy.deepcopy(old_view_info.get(KEY_VIRTLIB,''))
-            view_info[KEY_APPLY_ON_TAB_CHANGE] = copy.deepcopy(old_view_info.get(KEY_APPLY_ON_TAB_CHANGE, False))
             view_info[KEY_JUMP_TO_TOP] = copy.deepcopy(old_view_info[KEY_JUMP_TO_TOP])
         else:
             # We will copy values from the current library view
