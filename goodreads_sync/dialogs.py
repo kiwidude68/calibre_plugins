@@ -315,7 +315,7 @@ class SwitchEditionDialog(SizePersistedDialog):
         if author:
             query = query + ' ' + get_searchable_author(author)
         query = quote_plus(query.strip().encode('utf-8')).replace('++', '+')
-        url = '%s/search?search_type=books&search[query]=%s' % (cfg.URL, query)
+        url = '%s/search?search_type=books&q=%s' % (cfg.URL, query)
         if not isinstance(url, bytes):
             url = url.encode('utf-8')
         open_url(QUrl.fromEncoded(url))
@@ -1163,7 +1163,7 @@ class PickGoodreadsBookDialog(SizePersistedDialog):
         if author:
             query = query + ' ' + get_searchable_author(author)
         query = quote_plus(query.strip().encode('utf-8')).replace('++', '+')
-        url = '%s/search?search_type=books&search[query]=%s' % (cfg.URL, query)
+        url = '%s/search?search_type=books&q=%s' % (cfg.URL, query)
         if not isinstance(url, bytes):
             url = url.encode('utf-8')
         open_url(QUrl.fromEncoded(url))

@@ -1,5 +1,9 @@
 # Goodreads Sync Change Log
 
+## [1.17.6] - 2026-10-24
+### Fixed
+- The 'Search Goodreads.com' query needed updating, that is accessed from the Link to goodreads / Switch Edition dialogs.
+
 ## [1.17.5] - 2026-10-24
 ### Added
 - Czech translation
