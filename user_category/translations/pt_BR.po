@@ -5,16 +5,16 @@
 # Translators:
 # Thiago Oliveira <thiago.eec@gmail.com>, 2022
 # Weigler Godoy, 2022
-# Paulo_Neto <layoutbr@lexxa.com.br>, 2022
 # Wagner Marques <wagnermarques00@hotmail.com>, 2022
 # Cm Fy, 2022
+# Paulo_Neto <layoutbr@lexxa.com.br>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"POT-Creation-Date: 2026-10-17 15:11+1000\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
-"Last-Translator: Cm Fy, 2022\n"
+"Last-Translator: Paulo_Neto <layoutbr@lexxa.com.br>, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/calibre/teams/19337/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:93
+#: ..\common\common_dialogs.py:84 config.py:174
 msgid "Keyboard shortcuts"
 msgstr "Atalhos do teclado"
 
@@ -91,7 +91,7 @@ msgstr "Configurações removidas"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "Todas as configurações deste plugin nesta biblioteca foram limpas."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Copiar para a área de transferência"
 
@@ -114,132 +114,188 @@ msgstr ""
 msgid "Create new column"
 msgstr "Criar nova coluna"
 
-#: action.py:35
+#: action.py:37
 msgid "User category"
 msgstr "Categoria de Usuário"
 
-#: action.py:42
+#: action.py:46
 msgid "authors"
 msgstr "autores"
 
-#: action.py:42
+#: action.py:46
 msgid "series"
 msgstr "séries"
 
-#: action.py:43
+#: action.py:47
+msgid "formats"
+msgstr ""
+
+#: action.py:47
+msgid "identifiers"
+msgstr ""
+
+#: action.py:48
+msgid "languages"
+msgstr ""
+
+#: action.py:48
 msgid "publishers"
 msgstr "editoras"
 
-#: action.py:43
+#: action.py:49
+msgid "rating"
+msgstr ""
+
+#: action.py:49
 msgid "tags"
 msgstr "tags"
 
-#: action.py:96
+#: action.py:119
 msgid "Add selected"
 msgstr "Adicionar selecionado"
 
-#: action.py:109
+#: action.py:132
 msgid "Move selected"
 msgstr "Mover selecionado"
 
-#: action.py:122
+#: action.py:146 config.py:124
 msgid "Remove selected"
 msgstr "Remover selecionado"
 
-#: action.py:130
+#: action.py:154
 msgid "Show in tag browser"
 msgstr "Mostrar no navegador"
 
-#: action.py:133
+#: action.py:157
 msgid "Manage user categories"
 msgstr "Gerenciar categorias de usuário"
 
-#: action.py:136
+#: action.py:160
 msgid "&Customize plugin"
 msgstr "Customizar plugin"
 
-#: action.py:138 config.py:98
+#: action.py:162 config.py:179
 msgid "&Help"
 msgstr "&Ajuda"
 
-#: action.py:158
+#: action.py:188
 msgid "View user category"
 msgstr "Ver categorias de usuários"
 
-#: action.py:161
+#: action.py:191
 msgid "Manage user category"
 msgstr "Gerenciar categorias de usuários"
 
-#: action.py:166
+#: action.py:196
 msgid "Add %s to user category: %s"
 msgstr "Adicionar %s a uma categoria de usuário: %s"
 
-#: action.py:168
+#: action.py:198
 msgid "Move %s to user category: %s"
 msgstr "Mover %s para uma categoria de usuário: %s"
 
-#: action.py:170
+#: action.py:200
 msgid "Remove %s from user category: %s"
 msgstr "Remover %s de uma categoria de usuário: %s"
 
-#: action.py:272 action.py:280
+#: action.py:326 action.py:334
 msgid "Cannot modify user category"
 msgstr "Impossível modificar a categoria de usuário"
 
-#: action.py:273
+#: action.py:327
 msgid "No new values in books selected"
 msgstr "Nenhuma informação nova nos livros selecionados"
 
-#: action.py:281
+#: action.py:335
 msgid "Selected user category not found. Please restart Calibre."
 msgstr ""
 "Categoria de usuário selecionada não encontrada. Por favor, reinicie o "
 "Calibre."
 
-#: action.py:340
+#: action.py:393
 msgid "Cannot view user category"
 msgstr "Impossível ver a categoria de usuário"
 
-#: action.py:341
+#: action.py:394
 msgid "User category not found"
 msgstr "Categoria de usuário não encontrada"
 
-#: config.py:52
+#: config.py:82
 msgid "Add to user category"
 msgstr "Adicionar a uma categoria de usuário"
 
-#: config.py:53
+#: config.py:83
 msgid "Move to user category"
 msgstr "Mover para uma categoria de usuário"
 
-#: config.py:54
+#: config.py:84
 msgid "Remove from user category"
 msgstr "Remover de uma categoria de usuário"
 
-#: config.py:57
+#: config.py:87
 msgid "Authors"
 msgstr "Autores"
 
-#: config.py:58
+#: config.py:88
 msgid "Series"
 msgstr "Série"
 
-#: config.py:59
-msgid "Publishers"
-msgstr "Editoras"
+#: config.py:89
+msgid "Formats"
+msgstr ""
 
-#: config.py:60
+#: config.py:90
+msgid "Identifiers"
+msgstr ""
+
+#: config.py:91
+msgid "Languages"
+msgstr "Idiomas"
+
+#: config.py:92
+msgid "Publisher"
+msgstr "Editor"
+
+#: config.py:93
+msgid "Rating"
+msgstr "Classificação"
+
+#: config.py:94
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: config.py:70
+#: config.py:105
 msgid "Menu actions to display:"
 msgstr "Ações de menu para exibir:"
 
-#: config.py:81
+#: config.py:116
 msgid "Book metadata types to add/remove:"
 msgstr "Tipos de metadata de livros para adicionar/remover:"
 
-#: config.py:94
+#: config.py:128
+msgid "Selected types:"
+msgstr ""
+
+#: config.py:133
+msgid "Select metadata type..."
+msgstr ""
+
+#: config.py:134 config.py:147
+msgid "Add"
+msgstr "Adicionar"
+
+#: config.py:146
+msgid "Select custom column..."
+msgstr ""
+
+#: config.py:151
+msgid "Metadata types:"
+msgstr ""
+
+#: config.py:154
+msgid "Custom columns:"
+msgstr ""
+
+#: config.py:175
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Editar atalhos de teclado associados a este plugin"

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"POT-Creation-Date: 2026-10-17 15:11+1000\n"
 "PO-Revision-Date: 2022-09-13 17:16+0000\n"
 "Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:93
+#: ..\common\common_dialogs.py:84 config.py:174
 msgid "Keyboard shortcuts"
 msgstr "키보드 단축키"
 
@@ -81,7 +81,7 @@ msgstr "설정 삭제됨"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "클립보드에 복사"
 
@@ -102,130 +102,186 @@ msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용�
 msgid "Create new column"
 msgstr "새 열 만들기"
 
-#: action.py:35
+#: action.py:37
 msgid "User category"
 msgstr "사용자 카테고리"
 
-#: action.py:42
+#: action.py:46
 msgid "authors"
 msgstr "저자"
 
-#: action.py:42
+#: action.py:46
 msgid "series"
 msgstr "시리즈"
 
-#: action.py:43
+#: action.py:47
+msgid "formats"
+msgstr ""
+
+#: action.py:47
+msgid "identifiers"
+msgstr ""
+
+#: action.py:48
+msgid "languages"
+msgstr ""
+
+#: action.py:48
 msgid "publishers"
 msgstr "출판사"
 
-#: action.py:43
+#: action.py:49
+msgid "rating"
+msgstr ""
+
+#: action.py:49
 msgid "tags"
 msgstr "태그"
 
-#: action.py:96
+#: action.py:119
 msgid "Add selected"
 msgstr "선택 항목 추가"
 
-#: action.py:109
+#: action.py:132
 msgid "Move selected"
 msgstr "선택 항목 이동"
 
-#: action.py:122
+#: action.py:146 config.py:124
 msgid "Remove selected"
 msgstr "선택 항목 제거"
 
-#: action.py:130
+#: action.py:154
 msgid "Show in tag browser"
 msgstr "태그 브라우저에 표시"
 
-#: action.py:133
+#: action.py:157
 msgid "Manage user categories"
 msgstr "사용자 카테고리 관리"
 
-#: action.py:136
+#: action.py:160
 msgid "&Customize plugin"
 msgstr "플러그인 설정(&C)"
 
-#: action.py:138 config.py:98
+#: action.py:162 config.py:179
 msgid "&Help"
 msgstr "도움말(&H)"
 
-#: action.py:158
+#: action.py:188
 msgid "View user category"
 msgstr "사용자 카테고리 보기"
 
-#: action.py:161
+#: action.py:191
 msgid "Manage user category"
 msgstr "사용자 카테고리 관리"
 
-#: action.py:166
+#: action.py:196
 msgid "Add %s to user category: %s"
 msgstr "%s 항목을 사용자 카테고리 %s에 추가"
 
-#: action.py:168
+#: action.py:198
 msgid "Move %s to user category: %s"
 msgstr "%s 항목을 사용자 카테고리 %s로 이동"
 
-#: action.py:170
+#: action.py:200
 msgid "Remove %s from user category: %s"
 msgstr "%s 항목을 사용자 카테고리 %s에서 제거"
 
-#: action.py:272 action.py:280
+#: action.py:326 action.py:334
 msgid "Cannot modify user category"
 msgstr "사용자 카테고리를 수정할 수 없음"
 
-#: action.py:273
+#: action.py:327
 msgid "No new values in books selected"
 msgstr "선택한 책에 새 값이 없습니다"
 
-#: action.py:281
+#: action.py:335
 msgid "Selected user category not found. Please restart Calibre."
 msgstr "선택한 사용자 카테고리를 찾을 수 없습니다. calibre를 다시 시작하십시오."
 
-#: action.py:340
+#: action.py:393
 msgid "Cannot view user category"
 msgstr "사용자 카테고리를 볼 수 없음"
 
-#: action.py:341
+#: action.py:394
 msgid "User category not found"
 msgstr "사용자 카테고리를 찾을 수 없음"
 
-#: config.py:52
+#: config.py:82
 msgid "Add to user category"
 msgstr "사용자 카테고리에 추가"
 
-#: config.py:53
+#: config.py:83
 msgid "Move to user category"
 msgstr "사용자 카테고리로 이동"
 
-#: config.py:54
+#: config.py:84
 msgid "Remove from user category"
 msgstr "사용자 카테고리에서 제거"
 
-#: config.py:57
+#: config.py:87
 msgid "Authors"
 msgstr "저자"
 
-#: config.py:58
+#: config.py:88
 msgid "Series"
 msgstr "시리즈"
 
-#: config.py:59
-msgid "Publishers"
+#: config.py:89
+msgid "Formats"
+msgstr ""
+
+#: config.py:90
+msgid "Identifiers"
+msgstr ""
+
+#: config.py:91
+msgid "Languages"
+msgstr "언어"
+
+#: config.py:92
+msgid "Publisher"
 msgstr "출판사"
 
-#: config.py:60
+#: config.py:93
+msgid "Rating"
+msgstr "평점"
+
+#: config.py:94
 msgid "Tags"
 msgstr "태그"
 
-#: config.py:70
+#: config.py:105
 msgid "Menu actions to display:"
 msgstr "표시할 메뉴 동작:"
 
-#: config.py:81
+#: config.py:116
 msgid "Book metadata types to add/remove:"
 msgstr "추가/제거할 책 메타데이터 유형:"
 
-#: config.py:94
+#: config.py:128
+msgid "Selected types:"
+msgstr ""
+
+#: config.py:133
+msgid "Select metadata type..."
+msgstr ""
+
+#: config.py:134 config.py:147
+msgid "Add"
+msgstr "추가"
+
+#: config.py:146
+msgid "Select custom column..."
+msgstr ""
+
+#: config.py:151
+msgid "Metadata types:"
+msgstr ""
+
+#: config.py:154
+msgid "Custom columns:"
+msgstr ""
+
+#: config.py:175
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
