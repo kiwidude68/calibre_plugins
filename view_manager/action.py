@@ -11,9 +11,9 @@ from collections import OrderedDict
 from functools import partial
 
 try:
-    from qt.core import QMenu, QToolButton, QInputDialog
+    from qt.core import QMenu, QToolButton, QInputDialog, QTimer
 except ImportError:
-    from PyQt5.Qt import QMenu, QToolButton, QInputDialog
+    from PyQt5.Qt import QMenu, QToolButton, QInputDialog, QTimer
 
 # Pull in translation files for _() strings
 try:
@@ -28,8 +28,10 @@ import calibre_plugins.view_manager.config as cfg
 from calibre_plugins.view_manager.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.view_manager.common_menus import unregister_menu_actions, create_menu_action_unique
 
+from calibre.devices.usbms.driver import debug_print
 
 PLUGIN_ICONS = ['images/view_manager.png', 'images/sort_asc.png', 'images/sort_desc.png']
+ALL_BOOKS = '_ALL_BOOKS'
 
 class ViewManagerAction(InterfaceAction):
 
@@ -41,6 +43,8 @@ class ViewManagerAction(InterfaceAction):
 
     def genesis(self):
         self.menu = QMenu(self.gui)
+        self.is_switching_library = False
+        self.is_switching_view_from_tab_change = False
 
         # Read the plugin icons and store for potential sharing with the config widget
         icon_resources = self.load_resources(PLUGIN_ICONS)
@@ -52,6 +56,18 @@ class ViewManagerAction(InterfaceAction):
         self.has_pin_view = False
 
     def initialization_complete(self):
+        if not self.is_switching_library:
+            self.last_vl_name = str(self.gui.vl_tabs.tabData(self.gui.vl_tabs.currentIndex()) or '').strip() or ALL_BOOKS
+            #debug_print("View Manager: initialization_complete called, but not switching libraries. Last VL name set to: %s"%self.last_vl_name)
+        if not hasattr(self, 'vl_tab_change_timer'):
+            self.vl_tab_change_timer = QTimer(self.gui)
+            self.vl_tab_change_timer.setSingleShot(True)
+            self.vl_tab_change_timer.timeout.connect(self._process_debounced_vl_tab_change)
+        try:
+            self.gui.vl_tabs.currentChanged.disconnect(self.virtual_library_tab_changed)
+        except (TypeError, RuntimeError):
+            pass
+        self.gui.vl_tabs.currentChanged.connect(self.virtual_library_tab_changed)
         self.current_view = None
         if not self.check_switch_to_last_view_for_library():
             self.rebuild_menus()
@@ -63,7 +79,36 @@ class ViewManagerAction(InterfaceAction):
     def library_changed(self, db):
         # We need to rebuild out menus when the library is changed, as each library
         # will have it's own set of views
+        self.is_switching_library = True
+        self.last_vl_name = None
         self.initialization_complete()
+
+    def virtual_library_tab_changed(self, index):
+        #debug_print("View Manager: virtual_library_tab_changed: index=", index)
+        self.pending_vl_name = str(self.gui.vl_tabs.tabData(index) or '').strip() or ALL_BOOKS
+        self.vl_tab_change_timer.start(100)
+
+    def _process_debounced_vl_tab_change(self):
+        if not self.pending_vl_name:
+            return
+        if self.last_vl_name == self.pending_vl_name: # might have dragged the tab to the same position, so no change
+            return
+        self._process_virtual_library_tab_change(self.pending_vl_name)
+
+    def _process_virtual_library_tab_change(self, vl_name):
+        # User has switched virtual library tabs. Check if there is a saved view that is associated with this tab
+        # and if it has the checkbox set to apply on tab change. If so then we will apply the change.
+        self.last_vl_name = vl_name
+        views = cfg.get_library_config(self.gui.current_db)[cfg.KEY_VIEWS]
+        # Iterate through the views to find first view that has the apply_on_tab_change set and the virtlib set to the current tab name
+        for view_name, view_info in views.items():
+            view_virtlib = view_info.get(cfg.KEY_VIRTLIB, '')
+            virtlib_matches = not view_virtlib if vl_name == ALL_BOOKS else view_virtlib == vl_name
+            if view_info.get(cfg.KEY_APPLY_ON_TAB_CHANGE, False) and virtlib_matches:
+                #debug_print("View Manager: process_virtual_library_tab_change: applying view_name=", view_name)
+                self.is_switching_view_from_tab_change = True
+                self.switch_view(view_name)
+                return
 
     def rebuild_menus(self):
         # Ensure any keyboard shortcuts from previous display of plugin menu are cleared
@@ -246,8 +291,9 @@ class ViewManagerAction(InterfaceAction):
                 library_config[cfg.KEY_LAST_VIEW] = key
                 cfg.set_library_config(self.gui.current_db, library_config)
 
-            if view_info.get(cfg.KEY_APPLY_VIRTLIB,False):
-                self.apply_virtlib(view_info[cfg.KEY_VIRTLIB])
+            if not self.is_switching_view_from_tab_change:
+                if view_info.get(cfg.KEY_APPLY_VIRTLIB,False):
+                    self.apply_virtlib(view_info[cfg.KEY_VIRTLIB])
 
             if view_info[cfg.KEY_APPLY_RESTRICTION]:
                 self.apply_restriction(view_info[cfg.KEY_RESTRICTION])

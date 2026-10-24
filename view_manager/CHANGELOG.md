@@ -1,5 +1,9 @@
 # View Manager Change Log
 
+## [1.11.0] - 2026-10-24
+### Added
+- You can now assign a view to be applied whenever the virtual library tab is changed to match.
+
 ## [1.10.6] - 2026-10-24
 ### Added
 - Czech translation
