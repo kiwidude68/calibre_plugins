@@ -24,10 +24,19 @@ from calibre_plugins.favourites_menu.common_menus import unregister_menu_actions
 
 PLUGIN_ICONS = ['images/favourites_menu.png','images/add_group.png']
 
+def format_action_text(text, shortcut_text):
+    if shortcut_text and '\t' not in text:
+        return '{}\t{}'.format(text, shortcut_text)
+    return text
+
+
 class ActionWrapper(QAction):
 
-    def __init__(self, orig_action, parent=None):
-        QAction.__init__(self, orig_action.icon(), orig_action.text(), parent)
+    def __init__(self, orig_action, parent=None, shortcut_resolver=None):
+        text = orig_action.text()
+        if shortcut_resolver is not None:
+            text = format_action_text(text, shortcut_resolver(orig_action))
+        QAction.__init__(self, orig_action.icon(), text, parent)
         if orig_action.isCheckable():
             self.setCheckable(True)
             self.setChecked(orig_action.isChecked())
@@ -40,15 +49,15 @@ class ActionWrapper(QAction):
         # If this plugin has a menu need to iterate through making clone wrappers of it.
         if orig_action.menu():
             clone_m = QMenu(orig_action.text(), parent)
-            self._clone_menu(orig_action.menu(), clone_m)
+            self._clone_menu(orig_action.menu(), clone_m, shortcut_resolver)
             self.setMenu(clone_m)
 
-    def _clone_menu(self, orig_m, clone_m):
+    def _clone_menu(self, orig_m, clone_m, shortcut_resolver=None):
         for ac in QMenu.actions(orig_m):
             if ac.isSeparator():
                 clone_m.addSeparator()
                 continue
-            clone_m.addAction(ActionWrapper(ac, clone_m))
+            clone_m.addAction(ActionWrapper(ac, clone_m, shortcut_resolver))
 
     def fire_orig(self):
         orig = self.orig()
@@ -120,6 +129,7 @@ class FavouritesMenuAction(InterfaceAction):
 
     def _add_favourite_action(self, fav_menu, menu, in_device_mode, discovered_plugins):
         ac = None
+        shortcut_actions = ()
         paths = list(fav_menu['path'])
         plugin_name = paths[0]
         is_device_only_plugin = False
@@ -145,17 +155,41 @@ class FavouritesMenuAction(InterfaceAction):
                     ac = self._find_action_for_menu(iaction.qaction.menu(), paths[1:], plugin_name)
                 else:
                     ac = iaction.qaction
+                    shortcut_actions = (getattr(iaction, 'menuless_qaction', None),
+                                        getattr(iaction, 'shortcut_action_for_context_menu', None))
 
         if ac is None:
             mac = QAction(fav_menu['display'], menu)
             mac.setEnabled(False)
         else:
-            mac = ActionWrapper(ac, menu)
-            mac.setText(fav_menu['display'])
+            mac = ActionWrapper(ac, menu, self._get_shortcut_label)
+            mac.setText(format_action_text(fav_menu['display'],
+                                           self._get_shortcut_label(ac, shortcut_actions)))
 
         if is_device_only_plugin and not in_device_mode:
             mac.setEnabled(False)
         menu.addAction(mac)
+
+    def _get_shortcut_label(self, action, fallback_actions=()):
+        keyboard = self.gui.keyboard
+        actions = (action,) + tuple(candidate for candidate in fallback_actions
+                                    if candidate is not None)
+        for candidate in actions:
+            sequences = candidate.shortcuts()
+            if not sequences:
+                for unique_name, shortcut in keyboard.shortcuts.items():
+                    if shortcut.get('action') is candidate:
+                        sequences = keyboard.keys_map.get(unique_name, ())
+                        if sequences:
+                            break
+            labels = []
+            for sequence in sequences:
+                label = unicode(sequence.toString()).strip()
+                if label and label not in labels:
+                    labels.append(label)
+            if labels:
+                return ', '.join(labels)
+        return ''
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)

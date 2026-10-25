@@ -3,6 +3,7 @@
 ## [1.4.0] - 2026-10-26
 ### Added
 - Menu items can now be added to submenu groups
+- Display configured keyboard shortcuts in the menus
 - Adding menu items will now insert at selected position on right list, not just add to the bottom.
 - Czech translation
 - Japanese translation
