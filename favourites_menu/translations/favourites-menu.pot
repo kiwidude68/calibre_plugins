@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-10-26 00:56+1000\n"
+"POT-Creation-Date: 2026-10-26 01:08+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,15 +91,15 @@ msgstr ""
 msgid "Create new column"
 msgstr ""
 
-#: action.py:68
+#: action.py:77
 msgid "Favourites"
 msgstr ""
 
-#: action.py:116
+#: action.py:125
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:118 config.py:290
+#: action.py:127 config.py:290
 msgid "&Help"
 msgstr ""
 
