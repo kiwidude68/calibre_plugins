@@ -1,5 +1,15 @@
 # Favourites Menu Change Log
 
+## [1.4.0] - 2026-10-26
+### Added
+- Menu items can now be added to submenu groups
+- Adding menu items will now insert at selected position on right list, not just add to the bottom.
+- Czech translation
+- Japanese translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+
 ## [1.3.2] - 2026-02-09
 ### Added
 - Arabic translation

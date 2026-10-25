@@ -9,14 +9,14 @@ from six.moves import range
 
 try:
     from qt.core import (QWidget, QHBoxLayout, QMenu, QTreeWidget, Qt, QIcon,
-                        QTreeWidgetItem, QListWidget, QListWidgetItem, QSize,
-                        QToolButton, QVBoxLayout, QAbstractItemView,
-                        QPainter, QRect, QPixmap, QBrush, QPushButton, QUrl)
+                        QTreeWidgetItem, QSize, QInputDialog, QToolButton,
+                        QVBoxLayout, QAbstractItemView, QBrush, QPushButton,
+                        QUrl)
 except ImportError:                        
     from PyQt5.Qt import (QWidget, QHBoxLayout, QMenu, QTreeWidget, Qt, QIcon,
-                        QTreeWidgetItem, QListWidget, QListWidgetItem, QSize,
-                        QToolButton, QVBoxLayout, QAbstractItemView,
-                        QPainter, QRect, QPixmap, QBrush, QPushButton, QUrl)
+                        QTreeWidgetItem, QSize, QInputDialog, QToolButton,
+                        QVBoxLayout, QAbstractItemView, QBrush, QPushButton,
+                        QUrl)
 
 try:
     load_translations()
@@ -59,81 +59,152 @@ def show_help():
     open_url(QUrl(HELP_URL))
 
 
-class FavMenusListWidget(QListWidget):
+class FavMenusListWidget(QTreeWidget):
 
     SEP = '--- ' + _('Separator') + ' ---'
 
     def __init__(self, parent):
-        QListWidget.__init__(self, parent)
-        self.setSortingEnabled(False)
+        QTreeWidget.__init__(self, parent)
+        self.header().hide()
         self.setSelectionMode(QAbstractItemView.SingleSelection)
         self.blank_icon = get_icon('blank.png')
 
     def populate_list(self, fav_menus):
         for fav_menu in fav_menus:
-            self.populate_list_item(fav_menu)
+            if isinstance(fav_menu, dict) and 'group' in fav_menu:
+                group = QTreeWidgetItem(self)
+                group.setText(0, fav_menu['group'])
+                group.setIcon(0, self.blank_icon)
+                group.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
+                group.setData(0, Qt.UserRole, ('group',))
+                for child in fav_menu.get('items', []):
+                    self.populate_list_item(child, group)
+                group.setExpanded(True)
+            else:
+                self.populate_list_item(fav_menu)
         if fav_menus:
-            self.setCurrentRow(0)
+            self.setCurrentItem(self.topLevelItem(0))
 
-    def populate_list_item(self, fav_menu, idx= -1):
+    def populate_list_item(self, fav_menu, parent=None, idx=-1):
         self.blockSignals(True)
         if fav_menu is None:
-            item = QListWidgetItem(self.SEP)
-            item.setIcon(self.blank_icon)
+            item = QTreeWidgetItem([self.SEP])
+            item.setIcon(0, self.blank_icon)
+            item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
+            item.setData(0, Qt.UserRole, ('separator',))
         else:
             text = fav_menu['display']
-            item = QListWidgetItem(text)
+            item = QTreeWidgetItem([text])
             item.setFlags(Qt.ItemIsEditable | item.flags())
             paths = fav_menu['path']
-            item.setToolTip(' -> '.join(paths))
-            item.setData(Qt.UserRole, (fav_menu,))
+            item.setToolTip(0, ' -> '.join(paths))
+            item.setData(0, Qt.UserRole, ('shortcut', fav_menu))
             icon = fav_menu.get('icon', None)
             if icon is None:
                 # This is a menu item that hasn't been found in this session
                 # We will display it with a blank icon and disabled
                 icon = self.blank_icon
-                item.setForeground(QBrush(Qt.darkGray))
-            item.setIcon(icon)
-        if idx < 0:
-            self.addItem(item)
+                item.setForeground(0, QBrush(Qt.darkGray))
+            item.setIcon(0, icon)
+        if parent is not None:
+            if idx < 0:
+                parent.addChild(item)
+            else:
+                parent.insertChild(idx, item)
+        elif idx < 0:
+            self.addTopLevelItem(item)
         else:
-            self.insertItem(idx + 1, item)
+            self.insertTopLevelItem(idx, item)
         self.blockSignals(False)
 
     def remove_matching_item(self, remove_fav_menu):
         paths_text = '/'.join(remove_fav_menu['path'])
-        for row in range(self.count()):
-            lw = self.item(row)
-            data = lw.data(Qt.UserRole)
-            if data is not None:
-                fav_menu = data[0]
-                if paths_text == '/'.join(fav_menu['path']):
-                    self.takeItem(row)
-                    break
+        def remove_from(parent):
+            count = self.topLevelItemCount() if parent is None else parent.childCount()
+            for row in range(count):
+                item = self.topLevelItem(row) if parent is None else parent.child(row)
+                data = item.data(0, Qt.UserRole)
+                if data and data[0] == 'shortcut':
+                    if paths_text == '/'.join(data[1]['path']):
+                        if parent is None:
+                            self.takeTopLevelItem(row)
+                        else:
+                            parent.takeChild(row)
+                        return True
+                if remove_from(item):
+                    return True
+            return False
+        remove_from(None)
 
     def get_fav_menus(self):
-        fav_menus = []
-        for row in range(self.count()):
-            lw = self.item(row)
-            data = lw.data(Qt.UserRole)
-            if data is None:
-                # Only add separators if not first or last item and not duplicated
-                if len(fav_menus) > 0 and row < self.count() - 1:
-                    if not fav_menus[-1] is None:
-                        fav_menus.append(None)
-            else:
-                fav_menu = data[0]
-                new_fav_menu = {'display': unicode(lw.text()).strip(),
-                                'path': fav_menu['path']}
-                fav_menus.append(new_fav_menu)
-        return fav_menus
+        def serialize(parent):
+            count = self.topLevelItemCount() if parent is None else parent.childCount()
+            entries = []
+            for row in range(count):
+                item = self.topLevelItem(row) if parent is None else parent.child(row)
+                data = item.data(0, Qt.UserRole)
+                if data and data[0] == 'separator':
+                    if entries and row < count - 1 and entries[-1] is not None:
+                        entries.append(None)
+                elif data and data[0] == 'group':
+                    entries.append({'group': unicode(item.text(0)).strip(),
+                                    'items': serialize(item)})
+                elif data and data[0] == 'shortcut':
+                    fav_menu = data[1]
+                    entries.append({'display': unicode(item.text(0)).strip(),
+                                    'path': fav_menu['path']})
+            return entries
+        return serialize(None)
 
-    def swap_list_widgets(self, src_idx):
-        # Swaps this idx row with the one following
-        self.blockSignals(True)
-        lw = self.takeItem(src_idx)
-        self.insertItem(src_idx +1, lw)
-        self.blockSignals(False)
+    def add_group(self, name):
+        group = QTreeWidgetItem([name])
+        group.setIcon(0, self.blank_icon)
+        group.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
+        group.setData(0, Qt.UserRole, ('group',))
+        current = self.currentItem()
+        if current is None:
+            self.addTopLevelItem(group)
+        else:
+            if current.parent() is not None:
+                current = current.parent()
+            index = self.indexOfTopLevelItem(current)
+            self.insertTopLevelItem(index + 1, group)
+        group.setExpanded(True)
+        self.setCurrentItem(group)
+
+    def add_to_current_group(self, fav_menu):
+        current = self.currentItem()
+        if current is not None:
+            data = current.data(0, Qt.UserRole)
+            if data and data[0] == 'group':
+                parent = current
+                index = parent.childCount()
+            elif current.parent() is not None and current.parent().data(0, Qt.UserRole)[0] == 'group':
+                parent = current.parent()
+                index = parent.indexOfChild(current) + 1
+            else:
+                parent = None
+                index = self.indexOfTopLevelItem(current) + 1
+        else:
+            parent = None
+            index = self.topLevelItemCount()
+        self.populate_list_item(fav_menu, parent, index)
+        item = parent.child(index) if parent is not None else self.topLevelItem(index)
+        self.setCurrentItem(item)
+
+    def add_separator_after_current(self):
+        current = self.currentItem()
+        if current is not None and current.data(0, Qt.UserRole)[0] == 'group':
+            self.populate_list_item(None, current)
+            self.setCurrentItem(current.child(current.childCount() - 1))
+            return
+        parent = current.parent() if current is not None else None
+        index = ((parent.indexOfChild(current) if parent is not None else
+                  self.indexOfTopLevelItem(current)) + 1) if current is not None else -1
+        self.populate_list_item(None, parent, index)
+        item = parent.child(index) if parent is not None and index >= 0 else (
+            self.topLevelItem(index) if index >= 0 else self.topLevelItem(self.topLevelItemCount() - 1))
+        self.setCurrentItem(item)
 
 
 class Item(QTreeWidgetItem):
@@ -157,7 +228,7 @@ class ConfigWidget(QWidget):
 
         # Hook up our events
         self.tv.itemChanged.connect(self._tree_item_changed)
-        self.items_list.currentRowChanged.connect(self._update_button_states)
+        self.items_list.currentItemChanged.connect(self._update_button_states)
         self._update_button_states()
 
     def _initialise_layout(self):
@@ -195,6 +266,10 @@ class ConfigWidget(QWidget):
         self.sep_btn.setIcon(get_icon('plus.png'))
         self.sep_btn.setToolTip(_('Add a separator to the menu following the selected item'))
         self.sep_btn.clicked.connect(self._add_separator)
+        self.group_btn = QToolButton(self.gui)
+        self.group_btn.setIcon(get_icon('images/add_group.png'))
+        self.group_btn.setToolTip(_('Add a submenu group'))
+        self.group_btn.clicked.connect(self._add_group)
         self.rename_btn = QToolButton(self.gui)
         self.rename_btn.setIcon(get_icon('edit-undo.png'))
         self.rename_btn.setToolTip(_('Rename the menu item for when it appears on your Favourites menu'))
@@ -202,6 +277,8 @@ class ConfigWidget(QWidget):
         button_layout.addWidget(self.up_btn)
         button_layout.addStretch(1)
         button_layout.addWidget(self.rename_btn)
+        button_layout.addStretch(1)
+        button_layout.addWidget(self.group_btn)
         button_layout.addStretch(1)
         button_layout.addWidget(self.sep_btn)
         button_layout.addStretch(1)
@@ -218,108 +295,159 @@ class ConfigWidget(QWidget):
         layout.addLayout(button_layout)
 
     def _move_item_up(self):
-        idx = self.items_list.currentRow()
-        if idx > 0:
-            self.items_list.swap_list_widgets(idx-1)
-            self.items_list.setCurrentRow(idx-1)
-            self._update_button_states()
+        self._move_item(-1)
 
     def _move_item_down(self):
-        idx = self.items_list.currentRow()
-        if idx < self.items_list.count() - 1:
-            self.items_list.swap_list_widgets(idx)
-            self.items_list.setCurrentRow(idx+1)
+        self._move_item(1)
+
+    def _move_item(self, offset):
+        item = self.items_list.currentItem()
+        if item is None:
+            return
+        parent = item.parent()
+        index = parent.indexOfChild(item) if parent is not None else self.items_list.indexOfTopLevelItem(item)
+        count = parent.childCount() if parent is not None else self.items_list.topLevelItemCount()
+        target = index + offset
+        data = item.data(0, Qt.UserRole)
+        if parent is None:
+            if target < 0 or target >= count:
+                return
+            adjacent = self.items_list.topLevelItem(target)
+            adjacent_data = adjacent.data(0, Qt.UserRole)
+            if data and data[0] == 'shortcut' and adjacent_data and adjacent_data[0] == 'group':
+                item = self.items_list.takeTopLevelItem(index)
+                if offset < 0:
+                    adjacent.addChild(item)
+                else:
+                    adjacent.insertChild(0, item)
+                adjacent.setExpanded(True)
+            else:
+                item = self.items_list.takeTopLevelItem(index)
+                self.items_list.insertTopLevelItem(target, item)
+        else:
+            if 0 <= target < count:
+                item = parent.takeChild(index)
+                parent.insertChild(target, item)
+            elif data and data[0] == 'shortcut':
+                group_index = self.items_list.indexOfTopLevelItem(parent)
+                item = parent.takeChild(index)
+                self.items_list.insertTopLevelItem(
+                    group_index if offset < 0 else group_index + 1, item)
+            else:
+                return
+        self.items_list.setCurrentItem(item)
+        self._update_button_states()
+
+    def _add_group(self):
+        name, ok = QInputDialog.getText(self, _('Add group'), _('Group name:'))
+        name = unicode(name).strip()
+        if ok and name:
+            self.items_list.add_group(name)
             self._update_button_states()
 
     def _add_separator(self):
-        idx = self.items_list.currentRow()
-        self.items_list.populate_list_item(None, idx)
-        self.items_list.setCurrentRow(idx+1)
+        self.items_list.add_separator_after_current()
+        self._update_button_states()
 
     def _remove_item(self):
 
-        def find_child(twi, paths):
-            for i in range(0, twi.childCount()):
-                c = twi.child(i)
-                text = unicode(c.text(0))
-                if text == paths[0]:
-                    if len(paths) == 1:
-                        return c
-                    else:
-                        return find_child(c, paths[1:])
-
-        idx = self.items_list.currentRow()
-        if idx < 0:
-            return
         item = self.items_list.currentItem()
-        data = item.data(Qt.UserRole)
-        if data is not None:
-            # Not removing a separator
-            fav_menu = data[0]
-            # Lookup the item to uncheck it.
+        if item is None:
+            return
+        data = item.data(0, Qt.UserRole)
+        if data and data[0] == 'shortcut':
             self.tv.blockSignals(True)
-            paths = fav_menu['path']
-            plugin = paths[0]
-            # Find the top-level item for the plugin
-            tree_item = None
-            if plugin in self.top_level_items_map:
-                tree_item = self.top_level_items_map[plugin]
-                if len(paths) > 1:
-                    tree_item = find_child(tree_item, paths[1:])
-                if tree_item is not None:
-                    tree_item.setCheckState(0, Qt.Unchecked)
+            self._uncheck_shortcut(data[1])
             self.tv.blockSignals(False)
-        self.items_list.takeItem(idx)
+        elif data and data[0] == 'group':
+            group_index = self.items_list.indexOfTopLevelItem(item)
+            promoted_item = None
+            row = 0
+            while item.childCount():
+                child = item.takeChild(0)
+                self.items_list.insertTopLevelItem(group_index + row, child)
+                if promoted_item is None:
+                    promoted_item = child
+                row += 1
+            self.items_list.takeTopLevelItem(self.items_list.indexOfTopLevelItem(item))
+            if promoted_item is not None:
+                self.items_list.setCurrentItem(promoted_item)
+        else:
+            parent = item.parent()
+            if parent is None:
+                self.items_list.takeTopLevelItem(self.items_list.indexOfTopLevelItem(item))
+            else:
+                parent.takeChild(parent.indexOfChild(item))
         self._update_button_states()
 
-    def _rename_item(self):
-        idx = self.items_list.currentRow()
-        if idx < 0:
-            return
-        item = self.items_list.currentItem()
-        data = item.data(Qt.UserRole)
-        if data is not None:
-            self.items_list.editItem(item)
+    def _uncheck_shortcut(self, fav_menu):
+        def find_child(twi, paths):
+            for i in range(twi.childCount()):
+                child = twi.child(i)
+                if unicode(child.text(0)) == paths[0]:
+                    if len(paths) == 1:
+                        return child
+                    return find_child(child, paths[1:])
 
-    def _update_button_states(self):
-        idx = self.items_list.currentRow()
-        self.up_btn.setEnabled(idx > 0)
-        self.down_btn.setEnabled(idx < self.items_list.count() - 1)
-        self.remove_btn.setEnabled(self.items_list.count() > 0)
-        self.sep_btn.setEnabled(self.items_list.count() > 0)
-        data = None
-        if idx >= 0:
-            item = self.items_list.currentItem()
-            data = item.data(Qt.UserRole)
-        self.rename_btn.setEnabled(data is not None)
+        paths = fav_menu['path']
+        plugin = paths[0]
+        tree_item = self.top_level_items_map.get(plugin)
+        if tree_item is not None:
+            if len(paths) > 1:
+                tree_item = find_child(tree_item, paths[1:])
+            if tree_item is not None:
+                tree_item.setCheckState(0, Qt.Unchecked)
+
+    def _rename_item(self):
+        item = self.items_list.currentItem()
+        if item is None:
+            return
+        data = item.data(0, Qt.UserRole)
+        if data and data[0] == 'shortcut':
+            self.items_list.editItem(item)
+        elif data and data[0] == 'group':
+            name, ok = QInputDialog.getText(self, _('Rename group'), _('Group name:'),
+                                            text=item.text(0))
+            name = unicode(name).strip()
+            if ok and name:
+                item.setText(0, name)
+
+    def _update_button_states(self, *args):
+        item = self.items_list.currentItem()
+        if item is None:
+            self.up_btn.setEnabled(False)
+            self.down_btn.setEnabled(False)
+            self.remove_btn.setEnabled(False)
+            self.sep_btn.setEnabled(self.items_list.topLevelItemCount() > 0)
+            self.rename_btn.setEnabled(False)
+            return
+        parent = item.parent()
+        index = parent.indexOfChild(item) if parent is not None else self.items_list.indexOfTopLevelItem(item)
+        count = parent.childCount() if parent is not None else self.items_list.topLevelItemCount()
+        data = item.data(0, Qt.UserRole)
+        can_leave_group = parent is not None and data and data[0] == 'shortcut'
+        self.up_btn.setEnabled(index > 0 or can_leave_group)
+        self.down_btn.setEnabled(index < count - 1 or can_leave_group)
+        self.remove_btn.setEnabled(True)
+        self.sep_btn.setEnabled(True)
+        self.rename_btn.setEnabled(bool(data) and data[0] in ('shortcut', 'group'))
 
     def _build_lookup_menu_map(self, fav_menus):
         m = {}
-        for fav_menu in fav_menus:
-            if fav_menu is None:
+        for entry in fav_menus:
+            if entry is None:
                 continue
-            path = fav_menu['path']
-            plugin = path[0]
-            if plugin not in m:
-                m[plugin] = []
-            fav_menu['paths_text'] = '|'.join(path[1:])
-            m[plugin].append(fav_menu)
+            entries = entry.get('items', []) if 'group' in entry else [entry]
+            for fav_menu in entries:
+                if fav_menu is None:
+                    continue
+                path = fav_menu['path']
+                plugin = path[0]
+                if plugin not in m:
+                    m[plugin] = []
+                fav_menu['paths_text'] = '|'.join(path[1:])
+                m[plugin].append(fav_menu)
         return m
-
-    def _get_scaled_icon(self, icon):
-        if icon.isNull():
-            return self.blank_icon
-        # We need the icon scaled to 16x16
-        src = icon.pixmap(ICON_SIZE, ICON_SIZE)
-        if src.width() == ICON_SIZE and src.height() == ICON_SIZE:
-            return icon
-        # Need a new version of the icon
-        pm = QPixmap(ICON_SIZE, ICON_SIZE)
-        pm.fill(Qt.transparent)
-        p = QPainter(pm)
-        p.drawPixmap(QRect(0, 0, ICON_SIZE, ICON_SIZE), src)
-        p.end()
-        return QIcon(pm)
 
     def _populate_actions_tree(self, lookup_menu_map):
         # Lets re-sort the keys so that items will appear on screen sorted
@@ -351,7 +479,7 @@ class ConfigWidget(QWidget):
                 # Special case handling
                 tl.setFlags(Qt.ItemIsEnabled | Qt.ItemIsUserCheckable)
                 tl.setCheckState(0, Qt.PartiallyChecked)
-                tl.setIcon(0, self._get_scaled_icon(get_icon('reader.png')))
+                tl.setIcon(0, get_icon('reader.png'))
                 # Put all actions except library within this node.
                 actions = self.gui.location_manager.all_actions[1:]
                 self._populate_action_children(actions, tl, possible_menus, [], plugin_name,
@@ -360,7 +488,7 @@ class ConfigWidget(QWidget):
                 # Normal top-level checkable plugin iaction handling
                 tl.setFlags(Qt.ItemIsEnabled | Qt.ItemIsUserCheckable)
                 tl.setCheckState(0, Qt.Unchecked)
-                tl.setIcon(0, self._get_scaled_icon(qaction.icon()))
+                tl.setIcon(0, qaction.icon())
 
                 # Lookup to see if we have a menu item for this top-level plugin
                 if possible_menus:
@@ -393,7 +521,7 @@ class ConfigWidget(QWidget):
             it.setText(0, text)
             it.setFlags(Qt.ItemIsEnabled | Qt.ItemIsUserCheckable)
             it.setCheckState(0, Qt.Unchecked)
-            it.setIcon(0, self._get_scaled_icon(ac.icon()))
+            it.setIcon(0, ac.icon())
 
             new_paths = list(paths)
             new_paths.append(text)
@@ -442,8 +570,7 @@ class ConfigWidget(QWidget):
 
         if is_checked:
             # We want to add this item to the list
-            self.items_list.populate_list_item(fav_menu)
-            self.items_list.setCurrentRow(self.items_list.count() -1)
+            self.items_list.add_to_current_group(fav_menu)
         else:
             # We want to remove the matching item from the list
             self.items_list.remove_matching_item(fav_menu)

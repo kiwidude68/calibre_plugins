@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-26 00:56+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "All settings for this plugin in this library have been cleared."
 msgstr ""
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr ""
 
@@ -95,11 +95,11 @@ msgstr ""
 msgid "Favourites"
 msgstr ""
 
-#: action.py:155
+#: action.py:116
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:157 config.py:213
+#: action.py:118 config.py:290
 msgid "&Help"
 msgstr ""
 
@@ -107,23 +107,39 @@ msgstr ""
 msgid "Separator"
 msgstr ""
 
-#: config.py:184
+#: config.py:255
 msgid "Move the selected menu item up"
 msgstr ""
 
-#: config.py:188
+#: config.py:259
 msgid "Move the selected menu item down"
 msgstr ""
 
-#: config.py:192
+#: config.py:263
 msgid "Remove the selected item from the menu"
 msgstr ""
 
-#: config.py:196
+#: config.py:267
 msgid "Add a separator to the menu following the selected item"
 msgstr ""
 
-#: config.py:200
+#: config.py:271
+msgid "Add a submenu group"
+msgstr ""
+
+#: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
+msgstr ""
+
+#: config.py:342
+msgid "Add group"
+msgstr ""
+
+#: config.py:342 config.py:409
+msgid "Group name:"
+msgstr ""
+
+#: config.py:409
+msgid "Rename group"
 msgstr ""
 

@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Martin Sowa, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-19 15:15+0000\n"
+"Last-Translator: Martin Sowa, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "Klávesové skratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Reštartovať calibre teraz"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Nastavenia pre:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazať"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazať všetky nastavenia tohto zásuvného modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete zmeniť nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavenia v iných knižniciach ani nastavenia uložené v súbore JSON v "
+"priečinku zásuvných modulov calibre nebudú zmenené."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Potom musíte reštartovať calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavenia zmenené"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavenia tohto zásuvného modulu v tejto knižnici boli zmenené."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Teraz prosím reštartujte calibre."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Naozaj chcete vymazať nastavenia tohto zásuvného modulu v tejto knižnici?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavenia vymazané"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr ""
+"Všetky nastavenia tohto zásuvného modulu v tejto knižnici boli vymazané."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovať do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinované"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžaduje sa reštart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Obrázok titulu sa nenašiel – pred použitím tohto zásuvného modulu musíte "
+"reštartovať calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvoriť nový stĺpec"
+
+#: action.py:68
+msgid "Favourites"
+msgstr "Obľúbené"
+
+#: action.py:155
+msgid "&Customize plugin"
+msgstr "&Prispôsobiť zásuvný modul"
+
+#: action.py:157 config.py:213
+msgid "&Help"
+msgstr "&Pomocník"
+
+#: config.py:64
+msgid "Separator"
+msgstr "Oddeľovač"
+
+#: config.py:184
+msgid "Move the selected menu item up"
+msgstr "Posunúť vybranú položku ponuky nahor"
+
+#: config.py:188
+msgid "Move the selected menu item down"
+msgstr "Posunúť vybranú položku ponuky nadol"
+
+#: config.py:192
+msgid "Remove the selected item from the menu"
+msgstr "Odstrániť vybranú položku z ponuky"
+
+#: config.py:196
+msgid "Add a separator to the menu following the selected item"
+msgstr "Pridať oddeľovač do ponuky za vybranú položku"
+
+#: config.py:200
+msgid "Rename the menu item for when it appears on your Favourites menu"
+msgstr "Premenovať položku ponuky pre jej zobrazenie v ponuke Obľúbené"

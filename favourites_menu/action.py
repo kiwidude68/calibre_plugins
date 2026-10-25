@@ -22,7 +22,7 @@ import calibre_plugins.favourites_menu.config as cfg
 from calibre_plugins.favourites_menu.common_icons import set_plugin_icon_resources, get_icon
 from calibre_plugins.favourites_menu.common_menus import unregister_menu_actions, create_menu_action_unique
 
-PLUGIN_ICONS = ['images/favourites_menu.png']
+PLUGIN_ICONS = ['images/favourites_menu.png','images/add_group.png']
 
 class ActionWrapper(QAction):
 
@@ -97,65 +97,65 @@ class FavouritesMenuAction(InterfaceAction):
         in_device_mode = self.gui.location_manager.has_device
         discovered_plugins = {}
 
-        for fav_menu in fav_menus:
-            if fav_menu is None:
+        for entry in fav_menus:
+            if entry is None:
                 m.addSeparator()
-                continue
-            ac = None
-            paths = list(fav_menu['path'])
-            plugin_name = paths[0]
-            is_device_only_plugin = False
-            if plugin_name == 'Location Manager':
-                # Special case handling since not iaction instances
-                is_device_only_plugin = True
-                paths = paths[1:]
-                for loc_action in self.gui.location_manager.all_actions[1:]:
-                    if unicode(loc_action.text()) == paths[0]:
-                        if len(paths) > 1:
-                            # This is an action on the menu for this plugin or its submenus
-                            ac = self._find_action_for_menu(loc_action.menu(), paths[1:], plugin_name)
-                        else:
-                            # This is a top-level plugin being added to the menu
-                            ac = loc_action
-                        break
-            else:
-                iaction = self.gui.iactions.get(plugin_name, None)
-                if iaction is not None:
-                    if iaction not in discovered_plugins:
-                        discovered_plugins[iaction] = True
-                        if hasattr(iaction, 'menu'):
-                            iaction.menu.aboutToShow.emit()
-                    is_device_only_plugin = 'toolbar' in iaction.dont_add_to and 'toolbar-device' not in iaction.dont_add_to
-                    if len(paths) > 1:
-                        # This is an action on the menu for this plugin or its submenus
-                        ac = self._find_action_for_menu(iaction.qaction.menu(), paths[1:], plugin_name)
+            elif 'group' in entry:
+                group_menu = QMenu(entry['group'], m)
+                m.addMenu(group_menu)
+                for fav_menu in entry.get('items', []):
+                    if fav_menu is None:
+                        group_menu.addSeparator()
                     else:
-                        # This is a top-level plugin being added to the menu
-                        ac = iaction.qaction
-
-            if ac is None:
-                # We have a menu action that is not available. Perhaps the user
-                # has switched libraries, uninstalled a plugin or for some other
-                # reason that underlying item is not available any more. We still add
-                # a placeholder menu item, but will have no icon and be disabled.
-                mac = QAction(fav_menu['display'], m)
-                mac.setEnabled(False)
-                #print('Favourite Menu: action not found:', fav_menu)
+                        self._add_favourite_action(fav_menu, group_menu, in_device_mode,
+                                                   discovered_plugins)
             else:
-                # We have found the underlying action for this menu item.
-                # Clone the original QAction in order to alias the text for it
-                mac = ActionWrapper(ac, m)
-                mac.setText(fav_menu['display'])
-
-            if is_device_only_plugin and not in_device_mode:
-                mac.setEnabled(False)
-            m.addAction(mac)
+                self._add_favourite_action(entry, m, in_device_mode, discovered_plugins)
 
         m.addSeparator()
         create_menu_action_unique(self, m, _('&Customize plugin') + '...', 'config.png',
                                   shortcut=False, triggered=self.show_configuration)
         create_menu_action_unique(self, m, _('&Help'), 'help.png',
                                   shortcut=False, triggered=cfg.show_help)
+
+    def _add_favourite_action(self, fav_menu, menu, in_device_mode, discovered_plugins):
+        ac = None
+        paths = list(fav_menu['path'])
+        plugin_name = paths[0]
+        is_device_only_plugin = False
+        if plugin_name == 'Location Manager':
+            is_device_only_plugin = True
+            paths = paths[1:]
+            for loc_action in self.gui.location_manager.all_actions[1:]:
+                if unicode(loc_action.text()) == paths[0]:
+                    if len(paths) > 1:
+                        ac = self._find_action_for_menu(loc_action.menu(), paths[1:], plugin_name)
+                    else:
+                        ac = loc_action
+                    break
+        else:
+            iaction = self.gui.iactions.get(plugin_name, None)
+            if iaction is not None:
+                if iaction not in discovered_plugins:
+                    discovered_plugins[iaction] = True
+                    if hasattr(iaction, 'menu'):
+                        iaction.menu.aboutToShow.emit()
+                is_device_only_plugin = 'toolbar' in iaction.dont_add_to and 'toolbar-device' not in iaction.dont_add_to
+                if len(paths) > 1:
+                    ac = self._find_action_for_menu(iaction.qaction.menu(), paths[1:], plugin_name)
+                else:
+                    ac = iaction.qaction
+
+        if ac is None:
+            mac = QAction(fav_menu['display'], menu)
+            mac.setEnabled(False)
+        else:
+            mac = ActionWrapper(ac, menu)
+            mac.setText(fav_menu['display'])
+
+        if is_device_only_plugin and not in_device_mode:
+            mac.setEnabled(False)
+        menu.addAction(mac)
 
     def show_configuration(self):
         self.interface_action_base_plugin.do_user_config(self.gui)
