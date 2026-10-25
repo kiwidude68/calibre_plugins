@@ -98,15 +98,26 @@ class ViewManagerAction(InterfaceAction):
         # and if it has the checkbox set to apply on tab change. If so then we will apply the change.
         self.last_vl_name = vl_name
         views = cfg.get_library_config(self.gui.current_db)[cfg.KEY_VIEWS]
-        # Iterate through the views to find first view that has the apply_on_tab_change set and the virtlib set to the current tab name
+        fallback_view = None
         for view_name, view_info in views.items():
+            if not view_info.get(cfg.KEY_APPLY_ON_TAB_CHANGE, False):
+                continue
             view_virtlib = view_info.get(cfg.KEY_VIRTLIB, '')
-            virtlib_matches = not view_virtlib if vl_name == ALL_BOOKS else view_virtlib == vl_name
-            if view_info.get(cfg.KEY_APPLY_ON_TAB_CHANGE, False) and virtlib_matches:
-                #debug_print("View Manager: process_virtual_library_tab_change: applying view_name=", view_name)
+            if vl_name == ALL_BOOKS and not view_virtlib:
                 self.is_switching_view_from_tab_change = True
                 self.switch_view(view_name)
                 return
+            if vl_name != ALL_BOOKS:
+                if view_virtlib == vl_name:
+                    self.is_switching_view_from_tab_change = True
+                    self.switch_view(view_name)
+                    return
+                if not view_virtlib and fallback_view is None:
+                    fallback_view = view_name
+
+        if fallback_view is not None:
+            self.is_switching_view_from_tab_change = True
+            self.switch_view(fallback_view)
 
     def rebuild_menus(self):
         # Ensure any keyboard shortcuts from previous display of plugin menu are cleared
@@ -121,7 +132,8 @@ class ViewManagerAction(InterfaceAction):
             for key in sorted(views.keys()):
                 is_checked = self.current_view == key
                 shortcut_name = 'Apply View: ' + key
-                create_menu_action_unique(self, m, key, shortcut_name=shortcut_name,
+                create_menu_action_unique(self, m, key.replace('&', '&&'),
+                                            unique_name=key, shortcut_name=shortcut_name,
                                             triggered=partial(self.switch_view, key),
                                             is_checked=is_checked)
                 if is_checked:

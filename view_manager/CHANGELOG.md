@@ -1,5 +1,10 @@
 # View Manager Change Log
 
+## [1.11.1] - 2026-10-25
+## Fixed
+- View names with ampersands now have them escaped so they render correctly in the menus.
+- You no longer need to define a view for each VL tab to use the apply on tab change behaviour. The view (should only be one!) that has apply on tab change with no VL name specified will be applied by default.
+
 ## [1.11.0] - 2026-10-24
 ### Added
 - You can now assign a view to be applied whenever the virtual library tab is changed to match.

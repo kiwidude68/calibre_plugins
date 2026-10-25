@@ -621,6 +621,10 @@ class ConfigWidget(QWidget):
         search_group_box_layout = QVBoxLayout()
         search_group_box.setLayout(search_group_box_layout)
 
+        self.jump_to_top_checkbox = QCheckBox(_('Jump to the top when applying this View'), self)
+        self.jump_to_top_checkbox.setCheckState(Qt.Unchecked)
+        search_group_box_layout.addWidget(self.jump_to_top_checkbox)
+
         other_layout = QGridLayout()
         search_group_box_layout.addLayout(other_layout)
 
@@ -699,10 +703,6 @@ class ConfigWidget(QWidget):
         other_group_box_layout = QGridLayout()
         other_group_box.setLayout(other_group_box_layout)
 
-        self.jump_to_top_checkbox = QCheckBox(_('Jump to the top when applying this View'), self)
-        jump_to_top = self.library.get(KEY_JUMP_TO_TOP, False)
-        self.jump_to_top_checkbox.setCheckState(Qt.Checked if jump_to_top else Qt.Unchecked)
-
         restart_label = QLabel(_('When restarting Calibre or switching to this library')+'...')
         self.auto_apply_checkbox = QCheckBox(_('Automatically apply view:'), self)
         auto_apply = self.library.get(KEY_AUTO_APPLY_VIEW, False)
@@ -713,11 +713,10 @@ class ConfigWidget(QWidget):
         info_apply_label = QLabel(_('Enabling may override any startup search restriction or '
                                   'title sort set in Preferences -> Behaviour/Tweaks.'))
         info_apply_label.setWordWrap(True)
-        other_group_box_layout.addWidget(self.jump_to_top_checkbox, 0, 0, 1, 2)
-        other_group_box_layout.addWidget(restart_label, 1, 0, 1, 2)
-        other_group_box_layout.addWidget(self.auto_apply_checkbox, 2, 0, 1, 1)
-        other_group_box_layout.addWidget(self.auto_view_combo, 2, 1, 1, 1)
-        other_group_box_layout.addWidget(info_apply_label, 3, 0, 1, 2)
+        other_group_box_layout.addWidget(restart_label, 0, 0, 1, 2)
+        other_group_box_layout.addWidget(self.auto_apply_checkbox, 1, 0, 1, 1)
+        other_group_box_layout.addWidget(self.auto_view_combo, 1, 1, 1, 1)
+        other_group_box_layout.addWidget(info_apply_label, 2, 0, 1, 2)
         #other_group_box.setMaximumHeight(other_group_box.sizeHint().height())
 
         keyboard_layout = QHBoxLayout()
