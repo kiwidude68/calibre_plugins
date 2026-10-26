@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 18:09+1000\n"
+"POT-Creation-Date: 2026-10-26 13:25+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: ..\common\common_dialogs.py:84 config.py:219
+#: ..\common\common_dialogs.py:84 config.py:304
 msgid "Keyboard shortcuts"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgstr ""
 msgid "All settings for this plugin in this library have been cleared."
 msgstr ""
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr ""
 
@@ -99,7 +99,7 @@ msgstr ""
 msgid "Size: {0}(w) x {1}(h)"
 msgstr ""
 
-#: action.py:69 config.py:73
+#: action.py:69 config.py:89
 msgid "Keep aspect ratio"
 msgstr ""
 
@@ -111,75 +111,119 @@ msgstr ""
 msgid "&Customize plugin"
 msgstr ""
 
-#: action.py:83 config.py:224
+#: action.py:83 config.py:309
 msgid "&Help"
 msgstr ""
 
-#: action.py:114
-msgid "No covers resized"
+#: action.py:129
+msgid "No selected covers met the resize conditions"
 msgstr ""
 
-#: action.py:114
-msgid "None of the selected book(s) have covers"
+#: config.py:89
+msgid "Only resize if larger"
 msgstr ""
 
-#: config.py:73
-msgid "Height"
-msgstr ""
-
-#: config.py:73
-msgid "Only shrink larger images"
-msgstr ""
-
-#: config.py:73
-msgid "Width"
-msgstr ""
-
-#: config.py:73 config.py:94 config.py:109 config.py:165 config.py:167
+#: config.py:89 config.py:110 config.py:125 config.py:181 config.py:183
 msgid "Default"
 msgstr ""
 
-#: config.py:146
+#: config.py:89 config.py:216
+msgid "Width"
+msgstr ""
+
+#: config.py:89 config.py:245
+msgid "Height"
+msgstr ""
+
+#: config.py:162
 msgid "Cannot delete"
 msgstr ""
 
-#: config.py:146
+#: config.py:162
 msgid "You must have at least one resize menu item"
 msgstr ""
 
-#: config.py:148
+#: config.py:164
 msgid "Are you sure you want to delete this resize menu item?"
 msgstr ""
 
-#: config.py:150
+#: config.py:166
 msgid "Are you sure you want to delete the selected {0} resize menu items?"
 msgstr ""
 
-#: config.py:151
+#: config.py:167
 msgid "Are you sure?"
 msgstr ""
 
-#: config.py:180
+#: config.py:196
 msgid "Cover resize options:"
 msgstr ""
 
-#: config.py:196
-msgid "Add resize menu item row"
-msgstr ""
-
-#: config.py:203
-msgid "Delete resize menu item row"
-msgstr ""
-
-#: config.py:213
-msgid "Set as Toolbar Button Default"
+#: config.py:208
+msgid "Global resize conditions:"
 msgstr ""
 
 #: config.py:214
+msgid "Resize cover ONLY if any selected condition is met:"
+msgstr ""
+
+#: config.py:218
+msgid "Resize if width is less than this value"
+msgstr ""
+
+#: config.py:219
+msgid "Width less than condition"
+msgstr ""
+
+#: config.py:222 config.py:237 config.py:251 config.py:266
+msgid "px"
+msgstr ""
+
+#: config.py:230 config.py:259
+msgid "OR"
+msgstr ""
+
+#: config.py:233
+msgid "Resize if width is greater than this value"
+msgstr ""
+
+#: config.py:234
+msgid "Width greater than condition"
+msgstr ""
+
+#: config.py:247
+msgid "Resize if height is less than this value"
+msgstr ""
+
+#: config.py:248
+msgid "Height less than condition"
+msgstr ""
+
+#: config.py:262
+msgid "Resize if height is greater than this value"
+msgstr ""
+
+#: config.py:263
+msgid "Height greater than condition"
+msgstr ""
+
+#: config.py:281
+msgid "Add resize menu item row"
+msgstr ""
+
+#: config.py:288
+msgid "Delete resize menu item row"
+msgstr ""
+
+#: config.py:298
+msgid "Set as Toolbar Button Default"
+msgstr ""
+
+#: config.py:299
 msgid "Set this size as the default on the menu button"
 msgstr ""
 
-#: config.py:220
+#: config.py:305
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 

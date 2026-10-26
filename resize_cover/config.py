@@ -8,12 +8,12 @@ from six import text_type as unicode
 
 # Maintain backwards compatibility with older versions of Qt and calibre.
 try:
-    from qt.core import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableWidget,
-                      QPushButton, QTableWidgetItem, QIcon, QAbstractItemView,
+    from qt.core import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, QGroupBox, QLabel, QTableWidget,
+                      QPushButton, QTableWidgetItem, QIcon, QAbstractItemView, QCheckBox, QSpinBox,
                       QToolButton, QSpacerItem, QModelIndex, QUrl)
 except ImportError:
-    from PyQt5.Qt import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTableWidget,
-                      QPushButton, QTableWidgetItem, QIcon, QAbstractItemView,
+    from PyQt5.Qt import (Qt, QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, QGroupBox, QLabel, QTableWidget,
+                      QPushButton, QTableWidgetItem, QIcon, QAbstractItemView, QCheckBox, QSpinBox,
                       QToolButton, QSpacerItem, QModelIndex, QUrl)
 
 from calibre.gui2 import question_dialog, info_dialog, open_url
@@ -43,12 +43,28 @@ KEY_HEIGHT = 'height'
 KEY_DEFAULT = 'default'
 KEY_KEEP_ASPECT_RATIO = 'keep_aspect_ratio'
 KEY_ONLY_SHRINK = 'only_shrink_larger_images'
+KEY_ONLY_IF_WIDTH_SMALLER = 'only_if_width_smaller'
+KEY_WIDTH_THRESHOLD = 'width_threshold'
+KEY_ONLY_IF_HEIGHT_SMALLER = 'only_if_height_smaller'
+KEY_HEIGHT_THRESHOLD = 'height_threshold'
+KEY_ONLY_IF_WIDTH_GREATER = 'only_if_width_greater'
+KEY_WIDTH_MINIMUM = 'width_minimum'
+KEY_ONLY_IF_HEIGHT_GREATER = 'only_if_height_greater'
+KEY_HEIGHT_MINIMUM = 'height_minimum'
 
 DEFAULT_STORE_VALUES = {
     KEY_SIZES: [{ KEY_WIDTH: 450, KEY_HEIGHT: 680, KEY_DEFAULT: True }],
     KEY_DEFAULT: False,
     KEY_KEEP_ASPECT_RATIO: False,
-    KEY_ONLY_SHRINK: False
+    KEY_ONLY_SHRINK: False,
+    KEY_ONLY_IF_WIDTH_SMALLER: False,
+    KEY_WIDTH_THRESHOLD: 400,
+    KEY_ONLY_IF_HEIGHT_SMALLER: False,
+    KEY_HEIGHT_THRESHOLD: 600,
+    KEY_ONLY_IF_WIDTH_GREATER: False,
+    KEY_WIDTH_MINIMUM: 400,
+    KEY_ONLY_IF_HEIGHT_GREATER: False,
+    KEY_HEIGHT_MINIMUM: 600
 }
 
 # This is where all preferences for this plugin will be stored
@@ -70,7 +86,7 @@ class SizesTableWidget(QTableWidget):
         self.clear()
         self.setAlternatingRowColors(True)
         self.setRowCount(len(data_items))
-        header_labels = [_('Width'), _('Height'), _('Default'), _('Keep aspect ratio'), _('Only shrink larger images')]
+        header_labels = [_('Width'), _('Height'), _('Default'), _('Keep aspect ratio'), _('Only resize if larger')]
         self.setColumnCount(len(header_labels))
         self.setHorizontalHeaderLabels(header_labels)
         self.verticalHeader().setDefaultSectionSize(30)
@@ -188,6 +204,75 @@ class ConfigWidget(QWidget):
         heading_label.setBuddy(self._table)
         table_layout.addWidget(self._table)
 
+        c = plugin_prefs[STORE_NAME]
+        size_limits_group = QGroupBox(_('Global resize conditions:'), self)
+        size_limits_layout = QGridLayout()
+        size_limits_group.setLayout(size_limits_layout)
+        layout.addWidget(size_limits_group)
+
+        size_limits_layout.addWidget(
+            QLabel(_('Resize cover ONLY if any selected condition is met:'), self), 0, 0, 1, 6)
+
+        size_limits_layout.addWidget(QLabel(_('Width'), self), 1, 0)
+        self._width_limit_checkbox = QCheckBox('<', self)
+        self._width_limit_checkbox.setToolTip(_('Resize if width is less than this value'))
+        self._width_limit_checkbox.setAccessibleName(_('Width less than condition'))
+        self._width_limit = QSpinBox(self)
+        self._width_limit.setRange(1, 10000)
+        self._width_limit.setSuffix(' '+_('px'))
+        self._width_limit_checkbox.setChecked(c.get(KEY_ONLY_IF_WIDTH_SMALLER, DEFAULT_STORE_VALUES[KEY_ONLY_IF_WIDTH_SMALLER]))
+        self._width_limit.setValue(c.get(KEY_WIDTH_THRESHOLD, DEFAULT_STORE_VALUES[KEY_WIDTH_THRESHOLD]))
+        self._width_limit.setEnabled(self._width_limit_checkbox.isChecked())
+        self._width_limit_checkbox.toggled.connect(self._width_limit.setEnabled)
+        size_limits_layout.addWidget(self._width_limit_checkbox, 1, 1)
+        size_limits_layout.addWidget(self._width_limit, 1, 2)
+
+        size_limits_layout.addWidget(QLabel(_('OR'), self), 1, 3)
+
+        self._width_minimum_checkbox = QCheckBox('>', self)
+        self._width_minimum_checkbox.setToolTip(_('Resize if width is greater than this value'))
+        self._width_minimum_checkbox.setAccessibleName(_('Width greater than condition'))
+        self._width_minimum = QSpinBox(self)
+        self._width_minimum.setRange(1, 10000)
+        self._width_minimum.setSuffix(' '+_('px'))
+        self._width_minimum_checkbox.setChecked(c.get(KEY_ONLY_IF_WIDTH_GREATER, DEFAULT_STORE_VALUES[KEY_ONLY_IF_WIDTH_GREATER]))
+        self._width_minimum.setValue(c.get(KEY_WIDTH_MINIMUM, DEFAULT_STORE_VALUES[KEY_WIDTH_MINIMUM]))
+        self._width_minimum.setEnabled(self._width_minimum_checkbox.isChecked())
+        self._width_minimum_checkbox.toggled.connect(self._width_minimum.setEnabled)
+        size_limits_layout.addWidget(self._width_minimum_checkbox, 1, 4)
+        size_limits_layout.addWidget(self._width_minimum, 1, 5)
+
+        size_limits_layout.addWidget(QLabel(_('Height'), self), 2, 0)
+        self._height_limit_checkbox = QCheckBox('<', self)
+        self._height_limit_checkbox.setToolTip(_('Resize if height is less than this value'))
+        self._height_limit_checkbox.setAccessibleName(_('Height less than condition'))
+        self._height_limit = QSpinBox(self)
+        self._height_limit.setRange(1, 10000)
+        self._height_limit.setSuffix(' '+_('px'))
+        self._height_limit_checkbox.setChecked(c.get(KEY_ONLY_IF_HEIGHT_SMALLER, DEFAULT_STORE_VALUES[KEY_ONLY_IF_HEIGHT_SMALLER]))
+        self._height_limit.setValue(c.get(KEY_HEIGHT_THRESHOLD, DEFAULT_STORE_VALUES[KEY_HEIGHT_THRESHOLD]))
+        self._height_limit.setEnabled(self._height_limit_checkbox.isChecked())
+        self._height_limit_checkbox.toggled.connect(self._height_limit.setEnabled)
+        size_limits_layout.addWidget(self._height_limit_checkbox, 2, 1)
+        size_limits_layout.addWidget(self._height_limit, 2, 2)
+
+        size_limits_layout.addWidget(QLabel(_('OR'), self), 2, 3)
+
+        self._height_minimum_checkbox = QCheckBox('>', self)
+        self._height_minimum_checkbox.setToolTip(_('Resize if height is greater than this value'))
+        self._height_minimum_checkbox.setAccessibleName(_('Height greater than condition'))
+        self._height_minimum = QSpinBox(self)
+        self._height_minimum.setRange(1, 10000)
+        self._height_minimum.setSuffix(' '+_('px'))
+        self._height_minimum_checkbox.setChecked(c.get(KEY_ONLY_IF_HEIGHT_GREATER, DEFAULT_STORE_VALUES[KEY_ONLY_IF_HEIGHT_GREATER]))
+        self._height_minimum.setValue(c.get(KEY_HEIGHT_MINIMUM, DEFAULT_STORE_VALUES[KEY_HEIGHT_MINIMUM]))
+        self._height_minimum.setEnabled(self._height_minimum_checkbox.isChecked())
+        self._height_minimum_checkbox.toggled.connect(self._height_minimum.setEnabled)
+        size_limits_layout.addWidget(self._height_minimum_checkbox, 2, 4)
+        size_limits_layout.addWidget(self._height_minimum, 2, 5)
+        size_limits_layout.addItem(
+            QSpacerItem(0, 0, qSizePolicy_Expanding, qSizePolicy_Minimum), 0, 6, 3, 1)
+
         # Add a vertical layout containing the the buttons to add/remove.
         button_layout = QVBoxLayout()
         table_layout.addLayout(button_layout)
@@ -227,12 +312,19 @@ class ConfigWidget(QWidget):
         other_layout.addWidget(help_button)
         other_layout.insertStretch(-1)
 
-        c = plugin_prefs[STORE_NAME]
         self._table.populate_table(c[KEY_SIZES])
 
     def save_settings(self):
         new_prefs = {}
         new_prefs[KEY_SIZES] = self._table.get_data()
+        new_prefs[KEY_ONLY_IF_WIDTH_SMALLER] = self._width_limit_checkbox.isChecked()
+        new_prefs[KEY_WIDTH_THRESHOLD] = self._width_limit.value()
+        new_prefs[KEY_ONLY_IF_HEIGHT_SMALLER] = self._height_limit_checkbox.isChecked()
+        new_prefs[KEY_HEIGHT_THRESHOLD] = self._height_limit.value()
+        new_prefs[KEY_ONLY_IF_WIDTH_GREATER] = self._width_minimum_checkbox.isChecked()
+        new_prefs[KEY_WIDTH_MINIMUM] = self._width_minimum.value()
+        new_prefs[KEY_ONLY_IF_HEIGHT_GREATER] = self._height_minimum_checkbox.isChecked()
+        new_prefs[KEY_HEIGHT_MINIMUM] = self._height_minimum.value()
         plugin_prefs[STORE_NAME] = new_prefs
 
     def edit_shortcuts(self):

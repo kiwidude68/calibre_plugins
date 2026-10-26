@@ -9,7 +9,7 @@ try:
 except ImportError:
     from PyQt5.Qt import QMenu, QToolButton, QPixmap, Qt
 
-from calibre.gui2 import info_dialog, pixmap_to_data
+from calibre.gui2 import pixmap_to_data
 from calibre.gui2.actions import InterfaceAction
 
 import calibre_plugins.resize_cover.config as cfg
@@ -102,17 +102,32 @@ class ResizeCoverAction(InterfaceAction):
         current_idx = self.gui.library_view.currentIndex()
         db = self.gui.library_view.model().db
         ids = set(self.gui.library_view.get_selected_ids())
+        options = cfg.plugin_prefs[cfg.STORE_NAME]
+        only_if_width_smaller = options.get(cfg.KEY_ONLY_IF_WIDTH_SMALLER, cfg.DEFAULT_STORE_VALUES[cfg.KEY_ONLY_IF_WIDTH_SMALLER])
+        width_threshold = options.get(cfg.KEY_WIDTH_THRESHOLD, cfg.DEFAULT_STORE_VALUES[cfg.KEY_WIDTH_THRESHOLD])
+        only_if_height_smaller = options.get(cfg.KEY_ONLY_IF_HEIGHT_SMALLER, cfg.DEFAULT_STORE_VALUES[cfg.KEY_ONLY_IF_HEIGHT_SMALLER])
+        height_threshold = options.get(cfg.KEY_HEIGHT_THRESHOLD, cfg.DEFAULT_STORE_VALUES[cfg.KEY_HEIGHT_THRESHOLD])
+        only_if_width_greater = options.get(cfg.KEY_ONLY_IF_WIDTH_GREATER, cfg.DEFAULT_STORE_VALUES[cfg.KEY_ONLY_IF_WIDTH_GREATER])
+        width_minimum = options.get(cfg.KEY_WIDTH_MINIMUM, cfg.DEFAULT_STORE_VALUES[cfg.KEY_WIDTH_MINIMUM])
+        only_if_height_greater = options.get(cfg.KEY_ONLY_IF_HEIGHT_GREATER, cfg.DEFAULT_STORE_VALUES[cfg.KEY_ONLY_IF_HEIGHT_GREATER])
+        height_minimum = options.get(cfg.KEY_HEIGHT_MINIMUM, cfg.DEFAULT_STORE_VALUES[cfg.KEY_HEIGHT_MINIMUM])
         resized_ids = []
         for book_id in ids:
             if db.has_cover(book_id):
                 cover = db.cover(book_id, index_is_id=True)
-                updated_cover = self.resize_cover_for_book(cover, width, height, keep_aspect_ratio, only_shrink)
-                db.set_cover(book_id, updated_cover)
-                resized_ids.append(book_id)
+                updated_cover = self.resize_cover_for_book(
+                    cover, width, height, keep_aspect_ratio, only_shrink,
+                    only_if_width_smaller, width_threshold,
+                    only_if_height_smaller, height_threshold,
+                    only_if_width_greater, width_minimum,
+                    only_if_height_greater, height_minimum)
+                if updated_cover is not None:
+                    db.set_cover(book_id, updated_cover)
+                    resized_ids.append(book_id)
 
         if len(resized_ids) == 0:
-            return info_dialog(self.gui, _('No covers resized'), _('None of the selected book(s) have covers'),
-                            show=True, show_copy_button=False)
+            self.gui.status_bar.show_message(_('No selected covers met the resize conditions'), 3000)
+            return
 
         self.gui.library_view.model().refresh_ids(resized_ids)
         self.gui.library_view.model().current_changed(current_idx, current_idx)
@@ -120,21 +135,35 @@ class ResizeCoverAction(InterfaceAction):
             self.gui.cover_flow.dataChanged()
 
 
-    def resize_cover_for_book(self, cover, width, height, keep_aspect_ratio, only_shrink):
+    def resize_cover_for_book(self, cover, width, height, keep_aspect_ratio, only_shrink,
+                              only_if_width_smaller, width_threshold,
+                              only_if_height_smaller, height_threshold,
+                              only_if_width_greater, width_minimum,
+                              only_if_height_greater, height_minimum):
         cover_pixmap = QPixmap()
         cover_pixmap.loadFromData(cover)
         org_width = cover_pixmap.width()
         org_height = cover_pixmap.height()
-        can_resize = True
 
-        if only_shrink:
-            can_resize = width < org_width or height < org_height
+        if only_shrink and not (width < org_width or height < org_height):
+            return None
 
-        if can_resize:
-            if keep_aspect_ratio:
-                cover_pixmap = cover_pixmap.scaled(width, height, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-            else:
-                cover_pixmap = cover_pixmap.scaled(width, height, Qt.IgnoreAspectRatio, Qt.SmoothTransformation)
+        resize_conditions = []
+        if only_if_width_smaller:
+            resize_conditions.append(org_width < width_threshold)
+        if only_if_height_smaller:
+            resize_conditions.append(org_height < height_threshold)
+        if only_if_width_greater:
+            resize_conditions.append(org_width > width_minimum)
+        if only_if_height_greater:
+            resize_conditions.append(org_height > height_minimum)
+        if resize_conditions and not any(resize_conditions):
+            return None
+
+        if keep_aspect_ratio:
+            cover_pixmap = cover_pixmap.scaled(width, height, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        else:
+            cover_pixmap = cover_pixmap.scaled(width, height, Qt.IgnoreAspectRatio, Qt.SmoothTransformation)
         return pixmap_to_data(cover_pixmap)
 
     def show_configuration(self):

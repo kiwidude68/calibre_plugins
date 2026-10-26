@@ -1,5 +1,10 @@
 # Resize Cover Change Log
 
+## [1.3.0] - 2026-10-26
+### Added
+- Include a global option to only resize covers if they are less than or greater than particular dimensions in size.
+- Remove the dialog for when no covers have been resized, display in status bar instead.
+
 ## [1.2.3] - 2026-10-10
 ### Added
 - French translation
