@@ -11,12 +11,12 @@ try:
     from qt.core import (QWidget, QHBoxLayout, QMenu, QTreeWidget, Qt, QIcon,
                         QTreeWidgetItem, QSize, QInputDialog, QToolButton,
                         QVBoxLayout, QAbstractItemView, QBrush, QPushButton,
-                        QUrl)
+                        QUrl, QStyledItemDelegate, QStyleOptionViewItem)
 except ImportError:                        
     from PyQt5.Qt import (QWidget, QHBoxLayout, QMenu, QTreeWidget, Qt, QIcon,
                         QTreeWidgetItem, QSize, QInputDialog, QToolButton,
                         QVBoxLayout, QAbstractItemView, QBrush, QPushButton,
-                        QUrl)
+                        QUrl, QStyledItemDelegate, QStyleOptionViewItem)
 
 try:
     load_translations()
@@ -59,13 +59,30 @@ def show_help():
     open_url(QUrl(HELP_URL))
 
 
+class ChildIndentDelegate(QStyledItemDelegate):
+
+    INDENT = 12
+
+    def paint(self, painter, option, index):
+        if index.parent().isValid():
+            option = QStyleOptionViewItem(option)
+            option.rect.adjust(self.INDENT, 0, 0, 0)
+        QStyledItemDelegate.paint(self, painter, option, index)
+
+    def updateEditorGeometry(self, editor, option, index):
+        if index.parent().isValid():
+            option = QStyleOptionViewItem(option)
+            option.rect.adjust(self.INDENT, 0, 0, 0)
+        QStyledItemDelegate.updateEditorGeometry(self, editor, option, index)
+
+
 class FavMenusListWidget(QTreeWidget):
 
     SEP = '--- ' + _('Separator') + ' ---'
-
     def __init__(self, parent):
         QTreeWidget.__init__(self, parent)
         self.header().hide()
+        self.setItemDelegate(ChildIndentDelegate(self))
         self.setSelectionMode(QAbstractItemView.SingleSelection)
         self.blank_icon = get_icon('blank.png')
 
@@ -75,7 +92,7 @@ class FavMenusListWidget(QTreeWidget):
                 group = QTreeWidgetItem(self)
                 group.setText(0, fav_menu['group'])
                 group.setIcon(0, self.blank_icon)
-                group.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
+                group.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable | Qt.ItemIsEditable)
                 group.setData(0, Qt.UserRole, ('group',))
                 for child in fav_menu.get('items', []):
                     self.populate_list_item(child, group)
@@ -159,7 +176,7 @@ class FavMenusListWidget(QTreeWidget):
     def add_group(self, name):
         group = QTreeWidgetItem([name])
         group.setIcon(0, self.blank_icon)
-        group.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
+        group.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable | Qt.ItemIsEditable)
         group.setData(0, Qt.UserRole, ('group',))
         current = self.currentItem()
         if current is None:

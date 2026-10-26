@@ -1,5 +1,10 @@
 # Favourites Menu Change Log
 
+## [1.4.1] - 2026-10-26
+### Fixed
+- Menu groups are now editable inline by pressing F2
+- Increased the indent size of submenu items in the configuration dialog to show more clearly.
+
 ## [1.4.0] - 2026-10-26
 ### Added
 - Menu items can now be added to submenu groups
