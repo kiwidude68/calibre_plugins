@@ -3,13 +3,12 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__ = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import time, json, os, re, random, traceback
-import xml.etree.ElementTree as et
+import time, json, re, random
 
 try:
-    from urllib.parse import quote
+    from urllib.parse import quote_plus
 except ImportError:
-    from urllib import quote
+    from urllib import quote_plus
 try:
     from queue import Empty, Queue
 except ImportError:
@@ -17,26 +16,20 @@ except ImportError:
 
 from six import text_type as unicode
 
-from lxml import etree
-from lxml.html import fromstring
-
 from calibre import as_unicode
 from calibre.ebooks import normalize
 from calibre.ebooks.metadata import check_isbn
 from calibre.ebooks.metadata.sources.base import Source, fixcase, fixauthors
 from calibre.utils.icu import lower
-from calibre.utils.cleantext import clean_ascii_chars
 from calibre.constants import numeric_version as calibre_version
 
-
-RECOVER_PARSER = etree.XMLParser(recover=True, no_network=True, resolve_entities=False)
 
 class Goodreads(Source):
 
     name = 'Goodreads'
     description = 'Downloads metadata and covers from Goodreads'
     author = 'Grant Drake'
-    version = (1, 9, 1)
+    version = (1, 10, 0)
     minimum_calibre_version = (2, 0, 0)
 
     capabilities = frozenset(['identify', 'cover'])
@@ -50,7 +43,6 @@ class Goodreads(Source):
     ID_NAME = 'goodreads'
     BASE_URL = 'https://www.goodreads.com'
     MAX_EDITIONS = 5
-    API_KEY = 'UxvtOM3ogQWjfgiCnMleA'
 
     @property
     def user_agent(self):
@@ -94,24 +86,6 @@ class Goodreads(Source):
         # serves the same Next.js page, including __NEXT_DATA__, at this URL.
         return '%s/book/show/%s.xml' % (self.BASE_URL, goodreads_id)
         
-    def create_query(self, title=None, authors=None):
-        tokens = []
-        scope = ''
-        if title or authors:
-            title_tokens = list(self.get_title_tokens(title, strip_joiners=False, strip_subtitle=True))
-            tokens += title_tokens
-            author_tokens = self.get_author_tokens(authors, only_first_author=True)
-            tokens += author_tokens
-            tokens = [quote(t.encode('utf-8') if isinstance(t, unicode) else t) for t in tokens]
-            if authors and not title:
-                scope = 'search=author&'
-            elif title and not authors:
-                scope = 'search=title&'
-        else:
-            return None
-        query = '+'.join(tokens)
-        return '%s/search/search.xml?%spage=1&q=%s&key=%s' % (Goodreads.BASE_URL, scope, query, self.API_KEY)
-
     def get_cached_cover_url(self, identifiers):
         url = None
         goodreads_id = identifiers.get(self.ID_NAME, None)
@@ -135,35 +109,37 @@ class Goodreads(Source):
         mi.authors = fixauthors(mi.authors)
         mi.isbn = check_isbn(mi.isbn)
 
+    def _get_autocomplete_results(self, log, abort, query, timeout=30):
+        '''Return autocomplete results; raise ValueError on a malformed response.'''
+        if not query:
+            return []
+        url = '%s/book/auto_complete?format=json&q=%s' % (
+            self.BASE_URL, quote_plus(unicode(query).encode('utf-8')))
+        if abort.is_set():
+            return []
+        log.info('Querying autocomplete API: %s' % url)
+        raw = self.browser.open_novisit(url, timeout=timeout).read()
+        log.debug('JSON Result: %s'%raw)
+        if not raw:
+            return []
+        try:
+            results = json.loads(raw)
+        except ValueError:
+            raise ValueError('Invalid autocomplete response for query: %r' % query)
+        if not isinstance(results, list):
+            raise ValueError('Unexpected autocomplete response for query: %r' % query)
+        return [result for result in results if isinstance(result, dict)]
+
     def get_goodreads_id_using_api(self, log, abort, timeout=30, identifier=None):
         
-        log.debug('get_goodreads_id_using_api - identifiers=%s' % identifier)
+        log.debug('get_goodreads_id_using_api - identifier=%s' % identifier)
         
         if not identifier:
             return None
         
-        goodreads_id = None
-        
-        br = self.browser
-        autocomplete_api_url = "https://www.goodreads.com/book/auto_complete?format=json&q="
-        query = autocomplete_api_url + identifier
-
-        if abort.is_set():
-            return
-       
-        try:
-            log.info('Querying using autocomplete API: %s' % query)
-            raw = br.open_novisit(query, timeout=timeout).read()
-            log.debug('JSON Result: %s'%raw)
-        except Exception as e:
-            err = 'Failed to make identify query: %r' % query
-            log.exception(err)
-            raise
-
-        if raw:
-            json_result = json.loads(raw)
-            if len(json_result) >= 1:
-                goodreads_id = json_result[0].get('bookId', None)
+        results = self._get_autocomplete_results(
+            log, abort, query=identifier, timeout=timeout)
+        goodreads_id = results[0].get('bookId') if results else None
         log.info('Result using autocomplete API: %s' % goodreads_id)
         return goodreads_id
         
@@ -201,6 +177,73 @@ class Goodreads(Source):
         return None
 
 
+    def _strip_series_from_title(self, text):
+        '''Strip a trailing '(Series, #N)' suffix.'''
+        if text.find('(') == -1:
+            return text.strip()
+        title, _, series_info = text.rpartition('(')
+        series_info = series_info.rpartition(')')[0]
+        if series_info.find('#') <= 0:
+            return text.strip()
+        while series_info.count(')') != series_info.count('('):
+            title_split = title.rpartition('(')
+            title = title_split[0]
+            series_info = title_split[2] + '(' + series_info
+        return title.strip()
+
+    def _matches(self, title_tokens, author_tokens, result):
+        title = (result.get('bookTitleBare') or '').strip()
+        if not title:
+            title = self._strip_series_from_title(result.get('title') or '')
+        title = lower(title)
+        author = result.get('author') or ''
+        if isinstance(author, dict):
+            author = author.get('name') or ''
+        if not result.get('bookId') or author == 'NOT A BOOK':
+            return False
+        author = lower(author)
+        if title_tokens and not any(lower(t) in title for t in title_tokens):
+            return False
+        if author_tokens and not any(lower(a) in author for a in author_tokens):
+            return False
+        return True
+
+    def _search_title_author(self, log, abort, title, authors, timeout=30):
+        '''Return up to MAX_EDITIONS plausible autocomplete matches.'''
+        query_title_tokens = list(self.get_title_tokens(
+            title, strip_joiners=False, strip_subtitle=True))
+        # Joiners such as 'the'/'a' are useful in the query but must not be
+        # used for matching, or any result containing them would be accepted.
+        match_title_tokens = list(self.get_title_tokens(title))
+        if query_title_tokens and not match_title_tokens:
+            match_title_tokens = query_title_tokens
+        author_tokens = list(self.get_author_tokens(authors))
+        queries = []
+        if query_title_tokens:
+            queries.append(' '.join(query_title_tokens))
+            if author_tokens:
+                queries.append(' '.join(author_tokens + query_title_tokens))
+        elif author_tokens:
+            queries.append(' '.join(author_tokens))
+        for query in queries:
+            if abort.is_set():
+                return []
+            matches = []
+            seen = set()
+            for result in self._get_autocomplete_results(
+                    log, abort, query=query, timeout=timeout):
+                if self._matches(match_title_tokens, author_tokens, result):
+                    book_id = result['bookId']
+                    if book_id not in seen:
+                        seen.add(book_id)
+                        matches.append(result)
+            if matches:
+                log.info('Autocomplete matches for %r: %s' % (query, ', '.join(
+                    '%s (%s)' % (r.get('title'), r['bookId']) for r in matches)))
+                return matches[:self.MAX_EDITIONS]
+        return []
+
+
     def identify(self, log, result_queue, abort, title=None, authors=None,
             identifiers={}, timeout=30):
         '''
@@ -228,35 +271,21 @@ class Goodreads(Source):
             matches.append(self.get_details_url(goodreads_id))
         else:
             # Can't find a valid id, so search using the title and authors.
-            log.info('No identifiers, searching for title/author')
-            title = normalize(title)
-            query = self.create_query(title=title, authors=authors)
-            if query is None:
+            if not title and not authors:
                 log.error('Insufficient metadata to construct query')
                 return
+            log.info('No identifiers, searching for title/author using autocomplete API')
+            title = normalize(title)
             try:
-                log.info('Querying: %s' % query)
-                response = br.open_novisit(query, timeout=timeout)
+                matched = self._search_title_author(log, abort, title, authors, timeout=timeout)
             except Exception as e:
-                err = 'Failed to make identify query: %r' % query
+                err = 'Failed to search Goodreads for title/author: %r' % title
                 log.exception(err)
                 return as_unicode(e)
-
-            try:
-                raw = response.read().strip()
-                raw = raw.decode('utf-8', errors='replace')
-                #open('E:\\goodreads_search.xml', 'wb').write(raw)
-                if not raw:
-                    log.error('Failed to get raw result for query: %r' % query)
-                    return
-                root = self.get_xml_tree(raw)
-            except:
-                msg = 'Failed to parse goodreads page for query: %r' % query
-                log.exception(msg)
-                return msg
-            # Now grab the first value from the search results, provided the
-            # title and authors appear to be for the same book
-            self._parse_search_results(log, title, authors, root, matches, timeout)
+            if not matched:
+                log.error('No matching book found for title/author: %r by %r' % (title, authors))
+                return
+            matches.extend(self.get_details_url(result['bookId']) for result in matched)
 
         if abort.is_set():
             return
@@ -282,99 +311,6 @@ class Goodreads(Source):
                 break
 
         return None
-
-    def get_xml_tree(self, content):
-        content = clean_ascii_chars(content)
-        try:
-            root = et.fromstring(content)
-        except:
-            traceback.format_exc()
-            root = et.fromstring(content, parser=RECOVER_PARSER)
-        if root is None:
-            import tempfile
-            cpath = os.path.join(tempfile.gettempdir(), 'xml_fail.xml')
-            f = open(cpath, 'w')
-            f.write(content)
-            f.close()
-            raise ValueError('The shelf contains a corrupting response from Goodreads. ' +
-                             'This can occur for certain books or may be a temporary issue with the website. ' +
-                             'See the Help file for this plugin for more details or try again later.<br><br>' +
-                             'The failed xml can be found at:<br>' + cpath)
-        return root
-
-    def _convert_goodreads_title_with_series(self, text):
-        # This function attempts to convert a myriad of Goodreads title
-        # combinations to strip out the series information as it is not
-        # available separately in the API
-        if text.find('(') == -1:
-            return (text, '')
-        text_split = text.rpartition('(')
-        title = text_split[0]
-        series_info = text_split[2]
-        series_info = series_info.rpartition(')')
-        series_info = series_info[0]
-        hash_pos = series_info.find('#')
-        if hash_pos <= 0:
-            # Cannot find the series # in expression or at start like (#1-7)
-            # so consider whole thing just as title
-            title = text
-            series_info = ''
-        else:
-            # Check to make sure we have got all of the series information
-            while series_info.count(')') != series_info.count('('):
-                title_split = title.rpartition('(')
-                title = title_split[0].strip()
-                series_info = title_split[2] + '(' + series_info
-        if series_info:
-            series_partition = series_info.rpartition('#')
-            series_name = series_partition[0].strip().replace(',', '')
-            series_index = series_partition[2].strip()
-            if series_index.find('-'):
-                # The series is specified as 1-3, 1-7 etc.
-                # In future we may offer config options to decide what to do,
-                # such as "Use start number", "Use value xxx" like 0 etc.
-                # For now will just take the start number and use that
-                series_index = series_index.partition('-')[0].strip()
-            series_info = '%s [%s]' % (series_name, series_index)
-        return (title.strip(), series_info)
-
-    def _parse_search_results(self, log, orig_title, orig_authors, root, matches, timeout):
-        work_nodes = root.findall('search/results/work')
-        if not work_nodes:
-            return
-        
-        title_tokens = list(self.get_title_tokens(orig_title))
-        author_tokens = list(self.get_author_tokens(orig_authors))
-
-        def ismatch(title, authors):
-            authors = lower(' '.join(authors))
-            title = lower(title)
-            match = not title_tokens
-            for t in title_tokens:
-                if lower(t) in title:
-                    match = True
-                    break
-            amatch = not author_tokens
-            for a in author_tokens:
-                if lower(a) in authors:
-                    amatch = True
-                    break
-            if not author_tokens: amatch = True
-            return match and amatch
-        
-        for work_node in work_nodes:
-            (title, series) = self._convert_goodreads_title_with_series(work_node.findtext('best_book/title').strip())
-            author = work_node.findtext('best_book/author/name')
-            if author == 'NOT A BOOK':
-                # Goodreads use this author to categorise ISBNs in their databases that
-                # are not actually books
-                continue
-            authors = [a.strip() for a in author.split(',')]
-            if ismatch(title, authors):
-                goodreads_id = work_node.findtext('best_book/id')
-                result_url = self.get_details_url(goodreads_id)
-                log.debug("_parse_search_results: Title: %s, Author: %s, URL: %s" % (title, author, result_url))
-                matches.append(result_url)
 
     def download_cover(self, log, result_queue, abort,
             title=None, authors=None, identifiers={}, timeout=30):
@@ -431,8 +367,293 @@ class Goodreads(Source):
 if __name__ == '__main__': # tests
     # To run these test use:
     # calibre-debug -e __init__.py
+    if not __debug__:
+        raise SystemExit('These tests use assert; do not run with Python -O')
     from calibre.ebooks.metadata.sources.test import (test_identify_plugin,
             title_test, authors_test, series_test, isbn_test)
+
+    def _make_test_plugin(browser=None):
+        # Bypass Source.__init__; the browser property lazily reads _browser.
+        plugin = Goodreads.__new__(Goodreads)
+        plugin._browser = browser
+        return plugin
+
+    class _FakeLog(object):
+        def __getattr__(self, name):
+            return lambda *args, **kwargs: None
+
+    class _FakeAbort(object):
+        def __init__(self, aborted=False):
+            self.aborted = aborted
+
+        def is_set(self):
+            return self.aborted
+
+    class _FakeBrowser(object):
+        def __init__(self, data):
+            self.data = data
+            self.urls = []
+
+        def open_novisit(self, url, timeout=None):
+            self.urls.append(url)
+            return self
+
+        def clone_browser(self):
+            return self
+
+        def read(self):
+            return self.data
+
+    def _make_fake_plugin(responses=None):
+        plugin = _make_test_plugin(_FakeBrowser(b''))
+        calls = []
+        responses = responses or {}
+
+        def fake_get_autocomplete_results(log, abort, query, timeout=30):
+            calls.append(query)
+            return responses.get(query, [])
+
+        plugin._get_autocomplete_results = fake_get_autocomplete_results
+        return plugin, calls
+
+    def _book_ids(results):
+        return [result['bookId'] for result in results]
+
+    def title_starts_with_test(prefix):
+        # title_test() uses substring matching, so require a word-boundary
+        # prefix to reject titles such as 'The Gifts of Imperfection'.
+        pattern = re.compile(r'^%s\b' % re.escape(prefix.lower()))
+
+        def test(mi):
+            return bool(mi.title) and bool(pattern.match(mi.title.lower()))
+
+        return test
+
+    def test_get_autocomplete_results():
+        log, abort = _FakeLog(), _FakeAbort()
+
+        # The query is encoded; empty queries/responses are no results.
+        browser = _FakeBrowser(b'[{"bookId": "1"}]')
+        plugin = _make_test_plugin(browser)
+        assert plugin._get_autocomplete_results(
+            log, abort, query='The Gift & More') == [{'bookId': '1'}]
+        assert 'q=The+Gift+%26+More' in browser.urls[0]
+        assert plugin._get_autocomplete_results(log, abort, query='') == []
+
+        plugin = _make_test_plugin(_FakeBrowser(b''))
+        assert plugin._get_autocomplete_results(
+            log, abort, query='The Gift') == []
+
+        # Malformed top-level responses raise; non-dict rows are ignored.
+        for data in (b'not json', b'{"bookId": "1"}'):
+            plugin = _make_test_plugin(_FakeBrowser(data))
+            try:
+                plugin._get_autocomplete_results(log, abort, query='The Gift')
+            except ValueError:
+                pass
+            else:
+                raise AssertionError('Expected malformed response to raise: %r' % data)
+
+        plugin = _make_test_plugin(
+            _FakeBrowser(b'[{"bookId": "1"}, "not a dict", null]'))
+        assert plugin._get_autocomplete_results(
+            log, abort, query='The Gift') == [{'bookId': '1'}]
+
+        plugin = _make_test_plugin(_FakeBrowser(b'["not a dict"]'))
+        assert plugin._get_autocomplete_results(
+            log, abort, query='The Gift') == []
+
+    def test_search_title_author():
+        log, abort = _FakeLog(), _FakeAbort()
+
+        # The title query has no Nora Roberts result, so the author+title
+        # retry is required.
+        plugin, calls = _make_fake_plugin({
+            'The Gift': [
+                {'bookId': '7015403', 'bookTitleBare': 'The Gifts of Imperfection',
+                 'author': {'name': 'Brene Brown'}},
+                {'bookId': '63945326', 'bookTitleBare': 'The Gift',
+                 'author': {'name': 'Freida McFadden'}},
+            ],
+            'Nora Roberts The Gift': [
+                {'bookId': '59826',
+                 'bookTitleBare': 'The Gift: Home for Christmas / All I Want for Christmas',
+                 'author': {'name': 'Nora Roberts'}},
+            ],
+        })
+        matched = plugin._search_title_author(log, abort, 'The Gift', ['Nora Roberts'])
+        assert _book_ids(matched) == ['59826']
+        assert calls == ['The Gift', 'Nora Roberts The Gift']
+
+        # The matching result is behind a wrong author, but no retry is needed.
+        plugin, calls = _make_fake_plugin({
+            'Playing with Fire': [
+                {'bookId': '48854978', 'bookTitleBare': 'Playing with Fire',
+                 'author': {'name': 'L.J. Shen'}},
+                {'bookId': '2157243', 'bookTitleBare': 'Playing with Fire',
+                 'author': {'name': 'Derek Landy'}},
+            ],
+        })
+        matched = plugin._search_title_author(
+            log, abort, 'Playing with Fire', ['Derek Landy'])
+        assert _book_ids(matched) == ['2157243']
+        assert calls == ['Playing with Fire']
+
+        # Series and subtitle are stripped from the query.
+        plugin, calls = _make_fake_plugin({
+            '61 Hours': [
+                {'bookId': '6977769', 'bookTitleBare': '61 Hours',
+                 'author': {'name': 'Lee Child'}},
+            ],
+        })
+        matched = plugin._search_title_author(
+            log, abort, '61 Hours (Jack Reacher, #14)', ['Lee Child'])
+        assert _book_ids(matched) == ['6977769']
+        assert calls == ['61 Hours']
+
+        # Candidates are deduplicated and capped at MAX_EDITIONS.
+        plugin, calls = _make_fake_plugin({
+            'Series': [
+                {'bookId': str(i), 'bookTitleBare': 'Series',
+                 'author': {'name': 'Author'}}
+                for i in range(Goodreads.MAX_EDITIONS + 1)
+            ],
+        })
+        matched = plugin._search_title_author(log, abort, 'Series', ['Author'])
+        assert _book_ids(matched) == [
+            str(i) for i in range(Goodreads.MAX_EDITIONS)]
+        assert calls == ['Series']
+
+        plugin, calls = _make_fake_plugin({
+            'Duplicate': [
+                {'bookId': '7', 'bookTitleBare': 'Duplicate',
+                 'author': {'name': 'Author'}},
+                {'bookId': '7', 'bookTitleBare': 'Duplicate',
+                 'author': {'name': 'Author'}},
+                {'bookId': '8', 'bookTitleBare': 'Duplicate',
+                 'author': {'name': 'Author'}},
+            ],
+        })
+        matched = plugin._search_title_author(log, abort, 'Duplicate', ['Author'])
+        assert _book_ids(matched) == ['7', '8']
+        assert calls == ['Duplicate']
+
+        # A result that only shares a joiner ('The') is not a match.
+        plugin, calls = _make_fake_plugin({
+            'The Reckoning': [
+                {'bookId': '9', 'bookTitleBare': 'The Crossing',
+                 'author': {'name': 'Michael Connelly'}},
+            ],
+        })
+        assert plugin._search_title_author(
+            log, abort, 'The Reckoning', ['Michael Connelly']) == []
+        assert calls == ['The Reckoning', 'Michael Connelly The Reckoning']
+
+        # Author-only lookups query the author tokens and still reject
+        # results by other authors.
+        plugin, calls = _make_fake_plugin({
+            'Nora Roberts': [
+                {'bookId': '59826', 'bookTitleBare': 'The Gift',
+                 'author': {'name': 'Nora Roberts'}},
+                {'bookId': '99999', 'bookTitleBare': 'The Gift',
+                 'author': {'name': 'Freida McFadden'}},
+            ],
+        })
+        matched = plugin._search_title_author(log, abort, None, ['Nora Roberts'])
+        assert _book_ids(matched) == ['59826']
+        assert calls == ['Nora Roberts']
+
+        # With neither a title nor an author there is nothing to query.
+        plugin, calls = _make_fake_plugin()
+        assert plugin._search_title_author(log, abort, None, None) == []
+        assert calls == []
+
+    def test_matches():
+        plugin = _make_test_plugin()
+        title_tokens, author_tokens = ['Poet'], ['Michael', 'Connelly']
+
+        # Study guides, NOT A BOOK and incomplete rows are rejected.
+        assert not plugin._matches(title_tokens, author_tokens, {
+            'bookId': '1',
+            'bookTitleBare': 'Summary & Study Guide The Poet by Michael Connelly',
+            'author': {'name': 'BookRags'}})
+        assert not plugin._matches(title_tokens, author_tokens, {
+            'bookId': '2', 'bookTitleBare': 'The Poet',
+            'author': {'name': 'NOT A BOOK'}})
+        assert not plugin._matches(title_tokens, author_tokens, {
+            'bookTitleBare': 'The Poet', 'author': {'name': 'Michael Connelly'}})
+        assert not plugin._matches(title_tokens, author_tokens, {
+            'bookId': '3', 'author': {'name': 'Michael Connelly'}})
+        assert plugin._matches(title_tokens, author_tokens, {
+            'bookId': '4', 'bookTitleBare': 'The Poet',
+            'author': {'name': 'Michael Connelly'}})
+        assert plugin._matches(['Gift'], [], {
+            'bookId': '5', 'bookTitleBare': 'The Gift',
+            'author': {'name': 'Nora Roberts'}})
+        assert not plugin._matches(['Gift'], [], {
+            'bookId': '6', 'bookTitleBare': 'The Gift',
+            'author': {'name': 'NOT A BOOK'}})
+
+        # When bookTitleBare is absent, strip the series suffix from title
+        # before matching, as the old XML search did.
+        assert not plugin._matches(['Jack'], [], {
+            'bookId': '7', 'title': '61 Hours (Jack Reacher, #14)',
+            'author': {'name': 'Lee Child'}})
+        assert plugin._matches(['Hours'], [], {
+            'bookId': '8', 'title': '61 Hours (Jack Reacher, #14)',
+            'author': {'name': 'Lee Child'}})
+
+    def test_identifier_lookup():
+        log, abort = _FakeLog(), _FakeAbort()
+        isbn = '9780385340588'
+        asin = 'B00TEST'
+
+        # Identifier lookup uses the first result, like the old flow; an
+        # empty first result falls through to the next identifier lookup.
+        plugin, calls = _make_fake_plugin({
+            isbn: [{'bookId': ''}, {'bookId': '67890'}],
+            asin: [{'bookId': '999'}],
+        })
+        assert not plugin.get_goodreads_id_using_api(log, abort, identifier=isbn)
+        assert calls == [isbn]
+        assert plugin.get_goodreads_id_from_identifiers(
+            log, abort, identifiers={'isbn': isbn}) is None
+        assert calls == [isbn, isbn]
+        assert plugin.get_goodreads_id_from_identifiers(
+            log, abort, identifiers={'isbn': isbn, 'asin': asin}) == '999'
+        assert calls == [isbn, isbn, isbn, asin]
+
+        # A non-empty first result is returned directly.
+        plugin, calls = _make_fake_plugin({isbn: [{'bookId': '12345'}]})
+        assert plugin.get_goodreads_id_using_api(log, abort, identifier=isbn) == '12345'
+        assert calls == [isbn]
+
+        # Empty responses and missing identifiers produce no ID.
+        plugin, calls = _make_fake_plugin({isbn: []})
+        assert plugin.get_goodreads_id_using_api(log, abort, identifier=isbn) is None
+        assert calls == [isbn]
+        assert plugin.get_goodreads_id_using_api(log, abort, identifier=None) is None
+        assert calls == [isbn]
+
+    def test_aborted_search_returns_no_results():
+        log = _FakeLog()
+        abort = _FakeAbort(aborted=True)
+
+        browser = _FakeBrowser(b'[{"bookId": "1"}]')
+        plugin = _make_test_plugin(browser)
+        assert plugin._get_autocomplete_results(log, abort, query='The Gift') == []
+        assert browser.urls == []
+
+        plugin, calls = _make_fake_plugin({'The Gift': [{'bookId': '1'}]})
+        assert plugin._search_title_author(log, abort, 'The Gift', ['Nora Roberts']) == []
+        assert calls == []
+
+    test_get_autocomplete_results()
+    test_search_title_author()
+    test_matches()
+    test_identifier_lookup()
+    test_aborted_search_returns_no_results()
+    print('Search helper tests passed')
 
     test_identify_plugin(Goodreads.name,
         [
@@ -486,3 +707,15 @@ if __name__ == '__main__': # tests
                  series_test('Thrive Space Colony Adventures', 4.0)]
             ),
         ])
+
+    # Title-only search falls back to author+title. Kept separate because the
+    # selected edition is an omnibus with no series. Accept any edition whose
+    # title starts with 'The Gift' (the omnibus does), but reject collections
+    # that merely mention it.
+    test_identify_plugin(Goodreads.name,
+        [
+            ({'title':'The Gift', 'authors':['Nora Roberts']},
+                [title_starts_with_test('The Gift'),
+                 authors_test(['Nora Roberts'])]
+            ),
+        ], fail_missing_meta=False)

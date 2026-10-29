@@ -1,5 +1,10 @@
 # Goodreads Change Log
 
+## [1.10.0] - 2026-10-29
+### Changed
+- Replace Goodreads XML search with the JSON autocomplete endpoint for
+  title/author discovery.
+
 ## [1.9.1] - 2026-06-14
 ### Fixed
 - Retrieve book detail pages through the `.xml` URL variant, which returns the
