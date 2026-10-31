@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Martin Sowa, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:55+1000\n"
+"PO-Revision-Date: 2022-09-08 19:50+0000\n"
+"Last-Translator: Martin Sowa, 2026\n"
+"Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: config.py:48
+msgid "Maximum title/author search matches to evaluate (1 = fastest):"
+msgstr ""
+"Maximálny počet zhôd pri vyhľadávaní podľa názvu/autora, ktoré sa majú "
+"vyhodnotiť (1 = najrýchlejšie):"
+
+#: config.py:49
+msgid ""
+"Increasing this value will consider more editions but also increase search times.\n"
+"\n"
+"This will increase the potential likelihood of getting a larger cover image\n"
+"but does not guarantee it."
+msgstr ""
+"Zvýšením tejto hodnoty sa zohľadní viac vydaní, ale zároveň sa predĺži čas vyhľadávania.\n"
+"\n"
+"Tým sa zvýši pravdepodobnosť získania väčšieho obrázka obálky,\n"
+"ale nezaručuje to."
+
+#: config.py:61
+msgid "Get all contributing authors (e.g. editors, illustrators etc)"
+msgstr ""
+"Získať všetkých spolupracujúcich autorov (napr. editorov, ilustrátorov atď.)"
+
+#: config.py:62
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"Ak je táto možnosť začiarknutá, získajú sa všetci autori.\n"
+"\n"
+"Ak nie je začiarknutá (predvolené), vrátia sa len hlavní autori."

@@ -1,5 +1,19 @@
 # Barnes & Noble Change Log
 
+## [1.5.9] - 2026-10-31
+### Added
+- Czech translation
+- Korean translation
+- Slovak translation
+- Serbian (Latin) translation
+- Swedish translation
+### Fixed
+- ABORTED ATTEMPT AT UPDATE - conceding defeat to B&N anti-scraping measures. 
+  The search feature needs rewriting as results are embedded in react streams, and my attempts at
+  even testing the parsing resulted in me being blocked.
+- Rewrite for B&N website changes, reduced metadata available.
+- Removed the Get all authors option as it will now be the default.
+
 ## [1.5.8] - 2026-02-09
 ### Added
 - Arabic translation

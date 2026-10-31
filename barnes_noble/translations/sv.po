@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:55+1000\n"
+"PO-Revision-Date: 2022-09-08 19:50+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config.py:48
+msgid "Maximum title/author search matches to evaluate (1 = fastest):"
+msgstr ""
+"Högsta antal sökträffar för titel/författare att utvärdera (1 = snabbast):"
+
+#: config.py:49
+msgid ""
+"Increasing this value will consider more editions but also increase search times.\n"
+"\n"
+"This will increase the potential likelihood of getting a larger cover image\n"
+"but does not guarantee it."
+msgstr ""
+"Om värdet ökas beaktas fler utgåvor, men sökningen tar också längre tid.\n"
+"\n"
+"Det ökar sannolikheten för att få en större omslagsbild,\n"
+"men garanterar det inte."
+
+#: config.py:61
+msgid "Get all contributing authors (e.g. editors, illustrators etc)"
+msgstr ""
+"Hämta alla medverkande upphovspersoner (t.ex. redaktörer och illustratörer)"
+
+#: config.py:62
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"När det här alternativet är markerat hämtas alla författare.\n"
+"\n"
+"När det är avmarkerat (standard) returneras endast den/de primära författaren/författarna."

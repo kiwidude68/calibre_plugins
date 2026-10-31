@@ -24,7 +24,6 @@ KEY_GET_ALL_AUTHORS = 'getAllAuthors'
 
 DEFAULT_STORE_VALUES = {
     KEY_MAX_DOWNLOADS: 1,
-    KEY_GET_ALL_AUTHORS: False
 }
 
 # This is where all preferences for this plugin will be stored
@@ -57,12 +56,6 @@ class ConfigWidget(DefaultConfigWidget):
         other_group_box_layout.addWidget(self.max_downloads_spin)
         other_group_box_layout.addStretch(1)
         options_group_box_layout.addLayout(other_group_box_layout)
-
-        self.all_authors_checkbox = QCheckBox(_('Get all contributing authors (e.g. editors, illustrators etc)'), self)
-        self.all_authors_checkbox.setToolTip(_('When this option is checked, all authors are retrieved.\n\n'
-                                              'When unchecked (default) only the primary author(s) are returned.'))
-        self.all_authors_checkbox.setChecked(c.get(KEY_GET_ALL_AUTHORS, DEFAULT_STORE_VALUES[KEY_GET_ALL_AUTHORS]))
-        options_group_box_layout.addWidget(self.all_authors_checkbox)
         
         options_group_box_layout.addStretch(1)
 
@@ -70,5 +63,4 @@ class ConfigWidget(DefaultConfigWidget):
         DefaultConfigWidget.commit(self)
         new_prefs = {}
         new_prefs[KEY_MAX_DOWNLOADS] = int(unicode(self.max_downloads_spin.value()))
-        new_prefs[KEY_GET_ALL_AUTHORS] = self.all_authors_checkbox.checkState() == Qt.Checked
         plugin_prefs[STORE_NAME] = new_prefs

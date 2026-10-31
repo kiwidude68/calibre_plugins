@@ -27,20 +27,19 @@ class BarnesNoble(Source):
     name = 'Barnes & Noble'
     description = 'Downloads metadata and covers from Barnes & Noble'
     author = 'Grant Drake'
-    version = (1, 5, 8)
+    version = (1, 5, 9)
     minimum_calibre_version = (2, 0, 0)
 
     ID_NAME = 'barnesnoble'
     capabilities = frozenset(['identify', 'cover'])
     touched_fields = frozenset(['title', 'authors', 'identifier:' + ID_NAME,
-        'identifier:isbn', 'rating', 'comments', 'publisher', 'pubdate',
-        'series'])
+        'identifier:isbn', 'rating', 'comments', 'publisher', 'series'])
     has_html_comments = True
     supports_gzip_transfer_encoding = True
 
     BASE_URL = 'https://search.barnesandnoble.com'
     BROWSE_URL = 'https://www.barnesandnoble.com'
-    SEARCH_URL = 'https://www.barnesandnoble.com/s'
+    SEARCH_URL = 'https://www.barnesandnoble.com/search?q='
 
     def config_widget(self):
         '''
@@ -95,7 +94,7 @@ class BarnesNoble(Source):
                 tokens += [quote(t.encode('utf-8') if isinstance(t, unicode) else t) for t in author_tokens]
         if len(tokens) == 0:
             return None
-        return BarnesNoble.SEARCH_URL + '/' + '%20'.join(tokens).lower()
+        return BarnesNoble.SEARCH_URL + '%20'.join(tokens).lower()
 
     def get_cached_cover_url(self, identifiers):
         url = None
@@ -142,6 +141,9 @@ class BarnesNoble(Source):
         barnes_noble_id = identifiers.get('barnesnoble', None)
         isbn = check_isbn(identifiers.get('isbn', None))
         br = self.browser
+        log.info('-------------------------------------------')
+        log.info('    Identify log information')
+        log.info('-------------------------------------------')
         if barnes_noble_id:
             log.info('Found barnes noble ID: %r' % barnes_noble_id)
             id_url = self.format_url_for_id(barnes_noble_id)
@@ -167,7 +169,7 @@ class BarnesNoble(Source):
                 # If we didn't then treat it as no matches on Barnes & Noble
                 location = response.geturl()
                 # If not an exact match we can get a search results page back
-                multiple_results_found = location.find('/s/') > 0
+                multiple_results_found = location.find('/search?q=') > 0
                 if location.find('noresults') == -1 and not multiple_results_found:
                     # This still might not be a specific book page
                     # e.g. if no ISBN match, B&N can bounce back to the home page.
@@ -191,7 +193,7 @@ class BarnesNoble(Source):
                 try:
                     log.info('Parsing search results')
                     raw = response.read().strip()
-                    #open('E:\\search_results.html', 'wb').write(raw)
+                    #open('E:\\bn_search_results.html', 'wb').write(raw)
                     raw = raw.decode('utf-8', errors='replace').replace('&hellip;','')
                     if not raw:
                         log.error('Failed to get raw result for query')

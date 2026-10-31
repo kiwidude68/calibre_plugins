@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Junghee Lee <daemul72@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:55+1000\n"
+"PO-Revision-Date: 2022-09-08 19:50+0000\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
+"Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: config.py:48
+msgid "Maximum title/author search matches to evaluate (1 = fastest):"
+msgstr "평가할 제목/저자 검색 최대 일치 수(1 = 가장 빠름):"
+
+#: config.py:49
+msgid ""
+"Increasing this value will consider more editions but also increase search times.\n"
+"\n"
+"This will increase the potential likelihood of getting a larger cover image\n"
+"but does not guarantee it."
+msgstr ""
+"이 값을 늘리면 더 많은 판본을 검사하지만 검색 시간도 늘어납니다.\n"
+"\n"
+"더 큰 표지 이미지를 얻을 가능성은 높아지지만,\n"
+"반드시 보장되지는 않습니다."
+
+#: config.py:61
+msgid "Get all contributing authors (e.g. editors, illustrators etc)"
+msgstr "기여 저자 모두 가져오기(예: 편집자, 일러스트레이터 등)"
+
+#: config.py:62
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"이 옵션을 선택하면 모든 저자 정보를 가져옵니다.\n"
+"\n"
+"선택하지 않으면(기본값) 주 저자만 가져옵니다."
