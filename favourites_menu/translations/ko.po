@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-26 01:08+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
@@ -81,7 +81,7 @@ msgstr "설정 삭제됨"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "클립보드에 복사"
 
@@ -102,15 +102,15 @@ msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용�
 msgid "Create new column"
 msgstr "새 열 만들기"
 
-#: action.py:68
+#: action.py:77
 msgid "Favourites"
 msgstr "즐겨찾기"
 
-#: action.py:155
+#: action.py:125
 msgid "&Customize plugin"
 msgstr "플러그인 설정(&C)"
 
-#: action.py:157 config.py:213
+#: action.py:127 config.py:290
 msgid "&Help"
 msgstr "도움말(&H)"
 
@@ -118,22 +118,38 @@ msgstr "도움말(&H)"
 msgid "Separator"
 msgstr "구분선"
 
-#: config.py:184
+#: config.py:255
 msgid "Move the selected menu item up"
 msgstr "선택한 메뉴 항목을 위로 이동"
 
-#: config.py:188
+#: config.py:259
 msgid "Move the selected menu item down"
 msgstr "선택한 메뉴 항목을 아래로 이동"
 
-#: config.py:192
+#: config.py:263
 msgid "Remove the selected item from the menu"
 msgstr "선택한 항목을 메뉴에서 제거"
 
-#: config.py:196
+#: config.py:267
 msgid "Add a separator to the menu following the selected item"
 msgstr "선택한 항목 다음에 메뉴 구분선을 추가"
 
-#: config.py:200
+#: config.py:271
+msgid "Add a submenu group"
+msgstr ""
+
+#: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
 msgstr "즐겨찾기 메뉴에 표시될 메뉴 항목 이름을 바꿉니다"
+
+#: config.py:342
+msgid "Add group"
+msgstr ""
+
+#: config.py:342 config.py:409
+msgid "Group name:"
+msgstr ""
+
+#: config.py:409
+msgid "Rename group"
+msgstr ""

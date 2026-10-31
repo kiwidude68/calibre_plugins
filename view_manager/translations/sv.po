@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-23 17:36+1000\n"
+"POT-Creation-Date: 2026-10-24 23:16+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
 "Last-Translator: Jonatan Nyberg, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:636
+#: ..\common\common_dialogs.py:84 config.py:725
 msgid "Keyboard shortcuts"
 msgstr "Kortkommandon"
 
@@ -91,7 +91,7 @@ msgstr "Inställningar borttagna"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Kopiera till urklipp"
 
@@ -118,111 +118,111 @@ msgstr "Skapa ny kolumn"
 msgid "View Manager"
 msgstr "Vyhanterare"
 
-#: action.py:87
+#: action.py:130
 msgid "&Save View Columns"
 msgstr "&Spara vykolumner"
 
-#: action.py:89
+#: action.py:132
 msgid "&Save View Sort"
 msgstr "Spara v&ysortering"
 
-#: action.py:92
+#: action.py:135
 msgid "Re-Apply Current View"
 msgstr "Tillämpa aktuell vy igen"
 
-#: action.py:99
+#: action.py:142
 msgid "&Create new View"
 msgstr "S&kapa ny vy"
 
-#: action.py:102
+#: action.py:145
 msgid "Previous View"
 msgstr "Föregående vy"
 
-#: action.py:104
+#: action.py:147
 msgid "Next View"
 msgstr "Nästa vy"
 
-#: action.py:108
+#: action.py:151
 msgid "&Customize plugin"
 msgstr "&Anpassa insticksmodul"
 
-#: action.py:110 config.py:645
+#: action.py:153 config.py:734
 msgid "&Help"
 msgstr "&Hjälp"
 
-#: action.py:158
+#: action.py:201
 msgid "Add new view"
 msgstr "Lägg till ny vy"
 
-#: action.py:159
+#: action.py:202
 msgid "Enter a unique display name for this view:"
 msgstr "Ange ett unikt visningsnamn för denna vy:"
 
-#: action.py:167 config.py:762 config.py:810
+#: action.py:210 config.py:861 config.py:909
 msgid "Add Failed"
 msgstr "Lägg till misslyckades"
 
-#: action.py:167 config.py:762 config.py:810
+#: action.py:210 config.py:861 config.py:909
 msgid "A view with the same name already exists"
 msgstr "Det finns redan en vy med samma namn"
 
-#: config.py:307
+#: config.py:360
 msgid "Sort ascending"
 msgstr "Sortera stigande"
 
-#: config.py:311
+#: config.py:364
 msgid "Sort descending"
 msgstr "Sortera fallande"
 
-#: config.py:382
+#: config.py:435
 msgid "Edit Columns Widths"
 msgstr "Redigera kolumnbredder"
 
-#: config.py:454
+#: config.py:507
 msgid "Select view to customize:"
 msgstr "Välj vy att anpassa:"
 
-#: config.py:460
+#: config.py:513
 msgid "Add view"
 msgstr "Lägg till vy"
 
-#: config.py:465
+#: config.py:518
 msgid "Delete view"
 msgstr "Ta bort vy"
 
-#: config.py:470 config.py:797
+#: config.py:523 config.py:896
 msgid "Rename view"
 msgstr "Döp om vy"
 
-#: config.py:476
+#: config.py:529
 msgid "Column Options"
 msgstr "Kolumnalternativ"
 
-#: config.py:485
+#: config.py:538
 msgid "Columns in Default (Left) pane"
 msgstr "Kolumner i standardpanelen (vänster)"
 
-#: config.py:487
+#: config.py:540
 msgid "Columns in view"
 msgstr "Kolumner i vy"
 
-#: config.py:491 config.py:507
+#: config.py:544 config.py:560
 msgid "Move column up"
 msgstr "Flytta kolumn upp"
 
-#: config.py:494 config.py:510
+#: config.py:547 config.py:563
 msgid "Move column down"
 msgstr "Flytta kolumn ner"
 
-#: config.py:498 config.py:514
+#: config.py:551 config.py:567
 msgid "Adjust width of columns"
 msgstr "Justera kolumnernas bredd"
 
-#: config.py:503
+#: config.py:556
 msgid "Columns in Split (Right) Pane"
 msgstr "Kolumner i den delade panelen (höger)"
 
-#: config.py:504
+#: config.py:557
 msgid ""
 "Split Book List will only be shown if this is checked. This will be checked "
 "if you save a Split View."
@@ -230,47 +230,57 @@ msgstr ""
 "Den delade boklistan visas endast om detta är markerat. Alternativet "
 "markeras om du sparar en delad vy."
 
-#: config.py:529
+#: config.py:582
 msgid "Sort order"
 msgstr "Sorteringsordning"
 
-#: config.py:532
+#: config.py:585
 msgid "Move sort column up"
 msgstr "Flytta sorteringskolumnen uppåt"
 
-#: config.py:535
+#: config.py:588
 msgid "Move sort down"
 msgstr "Flytta sorteringen nedåt"
 
-#: config.py:566
+#: config.py:619
 msgid "Search and Virtual Library Options"
 msgstr "Alternativ för sökning och virtuellt bibliotek"
 
-#: config.py:574
+#: config.py:627
 msgid "Apply saved search"
 msgstr "Tillämpa sparad sökning"
 
-#: config.py:575
+#: config.py:628
 msgid "Apply the selected saved search when the View is activated."
 msgstr "Tillämpa den valda sparade sökningen när vyn aktiveras."
 
-#: config.py:583
+#: config.py:636
 msgid "Switch to Virtual library"
 msgstr "Byt till virtuellt bibliotek"
 
-#: config.py:584
+#: config.py:637
 msgid "Switch to the selected Virtual library when the View is activated."
 msgstr "Byt till det valda virtuella biblioteket när vyn aktiveras."
 
-#: config.py:586
+#: config.py:639
 msgid "Virtual library to switch to."
 msgstr "Virtuellt bibliotek att byta till."
 
-#: config.py:591
+#: config.py:644
+msgid "Apply this view when changing to a matching VL tab"
+msgstr ""
+
+#: config.py:645
+msgid ""
+"Apply the selected settings when switching to a tab for this virtual library"
+" (or all books tab if no VL is set)."
+msgstr ""
+
+#: config.py:647
 msgid "Apply VL additional search restriction"
 msgstr "Tillämpa ytterligare sökbegränsning för virtuellt bibliotek"
 
-#: config.py:592
+#: config.py:648
 msgid ""
 "Apply the selected saved search as a Virtual library additional restriction "
 "when the View is activated."
@@ -278,63 +288,76 @@ msgstr ""
 "Tillämpa den valda sparade sökningen som en ytterligare begränsning för det "
 "virtuella biblioteket när vyn aktiveras."
 
-#: config.py:593
+#: config.py:649
 msgid "Clear VL restriction search"
 msgstr "Rensa begränsningssökningen för virtuellt bibliotek"
 
-#: config.py:594
+#: config.py:650
 msgid "Saved search to apply as VL additional search restriction."
 msgstr ""
 "Sparad sökning som ska användas som ytterligare sökbegränsning för virtuellt"
 " bibliotek."
 
-#: config.py:608
+#: config.py:664
+msgid "Main GUI Layout"
+msgstr ""
+
+#: config.py:671
+msgid "Unchanged"
+msgstr ""
+
+#: config.py:672
+msgid "Show"
+msgstr ""
+
+#: config.py:673
+msgid "Hide"
+msgstr ""
+
+#: config.py:697
 msgid "General Options"
 msgstr "Allmänna alternativ"
 
-#: config.py:613
+#: config.py:702
 msgid "Jump to the top when applying this View"
 msgstr "Gå längst upp när denna vy tillämpas"
 
-#: config.py:617
+#: config.py:706
 msgid "When restarting Calibre or switching to this library"
 msgstr "När calibre startas om eller när du byter till detta bibliotek"
 
-#: config.py:618
+#: config.py:707
 msgid "Automatically apply view:"
 msgstr "Tillämpa vy automatiskt:"
 
-#: config.py:624
+#: config.py:713
 msgid ""
-"Enabling this option may override any startup search restriction or title "
-"sort set in Preferences -> Behaviour/Tweaks."
+"Enabling may override any startup search restriction or title sort set in "
+"Preferences -> Behaviour/Tweaks."
 msgstr ""
-"Om detta alternativ aktiveras kan sökbegränsningar vid start eller "
-"titelsortering som angetts under Inställningar → Beteende/Justeringar "
-"åsidosättas."
 
-#: config.py:637
+#: config.py:726
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 "Redigera tangentbordets kortkommandon som hör samman med detta "
 "tilläggsprogram"
 
-#: config.py:639
+#: config.py:728
 msgid "&View library preferences"
 msgstr "&Visa biblioteksinställningar"
 
-#: config.py:640
+#: config.py:729
 msgid "View data stored in the library database for this plugin"
 msgstr "Visa data lagrat i biblioteksdatabasen för detta tilläggsprogram"
 
-#: config.py:798
+#: config.py:897
 msgid "Enter a new display name for this view:"
 msgstr "Ange ett nytt visningsnamn för denna vy:"
 
-#: config.py:829
+#: config.py:928
 msgid "Are you sure?"
 msgstr "Är du säker?"
 
-#: config.py:830
+#: config.py:929
 msgid "Do you want to delete the view named"
 msgstr "Vill du ta bort vyn med namnet"

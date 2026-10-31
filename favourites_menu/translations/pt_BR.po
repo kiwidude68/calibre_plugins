@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-26 01:08+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: Alice Ribeiro, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/calibre/teams/19337/pt_BR/)\n"
@@ -90,7 +90,7 @@ msgstr "Configurações removidas"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "Todas as configurações deste plugin nesta biblioteca foram limpas."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Copiar para a área de transferência"
 
@@ -113,15 +113,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Criar nova coluna"
 
-#: action.py:68
+#: action.py:77
 msgid "Favourites"
 msgstr "Favoritos"
 
-#: action.py:155
+#: action.py:125
 msgid "&Customize plugin"
 msgstr "Customizar plugin"
 
-#: action.py:157 config.py:213
+#: action.py:127 config.py:290
 msgid "&Help"
 msgstr "&Ajuda"
 
@@ -129,22 +129,38 @@ msgstr "&Ajuda"
 msgid "Separator"
 msgstr "Separador"
 
-#: config.py:184
+#: config.py:255
 msgid "Move the selected menu item up"
 msgstr "Mover para cima o item selecionado no menu"
 
-#: config.py:188
+#: config.py:259
 msgid "Move the selected menu item down"
 msgstr "Mover para baixo o item selecionado no menu"
 
-#: config.py:192
+#: config.py:263
 msgid "Remove the selected item from the menu"
 msgstr "Remover o item selecionado do menu"
 
-#: config.py:196
+#: config.py:267
 msgid "Add a separator to the menu following the selected item"
 msgstr "Adicionar separador no menu a partir do item selecionado"
 
-#: config.py:200
+#: config.py:271
+msgid "Add a submenu group"
+msgstr ""
+
+#: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
 msgstr "Renomear o item do menu quando este for mostrado no menu Favoritos"
+
+#: config.py:342
+msgid "Add group"
+msgstr ""
+
+#: config.py:342 config.py:409
+msgid "Group name:"
+msgstr ""
+
+#: config.py:409
+msgid "Rename group"
+msgstr ""

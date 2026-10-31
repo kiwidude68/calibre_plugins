@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-26 01:08+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: tony shen <anthanny@hotmail.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
@@ -86,7 +86,7 @@ msgstr "设置已删除"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "此插件库中的所有设置都已清除。"
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "复制到剪贴板"
 
@@ -107,15 +107,15 @@ msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre�
 msgid "Create new column"
 msgstr "创建新列"
 
-#: action.py:68
+#: action.py:77
 msgid "Favourites"
 msgstr "收藏夹"
 
-#: action.py:155
+#: action.py:125
 msgid "&Customize plugin"
 msgstr "&个性化插件"
 
-#: action.py:157 config.py:213
+#: action.py:127 config.py:290
 msgid "&Help"
 msgstr "帮助 (&H)"
 
@@ -123,22 +123,38 @@ msgstr "帮助 (&H)"
 msgid "Separator"
 msgstr "分隔符"
 
-#: config.py:184
+#: config.py:255
 msgid "Move the selected menu item up"
 msgstr "将选定的菜单项向上移动"
 
-#: config.py:188
+#: config.py:259
 msgid "Move the selected menu item down"
 msgstr "将选定的菜单项向下移动"
 
-#: config.py:192
+#: config.py:263
 msgid "Remove the selected item from the menu"
 msgstr "从菜单中删除所选项目"
 
-#: config.py:196
+#: config.py:267
 msgid "Add a separator to the menu following the selected item"
 msgstr "在所选项目后面的菜单中添加分隔符"
 
-#: config.py:200
+#: config.py:271
+msgid "Add a submenu group"
+msgstr ""
+
+#: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
 msgstr "当菜单项出现在“收藏夹”菜单上时，重命名该菜单项"
+
+#: config.py:342
+msgid "Add group"
+msgstr ""
+
+#: config.py:342 config.py:409
+msgid "Group name:"
+msgstr ""
+
+#: config.py:409
+msgid "Rename group"
+msgstr ""

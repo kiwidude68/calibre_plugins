@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-26 01:08+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: Martin Sowa, 2026\n"
 "Language-Team: Slovak (https://app.transifex.com/calibre/teams/19337/sk/)\n"
@@ -86,7 +86,7 @@ msgid "All settings for this plugin in this library have been cleared."
 msgstr ""
 "Všetky nastavenia tohto zásuvného modulu v tejto knižnici boli vymazané."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Kopírovať do schránky"
 
@@ -109,15 +109,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Vytvoriť nový stĺpec"
 
-#: action.py:68
+#: action.py:77
 msgid "Favourites"
 msgstr "Obľúbené"
 
-#: action.py:155
+#: action.py:125
 msgid "&Customize plugin"
 msgstr "&Prispôsobiť zásuvný modul"
 
-#: action.py:157 config.py:213
+#: action.py:127 config.py:290
 msgid "&Help"
 msgstr "&Pomocník"
 
@@ -125,22 +125,38 @@ msgstr "&Pomocník"
 msgid "Separator"
 msgstr "Oddeľovač"
 
-#: config.py:184
+#: config.py:255
 msgid "Move the selected menu item up"
 msgstr "Posunúť vybranú položku ponuky nahor"
 
-#: config.py:188
+#: config.py:259
 msgid "Move the selected menu item down"
 msgstr "Posunúť vybranú položku ponuky nadol"
 
-#: config.py:192
+#: config.py:263
 msgid "Remove the selected item from the menu"
 msgstr "Odstrániť vybranú položku z ponuky"
 
-#: config.py:196
+#: config.py:267
 msgid "Add a separator to the menu following the selected item"
 msgstr "Pridať oddeľovač do ponuky za vybranú položku"
 
-#: config.py:200
+#: config.py:271
+msgid "Add a submenu group"
+msgstr ""
+
+#: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
 msgstr "Premenovať položku ponuky pre jej zobrazenie v ponuke Obľúbené"
+
+#: config.py:342
+msgid "Add group"
+msgstr ""
+
+#: config.py:342 config.py:409
+msgid "Group name:"
+msgstr ""
+
+#: config.py:409
+msgid "Rename group"
+msgstr ""

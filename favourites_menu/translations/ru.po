@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-26 01:08+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: Caarmi, 2022\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -85,7 +85,7 @@ msgstr "Настройки удалены"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "Все настройки для этого плагина в этой библиотеке были очищены."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Копировать в Буфер обмена"
 
@@ -108,15 +108,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
-#: action.py:68
+#: action.py:77
 msgid "Favourites"
 msgstr "Избранное"
 
-#: action.py:155
+#: action.py:125
 msgid "&Customize plugin"
 msgstr "&Настроить плагин"
 
-#: action.py:157 config.py:213
+#: action.py:127 config.py:290
 msgid "&Help"
 msgstr "Спр&авка"
 
@@ -124,22 +124,38 @@ msgstr "Спр&авка"
 msgid "Separator"
 msgstr "Разделитель"
 
-#: config.py:184
+#: config.py:255
 msgid "Move the selected menu item up"
 msgstr "Переместить выбранный пункт меню вверх"
 
-#: config.py:188
+#: config.py:259
 msgid "Move the selected menu item down"
 msgstr "Переместить выбранный пункт меню вниз"
 
-#: config.py:192
+#: config.py:263
 msgid "Remove the selected item from the menu"
 msgstr "Удалить выбранный пункт из меню"
 
-#: config.py:196
+#: config.py:267
 msgid "Add a separator to the menu following the selected item"
 msgstr "Добавить разделитель в меню после выбранного пункта"
 
-#: config.py:200
+#: config.py:271
+msgid "Add a submenu group"
+msgstr ""
+
+#: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
 msgstr "Переименовать пункт меню, когда он появится в меню «Избранное»."
+
+#: config.py:342
+msgid "Add group"
+msgstr ""
+
+#: config.py:342 config.py:409
+msgid "Group name:"
+msgstr ""
+
+#: config.py:409
+msgid "Rename group"
+msgstr ""

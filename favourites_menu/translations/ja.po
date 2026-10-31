@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-26 01:08+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
@@ -82,7 +82,7 @@ msgstr "設定は削除されました。"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "このライブラリにこのプラグインの全ての設定はクリアされました。"
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "クリップボードにコピー"
 
@@ -103,15 +103,15 @@ msgstr "タイトル画像が見つかりません。本プラグインを使用
 msgid "Create new column"
 msgstr "新しい列を作成"
 
-#: action.py:68
+#: action.py:77
 msgid "Favourites"
 msgstr "お気に入り"
 
-#: action.py:155
+#: action.py:125
 msgid "&Customize plugin"
 msgstr "プラグインをカスタマイズ (&C)"
 
-#: action.py:157 config.py:213
+#: action.py:127 config.py:290
 msgid "&Help"
 msgstr "ヘルプ(&H)"
 
@@ -119,22 +119,38 @@ msgstr "ヘルプ(&H)"
 msgid "Separator"
 msgstr "区切り線"
 
-#: config.py:184
+#: config.py:255
 msgid "Move the selected menu item up"
 msgstr "選択したメニュー項目を上に移動"
 
-#: config.py:188
+#: config.py:259
 msgid "Move the selected menu item down"
 msgstr "選択したメニュー項目を下に移動"
 
-#: config.py:192
+#: config.py:263
 msgid "Remove the selected item from the menu"
 msgstr "選択したメニュー項目を削除"
 
-#: config.py:196
+#: config.py:267
 msgid "Add a separator to the menu following the selected item"
 msgstr "選択したメニュー項目の下に区切り線を追加"
 
-#: config.py:200
+#: config.py:271
+msgid "Add a submenu group"
+msgstr "サブメニューグループを追加"
+
+#: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
 msgstr "お気に入りメニューに表示する時のメニュー項目の名称を変更"
+
+#: config.py:342
+msgid "Add group"
+msgstr "グループを追加"
+
+#: config.py:342 config.py:409
+msgid "Group name:"
+msgstr "グループ名:"
+
+#: config.py:409
+msgid "Rename group"
+msgstr "グループ名を変更"

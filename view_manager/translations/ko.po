@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-12-23 17:36+1000\n"
+"POT-Creation-Date: 2026-10-24 23:16+1000\n"
 "PO-Revision-Date: 2022-09-13 12:25+0000\n"
 "Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:636
+#: ..\common\common_dialogs.py:84 config.py:725
 msgid "Keyboard shortcuts"
 msgstr "키보드 단축키"
 
@@ -81,7 +81,7 @@ msgstr "설정 삭제됨"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "클립보드에 복사"
 
@@ -106,212 +106,238 @@ msgstr "새 열 만들기"
 msgid "View Manager"
 msgstr "보기 관리자"
 
-#: action.py:87
+#: action.py:130
 msgid "&Save View Columns"
 msgstr "보기 열 저장(&V)"
 
-#: action.py:89
+#: action.py:132
 msgid "&Save View Sort"
 msgstr "보기 정렬 저장(&S)"
 
-#: action.py:92
+#: action.py:135
 msgid "Re-Apply Current View"
 msgstr "현재 보기 다시 적용"
 
-#: action.py:99
+#: action.py:142
 msgid "&Create new View"
 msgstr "새 보기 만들기(&C)"
 
-#: action.py:102
+#: action.py:145
 msgid "Previous View"
 msgstr "이전 보기"
 
-#: action.py:104
+#: action.py:147
 msgid "Next View"
 msgstr "다음 보기"
 
-#: action.py:108
+#: action.py:151
 msgid "&Customize plugin"
 msgstr "플러그인 설정(&C)"
 
-#: action.py:110 config.py:645
+#: action.py:153 config.py:734
 msgid "&Help"
 msgstr "도움말(&H)"
 
-#: action.py:158
+#: action.py:201
 msgid "Add new view"
 msgstr "새 보기 추가"
 
-#: action.py:159
+#: action.py:202
 msgid "Enter a unique display name for this view:"
 msgstr "이 보기의 고유한 표시 이름을 입력하세요:"
 
-#: action.py:167 config.py:762 config.py:810
+#: action.py:210 config.py:861 config.py:909
 msgid "Add Failed"
 msgstr "추가 실패"
 
-#: action.py:167 config.py:762 config.py:810
+#: action.py:210 config.py:861 config.py:909
 msgid "A view with the same name already exists"
 msgstr "같은 이름의 보기가 이미 있습니다"
 
-#: config.py:307
+#: config.py:360
 msgid "Sort ascending"
 msgstr "오름차순 정렬"
 
-#: config.py:311
+#: config.py:364
 msgid "Sort descending"
 msgstr "내림차순 정렬"
 
-#: config.py:382
+#: config.py:435
 msgid "Edit Columns Widths"
 msgstr "열 너비 편집"
 
-#: config.py:454
+#: config.py:507
 msgid "Select view to customize:"
 msgstr "사용자 지정할 보기를 선택하세요:"
 
-#: config.py:460
+#: config.py:513
 msgid "Add view"
 msgstr "보기 추가"
 
-#: config.py:465
+#: config.py:518
 msgid "Delete view"
 msgstr "보기 삭제"
 
-#: config.py:470 config.py:797
+#: config.py:523 config.py:896
 msgid "Rename view"
 msgstr "보기 이름 바꾸기"
 
-#: config.py:476
+#: config.py:529
 msgid "Column Options"
 msgstr "열 옵션"
 
-#: config.py:485
+#: config.py:538
 msgid "Columns in Default (Left) pane"
 msgstr "기본(왼쪽) 창의 열"
 
-#: config.py:487
+#: config.py:540
 msgid "Columns in view"
 msgstr "보기의 열"
 
-#: config.py:491 config.py:507
+#: config.py:544 config.py:560
 msgid "Move column up"
 msgstr "열 위로 이동"
 
-#: config.py:494 config.py:510
+#: config.py:547 config.py:563
 msgid "Move column down"
 msgstr "열 아래로 이동"
 
-#: config.py:498 config.py:514
+#: config.py:551 config.py:567
 msgid "Adjust width of columns"
 msgstr "열 너비 조정"
 
-#: config.py:503
+#: config.py:556
 msgid "Columns in Split (Right) Pane"
 msgstr "분할(오른쪽) 창의 열"
 
-#: config.py:504
+#: config.py:557
 msgid ""
 "Split Book List will only be shown if this is checked. This will be checked "
 "if you save a Split View."
 msgstr "이 옵션을 선택해야만 분할 도서 목록이 표시됩니다. 분할 보기를 저장하면 자동으로 선택됩니다."
 
-#: config.py:529
+#: config.py:582
 msgid "Sort order"
 msgstr "정렬 순서"
 
-#: config.py:532
+#: config.py:585
 msgid "Move sort column up"
 msgstr "정렬 열 위로 이동"
 
-#: config.py:535
+#: config.py:588
 msgid "Move sort down"
 msgstr "정렬 아래로 이동"
 
-#: config.py:566
+#: config.py:619
 msgid "Search and Virtual Library Options"
 msgstr "검색 및 가상 라이브러리 옵션"
 
-#: config.py:574
+#: config.py:627
 msgid "Apply saved search"
 msgstr "저장된 검색 적용"
 
-#: config.py:575
+#: config.py:628
 msgid "Apply the selected saved search when the View is activated."
 msgstr "보기가 활성화될 때 선택한 저장된 검색을 적용합니다."
 
-#: config.py:583
+#: config.py:636
 msgid "Switch to Virtual library"
 msgstr "가상 라이브러리로 전환"
 
-#: config.py:584
+#: config.py:637
 msgid "Switch to the selected Virtual library when the View is activated."
 msgstr "보기가 활성화될 때 선택한 가상 라이브러리로 전환합니다."
 
-#: config.py:586
+#: config.py:639
 msgid "Virtual library to switch to."
 msgstr "전환할 가상 라이브러리입니다."
 
-#: config.py:591
+#: config.py:644
+msgid "Apply this view when changing to a matching VL tab"
+msgstr ""
+
+#: config.py:645
+msgid ""
+"Apply the selected settings when switching to a tab for this virtual library"
+" (or all books tab if no VL is set)."
+msgstr ""
+
+#: config.py:647
 msgid "Apply VL additional search restriction"
 msgstr "가상 라이브러리 추가 검색 제한 적용"
 
-#: config.py:592
+#: config.py:648
 msgid ""
 "Apply the selected saved search as a Virtual library additional restriction "
 "when the View is activated."
 msgstr "보기가 활성화될 때 선택한 저장된 검색을 가상 라이브러리의 추가 제한으로 적용합니다."
 
-#: config.py:593
+#: config.py:649
 msgid "Clear VL restriction search"
 msgstr "가상 라이브러리 제한 검색 지우기"
 
-#: config.py:594
+#: config.py:650
 msgid "Saved search to apply as VL additional search restriction."
 msgstr "가상 라이브러리 추가 제한으로 적용할 저장된 검색입니다."
 
-#: config.py:608
+#: config.py:664
+msgid "Main GUI Layout"
+msgstr ""
+
+#: config.py:671
+msgid "Unchanged"
+msgstr ""
+
+#: config.py:672
+msgid "Show"
+msgstr ""
+
+#: config.py:673
+msgid "Hide"
+msgstr ""
+
+#: config.py:697
 msgid "General Options"
 msgstr "일반 옵션"
 
-#: config.py:613
+#: config.py:702
 msgid "Jump to the top when applying this View"
 msgstr "이 보기를 적용할 때 맨 위로 이동"
 
-#: config.py:617
+#: config.py:706
 msgid "When restarting Calibre or switching to this library"
 msgstr "calibre를 다시 시작하거나 이 라이브러리로 전환할 때"
 
-#: config.py:618
+#: config.py:707
 msgid "Automatically apply view:"
 msgstr "보기 자동 적용:"
 
-#: config.py:624
+#: config.py:713
 msgid ""
-"Enabling this option may override any startup search restriction or title "
-"sort set in Preferences -> Behaviour/Tweaks."
-msgstr "이 옵션을 켜면 환경 설정 -> 동작/조정에서 설정한 시작 시 검색 제한이나 제목 정렬이 덮어써질 수 있습니다."
+"Enabling may override any startup search restriction or title sort set in "
+"Preferences -> Behaviour/Tweaks."
+msgstr ""
 
-#: config.py:637
+#: config.py:726
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
 
-#: config.py:639
+#: config.py:728
 msgid "&View library preferences"
 msgstr "서재 환경 설정 보기(&V)"
 
-#: config.py:640
+#: config.py:729
 msgid "View data stored in the library database for this plugin"
 msgstr "이 플러그인에 대해 서재 데이터베이스에 저장된 데이터를 봅니다"
 
-#: config.py:798
+#: config.py:897
 msgid "Enter a new display name for this view:"
 msgstr "이 보기의 새 표시 이름을 입력하세요:"
 
-#: config.py:829
+#: config.py:928
 msgid "Are you sure?"
 msgstr "계속하시겠습니까?"
 
-#: config.py:830
+#: config.py:929
 msgid "Do you want to delete the view named"
 msgstr "다음 이름의 보기를 삭제하시겠습니까"

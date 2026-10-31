@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-26 01:08+1000\n"
 "PO-Revision-Date: 2022-09-19 15:15+0000\n"
 "Last-Translator: Branislav Kapetanovic, 2026\n"
 "Language-Team: Serbian (Latin) (https://app.transifex.com/calibre/teams/19337/sr@latin/)\n"
@@ -88,7 +88,7 @@ msgstr "Podešavanja su obrisana"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "Sva podešavanja ovog dodatka u ovoj biblioteci su obrisana."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Kopiraj u privremenu memoriju"
 
@@ -111,15 +111,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Napravi novu kolonu"
 
-#: action.py:68
+#: action.py:77
 msgid "Favourites"
 msgstr "Omiljeno"
 
-#: action.py:155
+#: action.py:125
 msgid "&Customize plugin"
 msgstr "&Prilagodi dodatak"
 
-#: action.py:157 config.py:213
+#: action.py:127 config.py:290
 msgid "&Help"
 msgstr "&Pomoć"
 
@@ -127,22 +127,38 @@ msgstr "&Pomoć"
 msgid "Separator"
 msgstr "Razdvajač"
 
-#: config.py:184
+#: config.py:255
 msgid "Move the selected menu item up"
 msgstr "Pomeri izabranu stavku menija nagore"
 
-#: config.py:188
+#: config.py:259
 msgid "Move the selected menu item down"
 msgstr "Pomeri izabranu stavku menija nadole"
 
-#: config.py:192
+#: config.py:263
 msgid "Remove the selected item from the menu"
 msgstr "Ukloni izabranu stavku iz menija"
 
-#: config.py:196
+#: config.py:267
 msgid "Add a separator to the menu following the selected item"
 msgstr "Dodaj razdvajač u meni iza izabrane stavke"
 
-#: config.py:200
+#: config.py:271
+msgid "Add a submenu group"
+msgstr "Dodaj grupu podmenija"
+
+#: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
 msgstr "Promeni naziv stavke koji će se prikazivati u meniju Omiljeno"
+
+#: config.py:342
+msgid "Add group"
+msgstr "Dodaj grupu"
+
+#: config.py:342 config.py:409
+msgid "Group name:"
+msgstr "Ime grupe:"
+
+#: config.py:409
+msgid "Rename group"
+msgstr "Preimenuj grupu"
