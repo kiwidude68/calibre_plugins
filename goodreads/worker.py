@@ -77,6 +77,9 @@ class Worker(Thread): # Get details
 
     def get_details(self):
         try:
+            self.log.info('-------------------------------------------')
+            self.log.info('    Worker log information')
+            self.log.info('-------------------------------------------')
             self.log.info('Goodreads book url: %r'%self.url)
             raw = self.browser.open_novisit(self.url, timeout=self.timeout).read().strip()
         except Exception as e:

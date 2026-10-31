@@ -1,9 +1,12 @@
 # Goodreads Change Log
 
-## [1.10.0] - 2026-10-29
+## [1.10.0] - 2026-10-31
+### Added
+- Czech translation
+- Slovak translation
+- Serbian (Latin) translation
 ### Changed
-- Replace Goodreads XML search with the JSON autocomplete endpoint for
-  title/author discovery.
+- Replace Goodreads XML search with the JSON autocomplete endpoint for title/author discovery. (fran2889)
 
 ## [1.9.1] - 2026-06-14
 ### Fixed

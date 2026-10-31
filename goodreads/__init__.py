@@ -252,6 +252,9 @@ class Goodreads(Source):
         '''
         matches = []
         goodreads_id = None
+        log.info('-------------------------------------------')
+        log.info('    Identify log information')
+        log.info('-------------------------------------------')
         log.debug('identify - start. title=%s, authors=%s, identifiers=%s' % (title, authors, identifiers))
         # Unlike the other metadata sources, if we have a goodreads id then we
         # do not need to fire a "search" at Goodreads.com. Instead we will be

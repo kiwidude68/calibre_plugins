@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Grant Drake, 2022
+# seeder seeder, 2024
+# Pavel Sem, 2026
+# Michal Várady <miko.vaji@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"PO-Revision-Date: 2022-09-07 15:49+0000\n"
+"Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2026\n"
+"Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: ..\common\common_dialogs.py:84
+msgid "Keyboard shortcuts"
+msgstr "Klávesové zkratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Restartovat calibre nyní"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Předvolby pro:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazat"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazat všechna nastavení tohoto modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "Opravdu chcete změnit nastavení tohoto modulu v této knihovně?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavení v jiných knihovnách ani nastavení uložená v souboru JSON ve složce"
+" modulů calibre se nezmění."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Poté bude nutné calibre restartovat."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavení změněno"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavení tohoto modulu v této knihovně bylo změněno."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Restartujte prosím calibre nyní."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "Opravdu chcete vymazat nastavení tohoto modulu v této knihovně?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavení vymazáno"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Všechna nastavení tohoto modulu v této knihovně byla vymazána."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovat do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinováno"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžadován restart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Ikona titulku nebyla nalezena. Před použitím tohoto modulu musíte "
+"restartovat calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvořit nový sloupec"
+
+#: config.py:154
+msgid "Goodreads Genre"
+msgstr "Žánr Goodreads"
+
+#: config.py:154
+msgid "Maps to Calibre Tag"
+msgstr "Mapuje se na štítek calibre"
+
+#: config.py:223
+msgid "Goodreads genre to calibre tag mappings"
+msgstr "Mapování žánrů Goodreads na štítky calibre"
+
+#: config.py:228
+msgid "Filter and map genres to calibre tags"
+msgstr "Filtrovat a mapovat žánry na štítky calibre"
+
+#: config.py:229
+msgid ""
+"When checked, only specific calibre tags will be used as per below.\n"
+"When unchecked, all Goodreads genres will be added as tags."
+msgstr ""
+"Pokud je zaškrtnuto, použijí se jen konkrétní štítky calibre podle nastavení níže.\n"
+"Pokud není zaškrtnuto, všechny žánry Goodreads se přidají jako štítky."
+
+#: config.py:242
+msgid "Add genre mapping"
+msgstr "Přidat mapování žánru"
+
+#: config.py:249
+msgid "Delete genre mapping"
+msgstr "Odstranit mapování žánru"
+
+#: config.py:256
+msgid "Rename Goodreads genre"
+msgstr "Přejmenovat žánr Goodreads"
+
+#: config.py:263
+msgid "Reset to plugin default mappings"
+msgstr "Obnovit výchozí mapování modulu"
+
+#: config.py:269
+msgid "Other options"
+msgstr "Další volby"
+
+#: config.py:274
+msgid "Scan multiple editions for title/author searches (slower)"
+msgstr "Prohledat více vydání při hledání podle názvu/autora (pomalejší)"
+
+#: config.py:275
+msgid ""
+"When checked will perform an additional search to scan the top ranked\n"
+"Goodreads editions (if available) to exclude audiobook editions.\n"
+"When unchecked you will get a faster search but the edition is indeterminate."
+msgstr ""
+"Pokud je zaškrtnuto, provede se další hledání, které projde nejlépe umístěná\n"
+"vydání Goodreads (pokud jsou k dispozici), aby se vyloučila vydání audioknih.\n"
+"Pokud není zaškrtnuto, hledání bude rychlejší, ale vydání nebude jednoznačně určeno."
+
+#: config.py:281
+msgid "Get all contributing authors (e.g. illustrators, series editors etc)"
+msgstr ""
+"Získat všechny přispívající autory (např. ilustrátory, editory sérií apod.)"
+
+#: config.py:282
+msgid ""
+"When this option is checked, all authors are retrieved.\n"
+"\n"
+"When unchecked (default) only the primary author(s) are returned."
+msgstr ""
+"Pokud je tato volba zaškrtnutá, načtou se všichni autoři.\n"
+"\n"
+"Pokud není zaškrtnutá (výchozí), vrátí se jen primární autor nebo autoři."
+
+#: config.py:287
+msgid "Get ASIN for kindle editions"
+msgstr "Získat ASIN pro vydání Kindle"
+
+#: config.py:288
+msgid ""
+"When this option is checked, in cases where Goodreads has an ASIN listed\n"
+"instead of an ISBN, the ASIN is retrieved. This is useful for books that\n"
+"already have the specific Goodreads identifier of a Kindle editon."
+msgstr ""
+"Pokud je tato volba zaškrtnutá, v případech, kdy Goodreads uvádí\n"
+"místo ISBN kód ASIN, se ASIN načte. To je užitečné u knih, které\n"
+"už mají konkrétní identifikátor Goodreads pro vydání Kindle."
+
+#: config.py:294
+msgid "Use first published date"
+msgstr "Použít datum prvního vydání"
+
+#: config.py:295
+msgid ""
+"If checked, the first published date for this book is used rather than\n"
+"that of the actual book edition."
+msgstr ""
+"Pokud je zaškrtnuto, použije se datum prvního vydání této knihy místo data\n"
+"konkrétního vydání knihy."
+
+#: config.py:300
+msgid "Get precise rating into 'grrating' identifier"
+msgstr "Získat přesné hodnocení do identifikátoru 'grrating'"
+
+#: config.py:301
+msgid ""
+"If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+"Pokud je zaškrtnuto, načte přesné hodnocení (např. 3.78) do identifikátoru,\n"
+"který můžete zobrazit jako vlastní sloupec."
+
+#: config.py:306
+msgid "Get #votes for rating into 'grvotes' identifier"
+msgstr "Získat počet hlasů pro hodnocení do identifikátoru 'grvotes'"
+
+#: config.py:307
+msgid ""
+"If checked, pulls number of votes producing this rating into an identifier\n"
+"you can display as a custom column."
+msgstr ""
+"Pokud je zaškrtnuto, načte počet hlasů, z nichž toto hodnocení vychází, do identifikátoru,\n"
+"který můžete zobrazit jako vlastní sloupec."
+
+#: config.py:328 config.py:359
+msgid "Add new mapping"
+msgstr "Přidat nové mapování"
+
+#: config.py:329 config.py:360
+msgid "Enter a Goodreads genre name to create a mapping for:"
+msgstr "Zadejte název žánru Goodreads, pro který chcete vytvořit mapování:"
+
+#: config.py:340
+msgid "Add Failed"
+msgstr "Přidání selhalo"
+
+#: config.py:340 config.py:372
+msgid "A genre with the same name already exists"
+msgstr "Žánr se stejným názvem už existuje"
+
+#: config.py:348 config.py:379
+msgid "Are you sure?"
+msgstr "Opravdu?"
+
+#: config.py:349
+msgid "Are you sure you want to delete the selected genre mappings?"
+msgstr "Opravdu chcete odstranit vybraná mapování žánrů?"
+
+#: config.py:372
+msgid "Rename Failed"
+msgstr "Přejmenování selhalo"
+
+#: config.py:380
+msgid "Are you sure you want to reset to the plugin default genre mappings?"
+msgstr "Opravdu chcete obnovit výchozí mapování žánrů modulu?"

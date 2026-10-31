@@ -8,13 +8,14 @@
 # Ptit Prince <leporello1791@gmail.com>, 2022
 # Grant Drake, 2022
 # lentrad <lentrad@gmail.com>, 2022
+# Jean Pierre, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-03-24 17:59+1000\n"
 "PO-Revision-Date: 2022-09-07 15:49+0000\n"
-"Last-Translator: lentrad <lentrad@gmail.com>, 2022\n"
+"Last-Translator: Jean Pierre, 2026\n"
 "Language-Team: French (https://app.transifex.com/calibre/teams/19337/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -131,13 +132,15 @@ msgstr "Goodreads mappages de balises de genre à calibre"
 
 #: config.py:228
 msgid "Filter and map genres to calibre tags"
-msgstr ""
+msgstr "Filtrer et associer les genres aux balises Calibre"
 
 #: config.py:229
 msgid ""
 "When checked, only specific calibre tags will be used as per below.\n"
 "When unchecked, all Goodreads genres will be added as tags."
 msgstr ""
+"Si cette case est cochée, seules les balises Calibre spécifiques indiquées ci-dessous seront utilisées.\n"
+"Si cette case n'est pas cochée, tous les genres Goodreads seront ajoutés en tant que balises."
 
 #: config.py:242
 msgid "Add genre mapping"
@@ -218,23 +221,27 @@ msgstr ""
 
 #: config.py:300
 msgid "Get precise rating into 'grrating' identifier"
-msgstr ""
+msgstr "Obtenir une note précise dans l'identifiant « grrating »"
 
 #: config.py:301
 msgid ""
 "If checked, pulls precise rating (e.g. 3.78) into an identifier\n"
 "you can display as a custom column."
 msgstr ""
+"Si cette case est cochée, la note exacte (par exemple 3,78) est renseignée dans un identifiant\n"
+"que vous pouvez afficher sous forme de colonne personnalisée."
 
 #: config.py:306
 msgid "Get #votes for rating into 'grvotes' identifier"
-msgstr ""
+msgstr "Récupérer les #votes pour l'évaluation dans l'identifiant « grvotes »"
 
 #: config.py:307
 msgid ""
 "If checked, pulls number of votes producing this rating into an identifier\n"
 "you can display as a custom column."
 msgstr ""
+"Si cette case est cochée, le nombre de votes ayant donné lieu à cette note est renseigné dans un identifiant\n"
+"que vous pouvez afficher sous forme de colonne personnalisée."
 
 #: config.py:328 config.py:359
 msgid "Add new mapping"
