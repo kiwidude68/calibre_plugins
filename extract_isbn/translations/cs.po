@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Grant Drake, 2022
+# seeder seeder, 2024
+# Michal Várady <miko.vaji@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
+"PO-Revision-Date: 2022-09-19 15:18+0000\n"
+"Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2026\n"
+"Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:122
+msgid "Keyboard shortcuts"
+msgstr "Klávesové zkratky"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Restartovat calibre nyní"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Předvolby pro:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Vymazat"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Vymazat všechna nastavení tohoto modulu"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "Opravdu chcete změnit nastavení tohoto modulu v této knihovně?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Nastavení v jiných knihovnách ani nastavení uložená v souboru JSON ve složce"
+" modulů calibre se nezmění."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Poté bude nutné calibre restartovat."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Nastavení změněno"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Nastavení tohoto modulu v této knihovně bylo změněno."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Restartujte prosím calibre nyní."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "Opravdu chcete vymazat nastavení tohoto modulu v této knihovně?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Nastavení vymazáno"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Všechna nastavení tohoto modulu v této knihovně byla vymazána."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopírovat do schránky"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nedefinováno"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Vyžadován restart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Ikona titulku nebyla nalezena. Před použitím tohoto modulu musíte "
+"restartovat calibre!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Vytvořit nový sloupec"
+
+#: action.py:28
+msgid "Extract ISBN from the selected book format"
+msgstr "Získat ISBN z vybraného formátu knihy"
+
+#: action.py:28 action.py:74
+msgid "Extract ISBN"
+msgstr "Získat ISBN"
+
+#: action.py:43
+msgid "No rows selected"
+msgstr "Nejsou vybrány žádné knihy"
+
+#: action.py:44
+msgid "You must select one or more books to perform this action."
+msgstr "K provedení této akce musíte vybrat jednu nebo více knih."
+
+#: action.py:78
+msgid "Extracting ISBN for {0} books"
+msgstr "Získává se ISBN. Počet knih: {0}"
+
+#: action.py:91
+msgid "Failed to extract isbns"
+msgstr "Nepodařilo se získat ISBN"
+
+#: action.py:94
+msgid "ISBN extract completed"
+msgstr "Získávání ISBN dokončeno"
+
+#: action.py:99
+msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
+msgstr "Nalezena <b>nová ISBN</b>. Počet: {0}."
+
+#: action.py:100
+msgid "Proceed with updating your library?"
+msgstr "Chcete aktualizovat svou knihovnu?"
+
+#: action.py:106
+msgid ""
+"Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
+"existing value."
+msgstr ""
+"U některých knih se nepodařilo najít ISBN a u jiných nalezené ISBN "
+"odpovídalo stávající hodnotě. Nenalezeno: {0}; shodné: {1}."
+
+#: action.py:109
+msgid "Could not find an ISBN for {0} book(s)."
+msgstr "Nepodařilo se najít ISBN. Počet knih: {0}."
+
+#: action.py:111
+msgid "Found {0} book(s) where ISBN matched the existing value."
+msgstr "Nalezené ISBN odpovídalo stávající hodnotě. Počet knih: {0}."
+
+#: action.py:113
+msgid "Click \"Show details\" to see which books."
+msgstr "Kliknutím na „Zobrazit podrobnosti“ zobrazíte, o které knihy jde."
+
+#: action.py:118
+msgid "Scan failed"
+msgstr "Hledání selhalo"
+
+#: action.py:118 action.py:127
+msgid "Scan log"
+msgstr "Protokol hledání"
+
+#: action.py:127
+msgid "Scan complete"
+msgstr "Hledání dokončeno"
+
+#: action.py:153
+msgid "Some books changed"
+msgstr "Některé knihy se změnily"
+
+#: action.py:154
+msgid ""
+"The metadata for some books in your library has changed since you started "
+"the download. If you proceed, some of those changes may be overwritten. "
+"Click \"Show details\" to see the list of changed books. Do you want to "
+"proceed?"
+msgstr ""
+"Metadata některých knih ve vaší knihovně se od zahájení získávání ISBN "
+"změnila. Pokud budete pokračovat, některé z těchto změn mohou být přepsány. "
+"Kliknutím na „Zobrazit podrobnosti“ zobrazíte seznam změněných knih. Chcete "
+"pokračovat?"
+
+#: action.py:165 jobs.py:226
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: config.py:40
+msgid "Do not change my search"
+msgstr "Neměnit moje hledání"
+
+#: config.py:41
+msgid "Show the books that have new or updated ISBNs"
+msgstr "Zobrazit knihy s novým nebo aktualizovaným ISBN"
+
+#: config.py:71
+msgid "When the scan completes:"
+msgstr "Po dokončení hledání:"
+
+#: config.py:76
+msgid "Valid prefixes for ISBN-13 (comma separated):"
+msgstr "Platné prefixy pro ISBN-13 (oddělené čárkou):"
+
+#: config.py:81
+msgid "Selected books before running as a background job:"
+msgstr "Počet vybraných knih před spuštěním jako úloha na pozadí:"
+
+#: config.py:82
+msgid "Running as a background job is slower but is the only way to avoid\n"
+msgstr ""
+"Spuštění jako úloha na pozadí je pomalejší, ale je to jediný způsob, jak se "
+"vyhnout\n"
+
+#: config.py:83
+msgid "memory leaks and will keep the UI more responsive."
+msgstr "únikům paměti a uživatelské rozhraní zůstane svižnější."
+
+#: config.py:92
+msgid "Batch size running as a background job:"
+msgstr "Velikost dávky při spuštění jako úloha na pozadí:"
+
+#: config.py:93
+msgid ""
+"Books will be broken into batches to ensure that if you run\n"
+"extract for a large group you can cancel/close calibre without\n"
+"losing all of your results as you can cancel the pending groups."
+msgstr ""
+"Knihy budou rozděleny do dávek, aby bylo při získávání ISBN\n"
+"pro velkou skupinu možné akci zrušit nebo zavřít calibre bez\n"
+"ztráty všech výsledků, protože čekající skupiny lze zrušit."
+
+#: config.py:105
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr "Zobrazit dialog selhání, pokud ISBN nebylo nalezeno nebo je shodné"
+
+#: config.py:106
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr ""
+"Zrušte zaškrtnutí této volby, pokud nechcete být dotazováni,\n"
+"když v knize nebylo nalezeno žádné ISBN nebo je stejné\n"
+"jako aktuální hodnota."
+
+#: config.py:113
+msgid "Prompt to apply ISBN changes"
+msgstr "Dotázat se před použitím změn ISBN"
+
+#: config.py:114
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+"Zrušte zaškrtnutí této volby, pokud chcete změny použít\n"
+"bez potvrzovacího dialogu. Pokud tuto volbu ponecháte\n"
+"nezaškrtnutou, existuje malé riziko, že při současných jiných\n"
+"úpravách záznamu knihy budou tyto úpravy ztraceny."
+
+#: config.py:123
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Upravit klávesové zkratky přiřazené tomuto modulu"
+
+#: config.py:127
+msgid "Help"
+msgstr "Nápověda"
+
+#: dialogs.py:25
+msgid "Queueing books for extracting ISBN"
+msgstr "Zařazování knih do fronty pro získání ISBN"
+
+#: dialogs.py:53
+msgid "Queueing"
+msgstr "Zařazuje se do fronty"
+
+#: dialogs.py:73
+msgid "Extract ISBN failed"
+msgstr "Získání ISBN selhalo"
+
+#: dialogs.py:74
+msgid "Scan aborted as no books with formats found."
+msgstr ""
+"Hledání bylo přerušeno, protože nebyly nalezeny žádné knihy s formáty."
+
+#: jobs.py:41
+msgid "Extract ISBN for %d books"
+msgstr "Získat ISBN. Počet knih: %d"
+
+#: jobs.py:44
+msgid "Extract ISBN started"
+msgstr "Získávání ISBN spuštěno"
+
+#: jobs.py:96
+msgid "Scanned %d of %d"
+msgstr "Prohledáno: %d z %d"
+
+#: jobs.py:113
+msgid "No formats"
+msgstr "Žádné formáty"
+
+#: jobs.py:115
+msgid "ISBN not found"
+msgstr "ISBN nenalezeno"
+
+#: jobs.py:121
+msgid "Same ISBN"
+msgstr "Stejné ISBN"
+
+#: jobs.py:127
+msgid "Extracted"
+msgstr "Získáno"

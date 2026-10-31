@@ -1,0 +1,330 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Merarom <merarom@yahoo.es>, 2022
+# efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Henrik Mattsson-Mårn <h@reglage.net>, 2025
+# Jonatan Nyberg, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
+"PO-Revision-Date: 2022-09-19 15:18+0000\n"
+"Last-Translator: Jonatan Nyberg, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:122
+msgid "Keyboard shortcuts"
+msgstr "Tangentbordsgenvägar"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Inställningar för:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Rensa"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Rensa alla inställningar för detta tillägg"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
+"calibre-tilläggsmapp kommer inte att röras."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Du måste starta om calibre efteråt."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Inställningar ändrade"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr ""
+"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Starta om calibre nu."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
+"detta tillägg?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Inställningar borttagna"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Odefinerad"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Kräver omstart"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"denna insticksmodul!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Skapa ny kolumn"
+
+#: action.py:28
+msgid "Extract ISBN from the selected book format"
+msgstr "Extrahera ISBN från det valda bokformatet"
+
+#: action.py:28 action.py:74
+msgid "Extract ISBN"
+msgstr "Extrahera ISBN"
+
+#: action.py:43
+msgid "No rows selected"
+msgstr "Inga rader valda"
+
+#: action.py:44
+msgid "You must select one or more books to perform this action."
+msgstr "Du måste välja en eller flera böcker för att utföra åtgärden."
+
+#: action.py:78
+msgid "Extracting ISBN for {0} books"
+msgstr "Extraherar ISBN för {0} böcker"
+
+#: action.py:91
+msgid "Failed to extract isbns"
+msgstr "Det gick inte att extrahera ISBN"
+
+#: action.py:94
+msgid "ISBN extract completed"
+msgstr "ISBN-extraheringen är slutförd"
+
+#: action.py:99
+msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
+msgstr "Extrahera ISBN hittade <b>{0} nya ISBN</b>."
+
+#: action.py:100
+msgid "Proceed with updating your library?"
+msgstr "Vill du fortsätta uppdatera ditt bibliotek?"
+
+#: action.py:106
+msgid ""
+"Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
+"existing value."
+msgstr ""
+"Kunde inte hitta ISBN för {0} bok/böcker och {1} bok/böcker matchade sitt "
+"befintliga värde."
+
+#: action.py:109
+msgid "Could not find an ISBN for {0} book(s)."
+msgstr "Kunde inte hitta ISBN för {0} bok/böcker."
+
+#: action.py:111
+msgid "Found {0} book(s) where ISBN matched the existing value."
+msgstr "Hittade {0} bok/böcker där ISBN matchade det befintliga värdet."
+
+#: action.py:113
+msgid "Click \"Show details\" to see which books."
+msgstr "Klicka på ”Visa detaljer” för att se vilka böcker det gäller."
+
+#: action.py:118
+msgid "Scan failed"
+msgstr "Genomsökningen misslyckades"
+
+#: action.py:118 action.py:127
+msgid "Scan log"
+msgstr "Genomsökningslogg"
+
+#: action.py:127
+msgid "Scan complete"
+msgstr "Genomsökningen är slutförd"
+
+#: action.py:153
+msgid "Some books changed"
+msgstr "Några böcker ändrade"
+
+#: action.py:154
+msgid ""
+"The metadata for some books in your library has changed since you started "
+"the download. If you proceed, some of those changes may be overwritten. "
+"Click \"Show details\" to see the list of changed books. Do you want to "
+"proceed?"
+msgstr ""
+"Metadata för vissa böcker i biblioteket har ändrats sedan du startade "
+"hämtningen. Om du fortsätter kan några av ändringarna skrivas över. Klicka "
+"på ”Visa detaljer” för att se listan över ändrade böcker. Vill du fortsätta?"
+
+#: action.py:165 jobs.py:226
+msgid "Unknown"
+msgstr "Okänd"
+
+#: config.py:40
+msgid "Do not change my search"
+msgstr "Ändra inte min sökning"
+
+#: config.py:41
+msgid "Show the books that have new or updated ISBNs"
+msgstr "Visa böckerna som har nya eller uppdaterade ISBN"
+
+#: config.py:71
+msgid "When the scan completes:"
+msgstr "När genomsökningen är slutförd:"
+
+#: config.py:76
+msgid "Valid prefixes for ISBN-13 (comma separated):"
+msgstr "Giltiga prefix för ISBN-13 (kommaseparerade):"
+
+#: config.py:81
+msgid "Selected books before running as a background job:"
+msgstr "Antal valda böcker innan körning som bakgrundsjobb:"
+
+#: config.py:82
+msgid "Running as a background job is slower but is the only way to avoid\n"
+msgstr ""
+"Körning som bakgrundsjobb är långsammare men är det enda sättet att "
+"undvika\n"
+
+#: config.py:83
+msgid "memory leaks and will keep the UI more responsive."
+msgstr "minnesläckor och håller användargränssnittet mer responsivt."
+
+#: config.py:92
+msgid "Batch size running as a background job:"
+msgstr "Batchstorlek vid körning som bakgrundsjobb:"
+
+#: config.py:93
+msgid ""
+"Books will be broken into batches to ensure that if you run\n"
+"extract for a large group you can cancel/close calibre without\n"
+"losing all of your results as you can cancel the pending groups."
+msgstr ""
+"Böckerna delas upp i batchar så att du, när extraheringen körs\n"
+"för en stor grupp, kan avbryta eller stänga calibre utan att\n"
+"förlora alla resultat eftersom väntande grupper kan avbrytas."
+
+#: config.py:105
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr "Visa feldialogruta om ISBN inte hittas eller är identiskt"
+
+#: config.py:106
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr ""
+"Avmarkera detta om du inte vill få en fråga när inget ISBN\n"
+"hittas i boken eller när det är samma som det befintliga\n"
+"värdet."
+
+#: config.py:113
+msgid "Prompt to apply ISBN changes"
+msgstr "Fråga innan ISBN-ändringar tillämpas"
+
+#: config.py:114
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+"Avmarkera detta om du vill tillämpa ändringar utan\n"
+"en bekräftelsedialogruta. Om alternativet är avmarkerat\n"
+"finns en liten risk att andra samtidiga ändringar av\n"
+"bokposten går förlorade."
+
+#: config.py:123
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr ""
+"Redigera tangentbordets kortkommandon som hör samman med detta "
+"tilläggsprogram"
+
+#: config.py:127
+msgid "Help"
+msgstr "Hjälp"
+
+#: dialogs.py:25
+msgid "Queueing books for extracting ISBN"
+msgstr "Köar böcker för ISBN-extrahering"
+
+#: dialogs.py:53
+msgid "Queueing"
+msgstr "Köar"
+
+#: dialogs.py:73
+msgid "Extract ISBN failed"
+msgstr "Extrahera ISBN misslyckades"
+
+#: dialogs.py:74
+msgid "Scan aborted as no books with formats found."
+msgstr "Genomsökningen avbröts eftersom inga böcker med format hittades."
+
+#: jobs.py:41
+msgid "Extract ISBN for %d books"
+msgstr "Extrahera ISBN för %d böcker"
+
+#: jobs.py:44
+msgid "Extract ISBN started"
+msgstr "ISBN-extraheringen har startat"
+
+#: jobs.py:96
+msgid "Scanned %d of %d"
+msgstr "Genomsökte %d av %d"
+
+#: jobs.py:113
+msgid "No formats"
+msgstr "Inga format"
+
+#: jobs.py:115
+msgid "ISBN not found"
+msgstr "ISBN hittades inte"
+
+#: jobs.py:121
+msgid "Same ISBN"
+msgstr "Samma ISBN"
+
+#: jobs.py:127
+msgid "Extracted"
+msgstr "Extraherat"

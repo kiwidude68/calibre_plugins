@@ -1,0 +1,323 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Branislav Kapetanovic, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
+"PO-Revision-Date: 2022-09-19 15:18+0000\n"
+"Last-Translator: Branislav Kapetanovic, 2026\n"
+"Language-Team: Serbian (Latin) (https://app.transifex.com/calibre/teams/19337/sr@latin/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: sr@latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ..\common\common_dialogs.py:84 config.py:122
+msgid "Keyboard shortcuts"
+msgstr "Prečice na tastaturi"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "Ponovo pokreni calibre sada"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "Podešavanja za:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "Obriši"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "Obriši sva podešavanja ovog dodatka"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr ""
+"Da li ste sigurni da želite da promenite podešavanja ovog dodatka u ovoj "
+"biblioteci?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr ""
+"Podešavanja u drugim bibliotekama, kao ni ona sačuvana u JSON datoteci u "
+"fascikli dodataka za calibre, neće biti promenjena."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "Nakon toga morate ponovo pokrenuti calibre."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "Podešavanja su promenjena"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "Podešavanja ovog dodatka u ovoj biblioteci su promenjena."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "Ponovo pokrenite calibre sada."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr ""
+"Da li ste sigurni da želite da obrišete podešavanja ovog dodatka u ovoj "
+"biblioteci?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "Podešavanja su obrisana"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "Sva podešavanja ovog dodatka u ovoj biblioteci su obrisana."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "Kopiraj u privremenu memoriju"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "Nije definisano"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "Potrebno je ponovno pokretanje"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr ""
+"Slika naslova nije pronađena — morate ponovo pokrenuti calibre pre "
+"korišćenja ovog dodatka!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "Napravi novu kolonu"
+
+#: action.py:28
+msgid "Extract ISBN from the selected book format"
+msgstr "Izdvoji ISBN iz izabranog formata knjige"
+
+#: action.py:28 action.py:74
+msgid "Extract ISBN"
+msgstr "Izdvoji ISBN"
+
+#: action.py:43
+msgid "No rows selected"
+msgstr "Nijedan red nije izabran"
+
+#: action.py:44
+msgid "You must select one or more books to perform this action."
+msgstr "Morate izabrati jednu ili više knjiga da biste izvršili ovu radnju."
+
+#: action.py:78
+msgid "Extracting ISBN for {0} books"
+msgstr "Izdvajam ISBN za {0} knjiga"
+
+#: action.py:91
+msgid "Failed to extract isbns"
+msgstr "Izdvajanje ISBN brojeva nije uspelo"
+
+#: action.py:94
+msgid "ISBN extract completed"
+msgstr "Izdvajanje ISBN brojeva je završeno"
+
+#: action.py:99
+msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
+msgstr "Pronađeno je <b>{0} novih ISBN brojeva</b>."
+
+#: action.py:100
+msgid "Proceed with updating your library?"
+msgstr "Želite li da nastavite sa ažuriranjem biblioteke?"
+
+#: action.py:106
+msgid ""
+"Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
+"existing value."
+msgstr ""
+"ISBN nije pronađen za {0} knjiga, a za {1} knjiga pronađeni ISBN se poklapa "
+"sa postojećim."
+
+#: action.py:109
+msgid "Could not find an ISBN for {0} book(s)."
+msgstr "ISBN nije pronađen za {0} knjiga."
+
+#: action.py:111
+msgid "Found {0} book(s) where ISBN matched the existing value."
+msgstr "Za {0} knjiga pronađeni ISBN se poklapa sa postojećim."
+
+#: action.py:113
+msgid "Click \"Show details\" to see which books."
+msgstr "Kliknite na „Prikaži detalje“ da biste videli koje su to knjige."
+
+#: action.py:118
+msgid "Scan failed"
+msgstr "Skeniranje nije uspelo"
+
+#: action.py:118 action.py:127
+msgid "Scan log"
+msgstr "Zapisnik skeniranja"
+
+#: action.py:127
+msgid "Scan complete"
+msgstr "Skeniranje je završeno"
+
+#: action.py:153
+msgid "Some books changed"
+msgstr "Neke knjige su izmenjene"
+
+#: action.py:154
+msgid ""
+"The metadata for some books in your library has changed since you started "
+"the download. If you proceed, some of those changes may be overwritten. "
+"Click \"Show details\" to see the list of changed books. Do you want to "
+"proceed?"
+msgstr ""
+"Metapodaci nekih knjiga u vašoj biblioteci promenjeni su od početka "
+"preuzimanja. Ako nastavite, neke od tih izmena mogu biti prepisane. Kliknite"
+" na „Prikaži detalje“ da biste videli spisak izmenjenih knjiga. Želite li da"
+" nastavite?"
+
+#: action.py:165 jobs.py:226
+msgid "Unknown"
+msgstr "Nepoznato"
+
+#: config.py:40
+msgid "Do not change my search"
+msgstr "Ne menjaj trenutnu pretragu"
+
+#: config.py:41
+msgid "Show the books that have new or updated ISBNs"
+msgstr "Prikaži knjige sa novim ili ažuriranim ISBN brojevima"
+
+#: config.py:71
+msgid "When the scan completes:"
+msgstr "Po završetku skeniranja:"
+
+#: config.py:76
+msgid "Valid prefixes for ISBN-13 (comma separated):"
+msgstr "Važeći prefiksi za ISBN-13 (razdvojeni zarezima):"
+
+#: config.py:81
+msgid "Selected books before running as a background job:"
+msgstr "Broj izabranih knjiga iznad kog se zadatak pokreće u pozadini:"
+
+#: config.py:82
+msgid "Running as a background job is slower but is the only way to avoid\n"
+msgstr "Rad u pozadini je sporiji, ali je jedini način da se izbegne\n"
+
+#: config.py:83
+msgid "memory leaks and will keep the UI more responsive."
+msgstr "curenje memorije i da korisnički interfejs ostane odzivniji."
+
+#: config.py:92
+msgid "Batch size running as a background job:"
+msgstr "Veličina grupe pri radu u pozadini:"
+
+#: config.py:93
+msgid ""
+"Books will be broken into batches to ensure that if you run\n"
+"extract for a large group you can cancel/close calibre without\n"
+"losing all of your results as you can cancel the pending groups."
+msgstr ""
+"Knjige će biti podeljene u grupe kako biste, pri izdvajanju\n"
+"ISBN brojeva iz velikog broja knjiga, mogli da otkažete zadatak ili zatvorite calibre\n"
+"bez gubitka svih rezultata. Grupe koje čekaju na obradu možete otkazati."
+
+#: config.py:105
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr "Prikaži obaveštenje ako ISBN nije pronađen ili je isti kao postojeći"
+
+#: config.py:106
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr ""
+"Isključite ovu opciju ako ne želite da dobijate obaveštenje\n"
+"kada ISBN nije pronađen u knjizi ili se poklapa sa\n"
+"postojećom vrednošću."
+
+#: config.py:113
+msgid "Prompt to apply ISBN changes"
+msgstr "Zatraži potvrdu pre primene izmena ISBN brojeva"
+
+#: config.py:114
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+"Isključite ovu opciju ako želite da se promene primene bez\n"
+"dijaloga za potvrdu. Ako istovremeno menjate i druge podatke\n"
+"o istoj knjizi, postoji mali rizik\n"
+"da te izmene budu izgubljene."
+
+#: config.py:123
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "Izmeni prečice na tastaturi za ovaj dodatak"
+
+#: config.py:127
+msgid "Help"
+msgstr "Pomoć"
+
+#: dialogs.py:25
+msgid "Queueing books for extracting ISBN"
+msgstr "Dodajem knjige u red za izdvajanje ISBN brojeva"
+
+#: dialogs.py:53
+msgid "Queueing"
+msgstr "Dodavanje u red"
+
+#: dialogs.py:73
+msgid "Extract ISBN failed"
+msgstr "Izdvajanje ISBN brojeva nije uspelo"
+
+#: dialogs.py:74
+msgid "Scan aborted as no books with formats found."
+msgstr "Skeniranje je prekinuto jer nisu pronađene knjige sa datotekama."
+
+#: jobs.py:41
+msgid "Extract ISBN for %d books"
+msgstr "Izdvoji ISBN za %d knjiga"
+
+#: jobs.py:44
+msgid "Extract ISBN started"
+msgstr "Izdvajanje ISBN brojeva je započeto"
+
+#: jobs.py:96
+msgid "Scanned %d of %d"
+msgstr "Skenirano %d od %d"
+
+#: jobs.py:113
+msgid "No formats"
+msgstr "Nema dostupnih formata"
+
+#: jobs.py:115
+msgid "ISBN not found"
+msgstr "ISBN nije pronađen"
+
+#: jobs.py:121
+msgid "Same ISBN"
+msgstr "Isti ISBN"
+
+#: jobs.py:127
+msgid "Extracted"
+msgstr "Izdvojeno"

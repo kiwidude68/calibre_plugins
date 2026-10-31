@@ -1,0 +1,305 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Junghee Lee <daemul72@gmail.com>, 2026
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-03-24 17:58+1000\n"
+"PO-Revision-Date: 2022-09-19 15:18+0000\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
+"Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ..\common\common_dialogs.py:84 config.py:122
+msgid "Keyboard shortcuts"
+msgstr "키보드 단축키"
+
+#: ..\common\common_dialogs.py:112
+msgid "Restart calibre now"
+msgstr "지금 calibre 재시작"
+
+#: ..\common\common_dialogs.py:128
+msgid "Preferences for:"
+msgstr "다음 플러그인 환경 설정:"
+
+#: ..\common\common_dialogs.py:160
+msgid "Clear"
+msgstr "지우기"
+
+#: ..\common\common_dialogs.py:162
+msgid "Clear all settings for this plugin"
+msgstr "이 플러그인에 대한 모든 설정 지우기"
+
+#: ..\common\common_dialogs.py:189
+msgid ""
+"Are you sure you want to change your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 변경하시겠습니까?"
+
+#: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
+msgid ""
+"Any settings in other libraries or stored in a JSON file in your calibre "
+"plugins folder will not be touched."
+msgstr "다른 서재의 설정이나 calibre 플러그인 폴더의 JSON 파일에 저장된 설정은 변경되지 않습니다."
+
+#: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
+msgid "You must restart calibre afterwards."
+msgstr "이후 calibre를 다시 시작해야 합니다."
+
+#: ..\common\common_dialogs.py:200
+msgid "Settings changed"
+msgstr "설정 변경됨"
+
+#: ..\common\common_dialogs.py:201
+msgid "Settings for this plugin in this library have been changed."
+msgstr "이 서재에서 이 플러그인의 설정이 변경되었습니다."
+
+#: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
+msgid "Please restart calibre now."
+msgstr "지금 calibre를 다시 시작하세요."
+
+#: ..\common\common_dialogs.py:209
+msgid ""
+"Are you sure you want to clear your settings in this library for this "
+"plugin?"
+msgstr "이 서재에서 이 플러그인의 설정을 지우시겠습니까?"
+
+#: ..\common\common_dialogs.py:221
+msgid "Settings deleted"
+msgstr "설정 삭제됨"
+
+#: ..\common\common_dialogs.py:222
+msgid "All settings for this plugin in this library have been cleared."
+msgstr "이 서재에서 이 플러그인의 모든 설정이 지워졌습니다."
+
+#: ..\common\common_dialogs.py:297
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+
+#: ..\common\common_widgets.py:105
+msgid "Undefined"
+msgstr "정의되지 않음"
+
+#: ..\common\common_widgets.py:160
+msgid "Restart required"
+msgstr "다시 시작 필요"
+
+#: ..\common\common_widgets.py:161
+msgid ""
+"Title image not found - you must restart Calibre before using this plugin!"
+msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용하려면 calibre를 다시 시작해야 합니다!"
+
+#: ..\common\common_widgets.py:234
+msgid "Create new column"
+msgstr "새 열 만들기"
+
+#: action.py:28
+msgid "Extract ISBN from the selected book format"
+msgstr "선택한 책 형식에서 ISBN 추출"
+
+#: action.py:28 action.py:74
+msgid "Extract ISBN"
+msgstr "ISBN 추출"
+
+#: action.py:43
+msgid "No rows selected"
+msgstr "선택한 행이 없습니다"
+
+#: action.py:44
+msgid "You must select one or more books to perform this action."
+msgstr "이 작업을 수행하려면 책을 하나 이상 선택해야 합니다."
+
+#: action.py:78
+msgid "Extracting ISBN for {0} books"
+msgstr "{0}권의 책에서 ISBN 추출 중"
+
+#: action.py:91
+msgid "Failed to extract isbns"
+msgstr "ISBN 추출 실패"
+
+#: action.py:94
+msgid "ISBN extract completed"
+msgstr "ISBN 추출 완료"
+
+#: action.py:99
+msgid "Extract ISBN found <b>{0} new isbn(s)</b>."
+msgstr "ISBN 추출 결과 <b>새 ISBN {0}개</b>를 찾았습니다."
+
+#: action.py:100
+msgid "Proceed with updating your library?"
+msgstr "서재를 업데이트하시겠습니까?"
+
+#: action.py:106
+msgid ""
+"Could not find an ISBN for {0} book(s) and {1} book(s) matched their "
+"existing value."
+msgstr "{0}권의 책에서는 ISBN을 찾지 못했고, {1}권의 책은 기존 값과 일치했습니다."
+
+#: action.py:109
+msgid "Could not find an ISBN for {0} book(s)."
+msgstr "{0}권의 책에서 ISBN을 찾지 못했습니다."
+
+#: action.py:111
+msgid "Found {0} book(s) where ISBN matched the existing value."
+msgstr "ISBN이 기존 값과 일치하는 책 {0}권을 찾았습니다."
+
+#: action.py:113
+msgid "Click \"Show details\" to see which books."
+msgstr "어떤 책인지 보려면 \"세부 정보 표시\"를 클릭하세요."
+
+#: action.py:118
+msgid "Scan failed"
+msgstr "검사 실패"
+
+#: action.py:118 action.py:127
+msgid "Scan log"
+msgstr "검사 로그"
+
+#: action.py:127
+msgid "Scan complete"
+msgstr "검사 완료"
+
+#: action.py:153
+msgid "Some books changed"
+msgstr "일부 책 변경됨"
+
+#: action.py:154
+msgid ""
+"The metadata for some books in your library has changed since you started "
+"the download. If you proceed, some of those changes may be overwritten. "
+"Click \"Show details\" to see the list of changed books. Do you want to "
+"proceed?"
+msgstr ""
+"다운로드를 시작한 이후 서재의 일부 책 메타데이터가 변경되었습니다. 계속하면 일부 변경 사항이 덮어써질 수 있습니다. 변경된 책 목록을 "
+"보려면 \"세부 정보 표시\"를 클릭하세요. 계속하시겠습니까?"
+
+#: action.py:165 jobs.py:226
+msgid "Unknown"
+msgstr "알 수 없음"
+
+#: config.py:40
+msgid "Do not change my search"
+msgstr "내 검색을 변경하지 않음"
+
+#: config.py:41
+msgid "Show the books that have new or updated ISBNs"
+msgstr "새 ISBN이 있거나 ISBN이 업데이트된 책 표시"
+
+#: config.py:71
+msgid "When the scan completes:"
+msgstr "검사가 완료되면:"
+
+#: config.py:76
+msgid "Valid prefixes for ISBN-13 (comma separated):"
+msgstr "유효한 ISBN-13 접두사(쉼표로 구분):"
+
+#: config.py:81
+msgid "Selected books before running as a background job:"
+msgstr "백그라운드 작업 실행 전 선택한 책:"
+
+#: config.py:82
+msgid "Running as a background job is slower but is the only way to avoid\n"
+msgstr "백그라운드 작업으로 실행하면 더 느리지만 다음을 피할 수 있는 유일한 방법입니다:\n"
+
+#: config.py:83
+msgid "memory leaks and will keep the UI more responsive."
+msgstr "메모리 누수를 막고 UI 반응성도 더 좋게 유지합니다."
+
+#: config.py:92
+msgid "Batch size running as a background job:"
+msgstr "백그라운드 작업 실행 시 배치 크기:"
+
+#: config.py:93
+msgid ""
+"Books will be broken into batches to ensure that if you run\n"
+"extract for a large group you can cancel/close calibre without\n"
+"losing all of your results as you can cancel the pending groups."
+msgstr ""
+"대량 추출 시 결과를 모두 잃지 않도록 책을 여러 배치로 나눕니다. 이렇게 하면 보류 중인 그룹을 취소할 수 있으므로 calibre를 "
+"취소하거나 닫아도 됩니다."
+
+#: config.py:105
+msgid "Display failure dialog if ISBN not found or identical"
+msgstr "ISBN을 찾지 못했거나 동일할 때 실패 대화상자 표시"
+
+#: config.py:106
+msgid ""
+"Uncheck this option if you want do not want to be prompted\n"
+"about no ISBN being found in the book or it is the same as\n"
+"your current value."
+msgstr "책에서 ISBN을 찾지 못했거나 현재 값과 동일할 때 안내를 받지 않으려면 이 옵션을 해제하십시오."
+
+#: config.py:113
+msgid "Prompt to apply ISBN changes"
+msgstr "ISBN 변경 적용 여부 묻기"
+
+#: config.py:114
+msgid ""
+"Uncheck this option if you want changes applied without\n"
+"a confirmation dialog. There is a small risk with this\n"
+"option unchecked that if you are making other changes to\n"
+"this book record at the same time they will be lost."
+msgstr ""
+"확인 대화상자 없이 변경을 적용하려면 이 옵션을 해제하십시오. 다만 같은 시점에 이 도서 항목에 다른 변경을 하고 있다면 그 변경이 "
+"사라질 수 있는 작은 위험이 있습니다."
+
+#: config.py:123
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
+
+#: config.py:127
+msgid "Help"
+msgstr "도움말"
+
+#: dialogs.py:25
+msgid "Queueing books for extracting ISBN"
+msgstr "ISBN 추출을 위해 책을 대기열에 추가 중"
+
+#: dialogs.py:53
+msgid "Queueing"
+msgstr "대기열에 추가 중"
+
+#: dialogs.py:73
+msgid "Extract ISBN failed"
+msgstr "ISBN 추출 실패"
+
+#: dialogs.py:74
+msgid "Scan aborted as no books with formats found."
+msgstr "형식이 있는 책을 찾지 못해 검사가 중단되었습니다."
+
+#: jobs.py:41
+msgid "Extract ISBN for %d books"
+msgstr "%d권의 책에서 ISBN 추출"
+
+#: jobs.py:44
+msgid "Extract ISBN started"
+msgstr "ISBN 추출 시작됨"
+
+#: jobs.py:96
+msgid "Scanned %d of %d"
+msgstr "%d / %d 검사됨"
+
+#: jobs.py:113
+msgid "No formats"
+msgstr "형식 없음"
+
+#: jobs.py:115
+msgid "ISBN not found"
+msgstr "ISBN을 찾지 못함"
+
+#: jobs.py:121
+msgid "Same ISBN"
+msgstr "동일한 ISBN"
+
+#: jobs.py:127
+msgid "Extracted"
+msgstr "추출됨"
