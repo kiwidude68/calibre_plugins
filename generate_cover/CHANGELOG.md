@@ -1,6 +1,6 @@
 # Generate Cover Change Log
 
-## [2.4.2] - 2026-11-01 (beta for 2.5.0)
+## [2.5.0] - 2026-11-05
 ### Added
 - Major redesign of the UI with many new options added.
 - Selecting a field in the Field Order list of the Contents tab now shows contextual options below it.
@@ -14,6 +14,8 @@
 - Slovak translation
 - Serbian (Latin) translation
 - Swedish translation
+### Fixed
+- Font dropdown now shows only valid font families on your system.
 
 ## [2.4.1] - 2026-07-08
 ### Added

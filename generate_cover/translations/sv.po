@@ -1,34 +1,36 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR ORGANIZATION
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Generate Cover package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Merarom <merarom@yahoo.es>, 2022
 # efef6ec5b435a041fce803c7f8af77d2_2341d43, 2022
+# Merarom <merarom@yahoo.es>, 2022
 # Henrik Mattsson-Mårn <h@reglage.net>, 2025
 # Jonatan Nyberg, 2026
 # 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-05 21:31+1000\n"
+"Project-Id-Version: Generate Cover\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-01 22:50+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: Jonatan Nyberg, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.5\n"
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:353
+#: ..\common\common_dialogs.py:84 config.py:616
 msgid "Keyboard shortcuts"
 msgstr "Kortkommandon"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Starta om calibre nu."
+msgstr "Starta om calibre nu"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
@@ -40,7 +42,7 @@ msgstr "Rensa"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Rensa alla inställningar för detta tillägg"
+msgstr "Rensa alla inställningar för denna insticksmodul"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
@@ -55,8 +57,8 @@ msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
-"calibre-tilläggsmapp kommer inte att röras."
+"Inställningar i andra bibliotek eller i en JSON-fil i calibres mapp för "
+"insticksmoduler påverkas inte."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -80,8 +82,8 @@ msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
-"detta tillägg?"
+"Är du säker på att du vill rensa dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -89,7 +91,9 @@ msgstr "Inställningar borttagna"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+msgstr ""
+"Alla inställningar för denna insticksmodul i det här biblioteket har "
+"rensats."
 
 #: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
@@ -97,7 +101,7 @@ msgstr "Kopiera till urklipp"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Odefinerad"
+msgstr "Odefinierad"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
@@ -107,7 +111,7 @@ msgstr "Kräver omstart"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"Titelbilden hittades inte – du måste starta om calibre innan du använder "
 "denna insticksmodul!"
 
 #: ..\common\common_widgets.py:234
@@ -131,12 +135,17 @@ msgid "No books selected"
 msgstr "Inga böcker valda"
 
 #: action.py:86
-msgid "Corrupted setting: \"%s\" has incorrect internal name of: \"%s\")"
-msgstr "Skadad inställning: ”%s” har det felaktiga interna namnet ”%s”)"
+#, python-format
+msgid ""
+"Corrupted setting: \"%(setting_name)s\" has incorrect internal name of: "
+"\"%(internal_name)s\")"
+msgstr ""
+"Skadad inställning: ”%(setting_name)s” har det felaktiga interna namnet "
+"”%(internal_name)s”"
 
 #: action.py:90
 msgid "Corrupted Configuration File"
-msgstr "Korrupt konfigurationsfil"
+msgstr "Skadad konfigurationsfil"
 
 #: action.py:91
 msgid ""
@@ -145,10 +154,10 @@ msgid ""
 "for this plugin so it can be fixed.</p><p>The configuration has been fixed "
 "automatically.</p>"
 msgstr ""
-"<p>Din konfigurationsfil var skadad (se Detaljer).</p>)<p>Beskriv exakt "
-"vilka åtgärder du nyligen utförde som ledde till detta i MobileRead-"
-"forumtråden för insticksprogrammet, så att felet kan "
-"rättas.</p><p>Konfigurationen har reparerats automatiskt.</p>"
+"<p>Din konfigurationsfil var skadad (se Detaljer).</p><p>Beskriv exakt vilka"
+" åtgärder du nyligen utförde som ledde till detta i MobileRead-forumtråden "
+"för insticksmodulen, så att felet kan rättas.</p><p>Konfigurationen har "
+"reparerats automatiskt.</p>"
 
 #: action.py:137 action.py:147
 msgid "Cannot generate cover"
@@ -159,36 +168,35 @@ msgid "Missing metadata passed for book to generate cover"
 msgstr "Metadata saknas för boken som omslag ska skapas för"
 
 #: action.py:148
+#, python-format
 msgid "No cover settings exist named: \"%s\""
 msgstr "Det finns inga omslagsinställningar med namnet ”%s”"
 
-#: config.py:339
+#: config.py:602
 msgid "After generating cover:"
 msgstr "När omslaget har skapats:"
 
-#: config.py:348
+#: config.py:611
 msgid "Update column:"
 msgstr "Uppdatera kolumn:"
 
-#: config.py:349
+#: config.py:612
 msgid "Update value:"
 msgstr "Uppdatera värde:"
 
-#: config.py:354
+#: config.py:617
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr ""
-"Redigera tangentbordets kortkommandon som hör samman med detta "
-"tilläggsprogram"
+msgstr "Redigera kortkommandona för denna insticksmodul"
 
-#: config.py:358
+#: config.py:621
 msgid "View library preferences"
 msgstr "Visa biblioteksinställningar"
 
-#: config.py:359
+#: config.py:622
 msgid "View data stored in the library database for this plugin"
-msgstr "Visa data lagrat i biblioteksdatabasen för detta tilläggsprogram"
+msgstr "Visa data som lagras i biblioteksdatabasen för denna insticksmodul"
 
-#: config.py:363 dialogs.py:1499
+#: config.py:626 dialogs.py:1647
 msgid "&Help"
 msgstr "&Hjälp"
 
@@ -197,6 +205,7 @@ msgid "Cancel"
 msgstr "Avbryt"
 
 #: dialogs.py:95
+#, python-format
 msgid "Generating %d covers"
 msgstr "Skapar %d omslag"
 
@@ -209,6 +218,7 @@ msgid "Unsaved Changes"
 msgstr "Osparade ändringar"
 
 #: dialogs.py:131 dialogs.py:154
+#, python-format
 msgid "You have unsaved changes to the <b>%s</b> setting.<br>"
 msgstr "Du har osparade ändringar i inställningen <b>%s</b>.<br>"
 
@@ -218,11 +228,11 @@ msgstr "Vad vill du göra?"
 
 #: dialogs.py:135
 msgid "Discard Changes"
-msgstr "Ignorera ändringar"
+msgstr "Förkasta ändringar"
 
 #: dialogs.py:136
 msgid "Revert unsaved changes"
-msgstr "Återställ osparade ändringar"
+msgstr "Ångra osparade ändringar"
 
 #: dialogs.py:138
 msgid "Save Changes"
@@ -247,21 +257,21 @@ msgstr "Skapa && återställ"
 
 #: dialogs.py:162
 msgid "Generate cover using these settings then discard them"
-msgstr "Skapa omslaget med dessa inställningar och ignorera dem sedan"
+msgstr "Skapa omslaget med dessa inställningar och förkasta sedan ändringarna"
 
 #: dialogs.py:166
 msgid "Cancel action"
 msgstr "Avbryt åtgärd"
 
-#: dialogs.py:450 dialogs.py:528
+#: dialogs.py:481 dialogs.py:559
 msgid "Saved Settings:"
 msgstr "Sparade inställningar:"
 
-#: dialogs.py:460
+#: dialogs.py:491
 msgid "Autosave settings"
 msgstr "Spara inställningar automatiskt"
 
-#: dialogs.py:461
+#: dialogs.py:492
 msgid ""
 "Do not prompt to save changes to a setting. Always save when\n"
 "switching to another setting, clicking OK or using Import/Export."
@@ -269,345 +279,331 @@ msgstr ""
 "Fråga inte om ändringar av en inställning ska sparas. Spara alltid när\n"
 "du byter till en annan inställning, klickar på OK eller använder Importera/Exportera."
 
-#: dialogs.py:468
+#: dialogs.py:499
 msgid "Add setting"
 msgstr "Lägg till inställning"
 
-#: dialogs.py:473
+#: dialogs.py:504
 msgid "Rename setting"
-msgstr "Döp om inställning"
+msgstr "Byt namn på inställning"
 
-#: dialogs.py:479 dialogs.py:667
+#: dialogs.py:510 dialogs.py:698
 msgid "Import setting"
 msgstr "Importera inställning"
 
-#: dialogs.py:484
+#: dialogs.py:515
 msgid "Export setting"
 msgstr "Exportera inställning"
 
-#: dialogs.py:490
+#: dialogs.py:521
 msgid "Delete setting from this list"
 msgstr "Ta bort inställningen från listan"
 
-#: dialogs.py:498
+#: dialogs.py:529
 msgid "Select Image:"
 msgstr "Välj bild:"
 
-#: dialogs.py:509
+#: dialogs.py:540
 msgid "Add image to this list"
 msgstr "Lägg till en bild i listan"
 
-#: dialogs.py:514
+#: dialogs.py:545
 msgid "Rename image"
-msgstr "Döp om bild"
+msgstr "Byt namn på bild"
 
-#: dialogs.py:519
+#: dialogs.py:550
 msgid "Remove image from this list"
 msgstr "Ta bort bilden från listan"
 
-#: dialogs.py:530
+#: dialogs.py:561
 msgid "Saved Settings: (*unsaved changes)"
 msgstr "Sparade inställningar: (*osparade ändringar)"
 
-#: dialogs.py:561
+#: dialogs.py:592
 msgid "Add new setting"
 msgstr "Lägg till ny inställning"
 
-#: dialogs.py:584
+#: dialogs.py:615
 msgid "Cannot add"
 msgstr "Kan inte lägga till"
 
-#: dialogs.py:585
+#: dialogs.py:616
 msgid "The name you specified is not unique"
 msgstr "Namnet du angav är inte unikt"
 
-#: dialogs.py:594 dialogs.py:837
+#: dialogs.py:625 dialogs.py:868
 msgid "Cannot remove"
 msgstr "Kan inte ta bort"
 
-#: dialogs.py:595
+#: dialogs.py:626
 msgid "You cannot remove the default setting"
 msgstr "Du kan inte ta bort standardinställningen"
 
-#: dialogs.py:596 dialogs.py:840 dialogs.py:1574 dialogs.py:1593
+#: dialogs.py:627 dialogs.py:871 dialogs.py:1722 dialogs.py:1741
 msgid "Are you sure?"
 msgstr "Är du säker?"
 
-#: dialogs.py:597
+#: dialogs.py:628
+#, python-format
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "Vill du verkligen ta bort inställningen ”%s”?"
 
-#: dialogs.py:610 dialogs.py:787 dialogs.py:813
+#: dialogs.py:641 dialogs.py:818 dialogs.py:844
 msgid "Cannot rename"
-msgstr "Kan inte döpa om"
+msgstr "Kan inte byta namn"
 
-#: dialogs.py:611
+#: dialogs.py:642
 msgid "You cannot rename the default setting"
 msgstr "Du kan inte byta namn på standardinställningen"
 
-#: dialogs.py:612 dialogs.py:613
+#: dialogs.py:643 dialogs.py:644
 msgid "New setting name:"
 msgstr "Nytt inställningsnamn:"
 
-#: dialogs.py:621
+#: dialogs.py:652
 msgid "Setting exists"
-msgstr "Inställning existerar"
+msgstr "Inställningen finns redan"
 
-#: dialogs.py:622
+#: dialogs.py:653
 msgid "A saved setting already exists with this name."
 msgstr "Det finns redan en sparad inställning med detta namn."
 
-#: dialogs.py:647
+#: dialogs.py:678
 msgid "Import Failed"
 msgstr "Importen misslyckades"
 
-#: dialogs.py:648
+#: dialogs.py:679
 msgid "This is not a valid Generate Cover export archive"
 msgstr "Detta är inte ett giltigt exportarkiv från Skapa omslag"
 
-#: dialogs.py:686
+#: dialogs.py:717
 msgid "Cannot import"
 msgstr "Kan inte importera"
 
-#: dialogs.py:687 dialogs.py:879
+#: dialogs.py:718 dialogs.py:910
 msgid "Failed to copy image"
 msgstr "Det gick inte att kopiera bilden"
 
-#: dialogs.py:745
+#: dialogs.py:776
 msgid "Export completed"
 msgstr "Exporten slutförd"
 
-#: dialogs.py:746
+#: dialogs.py:777
+#, python-format
 msgid "Cover setting exported to<br>%s"
 msgstr "Omslagsinställningen exporterades till<br>%s"
 
-#: dialogs.py:754
+#: dialogs.py:785
 msgid "Select setting file(s) to import"
 msgstr "Välj inställningsfiler att importera"
 
-#: dialogs.py:755 dialogs.py:761
+#: dialogs.py:786 dialogs.py:792
 msgid "GC Files"
 msgstr "GC-filer"
 
-#: dialogs.py:761
+#: dialogs.py:792
 msgid "Save setting as"
 msgstr "Spara inställning som"
 
-#: dialogs.py:788
+#: dialogs.py:819
 msgid "You cannot rename this image"
 msgstr "Du kan inte byta namn på denna bild"
 
-#: dialogs.py:790 dialogs.py:791
+#: dialogs.py:821 dialogs.py:822
 msgid "New image name:"
 msgstr "Nytt bildnamn:"
 
-#: dialogs.py:808
+#: dialogs.py:839
 msgid "File exists"
 msgstr "Filen finns redan"
 
-#: dialogs.py:809
+#: dialogs.py:840
 msgid "An image already exists with this name."
 msgstr "Det finns redan en bild med detta namn."
 
-#: dialogs.py:814
+#: dialogs.py:845
 msgid "Failed to rename image"
 msgstr "Det gick inte att byta namn på bilden"
 
-#: dialogs.py:823
+#: dialogs.py:854
 msgid "Add cover images"
 msgstr "Lägg till omslagsbilder"
 
-#: dialogs.py:838
+#: dialogs.py:869
 msgid "You cannot remove this image"
 msgstr "Du kan inte ta bort denna bild"
 
-#: dialogs.py:841
+#: dialogs.py:872
+#, python-format
 msgid "Are you sure you want to delete the image: %s"
 msgstr "Vill du verkligen ta bort bilden: %s"
 
-#: dialogs.py:852 dialogs.py:910
+#: dialogs.py:883 dialogs.py:941
 msgid "Cannot write"
 msgstr "Kan inte skriva"
 
-#: dialogs.py:853
+#: dialogs.py:884
 msgid "You do not have permission to delete the file"
 msgstr "Du har inte behörighet att ta bort filen"
 
-#: dialogs.py:866
+#: dialogs.py:897
 msgid "Cannot read"
 msgstr "Kan inte läsa"
 
-#: dialogs.py:867
+#: dialogs.py:898
 msgid "You do not have permission to read the file."
 msgstr "Du har inte behörighet att läsa filen."
 
-#: dialogs.py:878
+#: dialogs.py:909
 msgid "Cannot copy"
 msgstr "Kan inte kopiera"
 
-#: dialogs.py:892
+#: dialogs.py:923
 msgid "Overwrite existing"
 msgstr "Skriv över befintlig"
 
-#: dialogs.py:893
+#: dialogs.py:924
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr "Det finns redan en bildfil med detta namn. Vill du skriva över den?"
 
-#: dialogs.py:896
+#: dialogs.py:927
 msgid "Enter image name"
 msgstr "Ange bildnamn"
 
-#: dialogs.py:897
+#: dialogs.py:928
 msgid "Enter a unique name for this image:"
 msgstr "Ange ett unikt namn för bilden:"
 
-#: dialogs.py:911
+#: dialogs.py:942
 msgid "You do not have permission to overwrite the file"
 msgstr "Du har inte behörighet att skriva över filen"
 
-#: dialogs.py:947 dialogs.py:958
+#: dialogs.py:978 dialogs.py:986
 msgid "Title"
 msgstr "Titel"
 
-#: dialogs.py:948 dialogs.py:959
+#: dialogs.py:979 dialogs.py:987
 msgid "Author"
 msgstr "Författare"
 
-#: dialogs.py:949 dialogs.py:960
+#: dialogs.py:980 dialogs.py:988
 msgid "Series"
-msgstr "Serier"
+msgstr "Serie"
 
-#: dialogs.py:950 dialogs.py:961
+#: dialogs.py:981 dialogs.py:989
 msgid "Custom"
 msgstr "Anpassad"
 
-#: dialogs.py:953
-msgid "Background"
-msgstr "Bakgrund"
+#: dialogs.py:982 dialogs.py:990
+msgid "Custom 2"
+msgstr "Anpassad 2"
 
-#: dialogs.py:954
-msgid "Border"
-msgstr "Kantlinje"
+#: dialogs.py:983 dialogs.py:991
+msgid "Custom 3"
+msgstr "Anpassad 3"
 
-#: dialogs.py:974
-msgid "Fonts:"
-msgstr "Teckensnitt:"
+#: dialogs.py:1000 dialogs.py:1243 dialogs.py:1398
+msgid "Color:"
+msgstr "Färg:"
 
-#: dialogs.py:983
-msgid ""
-"Select a font and specify a size in pixels.\n"
-"If font set to 'Default', uses the tweak value from\n"
-"'generate_cover_title_font' if present."
-msgstr ""
-"Välj ett teckensnitt och ange en storlek i bildpunkter.\n"
-"Om teckensnittet är inställt på ”Standard” används justeringsvärdet från\n"
-"”generate_cover_title_font”, om det finns."
+#: dialogs.py:1005
+msgid "Fill Color:"
+msgstr "Fyllningsfärg:"
 
-#: dialogs.py:1002
-msgid "Use the same font family for all text"
-msgstr "Använd samma teckensnittsfamilj för all text"
-
-#: dialogs.py:1003
-msgid ""
-"When checked, the same font family is used for all text content on the cover"
-msgstr ""
-"När detta är markerat används samma teckensnittsfamilj för all text på "
-"omslaget"
-
-#: dialogs.py:1010
-msgid "Auto-reduce font size to fit on one line"
-msgstr "Minska teckenstorleken automatiskt så att texten ryms på en rad"
+#: dialogs.py:1007
+msgid "Choose selected field fill color"
+msgstr "Välj fyllningsfärg för det valda fältet"
 
 #: dialogs.py:1011
+msgid "Reset selected field fill color"
+msgstr "Återställ fyllningsfärgen för det valda fältet"
+
+#: dialogs.py:1014
+msgid "Use this fill color for all text"
+msgstr "Använd denna fyllningsfärg för all text"
+
+#: dialogs.py:1015
 msgid ""
-"When checked, the font size will be used as a maximum size.\n"
-"A reduced size will be used where needed to fit text on one line."
+"When checked, the current fill color is used for all text.\n"
+"When unchecked, you can set a different fill color for each field."
 msgstr ""
-"När detta är markerat används teckenstorleken som maximal storlek.\n"
-"En mindre storlek används vid behov för att texten ska rymmas på en rad."
+"När alternativet är markerat används den aktuella fyllningsfärgen för all text.\n"
+"Annars kan du välja en egen fyllningsfärg för varje fält."
 
-#: dialogs.py:1017
-msgid "Colors:"
-msgstr "Färger:"
+#: dialogs.py:1025
+msgid "Backdrop:"
+msgstr "Textbakgrund:"
 
-#: dialogs.py:1035
-msgid "Reset %s color"
-msgstr "Återställ färgen för %s"
+#: dialogs.py:1026
+msgid "Optionally render a color backdrop for this element"
+msgstr "Visa en färgad bakgrund bakom detta element"
 
-#: dialogs.py:1041
-msgid "Select a %s color"
-msgstr "Välj färg för %s"
+#: dialogs.py:1030
+msgid "Choose this element's backdrop color, if applied"
+msgstr "Välj färg för elementets bakgrund, om den är aktiverad"
 
-#: dialogs.py:1063
-msgid "Reset %s fill color"
-msgstr "Återställ fyllningsfärgen för %s"
+#: dialogs.py:1034
+msgid "Reset selected field backdrop color"
+msgstr "Återställ bakgrundsfärgen för det valda fältet"
 
-#: dialogs.py:1069
-msgid "Select %s fill color"
-msgstr "Välj fyllningsfärg för %s"
+#: dialogs.py:1036
+msgid "Use this backdrop for all text"
+msgstr "Använd denna bakgrund för all text"
 
-#: dialogs.py:1080
-msgid "Use the same fill color for all text"
-msgstr "Använd samma fyllningsfärg för all text"
+#: dialogs.py:1044
+msgid "Opacity:"
+msgstr "Opacitet:"
 
-#: dialogs.py:1081
+#: dialogs.py:1049
+msgid "Full width or height"
+msgstr "Full bredd eller höjd"
+
+#: dialogs.py:1050
 msgid ""
-"When checked, the fill color is used for all text.\n"
-"When unchecked, you can set different fill colors for each text type."
+"When checked, the backdrop will extend to the full width of the cover (height if rotated).\n"
+"When unchecked, the backdrop will only extend to the width or height of the text."
 msgstr ""
-"När detta är markerat används fyllningsfärgen för all text.\n"
-"När det inte är markerat kan du ange olika fyllningsfärger för varje texttyp."
+"När alternativet är markerat sträcker sig textbakgrunden över hela omslagets bredd (höjd om texten är roterad).\n"
+"Annars sträcker sig textbakgrunden bara över textens bredd eller höjd."
 
-#: dialogs.py:1092
-msgid "Left aligned"
-msgstr "Vänsterjusterad"
-
-#: dialogs.py:1094
-msgid "Centered"
-msgstr "Centrerad"
-
-#: dialogs.py:1096
-msgid "Right aligned"
-msgstr "Högerjusterad"
-
-#: dialogs.py:1207
+#: dialogs.py:1136
 msgid "Size:"
 msgstr "Storlek:"
 
-#: dialogs.py:1211
+#: dialogs.py:1142
 msgid "Cover width:"
 msgstr "Omslagsbredd:"
 
-#: dialogs.py:1212
+#: dialogs.py:1143
 msgid "The width in pixels of the output .jpg file"
-msgstr "Utdatafilens bredd i bildpunkter för .jpg-filen"
+msgstr "Bredden i bildpunkter på den skapade .jpg-filen"
 
-#: dialogs.py:1218
-msgid "Cover height:"
-msgstr "Omslagshöjd:"
+#: dialogs.py:1149
+msgid "Height:"
+msgstr "Höjd:"
 
-#: dialogs.py:1219
+#: dialogs.py:1150
 msgid "The height in pixels of the output .jpg file"
-msgstr "Utdatafilens höjd i bildpunkter för .jpg-filen"
+msgstr "Höjden i bildpunkter på den skapade .jpg-filen"
 
-#: dialogs.py:1225
-msgid "Stretch image to use as cover background"
-msgstr "Sträck ut bilden och använd den som omslagsbakgrund"
+#: dialogs.py:1159
+msgid "Background:"
+msgstr "Bakgrund:"
 
-#: dialogs.py:1226
-msgid ""
-"Check this to overlay text on the image background.\n"
-"Uncheck this to place text around the image."
-msgstr ""
-"Markera detta för att lägga text ovanpå bildbakgrunden.\n"
-"Avmarkera det för att placera text runt bilden."
+#: dialogs.py:1162
+msgid "Choose the background color"
+msgstr "Välj bakgrundsfärg"
 
-#: dialogs.py:1230
+#: dialogs.py:1167
+msgid "Reset background color"
+msgstr "Återställ bakgrundsfärgen"
+
+#: dialogs.py:1170
 msgid "Resize cover dimensions to match background image"
 msgstr "Ändra omslagets mått så att de motsvarar bakgrundsbilden"
 
-#: dialogs.py:1231
+#: dialogs.py:1171
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -615,11 +611,11 @@ msgstr ""
 "Markera detta för att automatiskt ändra omslagets storlek utifrån\n"
 "måtten på den valda bakgrundsbilden"
 
-#: dialogs.py:1235
+#: dialogs.py:1175
 msgid "Resize image to scale up if smaller than available area"
 msgstr "Förstora bilden om den är mindre än det tillgängliga området"
 
-#: dialogs.py:1236
+#: dialogs.py:1176
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -627,15 +623,15 @@ msgstr ""
 "Markera detta för att automatiskt förstora omslagsbilden så att den fyller\n"
 "det största tillgängliga området om den är för liten"
 
-#: dialogs.py:1242
+#: dialogs.py:1182
 msgid "Margins:"
 msgstr "Marginaler:"
 
-#: dialogs.py:1247
-msgid "Top margin:"
-msgstr "Övre marginal:"
+#: dialogs.py:1189
+msgid "Top:"
+msgstr "Upptill:"
 
-#: dialogs.py:1248
+#: dialogs.py:1190
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
@@ -643,11 +639,11 @@ msgstr ""
 "Marginalen i bildpunkter från omslagets överkant\n"
 "till det första innehållet"
 
-#: dialogs.py:1256
-msgid "Bottom margin:"
-msgstr "Nedre marginal:"
+#: dialogs.py:1198 dialogs.py:1313
+msgid "Bottom:"
+msgstr "Nedtill:"
 
-#: dialogs.py:1257
+#: dialogs.py:1199
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -655,11 +651,11 @@ msgstr ""
 "Marginalen i bildpunkter från omslagets nederkant\n"
 "till det sista innehållet"
 
-#: dialogs.py:1265
-msgid "Left margin:"
-msgstr "Vänstermarginal:"
+#: dialogs.py:1209
+msgid "Left:"
+msgstr "Vänster:"
 
-#: dialogs.py:1266
+#: dialogs.py:1210
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -667,11 +663,11 @@ msgstr ""
 "Minsta marginalen i bildpunkter från omslagets vänsterkant\n"
 "till textinnehållet"
 
-#: dialogs.py:1274
-msgid "Right margin:"
-msgstr "Högermarginal:"
+#: dialogs.py:1218 dialogs.py:1314
+msgid "Right:"
+msgstr "Höger:"
 
-#: dialogs.py:1275
+#: dialogs.py:1219
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -679,35 +675,15 @@ msgstr ""
 "Minsta marginalen i bildpunkter från omslagets högerkant\n"
 "till textinnehållet"
 
-#: dialogs.py:1283
-msgid "Text padding:"
-msgstr "Textutfyllnad:"
+#: dialogs.py:1228 dialogs.py:1382
+msgid "Border:"
+msgstr "Kantlinje:"
 
-#: dialogs.py:1284
-msgid "The spacing in pixels between successive lines of text"
-msgstr "Avståndet i bildpunkter mellan efterföljande textrader"
+#: dialogs.py:1234
+msgid "Border width:"
+msgstr "Kantlinjens bredd:"
 
-#: dialogs.py:1291
-msgid "Image padding:"
-msgstr "Bildutfyllnad:"
-
-#: dialogs.py:1292
-msgid ""
-"The spacing in pixels between the image and text\n"
-"placed above and below it"
-msgstr ""
-"Avståndet i bildpunkter mellan bilden och text\n"
-"som placeras ovanför och under den"
-
-#: dialogs.py:1302
-msgid "Border Widths:"
-msgstr "Kantlinjebredder:"
-
-#: dialogs.py:1306
-msgid "Cover border:"
-msgstr "Omslagets kantlinje:"
-
-#: dialogs.py:1307
+#: dialogs.py:1235
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -715,51 +691,177 @@ msgstr ""
 "Bredden i bildpunkter på kantlinjen runt\n"
 "omslaget. Ange 0 för ingen kantlinje"
 
+#: dialogs.py:1246
+msgid "Choose the border color"
+msgstr "Välj kantlinjens färg"
+
+#: dialogs.py:1251
+msgid "Reset border color"
+msgstr "Återställ kantlinjens färg"
+
+#: dialogs.py:1313
+msgid "Padding Top:"
+msgstr "Inre marginal upptill:"
+
 #: dialogs.py:1314
-msgid "Image border:"
-msgstr "Bildens kantlinje:"
+msgid "Padding Left:"
+msgstr "Inre marginal till vänster:"
 
-#: dialogs.py:1315
-msgid ""
-"The width in pixels of a border around the edge\n"
-"of the image. Specify 0 for no border"
-msgstr ""
-"Bredden i bildpunkter på kantlinjen runt\n"
-"bilden. Ange 0 för ingen kantlinje"
-
-#: dialogs.py:1354
+#: dialogs.py:1343
 msgid "Field Order:"
 msgstr "Fältordning:"
 
-#: dialogs.py:1355
+#: dialogs.py:1344
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
 msgstr ""
 "Ändra ordningen på objekten på omslaget och\n"
-"om de ska visas med hjälp av kryssrutan"
+"markera med kryssrutorna vilka som ska visas"
 
-#: dialogs.py:1369
+#: dialogs.py:1358
 msgid "Move field up"
 msgstr "Flytta fält upp"
 
-#: dialogs.py:1376
+#: dialogs.py:1364
 msgid "Move field down"
 msgstr "Flytta fält ned"
 
-#: dialogs.py:1382
-msgid "Other Options:"
-msgstr "Andra alternativ:"
+#: dialogs.py:1370
+msgid "Image:"
+msgstr "Bild:"
 
-#: dialogs.py:1386
-msgid "Custom text:"
-msgstr "Anpassad text:"
+#: dialogs.py:1374
+msgid "Stretch image to use as cover background"
+msgstr "Sträck ut bilden och använd den som omslagsbakgrund"
 
-#: dialogs.py:1396
+#: dialogs.py:1375
+msgid ""
+"Check this to overlay text on the image background.\n"
+"Uncheck this to place text around the image."
+msgstr ""
+"Markera detta för att lägga text ovanpå bildbakgrunden.\n"
+"Avmarkera det för att placera text runt bilden."
+
+#: dialogs.py:1388
+msgid "Image border:"
+msgstr "Bildens kantlinje:"
+
+#: dialogs.py:1390
+msgid "The width in pixels of a border around the edge of the image"
+msgstr "Bredden i bildpunkter på kantlinjen runt bilden"
+
+#: dialogs.py:1402
+msgid ""
+"Choose the image border color (if it is not stretched to the cover edge)"
+msgstr ""
+"Välj färg på bildens kantlinje (om bilden inte är utsträckt till omslagets "
+"kant)"
+
+#: dialogs.py:1408
+msgid "Reset image border color"
+msgstr "Återställ färgen på bildens kantlinje"
+
+#: dialogs.py:1421 dialogs.py:1428
+msgid "Font:"
+msgstr "Teckensnitt:"
+
+#: dialogs.py:1432
+msgid "Choose the font family for the selected field"
+msgstr "Välj teckensnittsfamilj för det valda fältet"
+
+#: dialogs.py:1440
+msgid "Font size in pixels"
+msgstr "Teckenstorlek i bildpunkter"
+
+#: dialogs.py:1447
+msgid "Use this font family for all text"
+msgstr "Använd denna teckensnittsfamilj för all text"
+
+#: dialogs.py:1448
+msgid ""
+"When checked, this font family is used for all text content on the cover"
+msgstr ""
+"När alternativet är markerat används denna teckensnittsfamilj för all text "
+"på omslaget"
+
+#: dialogs.py:1451
+msgid "Auto-reduce font size to fit on one line"
+msgstr "Minska teckenstorleken automatiskt så att texten ryms på en rad"
+
+#: dialogs.py:1452
+msgid ""
+"When checked, this font size will be used as a maximum size.\n"
+"A reduced size will be used where needed to fit text on one line."
+msgstr ""
+"När alternativet är markerat används denna teckenstorlek som maximal storlek.\n"
+"Vid behov minskas storleken så att texten ryms på en rad."
+
+#: dialogs.py:1458
+msgid "Alignment:"
+msgstr "Justering:"
+
+#: dialogs.py:1463 dialogs.py:1500
+msgid "Left"
+msgstr "Vänster"
+
+#: dialogs.py:1464
+msgid "Centre"
+msgstr "Centrerad"
+
+#: dialogs.py:1465 dialogs.py:1501
+msgid "Right"
+msgstr "Höger"
+
+#: dialogs.py:1468
+msgid "Bold"
+msgstr "Fet"
+
+#: dialogs.py:1472
+msgid "Italic"
+msgstr "Kursiv"
+
+#: dialogs.py:1475
+msgid "Underline"
+msgstr "Understruken"
+
+#: dialogs.py:1482
+msgid "Rotation:"
+msgstr "Rotation:"
+
+#. TRANSLATORS: Text rotation angle in degrees (0, 90, or 270), not
+#. temperature.
+#. Keep %d; use a suitable local degree symbol or abbreviation.
+#: dialogs.py:1490
+#, python-format
+msgid "%d°"
+msgstr "%d°"
+
+#: dialogs.py:1491
+msgid "Rotate the selected text field"
+msgstr "Rotera det valda textfältet"
+
+#: dialogs.py:1495
+msgid "Placement:"
+msgstr "Placering:"
+
+#: dialogs.py:1502
+msgid "Place vertical text along the left or right edge"
+msgstr "Placera lodrät text längs vänster eller höger kant"
+
+#: dialogs.py:1516
+msgid "Data:"
+msgstr "Data:"
+
+#: dialogs.py:1521
+msgid "Text:"
+msgstr "Text:"
+
+#: dialogs.py:1533
 msgid "Swap author LN,FN to FN LN"
 msgstr "Byt författarnamn från efternamn, förnamn till förnamn efternamn"
 
-#: dialogs.py:1397
+#: dialogs.py:1534
 msgid ""
 "Use this option if your authors are stored as LN, FN\n"
 "but you prefer to see FN LN on the book cover"
@@ -767,11 +869,11 @@ msgstr ""
 "Använd detta alternativ om författarnamnen lagras som efternamn, förnamn\n"
 "men du föredrar förnamn efternamn på bokomslaget"
 
-#: dialogs.py:1401
+#: dialogs.py:1538
 msgid "Series text:"
 msgstr "Serietext:"
 
-#: dialogs.py:1402
+#: dialogs.py:1539
 msgid ""
 "Change the way series information is displayed.\n"
 "Useful for non-English languages!"
@@ -779,84 +881,56 @@ msgstr ""
 "Ändra hur serieinformation visas.\n"
 "Användbart för andra språk än engelska!"
 
-#: dialogs.py:1410
-msgid "Metadata: (*not saved)"
-msgstr "Metadata: (*sparas inte)"
-
-#: dialogs.py:1411
-msgid ""
-"Optionally override the text in these fields for this book.\n"
-"These are not saved as part of the settings profile.\n"
-"This functionality is disabled if multiple books are selected."
-msgstr ""
-"Du kan ersätta texten i dessa fält för den här boken.\n"
-"Värdena sparas inte som en del av inställningsprofilen.\n"
-"Funktionen är inaktiverad om flera böcker är markerade."
-
-#: dialogs.py:1417
-msgid "Title:"
-msgstr "Titel:"
-
-#: dialogs.py:1420
-msgid "Author:"
-msgstr "Författare:"
-
-#: dialogs.py:1423
-msgid "Series:"
-msgstr "Serie:"
-
-#: dialogs.py:1453
+#: dialogs.py:1600
 msgid "Cover Options"
 msgstr "Omslagsalternativ"
 
-#: dialogs.py:1456
+#: dialogs.py:1604
 msgid "Generate Custom Cover"
 msgstr "Skapa anpassat omslag"
 
-#: dialogs.py:1477
+#: dialogs.py:1624
 msgid "Settings"
 msgstr "Inställningar"
 
-#: dialogs.py:1478
-msgid "Fonts"
-msgstr "Teckensnitt"
-
-#: dialogs.py:1479
+#: dialogs.py:1625
 msgid "Dimensions"
 msgstr "Dimensioner"
 
-#: dialogs.py:1480
+#: dialogs.py:1626
 msgid "Contents"
 msgstr "Innehåll"
 
-#: dialogs.py:1490
+#: dialogs.py:1638
 msgid " Revert "
 msgstr " Återställ "
 
-#: dialogs.py:1491
+#: dialogs.py:1639
 msgid "Revert to your previous saved setting values"
 msgstr "Återställ de tidigare sparade inställningsvärdena"
 
-#: dialogs.py:1493
+#: dialogs.py:1641
 msgid " Save "
 msgstr " Spara "
 
-#: dialogs.py:1494
+#: dialogs.py:1642
 msgid "Overwrite your current saved setting"
 msgstr "Skriv över den aktuella sparade inställningen"
 
-#: dialogs.py:1496
+#: dialogs.py:1644
 msgid " Customize... "
 msgstr " Anpassa … "
 
-#: dialogs.py:1497
+#: dialogs.py:1645
 msgid "Set general options for this plugin"
-msgstr "Ange allmänna alternativ för insticksprogrammet"
+msgstr "Ange allmänna alternativ för denna insticksmodul"
 
-#: dialogs.py:1575
+#: dialogs.py:1723
+#, python-format
 msgid "Revert to your previously saved values for '%s'?"
-msgstr "Återställa de tidigare sparade värdena för ”%s”?"
+msgstr "Vill du återställa de tidigare sparade värdena för ”%s”?"
 
-#: dialogs.py:1594
+#: dialogs.py:1742
+#, python-format
 msgid "Overwrite the '%s' setting with the current values?"
-msgstr "Skriva över inställningen ”%s” med de aktuella värdena?"
+msgstr "Vill du skriva över inställningen ”%s” med de aktuella värdena?"

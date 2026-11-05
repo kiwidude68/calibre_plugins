@@ -1,29 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR ORGANIZATION
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Generate Cover package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Adolfo Jayme Barrientos, 2022
 # Darío Hereñú, 2022
-# Walter Paterno <walter.paterno@gmail.com>, 2022
 # Grant Drake, 2022
+# Walter Paterno <walter.paterno@gmail.com>, 2026
 # Jellby <jellby@yahoo.com>, 2026
 # 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-05 21:31+1000\n"
+"Project-Id-Version: Generate Cover\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-01 22:50+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: Jellby <jellby@yahoo.com>, 2026\n"
 "Language-Team: Spanish (https://app.transifex.com/calibre/teams/19337/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.5\n"
 "Language: es\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:353
+#: ..\common\common_dialogs.py:84 config.py:616
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
@@ -131,9 +133,13 @@ msgid "No books selected"
 msgstr "Ningún libro seleccionado"
 
 #: action.py:86
-msgid "Corrupted setting: \"%s\" has incorrect internal name of: \"%s\")"
+#, python-format
+msgid ""
+"Corrupted setting: \"%(setting_name)s\" has incorrect internal name of: "
+"\"%(internal_name)s\")"
 msgstr ""
-"Configuración dañada: «%s» tiene un nombre interno incorrecto de: «%s»)"
+"Configuración dañada: «%(setting_name)s» tiene un nombre interno incorrecto "
+"de: «%(internal_name)s»)"
 
 #: action.py:90
 msgid "Corrupted Configuration File"
@@ -154,43 +160,44 @@ msgstr ""
 
 #: action.py:137 action.py:147
 msgid "Cannot generate cover"
-msgstr "No se pueden generar portadas"
+msgstr "No se puede generar portada"
 
 #: action.py:138
 msgid "Missing metadata passed for book to generate cover"
-msgstr "Faltan metadatos para que el libro genere la portada"
+msgstr "Faltan metadatos del libro para generar portada"
 
 #: action.py:148
+#, python-format
 msgid "No cover settings exist named: \"%s\""
 msgstr "No existe ninguna configuración de portada llamada: «%s»"
 
-#: config.py:339
+#: config.py:602
 msgid "After generating cover:"
 msgstr "Después de generar portada:"
 
-#: config.py:348
+#: config.py:611
 msgid "Update column:"
 msgstr "Columna de actualización:"
 
-#: config.py:349
+#: config.py:612
 msgid "Update value:"
 msgstr "Valor de actualización:"
 
-#: config.py:354
+#: config.py:617
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Modificar los atajos de teclado asociados con este complemento"
 
-#: config.py:358
+#: config.py:621
 msgid "View library preferences"
 msgstr "Ver preferencias de la biblioteca"
 
-#: config.py:359
+#: config.py:622
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 "Ver datos almacenados en la base de datos de la biblioteca para este "
 "complemento"
 
-#: config.py:363 dialogs.py:1499
+#: config.py:626 dialogs.py:1647
 msgid "&Help"
 msgstr "&Ayuda"
 
@@ -199,6 +206,7 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #: dialogs.py:95
+#, python-format
 msgid "Generating %d covers"
 msgstr "Generando %d portadas"
 
@@ -211,6 +219,7 @@ msgid "Unsaved Changes"
 msgstr "Cambios no guardados"
 
 #: dialogs.py:131 dialogs.py:154
+#, python-format
 msgid "You have unsaved changes to the <b>%s</b> setting.<br>"
 msgstr "Tiene cambios sin guardar en la configuración <b>%s </b>.<br>"
 
@@ -254,15 +263,15 @@ msgstr "Generar portada con esta configuración y olvidarla (la configuración)"
 msgid "Cancel action"
 msgstr "Cancelar acción"
 
-#: dialogs.py:450 dialogs.py:528
+#: dialogs.py:481 dialogs.py:559
 msgid "Saved Settings:"
 msgstr "Configuraciones guardadas:"
 
-#: dialogs.py:460
+#: dialogs.py:491
 msgid "Autosave settings"
 msgstr "Guardado automático"
 
-#: dialogs.py:461
+#: dialogs.py:492
 msgid ""
 "Do not prompt to save changes to a setting. Always save when\n"
 "switching to another setting, clicking OK or using Import/Export."
@@ -270,348 +279,335 @@ msgstr ""
 "No solicitar guardar cambios en una configuración. Guardar siempre al\n"
 "cambiar a otra configuración, pulsar en Aceptar o usar Importar/Exportar."
 
-#: dialogs.py:468
+#: dialogs.py:499
 msgid "Add setting"
 msgstr "Añadir configuración"
 
-#: dialogs.py:473
+#: dialogs.py:504
 msgid "Rename setting"
 msgstr "Cambiar el nombre a la configuración"
 
-#: dialogs.py:479 dialogs.py:667
+#: dialogs.py:510 dialogs.py:698
 msgid "Import setting"
 msgstr "Importar configuración"
 
-#: dialogs.py:484
+#: dialogs.py:515
 msgid "Export setting"
 msgstr "Exportar configuración"
 
-#: dialogs.py:490
+#: dialogs.py:521
 msgid "Delete setting from this list"
 msgstr "Eliminar configuración de esta lista"
 
-#: dialogs.py:498
+#: dialogs.py:529
 msgid "Select Image:"
 msgstr "Seleccionar imagen:"
 
-#: dialogs.py:509
+#: dialogs.py:540
 msgid "Add image to this list"
 msgstr "Añadir imagen a esta lista"
 
-#: dialogs.py:514
+#: dialogs.py:545
 msgid "Rename image"
 msgstr "Cambiar nombre de la imagen"
 
-#: dialogs.py:519
+#: dialogs.py:550
 msgid "Remove image from this list"
 msgstr "Eliminar imagen de esta lista"
 
-#: dialogs.py:530
+#: dialogs.py:561
 msgid "Saved Settings: (*unsaved changes)"
 msgstr "Configuración guardada: (* cambios no guardados)"
 
-#: dialogs.py:561
+#: dialogs.py:592
 msgid "Add new setting"
 msgstr "Añadir nueva confuguración"
 
-#: dialogs.py:584
+#: dialogs.py:615
 msgid "Cannot add"
 msgstr "No se puede añadir"
 
-#: dialogs.py:585
+#: dialogs.py:616
 msgid "The name you specified is not unique"
 msgstr "El nombre especificado no es único"
 
-#: dialogs.py:594 dialogs.py:837
+#: dialogs.py:625 dialogs.py:868
 msgid "Cannot remove"
 msgstr "No se puede eliminar"
 
-#: dialogs.py:595
+#: dialogs.py:626
 msgid "You cannot remove the default setting"
 msgstr "No se puede eliminar la configuración predeterminada"
 
-#: dialogs.py:596 dialogs.py:840 dialogs.py:1574 dialogs.py:1593
+#: dialogs.py:627 dialogs.py:871 dialogs.py:1722 dialogs.py:1741
 msgid "Are you sure?"
 msgstr "¿Está seguro?"
 
-#: dialogs.py:597
+#: dialogs.py:628
+#, python-format
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "¿Está seguro de querer eliminar la configuración «%s»?"
 
-#: dialogs.py:610 dialogs.py:787 dialogs.py:813
+#: dialogs.py:641 dialogs.py:818 dialogs.py:844
 msgid "Cannot rename"
 msgstr "No se puede cambiar el nombre"
 
-#: dialogs.py:611
+#: dialogs.py:642
 msgid "You cannot rename the default setting"
 msgstr "No se puede cambiar el nombre de la configuración predeterminada"
 
-#: dialogs.py:612 dialogs.py:613
+#: dialogs.py:643 dialogs.py:644
 msgid "New setting name:"
 msgstr "Nuevo nombre de configuración:"
 
-#: dialogs.py:621
+#: dialogs.py:652
 msgid "Setting exists"
 msgstr "La configuración existe"
 
-#: dialogs.py:622
+#: dialogs.py:653
 msgid "A saved setting already exists with this name."
 msgstr "Ya existe una configuración guardada con este nombre."
 
-#: dialogs.py:647
+#: dialogs.py:678
 msgid "Import Failed"
 msgstr "Fallo al importar"
 
-#: dialogs.py:648
+#: dialogs.py:679
 msgid "This is not a valid Generate Cover export archive"
 msgstr "Éste no es un archivo de exportación de Generate Cover válido"
 
-#: dialogs.py:686
+#: dialogs.py:717
 msgid "Cannot import"
 msgstr "No se puede importar"
 
-#: dialogs.py:687 dialogs.py:879
+#: dialogs.py:718 dialogs.py:910
 msgid "Failed to copy image"
 msgstr "Error al copiar la imagen"
 
-#: dialogs.py:745
+#: dialogs.py:776
 msgid "Export completed"
 msgstr "Exportación completada"
 
-#: dialogs.py:746
+#: dialogs.py:777
+#, python-format
 msgid "Cover setting exported to<br>%s"
 msgstr "Configuración de portada exportada a<br>%s"
 
-#: dialogs.py:754
+#: dialogs.py:785
 msgid "Select setting file(s) to import"
 msgstr "Seleccionar archivo(s) de configuración para importar"
 
-#: dialogs.py:755 dialogs.py:761
+#: dialogs.py:786 dialogs.py:792
 msgid "GC Files"
 msgstr "Archivos GC"
 
-#: dialogs.py:761
+#: dialogs.py:792
 msgid "Save setting as"
 msgstr "Guardar configuración como"
 
-#: dialogs.py:788
+#: dialogs.py:819
 msgid "You cannot rename this image"
 msgstr "No se puede cambiar el nombre de esta imagen"
 
-#: dialogs.py:790 dialogs.py:791
+#: dialogs.py:821 dialogs.py:822
 msgid "New image name:"
 msgstr "Nuevo nombre de imagen:"
 
-#: dialogs.py:808
+#: dialogs.py:839
 msgid "File exists"
 msgstr "El archivo existe"
 
-#: dialogs.py:809
+#: dialogs.py:840
 msgid "An image already exists with this name."
 msgstr "Ya existe una imagen con este nombre."
 
-#: dialogs.py:814
+#: dialogs.py:845
 msgid "Failed to rename image"
 msgstr "No se pudo cambiar el nombre de la imagen"
 
-#: dialogs.py:823
+#: dialogs.py:854
 msgid "Add cover images"
 msgstr "Añadir imágenes de portada"
 
-#: dialogs.py:838
+#: dialogs.py:869
 msgid "You cannot remove this image"
 msgstr "No se puede eliminar esta imagen"
 
-#: dialogs.py:841
+#: dialogs.py:872
+#, python-format
 msgid "Are you sure you want to delete the image: %s"
 msgstr "Está seguro de querer eliminar la imagen: %s"
 
-#: dialogs.py:852 dialogs.py:910
+#: dialogs.py:883 dialogs.py:941
 msgid "Cannot write"
 msgstr "No se puede escribir"
 
-#: dialogs.py:853
+#: dialogs.py:884
 msgid "You do not have permission to delete the file"
 msgstr "No tiene permiso para borrar el archivo"
 
-#: dialogs.py:866
+#: dialogs.py:897
 msgid "Cannot read"
 msgstr "No se puede leer"
 
-#: dialogs.py:867
+#: dialogs.py:898
 msgid "You do not have permission to read the file."
 msgstr "No tiene permiso para leer el archivo."
 
-#: dialogs.py:878
+#: dialogs.py:909
 msgid "Cannot copy"
 msgstr "No se puede copiar"
 
-#: dialogs.py:892
+#: dialogs.py:923
 msgid "Overwrite existing"
 msgstr "Reemplazar existentes"
 
-#: dialogs.py:893
+#: dialogs.py:924
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr "Ya existe un archivo de imagen con este nombre. ¿Desea reemplazarlo?"
 
-#: dialogs.py:896
+#: dialogs.py:927
 msgid "Enter image name"
 msgstr "Introduzca el nombre de la imagen"
 
-#: dialogs.py:897
+#: dialogs.py:928
 msgid "Enter a unique name for this image:"
 msgstr "Introduzca un nombre único para esta imagen:"
 
-#: dialogs.py:911
+#: dialogs.py:942
 msgid "You do not have permission to overwrite the file"
 msgstr "No tiene permiso para reemplazar el archivo"
 
-#: dialogs.py:947 dialogs.py:958
+#: dialogs.py:978 dialogs.py:986
 msgid "Title"
 msgstr "Título"
 
-#: dialogs.py:948 dialogs.py:959
+#: dialogs.py:979 dialogs.py:987
 msgid "Author"
 msgstr "Autor"
 
-#: dialogs.py:949 dialogs.py:960
+#: dialogs.py:980 dialogs.py:988
 msgid "Series"
 msgstr "Serie"
 
-#: dialogs.py:950 dialogs.py:961
+#: dialogs.py:981 dialogs.py:989
 msgid "Custom"
 msgstr "Personalizada"
 
-#: dialogs.py:953
-msgid "Background"
-msgstr "Fondo"
+#: dialogs.py:982 dialogs.py:990
+msgid "Custom 2"
+msgstr "Personalizada 2"
 
-#: dialogs.py:954
-msgid "Border"
-msgstr "Borde"
+#: dialogs.py:983 dialogs.py:991
+msgid "Custom 3"
+msgstr "Personalizada 3"
 
-#: dialogs.py:974
-msgid "Fonts:"
-msgstr "Tipos de letra:"
+#: dialogs.py:1000 dialogs.py:1243 dialogs.py:1398
+msgid "Color:"
+msgstr "Color:"
 
-#: dialogs.py:983
-msgid ""
-"Select a font and specify a size in pixels.\n"
-"If font set to 'Default', uses the tweak value from\n"
-"'generate_cover_title_font' if present."
-msgstr ""
-"Seleccione una tipo de letra y especifique un tamaño en píxeles.\n"
-"Si el tipo de letra se establece en «Predeterminado», se usa el valor del ajuste\n"
-"«generate_cover_title_font» si está presente."
+#: dialogs.py:1005
+msgid "Fill Color:"
+msgstr "Color de relleno:"
 
-#: dialogs.py:1002
-msgid "Use the same font family for all text"
-msgstr "Utilìzar la misma familia de tipo de letra para todo el texto"
-
-#: dialogs.py:1003
-msgid ""
-"When checked, the same font family is used for all text content on the cover"
-msgstr ""
-"Cuando se marca, se usa la misma familia de tipo de letra para todo el "
-"contenido de texto en la portada"
-
-#: dialogs.py:1010
-msgid "Auto-reduce font size to fit on one line"
-msgstr ""
-"Reducir automáticamente el tamaño de letra para que quepa en una línea"
+#: dialogs.py:1007
+msgid "Choose selected field fill color"
+msgstr "Elegir color de relleno del campo seleccionado"
 
 #: dialogs.py:1011
+msgid "Reset selected field fill color"
+msgstr "Restablecer color de relleno del campo seleccionado"
+
+#: dialogs.py:1014
+msgid "Use this fill color for all text"
+msgstr "Usar este color de relleno para todo el texto"
+
+#: dialogs.py:1015
 msgid ""
-"When checked, the font size will be used as a maximum size.\n"
-"A reduced size will be used where needed to fit text on one line."
+"When checked, the current fill color is used for all text.\n"
+"When unchecked, you can set a different fill color for each field."
 msgstr ""
-"Cuando se marca, el tamaño de letra se utilizará como tamaño máximo.\n"
-"Se utilizará un tamaño reducido cuando sea necesario para ajustar el texto en una línea."
+"Si está marcado, el color de relleno actual se usa para todo el texto.\n"
+"Si no está marcado, se puede seleccionar un color de relleno diferente para cada campo."
 
-#: dialogs.py:1017
-msgid "Colors:"
-msgstr "Colores:"
+#: dialogs.py:1025
+msgid "Backdrop:"
+msgstr "Segundo plano:"
 
-#: dialogs.py:1035
-msgid "Reset %s color"
-msgstr "Restablecer color de %s"
+#: dialogs.py:1026
+msgid "Optionally render a color backdrop for this element"
+msgstr ""
+"De manera opcional dibujar un fondo de color (segundo plano) para este "
+"elemento"
 
-#: dialogs.py:1041
-msgid "Select a %s color"
-msgstr "Seleccionar un color de %s"
+#: dialogs.py:1030
+msgid "Choose this element's backdrop color, if applied"
+msgstr "Elegir el color de segundo plano de este elemento, si se aplica"
 
-#: dialogs.py:1063
-msgid "Reset %s fill color"
-msgstr "Restablecer color de relleno de %s"
+#: dialogs.py:1034
+msgid "Reset selected field backdrop color"
+msgstr "Restablecer el color de segundo plano del campo seleccionado"
 
-#: dialogs.py:1069
-msgid "Select %s fill color"
-msgstr "Seleccionar el color de relleno de %s"
+#: dialogs.py:1036
+msgid "Use this backdrop for all text"
+msgstr "Usar este segundo plano para todo el texto"
 
-#: dialogs.py:1080
-msgid "Use the same fill color for all text"
-msgstr "Usar el mismo color de relleno para todo el texto"
+#: dialogs.py:1044
+msgid "Opacity:"
+msgstr "Opacidad:"
 
-#: dialogs.py:1081
+#: dialogs.py:1049
+msgid "Full width or height"
+msgstr "Ancho o alto completo"
+
+#: dialogs.py:1050
 msgid ""
-"When checked, the fill color is used for all text.\n"
-"When unchecked, you can set different fill colors for each text type."
+"When checked, the backdrop will extend to the full width of the cover (height if rotated).\n"
+"When unchecked, the backdrop will only extend to the width or height of the text."
 msgstr ""
-"Si está marcado, el color de relleno se usa para todo el texto.\n"
-"Si no está marcado, puede establecerse distinto color de relleno para cada tipo de texto."
+"Cuando está marcada, el segundo plano se extenderá a todo el ancho de la portada (o a la altura si está girada).\n"
+"Cuando no está marcada, el segundo plano sólo se extenderá al ancho o alto del texto."
 
-#: dialogs.py:1092
-msgid "Left aligned"
-msgstr "Alineado a la izquierda"
-
-#: dialogs.py:1094
-msgid "Centered"
-msgstr "Centrado"
-
-#: dialogs.py:1096
-msgid "Right aligned"
-msgstr "Alineado a la derecha"
-
-#: dialogs.py:1207
+#: dialogs.py:1136
 msgid "Size:"
 msgstr "Tamaño:"
 
-#: dialogs.py:1211
+#: dialogs.py:1142
 msgid "Cover width:"
 msgstr "Ancho de portada:"
 
-#: dialogs.py:1212
+#: dialogs.py:1143
 msgid "The width in pixels of the output .jpg file"
 msgstr "El ancho en píxeles del archivo .jpg de salida"
 
-#: dialogs.py:1218
-msgid "Cover height:"
-msgstr "Altura de portada:"
+#: dialogs.py:1149
+msgid "Height:"
+msgstr "Altura:"
 
-#: dialogs.py:1219
+#: dialogs.py:1150
 msgid "The height in pixels of the output .jpg file"
 msgstr "La altura en píxeles del archivo .jpg de salida"
 
-#: dialogs.py:1225
-msgid "Stretch image to use as cover background"
-msgstr "Estirar la imagen para usarla como fondo de portada"
+#: dialogs.py:1159
+msgid "Background:"
+msgstr "Fondo:"
 
-#: dialogs.py:1226
-msgid ""
-"Check this to overlay text on the image background.\n"
-"Uncheck this to place text around the image."
-msgstr ""
-"Marcar para superponer el texto sobre el fondo de la imagen.\n"
-"Desmarcar esta opción para colocar el texto alrededor de la imagen."
+#: dialogs.py:1162
+msgid "Choose the background color"
+msgstr "Elegir el color de fondo"
 
-#: dialogs.py:1230
+#: dialogs.py:1167
+msgid "Reset background color"
+msgstr "Restablecer el color de fondo"
+
+#: dialogs.py:1170
 msgid "Resize cover dimensions to match background image"
 msgstr ""
 "Cambiar las dimensiones de la portada para que coincidan con la imagen de "
 "fondo"
 
-#: dialogs.py:1231
+#: dialogs.py:1171
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -619,13 +615,13 @@ msgstr ""
 "Marcar para cambiar automáticamente el tamaño de la portada según\n"
 "las dimensiones de la imagen de fondo elegida actualmente"
 
-#: dialogs.py:1235
+#: dialogs.py:1175
 msgid "Resize image to scale up if smaller than available area"
 msgstr ""
 "Cambiar el tamaño de la imagen para ampliarla si es más pequeña que el área "
 "disponible"
 
-#: dialogs.py:1236
+#: dialogs.py:1176
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -633,15 +629,15 @@ msgstr ""
 "Marcar para cambiar automáticamente el tamaño de la imagen de portada para que se ajuste al\n"
 "el área máxima disponible si es demasiado pequeña"
 
-#: dialogs.py:1242
+#: dialogs.py:1182
 msgid "Margins:"
 msgstr "Márgenes:"
 
-#: dialogs.py:1247
-msgid "Top margin:"
-msgstr "Margen superior:"
+#: dialogs.py:1189
+msgid "Top:"
+msgstr "Arriba:"
 
-#: dialogs.py:1248
+#: dialogs.py:1190
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
@@ -649,11 +645,11 @@ msgstr ""
 "El margen en píxeles desde la parte superior de la portada\n"
 "al primer contenido"
 
-#: dialogs.py:1256
-msgid "Bottom margin:"
-msgstr "Margen inferior:"
+#: dialogs.py:1198 dialogs.py:1313
+msgid "Bottom:"
+msgstr "Abajo:"
 
-#: dialogs.py:1257
+#: dialogs.py:1199
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -661,11 +657,11 @@ msgstr ""
 "El margen en píxeles desde la parte inferior de la portada\n"
 "al último contenido"
 
-#: dialogs.py:1265
-msgid "Left margin:"
-msgstr "Margen izquierdo:"
+#: dialogs.py:1209
+msgid "Left:"
+msgstr "Izquierda:"
 
-#: dialogs.py:1266
+#: dialogs.py:1210
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -673,11 +669,11 @@ msgstr ""
 "El margen mínimo en píxeles desde la izquierda de la portada\n"
 "al contenido de texto"
 
-#: dialogs.py:1274
-msgid "Right margin:"
-msgstr "Margen derecho:"
+#: dialogs.py:1218 dialogs.py:1314
+msgid "Right:"
+msgstr "Derecha:"
 
-#: dialogs.py:1275
+#: dialogs.py:1219
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -685,35 +681,15 @@ msgstr ""
 "El margen mínimo en píxeles desde la derecha de la portada\n"
 "al contenido de texto"
 
-#: dialogs.py:1283
-msgid "Text padding:"
-msgstr "Espaciado de texto:"
+#: dialogs.py:1228 dialogs.py:1382
+msgid "Border:"
+msgstr "Borde:"
 
-#: dialogs.py:1284
-msgid "The spacing in pixels between successive lines of text"
-msgstr "El espacio en píxeles entre líneas sucesivas de texto"
+#: dialogs.py:1234
+msgid "Border width:"
+msgstr "Anchura del borde:"
 
-#: dialogs.py:1291
-msgid "Image padding:"
-msgstr "Espaciado de imagen:"
-
-#: dialogs.py:1292
-msgid ""
-"The spacing in pixels between the image and text\n"
-"placed above and below it"
-msgstr ""
-"El espacio en píxeles entre la imagen y el texto\n"
-"colocado arriba y abajo"
-
-#: dialogs.py:1302
-msgid "Border Widths:"
-msgstr "Anchos de borde:"
-
-#: dialogs.py:1306
-msgid "Cover border:"
-msgstr "Borde de portada:"
-
-#: dialogs.py:1307
+#: dialogs.py:1235
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -721,23 +697,27 @@ msgstr ""
 "El ancho en píxeles de un borde alrededor\n"
 "de la portada. Especifique 0 para no tener borde"
 
+#: dialogs.py:1246
+msgid "Choose the border color"
+msgstr "Elegir el color del borde"
+
+#: dialogs.py:1251
+msgid "Reset border color"
+msgstr "Restablecer el color del borde"
+
+#: dialogs.py:1313
+msgid "Padding Top:"
+msgstr "Espaciado superior:"
+
 #: dialogs.py:1314
-msgid "Image border:"
-msgstr "Borde de la imagen:"
+msgid "Padding Left:"
+msgstr "Espaciado a la izquierda:"
 
-#: dialogs.py:1315
-msgid ""
-"The width in pixels of a border around the edge\n"
-"of the image. Specify 0 for no border"
-msgstr ""
-"El ancho en píxeles de un borde alrededor\n"
-"de la imagen. Especifique 0 para no tener borde"
-
-#: dialogs.py:1354
+#: dialogs.py:1343
 msgid "Field Order:"
 msgstr "Orden campos:"
 
-#: dialogs.py:1355
+#: dialogs.py:1344
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
@@ -745,27 +725,151 @@ msgstr ""
 "Modificar el orden de los elementos de portada y\n"
 "si se muestran o no según la casilla de verificación"
 
-#: dialogs.py:1369
+#: dialogs.py:1358
 msgid "Move field up"
 msgstr "Mover campo hacia arriba"
 
-#: dialogs.py:1376
+#: dialogs.py:1364
 msgid "Move field down"
 msgstr "Mover campo hacia abajo"
 
-#: dialogs.py:1382
-msgid "Other Options:"
-msgstr "Otras opciones:"
+#: dialogs.py:1370
+msgid "Image:"
+msgstr "Imagen:"
 
-#: dialogs.py:1386
-msgid "Custom text:"
-msgstr "Texto personalizado:"
+#: dialogs.py:1374
+msgid "Stretch image to use as cover background"
+msgstr "Estirar la imagen para usarla como fondo de portada"
 
-#: dialogs.py:1396
+#: dialogs.py:1375
+msgid ""
+"Check this to overlay text on the image background.\n"
+"Uncheck this to place text around the image."
+msgstr ""
+"Marcar para superponer el texto sobre el fondo de la imagen.\n"
+"Desmarcar esta opción para colocar el texto alrededor de la imagen."
+
+#: dialogs.py:1388
+msgid "Image border:"
+msgstr "Borde de la imagen:"
+
+#: dialogs.py:1390
+msgid "The width in pixels of a border around the edge of the image"
+msgstr "El ancho en píxeles de un borde alrededor de la imagen"
+
+#: dialogs.py:1402
+msgid ""
+"Choose the image border color (if it is not stretched to the cover edge)"
+msgstr ""
+"Elegir el color del borde de la imagen (si no se estira hasta el límite de "
+"la portada)"
+
+#: dialogs.py:1408
+msgid "Reset image border color"
+msgstr "Restablecer el color del borde de la imagen"
+
+#: dialogs.py:1421 dialogs.py:1428
+msgid "Font:"
+msgstr "Tipo de letra:"
+
+#: dialogs.py:1432
+msgid "Choose the font family for the selected field"
+msgstr "Elegir el tipo de letra para el campo seleccionado"
+
+#: dialogs.py:1440
+msgid "Font size in pixels"
+msgstr "Tamaño de letra en píxeles"
+
+#: dialogs.py:1447
+msgid "Use this font family for all text"
+msgstr "Usar este tipo de letra para todo el texto"
+
+#: dialogs.py:1448
+msgid ""
+"When checked, this font family is used for all text content on the cover"
+msgstr ""
+"Cuando está marcado, este tipo de letra se usa para todo el texto de la "
+"portada"
+
+#: dialogs.py:1451
+msgid "Auto-reduce font size to fit on one line"
+msgstr ""
+"Reducir automáticamente el tamaño de letra para que quepa en una línea"
+
+#: dialogs.py:1452
+msgid ""
+"When checked, this font size will be used as a maximum size.\n"
+"A reduced size will be used where needed to fit text on one line."
+msgstr ""
+"Cuando se marca, este tamaño de letra se utilizará como tamaño máximo.\n"
+"Se utilizará un tamaño reducido cuando sea necesario para ajustar el texto en una línea."
+
+#: dialogs.py:1458
+msgid "Alignment:"
+msgstr "Alineación:"
+
+#: dialogs.py:1463 dialogs.py:1500
+msgid "Left"
+msgstr "Izquierda"
+
+#: dialogs.py:1464
+msgid "Centre"
+msgstr "Centro"
+
+#: dialogs.py:1465 dialogs.py:1501
+msgid "Right"
+msgstr "Derecha"
+
+#: dialogs.py:1468
+msgid "Bold"
+msgstr "Negrita"
+
+#: dialogs.py:1472
+msgid "Italic"
+msgstr "Cursiva"
+
+#: dialogs.py:1475
+msgid "Underline"
+msgstr "Subrayado"
+
+#: dialogs.py:1482
+msgid "Rotation:"
+msgstr "Rotación:"
+
+#. TRANSLATORS: Text rotation angle in degrees (0, 90, or 270), not
+#. temperature.
+#. Keep %d; use a suitable local degree symbol or abbreviation.
+#: dialogs.py:1490
+#, python-format
+msgid "%d°"
+msgstr "%d°"
+
+#: dialogs.py:1491
+msgid "Rotate the selected text field"
+msgstr "Girar el campo de texto seleccionado"
+
+#: dialogs.py:1495
+msgid "Placement:"
+msgstr "Colocación:"
+
+#: dialogs.py:1502
+msgid "Place vertical text along the left or right edge"
+msgstr ""
+"Colocar el texto verticalmente a lo largo del borde izquierdo o derecho"
+
+#: dialogs.py:1516
+msgid "Data:"
+msgstr "Datos:"
+
+#: dialogs.py:1521
+msgid "Text:"
+msgstr "Texto:"
+
+#: dialogs.py:1533
 msgid "Swap author LN,FN to FN LN"
 msgstr "Intercambiar autor de apellido, nombre a nombre apellido"
 
-#: dialogs.py:1397
+#: dialogs.py:1534
 msgid ""
 "Use this option if your authors are stored as LN, FN\n"
 "but you prefer to see FN LN on the book cover"
@@ -773,11 +877,11 @@ msgstr ""
 "Utilizar esta opción si los autores están almacenados como apellido, nombre\n"
 "pero prefiere tener nombre apellido en la portada del libro"
 
-#: dialogs.py:1401
+#: dialogs.py:1538
 msgid "Series text:"
 msgstr "Texto de la serie:"
 
-#: dialogs.py:1402
+#: dialogs.py:1539
 msgid ""
 "Change the way series information is displayed.\n"
 "Useful for non-English languages!"
@@ -785,84 +889,56 @@ msgstr ""
 "Cambiar la forma en que se muestra la información de la serie.\n"
 "¡Útil para idiomas distintos al inglés!"
 
-#: dialogs.py:1410
-msgid "Metadata: (*not saved)"
-msgstr "Metadatos: (* no guardados)"
-
-#: dialogs.py:1411
-msgid ""
-"Optionally override the text in these fields for this book.\n"
-"These are not saved as part of the settings profile.\n"
-"This functionality is disabled if multiple books are selected."
-msgstr ""
-"Opcionalmente, reeplazar el texto de estos campos para este libro.\n"
-"Esto no se guarda como parte del perfil de configuración.\n"
-"Esta funcionalidad está deshabilitada si se seleccionan varios libros."
-
-#: dialogs.py:1417
-msgid "Title:"
-msgstr "Título:"
-
-#: dialogs.py:1420
-msgid "Author:"
-msgstr "Autor:"
-
-#: dialogs.py:1423
-msgid "Series:"
-msgstr "Serie:"
-
-#: dialogs.py:1453
+#: dialogs.py:1600
 msgid "Cover Options"
 msgstr "Opciones de portada"
 
-#: dialogs.py:1456
+#: dialogs.py:1604
 msgid "Generate Custom Cover"
 msgstr "Generar portada personalizada"
 
-#: dialogs.py:1477
+#: dialogs.py:1624
 msgid "Settings"
 msgstr "Ajustes"
 
-#: dialogs.py:1478
-msgid "Fonts"
-msgstr "Tipos de letra"
-
-#: dialogs.py:1479
+#: dialogs.py:1625
 msgid "Dimensions"
 msgstr "Dimensiones"
 
-#: dialogs.py:1480
+#: dialogs.py:1626
 msgid "Contents"
 msgstr "Contenido"
 
-#: dialogs.py:1490
+#: dialogs.py:1638
 msgid " Revert "
 msgstr "Revertir "
 
-#: dialogs.py:1491
+#: dialogs.py:1639
 msgid "Revert to your previous saved setting values"
 msgstr "Volver a los valores de configuración guardados anteriormente"
 
-#: dialogs.py:1493
+#: dialogs.py:1641
 msgid " Save "
 msgstr "Guardar"
 
-#: dialogs.py:1494
+#: dialogs.py:1642
 msgid "Overwrite your current saved setting"
 msgstr "Reemplazar la configuración guardada actual"
 
-#: dialogs.py:1496
+#: dialogs.py:1644
 msgid " Customize... "
 msgstr "Personalizar..."
 
-#: dialogs.py:1497
+#: dialogs.py:1645
 msgid "Set general options for this plugin"
 msgstr "Establecer opciones generales para este complemento"
 
-#: dialogs.py:1575
+#: dialogs.py:1723
+#, python-format
 msgid "Revert to your previously saved values for '%s'?"
 msgstr "¿Volver a los valores guardados anteriormente para «%s»?"
 
-#: dialogs.py:1594
+#: dialogs.py:1742
+#, python-format
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr "¿Reemplazar la configuración «%s» con los valores actuales?"

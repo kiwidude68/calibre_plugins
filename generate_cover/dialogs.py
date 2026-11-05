@@ -22,7 +22,7 @@ try:
                         pyqtSignal, QComboBox, QTabWidget, QWidget, QInputDialog,
                         QTimer, QTextEdit, QProgressDialog, QSize, QPoint, QListView,
                         QToolButton, QFileDialog, QPainter, QPen, QRect,
-                        QAbstractListModel, QFont, QSpacerItem, QSizePolicy)
+                        QAbstractListModel, QFont, QFontDatabase, QSpacerItem, QSizePolicy)
 except ImportError:
     from PyQt5.Qt import (Qt, QVBoxLayout, QLabel, QAbstractItemView, QCheckBox,
                         QGroupBox, QIcon, QPixmap, QListWidget, QListWidgetItem,
@@ -31,7 +31,7 @@ except ImportError:
                         pyqtSignal, QComboBox, QTabWidget, QWidget, QInputDialog,
                         QTimer, QTextEdit, QProgressDialog, QSize, QPoint, QListView,
                         QToolButton, QFileDialog, QPainter, QPen, QRect,
-                        QAbstractListModel, QFont, QSpacerItem, QSizePolicy)
+                        QAbstractListModel, QFont, QFontDatabase, QSpacerItem, QSizePolicy)
 
 from calibre import fit_image
 from calibre.constants import iswindows
@@ -387,9 +387,8 @@ class FontFamilyModel(QAbstractListModel):
 
     def __init__(self, *args):
         QAbstractListModel.__init__(self, *args)
-        from calibre.utils.fonts.scanner import font_scanner
         try:
-            self.families = font_scanner.find_font_families()
+            self.families = QFontDatabase.families()
         except:
             self.families = []
             print('WARNING: Could not load fonts')
