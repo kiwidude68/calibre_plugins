@@ -13,7 +13,26 @@ from calibre.utils.magick.draw import create_canvas
 from calibre.utils.imghdr import identify
 
 import calibre_plugins.generate_cover.config as cfg
-
+try:
+    from qt.core import QFont, Qt, QPainter, Qt, QRect, QColor
+    weight_map = {
+        "Light": QFont.Weight.Light,
+        "Normal": QFont.Weight.Normal,      # <--- Fixed here
+        "Demi Bold": QFont.Weight.DemiBold,
+        "Bold": QFont.Weight.Bold,
+        "Black": QFont.Weight.Black,
+    }
+    default_font_weight = QFont.Weight.Normal
+except ImportError:
+    from PyQt5.Qt import QFont, Qt, QPainter, Qt, QRect, QColor
+    weight_map = {
+        "Light": QFont.Light,
+        "Normal": QFont.Normal,      # <--- Fixed here
+        "Demi Bold": QFont.DemiBold,
+        "Bold": QFont.Bold,
+        "Black": QFont.Black,
+    }
+    default_font_weight = QFont.Normal
 
 def get_image_size(image_path):
     fmt, width, height = identify(open(image_path, 'rb'))
@@ -33,17 +52,14 @@ class TextLine(object):
 
     def __init__(self, text, font_name, font_size,
                  bottom_margin=30, align='center', fill_color='#000000',
-                 bold=False, italic=False, underline=False):
+                 weight='Normal', italic=False, underline=False):
         self.text = force_unicode(text)
         self.bottom_margin = bottom_margin
         self.fill_color = fill_color
-        try:
-            from qt.core import QFont, Qt
-        except ImportError:
-            from PyQt5.Qt import QFont, Qt
         self.font = QFont(font_name) if font_name else QFont()
         self.font.setPixelSize(font_size)
-        self.font.setBold(bool(bold))
+
+        self.font.setWeight(weight_map.get(weight, default_font_weight))
         self.font.setItalic(bool(italic))
         self.font.setUnderline(bool(underline))
         self._font_align = align
@@ -73,7 +89,7 @@ class TextLine(object):
 def get_textline(text, font_info, margin, fill_color='#000000'):
     return TextLine(text, font_info['name'], font_info['size'], margin,
                     align=font_info['align'], fill_color=fill_color,
-                    bold=font_info.get('bold', False),
+                    weight=font_info.get('weight', default_font_weight),
                     italic=font_info.get('italic', False),
                     underline=font_info.get('underline', False))
 
@@ -120,10 +136,6 @@ def add_border(img, border_width, border_color, bgcolor):
 
 def draw_sized_text(img, dw, line, top, left_margin, right_margin,
                     auto_reduce_font):
-    try:
-        from qt.core import QPainter, Qt, QRect, QColor
-    except ImportError:
-        from PyQt5.Qt import QPainter, Qt, QRect, QColor
     left_margin += line.text_padding['left']
     right_margin += line.text_padding['right']
     total_margin = left_margin + right_margin
@@ -202,10 +214,6 @@ def draw_sized_text(img, dw, line, top, left_margin, right_margin,
 
 
 def measure_text_height(img, line, left_margin, right_margin):
-    try:
-        from qt.core import QPainter, Qt, QRect
-    except ImportError:
-        from PyQt5.Qt import QPainter, Qt, QRect
     left_margin += line.text_padding['left']
     right_margin += line.text_padding['right']
     if img.size[0] - left_margin - right_margin <= 0:
@@ -243,10 +251,6 @@ def scaleup_image(width, height, pwidth, pheight):
 
 
 def prepare_rotated_field(lines, edge_length):
-    try:
-        from qt.core import QFontMetrics, Qt, QRect
-    except ImportError:
-        from PyQt5.Qt import QFontMetrics, Qt, QRect
     padding = lines[0].text_padding
     backdrop_padding = (
         lines[0].backdrop_padding if lines[0].backdrop_enabled else
@@ -285,10 +289,6 @@ def prepare_rotated_field(lines, edge_length):
 
 
 def draw_rotated_field(img, field, x, top, edge_length):
-    try:
-        from qt.core import QPainter, Qt, QRect, QColor
-    except ImportError:
-        from PyQt5.Qt import QPainter, Qt, QRect, QColor
     lines = field['lines']
     angle = field['angle']
     padding = field['padding']

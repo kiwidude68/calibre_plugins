@@ -31,7 +31,7 @@ from calibre_plugins.generate_cover.common_widgets import CustomColumnComboBox
 HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Generate-Cover'
 
 STORE_SCHEMA_VERSION = 'SchemaVersion'
-DEFAULT_SCHEMA_VERSION = 2.34
+DEFAULT_SCHEMA_VERSION = 2.51
 
 PREFS_NAMESPACE = 'GenerateCoverPlugin'
 PREFS_KEY_SETTINGS = 'settings'
@@ -122,12 +122,12 @@ DEFAULT_CURRENT = {
                     'series_fill': '#000000', 'custom_fill': '#000000',
                     'custom2_fill': '#000000', 'custom3_fill': '#000000' },
     KEY_FILL_COLORS_LINKED: True,
-    KEY_FONTS: { 'title':  { 'name': None, 'size': 46, 'align': 'center', 'bold': False, 'italic': False, 'underline': False },
-                 'author': { 'name': None, 'size': 36, 'align': 'center', 'bold': False, 'italic': False, 'underline': False },
-                 'series': { 'name': None, 'size': 36, 'align': 'center', 'bold': False, 'italic': False, 'underline': False },
-                 'custom': { 'name': None, 'size': 24, 'align': 'center', 'bold': False, 'italic': False, 'underline': False },
-                 'custom2': { 'name': None, 'size': 24, 'align': 'center', 'bold': False, 'italic': False, 'underline': False },
-                 'custom3': { 'name': None, 'size': 24, 'align': 'center', 'bold': False, 'italic': False, 'underline': False } },
+    KEY_FONTS: { 'title':  { 'name': None, 'size': 46, 'align': 'center', 'weight': 'Normal', 'italic': False, 'underline': False },
+                 'author': { 'name': None, 'size': 36, 'align': 'center', 'weight': 'Normal', 'italic': False, 'underline': False },
+                 'series': { 'name': None, 'size': 36, 'align': 'center', 'weight': 'Normal', 'italic': False, 'underline': False },
+                 'custom': { 'name': None, 'size': 24, 'align': 'center', 'weight': 'Normal', 'italic': False, 'underline': False },
+                 'custom2': { 'name': None, 'size': 24, 'align': 'center', 'weight': 'Normal', 'italic': False, 'underline': False },
+                 'custom3': { 'name': None, 'size': 24, 'align': 'center', 'weight': 'Normal', 'italic': False, 'underline': False } },
     KEY_FONTS_LINKED: True,
     KEY_FONTS_AUTOREDUCED: False,
     KEY_FIELD_ORDER: [default_field('Title', True),
@@ -260,11 +260,21 @@ def migrate_config_if_required():
         # Remove the old folder to prevent confusion if it is now empty
         remove_old_images_folder_if_empty()
 
-    if schema_version < 2.24:
+    # Version 2.35 (actually release 2.5.0) added a huge number of new options and fields.
+    if schema_version < 2.35:
         current = plugin_prefs[STORE_CURRENT]
         for key in KEY_CUSTOM_TEXT_FIELDS:
             current.setdefault(key, '')
         migrate_custom_text_field_order(current)
+        migrate_element_options(current)
+        migrate_custom_font_options(current)
+        migrate_text_padding(current)
+        migrate_padding_options(current)
+        current.setdefault(KEY_BACKDROPS_LINKED, False)
+        migrate_rotation_options(current)
+        migrate_backdrop_width_options(current)
+        migrate_font_style_options(current)
+        migrate_image_border_color(current)
         plugin_prefs[STORE_CURRENT] = current
 
         saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
@@ -272,96 +282,26 @@ def migrate_config_if_required():
             for key in KEY_CUSTOM_TEXT_FIELDS:
                 saved_setting.setdefault(key, '')
             migrate_custom_text_field_order(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    if schema_version < 2.26:
-        current = plugin_prefs[STORE_CURRENT]
-        migrate_element_options(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
             migrate_element_options(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    if schema_version < 2.27:
-        current = plugin_prefs[STORE_CURRENT]
-        migrate_custom_font_options(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
             migrate_custom_font_options(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    if schema_version < 2.28:
-        current = plugin_prefs[STORE_CURRENT]
-        current.setdefault(KEY_BACKDROPS_LINKED, False)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
-            saved_setting.setdefault(KEY_BACKDROPS_LINKED, False)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    if schema_version < 2.29:
-        current = plugin_prefs[STORE_CURRENT]
-        migrate_text_padding(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
             migrate_text_padding(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    if schema_version < 2.30:
-        current = plugin_prefs[STORE_CURRENT]
-        migrate_padding_options(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
             migrate_padding_options(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    if schema_version < 2.31:
-        current = plugin_prefs[STORE_CURRENT]
-        migrate_rotation_options(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
+            saved_setting.setdefault(KEY_BACKDROPS_LINKED, False)
             migrate_rotation_options(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    if schema_version < 2.32:
-        current = plugin_prefs[STORE_CURRENT]
-        migrate_backdrop_width_options(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
             migrate_backdrop_width_options(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    if schema_version < 2.33:
-        current = plugin_prefs[STORE_CURRENT]
-        migrate_font_style_options(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
             migrate_font_style_options(saved_setting)
+            migrate_image_border_color(saved_setting)
         plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
 
-    if schema_version < 2.34:
+    # Version 2.5.1 added a font weight option for each text type
+    if schema_version < 2.51:
         current = plugin_prefs[STORE_CURRENT]
-        migrate_image_border_color(current)
+        migrate_font_style_weight_options(current)
         plugin_prefs[STORE_CURRENT] = current
 
         saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
         for saved_setting in six.itervalues(saved_settings):
-            migrate_image_border_color(saved_setting)
+            migrate_font_style_weight_options(saved_setting)
         plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
 
 def migrate_padding(value, default):
@@ -396,7 +336,6 @@ def migrate_backdrop_width_options(setting):
 
 def migrate_font_style_options(setting):
     for font in six.itervalues(setting.get(KEY_FONTS, {})):
-        font.setdefault('bold', False)
         font.setdefault('italic', False)
 
 def migrate_image_border_color(setting):
@@ -449,6 +388,13 @@ def migrate_text_padding(setting):
     for field in setting.get(KEY_FIELD_ORDER, []):
         if field['name'] != 'Image':
             field.setdefault(KEY_FIELD_TEXT_PADDING, text_padding)
+
+def migrate_font_style_weight_options(setting):
+    for font in six.itervalues(setting.get(KEY_FONTS, {})):
+        font.setdefault('weight', 'Normal')
+        # if we have a key for 'bold' then we need to convert it to the new weight option
+        if 'bold' in font:
+            font['weight'] = 'Bold' if font.pop('bold') else 'Normal'
 
 def migrate_config_setting(schema_version, setting_name, setting, is_current=False):
     # To upgrade to 1.2 we need to add a schema version and

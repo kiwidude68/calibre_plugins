@@ -1,5 +1,10 @@
 # Generate Cover Change Log
 
+## [2.5.1] - 2026-11-07
+### Added
+- Font weight dropdown to allow more options than just normal and bold
+- Scrollbar to allow dialog to be made smaller vertically for users with small screens
+
 ## [2.5.0] - 2026-11-05
 ### Added
 - Major redesign of the UI with many new options added.

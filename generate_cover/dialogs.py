@@ -21,7 +21,7 @@ try:
                         QLineEdit, QGridLayout, QColorDialog, QColor, QSpinBox,
                         pyqtSignal, QComboBox, QTabWidget, QWidget, QInputDialog,
                         QTimer, QTextEdit, QProgressDialog, QSize, QPoint, QListView,
-                        QToolButton, QFileDialog, QPainter, QPen, QRect,
+                        QToolButton, QFileDialog, QPainter, QPen, QRect, QScrollArea,
                         QAbstractListModel, QFont, QFontDatabase, QSpacerItem, QSizePolicy)
 except ImportError:
     from PyQt5.Qt import (Qt, QVBoxLayout, QLabel, QAbstractItemView, QCheckBox,
@@ -30,7 +30,7 @@ except ImportError:
                         QLineEdit, QGridLayout, QColorDialog, QColor, QSpinBox,
                         pyqtSignal, QComboBox, QTabWidget, QWidget, QInputDialog,
                         QTimer, QTextEdit, QProgressDialog, QSize, QPoint, QListView,
-                        QToolButton, QFileDialog, QPainter, QPen, QRect,
+                        QToolButton, QFileDialog, QPainter, QPen, QRect, QScrollArea,
                         QAbstractListModel, QFont, QFontDatabase, QSpacerItem, QSizePolicy)
 
 from calibre import fit_image
@@ -463,6 +463,26 @@ class FontComboBox(QComboBox):
         if self.currentIndex() < 0:
             return None
         return unicode(self.currentText()).strip()
+
+
+class QFontWeightComboBox(QComboBox):
+
+    def __init__(self, parent):
+        QComboBox.__init__(self, parent)
+        self.addItem(_('Light'), 'Light')
+        self.addItem(_('Normal'), 'Normal')
+        self.addItem(_('Demi Bold'), 'Demi Bold')
+        self.addItem(_('Bold'), 'Bold')
+        self.addItem(_('Black'), 'Black')
+
+    def select_value(self, value):
+        idx = self.findData(value) if value else -1
+        self.setCurrentIndex(idx)
+
+    def get_value(self):
+        if self.currentIndex() < 0:
+            return None
+        return self.itemData(self.currentIndex())
 
 
 class SavedSettingsTab(QWidget):
@@ -1349,7 +1369,7 @@ class ContentsTab(QWidget):
         self.field_order_list.itemChecked.connect(self.changed)
         self.field_order_list.itemMoved.connect(self.changed)
         self.field_order_list.currentRowChanged.connect(self.parent_dialog.element_selection_changed)
-        self.field_order_list.setFixedHeight(120)
+        self.field_order_list.setFixedHeight(84)
         field_layout.addWidget(self.field_order_list)
         field_button_layout = QVBoxLayout()
         field_layout.addLayout(field_button_layout)
@@ -1454,20 +1474,21 @@ class ContentsTab(QWidget):
         font_options_layout.addWidget(self.fonts_reduced_checkbox, 1, 1, 1, 2)
 
         font_style_layout = QHBoxLayout()
-        font_alignment_label = QLabel(_('Alignment:'), self)
-        font_alignment_label.setMinimumWidth(80)
-        font_style_layout.addWidget(font_alignment_label)
+        font_style_label = QLabel(_('Style:'), self)
+        font_style_label.setMinimumWidth(80)
+        font_style_layout.addWidget(font_style_label)
         self.font_alignment_combo = QComboBox(self)
         self.font_alignment_combo.setMinimumWidth(75)
         self.font_alignment_combo.addItem(_('Left'), 'left')
         self.font_alignment_combo.addItem(_('Centre'), 'center')
         self.font_alignment_combo.addItem(_('Right'), 'right')
         self.font_alignment_combo.currentIndexChanged.connect(self.parent_dialog.font_options_changed)
+
         font_style_layout.addWidget(self.font_alignment_combo)
-        self.font_bold_checkbox = QCheckBox(_('Bold'), self)
-        self.font_bold_checkbox.stateChanged.connect(
-            self.parent_dialog.font_options_changed)
-        font_style_layout.addWidget(self.font_bold_checkbox)
+        self.font_weight_combo = QFontWeightComboBox(self)
+        self.font_weight_combo.setMinimumWidth(75)
+        font_style_layout.addWidget(self.font_weight_combo)
+        self.font_weight_combo.currentIndexChanged.connect(self.parent_dialog.font_options_changed)
         self.font_italic_checkbox = QCheckBox(_('Italic'), self)
         self.font_italic_checkbox.stateChanged.connect(self.parent_dialog.font_options_changed)
         font_style_layout.addWidget(self.font_italic_checkbox)
@@ -1588,7 +1609,8 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.is_multiple_books = is_multiple_books
         self.current = cfg.plugin_prefs[cfg.STORE_CURRENT]
         self.is_deferred_revert = False
-        self.setMinimumHeight(850)
+        self.setMinimumHeight(500)
+        self.setMinimumWidth(650)
 
         self.block_updates = True
         self._preview_timer = QTimer(self)
@@ -1614,15 +1636,26 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.saved_settings_tab = SavedSettingsTab(self)
         self.saved_settings_tab.changed.connect(self.options_changed)
         self.saved_settings_tab.settings_changed.connect(self.saved_settings_changed)
+
         self.contents_tab = ContentsTab(self)
         self.contents_tab.changed.connect(self.options_changed)
         self.dimensions_tab = DimensionsTab(self)
         self.dimensions_tab.changed.connect(self.options_changed)
+
+        # The contents tab is very tall vertically, so we will make it scrollable to avoid the dialog being too tall for the screen.
+        contents_scroll_area = QScrollArea(self)
+        contents_scroll_area.setWidgetResizable(True)
+        try:
+            contents_scroll_area.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff) # Qt6 compatibility
+        except AttributeError:
+            contents_scroll_area.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff) # Qt5 compatibility
         self.contents_tab.background_image_checkbox.stateChanged.connect(
             self.dimensions_tab.image_resize_changed)
+        contents_scroll_area.setWidget(self.contents_tab)
+
         tab_widget.addTab(self.saved_settings_tab, _('Settings'))
         tab_widget.addTab(self.dimensions_tab, _('Dimensions'))
-        tab_widget.addTab(self.contents_tab, _('Contents'))
+        tab_widget.addTab(contents_scroll_area, _('Contents'))
         tab_widget.setFixedWidth(max(250, tab_widget.sizeHint().width()))
         config_layout.addWidget(tab_widget, 0)
 
@@ -1915,7 +1948,7 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.contents_tab.font_family_combo.setEnabled(font_key is not None)
         self.contents_tab.font_size_spin.setEnabled(font_key is not None)
         self.contents_tab.font_alignment_combo.setEnabled(font_key is not None)
-        self.contents_tab.font_bold_checkbox.setEnabled(font_key is not None)
+        self.contents_tab.font_weight_combo.setEnabled(font_key is not None)
         self.contents_tab.font_italic_checkbox.setEnabled(font_key is not None)
         self.contents_tab.font_underline_checkbox.setEnabled(font_key is not None)
         self.contents_tab.font_rotation_combo.setEnabled(font_key is not None)
@@ -1926,7 +1959,7 @@ class CoverOptionsDialog(SizePersistedDialog):
             font = self.current[cfg.KEY_FONTS][font_key]
             self.contents_tab.font_family_combo.select_value(font['name'])
             self.contents_tab.font_size_spin.setValue(font['size'])
-            self.contents_tab.font_bold_checkbox.setChecked(font.get('bold', False))
+            self.contents_tab.font_weight_combo.select_value(font.get('weight', 'Normal'))
             self.contents_tab.font_italic_checkbox.setChecked(font.get('italic', False))
             self.contents_tab.font_underline_checkbox.setChecked(font.get('underline', False))
             alignment_index = self.contents_tab.font_alignment_combo.findData(font['align'])
@@ -1987,7 +2020,7 @@ class CoverOptionsDialog(SizePersistedDialog):
         font = self.current[cfg.KEY_FONTS][font_key]
         font['name'] = self.contents_tab.font_family_combo.get_value()
         font['size'] = self.contents_tab.font_size_spin.value()
-        font['bold'] = self.contents_tab.font_bold_checkbox.isChecked()
+        font['weight'] = self.contents_tab.font_weight_combo.get_value()
         font['italic'] = self.contents_tab.font_italic_checkbox.isChecked()
         font['underline'] = self.contents_tab.font_underline_checkbox.isChecked()
         font['align'] = self.contents_tab.font_alignment_combo.itemData(
@@ -2006,6 +2039,7 @@ class CoverOptionsDialog(SizePersistedDialog):
         if self.contents_tab.fonts_linked_checkbox.isChecked():
             for name, _ in DIC_name_font:
                 self.current[cfg.KEY_FONTS][name.lower()]['name'] = font['name']
+                self.current[cfg.KEY_FONTS][name.lower()]['weight'] = font['weight']
         self.options_changed()
 
     def fonts_linked_changed(self, *args):
