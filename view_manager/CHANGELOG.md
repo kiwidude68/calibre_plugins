@@ -1,5 +1,9 @@
 # View Manager Change Log
 
+## [1.11.2] - 2026-11-07
+## Fixed
+- Ignore layout menu items inserted by other plugins like Book List Plus
+
 ## [1.11.1] - 2026-10-25
 ## Fixed
 - View names with ampersands now have them escaped so they render correctly in the menus.

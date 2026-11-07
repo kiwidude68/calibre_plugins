@@ -28,7 +28,7 @@ msgstr "Kortkommandon"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Starta om calibre nu."
+msgstr "Starta om calibre nu"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
@@ -40,7 +40,7 @@ msgstr "Rensa"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Rensa alla inställningar för detta tillägg"
+msgstr "Rensa alla inställningar för denna insticksmodul"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
@@ -55,8 +55,8 @@ msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
-"calibre-tilläggsmapp kommer inte att röras."
+"Inställningar i andra bibliotek eller i en JSON-fil i calibres mapp för "
+"insticksmoduler påverkas inte."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -80,8 +80,8 @@ msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
 msgstr ""
-"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
-"detta tillägg?"
+"Är du säker på att du vill rensa dina inställningar i det här biblioteket "
+"för denna insticksmodul?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -89,7 +89,9 @@ msgstr "Inställningar borttagna"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+msgstr ""
+"Alla inställningar för denna insticksmodul i det här biblioteket har "
+"rensats."
 
 #: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
@@ -97,7 +99,7 @@ msgstr "Kopiera till urklipp"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Odefinerad"
+msgstr "Odefinierad"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
@@ -107,7 +109,7 @@ msgstr "Kräver omstart"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Titelbilden hittades inte - du måste starta om calibre innan du använder "
+"Titelbilden hittades inte – du måste starta om calibre innan du använder "
 "denna insticksmodul!"
 
 #: ..\common\common_widgets.py:234
@@ -120,11 +122,11 @@ msgstr "Vyhanterare"
 
 #: action.py:130
 msgid "&Save View Columns"
-msgstr "&Spara vykolumner"
+msgstr "&Spara vyns kolumner"
 
 #: action.py:132
 msgid "&Save View Sort"
-msgstr "Spara v&ysortering"
+msgstr "Spara v&yns sortering"
 
 #: action.py:135
 msgid "Re-Apply Current View"
@@ -160,7 +162,7 @@ msgstr "Ange ett unikt visningsnamn för denna vy:"
 
 #: action.py:210 config.py:861 config.py:909
 msgid "Add Failed"
-msgstr "Lägg till misslyckades"
+msgstr "Kunde inte lägga till"
 
 #: action.py:210 config.py:861 config.py:909
 msgid "A view with the same name already exists"
@@ -192,7 +194,7 @@ msgstr "Ta bort vy"
 
 #: config.py:523 config.py:896
 msgid "Rename view"
-msgstr "Döp om vy"
+msgstr "Byt namn på vy"
 
 #: config.py:529
 msgid "Column Options"
@@ -204,15 +206,15 @@ msgstr "Kolumner i standardpanelen (vänster)"
 
 #: config.py:540
 msgid "Columns in view"
-msgstr "Kolumner i vy"
+msgstr "Kolumner i vyn"
 
 #: config.py:544 config.py:560
 msgid "Move column up"
-msgstr "Flytta kolumn upp"
+msgstr "Flytta kolumnen uppåt"
 
 #: config.py:547 config.py:563
 msgid "Move column down"
-msgstr "Flytta kolumn ner"
+msgstr "Flytta kolumnen nedåt"
 
 #: config.py:551 config.py:567
 msgid "Adjust width of columns"
@@ -240,7 +242,7 @@ msgstr "Flytta sorteringskolumnen uppåt"
 
 #: config.py:588
 msgid "Move sort down"
-msgstr "Flytta sorteringen nedåt"
+msgstr "Flytta sorteringskolumnen nedåt"
 
 #: config.py:619
 msgid "Search and Virtual Library Options"
@@ -269,12 +271,17 @@ msgstr "Virtuellt bibliotek att byta till."
 #: config.py:644
 msgid "Apply this view when changing to a matching VL tab"
 msgstr ""
+"Tillämpa denna vy när du byter till fliken för motsvarande virtuella "
+"bibliotek"
 
 #: config.py:645
 msgid ""
 "Apply the selected settings when switching to a tab for this virtual library"
 " (or all books tab if no VL is set)."
 msgstr ""
+"Tillämpa de valda inställningarna när du byter till fliken för detta "
+"virtuella bibliotek (eller fliken med alla böcker om inget virtuellt "
+"bibliotek har angetts)."
 
 #: config.py:647
 msgid "Apply VL additional search restriction"
@@ -290,29 +297,29 @@ msgstr ""
 
 #: config.py:649
 msgid "Clear VL restriction search"
-msgstr "Rensa begränsningssökningen för virtuellt bibliotek"
+msgstr "Rensa det virtuella bibliotekets sökbegränsning"
 
 #: config.py:650
 msgid "Saved search to apply as VL additional search restriction."
 msgstr ""
-"Sparad sökning som ska användas som ytterligare sökbegränsning för virtuellt"
-" bibliotek."
+"Sparad sökning som ska användas som ytterligare sökbegränsning för det "
+"virtuella biblioteket."
 
 #: config.py:664
 msgid "Main GUI Layout"
-msgstr ""
+msgstr "Huvudfönstrets layout"
 
 #: config.py:671
 msgid "Unchanged"
-msgstr ""
+msgstr "Oförändrat"
 
 #: config.py:672
 msgid "Show"
-msgstr ""
+msgstr "Visa"
 
 #: config.py:673
 msgid "Hide"
-msgstr ""
+msgstr "Dölj"
 
 #: config.py:697
 msgid "General Options"
@@ -335,12 +342,12 @@ msgid ""
 "Enabling may override any startup search restriction or title sort set in "
 "Preferences -> Behaviour/Tweaks."
 msgstr ""
+"Om du aktiverar detta kan inställningar för sökbegränsning vid start eller "
+"titelsortering under Inställningar -> Beteende/Justeringar åsidosättas."
 
 #: config.py:726
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr ""
-"Redigera tangentbordets kortkommandon som hör samman med detta "
-"tilläggsprogram"
+msgstr "Redigera kortkommandona för denna insticksmodul"
 
 #: config.py:728
 msgid "&View library preferences"
@@ -348,7 +355,7 @@ msgstr "&Visa biblioteksinställningar"
 
 #: config.py:729
 msgid "View data stored in the library database for this plugin"
-msgstr "Visa data lagrat i biblioteksdatabasen för detta tilläggsprogram"
+msgstr "Visa data som lagras i biblioteksdatabasen för denna insticksmodul"
 
 #: config.py:897
 msgid "Enter a new display name for this view:"

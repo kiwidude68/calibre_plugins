@@ -680,6 +680,10 @@ class ConfigWidget(QWidget):
         self.gui_layout_combos = {}
         gui_layout_fields = []
         for button in self.gui.layout_buttons:
+            if not hasattr(button, 'name'):
+                # For plugins like Book List Plus which insert themselves into the calibre layout buttons, I
+                # want to ignore them
+                continue
             combo = make_visibility_combo()
             self.gui_layout_combos[button.name] = combo
             label_widget = QWidget(self)

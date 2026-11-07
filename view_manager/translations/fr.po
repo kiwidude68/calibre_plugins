@@ -276,13 +276,16 @@ msgstr "Bibliothèque virtuelle vers laquelle basculer."
 
 #: config.py:644
 msgid "Apply this view when changing to a matching VL tab"
-msgstr ""
+msgstr "Appliquer cette vue lors du passage à un onglet VL correspondant"
 
 #: config.py:645
 msgid ""
 "Apply the selected settings when switching to a tab for this virtual library"
 " (or all books tab if no VL is set)."
 msgstr ""
+"Appliquer les paramètres sélectionnés lors du passage à un onglet de cette "
+"bibliothèque virtuelle (ou à l'onglet Tous les livres si aucune bibliothèque"
+" virtuelle n'est définie)."
 
 #: config.py:647
 msgid "Apply VL additional search restriction"
@@ -310,19 +313,19 @@ msgstr ""
 
 #: config.py:664
 msgid "Main GUI Layout"
-msgstr ""
+msgstr "Disposition générale de l'interface graphique"
 
 #: config.py:671
 msgid "Unchanged"
-msgstr ""
+msgstr "Inchangé"
 
 #: config.py:672
 msgid "Show"
-msgstr ""
+msgstr "Afficher"
 
 #: config.py:673
 msgid "Hide"
-msgstr ""
+msgstr "Cacher"
 
 #: config.py:697
 msgid "General Options"
@@ -345,6 +348,8 @@ msgid ""
 "Enabling may override any startup search restriction or title sort set in "
 "Preferences -> Behaviour/Tweaks."
 msgstr ""
+"L'activation  peut passer outre toute restriction de recherche au démarrage "
+"ou tout tri par titre défini dans Préférences -> Comportement/Ajustements."
 
 #: config.py:726
 msgid "Edit the keyboard shortcuts associated with this plugin"

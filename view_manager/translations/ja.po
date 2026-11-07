@@ -22,7 +22,7 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:84 config.py:725
 msgid "Keyboard shortcuts"
-msgstr "キーボードショートカット"
+msgstr "キーボード ショートカット"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
@@ -34,7 +34,7 @@ msgstr "環境設定:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "クリア"
+msgstr "消去"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
@@ -92,7 +92,7 @@ msgstr "未定義"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "再起動が必要です。"
+msgstr "再起動が必要です"
 
 #: ..\common\common_widgets.py:161
 msgid ""
@@ -133,7 +133,7 @@ msgstr "次のビュー"
 
 #: action.py:151
 msgid "&Customize plugin"
-msgstr "プラグインをカスタマイズ (&C)"
+msgstr "プラグインをカスタマイズ(&C)"
 
 #: action.py:153 config.py:734
 msgid "&Help"
@@ -288,11 +288,11 @@ msgstr "メインGUIレイアウト"
 
 #: config.py:671
 msgid "Unchanged"
-msgstr "未変更"
+msgstr "変更なし"
 
 #: config.py:672
 msgid "Show"
-msgstr "表示"
+msgstr "表示する"
 
 #: config.py:673
 msgid "Hide"
@@ -338,7 +338,7 @@ msgstr "本ビューに表示名称を新規入力:"
 
 #: config.py:928
 msgid "Are you sure?"
-msgstr "本当によろしいですか？"
+msgstr "よろしいですか？"
 
 #: config.py:929
 msgid "Do you want to delete the view named"
