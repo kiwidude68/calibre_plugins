@@ -1395,7 +1395,7 @@ class ContentsTab(QWidget):
                                 'Uncheck this to place text around the image.'))
         image_options_layout.addWidget(self.background_image_checkbox)
         self.image_padding_spins = add_padding_controls(
-            self, image_options_layout, 5000, self.changed)
+            self, image_options_layout, 5000, self.parent_dialog.element_options_changed)
         self.image_options_groupbox.setVisible(False)
 
         image_border_groupbox = QGroupBox(_('Border:'), self)
@@ -1829,8 +1829,6 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.dimensions_tab.bottom_margin_spin.setValue(margins['bottom'])
         self.dimensions_tab.left_margin_spin.setValue(margins['left'])
         self.dimensions_tab.right_margin_spin.setValue(margins['right'])
-        for side, spin in self.contents_tab.image_padding_spins.items():
-            spin.setValue(margins['image'][side])
 
         borders = self.current[cfg.KEY_BORDERS]
         self.dimensions_tab.cover_border_width_spin.setValue(borders['coverBorder'])
@@ -1860,7 +1858,6 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.save_selected_text_value()
         self.current[cfg.KEY_SERIES_TEXT] = unicode(self.contents_tab.series_text_ledit.text()).strip()
         self.current[cfg.KEY_BACKDROPS_LINKED] = self.contents_tab.colors_panel.backdrops_linked_checkbox.isChecked()
-
         self.current[cfg.KEY_BACKGROUND_IMAGE] = self.contents_tab.background_image_checkbox.isChecked()
         self.current[cfg.KEY_RESIZE_IMAGE_TO_FIT] = self.dimensions_tab.resize_image_to_fit_checkbox.isChecked()
         self.current[cfg.KEY_RESIZE_TO_IMAGE] = self.dimensions_tab.resize_to_image_checkbox.isChecked()
@@ -1889,16 +1886,11 @@ class CoverOptionsDialog(SizePersistedDialog):
         bottom_mgn = int(unicode(self.dimensions_tab.bottom_margin_spin.value()).strip())
         left_mgn = int(unicode(self.dimensions_tab.left_margin_spin.value()).strip())
         right_mgn = int(unicode(self.dimensions_tab.right_margin_spin.value()).strip())
-        image_mgn = {
-            side: spin.value()
-            for side, spin in self.contents_tab.image_padding_spins.items()
-        }
         self.current[cfg.KEY_MARGINS] = (top_mgn, bottom_mgn, left_mgn)
         self.current[cfg.KEY_MARGINS] = {'top':    top_mgn,
                                          'bottom': bottom_mgn,
                                          'left':   left_mgn,
-                                         'right':  right_mgn,
-                         'image':  image_mgn}
+                                         'right':  right_mgn}
 
         cover_border_width = int(unicode(self.dimensions_tab.cover_border_width_spin.value()).strip())
         image_border_width = int(unicode(self.contents_tab.image_border_width_spin.value()).strip())
@@ -1953,6 +1945,7 @@ class CoverOptionsDialog(SizePersistedDialog):
         self.contents_tab.font_underline_checkbox.setEnabled(font_key is not None)
         self.contents_tab.font_rotation_combo.setEnabled(font_key is not None)
         self.contents_tab.font_rotation_side_combo.setEnabled(False)
+
         for spin in self.contents_tab.font_text_padding_spins.values():
             spin.setEnabled(font_key is not None)
         if font_key is not None:
@@ -1971,19 +1964,24 @@ class CoverOptionsDialog(SizePersistedDialog):
             side_index = self.contents_tab.font_rotation_side_combo.findData(side)
             self.contents_tab.font_rotation_side_combo.setCurrentIndex(max(0, side_index))
             self.contents_tab.font_rotation_side_combo.setEnabled(angle in (90, 270))
-            padding = field.get(cfg.KEY_FIELD_TEXT_PADDING, cfg.DEFAULT_ELEMENT_OPTIONS[cfg.KEY_FIELD_TEXT_PADDING])
+            text_padding = field.get(cfg.KEY_FIELD_TEXT_PADDING, cfg.DEFAULT_ELEMENT_OPTIONS[cfg.KEY_FIELD_TEXT_PADDING])
             for side, spin in self.contents_tab.font_text_padding_spins.items():
-                spin.setValue(padding[side])
+                spin.setValue(text_padding[side])
             self.contents_tab.colors_panel.update_selected_field(field['name'])
+
         show_author_option = field['name'] == 'Author'
         show_series_option = field['name'] == 'Series'
         self.contents_tab.swap_author_checkbox.setVisible(show_author_option)
         self.contents_tab.series_label.setVisible(show_series_option)
         self.contents_tab.series_text_ledit.setVisible(show_series_option)
+        if is_image_element:
+            image_padding = field.get(cfg.KEY_FIELD_IMAGE_PADDING, cfg.DEFAULT_ELEMENT_OPTIONS[cfg.KEY_FIELD_IMAGE_PADDING])
+            for side, spin in self.contents_tab.image_padding_spins.items():
+                spin.setValue(image_padding[side])
         self.contents_tab.set_image_mode(is_image_element)
-        padding = field.get(cfg.KEY_FIELD_PADDING, cfg.DEFAULT_ELEMENT_OPTIONS[cfg.KEY_FIELD_PADDING])
+        backdrop_padding = field.get(cfg.KEY_FIELD_BACKDROP_PADDING, cfg.DEFAULT_ELEMENT_OPTIONS[cfg.KEY_FIELD_BACKDROP_PADDING])
         for side, spin in self.contents_tab.colors_panel.element_padding_spins.items():
-            spin.setValue(padding[side])
+            spin.setValue(backdrop_padding[side])
         self.contents_tab.colors_panel.element_backdrop_checkbox.setChecked(field.get(cfg.KEY_FIELD_BACKDROP, False))
         self.contents_tab.colors_panel.element_backdrop_full_width_checkbox.setChecked(
             field.get(cfg.KEY_FIELD_BACKDROP_FULL_WIDTH, False))
@@ -2100,7 +2098,7 @@ class CoverOptionsDialog(SizePersistedDialog):
             return
         field = self.contents_tab.field_order_list.field_list[row]
         if field['name'] != 'Image':
-            field[cfg.KEY_FIELD_PADDING] = {
+            field[cfg.KEY_FIELD_BACKDROP_PADDING] = {
                 side: spin.value()
                 for side, spin in self.contents_tab.colors_panel.element_padding_spins.items()
             }
@@ -2112,13 +2110,19 @@ class CoverOptionsDialog(SizePersistedDialog):
             if self.contents_tab.colors_panel.backdrops_linked_checkbox.isChecked():
                 backdrop_keys = (cfg.KEY_FIELD_BACKDROP,
                                  cfg.KEY_FIELD_BACKDROP_FULL_WIDTH,
-                                 cfg.KEY_FIELD_PADDING,
+                                 cfg.KEY_FIELD_BACKDROP_PADDING,
                                  cfg.KEY_FIELD_BACKDROP_COLOR, cfg.KEY_FIELD_BACKDROP_OPACITY)
                 selected_backdrop = {key: field[key] for key in backdrop_keys}
                 for other_field in self.contents_tab.field_order_list.field_list:
                     if other_field['name'] != 'Image':
                         other_field.update(selected_backdrop)
-        self.current[cfg.KEY_BACKDROPS_LINKED] = self.contents_tab.colors_panel.backdrops_linked_checkbox.isChecked()
+            self.current[cfg.KEY_BACKDROPS_LINKED] = self.contents_tab.colors_panel.backdrops_linked_checkbox.isChecked()
+        else:
+            image_padding = {
+                side: spin.value()
+                for side, spin in self.contents_tab.image_padding_spins.items()
+            }
+            field[cfg.KEY_FIELD_IMAGE_PADDING] = image_padding
         self.options_changed()
 
     def pick_element_backdrop_color(self):

@@ -66,7 +66,8 @@ KEY_CUSTOM_TEXT_2 = 'customText2'
 KEY_CUSTOM_TEXT_3 = 'customText3'
 KEY_CUSTOM_TEXT_FIELDS = (KEY_CUSTOM_TEXT, KEY_CUSTOM_TEXT_2, KEY_CUSTOM_TEXT_3)
 KEY_SERIES_TEXT = 'seriesText'
-KEY_FIELD_PADDING = 'padding'
+KEY_FIELD_BACKDROP_PADDING = 'padding'
+KEY_FIELD_IMAGE_PADDING = 'padding'
 KEY_FIELD_TEXT_PADDING = 'textPadding'
 KEY_FIELD_ROTATION = 'rotation'
 KEY_FIELD_ROTATION_SIDE = 'rotationSide'
@@ -81,7 +82,7 @@ KEY_BACKDROPS_LINKED = 'backdropsLinked'
 DEFAULT_SERIES_TEXT = 'Book {series_index} of {series}'
 DEFAULT_PADDING = {'top': 0, 'bottom': 0, 'left': 0, 'right': 0}
 DEFAULT_ELEMENT_OPTIONS = {
-    KEY_FIELD_PADDING: dict(DEFAULT_PADDING, top=4),
+    KEY_FIELD_BACKDROP_PADDING: dict(DEFAULT_PADDING, top=4),
     KEY_FIELD_TEXT_PADDING: dict(DEFAULT_PADDING, top=30),
     KEY_FIELD_ROTATION: 0,
     KEY_FIELD_ROTATION_SIDE: 'left',
@@ -91,8 +92,17 @@ DEFAULT_ELEMENT_OPTIONS = {
     KEY_FIELD_BACKDROP_OPACITY: 70,
 }
 
+DEFAULT_IMAGE_OPTIONS = {
+    KEY_FIELD_IMAGE_PADDING: dict(DEFAULT_PADDING)
+}
+
 def default_field(name, display):
     field = copy.deepcopy(DEFAULT_ELEMENT_OPTIONS)
+    field.update({'name': name, 'display': display})
+    return field
+
+def default_image_field(name, display):
+    field = copy.deepcopy(DEFAULT_IMAGE_OPTIONS)
     field.update({'name': name, 'display': display})
     return field
 
@@ -133,7 +143,7 @@ DEFAULT_CURRENT = {
     KEY_FIELD_ORDER: [default_field('Title', True),
                       default_field('Author', True),
                       default_field('Series', True),
-                      {'name': 'Image', 'display': True},
+                      default_image_field('Image', True),
                       default_field('Custom Text 1', False),
                       default_field('Custom Text 2', False),
                       default_field('Custom Text 3', False)],
@@ -239,7 +249,16 @@ def migrate_config_if_required():
         files = [migrate_image_file_path(f) for f in plugin_prefs[STORE_FILES]]
         plugin_prefs[STORE_FILES] = files
 
-    if schema_version < 1.59:
+    # Version 2.2.1 changed images to be stored in the calibre/plugins folder
+    if schema_version < 2.21:
+        if DEBUG:
+            prints('Generate Cover - Upgrading to 2.21 schema')
+        files = [migrate_image_file(f) for f in plugin_prefs[STORE_FILES]]
+        plugin_prefs[STORE_FILES] = files
+        # Remove the old folder to prevent confusion if it is now empty
+        remove_old_images_folder_if_empty()
+
+    if schema_version < 2.52:
         if DEBUG:
             prints('Generate Cover - Upgrading from schema:', schema_version)
         current = plugin_prefs[STORE_CURRENT]
@@ -249,61 +268,7 @@ def migrate_config_if_required():
         for setting_name, saved_setting in six.iteritems(saved_settings):
             migrate_config_setting(schema_version, setting_name, saved_setting)
         plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    # Version 2.2.1 changed images to be stored in the calibre/plugins
-    # folder
-    if schema_version < 2.21:
-        if DEBUG:
-            prints('Generate Cover - Upgrading to 2.21 schema')
-        files = [migrate_image_file(f) for f in plugin_prefs[STORE_FILES]]
-        plugin_prefs[STORE_FILES] = files
-        # Remove the old folder to prevent confusion if it is now empty
-        remove_old_images_folder_if_empty()
-
-    # Version 2.35 (actually release 2.5.0) added a huge number of new options and fields.
-    if schema_version < 2.35:
-        current = plugin_prefs[STORE_CURRENT]
-        for key in KEY_CUSTOM_TEXT_FIELDS:
-            current.setdefault(key, '')
-        migrate_custom_text_field_order(current)
-        migrate_element_options(current)
-        migrate_custom_font_options(current)
-        migrate_text_padding(current)
-        migrate_padding_options(current)
-        current.setdefault(KEY_BACKDROPS_LINKED, False)
-        migrate_rotation_options(current)
-        migrate_backdrop_width_options(current)
-        migrate_font_style_options(current)
-        migrate_image_border_color(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
-            for key in KEY_CUSTOM_TEXT_FIELDS:
-                saved_setting.setdefault(key, '')
-            migrate_custom_text_field_order(saved_setting)
-            migrate_element_options(saved_setting)
-            migrate_custom_font_options(saved_setting)
-            migrate_text_padding(saved_setting)
-            migrate_padding_options(saved_setting)
-            saved_setting.setdefault(KEY_BACKDROPS_LINKED, False)
-            migrate_rotation_options(saved_setting)
-            migrate_backdrop_width_options(saved_setting)
-            migrate_font_style_options(saved_setting)
-            migrate_image_border_color(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
-    # Version 2.5.1 added a font weight option for each text type
-    if schema_version < 2.51:
-        current = plugin_prefs[STORE_CURRENT]
-        migrate_font_style_weight_options(current)
-        plugin_prefs[STORE_CURRENT] = current
-
-        saved_settings = plugin_prefs[STORE_SAVED_SETTINGS]
-        for saved_setting in six.itervalues(saved_settings):
-            migrate_font_style_weight_options(saved_setting)
-        plugin_prefs[STORE_SAVED_SETTINGS] = saved_settings
-
+    
 def migrate_padding(value, default):
     if isinstance(value, dict):
         padding = dict(DEFAULT_PADDING)
@@ -313,12 +278,27 @@ def migrate_padding(value, default):
     padding['top'] = default if value is None else value
     return padding
 
+def migrate_individual_colors(setting):
+    colors = setting.get(KEY_COLORS, {})
+    # Use the existing 'fill' color as the default for all text types
+    existing_fill = colors.get('fill', '#000000')
+    # Remove the old fill color if it exists
+    if 'fill' in colors:
+        del colors['fill']
+    colors['title_fill'] = existing_fill
+    colors['author_fill'] = existing_fill
+    colors['series_fill'] = existing_fill
+    colors['custom_fill'] = existing_fill
+    setting[KEY_COLORS] = colors
+    # Default to using the same fill color for backward compatibility
+    setting[KEY_FILL_COLORS_LINKED] = True
+
 def migrate_padding_options(setting):
     margins = setting.get(KEY_MARGINS, {})
     margins['image'] = migrate_padding(margins.get('image'), 10)
     setting[KEY_MARGINS] = margins
     for field in setting.get(KEY_FIELD_ORDER, []):
-        field[KEY_FIELD_PADDING] = migrate_padding(field.get(KEY_FIELD_PADDING), 4)
+        field[KEY_FIELD_BACKDROP_PADDING] = migrate_padding(field.get(KEY_FIELD_BACKDROP_PADDING), 4)
         if field['name'] != 'Image':
             field[KEY_FIELD_TEXT_PADDING] = migrate_padding(
                 field.get(KEY_FIELD_TEXT_PADDING), 30)
@@ -363,7 +343,7 @@ def migrate_element_options(setting):
     for field in setting.get(KEY_FIELD_ORDER, []):
         if field['name'] == 'Image':
             continue
-        field.setdefault(KEY_FIELD_PADDING, 4)
+        field.setdefault(KEY_FIELD_BACKDROP_PADDING, 4)
         field.setdefault(KEY_FIELD_BACKDROP, False)
         field.setdefault(KEY_FIELD_BACKDROP_COLOR, backdrop_color)
         field.setdefault(KEY_FIELD_BACKDROP_OPACITY, backdrop_opacity)
@@ -395,6 +375,20 @@ def migrate_font_style_weight_options(setting):
         # if we have a key for 'bold' then we need to convert it to the new weight option
         if 'bold' in font:
             font['weight'] = 'Bold' if font.pop('bold') else 'Normal'
+
+def migrate_image_margin_padding_options(setting):
+    # Make sure padding is zero by default, to ensure people with background images don't get a white border
+    # This is a fix for a bug introduced in 2.5.0 where the image padding settings were migrated incorrectly,
+    # in conjunction with a change to actually respect image padding when set on the background.
+    for field in setting.get(KEY_FIELD_ORDER, []):
+        if field['name'] == 'Image':
+            field[KEY_FIELD_IMAGE_PADDING] = {'top': 0, 'bottom': 0, 'left': 0, 'right': 0}
+            break
+    # Also delete the incorrect image margin setting from the margins, if it exists
+    margins = setting.get(KEY_MARGINS, {})
+    if 'image' in margins:
+        del margins['image']
+    setting[KEY_MARGINS] = margins
 
 def migrate_config_setting(schema_version, setting_name, setting, is_current=False):
     # To upgrade to 1.2 we need to add a schema version and
@@ -454,64 +448,37 @@ def migrate_config_setting(schema_version, setting_name, setting, is_current=Fal
             prints('Generate Cover - Upgrading to 1.59 schema for setting: ',setting_name)
         setting[KEY_RESIZE_IMAGE_TO_FIT] = False
 
-    # Version 2.2.1 changed images to be stored in the calibre/plugins
-    # folder
-    if schema_version < 2.21:
-        if DEBUG:
-            prints('Generate Cover - Upgrading to 2.21 schema for setting: ',setting_name)
-        setting[KEY_IMAGE_FILE] = migrate_image_file(setting[KEY_IMAGE_FILE])
-
     # Version 2.2.2 added per-text-type fill colors and a checkbox to use same color for all
     if schema_version < 2.22:
         if DEBUG:
             prints('Generate Cover - Upgrading to 2.22 schema for setting: ',setting_name)
-        colors = setting.get(KEY_COLORS, {})
-        # Use the existing 'fill' color as the default for all text types
-        existing_fill = colors.get('fill', '#000000')
-        # Remove the old fill color if it exists
-        if 'fill' in colors:
-            del colors['fill']
-        colors['title_fill'] = existing_fill
-        colors['author_fill'] = existing_fill
-        colors['series_fill'] = existing_fill
-        colors['custom_fill'] = existing_fill
-        setting[KEY_COLORS] = colors
-        # Default to using the same fill color for backward compatibility
-        setting[KEY_FILL_COLORS_LINKED] = True
+        migrate_individual_colors(setting)
 
-    if schema_version < 2.24:
+    # Version 2.35 (actually release 2.5.0) added a huge number of new options and fields.
+    if schema_version < 2.35:
         for key in KEY_CUSTOM_TEXT_FIELDS:
             setting.setdefault(key, '')
         migrate_custom_text_field_order(setting)
-
-    if schema_version < 2.26:
         migrate_element_options(setting)
-
-    if schema_version < 2.27:
         migrate_custom_font_options(setting)
-
-    if schema_version < 2.28:
-        setting.setdefault(KEY_BACKDROPS_LINKED, False)
-
-    if schema_version < 2.29:
         migrate_text_padding(setting)
-
-    if schema_version < 2.30:
         migrate_padding_options(setting)
-
-    if schema_version < 2.31:
+        setting.setdefault(KEY_BACKDROPS_LINKED, False)
         migrate_rotation_options(setting)
-
-    if schema_version < 2.32:
         migrate_backdrop_width_options(setting)
-
-    if schema_version < 2.33:
         migrate_font_style_options(setting)
-
-    if schema_version < 2.34:
         migrate_image_border_color(setting)
-    return setting
 
+    # Version 2.5.1 added a font weight option for each text type
+    if schema_version < 2.51:
+        migrate_font_style_weight_options(setting)
+
+    # Version 2.5.2 cleaned up and fixed the image margin/padding which got messed up in 2.5.0
+    if schema_version < 2.52:
+        migrate_image_margin_padding_options(setting)
+
+
+    return setting
 
 def migrate_library_config_if_required(db, library_config):
     schema_version = library_config.get(STORE_SCHEMA_VERSION, 0)

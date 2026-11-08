@@ -1,5 +1,10 @@
 # Generate Cover Change Log
 
+## [2.5.2] - 2026-11-08
+### Fixed
+- Reset all image margins to zero when migrating configuration to prevent incorrect padding on background images.
+  Anyone who was using image padding but not as a background image will need to reapply their value manually.
+
 ## [2.5.1] - 2026-11-07
 ### Added
 - Font weight dropdown to allow more options than just normal and bold

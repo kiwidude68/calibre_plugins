@@ -82,8 +82,8 @@ class TextLine(object):
         self.backdrop_color = field.get(cfg.KEY_FIELD_BACKDROP_COLOR, '#000000')
         self.backdrop_opacity = field.get(cfg.KEY_FIELD_BACKDROP_OPACITY, 70)
         self.backdrop_padding = field.get(
-            cfg.KEY_FIELD_PADDING,
-            cfg.DEFAULT_ELEMENT_OPTIONS[cfg.KEY_FIELD_PADDING])
+            cfg.KEY_FIELD_BACKDROP_PADDING,
+            cfg.DEFAULT_ELEMENT_OPTIONS[cfg.KEY_FIELD_BACKDROP_PADDING])
 
 
 def get_textline(text, font_info, margin, fill_color='#000000'):
@@ -369,13 +369,15 @@ def create_cover_page(top_lines, bottom_lines, rotated_fields, display_image, op
         return i
     width = size_limit(width)
     height = size_limit(height)
+
     margins = options.get(cfg.KEY_MARGINS)
-    (top_mgn, bottom_mgn, left_mgn, right_mgn, image_mgn) = (
+    (top_mgn, bottom_mgn, left_mgn, right_mgn) = (
         margins['top'], margins['bottom'], margins['left'],
-        margins['right'], margins['image'])
+        margins['right'])
     left_mgn = min([left_mgn, (width / 2) - 10])
     right_mgn = min([right_mgn, (width / 2) - 10])
     edge_length = max(1, height - top_mgn - bottom_mgn)
+    
     rotated_fields = {
         side: [prepare_rotated_field(field, edge_length) for field in rotated_fields[side]]
         for side in ('left', 'right')
@@ -386,6 +388,12 @@ def create_cover_page(top_lines, bottom_lines, rotated_fields, display_image, op
     content_right_margin = right_mgn + right_rail_width
     left_text_margin = content_left_margin if content_left_margin > 0 else 10
     right_text_margin = content_right_margin if content_right_margin > 0 else 10
+    # image_padding should come from the image field in the field order, if present, otherwise use the default
+    image_padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 0}
+    for field in options[cfg.KEY_FIELD_ORDER]:
+        if field['name'] == 'Image':
+            image_padding = field.get(cfg.KEY_FIELD_IMAGE_PADDING, image_padding)
+            break
 
     colors = options[cfg.KEY_COLORS]
     bgcolor, border_color = (
@@ -409,11 +417,11 @@ def create_cover_page(top_lines, bottom_lines, rotated_fields, display_image, op
         logo = Image()
         logo.open(image_path)
         outer_margin = 0 if cover_border_width == 0 else cover_border_width
-        left = outer_margin + image_mgn['left']
-        top = outer_margin + image_mgn['top']
+        left = outer_margin + image_padding['left']
+        top = outer_margin + image_padding['top']
         logo.size = (
-            max(1, width - outer_margin * 2 - image_mgn['left'] - image_mgn['right']),
-            max(1, height - outer_margin * 2 - image_mgn['top'] - image_mgn['bottom']))
+            max(1, width - outer_margin * 2 - image_padding['left'] - image_padding['right']),
+            max(1, height - outer_margin * 2 - image_padding['top'] - image_padding['bottom']))
         canvas.compose(logo, int(left), int(top))
 
     top = top_mgn
@@ -452,11 +460,11 @@ def create_cover_page(top_lines, bottom_lines, rotated_fields, display_image, op
                 right_text_margin, auto_reduce_font=False)
             footer_bottom = text_top - line.text_padding['top']
         footer_top = footer_bottom
-        available = (max(1, width - (content_left_margin + content_right_margin + image_mgn['left'] + image_mgn['right'])),
-                     int(footer_top - top) - image_mgn['top'] - image_mgn['bottom'])
+        available = (max(1, width - (content_left_margin + content_right_margin + image_padding['left'] + image_padding['right'])),
+                     int(footer_top - top) - image_padding['top'] - image_padding['bottom'])
     else:
-        available = (max(1, width - (content_left_margin + content_right_margin + image_mgn['left'] + image_mgn['right'])),
-                     int(height - top) - bottom_mgn - image_mgn['top'] - image_mgn['bottom'])
+        available = (max(1, width - (content_left_margin + content_right_margin + image_padding['left'] + image_padding['right'])),
+                     int(height - top) - bottom_mgn - image_padding['top'] - image_padding['bottom'])
 
     left_x = left_mgn
     for field in rotated_fields['left']:
@@ -483,9 +491,9 @@ def create_cover_page(top_lines, bottom_lines, rotated_fields, display_image, op
         if image_border_width > 0:
             logo = add_border(logo, image_border_width, image_border_color, bgcolor)
 
-        left = int(max(0, content_left_margin + image_mgn['left'] +
+        left = int(max(0, content_left_margin + image_padding['left'] +
                    (available[0] - lwidth) / 2.))
-        top = top + image_mgn['top'] + ((available[1] - lheight) / 2.)
+        top = top + image_padding['top'] + ((available[1] - lheight) / 2.)
         canvas.compose(logo, int(left), int(top))
 
     return canvas.export(output_format)
