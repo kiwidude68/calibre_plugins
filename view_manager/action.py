@@ -326,7 +326,8 @@ class ViewManagerAction(InterfaceAction):
         button_states = [
             (button, cfg.get_layout_item_setting(view_info, button.name))
             for button in getattr(self.gui, 'layout_buttons', ())
-        ]
+            if hasattr(button, 'name')
+        ]        
         alternate_states = {}
         if alternate_views is not None:
             for button, setting in button_states:

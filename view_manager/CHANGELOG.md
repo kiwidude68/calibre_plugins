@@ -1,5 +1,9 @@
 # View Manager Change Log
 
+## [1.11.3] - 2026-11-08
+## Fixed
+- Additional switching views fix to ignore layout menu items inserted by other plugins like Book List Plus
+
 ## [1.11.2] - 2026-11-07
 ## Fixed
 - Ignore layout menu items inserted by other plugins like Book List Plus
