@@ -31,7 +31,7 @@ from calibre_plugins.generate_cover.common_widgets import CustomColumnComboBox
 HELP_URL = 'https://github.com/kiwidude68/calibre_plugins/wiki/Generate-Cover'
 
 STORE_SCHEMA_VERSION = 'SchemaVersion'
-DEFAULT_SCHEMA_VERSION = 2.51
+DEFAULT_SCHEMA_VERSION = 2.52
 
 PREFS_NAMESPACE = 'GenerateCoverPlugin'
 PREFS_KEY_SETTINGS = 'settings'
