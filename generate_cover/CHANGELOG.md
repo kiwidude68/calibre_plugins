@@ -1,5 +1,9 @@
 # Generate Cover Change Log
 
+## [2.5.3] - 2026-11-09
+### Fixed
+- Missing QFontMetrics reference from refactoring.
+
 ## [2.5.2] - 2026-11-08
 ### Fixed
 - Reset all image margins to zero when migrating configuration to prevent incorrect padding on background images.

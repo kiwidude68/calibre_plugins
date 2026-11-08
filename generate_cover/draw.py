@@ -14,7 +14,7 @@ from calibre.utils.imghdr import identify
 
 import calibre_plugins.generate_cover.config as cfg
 try:
-    from qt.core import QFont, Qt, QPainter, Qt, QRect, QColor
+    from qt.core import QFont, Qt, QPainter, Qt, QRect, QColor, QFontMetrics
     weight_map = {
         "Light": QFont.Weight.Light,
         "Normal": QFont.Weight.Normal,      # <--- Fixed here
@@ -24,7 +24,7 @@ try:
     }
     default_font_weight = QFont.Weight.Normal
 except ImportError:
-    from PyQt5.Qt import QFont, Qt, QPainter, Qt, QRect, QColor
+    from PyQt5.Qt import QFont, Qt, QPainter, Qt, QRect, QColor, QFontMetrics
     weight_map = {
         "Light": QFont.Light,
         "Normal": QFont.Normal,      # <--- Fixed here
