@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Generate Cover\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 22:50+1000\n"
+"POT-Creation-Date: 2026-11-07 17:42+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: akihiko tanae (tanaeakihiko), 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/calibre/teams/19337/ja/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:616
+#: ..\common\common_dialogs.py:84 config.py:562
 msgid "Keyboard shortcuts"
 msgstr "キーボード ショートカット"
 
@@ -155,31 +155,31 @@ msgstr "表紙を生成するための本の書誌データが渡されていま
 msgid "No cover settings exist named: \"%s\""
 msgstr "\"%s\" という名前の表紙設定は存在しません"
 
-#: config.py:602
+#: config.py:548
 msgid "After generating cover:"
 msgstr "表紙の生成後:"
 
-#: config.py:611
+#: config.py:557
 msgid "Update column:"
 msgstr "更新する列:"
 
-#: config.py:612
+#: config.py:558
 msgid "Update value:"
 msgstr "更新する値:"
 
-#: config.py:617
+#: config.py:563
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "本プラグインに関連付けられているキーボードショートカットを編集"
 
-#: config.py:621
+#: config.py:567
 msgid "View library preferences"
 msgstr "ライブラリの環境設定を表示"
 
-#: config.py:622
+#: config.py:568
 msgid "View data stored in the library database for this plugin"
 msgstr "本プラグインのライブラリデータベースに保存されたデータを表示"
 
-#: config.py:626 dialogs.py:1647
+#: config.py:572 dialogs.py:1679
 msgid "&Help"
 msgstr "ヘルプ(&H)"
 
@@ -245,15 +245,35 @@ msgstr "この設定で表紙を生成し、その設定は破棄"
 msgid "Cancel action"
 msgstr "操作をキャンセル"
 
-#: dialogs.py:481 dialogs.py:559
+#: dialogs.py:472
+msgid "Light"
+msgstr "細字"
+
+#: dialogs.py:473
+msgid "Normal"
+msgstr "普通"
+
+#: dialogs.py:474
+msgid "Demi Bold"
+msgstr "やや太字"
+
+#: dialogs.py:475
+msgid "Bold"
+msgstr "太字"
+
+#: dialogs.py:476
+msgid "Black"
+msgstr "極太"
+
+#: dialogs.py:500 dialogs.py:578
 msgid "Saved Settings:"
 msgstr "保存した設定:"
 
-#: dialogs.py:491
+#: dialogs.py:510
 msgid "Autosave settings"
 msgstr "設定を自動保存"
 
-#: dialogs.py:492
+#: dialogs.py:511
 msgid ""
 "Do not prompt to save changes to a setting. Always save when\n"
 "switching to another setting, clicking OK or using Import/Export."
@@ -261,251 +281,251 @@ msgstr ""
 "設定の変更を保存するか確認しません。他の設定に切り替えた時、\n"
 "OK をクリックした時、インポート/エクスポートした時に常に保存します。"
 
-#: dialogs.py:499
+#: dialogs.py:518
 msgid "Add setting"
 msgstr "設定を追加"
 
-#: dialogs.py:504
+#: dialogs.py:523
 msgid "Rename setting"
 msgstr "設定名称を変更"
 
-#: dialogs.py:510 dialogs.py:698
+#: dialogs.py:529 dialogs.py:717
 msgid "Import setting"
 msgstr "設定をインポート"
 
-#: dialogs.py:515
+#: dialogs.py:534
 msgid "Export setting"
 msgstr "設定をエクスポート"
 
-#: dialogs.py:521
+#: dialogs.py:540
 msgid "Delete setting from this list"
 msgstr "このリストから設定を削除します"
 
-#: dialogs.py:529
+#: dialogs.py:548
 msgid "Select Image:"
 msgstr "画像を選択:"
 
-#: dialogs.py:540
+#: dialogs.py:559
 msgid "Add image to this list"
 msgstr "このリストに画像を追加"
 
-#: dialogs.py:545
+#: dialogs.py:564
 msgid "Rename image"
 msgstr "画像名称を変更"
 
-#: dialogs.py:550
+#: dialogs.py:569
 msgid "Remove image from this list"
 msgstr "このリストから画像を削除します"
 
-#: dialogs.py:561
+#: dialogs.py:580
 msgid "Saved Settings: (*unsaved changes)"
 msgstr "保存した設定: (*未保存の変更)"
 
-#: dialogs.py:592
+#: dialogs.py:611
 msgid "Add new setting"
 msgstr "新しい設定を追加"
 
-#: dialogs.py:615
+#: dialogs.py:634
 msgid "Cannot add"
 msgstr "追加できません"
 
-#: dialogs.py:616
+#: dialogs.py:635
 msgid "The name you specified is not unique"
 msgstr "指定した名前は既に使われています"
 
-#: dialogs.py:625 dialogs.py:868
+#: dialogs.py:644 dialogs.py:887
 msgid "Cannot remove"
 msgstr "削除できません"
 
-#: dialogs.py:626
+#: dialogs.py:645
 msgid "You cannot remove the default setting"
 msgstr "既定の設定は削除できません"
 
-#: dialogs.py:627 dialogs.py:871 dialogs.py:1722 dialogs.py:1741
+#: dialogs.py:646 dialogs.py:890 dialogs.py:1754 dialogs.py:1773
 msgid "Are you sure?"
 msgstr "よろしいですか？"
 
-#: dialogs.py:628
+#: dialogs.py:647
 #, python-format
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "'%s' の設定を削除してもよろしいですか?"
 
-#: dialogs.py:641 dialogs.py:818 dialogs.py:844
+#: dialogs.py:660 dialogs.py:837 dialogs.py:863
 msgid "Cannot rename"
 msgstr "名前を変更できません"
 
-#: dialogs.py:642
+#: dialogs.py:661
 msgid "You cannot rename the default setting"
 msgstr "既定の設定名称は変更できません"
 
-#: dialogs.py:643 dialogs.py:644
+#: dialogs.py:662 dialogs.py:663
 msgid "New setting name:"
 msgstr "新しい設定名:"
 
-#: dialogs.py:652
+#: dialogs.py:671
 msgid "Setting exists"
 msgstr "設定が存在しています"
 
-#: dialogs.py:653
+#: dialogs.py:672
 msgid "A saved setting already exists with this name."
 msgstr "この名称の設定は既に保存されています。"
 
-#: dialogs.py:678
+#: dialogs.py:697
 msgid "Import Failed"
 msgstr "インポートは失敗しました"
 
-#: dialogs.py:679
+#: dialogs.py:698
 msgid "This is not a valid Generate Cover export archive"
 msgstr "有効な Generate Cover のエクスポートアーカイブではありません"
 
-#: dialogs.py:717
+#: dialogs.py:736
 msgid "Cannot import"
 msgstr "インポートできません"
 
-#: dialogs.py:718 dialogs.py:910
+#: dialogs.py:737 dialogs.py:929
 msgid "Failed to copy image"
 msgstr "画像のコピーに失敗しました"
 
-#: dialogs.py:776
+#: dialogs.py:795
 msgid "Export completed"
 msgstr "エクスポート完了"
 
-#: dialogs.py:777
+#: dialogs.py:796
 #, python-format
 msgid "Cover setting exported to<br>%s"
 msgstr "表紙設定を次の場所にエクスポートしました<br>%s"
 
-#: dialogs.py:785
+#: dialogs.py:804
 msgid "Select setting file(s) to import"
 msgstr "インポートする設定ファイルを選択"
 
-#: dialogs.py:786 dialogs.py:792
+#: dialogs.py:805 dialogs.py:811
 msgid "GC Files"
 msgstr "GC ファイル"
 
-#: dialogs.py:792
+#: dialogs.py:811
 msgid "Save setting as"
 msgstr "設定に名前を付けて保存"
 
-#: dialogs.py:819
+#: dialogs.py:838
 msgid "You cannot rename this image"
 msgstr "この画像の名前は変更できません"
 
-#: dialogs.py:821 dialogs.py:822
+#: dialogs.py:840 dialogs.py:841
 msgid "New image name:"
 msgstr "新しい画像名:"
 
-#: dialogs.py:839
+#: dialogs.py:858
 msgid "File exists"
 msgstr "ファイルが存在します"
 
-#: dialogs.py:840
+#: dialogs.py:859
 msgid "An image already exists with this name."
 msgstr "この名前の画像は既に存在します。"
 
-#: dialogs.py:845
+#: dialogs.py:864
 msgid "Failed to rename image"
 msgstr "画像の名前の変更に失敗しました"
 
-#: dialogs.py:854
+#: dialogs.py:873
 msgid "Add cover images"
 msgstr "表紙画像を追加"
 
-#: dialogs.py:869
+#: dialogs.py:888
 msgid "You cannot remove this image"
 msgstr "この画像は削除できません"
 
-#: dialogs.py:872
+#: dialogs.py:891
 #, python-format
 msgid "Are you sure you want to delete the image: %s"
 msgstr "次の画像を削除してもよろしいですか: %s"
 
-#: dialogs.py:883 dialogs.py:941
+#: dialogs.py:902 dialogs.py:960
 msgid "Cannot write"
 msgstr "書き込めません"
 
-#: dialogs.py:884
+#: dialogs.py:903
 msgid "You do not have permission to delete the file"
 msgstr "指定ファイルを削除する権限がありません"
 
-#: dialogs.py:897
+#: dialogs.py:916
 msgid "Cannot read"
 msgstr "読み込めません"
 
-#: dialogs.py:898
+#: dialogs.py:917
 msgid "You do not have permission to read the file."
 msgstr "指定ファイルを読み込む権限がありません。"
 
-#: dialogs.py:909
+#: dialogs.py:928
 msgid "Cannot copy"
 msgstr "コピーできません"
 
-#: dialogs.py:923
+#: dialogs.py:942
 msgid "Overwrite existing"
 msgstr "既存のファイルを上書き"
 
-#: dialogs.py:924
+#: dialogs.py:943
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr "この名前の画像ファイルは既に存在します。上書きしますか?"
 
-#: dialogs.py:927
+#: dialogs.py:946
 msgid "Enter image name"
 msgstr "画像名を入力"
 
-#: dialogs.py:928
+#: dialogs.py:947
 msgid "Enter a unique name for this image:"
 msgstr "この画像に固有の名前を入力してください:"
 
-#: dialogs.py:942
+#: dialogs.py:961
 msgid "You do not have permission to overwrite the file"
 msgstr "指定ファイルを上書きする権限がありません"
 
-#: dialogs.py:978 dialogs.py:986
+#: dialogs.py:997 dialogs.py:1005
 msgid "Title"
 msgstr "タイトル"
 
-#: dialogs.py:979 dialogs.py:987
+#: dialogs.py:998 dialogs.py:1006
 msgid "Author"
 msgstr "著者"
 
-#: dialogs.py:980 dialogs.py:988
+#: dialogs.py:999 dialogs.py:1007
 msgid "Series"
 msgstr "シリーズ"
 
-#: dialogs.py:981 dialogs.py:989
+#: dialogs.py:1000 dialogs.py:1008
 msgid "Custom"
 msgstr "カスタム"
 
-#: dialogs.py:982 dialogs.py:990
+#: dialogs.py:1001 dialogs.py:1009
 msgid "Custom 2"
 msgstr "カスタム 2"
 
-#: dialogs.py:983 dialogs.py:991
+#: dialogs.py:1002 dialogs.py:1010
 msgid "Custom 3"
 msgstr "カスタム 3"
 
-#: dialogs.py:1000 dialogs.py:1243 dialogs.py:1398
+#: dialogs.py:1019 dialogs.py:1262 dialogs.py:1417
 msgid "Color:"
 msgstr "色:"
 
-#: dialogs.py:1005
+#: dialogs.py:1024
 msgid "Fill Color:"
 msgstr "塗りつぶしの色:"
 
-#: dialogs.py:1007
+#: dialogs.py:1026
 msgid "Choose selected field fill color"
 msgstr "選択した項目の塗りつぶしの色を選択"
 
-#: dialogs.py:1011
+#: dialogs.py:1030
 msgid "Reset selected field fill color"
 msgstr "選択した項目の塗りつぶしの色をリセット"
 
-#: dialogs.py:1014
+#: dialogs.py:1033
 msgid "Use this fill color for all text"
 msgstr "すべてのテキストにこの塗りつぶしの色を使用"
 
-#: dialogs.py:1015
+#: dialogs.py:1034
 msgid ""
 "When checked, the current fill color is used for all text.\n"
 "When unchecked, you can set a different fill color for each field."
@@ -513,35 +533,35 @@ msgstr ""
 "チェックすると、現在の塗りつぶしの色をすべてのテキストに使用します。\n"
 "チェックを外すと、項目ごとに別の塗りつぶしの色を設定できます。"
 
-#: dialogs.py:1025
+#: dialogs.py:1044
 msgid "Backdrop:"
 msgstr "背景帯:"
 
-#: dialogs.py:1026
+#: dialogs.py:1045
 msgid "Optionally render a color backdrop for this element"
 msgstr "この要素の後ろに色付きの背景帯を描画します (任意)"
 
-#: dialogs.py:1030
+#: dialogs.py:1049
 msgid "Choose this element's backdrop color, if applied"
 msgstr "この要素の背景帯の色を選択 (背景帯を使う場合)"
 
-#: dialogs.py:1034
+#: dialogs.py:1053
 msgid "Reset selected field backdrop color"
 msgstr "選択した項目の背景帯の色をリセット"
 
-#: dialogs.py:1036
+#: dialogs.py:1055
 msgid "Use this backdrop for all text"
 msgstr "すべてのテキストにこの背景帯を使用"
 
-#: dialogs.py:1044
+#: dialogs.py:1063
 msgid "Opacity:"
 msgstr "不透明度:"
 
-#: dialogs.py:1049
+#: dialogs.py:1068
 msgid "Full width or height"
 msgstr "全幅または全高"
 
-#: dialogs.py:1050
+#: dialogs.py:1069
 msgid ""
 "When checked, the backdrop will extend to the full width of the cover (height if rotated).\n"
 "When unchecked, the backdrop will only extend to the width or height of the text."
@@ -549,43 +569,43 @@ msgstr ""
 "チェックすると、背景帯を表紙の幅いっぱい (回転時は高さいっぱい) に広げます。\n"
 "チェックを外すと、背景帯はテキストの幅または高さの分だけになります。"
 
-#: dialogs.py:1136
+#: dialogs.py:1155
 msgid "Size:"
 msgstr "サイズ:"
 
-#: dialogs.py:1142
+#: dialogs.py:1161
 msgid "Cover width:"
 msgstr "表紙の幅:"
 
-#: dialogs.py:1143
+#: dialogs.py:1162
 msgid "The width in pixels of the output .jpg file"
 msgstr "出力する .jpg ファイルの幅 (ピクセル単位)"
 
-#: dialogs.py:1149
+#: dialogs.py:1168
 msgid "Height:"
 msgstr "高さ:"
 
-#: dialogs.py:1150
+#: dialogs.py:1169
 msgid "The height in pixels of the output .jpg file"
 msgstr "出力する .jpg ファイルの高さ (ピクセル単位)"
 
-#: dialogs.py:1159
+#: dialogs.py:1178
 msgid "Background:"
 msgstr "背景:"
 
-#: dialogs.py:1162
+#: dialogs.py:1181
 msgid "Choose the background color"
 msgstr "背景色を選択"
 
-#: dialogs.py:1167
+#: dialogs.py:1186
 msgid "Reset background color"
 msgstr "背景色をリセット"
 
-#: dialogs.py:1170
+#: dialogs.py:1189
 msgid "Resize cover dimensions to match background image"
 msgstr "背景画像に合わせて表紙のサイズを変更"
 
-#: dialogs.py:1171
+#: dialogs.py:1190
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -593,11 +613,11 @@ msgstr ""
 "チェックすると、現在選択している背景画像の寸法に基づいて\n"
 "表紙のサイズを自動的に変更します"
 
-#: dialogs.py:1175
+#: dialogs.py:1194
 msgid "Resize image to scale up if smaller than available area"
 msgstr "利用可能な領域より小さい場合は画像を拡大"
 
-#: dialogs.py:1176
+#: dialogs.py:1195
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -605,15 +625,15 @@ msgstr ""
 "チェックすると、表紙画像が小さすぎる場合に、利用可能な最大領域に\n"
 "合わせて自動的に拡大します"
 
-#: dialogs.py:1182
+#: dialogs.py:1201
 msgid "Margins:"
 msgstr "余白:"
 
-#: dialogs.py:1189
+#: dialogs.py:1208
 msgid "Top:"
 msgstr "上:"
 
-#: dialogs.py:1190
+#: dialogs.py:1209
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
@@ -621,11 +641,11 @@ msgstr ""
 "表紙の上端から最初のコンテンツまでの\n"
 "余白 (ピクセル単位)"
 
-#: dialogs.py:1198 dialogs.py:1313
+#: dialogs.py:1217 dialogs.py:1332
 msgid "Bottom:"
 msgstr "下:"
 
-#: dialogs.py:1199
+#: dialogs.py:1218
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -633,11 +653,11 @@ msgstr ""
 "表紙の下端から最後のコンテンツまでの\n"
 "余白 (ピクセル単位)"
 
-#: dialogs.py:1209
+#: dialogs.py:1228
 msgid "Left:"
 msgstr "左:"
 
-#: dialogs.py:1210
+#: dialogs.py:1229
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -645,11 +665,11 @@ msgstr ""
 "表紙の左端からテキストコンテンツまでの\n"
 "最小余白 (ピクセル単位)"
 
-#: dialogs.py:1218 dialogs.py:1314
+#: dialogs.py:1237 dialogs.py:1333
 msgid "Right:"
 msgstr "右:"
 
-#: dialogs.py:1219
+#: dialogs.py:1238
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -657,15 +677,15 @@ msgstr ""
 "表紙の右端からテキストコンテンツまでの\n"
 "最小余白 (ピクセル単位)"
 
-#: dialogs.py:1228 dialogs.py:1382
+#: dialogs.py:1247 dialogs.py:1401
 msgid "Border:"
 msgstr "境界線:"
 
-#: dialogs.py:1234
+#: dialogs.py:1253
 msgid "Border width:"
 msgstr "境界線の幅:"
 
-#: dialogs.py:1235
+#: dialogs.py:1254
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -673,27 +693,27 @@ msgstr ""
 "表紙の外周に引く境界線の幅 (ピクセル単位)。\n"
 "境界線なしの場合は 0 を指定します"
 
-#: dialogs.py:1246
+#: dialogs.py:1265
 msgid "Choose the border color"
 msgstr "境界線の色を選択"
 
-#: dialogs.py:1251
+#: dialogs.py:1270
 msgid "Reset border color"
 msgstr "境界線の色をリセット"
 
-#: dialogs.py:1313
+#: dialogs.py:1332
 msgid "Padding Top:"
 msgstr "上のパディング:"
 
-#: dialogs.py:1314
+#: dialogs.py:1333
 msgid "Padding Left:"
 msgstr "左のパディング:"
 
-#: dialogs.py:1343
+#: dialogs.py:1362
 msgid "Field Order:"
 msgstr "項目の順序:"
 
-#: dialogs.py:1344
+#: dialogs.py:1363
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
@@ -701,23 +721,23 @@ msgstr ""
 "表紙に表示する項目の順序と、チェックボックスによる\n"
 "表示/非表示を変更します"
 
-#: dialogs.py:1358
+#: dialogs.py:1377
 msgid "Move field up"
 msgstr "項目を上へ移動"
 
-#: dialogs.py:1364
+#: dialogs.py:1383
 msgid "Move field down"
 msgstr "項目を下へ移動"
 
-#: dialogs.py:1370
+#: dialogs.py:1389
 msgid "Image:"
 msgstr "画像:"
 
-#: dialogs.py:1374
+#: dialogs.py:1393
 msgid "Stretch image to use as cover background"
 msgstr "画像を引き伸ばして表紙の背景に使用"
 
-#: dialogs.py:1375
+#: dialogs.py:1394
 msgid ""
 "Check this to overlay text on the image background.\n"
 "Uncheck this to place text around the image."
@@ -725,49 +745,49 @@ msgstr ""
 "チェックすると、背景画像の上にテキストを重ねます。\n"
 "チェックを外すと、画像の周囲にテキストを配置します。"
 
-#: dialogs.py:1388
+#: dialogs.py:1407
 msgid "Image border:"
 msgstr "画像の境界線:"
 
-#: dialogs.py:1390
+#: dialogs.py:1409
 msgid "The width in pixels of a border around the edge of the image"
 msgstr "画像の外周に引く境界線の幅 (ピクセル単位)"
 
-#: dialogs.py:1402
+#: dialogs.py:1421
 msgid ""
 "Choose the image border color (if it is not stretched to the cover edge)"
 msgstr "画像の境界線の色を選択 (画像を表紙の端まで引き伸ばさない場合)"
 
-#: dialogs.py:1408
+#: dialogs.py:1427
 msgid "Reset image border color"
 msgstr "画像の境界線の色をリセット"
 
-#: dialogs.py:1421 dialogs.py:1428
+#: dialogs.py:1440 dialogs.py:1447
 msgid "Font:"
 msgstr "フォント:"
 
-#: dialogs.py:1432
+#: dialogs.py:1451
 msgid "Choose the font family for the selected field"
 msgstr "選択した項目のフォントファミリを選択"
 
-#: dialogs.py:1440
+#: dialogs.py:1459
 msgid "Font size in pixels"
 msgstr "フォントサイズ (ピクセル単位)"
 
-#: dialogs.py:1447
+#: dialogs.py:1466
 msgid "Use this font family for all text"
 msgstr "すべてのテキストにこのフォントファミリを使用"
 
-#: dialogs.py:1448
+#: dialogs.py:1467
 msgid ""
 "When checked, this font family is used for all text content on the cover"
 msgstr "チェックすると、表紙のすべてのテキストにこのフォントファミリを使用します"
 
-#: dialogs.py:1451
+#: dialogs.py:1470
 msgid "Auto-reduce font size to fit on one line"
 msgstr "1 行に収まるようにフォントサイズを自動縮小"
 
-#: dialogs.py:1452
+#: dialogs.py:1471
 msgid ""
 "When checked, this font size will be used as a maximum size.\n"
 "A reduced size will be used where needed to fit text on one line."
@@ -775,71 +795,67 @@ msgstr ""
 "チェックすると、このフォントサイズを最大サイズとして使用します。\n"
 "テキストを 1 行に収めるために必要な場合は、小さいサイズを使用します。"
 
-#: dialogs.py:1458
-msgid "Alignment:"
-msgstr "配置:"
+#: dialogs.py:1477
+msgid "Style:"
+msgstr "スタイル:"
 
-#: dialogs.py:1463 dialogs.py:1500
+#: dialogs.py:1482 dialogs.py:1520
 msgid "Left"
 msgstr "左"
 
-#: dialogs.py:1464
+#: dialogs.py:1483
 msgid "Centre"
 msgstr "中央"
 
-#: dialogs.py:1465 dialogs.py:1501
+#: dialogs.py:1484 dialogs.py:1521
 msgid "Right"
 msgstr "右"
 
-#: dialogs.py:1468
-msgid "Bold"
-msgstr "太字"
-
-#: dialogs.py:1472
+#: dialogs.py:1492
 msgid "Italic"
 msgstr "イタリック体"
 
-#: dialogs.py:1475
+#: dialogs.py:1495
 msgid "Underline"
 msgstr "下線"
 
-#: dialogs.py:1482
+#: dialogs.py:1502
 msgid "Rotation:"
 msgstr "回転:"
 
 #. TRANSLATORS: Text rotation angle in degrees (0, 90, or 270), not
 #. temperature.
 #. Keep %d; use a suitable local degree symbol or abbreviation.
-#: dialogs.py:1490
+#: dialogs.py:1510
 #, python-format
 msgid "%d°"
 msgstr "%d°"
 
-#: dialogs.py:1491
+#: dialogs.py:1511
 msgid "Rotate the selected text field"
 msgstr "選択したテキスト項目を回転"
 
-#: dialogs.py:1495
+#: dialogs.py:1515
 msgid "Placement:"
 msgstr "位置:"
 
-#: dialogs.py:1502
+#: dialogs.py:1522
 msgid "Place vertical text along the left or right edge"
 msgstr "縦書きのテキストを左端または右端に沿って配置"
 
-#: dialogs.py:1516
+#: dialogs.py:1536
 msgid "Data:"
 msgstr "データ:"
 
-#: dialogs.py:1521
+#: dialogs.py:1541
 msgid "Text:"
 msgstr "テキスト:"
 
-#: dialogs.py:1533
+#: dialogs.py:1553
 msgid "Swap author LN,FN to FN LN"
 msgstr "著者の「姓-名」を「名-姓」に入れ替える"
 
-#: dialogs.py:1534
+#: dialogs.py:1554
 msgid ""
 "Use this option if your authors are stored as LN, FN\n"
 "but you prefer to see FN LN on the book cover"
@@ -847,11 +863,11 @@ msgstr ""
 "著者が「姓-名」の形式で保存されているが、表紙には\n"
 "「名-姓」で表示したい場合にこのオプションを使用します"
 
-#: dialogs.py:1538
+#: dialogs.py:1558
 msgid "Series text:"
 msgstr "シリーズのテキスト:"
 
-#: dialogs.py:1539
+#: dialogs.py:1559
 msgid ""
 "Change the way series information is displayed.\n"
 "Useful for non-English languages!"
@@ -859,56 +875,56 @@ msgstr ""
 "シリーズ情報の表示方法を変更します。\n"
 "英語以外の言語で便利です!"
 
-#: dialogs.py:1600
+#: dialogs.py:1621
 msgid "Cover Options"
 msgstr "表紙のオプション"
 
-#: dialogs.py:1604
+#: dialogs.py:1625
 msgid "Generate Custom Cover"
 msgstr "カスタム表紙を生成"
 
-#: dialogs.py:1624
+#: dialogs.py:1656
 msgid "Settings"
 msgstr "設定"
 
-#: dialogs.py:1625
+#: dialogs.py:1657
 msgid "Dimensions"
 msgstr "寸法"
 
-#: dialogs.py:1626
+#: dialogs.py:1658
 msgid "Contents"
 msgstr "内容"
 
-#: dialogs.py:1638
+#: dialogs.py:1670
 msgid " Revert "
 msgstr " 元に戻す "
 
-#: dialogs.py:1639
+#: dialogs.py:1671
 msgid "Revert to your previous saved setting values"
 msgstr "前回保存した設定値に戻す"
 
-#: dialogs.py:1641
+#: dialogs.py:1673
 msgid " Save "
 msgstr " 保存 "
 
-#: dialogs.py:1642
+#: dialogs.py:1674
 msgid "Overwrite your current saved setting"
 msgstr "現在保存している設定を上書き"
 
-#: dialogs.py:1644
+#: dialogs.py:1676
 msgid " Customize... "
 msgstr " カスタマイズ... "
 
-#: dialogs.py:1645
+#: dialogs.py:1677
 msgid "Set general options for this plugin"
 msgstr "本プラグインの全般オプションを設定します"
 
-#: dialogs.py:1723
+#: dialogs.py:1755
 #, python-format
 msgid "Revert to your previously saved values for '%s'?"
 msgstr "'%s' を前回保存した値に戻しますか?"
 
-#: dialogs.py:1742
+#: dialogs.py:1774
 #, python-format
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr "'%s' の設定を現在の値で上書きしますか?"

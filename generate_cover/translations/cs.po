@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Generate Cover\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 22:50+1000\n"
+"POT-Creation-Date: 2026-11-07 17:42+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: ..\common\common_dialogs.py:84 config.py:616
+#: ..\common\common_dialogs.py:84 config.py:562
 msgid "Keyboard shortcuts"
 msgstr "Klávesové zkratky"
 
@@ -164,31 +164,31 @@ msgstr "Chybí metadata knihy předaná pro generování obálky"
 msgid "No cover settings exist named: \"%s\""
 msgstr "Neexistuje žádné nastavení obálky s názvem: „%s“"
 
-#: config.py:602
+#: config.py:548
 msgid "After generating cover:"
 msgstr "Po vygenerování obálky:"
 
-#: config.py:611
+#: config.py:557
 msgid "Update column:"
 msgstr "Aktualizovat sloupec:"
 
-#: config.py:612
+#: config.py:558
 msgid "Update value:"
 msgstr "Aktualizovat hodnotu:"
 
-#: config.py:617
+#: config.py:563
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Upravit klávesové zkratky přiřazené tomuto modulu"
 
-#: config.py:621
+#: config.py:567
 msgid "View library preferences"
 msgstr "Zobrazit předvolby knihovny"
 
-#: config.py:622
+#: config.py:568
 msgid "View data stored in the library database for this plugin"
 msgstr "Zobrazit data tohoto modulu uložená v databázi knihovny"
 
-#: config.py:626 dialogs.py:1647
+#: config.py:572 dialogs.py:1679
 msgid "&Help"
 msgstr "&Nápověda"
 
@@ -255,15 +255,35 @@ msgstr "Vygenerovat obálku s těmito nastaveními a potom je zahodit"
 msgid "Cancel action"
 msgstr "Zrušit akci"
 
-#: dialogs.py:481 dialogs.py:559
+#: dialogs.py:472
+msgid "Light"
+msgstr "Světlé"
+
+#: dialogs.py:473
+msgid "Normal"
+msgstr "Normální"
+
+#: dialogs.py:474
+msgid "Demi Bold"
+msgstr "Polotučné"
+
+#: dialogs.py:475
+msgid "Bold"
+msgstr "Tučné"
+
+#: dialogs.py:476
+msgid "Black"
+msgstr "Velmi tučné"
+
+#: dialogs.py:500 dialogs.py:578
 msgid "Saved Settings:"
 msgstr "Uložená nastavení:"
 
-#: dialogs.py:491
+#: dialogs.py:510
 msgid "Autosave settings"
 msgstr "Automaticky ukládat nastavení"
 
-#: dialogs.py:492
+#: dialogs.py:511
 msgid ""
 "Do not prompt to save changes to a setting. Always save when\n"
 "switching to another setting, clicking OK or using Import/Export."
@@ -271,251 +291,251 @@ msgstr ""
 "Neptat se na uložení změn nastavení. Vždy uložit při přepnutí\n"
 "na jiné nastavení, kliknutí na OK nebo použití importu/exportu."
 
-#: dialogs.py:499
+#: dialogs.py:518
 msgid "Add setting"
 msgstr "Přidat nastavení"
 
-#: dialogs.py:504
+#: dialogs.py:523
 msgid "Rename setting"
 msgstr "Přejmenovat nastavení"
 
-#: dialogs.py:510 dialogs.py:698
+#: dialogs.py:529 dialogs.py:717
 msgid "Import setting"
 msgstr "Importovat nastavení"
 
-#: dialogs.py:515
+#: dialogs.py:534
 msgid "Export setting"
 msgstr "Exportovat nastavení"
 
-#: dialogs.py:521
+#: dialogs.py:540
 msgid "Delete setting from this list"
 msgstr "Odstranit nastavení z tohoto seznamu"
 
-#: dialogs.py:529
+#: dialogs.py:548
 msgid "Select Image:"
 msgstr "Vybrat obrázek:"
 
-#: dialogs.py:540
+#: dialogs.py:559
 msgid "Add image to this list"
 msgstr "Přidat obrázek do tohoto seznamu"
 
-#: dialogs.py:545
+#: dialogs.py:564
 msgid "Rename image"
 msgstr "Přejmenovat obrázek"
 
-#: dialogs.py:550
+#: dialogs.py:569
 msgid "Remove image from this list"
 msgstr "Odebrat obrázek z tohoto seznamu"
 
-#: dialogs.py:561
+#: dialogs.py:580
 msgid "Saved Settings: (*unsaved changes)"
 msgstr "Uložená nastavení: (*neuložené změny)"
 
-#: dialogs.py:592
+#: dialogs.py:611
 msgid "Add new setting"
 msgstr "Přidat nové nastavení"
 
-#: dialogs.py:615
+#: dialogs.py:634
 msgid "Cannot add"
 msgstr "Nelze přidat"
 
-#: dialogs.py:616
+#: dialogs.py:635
 msgid "The name you specified is not unique"
 msgstr "Zadaný název není jedinečný"
 
-#: dialogs.py:625 dialogs.py:868
+#: dialogs.py:644 dialogs.py:887
 msgid "Cannot remove"
 msgstr "Nelze odebrat"
 
-#: dialogs.py:626
+#: dialogs.py:645
 msgid "You cannot remove the default setting"
 msgstr "Výchozí nastavení nelze odebrat"
 
-#: dialogs.py:627 dialogs.py:871 dialogs.py:1722 dialogs.py:1741
+#: dialogs.py:646 dialogs.py:890 dialogs.py:1754 dialogs.py:1773
 msgid "Are you sure?"
 msgstr "Opravdu?"
 
-#: dialogs.py:628
+#: dialogs.py:647
 #, python-format
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "Opravdu chcete odebrat nastavení „%s“?"
 
-#: dialogs.py:641 dialogs.py:818 dialogs.py:844
+#: dialogs.py:660 dialogs.py:837 dialogs.py:863
 msgid "Cannot rename"
 msgstr "Nelze přejmenovat"
 
-#: dialogs.py:642
+#: dialogs.py:661
 msgid "You cannot rename the default setting"
 msgstr "Výchozí nastavení nelze přejmenovat"
 
-#: dialogs.py:643 dialogs.py:644
+#: dialogs.py:662 dialogs.py:663
 msgid "New setting name:"
 msgstr "Nový název nastavení:"
 
-#: dialogs.py:652
+#: dialogs.py:671
 msgid "Setting exists"
 msgstr "Nastavení existuje"
 
-#: dialogs.py:653
+#: dialogs.py:672
 msgid "A saved setting already exists with this name."
 msgstr "Uložené nastavení s tímto názvem už existuje."
 
-#: dialogs.py:678
+#: dialogs.py:697
 msgid "Import Failed"
 msgstr "Import se nezdařil"
 
-#: dialogs.py:679
+#: dialogs.py:698
 msgid "This is not a valid Generate Cover export archive"
 msgstr "Toto není platný exportní archiv Generate Cover"
 
-#: dialogs.py:717
+#: dialogs.py:736
 msgid "Cannot import"
 msgstr "Nelze importovat"
 
-#: dialogs.py:718 dialogs.py:910
+#: dialogs.py:737 dialogs.py:929
 msgid "Failed to copy image"
 msgstr "Nepodařilo se zkopírovat obrázek"
 
-#: dialogs.py:776
+#: dialogs.py:795
 msgid "Export completed"
 msgstr "Export dokončen"
 
-#: dialogs.py:777
+#: dialogs.py:796
 #, python-format
 msgid "Cover setting exported to<br>%s"
 msgstr "Nastavení obálky exportováno do<br>%s"
 
-#: dialogs.py:785
+#: dialogs.py:804
 msgid "Select setting file(s) to import"
 msgstr "Vyberte soubory nastavení k importu"
 
-#: dialogs.py:786 dialogs.py:792
+#: dialogs.py:805 dialogs.py:811
 msgid "GC Files"
 msgstr "Soubory Generate Cover"
 
-#: dialogs.py:792
+#: dialogs.py:811
 msgid "Save setting as"
 msgstr "Uložit nastavení jako"
 
-#: dialogs.py:819
+#: dialogs.py:838
 msgid "You cannot rename this image"
 msgstr "Tento obrázek nelze přejmenovat"
 
-#: dialogs.py:821 dialogs.py:822
+#: dialogs.py:840 dialogs.py:841
 msgid "New image name:"
 msgstr "Nový název obrázku:"
 
-#: dialogs.py:839
+#: dialogs.py:858
 msgid "File exists"
 msgstr "Soubor existuje"
 
-#: dialogs.py:840
+#: dialogs.py:859
 msgid "An image already exists with this name."
 msgstr "Obrázek s tímto názvem už existuje."
 
-#: dialogs.py:845
+#: dialogs.py:864
 msgid "Failed to rename image"
 msgstr "Nepodařilo se přejmenovat obrázek"
 
-#: dialogs.py:854
+#: dialogs.py:873
 msgid "Add cover images"
 msgstr "Přidat obrázky obálek"
 
-#: dialogs.py:869
+#: dialogs.py:888
 msgid "You cannot remove this image"
 msgstr "Tento obrázek nelze odebrat"
 
-#: dialogs.py:872
+#: dialogs.py:891
 #, python-format
 msgid "Are you sure you want to delete the image: %s"
 msgstr "Opravdu chcete odstranit obrázek: %s"
 
-#: dialogs.py:883 dialogs.py:941
+#: dialogs.py:902 dialogs.py:960
 msgid "Cannot write"
 msgstr "Nelze zapisovat"
 
-#: dialogs.py:884
+#: dialogs.py:903
 msgid "You do not have permission to delete the file"
 msgstr "Nemáte oprávnění k odstranění souboru"
 
-#: dialogs.py:897
+#: dialogs.py:916
 msgid "Cannot read"
 msgstr "Nelze číst"
 
-#: dialogs.py:898
+#: dialogs.py:917
 msgid "You do not have permission to read the file."
 msgstr "Nemáte oprávnění ke čtení souboru."
 
-#: dialogs.py:909
+#: dialogs.py:928
 msgid "Cannot copy"
 msgstr "Nelze kopírovat"
 
-#: dialogs.py:923
+#: dialogs.py:942
 msgid "Overwrite existing"
 msgstr "Přepsat existující"
 
-#: dialogs.py:924
+#: dialogs.py:943
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr "Soubor obrázku s tímto názvem už existuje. Chcete ho přepsat?"
 
-#: dialogs.py:927
+#: dialogs.py:946
 msgid "Enter image name"
 msgstr "Zadejte název obrázku"
 
-#: dialogs.py:928
+#: dialogs.py:947
 msgid "Enter a unique name for this image:"
 msgstr "Zadejte jedinečný název tohoto obrázku:"
 
-#: dialogs.py:942
+#: dialogs.py:961
 msgid "You do not have permission to overwrite the file"
 msgstr "Nemáte oprávnění k přepsání souboru"
 
-#: dialogs.py:978 dialogs.py:986
+#: dialogs.py:997 dialogs.py:1005
 msgid "Title"
 msgstr "Název"
 
-#: dialogs.py:979 dialogs.py:987
+#: dialogs.py:998 dialogs.py:1006
 msgid "Author"
 msgstr "Autor"
 
-#: dialogs.py:980 dialogs.py:988
+#: dialogs.py:999 dialogs.py:1007
 msgid "Series"
 msgstr "Série"
 
-#: dialogs.py:981 dialogs.py:989
+#: dialogs.py:1000 dialogs.py:1008
 msgid "Custom"
 msgstr "Vlastní"
 
-#: dialogs.py:982 dialogs.py:990
+#: dialogs.py:1001 dialogs.py:1009
 msgid "Custom 2"
 msgstr "Vlastní 2"
 
-#: dialogs.py:983 dialogs.py:991
+#: dialogs.py:1002 dialogs.py:1010
 msgid "Custom 3"
 msgstr "Vlastní 3"
 
-#: dialogs.py:1000 dialogs.py:1243 dialogs.py:1398
+#: dialogs.py:1019 dialogs.py:1262 dialogs.py:1417
 msgid "Color:"
 msgstr "Barva:"
 
-#: dialogs.py:1005
+#: dialogs.py:1024
 msgid "Fill Color:"
 msgstr "Barva výplně:"
 
-#: dialogs.py:1007
+#: dialogs.py:1026
 msgid "Choose selected field fill color"
 msgstr "Vybrat barvu výplně pro vybrané pole"
 
-#: dialogs.py:1011
+#: dialogs.py:1030
 msgid "Reset selected field fill color"
 msgstr "Obnovit barvu výplně vybraného pole"
 
-#: dialogs.py:1014
+#: dialogs.py:1033
 msgid "Use this fill color for all text"
 msgstr "Použít tuto barvu výplně pro všechen text"
 
-#: dialogs.py:1015
+#: dialogs.py:1034
 msgid ""
 "When checked, the current fill color is used for all text.\n"
 "When unchecked, you can set a different fill color for each field."
@@ -523,35 +543,35 @@ msgstr ""
 "Pokud je zaškrtnuto, aktuální barva výplně se použije pro všechen text.\n"
 "Pokud zaškrtnuto není, můžete pro každé pole nastavit jinou barvu výplně."
 
-#: dialogs.py:1025
+#: dialogs.py:1044
 msgid "Backdrop:"
 msgstr "Podklad:"
 
-#: dialogs.py:1026
+#: dialogs.py:1045
 msgid "Optionally render a color backdrop for this element"
 msgstr "Volitelně vykreslit barevný podklad tohoto prvku"
 
-#: dialogs.py:1030
+#: dialogs.py:1049
 msgid "Choose this element's backdrop color, if applied"
 msgstr "Vybrat barvu podkladu tohoto prvku, pokud se používá"
 
-#: dialogs.py:1034
+#: dialogs.py:1053
 msgid "Reset selected field backdrop color"
 msgstr "Obnovit barvu podkladu vybraného pole"
 
-#: dialogs.py:1036
+#: dialogs.py:1055
 msgid "Use this backdrop for all text"
 msgstr "Použít tento podklad pro všechen text"
 
-#: dialogs.py:1044
+#: dialogs.py:1063
 msgid "Opacity:"
 msgstr "Krytí:"
 
-#: dialogs.py:1049
+#: dialogs.py:1068
 msgid "Full width or height"
 msgstr "Celá šířka nebo výška"
 
-#: dialogs.py:1050
+#: dialogs.py:1069
 msgid ""
 "When checked, the backdrop will extend to the full width of the cover (height if rotated).\n"
 "When unchecked, the backdrop will only extend to the width or height of the text."
@@ -559,43 +579,43 @@ msgstr ""
 "Pokud je zaškrtnuto, podklad se roztáhne na celou šířku obálky (při otočení na celou výšku).\n"
 "Pokud zaškrtnuto není, podklad bude mít pouze šířku nebo výšku textu."
 
-#: dialogs.py:1136
+#: dialogs.py:1155
 msgid "Size:"
 msgstr "Velikost:"
 
-#: dialogs.py:1142
+#: dialogs.py:1161
 msgid "Cover width:"
 msgstr "Šířka obálky:"
 
-#: dialogs.py:1143
+#: dialogs.py:1162
 msgid "The width in pixels of the output .jpg file"
 msgstr "Šířka výstupního souboru .jpg v pixelech"
 
-#: dialogs.py:1149
+#: dialogs.py:1168
 msgid "Height:"
 msgstr "Výška:"
 
-#: dialogs.py:1150
+#: dialogs.py:1169
 msgid "The height in pixels of the output .jpg file"
 msgstr "Výška výstupního souboru .jpg v pixelech"
 
-#: dialogs.py:1159
+#: dialogs.py:1178
 msgid "Background:"
 msgstr "Pozadí:"
 
-#: dialogs.py:1162
+#: dialogs.py:1181
 msgid "Choose the background color"
 msgstr "Vybrat barvu pozadí"
 
-#: dialogs.py:1167
+#: dialogs.py:1186
 msgid "Reset background color"
 msgstr "Obnovit barvu pozadí"
 
-#: dialogs.py:1170
+#: dialogs.py:1189
 msgid "Resize cover dimensions to match background image"
 msgstr "Změnit rozměry obálky podle obrázku na pozadí"
 
-#: dialogs.py:1171
+#: dialogs.py:1190
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -603,11 +623,11 @@ msgstr ""
 "Zaškrtněte, pokud chcete automaticky změnit velikost obálky\n"
 "podle rozměrů aktuálně vybraného obrázku na pozadí"
 
-#: dialogs.py:1175
+#: dialogs.py:1194
 msgid "Resize image to scale up if smaller than available area"
 msgstr "Zvětšit obrázek, pokud je menší než dostupná oblast"
 
-#: dialogs.py:1176
+#: dialogs.py:1195
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -615,15 +635,15 @@ msgstr ""
 "Zaškrtněte, pokud chcete automaticky zvětšit obrázek obálky tak,\n"
 "aby se vešel do maximální dostupné oblasti, pokud je příliš malý"
 
-#: dialogs.py:1182
+#: dialogs.py:1201
 msgid "Margins:"
 msgstr "Okraje:"
 
-#: dialogs.py:1189
+#: dialogs.py:1208
 msgid "Top:"
 msgstr "Nahoře:"
 
-#: dialogs.py:1190
+#: dialogs.py:1209
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
@@ -631,11 +651,11 @@ msgstr ""
 "Okraj v pixelech od horního okraje obálky\n"
 "k prvnímu obsahu"
 
-#: dialogs.py:1198 dialogs.py:1313
+#: dialogs.py:1217 dialogs.py:1332
 msgid "Bottom:"
 msgstr "Dole:"
 
-#: dialogs.py:1199
+#: dialogs.py:1218
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -643,11 +663,11 @@ msgstr ""
 "Okraj v pixelech od dolního okraje obálky\n"
 "k poslednímu obsahu"
 
-#: dialogs.py:1209
+#: dialogs.py:1228
 msgid "Left:"
 msgstr "Vlevo:"
 
-#: dialogs.py:1210
+#: dialogs.py:1229
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -655,11 +675,11 @@ msgstr ""
 "Minimální okraj v pixelech od levého okraje obálky\n"
 "k textovému obsahu"
 
-#: dialogs.py:1218 dialogs.py:1314
+#: dialogs.py:1237 dialogs.py:1333
 msgid "Right:"
 msgstr "Vpravo:"
 
-#: dialogs.py:1219
+#: dialogs.py:1238
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -667,15 +687,15 @@ msgstr ""
 "Minimální okraj v pixelech od pravého okraje obálky\n"
 "k textovému obsahu"
 
-#: dialogs.py:1228 dialogs.py:1382
+#: dialogs.py:1247 dialogs.py:1401
 msgid "Border:"
 msgstr "Ohraničení:"
 
-#: dialogs.py:1234
+#: dialogs.py:1253
 msgid "Border width:"
 msgstr "Šířka ohraničení:"
 
-#: dialogs.py:1235
+#: dialogs.py:1254
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -683,27 +703,27 @@ msgstr ""
 "Šířka ohraničení kolem okraje obálky v pixelech.\n"
 "Pokud ohraničení nechcete, zadejte 0"
 
-#: dialogs.py:1246
+#: dialogs.py:1265
 msgid "Choose the border color"
 msgstr "Vybrat barvu ohraničení"
 
-#: dialogs.py:1251
+#: dialogs.py:1270
 msgid "Reset border color"
 msgstr "Obnovit barvu ohraničení"
 
-#: dialogs.py:1313
+#: dialogs.py:1332
 msgid "Padding Top:"
 msgstr "Odsazení nahoře:"
 
-#: dialogs.py:1314
+#: dialogs.py:1333
 msgid "Padding Left:"
 msgstr "Odsazení vlevo:"
 
-#: dialogs.py:1343
+#: dialogs.py:1362
 msgid "Field Order:"
 msgstr "Pořadí polí:"
 
-#: dialogs.py:1344
+#: dialogs.py:1363
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
@@ -711,23 +731,23 @@ msgstr ""
 "Změňte pořadí položek na obálce a pomocí\n"
 "zaškrtávacího políčka určete, zda se mají zobrazit"
 
-#: dialogs.py:1358
+#: dialogs.py:1377
 msgid "Move field up"
 msgstr "Přesunout pole nahoru"
 
-#: dialogs.py:1364
+#: dialogs.py:1383
 msgid "Move field down"
 msgstr "Přesunout pole dolů"
 
-#: dialogs.py:1370
+#: dialogs.py:1389
 msgid "Image:"
 msgstr "Obrázek:"
 
-#: dialogs.py:1374
+#: dialogs.py:1393
 msgid "Stretch image to use as cover background"
 msgstr "Roztáhnout obrázek a použít ho jako pozadí obálky"
 
-#: dialogs.py:1375
+#: dialogs.py:1394
 msgid ""
 "Check this to overlay text on the image background.\n"
 "Uncheck this to place text around the image."
@@ -735,53 +755,53 @@ msgstr ""
 "Zaškrtněte, pokud chcete text překrýt přes obrázek na pozadí.\n"
 "Zrušte zaškrtnutí, pokud chcete text umístit kolem obrázku."
 
-#: dialogs.py:1388
+#: dialogs.py:1407
 msgid "Image border:"
 msgstr "Ohraničení obrázku:"
 
-#: dialogs.py:1390
+#: dialogs.py:1409
 msgid "The width in pixels of a border around the edge of the image"
 msgstr "Šířka ohraničení kolem okraje obrázku v pixelech"
 
-#: dialogs.py:1402
+#: dialogs.py:1421
 msgid ""
 "Choose the image border color (if it is not stretched to the cover edge)"
 msgstr ""
 "Vybrat barvu ohraničení obrázku (pokud obrázek není roztažen k okraji "
 "obálky)"
 
-#: dialogs.py:1408
+#: dialogs.py:1427
 msgid "Reset image border color"
 msgstr "Obnovit barvu ohraničení obrázku"
 
-#: dialogs.py:1421 dialogs.py:1428
+#: dialogs.py:1440 dialogs.py:1447
 msgid "Font:"
 msgstr "Písmo:"
 
-#: dialogs.py:1432
+#: dialogs.py:1451
 msgid "Choose the font family for the selected field"
 msgstr "Vybrat rodinu písem pro vybrané pole"
 
-#: dialogs.py:1440
+#: dialogs.py:1459
 msgid "Font size in pixels"
 msgstr "Velikost písma v pixelech"
 
-#: dialogs.py:1447
+#: dialogs.py:1466
 msgid "Use this font family for all text"
 msgstr "Použít tuto rodinu písem pro všechen text"
 
-#: dialogs.py:1448
+#: dialogs.py:1467
 msgid ""
 "When checked, this font family is used for all text content on the cover"
 msgstr ""
 "Pokud je zaškrtnuto, tato rodina písem se použije pro veškerý textový obsah "
 "na obálce"
 
-#: dialogs.py:1451
+#: dialogs.py:1470
 msgid "Auto-reduce font size to fit on one line"
 msgstr "Automaticky zmenšit písmo, aby se vešlo na jeden řádek"
 
-#: dialogs.py:1452
+#: dialogs.py:1471
 msgid ""
 "When checked, this font size will be used as a maximum size.\n"
 "A reduced size will be used where needed to fit text on one line."
@@ -789,71 +809,67 @@ msgstr ""
 "Pokud je zaškrtnuto, tato velikost písma se použije jako maximální velikost.\n"
 "Kde je potřeba vměstnat text na jeden řádek, použije se menší velikost."
 
-#: dialogs.py:1458
-msgid "Alignment:"
-msgstr "Zarovnání:"
+#: dialogs.py:1477
+msgid "Style:"
+msgstr "Styl:"
 
-#: dialogs.py:1463 dialogs.py:1500
+#: dialogs.py:1482 dialogs.py:1520
 msgid "Left"
 msgstr "Vlevo"
 
-#: dialogs.py:1464
+#: dialogs.py:1483
 msgid "Centre"
 msgstr "Na střed"
 
-#: dialogs.py:1465 dialogs.py:1501
+#: dialogs.py:1484 dialogs.py:1521
 msgid "Right"
 msgstr "Vpravo"
 
-#: dialogs.py:1468
-msgid "Bold"
-msgstr "Tučné"
-
-#: dialogs.py:1472
+#: dialogs.py:1492
 msgid "Italic"
 msgstr "Kurzíva"
 
-#: dialogs.py:1475
+#: dialogs.py:1495
 msgid "Underline"
 msgstr "Podtržené"
 
-#: dialogs.py:1482
+#: dialogs.py:1502
 msgid "Rotation:"
 msgstr "Otočení:"
 
 #. TRANSLATORS: Text rotation angle in degrees (0, 90, or 270), not
 #. temperature.
 #. Keep %d; use a suitable local degree symbol or abbreviation.
-#: dialogs.py:1490
+#: dialogs.py:1510
 #, python-format
 msgid "%d°"
 msgstr "%d °"
 
-#: dialogs.py:1491
+#: dialogs.py:1511
 msgid "Rotate the selected text field"
 msgstr "Otočit vybrané textové pole"
 
-#: dialogs.py:1495
+#: dialogs.py:1515
 msgid "Placement:"
 msgstr "Umístění:"
 
-#: dialogs.py:1502
+#: dialogs.py:1522
 msgid "Place vertical text along the left or right edge"
 msgstr "Umístit svislý text podél levého nebo pravého okraje"
 
-#: dialogs.py:1516
+#: dialogs.py:1536
 msgid "Data:"
 msgstr "Data:"
 
-#: dialogs.py:1521
+#: dialogs.py:1541
 msgid "Text:"
 msgstr "Text:"
 
-#: dialogs.py:1533
+#: dialogs.py:1553
 msgid "Swap author LN,FN to FN LN"
 msgstr "Prohodit autora z Příjmení, Jméno na Jméno Příjmení"
 
-#: dialogs.py:1534
+#: dialogs.py:1554
 msgid ""
 "Use this option if your authors are stored as LN, FN\n"
 "but you prefer to see FN LN on the book cover"
@@ -861,11 +877,11 @@ msgstr ""
 "Tuto volbu použijte, pokud jsou autoři uloženi jako Příjmení, Jméno,\n"
 "ale na obálce knihy je chcete zobrazit jako Jméno Příjmení"
 
-#: dialogs.py:1538
+#: dialogs.py:1558
 msgid "Series text:"
 msgstr "Text série:"
 
-#: dialogs.py:1539
+#: dialogs.py:1559
 msgid ""
 "Change the way series information is displayed.\n"
 "Useful for non-English languages!"
@@ -873,56 +889,56 @@ msgstr ""
 "Změňte způsob zobrazení informací o sérii.\n"
 "Užitečné pro jiné jazyky než angličtinu."
 
-#: dialogs.py:1600
+#: dialogs.py:1621
 msgid "Cover Options"
 msgstr "Volby obálky"
 
-#: dialogs.py:1604
+#: dialogs.py:1625
 msgid "Generate Custom Cover"
 msgstr "Generovat vlastní obálku"
 
-#: dialogs.py:1624
+#: dialogs.py:1656
 msgid "Settings"
 msgstr "Nastavení"
 
-#: dialogs.py:1625
+#: dialogs.py:1657
 msgid "Dimensions"
 msgstr "Rozměry"
 
-#: dialogs.py:1626
+#: dialogs.py:1658
 msgid "Contents"
 msgstr "Obsah"
 
-#: dialogs.py:1638
+#: dialogs.py:1670
 msgid " Revert "
 msgstr " Vrátit "
 
-#: dialogs.py:1639
+#: dialogs.py:1671
 msgid "Revert to your previous saved setting values"
 msgstr "Vrátit se k dříve uloženým hodnotám nastavení"
 
-#: dialogs.py:1641
+#: dialogs.py:1673
 msgid " Save "
 msgstr " Uložit "
 
-#: dialogs.py:1642
+#: dialogs.py:1674
 msgid "Overwrite your current saved setting"
 msgstr "Přepsat aktuální uložené nastavení"
 
-#: dialogs.py:1644
+#: dialogs.py:1676
 msgid " Customize... "
 msgstr " Přizpůsobit... "
 
-#: dialogs.py:1645
+#: dialogs.py:1677
 msgid "Set general options for this plugin"
 msgstr "Nastavit obecné volby tohoto modulu"
 
-#: dialogs.py:1723
+#: dialogs.py:1755
 #, python-format
 msgid "Revert to your previously saved values for '%s'?"
 msgstr "Vrátit se k dříve uloženým hodnotám pro „%s“?"
 
-#: dialogs.py:1742
+#: dialogs.py:1774
 #, python-format
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr "Přepsat nastavení „%s“ aktuálními hodnotami?"

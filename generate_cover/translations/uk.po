@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Generate Cover\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-01 22:50+1000\n"
+"POT-Creation-Date: 2026-11-07 17:42+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2026\n"
 "Language-Team: Ukrainian (https://app.transifex.com/calibre/teams/19337/uk/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:616
+#: ..\common\common_dialogs.py:84 config.py:562
 msgid "Keyboard shortcuts"
 msgstr "Клавіатурні скорочення"
 
@@ -168,32 +168,32 @@ msgstr ""
 msgid "No cover settings exist named: \"%s\""
 msgstr "Немає параметрів обкладинок із назвою: «%s»"
 
-#: config.py:602
+#: config.py:548
 msgid "After generating cover:"
 msgstr "Після створення обкладинки:"
 
-#: config.py:611
+#: config.py:557
 msgid "Update column:"
 msgstr "Оновити стовпчик:"
 
-#: config.py:612
+#: config.py:558
 msgid "Update value:"
 msgstr "Оновити значення:"
 
-#: config.py:617
+#: config.py:563
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 "Редагувати клавіатурні скорочення, пов’язані із роботою цього додатка."
 
-#: config.py:621
+#: config.py:567
 msgid "View library preferences"
 msgstr "Переглянути налаштування бібліотеки"
 
-#: config.py:622
+#: config.py:568
 msgid "View data stored in the library database for this plugin"
 msgstr "Переглянути дані, збережені у базі даних бібліотеки для цього додатка"
 
-#: config.py:626 dialogs.py:1647
+#: config.py:572 dialogs.py:1679
 msgid "&Help"
 msgstr "&Довідка"
 
@@ -261,15 +261,35 @@ msgstr "Створити обкладинку на основі цих пара�
 msgid "Cancel action"
 msgstr "Скасувати дію"
 
-#: dialogs.py:481 dialogs.py:559
+#: dialogs.py:472
+msgid "Light"
+msgstr "Світлий"
+
+#: dialogs.py:473
+msgid "Normal"
+msgstr "Звичайний"
+
+#: dialogs.py:474
+msgid "Demi Bold"
+msgstr "Напівжирний"
+
+#: dialogs.py:475
+msgid "Bold"
+msgstr "Напівжирний"
+
+#: dialogs.py:476
+msgid "Black"
+msgstr "Жирний"
+
+#: dialogs.py:500 dialogs.py:578
 msgid "Saved Settings:"
 msgstr "Збережені параметри:"
 
-#: dialogs.py:491
+#: dialogs.py:510
 msgid "Autosave settings"
 msgstr "Параметри автозбереження"
 
-#: dialogs.py:492
+#: dialogs.py:511
 msgid ""
 "Do not prompt to save changes to a setting. Always save when\n"
 "switching to another setting, clicking OK or using Import/Export."
@@ -277,251 +297,251 @@ msgstr ""
 "Не питати щодо збереження змін до параметра. Завжди зберігати\n"
 "при перемиканні на наступний параметр, натисканні кнопки «Гаразд» або використанні імпортування або експортування."
 
-#: dialogs.py:499
+#: dialogs.py:518
 msgid "Add setting"
 msgstr "Додати налаштування"
 
-#: dialogs.py:504
+#: dialogs.py:523
 msgid "Rename setting"
 msgstr "Перейменувати налаштування"
 
-#: dialogs.py:510 dialogs.py:698
+#: dialogs.py:529 dialogs.py:717
 msgid "Import setting"
 msgstr "Імпортувати налаштування"
 
-#: dialogs.py:515
+#: dialogs.py:534
 msgid "Export setting"
 msgstr "Експортувати налаштування"
 
-#: dialogs.py:521
+#: dialogs.py:540
 msgid "Delete setting from this list"
 msgstr "Вилучити пналаштування зі списку"
 
-#: dialogs.py:529
+#: dialogs.py:548
 msgid "Select Image:"
 msgstr "Виберіть зображення:"
 
-#: dialogs.py:540
+#: dialogs.py:559
 msgid "Add image to this list"
 msgstr "Додати зображення до цього списку"
 
-#: dialogs.py:545
+#: dialogs.py:564
 msgid "Rename image"
 msgstr "Перейменувати зображення"
 
-#: dialogs.py:550
+#: dialogs.py:569
 msgid "Remove image from this list"
 msgstr "Перейменувати зображення з цього списку"
 
-#: dialogs.py:561
+#: dialogs.py:580
 msgid "Saved Settings: (*unsaved changes)"
 msgstr "Збережені параметри: (*незбережені зміни)"
 
-#: dialogs.py:592
+#: dialogs.py:611
 msgid "Add new setting"
 msgstr "Додати нові налаштування"
 
-#: dialogs.py:615
+#: dialogs.py:634
 msgid "Cannot add"
 msgstr "Не вдалося додати"
 
-#: dialogs.py:616
+#: dialogs.py:635
 msgid "The name you specified is not unique"
 msgstr "Вказана вами назва не є унікальною"
 
-#: dialogs.py:625 dialogs.py:868
+#: dialogs.py:644 dialogs.py:887
 msgid "Cannot remove"
 msgstr "Не вдалося вилучити"
 
-#: dialogs.py:626
+#: dialogs.py:645
 msgid "You cannot remove the default setting"
 msgstr "Ви не можете вилучати типові параметри"
 
-#: dialogs.py:627 dialogs.py:871 dialogs.py:1722 dialogs.py:1741
+#: dialogs.py:646 dialogs.py:890 dialogs.py:1754 dialogs.py:1773
 msgid "Are you sure?"
 msgstr "Ви певні?"
 
-#: dialogs.py:628
+#: dialogs.py:647
 #, python-format
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "Ви справді хочете вилучити налаштування «%s»?"
 
-#: dialogs.py:641 dialogs.py:818 dialogs.py:844
+#: dialogs.py:660 dialogs.py:837 dialogs.py:863
 msgid "Cannot rename"
 msgstr "Не вдалося перейменувати"
 
-#: dialogs.py:642
+#: dialogs.py:661
 msgid "You cannot rename the default setting"
 msgstr "Ви не можете перейменовувати типові параметри"
 
-#: dialogs.py:643 dialogs.py:644
+#: dialogs.py:662 dialogs.py:663
 msgid "New setting name:"
 msgstr "Нова назва налаштувань:"
 
-#: dialogs.py:652
+#: dialogs.py:671
 msgid "Setting exists"
 msgstr "Такі налаштування вже існують"
 
-#: dialogs.py:653
+#: dialogs.py:672
 msgid "A saved setting already exists with this name."
 msgstr "Вже існують збережені налаштування із цією назвою."
 
-#: dialogs.py:678
+#: dialogs.py:697
 msgid "Import Failed"
 msgstr "Не вдалося імпортувати"
 
-#: dialogs.py:679
+#: dialogs.py:698
 msgid "This is not a valid Generate Cover export archive"
 msgstr "Цей архів не є коректним експортованим архівом «Створення обкладинки»"
 
-#: dialogs.py:717
+#: dialogs.py:736
 msgid "Cannot import"
 msgstr "Не вдалося імпортувати"
 
-#: dialogs.py:718 dialogs.py:910
+#: dialogs.py:737 dialogs.py:929
 msgid "Failed to copy image"
 msgstr "Не вдалося скопіювати зображення"
 
-#: dialogs.py:776
+#: dialogs.py:795
 msgid "Export completed"
 msgstr "Експортування завершено"
 
-#: dialogs.py:777
+#: dialogs.py:796
 #, python-format
 msgid "Cover setting exported to<br>%s"
 msgstr "Параметр обкладинки експортовано до<br>%s"
 
-#: dialogs.py:785
+#: dialogs.py:804
 msgid "Select setting file(s) to import"
 msgstr "Виберіть файли налаштувань для імпортування"
 
-#: dialogs.py:786 dialogs.py:792
+#: dialogs.py:805 dialogs.py:811
 msgid "GC Files"
 msgstr "файли GC"
 
-#: dialogs.py:792
+#: dialogs.py:811
 msgid "Save setting as"
 msgstr "Зберегти налаштування як"
 
-#: dialogs.py:819
+#: dialogs.py:838
 msgid "You cannot rename this image"
 msgstr "Ви не можете перейменовувати це зображення"
 
-#: dialogs.py:821 dialogs.py:822
+#: dialogs.py:840 dialogs.py:841
 msgid "New image name:"
 msgstr "Нова назва зображення:"
 
-#: dialogs.py:839
+#: dialogs.py:858
 msgid "File exists"
 msgstr "Такий файл вже існує"
 
-#: dialogs.py:840
+#: dialogs.py:859
 msgid "An image already exists with this name."
 msgstr "Зображення з цією назвою вже існує."
 
-#: dialogs.py:845
+#: dialogs.py:864
 msgid "Failed to rename image"
 msgstr "Не вдалося перейменувати зображення"
 
-#: dialogs.py:854
+#: dialogs.py:873
 msgid "Add cover images"
 msgstr "Додати зображення обкладинок"
 
-#: dialogs.py:869
+#: dialogs.py:888
 msgid "You cannot remove this image"
 msgstr "Ви не можете вилучити це зображення"
 
-#: dialogs.py:872
+#: dialogs.py:891
 #, python-format
 msgid "Are you sure you want to delete the image: %s"
 msgstr "Ви справді хочете вилучити зображення: %s"
 
-#: dialogs.py:883 dialogs.py:941
+#: dialogs.py:902 dialogs.py:960
 msgid "Cannot write"
 msgstr "Не вдалося записати"
 
-#: dialogs.py:884
+#: dialogs.py:903
 msgid "You do not have permission to delete the file"
 msgstr "Ви не маєте прав доступу до вилучення файла"
 
-#: dialogs.py:897
+#: dialogs.py:916
 msgid "Cannot read"
 msgstr "Не вдалося прочитати"
 
-#: dialogs.py:898
+#: dialogs.py:917
 msgid "You do not have permission to read the file."
 msgstr "Ви не маєте прав читання цього файла."
 
-#: dialogs.py:909
+#: dialogs.py:928
 msgid "Cannot copy"
 msgstr "Не вдалося скопіювати"
 
-#: dialogs.py:923
+#: dialogs.py:942
 msgid "Overwrite existing"
 msgstr "Перезаписати наявне"
 
-#: dialogs.py:924
+#: dialogs.py:943
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr "Зображення із цією назвою вже існує. Хочете перезаписати його?"
 
-#: dialogs.py:927
+#: dialogs.py:946
 msgid "Enter image name"
 msgstr "Введіть назву зображення"
 
-#: dialogs.py:928
+#: dialogs.py:947
 msgid "Enter a unique name for this image:"
 msgstr "Введіть унікальну назву для цього зображення:"
 
-#: dialogs.py:942
+#: dialogs.py:961
 msgid "You do not have permission to overwrite the file"
 msgstr "Ви не маєте прав доступу до перезапису цього файла"
 
-#: dialogs.py:978 dialogs.py:986
+#: dialogs.py:997 dialogs.py:1005
 msgid "Title"
 msgstr "Назва"
 
-#: dialogs.py:979 dialogs.py:987
+#: dialogs.py:998 dialogs.py:1006
 msgid "Author"
 msgstr "Автор"
 
-#: dialogs.py:980 dialogs.py:988
+#: dialogs.py:999 dialogs.py:1007
 msgid "Series"
 msgstr "Цикли"
 
-#: dialogs.py:981 dialogs.py:989
+#: dialogs.py:1000 dialogs.py:1008
 msgid "Custom"
 msgstr "Нетипове"
 
-#: dialogs.py:982 dialogs.py:990
+#: dialogs.py:1001 dialogs.py:1009
 msgid "Custom 2"
 msgstr "Нетиповий 2"
 
-#: dialogs.py:983 dialogs.py:991
+#: dialogs.py:1002 dialogs.py:1010
 msgid "Custom 3"
 msgstr "Нетиповий 3"
 
-#: dialogs.py:1000 dialogs.py:1243 dialogs.py:1398
+#: dialogs.py:1019 dialogs.py:1262 dialogs.py:1417
 msgid "Color:"
 msgstr "Колір:"
 
-#: dialogs.py:1005
+#: dialogs.py:1024
 msgid "Fill Color:"
 msgstr "Колір заповнення:"
 
-#: dialogs.py:1007
+#: dialogs.py:1026
 msgid "Choose selected field fill color"
 msgstr "Виберіть колір заповнення позначеного поля"
 
-#: dialogs.py:1011
+#: dialogs.py:1030
 msgid "Reset selected field fill color"
 msgstr "Відновити типовий колір заповнення позначеного поля"
 
-#: dialogs.py:1014
+#: dialogs.py:1033
 msgid "Use this fill color for all text"
 msgstr "Використати цей колір заповнення для усього тексту"
 
-#: dialogs.py:1015
+#: dialogs.py:1034
 msgid ""
 "When checked, the current fill color is used for all text.\n"
 "When unchecked, you can set a different fill color for each field."
@@ -529,35 +549,35 @@ msgstr ""
 "Якщо позначено,поточний колір заповнення буде використано для усього тексту.\n"
 "Якщо не позначено, ви зможете встановити різні кольори заповнення для кожного поля."
 
-#: dialogs.py:1025
+#: dialogs.py:1044
 msgid "Backdrop:"
 msgstr "Фон:"
 
-#: dialogs.py:1026
+#: dialogs.py:1045
 msgid "Optionally render a color backdrop for this element"
 msgstr "Якщо потрібно, показувати кольоровий фон для цього елемента"
 
-#: dialogs.py:1030
+#: dialogs.py:1049
 msgid "Choose this element's backdrop color, if applied"
 msgstr "Виберіть колір фону цього елемента, якщо такий колір застосовний"
 
-#: dialogs.py:1034
+#: dialogs.py:1053
 msgid "Reset selected field backdrop color"
 msgstr "Відновити початковий фоновий колір позначеного поля"
 
-#: dialogs.py:1036
+#: dialogs.py:1055
 msgid "Use this backdrop for all text"
 msgstr "Використовувати цей фон для усього тексту"
 
-#: dialogs.py:1044
+#: dialogs.py:1063
 msgid "Opacity:"
 msgstr "Непрозорість:"
 
-#: dialogs.py:1049
+#: dialogs.py:1068
 msgid "Full width or height"
 msgstr "Повна ширина або висота"
 
-#: dialogs.py:1050
+#: dialogs.py:1069
 msgid ""
 "When checked, the backdrop will extend to the full width of the cover (height if rotated).\n"
 "When unchecked, the backdrop will only extend to the width or height of the text."
@@ -566,43 +586,43 @@ msgstr ""
 " обкладинку повернуто). Якщо не позначено, фон розтягуватиметься лише на "
 "ширину або висоту тексту."
 
-#: dialogs.py:1136
+#: dialogs.py:1155
 msgid "Size:"
 msgstr "Розмір:"
 
-#: dialogs.py:1142
+#: dialogs.py:1161
 msgid "Cover width:"
 msgstr "Ширина обкладинки:"
 
-#: dialogs.py:1143
+#: dialogs.py:1162
 msgid "The width in pixels of the output .jpg file"
 msgstr "Ширина у пікселях файла-результату .jpg"
 
-#: dialogs.py:1149
+#: dialogs.py:1168
 msgid "Height:"
 msgstr "Висота:"
 
-#: dialogs.py:1150
+#: dialogs.py:1169
 msgid "The height in pixels of the output .jpg file"
 msgstr "Висота у пікселях файла-результату .jpg"
 
-#: dialogs.py:1159
+#: dialogs.py:1178
 msgid "Background:"
 msgstr "Тло:"
 
-#: dialogs.py:1162
+#: dialogs.py:1181
 msgid "Choose the background color"
 msgstr "Виберіть колір тла"
 
-#: dialogs.py:1167
+#: dialogs.py:1186
 msgid "Reset background color"
 msgstr "Відновити початковий колір тла"
 
-#: dialogs.py:1170
+#: dialogs.py:1189
 msgid "Resize cover dimensions to match background image"
 msgstr "Змінити розміри обкладинки так, щоб вони відповідали зображенню-тлу"
 
-#: dialogs.py:1171
+#: dialogs.py:1190
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -610,11 +630,11 @@ msgstr ""
 "Позначте, щоб програма автоматично змінювала розміри обкладинки на\n"
 "основі розмірностей поточного вибраного зображення тла"
 
-#: dialogs.py:1175
+#: dialogs.py:1194
 msgid "Resize image to scale up if smaller than available area"
 msgstr "Збільшити розміри зображення так, щоб воно заповнило доступну ділянку"
 
-#: dialogs.py:1176
+#: dialogs.py:1195
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -623,26 +643,26 @@ msgstr ""
 "обкладинки так, щоб воно максимально заповнило доступну область, якщо "
 "зображення є надто малим"
 
-#: dialogs.py:1182
+#: dialogs.py:1201
 msgid "Margins:"
 msgstr "Поля:"
 
-#: dialogs.py:1189
+#: dialogs.py:1208
 msgid "Top:"
 msgstr "Згори:"
 
-#: dialogs.py:1190
+#: dialogs.py:1209
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
 msgstr ""
 "Інтервал у пікселях від верхнього краю обкладинки до початкової лінії вмісту"
 
-#: dialogs.py:1198 dialogs.py:1313
+#: dialogs.py:1217 dialogs.py:1332
 msgid "Bottom:"
 msgstr "Внизу:"
 
-#: dialogs.py:1199
+#: dialogs.py:1218
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -650,11 +670,11 @@ msgstr ""
 "Інтервал у пікселях від нижнього краю обкладинки до завершальної лінії "
 "вмісту"
 
-#: dialogs.py:1209
+#: dialogs.py:1228
 msgid "Left:"
 msgstr "Ліворуч:"
 
-#: dialogs.py:1210
+#: dialogs.py:1229
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -662,11 +682,11 @@ msgstr ""
 "Мінімальний інтервал у пікселях від лівого краю обкладинки\n"
 "до текстового вмісту"
 
-#: dialogs.py:1218 dialogs.py:1314
+#: dialogs.py:1237 dialogs.py:1333
 msgid "Right:"
 msgstr "Праворуч:"
 
-#: dialogs.py:1219
+#: dialogs.py:1238
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -674,15 +694,15 @@ msgstr ""
 "Мінімальний інтервал у пікселях від правого краю обкладинки\n"
 "до текстового вмісту"
 
-#: dialogs.py:1228 dialogs.py:1382
+#: dialogs.py:1247 dialogs.py:1401
 msgid "Border:"
 msgstr "Рамка:"
 
-#: dialogs.py:1234
+#: dialogs.py:1253
 msgid "Border width:"
 msgstr "Товщина рамки:"
 
-#: dialogs.py:1235
+#: dialogs.py:1254
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -690,27 +710,27 @@ msgstr ""
 "Ширина у пікселях рамки навколо краю\n"
 "обкладинки. Вкажіть 0, якщо рамка не потрібна"
 
-#: dialogs.py:1246
+#: dialogs.py:1265
 msgid "Choose the border color"
 msgstr "Виберіть колір рамки"
 
-#: dialogs.py:1251
+#: dialogs.py:1270
 msgid "Reset border color"
 msgstr "Відновити початковий колір рамки"
 
-#: dialogs.py:1313
+#: dialogs.py:1332
 msgid "Padding Top:"
 msgstr "Фаска згори:"
 
-#: dialogs.py:1314
+#: dialogs.py:1333
 msgid "Padding Left:"
 msgstr "Фаска ліворуч:"
 
-#: dialogs.py:1343
+#: dialogs.py:1362
 msgid "Field Order:"
 msgstr "Порядок полів:"
 
-#: dialogs.py:1344
+#: dialogs.py:1363
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
@@ -718,23 +738,23 @@ msgstr ""
 "Змініть порядок елементів на обкладинці і те,\n"
 "чи буде їх показано, за допомогою пункту для позначки"
 
-#: dialogs.py:1358
+#: dialogs.py:1377
 msgid "Move field up"
 msgstr "Пересунути поле вище"
 
-#: dialogs.py:1364
+#: dialogs.py:1383
 msgid "Move field down"
 msgstr "Пересунути поле нижче"
 
-#: dialogs.py:1370
+#: dialogs.py:1389
 msgid "Image:"
 msgstr "Зображення:"
 
-#: dialogs.py:1374
+#: dialogs.py:1393
 msgid "Stretch image to use as cover background"
 msgstr "Розтягнути зображення для використання його як тла обкладинки"
 
-#: dialogs.py:1375
+#: dialogs.py:1394
 msgid ""
 "Check this to overlay text on the image background.\n"
 "Uncheck this to place text around the image."
@@ -742,52 +762,52 @@ msgstr ""
 "Позначте, якщо текст слід накласти на зображення-тло.\n"
 "Зніміть позначку, якщо текст слід розмісити навколо зображення."
 
-#: dialogs.py:1388
+#: dialogs.py:1407
 msgid "Image border:"
 msgstr "Рамка зображення:"
 
-#: dialogs.py:1390
+#: dialogs.py:1409
 msgid "The width in pixels of a border around the edge of the image"
 msgstr "Товщина рамки навколо краю зображення у пікселях"
 
-#: dialogs.py:1402
+#: dialogs.py:1421
 msgid ""
 "Choose the image border color (if it is not stretched to the cover edge)"
 msgstr ""
 "Виберіть колір рамки зображення (якщо його не розтягнуто до краю обкладинки)"
 
-#: dialogs.py:1408
+#: dialogs.py:1427
 msgid "Reset image border color"
 msgstr "Відновити початковий колір рамки зображення"
 
-#: dialogs.py:1421 dialogs.py:1428
+#: dialogs.py:1440 dialogs.py:1447
 msgid "Font:"
 msgstr "Шрифт"
 
-#: dialogs.py:1432
+#: dialogs.py:1451
 msgid "Choose the font family for the selected field"
 msgstr "Виберіть гарнітуру шрифту для позначеного поля"
 
-#: dialogs.py:1440
+#: dialogs.py:1459
 msgid "Font size in pixels"
 msgstr "Розмір шрифту у пікселях"
 
-#: dialogs.py:1447
+#: dialogs.py:1466
 msgid "Use this font family for all text"
 msgstr "Використовувати цю гарнітуру шрифту для усього тексту"
 
-#: dialogs.py:1448
+#: dialogs.py:1467
 msgid ""
 "When checked, this font family is used for all text content on the cover"
 msgstr ""
 "Якщо позначено, цю гарнітуру шрифту буде використано для усього текстового "
 "вмісту обкладинки"
 
-#: dialogs.py:1451
+#: dialogs.py:1470
 msgid "Auto-reduce font size to fit on one line"
 msgstr "Автоматично зменшувати розмір шрифту, щоб умістити текст в один рядок"
 
-#: dialogs.py:1452
+#: dialogs.py:1471
 msgid ""
 "When checked, this font size will be used as a maximum size.\n"
 "A reduced size will be used where needed to fit text on one line."
@@ -795,71 +815,67 @@ msgstr ""
 "Якщо позначено, цей розмір шрифту буде використано як максимальний розмір.\n"
 "Зменшений розмір буде використано, якщо це потрібно для того, щоб умістити текст в один рядок."
 
-#: dialogs.py:1458
-msgid "Alignment:"
-msgstr "Вирівнювання:"
+#: dialogs.py:1477
+msgid "Style:"
+msgstr "Стиль:"
 
-#: dialogs.py:1463 dialogs.py:1500
+#: dialogs.py:1482 dialogs.py:1520
 msgid "Left"
 msgstr "Ліворуч"
 
-#: dialogs.py:1464
+#: dialogs.py:1483
 msgid "Centre"
 msgstr "За центром"
 
-#: dialogs.py:1465 dialogs.py:1501
+#: dialogs.py:1484 dialogs.py:1521
 msgid "Right"
 msgstr "Праворуч"
 
-#: dialogs.py:1468
-msgid "Bold"
-msgstr "Напівжирний"
-
-#: dialogs.py:1472
+#: dialogs.py:1492
 msgid "Italic"
 msgstr "Курсив"
 
-#: dialogs.py:1475
+#: dialogs.py:1495
 msgid "Underline"
 msgstr "Підкреслення"
 
-#: dialogs.py:1482
+#: dialogs.py:1502
 msgid "Rotation:"
 msgstr "Обертання:"
 
 #. TRANSLATORS: Text rotation angle in degrees (0, 90, or 270), not
 #. temperature.
 #. Keep %d; use a suitable local degree symbol or abbreviation.
-#: dialogs.py:1490
+#: dialogs.py:1510
 #, python-format
 msgid "%d°"
 msgstr "%d°"
 
-#: dialogs.py:1491
+#: dialogs.py:1511
 msgid "Rotate the selected text field"
 msgstr "Обернути позначене текстове поле"
 
-#: dialogs.py:1495
+#: dialogs.py:1515
 msgid "Placement:"
 msgstr "Розташування:"
 
-#: dialogs.py:1502
+#: dialogs.py:1522
 msgid "Place vertical text along the left or right edge"
 msgstr "Розташувати вертикальний текст уздовж лівого чи правого краю"
 
-#: dialogs.py:1516
+#: dialogs.py:1536
 msgid "Data:"
 msgstr "Дані:"
 
-#: dialogs.py:1521
+#: dialogs.py:1541
 msgid "Text:"
 msgstr "Текст:"
 
-#: dialogs.py:1533
+#: dialogs.py:1553
 msgid "Swap author LN,FN to FN LN"
 msgstr "Поміняти у записі автора порядок «Прізвище, ім'я» на «Ім'я Прізвище»"
 
-#: dialogs.py:1534
+#: dialogs.py:1554
 msgid ""
 "Use this option if your authors are stored as LN, FN\n"
 "but you prefer to see FN LN on the book cover"
@@ -868,11 +884,11 @@ msgstr ""
 "«Прізвище, Ім'я», а ви хочете, щоб на обкладинці було показано «Ім'я "
 "Прізвище»"
 
-#: dialogs.py:1538
+#: dialogs.py:1558
 msgid "Series text:"
 msgstr "Текст циклу:"
 
-#: dialogs.py:1539
+#: dialogs.py:1559
 msgid ""
 "Change the way series information is displayed.\n"
 "Useful for non-English languages!"
@@ -880,56 +896,56 @@ msgstr ""
 "Змініть спосіб показу даних щодо циклу.\n"
 "Корисно для мов, відмінних від англійської!"
 
-#: dialogs.py:1600
+#: dialogs.py:1621
 msgid "Cover Options"
 msgstr "Параметри обкладинки"
 
-#: dialogs.py:1604
+#: dialogs.py:1625
 msgid "Generate Custom Cover"
 msgstr "Створити нетипову обкладинку"
 
-#: dialogs.py:1624
+#: dialogs.py:1656
 msgid "Settings"
 msgstr "Параметри"
 
-#: dialogs.py:1625
+#: dialogs.py:1657
 msgid "Dimensions"
 msgstr "Розмірності"
 
-#: dialogs.py:1626
+#: dialogs.py:1658
 msgid "Contents"
 msgstr "Вміст"
 
-#: dialogs.py:1638
+#: dialogs.py:1670
 msgid " Revert "
 msgstr "Скасувати"
 
-#: dialogs.py:1639
+#: dialogs.py:1671
 msgid "Revert to your previous saved setting values"
 msgstr "Повернутися до раніше збережених значень параметрів"
 
-#: dialogs.py:1641
+#: dialogs.py:1673
 msgid " Save "
 msgstr "Зберегти"
 
-#: dialogs.py:1642
+#: dialogs.py:1674
 msgid "Overwrite your current saved setting"
 msgstr "Перезаписати ваші поточні збережені налаштування"
 
-#: dialogs.py:1644
+#: dialogs.py:1676
 msgid " Customize... "
 msgstr "Налаштувати…"
 
-#: dialogs.py:1645
+#: dialogs.py:1677
 msgid "Set general options for this plugin"
 msgstr "Встановити загальні параметри роботи цього додатка"
 
-#: dialogs.py:1723
+#: dialogs.py:1755
 #, python-format
 msgid "Revert to your previously saved values for '%s'?"
 msgstr "Повернутися до ваших попередньо збережених значень для «%s»?"
 
-#: dialogs.py:1742
+#: dialogs.py:1774
 #, python-format
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr "Перезаписати налаштування «%s» поточними значеннями?"
