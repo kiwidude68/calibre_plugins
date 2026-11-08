@@ -14,10 +14,11 @@ class CoverUpdater(object):
     Class encapsulating all logic concerning identifying the cover in
     an ePub and replacing that if found, otherwise inserting a new cover
     '''
-    def __init__(self, log, container, cover_path, opts):
+    def __init__(self, log, container, cover_path, title, opts):
         self.log = log
         self.container = container
         self.cover_path = cover_path
+        self.title = title
         self.opts = opts
         self.potential_unused_image_names = []
         self.toc_old_cover_content_node = None
@@ -335,14 +336,28 @@ class CoverUpdater(object):
             suffix = '_u%d'%c
             fname = base + suffix + ext
 
+    def _fill_metadata(self, templ):
+        try:
+            # For calibre 9.18 the cover manager has a fill_metadata method that will fill in the title and language for us
+            from calibre.ebooks.oeb.polish import get_book_language_tag
+            from calibre.ebooks.oeb.transforms.cover import CoverManager        
+            return CoverManager.fill_metadata(templ, self.title or '', get_book_language_tag(self.container))
+        except ImportError:
+            # For older versions of calibre, neither the title or language needed to be substituted into the template.
+            return templ
+
     def _create_titlepage(self, cover_href, width, height):
-        from calibre.ebooks.oeb.transforms.cover import CoverManager
+        from calibre.ebooks.oeb.transforms.cover import CoverManager        
 
         tname = 'titlepage.xhtml'
         if self.text_folder:
             tname = self.text_folder + '/' + tname
         titlepage_path = self._get_unique_filename(tname)
 
+        # The title of the book is the text alternative of the cover image for
+        # screen readers, and the language of the book is the language of the
+        # page. The template is later used with %, so escape that too.
+        
         # Prepare template based on users default options
         if width is None or height is None:
             self.log.warning('Failed to read cover dimensions')
@@ -356,12 +371,17 @@ class CoverUpdater(object):
             templ = templ.replace('__viewbox__', '0 0 %d %d'%(width, height))
             templ = templ.replace('__width__',  str(width))
             templ = templ.replace('__height__', str(height))
+        templ = self._fill_metadata(templ)
 
         rel_path = os.path.relpath(cover_href, os.path.dirname(tname))
         rel_cover_href = os.path.normpath(rel_path).replace('\\','/')
         tp = templ%unquote(rel_cover_href)
 
         with open(titlepage_path, 'w') as f:
+            # Ensure we write out a proper XML declaration and DOCTYPE so that the titlepage is valid XHTML
+            # There must be a better way to do this, but for now this works.
+            f.write('<?xml version="1.0" encoding="utf-8"?>\n')
+            f.write('<!DOCTYPE html>\n\n')
             f.write(tp)
         titlepage_name = os.path.relpath(titlepage_path, self.container.root).replace(os.sep, '/')
         return titlepage_name

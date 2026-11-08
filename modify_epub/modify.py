@@ -197,7 +197,7 @@ class BookModifier(object):
         # Rather than re-initialising all the internal dictionaries etc. for
         # now will get away with it by running no modifications after it.
         if options['insert_replace_cover']:
-            is_changed |= self._insert_replace_cover(container)
+            is_changed |= self._insert_replace_cover(container, self.mi.title)
 
         return is_changed
 
@@ -867,7 +867,7 @@ class BookModifier(object):
         cu.remove_existing_cover()
         return True
 
-    def _insert_replace_cover(self, container):
+    def _insert_replace_cover(self, container, title):
         self.log('\tInsert or replace cover')
         if container.is_drm_encrypted():
             self.log('ERROR - cannot insert/replace cover in DRM encrypted book')
@@ -876,7 +876,7 @@ class BookModifier(object):
             self.log('\t  ERROR - no cover image assigned to this book in the library')
             return False
 
-        cu = CoverUpdater(self.log, container, self.cover_path, self.opts)
+        cu = CoverUpdater(self.log, container, self.cover_path, title, self.opts)
         cu.insert_or_replace_cover()
         return True
 

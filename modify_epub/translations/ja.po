@@ -22,7 +22,7 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:84 config.py:63
 msgid "Keyboard shortcuts"
-msgstr "キーボードショートカット"
+msgstr "キーボード ショートカット"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
@@ -34,7 +34,7 @@ msgstr "環境設定:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "クリア"
+msgstr "消去"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
@@ -92,7 +92,7 @@ msgstr "未定義"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "再起動が必要です。"
+msgstr "再起動が必要です"
 
 #: ..\common\common_widgets.py:161
 msgid ""
@@ -145,7 +145,8 @@ msgstr "ePubの改善でファイルは変更されませんでした。"
 msgid ""
 "Modify ePub modified <b>%d ePub files(s)</b> into a temporary location. "
 "Proceed with replacing the versions in your library?"
-msgstr "<b>%dのePubファイルを一時的な場所に変更しました。ライブラリ内のバージョンをこれらで置き換えますか?"
+msgstr ""
+"Modify ePub は <b>%d 個の ePub ファイル</b>を一時的な場所で変更しました。ライブラリ内のバージョンをこれらで置き換えますか?"
 
 #: action.py:110
 msgid "Modify ePub complete"
@@ -347,7 +348,7 @@ msgstr "旧・現を問わず、すべてのcalibreジャケットを除去"
 
 #: dialogs.py:65
 msgid "Remove all metadata jackets"
-msgstr "すべてのメタデータジャケットを削除"
+msgstr "すべての書誌ジャケットを削除"
 
 #: dialogs.py:66
 msgid "Remove jackets generated using versions of calibre prior to 0.6.50"
@@ -355,7 +356,7 @@ msgstr "0.6.50 より前のバージョンのcalibreで生成されたジャケ�
 
 #: dialogs.py:66
 msgid "Remove legacy metadata jackets"
-msgstr "レガシーなメタデータジャケットを削除"
+msgstr "レガシーな書誌ジャケットを削除"
 
 #: dialogs.py:67
 msgid "Add a jacket if not existing, or replace a non-legacy jacket"
@@ -363,7 +364,7 @@ msgstr "ジャケットがない場合は追加し、レガシーではないジ
 
 #: dialogs.py:67
 msgid "Add/replace metadata jacket"
-msgstr "メタデータジャケットの追加／置換"
+msgstr "書誌ジャケットの追加／置換"
 
 #: dialogs.py:68
 msgid ""
@@ -480,7 +481,7 @@ msgstr "スマートクォートとエムダッシュ (—) を使用するHTML�
 
 #: dialogs.py:87
 msgid "Smarten punctuation"
-msgstr "スマート句読点を使用"
+msgstr "句読点をスマート化"
 
 #: dialogs.py:88
 msgid "Remove any .js files and inline javascript blocks"
@@ -516,7 +517,7 @@ msgstr "HTML && Styles"
 
 #: dialogs.py:134
 msgid "Metadata Jackets"
-msgstr "メタデータジャケット"
+msgstr "書誌ジャケット"
 
 #: dialogs.py:135
 msgid "Covers"
@@ -524,7 +525,7 @@ msgstr "表紙"
 
 #: dialogs.py:136
 msgid "Metadata"
-msgstr "書誌データ"
+msgstr "書誌"
 
 #: dialogs.py:142
 msgid "Clear all"
@@ -565,7 +566,7 @@ msgstr "キャンセル"
 
 #: dialogs.py:206 dialogs.py:275
 msgid "Working"
-msgstr "動作中"
+msgstr "処理中"
 
 #: dialogs.py:207
 msgid "Queueing books for modifying ePubs"

@@ -1,5 +1,9 @@
 # Modify ePub Change Log
 
+## [1.8.12] - 2026-11-08
+### Fixed
+- Add support for changes in calibre 9.18 to require substituting `__title__` and `__lang__` when generating replacement covers.
+
 ## [1.8.11] - 2026-10-22
 ### Fixed
 - Avoid errors when CSS margin values are non-numeric such as `auto`.
