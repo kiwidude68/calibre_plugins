@@ -1,5 +1,10 @@
 # Modify ePub Change Log
 
+## [1.8.13] - 2026-11-09
+### Fixed
+- Actual fix for changes in calibre 9.18 to require substituting `__title__` and `__lang__` when generating replacement covers!
+- Improve cover replacement logic to skip `<title>` and `<style>` elements when deciding if an existing cover can be replaced or new file needed.
+
 ## [1.8.12] - 2026-11-08
 ### Fixed
 - Add support for changes in calibre 9.18 to require substituting `__title__` and `__lang__` when generating replacement covers.

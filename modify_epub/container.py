@@ -8,8 +8,8 @@ from six import text_type as unicode
 from six.moves import range
 from polyglot.builtins import unicode_type, is_py3
 
-import os, posixpath, sys, re
-import six.moves.urllib.request, six.moves.urllib.parse, six.moves.urllib.error
+import os, posixpath, re
+import six.moves.urllib.parse
 
 from lxml import etree
 from lxml.etree import XMLSyntaxError
@@ -19,7 +19,7 @@ from six.moves.urllib.parse import unquote as urlunquote
 from calibre import guess_type, prepare_string_for_xml
 from calibre.ebooks.chardet import xml_to_unicode
 from calibre.ebooks.conversion.plugins.epub_input import (
-    ADOBE_OBFUSCATION, IDPF_OBFUSCATION, decrypt_font)
+    ADOBE_OBFUSCATION, IDPF_OBFUSCATION)
 from calibre.ebooks.conversion.preprocess import HTMLPreProcessor
 from calibre.ebooks.oeb.base import urlnormalize, OEB_DOCS, XPath, SVG, XLINK
 from calibre.ebooks.oeb.parse_utils import NotHTML, parse_html
@@ -31,6 +31,8 @@ exists, join = os.path.exists, os.path.join
 
 OCF_NS = 'urn:oasis:names:tc:opendocument:xmlns:container'
 OPF_NS = 'http://www.idpf.org/2007/opf'
+DC11_NS = 'http://purl.org/dc/elements/1.1/'
+OPF_NAMESPACES = {'opf': OPF_NS, 'dc': DC11_NS}
 NCX_NS = 'http://www.daisy.org/z3986/2005/ncx/'
 
 IMAGE_FILES = ['.png','.jpg','.jpeg', '.gif', '.bmp', '.svg']
@@ -151,6 +153,10 @@ class Container(object):
     @property
     def opf(self):
         return self.get_parsed_etree(self.opf_name)
+
+    def opf_xpath(self, expr):
+        "Convenience method to evaluate an XPath expression on the OPF file, has the opf: and dc: namespace prefixes pre-defined."
+        return self.opf.xpath(expr, namespaces=OPF_NAMESPACES)
 
     def href_to_name(self, href, rel_to_opf=True, base=''):
         '''
@@ -929,6 +935,13 @@ class ExtendedContainer(WritableContainer):
         Return the body text only (all html tags and whitespace removed)
         '''
         data = self.get_parsed_etree(html_name)
+
+        # Remove all <style> and <title> elements from the tree anywhere in the document
+        for element in data.xpath("//*[local-name()='style' or local-name()='title']"):
+            parent = element.getparent()
+            if parent is not None:
+                parent.remove(element)
+                
         body = XPath('//h:body')(data)
         if body:
             text = etree.tostring(body[0], method='text', encoding='unicode')

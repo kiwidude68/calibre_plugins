@@ -271,6 +271,8 @@ class CoverUpdater(object):
             image_node.getparent().remove(image_node)
 
         body_text = self.container.get_body_text(html_name)
+        self.log('Body text found:',body_text)
+        self.log('Image links found:',image_links)
         if not body_text and len(image_links) <= 1:
             # There is no text in this page and at most one svg and/or img links
             # Remove from manifest, guide, spine. Do not delete from TOC if exists
@@ -339,12 +341,15 @@ class CoverUpdater(object):
     def _fill_metadata(self, templ):
         try:
             # For calibre 9.18 the cover manager has a fill_metadata method that will fill in the title and language for us
-            from calibre.ebooks.oeb.polish import get_book_language_tag
+            from calibre.ebooks.oeb.polish.opf import get_book_language_tag
             from calibre.ebooks.oeb.transforms.cover import CoverManager        
-            return CoverManager.fill_metadata(templ, self.title or '', get_book_language_tag(self.container))
+            templ = CoverManager.fill_metadata(templ, self.title or '', get_book_language_tag(self.container))
+            self.log('\t  Template substituted using 9.18+ for title/lang')
         except ImportError:
             # For older versions of calibre, neither the title or language needed to be substituted into the template.
-            return templ
+            self.log('\t  Could not substitute title/lang - must be an older calibre than 9.18.')
+            pass
+        return templ
 
     def _create_titlepage(self, cover_href, width, height):
         from calibre.ebooks.oeb.transforms.cover import CoverManager        
@@ -378,10 +383,6 @@ class CoverUpdater(object):
         tp = templ%unquote(rel_cover_href)
 
         with open(titlepage_path, 'w') as f:
-            # Ensure we write out a proper XML declaration and DOCTYPE so that the titlepage is valid XHTML
-            # There must be a better way to do this, but for now this works.
-            f.write('<?xml version="1.0" encoding="utf-8"?>\n')
-            f.write('<!DOCTYPE html>\n\n')
             f.write(tp)
         titlepage_name = os.path.relpath(titlepage_path, self.container.root).replace(os.sep, '/')
         return titlepage_name
