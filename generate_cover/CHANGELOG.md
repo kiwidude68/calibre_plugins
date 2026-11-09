@@ -1,5 +1,9 @@
 # Generate Cover Change Log
 
+## [2.5.4] - 2026-11-10
+### Fixed
+- Round an argument for draw that was coming back as a float instead of an int expected for QRect().
+
 ## [2.5.3] - 2026-11-09
 ### Fixed
 - Missing QFontMetrics reference from refactoring.

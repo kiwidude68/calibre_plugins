@@ -223,7 +223,7 @@ def measure_text_height(img, line, left_margin, right_margin):
     try:
         p.setFont(line.font)
         bounds = p.boundingRect(
-            QRect(0, 0, text_width, 100000),
+            QRect(0, 0, int(text_width), 100000),
             line._align | Qt.TextWordWrap, line.text)
         return bounds.height()
     finally:
