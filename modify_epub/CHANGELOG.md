@@ -1,5 +1,9 @@
 # Modify ePub Change Log
 
+## [1.8.14] - 2026-11-11
+### Fixed
+- Remove cover option broken by changes in 1.18.12
+
 ## [1.8.13] - 2026-11-09
 ### Fixed
 - Actual fix for changes in calibre 9.18 to require substituting `__title__` and `__lang__` when generating replacement covers!

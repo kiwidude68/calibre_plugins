@@ -157,7 +157,7 @@ class BookModifier(object):
         if options['remove_broken_covers']:
             is_changed |= self._remove_broken_covers(container)
         if options['remove_cover'] and not options['insert_replace_cover']:
-            is_changed |= self._remove_cover(container)
+            is_changed |= self._remove_cover(container, self.mi.title)
         if options['remove_non_dc_elements']:
             is_changed |= self._remove_non_dc_elements(container)
 
@@ -858,12 +858,12 @@ class BookModifier(object):
                 container.delete_from_manifest(html_name)
         return dirtied
 
-    def _remove_cover(self, container):
+    def _remove_cover(self, container, title):
         self.log('\tRemove cover')
         if container.is_drm_encrypted():
             self.log('ERROR - cannot remove cover in DRM encrypted book')
             return False
-        cu = CoverUpdater(self.log, container, None, None)
+        cu = CoverUpdater(self.log, container, title, None, None)
         cu.remove_existing_cover()
         return True
 
