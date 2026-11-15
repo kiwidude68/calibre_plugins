@@ -1,26 +1,28 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR ORGANIZATION
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Generate Cover package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Biljana Vukovic <biljana.vukovic1@yahoo.com>, 2022
 # Branislav Kapetanovic, 2026
 # 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-05 21:31+1000\n"
+"Project-Id-Version: Generate Cover\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-07 17:42+1000\n"
 "PO-Revision-Date: 2022-09-19 15:06+0000\n"
 "Last-Translator: Branislav Kapetanovic, 2026\n"
 "Language-Team: Serbian (Latin) (https://app.transifex.com/calibre/teams/19337/sr@latin/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.5\n"
 "Language: sr@latin\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ..\common\common_dialogs.py:84 config.py:353
+#: ..\common\common_dialogs.py:84 config.py:562
 msgid "Keyboard shortcuts"
 msgstr "Prečice na tastaturi"
 
@@ -128,8 +130,13 @@ msgid "No books selected"
 msgstr "Nema izabranih knjiga"
 
 #: action.py:86
-msgid "Corrupted setting: \"%s\" has incorrect internal name of: \"%s\")"
-msgstr "Oštećeno podešavanje: \"%s\" ima netačno interno ime: \"%s\")"
+#, python-format
+msgid ""
+"Corrupted setting: \"%(setting_name)s\" has incorrect internal name of: "
+"\"%(internal_name)s\")"
+msgstr ""
+"Oštećeno podešavanje: \"%(setting_name)s\" ima neispravno interno ime: "
+"\"%(internal_name)s\")"
 
 #: action.py:90
 msgid "Corrupted Configuration File"
@@ -156,34 +163,35 @@ msgid "Missing metadata passed for book to generate cover"
 msgstr "Nisu prosleđeni metapodaci knjige potrebni za izradu korica"
 
 #: action.py:148
+#, python-format
 msgid "No cover settings exist named: \"%s\""
 msgstr "Ne postoje podešavanja korica sa imenom: \"%s\""
 
-#: config.py:339
+#: config.py:548
 msgid "After generating cover:"
 msgstr "Nakon generisanja korica:"
 
-#: config.py:348
+#: config.py:557
 msgid "Update column:"
 msgstr "Ažuriraj kolonu:"
 
-#: config.py:349
+#: config.py:558
 msgid "Update value:"
 msgstr "Ažuriraj vrednost:"
 
-#: config.py:354
+#: config.py:563
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Izmeni prečice na tastaturi za ovaj dodatak"
 
-#: config.py:358
+#: config.py:567
 msgid "View library preferences"
 msgstr "Prikaži postavke biblioteke"
 
-#: config.py:359
+#: config.py:568
 msgid "View data stored in the library database for this plugin"
 msgstr "Prikaži podatke sačuvane u bazi podataka biblioteke za ovaj dodatak"
 
-#: config.py:363 dialogs.py:1499
+#: config.py:572 dialogs.py:1679
 msgid "&Help"
 msgstr "&Pomoć"
 
@@ -192,6 +200,7 @@ msgid "Cancel"
 msgstr "Otkaži"
 
 #: dialogs.py:95
+#, python-format
 msgid "Generating %d covers"
 msgstr "Generisanje %d korica"
 
@@ -204,6 +213,7 @@ msgid "Unsaved Changes"
 msgstr "Nesačuvane izmene"
 
 #: dialogs.py:131 dialogs.py:154
+#, python-format
 msgid "You have unsaved changes to the <b>%s</b> setting.<br>"
 msgstr "Imate nesačuvane izmene u <b>%s</b> podešavanju.<br>"
 
@@ -248,15 +258,35 @@ msgstr "Generiši korice koristeći ova podešavanja, a zatim ih odbaci"
 msgid "Cancel action"
 msgstr "Otkaži akciju"
 
-#: dialogs.py:450 dialogs.py:528
+#: dialogs.py:472
+msgid "Light"
+msgstr "Tanak"
+
+#: dialogs.py:473
+msgid "Normal"
+msgstr "Normalan"
+
+#: dialogs.py:474
+msgid "Demi Bold"
+msgstr "Polupodebljan"
+
+#: dialogs.py:475
+msgid "Bold"
+msgstr "Podebljan"
+
+#: dialogs.py:476
+msgid "Black"
+msgstr "Veoma podebljan"
+
+#: dialogs.py:500 dialogs.py:578
 msgid "Saved Settings:"
 msgstr "Sačuvana podešavanja:"
 
-#: dialogs.py:460
+#: dialogs.py:510
 msgid "Autosave settings"
 msgstr "Automatski sačuvaj podešavanja"
 
-#: dialogs.py:461
+#: dialogs.py:511
 msgid ""
 "Do not prompt to save changes to a setting. Always save when\n"
 "switching to another setting, clicking OK or using Import/Export."
@@ -264,346 +294,332 @@ msgstr ""
 "Ne pitaj za čuvanje izmena u podešavanju. Uvek sačuvaj pri\n"
 "prelasku na drugo podešavanje, klikom na U redu ili korišćenjem Uvoz/Izvoz."
 
-#: dialogs.py:468
+#: dialogs.py:518
 msgid "Add setting"
 msgstr "Dodaj podešavanje"
 
-#: dialogs.py:473
+#: dialogs.py:523
 msgid "Rename setting"
 msgstr "Preimenuj podešavanje"
 
-#: dialogs.py:479 dialogs.py:667
+#: dialogs.py:529 dialogs.py:717
 msgid "Import setting"
 msgstr "Uvezi podešavanje"
 
-#: dialogs.py:484
+#: dialogs.py:534
 msgid "Export setting"
 msgstr "Izvezi podešavanje"
 
-#: dialogs.py:490
+#: dialogs.py:540
 msgid "Delete setting from this list"
 msgstr "Obriši podešavanje sa ove liste"
 
-#: dialogs.py:498
+#: dialogs.py:548
 msgid "Select Image:"
 msgstr "Izaberi sliku:"
 
-#: dialogs.py:509
+#: dialogs.py:559
 msgid "Add image to this list"
 msgstr "Dodaj sliku na ovu listu"
 
-#: dialogs.py:514
+#: dialogs.py:564
 msgid "Rename image"
 msgstr "Preimenuj sliku"
 
-#: dialogs.py:519
+#: dialogs.py:569
 msgid "Remove image from this list"
 msgstr "Ukloni sliku sa ove liste"
 
-#: dialogs.py:530
+#: dialogs.py:580
 msgid "Saved Settings: (*unsaved changes)"
 msgstr "Sačuvana podešavanja: (*nesačuvane izmene)"
 
-#: dialogs.py:561
+#: dialogs.py:611
 msgid "Add new setting"
 msgstr "Dodaj novo podešavanje"
 
-#: dialogs.py:584
+#: dialogs.py:634
 msgid "Cannot add"
 msgstr "Nije moguće dodati"
 
-#: dialogs.py:585
+#: dialogs.py:635
 msgid "The name you specified is not unique"
 msgstr "Ime koje ste naveli nije jedinstveno"
 
-#: dialogs.py:594 dialogs.py:837
+#: dialogs.py:644 dialogs.py:887
 msgid "Cannot remove"
 msgstr "Nije moguće ukloniti"
 
-#: dialogs.py:595
+#: dialogs.py:645
 msgid "You cannot remove the default setting"
 msgstr "Ne možete ukloniti podrazumevano podešavanje"
 
-#: dialogs.py:596 dialogs.py:840 dialogs.py:1574 dialogs.py:1593
+#: dialogs.py:646 dialogs.py:890 dialogs.py:1754 dialogs.py:1773
 msgid "Are you sure?"
 msgstr "Da li ste sigurni?"
 
-#: dialogs.py:597
+#: dialogs.py:647
+#, python-format
 msgid "Are you sure you want to remove the '%s' setting?"
 msgstr "Da li ste sigurni da želite da uklonite '%s' podešavanje?"
 
-#: dialogs.py:610 dialogs.py:787 dialogs.py:813
+#: dialogs.py:660 dialogs.py:837 dialogs.py:863
 msgid "Cannot rename"
 msgstr "Nije moguće preimenovati"
 
-#: dialogs.py:611
+#: dialogs.py:661
 msgid "You cannot rename the default setting"
 msgstr "Ne možete preimenovati podrazumevano podešavanje"
 
-#: dialogs.py:612 dialogs.py:613
+#: dialogs.py:662 dialogs.py:663
 msgid "New setting name:"
 msgstr "Novo ime podešavanja:"
 
-#: dialogs.py:621
+#: dialogs.py:671
 msgid "Setting exists"
 msgstr "Podešavanje postoji"
 
-#: dialogs.py:622
+#: dialogs.py:672
 msgid "A saved setting already exists with this name."
 msgstr "Sačuvano podešavanje sa ovim imenom već postoji."
 
-#: dialogs.py:647
+#: dialogs.py:697
 msgid "Import Failed"
 msgstr "Uvoz nije uspeo"
 
-#: dialogs.py:648
+#: dialogs.py:698
 msgid "This is not a valid Generate Cover export archive"
 msgstr "Ovo nije ispravna izvozna arhiva dodatka Generate Cover"
 
-#: dialogs.py:686
+#: dialogs.py:736
 msgid "Cannot import"
 msgstr "Nije moguće uvesti"
 
-#: dialogs.py:687 dialogs.py:879
+#: dialogs.py:737 dialogs.py:929
 msgid "Failed to copy image"
 msgstr "Kopiranje slike nije uspelo"
 
-#: dialogs.py:745
+#: dialogs.py:795
 msgid "Export completed"
 msgstr "Izvoz završen"
 
-#: dialogs.py:746
+#: dialogs.py:796
+#, python-format
 msgid "Cover setting exported to<br>%s"
 msgstr "Podešavanje korica izvezeno u<br>%s"
 
-#: dialogs.py:754
+#: dialogs.py:804
 msgid "Select setting file(s) to import"
 msgstr "Izaberite datoteku(e) podešavanja za uvoz"
 
-#: dialogs.py:755 dialogs.py:761
+#: dialogs.py:805 dialogs.py:811
 msgid "GC Files"
 msgstr "GC datoteke"
 
-#: dialogs.py:761
+#: dialogs.py:811
 msgid "Save setting as"
 msgstr "Sačuvaj podešavanje kao"
 
-#: dialogs.py:788
+#: dialogs.py:838
 msgid "You cannot rename this image"
 msgstr "Ne možete preimenovati ovu sliku"
 
-#: dialogs.py:790 dialogs.py:791
+#: dialogs.py:840 dialogs.py:841
 msgid "New image name:"
 msgstr "Novo ime slike:"
 
-#: dialogs.py:808
+#: dialogs.py:858
 msgid "File exists"
 msgstr "Datoteka postoji"
 
-#: dialogs.py:809
+#: dialogs.py:859
 msgid "An image already exists with this name."
 msgstr "Slika sa ovim imenom već postoji."
 
-#: dialogs.py:814
+#: dialogs.py:864
 msgid "Failed to rename image"
 msgstr "Preimenovanje slike nije uspelo"
 
-#: dialogs.py:823
+#: dialogs.py:873
 msgid "Add cover images"
 msgstr "Dodaj slike korica"
 
-#: dialogs.py:838
+#: dialogs.py:888
 msgid "You cannot remove this image"
 msgstr "Ne možete ukloniti ovu sliku"
 
-#: dialogs.py:841
+#: dialogs.py:891
+#, python-format
 msgid "Are you sure you want to delete the image: %s"
 msgstr "Da li ste sigurni da želite da obrišete sliku: %s"
 
-#: dialogs.py:852 dialogs.py:910
+#: dialogs.py:902 dialogs.py:960
 msgid "Cannot write"
 msgstr "Nije moguće pisati"
 
-#: dialogs.py:853
+#: dialogs.py:903
 msgid "You do not have permission to delete the file"
 msgstr "Nemate dozvolu da obrišete datoteku"
 
-#: dialogs.py:866
+#: dialogs.py:916
 msgid "Cannot read"
 msgstr "Nije moguće čitati"
 
-#: dialogs.py:867
+#: dialogs.py:917
 msgid "You do not have permission to read the file."
 msgstr "Nemate dozvolu da čitate datoteku."
 
-#: dialogs.py:878
+#: dialogs.py:928
 msgid "Cannot copy"
 msgstr "Nije moguće kopirati"
 
-#: dialogs.py:892
+#: dialogs.py:942
 msgid "Overwrite existing"
 msgstr "Prepiši postojeće"
 
-#: dialogs.py:893
+#: dialogs.py:943
 msgid ""
 "An image file already exists with this name. Do you want to overwrite it?"
 msgstr ""
 "Datoteka slike sa ovim imenom već postoji. Da li želite da je prepišete?"
 
-#: dialogs.py:896
+#: dialogs.py:946
 msgid "Enter image name"
 msgstr "Unesite ime slike"
 
-#: dialogs.py:897
+#: dialogs.py:947
 msgid "Enter a unique name for this image:"
 msgstr "Unesite jedinstveno ime za ovu sliku:"
 
-#: dialogs.py:911
+#: dialogs.py:961
 msgid "You do not have permission to overwrite the file"
 msgstr "Nemate dozvolu da prepišete datoteku"
 
-#: dialogs.py:947 dialogs.py:958
+#: dialogs.py:997 dialogs.py:1005
 msgid "Title"
 msgstr "Naslov"
 
-#: dialogs.py:948 dialogs.py:959
+#: dialogs.py:998 dialogs.py:1006
 msgid "Author"
 msgstr "Autor"
 
-#: dialogs.py:949 dialogs.py:960
+#: dialogs.py:999 dialogs.py:1007
 msgid "Series"
 msgstr "Serija"
 
-#: dialogs.py:950 dialogs.py:961
+#: dialogs.py:1000 dialogs.py:1008
 msgid "Custom"
 msgstr "Prilagođeno"
 
-#: dialogs.py:953
-msgid "Background"
-msgstr "Pozadina"
+#: dialogs.py:1001 dialogs.py:1009
+msgid "Custom 2"
+msgstr "Prilagođeno 2"
 
-#: dialogs.py:954
-msgid "Border"
-msgstr "Ivica"
+#: dialogs.py:1002 dialogs.py:1010
+msgid "Custom 3"
+msgstr "Prilagođeno 3"
 
-#: dialogs.py:974
-msgid "Fonts:"
-msgstr "Fontovi:"
+#: dialogs.py:1019 dialogs.py:1262 dialogs.py:1417
+msgid "Color:"
+msgstr "Boja:"
 
-#: dialogs.py:983
+#: dialogs.py:1024
+msgid "Fill Color:"
+msgstr "Boja ispune:"
+
+#: dialogs.py:1026
+msgid "Choose selected field fill color"
+msgstr "Izaberi boju ispune izabranog polja"
+
+#: dialogs.py:1030
+msgid "Reset selected field fill color"
+msgstr "Vrati boju ispune izabranog polja na podrazumevanu"
+
+#: dialogs.py:1033
+msgid "Use this fill color for all text"
+msgstr "Koristi ovu boju ispune za sav tekst"
+
+#: dialogs.py:1034
 msgid ""
-"Select a font and specify a size in pixels.\n"
-"If font set to 'Default', uses the tweak value from\n"
-"'generate_cover_title_font' if present."
+"When checked, the current fill color is used for all text.\n"
+"When unchecked, you can set a different fill color for each field."
 msgstr ""
-"Izaberite font i navedite veličinu u pikselima.\n"
-"Ako je font postavljen na 'Podrazumevano', koristi se vrednost iz\n"
-"'generate_cover_title_font' ako je prisutna."
+"Ako je označeno, trenutna boja ispune koristi se za sav tekst.\n"
+"Ako nije označeno, možete postaviti različitu boju ispune za svako polje."
 
-#: dialogs.py:1002
-msgid "Use the same font family for all text"
-msgstr "Koristi istu porodicu fontova za sav tekst"
+#: dialogs.py:1044
+msgid "Backdrop:"
+msgstr "Podloga:"
 
-#: dialogs.py:1003
-msgid ""
-"When checked, the same font family is used for all text content on the cover"
-msgstr ""
-"Kada je označeno, ista porodica fontova se koristi za sav tekstualni sadržaj"
-" na koricama"
+#: dialogs.py:1045
+msgid "Optionally render a color backdrop for this element"
+msgstr "Opciono prikaži obojenu podlogu za ovaj element"
 
-#: dialogs.py:1010
-msgid "Auto-reduce font size to fit on one line"
-msgstr "Automatski smanji veličinu fonta da stane u jedan red"
+#: dialogs.py:1049
+msgid "Choose this element's backdrop color, if applied"
+msgstr "Izaberi boju podloge ovog elementa, ako se koristi"
 
-#: dialogs.py:1011
-msgid ""
-"When checked, the font size will be used as a maximum size.\n"
-"A reduced size will be used where needed to fit text on one line."
-msgstr ""
-"Kada je označeno, veličina fonta će se koristiti kao maksimalna veličina.\n"
-"Smanjena veličina će se koristiti gde je potrebno da tekst stane u jedan red."
+#: dialogs.py:1053
+msgid "Reset selected field backdrop color"
+msgstr "Vrati boju podloge izabranog polja na podrazumevanu"
 
-#: dialogs.py:1017
-msgid "Colors:"
-msgstr "Boje:"
-
-#: dialogs.py:1035
-msgid "Reset %s color"
-msgstr "Resetuj %s boju"
-
-#: dialogs.py:1041
-msgid "Select a %s color"
-msgstr "Izaberi %s boju"
+#: dialogs.py:1055
+msgid "Use this backdrop for all text"
+msgstr "Koristi ovu podlogu za sav tekst"
 
 #: dialogs.py:1063
-msgid "Reset %s fill color"
-msgstr "Resetuj %s boju popune"
+msgid "Opacity:"
+msgstr "Neprozirnost:"
+
+#: dialogs.py:1068
+msgid "Full width or height"
+msgstr "Puna širina ili visina"
 
 #: dialogs.py:1069
-msgid "Select %s fill color"
-msgstr "Izaberi %s boju popune"
-
-#: dialogs.py:1080
-msgid "Use the same fill color for all text"
-msgstr "Koristi istu boju popune za sav tekst"
-
-#: dialogs.py:1081
 msgid ""
-"When checked, the fill color is used for all text.\n"
-"When unchecked, you can set different fill colors for each text type."
+"When checked, the backdrop will extend to the full width of the cover (height if rotated).\n"
+"When unchecked, the backdrop will only extend to the width or height of the text."
 msgstr ""
-"Kada je označeno, boja popune se koristi za sav tekst.\n"
-"Kada nije označeno, možete postaviti različite boje popune za svaki tip teksta."
+"Ako je označeno, podloga se proteže celom širinom korica (visinom ako je rotirana).\n"
+"Ako nije označeno, podloga se proteže samo širinom ili visinom teksta."
 
-#: dialogs.py:1092
-msgid "Left aligned"
-msgstr "Levo poravnato"
-
-#: dialogs.py:1094
-msgid "Centered"
-msgstr "Centrirano"
-
-#: dialogs.py:1096
-msgid "Right aligned"
-msgstr "Desno poravnato"
-
-#: dialogs.py:1207
+#: dialogs.py:1155
 msgid "Size:"
 msgstr "Veličina:"
 
-#: dialogs.py:1211
+#: dialogs.py:1161
 msgid "Cover width:"
 msgstr "Širina korica:"
 
-#: dialogs.py:1212
+#: dialogs.py:1162
 msgid "The width in pixels of the output .jpg file"
 msgstr "Širina u pikselima izlazne .jpg datoteke"
 
-#: dialogs.py:1218
-msgid "Cover height:"
-msgstr "Visina korica:"
+#: dialogs.py:1168
+msgid "Height:"
+msgstr "Visina:"
 
-#: dialogs.py:1219
+#: dialogs.py:1169
 msgid "The height in pixels of the output .jpg file"
 msgstr "Visina u pikselima izlazne .jpg datoteke"
 
-#: dialogs.py:1225
-msgid "Stretch image to use as cover background"
-msgstr "Razvuci sliku da se koristi kao pozadina korica"
+#: dialogs.py:1178
+msgid "Background:"
+msgstr "Pozadina:"
 
-#: dialogs.py:1226
-msgid ""
-"Check this to overlay text on the image background.\n"
-"Uncheck this to place text around the image."
-msgstr ""
-"Označite ovo da biste preklopili tekst preko pozadine slike.\n"
-"Odznačite ovo da biste postavili tekst oko slike."
+#: dialogs.py:1181
+msgid "Choose the background color"
+msgstr "Izaberi boju pozadine"
 
-#: dialogs.py:1230
+#: dialogs.py:1186
+msgid "Reset background color"
+msgstr "Vrati boju pozadine na podrazumevanu"
+
+#: dialogs.py:1189
 msgid "Resize cover dimensions to match background image"
 msgstr "Promeni dimenzije korica da odgovaraju pozadinskoj slici"
 
-#: dialogs.py:1231
+#: dialogs.py:1190
 msgid ""
 "Check this to automatically resize the cover based on\n"
 "the dimensions of the currently chosen background image"
@@ -611,11 +627,11 @@ msgstr ""
 "Označite ovo da biste automatski promenili veličinu korica na osnovu\n"
 "dimenzija trenutno izabrane pozadinske slike"
 
-#: dialogs.py:1235
+#: dialogs.py:1194
 msgid "Resize image to scale up if smaller than available area"
 msgstr "Povećaj sliku ako je manja od dostupnog prostora"
 
-#: dialogs.py:1236
+#: dialogs.py:1195
 msgid ""
 "Check this to automatically resize the cover image to fit the\n"
 "the maximum area available if it is too small"
@@ -623,15 +639,15 @@ msgstr ""
 "Označite ovo da biste automatski promenili veličinu slike korica da stane u\n"
 "maksimalni dostupni prostor ako je previše mala"
 
-#: dialogs.py:1242
+#: dialogs.py:1201
 msgid "Margins:"
 msgstr "Margine:"
 
-#: dialogs.py:1247
-msgid "Top margin:"
-msgstr "Gornja margina:"
+#: dialogs.py:1208
+msgid "Top:"
+msgstr "Gore:"
 
-#: dialogs.py:1248
+#: dialogs.py:1209
 msgid ""
 "The margin in pixels from the top of the cover\n"
 "to the first content"
@@ -639,11 +655,11 @@ msgstr ""
 "Margina u pikselima od vrha korica\n"
 "do prvog sadržaja"
 
-#: dialogs.py:1256
-msgid "Bottom margin:"
-msgstr "Donja margina:"
+#: dialogs.py:1217 dialogs.py:1332
+msgid "Bottom:"
+msgstr "Dole:"
 
-#: dialogs.py:1257
+#: dialogs.py:1218
 msgid ""
 "The margin in pixels from the bottom of the cover\n"
 "to the last content"
@@ -651,11 +667,11 @@ msgstr ""
 "Margina u pikselima od dna korica\n"
 "do poslednjeg sadržaja"
 
-#: dialogs.py:1265
-msgid "Left margin:"
-msgstr "Leva margina:"
+#: dialogs.py:1228
+msgid "Left:"
+msgstr "Levo:"
 
-#: dialogs.py:1266
+#: dialogs.py:1229
 msgid ""
 "The minimum margin in pixels from the left of the cover\n"
 "to the text content"
@@ -663,11 +679,11 @@ msgstr ""
 "Minimalna margina u pikselima od leve strane korica\n"
 "do tekstualnog sadržaja"
 
-#: dialogs.py:1274
-msgid "Right margin:"
-msgstr "Desna margina:"
+#: dialogs.py:1237 dialogs.py:1333
+msgid "Right:"
+msgstr "Desno:"
 
-#: dialogs.py:1275
+#: dialogs.py:1238
 msgid ""
 "The minimum margin in pixels from the right of the cover\n"
 "to the text content"
@@ -675,35 +691,15 @@ msgstr ""
 "Minimalna margina u pikselima od desne strane korica\n"
 "do tekstualnog sadržaja"
 
-#: dialogs.py:1283
-msgid "Text padding:"
-msgstr "Razmak teksta:"
+#: dialogs.py:1247 dialogs.py:1401
+msgid "Border:"
+msgstr "Okvir:"
 
-#: dialogs.py:1284
-msgid "The spacing in pixels between successive lines of text"
-msgstr "Razmak u pikselima između uzastopnih redova teksta"
+#: dialogs.py:1253
+msgid "Border width:"
+msgstr "Širina okvira:"
 
-#: dialogs.py:1291
-msgid "Image padding:"
-msgstr "Razmak slike:"
-
-#: dialogs.py:1292
-msgid ""
-"The spacing in pixels between the image and text\n"
-"placed above and below it"
-msgstr ""
-"Razmak u pikselima između slike i teksta\n"
-"postavljenog iznad i ispod nje"
-
-#: dialogs.py:1302
-msgid "Border Widths:"
-msgstr "Širine ivica:"
-
-#: dialogs.py:1306
-msgid "Cover border:"
-msgstr "Ivica korica:"
-
-#: dialogs.py:1307
+#: dialogs.py:1254
 msgid ""
 "The width in pixels of a border around the edge\n"
 "of the cover. Specify 0 for no border"
@@ -711,23 +707,27 @@ msgstr ""
 "Širina u pikselima ivice oko ruba\n"
 "korica. Unesite 0 za bez ivice"
 
-#: dialogs.py:1314
-msgid "Image border:"
-msgstr "Ivica slike:"
+#: dialogs.py:1265
+msgid "Choose the border color"
+msgstr "Izaberi boju okvira"
 
-#: dialogs.py:1315
-msgid ""
-"The width in pixels of a border around the edge\n"
-"of the image. Specify 0 for no border"
-msgstr ""
-"Širina u pikselima ivice oko ruba\n"
-"slike. Unesite 0 za bez ivice"
+#: dialogs.py:1270
+msgid "Reset border color"
+msgstr "Vrati boju okvira na podrazumevanu"
 
-#: dialogs.py:1354
+#: dialogs.py:1332
+msgid "Padding Top:"
+msgstr "Unutrašnji razmak gore:"
+
+#: dialogs.py:1333
+msgid "Padding Left:"
+msgstr "Unutrašnji razmak levo:"
+
+#: dialogs.py:1362
 msgid "Field Order:"
 msgstr "Redosled polja:"
 
-#: dialogs.py:1355
+#: dialogs.py:1363
 msgid ""
 "Alter the order of items on the cover and\n"
 "whether they are displayed using the checkbox"
@@ -735,27 +735,143 @@ msgstr ""
 "Promenite redosled stavki na koricama i\n"
 "da li se prikazuju pomoću polja za potvrdu"
 
-#: dialogs.py:1369
+#: dialogs.py:1377
 msgid "Move field up"
 msgstr "Pomeri polje gore"
 
-#: dialogs.py:1376
+#: dialogs.py:1383
 msgid "Move field down"
 msgstr "Pomeri polje dole"
 
-#: dialogs.py:1382
-msgid "Other Options:"
-msgstr "Ostale opcije:"
+#: dialogs.py:1389
+msgid "Image:"
+msgstr "Slika:"
 
-#: dialogs.py:1386
-msgid "Custom text:"
-msgstr "Prilagođeni tekst:"
+#: dialogs.py:1393
+msgid "Stretch image to use as cover background"
+msgstr "Razvuci sliku da se koristi kao pozadina korica"
 
-#: dialogs.py:1396
+#: dialogs.py:1394
+msgid ""
+"Check this to overlay text on the image background.\n"
+"Uncheck this to place text around the image."
+msgstr ""
+"Označite ovo da biste preklopili tekst preko pozadine slike.\n"
+"Odznačite ovo da biste postavili tekst oko slike."
+
+#: dialogs.py:1407
+msgid "Image border:"
+msgstr "Ivica slike:"
+
+#: dialogs.py:1409
+msgid "The width in pixels of a border around the edge of the image"
+msgstr "Širina okvira oko ivice slike u pikselima"
+
+#: dialogs.py:1421
+msgid ""
+"Choose the image border color (if it is not stretched to the cover edge)"
+msgstr "Izaberi boju okvira slike (ako slika nije razvučena do ivice korica)"
+
+#: dialogs.py:1427
+msgid "Reset image border color"
+msgstr "Vrati boju okvira slike na podrazumevanu"
+
+#: dialogs.py:1440 dialogs.py:1447
+msgid "Font:"
+msgstr "Font:"
+
+#: dialogs.py:1451
+msgid "Choose the font family for the selected field"
+msgstr "Izaberi porodicu fontova za izabrano polje"
+
+#: dialogs.py:1459
+msgid "Font size in pixels"
+msgstr "Veličina fonta u pikselima"
+
+#: dialogs.py:1466
+msgid "Use this font family for all text"
+msgstr "Koristi ovu porodicu fontova za sav tekst"
+
+#: dialogs.py:1467
+msgid ""
+"When checked, this font family is used for all text content on the cover"
+msgstr ""
+"Ako je označeno, ova porodica fontova koristi se za sav tekstualni sadržaj "
+"na koricama"
+
+#: dialogs.py:1470
+msgid "Auto-reduce font size to fit on one line"
+msgstr "Automatski smanji veličinu fonta da stane u jedan red"
+
+#: dialogs.py:1471
+msgid ""
+"When checked, this font size will be used as a maximum size.\n"
+"A reduced size will be used where needed to fit text on one line."
+msgstr ""
+"Ako je označeno, ova veličina fonta koristi se kao najveća dozvoljena veličina.\n"
+"Po potrebi se koristi manja veličina kako bi tekst stao u jedan red."
+
+#: dialogs.py:1477
+msgid "Style:"
+msgstr "Stil:"
+
+#: dialogs.py:1482 dialogs.py:1520
+msgid "Left"
+msgstr "Levo"
+
+#: dialogs.py:1483
+msgid "Centre"
+msgstr "Centrirano"
+
+#: dialogs.py:1484 dialogs.py:1521
+msgid "Right"
+msgstr "Desno"
+
+#: dialogs.py:1492
+msgid "Italic"
+msgstr "Kurziv"
+
+#: dialogs.py:1495
+msgid "Underline"
+msgstr "Podvučeno"
+
+#: dialogs.py:1502
+msgid "Rotation:"
+msgstr "Rotacija:"
+
+#. TRANSLATORS: Text rotation angle in degrees (0, 90, or 270), not
+#. temperature.
+#. Keep %d; use a suitable local degree symbol or abbreviation.
+#: dialogs.py:1510
+#, python-format
+msgid "%d°"
+msgstr "%d°"
+
+#: dialogs.py:1511
+msgid "Rotate the selected text field"
+msgstr "Rotiraj izabrano tekstualno polje"
+
+#: dialogs.py:1515
+msgid "Placement:"
+msgstr "Položaj:"
+
+#: dialogs.py:1522
+msgid "Place vertical text along the left or right edge"
+msgstr "Postavi uspravni tekst uz levu ili desnu ivicu"
+
+#: dialogs.py:1536
+msgid "Data:"
+msgstr "Podaci:"
+
+#: dialogs.py:1541
+msgid "Text:"
+msgstr "Tekst:"
+
+#: dialogs.py:1553
 msgid "Swap author LN,FN to FN LN"
 msgstr "Zameni redosled autora iz LN, FN u FN LN"
 
-#: dialogs.py:1397
+#: dialogs.py:1554
 msgid ""
 "Use this option if your authors are stored as LN, FN\n"
 "but you prefer to see FN LN on the book cover"
@@ -763,11 +879,11 @@ msgstr ""
 "Koristite ovu opciju ako su vaši autori sačuvani kao Prezime, Ime\n"
 "ali više volite da vidite Ime Prezime na koricama knjige"
 
-#: dialogs.py:1401
+#: dialogs.py:1558
 msgid "Series text:"
 msgstr "Tekst serije:"
 
-#: dialogs.py:1402
+#: dialogs.py:1559
 msgid ""
 "Change the way series information is displayed.\n"
 "Useful for non-English languages!"
@@ -775,84 +891,56 @@ msgstr ""
 "Promenite način na koji se prikazuju informacije o seriji.\n"
 "Korisno za neengleske jezike!"
 
-#: dialogs.py:1410
-msgid "Metadata: (*not saved)"
-msgstr "Metapodaci: (*nije sačuvano)"
-
-#: dialogs.py:1411
-msgid ""
-"Optionally override the text in these fields for this book.\n"
-"These are not saved as part of the settings profile.\n"
-"This functionality is disabled if multiple books are selected."
-msgstr ""
-"Opciono zamenite tekst u ovim poljima za ovu knjigu.\n"
-"Ovo se ne čuva kao deo profila podešavanja.\n"
-"Ova funkcionalnost je onemogućena ako je izabrano više knjiga."
-
-#: dialogs.py:1417
-msgid "Title:"
-msgstr "Naslov:"
-
-#: dialogs.py:1420
-msgid "Author:"
-msgstr "Autor:"
-
-#: dialogs.py:1423
-msgid "Series:"
-msgstr "Serija:"
-
-#: dialogs.py:1453
+#: dialogs.py:1621
 msgid "Cover Options"
 msgstr "Opcije korica"
 
-#: dialogs.py:1456
+#: dialogs.py:1625
 msgid "Generate Custom Cover"
 msgstr "Generiši prilagođene korice"
 
-#: dialogs.py:1477
+#: dialogs.py:1656
 msgid "Settings"
 msgstr "Podešavanja"
 
-#: dialogs.py:1478
-msgid "Fonts"
-msgstr "Fontovi"
-
-#: dialogs.py:1479
+#: dialogs.py:1657
 msgid "Dimensions"
 msgstr "Dimenzije"
 
-#: dialogs.py:1480
+#: dialogs.py:1658
 msgid "Contents"
 msgstr "Sadržaj"
 
-#: dialogs.py:1490
+#: dialogs.py:1670
 msgid " Revert "
 msgstr " Vrati "
 
-#: dialogs.py:1491
+#: dialogs.py:1671
 msgid "Revert to your previous saved setting values"
 msgstr "Vrati na vaše prethodno sačuvane vrednosti podešavanja"
 
-#: dialogs.py:1493
+#: dialogs.py:1673
 msgid " Save "
 msgstr " Sačuvaj "
 
-#: dialogs.py:1494
+#: dialogs.py:1674
 msgid "Overwrite your current saved setting"
 msgstr "Prepiši vaše trenutno sačuvano podešavanje"
 
-#: dialogs.py:1496
+#: dialogs.py:1676
 msgid " Customize... "
 msgstr " Prilagodi... "
 
-#: dialogs.py:1497
+#: dialogs.py:1677
 msgid "Set general options for this plugin"
 msgstr "Postavi opšte opcije za ovaj dodatak"
 
-#: dialogs.py:1575
+#: dialogs.py:1755
+#, python-format
 msgid "Revert to your previously saved values for '%s'?"
 msgstr "Vratiti na vaše prethodno sačuvane vrednosti za '%s'?"
 
-#: dialogs.py:1594
+#: dialogs.py:1774
+#, python-format
 msgid "Overwrite the '%s' setting with the current values?"
 msgstr "Prepisati '%s' podešavanje trenutnim vrednostima?"
