@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__   = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import socket, re, datetime, json
+import socket, re, datetime, json, time
 from collections import OrderedDict
 from threading import Thread
 
@@ -66,12 +66,22 @@ class Worker(Thread): # Get details
 
     def run(self):
         try:
+            # Goodreads intermittently serves a page with no embedded JSON, so
+            # a retry is worth it - but wait a little longer before each one
+            # rather than hammering the site, which is what gets us rate
+            # limited in the first place.
             retry = True
             retryCount = 0
-            while retry and retryCount <= 10:
+            while retry and retryCount < 5:
+                if retryCount:
+                    time.sleep(retryCount * 1.0)
                 retryCount += 1
                 self.log('Get details attempt #%d'%retryCount)
                 retry = self.get_details()
+            if retry:
+                self.log.error('Giving up on %r after %d attempts: Goodreads kept '
+                               'returning a page with no book data in it.'
+                               %(self.url, retryCount))
         except:
             self.log.exception('get_details failed for url: %r'%self.url)
 
@@ -81,7 +91,8 @@ class Worker(Thread): # Get details
             self.log.info('    Worker log information')
             self.log.info('-------------------------------------------')
             self.log.info('Goodreads book url: %r'%self.url)
-            raw = self.browser.open_novisit(self.url, timeout=self.timeout).read().strip()
+            response = self.browser.open_novisit(self.url, timeout=self.timeout)
+            raw = response.read().strip()
         except Exception as e:
             if callable(getattr(e, 'getcode', None)) and \
                     e.getcode() == 404:
@@ -98,6 +109,11 @@ class Worker(Thread): # Get details
             return False
 
         #open('e:\\goodreads.html', 'wb').write(raw)
+        err = self.plugin.check_response(self.log, response, raw, self.url)
+        if err:
+            self.log.error(err)
+            return False
+
         raw_utf8 = raw.decode('utf-8', errors='replace')
 
         if '<title>404 - ' in raw_utf8:
