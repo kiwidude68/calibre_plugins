@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-24 15:35+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: Junghee Lee <daemul72@gmail.com>, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/calibre/teams/19337/ko/)\n"
@@ -81,7 +81,7 @@ msgstr "설정이 삭제됨"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "이 라이브러리의 이 플러그인에 대한 모든 설정이 지워졌습니다."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "클립보드에 복사"
 
@@ -102,15 +102,15 @@ msgstr "제목 이미지를 찾을 수 없습니다. 이 플러그인을 사용�
 msgid "Create new column"
 msgstr "새 열 만들기"
 
-#: config.py:47
+#: config.py:49
 msgid "Other options"
 msgstr "other 옵션"
 
-#: config.py:52
+#: config.py:54
 msgid "Include 'Genres' in the Tags column"
 msgstr "포함 'genres' 에서 the 태그 열"
 
-#: config.py:53
+#: config.py:55
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -118,11 +118,11 @@ msgstr ""
 "시 checked 만약 a 책 has any genres defined they will be\n"
 "returned 에서 the 태그 열 에서 this 플러그인."
 
-#: config.py:58
+#: config.py:60
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr "포함 'sub-genres' 에서 the 태그 열"
 
-#: config.py:59
+#: config.py:61
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -130,11 +130,11 @@ msgstr ""
 "시 checked 만약 a 책 has any sub-genres defined they will be\n"
 "returned 에서 the 태그 열 에서 this 플러그인."
 
-#: config.py:64
+#: config.py:66
 msgid "Include 'Themes' in the Tags column"
 msgstr "포함 'themes' 에서 the 태그 열"
 
-#: config.py:65
+#: config.py:67
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
@@ -142,11 +142,21 @@ msgstr ""
 "시 checked 만약 a 책 has any themes defined it will be\n"
 "returned 에서 the 태그 열 에서 this 플러그인."
 
-#: config.py:70
+#: config.py:72
+msgid "Include 'Characters && Occupations' in the Tags column"
+msgstr ""
+
+#: config.py:73
+msgid ""
+"When checked, if a book has 'Characters & Occupations' defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+
+#: config.py:78
 msgid "Include 'Age Level' in the Tags column"
 msgstr "포함 'age level' 에서 the 태그 열"
 
-#: config.py:71
+#: config.py:79
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."

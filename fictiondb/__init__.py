@@ -26,7 +26,7 @@ class FictionDB(Source):
     name                    = 'FictionDB'
     description             = 'Downloads metadata and covers from fictiondb.com'
     author                  = 'Grant Drake'
-    version                 = (1, 5, 0)
+    version                 = (1, 5, 1)
     minimum_calibre_version = (2, 85, 1)
 
     ID_NAME = 'fictiondb'
@@ -134,7 +134,6 @@ class FictionDB(Source):
             try:
                 log.info('Querying using HTTP POST: %s - %s'%(query, post_data))
                 br.set_handle_redirect(True)
-                br.set_debug_redirects(True)
                 response = br.open_novisit(query + '?' + post_data, timeout=timeout)
                 # Check whether we got redirected to the book page.
                 # If we did, will use the url.

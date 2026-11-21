@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-24 15:35+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/calibre/teams/19337/cs/)\n"
@@ -85,7 +85,7 @@ msgstr "Nastavení vymazáno"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "Všechna nastavení tohoto modulu v této knihovně byla vymazána."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Kopírovat do schránky"
 
@@ -108,15 +108,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Vytvořit nový sloupec"
 
-#: config.py:47
+#: config.py:49
 msgid "Other options"
 msgstr "Další volby"
 
-#: config.py:52
+#: config.py:54
 msgid "Include 'Genres' in the Tags column"
 msgstr "Zahrnout „Žánry“ do sloupce Štítky"
 
-#: config.py:53
+#: config.py:55
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -124,11 +124,11 @@ msgstr ""
 "Pokud je tato volba zaškrtnutá a kniha má definované\n"
 "nějaké žánry, tento modul je vrátí ve sloupci Štítky."
 
-#: config.py:58
+#: config.py:60
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr "Zahrnout „Podžánry“ do sloupce Štítky"
 
-#: config.py:59
+#: config.py:61
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -136,11 +136,11 @@ msgstr ""
 "Pokud je tato volba zaškrtnutá a kniha má definované\n"
 "nějaké podžánry, tento modul je vrátí ve sloupci Štítky."
 
-#: config.py:64
+#: config.py:66
 msgid "Include 'Themes' in the Tags column"
 msgstr "Zahrnout „Témata“ do sloupce Štítky"
 
-#: config.py:65
+#: config.py:67
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
@@ -148,11 +148,23 @@ msgstr ""
 "Pokud je tato volba zaškrtnutá a kniha má definovaná\n"
 "nějaká témata, tento modul je vrátí ve sloupci Štítky."
 
-#: config.py:70
+#: config.py:72
+msgid "Include 'Characters && Occupations' in the Tags column"
+msgstr "Zahrnout „Postavy a povolání“ do sloupce Štítky"
+
+#: config.py:73
+msgid ""
+"When checked, if a book has 'Characters & Occupations' defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Pokud je tato volba zaškrtnutá a kniha má definované údaje „Postavy a povolání“,\n"
+"tento modul je vrátí ve sloupci Štítky."
+
+#: config.py:78
 msgid "Include 'Age Level' in the Tags column"
 msgstr "Zahrnout „Věkovou kategorii“ do sloupce Štítky"
 
-#: config.py:71
+#: config.py:79
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."

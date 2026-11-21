@@ -1,5 +1,9 @@
 # FictionDB Change Log
 
+## [1.5.1] - 2026-11-21
+### Fixed
+- Workaround for calibre threadsafe error when downloading metadata in bulk
+
 ## [1.5.0] - 2026-10-24
 ### Added
 - Characters & Occupations as an available tags source (see plugin options using 'Configure selected source')

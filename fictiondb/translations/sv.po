@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-24 15:35+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: Jonatan Nyberg, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/calibre/teams/19337/sv/)\n"
@@ -28,7 +28,7 @@ msgstr "Kortkommandon"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Starta om calibre nu."
+msgstr "Starta om calibre nu"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
@@ -40,23 +40,21 @@ msgstr "Rensa"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Rensa alla inställningar för detta tillägg"
+msgstr "Rensa alla inställningar för insticksmodulen"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
-"för denna insticksmodul?"
+msgstr "Vill du ändra insticksmodulens inställningar för det här biblioteket?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
-"calibre-tilläggsmapp kommer inte att röras."
+"Inställningar i andra bibliotek eller i en JSON-fil i calibres mapp för "
+"insticksmoduler påverkas inte."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -68,8 +66,7 @@ msgstr "Inställningar ändrade"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+msgstr "Insticksmodulens inställningar för det här biblioteket har ändrats."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -79,9 +76,7 @@ msgstr "Starta om calibre nu."
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
-"detta tillägg?"
+msgstr "Vill du rensa insticksmodulens inställningar för det här biblioteket?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -89,15 +84,16 @@ msgstr "Inställningar borttagna"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+msgstr ""
+"Alla inställningar för insticksmodulen har rensats i det här biblioteket."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Kopiera till urklipp"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Odefinerad"
+msgstr "Odefinierad"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
@@ -107,61 +103,73 @@ msgstr "Kräver omstart"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Titelbilden hittades inte - du måste starta om calibre innan du använder "
-"denna insticksmodul!"
+"Titelbilden hittades inte. Du måste starta om calibre innan du kan använda "
+"insticksmodulen."
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
 msgstr "Skapa ny kolumn"
 
-#: config.py:47
+#: config.py:49
 msgid "Other options"
 msgstr "Andra alternativ"
 
-#: config.py:52
+#: config.py:54
 msgid "Include 'Genres' in the Tags column"
-msgstr "Inkludera ”Genrer” i kolumnen Taggar"
+msgstr "Ta med genrer i kolumnen Taggar"
 
-#: config.py:53
+#: config.py:55
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Om detta är markerat och en bok har definierade genrer,\n"
-"returneras de i kolumnen Taggar av detta insticksprogram."
+"Markera rutan för att lägga till bokens genrer i kolumnen Taggar\n"
+"om de finns angivna i FictionDB."
 
-#: config.py:58
+#: config.py:60
 msgid "Include 'Sub-Genres' in the Tags column"
-msgstr "Inkludera ”Undergenrer” i kolumnen Taggar"
+msgstr "Ta med undergenrer i kolumnen Taggar"
 
-#: config.py:59
+#: config.py:61
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Om detta är markerat och en bok har definierade undergenrer,\n"
-"returneras de i kolumnen Taggar av detta insticksprogram."
+"Markera rutan för att lägga till bokens undergenrer i kolumnen Taggar\n"
+"om de finns angivna i FictionDB."
 
-#: config.py:64
+#: config.py:66
 msgid "Include 'Themes' in the Tags column"
-msgstr "Inkludera ”Teman” i kolumnen Taggar"
+msgstr "Ta med teman i kolumnen Taggar"
 
-#: config.py:65
+#: config.py:67
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Om detta är markerat och en bok har definierade teman,\n"
-"returneras de i kolumnen Taggar av detta insticksprogram."
+"Markera rutan för att lägga till bokens teman i kolumnen Taggar\n"
+"om de finns angivna i FictionDB."
 
-#: config.py:70
+#: config.py:72
+msgid "Include 'Characters && Occupations' in the Tags column"
+msgstr "Ta med rollfigurer och yrken i kolumnen Taggar"
+
+#: config.py:73
+msgid ""
+"When checked, if a book has 'Characters & Occupations' defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Markera rutan för att lägga till rollfigurer och yrken i kolumnen Taggar\n"
+"om de finns angivna för boken i FictionDB."
+
+#: config.py:78
 msgid "Include 'Age Level' in the Tags column"
-msgstr "Inkludera ”Åldersnivå” i kolumnen Taggar"
+msgstr "Ta med åldersgrupp i kolumnen Taggar"
 
-#: config.py:71
+#: config.py:79
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."
 msgstr ""
-"Om detta är markerat och en bok har en definierad åldersnivå,\n"
-"returneras den i kolumnen Taggar av detta insticksprogram."
+"Markera rutan för att lägga till bokens åldersgrupp i kolumnen Taggar\n"
+"om den finns angiven i FictionDB."

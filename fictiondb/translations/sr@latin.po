@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-24 15:35+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: Branislav Kapetanovic, 2026\n"
 "Language-Team: Serbian (Latin) (https://app.transifex.com/calibre/teams/19337/sr@latin/)\n"
@@ -88,7 +88,7 @@ msgstr "Podešavanja su obrisana"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "Sva podešavanja ovog dodatka u ovoj biblioteci su obrisana."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Kopiraj u privremenu memoriju"
 
@@ -111,15 +111,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Napravi novu kolonu"
 
-#: config.py:47
+#: config.py:49
 msgid "Other options"
 msgstr "Ostale opcije"
 
-#: config.py:52
+#: config.py:54
 msgid "Include 'Genres' in the Tags column"
 msgstr "Uključi žanrove u kolonu Oznake"
 
-#: config.py:53
+#: config.py:55
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -127,11 +127,11 @@ msgstr ""
 "Ako je ova opcija izabrana, žanrovi definisani za knjigu\n"
 "prikazivaće se u koloni Oznake koju popunjava ovaj dodatak."
 
-#: config.py:58
+#: config.py:60
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr "Uključi podžanrove u kolonu Oznake"
 
-#: config.py:59
+#: config.py:61
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -139,11 +139,11 @@ msgstr ""
 "Ako je ova opcija izabrana, podžanrovi definisani za knjigu\n"
 "prikazivaće se u koloni Oznake koju popunjava ovaj dodatak."
 
-#: config.py:64
+#: config.py:66
 msgid "Include 'Themes' in the Tags column"
 msgstr "Uključi teme u kolonu Oznake"
 
-#: config.py:65
+#: config.py:67
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
@@ -151,11 +151,23 @@ msgstr ""
 "Ako je ova opcija izabrana, teme definisane za knjigu\n"
 "prikazivaće se u koloni Oznake koju popunjava ovaj dodatak."
 
-#: config.py:70
+#: config.py:72
+msgid "Include 'Characters && Occupations' in the Tags column"
+msgstr "Uključi 'Likove && zanimanja' u kolonu Oznake"
+
+#: config.py:73
+msgid ""
+"When checked, if a book has 'Characters & Occupations' defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+"Ako je označeno i knjiga ima navedene 'Likove & zanimanja', ovaj dodatak će ih\n"
+"vratiti u koloni Oznake."
+
+#: config.py:78
 msgid "Include 'Age Level' in the Tags column"
 msgstr "Uključi uzrasnu kategoriju u kolonu Oznake"
 
-#: config.py:71
+#: config.py:79
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."

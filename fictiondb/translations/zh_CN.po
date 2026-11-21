@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-24 15:35+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: tony shen <anthanny@hotmail.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/calibre/teams/19337/zh_CN/)\n"
@@ -85,7 +85,7 @@ msgstr "设置已删除"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "此插件库中的所有设置都已清除。"
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "复制到剪贴板"
 
@@ -106,15 +106,15 @@ msgstr "未找到标题图片 - 使用此插件之前必须重新启动 Calibre�
 msgid "Create new column"
 msgstr "创建新列"
 
-#: config.py:47
+#: config.py:49
 msgid "Other options"
 msgstr "其他选项"
 
-#: config.py:52
+#: config.py:54
 msgid "Include 'Genres' in the Tags column"
 msgstr "在标签列中包含“流派”"
 
-#: config.py:53
+#: config.py:55
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -122,11 +122,11 @@ msgstr ""
 "当检查一本书是否定义了任何类型时，它们将\n"
 "从该插件的标签列中返回。"
 
-#: config.py:58
+#: config.py:60
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr "在标签列中包含“子流派”"
 
-#: config.py:59
+#: config.py:61
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -134,11 +134,11 @@ msgstr ""
 "当检查一本书是否定义了任何子流派时，它们将被\n"
 "从该插件的标签列中返回。"
 
-#: config.py:64
+#: config.py:66
 msgid "Include 'Themes' in the Tags column"
 msgstr "在标签列中包含“主题”"
 
-#: config.py:65
+#: config.py:67
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
@@ -146,11 +146,21 @@ msgstr ""
 "当检查一本书是否定义了任何主题时，它将是\n"
 "从该插件的标签列中返回。"
 
-#: config.py:70
+#: config.py:72
+msgid "Include 'Characters && Occupations' in the Tags column"
+msgstr ""
+
+#: config.py:73
+msgid ""
+"When checked, if a book has 'Characters & Occupations' defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+
+#: config.py:78
 msgid "Include 'Age Level' in the Tags column"
 msgstr "在标签列中包含“年龄级别”"
 
-#: config.py:71
+#: config.py:79
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."

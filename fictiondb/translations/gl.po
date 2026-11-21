@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-24 15:35+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: nin hum <ninhum@gmx.com>, 2026\n"
 "Language-Team: Galician (https://app.transifex.com/calibre/teams/19337/gl/)\n"
@@ -89,7 +89,7 @@ msgid "All settings for this plugin in this library have been cleared."
 msgstr ""
 "Borráronse todas as configuracións deste complemento nesta biblioteca."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Copiar no portapapeis"
 
@@ -112,15 +112,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Crear unha nova columna"
 
-#: config.py:47
+#: config.py:49
 msgid "Other options"
 msgstr "Outras opcións"
 
-#: config.py:52
+#: config.py:54
 msgid "Include 'Genres' in the Tags column"
 msgstr "Inclúe \"Xéneros\" na columna de etiquetas."
 
-#: config.py:53
+#: config.py:55
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -128,11 +128,11 @@ msgstr ""
 "Ao comprobar se un libro ten algún xénero definido, estes aparecerán na "
 "columna de etiquetas deste complemento."
 
-#: config.py:58
+#: config.py:60
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr "Inclúe \"Subxéneros\" na columna de etiquetas."
 
-#: config.py:59
+#: config.py:61
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -140,11 +140,11 @@ msgstr ""
 "Ao comprobar se un libro ten subxéneros definidos, estes aparecerán na "
 "columna de etiquetas deste complemento."
 
-#: config.py:64
+#: config.py:66
 msgid "Include 'Themes' in the Tags column"
 msgstr "Inclúe \"Temas\" na columna de etiquetas."
 
-#: config.py:65
+#: config.py:67
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
@@ -152,11 +152,21 @@ msgstr ""
 "Ao comprobar se un libro ten algún tema definido, este aparecerá na columna "
 "de etiquetas deste complemento."
 
-#: config.py:70
+#: config.py:72
+msgid "Include 'Characters && Occupations' in the Tags column"
+msgstr ""
+
+#: config.py:73
+msgid ""
+"When checked, if a book has 'Characters & Occupations' defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+
+#: config.py:78
 msgid "Include 'Age Level' in the Tags column"
 msgstr "Inclúe \"Nivel de idade\" na columna de etiquetas."
 
-#: config.py:71
+#: config.py:79
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."

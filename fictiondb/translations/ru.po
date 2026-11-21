@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-03-24 17:59+1000\n"
+"POT-Creation-Date: 2026-10-24 15:35+1000\n"
 "PO-Revision-Date: 2022-09-19 15:14+0000\n"
 "Last-Translator: ashed <craysy@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/calibre/teams/19337/ru/)\n"
@@ -85,7 +85,7 @@ msgstr "Настройки удалены"
 msgid "All settings for this plugin in this library have been cleared."
 msgstr "Все настройки для этого плагина в этой библиотеке были очищены."
 
-#: ..\common\common_dialogs.py:297
+#: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
 msgstr "Копировать в Буфер обмена"
 
@@ -108,15 +108,15 @@ msgstr ""
 msgid "Create new column"
 msgstr "Создать новый столбец"
 
-#: config.py:47
+#: config.py:49
 msgid "Other options"
 msgstr "Прочие параметры"
 
-#: config.py:52
+#: config.py:54
 msgid "Include 'Genres' in the Tags column"
 msgstr "Включить «Жанры» в столбец «Теги»"
 
-#: config.py:53
+#: config.py:55
 msgid ""
 "When checked if a book has any genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -124,11 +124,11 @@ msgstr ""
 "Если флажок установлен, и для книги определены какие-либо жанры, они будут\n"
 "возвращаться в столбце Теги из этого плагина."
 
-#: config.py:58
+#: config.py:60
 msgid "Include 'Sub-Genres' in the Tags column"
 msgstr "Включить «Поджанры» в столбец «Теги»"
 
-#: config.py:59
+#: config.py:61
 msgid ""
 "When checked if a book has any Sub-Genres defined they will be\n"
 "returned in the Tags column from this plugin."
@@ -136,11 +136,11 @@ msgstr ""
 "Если этот флажок установлен, если в книге определены какие-либо поджанры, они будут\n"
 "возвращаться в столбце «Теги» из этого плагина."
 
-#: config.py:64
+#: config.py:66
 msgid "Include 'Themes' in the Tags column"
 msgstr "Включить «Темы» в столбец «Теги»"
 
-#: config.py:65
+#: config.py:67
 msgid ""
 "When checked if a book has any Themes defined it will be\n"
 "returned in the Tags column from this plugin."
@@ -148,11 +148,21 @@ msgstr ""
 "Если этот флажок установлен, если в книге определены какие-либо Темы, они будут\n"
 "возвращаться в столбце «Теги» из этого плагина."
 
-#: config.py:70
+#: config.py:72
+msgid "Include 'Characters && Occupations' in the Tags column"
+msgstr ""
+
+#: config.py:73
+msgid ""
+"When checked, if a book has 'Characters & Occupations' defined they will be\n"
+"returned in the Tags column from this plugin."
+msgstr ""
+
+#: config.py:78
 msgid "Include 'Age Level' in the Tags column"
 msgstr "Включить «Возрастной уровень» в столбец «Теги»."
 
-#: config.py:71
+#: config.py:79
 msgid ""
 "When checked, if a book has an 'Age Level' defined it will be\n"
 "returned in the Tags column from this plugin."
