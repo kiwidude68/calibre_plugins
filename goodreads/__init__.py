@@ -3,7 +3,7 @@ from __future__ import unicode_literals, division, absolute_import, print_functi
 __license__ = 'GPL v3'
 __copyright__ = '2011, Grant Drake'
 
-import time, json, re, random
+import time, json, os, re, random
 
 try:
     from urllib.parse import quote_plus
@@ -85,7 +85,107 @@ class Goodreads(Source):
         # The extensionless book page is protected by AWS WAF. Goodreads still
         # serves the same Next.js page, including __NEXT_DATA__, at this URL.
         return '%s/book/show/%s.xml' % (self.BASE_URL, goodreads_id)
-        
+
+    def sniff_page_title(self, raw):
+        '''
+        Pull the <title> out of a response without parsing the whole page, so
+        it can be logged even when the page later fails to parse.
+        '''
+        if not raw:
+            return None
+        try:
+            if isinstance(raw, bytes):
+                head = raw[:8192].decode('utf-8', errors='replace')
+            else:
+                head = raw[:8192]
+            match = re.search(r'<title[^>]*>(.*?)</title>', head, re.IGNORECASE | re.DOTALL)
+            if match:
+                return re.sub(r'\s+', ' ', match.group(1)).strip()
+            # No <title> in the first 8K is itself worth knowing about.
+            return ''
+        except Exception:
+            return None
+
+    def dump_response(self, log, raw, url):
+        '''
+        Write the raw response to a temp file for post-mortem inspection. These
+        land in calibre's own temporary directory, alongside the metadata
+        download logs, and are cleaned up when calibre exits.
+        '''
+        try:
+            import tempfile
+            fd, path = tempfile.mkstemp(prefix='goodreads_', suffix='.html')
+            with os.fdopen(fd, 'wb') as f:
+                f.write(b'<!-- source url: ' + url.encode('utf-8') + b' -->\n')
+                f.write(raw if isinstance(raw, bytes) else raw.encode('utf-8'))
+            log.info('Wrote %d bytes of response to %s' % (len(raw or b''), path))
+        except Exception as e:
+            log.info('Could not dump response: %s' % e)
+
+    def check_response(self, log, response, raw, url, allow_empty=False):
+        '''
+        Classify a response from Goodreads and return an error message, or None
+        if the response looks like a page we can actually parse. The raw
+        response is dumped to a temp file only when it is not usable.
+
+        Goodreads sits behind AWS WAF, which answers requests it considers bot
+        traffic with "202 Accepted" and either an empty body or a JavaScript
+        challenge page, rather than with an error status. Both look like a
+        successful fetch to mechanize, so detect them explicitly and say so
+        instead of failing later with a confusing parse/empty-result error.
+
+        With allow_empty, an empty body that is not a 202 is a valid "no
+        results" reply (as from the autocomplete API) rather than an error.
+        '''
+        try:
+            code = response.getcode()
+        except Exception:
+            code = None
+
+        info = {}
+        try:
+            headers = response.info()
+            for h in ('Content-Length', 'Content-Type', 'Content-Encoding',
+                      'Retry-After', 'X-Cache', 'Server'):
+                v = headers.get(h)
+                if v:
+                    info[h] = v
+        except Exception:
+            pass
+        log.info('HTTP status %s, %d bytes read, headers: %s for: %r'
+                 % (code, len(raw or b''), info or '{}', url))
+
+        title = self.sniff_page_title(raw)
+        if title is not None:
+            log.info('Page title: %r' % title)
+
+        err = self._classify_response(code, raw, url, allow_empty)
+        if err:
+            self.dump_response(log, raw, url)
+        return err
+
+    def _classify_response(self, code, raw, url, allow_empty):
+        blocked = ('Goodreads refused to serve this page (HTTP %s) - scraping is '
+                   'being blocked by the site, most likely rate limiting or bot '
+                   'detection by its AWS WAF. Try again later, or download '
+                   'metadata for fewer books at a time.' % code)
+        if code == 202:
+            # WAF challenge/throttle: served as 202 with no usable content.
+            return blocked
+        if not raw:
+            if allow_empty:
+                return None
+            if code == 200:
+                return 'Goodreads returned an empty page (HTTP 200) for: %r' % url
+            return blocked
+        if isinstance(raw, bytes):
+            sniff = raw[:4096].decode('utf-8', errors='replace')
+        else:
+            sniff = raw[:4096]
+        if 'gokuProps' in sniff or 'awsWafCookieDomainList' in sniff:
+            return blocked
+        return None
+
     def get_cached_cover_url(self, identifiers):
         url = None
         goodreads_id = identifiers.get(self.ID_NAME, None)
@@ -118,8 +218,14 @@ class Goodreads(Source):
         if abort.is_set():
             return []
         log.info('Querying autocomplete API: %s' % url)
-        raw = self.browser.open_novisit(url, timeout=timeout).read()
+        response = self.browser.open_novisit(url, timeout=timeout)
+        raw = response.read()
         log.debug('JSON Result: %s'%raw)
+        # A blocked request returns no results, which is indistinguishable from
+        # "Goodreads found nothing" unless it is called out.
+        err = self.check_response(log, response, raw, url, allow_empty=True)
+        if err:
+            raise ValueError(err)
         if not raw:
             return []
         try:
