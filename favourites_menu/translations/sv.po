@@ -24,11 +24,11 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "Tangentbordsgenvägar"
+msgstr "Kortkommandon"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
-msgstr "Starta om calibre nu."
+msgstr "Starta om calibre nu"
 
 #: ..\common\common_dialogs.py:128
 msgid "Preferences for:"
@@ -40,23 +40,21 @@ msgstr "Rensa"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
-msgstr "Rensa alla inställningar för detta tillägg"
+msgstr "Rensa alla inställningar för insticksmodulen"
 
 #: ..\common\common_dialogs.py:189
 msgid ""
 "Are you sure you want to change your settings in this library for this "
 "plugin?"
-msgstr ""
-"Är du säker på att du vill ändra dina inställningar i det här biblioteket "
-"för denna insticksmodul?"
+msgstr "Vill du ändra insticksmodulens inställningar för det här biblioteket?"
 
 #: ..\common\common_dialogs.py:190 ..\common\common_dialogs.py:210
 msgid ""
 "Any settings in other libraries or stored in a JSON file in your calibre "
 "plugins folder will not be touched."
 msgstr ""
-"Alla inställningar i andra bibliotek eller sparade i en JSON-fil i din "
-"calibre-tilläggsmapp kommer inte att röras."
+"Inställningar i andra bibliotek eller i en JSON-fil i calibres mapp för "
+"insticksmoduler påverkas inte."
 
 #: ..\common\common_dialogs.py:192 ..\common\common_dialogs.py:212
 msgid "You must restart calibre afterwards."
@@ -68,8 +66,7 @@ msgstr "Inställningar ändrade"
 
 #: ..\common\common_dialogs.py:201
 msgid "Settings for this plugin in this library have been changed."
-msgstr ""
-"Inställningarna för denna insticksmodul i det här biblioteket har ändrats."
+msgstr "Insticksmodulens inställningar för det här biblioteket har ändrats."
 
 #: ..\common\common_dialogs.py:202 ..\common\common_dialogs.py:223
 msgid "Please restart calibre now."
@@ -79,9 +76,7 @@ msgstr "Starta om calibre nu."
 msgid ""
 "Are you sure you want to clear your settings in this library for this "
 "plugin?"
-msgstr ""
-"Är du säker på att du vill rensa dina inställningar i detta bibliotek för "
-"detta tillägg?"
+msgstr "Vill du rensa insticksmodulens inställningar för det här biblioteket?"
 
 #: ..\common\common_dialogs.py:221
 msgid "Settings deleted"
@@ -89,7 +84,8 @@ msgstr "Inställningar borttagna"
 
 #: ..\common\common_dialogs.py:222
 msgid "All settings for this plugin in this library have been cleared."
-msgstr "Alla inställningar för detta tillägg i detta bibliotek har rensats."
+msgstr ""
+"Alla inställningar för insticksmodulen har rensats i det här biblioteket."
 
 #: ..\common\common_dialogs.py:296
 msgid "Copy to clipboard"
@@ -97,7 +93,7 @@ msgstr "Kopiera till urklipp"
 
 #: ..\common\common_widgets.py:105
 msgid "Undefined"
-msgstr "Odefinerad"
+msgstr "Odefinierad"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
@@ -107,8 +103,8 @@ msgstr "Kräver omstart"
 msgid ""
 "Title image not found - you must restart Calibre before using this plugin!"
 msgstr ""
-"Titelbilden hittades inte - du måste starta om calibre innan du använder "
-"denna insticksmodul!"
+"Titelbilden hittades inte. Du måste starta om calibre innan du kan använda "
+"insticksmodulen."
 
 #: ..\common\common_widgets.py:234
 msgid "Create new column"
@@ -120,7 +116,7 @@ msgstr "Favoriter"
 
 #: action.py:125
 msgid "&Customize plugin"
-msgstr "&Anpassa insticksmodul"
+msgstr "&Anpassa insticksmodulen"
 
 #: action.py:127 config.py:290
 msgid "&Help"
@@ -144,24 +140,24 @@ msgstr "Ta bort det valda alternativet från menyn"
 
 #: config.py:267
 msgid "Add a separator to the menu following the selected item"
-msgstr "Lägg till en avgränsare efter det valda alternativet på menyn"
+msgstr "Lägg till en avgränsare efter det valda menyalternativet"
 
 #: config.py:271
 msgid "Add a submenu group"
-msgstr ""
+msgstr "Lägg till en grupp som undermeny"
 
 #: config.py:275
 msgid "Rename the menu item for when it appears on your Favourites menu"
-msgstr "Byt namn på menyalternativet som det visas på menyn Favoriter"
+msgstr "Ändra namnet som visas för menyalternativet i menyn Favoriter"
 
 #: config.py:342
 msgid "Add group"
-msgstr ""
+msgstr "Lägg till grupp"
 
 #: config.py:342 config.py:409
 msgid "Group name:"
-msgstr ""
+msgstr "Gruppnamn:"
 
 #: config.py:409
 msgid "Rename group"
-msgstr ""
+msgstr "Byt namn på grupp"

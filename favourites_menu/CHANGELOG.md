@@ -1,5 +1,9 @@
 # Favourites Menu Change Log
 
+## [1.4.2] - 2026-11-26
+### Fixed
+- Remove menu items now working again.
+
 ## [1.4.1] - 2026-10-26
 ### Fixed
 - Menu groups are now editable inline by pressing F2

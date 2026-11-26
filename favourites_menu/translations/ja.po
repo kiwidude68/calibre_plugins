@@ -22,7 +22,7 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:84
 msgid "Keyboard shortcuts"
-msgstr "キーボードショートカット"
+msgstr "キーボード ショートカット"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
@@ -34,7 +34,7 @@ msgstr "環境設定:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "クリア"
+msgstr "消去"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
@@ -92,7 +92,7 @@ msgstr "未定義"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "再起動が必要です。"
+msgstr "再起動が必要です"
 
 #: ..\common\common_widgets.py:161
 msgid ""
@@ -109,7 +109,7 @@ msgstr "お気に入り"
 
 #: action.py:125
 msgid "&Customize plugin"
-msgstr "プラグインをカスタマイズ (&C)"
+msgstr "プラグインをカスタマイズ(&C)"
 
 #: action.py:127 config.py:290
 msgid "&Help"

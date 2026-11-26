@@ -367,7 +367,6 @@ class ConfigWidget(QWidget):
         self._update_button_states()
 
     def _remove_item(self):
-
         item = self.items_list.currentItem()
         if item is None:
             return
@@ -376,6 +375,11 @@ class ConfigWidget(QWidget):
             self.tv.blockSignals(True)
             self._uncheck_shortcut(data[1])
             self.tv.blockSignals(False)
+            parent = item.parent()
+            if parent is None:
+                self.items_list.takeTopLevelItem(self.items_list.indexOfTopLevelItem(item))
+            else:
+                parent.takeChild(parent.indexOfChild(item))
         elif data and data[0] == 'group':
             group_index = self.items_list.indexOfTopLevelItem(item)
             promoted_item = None
