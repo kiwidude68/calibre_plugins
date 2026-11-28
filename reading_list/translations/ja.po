@@ -23,7 +23,7 @@ msgstr ""
 
 #: ..\common\common_dialogs.py:84 config.py:1165
 msgid "Keyboard shortcuts"
-msgstr "キーボードショートカット"
+msgstr "キーボード ショートカット"
 
 #: ..\common\common_dialogs.py:112
 msgid "Restart calibre now"
@@ -35,7 +35,7 @@ msgstr "環境設定:"
 
 #: ..\common\common_dialogs.py:160
 msgid "Clear"
-msgstr "クリア"
+msgstr "消去"
 
 #: ..\common\common_dialogs.py:162
 msgid "Clear all settings for this plugin"
@@ -93,7 +93,7 @@ msgstr "未定義"
 
 #: ..\common\common_widgets.py:160
 msgid "Restart required"
-msgstr "再起動が必要です。"
+msgstr "再起動が必要です"
 
 #: ..\common\common_widgets.py:161
 msgid ""
@@ -318,7 +318,7 @@ msgstr "すぐに同期"
 
 #: action.py:377
 msgid "&Customize plugin"
-msgstr "プラグインをカスタマイズ (&C)"
+msgstr "プラグインをカスタマイズ(&C)"
 
 #: action.py:380 config.py:1180
 msgid "&Help"
@@ -343,7 +343,7 @@ msgstr "リストにトグルできません"
 
 #: action.py:507 config.py:1109
 msgid "Are you sure?"
-msgstr "本当によろしいですか？"
+msgstr "よろしいですか？"
 
 #: action.py:508
 msgid "Are you sure you want to clear the '%s' reading list?"
@@ -471,7 +471,7 @@ msgstr "リーディングリスト: 自動のデバイスリストを更新中 
 
 #: action.py:1295
 msgid "READING LIST: Skipping %d books in '%s' list with no formats"
-msgstr "リーディングリスト: フォーマットのない %d 冊を '%s' リストでスキップします"
+msgstr "リーディングリスト: 形式のない %d 冊を '%s' リストでスキップします"
 
 #: action.py:1299
 msgid "READING LIST: Syncing %d books in '%s' to: %s (location:%s)"
@@ -618,7 +618,7 @@ msgstr "メニュー"
 
 #: config.py:442
 msgid "Name"
-msgstr "名称"
+msgstr "名前"
 
 #: config.py:442
 msgid "Status"
@@ -897,7 +897,7 @@ msgstr "このデバイスをデバイス一覧から削除します"
 
 #: config.py:1075 config.py:1079 config.py:1098
 msgid "Rename failed"
-msgstr "名称変更に失敗しました"
+msgstr "名前の変更に失敗しました"
 
 #: config.py:1076 config.py:1106
 msgid "You must select a device first"
@@ -991,7 +991,7 @@ msgstr "完了"
 
 #: config.py:1225
 msgid "Confirmation dialogs have all been reset"
-msgstr "全ての確認ダイアログはリセットしました"
+msgstr "確認ダイアログはすべてリセットされました"
 
 #: config.py:1247
 msgid "Lists"

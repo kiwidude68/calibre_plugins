@@ -85,8 +85,8 @@ class ReadingListAction(InterfaceAction):
         device_signals.device_connection_changed.connect(self._on_device_connection_changed)
         device_signals.device_metadata_available.connect(self._on_device_metadata_available)
         self.sort_history = []
-        self.gui.search.cleared.connect(self.restore_state)
-        self.gui.search.changed.connect(self.restore_state)
+        self.gui.search.cleared.connect(self.clear_markers_and_restore_state)
+        self.gui.search.changed.connect(self.clear_markers_and_restore_state)
 
     def set_popup_mode(self):
         quick_access = cfg.plugin_prefs[cfg.STORE_OPTIONS].get(cfg.KEY_QUICK_ACCESS, False)
@@ -103,6 +103,14 @@ class ReadingListAction(InterfaceAction):
     def save_state(self):
         # Backup sort history
         self.sort_history = self.gui.library_view.get_state().get('sort_history', [])
+
+    def clear_markers_and_restore_state(self):
+        if self.view_list_name:
+            db = self.gui.current_db
+            marked_ids = {k:v for k,v in db.data.marked_ids.items() if not v.startswith('reading_list_')}
+            db.set_marked_ids(marked_ids)
+            self.view_list_name = None
+        self.restore_state()
 
     def restore_state(self):
         if self.view_list_name:

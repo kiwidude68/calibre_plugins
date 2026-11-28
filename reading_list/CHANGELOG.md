@@ -1,5 +1,9 @@
 # Reading List Change Log
 
+## [1.15.10] - 2026-11-28
+### Changed
+- When clearing search after viewing a reading list, remove the marker pins for the list books
+
 ## [1.15.9] - 2026-09-25
 ### Added
 - Slovak translation
